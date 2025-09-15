@@ -264,6 +264,7 @@
       "born in": "Huesca",
       "dies in": "Madrid",
       "in Rome": "1822-1831, funded by the Duke of Villahermosa",
+      "address": "13 rue des Beaux-arts (Paris, c.1860)",
       "in Paris": [
         "1st trip: 1841-1843 April-July 1841, November 1841-September 1843",
         "2nd trip: 1845 24 April-20 December",
@@ -366,6 +367,7 @@
       "decorations/awards": "Chevalier (1822), Officier (1834), Commandeur (1837) et Grand officer (1877) de la Légion d'Honneur",
       "parents": "Hélie Taylor (English born) and Marie-Jacqueline Walwein (Belgian)",
       "curiosities": "there is a Fondation Taylor, still running, created in 1844.",
+      "correspondence": "Schopp 1993.",
       "bibliography": "Lanzarote Guiral 2016; Guinard 1967-A",
       "websites": "[Fondation Taylor](https://www.taylor.fr/)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Taylor.jpg",
@@ -407,9 +409,12 @@
         "1862 organises the participation of French artists at the Universal Exhibition in London."
       ],
       "sales": "Hôtel Drouot, February 1869: sketchbooks, Spanish masterpieces and an extensive library (Tinterow 2003, p.395)",
-      "correspondence": "Bibliothèque historique de la Ville de Paris, [4-MS-3047](https://bibliotheques-specialisees.paris.fr/ark:/73873/FRCGMNOV-751045102-FG02C/A2002740): 12 letters 1860-1862 and non-dated.",
+      "correspondence": [
+        "Bibliothèque historique de la Ville de Paris, [4-MS-3047](https://bibliotheques-specialisees.paris.fr/ark:/73873/FRCGMNOV-751045102-FG02C/A2002740): 12 letters 1860-1862 and non-dated.",
+        "Schopp 1993."
+      ],
       "archives": "Bibliothèque historique de la Ville de Paris",
-      "bibliography": "Tinterow 2003; Ghislaine Plessier, <i>Adrien Dauzats ou la Tentation de l'Orient</i>, exh. cat., Bordeaux, 1990; <i>Adrien Dauzats et les Voyages pittoresques et romantiques dans l'ancienne France du baron Taylor</i>, Fondation Taylor, 1990; Guinard 1967-B",
+      "bibliography": "Tinterow 2003; Schopp 1993; Ghislaine Plessier, <i>Adrien Dauzats ou la Tentation de l'Orient</i>, exh. cat., Bordeaux, 1990; <i>Adrien Dauzats et les Voyages pittoresques et romantiques dans l'ancienne France du baron Taylor</i>, Fondation Taylor, 1990; Guinard 1967-B",
       "websites": "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Dauzats.jpg",
       "image source": "Madrazo portrait, 1837, Versailles"
@@ -1759,16 +1764,21 @@
         "Collective works: <i>Les Français peints par eux-mêmes</i> (1840) (ed. Léon Curmer), alongside Théophile Gautier, Alexandre Dumas père, J. J. Grandville, Honoré Daumier and Paul Gavarni."
       ],
       "mentions of Goya": [
-        "1837-V-28 28 '[…] Goya, ce fantaisiaque [sic] élève de Tiepolo le Vénitien, avec lequel est mort la grande peinture espagnole, et qui dans ses compositions, dont la vérité a fait des satires, a tout attaqué: moines, nobles et rois' (p. 2). About the Galerie espagnole: '[…] doté la France d'un trésor qui allait être perdu pour le monde, et rapporté pour 800,000 francs, quatre cents tableaux qui valent trois millions' (p. 2) 'Feuilleton: M. le Baron Taylor en Espagne', <i>La Presse</i>, 1-2 [digitised in Gallica]",
+        "1837-V-28 28 '[…] Goya, ce fantaisiaque [sic] élève de Tiepolo le Vénitien, avec lequel est mort la grande peinture espagnole, et qui dans ses compositions, dont la vérité a fait des satires, a tout attaqué: moines, nobles et rois' (p.2). About the Galerie espagnole: '[…] doté la France d'un trésor qui allait être perdu pour le monde, et rapporté pour 800,000 francs, quatre cents tableaux qui valent trois millions' (p. 2) 'Feuilleton: M. le Baron Taylor en Espagne', <i>La Presse</i>, pp.1-2 (digitised in Gallica; Fayos-Pérez 2024, Appendix II; Schopp 1993, p.202).",
         "1845-I-16 'C'était un spectacle à la fois lugubre et bizarre, que tous ces élégans [sic] seigneurs et toutes ces belles dames défilant comme une procession, peinte par Goya, au milieu de ces squelettes noircis et de ces gibets aux longs bras décharnés' ('Feuilleton: La Reine Margot, second volume', <i>La Presse</i>, pp.1-3) [digitised in Gallica]",
-        "1849-V-3 'On dirait une de ces gravures de Goya, où, dans la demi-teinte, des arracheurs de dents font la chasse aux pendus' ('Feuilleton: Les mille et un fantomes', <i>Le Constitutionnel</i>, p.1) [digitised in Gallica] (see Fayos Pérez 2024)."
+        "1849-V-3 'On dirait une de ces gravures de Goya, où, dans la demi-teinte, des arracheurs de dents font la chasse aux pendus' ('Feuilleton: Les mille et un fantomes', <i>Le Constitutionnel</i>, p.1) [digitised in Gallica] (see Fayos Pérez 2024).",
+        "1851 Nov, letter from Dumas to Dauzats: 'Mon cher Dauzats. Prêtez donc pour un jour ou deux votre costume de la femme espagnole à l'Ambigu--Je voudrais le faire faire au théâtre. Vous savez c'est la grand-mère de d'Ossun d'après Goya'. Schopp identifies this work as María Josefa de la Soledad, Countess of Benavente, Duchess of Osuna, c. 1785, Palma de Mallorca, Fundación Bartolomé March. The author also considers that Dumas is referring to the play <i>Le Vampire</i> (1851) at the Ambigu-Comique theatre (Fayos Pérez 2024, Appendix II; Schopp 1993, p.169)."
         ],
       "in Spain": "October 1846 to January 1847, accompanied by his son Alexandre and his collaborator Auguste Maquet. He writes <i>Impressions de voyage : de Paris à Cádiz</i> (1846), illustrated by Nanteuil. In the same trip he goes to Algeria",
       "portrayed by": "Joseph Guichard, 1828 (Louvre); Achille Devéria, c.1829; Achille Devéria, c.1832 (lithography published by Charles Motte); Josef Danhauser, <i>Liszt am Klavier</i>, 1840, oil painting, group portrait with George Sand, Hugo, Marie d'Agoult, Liszt, Paganini and Rossini (with Beethoven's bust and Byron's portrait), Alte Nationalgalerie, F.V.42; Cham, 1846 (caricature); Gouin, 1852 (photograph); Nadar, 1855 (photograph); William Henry Powell, 1855 (oil); Gustave Le Gray, c.1859 (photograph); Cham, 1860 (caricature); André Gill, 2 Dec 1866 (caricature); Alphonse Liébert, 1867 (photograph).",
       "parents": "Marie-Louise Labouret and Thomas Alexandre Davy de La Pailleterie",
       "children": "Alexandre Dumas fils; Henry Bauër",
-      "curiosities": "despite having all the merits for it, Dumas père was never accepted as a member of the Académie française, most likely due to racism. Only his son Alexandre Dumas (fils) was accepted in 1874",
-      "bibliography": "Fayos Pérez 2024; Dumas-Schopp 2014",
+      "curiosities": "despite having all the merits for it, Dumas père was never accepted as a member of the Académie française, most likely due to racism. Only his son Alexandre Dumas (fils) was accepted in 1874", 
+      "correspondence": [
+        "<i>Correspondance générale</i>, t.I (2014), t.II (2016), t.III (2019), t.IV (2021), t.V (2021), t.VI (Jan 1850-Nov 1853) (2023), t.VII (2023), t.VIII (2024), t.IX (April 1857-Dec 1859) (2025), t.X (Jan 1860-Dec 1863) (2025), ed. Claude Schopp, Classiques Garnier, Le XIXe siècle no.25.",
+        "Schopp 1993."
+      ],
+      "bibliography": "Fayos Pérez 2024; Dumas-Schopp 2014; Schopp 1993",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Dumas.jpg",
       "image source": "portrait by Nadar, 1855"
     },
@@ -1823,7 +1833,7 @@
       "link to Goya's work": "Antoine Fontaney showed a recently acquired set of the <i>Caprichos/i> in Nodier's salon at the Arsenal on 8 Sept 1831.",
       "address": "4, rue de Provence (from 1822)",
       "curiosities": "in 1797 he was member of a secret society called the Philadelphes. Later, he was a member of the 4th society of Caveau (1834-39) ('société bachique'), dedicated to drinking, singing and literature.",
-      "bibliography": "[<i>Cahiers d'études nodiéristes</i>](https://classiques-garnier.com/cahiers-d-etudes-nodieristes.html)",
+      "bibliography": "[<i>Cahiers d'études nodiéristes</i>](https://classiques-garnier.com/cahiers-d-etudes-nodieristes.html); Marie Mennessier-Nodier, <i>Charles Nodier. Épisodes et souvenirs de sa vie</i>, ed. Jacques Geoffroy, Classiques Garnier, Le XIXe siècle no.27, sept 2025",
       "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Charles_Nodier)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Nodier.jpg",
       "image source": "Guérin portrait 1844"
@@ -2007,7 +2017,7 @@
       "profession": "femme de lettres, writer, novelist, composer, poet", 
       "writes in": "<i>Revue des Deux Mondes</i>",
       "author of": "<i>Sonnet à Mélanie Gaume</i> (1830); <i>Mélodies romantiques</i> (1831); 'Lettres d'une hirondelle à une serine élevée au Couvent des oiseaux', in J. J. Grandville's <i>Scènes de la vie privée et publique des animaux</i> (1842); <i>Charles Nodier, épisodes et souvenirs de sa vie</i> (1867)",
-      "correspondence": "vol. 1 (1821-1848), II (1849-1892), III (Lettres à Marie), in 2019, 2020 and 2021 respectively",
+      "correspondence": "<i>Correspondance</i>, Classiques Garnier, Le XIXe siècle, vol. 1 (1821-1848: Paris, l'Arsenal, Château-Chinon) (2019), II (1849-1892), III (Lettres à Marie), in 2019, 2020 and 2021 respectively",
       "portrayed by": "Jean Gigoux, Musée de Besançon, 902.6.1 (oil painting); Hyppolyte Masson, 1838, coll. Mennessier-Nodier (drawing)",
       "married to": "Jules Mennessier (1830)",
       "children": "Georgette, Emmanuel, Thècle, Marie-Victoire",
@@ -8549,9 +8559,11 @@
       "to": "Alexandre Dumas père",
       "connection_level": "direct",
       "relationship type": "friends; colleagues",
-      "correspondence": "1842 Dumas to Taylor, on his rejection from the Académie française: 'Au revoir, songez à mon Académie : chauffez Nodier, Barante et Molé. Ce sont, je crois, les trois personnes sur lesquelles vous avez le plus d'influence' (Challamel 1885, pp.183-84)",
+      "correspondence": [
+        "1842 Dumas to Taylor, on his rejection from the Académie française: 'Au revoir, songez à mon Académie : chauffez Nodier, Barante et Molé. Ce sont, je crois, les trois personnes sur lesquelles vous avez le plus d'influence' (Challamel 1885, pp.183-84)."
+      ],
       "collaborations": "as Administrateur général de la Comédie-Française, Taylor helps Dumas stage <i>Henri III et sa cour</i> (1829). Dumas dedicates the play to Taylor",
-      "bibliography": "Schopp 1993 (Correspondence); Challamel 1885"
+      "bibliography": "Schopp 1993; Challamel 1885"
     },
     {
       "from": "Adrien Dauzats",
@@ -8562,11 +8574,11 @@
       "interactions": "1830 they travel together to Egypt and the Middle East",
       "correspondence": [
         "Long correspondence from 1834 to 1851",
-        "1851 Nov, letter from Dumas to Dauzats: 'Mon cher Dauzats. Prêtez donc pour un jour ou deux votre costume de la femme espagnole à l'Ambigu—Je voudrais le faire faire au théâtre. Vous savez c'est la grand-mère de d'Ossun d'après Goya' (Dumas-Schopp 1993, p.169: Schopp identifies this work as María Josefa de la Soledad, Countess of Benavente, Duchess of Osuna, c.1785)."
+        "1851 Nov, letter from Dumas to Dauzats: 'Mon cher Dauzats. Prêtez donc pour un jour ou deux votre costume de la femme espagnole à l'Ambigu—Je voudrais le faire faire au théâtre. Vous savez c'est la grand-mère de d'Ossun d'après Goya' (Fayos Pérez 2024, Appendix II; Schopp 1993, p.169: Schopp identifies this work as María Josefa de la Soledad, Countess of Benavente, Duchess of Osuna, c.1785)."
         ],
       "mentions": "Dumas quotes Dauzats several times in his novels (<i>Le comte de Monte-Cristo</i>; <i<Le capitaine Pamphile</i>)",
       "collaborations": "they co-author <i>Quinze jours au Sinaï</i> (1838)",
-      "bibliography": "Dumas-Schopp 2014; Tinterow 2003; Schopp 1993.",
+      "bibliography": "Fayos-Pérez 2024; Dumas-Schopp 2014; Tinterow 2003; Schopp 1993.",
       "websites": "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)"
       },
     {
