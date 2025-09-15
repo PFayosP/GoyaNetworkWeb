@@ -388,7 +388,7 @@
       "in Spain": [
         "1832 with Baron Taylor",
         "1833 June-July with Baron Taylor",
-        "1835 Oct-1837 Oct: assists Baron Taylor in the acquisition of artworks for the Galerie espagnole. He meets Pharamond Blanchard, who introduces him to the Madrazo family. Meets prominent Spanish artists and develops an interest in Spanish art (see Tinterow 2003, p.180)."
+        "1835 Oct-1837 Oct: assists Baron Taylor in the acquisition of artworks for the Galerie espagnole. He meets Pharamond Blanchard, who introduces him to the Madrazo family. Meets prominent Spanish artists and develops an interest in Spanish art (see Tinterow 2003, p.180). He produces 3 notebooks of notes and drawings during this trip (Carnet de voyage en Espagne); see Archives."
         ],
       "author of": [
         "1820-63 illustrations for Baron Taylor's <i>Voyages Pittoresques et Romantiques de l'ancienne France</i>",
@@ -413,7 +413,10 @@
         "Bibliothèque historique de la Ville de Paris, [4-MS-3047](https://bibliotheques-specialisees.paris.fr/ark:/73873/FRCGMNOV-751045102-FG02C/A2002740): 12 letters 1860-1862 and non-dated.",
         "Schopp 1993."
       ],
-      "archives": "Bibliothèque historique de la Ville de Paris",
+      "archives": [
+        "Bibliothèque historique de la Ville de Paris",
+        "INHA: <i>Carnet de voyage en Espagne d'Adrien Dauzats: premier cahier, 1836-1837</i>, [INHA NUM MS 152 (1)](https://bibliotheque-numerique.inha.fr/collection/item/67877-carnet-de-voyage-en-espagne-d-adrien-dauzats-premier-cahier-1836-1837), <i>Deuxième cahier, 1837</i>, [INHA NUM MS 152 (2)](https://bibliotheque-numerique.inha.fr/collection/item/67886-carnet-de-voyage-en-espagne-d-adrien-dauzats-deuxieme-cahier-1837?offset=7), and <i>Troisième cahier, 1837</i>, [NUM MS 152 (3)](https://bibliotheque-numerique.inha.fr/collection/item/67885-carnet-de-voyage-en-espagne-d-adrien-dauzats-troisieme-cahier-1837?offset=1)."
+      ],
       "bibliography": "Tinterow 2003; Schopp 1993; Ghislaine Plessier, <i>Adrien Dauzats ou la Tentation de l'Orient</i>, exh. cat., Bordeaux, 1990; <i>Adrien Dauzats et les Voyages pittoresques et romantiques dans l'ancienne France du baron Taylor</i>, Fondation Taylor, 1990; Guinard 1967-B",
       "websites": "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Dauzats.jpg",
