@@ -3827,7 +3827,10 @@
       "dies in": "Versailles",
       "profession": "painter", 
       "in Paris": "in 1860 (disciple of Léon Cogniet)",
-      "exhibitions": "Exposition Universelle 1860 and 1889",
+      "exhibitions": [
+        "Exposition Universelle 1860 and 1889.",
+        "Recent years: Madrid 2025-2026 <i>Raimundo de Madrazo</i>, [Fundación Mapfre](https://www.fundacionmapfre.org/arte-y-cultura/exposiciones/sala-recoletos/raimundo-de-madrazo/) (cur. Amaya Alzaga)."
+      ],
       "collector of Goya's works": "1869 Perros y útiles de caza (tapestry cartoon), donated in 1894 to the Prado",
       "masters": "Léon Cogniet", 
       "portrayed by": "Federico de Madrazo (1875, Prado)",
@@ -3871,18 +3874,18 @@
       "masters": "Claudio Lorenzale",
       "author of": [
         "Painting: <i>La batalla de Tetuán</i> (1862-64); <i>Viejo desnudo al sol</i> (1863, Prado); <i>La vicaría</i> (1870).",
-        "Drawing: <i>Standing male nude facing front, with left hand leaning on a stone block</i>, c.1861, Prado D006227."
+        "Drawing: <i>Standing male nude facing front, with left hand leaning on a stone block</i>, c.1861, Prado D006227; <i>Etude de vieillard assis, de face, le menton dans la main</i>, 1864, Orsay RF 3887, Recto."
       ],
       "exhibitions": [
-        "Recent years: Castres 1974, <i>Mariano Fortuny et ses amis français</i>, Musée Goya"
+        "Recent years: Madrid 2017, <i>Fortuny (1838-1874)</i>, Prado (cur. Javier Barón); Castres 1974, <i>Mariano Fortuny et ses amis français</i>, Musée Goya"
       ],
       "portrayed by": "Federico de Madrazo, 1867, Museo Nacional de Arte de Cataluña; Charles Albert Bertall, photograph, <i>Mariano Fortuny Marsal and Cecilia de Madrazo</i>, c.1870, Prado HF04363; Francisco Domingo Marqués, c.1874-84, M. Bilbao 69/76",
       "link to Goya's work": "1872 Fortuny is mentioned as a great admirer of Goya and Meissonier (<i>Dictionnaire de la conversation et de la lecture</i>, Paris, ed. William Duckett, p.732) (Fayos Pérez 2024, Appendix II).",
       "married to": "Cecilia de Madrazo",
       "children": "Mariano; María Luisa",
       "parents": "Federico de Madrazo and Luisa Garreta",
-      "bibliography": "Fayos Pérez 2024",
-      "websites": "[Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7)",
+      "bibliography": "Daniel S. Ralston, PhD thesis, Columbia (unpublished); Javier Barón (ed.), exh. cat. Prado, 2017; Davillier 1875, <i>Fortuny sa vie, son œuvre, sa correspondance</i>",
+      "websites": "Prado, [entry of M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08); Prado, [Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); Orsay, [entry of M. Fortuny](https://www.musee-orsay.fr/en/ressources/artists-personalities-catalog/mariano-fortuny-y-marsal-12627)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Mariano_Fortuny_Marsal.jpg",
       "image source": "portrait by Federico de Madrazo, 1867, MNAC"
     },
