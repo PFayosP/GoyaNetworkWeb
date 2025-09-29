@@ -900,6 +900,7 @@ function showSection(section) {
   const bibliography = document.getElementById('bibliography');
   const artworks = document.getElementById('artworks'); 
   const cite = document.getElementById('cite');
+  const partners = document.getElementById('partners');
 
   layout.classList.add('hidden');
   aboutDiv.style.display = 'none';
@@ -907,6 +908,7 @@ function showSection(section) {
   bibliography.style.display = 'none';
   artworks.style.display = 'none';
   cite.style.display = 'none';
+  partners.style.display = 'none';
 
   if (section === 'network') {
     layout.classList.remove('hidden');
@@ -920,6 +922,8 @@ function showSection(section) {
     artworks.style.display = 'block';
   } else if (section === 'cite') {
   cite.style.display = 'block';
+  } else if (section === 'partners') {
+  partners.style.display = 'block';
   }
 }
 </script>
