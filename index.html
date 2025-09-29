@@ -453,7 +453,6 @@
       <button onclick="showSection('artworks')">Artworks</button>
       <button onclick="showSection('cite')">How to cite</button>
       <button id="newInBtn">New in</button>
-      <button onclick="showSection('partners')">Partners</button>
     </div>
     <div class="controls">
       <input type="text" id="searchInput" placeholder="Search..." class="search-bar">
@@ -561,7 +560,7 @@
     <p><strong>Team:</strong> The project began with initial contributions by Anita L Verő, PhD in Artificial Intelligence (University of Cambridge, 2022), computer scientist and founder of <a href="https://www.consonant-ai.com" target="_blank">ConsonantAI.</a></p>
     
     <p><strong>Methodology:</strong> Art historical research: based on bibliographic and archival sources.<br>
-Web development: built using HTML and JavaScript, with structured data in JSON, and version control and deployment through GitHub, developed with the assistance of ChatGPT (OpenAI) and DeepSeek (High-Flyer).</p>
+Web development: built using HTML and JavaScript, with structured data in JSON, and version control and deployment through GitHub, developed with the assistance of ChatGPT (OpenAI)</p>
 
     <p><strong>Funding:</strong> Work produced with the support of a 2024 Leonardo Grant (<a href="https://www.redleonardo.es/beneficiario/paula-fayos-perez/" target="_blank">Beca Leonardo</a>) for Scientific Research and Cultural Creation, <a href="https://www.fbbva.es/" target="_blank">BBVA Foundation.</a> The Foundation takes no responsibility for the opinions, statements and contents of this project, which are entirely the responsibility of its authors.</p>
   
@@ -712,8 +711,8 @@ Its code and structure are licensed under <a href="https://creativecommons.org/l
     <p>
     <strong>Catalogues raisonnés, key exhibition catalogues, and biography</strong> (see the Bibliography section):<br>
     <ul>
-      <li><strong>Full oeuvre:</strong> Juliet Wilson-Bareau & Pierre Gassier. <em>Vie et œuvre de Francisco Goya. L'œuvre complet illustré. Peintures, dessins, gravure</em>, 1970 (French); <em>The Life and Complete Work of Francisco Goya: With a Catalogue Raisonné of the Paintings, Drawings and Engravings</em>, 1971 (English); <em>Vida y obra de Francisco Goya: reproducción de su obra completa, pinturas, dibujos y grabados</em>, 1974 (Spanish). See also the catalogue of the retrospective exhibition <i>Goya</i>, Martin Schwander (ed.), Fondation Beyeler, 2021 (English/Spanish/German).</li>
-      <li><strong>Drawings:</strong> Manuela Mena-Marqués & José Manuel Matilla, <em>Catálogo Razonado de los Dibujos de Francisco de Goya, vol. 2 (1771-1792)</em>, with G. Maurer, G. Solache, J. Carrete, J. Wilson & V. Albarrán, 2018 (Spanish); <em>Goya: dibujos. 'Solo la voluntad me sobra'</em>, exh. cat., 2019 (Spanish/English); and Pierre Gassier, <em>Les dessins de Goya. Les albums</em>, 1973 (French), <em>Francisco Goya. Drawings. The Complete Albums</em>, 1973 (English).</li>
+      <li><strong>Full oeuvre:</strong> Juliet Wilson-Bareau & Pierre Gassier. <em>Vie et œuvre de Francisco Goya. L'œuvre complet illustré. Peintures, dessins, gravure</em>, 1970 (French); <em>The Life and Complete Work of Francisco Goya: With a Catalogue Raisonné of the Paintings, Drawings and Engravings</em>, 1971 (English). See also the catalogue of the retrospective exhibition <i>Goya</i>, Martin Schwander (ed.), Fondation Beyeler, 2021 (English/Spanish/German).</li>
+      <li><strong>Drawings:</strong> Manuela Mena-Marqués & José Manuel Matilla, <em>Catálogo Razonado de los Dibujos de Francisco de Goya, vol. 2 (1771-1792)</em>, with G. Maurer, G. Solache, J. Carrete, J. Wilson & V. Albarrán, 2018 (Spanish); and <em>Goya: dibujos. 'Solo la voluntad me sobra'</em>, exh. cat., 2019 (Spanish/English).</li>
       <li><strong>Prints:</strong> Tomas Harris, <em>Goya. Engravings and Lithographs</em>, 1964. Also Juan Carrete Parrondo & Jesusa Vega, <em>Goya grabador</em>, 1991.</li>
       <li><strong>Biography</strong>: Janis Tomlinson, <em>Goya: A Portrait of the Artist</em>, 2020 Princeton UP (English), 2022 Cátedra (Spanish).</li>
     </ul>
@@ -827,16 +826,6 @@ Its code and structure are licensed under <a href="https://creativecommons.org/l
   <div style="margin-top:0.5rem; font-size:0.75rem; color:#bbb;">Most recent first — click to jump to node</div>
 </div>
 
-<div id="partners" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6; text-align: center;">
-  <h2>Partners</h2>
-  <a href="https://artes-uk.org/" target="_blank">
-    <img src="images/ARTES_logo.jpg" alt="ARTES Logo" style="max-width: 220px; margin: 1rem auto; display:block;">
-  </a>
-  <p>
-    <a href="https://artes-uk.org/" target="_blank">ARTES: Iberian & Latin American Visual Culture Group</a>
-  </p>
-</div>
-
   <script>
   function downloadRIS() {
     const ris = `TY  - ELEC\nTI  - The Goya Network\nAU  - Fayos-Pérez, Paula\nA2  - Vero, Anita\nDA  - 2025///\nPY  - 2025\nLA  - English\nUR  - https://www.goyanetwork.com\nER  - `;
@@ -900,7 +889,6 @@ function showSection(section) {
   const bibliography = document.getElementById('bibliography');
   const artworks = document.getElementById('artworks'); 
   const cite = document.getElementById('cite');
-  const partners = document.getElementById('partners');
 
   layout.classList.add('hidden');
   aboutDiv.style.display = 'none';
@@ -908,7 +896,6 @@ function showSection(section) {
   bibliography.style.display = 'none';
   artworks.style.display = 'none';
   cite.style.display = 'none';
-  partners.style.display = 'none';
 
   if (section === 'network') {
     layout.classList.remove('hidden');
@@ -922,8 +909,6 @@ function showSection(section) {
     artworks.style.display = 'block';
   } else if (section === 'cite') {
   cite.style.display = 'block';
-  } else if (section === 'partners') {
-  partners.style.display = 'block';
   }
 }
 </script>
