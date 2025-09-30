@@ -4362,6 +4362,7 @@
       "knows Goya's works": "by 1829", 
       "portrayed by": "Émile Lassalle, 1840",
       "archives": "Musée des beaux-arts de Nancy (1,432 drawings), Musée lorrain (58 drawings),  Bibliothèque publique de Nancy (522 drawings), Bibliothèque nationale de France (BnF) (15 drawings), Musée Carnavalet (50 drawings)",
+      "conferences/seminars": "Frédéric Sardet, 'Les archives Rodolphe Töpffer : un patrimoine pour un musée de la bande dessinée ?', <i>Caricatures et cultures numériques</i>, Feb 2022, Université de Lausanne",
       "bibliography": "Fayos Pérez 2024; Baridon 2022; Fayos Pérez 2019-B; Kaenel 2005; Renonciat 1985",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Grandville.jpg",
       "image source": "Lassalle 1840"
@@ -4600,9 +4601,10 @@
       "author of": [
         "Essays/Art theory: <i>Essai de physiognomonie</i> (1845)",
         "Travel literature: from 1825 (<i>Voyage pittoresque au Grimsel</i>) to 1842 (<i>Voyage autour du Mont Blanc jusqu'à Zermatt</i> and <i>Derniers voyages en zigzag</i>).",
-        "<i>Bande déssinée</i> (which he called </i>littérature en estampes</i>): <i>Histoire de Monsieur Crépin</i> (produced 1827; published 1837); <i>Les Amours de monsieur Vieux Bois</i> (1827; 1837); <i>Docteur Festus</i> (1829; 1840); <i>Monsieur Tritrac</i> (1830; 1937); <i>Histoire de monsieur Vertpré et de mademoiselle d'Espagnac</i> (1830-40 unfinished); <i>Monsieur Trictrac</i> (1830; 1837); <i>Histoire de Monsieur Cryptogame</i> (1830; 1846); <i>L'Histoire de Monsieur Jabot</i> (1831; 1833); <i>Monsieur Pencil</i> (1840); <i>Histoire d'Albert</i> (1844; 1845). His works are reedited in 1860 by Garnier Frères, with the help of Töpffer's son François."
+        "<i>Bande déssinée</i> (which he called <i>littérature en estampes</i>): <i>Histoire de Monsieur Crépin</i> (produced 1827; published 1837); <i>Les Amours de monsieur Vieux Bois</i> (1827; 1837); <i>Docteur Festus</i> (1829; 1840); <i>Monsieur Tritrac</i> (1830; 1937); <i>Histoire de monsieur Vertpré et de mademoiselle d'Espagnac</i> (1830-40 unfinished); <i>Monsieur Trictrac</i> (1830; 1837); <i>Histoire de Monsieur Cryptogame</i> (1830; 1846); <i>L'Histoire de Monsieur Jabot</i> (1831; 1833); <i>Monsieur Pencil</i> (1840); <i>Histoire d'Albert</i> (1844; 1845). His works are reedited in 1860 by Garnier Frères, with the help of Töpffer's son François."
       ],
-      "interest in Spanish art": "letter from Töpffer to Sainte-Beuve (29 Dec 1840): 'Je n'ai pas lu beaucoup d'auterus, mais j'ai beaucoup lu les mêmes auteurs. Durant le collège, Florian, y compris son don Quichotte édulcoré.' (Buyssens & Candaux 2011, p.850).",
+      "interest in Spanish art": "letter from Töpffer to Sainte-Beuve (29 Dec 1840): 'Je n'ai pas lu beaucoup d'auterus, mais j'ai beaucoup lu les mêmes auteurs. Durant le collège, Florian, y compris son don Quichotte édulcoré' (Buyssens & Candaux 2011, p.850).",
+      "link to Goya's work": "an illustration in Töpffer's <i>Voyages et aventures du docteur Festus</i> (made in 1829, published 1840) reminds of Goya's <i>Capricho</i> 52, 'Lo que puede un sastre'. In turn, Töpffer's image might have inspired Daumier's 'The heroic courage of Don Carlos and Don Miguel' (Courage héroïque de Don Carlos et Don Miguel) (1834) (Fayos Pérez 2024, p.244, fig.III.41).",
       "portrayed by": "self-portrait, drawing, c.1820 (Bib. Genève); Firmin Massot, oil painting, 1821, Musée d'art et d'histoire, Ville de Genève (MAH); Jean-Léonard Lugardon, oil painting, c.1840 (Bib. Genève); Charles Alphonse Schmid, lithograph (after Lugardon); self-portrait, 1840, drawing; Jean-Charles Töpffer, bronze bust, 1879, Geneva",
       "bibliography": "Fayos Pérez 2024; Buyssens & Candaux, <i>Correspondance complète</i>, t.V (1840-1841), 2011; David Kunzle, <i>Father of the Comic Strip: Rodolphe Töpffer</i>, 2010; Kaenel 2005; Groensteen & Peeters, <i>L'invention de la bande dessinée</i>, 1994; Francis Lacassin, <i>Pour un neuvième art: la bande dessinée</i>, 1982",
       "websites": "[ToonsMag](https://www.toonsmag.com/rodolphe-topffer/); [Société d'études töpffériennes (Genève)](https://www.idref.fr/059762608); [lambiek.net](https://www.lambiek.net/artists/t/topffer.htm); [Wikipedia](https://fr.wikipedia.org/wiki/Rodolphe_T%C3%B6pffer)",
@@ -5805,7 +5807,7 @@
       "from": "Charles-Augustin Sainte-Beuve",
       "to": "Rodolphe Töpffer",
       "connection_level": "direct",
-      "relationship type": "acquaintances?",
+      "relationship type": "correspondents",
       "know each other since": "at least 1840",
       "mentions": "on 15 March 1841, Sainte-Beuve writes a piece ('Portraits') about Töpffer in the <i>Revue des Deux Mondes</i>",
       "correspondence": [
@@ -5820,7 +5822,7 @@
       "connection_level": "direct",
       "relationship type": "acquaintances? Töpffer knows about Daumier's work",
       "mentions": "1840, 29 Dec, letter from Töpffer to Charles-Augustin Sainte-Beuve: 'Il est certain que le genre est susceptible de donner des livres, des drames, des poèmes tout comme un autre, à quelques égards mieux qu'un autre, et je regrette que vos habiles et féconds artistes, Gavarni par exemple, et Daumier, ne l'aient pas tenté. Ils font des suites, c'est-à-dire des faces différentes d'une même idée ; ce sont des choses mises bout à bout, non des choses liées par une pensée'.",
-      "link to Goya's work": "an illustration in Töpffer's <i>Voyages et aventures du docteur Festus</i> (made in 1829, published 1840) might have been inspired by Goya's <i>Capricho</i> 52, 'Lo que puede un sastre', and, in turn, might have inspired Daumier's 'The heroic courage of Don Carlos and Don Miguel' (Courage héroïque de Don Carlos et Don Miguel) (1834) (Fayos Pérez 2024, p.244, fig.III.41).",
+      "link to Goya's work": "an illustration in Töpffer's <i>Voyages et aventures du docteur Festus</i> (made in 1829, published 1840) reminds of Goya's <i>Capricho</i> 52, 'Lo que puede un sastre'. In turn, Töpffer's image might have inspired Daumier's 'The heroic courage of Don Carlos and Don Miguel' (Courage héroïque de Don Carlos et Don Miguel) (1834) (Fayos Pérez 2024, p.244, fig.III.41).",
       "bibliography": "Fayos Pérez 2024"
     },
     {
@@ -5832,9 +5834,8 @@
       "mentions": [
         "Töpffer mentions Grandville in a letter to his cousin and publisher Jacques-Julien Dubochet (1841, 20 June): Grandville 'n'illustre pas, c'est un homme qui, à côté du poème, compose le sien dans une autre langue, langue merveilleuse que lui seul possède et que tout le monde comprend' (quoted in Kaenel 2005, pp.167-68; Yousif 2016, p.109). Töpffer considers that 'Grandville's immense talent needs free rein [...] Grandville's talent too important, too brilliant to be tied to a simplistic literary accompaniment [...] [he] must redirect his energies from illustration to creation. He must compose his own books, works that are completely independent of writer and word' (Yousif 2016, p.109).",
         "1841, 24 Jan, letter from Dubochet to Töpffer: 'Quant à Grandville vous avez réveillé en lui un désir qui le tourmente depuis longtemps et qui est précisément de faire ce que vous lui conseillez. Les travaux très nombreux et auxquels il se livre... l'ont toujours empêché de s'adonner à son goût. Il en avait été question lorsqu'on préparait <i>Les Animaux peints par eux-mêmes</i>; Grandville voulait qu'on se passa... de texte et qu'on donne simplement une légende de sa façon' (Yousif 2016, p.110).",
-        "'Töpffer's review and epistolary critiques brought Grandville public and private recognition as an artist, Rather than «habile dessinateur», Grandville became a poet, the king of all artists' (<i>L'Artiste</i>, review of <i>Les scènes de la vie privée et publique des animaux</i>, (22 July) 1841, p.167 (Yousif 2016, p.109)."
+        "'Töpffer's review and epistolary critiques brought Grandville public and private recognition as an artist, Rather than «habile dessinateur», Grandville became a poet, the king of all artists'; <i>L'Artiste</i>, review of <i>Les scènes de la vie privée et publique des animaux</i>, [22 July] 1841, p.167 (Yousif 2016, p.109)."
       ],
-      "link to Goya's work": "an illustration in Töpffer's <i>Voyages et aventures du docteur Festus</i> (made in 1829, published 1840) might have been inspired by Goya's <i>Capricho</i> 52, 'Lo que puede un sastre', and, in turn, might have inspired Daumier's 'The heroic courage of Don Carlos and Don Miguel' (Courage héroïque de Don Carlos et Don Miguel) (1834) (Fayos Pérez 2024, p.244, fig.III.41).",
       "websites": "[lambiek.net](https://www.lambiek.net/artists/t/topffer.htm)",
       "bibliography": "Yousif 2016; Kaenel 2005"
     },
