@@ -4572,6 +4572,44 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Goncourt_Jules.jpg",
       "image source": "Nadar photograph c.1877",
       "added": "2025-08-27"
+    },
+    {
+      "id": "Rodolphe Töpffer",
+      "label": "Töpffer",
+      "pseudonyms": "Simon de Nantua",
+      "life dates": "1799-1846", 
+      "nationality": "Swiss",
+      "born in": "Geneva",
+      "dies in": "Geneva",
+      "profession": "writer, caricaturist, cartoonist, politician, teacher, illustrator, pedagogue, comic artist, art theorist",
+      "parents": "father: Wolfgang Adam Toepffer (caricaturist)",
+      "siblings": "Ninette",
+      "married to": "Anne-Françoise Moulinié (Kity)",
+      "children": "Adèle-Froiçoise Töpffer, François Töpffer, Jean-Charles Töpffer, Françoise-Esther Töpffer",
+      "works for": "Université de Genève (from 1832) as lecturer of <i>Rhétorique et de Belles Lettres</i>",
+      "collaborates with": "<i>Revue des Deux Mondes</i>; <i>L'Illustration</i> (1845 reedition of <i>Histoire de Monsieur Cryptogame</i>)",
+      "lives in": "Geneva; Paris (1819-1820)",
+      "decorations/awards": "in 2021 Töpffer is posthumously included in the Will Eisner Hall of Fame (Comics Industry Awards)",
+      "political views": "conservative (unlike his father). He works as a conservative politician",
+      "curiosities": "he is considered the pioneer of European comics and the father of comic strips",
+      "influenced by": [
+        "Molière, Racine, Virgile, Tacite, Rousseau",
+        "Hogarth: letter from Töpffer to Sainte-Beuve (29 Dec 1840): '[...] à la même époque, je feuilletais avec non moins d'assiduité l'oeuvre d'Hogarth. [...] C'est Hogarth qui m'a initié à me plaire dans l'observation des hommes, et aussi à me passionner plus tard pour Shakespear, pour Richardson et les grands moraliste poètes de l'Ecole anglaise' (Buyssens & Candaux 2011, p.850)"
+      ],
+      "mentions": "Goethe: 'C'est vraiment trop drôle ! C'est étincelant de verve et d'esprit ! Quelques-unes de ces pages sont incomparables. S'il choisissait, à l'avenir, un sujet un peu moins frivole et devenait encore plus concis, il ferait des choses qui dépasseraient l'imagination' (Lacassin 1982, p.59).",
+      "author of": [
+        "Essays/Art theory: <i>Essai de physiognomonie</i> (1845)",
+        "Travel literature: from 1825 (<i>Voyage pittoresque au Grimsel</i>) to 1842 (<i>Voyage autour du Mont Blanc jusqu'à Zermatt</i> and <i>Derniers voyages en zigzag</i>).",
+        "<i>Bande déssinée</i> (which he called </i>littérature en estampes</i>): <i>Histoire de Monsieur Crépin</i> (produced 1827; published 1837); <i>Les Amours de monsieur Vieux Bois</i> (1827; 1837); <i>Docteur Festus</i> (1829; 1840); <i>Monsieur Tritrac</i> (1830; 1937); <i>Histoire de monsieur Vertpré et de mademoiselle d'Espagnac</i> (1830-40 unfinished); <i>Monsieur Trictrac</i> (1830; 1837); <i>Histoire de Monsieur Cryptogame</i> (1830; 1846); <i>L'Histoire de Monsieur Jabot</i> (1831; 1833); <i>Monsieur Pencil</i> (1840); <i>Histoire d'Albert</i> (1844; 1845). His works are reedited in 1860 by Garnier Frères, with the help of Töpffer's son François."
+      ],
+      "interest in Spanish art": "letter from Töpffer to Sainte-Beuve (29 Dec 1840): 'Je n'ai pas lu beaucoup d'auterus, mais j'ai beaucoup lu les mêmes auteurs. Durant le collège, Florian, y compris son don Quichotte édulcoré.' (Buyssens & Candaux 2011, p.850).",
+      "portrayed by": "self-portrait, drawing, c.1820 (Bib. Genève); Firmin Massot, oil painting, 1821, Musée d'art et d'histoire, Ville de Genève (MAH); Jean-Léonard Lugardon, oil painting, c.1840 (Bib. Genève); Charles Alphonse Schmid, lithograph (after Lugardon); self-portrait, 1840, drawing; Jean-Charles Töpffer, bronze bust, 1879, Geneva",
+      "bibliography": "Fayos Pérez 2024; Buyssens & Candaux, <i>Correspondance complète</i>, t.V (1840-1841), 2011; David Kunzle, <i>Father of the Comic Strip: Rodolphe Töpffer</i>, 2010; Kaenel 2005; Groensteen & Peeters, <i>L'invention de la bande dessinée</i>, 1994; Francis Lacassin, <i>Pour un neuvième art: la bande dessinée</i>, 1982",
+      "websites": "[ToonsMag](https://www.toonsmag.com/rodolphe-topffer/); [Société d'études töpffériennes (Genève)](https://www.idref.fr/059762608); [lambiek.net](https://www.lambiek.net/artists/t/topffer.htm); [Wikipedia](https://fr.wikipedia.org/wiki/Rodolphe_T%C3%B6pffer)",
+      "archives": "[Bibliothèque de Genève](https://www.bge-geneve.ch/iconographie/personne/rodolphe-topffer)",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Topffer.jpg",
+      "image source": "Jean-Léonard Lugardon, oil painting, c.1840",
+      "added": "2025-09-29"
     }
   ],
   "edges": [
@@ -5755,6 +5793,50 @@
       "connection_level": "direct?",
       "relationship type": "acquaintances?",
       "mentions": "Champfleury said of Philipon: 'il dirigeait les crayons d'un groupe nombreux, appelait à lui les jeunes gens, leur insufflait la flamme, donnait des idées à ceux qui n'en avaient pas'."
+    },
+    {
+      "from": "Charles Philipon",
+      "to": "Rodolphe Töpffer",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; colleagues",
+      "collaborations": "from 1839, Philipon reedited some of Töpffer's prints (made with autography), transferred to woodcuts by Cham (who was directly inspired by Töpffer in his own artworks)"
+    },
+    {
+      "from": "Charles-Augustin Sainte-Beuve",
+      "to": "Rodolphe Töpffer",
+      "connection_level": "direct",
+      "relationship type": "acquaintances?",
+      "know each other since": "at least 1840",
+      "mentions": "on 15 March 1841, Sainte-Beuve writes a piece ('Portraits') about Töpffer in the <i>Revue des Deux Mondes</i>",
+      "correspondence": [
+        "1840, 29 Dec, Töpffer to Sainte-Beuve: 'Au Louvre, où j'allais flâner, je me rangeais secrètement pour la <i>Méduse</i> de Géricault contre le <i>Pygmalion</i> de Girodet. Cette crise a passé aussi [...]' (Boissonnas 1996, p.129, note 83). 'C'est aussi à leur grand plaisir que, durant les soirées d'hiver, j'ai composé et dessiné sous leurs yeux ces histoires folles, mêlées d'un grain de sérieux, qui étaient destinées à un succès que j'étais bien loin de prévoir' (Buyssens & Candaux 2011, p.854; Groensteen et Peeters 1994, p.XIV; Bonnerot 1935, p.407).",
+        "1840, 29 Dec, Töpffer to Sainte-Beuve: 'Il est certain que le genre est susceptible de donner des livres, des drames, des poèmes tout comme un autre, à quelques égards mieux qu'un autre, et je regrette que vos habiles et féconds artistes, Gavarni par exemple, et Daumier, ne l'aient pas tenté. Ils font des suites, c'est-à-dire des faces différentes d'une même idée ; ce sont des choses mises bout à bout, non des choses liées par une pensée'."
+      ],
+      "bibliography": "Buyssens & Candaux 2011; Lucien Boissonnas, <i>Töpffer</i>, 1996; Groensteen et Peeters 1994; Jean Bonnerot, <i>Correspondance générale</i>, t.3, 1935; <i>Nouvelle correspondance de C. A. Sainte-Beuve: avec des notes de son dernier secrétaire</i>, 1880, Calmann Lévy [letters: XXXVIII (1841), XLI (1841), LXII (28 April 1846)]."
+    },
+    {
+      "from": "Honoré Daumier",
+      "to": "Rodolphe Töpffer",
+      "connection_level": "direct",
+      "relationship type": "acquaintances? Töpffer knows about Daumier's work",
+      "mentions": "1840, 29 Dec, letter from Töpffer to Charles-Augustin Sainte-Beuve: 'Il est certain que le genre est susceptible de donner des livres, des drames, des poèmes tout comme un autre, à quelques égards mieux qu'un autre, et je regrette que vos habiles et féconds artistes, Gavarni par exemple, et Daumier, ne l'aient pas tenté. Ils font des suites, c'est-à-dire des faces différentes d'une même idée ; ce sont des choses mises bout à bout, non des choses liées par une pensée'.",
+      "link to Goya's work": "an illustration in Töpffer's <i>Voyages et aventures du docteur Festus</i> (made in 1829, published 1840) might have been inspired by Goya's <i>Capricho</i> 52, 'Lo que puede un sastre', and, in turn, might have inspired Daumier's 'The heroic courage of Don Carlos and Don Miguel' (Courage héroïque de Don Carlos et Don Miguel) (1834) (Fayos Pérez 2024, p.244, fig.III.41).",
+      "bibliography": "Fayos Pérez 2024"
+    },
+    {
+      "from": "J. J. Grandville",
+      "to": "Rodolphe Töpffer",
+      "connection_level": "direct",
+      "relationship type": "mutual admiration; indirect acquaintances. They communicate through Dubochet, Grandville's publisher and Töpffer's cousin",
+      "exchanges": "Töpffer was a 'role model' for Grandville, as a 'physical and symbolic affirmation of the illustrator's potential', and of the victory of image vs. word (Yousif 2016, p.110).",
+      "mentions": [
+        "Töpffer mentions Grandville in a letter to his cousin and publisher Jacques-Julien Dubochet (1841, 20 June): Grandville 'n'illustre pas, c'est un homme qui, à côté du poème, compose le sien dans une autre langue, langue merveilleuse que lui seul possède et que tout le monde comprend' (quoted in Kaenel 2005, pp.167-68; Yousif 2016, p.109). Töpffer considers that 'Grandville's immense talent needs free rein [...] Grandville's talent too important, too brilliant to be tied to a simplistic literary accompaniment [...] [he] must redirect his energies from illustration to creation. He must compose his own books, works that are completely independent of writer and word' (Yousif 2016, p.109).",
+        "1841, 24 Jan, letter from Dubochet to Töpffer: 'Quant à Grandville vous avez réveillé en lui un désir qui le tourmente depuis longtemps et qui est précisément de faire ce que vous lui conseillez. Les travaux très nombreux et auxquels il se livre... l'ont toujours empêché de s'adonner à son goût. Il en avait été question lorsqu'on préparait <i>Les Animaux peints par eux-mêmes</i>; Grandville voulait qu'on se passa... de texte et qu'on donne simplement une légende de sa façon' (Yousif 2016, p.110).",
+        "'Töpffer's review and epistolary critiques brought Grandville public and private recognition as an artist, Rather than «habile dessinateur», Grandville became a poet, the king of all artists' (<i>L'Artiste</i>, review of <i>Les scènes de la vie privée et publique des animaux</i>, (22 July) 1841, p.167 (Yousif 2016, p.109)."
+      ],
+      "link to Goya's work": "an illustration in Töpffer's <i>Voyages et aventures du docteur Festus</i> (made in 1829, published 1840) might have been inspired by Goya's <i>Capricho</i> 52, 'Lo que puede un sastre', and, in turn, might have inspired Daumier's 'The heroic courage of Don Carlos and Don Miguel' (Courage héroïque de Don Carlos et Don Miguel) (1834) (Fayos Pérez 2024, p.244, fig.III.41).",
+      "websites": "[lambiek.net](https://www.lambiek.net/artists/t/topffer.htm)",
+      "bibliography": "Yousif 2016; Kaenel 2005"
     },
     {
       "from": "Edmond de Goncourt",
@@ -10179,6 +10261,13 @@
       "relationship type": "acquaintances"
     },
     {
+      "from": "Charles Baudelaire",
+      "to": "Charles-Augustin Sainte-Beuve",
+      "connection_level": "direct",
+      "relationship type": "acquaintances?",
+      "correspondence": "Fernand Vandérem, <i>Baudelaire et Sainte-Beuve. Nouvelle édition. Augmentée de notes et d'un chapitre inédit</i>, 1917, Paris, Henri Leclerc"
+    },
+    {
       "from": "Marquis de Custine",
       "to": "Fernando VII",
       "connection_level": "secondary",
@@ -11307,7 +11396,7 @@
         "Balzac collaborated in <i>Scènes de la vie privée et publique des animaux</i> (1842), alongside George Sand and Charles Nodier."
       ],
       "portraits": "Caricature of Balzac by Grandville in the <i>Grande course au clocher académique</i> [1839](https://www.parismuseescollections.paris.fr/fr/maison-de-balzac/oeuvres/grande-course-au-clocher-academique#infos-principales)",
-      "bibliography": "Yves Gagneux & Séverine Maréchal, <i>Balzac & Grandville: Une Fantaisie Mordante<i>, 2019"
+      "bibliography": "Yves Gagneux & Séverine Maréchal, <i>Balzac & Grandville: Une Fantaisie Mordante<i>, 2019; Keri Yousif, <i>Balzac, Grandville, and the Rise of Book Illustration</i>, 2016."
     },
     {
       "from": "J. J. Grandville",
