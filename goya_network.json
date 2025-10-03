@@ -1629,6 +1629,47 @@
       "added": "2025-10-03"
     },
     {
+      "id": "José Zorrilla",
+      "label": "Zorrilla",
+      "full name": "José Zorrilla y Moral",
+      "life dates": "1817-1893", 
+      "nationality": "Spanish",
+      "born in": "Valladolid",
+      "dies in": "Madrid",
+      "profession": "poet, playwright",
+      "studies in": "Real Universidad de Toledo (1833); Seminario de Nobles de Madrid (managed by Jesuits); Universidad de Valladolid",
+      "member of": "Real Academia Española (1848-1882); Board of the Teatro Español (1849)",
+      "lives in": "Valladolid, Burgos, Madrid, Bordeaux (1847), Paris, Mexico (1855-1865)",
+      "trips": "London (1853); 1866 La Habana, Saint-Nazaire, Paris, Lyon, Avignon, Nîmes, Perpignan, Barcelona, Valladolid",
+      "in Paris": [
+        "1845-1846: publishes his works with Baudry (1846-47; 1852). Befriends Alexandre Dumas père, Alfred de Musset, Victor Hugo, Théophile Gautier and George Sand. Writes for the <i>Revue des Deux Mondes</i>.",
+        "1850-[1855]: publishes another volume of works with Baudry; also <i>Granada. Poema oriental, precedido de la leyenda de Al-Hamar</i> (Pillet fils ainé, 1852).",
+        "1866 brief stay."
+      ],
+      "parents": "José Zorrilla Caballero and Nicomedes Moral Revenga",
+      "married to": "Florentina Matilde O'Reilly; Emilia Serrano de Wilson (writer, journalist and traveler)",
+      "partners/lovers": "many",
+      "author of": [
+        "Poetry: 1837 volume, inspired by Alphonse de Lamartine and Victor Hugo.",
+        "Plays: <i>Vivir loco y morir más</i> (1837: earliest); <i>Don Juan Tenorio</i> (1844): inspired by Tirso de Molina's <i>Burlador de Sevilla</i> (1612-25) and Alexandre Dumas père's <i>Don Juan de Marana</i> (in turn inspired by Prosper Mérimée's <i>Les Âmes du purgatoire</i>); <i>Sancho García</i> (1842); <i>El puñal del Godo</i> (1843); <i>El Alcalde Ronquillo</i> (1845); <i>El Rey loco</i> (1846); <i>Traidor, inconfeso y mártir</i> (1849).",
+        "Autobiography: <i>Recuerdos del tiempo viejo</i> (1880)."
+      ],
+      "writes in": [
+        "Spain: <i>El Artista</i> (1835), <i>El Español</i> (1840), <i>La Risa</i>, <i>El Pasatiempo</i> (1845), <i>El Museo Universal</i> (1866), <i>La Ilustración Española y Americana</i> (1877-1878), <i>La Revista contemporanea</i> (1878), <i>El Imparcial</i> (1880, 1893), <i>La Illustracion Iberica</i> (1883), <i>El Ateneo</i> (1889), <i>El Liberal</i> (1889, 1892, 1893).",
+        "France: <i>Revue des Deux Mondes</i>; <i>Musée des familles</i> (1843-70)."
+      ],
+      "curiosities": [
+        "He produces illustrations for the journal <i>Musée des familles</i> (1843-70) pretending to be an Italian artist.",
+        "He could have received the Légion d'Honneur but his personal scandals prevented it."
+      ],
+      "decorations/awards": "Cruz supernumeraria de la Real (1843); Distinguida Orden de Carlos III (1843)",
+      "portrayed by": "Antonio María Esquivel, <i>Los poetas contemporáneos. Una lectura de Zorrilla en el estudio del pintor</i>, Prado, 1846; unknown artist, photograph, 1850s; Federico de Madrazo, drawing, lith. by Bachiller, 1862 (<i>Gaceta de Teatros</i>)",
+      "websites": "[Cervantes Virtual](https://www.cervantesvirtual.com/portales/jose_zorrilla/biografia/); [Valladolid en su tinta](https://valladolidensutinta.es/la-azarosa-vida-de-jose-zorrilla-en-52-refrescos-iv/); [Estandarte](https://www.estandarte.com/noticias/autores/jose-zorrilla-escritor-romantico-_3933.html)",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Zorrilla.jpg",
+      "image source": "photograph 1850s",
+      "added": "2025-10-03"
+    },
+    {
       "id": "Stéphane Mallarmé",
       "label": "Mallarmé",
       "full name": "Étienne Mallarmé",
@@ -4798,6 +4839,93 @@
       "relationship type": "acquaintances",
       "they met": "in Paris, 1841, 30 Dec, and 1842, 6, 15 and 18 Jan. (LG 2016, pp.91-93).",
       "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "from": "Mariano José Larra",
+      "to": "José Zorrilla",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "mentions": "Zorrilla made a poem in Larra's memory when he died in 1837"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "María Cristina de Borbón-Dos Sicilias",
+      "connection_level": "secondary?",
+      "interactions": "before his death, María Cristina offered him a pension"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "Eugenia de Montijo",
+      "connection_level": "secondary?",
+      "mentions": "Zorrilla composed <i>Serenata morisca</i> for Eugenia (c.1853)"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "José de Espronceda",
+      "connection_level": "direct",
+      "relationship type": "friends"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "Alexandre Dumas père",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "c.1846",
+      "influence": "Zorrilla's famous play <i>Don Juan Tenorio</i> (1844) was inspired by Tirso de Molina's <i>Burlador de Sevilla</i> (1612-25) and Dumas's <i>Don Juan de Marana</i> (in turn inspired by Prosper Mérimée's <i>Les Âmes du purgatoire</i>)"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "Victor Hugo",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; influence",
+      "know each other since": "c.1846",
+      "influence": "Zorrilla's 1837 volume of poems was inspired by Hugo and Lamartine"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "Alphonse de Lamartine",
+      "connection_level": "secondary?",
+      "relationship type": "influence",
+      "influence": "Zorrilla's 1837 volume of poems was inspired by Lamartine and Hugo"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "Alfred de Musset",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "c.1846"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "Théophile Gautier",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "c.1846"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "George Sand",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "c.1846"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "Federico de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; portraitist-sitter",
+      "know each other since": "at least 1835",
+      "collaborations": "Zorrilla wrote for <i>El Artista</i> (1835)",
+      "portraits": "Madrazo made Zorrilla's portrait in 1862, published in the <i>Gaceta de Teatros</i>"
+    },
+    {
+      "from": "José de Zorrilla",
+      "to": "Pedro de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "friends",
+      "know each other since": "at least 1835",
+      "they share": "they studied Law together, but were equally attracted by literature and the arts",
+      "interactions": "Zorrilla discovered in Pedro's library the works of Chateaubriand, Alexandre Dumas père, Victor Hugo, Duque de Rivas and José de Espronceda"
     },
     {
       "from": "Mariano José Larra",
