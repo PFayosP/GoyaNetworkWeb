@@ -1586,6 +1586,48 @@
       "added": "2025-08-23"
     },
     {
+      "id": "Mariano José Larra",
+      "label": "Larra",
+      "full name": "Mariano José de Larra y Sánchez de Castro",
+      "pseudonyms": "Fígaro, el Pobrecito Hablador, el Duende, Andrés Niporesas, Juan Pérez de Munguía",
+      "life dates": "1809-1837", 
+      "nationality": "Spanish",
+      "born in": "Madrid",
+      "dies in": "Madrid",
+      "profession": "writer, journalist, art critic, politician, translator",
+      "writes in": "<i>El duende satírico del día</i> (1828); <i>El Pobrecito Hablador</i> (1832-33); <i>La Revista Española</i> (1833), <i>El Español</i>",
+      "founder of": "<i>El duende satírico del día</i> (1828), inspired by the British newspaper <i>The Spectator</i>; <i>El Pobrecito Hablador</i> (1832-33)",
+      "studies in": "Universidad de Valladolid",
+      "military activity": "1827 he enlists in the Voluntarios Realistas, an Absolutist paramilitary group",
+      "lives in": "Madrid, Paris, Corella (1822-23), Cáceres (1823-24), Aranda del Duero (1824 onwards), Valladolid (1824-25)",
+      "trips": "Lisbon (1835), London (1835), Brussels (1835), Paris (1835)",
+      "in Paris": [
+        "1813-1818: in 1813 (when Larra was 4 years old) his family went into exile with the defeath of Joseph Bonaparte because Larra's father was an <i>afrancesado</i>.",
+        "1835-1836: he (allegedly) meets Victor Hugo and Alexandre Dumas Père. He is in contact with the Parisian literary figures and the exiled Spaniards in the city."
+      ],
+      "political views": "Larra was against Absolutism and Carlism, as well as being critical of social ills like ignorance, retrograde mindset, and the lack of education and culture. Progressive and <i>ilustrado</i>. He supports the liberal Mendizábal; then works at the Moderate party (Ávila 1836).",
+      "parents": "Mariano de Larra y Langelot and María de los Dolores Sánchez de Castro",
+      "married to": "Josefa Wetoret Velasco (1829)",
+      "partners/lovers": "Dolores Armijo (1831-)",
+      "children": "Luis Mariano, Adela, Baldomera",
+      "mentions": [ 
+        "González Blanco 1909: 'La opinión dispuso que la novela fuese el género favorito, mimado del público--y en especial de las damas--durante todo el siglo pasado; y así se hizo. Las <i>fábulas amatorias</i>, como se dice en el <i>Index librorum prohibitorum</i>, al condenar las de Jorge Sand [George Sand], Eugenio Sue [Eugène Sue], Dumas [Alexandre Dumas Père] y Balzac [Honoré de Balzac], todos en montón (2)'. (2): '[...] nada menos que Larra, habló alguna vez de la influencia nefasta de las obras de Eugenio Sue (?), Alfredo de Vigny (!!) [Alfred de Vigny] y Balzac, sin hacer distinciones' (p.9)."
+      ],
+      "author of": [
+        "Journalistic pieces: 'Vuelva usted mañana', 'El castellano viejo', 'Entre qué gentes estamos', 'En este país', 'El casarse pronto y mal', 'Las palabras' (against censorship). Compilation: <i>Fígaro. Colección de artículos dramáticos, literarios, políticos y de costumbres</i> (c.1835)",
+        "Essay: <i>No más mostrador</i>, a costumbrist comedy (1831).",
+        "Historical novels: <i>Macías</i> (1833: censored); <i>El doncel de don Enrique el Doliente,</i> (1834).",
+        "Translation: of French pieces for the theatre businessman Juan Grimaldi (in 1830)."
+      ],
+      "curiosities": "his son Luis Mariano became a famous libretist of <i>zarzuelas</i>; his daughter Adela was allegedly the lover of King Amadeo de Saboya; her daughter Baldomera was a banker and was condemned to a prison sentence because of a pyramid scheme",
+      "portrayed by": "José Gutiérrez de la Vega, c.1835, oil painting, Museo del Romanticismo (Madrid)",
+      "bibliography": "A. Pérez (ed.), <i>Fígaro. Colección de artículos dramáticos, literarios, políticos y de costumbres</i>, RAE, 2016; Álvarez Barrientos. J., Ferri Coll, J. M. y Rubio Cremades, E. (eds.), <i>Larra en el mundo. La misión de un escritor moderno</i>, Univ. Alicante, 2011; <i>Larra: Fígaro de vuelta, 1809-2009</i>, catalogue and conference papers (2 vols.), BNE, 2009; Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203; M. J. de Larra, <i>Larra. Biografía de un hombre desesperado</i>, 2009; J. L. Varela, <i>Larra y España</i>, 1983; S. Kirkpatrick, <i>Larra, el laberinto inextricable de un romántico liberal</i>, 1977; González-Blanco, <i>Historia de la novela en España: desde el Romanticismo a nuestros días</i>, 1909; Mesonero Romanos, <i>Memorias de un setentón, natural y vecino de Madrid</i>, 1880",
+      "conferences/seminars": "Fundación Juan March, Madrid, 2005, <i>Originalidad literaria de Mariano José de Larra</i>, Domingo Ródenas de Moya, [link](https://www.march.es/es/madrid/conferencia/mariano-jose-larra-su-vida-su-obra-su-tiempo-ii-originalidad-literaria-mariano)",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Larra.jpg",
+      "image source": "Gutiérrez de la Vega c.1835",
+      "added": "2025-10-03"
+    },
+    {
       "id": "Stéphane Mallarmé",
       "label": "Mallarmé",
       "full name": "Étienne Mallarmé",
@@ -4755,6 +4797,43 @@
       "relationship type": "acquaintances",
       "they met": "in Paris, 1841, 30 Dec, and 1842, 6, 15 and 18 Jan. (LG 2016, pp.91-93).",
       "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "from": "Mariano José Larra",
+      "to": "José de Espronceda",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "they share": "similar social and professional circles. They were both key figures of the Spanish Romantic movement in literature",
+      "mentions": "Espronceda gave a speech at Larra's funeral in 1837, published in <i>El Español</i> (27 Feb 1837)"
+    },
+    {
+      "from": "Mariano José Larra",
+      "to": "Victor Hugo",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "they met": "in Paris in 1835-36",
+      "mentions": "Larra mentions Hugo's plays in Paris, such as <i>Lucrèce Borgia</i> and <i>Marie Tudor</i>"
+    },
+    {
+      "from": "Mariano José Larra",
+      "to": "Alexandre Dumas père",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "they met": "in Paris in 1835-36",
+      "collaborations": "in 1836 Larra translates Dumas's play <i>Antony</i> (1831)",
+      "mentions": [
+        "González Blanco 1909: 'La opinión dispuso que la novela fuese el género favorito, mimado del público--y en especial de las damas--durante todo el siglo pasado; y así se hizo. Las <i>fábulas amatorias</i>, como se dice en el <i>Index librorum prohibitorum</i>, al condenar las de Jorge Sand [George Sand], Eugenio Sue [Eugène Sue], Dumas [Alexandre Dumas Père] y Balzac [Honoré de Balzac], todos en montón (2)'. (2): '[...] nada menos que Larra, habló alguna vez de la influencia nefasta de las obras de Eugenio Sue (?), Alfredo de Vigny (!!) [Alfred de Vigny] y Balzac, sin hacer distinciones' (p.9).",
+        "González Blanco 1909: 'Las únicas reminiscencias que en el <i>Macías</i> [Larra's 1833 historical novel] he advertido son de un drama fracés anterior en pocos años al de Larra: el de Alejandro Dumas, <i>Henri III et sa cour</i>, estrenado en 1829' [...]. Quoting Enrique Piñeyro: 'La influencia de Dumas se siente demasiado en todo este acto tercero' (p.90).",
+        "González Blanco 1909: 'Cuando se verificó el estreno de la traducción del <i>Antony</i> de Dumas, Larra podía afirmar con tono convencido que nuestro paladar nacional, sin estragar aún, no resistía tales condimentos artísticos' (p.195)."
+      ],
+      "bibliography": "González-Blanco, <i>Historia de la novela en España: desde el Romanticismo a nuestros dias</i>, 1909; Mesonero Romanos, <i>Memorias de un setentón, natural y vecino de Madrid</i>, 1880; Gil de Zárate, <i>De la literatura española en el siglo XIX</i>, 1840"
+    },
+    {
+      "from": "Mariano José Larra",
+      "to": "Honoré de Balzac",
+      "connection_level": "secondary?",
+      "mentions": "González Blanco 1909: 'La opinión dispuso que la novela fuese el género favorito, mimado del público--y en especial de las damas--durante todo el siglo pasado; y así se hizo. Las <i>fábulas amatorias</i>, como se dice en el <i>Index librorum prohibitorum</i>, al condenar las de Jorge Sand [George Sand], Eugenio Sue [Eugène Sue], Dumas [Alexandre Dumas Père] y Balzac [Honoré de Balzac], todos en montón (2)'. (2): '[...] nada menos que Larra, habló alguna vez de la influencia nefasta de las obras de Eugenio Sue (?), Alfredo de Vigny (!!) [Alfred de Vigny] y Balzac, sin hacer distinciones' (p.9).",
+      "bibliography": "González-Blanco, <i>Historia de la novela en España : desde el Romanticismo a nuestros dias</i>, 1909"
     },
     {
       "from": "Mariano Salvador Maella",
@@ -8615,6 +8694,7 @@
     {
       "from": "Baron Taylor",
       "to": "Eugenio Ochoa",
+      "connection_level": "direct",
       "relationship type": "acquaintances?"
     },
     {
