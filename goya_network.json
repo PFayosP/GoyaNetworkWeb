@@ -4848,25 +4848,25 @@
       "mentions": "Zorrilla made a poem in Larra's memory when he died in 1837"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "María Cristina de Borbón-Dos Sicilias",
       "connection_level": "secondary?",
       "interactions": "before his death, María Cristina offered him a pension"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "Eugenia de Montijo",
       "connection_level": "secondary?",
       "mentions": "Zorrilla composed <i>Serenata morisca</i> for Eugenia (c.1853)"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "José de Espronceda",
       "connection_level": "direct",
       "relationship type": "friends"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "Alexandre Dumas père",
       "connection_level": "direct",
       "relationship type": "acquaintances",
@@ -4874,7 +4874,7 @@
       "influence": "Zorrilla's famous play <i>Don Juan Tenorio</i> (1844) was inspired by Tirso de Molina's <i>Burlador de Sevilla</i> (1612-25) and Dumas's <i>Don Juan de Marana</i> (in turn inspired by Prosper Mérimée's <i>Les Âmes du purgatoire</i>)"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "Victor Hugo",
       "connection_level": "direct",
       "relationship type": "acquaintances; influence",
@@ -4882,35 +4882,35 @@
       "influence": "Zorrilla's 1837 volume of poems was inspired by Hugo and Lamartine"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "Alphonse de Lamartine",
       "connection_level": "secondary?",
       "relationship type": "influence",
       "influence": "Zorrilla's 1837 volume of poems was inspired by Lamartine and Hugo"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "Alfred de Musset",
       "connection_level": "direct",
       "relationship type": "acquaintances",
       "know each other since": "c.1846"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "Théophile Gautier",
       "connection_level": "direct",
       "relationship type": "acquaintances",
       "know each other since": "c.1846"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "George Sand",
       "connection_level": "direct",
       "relationship type": "acquaintances",
       "know each other since": "c.1846"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "Federico de Madrazo",
       "connection_level": "direct",
       "relationship type": "acquaintances; portraitist-sitter",
@@ -4919,7 +4919,7 @@
       "portraits": "Madrazo made Zorrilla's portrait in 1862, published in the <i>Gaceta de Teatros</i>"
     },
     {
-      "from": "José de Zorrilla",
+      "from": "José Zorrilla",
       "to": "Pedro de Madrazo",
       "connection_level": "direct",
       "relationship type": "friends",
