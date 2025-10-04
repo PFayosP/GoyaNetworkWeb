@@ -6648,7 +6648,9 @@
       "from": "Isabel II",
       "to": "Infanta Luisa Fernanda",
       "connection_level": "direct",
-      "relationship type": "relatives; siblings, sisters"
+      "relationship type": "relatives; siblings, sisters",
+      "link to Goya's work": "<i>Portrait of Asensio Julià</i> (c.1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); then belonged to her sister Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II).",
+      "bibliography": "Fayos Pérez 2024; Tinterow 2003"
     },
     {
       "from": "Louis Philippe I",
@@ -6723,7 +6725,7 @@
       "to": "Isabel II",
       "connection_level": "direct",
       "relationship type": "relatives; brother-in-law, sister-in-law",
-      "link to Goya's work": "<i>Portrait of Asensio Julià</i> (c.1798): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II)."
+      "link to Goya's work": "<i>Portrait of Asensio Julià</i> (c.1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II)."
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
