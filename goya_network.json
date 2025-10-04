@@ -229,7 +229,7 @@
       "in Paris": [
         "1833 (1st trip; with Vicente Masarnau): he meets Baron Taylor and Adrien Dauzats.",
         "1837-1839 (portrays Adrien Dauzats 1837): he benefits from contacts with Baron Taylor. During these two years, he writes in his correspondence about the relationships he is establisthing with French painters (Romero Tobar 1997, p.217; González López 1994, pp.28-36).",
-        "1838 commission from Louis-Philippe for painting 'Godofredo de Bouillon' for Versailles."
+        "1838 commission from Louis-Philippe for the painting <i>Godofredo de Bouillon</i> for Versailles."
       ],
       "address": "1833 Paris: Hôtel Bourbonne-Les-Bains (very close to Adrien Dauzat's); 30 rue de la Tour de Auvergne (workshop) (by 1839)",
       "military activity": "enlisted as voluntary in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Santiago Masarnau, Vicente Masarnau, Pascual de Gayangos and Valentín Carderera",
@@ -388,7 +388,7 @@
       "in Spain": [
         "1832 with Baron Taylor",
         "1833 June-July with Baron Taylor",
-        "1835 Oct-1837 Oct: assists Baron Taylor in the acquisition of artworks for the Galerie espagnole. He meets Pharamond Blanchard, who introduces him to the Madrazo family. Meets prominent Spanish artists and develops an interest in Spanish art (see Tinterow 2003, p.180). He produces 3 notebooks of notes and drawings during this trip (Carnet de voyage en Espagne); see Archives."
+        "1835 Oct-1837 Oct: assists Baron Taylor in the acquisition of artworks for the Galerie espagnole (1838-48). He meets Pharamond Blanchard, who introduces him to the Madrazo family. Meets prominent Spanish artists and develops an interest in Spanish art (see Tinterow 2003, p.180). He produces 3 notebooks of notes and drawings during this trip (Carnet de voyage en Espagne); see Archives."
         ],
       "author of": [
         "1820-63 illustrations for Baron Taylor's <i>Voyages Pittoresques et Romantiques de l'ancienne France</i>",
@@ -430,7 +430,7 @@
       "profession": "painter, draughtsman",
       "in Spain": [
         "1824-1837 working as a painter and engraver; hired by José de Madrazo to make lithographic reproductions at the Real Museo in Madrid",
-        "1835-37 he assists Baron Taylor and Dauzats in acquiring paintings for Louis Philippe's Galerie espagnole"
+        "1835-37 he assists Baron Taylor and Dauzats in acquiring paintings for Louis Philippe's Galerie espagnole (1838-48)"
         ],
       "in Paris": "after 1837 (quoted by Valentín Carderera's diary) (Lanzarote Guiral 2016, p.537)",
       "author of": "<i>Course de taureaux dans un bourg d'Espagne</i> (Salon 1834)",
@@ -574,6 +574,80 @@
         ],
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Merimee.jpg",
       "image source": "Reutlinger photograph, 1850"
+    },
+    {
+      "id": "Louis Philippe I",
+      "label": "Louis-Philippe",
+      "full name": "Louis-Philippe d'Orléans",
+      "life dates": "1773-1850",
+      "nationality": "French",
+      "born in": "Paris",
+      "dies in": "Surrey (England)",
+      "parents": "Louis-Philippe d'Orléans, Duke of Orléans, and Marie-Adélaïde de Bourbon",
+      "married to": "Marie-Amélie de Bourbon-Siciles",
+      "children": "10, including Ferdinand-Philippe (Duke of Orleans), Louise (wife of Leopold I of Belgium), Marie, Louis, Clémentine, François, Henri (Duke of Aumale), and Prince Antoine, Duke of Montpensier (married to Luisa Fernanda de Borbón)",
+      "founder of": "Galerie espagnole at the Louvre (1838-48): a collection of Spanish paintings acquired by Baron Taylor and Adrien Dauzats in Spain c.1835-37 (in collaboration with Javier Goya, Federico de Madrazo, and Pharamond Blanchard)",
+      "art collection": "when the Galerie espagnole closed in 1848 with the defeat of his government, Louis-Philippe took the paintings with him to England as part of his private collection (although the had been acquired with the public <i>liste civile</i>).",
+      "collector of Goya's works": [
+        "Galerie espagnole (which he claimed as his personal collection): the original <i>Majas on a Balcony</i> (1808-12; private coll.), <i>Young women / The Letter</i> (1814-19; Lille), <i>The Forge</i> (c.1815-20; Frick), <i>Lazarillo de Tormes</i> (1808-12; private coll.), Asensio Julià (possibly c.1798, Thyssen 166 1971.1); the unlocated <i>A burial</i> and <i>Last prayer of a condemned man</i>; and according to Baron Taylor's catalogue, also <i>Old Women/Time</i> (Lille), a <i>Portrait of the Duchess of Alba</i> (Hispanic Society A102) and a <i>Portrait of Goya>/i> (unknwon) (Fayos Pérez 2024, p.49; Baticle & Marinas 1981, nos.82-90).",
+        "A portrait of Zurbarán (drawing) by Goya, acquired via Valentín Carderera in 1841 (Fayos Pérez 2024, p.45)."
+      ],
+      "address": "Palais-Royal (1830-31); Palais des Tuileries (1831-48); Claremont House (1848-50)",
+      "works as": "King of the French 1830-1848",
+      "portrayed by": "Horace Vernet or Carle Vernet, oil painting, date unknown, Versailles MV 5217; Nicolas Jacques, 1827, ivory miniature, Louvre 27237; Honoré Daumier, 1831, caricature as Gargantua; Winterhalter, 1839, oil painting, Versailles; Winterhalter, 1841, oil painting, Louvre; Jean-Auguste-Dominique Ingres, c.1842, drawing for stained glass; Lerebours et Claudet, photograph, 1842; unknown, photograph, 1840s",
+      "bibliography": "Fayos Pérez 2024; Tinterow 2003; Baticle & Marinas 1981",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Louis_Philippe.jpg",
+      "image source": "Winterhalter 1839",
+      "added": "2025-10-04"
+    },
+    {
+      "id": "Infanta Luisa Fernanda",
+      "label": "Luisa Fernanda",
+      "full name": "María Luisa Fernanda de Borbón y Borbón-Dos Sicilias",
+      "life dates": "1832-1897",
+      "nationality": "Spanish",
+      "born in": "Madrid",
+      "dies in": "Seville",
+      "lives in": "Madrid, Paris, Seville",
+      "parents": "Fernando VII and María Cristina de Borbón-Dos Sicilias",
+      "married to": "Prince Antoine, Duke of Montpensier (1846)",
+      "decorations/awards": "Infanta de España; Duchess of Montpensier",
+      "children": "10, including María Isabel, María Amelia, María Cristina, Mercedes (married to first cousin Alfonso XII), and Antonio (Duke of Galliera; married to first cousin Infanta Eulalia of Spain)",
+      "address": "Palacio Real de Madrid; Orléans-Borbón Palace (Sanlúcar de Barrameda); San Telmo Palace (Seville)",
+      "collector of Goya's works": [
+        "The original <i>Majas at the balcony</i>: sold by Javier Goya for 400 reales, catalogues as X24 in the 1812 inventory (Wilson-Bareau 1996); after passing through the Galerie, Louis Philippe I claimed it as part of his private collection and sold it for £70 at Christie's London in 1853 (lot 352) to Colnaghi; then acquired by Prince Antoine, Duke of Montpensier (Seville, San Telmo Palace); subsequently by Durand Ruel in 1911; now in a private collection in Switzerland (Fayos Pérez 2024, pp.49, 73).",
+        "<i>Portrait of Asensio Julià</i> (c.1798): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II)."
+      ],
+      "portrayed by": "Vicente López, 1842, oil painting; Winterhalter, 1847, oil painting (with black mantilla); Federico de Madrazo, 1847, oil painting, Museo del Romanticismo; Federico de Madrazo, 1851, oil painting, Palacio Real de Madrid; Jean Laurent, c.1860, photograph, Museo del Romanticismo; Julio Donon, c.1870, lithograph; unknwon, photograph (c.1880s-90s)",
+      "bibliography": "Fayos Pérez 2024; Tinterow 2003; Wilson-Bareau 1996",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Luisa_Fernanda.jpg",
+      "image source": "photograph c.1880s-90s",
+      "added": "2025-10-04"
+    },
+    {
+      "id": "Prince Antoine, Duke of Montpensier",
+      "label": "Montpensier",
+      "full name": "Antoine Marie Philippe Louis d'Orléans",
+      "life dates": "1824-1890",
+      "nationality": "French",
+      "born in": "Neuilly-sur-Seine",
+      "dies in": "Sanlúcar de Barrameda (Cádiz)",
+      "curiosities": "in 1870 he fought a duel against Infante Enrique, Duke of Seville, the brother of King Francisco, and killed him. He was convicted and sentenced to one month in prison",
+      "in Spain": "1848-[1868]",
+      "art collection": "he was an early collector of photography, including Spanish, French and British photographers",
+      "collector of Goya's works": [
+        "The original <i>Majas at the balcony</i>: sold by Javier Goya for 400 reales, catalogues as X24 in the 1812 inventory (Wilson-Bareau 1996); after passing through the Galerie, Louis Philippe I claimed it as part of his private collection and sold it for £70 at Christie's London in 1853 (lot 352) to Colnaghi; then acquired by Prince Antoine, Duke of Montpensier (Seville, San Telmo Palace); subsequently by Durand Ruel in 1911; now in a private collection in Switzerland (Fayos Pérez 2024, pp.49, 73).",
+        "<i>Portrait of Asensio Julià</i> (c.1798): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II)."
+      ],
+      "address": "Château de Neuilly (Neuilly-sur-Seine); Orléans-Borbón Palace (Sanlúcar de Barrameda); San Telmo Palace (Seville)",
+      "portrayed by": "Federico de Madrazo, 1851, oil painting; unknown, photograph, c.1860",
+      "parents": "Louis Philippe I and Maria Amalia of Naples and Sicily",
+      "married to": "Infanta Luisa Fernanda of Spain (1846)",
+      "children": "10, including María Isabel, María Amelia, María Cristina, Mercedes (married to first cousin Alfonso XII), and Antonio (Duke of Galliera; married to first cousin Infanta Eulalia of Spain)",
+      "bibliography": "Fayos Pérez 2024; Tinterow 2003; Wilson-Bareau 1996",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Montpensier.jpg",
+      "image source": "Madrazo portrait 1851",
+      "added": "2025-10-04"
     },
     {
       "id": "Eugenia de Montijo",
@@ -1473,9 +1547,9 @@
         "1874 <i>Histoire du romantisme</i>: 'Victor Hugo, s'il n'était pas poète, serait un peintre de premier ordre ; il excelle à mêler, dans des fantaisies sombres et farouches, les effets de clair-obscur de Goya à la terreur architecturale de Piranèse'; '[...] cette entente des terreurs nocturnes qu'on ne rencontre que dans les Caprices de Goya'; '[Louis Boulanger] Tantôt c'était Rubens, tantôt c'était Véronèse, et puis Titien ; d'autres fois, franchissant les monts, il allait à Velasquez et à Goya'."
         ],
       "in Spain": [
-        "He first knows Spain through Alfred de Musset's <i>Contes d'Espagne et d'Italie</i> (1829) and Victor Hugo's <i>Les Orientales</i> (1829)",
-        "In 1840, with Eugène Piot, watches Hugo's <i>Hernani</i> (translated by Eugenio Ochoa; Gautier praises the translation)",
-        "In 1846, invited by Louis-Philippe, to the wedding of the Duke of Montpensier with the Infanta Luisa Fernanda"
+        "He first knows Spain through Alfred de Musset's <i>Contes d'Espagne et d'Italie</i> (1829) and Victor Hugo's <i>Les Orientales</i> (1829).",
+        "In 1840, with Eugène Piot, watches Hugo's <i>Hernani</i> (translated by Eugenio Ochoa; Gautier praises the translation).",
+        "In 1846, invited by Louis-Philippe to the wedding of his son the Duke of Montpensier with the Infanta Luisa Fernanda in Madrid." 
         ],
       "studies in": "Lycée Louis-le-Grand (1820); Lycée Charlemagne, where he meets Gérard de Nerval (Gérard Labrunie)",
       "visits the Prado Museum": "in 1842 (mentions Goya in his account)",
@@ -1623,7 +1697,7 @@
       "curiosities": "his son Luis Mariano became a famous libretist of <i>zarzuelas</i>; his daughter Adela was allegedly the lover of King Amadeo de Saboya; her daughter Baldomera was a banker and was condemned to a prison sentence because of a pyramid scheme",
       "portrayed by": "José Gutiérrez de la Vega, c.1835, oil painting, Museo del Romanticismo (Madrid)",
       "bibliography": "A. Pérez (ed.), <i>Fígaro. Colección de artículos dramáticos, literarios, políticos y de costumbres</i>, RAE, 2016; Álvarez Barrientos. J., Ferri Coll, J. M. y Rubio Cremades, E. (eds.), <i>Larra en el mundo. La misión de un escritor moderno</i>, Univ. Alicante, 2011; <i>Larra: Fígaro de vuelta, 1809-2009</i>, catalogue and conference papers (2 vols.), BNE, 2009; Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203; M. J. de Larra, <i>Larra. Biografía de un hombre desesperado</i>, 2009; J. L. Varela, <i>Larra y España</i>, 1983; S. Kirkpatrick, <i>Larra, el laberinto inextricable de un romántico liberal</i>, 1977; González-Blanco, <i>Historia de la novela en España: desde el Romanticismo a nuestros días</i>, 1909; Mesonero Romanos, <i>Memorias de un setentón, natural y vecino de Madrid</i>, 1880",
-      "conferences/seminars": "Fundación Juan March, Madrid, 2005, <i>Originalidad literaria de Mariano José de Larra</i>, Domingo Ródenas de Moya, [link](https://www.march.es/es/madrid/conferencia/mariano-jose-larra-su-vida-su-obra-su-tiempo-ii-originalidad-literaria-mariano)",
+      "conferences/seminars": "Madrid BNE 2009, <i>Fígaro de vuelta</i>; Fundación Juan March, Madrid, 2005, <i>Originalidad literaria de Mariano José de Larra</i>, Domingo Ródenas de Moya, [link](https://www.march.es/es/madrid/conferencia/mariano-jose-larra-su-vida-su-obra-su-tiempo-ii-originalidad-literaria-mariano)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Larra.jpg",
       "image source": "Gutiérrez de la Vega c.1835",
       "added": "2025-10-03"
@@ -1651,7 +1725,7 @@
       "partners/lovers": "many",
       "author of": [
         "Poetry: 1837 volume, inspired by Alphonse de Lamartine and Victor Hugo.",
-        "Plays: <i>Vivir loco y morir más</i> (1837: earliest); <i>Don Juan Tenorio</i> (1844): inspired by Tirso de Molina's <i>Burlador de Sevilla</i> (1612-25) and Alexandre Dumas père's <i>Don Juan de Marana</i> (in turn inspired by Prosper Mérimée's <i>Les Âmes du purgatoire</i>); <i>Sancho García</i> (1842); <i>El puñal del Godo</i> (1843); <i>El Alcalde Ronquillo</i> (1845); <i>El Rey loco</i> (1846); <i>Traidor, inconfeso y mártir</i> (1849).",
+        "Plays: <i>Vivir loco y morir más</i> (1837: earliest); <i>Don Juan Tenorio</i> (1844): inspired by Tirso de Molina's <i>Burlador de Sevilla</i> (1612-25) and Alexandre Dumas père's <i>Don Juan de Marana</i> (1836; in turn inspired by Prosper Mérimée's <i>Les Âmes du purgatoire</i>); <i>Sancho García</i> (1842); <i>El puñal del Godo</i> (1843); <i>El Alcalde Ronquillo</i> (1845); <i>El Rey loco</i> (1846); <i>Traidor, inconfeso y mártir</i> (1849).",
         "Autobiography: <i>Recuerdos del tiempo viejo</i> (1880)."
       ],
       "writes in": [
@@ -2576,7 +2650,7 @@
         "1869 (Sotheby's): pieces acquired by the British Museum; Pieces by José de Madrazo", 
         "1875"
       ],
-      "collector of Goya's works": "<i>Femme à l'éventail</i> (1806-07) (1867 sale, lot 177): Musée du Louvre, RF 1132 [https://collections.louvre.fr/ark:/53355/cl010064756]",
+      "collector of Goya's works": "<i>Femme à l'éventail</i> (1806-07) (1867 sale, lot 177): Musée du Louvre, RF 1132 [https://collections.louvre.fr/ark:/53355/cl010064756]; copy of <i>Majas at the balcony</i> (Metropolitan 29.100.10), sold in 1867.",
       "curiosities": [
         "His residence in Madrid, the Palace of the Marquis of Salamanca, now belongs to the BBVA Foundation, where there are two works by Goya: a portrait of Carlos III as a hunter (c.1786), and the portrait of Don Pantaleón Pérez de Nenín (1808).", 
         "He gives his name to the Neighbourhood of Salamanca (Barrio de Salamanca) in Madrid, where he refurbished 14 blocks."
@@ -2682,15 +2756,18 @@
       "label": "Pérez Villaamil",
       "life dates": "1807-1854",
       "nationality": "Spanish",
-      "born in": "Ferrol",
+      "born in": "Ferrol (Galicia)",
+      "dies in": "Madrid",
       "profession": "painter, lithographer", 
       "parents": "Manuel Pérez de Villaamil",
       "lives in": "Madrid; France and Belgium.",
       "works for": "Isabel II (from 1844)",
+      "patrons": "Baron Taylor (for Louis-Philippe)",
       "works as": [
         "<i>Académico de mérito</i> (from 1835) and professor of landscape (from 1845) at the RABASF", 
         "Honorary <i>Pintor de cámara</i> of Isabel II (1840)"
       ],
+      "member of": "Académico de mérito de la RABASF (1825); Pintor honorario de cámara (1840)",
       "in Madrid": "from 1820; 1834-1840; 1844 (he meets Isabel II via the Marchioness of Santa Cruz).",
       "in Paris": "1840-44 (during the Espartero regency). In 1843 he meets King Louis-Philippe.",
       "influenced by": "David Roberts (whom he meets in Sevilla in 1833)",
@@ -2699,7 +2776,8 @@
       "trips": "Puerto Rico 1830",
       "author of": "1842-1850 <i>España artística y monumental</i>: published in Paris with Patricio de la Escosura.",
       "portrayed by": "Louis-Joseph Ghémar, drawing, 1850; Eugenio Lucas Velázquez, oil sketch.",
-      "bibliography": "Hopkins 2021;E. Arias Anglés, <i>El paisajista romántico Jenaro Pérez Villaamil</i>, 1986, CSIC; Xavier de Salas Bosch, 'Varias notas sobre Jenaro Pérez Villaamil', <i>Archivo Español de Arte</i>, vol.31, no.124, pp.273-98; Pérez Villaamil's diary, published by Méndez Casal in 1921, and Arias Anglés in 1986",
+      "bibliography": "Hopkins 2021; E. Arias Anglés, <i>El paisajista romántico Jenaro Pérez Villaamil</i>, 1986, CSIC; Xavier de Salas Bosch, 'Varias notas sobre Jenaro Pérez Villaamil', <i>Archivo Español de Arte</i>, vol.31, no.124, pp.273-98; Pérez Villaamil's diary, published by Méndez Casal in 1921, and Arias Anglés in 1986",
+      "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/perez-villaamil-y-duguet-genaro/630f8e4b-2e3e-49a0-b54b-fa79a8948b6f)",
       "decorations/awards": "Caballero de la Orden de Isabel la Católica (1838); Encomienda de la Orden de Isabel la Católica (1840); Caballero de la Orden Nacional de la Legión de Honor (1844); Cruz de la Orden de Carlos III (1844); Caballero de La Orden de Leopoldo (1845)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Perez_Villaamil.jpg",
       "image source": "Ghémar portrait 1850",
@@ -3617,8 +3695,10 @@
       "nationality": "Spanish",
       "married to": "Francisco de Asís, Duke of Cádiz (1846)",
       "children": "out of 12 pregnancies, 5 children survived: Infanta María Isabel, Alfonso XII, Infanta María del Pilar, Infanta María de la Paz, Infanta María Eulalia. Some of the children were allegedly born from extramarital relationships",
+      "collector of Goya's works": "<i>Portrait of Asensio Julià</i> (c.1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); then belonged to Isabel II (Tinterow 2003, p.408); her brother-in-law, Prince Antoine, Duke of Montpensier, owned it by 1858: hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II).",
       "portrayed by": "Carlos Luis de Ribera, <i>La reina niña Isabel II de España</i>, 1835, Museo del Romanticismo; Antonio María Esquivel, 1843, Museo de Bellas Artes de Sevilla; José Castelaro y Perea, 1844, <i>Isabel II jurando la Constitución de 1837</i>; Federico de Madrazo, 1844, RABASF; Jean Laurent, c.1860, photograph; L. Mouton, c.1868, photograph; Francisco Ortego, '¡A Francia!', caricature in <i>Gil Blas</i>, 4 Oct 1868; anonymous, c.1870, photograph (in exile in Paris); 1875, photograph (Queen Doña Isabel II of Spain with her three youngest daughters: Pilar, Paz and Eulalia); portrait of Isabel II and the King consort, photograph, before 1902",
       "curiosities": "an anonymous album of 107 drawings, <i>Los Borbones en pelota</i>, appeared showing sexually explicit images of the Queen with different men. Possible authors are the brothers Gustavo Adolfo and Valeriano Bécquer, or the draughtsman Francisco Ortego. It was in an unknown location until 1986 and is now held at the BNE. It was not officially published until 1991.",
+      "bibliography": "Fayos Pérez 2024; Tinterow 2003",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Isabel_II.jpg",
       "image source": "Jean Laurent, photograph, c.1860"
     },
@@ -5859,6 +5939,36 @@
     },
     {
       "from": "Jenaro Pérez Villaamil",
+      "to": "José Zorrilla",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; friends?",
+      "mentions": "Zorrilla praises his painting",
+      "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/perez-villaamil-y-duguet-genaro/630f8e4b-2e3e-49a0-b54b-fa79a8948b6f)"
+    },
+    {
+      "from": "Jenaro Pérez Villaamil",
+      "to": "Baron Taylor",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; patronage",
+      "artworks bought/sold": "Baron Taylor acquires several paintings from him for the collection of King Louis-Philippe",
+      "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/perez-villaamil-y-duguet-genaro/630f8e4b-2e3e-49a0-b54b-fa79a8948b6f)"
+    },
+    {
+      "from": "Jenaro Pérez Villaamil",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "they met": "in 1843"
+    },
+    {
+      "from": "Manuel Godoy",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "interactions": "from 1831 Godoy lives in Paris with his second wife Josefa Tudó (9 rue des Mathurins) and reeives a modest pension from Louis-Philippe"
+    },
+    {
+      "from": "Jenaro Pérez Villaamil",
       "to": "Eugenio Ochoa",
       "connection_level": "direct",
       "relationship type": "friends",
@@ -5976,6 +6086,13 @@
       "to": "Théophile Gautier",
       "connection_level": "secondary",
       "relationship type": "Gautier writes extensively about Goya (see Gautier's node). He also collects some works"
+    },
+    {
+      "from": "Louis Philippe I",
+      "to": "Théophile Gautier",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "interactions": "in 1846, Gautier is invited by Louis-Philippe to the wedding of his son the Duke of Montpensier with the Infanta Luisa Fernand in Madrid"
     },
     {
       "from": "Stéphane Mallarmé",
@@ -6496,6 +6613,117 @@
       "to": "Isabel II",
       "connection_level": "direct",
       "relationship type": "relatives; mother-daughter"
+    },
+    {
+      "from": "María Cristina de Borbón-Dos Sicilias",
+      "to": "Prince Antoine, Duke of Montpensier",
+      "connection_level": "direct",
+      "relationship type": "relatives; mother-in-law, son-in-law"
+    },
+    {
+      "from": "Carlos IV",
+      "to": "Infanta Luisa Fernanda",
+      "connection_level": "direct",
+      "relationship type": "relatives; grandfather-granddaughter"
+    },
+    {
+      "from": "María Luisa de Parma",
+      "to": "Infanta Luisa Fernanda",
+      "connection_level": "direct",
+      "relationship type": "relatives; grandmother-granddaughter"
+    },
+    {
+      "from": "Fernando VII",
+      "to": "Infanta Luisa Fernanda",
+      "connection_level": "direct",
+      "relationship type": "relatives; father-daughter"
+    },
+    {
+      "from": "María Cristina de Borbón-Dos Sicilias",
+      "to": "Infanta Luisa Fernanda",
+      "connection_level": "direct",
+      "relationship type": "relatives; mother-daughter"
+    },
+    {
+      "from": "Isabel II",
+      "to": "Infanta Luisa Fernanda",
+      "connection_level": "direct",
+      "relationship type": "relatives; siblings, sisters"
+    },
+    {
+      "from": "Louis Philippe I",
+      "to": "Infanta Luisa Fernanda",
+      "connection_level": "direct",
+      "relationship type": "relatives; father-in-law, daughter-in-law"
+    },
+    {
+      "from": "Federico de Madrazo",
+      "to": "Infanta Luisa Fernanda",
+      "connection_level": "direct",
+      "relationship type": "patronage; portraitist-sitter",
+      "know each other since": "at least 1847",
+      "portraits": "1847, oil painting, Museo del Romanticismo; 1851, oil painting, Palacio Real de Madrid"
+    },
+    {
+      "from": "Vicente López",
+      "to": "Infanta Luisa Fernanda",
+      "connection_level": "direct",
+      "relationship type": "patronage; portraitist-sitter",
+      "know each other since": "at least 1842",
+      "portraits": "1842, oil painting"
+    },
+    {
+      "from": "Jean Laurent",
+      "to": "Infanta Luisa Fernanda",
+      "connection_level": "direct",
+      "relationship type": "patronage; portraitist-sitter",
+      "know each other since": "c.1860",
+      "portraits": "c.1860, photograph"
+    },
+    {
+      "from": "Fernando VII",
+      "to": "Prince Antoine, Duke of Montpensier",
+      "connection_level": "direct",
+      "relationship type": "relatives; father-in-law, son-in-law"
+    },
+    {
+      "from": "María Cristina de Borbón-Dos Sicilias",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "relationship type": "relatives: <i>consuegros</i>; Louis-Philippe was the father-in-law of María Cristina's daughter, Infanta Luisa Fernanda"
+    },
+    {
+      "from": "Fernando VII",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "relationship type": "relatives: <i>consuegros</i>; Louis-Philippe was the father-in-law of Fernando VII's daughter, Infanta Luisa Fernanda"
+    },
+    {
+      "from": "Prince Antoine, Duke of Montpensier",
+      "to": "Federico de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "patronage; portraitist-sitter",
+      "portraits": "1851, oil painting, Palacio Real de Madrid"
+    },
+    {
+      "from": "Prince Antoine, Duke of Montpensier",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "relationship type": "relatives: father-son"
+    },
+    {
+      "from": "Prince Antoine, Duke of Montpensier",
+      "to": "Infanta Luisa Fernanda",
+      "connection_level": "direct",
+      "relationship type": "spouses; husband-wife (1846)",
+      "children": "10"
+    },
+    {
+      "from": "Prince Antoine, Duke of Montpensier",
+      "to": "Isabel II",
+      "connection_level": "direct",
+      "relationship type": "relatives; brother-in-law, sister-in-law",
+      "link to Goya's work": "<i>Portrait of Asensio Julià</i> (c.1798): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II)."
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
@@ -7479,7 +7707,7 @@
       "connection_level": "direct",
       "relationship type": "friends",
       "know each other since": "1833, during Federico's 1st trip to Paris (with Vicente Masarnau). Federico also meets Adrien Dauzats",
-      "collaborations": "c.1835-1837 the Madrazo family is involved in Taylor's acquisition of Spanish paintings for the Galerie espagnole"
+      "collaborations": "c.1835-1837 the Madrazo family is involved in Taylor's acquisition of Spanish paintings for the Galerie espagnole (1838-48)"
     },
     {
       "from": "Mariano Fortuny y Marsal",
@@ -7608,6 +7836,73 @@
       "to": "Pharamond Blanchard",
       "connection_level": "direct",
       "relationship type": "acquaintances; friends"
+    },
+    {
+      "from": "Jean-Auguste-Dominique Ingres",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; portraitist-sitter",
+      "portraits": "c.1842, drawing for stained glass"
+    },
+    {
+      "from": "Honoré Daumier",
+      "to": "Louis Philippe I",
+      "connection_level": "seconary?",
+      "relationship type": "caricaturist",
+      "portraits": "1831 Daumier's caricature of Louis-Philippe as the Rabelesian monster Gargantua sitting in a <i>chaise percée</i> while eating the civilians' contributions and defecating decorations and public jobs. In 1832 he was detained in the prison of Sainte-Pélagie (Paris) for it.",
+      "bibliography": "Fayos Pérez 2024"
+    },
+    {
+      "from": "Honoré Daumier",
+      "to": "Louis Philippe I",
+      "connection_level": "seconary?",
+      "relationship type": "caricaturist",
+      "portraits": "in 1831 he was persecuted for his famous <i>Poires</i> lampooning Louis-Philippe. He was condemned for 'outrages à la personne du roi', having to pay 2,000 fr. and spending 6 months at the Sainte-Pélagie prison",
+      "bibliography": "Fayos Pérez 2024"
+    },
+    {
+      "from": "Ernest Meissonier",
+      "to": "Louis Philippe I",
+      "connection_level": "seconary?",
+      "relationship type": "caricaturist",
+      "portraits": "the print <i>Un cauchemar</i> (A nightmare) (1834), ridiculing King Louis-Philippe, is anonymous but possibly made by Meissonier (Fayos Pérez 2024, pp.217-218)",
+      "link to Goya's work": "<i>Un cauchemar</i> is clearly inspired by Goya's <i>Capricho</i> 43, 'El sueño de la razón produce monstruos'",
+      "bibliography": "Baridon c.2026 (upcoming); Fayos Pérez 2024"
+    },
+    {
+      "from": "Baron Taylor",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "employment/patronage": "Baron Taylor was in charge of the acquisition of paintings c.1835-37 for the Galerie espagnole (1838-48), with the collaboration of Adrien Dauzats, Pharamond Blanchard, and partly via Javier Goya and Federico de Madrazo"
+    },
+    {
+      "from": "Adrien Dauzats",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "employment/patronage": "Baron Taylor was in charge of the acquisition of paintings c.1835-37 for the Galerie espagnole (1838-48), with the collaboration of Adrien Dauzats, Pharamond Blanchard, and partly via Javier Goya and Federico de Madrazo"
+    },
+    {
+      "from": "Pharamond Blanchard",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "employment/patronage": "Baron Taylor was in charge of the acquisition of paintings c.1835-37 for the Galerie espagnole (1838-48), with the collaboration of Adrien Dauzats, Pharamond Blanchard, and partly via Javier Goya and Federico de Madrazo"
+    },
+    {
+      "from": "Valentín Carderera",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "relationship type": "bussiness/art dealing; patronage",
+      "link to Goya's work": "Louis-Philippe acquired a portrait of Zurbarán (drawing) by Goya via Carderera in 1841 (Fayos Pérez 2024, p.45)",
+      "bibliography": "Fayos Pérez 2024"
+    },
+    {
+      "from": "Federico de Madrazo",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "relationship type": "bussiness/art dealing; patronage",
+      "link to Goya's work": "Louis-Philippe commissioned Baron Taylor and Adrien Dauzats to acquire the paintings c.1835-37 for the Galerie espagnole (1838-48), partly via the Madrazo family",
+      "patronage": "1838 Louis-Philippe commissioned Madrazo with the painting <i>Godofredo de Bouillon</i> for Versailles",
+      "bibliography": "Fayos Pérez 2024"
     },
     {
       "from": "Federico de Madrazo",
