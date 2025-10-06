@@ -322,6 +322,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       : 'unknown';
 
     document.getElementById("networkStats").innerHTML = `Nodes: ${data.nodes.length} | Connections: ${data.edges.length}<br><span style="font-size: 0.8rem; color: #999;">Last update: ${formattedUpdate}</span>`;
+    document.getElementById('distanceStats')?.remove();
 
 
     /* ---- NEW IN: funciones para la pestaña "New in" ---- */
@@ -1265,7 +1266,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       const strongAvg = strongN ? (strongSum/strongN) : 0;
       const weakAvg   = weakN   ? (weakSum/weakN)   : 0;
 
-      console.log(`Strong ties avg distance: ${Math.round(strongAvg)} px | Others: ${Math.round(weakAvg)} px`);
+      //console.log(`Strong ties avg distance: ${Math.round(strongAvg)} px | Others: ${Math.round(weakAvg)} px`);
       //const statsEl = document.getElementById("networkStats");
       //if (statsEl) {
         //let extraEl = document.getElementById("distanceStats");
@@ -1294,8 +1295,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // 3) New in (medio)
         doLater(() => buildNewInList(data));
-
-        doLater(() => measureStrongTieStats());
 
         // 4) Cargar imágenes de los nodos (coste mayor)
         doLater(() => {
