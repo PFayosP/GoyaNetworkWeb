@@ -156,17 +156,17 @@ document.addEventListener('DOMContentLoaded', async function () {
           const degree = edgeCount[node.id] || 1;
           const config = {
             ...node,
-            size: Math.min(20 + degree * 0.65, 46),
+            size: Math.min(14 + degree * 0.45, 34),   //antes: 20 + degree * 0.65, 46
             mass: 1 + degree * 0.15,
             font: {
-              size: Math.min(11 + degree * 0.6, 24),
+              size: Math.min(11 + degree * 0.4, 20),    //antes: 11 + degree * 0.6, 24
               color: '#ffffff',
               strokeWidth: 3,
               strokeColor: '#111111', 
               face: 'EB Garamond, serif',
               align: 'center',
               bold: true,
-              vadjust: -10
+              vadjust: -6    //antes: -10
             },
             color: { border: '#2B7CE9' },
             borderWidth: 2,
@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     });
 
+
     // Longitud por tipo de relación y nivel de conexión
     function getEdgeLength(edge) {
       // más cerca si es relación fuerte
@@ -218,7 +219,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 
     // Edges más transparentes (general)
-    const edges = new vis.DataSet(data.edges.map(edge => {
+    edges = new vis.DataSet(data.edges.map(edge => {
+
       const level = edge.connection_level || "direct";
 
       // Muestra etiqueta solo si es “direct” o “secondary”.
@@ -251,14 +253,66 @@ document.addEventListener('DOMContentLoaded', async function () {
           id: `__phys_${e.from}__${e.to}`,
           from: e.from,
           to: e.to,
-          length: 60,         // aún más corto que tus 70
+          length: 80,         // antes: 60
           physics: true,      // participa en física
           hidden: true,       // no se dibuja
           width: 0
         });
       }
     });
-    edges.add(helperEdges);
+    edges.add(helperEdges);        // ← ANCLA
+
+    // --- Hub invisible por componente de relaciones fuertes ---
+    const familyHubs = [];     // nodos invisibles
+    const familyHubEdges = []; // aristas invisibles al hub
+
+    // 1) Construir componentes con edges fuertes (union-find muy simple)
+    const parent = {};
+    const find = x => (parent[x] ?? x) === x ? x : (parent[x] = find(parent[x] ?? x));
+    const unite = (a,b) => { a=find(a); b=find(b); if(a!==b) parent[a]=b; };
+
+    (data.edges || []).forEach(e => {
+      if (isStrongTie(e)) {
+        parent[e.from] ??= e.from;
+        parent[e.to]   ??= e.to;
+        unite(e.from, e.to);
+      }
+    });
+
+    // 2) Agrupar por raíz
+    const groups = {};
+    Object.keys(parent).forEach(id => {
+      const root = find(id);
+      (groups[root] ??= []).push(id);
+    });
+
+    // 3) Crear un hub por grupo con ≥3 miembros (ajusta el umbral si quieres)
+    Object.values(groups).forEach(members => {
+      if (members.length < 3) return; // para parejas/duplas basta con los muelles 1:1
+      const hubId = `__fam__${members.slice(0,2).join('_')}_${members.length}`;
+      familyHubs.push({
+        id: hubId,
+        hidden: true,
+        physics: true,
+        mass: 0.5,
+        size: 1
+      });
+      members.forEach(id => {
+        familyHubEdges.push({
+          id: `__fam_e__${hubId}__${id}`,
+          from: hubId,
+          to: id,
+          hidden: true,
+          physics: true,
+          length: 95,    // tira del grupo hacia un centro “blando”
+          width: 0
+        });
+      });
+    });
+
+    // Añadir a los datasets
+    if (familyHubs.length) nodes.add(familyHubs);
+    if (familyHubEdges.length) edges.add(familyHubEdges);
 
 
     const lastModified = response.headers.get("Last-Modified");
@@ -607,11 +661,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 170,         // antes: 340 — esto separa más los nodos
-          centralGravity: 0.11,       // antes: 0.12 — más atracción hacia el centro
-          springLength: 100,         // antes: 110 (puedes dejar 100-110)
-          springConstant: 0.03,      // antes: 0.28
-          damping: 0.55               // Estabiliza más rápido sin perder suavidad
+          nodeDistance: 190,         // antes: 170 — esto separa más los nodos
+          centralGravity: 0.10,       // antes: 0.11 — más atracción hacia el centro
+          springLength: 100,         // antes: 100 (puedes dejar 100-110)
+          springConstant: 0.03,      // antes: 0.03
+          damping: 0.58               // antes: 0.55. Estabiliza más rápido sin perder suavidad
         },
         stabilization: {
           enabled: true,
@@ -634,7 +688,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 0.90; // 90% de la suma de radios: muy conservador
+      const minSepFactor = 1.05; // antes: 0.90
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
