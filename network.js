@@ -198,6 +198,14 @@ document.addEventListener('DOMContentLoaded', async function () {
       return STRONG_TIE_KEYWORDS.some(k => t.includes(k));
     }
 
+    const STRONG_PAIRS = new Set();
+    (data.edges || []).forEach(e => {
+      if (isStrongTie(e)) {
+        const a = String(e.from), b = String(e.to);
+        STRONG_PAIRS.add(a < b ? `${a}|${b}` : `${b}|${a}`);
+      }
+    });
+
     // Longitud por tipo de relación y nivel de conexión
     function getEdgeLength(edge) {
       // más cerca si es relación fuerte
@@ -234,6 +242,24 @@ document.addEventListener('DOMContentLoaded', async function () {
         width: 1.5
       };
     }));
+
+    // Refuerzo físico para relaciones fuertes: “muelles” invisibles y cortos
+    const helperEdges = [];
+    data.edges.forEach(e => {
+      if (isStrongTie(e)) {
+        helperEdges.push({
+          id: `__phys_${e.from}__${e.to}`,
+          from: e.from,
+          to: e.to,
+          length: 60,         // aún más corto que tus 70
+          physics: true,      // participa en física
+          hidden: true,       // no se dibuja
+          width: 0
+        });
+      }
+    });
+    edges.add(helperEdges);
+
 
     const lastModified = response.headers.get("Last-Modified");
 
@@ -581,10 +607,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 340,         // antes: 320 — esto separa más los nodos
+          nodeDistance: 170,         // antes: 340 — esto separa más los nodos
           centralGravity: 0.11,       // antes: 0.12 — más atracción hacia el centro
-          springLength: 110,         // Menos distancia ideal entre nodos
-          springConstant: 0.028,      // antes: 0.04 — esto afloja los "muelles"
+          springLength: 100,         // antes: 110 (puedes dejar 100-110)
+          springConstant: 0.03,      // antes: 0.28
           damping: 0.55               // Estabiliza más rápido sin perder suavidad
         },
         stabilization: {
@@ -621,6 +647,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           const ra = (dataById[a].size || 20);
           const rb = (dataById[b].size || 20);
           const minDist = (ra + rb) * minSepFactor;
+
+          const key = a < b ? `${a}|${b}` : `${b}|${a}`;
+          if (STRONG_PAIRS.has(key)) continue; // 👈 no separamos parejas/amistades fuertes
 
           if (dist < minDist) {
             const push = (minDist - dist) / 2;
@@ -665,6 +694,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       for (let j = i + 1; j < nodeArray.length; j++) {
         const node2 = nodeArray[j];
         const p2 = positions[node2.id];
+        const key = node1.id < node2.id ? `${node1.id}|${node2.id}` : `${node2.id}|${node1.id}`;
+        if (STRONG_PAIRS.has(key)) continue; // 👈 no separar relaciones fuertes
         
         const dx = p2.x - p1.x;
         const dy = p2.y - p1.y;
@@ -1159,6 +1190,33 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
+    function measureStrongTieStats() {
+      const pos = network.getPositions(nodes.getIds());
+      let strongSum = 0, strongN = 0, weakSum = 0, weakN = 0;
+
+      edges.get().forEach(e => {
+        // ignora los muelles invisibles
+        if (String(e.id).startsWith('__phys_')) return;
+
+        const a = pos[e.from], b = pos[e.to];
+        if (!a || !b) return;
+        const d = Math.hypot(a.x - b.x, a.y - b.y);
+
+        if (isStrongTie(e)) { strongSum += d; strongN++; }
+        else { weakSum += d; weakN++; }
+      });
+
+      const strongAvg = strongN ? (strongSum/strongN) : 0;
+      const weakAvg   = weakN   ? (weakSum/weakN)   : 0;
+
+      console.log(`Strong ties avg distance: ${Math.round(strongAvg)} px | Others: ${Math.round(weakAvg)} px`);
+      const statsEl = document.getElementById("networkStats");
+      if (statsEl) {
+        const extra = ` <span style="font-size:0.8rem;color:#9c9;">Strong≈${Math.round(strongAvg)}px</span> · <span style="font-size:0.8rem;color:#c99;">Others≈${Math.round(weakAvg)}px</span>`;
+        statsEl.innerHTML = statsEl.innerHTML.replace(/<br>.*$/s, '') + '<br>' + extra;
+      }
+    }
+
       // Después de crear el network, usa el hook de estabilización:
       network.once('stabilizationIterationsDone', () => {
         document.getElementById('loadingMessage').style.display = 'none';
@@ -1174,6 +1232,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // 3) New in (medio)
         doLater(() => buildNewInList(data));
+
+        doLater(() => measureStrongTieStats());
 
         // 4) Cargar imágenes de los nodos (coste mayor)
         doLater(() => {
