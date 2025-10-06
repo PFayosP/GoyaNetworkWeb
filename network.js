@@ -674,7 +674,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       },
       layout: {
-        improvedLayout: true,
+        improvedLayout: false,
         randomSeed: 1912  // Consistent layout
       }
     });
@@ -1117,7 +1117,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             let htmlText;
         
             // Debugging: Check the raw value
-            console.log("Raw value:", value);
+            // console.log("Raw value:", value);
         
             if (Array.isArray(value)) {
               // ✅ Si es un array de strings u objetos con imagen
@@ -1142,7 +1142,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
 
             // Debugging: Check the processed HTML
-            console.log("Processed HTML:", htmlText);
+            // console.log("Processed HTML:", htmlText);
         
             html += `<p style="margin-top:0.3rem;"><strong>${field.label}:</strong> ${htmlText}</p>`;
           }
@@ -1268,8 +1268,14 @@ document.addEventListener('DOMContentLoaded', async function () {
       console.log(`Strong ties avg distance: ${Math.round(strongAvg)} px | Others: ${Math.round(weakAvg)} px`);
       const statsEl = document.getElementById("networkStats");
       if (statsEl) {
-        const extra = ` <span style="font-size:0.8rem;color:#9c9;">Strong≈${Math.round(strongAvg)}px</span> · <span style="font-size:0.8rem;color:#c99;">Others≈${Math.round(weakAvg)}px</span>`;
-        statsEl.innerHTML = statsEl.innerHTML.replace(/<br>.*$/s, '') + '<br>' + extra;
+        let extraEl = document.getElementById("distanceStats");
+        if (!extraEl) {
+          extraEl = document.createElement("div");
+          extraEl.id = "distanceStats";
+          extraEl.style.fontSize = "0.8rem";
+          statsEl.appendChild(extraEl);
+        }
+        extraEl.innerHTML = `Strong≈${Math.round(strongAvg)}px · Others≈${Math.round(weakAvg)}px`;
       }
     }
 
