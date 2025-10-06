@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const degree = edgeCount[node.id] || 1;
           const config = {
             ...node,
-            size: Math.min(20 + degree * 0.65, 46),
+            size: Math.min(12 + degree * 0.4, 30),  //antes: (20 + degree * 0.65, 46)
             mass: 1 + degree * 0.15,
             font: {
               size: Math.min(11 + degree * 0.6, 24),
@@ -561,11 +561,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 250,         // antes: 340 
-          centralGravity: 0.15,       // antes: 0.10 
-          springLength: 80,         // antes: 100. 
-          springConstant: 0.05,      // antes: 0.03 — esto afloja los "muelles"
-          damping: 0.65               // antes: 0.55. Estabiliza más rápido sin perder suavidad
+          nodeDistance: 350,         // antes: 250  ← MÁS SEPARACIÓN
+          centralGravity: 0.12,       // antes: 0.15 ← MENOS GRAVEDAD
+          springLength: 120,         // antes: 80 ← MÁS LARGO
+          springConstant: 0.03,      // antes: 0.05 ← MÁS SUAVE
+          damping: 0.7              // antes: 0.65 ← MÁS ESTABLE
         },
         stabilization: {
           enabled: true,
@@ -633,7 +633,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('loadingMessage').style.display = 'none';
   
     // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 120;
+    const MIN_DISTANCE = 180;     // antes: 120 ← MÁS SEPARACIÓN
     const positions = network.getPositions();
     const updates = [];
     const nodeArray = nodes.get();

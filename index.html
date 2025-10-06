@@ -529,8 +529,8 @@
   </div>
     
   <div id="loadingMessage" style="text-align:center; padding: 2rem; font-size: 1.2rem;">
-    Loading network… <span id="loadingProgress">0%</span>
-  </div>
+  Loading network… <span id="loadingProgress">0%</span>
+</div>
   
   <!-- 🔧 Layout principal con grafo y panel de info -->
   <div class="layout-container visible" id="layout">
@@ -938,7 +938,16 @@ function showSection(section) {
 
   if (section === 'network') {
     layout.classList.remove('hidden');
-    if (window.showDefaultNodeInfo) window.showDefaultNodeInfo(); // ← NUEVA LÍNEA
+    if (window.showDefaultNodeInfo) {
+      window.showDefaultNodeInfo();
+    } else {
+      // Forzar la reconstrucción de la Members List si no está
+      setTimeout(() => {
+        if (window.buildMembersList && window.data) {
+          window.buildMembersList(window.data);
+        }
+      }, 100);
+    }
   } else if (section === 'about') {
     aboutDiv.style.display = 'block';
   } else if (section === 'contributors') {
