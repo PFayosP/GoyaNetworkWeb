@@ -1,181 +1,142 @@
-  console.log("✅ network.js CARGADO desde VS Code");
+let nodes, edges; // 👈 Hacemos estas variables globales
 
-  let nodes, edges, network, windowData;
+function autoLinkNames(text, nodesMap) {
+  if (!text || typeof text !== "string") return text;
 
-  // === FUNCIONES GLOBALES ===
-  function buildMembersList(data) {
-    console.log("🔄 buildMembersList ejecutándose");
-    const container = document.getElementById('membersList');
-    if (!container) {
-      console.error("❌ No se encontró #membersList");
-      return;
-    }
+  // Sustituye saltos de línea invisibles por espacio
+  text = text.replace(/\r?\n|\r/g, " ");
 
-    const names = (data.nodes || []).map(n => n.id).filter(Boolean);
-    const collator = new Intl.Collator(undefined, { sensitivity: 'base' });
-    names.sort((a,b) => collator.compare(surnameKey(a), surnameKey(b)));
+  // Divide el texto en partes: enlaces HTML intactos y el resto
+  const splitParts = text.split(/(<a [^>]+>.*?<\/a>)/g);
 
-    const esc = s => String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+  const processed = splitParts.map(part => {
+    if (part.startsWith('<a ')) return part; // ya es un enlace, no tocar
 
-    let html = '';
-    let currentLetter = '';
-    names.forEach(id => {
-      const key = surnameKey(id);
-      const letter = (key.charAt(0) || '#').toUpperCase();
-      if (letter !== currentLetter) {
-        if (currentLetter) html += '</ul>';
-        html += `<div class="section-heading" style="margin-top:0.8rem;">${letter}</div><ul style="list-style:none; padding-left:0.5rem; margin:0;">`;
-        currentLetter = letter;
-      }
-      html += `<li style="margin:0.1rem 0;"><a href="#" onclick="focusNode('${esc(id)}'); return false;" style="color:#66ccff; text-decoration:none;">${id}</a></li>`;
-    });
-    if (names.length) html += '</ul>';
-
-    container.innerHTML = html;
-    console.log("✅ Members list construida");
-  }
-
-  function buildNewInList(data) {
-    console.log("🔄 buildNewInList ejecutándose");
-    const container = document.getElementById('newInList');
-    if (!container) {
-      console.error("❌ No se encontró #newInList");
-      return;
-    }
-
-    const nodesWithDates = (data.nodes || []).filter(n => n.added || n.last_modified)
-      .map(n => ({ type: 'node', id: n.id, label: n.label || n.id, date: n.added || n.last_modified }));
-
-    const edgesWithDates = (data.edges || []).filter(e => e.last_modified)
-      .map(e => ({ type: 'edge', from: e.from, to: e.to, label: `${e.from} ↔ ${e.to}`, date: e.last_modified, edgeObj: e }));
-
-    const items = nodesWithDates.concat(edgesWithDates)
-      .sort((a,b) => new Date(b.date) - new Date(a.date));
-
-    if (!items.length) {
-      container.innerHTML = '<em>No hay marcas de fecha por nodo/edge.</em>';
-      return;
-    }
-
-    container.innerHTML = '';
-    items.slice(0, 30).forEach(item => {
-      const wrapper = document.createElement('div');
-      wrapper.style.marginBottom = '0.4rem';
-
-      const a = document.createElement('a');
-      a.href = '#';
-      a.className = 'newin-link';
-      a.style.color = '#66ccff';
-      a.textContent = item.type === 'node' ? item.label : `${item.label} (edge)`;
-
-      const dateSpan = document.createElement('span');
-      const dateStr = new Date(item.date).toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' });
-      dateSpan.textContent = ` — ${dateStr}`;
-      dateSpan.style.color = '#bbb';
-
-      a.onclick = (e) => {
-        e.preventDefault();
-        if (item.type === 'node') {
-          focusNode(item.id);
-        } else {
-          const match = edges.get().find(ed => ed.from === item.from && ed.to === item.to);
-          if (match) {
-            network.selectEdges([match.id]);
-            network.emit('click', { edges: [match.id], nodes: [] });
-          }
-        }
-        showNewInPanel(false);
-      };
-
-      wrapper.appendChild(a);
-      wrapper.appendChild(dateSpan);
-      container.appendChild(wrapper);
-    });
-    console.log("✅ New In list construida");
-  }
-
-  function showNewInPanel(show = true) {
-    const panel = document.getElementById('newInPanel');
-    if (!panel) {
-      console.error("❌ No se encontró #newInPanel");
-      return;
-    }
-    panel.style.display = show ? 'block' : 'none';
-    console.log("🔄 New In panel:", show ? "visible" : "oculto");
-  }
-
-  window.showDefaultNodeInfo = function () {
-    console.log("🔄 showDefaultNodeInfo ejecutándose");
-    const el = document.getElementById('nodeInfo');
-    if (!el) return;
-
-    el.innerHTML = `
-      <p>Click a <strong>node</strong> (an individual) or <strong>edge</strong> (a connection between two individuals) to view the data they contain.</p>
-      <p style="color: #ccc; margin-top: 1em;">(It might take a few seconds for the website to show the network)</p>
-
-      <div id="membersSection" style="margin-top: 1rem;">
-        <div class="section-heading">Members (A–Z by surname)</div>
-        <div id="membersList"></div>
-      </div>
-    `;
-
-    if (windowData) {
-      buildMembersList(windowData);
-    }
-  };
-
-  // === FUNCIONES AUXILIARES EXISTENTES (mantén las que ya tienes) ===
-  function autoLinkNames(text, nodesMap) {
-    if (!text || typeof text !== "string") return text;
-    text = text.replace(/\r?\n|\r/g, " ");
-    const splitParts = text.split(/(<a [^>]+>.*?<\/a>)/g);
-
-    const processed = splitParts.map(part => {
-      if (part.startsWith('<a ')) return part;
-      Object.keys(nodesMap).forEach(name => {
-        const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const regex = new RegExp(`(?<![\\w>])(${escapedName})(?![\\w<])`, "g");
-        part = part.replace(
-          regex,
-          `<a href="#" style="color:#66ccff" onclick="focusNode('${nodesMap[name].id}')">$1</a>`
-        );
-      });
-      return part;
+    Object.keys(nodesMap).forEach(name => {
+      const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`(?<![\\w>])(${escapedName})(?![\\w<])`, "g");
+      part = part.replace(
+        regex,
+        `<a href="#" style="color:#66ccff" onclick="focusNode('${nodesMap[name].id}')">$1</a>`
+      );
     });
 
-    return processed.join('');
-  }
+    return part;
+  });
 
-  function processMarkdownLinks(text) {
-    if (!text || typeof text !== "string") return text;
-    text = text.replace(/<i>/g, '%%%ITALIC_OPEN%%%').replace(/<\/i>/g, '%%%ITALIC_CLOSE%%%');
-    text = text.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, 
-      '<a href="$2" target="_blank" style="color:#66ccff;">$1</a>');
-    text = text.replace(/\(([^)]+)\)\[(https?:\/\/[^\]]+)\]/g, 
-      '(<a href="$2" target="_blank" style="color:#66ccff;">$1</a>)');
-    text = text.replace(/(\b[^\s\[\]]+\b)\s*\[(https?:\/\/[^\]]+)\]/g, 
-      '<a href="$2" target="_blank" style="color:#66ccff;">$1</a>');
-    text = text.replace(/%%%ITALIC_OPEN%%%/g, '<i>').replace(/%%%ITALIC_CLOSE%%%/g, '</i>');
-    return text;
-  }
+  return processed.join('');
+}
 
-  // === INICIALIZACIÓN PRINCIPAL ===
-  document.addEventListener('DOMContentLoaded', async function () {
-    console.log("🚀 DOMContentLoaded iniciado");
+function processMarkdownLinks(text) {
+  if (!text || typeof text !== "string") return text;
+  
+  // Preserve italics
+  text = text.replace(/<i>/g, '%%%ITALIC_OPEN%%%').replace(/<\/i>/g, '%%%ITALIC_CLOSE%%%');
+  
+  // Format 1: [text](url)
+  text = text.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, 
+    '<a href="$2" target="_blank" style="color:#66ccff;">$1</a>');
+  
+  // Format 2: (text)[url]
+  text = text.replace(/\(([^)]+)\)\[(https?:\/\/[^\]]+)\]/g, 
+    '(<a href="$2" target="_blank" style="color:#66ccff;">$1</a>)');
     
-    try {
-      const response = await fetch('goya_network.json');
-      if (!response.ok) throw new Error('Error cargando datos');
-      const data = await response.json();
-      windowData = data; // Guardar globalmente
-      
-      console.log("📊 Datos cargados:", data.nodes.length, "nodos", data.edges.length, "edges");
+  // Format 3: text [url] (fallback)
+  text = text.replace(/(\b[^\s\[\]]+\b)\s*\[(https?:\/\/[^\]]+)\]/g, 
+    '<a href="$2" target="_blank" style="color:#66ccff;">$1</a>');
+  
+  // Restore italics
+  text = text.replace(/%%%ITALIC_OPEN%%%/g, '<i>').replace(/%%%ITALIC_CLOSE%%%/g, '</i>');
+  
+  return text;
+}
 
-    // ... (todo el resto de tu código de inicialización de la red aquí)
-    // MANTÉN TODO el código que tienes desde const nodeInfo = document.getElementById('nodeInfo');
-    // hasta el final de tu archivo actual
+// Add these two functions at the top of network.js
+window.search = function() {
+  const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+  if (!searchInput) return;
+
+  // Find matching nodes
+  const matchingNodes = nodes.get().filter(node => 
+    node.id.toLowerCase().includes(searchInput) || 
+    (node.label && node.label.toLowerCase().includes(searchInput))
+  );
+
+  if (matchingNodes.length > 0) {
+    // Focus on first match
+    network.focus(matchingNodes[0].id, { animation: true });
+    // Select the node
+    network.selectNodes([matchingNodes[0].id]);
+    // Show node info
+    network.emit('click', { nodes: [matchingNodes[0].id] });
+  } else {
+    alert('No matching nodes found');
+  }
+};
+
+window.filterGraph = function() {
+  const professionFilter = document.getElementById('professionFilter').value;
+  const nationalityFilter = document.getElementById('nationalityFilter').value;
+  
+  // Clear previous highlights
+  clearHighlights();
+
+  if (!professionFilter && !nationalityFilter) return;
+
+  const matchingNodes = nodes.get().filter(node => {
+    const professionMatch = !professionFilter || 
+      (node.profession && node.profession.includes(professionFilter));
+    const nationalityMatch = !nationalityFilter || 
+      (node.nationality && node.nationality.includes(nationalityFilter));
+    return professionMatch && nationalityMatch;
+  });
+
+  if (matchingNodes.length > 0) {
+    // Highlight matching nodes
+    matchingNodes.forEach(node => {
+      nodes.update({ 
+        id: node.id, 
+        color: { ...node.color, border: 'red' }, 
+        borderWidth: 4 
+      });
+    });
+    
+    // Focus on the first matching node
+    network.focus(matchingNodes[0].id, { animation: true });
+    lastHighlightedNodes = matchingNodes.map(node => node.id);
+  } else {
+    alert('No nodes match the selected filters');
+  }
+};
+
+document.addEventListener('DOMContentLoaded', async function () {
+  // ——— Default snapshot del panel lateral (nodeInfo)
+  let __defaultNodeInfoHTML = null;
+  // Add this right after: document.addEventListener('DOMContentLoaded', async function () {
+  try {
+        // ADD THESE LINES:
+        const preloadImages = (nodes) => {
+            const promises = nodes
+                .filter(node => node.image)
+                .map(node => {
+                    return new Promise((resolve) => {
+                        const img = new Image();
+                        img.src = node.image;
+                        img.onload = resolve;
+                        img.onerror = resolve;
+                    });
+                });
+            return Promise.all(promises);
+        };
+    
+        // Load the network data
+        const response = await fetch('goya_network.json');
+        if (!response.ok) throw new Error('Error cargando datos');
+        const data = await response.json();
         
-        
+        // Start image preloading
+        // const imagePreload = preloadImages(data.nodes);
+
         // Existing setup code
         const nodeInfo = document.getElementById('nodeInfo');
         nodeInfo.style.maxHeight = '810px';
@@ -195,17 +156,17 @@
           const degree = edgeCount[node.id] || 1;
           const config = {
             ...node,
-            size: Math.min(14 + degree * 0.45, 34),   //antes: 20 + degree * 0.65, 46
+            size: Math.min(20 + degree * 0.65, 46),
             mass: 1 + degree * 0.15,
             font: {
-              size: Math.min(11 + degree * 0.4, 20),    //antes: 11 + degree * 0.6, 24
+              size: Math.min(11 + degree * 0.6, 24),
               color: '#ffffff',
               strokeWidth: 3,
               strokeColor: '#111111', 
               face: 'EB Garamond, serif',
               align: 'center',
               bold: true,
-              vadjust: -6    //antes: -10
+              vadjust: -10
             },
             color: { border: '#2B7CE9' },
             borderWidth: 2,
@@ -217,49 +178,9 @@
           nodesMap[node.id] = config;
           return config;
         }));
-    
-    // ——— RELACIONES FUERTES: estarán físicamente más cerca ———
-    const STRONG_TIE_KEYWORDS = [
-      'spouse',          // spouses
-      'married',         // married to, married in
-      'sibling',         // siblings
-      'partner',
-      'lover',
-      'brother', 'sister',
-      'father', 'mother', 'son', 'daughter', // father-son, mother-daughter, etc.
-      'master', 'student',                   // master-student
-      'friend'                               // friends
-    ];
-
-    // Devuelve true si el edge es “fuerte”
-    function isStrongTie(edge) {
-      const t = String(edge['relationship type'] || edge.title || '').toLowerCase();
-      return STRONG_TIE_KEYWORDS.some(k => t.includes(k));
-    }
-
-    const STRONG_PAIRS = new Set();
-    (data.edges || []).forEach(e => {
-      if (isStrongTie(e)) {
-        const a = String(e.from), b = String(e.to);
-        STRONG_PAIRS.add(a < b ? `${a}|${b}` : `${b}|${a}`);
-      }
-    });
-
-
-    // Longitud por tipo de relación y nivel de conexión
-    function getEdgeLength(edge) {
-      // más cerca si es relación fuerte
-      if (isStrongTie(edge)) return 70;             // << muy cerca
-      // para tus “secondary” dejamos algo más largo
-      if (edge.connection_level === 'secondary') return 220;
-      // resto (direct, etc.)
-      return 140;                                   // ~ un poco más corto que tu springLength global
-    }
-
 
     // Edges más transparentes (general)
-    edges = new vis.DataSet(data.edges.map(edge => {
-
+    const edges = new vis.DataSet(data.edges.map(edge => {
       const level = edge.connection_level || "direct";
 
       // Muestra etiqueta solo si es “direct” o “secondary”.
@@ -278,81 +199,10 @@
         ...edge,
         label,
         title,
-        length: getEdgeLength(edge),             // ← NUEVO: acerca o aleja según relación
         color: { color: level === "secondary" ? "rgba(255,215,0,0.4)" : "rgba(200,200,200,0.25)" },
         width: 1.5
       };
     }));
-
-    // Refuerzo físico para relaciones fuertes: “muelles” invisibles y cortos
-    const helperEdges = [];
-    data.edges.forEach(e => {
-      if (isStrongTie(e)) {
-        helperEdges.push({
-          id: `__phys_${e.from}__${e.to}`,
-          from: e.from,
-          to: e.to,
-          length: 80,         // antes: 60
-          physics: true,      // participa en física
-          hidden: true,       // no se dibuja
-          width: 0
-        });
-      }
-    });
-    edges.add(helperEdges);        // ← ANCLA
-
-    // --- Hub invisible por componente de relaciones fuertes ---
-    const familyHubs = [];     // nodos invisibles
-    const familyHubEdges = []; // aristas invisibles al hub
-
-    // 1) Construir componentes con edges fuertes (union-find muy simple)
-    const parent = {};
-    const find = x => (parent[x] ?? x) === x ? x : (parent[x] = find(parent[x] ?? x));
-    const unite = (a,b) => { a=find(a); b=find(b); if(a!==b) parent[a]=b; };
-
-    (data.edges || []).forEach(e => {
-      if (isStrongTie(e)) {
-        parent[e.from] ??= e.from;
-        parent[e.to]   ??= e.to;
-        unite(e.from, e.to);
-      }
-    });
-
-    // 2) Agrupar por raíz
-    const groups = {};
-    Object.keys(parent).forEach(id => {
-      const root = find(id);
-      (groups[root] ??= []).push(id);
-    });
-
-    // 3) Crear un hub por grupo con ≥3 miembros (ajusta el umbral si quieres)
-    Object.values(groups).forEach(members => {
-      if (members.length < 3) return; // para parejas/duplas basta con los muelles 1:1
-      const hubId = `__fam__${members.slice(0,2).join('_')}_${members.length}`;
-      familyHubs.push({
-        id: hubId,
-        hidden: true,
-        physics: true,
-        mass: 0.5,
-        size: 1
-      });
-      members.forEach(id => {
-        familyHubEdges.push({
-          id: `__fam_e__${hubId}__${id}`,
-          from: hubId,
-          to: id,
-          hidden: true,
-          physics: true,
-          length: 95,    // tira del grupo hacia un centro “blando”
-          width: 0
-        });
-      });
-    });
-
-    // Añadir a los datasets
-    if (familyHubs.length) nodes.add(familyHubs);
-    if (familyHubEdges.length) edges.add(familyHubEdges);
-
 
     const lastModified = response.headers.get("Last-Modified");
 
@@ -361,7 +211,6 @@
       : 'unknown';
 
     document.getElementById("networkStats").innerHTML = `Nodes: ${data.nodes.length} | Connections: ${data.edges.length}<br><span style="font-size: 0.8rem; color: #999;">Last update: ${formattedUpdate}</span>`;
-    document.getElementById('distanceStats')?.remove();
 
 
     /* ---- NEW IN: funciones para la pestaña "New in" ---- */
@@ -434,17 +283,12 @@
       });
     }
 
-    // Listener para "New in" - versión mejorada
-    document.addEventListener('click', function(e) {
+    // Conectar el botón (pon esto en el mismo scope que tu otro JS)
+    document.addEventListener('click', function (e) {
       if (e.target && e.target.id === 'newInBtn') {
         const panel = document.getElementById('newInPanel');
-        if (!panel) {
-          console.error("❌ No se encontró #newInPanel");
-          return;
-        }
-        const isVisible = panel.style.display === 'block';
-        showNewInPanel(!isVisible);
-        e.preventDefault();
+        if (!panel) return;
+        showNewInPanel(panel.style.display === 'block' ? false : true);
       }
     });
 
@@ -706,21 +550,20 @@
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 190,
-          centralGravity: 0.10,
-          springLength: 100,
-          springConstant: 0.03,
-          damping: 0.58
+          nodeDistance: 340,         // antes: 320 — esto separa más los nodos
+          centralGravity: 0.11,       // antes: 0.12 — más atracción hacia el centro
+          springLength: 110,         // Menos distancia ideal entre nodos
+          springConstant: 0.028,      // antes: 0.04 — esto afloja los "muelles"
+          damping: 0.55               // Estabiliza más rápido sin perder suavidad
         },
         stabilization: {
           enabled: true,
-          iterations: 120,     // antes 80
+          iterations: 120,      // antes: 200
           updateInterval: 10
         }
       },
-
       layout: {
-        improvedLayout: false,
+        improvedLayout: true,
         randomSeed: 1912  // Consistent layout
       }
     });
@@ -734,7 +577,7 @@
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 1.05; // antes: 0.90
+      const minSepFactor = 0.90; // 90% de la suma de radios: muy conservador
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
@@ -747,9 +590,6 @@
           const ra = (dataById[a].size || 20);
           const rb = (dataById[b].size || 20);
           const minDist = (ra + rb) * minSepFactor;
-
-          const key = a < b ? `${a}|${b}` : `${b}|${a}`;
-          if (STRONG_PAIRS.has(key)) continue; // 👈 no separamos parejas/amistades fuertes
 
           if (dist < minDist) {
             const push = (minDist - dist) / 2;
@@ -794,10 +634,6 @@
       for (let j = i + 1; j < nodeArray.length; j++) {
         const node2 = nodeArray[j];
         const p2 = positions[node2.id];
-          // ⛔ Si alguno de los nodos no tiene posición, saltar
-          if (!p1 || !p2) continue;
-        const key = node1.id < node2.id ? `${node1.id}|${node2.id}` : `${node2.id}|${node1.id}`;
-        if (STRONG_PAIRS.has(key)) continue; // 👈 no separar relaciones fuertes
         
         const dx = p2.x - p1.x;
         const dy = p2.y - p1.y;
@@ -822,6 +658,9 @@
     if (updates.length > 0) {
       nodes.update(updates);
     }
+
+    // FORZAR la física a estabilizar con las nuevas posiciones
+    network.stabilize();
 
     // 🔁 Ahora sí: detener la física
     network.setOptions({ physics: { enabled: false } });
@@ -1160,7 +999,7 @@
             let htmlText;
         
             // Debugging: Check the raw value
-            // console.log("Raw value:", value);
+            console.log("Raw value:", value);
         
             if (Array.isArray(value)) {
               // ✅ Si es un array de strings u objetos con imagen
@@ -1185,7 +1024,7 @@
             }
 
             // Debugging: Check the processed HTML
-            // console.log("Processed HTML:", htmlText);
+            console.log("Processed HTML:", htmlText);
         
             html += `<p style="margin-top:0.3rem;"><strong>${field.label}:</strong> ${htmlText}</p>`;
           }
@@ -1289,39 +1128,6 @@
       });
     }
 
-    function measureStrongTieStats() {
-      const pos = network.getPositions(nodes.getIds());
-      let strongSum = 0, strongN = 0, weakSum = 0, weakN = 0;
-
-      edges.get().forEach(e => {
-        // ignora los muelles invisibles
-        if (String(e.id).startsWith('__phys_')) return;
-
-        const a = pos[e.from], b = pos[e.to];
-        if (!a || !b) return;
-        const d = Math.hypot(a.x - b.x, a.y - b.y);
-
-        if (isStrongTie(e)) { strongSum += d; strongN++; }
-        else { weakSum += d; weakN++; }
-      });
-
-      const strongAvg = strongN ? (strongSum/strongN) : 0;
-      const weakAvg   = weakN   ? (weakSum/weakN)   : 0;
-
-      //console.log(`Strong ties avg distance: ${Math.round(strongAvg)} px | Others: ${Math.round(weakAvg)} px`);
-      //const statsEl = document.getElementById("networkStats");
-      //if (statsEl) {
-        //let extraEl = document.getElementById("distanceStats");
-        //if (!extraEl) {
-          //extraEl = document.createElement("div");
-          //extraEl.id = "distanceStats";
-          //extraEl.style.fontSize = "0.8rem";
-          //statsEl.appendChild(extraEl);
-        //}
-        //extraEl.innerHTML = `Strong≈${Math.round(strongAvg)}px · Others≈${Math.round(weakAvg)}px`;
-      //}
-    }
-
       // Después de crear el network, usa el hook de estabilización:
       network.once('stabilizationIterationsDone', () => {
         document.getElementById('loadingMessage').style.display = 'none';
@@ -1332,22 +1138,15 @@
         // 1) Hash inicial (rápido) primero
         handleInitialHash();
 
-        // 2) Ejecutar las tareas relacionadas con el panel lateral
-        //    EN UN ÚNICO callback diferido para garantizar orden determinista:
+        // 2) Members list (medio)
+        doLater(() => buildMembersList(data));
+
+        // 3) New in (medio)
+        doLater(() => buildNewInList(data));
+
+        // 4) Cargar imágenes de los nodos (coste mayor)
         doLater(() => {
-          try {
-            // construir listas (Members + New in)
-            buildMembersList(data);
-            buildNewInList(data);
-          } catch (err) {
-            // no romper el resto si algo falla; deja rastro en consola
-            console.error('Error building members/new-in lists:', err);
-          }
-
-          // luego carga las imágenes pesadas
           loadFullImages();
-
-          // AHORA capturamos el snapshot por defecto — incluirá las listas
           __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
         });
       });
@@ -1357,21 +1156,14 @@
         const el = document.getElementById('nodeInfo');
         if (!el) return;
 
-        // Restaura el contenido por defecto
-        el.innerHTML = `
-          <p>Click a <strong>node</strong> (an individual) or <strong>edge</strong> (a connection between two individuals) to view the data they contain.</p>
-          <p style="color: #ccc; margin-top: 1em;">(It might take a few seconds for the website to show the network)</p>
+        // Restaura el HTML inicial guardado
+        if (__defaultNodeInfoHTML) {
+          el.innerHTML = __defaultNodeInfoHTML;
+        }
 
-          <!-- Members list -->
-          <div id="membersSection" style="margin-top: 1rem;">
-            <div class="section-heading">Members (A–Z by surname)</div>
-            <div id="membersList"></div>
-          </div>
-        `;
-
-        // Reconstruye las listas
-        if (window.data) {
-          buildMembersList(window.data);
+        // Por si el snapshot no incluyera la lista (edge case), reconstruimos
+        if (!document.getElementById('membersList')) {
+          buildMembersList(data);
         }
       };
 
@@ -1527,26 +1319,3 @@
     console.error("Error cargando o renderizando la red:", err);
   }
 });
-
-// Función surnameKey (si no la tienes ya)
-function surnameKey(name) {
-  if (!name) return '';
-  let base = String(name)
-    .replace(/\(.*?\)/g, '')
-    .split(',')[0]
-    .replace(/[.]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-  
-  const fold = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-  
-  const tokens = base.split(' ').filter(Boolean);
-  if (!tokens.length) return '';
-  
-  return fold(tokens[tokens.length - 1]);
-}
-
-// Hacer funciones globales
-window.buildMembersList = buildMembersList;
-window.buildNewInList = buildNewInList;
-window.showNewInPanel = showNewInPanel;
