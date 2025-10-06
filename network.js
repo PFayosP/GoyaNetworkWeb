@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             font: {
               size: Math.min(11 + degree * 0.6, 24),
               color: '#ffffff',
-              strokeWidth: 3,
+              strokeWidth: 2,  // antes: 3  (menos contorno de texto → menos repintado)
               strokeColor: '#111111', 
               face: 'EB Garamond, serif',
               align: 'center',
@@ -543,7 +543,14 @@ document.addEventListener('DOMContentLoaded', async function () {
       },
       edges: {
         color: 'rgba(200,200,200,0.2)',
-        width: 1
+        width: 1,
+        smooth: false,        // ← NUEVO: líneas rectas (más rápido de pintar)
+        shadow: false         // ← asegúrate de no usar sombras
+      },
+      interaction: {
+        hover: false,         // desactiva cálculos de hover durante la carga
+        tooltipDelay: 200,
+        hideEdgesOnDrag: true // opcional: al mover, oculta edges y va más fluido
       },
 
       physics: {
@@ -558,7 +565,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         },
         stabilization: {
           enabled: true,
-          iterations: 120,      // antes: 200
+          iterations: 90,      // antes: 120
           updateInterval: 10
         }
       },
@@ -1128,28 +1135,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-      // Después de crear el network, usa el hook de estabilización:
-      network.once('stabilizationIterationsDone', () => {
+      network.once("stabilizationIterationsDone", function () {
         document.getElementById('loadingMessage').style.display = 'none';
-
-        const doLater = (fn) =>
-          (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 1500 }) : setTimeout(fn, 200));
-
-        // 1) Hash inicial (rápido) primero
-        handleInitialHash();
-
-        // 2) Members list (medio)
-        doLater(() => buildMembersList(data));
-
-        // 3) New in (medio)
-        doLater(() => buildNewInList(data));
-
-        // 4) Cargar imágenes de los nodos (coste mayor)
-        doLater(() => {
-          loadFullImages();
-          __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-        });
+        // No hacemos separación O(N^2) ni segundo stabilize()
+        // (la micro-separación ya la hace nudgeOverlapsOnce y la física inicial)
       });
+
 
       // Restaura el panel nodeInfo a su estado por defecto (texto + Members list)
       window.showDefaultNodeInfo = function () {
