@@ -306,28 +306,38 @@ document.addEventListener('DOMContentLoaded', async function () {
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
     function surnameKey(name) {
       if (!name) return '';
-      // Normaliza
-      name = String(name).replace(/[(),.]/g, ' ').replace(/\s+/g, ' ').trim();
 
-      // Partículas habituales a ignorar al tomar el "apellido"
+      // Elimina cualquier texto entre paréntesis: (widow), (husband of), etc.
+      name = String(name).replace(/\(.*?\)/g, '').replace(/[.,]/g, ' ').replace(/\s+/g, ' ').trim();
+
+      // Divide en palabras limpias
+      const tokens = name.split(' ').filter(Boolean);
+      if (!tokens.length) return '';
+
+      // Si hay dos apellidos españoles (2 palabras al final y ninguna partícula), coge el primero
+      // Ejemplo: "Weiss Zorrilla" → "Weiss"
+      if (tokens.length === 2 && /^[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü]+$/.test(tokens[0]) && /^[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü]+$/.test(tokens[1])) {
+        return tokens[0].toLowerCase();
+      }
+
+      // Lista de partículas y sufijos a ignorar al buscar apellidos
       const particles = new Set([
-        "de", "d'", "del", "de-la", "de-las", "de-los", "la", "las", "los", "le", "les",
-        "du", "des", "d", "da", "di", "do", "dos", "van", "von", "der", "den", "zu", "zur",
-        "y", "e", "the", "of"
+        "de","d'","del","de-la","de-las","de-los","la","las","los","le","les",
+        "du","des","d","da","di","do","dos","van","von","der","den","zu","zur",
+        "y","e","the","of"
       ]);
 
-      const suffixes = new Set(['jr','junior','fils','hijo']);
+      const suffixes = new Set(["jr","junior","fils","hijo"]);
 
-      const tokens = name.split(' ');
       const roman = /^[IVXLCDM]+$/i;
 
-      // Caso "X y Y": toma el token anterior a 'y'
+      // Si hay "X y Y", toma el token anterior a 'y' (casos españoles)
       const yIndex = tokens.findIndex(t => t.toLowerCase() === 'y');
       if (yIndex > 0 && yIndex < tokens.length - 1) {
         return tokens[yIndex - 1].toLowerCase();
       }
 
-      // Recorre desde el final hasta hallar un token válido como "apellido"
+      // Recorre desde el final hasta hallar un token válido
       for (let i = tokens.length - 1; i >= 0; i--) {
         const raw = tokens[i];
         const t = raw.replace(/['’]/g,'').toLowerCase();
@@ -337,6 +347,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (roman.test(t)) continue;
         return t;
       }
+
       return tokens[tokens.length - 1].toLowerCase();
     }
 
