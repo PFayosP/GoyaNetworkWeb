@@ -178,6 +178,36 @@ document.addEventListener('DOMContentLoaded', async function () {
           nodesMap[node.id] = config;
           return config;
         }));
+    
+    // ——— RELACIONES FUERTES: estarán físicamente más cerca ———
+    const STRONG_TIE_KEYWORDS = [
+      'spouse',          // spouses
+      'married',         // married to, married in
+      'sibling',         // siblings
+      'partner',
+      'lover',
+      'brother', 'sister',
+      'father', 'mother', 'son', 'daughter', // father-son, mother-daughter, etc.
+      'master', 'student',                   // master-student
+      'friend'                               // friends
+    ];
+
+    // Devuelve true si el edge es “fuerte”
+    function isStrongTie(edge) {
+      const t = String(edge['relationship type'] || edge.title || '').toLowerCase();
+      return STRONG_TIE_KEYWORDS.some(k => t.includes(k));
+    }
+
+    // Longitud por tipo de relación y nivel de conexión
+    function getEdgeLength(edge) {
+      // más cerca si es relación fuerte
+      if (isStrongTie(edge)) return 70;             // << muy cerca
+      // para tus “secondary” dejamos algo más largo
+      if (edge.connection_level === 'secondary') return 220;
+      // resto (direct, etc.)
+      return 140;                                   // ~ un poco más corto que tu springLength global
+    }
+
 
     // Edges más transparentes (general)
     const edges = new vis.DataSet(data.edges.map(edge => {
@@ -199,6 +229,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         ...edge,
         label,
         title,
+        length: getEdgeLength(edge),             // ← NUEVO: acerca o aleja según relación
         color: { color: level === "secondary" ? "rgba(255,215,0,0.4)" : "rgba(200,200,200,0.25)" },
         width: 1.5
       };
