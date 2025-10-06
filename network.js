@@ -395,14 +395,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-    // Conectar el botón (pon esto en el mismo scope que tu otro JS)
-    document.addEventListener('click', function (e) {
-      if (e.target && e.target.id === 'newInBtn') {
+    // Listener directo y robusto para "New in"
+    const _newInBtn = document.getElementById('newInBtn');
+    if (_newInBtn) {
+      _newInBtn.addEventListener('click', function (e) {
         const panel = document.getElementById('newInPanel');
         if (!panel) return;
         showNewInPanel(panel.style.display === 'block' ? false : true);
-      }
-    });
+      });
+    }
 
     // Llamada a buildNewInList(data) — inserta esto donde llamas a handleInitialHash() / loadFullImages()
     // En tu archivo ya existe un setTimeout que hace handleInitialHash() y loadFullImages(); añade buildNewInList(data) allí.
@@ -1288,15 +1289,22 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 1) Hash inicial (rápido) primero
         handleInitialHash();
 
-        // 2) Members list (medio)
-        doLater(() => buildMembersList(data));
-
-        // 3) New in (medio)
-        doLater(() => buildNewInList(data));
-
-        // 4) Cargar imágenes de los nodos (coste mayor)
+        // 2) Ejecutar las tareas relacionadas con el panel lateral
+        //    EN UN ÚNICO callback diferido para garantizar orden determinista:
         doLater(() => {
+          try {
+            // construir listas (Members + New in)
+            buildMembersList(data);
+            buildNewInList(data);
+          } catch (err) {
+            // no romper el resto si algo falla; deja rastro en consola
+            console.error('Error building members/new-in lists:', err);
+          }
+
+          // luego carga las imágenes pesadas
           loadFullImages();
+
+          // AHORA capturamos el snapshot por defecto — incluirá las listas
           __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
         });
       });
