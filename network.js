@@ -1266,17 +1266,17 @@ document.addEventListener('DOMContentLoaded', async function () {
       const weakAvg   = weakN   ? (weakSum/weakN)   : 0;
 
       console.log(`Strong ties avg distance: ${Math.round(strongAvg)} px | Others: ${Math.round(weakAvg)} px`);
-      const statsEl = document.getElementById("networkStats");
-      if (statsEl) {
-        let extraEl = document.getElementById("distanceStats");
-        if (!extraEl) {
-          extraEl = document.createElement("div");
-          extraEl.id = "distanceStats";
-          extraEl.style.fontSize = "0.8rem";
-          statsEl.appendChild(extraEl);
-        }
-        extraEl.innerHTML = `Strong≈${Math.round(strongAvg)}px · Others≈${Math.round(weakAvg)}px`;
-      }
+      //const statsEl = document.getElementById("networkStats");
+      //if (statsEl) {
+        //let extraEl = document.getElementById("distanceStats");
+        //if (!extraEl) {
+          //extraEl = document.createElement("div");
+          //extraEl.id = "distanceStats";
+          //extraEl.style.fontSize = "0.8rem";
+          //statsEl.appendChild(extraEl);
+        //}
+        //extraEl.innerHTML = `Strong≈${Math.round(strongAvg)}px · Others≈${Math.round(weakAvg)}px`;
+      //}
     }
 
       // Después de crear el network, usa el hook de estabilización:
