@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const data = await response.json();
         
         // Start image preloading
-        const imagePreload = preloadImages(data.nodes);
+        // const imagePreload = preloadImages(data.nodes);
 
         // Existing setup code
         const nodeInfo = document.getElementById('nodeInfo');
@@ -558,7 +558,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         },
         stabilization: {
           enabled: true,
-          iterations: 200,
+          iterations: 120,      // antes: 200
           updateInterval: 10
         }
       },
@@ -1128,15 +1128,28 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-      // Add this right after network creation:
-      setTimeout(() => {
-        // Defer these heavy operations
+      // Después de crear el network, usa el hook de estabilización:
+      network.once('stabilizationIterationsDone', () => {
+        document.getElementById('loadingMessage').style.display = 'none';
+
+        const doLater = (fn) =>
+          (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 1500 }) : setTimeout(fn, 200));
+
+        // 1) Hash inicial (rápido) primero
         handleInitialHash();
-        loadFullImages();
-        buildNewInList(data);   // ← NUEVA LÍNEA
-        buildMembersList(data); // ← NUEVA LÍNEA
-        __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-      }, 500);
+
+        // 2) Members list (medio)
+        doLater(() => buildMembersList(data));
+
+        // 3) New in (medio)
+        doLater(() => buildNewInList(data));
+
+        // 4) Cargar imágenes de los nodos (coste mayor)
+        doLater(() => {
+          loadFullImages();
+          __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
+        });
+      });
 
       // Restaura el panel nodeInfo a su estado por defecto (texto + Members list)
       window.showDefaultNodeInfo = function () {
