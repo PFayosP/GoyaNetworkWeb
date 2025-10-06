@@ -748,6 +748,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       for (let j = i + 1; j < nodeArray.length; j++) {
         const node2 = nodeArray[j];
         const p2 = positions[node2.id];
+          // ⛔ Si alguno de los nodos no tiene posición, saltar
+          if (!p1 || !p2) continue;
         const key = node1.id < node2.id ? `${node1.id}|${node2.id}` : `${node2.id}|${node1.id}`;
         if (STRONG_PAIRS.has(key)) continue; // 👈 no separar relaciones fuertes
         
