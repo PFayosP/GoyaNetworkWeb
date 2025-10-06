@@ -305,23 +305,23 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // ---- MEMBERS LIST: manual overrides (edit these if needed) ----
     // 1) Para nombres completos donde quieras forzar el apellido clave (usa la grafía exacta)
-    const SURNAME_FORCE_BY_FULLNAME = {
+
+    // Declarar una sola vez (arriba, antes de surnameKey)
+    const SURNAME_FORCE_BY_FULLNAME = Object.create(null);
+    const GIVEN_FORCE_TOKENS = new Set();
+    const SURNAME_FORCE_TOKENS = new Set();
+
+    // Rellenar el diccionario/sets (puedes repetir este bloque en otros sitios sin problema)
+    Object.assign(SURNAME_FORCE_BY_FULLNAME, {
       'Weiss Zorrilla': 'weiss',
-      // Añade más aquí: 'Apellido1 Apellido2': 'apellido1'
-    };
-
-    // 2) Tokens que deben tratarse como NOMBRES (darán preferencia al apellido siguiente)
-    //    Normalizamos en minúsculas sin acentos. Puedes añadir 'antoine', 'jean', etc. si quieres.
-    const GIVEN_FORCE_TOKENS = new Set([
-      'antoine-jean', // ← tu caso
-      'berte',        // por si aparece como "Berte Morisot"
-      'berthe'        // variante habitual
-    ]);
-
-    // 3) (Opcional) Tokens que quieres tratar como APELLIDOS cuando aparezcan (último token)
-    const SURNAME_FORCE_TOKENS = new Set([
-      'morisot' // ← por si hay rarezas tipográficas
-    ]);
+      'Prince Antoine, Duke of Montpensier': 'montpensier',
+      'Juan Agustín Ceán Bermúdez': 'cean',
+      'II Duke of San Carlos': 'san carlos',
+      'X Marchioness of Santa Cruz': 'santa cruz',
+      'María Antonia Gonzaga, Marchioness of Villafranca (widow)': 'villafranca',
+      'Berthe Morisot': 'morisot',
+      'Antoine-Jean Gros': 'gros'
+    });
 
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
     function surnameKey(name) {
@@ -338,9 +338,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       // Helper: quitar acentos y pasar a minúsculas
       const fold = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
-      // 0) Override por nombre completo (tu lista manual)
-      if (SURNAME_FORCE_BY_FULLNAME[name]) {
-        return fold(SURNAME_FORCE_BY_FULLNAME[name]);
+      // 0) Override por nombre completo (y por base limpia)
+      const override = SURNAME_FORCE_BY_FULLNAME[name] || SURNAME_FORCE_BY_FULLNAME[base];
+      if (override) {
+        return fold(override);
       }
 
       const tokens = base.split(' ').filter(Boolean);
