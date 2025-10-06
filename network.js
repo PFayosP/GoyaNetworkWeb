@@ -1,254 +1,181 @@
-console.log("✅ network.js CARGADO desde VS Code");
+  console.log("✅ network.js CARGADO desde VS Code");
 
-let nodes, edges; // 👈 Hacemos estas variables globales
+  let nodes, edges, network, windowData;
 
-function autoLinkNames(text, nodesMap) {
-  if (!text || typeof text !== "string") return text;
-
-  // Sustituye saltos de línea invisibles por espacio
-  text = text.replace(/\r?\n|\r/g, " ");
-
-  // Divide el texto en partes: enlaces HTML intactos y el resto
-  const splitParts = text.split(/(<a [^>]+>.*?<\/a>)/g);
-
-  const processed = splitParts.map(part => {
-    if (part.startsWith('<a ')) return part; // ya es un enlace, no tocar
-
-    Object.keys(nodesMap).forEach(name => {
-      const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const regex = new RegExp(`(?<![\\w>])(${escapedName})(?![\\w<])`, "g");
-      part = part.replace(
-        regex,
-        `<a href="#" style="color:#66ccff" onclick="focusNode('${nodesMap[name].id}')">$1</a>`
-      );
-    });
-
-    return part;
-  });
-
-  return processed.join('');
-}
-
-function processMarkdownLinks(text) {
-  if (!text || typeof text !== "string") return text;
-  
-  // Preserve italics
-  text = text.replace(/<i>/g, '%%%ITALIC_OPEN%%%').replace(/<\/i>/g, '%%%ITALIC_CLOSE%%%');
-  
-  // Format 1: [text](url)
-  text = text.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, 
-    '<a href="$2" target="_blank" style="color:#66ccff;">$1</a>');
-  
-  // Format 2: (text)[url]
-  text = text.replace(/\(([^)]+)\)\[(https?:\/\/[^\]]+)\]/g, 
-    '(<a href="$2" target="_blank" style="color:#66ccff;">$1</a>)');
-    
-  // Format 3: text [url] (fallback)
-  text = text.replace(/(\b[^\s\[\]]+\b)\s*\[(https?:\/\/[^\]]+)\]/g, 
-    '<a href="$2" target="_blank" style="color:#66ccff;">$1</a>');
-  
-  // Restore italics
-  text = text.replace(/%%%ITALIC_OPEN%%%/g, '<i>').replace(/%%%ITALIC_CLOSE%%%/g, '</i>');
-  
-  return text;
-}
-
-// Add these two functions at the top of network.js
-window.search = function() {
-  const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
-  if (!searchInput) return;
-
-  // Find matching nodes
-  const matchingNodes = nodes.get().filter(node => 
-    node.id.toLowerCase().includes(searchInput) || 
-    (node.label && node.label.toLowerCase().includes(searchInput))
-  );
-
-  if (matchingNodes.length > 0) {
-    // Focus on first match
-    network.focus(matchingNodes[0].id, { animation: true });
-    // Select the node
-    network.selectNodes([matchingNodes[0].id]);
-    // Show node info
-    network.emit('click', { nodes: [matchingNodes[0].id] });
-  } else {
-    alert('No matching nodes found');
-  }
-};
-
-window.filterGraph = function() {
-  const professionFilter = document.getElementById('professionFilter').value;
-  const nationalityFilter = document.getElementById('nationalityFilter').value;
-  
-  // Clear previous highlights
-  clearHighlights();
-
-  if (!professionFilter && !nationalityFilter) return;
-
-  const matchingNodes = nodes.get().filter(node => {
-    const professionMatch = !professionFilter || 
-      (node.profession && node.profession.includes(professionFilter));
-    const nationalityMatch = !nationalityFilter || 
-      (node.nationality && node.nationality.includes(nationalityFilter));
-    return professionMatch && nationalityMatch;
-  });
-
-  if (matchingNodes.length > 0) {
-    // Highlight matching nodes
-    matchingNodes.forEach(node => {
-      nodes.update({ 
-        id: node.id, 
-        color: { ...node.color, border: 'red' }, 
-        borderWidth: 4 
-      });
-    });
-    
-    // Focus on the first matching node
-    network.focus(matchingNodes[0].id, { animation: true });
-    lastHighlightedNodes = matchingNodes.map(node => node.id);
-  } else {
-    alert('No nodes match the selected filters');
-  }
-};
-
-// === FUNCIONES GLOBALES PARA MEMBERS LIST Y NEW IN ===
-
-function buildMembersList(data) {
-  const container = document.getElementById('membersList');
-  if (!container) {
-    console.error("❌ No se encontró #membersList");
-    return;
-  }
-
-  // Recoge nombres desde data.nodes
-  const names = (data.nodes || []).map(n => n.id).filter(Boolean);
-
-  // Ordena por clave de "apellido" (usa la función surnameKey que ya existe)
-  const collator = new Intl.Collator(undefined, { sensitivity: 'base' });
-  names.sort((a,b) => collator.compare(surnameKey(a), surnameKey(b)));
-
-  // Escapa comillas para usar en onclick inline
-  const esc = s => String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'");
-
-  // Render A–Z con cabeceras por letra
-  let html = '';
-  let currentLetter = '';
-  names.forEach(id => {
-    const key = surnameKey(id);
-    const letter = (key.charAt(0) || '#').toUpperCase();
-    if (letter !== currentLetter) {
-      if (currentLetter) html += '</ul>';
-      html += `<div class="section-heading" style="margin-top:0.8rem;">${letter}</div><ul style="list-style:none; padding-left:0.5rem; margin:0;">`;
-      currentLetter = letter;
+  // === FUNCIONES GLOBALES ===
+  function buildMembersList(data) {
+    console.log("🔄 buildMembersList ejecutándose");
+    const container = document.getElementById('membersList');
+    if (!container) {
+      console.error("❌ No se encontró #membersList");
+      return;
     }
-    html += `<li style="margin:0.1rem 0;"><a href="#" onclick="focusNode('${esc(id)}'); return false;" style="color:#66ccff; text-decoration:none;">${id}</a></li>`;
-  });
-  if (names.length) html += '</ul>';
 
-  container.innerHTML = html;
-}
+    const names = (data.nodes || []).map(n => n.id).filter(Boolean);
+    const collator = new Intl.Collator(undefined, { sensitivity: 'base' });
+    names.sort((a,b) => collator.compare(surnameKey(a), surnameKey(b)));
 
-function buildNewInList(data) {
-  const container = document.getElementById('newInList');
-  if (!container) {
-    console.error("❌ No se encontró #newInList");
-    return;
-  }
+    const esc = s => String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'");
 
-  // Recolectar nodos/edges que tengan 'added' o 'last_modified'
-  const nodesWithDates = (data.nodes || []).filter(n => n.added || n.last_modified)
-    .map(n => ({ type: 'node', id: n.id, label: n.label || n.id, date: n.added || n.last_modified }));
-
-  const edgesWithDates = (data.edges || []).filter(e => e.last_modified)
-    .map(e => ({ type: 'edge', from: e.from, to: e.to, label: `${e.from} ↔ ${e.to}`, date: e.last_modified, edgeObj: e }));
-
-  const items = nodesWithDates.concat(edgesWithDates)
-    .sort((a,b) => new Date(b.date) - new Date(a.date));
-
-  if (!items.length) {
-    container.innerHTML = '<em>No hay marcas de fecha por nodo/edge.</em>';
-    return;
-  }
-
-  // Limitar a 30 items y renderizar
-  container.innerHTML = '';
-  items.slice(0, 30).forEach(item => {
-    const wrapper = document.createElement('div');
-    wrapper.style.marginBottom = '0.4rem';
-
-    const a = document.createElement('a');
-    a.href = '#';
-    a.className = 'newin-link';
-    a.style.color = '#66ccff';
-    a.textContent = item.type === 'node' ? item.label : `${item.label} (edge)`;
-
-    const dateSpan = document.createElement('span');
-    const dateStr = new Date(item.date).toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' });
-    dateSpan.textContent = ` — ${dateStr}`;
-    dateSpan.style.color = '#bbb';
-
-    a.onclick = (e) => {
-      e.preventDefault();
-      if (item.type === 'node') {
-        if (typeof focusNode === 'function') {
-          focusNode(item.id);
-        }
-      } else {
-        const match = window.edges.get().find(ed => ed.from === item.from && ed.to === item.to);
-        if (match) {
-          network.selectEdges([match.id]);
-          network.emit('click', { edges: [match.id], nodes: [] });
-        }
+    let html = '';
+    let currentLetter = '';
+    names.forEach(id => {
+      const key = surnameKey(id);
+      const letter = (key.charAt(0) || '#').toUpperCase();
+      if (letter !== currentLetter) {
+        if (currentLetter) html += '</ul>';
+        html += `<div class="section-heading" style="margin-top:0.8rem;">${letter}</div><ul style="list-style:none; padding-left:0.5rem; margin:0;">`;
+        currentLetter = letter;
       }
-      showNewInPanel(false);
-    };
+      html += `<li style="margin:0.1rem 0;"><a href="#" onclick="focusNode('${esc(id)}'); return false;" style="color:#66ccff; text-decoration:none;">${id}</a></li>`;
+    });
+    if (names.length) html += '</ul>';
 
-    wrapper.appendChild(a);
-    wrapper.appendChild(dateSpan);
-    container.appendChild(wrapper);
-  });
-}
-
-// También hacer global la función showNewInPanel
-function showNewInPanel(show = true) {
-  const panel = document.getElementById('newInPanel');
-  if (!panel) {
-    console.error("❌ No se encontró #newInPanel");
-    return;
+    container.innerHTML = html;
+    console.log("✅ Members list construida");
   }
-  panel.style.display = show ? 'block' : 'none';
-}
 
-// === FIN DE FUNCIONES GLOBALES ===
+  function buildNewInList(data) {
+    console.log("🔄 buildNewInList ejecutándose");
+    const container = document.getElementById('newInList');
+    if (!container) {
+      console.error("❌ No se encontró #newInList");
+      return;
+    }
 
-document.addEventListener('DOMContentLoaded', async function () {
-  // ——— Default snapshot del panel lateral (nodeInfo)
-  let __defaultNodeInfoHTML = null;
-  // Add this right after: document.addEventListener('DOMContentLoaded', async function () {
-  try {
-        // ADD THESE LINES:
-        const preloadImages = (nodes) => {
-            const promises = nodes
-                .filter(node => node.image)
-                .map(node => {
-                    return new Promise((resolve) => {
-                        const img = new Image();
-                        img.src = node.image;
-                        img.onload = resolve;
-                        img.onerror = resolve;
-                    });
-                });
-            return Promise.all(promises);
-        };
+    const nodesWithDates = (data.nodes || []).filter(n => n.added || n.last_modified)
+      .map(n => ({ type: 'node', id: n.id, label: n.label || n.id, date: n.added || n.last_modified }));
+
+    const edgesWithDates = (data.edges || []).filter(e => e.last_modified)
+      .map(e => ({ type: 'edge', from: e.from, to: e.to, label: `${e.from} ↔ ${e.to}`, date: e.last_modified, edgeObj: e }));
+
+    const items = nodesWithDates.concat(edgesWithDates)
+      .sort((a,b) => new Date(b.date) - new Date(a.date));
+
+    if (!items.length) {
+      container.innerHTML = '<em>No hay marcas de fecha por nodo/edge.</em>';
+      return;
+    }
+
+    container.innerHTML = '';
+    items.slice(0, 30).forEach(item => {
+      const wrapper = document.createElement('div');
+      wrapper.style.marginBottom = '0.4rem';
+
+      const a = document.createElement('a');
+      a.href = '#';
+      a.className = 'newin-link';
+      a.style.color = '#66ccff';
+      a.textContent = item.type === 'node' ? item.label : `${item.label} (edge)`;
+
+      const dateSpan = document.createElement('span');
+      const dateStr = new Date(item.date).toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' });
+      dateSpan.textContent = ` — ${dateStr}`;
+      dateSpan.style.color = '#bbb';
+
+      a.onclick = (e) => {
+        e.preventDefault();
+        if (item.type === 'node') {
+          focusNode(item.id);
+        } else {
+          const match = edges.get().find(ed => ed.from === item.from && ed.to === item.to);
+          if (match) {
+            network.selectEdges([match.id]);
+            network.emit('click', { edges: [match.id], nodes: [] });
+          }
+        }
+        showNewInPanel(false);
+      };
+
+      wrapper.appendChild(a);
+      wrapper.appendChild(dateSpan);
+      container.appendChild(wrapper);
+    });
+    console.log("✅ New In list construida");
+  }
+
+  function showNewInPanel(show = true) {
+    const panel = document.getElementById('newInPanel');
+    if (!panel) {
+      console.error("❌ No se encontró #newInPanel");
+      return;
+    }
+    panel.style.display = show ? 'block' : 'none';
+    console.log("🔄 New In panel:", show ? "visible" : "oculto");
+  }
+
+  window.showDefaultNodeInfo = function () {
+    console.log("🔄 showDefaultNodeInfo ejecutándose");
+    const el = document.getElementById('nodeInfo');
+    if (!el) return;
+
+    el.innerHTML = `
+      <p>Click a <strong>node</strong> (an individual) or <strong>edge</strong> (a connection between two individuals) to view the data they contain.</p>
+      <p style="color: #ccc; margin-top: 1em;">(It might take a few seconds for the website to show the network)</p>
+
+      <div id="membersSection" style="margin-top: 1rem;">
+        <div class="section-heading">Members (A–Z by surname)</div>
+        <div id="membersList"></div>
+      </div>
+    `;
+
+    if (windowData) {
+      buildMembersList(windowData);
+    }
+  };
+
+  // === FUNCIONES AUXILIARES EXISTENTES (mantén las que ya tienes) ===
+  function autoLinkNames(text, nodesMap) {
+    if (!text || typeof text !== "string") return text;
+    text = text.replace(/\r?\n|\r/g, " ");
+    const splitParts = text.split(/(<a [^>]+>.*?<\/a>)/g);
+
+    const processed = splitParts.map(part => {
+      if (part.startsWith('<a ')) return part;
+      Object.keys(nodesMap).forEach(name => {
+        const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`(?<![\\w>])(${escapedName})(?![\\w<])`, "g");
+        part = part.replace(
+          regex,
+          `<a href="#" style="color:#66ccff" onclick="focusNode('${nodesMap[name].id}')">$1</a>`
+        );
+      });
+      return part;
+    });
+
+    return processed.join('');
+  }
+
+  function processMarkdownLinks(text) {
+    if (!text || typeof text !== "string") return text;
+    text = text.replace(/<i>/g, '%%%ITALIC_OPEN%%%').replace(/<\/i>/g, '%%%ITALIC_CLOSE%%%');
+    text = text.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, 
+      '<a href="$2" target="_blank" style="color:#66ccff;">$1</a>');
+    text = text.replace(/\(([^)]+)\)\[(https?:\/\/[^\]]+)\]/g, 
+      '(<a href="$2" target="_blank" style="color:#66ccff;">$1</a>)');
+    text = text.replace(/(\b[^\s\[\]]+\b)\s*\[(https?:\/\/[^\]]+)\]/g, 
+      '<a href="$2" target="_blank" style="color:#66ccff;">$1</a>');
+    text = text.replace(/%%%ITALIC_OPEN%%%/g, '<i>').replace(/%%%ITALIC_CLOSE%%%/g, '</i>');
+    return text;
+  }
+
+  // === INICIALIZACIÓN PRINCIPAL ===
+  document.addEventListener('DOMContentLoaded', async function () {
+    console.log("🚀 DOMContentLoaded iniciado");
     
-        // Load the network data
-        const response = await fetch('goya_network.json');
-        if (!response.ok) throw new Error('Error cargando datos');
-        const data = await response.json();
-        
-        // Start image preloading
-        // const imagePreload = preloadImages(data.nodes);
+    try {
+      const response = await fetch('goya_network.json');
+      if (!response.ok) throw new Error('Error cargando datos');
+      const data = await response.json();
+      windowData = data; // Guardar globalmente
+      
+      console.log("📊 Datos cargados:", data.nodes.length, "nodos", data.edges.length, "edges");
 
+    // ... (todo el resto de tu código de inicialización de la red aquí)
+    // MANTÉN TODO el código que tienes desde const nodeInfo = document.getElementById('nodeInfo');
+    // hasta el final de tu archivo actual
+        
+        
         // Existing setup code
         const nodeInfo = document.getElementById('nodeInfo');
         nodeInfo.style.maxHeight = '810px';
@@ -1600,3 +1527,26 @@ document.addEventListener('DOMContentLoaded', async function () {
     console.error("Error cargando o renderizando la red:", err);
   }
 });
+
+// Función surnameKey (si no la tienes ya)
+function surnameKey(name) {
+  if (!name) return '';
+  let base = String(name)
+    .replace(/\(.*?\)/g, '')
+    .split(',')[0]
+    .replace(/[.]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  
+  const fold = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  
+  const tokens = base.split(' ').filter(Boolean);
+  if (!tokens.length) return '';
+  
+  return fold(tokens[tokens.length - 1]);
+}
+
+// Hacer funciones globales
+window.buildMembersList = buildMembersList;
+window.buildNewInList = buildNewInList;
+window.showNewInPanel = showNewInPanel;
