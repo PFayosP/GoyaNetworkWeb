@@ -320,7 +320,17 @@ document.addEventListener('DOMContentLoaded', async function () {
       'X Marchioness of Santa Cruz': 'santa cruz',
       'María Antonia Gonzaga, Marchioness of Villafranca (widow)': 'villafranca',
       'Berthe Morisot': 'morisot',
-      'Antoine-Jean Gros': 'gros'
+      'Antoine-Jean Gros': 'gros',
+      'Francisco Álvarez de Toledo, XII Marquis of Villafranca': 'villafranca',
+      'José Álvarez de Toledo, Duke of Alba': 'alba',
+      'María Teresa de Silva, XIII Duchess of Alba': 'alba',
+      'María Cristina de Borbón-Dos Sicilias': 'borbon',
+      'Rosario Weiss Zorrilla': 'weiss',
+      'Isabel II': 'isabel',
+      'Carlos III': 'carlos',
+      'Carlos IV': 'carlos',
+      'Fernando VII': 'fernando',
+      'Louis Philippe I': 'louis'
     });
 
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
