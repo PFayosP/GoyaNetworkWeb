@@ -330,7 +330,17 @@ document.addEventListener('DOMContentLoaded', async function () {
       'Carlos III': 'carlos',
       'Carlos IV': 'carlos',
       'Fernando VII': 'fernando',
-      'Louis Philippe I': 'louis'
+      'Louis Philippe I': 'louis',
+      'Dominique Vivant Denon': 'vivant',
+      'María Tomasa Palafox, Marchioness of Villafranca': 'villafranca',
+      'María Gabriela de Palafox, Marchioness of Lazán': 'lazan',
+      'Eugenio Eulalio Palafox, VII Count of Montijo': 'montijo',
+      'Cipriano Portocarrero, VIII Count of Montijo': 'montijo',
+      'María Francisca de Sales Portocarrero, VI Countess of Montijo': 'montijo',
+      'Alexandre Dumas père': 'dumas',
+      'Francisco Martínez de la Rosa': 'martinez',
+      'Juan Meléndez Valdés': 'melendez',
+      'Jenaro Pérez Villaamil': 'perez'
     });
 
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
