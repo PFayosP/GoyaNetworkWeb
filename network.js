@@ -565,7 +565,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         },
         stabilization: {
           enabled: true,
-          iterations: 90,      // antes: 120
+          iterations: 100,      // antes: 120
           updateInterval: 10
         }
       },
@@ -1134,12 +1134,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       });
     }
-
-      network.once("stabilizationIterationsDone", function () {
-        document.getElementById('loadingMessage').style.display = 'none';
-        // No hacemos separación O(N^2) ni segundo stabilize()
-        // (la micro-separación ya la hace nudgeOverlapsOnce y la física inicial)
-      });
 
 
       // Restaura el panel nodeInfo a su estado por defecto (texto + Members list)
