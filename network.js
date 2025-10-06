@@ -1,3 +1,5 @@
+console.log("✅ network.js CARGADO desde VS Code");
+
 let nodes, edges; // 👈 Hacemos estas variables globales
 
 function autoLinkNames(text, nodesMap) {
