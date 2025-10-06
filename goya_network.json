@@ -941,16 +941,26 @@
       "label": "Ceán Bermúdez",
       "life dates": "1749-1829",
       "nationality": "Spanish",
+      "born in": "Gijón (Asturias)",
+      "dies in": "Madrid",
       "profession": "historian, collector, painter, critic",
       "considered as": "part of the group of Spanish 'ilustrados'",
-      "works as": "manager of the Archivo de Indias; Secretary's officer for the Estado de Gracia y Justicia de Indias",
-      "member of": "RABASF",
+      "masters": "Juan de Espinal (painting)",
+      "lives in": "Gijón, Madrid, Sevilla",
+      "works as": "Teneduría de cuentas of the Banco de San Carlos; manager of the Archivo de Indias (1791); Secretary's officer for the Estado de Gracia y Justicia de Indias; inisterio de Negocios Eclesiásticos (1809)",
+      "member of": "RABASF; RAH",
       "collector of Goya's works": "Goya gave a vast number of his works to Ceán Bermúdez, including rare working proofs (now at the BNE); this collection was later acquired by Valentín Carderera",
-      "author of": "<i>Colección lithographica de cuadros del Rey de España el Sr. D. Fernando VII</i> (1826-37); <i>Diccionario histórico de los más ilustres profesores de las Bellas Artes en España</i> (1800); <i>Sumario de las antigüedades romanas que hay en España, en especial las pertenecientes a las Bellas Artes</i> (1832, postumous)", 
+      "author of": [
+        "<i>Colección lithographica de cuadros del Rey de España el Sr. D. Fernando VII</i> (1826-37); <i>Diccionario histórico de los más ilustres profesores de las Bellas Artes en España</i> (1800); <i>Catálogo raciocinado</i> (started in 1819): the basis for the first history of European prints written in Spanish; <i>Historia del Arte de la Pintura</i> (1822-1828); <i>Noticias de los arquitectos y la arquitectura de España desde su restauración</i> (1829); <i>Sumario de las antigüedades romanas que hay en España, en especial las pertenecientes a las Bellas Artes</i> (1832, postumous)", 
+        "Collective works: <i>Colección litográfica de los cuadros del rey de España</i>, 3 vols. (1826-1832): 206 lithographs in total. Initiative of José de Madrazo. Ceán made 46 texts."
+      ],
+      "mentions": "his <i>Diccionario histórico</i> was a key source to study Spanish painting, and was mentioned, among others, by Louis Viardot, Paul Lefort and Stirling Maxwell.",
       "portrayed by": "Goya (attributed), c.1783, oil painting (private collection); Goya, c.1786, oil painting (private collection); Goya c.1798-1799, drawing (colección Colomer)",
-      "collector of": "Dürer, José de Ribera, Piranesi, among others",
+      "collector of": "books, paintings, drawings and specially prints. Dürer, José de Ribera, Piranesi, among others.",
       "married to": "Manuela Camas y de las Heras",
-      "studies in": "Universidad Complutense",
+      "friends": "Gaspar Melchor de Jovellanos; Leandro Fernández de Moratín; Francisco de Goya",
+      "studies in": "Gijón (Latin); Universidad de Alcalá de Henares (Philosophy); Universidad Complutense; Academia de diseño de Sevilla",
+      "websites": "[BNE, Ceán Bermúdez](https://ceanbermudez.bne.es/); [RAH](https://historia-hispanica.rah.es/biografias/11546-juan-agustin-cean-bermudez); [Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/cean-bermudez-juan-agustin/b86ae57b-7f1b-4d3e-83b3-37dde97db5bc)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Cean_Bermudez.jpg",
       "image source": "portrait attributed to Goya, c.1783"
     },
@@ -6440,13 +6450,46 @@
       "from": "Gaspar Melchor de Jovellanos",
       "to": "Juan Agustín Ceán Bermúdez",
       "connection_level": "direct",
-      "relationship type": "friends; colleagues"
+      "relationship type": "friends; colleagues; employer-employee; protector-protegé",
+      "interactions": "Ceán Bermúdez advised Jovellanos in the acquisition of artworks (paintings and drawings)",
+      "they share": "studies at the Universidad de Alcalá de Henares"
+    },
+    {
+      "from": "Anton Raphael Mengs",
+      "to": "Juan Agustín Ceán Bermúdez",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; master-student",
+      "interactions": "Ceán Bermúdez had a short stay at Mengs's workshop in Madrid (which allowed him to study at the RABASF)"
+    },
+    {
+      "from": "José de Madrazo",
+      "to": "Juan Agustín Ceán Bermúdez",
+      "connection_level": "direct",
+      "relationship type": "colleagues; employer-employee",
+      "collaborations": "Ceán made 46 texts for José de Madrazo's <i>Colección litográfica de los cuadros del rey de España</i>, 3 vols. (1826-1832), which had 206 lithographs in total.",
+      "websites": "[Prado, Ceán Bermúdez](https://www.museodelprado.es/aprende/enciclopedia/voz/cean-bermudez-juan-agustin/b86ae57b-7f1b-4d3e-83b3-37dde97db5bc)"
+    },
+    {
+      "from": "Louis Viardot", 
+      "to": "Juan Agustín Ceán Bermúdez",
+      "connection_level": "secondary",
+      "relationship type": "quoting/acknowledging",
+      "mentions": "Viardot mentions Ceán Bermúdez as a source about Spanish painting (<i>Diccionario histórico</i> (1800).",
+      "websites": "[Prado, Ceán Bermúdez](https://www.museodelprado.es/aprende/enciclopedia/voz/cean-bermudez-juan-agustin/b86ae57b-7f1b-4d3e-83b3-37dde97db5bc)"
+    },
+    {
+      "from": "Paul Lefort", 
+      "to": "Juan Agustín Ceán Bermúdez",
+      "connection_level": "secondary",
+      "relationship type": "quoting/acknowledging",
+      "mentions": "Lefort mentions Ceán Bermúdez as a source about Spanish painting (<i>Diccionario histórico</i> (1800).",
+      "websites": "[Prado, Ceán Bermúdez](https://www.museodelprado.es/aprende/enciclopedia/voz/cean-bermudez-juan-agustin/b86ae57b-7f1b-4d3e-83b3-37dde97db5bc)"
     },
     {
       "from": "Juan Agustín Ceán Bermúdez",
       "to": "Francisco Cabarrús",
       "connection_level": "direct",
-      "relationship type": "colleagues"
+      "relationship type": "colleagues; protector-protegé"
     },
     {
       "from": "Juan Agustín Ceán Bermúdez",
@@ -7679,7 +7722,7 @@
     {
       "from": "Federico de Madrazo",
       "to": "Alexandre Dumas père",
-      "label": "direct",
+      "connection_level": "direct",
       "relationship type": "acquaintances",
       "know each other since": "c.1837 in Paris (with Pedro de Madrazo?)"
     },
