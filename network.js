@@ -110,6 +110,8 @@ window.filterGraph = function() {
 };
 
 document.addEventListener('DOMContentLoaded', async function () {
+  // ——— Default snapshot del panel lateral (nodeInfo)
+  let __defaultNodeInfoHTML = null;
   // Add this right after: document.addEventListener('DOMContentLoaded', async function () {
   try {
         // ADD THESE LINES:
@@ -991,7 +993,24 @@ document.addEventListener('DOMContentLoaded', async function () {
         loadFullImages();
         buildNewInList(data);   // ← NUEVA LÍNEA
         buildMembersList(data); // ← NUEVA LÍNEA
+        __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
       }, 500);
+
+      // Restaura el panel nodeInfo a su estado por defecto (texto + Members list)
+      window.showDefaultNodeInfo = function () {
+        const el = document.getElementById('nodeInfo');
+        if (!el) return;
+
+        // Restaura el HTML inicial guardado
+        if (__defaultNodeInfoHTML) {
+          el.innerHTML = __defaultNodeInfoHTML;
+        }
+
+        // Por si el snapshot no incluyera la lista (edge case), reconstruimos
+        if (!document.getElementById('membersList')) {
+          buildMembersList(data);
+        }
+      };
 
       }, 2000);
 

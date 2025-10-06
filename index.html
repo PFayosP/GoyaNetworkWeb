@@ -921,6 +921,7 @@ function showSection(section) {
 
   if (section === 'network') {
     layout.classList.remove('hidden');
+    if (window.showDefaultNodeInfo) window.showDefaultNodeInfo(); // ← NUEVA LÍNEA
   } else if (section === 'about') {
     aboutDiv.style.display = 'block';
   } else if (section === 'contributors') {
