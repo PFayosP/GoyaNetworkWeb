@@ -938,16 +938,16 @@ function showSection(section) {
 
   if (section === 'network') {
     layout.classList.remove('hidden');
-    if (window.showDefaultNodeInfo) {
-      window.showDefaultNodeInfo();
-    } else {
-      // Forzar la reconstrucción de la Members List si no está
-      setTimeout(() => {
-        if (window.buildMembersList && window.data) {
-          window.buildMembersList(window.data);
-        }
-      }, 100);
-    }
+    // Forzar la reconstrucción completa del panel
+    setTimeout(() => {
+      if (window.showDefaultNodeInfo) {
+        window.showDefaultNodeInfo();
+      }
+      // También reconstruir Members List por si acaso
+      if (window.buildMembersList && window.data) {
+        window.buildMembersList(window.data);
+      }
+    }, 50);
   } else if (section === 'about') {
     aboutDiv.style.display = 'block';
   } else if (section === 'contributors') {
