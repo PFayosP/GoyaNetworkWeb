@@ -660,20 +660,22 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       physics: {
         enabled: true,
-        solver: 'repulsion',
-        repulsion: {
-          nodeDistance: 190,         // antes: 170 — esto separa más los nodos
-          centralGravity: 0.10,       // antes: 0.11 — más atracción hacia el centro
-          springLength: 100,         // antes: 100 (puedes dejar 100-110)
-          springConstant: 0.03,      // antes: 0.03
-          damping: 0.58               // antes: 0.55. Estabiliza más rápido sin perder suavidad
+        solver: 'barnesHut',
+        barnesHut: {
+          gravitationalConstant: -1800, // empuje similar a tu repulsion.nodeDistance
+          centralGravity: 0.10,         // como lo tenías
+          springLength: 100,            // como lo tenías (mantiene escala)
+          springConstant: 0.03,         // como lo tenías
+          damping: 0.60,                // un pelín más para cerrar antes
+          avoidOverlap: 0.1             // separa un poco sin cambiar el estilo
         },
         stabilization: {
           enabled: true,
-          iterations: 120,      // antes: 200
+          iterations: 60,     // antes 80: suficiente con BH
           updateInterval: 10
         }
       },
+
       layout: {
         improvedLayout: false,
         randomSeed: 1912  // Consistent layout
@@ -777,9 +779,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (updates.length > 0) {
       nodes.update(updates);
     }
-
-    // FORZAR la física a estabilizar con las nuevas posiciones
-    network.stabilize();
 
     // 🔁 Ahora sí: detener la física
     network.setOptions({ physics: { enabled: false } });
