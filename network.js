@@ -309,7 +309,9 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // Partículas habituales a ignorar al tomar el "apellido"
       const particles = new Set([
-        'de','del','de-la','de-las','de-los','la','las','los','le','les','du','des','d','da','di','do','dos','van','von','der','den','zu','zur','y','e','the','of'
+        "de", "d'", "del", "de-la", "de-las", "de-los", "la", "las", "los", "le", "les",
+        "du", "des", "d", "da", "di", "do", "dos", "van", "von", "der", "den", "zu", "zur",
+        "y", "e", "the", "of"
       ]);
 
       const suffixes = new Set(['jr','junior','fils','hijo']);
