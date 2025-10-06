@@ -1,0 +1,984 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Goya Network</title>
+
+  <meta property="og:title" content="The Goya Network">
+  <meta property="og:description" content="Explore the social and artistic network around Francisco de Goya in 19th-century France and Spain.">
+  <meta property="og:image" content="https://www.goyanetwork.com/images/og-thumbnail.jpg">
+  <meta property="og:url" content="https://www.goyanetwork.com">
+  <meta property="og:type" content="website">
+
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: "EB Garamond", serif;
+      font-size: 18px;
+      background-color: #111;
+      color: white;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    /* Add this to unify fonts */
+    #network, 
+    #search, 
+    #searchButton, 
+    #professionFilter, 
+    #nationalityFilter {
+      font-family: "EB Garamond", serif;
+    }
+
+    /* Add this to style form elements */
+    input, select, button {
+      font-family: "EB Garamond", serif;
+      font-size: 16px;
+      padding: 5px 10px;
+      background-color: #222;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 4px;
+    }
+
+    #about strong {
+      display: block;
+      margin-top: 1.5rem;
+      font-size: 1.1em;
+      color: white; /* Ya no azul */
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: bold;
+      padding-bottom: 0.3rem;
+    }
+
+    #about a {
+      color: #66ccff;
+      font-weight: normal;
+      text-decoration: none;
+    }
+    
+    button:hover {
+      background-color: #333;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* <-- esta línea alinea verticalmente */
+      padding: 10px 20px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 2rem;
+      position: relative;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  
+    .logo {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 100px; /* aumenta el tamaño del logo */
+      width: auto;
+    }
+
+    .node-overview {
+      margin-bottom: 1em;
+      font-size: 1.1em;
+      background: #f8f8f8;
+      color: #111; /* ✅ texto oscuro */
+      padding: 0.5em;
+      border-radius: 6px;
+    }
+
+    .title-group h1 {
+      margin: 0;
+      font-size: 3rem; /* más grande */
+      color: white;
+    }
+    
+    .title-group p {
+      margin: 0;
+      font-size: 1.4rem; /* MÁS grande */
+      color: #ccc;
+    }
+
+    .menu-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.7rem;
+      padding: 0.5rem 1.5rem;
+      margin-top: -1rem; /* más pegado al título */
+    }
+  
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* <-- alinea verticalmente ambos bloques */
+      padding: 10px 20px;
+    }
+    
+    .menu-buttons button {
+      padding: 6px 12px;
+      border: 1px solid #555; /* igual que los select probablemente */
+      background-color: #1a1a1a;
+      color: white;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    /* Adjust menu buttons to align better */
+    .menu-buttons {
+      display: flex;
+      gap: 0.7rem; /* Match the gap in .controls */
+      align-items: center; /* Vertical alignment */
+    }
+
+    .nav-buttons,
+    .controls {
+      display: flex;
+      gap: 10px;
+    }
+
+    /* Optional: If the search bar is still misaligned, adjust its margin */
+    #search {
+      margin: 0;
+    }
+      
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center; /* Vertical center */
+    }
+
+    .controls select,
+    .controls input,
+    .controls button {
+      padding: 6px 12px;
+      border: 1px solid #555;
+      background-color: #1a1a1a;
+      color: white;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .menu-buttons button,
+    .controls select,
+    .controls button {
+      min-width: unset;
+    }
+
+    .layout-container {
+      display: flex;
+      align-items: stretch !important;
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+     }
+      
+    .layout-container.visible {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      padding: 0 1rem; /* sin padding vertical */
+      width: 100%;
+      height: 80vh; /* 🔥 esta es la clave */
+      align-items: stretch !important;
+      flex-wrap: nowrap;
+    }
+  
+    .layout-container.hidden {
+      display: none;
+    }
+  
+    /* Versión responsive para móviles */
+    @media (max-width: 768px) {
+      .layout-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+    
+        #nodeInfo {
+          width: 100%;
+          height: 50vh !important;
+          overflow-y: auto;
+          flex-grow: 1;
+          max-width: none; /* Remove max-width restriction in mobile */
+          line-height: 1.4; /* Adjust line height for better spacing */
+        }
+    
+        #network {
+          height: 50vh !important;
+          flex-grow: 1;
+        }
+      
+        #network {
+          min-width: 60%;
+        }
+      
+        #nodeInfo::after {
+          display: none;
+        }
+      }
+    
+  #network {
+    width: 100%;
+    flex: 1;
+    height: 80vh;
+    background: black;
+  }
+    
+  #network.hidden {
+    display: none;
+    height: 0;
+  }
+    
+    /* Evita que #network deje espacio cuando está oculto */
+  #network[style*="display: none"] {
+    height: 0 !important;
+  }
+
+  #nodeInfo {
+    flex: 1;
+    max-width: 30%;
+    background-color: #222;
+    padding: 1rem;
+    font-size: 16px;
+    text-align: left;
+    color: white;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+    
+    #nodeInfo::after {
+      display: none;
+    }
+      
+  .node-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+      
+  .node-info img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+
+    #nodeInfo ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+    }
+    
+    #nodeInfo li {
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+    }
+
+    /* Add this to fix the spacing issues */
+    #nodeInfo p {
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+    }
+    
+    #nodeInfo h2 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    #nodeInfo ul {
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+    }
+    
+    #nodeInfo strong {
+      display: inline; /* Ensures strong tags don't create line breaks */
+      font-weight: bold;
+    }
+    
+    /* ——— Members list: hacer que ocupe todo el alto disponible del panel ——— */
+    #nodeInfo { display: flex; flex-direction: column; } /* ya lo tienes */
+    #membersSection {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;   /* ocupa el espacio libre del panel */
+      min-height: 0;    /* IMPORTANTÍSIMO para permitir scroll interno */
+    }
+    #membersList {
+      flex: 1 1 auto;   /* la lista crece dentro de la sección */
+      min-height: 0;    /* permite que el overflow funcione */
+      max-height: none !important; /* elimina límites previos */
+      overflow-y: auto; /* SOLO la lista hace scroll */
+      padding-right: 6px;
+      line-height: 1.5;
+    }
+
+  .contributions-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  footer {
+    font-family: "EB Garamond", serif;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: black;
+    line-height: 1.2;      /* Compacta líneas */
+  }
+
+    a {
+      color: #66ccff;
+      font-weight: normal;
+      text-decoration: none;
+    }
+
+  .social-icons {
+    margin-top: 1rem;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #444;
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #1da1f2;
+  }
+
+  .social-icons i {
+    vertical-align: middle;
+  }
+  
+  html, body {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .section-heading {
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-bottom: 1px solid #666;
+    padding-bottom: 0.2em;
+    color: #ccc;
+  }
+    
+</style>
+
+  
+  <script defer type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Goya Network">
+    <meta name="twitter:description" content="Explore Goya's network of artists, collectors, and writers.">
+    <meta name="twitter:image" content="https://www.goyanetwork.com/images/og-thumbnail.jpg">
+  
+  <!-- Estilos del footer y redes sociales -->
+  <style>
+    .footer {
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      background-color: #f9f9f9;
+      color: black;
+      line-height: 1.3;
+    }
+  
+    .social-icons {
+      margin-top: 1rem;
+    }
+  
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #444;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+  
+    .social-icons a:hover {
+      color: #1da1f2;
+    }
+    
+    .social-icons i {
+      vertical-align: middle;
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NYR5EFSWLL');
+  </script>
+  
+</head>
+<body>
+  
+  <div class="header">
+    <div class="header-container">
+      <img src="images/GoyaNetwork_logo.jpg" alt="Goya Logo" class="logo">
+      <div class="title-group">
+        <h1>Goya Network</h1>
+        <p>Mapping Goya's Impact in 19th-Century France and Spain</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-bar">
+    <div class="nav-buttons">
+      <button onclick="showSection('network')">Network</button>
+      <button onclick="showSection('about')">About</button>
+      <button onclick="showSection('contributors')">Contributors</button>
+      <button onclick="showSection('bibliography')">Bibliography</button>
+      <button onclick="showSection('artworks')">Artworks</button>
+      <button onclick="showSection('cite')">How to cite</button>
+      <button id="newInBtn">New in</button>
+      <button onclick="showSection('partners')">Partners</button>
+    </div>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search..." class="search-bar">
+      <button onclick="search()" class="search-button">Search</button>
+      <select id="professionFilter" onchange="filterGraph()">
+        <option value="">All professions</option>
+        <option value="Actor">Actor</option>
+        <option value="Architect">Architect</option>
+        <option value="Art dealer">Art dealer</option>
+        <option value="Art patron">Art patron</option>
+        <option value="Art historian">Art historian</option>
+        <option value="Banker">Banker</option>
+        <option value="Caricaturist">Caricaturist</option>
+        <option value="Clergyman">Clergyman</option>
+        <option value="Collector">Collector</option>
+        <option value="Critic">Critic</option>
+        <option value="Diplomat">Diplomat</option>
+        <option value="Draughtsman">Draughtsman</option>
+        <option value="Editor">Editor</option>
+        <option value="Engraver">Engraver</option>
+        <option value="Femme de lettres">Femme de lettres</option>
+        <option value="Hispanist">Hispanist</option>
+        <option value="Journalist">Journalist</option>
+        <option value="Jurist">Jurist</option>
+        <option value="Librarian">Librarian</option>
+        <option value="Lithographer">Lithographer</option>
+        <option value="Lithographic printer">Lithographic printer</option>
+        <option value="Medical doctor">Medical doctor</option>
+        <option value="Military member">Military member</option>
+        <option value="Musician">Musician</option>
+        <option value="Novelist">Novelist</option>
+        <option value="Painter">Painter</option>
+        <option value="Philosopher">Philosopher</option>
+        <option value="Playwright">Playwright</option>
+        <option value="Poet">Poet</option>
+        <option value="Politician">Politician</option>
+        <option value="Salonnière">Salonnière</option>
+        <option value="Scholar">Scholar</option>
+        <option value="Sculptor">Sculptor</option>
+        <option value="Socialite">Socialite</option>
+        <option value="Translator">Translator</option>
+        <option value="Writer">Writer</option>
+      </select>
+      <select id="nationalityFilter" onchange="filterGraph()">
+        <option value="">All nationalities</option>
+        <option value="British">British</option>
+        <option value="French">French</option>
+        <option value="German">German</option>
+        <option value="Irish">Irish</option>
+        <option value="Italian">Italian</option>
+        <option value="Polish">Polish</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Swiss">Swiss</option>
+      </select>
+    </div>
+  </div>
+    
+  <!-- Loading message (will be hidden after network is ready) -->
+  <div id="loadingMessage" style="text-align:center; padding: 2rem; font-size: 1.2rem;">
+    Loading network…
+  </div>
+  
+  <!-- 🔧 Layout principal con grafo y panel de info -->
+  <div class="layout-container visible" id="layout">
+    <div id="network"></div>
+    <div id="nodeInfo">
+      <p>Click a <strong>node</strong> (an individual) or <strong>edge</strong> (a connection between two individuals) to view the data they contain.</p>
+      <p style="color: #ccc; margin-top: 1em;">(It might take a few seconds for the website to show the network)</p>
+
+      <!-- NEW: Members list (A–Z by surname) -->
+      <div id="membersSection" style="margin-top: 1rem;">
+        <div class="section-heading">Members (A–Z by surname)</div>
+        <div id="membersList"></div>
+      </div>
+
+</div>
+
+  </div>
+  
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 0.5rem 1rem 0 1rem;">
+  <div id="networkStats" style="font-size: 0.9rem; color: #ccc;">
+    Nodes: – | Connections: –<br>
+    <span style="font-size: 0.8rem; color: #999;">Last update: 7 June 2025</span>
+  </div>
+  <div>
+    <button onclick="toggleFullScreen()" title="Toggle fullscreen"
+      style="padding: 0.4rem 0.8rem; background:#333; color:white; border:1px solid #555; border-radius:4px;">
+      <i class="fas fa-expand"></i> Fullscreen
+    </button>
+  </div>
+</div>
+
+
+  <div id="about" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6;">
+    <h2>About the Goya Network</h2>
+
+    <p style="background: #333; color: white; padding: 1rem; border-left: 5px solid #66ccff; font-size: 1.1rem;">
+      <span style="font-weight: bold;">📣 Forthcoming (2025): Fayos-Pérez & Verő, "The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain"</span>, to be published in 
+      <a href="https://leonardo.info/leonardo/" target="_blank" style="color: #66ccff; font-weight: bold;"><em>Leonardo</em></a>, a peer-reviewed academic journal published by the 
+      <span style="font-weight: bold;">MIT Press</span> covering the application of contemporary science and technology to the arts and music.
+    </p>
+
+    <p><strong>Introduction:</strong> Throughout the 18th and 19th centuries, networks of artists, writers, collectors and intellectuals were crucial for artistic production, as well as for the dissemination and understanding of historical figures. Mapping these connections allows us to better understand the dynamics of sociability and the circulation of ideas. In recent years, projects in the Digital Humanities have demonstrated the potential of network analysis to illuminate historical artistic milieus, such as the <a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank">Thorvaldsen Letter Archive</a>, <a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank">Mapping the Republic of Letters</a> (University of Stanford), <a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank">Early Modern Letters Online (EMLO)</a> (University of Oxford),  <a href="https://mappingrome.com/" target="_blank">Mapping Rome</a>, and <a href="https://womensbios.lib.virginia.edu/index.html" target="_blank">Collective Biographies of Women</a> (Alison Booth, University of Virginia).</p> 
+    
+      <p><em>The Goya Network</em> builds on these methods, offering an interactive database that maps the social and professional relationships surrounding the Spanish artist Francisco de Goya, focusing on his connections with artists, critics, and collectors in 19th-century Spain and France. Unlike traditional studies of his work, this project emphasizes the relational context that shaped Goya’s legacy, offering a novel tool for the study of historical artists’ social networks. As a ‘living’ database, it facilitates cross-disciplinary collaboration and serves as both a research tool and a public resource, providing insight into the scope of Goya’s influence and the reception of his work.</p>
+      
+      <p><strong>Origin:</strong> This is a research-based digital project developed by Paula Fayos-Pérez as part of her postdoctoral work on Goya's social and professional networks. It is a continuation of the research done during her PhD (University of Cambridge, 2018) <a href="https://www.repository.cam.ac.uk/items/8d9751ce-aca1-4d35-9436-0820ecbc98d4" target="_blank">(repository)</a>, which was later transformed into a book: <a href="https://www.ceeh.es/en/publicacion/goyas-caprichos-in-nineteenth-century-france-politics-of-the-grotesque/" target="_blank"><em>Goya’s Caprichos in Nineteenth-Century France. Politics of the Grotesque</em></a> (CEEH, 2024).</p>
+
+    <p><strong>User guide:</strong> There is data contained in each node (individual) and edge (connection between two individuals). On the nodes, users can see biographic information as well as artistic/literary production, art collection and link to Goya's work. On the edges, one can see the relationship type, correspondence, collaborations, and others. Edges in grey/silver colour are direct connections (friends, colleagues, relatives, acquaintances, etc.), while edges in golden colour are secondary connections (e.g. artists and writers who copied or wrote about Goya but never met him in person). The size of the nodes is proportional to the number of edges (connections) they hold.</p>
+
+    <p><strong>Nature of the project:</strong> The Goya Network is conceived as a collaborative, crowd-sourced database with the aim of becoming a useful tool for scholars, students and the general public of Goya. We welcome contributions by art historians, historians, Hispanists, lecturers and curators specialised in Goya, 19th-century Spain, 19th-century France and in any of the members of the network (e.g. Federico Madrazo, Prosper Mérimée, Eugène Delacroix, etc.). To submit a contribution, please see the Contributions section on the website below.</p>
+      
+    <p><strong>Team:</strong> The project began with initial contributions by Anita L Verő, PhD in Artificial Intelligence (University of Cambridge, 2022), computer scientist and founder of <a href="https://www.consonant-ai.com" target="_blank">ConsonantAI.</a></p>
+    
+    <p><strong>Methodology:</strong> Art historical research: based on bibliographic and archival sources.<br>
+Web development: built using HTML and JavaScript, with structured data in JSON, and version control and deployment through GitHub, developed with the assistance of ChatGPT (OpenAI) and DeepSeek (High-Flyer).</p>
+
+    <p><strong>Funding:</strong> Work produced with the support of a 2024 Leonardo Grant (<a href="https://www.redleonardo.es/beneficiario/paula-fayos-perez/" target="_blank">Beca Leonardo</a>) for Scientific Research and Cultural Creation, <a href="https://www.fbbva.es/" target="_blank">BBVA Foundation.</a> The Foundation takes no responsibility for the opinions, statements and contents of this project, which are entirely the responsibility of its authors.</p>
+  
+    <p><strong>Copyright and License:</strong> The Goya Network is protected by notarial deed (Madrid, 2025), documenting the research and development process from 2018 to 2025.  
+Its code and structure are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color:#66ccff;">CC BY-NC 4.0</a>, allowing non-commercial academic use with proper attribution to the author.</p>
+    
+    <p><strong>Data and cookies:</strong> This website uses cookies exclusively for Google Analytics, which anonymously tracks visitor behaviour. We use this information only to understand how the site is being used and to improve its content and navigation. You can opt out of Google Analytics cookies across all websites by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color:#66ccff;">Google Analytics Opt-out Browser Add-on</a>. For more information on how Google uses cookies, visit the <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" style="color:#66ccff;">Cookies & Google Analytics</a> page.</p>
+  </div>
+
+  <div id="contributors" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6;">
+  <h2>Contributors</h2>
+  <ul>
+    <li><strong>Anita L Verő</strong>: PhD in Artificial Intelligence (University of Cambridge, 2022). Computer scientist and founder of <a href="https://www.consonant-ai.com" target="_blank">ConsonantAI.</a> Contribution: development and initial setup of the website (January 2025).</li> <br>
+    <li><strong>Manuela B. Mena-Marqués</strong>: PhD in Art History (Complutense University of Madrid, 1976). Curator of the Prints and Drawings Department (1979-1981), Deputy Director (1981-1996) and Head of the Curatorial Department for 18th-Century Painting and Goya at the Prado Museum (1996-2019). Contribution: feedback on the website (June 2025).</li> <br>
+    <li><strong>Joëlle Arches</strong>, Chief Curator and Director of the <a href="https://www.museegoya.fr/" target="_blank">Musée Goya</a> and Jean Jaurès Museum, and <strong>Cécile Berthoumieu</strong>, Senior Heritage Curator (Attachée principale de conservation du patrimoine). Contribution: website feedback; suggested adding Marcel Briguiboul to the network (September 2025).</li>
+  </ul>
+</div>
+
+<div id="bibliography" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6;">
+  <h2>Bibliography</h2>
+  <p>This section lists the bibliographic sources used throughout the project. References in nodes and edges appear as short citations (e.g. Adhémar 1958).</p>
+  <ul>
+    <li>Adhémar 1958. Jean Adhémar, <em>Inventaire du fonds français après 1800, Bibliothèque national, Départament des estampes, vol. 10</em>, Paris, 1958</li>
+    <li>Águeda & Salas 1982. Águeda & Salas (eds.), <em>Goya. Cartas a Martín Zapater</em>, 1982.</li>
+    <li>Albarrán 2018. Virginia Albarrán Martín, 'Pintura de tema religioso de Agustín Esteve', in Alejandro Cañestro Donoso, ed. <em>Scripta artium in honorem prof. José Manuel Cruz Valdovinos</em>, 1, Madrid, pp. 297-318.</li>
+    <li>Albarrán (upcoming). Virginia Albarrán Martín, 'De Goyas que son Esteves', in <em>Goya: New Perspectives</em>.</li>
+    <li>Alcantara 1961. Odette d'Alcantara, <em>Marcello: Adèle d'Affry, duchesse Castiglione-Colonna, 1836-1879, sa vie, son œuvre, sa pensée et ses amis</em>, Genève, Éditions générales, 1961.</li>
+    <li>Alzaga 2012. Amaya Alzaga, <em>Raimundo de Madrazo y Garreta (1841-1920)</em>, PhD thesis, UNED, 2012.</li>
+    <li>Alzaga 2018. Amaya Alzaga, 'Federico de Madrazo en París (1837-1839): su mirada sobre la pintura francesa de su tiempo y viceversa', in <em>Federico de Madrazo y Carlos Luis de Ribera. Pintores Del Romanticismo Español</em>, 2018, pp.8-28.</li>
+    <li>Antigüedad del Castillo-Olivares 1987. María Dolores Antigüedad del Castillo-Olivares, <em>José Bonaparte y El Patrimonio Artístico de Los Conventos Madrileños</em>, Universidad Complutense de Madrid, Departamento de Historia del Arte, 1987.</li>
+    <li>Antigüedad del Castillo-Olivares 1999. María Dolores Antigüedad del Castillo-Olivares, <em>El Patrimonio Artístico de Madrid Durante El Gobierno Intruso (1808-1813)</em>, UNED, 1999.</li>
+    <li>Antigüedad del Castillo-Olivares & Alzaga 2011. María Dolores Antigüedad del Castillo-Olivares & Amaya Alzaga Ruiz, <em>Colecciones, Expolio, Museos y Mercado Artístico En España En Los Siglos XVIII Y XIX</em>, Centro de Estudios Ramon Areces / UNED, 2011.</li>
+    <li>Avrett 1954. Robert Avrett, 'Ochoa's Translation of Hugo's Hernani: A Study in Racial Psychologies' <em>The Modern Language Journal</em>, Vol. 38 no. 7, Nov 1954, pp.362-65.</li>
+    <li>Aymes 2008. Jean René Aymes, <em>Españoles en París en la época romántica 1808-1848</em>, 2008.</li>
+    <li>Aymes & Fernández Sebastián 1997. Jean René Aymes & Javier Fernández Sebastián, <em>La imagen de Francia en España (1808-1850)</em>, Presses de la Sorbonne Nouvelle / Universidad del País Vasco, 1997.</li>
+    <li>Baridon 2022. Laurent Baridon, <em>De Grandville à Topor : Le fantastique des dessinauteurs</em>, INHA, 2022.</li>
+    <li>Baridon & Guédron 2000. Laurent Baridon & Martial Guédron, <em>Corps et arts: physionomies et physiologies dans les arts visuels</em>, Paris, 2000.</li>
+    <li>Baridon & Guédron 2021. Laurent Baridon & Martial Guédron, <em>L'art et l'histoire de la caricature</em>, Paris, 2021 (new edition).</li>
+    <li>Baudelaire 1906. Charles Baudelaire, <em>Lettres: 1841-1866</em>, Paris, 1906.</li>
+    <li>Baudelaire-Le Dantec & Pichois 1961 <em>Baudelaire. Œuvres complètes</em>, ed. Yves-Gérard Le Dantec & Claude Pichois, Paris, 1961.</li>
+    <li>Baudelaire-Pichois 1976. <em>Baudelaire. Œuvres complètes</em>, ed. Claude Pichois, Gallimard, Bibliothèque de la Pléiade, t.II, 1976.</li>
+    <li>Bénichou 2004. Paul Bénichou, <em>Romantismes français</em> t.I, ed. 2004.</li>
+    <li>Bonnafé 1890. Edmond Bonnafé, <em>Eugène Piot</em>, 1890.</li>
+    <li>Bouteron 1941. Marcel Bouteron, 'L'amitié de Balzac et de Stendhal', <em>Revue des Deux Mondes</em>, July 1941, pp.95-106.</li>
+    <li>Bozal 1994. Valeriano Bozal, <em>Goya y el gusto moderno</em>, 1994.</li>
+    <li>Cachin, Moffett & Wilson-Bareau 1983. Françoise Cachin, Charles S. Moffett & Juliet Wilson-Bareau, <em>Manet: 1832-1883</em>, Paris, Réunion des Musées Nationaux, 1983.</li>
+    <li>Calvo Ruata 2020. José Ignacio Calvo Ruata, 'Coleccionistas de Goya En El Siglo XIX', in <em>El siglo XIX: el arte en la Corte Española y en las nuevas colecciones peninsulares</em>, edited by María del Carmen Lacarra Ducay, pp.15-62.</li>
+    <li>Canavaggio 2016. Jean Canavaggio, <em>Les Espagnes de Mérimée</em>, CEEH, 2016.</li>
+    <li>Carrete & Vega 1991. Carrete Parrondo & Jesusa Vega, <em>Goya grabador</em>, 1991.</li>
+    <li>Chagniot 2016. Claire Chagniot, <em>Baudelaire et l'estampe</em>, Presses de l'universités Paris-Sorbonne, 2016.</li>
+    <li>Champfleury 1885. Jules Champfleury, <em>Histoire de la caricature</em>, 1885.</li>
+    <li>Chazal 2008. Gilles Chazal (ed.), <em>Goya graveur</em>, exhibition catalogue, Paris, Petit Palais / INHA, 2008.</li>
+    <li>Courajod 1890. Louis Courajod, “Eugène Piot et les objets d'art légués au Louvre”, <em>Gazette des Beaux-arts</em>, 66, 1890, pp.395-425.</li>
+    <li>Delesalle 1982. J. F. Delesalle, 'Théophile Gautier et Les Désastres de La Guerre de Goya', <em>Bulletin de La Société Théophile Gautier</em>, vol. 4, 1982, pp. 103-06.</li>
+    <li>Delesalle 1983. Jean-François Delesalle, 'Théophile Gautier, et les Désastres de la Guerre de Goya (à propos d'un billet de Charles Asselineau à Philippe Burty)'', in <em>Théophile Gautier: l'art et l'artiste. Actes du colloque internationale, Montpellier, Université Paul-Valéry, septembre 1982</em>, vol. 1, Montpellier, 1983, pp.103-106.</li>
+    <li>Delteil-Hazard 1904. Loÿs Delteil & Nicolas Auguste Hazard, <em>Catalogue raisonné de l'œuvre lithographié de Honoré Daumier</em>, 1904. </li>
+    <li>Dengler Gassin 1991. Roberto Dengler Gassin, 'Algunas consideraciones a propósito de Hernani, drama de Victor Hugo (1830), versión castellana de Eugenio de Ochoa (1836)', in ed. Donaire & Lafarga, <em>Traducción y adaptación cultural: España-Francia</em>, 1991, pp.337-345.</li>
+    <li>Díez 1994. José Luis Díez, <em>Federico de Madrazo: epistolario, vol. 1</em>, 1994.</li>
+    <li>Dumas et al. 1997. Ann Dumas et al., <em>The Private Collection of Edgar Degas: A Summary Catalogue</em>, New York, 1997.</li>
+    <li>Dumas-Schopp 2014. Alexandre Dumas, <em>Correspondance générale</em>, ed. Claude Schopp, tome 1 (1820 à 1832), 2014.</li>
+    <li>Fayos Pérez 2019-A. Paula Fayos Pérez, 'Delacroix after Goya's Caprichos: A New Sheet of Drawings', <em>The Burlington Magazine</em>, vol. 161, no. 1395, June 2019, pp. 474-81.</li>
+    <li>Fayos Pérez 2019-B. Paula Fayos Pérez, 'Grandville: la transformación fantástica de la fisionomía', in <em>El Arte Fantástico</em>, 2019, pp. 231-250.</li>
+    <li>Fayos Pérez 2020. Paula Fayos Pérez, 'Valentín Carderera and the Dissemination of Goya's Graphic Work in France', <em>The Burlington Magazine</em>, vol. 162, no. 1413, 2020, pp. 1048-55.</li>
+    <li>Fayos Pérez 2021. Paula Fayos Pérez, “Lettre de Mérimée à Valentín Carderera du 8 juillet 1856”, <em>Cahiers Mérimée</em>, no.13, 2021, Classiques Garnier, Paris, pp.119-127.</li>
+    <li>Fayos Pérez 2024. Paula Fayos Pérez, <em>Goya's Caprichos in Nineteenth-Century France. Politics of the Grotesque</em>, 2024.</li>
+    <li>Fontaney-Jasinski 1925. <em>Antoine Fontaney, Journal Intime</em>, René Jasinski (ed.), Les Presses françaises, 1925.</li>
+    <li>Gandon 1966. Jean Gandon, 'Hugo juge de Delacroix', <em>Gazette des Beaux-arts</em>, no.108, sept 1966, p.173-75.</li>
+    <li>Garnery 2023. Lucille Garnery, <em>Des bizarrerie du marché de l'art : les rachats Piot lors de ses propres ventes</em>, 2023 <a href="https://venteanti>que.hypotheses.org/4531" target="_blank">(venteantique)</a></li>
+    <li>Gassier 1973. Pierre Gassier, <em>The Drawings of Goya: The Complete Albums</em>, 1973.</li>
+    <li>Gassier & Wilson-Bareau 1971. Pierre Gassier & Juliet Wilson-Bareau, <em>Goya: His Life and Work</em>, catalogue raisonné, 1971.</li>
+    <li>Géal 2017. François Géal, 2017, 'Mérimée/Goya, chronique d'un désamour annoncé', <em>Cahiers Mérimée</em>, 9, 2017, pp.55-90.</li>
+    <li>Gerard Powell 2014. Véronique Gerard Powell, 'Les Collectionneurs Espagnols et La Vente d'œuvres d'art à Paris Au XIXe Siècle (1826-1880)'', in <em>El Arte Español Entre Roma y París (Siglos XVIII y XIX): Intercambios Artísticos y Circulación de Modelos</em>, edited by Luis Sazatornil Ruiz and Jiméno Frédéric, Casa de Velázquez, 2014, pp. 305-23.</li>
+    <li>Gilarranz Ibáñez 2020. Ainhoa Gilarranz Ibáñez, 'No Solo Es Arte: Las Redes de Federico de Madrazo Durante Su Pensionado En París y Roma (1837-1842)'', <em>Bulletin Hispanique</em>, no. 122-1, June 2020, pp. 277-92.</li>
+    <li>Glendinning 1977. Nigel Glendinning, <em>Goya and his Critics</em>, 1977 (new edition, ed. Vega, 2017).</li>
+    <li>González López 1994. Carlos González López, 'Federico de Madrazo en el París de 1833', <em>Archivo Español de Arte</em>, 1994, vol. 67, no. 267, pp.211-24.</li>
+    <li>González Navarro 2023. Carlos González Navarro, <em>José de Madrazo (1781-1859), Dibujante</em>, PhD thesis, Madrid, Universidad Complutense de Madrid, 2023.</li>
+    <li>Griener & Guerdat 2015. Pascal Griener and Pamella Guerdat, <em>Marcello, une sculptrice à l'œuvre: correspondence, I</em>, Fribourg, 2015.</li>
+    <li>Griffiths 2009. Antony Griffiths, review of Juliet Wilson-Bareau, 'Goya in France', in <em>Goya graveur</em> (2008), <em>Print Quarterly</em>, 26, 2, 2009, pp.188-189.</li>
+    <li>Guédron 2018. Martial Guédron, <em>Les monstres: Créatures étranges et fantastiques, de la préhistoire à la science-fiction</em>, 2018.</li>
+    <li>Guinard-A 1967. Paul Guinard, <em>Dauzats et Blanchard: Peintres de l'Espagne Romantique</em>, 1967.</li>
+    <li>Guinard-B 1967. Paul Guinard, 'Baudelaire, Le Musée Espagnol et Goya', <em>Revue d'Histoire Littéraire de La France</em>, vol. 67, no. 2, April 1967, pp. 310-28.</li>
+    <li>Hansen 2021. Dorothee Hansen, <em>Manet and Astruc. Friendship and Inspiration</em>, CEEH, 2021.</li>
+    <li>Harris 1964. Tomas Harris, <em>Goya. Engravings and Lithographs</em>, 1964.</li>
+    <li>Hopkins 2021. Claudia Hopkins, <em>Romantic Spain: David Roberts and Genaro Pérez Villaamil</em>, CEEH, 2021.</li>
+    <li>Hovasse 2001. Jean-Marc Hovasse, <em>Victor Hugo. vol.I: Avant l'exil, 1802-1851</em>, Paris, 2001.</li>
+    <li>Kaenel 2005. Philippe Kaenel, <em>Le métier de l'illustrateur 1830-1880: Rodolphe Töpffer, J. J. Grandville, Gustave Doré, 2005 (1st ed. 1996).</em></li>
+    <li>Lacoste-Veysseyre  1982. Claudine Lacoste-Veysseyre, <em>Théophile Gautier et Les Artistes de Son Temps: Exposition</em>, Montpellier, Musée Fabre, 1982.</li>
+    <li>Lacoste-Veysseyre 2014. Claudine Lacoste-Veysseyre (ed.), <em>Théophile Gautier. Œuvres Complètes Section 8 Tome 1; Feuilletons Divers (1833-1837); Ménagerie Intime; La Nature Chez Elle</em>, Paris, 2014.</li>
+    <li>Lanzarote Guiral 2016. José María Lanzarote Guiral, <em>Diarios de viaje de Valentín Carderera por Europa (1841-1861). París, Londres, Bélgica y Alemania</em>, 2016.</li>
+    <li>Le Men 2008. Ségolène Le Men, <em>Daumier et la caricature</em>, 2008.</li>
+    <li>Lescure 1995. Maurice Lescure, <em>Madame Hamelin : Merveilleuse et turbulente fortunée, 1776-1851</em>, 1995.</li>
+    <li>Lethève 1968. Jacques Lethève, 'Le public du Cabinet des Estampes au XIXe siècle', in <em>Humanisme actif: mélanges d'art et litterature offerts à Julien Cain</em>, Paris, 1968, pp.101-111.</li>
+    <li>Lipschutz 1972. Ilse Hempel Lipschutz, <em>Spanish Painting and the French Romantics</em>, Harvard University Press, 1972.</li>
+    <li>Lipschutz 1980. Ilse Hempel Lipschutz, 'Théophile Gautier et Son Espagne Retrouvée Dans l'œuvre de Goya', <em>Bulletin de La Société Théophile Gautier</em>, vol. 2, 1980, pp.9-34.</li>
+    <li>López Canellas 1981. Ángel López Canellas (ed.), <em>Goya. Diplomatario</em>, 1981.</li>
+    <li>López-Morell 2025. López-Morell, Miguel Ángel, ed. <em>Poder, patrimonio y cultura en España. Desde la Ilustración a la Restauración</em>, Madrid, Real Academia de Bellas Artes de San Fernando, 2025. <a href="https://www.poderycultura.es" target="_blank">(link)</a>.</li>
+    <li>Los Llanos & Assante di Panzillo. José de los Llanos & Maryline Assante di Panzillo, 'Goya et les frères Dutuit', in Chazal 2008, pp.151-160.</li>
+    <li>Luxenberg 2008. Alisa Luxenberg, <em>The Galerie Espagnole and the Museo Nacional, 1835-1853: Saving Spanish Art, or the Politics of Patrimony</em>, 2008.</li>
+    <li>Mano 2008. José de la Mano, “Goya intruso. Arte y política en el reinado de José I (1808-1813)”, <em>Goya en tiempos de guerra</em>, Madrid, Museo Nacional del Prado, 2008, pp.55-82.</li>
+    <li>Mano 2021. José de la Mano, <em>Javier Goya's legacy. The albums of his father's drawings</em>, 2021</li>
+    <li>Martí 2007. Monte Martí, <em>El mundo de los Madrazo: colección de la Comunidad de Madrid</em>, 2007.</li>
+    <li>Martínez Pérez et al, 2015. Alejandro Martínez Pérez et al., <em>Patrimonio en conflicto: memoria del botín napoleónico recuperado (1815-1819)</em>, Madrid, RABASF, 2015.</li>
+    <li>Martínez Plaza 2017. Pedro J. Martínez Plaza, <em>Epistolario del Archivo de Madrazo del Museo del Prado. Cartas de Mariano Fortuny, Cecilia, Ricardo, Raimundo e Isabel de Madrazo</em>, 2017.</li>
+    <li>Maynial 1943. Édouard Maynial, <em>Anthologie des romanciers du XIXe siècle</em>, 1943.</li>
+    <li>McDonald 2012. Mark McDonald, <em>Renaissance to Goya: Prints and Drawings from Spain</em>, The British Museum Press, 2012.</li>
+    <li>Melot 1984. Michel Melot, <em>The Art of Illustration</em>, 1984.</li>
+    <li>Mena-Marqués 2008. Manuela B. Mena-Marqués (dir.), <em>Goya en tiempos de guerra</em>, exhibition catalogue, 2008.</li>
+    <li>Mena-Marqués & Matilla 2018. Manuela B. Mena-Marqués & José Manuel Matilla (dirs.), <em>Catálogo Razonado de Los Dibujos de Francisco de Goya, vol. 2 (1771-1792)</em>, with G. Maurer, G. Solache, J. Carrete, J. Wilson & V. Albarrán, 2018.</li>
+    <li>Mena-Marqués & Matilla 2019. Manuela B. Mena-Marqués & José Manuel Matilla, <em>Goya: dibujos. 'Solo la voluntad me sobra'</em>, exhibition catalogue, 2019.</li>
+    <li>Mina 2014. Gianna A. Mina (dir.), <em>Marcello, Adèle d'Affry (1836-1879), duchesse de Castiglione Colonna</em>, exhibition catalogue, Fribourg, Musée d'art et d'histoire, 2014.</li>
+    <li>Monneret 1987. Sophie Monneret, <em>L'Impressionnisme et son époque</em>, vol.2, t.1, Paris, Robert Laffont, 1987.</li>
+    <li>Moulinat 1995. Francis Moulinat, <em>Théophile Gautier, critique d'art, dans les années 1830</em>, Paris, Université Paris-Sorbonne, 1995.</li>
+    <li>Ochoa 1861. Eugenio de Ochoa, <em>Paris, Londres y Madrid, Paris</em>, Dramard Baudry, 1861.</li>
+    <li>Ozaeta 2002. Mª Rosario Ozaeta, 'Eugenio de Ochoa, Traductor de Hugo', in <em>Neoclásicos y románticos ante la traducción</em>, edited by Francisco Lafarga et al, Universidad de Murcia, 2002, pp.419-36.</li>
+    <li>Pierrot & Yon 2017. Roger Pierrot & Hervé Yon, <em>Honoré de Balzac, Correspondance III (1842-1850)</em>, Gallimard, Bibliothèque de la Pleiade, 2017.</li>
+    <li>Pierrot & Yon 2011. Roger Pierrot & Hervé Yon, <em>Honoré de Balzac, Correspondance II (1836-1841)</em>, Gallimard, Bibliothèque de la Pleiade, 2011.</li>
+    <li>Pierrot 2009. Roger Pierrot, 'Balzac et Astolphe de Custine: Lectures Critiques de Leurs Œuvres Dans La Correspondance Échangée de 1835 à 1846', <em>L'Année Balzacienne</em>, vol. no. 9, no. 1, January 2009, pp.105-38.</li>
+    <li>Pierrot & Yon 2006. Roger Pierrot & Hervé Yon, <em>Honoré de Balzac, Correspondance I (1809-1835)</em>, Gallimard, Bibliothèque de la Pleiade, 2006.</li>
+    <li>Piot 1999. Charlotte Piot, <em>Eugène Piot, amateur d'art et collectionneur</em>, Mémoire de DEA, Université Paris IV, 1999.</li>
+    <li>Raineau-Lehuédé 2025. Joëlle Raineau-Lehuédé, 'Eugène Dutuit et l'estampe : du collectionneur à l'érudit', <em>Nouvelles de l'Estampe</em>, no.273, 2025. <a href="https://journals.openedition.org/estampe/6079"target="_blank">(Nouvelles de l'Estampe)</a></li>
+    <li>Robaut 1885. Alfred Robaut, <em>L'œuvre complet de Eugène Delacroix: peintures, dessins, gravures, lithographies</em>, Paris, 1885.</li>
+    <li>Romero Tobar 1997. Leonardo Romero Tobar, 'Españoles En París: Contactos de Románticos Españoles y Escritores Franceses Contemporáneos', <em>La Imagen de Francia En España (1808-1850)</em>, Presses de la Sorbonne Nouvelle / Universidad del País Vasco, 1997, pp.215-26.</li>
+    <li>Sánchez 2024. Raquel Sánchez, 'José de Madrazo y los deberes del padre perfecto', in <em>Hijos del Siglo</em>, 2024.</li>
+    <li>Sancho 2001. José Luis Sancho, 'Francisco de Goya y Fréderic Quilliet en el Palacio Real de Madrid, 1808', <em>Boletín del Museo del Prado</em>, vo.19, no.37, 2001, pp.115-142.</li>
+    <li>Sazatornil & Jimeno 2014 (eds.). Luis Sazatornil Ruiz & Frédéric Jiméno, <em>El arte español entre Roma y París (siglos XVIII y XIX): Intercambios artísticos y circulación de modelos</em>, Casa de Velázquez, 2014.</li>
+    <li>Schopp 1993. Claude Schopp (ed.), <em>Frères d'armes de la révolution romantique. Lettres d'Alexandre Dumas au Baron Taylor et à Adrien Dauzats</em>, Cahiers Alexandre Dumas, 1993, no. 20 (reedited in 2023).</li>
+    <li>Schopp 2015. Claude Schopp (ed.), <em>Une amitié capitale: Correspondance Victor Hugo - Alexandre Dumas</em>, 2015.</li>
+    <li>Schulz 2005. Andrew Schulz, <em>Goya's Caprichos: Aesthetics, Perception, and the Body</em>, 2005.</li>
+    <li>Schwander 2021. Martin Schwander (ed.), <em>Goya</em>, exhibition catalogue, Beyeler Foundation, 2021 (English/Spanish/German).</li>
+    <li>Tabarant 1947. Adolphe Tabarant, <em>Manet et ses œuvres</em>, Paris, Gallimard, 1947 (1st ed. 1897).</li>
+    <li>Tinterow 2003. Gary Tinterow et al. <em>Manet/Velázquez: The French Taste for Spanish Painting</em>, New York, Metropolitan Museum of Art, 2003.</li>
+    <li>Tomlinson 1992. Janis Tomlinson, <em>Goya in the Twilight of Enlightenment</em>, 1992.</li>
+    <li>Tomlinson 2020. Janis Tomlinson, <em>Goya: A Portrait of the Artist</em>, 2020.</li>
+    <li>Wilson-Bareau 1992. Juliet Wilson-Bareau, <em>Manet: The Execution of Maximilian: Painting, Politics and Censorship</em>, Princeton (New Jersey), Princeton University Press, 1992.</li>
+    <li>Wilson-Bareau 2016. Juliet Wilson-Bareau, <em>Goya in the Norton Simon Museum</em>, New Haven, 2016.</li>
+    <li>Wolf 1991. Reva Wolf, <em>Goya and the Satirical Print: in England and on the Continent, 1730-1850</em>, 1991.</li>
+    <li>Wolohojian & Dunn 2023. Stephan Wolohojian and Ashley Dunn, <em>Manet/Degas</em>, The Metropolitan Museum of Art, 2023.</i></li>
+  </ul>
+</div>
+
+<div id="artworks" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6;">
+  <h2>Goya's work</h2>
+    <p>
+    <strong>The issue of attribution in Goya:</strong><br>
+    When studying Goya, it is important to bear in mind that, due to the enormous demand for his work since the artist's death (which far exceeds the supply of authentic pieces), countless copies, imitations and pastiches have been produced, particularly in 19th-century Spain and France. Many of these continue to be exhibited as genuine 'Goyas' (more euphemistically, 'attributed to Goya', or even 'Goya's workshop') in museums around the world, driven by economic interests and social status. And new 'Goyas' appear every year in art galleries, dealers, and private collections.
+    </p>
+
+    <p>
+    <strong>Catalogues raisonnés, key exhibition catalogues, and biography</strong> (see the Bibliography section):<br>
+    <ul>
+      <li><strong>Full oeuvre:</strong> Juliet Wilson-Bareau & Pierre Gassier. <em>Vie et œuvre de Francisco Goya. L'œuvre complet illustré. Peintures, dessins, gravure</em>, 1970 (French); <em>The Life and Complete Work of Francisco Goya: With a Catalogue Raisonné of the Paintings, Drawings and Engravings</em>, 1971 (English); <em>Vida y obra de Francisco Goya: reproducción de su obra completa, pinturas, dibujos y grabados</em>, 1974 (Spanish). See also the catalogue of the retrospective exhibition <i>Goya</i>, Martin Schwander (ed.), Fondation Beyeler, 2021 (English/Spanish/German).</li>
+      <li><strong>Drawings:</strong> Manuela Mena-Marqués & José Manuel Matilla, <em>Catálogo Razonado de los Dibujos de Francisco de Goya, vol. 2 (1771-1792)</em>, with G. Maurer, G. Solache, J. Carrete, J. Wilson & V. Albarrán, 2018 (Spanish); <em>Goya: dibujos. 'Solo la voluntad me sobra'</em>, exh. cat., 2019 (Spanish/English); and Pierre Gassier, <em>Les dessins de Goya. Les albums</em>, 1973 (French), <em>Francisco Goya. Drawings. The Complete Albums</em>, 1973 (English).</li>
+      <li><strong>Prints:</strong> Tomas Harris, <em>Goya. Engravings and Lithographs</em>, 1964. Also Juan Carrete Parrondo & Jesusa Vega, <em>Goya grabador</em>, 1991.</li>
+      <li><strong>Biography</strong>: Janis Tomlinson, <em>Goya: A Portrait of the Artist</em>, 2020 Princeton UP (English), 2022 Cátedra (Spanish).</li>
+    </ul>
+    </p>
+
+    <p>
+    <strong>Online resources:</strong><br>
+    <ul>
+      <li><strong>Wikipedia:</strong> a comprehensive, crowd-sourced overview of Goya's works displayed in a table, showing title, image, date, location and attribution. <a href="https://en.wikipedia.org/wiki/List_of_works_by_Francisco_Goya" target="_blank"> List of Works by Francisco de Goya</a> (English) - Paintings and Prints; <a href="https://es.wikipedia.org/wiki/Anexo:Cuadros_de_Goya" target="_blank"> Cuadros de Goya</a> (Spanish) - Paintings (non exhaustive).</li><br>
+      <li><a href="https://fundaciongoyaenaragon.es/" target="_blank"><strong>Fundación Goya en Aragón:</strong></a> an online catalogue of Goya's works collated by the Fundación Goya en Aragón (part of the Government of Aragón), that includes descriptions, provenance, bibliography, and images. This catalogue, however, collects <em>all</em> works ever attributed to Goya, including copies and pastiches.</li><br>
+    </ul>
+    </p>
+
+    <p>
+    <strong>GOYA COLLECTIONS: museums, libraries, churches, and private collections:</strong><br>
+      <br>
+      SPAIN
+      <li><a href="https://www.museodelprado.es/coleccion/artista/goya-y-lucientes-francisco-de/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Museo del Prado</strong></a> (<em>Goya en el Prado</em>): artworks (paintings, prints and drawings) held at the Prado Museum, documents, printed references, and digital library.</li>
+      <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando</strong></a> (RABASF): history of Goya's link with the Academy, catalogue of works, <em>Calcografía Nacional</em> (production of Goya's prints).</li>
+      <li><strong>Patrimonio Nacional</strong> (Spanish national heritage): different paintings such as <a href="https://www.patrimonionacional.es/colecciones-reales/pintura/retrato-de-carlos-iv-como-cazador" target="_blank"><em>Portrait of Carlos IV as a Hunter</em></a> and <a href="https://www.galeriadelascoleccionesreales.es/obra-de-arte/retrato-de-maria-luisa-de-parma-en-traje-de-corte/19602330-5985-4e7e-81f7-25dce124b6a9" target="_blank"><em>Portrait of María Luisa de Parma in Court Dress</em></a>, as well as all the tapestries based on Goya's cartoons, such as <a href="https://www.patrimonionacional.es/colecciones-reales/textiles-y-tapiceria/la-era-o-el-verano" target="_blank"><em>The Summer</em></a>.</li>
+      <li><a href="https://www.bne.es/es/blog/blog-bne/post-80" target="_blank"><strong>Biblioteca Nacional de España</strong></a> (BNE): history of Goya's collections and catalogue.</li>
+      <li><a href="https://coleccion.bde.es/wca/es/secciones/coleccion/artistas/francisco-de-goya-y-lucientes-896.obras.html" target="_blank"><strong>Banco de España</strong></a> (Madrid): paintings (such as the portraits of Francisco Cabarrús, Count of Floridablanca, XI Count of Altamira and Carlos III) and prints (<em>Desastres de la guerra</em>, <em>Tauromaquia</em>, <em>Disparates</em>).</li>
+      <li><a href="https://www.museolazarogaldiano.es/obras-goya-museo-lazaro-galdiano" target="_blank"><strong>Museo Lázaro Galdiano</strong></a> (Madrid): its collection includes the paintings <i>El Aquelarre</i> (1797-98) and <i>Las Brujas/El conjuro</i> (1797-98), the oil sketches <i>Santa Isabel de Portugal curando a una enferma</i> (c.1799) and <i>San Hermenegildo en la prisión</i> (1800), and the preparatory sketch <i>El verano</i> (1786); prints like <i>El can</i> (c.1820-27); and drawings like <i>Felipe III</i> (1778), <i>Retrato ecuestre del Conde-Duque de Olivares</i> (c.1776-78), <i>Portrait of Giambattista Casti</i> (c.1802-03), <i>Modo de volar</i> (1815-16), <i>Mendigo ciego con un perro</i> (c.1824) and <i>Mendigo con acordeón</i> (c.1824-28).</li>
+      <li><a href="https://www.museothyssen.org/coleccion/artistas/goya-francisco" target="_blank"><strong>Museo Thyssen Bornemisza</strong></a> (Madrid): biography and collection, which includes the paintings <i>Retrato de Asensio Julià</i> (c.1798), <i>Retrato de Fernando VII</i> (1814-15), and <i>El Tío Paquete</i> (c.1819-20).</li>
+      <li><a href="https://museogoya.fundacionibercaja.es/goya-en-zaragoza.php" target="_blank"><strong>Museo Goya - Colección Fundación Ibercaja - Museo Camón Aznar</strong></a> (Zaragoza).</li>
+      <li><a href="https://fundacionfuendetodosgoya.org/museo-del-grabado/" target="_blank"><strong>Museo del Grabado</strong></a> (Fuendetodos, Zaragoza): museum of printmaking at Goya's birth house.</li>
+      <li><strong>CHURCHES AND CATHEDRALS</strong>: Ermita de San Antonio de la Florida (Madrid), Real Basílica de San Francisco el Grande (Madrid), Valencia Cathedral, Sevilla Cathedral, Basílica del Pilar (Zaragoza), Cartuja del Aula Dei (Zaragoza).</li>
+      <li><strong>PRIVATE COLLECTIONS</strong> (selection): colección Abelló; colección Marqués de la Romana; Duke of Alba (Palacio de Liria); Dukes of Osuna (Alameda de Osuna); Carderera collection; Fundación María Cristina Masaveu Peterson; Fundación BBVA (Madrid, Palacio del Marqués de Salamanca): <a href="https://www.coleccionbbva.com/es/pintura/443-retrato-de-carlos-iii-cazador/" target="_blank"><em>Carlos III as a Hunter</em></a> and <a href="https://www.coleccionbbva.com/es/pintura/444-don-pantaleon-perez-de-nenin/" target="_blank"><em>Portrait of Don Pantaleón Pérez de Nenín</em></a>.</li><br>
+      
+      FRANCE<br>
+      <li><a href="https://collections.louvre.fr/en/recherche?q=Francisco%20de%20Goya" target="_blank"><strong>Musée du Louvre</strong>:</a> paintings, prints, and drawings.</li>
+      <li><a href="https://www.museegoya.fr/fr/search?p=1&query=Goya" target="_blank"><strong>Musée Goya Castres</strong>:</a> paintings, prints, copies after Goya, and documents. Its collection includes <a href="https://www.museegoya.fr/fr/notice/894-5-4-l-assemblee-de-la-compagnie-royale-des-philippines-dite-la-junte-des-philippines-7dc13026-e99a-4d4d-a924-afa2204705e9" target="_blank"><i>La Junta de Filipinas</i></a> (L'Assemblée de la Compagnie Royale des Philippines) (1815) (894-5-4), the <a href="https://www.museegoya.fr/fr/notice/894-5-3-portrait-de-francisco-del-mazo-a3f16ab8-79d5-46ea-b3e8-5fb553468f2c" target="_blank"><i>Portrait of Francisco del Mazo</i></a> (1815-19) (894-5-3), and a <a href="https://www.museegoya.fr/fr/notice/894-5-2-autoportrait-aux-lunettes-36227304-cf57-402d-a357-5c5647a9aa7c" target="_blank"><i>Self-portrait with Glasses</i></a> (c.1800) (894-5-2).</li>
+      <li><a href="https://gallica.bnf.fr/selections/fr/html/francisco-de-goya" target="_blank"><strong>Bibliothèque nationale de France</strong></a> (BnF): history of the Goya collections, and catalogue (prints).</li>
+      <li>Palais des Beaux-arts de Lille: <a href="https://pba.lille.fr/Collections/Chefs-d-OEuvre/Peintures-XVI-sup-e-sup-XXI-sup-e-sup-siecles/Les-Vieilles-Le-Temps" target="_blank"><em>Les vieilles/Le temps</em></a> and <a href="https://pba.lille.fr/Collections/Chefs-d-OEuvre/Peintures-XVI-sup-e-sup-XXI-sup-e-sup-siecles/Les-Jeunes-La-Lettre" target="_blank"><em>Les jeunes/La lettre</em></a>. Also a set of the <em>Caprichos</em>.</li>
+      <li><a href="https://www.mbaa.besancon.fr/les-collections/peinture/" target="_blank"><strong>Musée des Beaux-Arts de Besançon</strong></a>: <em>Cannibals watching human remains</em> and <em>Cannibals preparing their victims</em>.</li>
+      <li>Musée des Beaux-Arts de Strasbourg: <a href="https://musees-strasbourg.skin-web.org/document/portrait-de-don-bernardo-iriarte/5ee338d7461cda28a3ab1e90?q=Goya&pos=14&pgn=0" target="_blank"><em>Portrait de Don Bernardo de Iriarte</em></a>, as well as prints (after Velázquez, <em>Caprichos</em>, <em>Disparates</em>, isolated prints like <em>El agarrotado</em>).</li>
+      <li><a href="https://www.musee-agen.fr/recherche?q=Goya&tx_indexedsearch%5Bsubmit_button%5D=OK" target="_blank"><strong>Musée des Beaux-Arts d'Agen</strong></a>: some paintings attributed to Goya, such as a self-portrait and <em>Le Ballon</em>.</li>
+      <li><a href="https://mbh.bayonne.fr/" target="_blank"><strong>Musée Bonnat-Helleu</strong></a> (Bayonne): works such as the drawing <em>Dos mujeres abrazándose</em> and portrait of Goya with glasses (attributed).</li>
+      <li>PRIVATE COLLECTIONS: Unknown Paris collection (the twin portraits of Javier Goya and Gumersinda Goicoechea).</li><br>
+
+      USA<br>
+      <li><a href="https://collections.mfa.org/search/Objects/*/Goya/images?page=1" target="_blank"><strong>Boston Museum of Fine Arts</strong></a> (MoFA): paintings (<a href="https://www.metmuseum.org/art/collection/search?q=Goya&sortBy=Relevance&searchField=ArtistCulture" target="_blank"><em>Portrait of a Young Man in Brown, possibly Javier Goya</em></a>, 48.558), <a href="https://collections.mfa.org/collections/315210/dpdprints-by-goya/objects" target="_blank">prints</a> and <a href="https://collections.mfa.org/collections/315215/dpddrawings-by-goya;jsessionid=7527C5D8C33C9415AF5A65EC964E77C1/objects" target="_blank">drawings</a>.</li>
+      <li><a href="https://www.metmuseum.org/art/collection/search?q=Goya&sortBy=Relevance&searchField=ArtistCulture" target="_blank"><strong>Metropolitan Museum</strong></a> (New York): paintings, prints, and drawings.</li>
+      <li><a href="https://www.nortonsimon.org/art/in-focus/goya" target="_blank"><strong>Norton Simon Museum</strong></a> (Pasadena): history of the Goya collections, and catalogue.</li>
+      <li><a href="https://www.frick.org/art/artists/goya" target="_blank"><strong>The Frick Collection</strong></a> (New York): history of the Goya collections, and catalogue.</li>
+      <li><a href="https://hispanicsociety.emuseum.com/search/Goya*" target="_blank"><strong>The Hispanic Society of America</strong></a> (New York): Goya collection, including paintings (<i>Portrait of the Duchess of Alba in black</i>, 1797, A102; <i>Portrait of Pedro Mocarte</i>, c.1805, A1890; <i>Portrait of Don Manuel Lapeña</i>, 1799, A99), prints (<i>Los Caprichos</i>), </i>and drawings (<i>Majas fighting, a Mano observing</i>, 1796-07, A3309; <i>Majas y majos conversing</i>, 1796-97, A3310; <i>Hay pulgas?</i>, 1796-97, A3316; <i>Buena gente somos los moralistas</i>, 1796-97, A3317; <i>Juan Fernández Navarrete</i>, 1798, LA2223; <i>Tiene prisa de escapar</i>, 1808-14, A3318; <i>Torture of a man</i>, c.1812-20, A3312; <i>Peasant carrying woman</i>, 1812-20, A3315; <i>Tuti li mundi</i>, c.1808-14, A3314; <i>Regocijo</i>, 1819-23, A3308; <i>Old man on a swing</i>, 1823-28, A3313; <i>Woman with 2 children</i>, 1823-28, A3311).</li>
+      <li><a href="https://www.nga.gov/artists/1353-francisco-goya" target="_blank"><strong>National Gallery of Art</strong></a> (Washington, D.C.): paintings, prints, and drawings.</li>
+      <li><a href="https://meadowsmuseumdallas.org/collections/pages/objects-1/portfolio/?records=9&query=mfs%20any%20%22Goya%22&sort=0" target="_blank"><strong>The Meadows Museum</strong></a> (Dallas): paintings (including copies and pastiches).</li>
+      <li><a href="https://www.artic.edu/artists/40615/francisco-jose-de-goya-y-lucientes" target="_blank"><strong>Art Institute of Chicago</strong></a>: paintings, prints, and drawings (including pastiches).</li>
+      <li><strong>Museo de Arte de Ponce</strong> (Puerto Rico): <a href="https://museoarteponce.org/obras/retrato-de-martin-zapater-portrait-of-martin-zapater/" target="_blank"><em>Portrait of Martín Zapater</em></a>.</li><br>
+
+      UK<br>
+      <li><a href="https://www.nationalgallery.org.uk/artists/francisco-de-goya" target="_blank"><strong>National Gallery</strong></a> (London): <a href="https://www.nationalgallery.org.uk/paintings/francisco-de-goya-a-picnic" target="_blank"><em>A Picnic</em></a>, <a href="https://www.nationalgallery.org.uk/paintings/francisco-de-goya-a-scene-from-the-forcibly-bewitched" target="_blank"><em>A Scene from 'The Forcibly Bewitched'</em></a>, <a href="https://www.nationalgallery.org.uk/paintings/francisco-de-goya-don-andres-del-peral" target="_blank"><em>Don Andrés del Peral</em></a>, and <a href="https://www.nationalgallery.org.uk/paintings/francisco-de-goya-the-duke-of-wellington" target="_blank"><em>The Duke of Wellington</em></a>. Also <a href="https://www.nationalgallery.org.uk/paintings/francisco-de-goya-dona-isabel-de-porcel" target="_blank"><em>Portrait of Isabel de Porcel</em></a> (attributed).</li>
+      <li><a href="https://thebowesmuseum.org.uk/discover-the-spanish-collection-held-by-the-bowes-museum/" target="_blank"><strong>The Bowes Museum</strong></a> (Durham): paintings including the portrait of Juan Meléndez Valdés and <i>Interior of a Prison</i>.</li>
+      <li><strong>English Heritage</strong>: The Wellington Collection, Apsley House (London) (<a href="https://artuk.org/discover/artworks/equestrian-portrait-of-the-1st-duke-of-wellington-17691852-144183" target="_blank">Equestrian Portrait of the 1st Duke of Wellington</a>).</li>
+      <li><a href="https://artuk.org/discover/artworks/el-medico-the-doctor-210121" target="_blank"><strong>National Galleries of Scotland</strong></a> (Edinburgh): <em>The Doctor</em>.</li>
+      <li><strong>The Courtauld Gallery</strong> (London): the drawing <a href="https://courtauld.ac.uk/highlights/cantar-y-bailar-singing-and-dancing/" target="_blank"><em>Singing and Dancing</em></a> and the painting <a href="https://courtauld.ac.uk/highlights/portrait-of-francisco-de-saavedra/" target="_blank"><em>Portrait of Francisco de Saavedra</em></a>.</li>
+      <li><strong>Pollok House</strong> (Glasgow): series of small 6 paintings of scenes with children, including <a href="https://artuk.org/discover/artworks/boys-playing-at-see-saw-84159" target="_blank"><em>Boys Playing at See-Saw</em></a> and <a href="https://artuk.org/discover/artworks/boys-playing-at-soldiers-84160" target="_blank"><em>Boys Playing at Soldiers</em></a>.</li>
+      <li><a href="https://artuk.org/discover/artworks/disparate-de-miedo-261946" target="_blank"><strong>The Higgins</strong></a> (Bedford): 'Disparate de miedo' (<em>Disparates</em>).</li><br> 
+
+      IRELAND<br>
+      <li><strong>National Gallery of Ireland</strong> (Dublin): <a href="https://www.nationalgallery.ie/art-and-artists/highlights-collection/dona-antonia-zarate-francisco-jose-de-goya-y-lucientes-1746" target="_blank"><em>Portrait of Doña Antonia de Zárate</em></a>.</li><br>
+
+      SWITZERLAND<br>
+      <li><strong>Emil Bührle Collection</strong> (Zurich): <a href="https://buehrle.ch/en/artworks/procession-in-valencia/" target="_blank"><em>Procession in Valencia</em></a>.</li>
+      <li>PRIVATE COLLECTIONS: Rothschild (including the authentic version of <em>Majas on the Balcony</em>).</li><br>
+
+      GERMANY<br>
+      <li><a href="https://recherche.smb.museum/?language=de&limit=15&sort=relevance&controls=none&conditions=AND%2BinvolvedParties%2B%22Francisco+Jos%C3%A9+de+Goya+y+Lucientes%22&collectionKey=NG*" target="_blank"><strong>Staatliche Museen zu Berlin</strong></a>: catalogue of artworks, including <em>La Cucaña</em>.</li>
+      <li><a href="https://www.sammlung.pinakothek.de/de/search?phrase=Goya#filters={}" target="_blank"><strong>Alte Pinakothek</strong></a> (Munich): paintings, prints, and drawings (including pastiches).</li><br>
+
+      ITALY<br>
+      <li><strong>Uffizi</strong> (Florence): <a href="https://www.virtualuffizi.com/es/retrato-de-la-condesa-de-chinc%C3%B3n.html" target="_blank"><em>Equestrian portrait of María Teresa de Vallabriga</em></a>.</li>
+      <li><strong>Fondazione Magnani Rocca</strong> (Parma): <a href="https://www.magnanirocca.it/goya-la-famiglia-dell-infante-don-luis/" target="_blank"><em>The Family of Infante Don Luis</em></a>.</li><br>
+
+    </p>
+      
+  </div>
+
+<div id="cite" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6;">
+  <h2>How to cite The Goya Network</h2>
+  <ul>
+    <li>
+      <strong>MLA (Modern Language Association):</strong><br>
+      Fayos-Pérez, Paula, editor. <em>The Goya Network</em>. Anita Vero, contributor. 2025. GoyaNetwork.com. Accessed 17 May 2025.
+    </li>
+    <li>
+      <strong>APA (American Psychological Association):</strong><br>
+      Fayos-Pérez, P. (Ed.). (2025). <em>The Goya Network</em>. [Anita Vero, contributor]. Retrieved May 17, 2025, from https://www.goyanetwork.com
+    </li>
+    <li>
+      <strong>Chicago (Notes and Bibliography):</strong><br>
+      Paula Fayos-Pérez, ed., <em>The Goya Network</em>, with Anita Vero as contributor, 2025, https://www.goyanetwork.com (accessed May 17, 2025).
+    </li>
+  </ul>
+  <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">
+    <strong>Rights:</strong> protected by notarial deed (Madrid, 2025)
+  </p>
+  <div style="margin-top: 1rem;">
+    <button onclick="downloadRIS()" style="margin-right: 1rem; padding: 0.5rem 1rem; background:#444; color:white; border:1px solid #555; border-radius:4px;">
+      <i class="fas fa-file-alt"></i> Export RIS
+    </button>
+    <button onclick="downloadCSV()" style="padding: 0.5rem 1rem; background:#444; color:white; border:1px solid #555; border-radius:4px;">
+      <i class="fas fa-file-csv"></i> Export CSV
+    </button>
+  </div>
+</div>
+
+<!-- PANEL LATERAL / POPUP (colócalo junto a los otros paneles, por ejemplo después de #cite panel) -->
+<div id="newInPanel" style="display:none; position: absolute; right: 12px; top: 58px; width: 320px; max-height: 70vh; overflow-y: auto; background: #111; color: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.6); z-index: 9999;">
+  <h3 style="margin:0 0 0.5rem 0; font-size:1rem;">New in</h3>
+  <div id="newInList" style="font-size:0.95rem; line-height:1.4;"></div>
+  <div style="margin-top:0.5rem; font-size:0.75rem; color:#bbb;">Most recent first — click to jump to node</div>
+</div>
+
+<div id="partners" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6; text-align: center;">
+  <h2>Partners</h2>
+  <a href="https://www.fbbva.es/" target="_blank">
+    <img src="images/BBVA_Foundation_logo.jpg" alt="BBVA Logo" style="max-width: 220px; margin: 1rem auto; display:block;">
+  </a>
+  <p>
+    <a href="https://www.fbbva.es/" target="_blank">Fundación BBVA</a>
+  </p>
+</div>
+
+  <script>
+  function downloadRIS() {
+    const ris = `TY  - ELEC\nTI  - The Goya Network\nAU  - Fayos-Pérez, Paula\nA2  - Vero, Anita\nDA  - 2025///\nPY  - 2025\nLA  - English\nUR  - https://www.goyanetwork.com\nER  - `;
+    const blob = new Blob([ris], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'GoyaNetwork.ris';
+    link.click();
+  }
+  
+  function downloadCSV() {
+    const csv = `title,url,author,contributor,year,language\n"The Goya Network","https://www.goyanetwork.com","Paula Fayos-Pérez","Anita Vero","2025","English"`;
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'GoyaNetwork.csv';
+    link.click();
+  }
+  </script>
+  
+  <div class="contributions-section">
+    <h2>Contributions</h2>
+    <p>The Goya Network is conceived as a collaborative, crowd-sourced database. <br>Contributions and suggestions are welcome and encouraged, and contributors will be credited if requested.</p>
+    <p><a href="https://docs.google.com/forms/d/1Gxl6_Usf45QV_qKfp-ez3BQt-0Mxirm6Ok6xg-VUnN0/edit" target="_blank">Access form</a></p>
+  </div>
+
+<footer class="footer" style="margin-top: 0;">
+  <div style="display: flex; justify-content: center; align-items: center; gap: 7rem; flex-wrap: wrap;">
+    <p style="margin: 0; text-align: left;">
+      © 2025 Paula Fayos-Pérez · 
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color:#66ccff;">CC BY-NC 4.0</a><br>
+      Protected by notarial deed (Madrid, 2025)
+    </p>
+    <a href="https://www.fbbva.es/" target="_blank">
+      <img src="images/BBVA_Foundation_logo.jpg" alt="BBVA Foundation Logo" style="height: 40px;">
+    </a>
+  </div>
+</footer>
+
+  <div class="social-icons">
+    <a href="https://x.com/PaulaFayosPerez" target="_blank" aria-label="X">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+    <a href="https://ucm.academia.edu/PaulaFayosPerez" target="_blank" aria-label="Academia.edu">
+      <i class="fas fa-graduation-cap"></i>
+    </a>
+    <a href="https://www.researchgate.net/profile/Paula-Fayos-Perez-2" target="_blank" aria-label="ResearchGate">
+      <i class="fab fa-researchgate"></i>
+    </a>
+    <a href="https://github.com/PFayosP/GoyaNetworkWeb" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</footer>
+
+<script>
+function showSection(section) {
+  const layout = document.getElementById('layout');
+  const aboutDiv = document.getElementById('about');
+  const contributors = document.getElementById('contributors');
+  const bibliography = document.getElementById('bibliography');
+  const artworks = document.getElementById('artworks'); 
+  const cite = document.getElementById('cite');
+  const partners = document.getElementById('partners');
+
+  layout.classList.add('hidden');
+  aboutDiv.style.display = 'none';
+  contributors.style.display = 'none';
+  bibliography.style.display = 'none';
+  artworks.style.display = 'none';
+  cite.style.display = 'none';
+  partners.style.display = 'none';
+
+  if (section === 'network') {
+    layout.classList.remove('hidden');
+    if (window.showDefaultNodeInfo) window.showDefaultNodeInfo(); // ← NUEVA LÍNEA
+  } else if (section === 'about') {
+    aboutDiv.style.display = 'block';
+  } else if (section === 'contributors') {
+    contributors.style.display = 'block';
+  } else if (section === 'bibliography') {
+    bibliography.style.display = 'block';
+  } else if (section === 'artworks') { 
+    artworks.style.display = 'block';
+  } else if (section === 'cite') {
+  cite.style.display = 'block';
+  } else if (section === 'partners') {
+  partners.style.display = 'block';
+  }
+}
+</script>
+
+<script src="network.js"></script>
+
+<!-- Social Share Modal -->
+<div id="shareModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:#222; padding:2rem; border-radius:8px; max-width:500px;">
+    <h3 style="margin-top:0;">Share</h3>
+    <div style="display:flex; gap:1rem; margin-bottom:1rem;">
+      <a id="twitterShare" target="_blank" style="background:#1DA1F2; color:white; padding:0.5rem 1rem; border-radius:4px; text-decoration:none;">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      <a id="linkedinShare" target="_blank" style="background:#0077B5; color:white; padding:0.5rem 1rem; border-radius:4px; text-decoration:none;">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a id="facebookShare" target="_blank" style="background:#4267B2; color:white; padding:0.5rem 1rem; border-radius:4px; text-decoration:none;">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+    </div>
+    <div style="margin-bottom:1rem;">
+      <input type="text" id="shareUrl" style="width:100%; padding:0.5rem; background:#333; color:white; border:1px solid #555;" readonly>
+    </div>
+    <button onclick="document.getElementById('shareModal').style.display='none'" style="padding:0.5rem 1rem; background:#444; color:white; border:none; border-radius:4px;">Close</button>
+  </div>
+</div>
+  
+</body>
+</html>
