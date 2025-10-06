@@ -660,18 +660,17 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       physics: {
         enabled: true,
-        solver: 'barnesHut',
-        barnesHut: {
-          gravitationalConstant: -1800, // empuje similar a tu repulsion.nodeDistance
-          centralGravity: 0.10,         // como lo tenías
-          springLength: 100,            // como lo tenías (mantiene escala)
-          springConstant: 0.03,         // como lo tenías
-          damping: 0.60,                // un pelín más para cerrar antes
-          avoidOverlap: 0.1             // separa un poco sin cambiar el estilo
+        solver: 'repulsion',
+        repulsion: {
+          nodeDistance: 190,
+          centralGravity: 0.10,
+          springLength: 100,
+          springConstant: 0.03,
+          damping: 0.58
         },
         stabilization: {
           enabled: true,
-          iterations: 60,     // antes 80: suficiente con BH
+          iterations: 120,     // antes 80
           updateInterval: 10
         }
       },
