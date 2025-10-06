@@ -303,53 +303,78 @@ document.addEventListener('DOMContentLoaded', async function () {
     }, 500);
     */
 
+    // ---- MEMBERS LIST: manual overrides (edit these if needed) ----
+    // 1) Para nombres completos donde quieras forzar el apellido clave (usa la grafía exacta)
+    const SURNAME_FORCE_BY_FULLNAME = {
+      'Weiss Zorrilla': 'weiss',
+      // Añade más aquí: 'Apellido1 Apellido2': 'apellido1'
+    };
+
+    // 2) Tokens que deben tratarse como NOMBRES (darán preferencia al apellido siguiente)
+    //    Normalizamos en minúsculas sin acentos. Puedes añadir 'antoine', 'jean', etc. si quieres.
+    const GIVEN_FORCE_TOKENS = new Set([
+      'antoine-jean', // ← tu caso
+      'berte',        // por si aparece como "Berte Morisot"
+      'berthe'        // variante habitual
+    ]);
+
+    // 3) (Opcional) Tokens que quieres tratar como APELLIDOS cuando aparezcan (último token)
+    const SURNAME_FORCE_TOKENS = new Set([
+      'morisot' // ← por si hay rarezas tipográficas
+    ]);
+
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
     function surnameKey(name) {
       if (!name) return '';
 
-      // 1) Limpieza: quita paréntesis y quédate con lo anterior a la primera coma
+      // Normaliza a “base”: quita paréntesis y corta por coma (para eliminar títulos)
       let base = String(name)
-        .replace(/\(.*?\)/g, '')        // (widow), (husband of), etc.
-        .replace(/[.,]/g, ' ')          // quita . y , para tokenizar
+        .replace(/\(.*?\)/g, '')   // (widow), (husband of), etc.
+        .split(',')[0]             // “, Duke of Alba” fuera
+        .replace(/[.]/g, ' ')
         .replace(/\s+/g, ' ')
         .trim();
 
-      // Si el nombre trae títulos tras coma, quédate con la parte principal
-      base = base.split(',')[0].trim();
+      // Helper: quitar acentos y pasar a minúsculas
+      const fold = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+      // 0) Override por nombre completo (tu lista manual)
+      if (SURNAME_FORCE_BY_FULLNAME[name]) {
+        return fold(SURNAME_FORCE_BY_FULLNAME[name]);
+      }
 
       const tokens = base.split(' ').filter(Boolean);
       if (!tokens.length) return '';
 
-      // Listado de nombres de pila comunes (ES/FR/EN): añade más si lo ves útil
-      const givenNames = new Set([
-        'achille','adrien','agustín','agustin','alejandro','alfonso','alphonse','amable','antoine','león','leon',
-        'auguste','eugène','eugene','édouard','edouard','édouard','edgar','émile','emile','francisco','josé','jose',
-        'maría','maria','teresa','terèse','therese','victor','theophile','théophile','eugénie','eugenia','hugo',
-        'félix','felix','prosper','caroline','ana','anne','jean','louis','paul','pierre','jules','henri','henry',
-        'charles','edgar','alberto','albert','andrés','andres','manuel','ramón','ramon','isabel','isabella','marie',
-        'josefa','rosario','eugenio','fernando','carlos','marcel','georges','george','antoine','alfred','amedeo','amédée',
-        'achille','adolphe','adolph','adolfo','edmond','edmund','emilia','emilie','ines','inés','soledad','amalia',
-        'miguel','martín','martin','juan','joaquin','joaquín','pedro','pablo','diego','jaime','james','william','guillermo'
-      ]);
+      const tf = tokens.map(fold);
 
       const particles = new Set([
-        "de","d'","del","de-la","de-las","de-los","la","las","los","le","les",
-        "du","des","d","da","di","do","dos","van","von","der","den","zu","zur",
-        "y","e","the","of"
+        'de',"d'",'del','de-la','de-las','de-los','la','las','los','le','les',
+        'du','des','d','da','di','do','dos','van','von','der','den','zu','zur',
+        'y','e','the','of'
       ]);
 
-      const suffixes = new Set(["jr","junior","fils","hijo"]);
+      const suffixes = new Set(['jr','junior','fils','hijo']);
+      const titles = new Set([
+        'duchess','duke','count','countess','marquis','marchioness',
+        'queen','king','prince','princess','emperor','empress'
+      ]);
       const roman = /^[IVXLCDM]+$/i;
 
-      // Caso "X y Y": coge el anterior a 'y'
-      const yIndex = tokens.findIndex(t => t.toLowerCase() === 'y');
-      if (yIndex > 0 && yIndex < tokens.length - 1) {
-        return tokens[yIndex - 1].toLowerCase();
+      // 1) Si hay un título con “of …” (Duchess of Abrantes), coge el último token
+      if (tf.some(t => titles.has(t)) && tf.includes('of') && tokens.length >= 2) {
+        return fold(tokens[tokens.length - 1]);
       }
 
-      // Helper: devuelve el mejor "apellido" de un token, saltando partículas/romanos/sufijos
+      // 2) Caso “X y Y”: toma el anterior a 'y' (apellido español tradicional)
+      const yIndex = tf.indexOf('y');
+      if (yIndex > 0 && yIndex < tf.length - 1) {
+        return fold(tokens[yIndex - 1]);
+      }
+
+      // Helper para validar tokens como posibles apellidos
       const normalizeToken = (raw) => {
-        const t = raw.replace(/['’]/g,'').toLowerCase();
+        const t = fold(raw).replace(/['’]/g,'');
         if (!t) return '';
         if (particles.has(t)) return '';
         if (suffixes.has(t)) return '';
@@ -357,37 +382,43 @@ document.addEventListener('DOMContentLoaded', async function () {
         return t;
       };
 
-      // 2) Heurística especial para 2 tokens:
-      //    - Si alguno parece nombre de pila → ordena por el otro (apellido)
-      //    - Si ninguno parece nombre de pila → asume doble apellido → usa el primero
-      if (tokens.length === 2) {
-        const t0 = tokens[0].toLowerCase();
-        const t1 = tokens[1].toLowerCase();
-
-        const t0IsGiven = givenNames.has(t0);
-        const t1IsGiven = givenNames.has(t1);
-
-        if (t0IsGiven && !t1IsGiven) {
-          const n = normalizeToken(tokens[1]) || tokens[1].toLowerCase();
-          return n;
-        }
-        if (t1IsGiven && !t0IsGiven) {
-          const n = normalizeToken(tokens[0]) || tokens[0].toLowerCase();
-          return n;
-        }
-        // Ninguno parece nombre de pila → doble apellido (Weiss Zorrilla → Weiss)
-        const n0 = normalizeToken(tokens[0]) || tokens[0].toLowerCase();
-        return n0;
+      // 3) Fuerza de apellido por token (opcional)
+      if (SURNAME_FORCE_TOKENS.has(tf[tf.length - 1])) {
+        return tf[tf.length - 1];
       }
 
-      // 3) General: recorre desde el final y toma el último token válido
+      // 4) Dos tokens: por defecto usa el ÚLTIMO (Nombre Apellido),
+      //    salvo que el primero esté marcado como nombre (forzado) o compuesto de nombres.
+      if (tokens.length === 2) {
+        const first = tf[0];
+        const second = normalizeToken(tokens[1]) || tf[1];
+
+        // “Antoine-Jean” u otros compuestos: si todas las partes están forzadas como nombre → usa el segundo
+        const isHyphenGiven = first.includes('-') &&
+          first.split('-').every(p => GIVEN_FORCE_TOKENS.has(p));
+
+        const firstForcedGiven = GIVEN_FORCE_TOKENS.has(first) || isHyphenGiven;
+
+        // Si el segundo está forzado como apellido, úsalo
+        if (SURNAME_FORCE_TOKENS.has(second)) return second;
+
+        // En casi todos los casos de 2 tokens queremos el ÚLTIMO (Apellido).
+        // EXCEPCIÓN: si quieres que un caso 2-apellidos españoles cuente por el primero,
+        //            añade el nombre completo arriba en SURNAME_FORCE_BY_FULLNAME.
+        if (firstForcedGiven) {
+          return second; // Nombre compuesto forzado → usa Apellido
+        }
+        return second;    // default: último token como apellido
+      }
+
+      // 5) General: recorre desde el final buscando un token válido
       for (let i = tokens.length - 1; i >= 0; i--) {
         const n = normalizeToken(tokens[i]);
         if (n) return n;
       }
 
-      // 4) Fallback: último token
-      return tokens[tokens.length - 1].toLowerCase();
+      // 6) Fallback: último token “tal cual”
+      return tf[tf.length - 1];
     }
 
     function buildMembersList(data) {
