@@ -51,6 +51,14 @@ function processMarkdownLinks(text) {
   return text;
 }
 
+  // Loading progress indicator
+  function updateLoadingProgress(percent) {
+    const progressElement = document.getElementById('loadingProgress');
+    if (progressElement) {
+      progressElement.textContent = `${percent}%`;
+    }
+  }
+
 // Add these two functions at the top of network.js
 window.search = function() {
   const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
@@ -133,6 +141,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         const response = await fetch('goya_network.json');
         if (!response.ok) throw new Error('Error cargando datos');
         const data = await response.json();
+        // Start image preloading immediately after loading data
+        const imagePreload = preloadImages(data.nodes);
         
         // Start image preloading
         // const imagePreload = preloadImages(data.nodes);
@@ -529,6 +539,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       lastNonHighlightedNodes = [];
     }
     
+    updateLoadingProgress(30);
     const container = document.getElementById('network');
     if (!container) {
       console.error("❌ No se encontró el contenedor #network.");
@@ -550,16 +561,16 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 340,         // antes: 320 — esto separa más los nodos
-          centralGravity: 0.11,       // antes: 0.12 — más atracción hacia el centro
-          springLength: 110,         // Menos distancia ideal entre nodos
-          springConstant: 0.028,      // antes: 0.04 — esto afloja los "muelles"
-          damping: 0.55               // Estabiliza más rápido sin perder suavidad
+          nodeDistance: 250,         // antes: 340 
+          centralGravity: 0.15,       // antes: 0.10 
+          springLength: 80,         // antes: 100. 
+          springConstant: 0.05,      // antes: 0.03 — esto afloja los "muelles"
+          damping: 0.65               // antes: 0.55. Estabiliza más rápido sin perder suavidad
         },
         stabilization: {
           enabled: true,
-          iterations: 120,      // antes: 200
-          updateInterval: 10
+          iterations: 80,      // antes: 120
+          updateInterval: 25      // antes: 10
         }
       },
       layout: {
@@ -604,7 +615,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     network.once('stabilizationIterationsDone', function () {
       // pequeño retraso para asegurar posiciones finales
-      setTimeout(() => nudgeOverlapsOnce(network, nodes), 60);
+      setTimeout(() => nudgeOverlapsOnce(network, nodes), 40);      // antes: 60
     });
 
 
@@ -1128,9 +1139,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-      // Después de crear el network, usa el hook de estabilización:
-      network.once('stabilizationIterationsDone', () => {
-        document.getElementById('loadingMessage').style.display = 'none';
+      network.once('stabilizationIterationsDone', function () {
+        updateLoadingProgress(80);
+        setTimeout(() => {
+          document.getElementById('loadingMessage').style.display = 'none';
+          updateLoadingProgress(100);
+        }, 500);
 
         const doLater = (fn) =>
           (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 1500 }) : setTimeout(fn, 200));
@@ -1138,17 +1152,17 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 1) Hash inicial (rápido) primero
         handleInitialHash();
 
-        // 2) Members list (medio)
-        doLater(() => buildMembersList(data));
+        // 2) Members list (delayed - lower priority)
+        setTimeout(() => buildMembersList(data), 2000);
 
-        // 3) New in (medio)
-        doLater(() => buildNewInList(data));
+        // 3) New in (delayed - lower priority)  
+        setTimeout(() => buildNewInList(data), 3000);
 
-        // 4) Cargar imágenes de los nodos (coste mayor)
-        doLater(() => {
+        // 4) Load full images (delayed - medium priority)
+        setTimeout(() => {
           loadFullImages();
           __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-        });
+        }, 1000);
       });
 
       // Restaura el panel nodeInfo a su estado por defecto (texto + Members list)
