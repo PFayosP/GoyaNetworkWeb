@@ -579,7 +579,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     });
 
-    // ——— Nudge anti-overlap (suave, una sola pasada) ———
+    // ——— Nudge anti-overlap (más agresiva) ———
     function nudgeOverlapsOnce(network, nodesDS) {
       const ids = nodesDS.getIds();
       if (!ids.length) return;
@@ -588,7 +588,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 0.90; // 90% de la suma de radios: muy conservador
+      const minSepFactor = 1.2; // 120% de la suma de radios: MÁS SEPARACIÓN
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
@@ -603,9 +603,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           const minDist = (ra + rb) * minSepFactor;
 
           if (dist < minDist) {
-            const push = (minDist - dist) / 2;
+            const push = (minDist - dist) * 1.5; // MÁS FUERTE
             const ux = dx / dist, uy = dy / dist;
-            // Mueve muy poco a cada uno en sentidos opuestos
+            // Mueve más a cada uno en sentidos opuestos
             network.moveNode(a, pa.x - ux * push, pa.y - uy * push);
             network.moveNode(b, pb.x + ux * push, pb.y + uy * push);
           }
@@ -633,7 +633,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('loadingMessage').style.display = 'none';
   
     // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 150;     // MEDIO: entre 120 y 180
+    const MIN_DISTANCE = 200;     // MEDIO: entre 120 y 180
     const positions = network.getPositions();
     const updates = [];
     const nodeArray = nodes.get();
