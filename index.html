@@ -315,6 +315,23 @@
       font-weight: bold;
     }
     
+    /* ——— Members list: hacer que ocupe todo el alto disponible del panel ——— */
+    #nodeInfo { display: flex; flex-direction: column; } /* ya lo tienes */
+    #membersSection {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;   /* ocupa el espacio libre del panel */
+      min-height: 0;    /* IMPORTANTÍSIMO para permitir scroll interno */
+    }
+    #membersList {
+      flex: 1 1 auto;   /* la lista crece dentro de la sección */
+      min-height: 0;    /* permite que el overflow funcione */
+      max-height: none !important; /* elimina límites previos */
+      overflow-y: auto; /* SOLO la lista hace scroll */
+      padding-right: 6px;
+      line-height: 1.5;
+    }
+
   .contributions-section {
     width: 100%;
     text-align: center;
@@ -526,8 +543,9 @@
       <!-- NEW: Members list (A–Z by surname) -->
       <div id="membersSection" style="margin-top: 1rem;">
         <div class="section-heading">Members (A–Z by surname)</div>
-        <div id="membersList" style="max-height: 340px; overflow:auto; padding-right: 6px; line-height: 1.5;"></div>
+        <div id="membersList"></div>
       </div>
+
 </div>
 
   </div>
