@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const degree = edgeCount[node.id] || 1;
           const config = {
             ...node,
-            size: Math.min(20 + degree * 0.7, 50),
+            size: Math.min(20 + degree * 0.65, 46),
             mass: 1 + degree * 0.15,
             font: {
               size: Math.min(11 + degree * 0.6, 24),
@@ -550,8 +550,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 320,         // antes: 230 — esto separa más los nodos
-          centralGravity: 0.12,       // Más atracción hacia el centro
+          nodeDistance: 340,         // antes: 320 — esto separa más los nodos
+          centralGravity: 0.11,       // antes: 0.12 — más atracción hacia el centro
           springLength: 110,         // Menos distancia ideal entre nodos
           springConstant: 0.028,      // antes: 0.04 — esto afloja los "muelles"
           damping: 0.55               // Estabiliza más rápido sin perder suavidad
@@ -567,6 +567,46 @@ document.addEventListener('DOMContentLoaded', async function () {
         randomSeed: 1912  // Consistent layout
       }
     });
+
+    // ——— Nudge anti-overlap (suave, una sola pasada) ———
+    function nudgeOverlapsOnce(network, nodesDS) {
+      const ids = nodesDS.getIds();
+      if (!ids.length) return;
+
+      const dataById = {};
+      nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
+
+      const pos = network.getPositions(ids);
+      const minSepFactor = 0.90; // 90% de la suma de radios: muy conservador
+
+      for (let i = 0; i < ids.length; i++) {
+        for (let j = i + 1; j < ids.length; j++) {
+          const a = ids[i], b = ids[j];
+          const pa = pos[a], pb = pos[b];
+          if (!pa || !pb) continue;
+
+          const dx = pb.x - pa.x, dy = pb.y - pa.y;
+          const dist = Math.hypot(dx, dy) || 1;
+          const ra = (dataById[a].size || 20);
+          const rb = (dataById[b].size || 20);
+          const minDist = (ra + rb) * minSepFactor;
+
+          if (dist < minDist) {
+            const push = (minDist - dist) / 2;
+            const ux = dx / dist, uy = dy / dist;
+            // Mueve muy poco a cada uno en sentidos opuestos
+            network.moveNode(a, pa.x - ux * push, pa.y - uy * push);
+            network.moveNode(b, pb.x + ux * push, pb.y + uy * push);
+          }
+        }
+      }
+    }
+
+    network.once('stabilizationIterationsDone', function () {
+      // pequeño retraso para asegurar posiciones finales
+      setTimeout(() => nudgeOverlapsOnce(network, nodes), 60);
+    });
+
 
     function loadFullImages() {
       const imageUpdates = data.nodes
