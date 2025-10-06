@@ -301,6 +301,74 @@ document.addEventListener('DOMContentLoaded', async function () {
     }, 500);
     */
 
+    /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
+    function surnameKey(name) {
+      if (!name) return '';
+      // Normaliza
+      name = String(name).replace(/[(),.]/g, ' ').replace(/\s+/g, ' ').trim();
+
+      // Partículas habituales a ignorar al tomar el "apellido"
+      const particles = new Set([
+        'de','del','de-la','de-las','de-los','la','las','los','le','les','du','des','d','da','di','do','dos','van','von','der','den','zu','zur','y','e','the','of','saint','st','st.','san','santa'
+      ]);
+
+      const suffixes = new Set(['jr','junior','fils','hijo']);
+
+      const tokens = name.split(' ');
+      const roman = /^[IVXLCDM]+$/i;
+
+      // Caso "X y Y": toma el token anterior a 'y'
+      const yIndex = tokens.findIndex(t => t.toLowerCase() === 'y');
+      if (yIndex > 0 && yIndex < tokens.length - 1) {
+        return tokens[yIndex - 1].toLowerCase();
+      }
+
+      // Recorre desde el final hasta hallar un token válido como "apellido"
+      for (let i = tokens.length - 1; i >= 0; i--) {
+        const raw = tokens[i];
+        const t = raw.replace(/['’]/g,'').toLowerCase();
+        if (!t) continue;
+        if (particles.has(t)) continue;
+        if (suffixes.has(t)) continue;
+        if (roman.test(t)) continue;
+        return t;
+      }
+      return tokens[tokens.length - 1].toLowerCase();
+    }
+
+    function buildMembersList(data) {
+      const container = document.getElementById('membersList');
+      if (!container) return;
+
+      // Recoge nombres desde data.nodes (el mismo que se muestra en la red)
+      const names = (data.nodes || []).map(n => n.id).filter(Boolean);
+
+      // Ordena por clave de "apellido"
+      const collator = new Intl.Collator(undefined, { sensitivity: 'base' });
+      names.sort((a,b) => collator.compare(surnameKey(a), surnameKey(b)));
+
+      // Escapa comillas para usar en onclick inline
+      const esc = s => String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+
+      // Render A–Z con cabeceras por letra
+      let html = '';
+      let currentLetter = '';
+      names.forEach(id => {
+        const key = surnameKey(id);
+        const letter = (key.charAt(0) || '#').toUpperCase();
+        if (letter !== currentLetter) {
+          if (currentLetter) html += '</ul>';
+          html += `<div class="section-heading" style="margin-top:0.8rem;">${letter}</div><ul style="list-style:none; padding-left:0.5rem; margin:0;">`;
+          currentLetter = letter;
+        }
+        // Igual que en la lista de conexiones: enfoca el nodo
+        html += `<li style="margin:0.1rem 0;"><a href="#" onclick="focusNode('${esc(id)}'); return false;" style="color:#66ccff; text-decoration:none;">${id}</a></li>`;
+      });
+      if (names.length) html += '</ul>';
+
+      container.innerHTML = html;
+    }
+
 
     let lastHighlightedNode = null;
     let lastHighlightedNodes = [];
@@ -920,6 +988,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         handleInitialHash();
         loadFullImages();
         buildNewInList(data);   // ← NUEVA LÍNEA
+        buildMembersList(data); // ← NUEVA LÍNEA
       }, 500);
 
       }, 2000);
