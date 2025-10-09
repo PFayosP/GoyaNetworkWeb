@@ -528,10 +528,9 @@
     </div>
   </div>
     
-  <!-- Loading message (will be hidden after network is ready) -->
   <div id="loadingMessage" style="text-align:center; padding: 2rem; font-size: 1.2rem;">
-    Loading network…
-  </div>
+  Loading network… <span id="loadingProgress">0%</span>
+</div>
   
   <!-- 🔧 Layout principal con grafo y panel de info -->
   <div class="layout-container visible" id="layout">
@@ -666,8 +665,8 @@ Its code and structure are licensed under <a href="https://creativecommons.org/l
     <li>Griener & Guerdat 2015. Pascal Griener and Pamella Guerdat, <em>Marcello, une sculptrice à l'œuvre: correspondence, I</em>, Fribourg, 2015.</li>
     <li>Griffiths 2009. Antony Griffiths, review of Juliet Wilson-Bareau, 'Goya in France', in <em>Goya graveur</em> (2008), <em>Print Quarterly</em>, 26, 2, 2009, pp.188-189.</li>
     <li>Guédron 2018. Martial Guédron, <em>Les monstres: Créatures étranges et fantastiques, de la préhistoire à la science-fiction</em>, 2018.</li>
-    <li>Guinard-A 1967. Paul Guinard, <em>Dauzats et Blanchard: Peintres de l'Espagne Romantique</em>, 1967.</li>
-    <li>Guinard-B 1967. Paul Guinard, 'Baudelaire, Le Musée Espagnol et Goya', <em>Revue d'Histoire Littéraire de La France</em>, vol. 67, no. 2, April 1967, pp. 310-28.</li>
+    <li>Guinard 1967-A. Paul Guinard, <em>Dauzats et Blanchard: Peintres de l'Espagne Romantique</em>, 1967.</li>
+    <li>Guinard 1967-B. Paul Guinard, 'Baudelaire, Le Musée Espagnol et Goya', <em>Revue d'Histoire Littéraire de La France</em>, vol. 67, no. 2, April 1967, pp. 310-28.</li>
     <li>Hansen 2021. Dorothee Hansen, <em>Manet and Astruc. Friendship and Inspiration</em>, CEEH, 2021.</li>
     <li>Harris 1964. Tomas Harris, <em>Goya. Engravings and Lithographs</em>, 1964.</li>
     <li>Hopkins 2021. Claudia Hopkins, <em>Romantic Spain: David Roberts and Genaro Pérez Villaamil</em>, CEEH, 2021.</li>
@@ -720,6 +719,7 @@ Its code and structure are licensed under <a href="https://creativecommons.org/l
     <li>Tinterow 2003. Gary Tinterow et al. <em>Manet/Velázquez: The French Taste for Spanish Painting</em>, New York, Metropolitan Museum of Art, 2003.</li>
     <li>Tomlinson 1992. Janis Tomlinson, <em>Goya in the Twilight of Enlightenment</em>, 1992.</li>
     <li>Tomlinson 2020. Janis Tomlinson, <em>Goya: A Portrait of the Artist</em>, 2020.</li>
+    <li>Torres González 2009. Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203.</li>
     <li>Wilson-Bareau 1992. Juliet Wilson-Bareau, <em>Manet: The Execution of Maximilian: Painting, Politics and Censorship</em>, Princeton (New Jersey), Princeton University Press, 1992.</li>
     <li>Wilson-Bareau 2016. Juliet Wilson-Bareau, <em>Goya in the Norton Simon Museum</em>, New Haven, 2016.</li>
     <li>Wolf 1991. Reva Wolf, <em>Goya and the Satirical Print: in England and on the Continent, 1730-1850</em>, 1991.</li>
@@ -939,7 +939,29 @@ function showSection(section) {
 
   if (section === 'network') {
     layout.classList.remove('hidden');
-    if (window.showDefaultNodeInfo) window.showDefaultNodeInfo(); // ← NUEVA LÍNEA
+    // Forzar la reconstrucción completa del panel
+    setTimeout(() => {
+      if (window.showDefaultNodeInfo) {
+        window.showDefaultNodeInfo();
+      } else {
+        // Si showDefaultNodeInfo no funciona, reconstruir manualmente
+        const nodeInfo = document.getElementById('nodeInfo');
+        if (nodeInfo) {
+          nodeInfo.innerHTML = `
+            <p>Click a <strong>node</strong> (an individual) or <strong>edge</strong> (a connection between two individuals) to view the data they contain.</p>
+            <p style="color: #ccc; margin-top: 1em;">(It might take a few seconds for the website to show the network)</p>
+            <div id="membersSection" style="margin-top: 1rem;">
+              <div class="section-heading">Members (A–Z by surname)</div>
+              <div id="membersList"></div>
+            </div>
+          `;
+          // Llamar a buildMembersList si está disponible
+          if (window.buildMembersList) {
+            setTimeout(() => window.buildMembersList(), 100);
+          }
+        }
+      }
+    }, 50);
   } else if (section === 'about') {
     aboutDiv.style.display = 'block';
   } else if (section === 'contributors') {
