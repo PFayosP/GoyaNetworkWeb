@@ -543,7 +543,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       },
       edges: {
         color: 'rgba(200,200,200,0.2)',
-        width: 1
+        width: 1,
+        selectionWidth: 5, // aumenta el área clicable al seleccionar
+        hoverWidth: 3,     // facilita el clic al pasar el ratón
+        smooth: { type: 'dynamic' } // mejora el render y mantiene compatibilidad
       },
 
       physics: {
@@ -698,6 +701,16 @@ document.addEventListener('DOMContentLoaded', async function () {
           width: isConnected ? 3 : 0.5
         };
       }));
+      // 🔥 Bring connected edges visually to the front and make them easier to click
+      connectedEdges.forEach(edge => {
+        edges.update({
+          id: edge.id,
+          width: 6, // thicker, easier to click
+          smooth: { type: 'continuous' },
+          color: { color: 'rgba(255, 0, 0, 0.9)' },
+          chosen: { edge: true, label: true } // ensures they render above others
+        });
+      });
 
       // Batch updates
       const updates = [
