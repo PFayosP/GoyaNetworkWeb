@@ -574,6 +574,26 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     });
 
+    // ——— Loading progress (vis-network physics) ———
+    const loadingEl = document.getElementById('loadingMessage');
+    const loadingPct = document.getElementById('loadingProgress');
+
+    network.on('stabilizationProgress', function (params) {
+      if (!loadingEl || !loadingPct) return;
+      const pct = Math.max(1, Math.min(100, Math.round((params.iterations / params.total) * 100)));
+      loadingPct.textContent = pct + '%';
+    });
+
+    // Al terminar, asegúrate de mostrar 100% un instante y ocultar
+    network.once('stabilizationIterationsDone', function () {
+      if (loadingPct) loadingPct.textContent = '100%';
+      setTimeout(() => {
+        const el = document.getElementById('loadingMessage');
+        if (el) el.style.display = 'none';
+      }, 100);
+    });
+
+
     // ——— Nudge anti-overlap (suave, una sola pasada) ———
     function nudgeOverlapsOnce(network, nodesDS) {
       const ids = nodesDS.getIds();
