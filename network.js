@@ -935,9 +935,42 @@ document.addEventListener('DOMContentLoaded', async function () {
         document.getElementById("nodeInfo").innerHTML = html;
         addShareButton(node.label);
         
-            } else if (params.edges.length > 0) {
-      clearHighlights();
-      const edge = edges.get(params.edges[0]);
+          } else if (params.edges.length > 0) {
+            clearHighlights();
+
+            // === Smart selection: elegir el edge correcto entre varios candidatos ===
+            let selectedEdgeId = params.edges[0];
+
+            if (params.edges.length > 1) {
+              const pointer = (params.pointer && params.pointer.canvas) ? params.pointer.canvas : null;
+
+              // 1) Prioriza los edges activos (conectados al nodo resaltado)
+              let pool = params.edges.filter(id => activeEdgeIds.has(id));
+              if (pool.length === 0) pool = params.edges.slice();
+
+              // 2) Si sigue habiendo varios, elige el más cercano al cursor
+              if (pointer) {
+                let best = pool[0];
+                let bestDist = Infinity;
+                for (const id of pool) {
+                  const eObj = edges.get(id);
+                  if (!eObj) continue;
+                  const pos = network.getPositions([eObj.from, eObj.to]);
+                  const p1 = pos[eObj.from], p2 = pos[eObj.to];
+                  if (!p1 || !p2) continue;
+                  const d = pointToSegmentDistance(pointer.x, pointer.y, p1.x, p1.y, p2.x, p2.y);
+                  if (d < bestDist) { bestDist = d; best = id; }
+                }
+                selectedEdgeId = best;
+              }
+            }
+
+            // Fuerza la selección de ese edge “mejor”
+            network.selectEdges([selectedEdgeId]);
+            // === Fin smart selection ===
+
+
+      const edge = edges.get(selectedEdgeId);
       if (!edge) return;
       const fromNode = nodes.get(edge.from);
       const toNode = nodes.get(edge.to);
