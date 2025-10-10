@@ -479,8 +479,10 @@ document.addEventListener('DOMContentLoaded', async function () {
     let lastHighlightedNode = null;
     let lastHighlightedNodes = [];
     let lastNonHighlightedNodes = [];
+    let activeEdgeIds = new Set();   // Edges activos (los conectados al nodo resaltado)
 
-        function clearHighlights() {
+
+    function clearHighlights() {
       // Batch update nodes
       const nodeUpdates = [];
       if (lastHighlightedNode) {
@@ -521,12 +523,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         color: { color: edge.connection_level === "secondary" ? "rgba(255,215,0,0.25)" : "rgba(200,200,200,0.15)" },
         width: 1.5
       }));
-
       edges.update(edgeUpdates);
-    
+      
+      // 🔁 Reset de estados
       lastHighlightedNode = null;
       lastHighlightedNodes = [];
       lastNonHighlightedNodes = [];
+      activeEdgeIds = new Set();
     }
     
     const container = document.getElementById('network');
@@ -680,6 +683,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       const allEdgeIds = edges.getIds();
       const connectedEdgeIds = new Set(connectedEdges.map(e => e.id));
+      // Guarda los edges conectados como "activos" para priorizar el clic
+      activeEdgeIds = new Set(connectedEdgeIds);
       
       const fadedEdges = allEdgeIds.filter(id => !connectedEdgeIds.has(id)).map(id => ({
         id,
@@ -735,6 +740,18 @@ document.addEventListener('DOMContentLoaded', async function () {
       lastNonHighlightedNodes = nonConnected;
     }
     
+    function pointToSegmentDistance(px, py, x1, y1, x2, y2) {
+      const vx = x2 - x1, vy = y2 - y1;
+      const wx = px - x1, wy = py - y1;
+      const c1 = vx * wx + vy * wy;
+      if (c1 <= 0) return Math.hypot(px - x1, py - y1);
+      const c2 = vx * vx + vy * vy;
+      if (c2 <= c1) return Math.hypot(px - x2, py - y2);
+      const t = c1 / c2;
+      const projx = x1 + t * vx, projy = y1 + t * vy;
+      return Math.hypot(px - projx, py - projy);
+    }
+
     network.on("click", function (params) {
       if (params.nodes.length > 0) {
         const node = nodes.get(params.nodes[0]);
