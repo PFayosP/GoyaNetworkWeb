@@ -806,6 +806,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           { type: "field", key: "military activity", label: "Military activity" },
           { type: "field", key: "participates in", label: "Participates in" },
           { type: "field", key: "aristocratic titles", label: "Aristocratic titles" },
+          { type: "field", key: "ties with slavery/colonialism", label: "Ties with slavery/colonialism" },
           { type: "field", key: "curiosities", label: "Curiosities" },
         
           { type: "section", label: "Family and Personal Relationships" },
