@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }));
 
     // Edges más transparentes (general)
-    const edges = new vis.DataSet(data.edges.map(edge => {
+    edges = new vis.DataSet(data.edges.map(edge => {
       const level = edge.connection_level || "direct";
 
       // Muestra etiqueta solo si es “direct” o “secondary”.
@@ -203,6 +203,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         width: 1.5
       };
     }));
+    window.edges = edges;
 
     const lastModified = response.headers.get("Last-Modified");
 
@@ -226,8 +227,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       const container = document.getElementById('newInList');
       if (!container) return;
 
-      // ✅ Mostrar SOLO NODOS añadidos desde 1 mayo 2025 (UTC)
-      const CUTOFF_STR = '2025-05-01'; // comparar como string ISO YYYY-MM-DD
+      // ✅ Mostrar SOLO NODOS añadidos desde 1 abril 2025 (UTC)
+      const CUTOFF_STR = '2025-04-01'; // comparar como string ISO YYYY-MM-DD
 
       const items = (data.nodes || [])
         .filter(n => typeof n.added === 'string' && n.added >= CUTOFF_STR)
@@ -956,7 +957,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         addShareButton(node.label);
         
           } else if (params.edges.length > 0) {
-            clearHighlights();
+            // clearHighlights();  // <- no limpiar antes de elegir el edge
 
             // === Smart selection: elegir el edge correcto entre varios candidatos ===
             let selectedEdgeId = params.edges[0];
