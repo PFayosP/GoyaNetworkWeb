@@ -1032,6 +1032,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           { key: "shared", label: "Shared" },
           { key: "they shared", label: "They shared" },
           { key: "interactions", label: "Interactions" },
+          { key: "introductions", label: "Introductions" },
           { key: "feuds", label: "Feuds" },
           { key: "common friends", label: "Common friends" },
           { key: "mentions", label: "Mentions" },
