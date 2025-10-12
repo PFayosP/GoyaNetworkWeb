@@ -605,16 +605,16 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 280,         // antes: 320 — esto separa más los nodos
-          centralGravity: 0.08,       // antes: 0.12 — más atracción hacia el centro
-          springLength: 95,         // Menos distancia ideal entre nodos
+          nodeDistance: 260,         // antes: 320 — esto separa más los nodos
+          centralGravity: 0.18,       // antes: 0.12 — más atracción hacia el centro
+          springLength: 90,         // Menos distancia ideal entre nodos
           springConstant: 0.045,      // antes: 0.04 — esto afloja los "muelles"
-          damping: 0.70               // Estabiliza más rápido sin perder suavidad
+          damping: 0.65               // Estabiliza más rápido sin perder suavidad
         },
         stabilization: {
           enabled: true,
-          iterations: 80,      // antes: 120
-          updateInterval: 10
+          iterations: 150,      // antes: 120
+          updateInterval: 15
         }
       },
       layout: {
@@ -678,9 +678,12 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     network.once('stabilizationIterationsDone', function () {
-      // pequeño retraso para asegurar posiciones finales
-      setTimeout(() => nudgeOverlapsOnce(network, nodes), 60);
-    });
+    // pequeño retraso para asegurar posiciones finales
+    setTimeout(() => {
+      nudgeOverlapsOnce(network, nodes);
+      setTimeout(() => nudgeOverlapsOnce(network, nodes), 80); // segunda pasada suave
+    }, 60);
+  });
 
 
     function loadFullImages() {
