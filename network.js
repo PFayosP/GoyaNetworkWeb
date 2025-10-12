@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       handleInitialHash();
       loadFullImages();
       buildNewInList(data); // <-- nueva llamada
-    }, 500);
+    }, 200);
     */
 
     // ---- MEMBERS LIST: manual overrides (edit these if needed) ----
@@ -605,16 +605,16 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 340,         // antes: 320 — esto separa más los nodos
-          centralGravity: 0.11,       // antes: 0.12 — más atracción hacia el centro
-          springLength: 110,         // Menos distancia ideal entre nodos
-          springConstant: 0.028,      // antes: 0.04 — esto afloja los "muelles"
-          damping: 0.55               // Estabiliza más rápido sin perder suavidad
+          nodeDistance: 320,        // REDUCIDO ligeramente (antes 340)
+          centralGravity: 0.15,     // AUMENTADO para más atracción al centro (antes 0.11)
+          springLength: 120,        // AUMENTADO para menos tensión (antes 110)
+          springConstant: 0.035,    // AUMENTADO para convergencia más rápida (antes 0.028)
+          damping: 0.65             // AUMENTADO para estabilización más rápida (antes 0.55)
         },
         stabilization: {
           enabled: true,
-          iterations: 80,      // antes: 120
-          updateInterval: 10
+          iterations: 45,      // REDUCIDO de 80 a 45
+          updateInterval: 15   // AUMENTADO para menos updates
         }
       },
       layout: {
@@ -1256,7 +1256,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               network.selectNodes([node.id]);
               network.emit("click", { nodes: [node.id] });
               resolve(true);
-            }, 300); // Changed from 1000 to 300
+            }, 150); // Changed from 300 to 150
           } else {
             resolve(false);
           }
