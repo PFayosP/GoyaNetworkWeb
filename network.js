@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       handleInitialHash();
       loadFullImages();
       buildNewInList(data); // <-- nueva llamada
-    }, 200);
+    }, 500);
     */
 
     // ---- MEMBERS LIST: manual overrides (edit these if needed) ----
@@ -605,16 +605,16 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 280,        // REDUCIDO para más densidad controlada (antes 320)
-          centralGravity: 0.08,     // REDUCIDO para menos atracción al centro (antes 0.15)
-          springLength: 100,        // REDUCIDO para conexiones más cortas (antes 120)
-          springConstant: 0.045,    // AUMENTADO ligeramente para más rigidez (antes 0.035)
-          damping: 0.70             // AUMENTADO para estabilización más suave (antes 0.55)
+          nodeDistance: 340,         // antes: 320 — esto separa más los nodos
+          centralGravity: 0.11,       // antes: 0.12 — más atracción hacia el centro
+          springLength: 110,         // Menos distancia ideal entre nodos
+          springConstant: 0.028,      // antes: 0.04 — esto afloja los "muelles"
+          damping: 0.55               // Estabiliza más rápido sin perder suavidad
         },
         stabilization: {
           enabled: true,
-          iterations: 45,      // REDUCIDO de 80 a 45
-          updateInterval: 15   // AUMENTADO para menos updates
+          iterations: 80,      // antes: 120
+          updateInterval: 10
         }
       },
       layout: {
@@ -679,7 +679,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     network.once('stabilizationIterationsDone', function () {
       // pequeño retraso para asegurar posiciones finales
-      setTimeout(() => nudgeOverlapsOnce(network, nodes), 80);
+      setTimeout(() => nudgeOverlapsOnce(network, nodes), 60);
     });
 
 
@@ -693,56 +693,46 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
     
-  network.once('stabilizationIterationsDone', function () {
+  network.once("stabilizationIterationsDone", function () {
     document.getElementById('loadingMessage').style.display = 'none';
-    
-    // Primero: separación suave anti-overlap
-    setTimeout(() => {
-      nudgeOverlapsOnce(network, nodes);
-      
-      // Luego: separación más agresiva
-      const MIN_DISTANCE = 140;
-      const positions = network.getPositions();
-      const updates = [];
-      const nodeArray = nodes.get();
-      let movedNodes = new Set();
+  
+    // 1. Separar nodos que están demasiado cerca
+    const MIN_DISTANCE = 120;
+    const positions = network.getPositions();
+    const updates = [];
+    const nodeArray = nodes.get();
 
-      for (let i = 0; i < nodeArray.length; i++) {
-        const node1 = nodeArray[i];
-        const p1 = positions[node1.id];
+    for (let i = 0; i < nodeArray.length; i++) {
+      const node1 = nodeArray[i];
+      const p1 = positions[node1.id];
+      
+      for (let j = i + 1; j < nodeArray.length; j++) {
+        const node2 = nodeArray[j];
+        const p2 = positions[node2.id];
         
-        for (let j = i + 1; j < nodeArray.length; j++) {
-          const node2 = nodeArray[j];
-          const p2 = positions[node2.id];
-          
-          const dx = p2.x - p1.x;
-          const dy = p2.y - p1.y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-          
-          if (distance < MIN_DISTANCE && distance > 0.5) {
-            const push = (MIN_DISTANCE - distance) * 1.5;
-            const moveX = dx * push / distance;
-            const moveY = dy * push / distance;
-            
-            if (!movedNodes.has(node1.id)) {
-              updates.push({ id: node1.id, x: p1.x - moveX, y: p1.y - moveY });
-              movedNodes.add(node1.id);
-            }
-            
-            if (!movedNodes.has(node2.id)) {
-              updates.push({ id: node2.id, x: p2.x + moveX, y: p2.y + moveY });
-              movedNodes.add(node2.id);
-            }
-          }
+        const dx = p2.x - p1.x;
+        const dy = p2.y - p1.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        
+        if (distance < MIN_DISTANCE && distance > 0.5) {
+          const push = (MIN_DISTANCE - distance) * 1.2;
+          updates.push({ 
+            id: node1.id, 
+            x: p1.x - dx * push / distance, 
+            y: p1.y - dy * push / distance 
+          });
+          updates.push({ 
+            id: node2.id, 
+            x: p2.x + dx * push / distance, 
+            y: p2.y + dy * push / distance 
+          });
         }
       }
+    }
 
-      if (updates.length > 0) {
-        nodes.update(updates);
-        setTimeout(() => network.redraw(), 30);
-      }
-    }, 80); // Retraso inicial de 80ms
-  });
+    if (updates.length > 0) {
+      nodes.update(updates);
+    }
 
     // FORZAR la física a estabilizar con las nuevas posiciones
     network.stabilize();
@@ -1266,7 +1256,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               network.selectNodes([node.id]);
               network.emit("click", { nodes: [node.id] });
               resolve(true);
-            }, 150); // Changed from 300 to 150
+            }, 300); // Changed from 1000 to 300
           } else {
             resolve(false);
           }
@@ -1315,7 +1305,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       };
 
-      }, 300);
+      }, 500);
 
     // Búsqueda funcional
     const searchInput = document.getElementById('searchInput');
