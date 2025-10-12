@@ -605,11 +605,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 320,        // REDUCIDO ligeramente (antes 340)
-          centralGravity: 0.15,     // AUMENTADO para más atracción al centro (antes 0.11)
-          springLength: 120,        // AUMENTADO para menos tensión (antes 110)
-          springConstant: 0.035,    // AUMENTADO para convergencia más rápida (antes 0.028)
-          damping: 0.65             // AUMENTADO para estabilización más rápida (antes 0.55)
+          nodeDistance: 280,        // REDUCIDO para más densidad controlada (antes 320)
+          centralGravity: 0.08,     // REDUCIDO para menos atracción al centro (antes 0.15)
+          springLength: 100,        // REDUCIDO para conexiones más cortas (antes 120)
+          springConstant: 0.045,    // AUMENTADO ligeramente para más rigidez (antes 0.035)
+          damping: 0.70             // AUMENTADO para estabilización más suave (antes 0.55)
         },
         stabilization: {
           enabled: true,
@@ -679,7 +679,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     network.once('stabilizationIterationsDone', function () {
       // pequeño retraso para asegurar posiciones finales
-      setTimeout(() => nudgeOverlapsOnce(network, nodes), 60);
+      setTimeout(() => nudgeOverlapsOnce(network, nodes), 80);
     });
 
 
@@ -693,46 +693,56 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
     
-  network.once("stabilizationIterationsDone", function () {
+  network.once('stabilizationIterationsDone', function () {
     document.getElementById('loadingMessage').style.display = 'none';
-  
-    // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 120;
-    const positions = network.getPositions();
-    const updates = [];
-    const nodeArray = nodes.get();
-
-    for (let i = 0; i < nodeArray.length; i++) {
-      const node1 = nodeArray[i];
-      const p1 = positions[node1.id];
+    
+    // Primero: separación suave anti-overlap
+    setTimeout(() => {
+      nudgeOverlapsOnce(network, nodes);
       
-      for (let j = i + 1; j < nodeArray.length; j++) {
-        const node2 = nodeArray[j];
-        const p2 = positions[node2.id];
+      // Luego: separación más agresiva
+      const MIN_DISTANCE = 140;
+      const positions = network.getPositions();
+      const updates = [];
+      const nodeArray = nodes.get();
+      let movedNodes = new Set();
+
+      for (let i = 0; i < nodeArray.length; i++) {
+        const node1 = nodeArray[i];
+        const p1 = positions[node1.id];
         
-        const dx = p2.x - p1.x;
-        const dy = p2.y - p1.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        
-        if (distance < MIN_DISTANCE && distance > 0.5) {
-          const push = (MIN_DISTANCE - distance) * 1.2;
-          updates.push({ 
-            id: node1.id, 
-            x: p1.x - dx * push / distance, 
-            y: p1.y - dy * push / distance 
-          });
-          updates.push({ 
-            id: node2.id, 
-            x: p2.x + dx * push / distance, 
-            y: p2.y + dy * push / distance 
-          });
+        for (let j = i + 1; j < nodeArray.length; j++) {
+          const node2 = nodeArray[j];
+          const p2 = positions[node2.id];
+          
+          const dx = p2.x - p1.x;
+          const dy = p2.y - p1.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          
+          if (distance < MIN_DISTANCE && distance > 0.5) {
+            const push = (MIN_DISTANCE - distance) * 1.5;
+            const moveX = dx * push / distance;
+            const moveY = dy * push / distance;
+            
+            if (!movedNodes.has(node1.id)) {
+              updates.push({ id: node1.id, x: p1.x - moveX, y: p1.y - moveY });
+              movedNodes.add(node1.id);
+            }
+            
+            if (!movedNodes.has(node2.id)) {
+              updates.push({ id: node2.id, x: p2.x + moveX, y: p2.y + moveY });
+              movedNodes.add(node2.id);
+            }
+          }
         }
       }
-    }
 
-    if (updates.length > 0) {
-      nodes.update(updates);
-    }
+      if (updates.length > 0) {
+        nodes.update(updates);
+        setTimeout(() => network.redraw(), 30);
+      }
+    }, 80); // Retraso inicial de 80ms
+  });
 
     // FORZAR la física a estabilizar con las nuevas posiciones
     network.stabilize();
@@ -1305,7 +1315,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       };
 
-      }, 500);
+      }, 300);
 
     // Búsqueda funcional
     const searchInput = document.getElementById('searchInput');
