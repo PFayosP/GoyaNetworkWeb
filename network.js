@@ -222,22 +222,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       panel.style.display = show ? 'block' : 'none';
     }
 
-    // === Auto-cierre de "New in" al clicar fuera ===
-    (function setupNewInAutoClose() {
-      // Intentamos obtener el contenedor del panel y el botón de toggle
-      const panel = document.getElementById('newInPanel') || document.getElementById('newInList');
-      const btn   = document.getElementById('newInToggle') || document.getElementById('newInBtn');
-
-      // No cerrar si el clic ocurre dentro del panel o en el botón (evita "se cierra al abrir")
-      if (panel) panel.addEventListener('click', (e) => e.stopPropagation());
-      if (btn)   btn.addEventListener('click',   (e) => e.stopPropagation());
-
-      // Cerrar al clicar en cualquier otra parte del documento
-      document.addEventListener('click', () => {
-        if (typeof showNewInPanel === 'function') showNewInPanel(false);
-      });
-    })();
-
     // Construye la lista "New in" a partir de data.nodes (solo nodos desde mayo 2025)
     function buildNewInList(data) {
       const container = document.getElementById('newInList');
@@ -305,7 +289,23 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (e.target && e.target.id === 'newInBtn') {
         const panel = document.getElementById('newInPanel');
         if (!panel) return;
+        // Evita que el clic se propague y cierre el panel inmediatamente
+        e.stopPropagation();
         showNewInPanel(panel.style.display === 'block' ? false : true);
+      }
+    });
+
+    // Cerrar "New in" al hacer clic en cualquier parte fuera del panel
+    document.addEventListener('click', function (e) {
+      const panel = document.getElementById('newInPanel');
+      const btn = document.getElementById('newInBtn');
+      
+      // Si el clic NO fue en el panel NI en el botón, cerrar el panel
+      if (panel && panel.style.display === 'block' && 
+          !panel.contains(e.target) && 
+          e.target !== btn && 
+          !btn.contains(e.target)) {
+        showNewInPanel(false);
       }
     });
 
@@ -822,8 +822,10 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     network.on("click", function (params) {
-    // Cerrar "New in" al clicar en la red (nodos/edges/fondo)
-    if (typeof showNewInPanel === 'function') showNewInPanel(false);
+      // Cerrar "New in" solo cuando se hace clic en nodos o edges
+      if ((params.nodes.length > 0 || params.edges.length > 0) && typeof showNewInPanel === 'function') {
+        showNewInPanel(false);
+      }
 
       if (params.nodes.length > 0) {
         const node = nodes.get(params.nodes[0]);
