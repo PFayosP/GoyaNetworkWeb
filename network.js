@@ -221,27 +221,36 @@ document.addEventListener('DOMContentLoaded', async function () {
       panel.style.display = show ? 'block' : 'none';
     }
 
-    // Construye la lista "New in" a partir de data.nodes y data.edges
+    // Construye la lista "New in" a partir de data.nodes (solo nodos desde mayo 2025)
     function buildNewInList(data) {
       const container = document.getElementById('newInList');
       if (!container) return;
 
-      // Recolectar nodos/edges que tengan 'added' o 'last_modified'
-      const nodesWithDates = (data.nodes || []).filter(n => n.added || n.last_modified)
-        .map(n => ({ type: 'node', id: n.id, label: n.label || n.id, date: n.added || n.last_modified }));
+      // ✅ Mostrar SOLO NODOS añadidos desde 1 mayo 2025 (UTC)
+      const CUTOFF = new Date('2025-05-01T00:00:00Z');
 
-      const edgesWithDates = (data.edges || []).filter(e => e.last_modified)
-        .map(e => ({ type: 'edge', from: e.from, to: e.to, label: `${e.from} ↔ ${e.to}`, date: e.last_modified, edgeObj: e }));
-
-      const items = nodesWithDates.concat(edgesWithDates)
-        .sort((a,b) => new Date(b.date) - new Date(a.date));
+      // Recoger nodos que tengan 'added' válido y ≥ CUTOFF
+      const items = (data.nodes || [])
+        .filter(n => n.added)
+        .filter(n => {
+          const d = new Date(n.added);
+          return !isNaN(+d) && d >= CUTOFF;
+        })
+        .map(n => ({
+          type: 'node',
+          id: n.id,
+          label: n.label || n.id,
+          date: n.added
+        }))
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
 
       if (!items.length) {
-        container.innerHTML = '<em>No hay marcas de fecha por nodo/edge. Añade "added" o "last_modified" en goya_network.json para activar esta lista.</em>';
+        container.innerHTML =
+          '<em>No hay nodos con "added" desde mayo de 2025. Añade "added" en goya_network.json (ISO) para que aparezcan aquí.</em>';
         return;
       }
 
-      // Limitar (p. ej. 30 items) y renderizar
+      // Limitar y renderizar
       container.innerHTML = '';
       items.slice(0, 30).forEach(item => {
         const wrapper = document.createElement('div');
@@ -252,7 +261,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         a.href = '#';
         a.className = 'newin-link';
         a.style.color = '#66ccff';
-        a.textContent = item.type === 'node' ? item.label : `${item.label} (edge)`;
+        a.textContent = item.label;
 
         // fecha (texto normal)
         const dateSpan = document.createElement('span');
@@ -260,19 +269,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         dateSpan.textContent = ` — ${dateStr}`;
         dateSpan.style.color = '#bbb';
 
-        // click en el link
+        // click en el link (solo nodos)
         a.onclick = (e) => {
           e.preventDefault();
-          if (item.type === 'node') {
-            if (typeof focusNode === 'function') {
-              focusNode(item.id);
-            }
-          } else {
-            const match = window.edges.get().find(ed => ed.from === item.from && ed.to === item.to);
-            if (match) {
-              network.selectEdges([match.id]);
-              network.emit('click', { edges: [match.id], nodes: [] });
-            }
+          if (typeof focusNode === 'function') {
+            focusNode(item.id);
           }
           showNewInPanel(false);
         };
@@ -282,6 +283,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         container.appendChild(wrapper);
       });
     }
+
 
     // Conectar el botón (pon esto en el mismo scope que tu otro JS)
     document.addEventListener('click', function (e) {
