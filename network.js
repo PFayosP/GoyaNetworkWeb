@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // Limitar y renderizar
       container.innerHTML = '';
-      items.slice(0, 30).forEach(item => {
+      items.forEach(item => {
         const wrapper = document.createElement('div');
         wrapper.style.marginBottom = '0.4rem';
 
