@@ -227,15 +227,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (!container) return;
 
       // ✅ Mostrar SOLO NODOS añadidos desde 1 mayo 2025 (UTC)
-      const CUTOFF = new Date('2025-05-01T00:00:00Z');
+      const CUTOFF_STR = '2025-05-01'; // comparar como string ISO YYYY-MM-DD
 
-      // Recoger nodos que tengan 'added' válido y ≥ CUTOFF
       const items = (data.nodes || [])
-        .filter(n => n.added)
-        .filter(n => {
-          const d = new Date(n.added);
-          return !isNaN(+d) && d >= CUTOFF;
-        })
+        .filter(n => typeof n.added === 'string' && n.added >= CUTOFF_STR)
+
         .map(n => ({
           type: 'node',
           id: n.id,
@@ -265,7 +261,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // fecha (texto normal)
         const dateSpan = document.createElement('span');
-        const dateStr = new Date(item.date).toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' });
+        const dateStr = new Date(item.date + 'T00:00:00Z')
+          .toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' });
         dateSpan.textContent = ` — ${dateStr}`;
         dateSpan.style.color = '#bbb';
 
