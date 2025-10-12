@@ -232,7 +232,7 @@
         "1838 commission from Louis-Philippe for the painting <i>Godofredo de Bouillon</i> for Versailles."
       ],
       "address": "1833 Paris: Hôtel Bourbonne-Les-Bains (very close to Adrien Dauzat's); 30 rue de la Tour de Auvergne (workshop) (by 1839)",
-      "military activity": "enlisted as voluntary in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Santiago Masarnau, Vicente Masarnau, Pascual de Gayangos and Valentín Carderera",
+      "military activity": "enlisted as voluntary in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Santiago Masarnau, Vicente Masarnau, Pascual de Gayangos y Arce and Valentín Carderera",
       "author of": "illustrations in <i>El Artista</i>; <i>Godofredo de Bouillon proclamado rey de Jerusalén</i> (1838, Galerie Batailles, Palais Versailles); <i>Isabel II de España</i> (1850); <i>Doña Amalia de Llano y Dotres, Condesa de Vilches</i> (1853); <i>Carolina Coronado</i> (c.1855); <i>Eduardo Rosales</i> (1867); <i>El pintor Perugino Sensi</i> (1873, Prado); <i>Portrait of Alfonso XII</i> (1874, Banco de España).",
       "editor of": "<i>El Artista</i>",
       "portrayed by": "M. Huerta, photograph (Prado HF0857); Raimundo de Madrazo, 1875, Museo de Bellas Artes de Bilbao",
@@ -279,7 +279,7 @@
         ],
       "exhibitions": "Paris Exposition Universelle 1855",
       "correspondence": "Federico de Madrazo, Prosper Mérimée, Gustave Brunet, [J./L.] Carresse, Paul Lefort, Adrien Dauzats, Philippe Burty, Viollet-le-Duc (among many others)",
-      "military activity": "enlisted as voluntary in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Pedro de Madrazo, Pascual de Gayangos, Vicente Masarnau and Santiago Masarnau",
+      "military activity": "enlisted as voluntary in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Pedro de Madrazo, Pascual de Gayangos y Arce, Vicente Masarnau and Santiago Masarnau",
       "friends": "Eugenio Ochoa; Federico de Madrazo", 
       "works as": "Pintor de Cámara; member of the Junta del Museo Nacional y del Museo Real de Pintura y Escultura (currently the Prado Museum), from 1838; teacher of Theory and History of Fine Arts at the Real Academia de Bellas Artes de San Fernando; vice-director of the Real Museo de Pintura y Escultura (current Prado Museum)",
       "member of": "Real Academia de la Historia; Real Academia de Bellas Artes de San Fernando",
@@ -480,7 +480,7 @@
       "parents": "Santiago de Masarnau y Torres and Beatriz Fernández y Carredano",
       "siblings": "Vicente Masarnau",
       "partners/lovers": "Charles-Valentin Alkan?",
-      "military activity": "1836 enlisted as voluntary with his brother Vicente Masarnau in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion, 1ª Compañía de Fusileros), alongside Gil de Zárate and the Count of Sástago; made sargent on 9 Sept 1836. Other voluntaries were Federico de Madrazo, Pedro de Madrazo, Pascual de Gayangos and Valentín Carderera.",
+      "military activity": "1836 enlisted as voluntary with his brother Vicente Masarnau in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion, 1ª Compañía de Fusileros), alongside Gil de Zárate and the Count of Sástago; made sargent on 9 Sept 1836. Other voluntaries were Federico de Madrazo, Pedro de Madrazo, Pascual de Gayangos y Arce and Valentín Carderera.",
       "profession": "musician (pianist, composer), Catholic militant",
       "works as": "gentilhombre de casa y boca (Fernando VII); Catholic militant (Conferencias de San Vicente de Paúl).",
       "works for": "Fernando VII",
@@ -508,7 +508,7 @@
         "1833 with Federico de Madrazo: they meet Baron Taylor and Adrien Dauzats.",
         "1841 (leaves for Paris on 13 July)."
       ],
-      "military activity": "1836 enlisted as voluntary with his brother Santiago Masarnau in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion, 1ª Compañía de Fusileros), alongside Andrés Borrego; made captain by 1839. Other voluntaries were Federico de Madrazo, Pedro de Madrazo, Pascual de Gayangos and Valentín Carderera.",
+      "military activity": "1836 enlisted as voluntary with his brother Santiago Masarnau in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion, 1ª Compañía de Fusileros), alongside Andrés Borrego; made captain by 1839. Other voluntaries were Federico de Madrazo, Pedro de Madrazo, Pascual de Gayangos y Arce and Valentín Carderera.",
       "curiosities": "he is mentioned by the writer Benito Pérez Galdós in <i>Fortunata y Jacinta</i> and <i>El doctor Centeno</i>.",
       "profession": "scientist (Doctor in Sciences and Pharmacy); teacher",
       "member of": "Real Academia de Ciencias Exactas, Físicas y Naturales (1847-1879) (founding member); Real Academia Nacional de Medicina (1861-1879).",
@@ -3499,6 +3499,38 @@
       "added": "2025-10-11"
     },
     {
+      "id": "Pascual de Gayangos y Arce",
+      "label": "Gayangos",
+      "life dates": "1809-1897", 
+      "born in": "Sevilla",
+      "dies in": "London",
+      "nationality": "Spanish",
+      "lives in": "Madrid, Blois, Paris, Málaga, London (1837-43)",
+      "profession": "historian, Arabist, bibliographer, bibliophile, lecturer, linguist, historian",
+      "works as": "Funcionario de Hacienda in Málaga (1829-33); officer at the Oficina de Interpretación de Lenguas (Ministerio del Estado: 1833-37); Professor of Arabic at the Ateneo de Madrid (1836-37); Professor of Arabic at the Universidad de Madrid (1843-71); scholar of the RAH (1847-97); Archivero general de la Real Casa y Patrimonio (future Archivo General de Palacio) (1857-1862); director general de Instrucción Pública (Partido Liberal Fusionista) (1881); Senador del Reino for Huelva (1882-93)",
+      "political views": "he worked for Sagasta's Partido Liberal Fusionista",
+      "students": "historian and politician Juan Facundo Riaño y Montero (also his son-in-law)",
+      "works for": [
+        "Spain: Biblioteca Nacional de España (BNE); Palacio Real de Madrid (classification of coins and medals); Monasterio de El Escorial (studying the oriental manuscripts)",
+        "England: British Museum (cataloguing the Spanish manuscripts, 1875-93)"
+      ],
+      "founder of": "contributed to the creation of the Archivo Histórico Nacional (AHN) in 1866",
+      "studies in": "Escuelas Pías de San Antón; Reales Estudios de San Isidro; Pont-le-Voy, in Blois, France (1822); École spéciale des langues orientales vivantes (Arabic: with Silvestre de Sacy); Universidad Central",
+      "member of": "Real Academia de la Historia (RAH) (from 1844); Real Academia Sueca de Letras, Historia y Antigüedades; US Academy for the Arts and Sciences",
+      "in France": "1822-1829",
+      "in Paris": [
+        "c.1823-1829: École spéciale des langues orientales vivantes.",
+        "1835: trip to Paris and London for advanced studies in numismatics and teaching Arabic (Vilar Ramírez 1984)."
+      ],
+      "parents": "José Gayangos y Nebot and Francisca de Arce y Retz",
+      "married to": "Frances Revell (1828)",
+      "portrayed by": "Valentín Carderera, 1841, oil painting (Museo de Zaragoza): identified by Lanzarote Guiral (2016, p.XLI); anonymous, 1897, print in <i>La Ilustración Española y Americana</i>",
+      "bibliography": "Lanzarote Guiral 2016; Juan Bautista Vilar Ramírez, 'El arabista Pascual de Gayangos en los orígenes de la ciencia numismática española: su viaje a París y Londres en 1835', <i>Sharq-Al-Andalus</i>, 1, 1984, pp.161-165",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Gayangos.jpg",
+      "image source": "Carderera portrait 1841",
+      "added": "2025-10-12"
+    },
+    {
       "id": "1st Duke of Wellington",
       "label": "Wellington",
       "full name": "Arthur Wellesley (né Wesley)",
@@ -3633,7 +3665,7 @@
       "children": "José, Emma, Sofía and Mercedes",
       "founder of": "<i>El Artista</i> in 1835 with his brother Federico de Madrazo and his brother-in-law Eugenio Ochoa",
       "works as": "arts teacher at RABASF; journalist; director of <i>El Domingo. Lecturas Piadosas Entretenidas</i>; Director of the Museo del Arte Moderno (1895-1898); Director of RABASF (from 1894); <i>correspondiente</i> of the Institut de France; Senator (for the RABASF, 1896-1898); Counselor of Instrucción Pública.",
-      "military activity": "voluntary in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside his brother Federico de Madrazo, Pascual de Gayangos, Santiago Masarnau, Vicente Masarnau and Valentín Carderera",
+      "military activity": "voluntary in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside his brother Federico de Madrazo, Pascual de Gayangos y Arce, Santiago Masarnau, Vicente Masarnau and Valentín Carderera",
       "member of": [
         "RABASF (1851); Real Academia Española (from 1874); Real Academia de Historia (1859); Academia de la Arcadia in Rome",
         "Partido Liberal-Conservador founded by Antonio Cánovas del Castillo."
@@ -4978,6 +5010,70 @@
       "relationship type": "Stirling mentions Ceán's <i>Diccionario histórico</i>"
     },
     {
+      "from": "Jenaro Pérez Villaamil",
+      "to": "Pascual de Gayangos y Arce",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "at least 1841",
+      "they share": "Valentín Carderera writes on 10 Nov 1841: 'Gayangos [...]. Díjome estar encargado de hacer la apología de lo que publicaba Villaamil y que no quería' (Lanzarote Guiral 2016, p.XXXVII)",
+      "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "from": "Valentín Carderera",
+      "to": "Pascual de Gayangos y Arce",
+      "connection_level": "direct",
+      "relationship type": "close friends",
+      "know each other since": "at least 1835",
+      "introductions": "Gayangos introduced Carderera to several people, such as the US Hispanist Hickling Prescott (Lanzarote Guiral 2016, p.XXXVIII) and the British Hispanist Richard Ford (25 Aug 1841) (LG 2016, p.XLVII)",
+      "interactions": [
+        "1841, 2 Aug: they meet in London. Carderera makes Gayangos's portrait.",
+        ""
+      ],
+      "portraits": "Carderera makes Gayangos's portrait in 1841 (London)",
+      "they share": "they enlisted in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Pedro de Madrazo, Santiago Masarnau and Vicente Masarnau",
+      "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "from": "Federico de Madrazo",
+      "to": "Pascual de Gayangos y Arce",
+      "connection_level": "direct",
+      "relationship type": "friends?",
+      "know each other since": "at least 1835",
+      "they share": "they enlisted in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Valentín Carderera, Santiago Masarnau and Vicente Masarnau"
+    },
+    {
+      "from": "Pedro de Madrazo",
+      "to": "Pascual de Gayangos y Arce",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "at least 1835",
+      "they share": "they enlisted in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Valentín Carderera, Santiago Masarnau and Vicente Masarnau"
+    },
+    {
+      "from": "Santiago Masarnau",
+      "to": "Pascual de Gayangos y Arce",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "at least 1835",
+      "they share": "they enlisted in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Pedro de Madrazo, Valentín Carderera and Vicente Masarnau"
+    },
+    {
+      "from": "Vicente Masarnau",
+      "to": "Pascual de Gayangos y Arce",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "at least 1835",
+      "they share": "they enlisted in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Pedro de Madrazo, Valentín Carderera and Santiago Masarnau"
+    },
+    {
+      "from": "William Stirling-Maxwell",
+      "to": "Pascual de Gayangos y Arce",
+      "connection_level": "direct",
+      "relationship type": "acquaintances (possibly via Valentín Carderera); business partners",
+      "know each other since": "at least 1856",
+      "link to Goya's work": "from 1856, Stirling owned a working-proof set of the <i>Caprichos</i> before letters that belonged to Gayangos (Boston MoFA 2002.497)"
+    },
+    {
       "from": "Valentín Carderera",
       "to": "William Stirling-Maxwell",
       "connection_level": "direct",
@@ -5344,7 +5440,7 @@
       "connection_level": "direct",
       "relationship type": "friends",
       "know each other since": "at least 1835",
-      "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Vicente Masarnau, Pedro de Madrazo and Pascual de Gayangos",
+      "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Vicente Masarnau, Pedro de Madrazo and Pascual de Gayangos y Arce",
       "they met": "in Paris, where Santiago lives 1837-1843. There are several references in Carderera's diaries from 14 Nov 1841 until 1843 (Lanzarote Guiral 2016, p.71)",
       "bibliography": "Lanzarote Guiral 2016"
     },
@@ -5361,7 +5457,7 @@
       "to": "Santiago Masarnau",
       "connection_level": "direct",
       "relationship type": "friends",
-      "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Vicente Masarnau, Pascual de Gayangos and Valentín Carderera",
+      "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Vicente Masarnau, Pascual de Gayangos y Arce and Valentín Carderera",
       "collaborations": "Santiago collaborates as music critic in <i>El Artista</i>, a journal founded by Federico de Madrazo, Pedro de Madrazo and Eugenio Ochoa in 1835.",
       "know each other since": "at least 1834",
       "portraits": "1834, drawing (Prado); 1836, drawing (BNE)"
@@ -5371,7 +5467,7 @@
       "to": "Santiago Masarnau",
       "connection_level": "direct",
       "relationship type": "friends",
-      "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Vicente Masarnau, Pascual de Gayangos and Valentín Carderera",
+      "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Vicente Masarnau, Pascual de Gayangos y Arce and Valentín Carderera",
       "mentions": "Pedro de Madrazo, 'Galería de ingenios contemporáneos. Don Santiago de Masarnau', <i>El artista</i>, III, 1836.",
       "collaborations": "<i>Oraciones puestas en música por varios compositores alemanes y versificadas en español por Santiago de Masarnau y Pedro de Madrazo</i>, Madrid, 1849"
     },
@@ -7959,7 +8055,7 @@
       "relationship type": "relatives: brothers; colleagues",
       "collaborations": "co-founders of <i>El Artista</i> in 1835 with Eugenio Ochoa (their brother-in-law)",
       "shared": [
-        "c.1835-1836 they enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion), alongside Santiago Masarnau, Vicente Masarnau, Pascual de Gayangos and Valentín Carderera.",
+        "c.1835-1836 they enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion), alongside Santiago Masarnau, Vicente Masarnau, Pascual de Gayangos y Arce and Valentín Carderera.",
         "1837 they travelled together to Paris. They leave in August 1837."
       ],
       "websites": "[RAH](https://historia-hispanica.rah.es/biografias/27500-pedro-de-madrazo-y-kuntz); [Colección Madrazo](https://ceres.mcu.es/pages/ResultSearch?txtSimpleSearch=Pedro%20de%20Madrazo&simpleSearch=0&hipertextSearch=1&search=simpleSelection&MuseumsSearch=CSGMM%7C&MuseumsRolSearch=1&listaMuseos=[Colecci%F3n%20Madrazo.%20Comunidad%20de%20Madrid])"
@@ -9160,7 +9256,7 @@
       "connection_level": "direct",
       "relationship type": "friends",
       "know each other since": "at least 1835",
-      "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Pascual de Gayangos, Vicente Masarnau and Santiago Masarnau",
+      "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Pascual de Gayangos y Arce, Vicente Masarnau and Santiago Masarnau",
       "collaborations": "Carderera published his first article on Goya in 1835 in <i>El Artista</i>, founded by Federico de Madrazo, Pedro de Madrazo and Eugenio Ochoa.", 
       "they met": [
         "On many occasions. Some of them are:",
