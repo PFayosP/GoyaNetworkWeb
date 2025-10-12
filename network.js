@@ -596,7 +596,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         },
         stabilization: {
           enabled: true,
-          iterations: 120,      // antes: 200
+          iterations: 80,      // antes: 120
           updateInterval: 10
         }
       },
@@ -1234,7 +1234,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               network.selectNodes([node.id]);
               network.emit("click", { nodes: [node.id] });
               resolve(true);
-            }, 1000);
+            }, 300); // Changed from 1000 to 300
           } else {
             resolve(false);
           }
@@ -1283,7 +1283,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       };
 
-      }, 2000);
+      }, 500);
 
     // Búsqueda funcional
     const searchInput = document.getElementById('searchInput');
