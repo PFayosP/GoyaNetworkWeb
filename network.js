@@ -481,10 +481,42 @@ document.addEventListener('DOMContentLoaded', async function () {
     let lastNonHighlightedNodes = [];
     let activeEdgeIds = new Set();   // Edges activos (los conectados al nodo resaltado)
 
+    // ——— limpia SOLO el “rojo” de nodos; no toca edges ni estados globales ———
+    function clearNodeHighlightsOnly() {
+      const nodeUpdates = [];
+
+      if (lastHighlightedNode) {
+        nodeUpdates.push({
+          id: lastHighlightedNode,
+          color: { border: '#2B7CE9' },
+          borderWidth: 2,
+          opacity: 1
+        });
+      }
+
+      if (lastHighlightedNodes && lastHighlightedNodes.length > 0) {
+        lastHighlightedNodes.forEach(id => {
+          nodeUpdates.push({
+            id,
+            color: { border: '#2B7CE9' },
+            borderWidth: 2,
+            opacity: 1
+          });
+        });
+      }
+
+      if (nodeUpdates.length > 0) nodes.update(nodeUpdates);
+
+      // reset SOLO de nodos
+      lastHighlightedNode = null;
+      lastHighlightedNodes = [];
+    }
+
 
     function clearHighlights() {
       // Batch update nodes
       const nodeUpdates = [];
+
       if (lastHighlightedNode) {
         nodeUpdates.push({ 
           id: lastHighlightedNode, 
@@ -957,7 +989,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         addShareButton(node.label);
         
           } else if (params.edges.length > 0) {
-            // clearHighlights();  // <- no limpiar antes de elegir el edge
 
             // === Smart selection: elegir el edge correcto entre varios candidatos ===
             let selectedEdgeId = params.edges[0];
@@ -986,10 +1017,10 @@ document.addEventListener('DOMContentLoaded', async function () {
               }
             }
 
-            // Fuerza la selección de ese edge “mejor”
-            network.selectEdges([selectedEdgeId]);
-            // === Fin smart selection ===
-
+      // Fuerza la selección de ese edge “mejor”
+      network.selectEdges([selectedEdgeId]);
+      // === Fin smart selection ===
+      clearNodeHighlightsOnly();   //  limpia el rojo de nodos del edge anterior
 
       const edge = edges.get(selectedEdgeId);
       if (!edge) return;
