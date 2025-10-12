@@ -605,11 +605,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 340,         // antes: 320 — esto separa más los nodos
-          centralGravity: 0.11,       // antes: 0.12 — más atracción hacia el centro
-          springLength: 110,         // Menos distancia ideal entre nodos
-          springConstant: 0.028,      // antes: 0.04 — esto afloja los "muelles"
-          damping: 0.55               // Estabiliza más rápido sin perder suavidad
+          nodeDistance: 280,         // antes: 320 — esto separa más los nodos
+          centralGravity: 0.08,       // antes: 0.12 — más atracción hacia el centro
+          springLength: 95,         // Menos distancia ideal entre nodos
+          springConstant: 0.045,      // antes: 0.04 — esto afloja los "muelles"
+          damping: 0.70               // Estabiliza más rápido sin perder suavidad
         },
         stabilization: {
           enabled: true,
@@ -697,7 +697,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('loadingMessage').style.display = 'none';
   
     // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 120;
+    const MIN_DISTANCE = 140;
     const positions = network.getPositions();
     const updates = [];
     const nodeArray = nodes.get();
@@ -1305,7 +1305,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       };
 
-      }, 500);
+      }, 300);
 
     // Búsqueda funcional
     const searchInput = document.getElementById('searchInput');
