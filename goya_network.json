@@ -3287,7 +3287,7 @@
       "life dates": "1777-1849", 
       "nationality": "French",
       "profession": "femme de lettres, salonnière", 
-      "portrayed by": "Jacques-Louis David (1800, Louvre); F. Gérard (1805, Musée Carnavalet)",
+      "portrayed by": "Richard Cosway, c.1793, painting? drawing?; Jacques-Louis David, 1800 (Louvre); F. Gérard, 1805 (Musée Carnavalet); Anthony Cardon after Cosway, 1804, print (BM 1875,0814.1288); Jules Porreau after Cardon & Cosway, printed by Chatain, 1859 (BM 1901,1022.783); Étienne Moreau-Nélaton after Cosway, print",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Recamier.jpg",
       "image source": "portrait by David, 1800, Louvre"
     },
@@ -3502,6 +3502,26 @@
       "added": "2025-10-11"
     },
     {
+      "id": "Laureano Potenciano",
+      "label": "Potenciano",
+      "full name": "Laureano Potenciano Pastor",
+      "life dates": "active 1830s-1860s", 
+      "nationality": "Spanish",
+      "profession": "engraver, draughtsman",
+      "address": "Calle de la Encomienda, 7, Madrid (by 1858)",
+      "studies in": "RABASF c.1837",
+      "link to Goya's work": "he printed Goya's <i>Disasters of War</i> in 1863 (RABASF); he also did early editions c.1862, such as the set owned by Charles Blanc and then by William Stirling-Maxwell (Colnaghi or Christie's, April 1863, 20 pounds), now at the Boston MoFA (1973.732.2). See Sayre 1974, Harris 1964, Boelcke-Astor 1952-53",
+      "author of": "<i>Estudio de manos entrelazadas</i>, 1837, drawing, RABASF P-0366; <i>Mignon regrettant la Patrie</i>, 1843",
+      "in Paris": "1854-57 he applied for a pension to the RABASF to continue his studies as engraver in Paris, where he studies with the publisher/printer Châtain (12 rue de l'Hôtel Colbert); [Orsay](https://www.musee-orsay.fr/fr/ressources/repertoire-artistes-personnalites/chatain-37914), [BM](https://www.britishmuseum.org/collection/term/BIOG84410)",
+      "exhibitions": "1858 Exposición General de Bellas Artes, he presented some printing proofs: no.334 <i>El Descendimiento</i> after Rubens, engraved by Pharamond Blanchard; nos.335-336 <i>La Mignon</i> after Ary Scheffer, engraved by Aristide Louis (1815-1853) [L.3979](https://www.marquesdecollections.fr/FtDetail/547d8d67-650d-e347-a4a1-f7a11792073e)",
+      "websites": "[Prado](https://www.museodelprado.es/coleccion/artista/potenciano-pastor-laureano/1f10c8e9-a1ea-40c7-a462-a92e94ed38cd): with a few spelling mistakes (Schefer>Scheffer; Aríslides>Aristide)",
+      "archives": "RABASF sign. Le-1-49-2",
+      "bibliography": "Sayre 1974, p.130, no.101; Harris 1964, vol.II; Boelcke-Astor 1952-3, pp.284, 301, 304",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Potenciano.jpg",
+      "image source": "AI generated (DeepAI) because there is no known portrait",
+      "added": "2025-10-15"
+    },
+    {
       "id": "Richard Ford",
       "label": "Ford",
       "life dates": "1796-1858", 
@@ -3523,7 +3543,7 @@
       "friends": "David Roberts; Henry Unwin Addington; Pascual de Gayangos y Arce; George Borrow",
       "author of": [
         "Writing: article about bullfighting (1840); <i>Handbook for Travellers in Spain</i>: 1st draft partially printed in 1844, but abandoned in 1845 due to 'its hostility to perceived inadequacies of Spanish government, the cult of Mariolatry (worship of the Virgin Mary), and Spanish military incompetence together with French misconduct and depredations during the Peninsular War in which Marshal Soult, who happened to be the French Head of Government at the time, was categorised as the «plundermaster general». A revised edition, still highly critical, if somewhat toned down, appeared in two volumes in July 1845' (Wikipedia). 1847 2nd edition; 1855 3rd edition (much new material). In 1843 he published a life of Velázquez. <i>Gatherings from Spain</i> (1846). <i>Andalucia, Ronda and Granada, Murcia, Valencia, and Catalonia; the portions best suited for the invalid</i> (1855).",
-        "Artworks: topographical drawings of Seville (<i>Puerta de Triana</i>)."
+        "Artworks: topographical drawings of Seville (<i>Puerta de Triana</i>). <i>Sketches and Drawings of the Alhambra</i> (1835); <i>Sketches of Spain and Spanish character</i> (1836)."
       ],
       "art collection": [
         "He collected old master prints, particularly those of Parmigianino and Andrea Meldolla (Schiavone). 1822-24 he and his wife issued their own etchings after these two masters.", 
@@ -5047,6 +5067,24 @@
       "to": "Mariano Salvador Maella",
       "connection_level": "direct",
       "relationship type": "master-student"
+    },
+    {
+      "from": "Laureano Potenciano",
+      "to": "William Stirling-Maxwell",
+      "connection_level": "secondary?",
+      "link to Goya's work": "Stirling owned a posthumous working-proof set of Goya's <i>Disasters of War</i>, formerly belonging to Charles Blanc, that were printed by Laureano Potenciano c.1862 (now Boston MoFA 1973.732.2)"
+    },
+    {
+      "from": "Laureano Potenciano",
+      "to": "Charles Blanc",
+      "connection_level": "secondary?",
+      "link to Goya's work": "William Stirling-Maxwell owned a posthumous working-proof set of Goya's <i>Disasters of War</i>, formerly belonging to Charles Blanc, that were printed by Laureano Potenciano c.1862 (now Boston MoFA 1973.732.2)"
+    },
+    {
+      "from": "Laureano Potenciano",
+      "to": "Pharamond Blanchard",
+      "connection_level": "direct?",
+      "link to Goya's work": "Potenciano presented at the 1858 Exposición General de Bellas Artes a proof by Blanchard after Ary Scheffer (<i>La Mignon</i>)"
     },
     {
       "from": "Juan Agustín Ceán Bermúdez",
@@ -8857,7 +8895,7 @@
       "from": "William Stirling-Maxwell",
       "to": "Charles Blanc",
       "connection_level": "direct?",
-      "link to Goya's work": "Stirling acquired a set of <i>Disasters of War</i> (Colnaghi or Christie's, April 1863, 20 pounds) printed c.1862 [printed by whom?] (before publication: posthumous trial proof), formerly in the collection of Charles Blanc, now at the Boston MoFA (1973.732.2)"
+      "link to Goya's work": "Stirling acquired a set of <i>Disasters of War</i> (Colnaghi or Christie's, April 1863, 20 pounds) printed c.1862, printed by Laureano Potenciano (before publication: posthumous trial proof), formerly in the collection of Charles Blanc, now at the Boston MoFA (1973.732.2)"
     },
     {
       "from": "Valentín Carderera",
