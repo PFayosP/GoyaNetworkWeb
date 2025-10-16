@@ -249,7 +249,7 @@
         "Recent years: 2015-16 Prado, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i> (cur. Javier Barón); 2004-05 Prado, <i>El retrato español. Del Greco a Picasso</i>."
       ],
       "collector of Goya's works": "Madrazo acquired a substantial group of Goya's prints and drawings, probably through Valentín Carderera. This includes [156 drawings](https://www.museodelprado.es/coleccion/obras-de-arte?searchObras=goya%20madrazo&cidoc:p14_carried_out_by@@@pm:author@@@ecidoc:p131_E82_p102_has_title=Goya%20y%20Lucientes,%20Francisco%20de@es&cidoc:p2_has_type@@@pm:objectTypeNode=http://museodelprado.es/items/objecttype_6) now at the Prado from the collection of 'Federico de Madrazo y/o Román Garreta, Madrid, c.1855-1860', such as <i>Buena muger, parece</i> (C.9) (1814-1823, [Prado D003913](https://www.museodelprado.es/coleccion/obra-de-arte/buena-muger-parece/4635b978-3c08-4895-9e0d-32c909f5aeb9))",
-      "bibliography": "Gilarranz Ibáñez 2020; Martínez Plaza 2017; G. Navarro 2007 (in <i>El siglo XIX en el Prado</i>); Martí 2007; Torres González, 'La larga sombra de los Madrazo', in López & Martí (eds.), <i>El mundo de los Madrazo</i>, 2007; Romero Tobar 1997; González López 1994; Díez 1994; Harris 1964",
+      "bibliography": "Gilarranz Ibáñez 2020; Martínez Plaza 2017; G. Navarro 2007 (in <i>El siglo XIX en el Prado</i>); Martí 2007; Torres González, 'La larga sombra de los Madrazo', in López & Martí (eds.), <i>El mundo de los Madrazo</i>, 2007; Javier Barón, <i>El legado Ramón de Errazu: Fortuny, Madrazo y Rico</i>, Prado, 2005; Romero Tobar 1997; González López 1994; Díez 1994; Harris 1964",
       "websites": "[Prado website](https://www.museodelprado.es/coleccion/artista/madrazo-y-kuntz-federico-de/9bdb1678-fdd4-47bb-92e3-6833fadc8a50), Carlos G. Navarro; [Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7)",
       "conferences/seminars": "Javier Barón, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i>, 2015, Prado, [YouTube](https://www.youtube.com/watch?v=JY0qD-vB3hw)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Federico_Madrazo.jpg",
@@ -2355,7 +2355,10 @@
       "influenced by": "Victor Hugo; Théophile Gautier",
       "writes in": "<i>L'Artiste</i> (from 1844; chief editor 1849-52), <i>L'Événement</i> (founded by Victor Hugo; from 1848), <i>La Vraie République</i> (founded by Théophile Thoré; from 1848); <i>Gazette des Beaux-Arts</i> (founded by Charles Blanc; from 1859); <i>Le Temps</i> (from 1873); <i>La Revue française</i>",
       "friends": "Théophile Thoré, Charles Blanc (and his brother Louis Blanc), Philippe de Chennevières. 'Il se lie ainsi à un groupe d'homme de lettres qui partagent les mêmes convictions et joueront un rôle capital dans sa carrière' (INHA)",
-      "writes about Goya": "'Francisco Goya', <i>Archives de l'art français</i>, I, 1851-1852, pp.319-320",
+      "writes about Goya": [
+        "1851-52 'Francisco Goya', <i>Archives de l'art français</i>, I, pp.319-320",
+        "(date?) description of Mariano Goya's portrait, from the collection of José de Salamanca y Mayol (I Marqués de Salamanca), was exhibited by Goupil's son in the <i>Exposición de Alsacia y Lorena</i>, mentioned by Paul Mantz as 'Cette peinture, qui n'est peut être pas de premier ordre dans l'oeuvre de Goya, dit pourtant quelque chose de l'une de ses innombrables manières' [...] C'est un portrait qui a été peint très vite, sans la moindre prétention, et qui est toutefois fortement marqué de l'esprit du temps [...]. Le costume est intéressant [...] Dans le ton des chairs, dans le blanc du gilet, il y a une harmonie à la Greuze [...] Le jeune homme n'a pas l'air absolument spirituel, et son élégance se tempère d'une sorte de gaucherie exotique qui est la plus amusante du monde' (Viñaza 1887, pp.256-257)."
+      ],
       "author of": "<i>Les Peintres vivants</i> (1858), with Théophile Gautier and Arsène Houssaye; 'La Galerie Pourtalès' (1865); <i>L'Œuvre et la vie de Michel-Ange</i> (1876), directed by Charles Blanc; <i>Antoine Watteau</i>, 1892",
       "works as": [
         "Art critic: Salons from 1845. Supporter of the Romantic generation, specifically Eugène Delacroix and Théodore Rousseau. <i>Gazette des Beaux-Arts</i> (from 1859): Salons (1859, 1863, 1865, 1867, 1869, 1872), Expositions universelles in Paris (1867, 1878, 1889), biographies of living painters (such as Corot, Carpeaux, Courbet)",
@@ -2660,11 +2663,15 @@
         "1869 (Sotheby's): pieces acquired by the British Museum; Pieces by José de Madrazo", 
         "1875"
       ],
-      "collector of Goya's works": "<i>Femme à l'éventail</i> (1806-07) (1867 sale, lot 177): Musée du Louvre, RF 1132 [https://collections.louvre.fr/ark:/53355/cl010064756]; copy of <i>Majas at the balcony</i> (Metropolitan 29.100.10), sold in 1867.",
+      "collector of Goya's works": [
+        "<i>Femme à l'éventail</i> (1806-07) (1867 sale, lot 177): Musée du Louvre, RF 1132 [https://collections.louvre.fr/ark:/53355/cl010064756]; copy of <i>Majas at the balcony</i> (Metropolitan 29.100.10), sold in 1867.",
+        "Viñaza (1887, pp.256-257) mentions a full-body portrait allegedly of Mariano Goya, from the Salamanca collection, exhibited by Adolphe Goupil's son in the <i>Exposición de Alsacia y Lorena</i>, described by Paul Mantz (see Mantz's node). It's then mentioned by Beruete (1917, pp.85-86) stating that Goupil bought a portrait by Goya (following the advice of Mariano Fortuny y Marsal) but that he couldn't sell it until many years later. Is it rather the full-body portrait of Javier Goya (c.1805-06) now in a private collection in Paris?"
+      ],
       "curiosities": [
         "His residence in Madrid, the Palace of the Marquis of Salamanca, now belongs to the BBVA Foundation, where there are two works by Goya: a portrait of Carlos III as a hunter (c.1786), and the portrait of Don Pantaleón Pérez de Nenín (1808).", 
         "He gives his name to the Neighbourhood of Salamanca (Barrio de Salamanca) in Madrid, where he refurbished 14 blocks."
         ],
+      "bibliography": "Beruete 1917; Viñaza 1887",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Salamanca.jpg"
     },
     {
@@ -4151,20 +4158,42 @@
       "born in": "Rome",
       "dies in": "Versailles",
       "profession": "painter", 
-      "in Paris": "in 1860 (disciple of Léon Cogniet)",
+      "member of": "1879 Académico Correspondiente de la RABASF; 1905 Hispanic Society of America",
+      "trips": "Rome, London, USA, Argentina",
+      "in Paris": [
+        "1853 short trip with his father Federico de Madrazo",
+        "1854 2 months in the studio of Jean-Auguste-Dominique Ingres",
+        "1862 disciple of Léon Cogniet",
+        "1870-71 during the Franco-Prussian War",
+        "from c.1873-c.1890s: in contact with Jean-Léon Gérôme, Henri Regnault, Giobanni Boldini, Ernest Meissonier, Léon Bonnat"
+      ],
+      "patrons": "main ones: Adolphe Goupil; Avery; Artal. Also: Dukes of Riansares; Errazu; Casa Riera; Heeren; Vanderbilt; Stewart; Astor; Archer M. Huntington",
+      "studies in": "Escuela Superior de Bellas Artes (Madrid); L'École Imperiale de Dessin et Mathématiques (studies abandoned)",
       "exhibitions": [
         "Exposition Universelle 1860 and 1889.",
+        "Goupil: London 1871 (Agnot-Goupil), Paris c.1873.",
+        "1878 Universl Exhibition (Paris): 14 artworks.",
+        "1897-1914: Oehme Gallery (NY), LA, Cincinnati, Chincago, Salón Artal de Buenos Aires.",
+        "1900 Universal Exhibition (Paris).",
+        "1920 posthumous exhibition at the Royal Academy in London.",
         "Recent years: Madrid 2025-2026 <i>Raimundo de Madrazo</i>, [Fundación Mapfre](https://www.fundacionmapfre.org/arte-y-cultura/exposiciones/sala-recoletos/raimundo-de-madrazo/) (cur. Amaya Alzaga)."
       ],
-      "collector of Goya's works": "1869 Perros y útiles de caza (tapestry cartoon), donated in 1894 to the Prado",
-      "masters": "Léon Cogniet", 
+      "collector of Goya's works": "1869 <i>Perros y útiles de caza</i> (tapestry cartoon), donated in 1894 to the Prado",
+      "masters": "Jean-Auguste-Dominique Ingres (1854); Léon Cogniet (1862)",
+      "author of": "<i>La traslación de los restos del apóstol Santiago a la sede de Padrón</i>, 1857-59, oil painting, Museo Catedral de Santiago de Compostela; <i>La muerte de Don Lope de Haro</i>, 1860s; <i>Las Cortes de 1834</i>, 1865; <i>Dama con un loro</i>, c.1872, Clark Art Institute; <i>Portrait of Federico de Madrazo</i>, 1875, oil painting, Bilbao; <i>Salida del baile de máscaras </i>, 1878, oil painting, private collection; <i>Ramón de Errazu</i>, 1879, Prado; <i>Laure Hayman</i> (muse of Marcel Proust), c.1880-85, Fundación Masaveu; <i>Joven dama en un jardín</i>, after 1900, oil painting, Bilbao; <i>María Hahn, esposa del pintor</i>, 1901, Prado P006659",
       "portrayed by": "Federico de Madrazo (1875, Prado)",
-      "married to": "Eugenia Ochoa (cousin)",
+      "married to": "Eugenia de Ochoa (cousin) (1874); María Hahn Echenagusia (1899)",
       "children": "Federico (Cocó)",
+      "friends": "Eduardo Zamacois; Rogelio de Egusquiza; Martín Rico; Coquelin Ainé (actor); Mariano Fortuny y Marsal (also brother-in-law)",
       "parents": "Federico de Madrazo and Luisa Garreta",
       "siblings": "Cecilia de Madrazo, Isabel de Madrazo, Luisa de Madrazo and Ricardo de Madrazo",
+      "decorations/awards": [
+        "Chevalier (1878) and Officier (1889) de la Légion d'honneur",
+        "1889 Gold Medal at the Universal Exhibition in Paris"
+      ],
       "bibliography": "Alzaga 2012",
-      "websites": "[Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7)",
+      "websites": "[Prado, profile by Javier Barón](https://www.museodelprado.es/aprende/enciclopedia/voz/madrazo-y-garreta-raimundo-de/c01c352f-9b38-4504-b54e-29c70a1bfe7e); [Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); [Bilbao Museoa](https://bilbaomuseoa.eus/explora/artista/raimundo-de-madrazo/7f610858-52c3-4522-8096-29aab2a13d60), Carlos González López & Montserrat Martí Ayxelá 2008; [Fundación Masaveu](https://www.fundacioncristinamasaveu.com/portfolio/madrazo-y-garreta-raimundo-de/)",
+      "newspaper archive": "Alberto Frutos, 'Raimundo de Madrazo, retratista de la élite parisina de la Belle Époque, en la sede de Fundación MAPFRE en Madrid', <i>La Vanguardia</i>",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Raimundo_Madrazo.jpg"
     },
     {
@@ -4197,20 +4226,28 @@
       "dies in": "Rome",
       "profession": "painter, watercolorist, engraver", 
       "masters": "Claudio Lorenzale",
+      "curiosities": "towards the end of his life, he showed signs of depression; commercial success had elevated him to an enviable social and economic position, but his clientele demanded a type of painting that prevented him from evolving (Wikipedia)",
       "author of": [
         "Painting: <i>La batalla de Tetuán</i> (1862-64); <i>Viejo desnudo al sol</i> (1863, Prado); <i>La vicaría</i> (1870).",
         "Drawing: <i>Standing male nude facing front, with left hand leaning on a stone block</i>, c.1861, Prado D006227; <i>Etude de vieillard assis, de face, le menton dans la main</i>, 1864, Orsay RF 3887, Recto."
       ],
+      "patrons": "Adolphe Goupil (contract from 1866): in May 1874 he returned to Paris with the intention of breaking his contract with Goupil (did he?)",
       "exhibitions": [
         "Recent years: Madrid 2017, <i>Fortuny (1838-1874)</i>, Prado (cur. Javier Barón); Castres 1974, <i>Mariano Fortuny et ses amis français</i>, Musée Goya"
       ],
       "portrayed by": "Federico de Madrazo, 1867, Museo Nacional de Arte de Cataluña; Charles Albert Bertall, photograph, <i>Mariano Fortuny Marsal and Cecilia de Madrazo</i>, c.1870, Prado HF04363; Francisco Domingo Marqués, c.1874-84, M. Bilbao 69/76",
-      "link to Goya's work": "1872 Fortuny is mentioned as a great admirer of Goya and Meissonier (<i>Dictionnaire de la conversation et de la lecture</i>, Paris, ed. William Duckett, p.732) (Fayos Pérez 2024, Appendix II).",
+      "link to Goya's work": [
+        "1872 Fortuny is mentioned as a great admirer of Goya and Meissonier (<i>Dictionnaire de la conversation et de la lecture</i>, Paris, ed. William Duckett, p.732) (Fayos Pérez 2024, Appendix II).",
+        "Beruete (1917, pp.85-86) writes: 'El entusiasmo que en Fortuny despertara el arte de Goya perduró, y cuando años después pintor de moda y famoso en París, pudo imponerse á los <i>marchands</i>, les indicó la conveniencia de comprar y exhibir algunas obras de Goya. Goupil [Adolphe Goupil] compró un retrato, pero lo tuvo muchos años sin poder venderlo convenientemente'. Is this the full-body portrait allegedly of Mariano Goya mentioned by Viñaza in 1887 as of Javier Goya? Is it rather the full-body portrait of Javier Goya (c.1805-06) now in a private collection in Paris?"
+      ],
       "married to": "Cecilia de Madrazo",
       "children": "Mariano; María Luisa",
       "parents": "Federico de Madrazo and Luisa Garreta",
-      "bibliography": "Daniel S. Ralston, PhD thesis, Columbia (unpublished); Javier Barón (ed.), exh. cat. Prado, 2017; Davillier 1875, <i>Fortuny sa vie, son œuvre, sa correspondance</i>",
-      "websites": "Prado, [entry of M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08); Prado, [Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); Orsay, [entry of M. Fortuny](https://www.musee-orsay.fr/en/ressources/artists-personalities-catalog/mariano-fortuny-y-marsal-12627)",
+      "in Paris": "1870; 1874",
+      "trips": "London, Naples, Portici, Rome",
+      "lives in": "Reus, Paris, Granada",
+      "bibliography": "Daniel S. Ralston, PhD thesis, Columbia (unpublished); Javier Barón (ed.), exh. cat. Prado, 2017; Javier Barón, <i>El legado Ramón de Errazu: Fortuny, Madrazo y Rico</i>, Prado, 2005; Beruete 1917; Davillier 1875, <i>Fortuny sa vie, son œuvre, sa correspondance</i>",
+      "websites": "Prado, [entry of M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08); Prado, [Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); Orsay, [entry of M. Fortuny](https://www.musee-orsay.fr/en/ressources/artists-personalities-catalog/mariano-fortuny-y-marsal-12627); [Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Mariano_Fortuny_Marsal.jpg",
       "image source": "portrait by Federico de Madrazo, 1867, MNAC"
     },
@@ -4934,6 +4971,39 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Topffer.jpg",
       "image source": "Jean-Léonard Lugardon, oil painting, c.1840",
       "added": "2025-09-29"
+    },
+    {
+      "id": "Adolphe Goupil",
+      "label": "Goupil",
+      "full name": "Jean-Baptiste Michel Adolphe Goupil",
+      "life dates": "1806-1893", 
+      "nationality": "French",
+      "born in": "Paris",
+      "dies in": "Paris",
+      "profession": "print editor, art dealer, art collector, printer",
+      "works as": "from 1846, Goupil is not only an editor but also buys original paintings by living artists such as Paul Delaroche, Jean-Léon Gérôme (see <i>Pelea de Gallos</i>, 1865, Prado HF00015) and Horace Vernet, reproducing them with prints, and then reselling the originals (Lanzarote Guiral 2016, p.LXXVI)",
+      "parents": "Auguste Goupil and Anne Lutton. Grandfather: G. Drouais",
+      "married to": "Victorine Elisabeth Brincard (1829)",
+      "children": "Auguste Léon, Amélie, Albert (photographer), Louis (photographer), Marie (married to the painter Jean-Léon Gérôme), Blanche", 
+      "founder of": "Goupil & Cie. Associated in 1827 with Henry Rittner (Rittner & Goupil), and in 1841 with Théodore Vibert (Goupil & Vibert et Cie). Later with Léon Boussod in 1855 (director 1872-78) and René Valadon (1878-1884). From 1886, called Goupil & Cie — Boussod, Valadon & Cie successeurs. Also linked with Théo Vna Gogh.",
+      "author of": [
+        "Editions: <i>Œuvre de Paul Delaroche</i>, with a photograph by Robert Jefferson Bingham and a text by Henri Delaborde (1858); <i>Souvenir de la Galerie Pourtalès, reproduction d'antiques, Tableaux et Objets d'art les plus remarquables de la collection du Comte de Pourtalès-Gorgier: James-Alexandre de Pourtalès [...]</i> (1863).",
+        "Reproductions of masterworks from the Paris Salon."
+      ],
+      "portrayed by": "Achille Devéria, lithograph, c.1831, Musée Carnavalet",
+      "curiosities": "there is a Musée Goupil in Bordeaux (from 1991)",
+      "link to Goya's work": [
+        "Viñaza (1887, pp.256-257) mentions a full-body portrait allegedly of Mariano Goya, from the collection of José de Salamanca y Mayol (I Marqués de Salamanca), exhibited by Goupil's son in the <i>Exposición de Alsacia y Lorena</i>, described by Paul Mantz (see Mantz's node).",
+        "This portrait is then mentioned by Beruete (1917, pp.85-86) stating that Goupil bought a portrait by Goya (following the advice of Mariano Fortuny y Marsal) but that he couldn't sell it until many years later: 'El entusiasmo que en Fortuny despertara el arte de Goya perduró, y cuando años después pintor de moda y famoso en París, pudo imponerse á los <i>marchands</i>, les indicó la conveniencia de comprar y exhibir algunas obras de Goya. Goupil compró un retrato, pero lo tuvo muchos años sin poder venderlo convenientemente'.",
+        "Is this rather the full-body portrait of Javier Goya (c.1805-06) now in a private collection in Paris?"
+      ],
+      "decorations/awards": "Officier de la Légion d'honneur (1877)",
+      "patronage": "Eduardo Zamacois; Mariano Fortuny y Marsal; Raimundo de Madrazo",
+      "bibliography": "Lanzarote Guiral 2016; Hélène Lafont-Couturier, 'La maison Goupil ou la notion d'œuvre originale remise en question', <i>Revue de l'Art</i>, no.112, 1996-2, pp.59-69; Beruete 1917; Viñaza 1887",
+      "websites": "[Orsay](https://www.musee-orsay.fr/fr/ressources/repertoire-artistes-personnalites/adolphe-goupil-13880); [AGORHA](https://agorha.inha.fr/ark:/54721/916e6059-e6c4-4a9c-a238-50c9c8a1e037)",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Goupil.jpg",
+      "image source": "Devéria lithograph, c.1831",
+      "added": "2025-10-16"
     }
   ],
   "edges": [
@@ -6828,6 +6898,46 @@
       "relationship type": "relatives; mother-son" 
     },
     {
+      "from": "Jean-Auguste-Dominique Ingres",
+      "to": "Raimundo de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "master-student",
+      "interactions": "Madrazo spends 2 months in his studio in 1854 to study drawing",
+      "websites": "[Bilbao Museoa](https://bilbaomuseoa.eus/explora/artista/raimundo-de-madrazo/7f610858-52c3-4522-8096-29aab2a13d60)" 
+    },
+    {
+      "from": "Ernest Meissonier",
+      "to": "Raimundo de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "they share": "same artistic circle in Paris in the 1870s",
+      "websites": "[Bilbao Museoa](https://bilbaomuseoa.eus/explora/artista/raimundo-de-madrazo/7f610858-52c3-4522-8096-29aab2a13d60)" 
+    },
+    {
+      "from": "Henri Regnault",
+      "to": "Raimundo de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "they share": "same artistic circle in Paris in the 1870s",
+      "websites": "[Bilbao Museoa](https://bilbaomuseoa.eus/explora/artista/raimundo-de-madrazo/7f610858-52c3-4522-8096-29aab2a13d60)" 
+    },
+    {
+      "from": "Jules de Goncourt",
+      "to": "Raimundo de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "they share": "same artistic circle in Paris in the 1870s",
+      "websites": "[Bilbao Museoa](https://bilbaomuseoa.eus/explora/artista/raimundo-de-madrazo/7f610858-52c3-4522-8096-29aab2a13d60)" 
+    },
+    {
+      "from": "Edmond de Goncourt",
+      "to": "Raimundo de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "they share": "same artistic circle in Paris in the 1870s",
+      "websites": "[Bilbao Museoa](https://bilbaomuseoa.eus/explora/artista/raimundo-de-madrazo/7f610858-52c3-4522-8096-29aab2a13d60)" 
+    },
+    {
       "from": "Mariano Goya",
       "to": "Josefa Bayeu",
       "connection_level": "direct",
@@ -7304,7 +7414,7 @@
       "correspondence": "part of the documental collection recently acquired by the Bilbao Museum (formerly in Paris).",
       "portraits": "Fortuny portrayed Zamacois in 1869 (etching, Met).",
       "collaborations": "Zamacois modelled as a bullfighter for Fortuny's famous painting <i>La Vicaría</i> (1870, Prado).",
-      "interactions": "Zamacois introduced Fortuny to Goupil.",
+      "interactions": "Zamacois introduced Fortuny to Adolphe Goupil.",
       "exhibitions": "<i>Zamacois, Fortuny, Meissonier</i>, 2006-07, [Museo de Bellas Artes de Bilbao](https://bilbaomuseoa.eus/exposiciones/zamacois-fortuny-meissonier/)"
     },
     {
@@ -8152,7 +8262,15 @@
       "to": "Cecilia de Madrazo",
       "connection_level": "direct",
       "relationship type": "spouses; husband-wife",
-      "children": "Mariano; María Luisa"
+      "children": "Mariano Fortuny y Madrazo; María Luisa Fortuny y Madrazo"
+    },
+    {
+      "from": "Mariano Fortuny y Marsal",
+      "to": "Raimundo de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "relatives: brothers-in-law; colleagues; friends",
+      "collaborations": "they travel to Sevilla and Madrid in 1868",
+      "they share": "Adolphe Goupil was their patron"
     },
     {
       "from": "Federico de Madrazo",
@@ -8384,6 +8502,64 @@
       "relationship type": "acquaintances"
     },
     {
+      "from": "Adolphe Goupil",
+      "to": "Eduardo Zamacois",
+      "connection_level": "direct",
+      "relationship type": "patronage"
+    },
+    {
+      "from": "Adolphe Goupil",
+      "to": "Mariano Fortuny y Marsal",
+      "connection_level": "direct",
+      "relationship type": "patronage (they were introduced by Eduardo Zamacois). In May 1874 Fortuny returns to Paris with the intention of breaking his contract with Goupil (did he?)", 
+      "collaborations": "Fortuny signs an exclusivity contract with Goupil in 1866",
+      "artworks bought/sold": "Goupil buys Fortuny's <i>La Vicaría</i> for 70,000 fr. and resells it for 250,000"
+    },
+    {
+      "from": "Théophile Gautier",
+      "to": "Mariano Fortuny y Marsal",
+      "connection_level": "secondary?",
+      "mentions": "Gautier praises Fortuny's work, which contributed to increase his fame. For instance, Gautier liked Fortuny's works exhibited at Goupil's (c.1870)",
+      "websites": "[Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)"
+    },
+    {
+      "from": "Adolphe Goupil",
+      "to": "Valentín Carderera",
+      "connection_level": "direct",
+      "relationship type": "acquaintances, business partners. Carderera seems to have bought and sold artworks to/from Goupil, given the frequent encounters, visits to his shop, and mentions of money involved",
+      "know each other since": "at least 1842",
+      "interactions": "1842, 30 Aug, Carderera was looking for a printer and shows his drawings to Goupil and Vivert: 'Les gustó mucho mis retratos y se admiraron del número, y de las monjas de Sigena, que encontró Vibert bellísimas, y las del Santo Sepulcro, etc.' (Lanzarote Guiral 2016, p.XXXVI)",
+      "mentions": "Carderera has many mentions of Goupil in his journal, from 1842 to 1861. The earliest one is 1842, 7 Feb: 'Entré a casa de Rittner y Goupil'; also 1842, 28 Feb, 22 Aug ('Después vi a Guiaut, que no se atrevína a tomar mis dibujos porque costarían mucho. Avisé a Goupil y Vibert', 30 Aug, 31 Aug, 29 Oct; 1845, 11 Oct, 18 Oct, 1856, 22 Aug, 6 Nov; 1859, 27 Aug, 6 Sept, 10 Sept, 16 Sept, 24 Sept, 19 Oct, 22 Oct, 24 Oct, 1 Nov, 2 Nov, 4 Nov, 9 Nov, 12 Nov, 15 Nov, 17 Nov; 1861, 6 July (he picks up money from Colnaghi), 12 July, 25 July, 6 Aug, 15 Aug, 10 Sept, 4 Oct, 8 Oct, 13 Oct (Lanzarote Guiral 2016)",
+      "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "from": "Adolphe Goupil",
+      "to": "Paul Delaroche",
+      "connection_level": "direct",
+      "relationship type": "acquaintances, patronage, colleagues",
+      "artworks bought/sold": "from 1846, Goupil is not only an editor but also buys original paintings by living artists such as Paul Delaroche, Jean-Léon Gérôme and Horace Vernet, reproducing them with prints, and then reselling the originals (Lanzarote Guiral 2016, p.LXXVI)",
+      "collaborations": "Goupil edited <i>Œuvre de Paul Delaroche</i>, with a photograph by Robert Jefferson Bingham and a text by Henri Delaborde (1858)",
+      "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "from": "Achille Devéria",
+      "to": "Adolphe Goupil",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; portraitist-sitter",
+      "know each other since": "at least 1831",
+      "portraits": "Devéria made a portrait of Goupil (lithograph, c.1831, Musée Carnavalet)"
+    },
+    {
+      "from": "Valentín Carderera",
+      "to": "Paul Delaroche",
+      "connection_level": "direct",
+      "relationship type": "acquaintances. Carderera admires Delaroche",
+      "know each other since": "1845",
+      "interactions": "Paris, 1845, 20 Oct: Carderera visits Delaroche's studio with Adrien Dauzats, Clavé and Belay [?] (LG 2016, p.264)",
+      "mentions": "many mentions in Carderera's journal. The earliest is 1841, 2 Dec, when he goes to the Palais des Beaux-arts to see the new paintings of Delaroche (Lanzarote Guiral 2016, p.80)",
+      "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
       "from": "Federico de Madrazo",
       "to": "Paul Delaroche",
       "connection_level": "direct",
@@ -8486,7 +8662,7 @@
         "1841, May 4, 7 (with Blanchard and Taylor), 9 (Dauzats saw his drawings), Dec 2, 15 (Carderera gives him the drawing he asked for), 16, 30 (Paris): they meet (LG 2016, pp.10, 11, 12, 87, 92).",
         "1842, 27 Jan (Paris): Carderera goes to Dauzats's and leaves a letter for him (Lanzarote Guiral 2016, p.100).",
         "1856, 1 Oct (Paris): Carderera shows Dauzats his own drawings and also Goya's. Dauzats copies or traces some of them (Fayos Pérez 2024, p.51; LG 2016, p.352).",
-        "1859, 12 Nov (Paris): Carderera takes single sheets from the <i>Caprichos</i> and gives some of the prints to Dauzats: 'le regalé las estampas de Goya (29). Parece quedó contento y quería pagármelas' (Fayos Pérez 2024, p.51; Lanzarote Guiral 2016, p.430)."
+        "1859, 12 Nov (Paris): Carderera takes single sheets from the <i>Caprichos</i> and gives some of them to Dauzats: 'Tomé los caprichos sueltos de Goya y al bajar venían por el cajón para Moorel. Dile propina [...] Fui de Dauzats, donde estuve un buen rato. Le regalé las estampas de Goya (29). Parece quedó contento y quería pagármelas' (Fayos Pérez 2024, p.51; Lanzarote Guiral 2016, p.430)."
       ],
       "correspondence": [
         "At least from 1842: Carderera receives a letter from Dauzats 17 March 1842 in Paris (LG 2016, p.115).",
@@ -8526,6 +8702,7 @@
       "connection_level": "direct",
       "relationship type": "acquaintance", 
       "know each other since": "at least 13 May 1841, in Paris. Carderera's diary: 'Por la mañana estuve a almorzar con Mr. Piot y con Mr. Teófilo Gautier' (Lanzarote Guiral 2016, p.12). Carderera helped Gautier with 1842 article in <i>Le Cabinet de l'amateur</i> (LG 2016, p.550)",
+      "mentions": "1859, 12 Nov, Carderera writes in his diary: 'Entré a un librero. Compré el libro de T. Gautier intitulado <i>Constantinopla</i> por 17 sous' (LG 2016, p.430)",
       "they met": "Paris, 1859-XI-13: 'Fuime al quai Voltaire, redacción del Monitor (sic) [<i>Le Moniteur universel</i>] y pude entrar en el gabinete de Théophile Gautier, que estuvo amable. Vio la serie de toros, que le regalé y después mis entregas [...]' (Lanzarote Guiral 2016, p.431)",
       "artworks bought/sold/given": "on 1859-XI-13, Carderera showed Gautier Goya's <i>Tauromaquia</i> and then gave it to him. This is most likely the <i>Tauromaquia</i> set that was sold in Sotheby's Paris, 14 Dec 2022 (Library of Jorge Ortiz Linares), lot 37, for 132,300€. [Sotheby's](https://www.sothebys.com/en/buy/auction/2022/de-la-precieuse-bibliotheque-jorge-ortiz-linares/madrid-1816-33-eaux-fortes-envoi-de-valentin?locale=en). [YouTube video](https://www.youtube.com/watch?v=6A2iC0fEZxs) of Jean-Baptiste de Proyart discussing the <i>Tauromaquia</i> set (min 2:10)",
       "bibliography": "Fayos Pérez 2020; Lanzarote Guiral 2016"
