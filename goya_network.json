@@ -2817,6 +2817,7 @@
       "decorations/awards": "Prix de Rome (1866): for <i>Thétis apportant à Achille les armes forgées par Vulcain</i>",
       "parents": "father: Henri Victor Regnault",
       "masters": "Louis Lamothe (1861); Alexandre Cabanel (1864)",
+      "mentions": "Proust 1891 (Salon): about Jean-Paul Laurens's <i>The Arch of Steel, an episode of the 17th of July, 1789</i>, 'it is more suggestive of Regnault's picture of Prim's alarms at the height of his triumphant popularity' (p.10).",
       "curiosities": [
         "He was represented by the famous art dealer Paul Durand-Ruel.",
         "Camille Saint-Saëns dedicates him a <i>Marche héroïque</i> (1871)."
@@ -2826,6 +2827,7 @@
         "Spain-related: <i>Berger des montagnes de la Castille</i>, 1868, Musée de Pau; <i>Juan Prim. 8 octobre 1868</i>, 1869, Orsay; <i>Salomé</i>, 1870, Metropolitan; <i>Exécution sans jugement sous les rois maures de Grenade</i>, 1870, Orsay; <i>Head of a Moor</i>, 1870. Gautier states (Salon of 1870): '<i>Prim</i> c'est toute l'Espagne, <i>Salomé</i> c'est tout l'Orient'"
         ],
       "portrayed by": "Self-portrait, c.1863, Clevelant Museum; Thomas Couture, c.1865, pierre noire et craie sur papier bleu; Michel Berthaud, c.1865, photograph; Nicolas Escalier; Carolus-Duran, <i>Henri Regnault mort au champ de bataille</i>, oil painting sketch (1871, Lille); Bocourt, 1874, drawing after a photograph (<i>Le Magasin pittoresque</i>); F. Levé, <i>Mort d'Henri Regnault</i> (Salon des artistes français de 1910). Bust of Henri Regnault at the Lycée Henri-IV",
+      "bibliography": "Antonin Proust, <i>Goupil's Paris Salon of 1891</i>, Goupil & Cie, 1891",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Regnault.jpg",
       "image source": "Couture, c.1865, drawing",
       "added": "2025-05-29"
@@ -5008,7 +5010,7 @@
       ],
       "decorations/awards": "Officier de la Légion d'honneur (1877)",
       "patronage": "Eduardo Zamacois; Mariano Fortuny y Marsal; Raimundo de Madrazo",
-      "bibliography": "Lanzarote Guiral 2016; Hélène Lafont-Couturier, 'La maison Goupil ou la notion d'œuvre originale remise en question', <i>Revue de l'Art</i>, no.112, 1996-2, pp.59-69; Beruete 1917; Viñaza 1887",
+      "bibliography": "Juberías Gracia, 'Relecturas del siglo XVIII en clave comercial: nuevos datos sobre la Maison Goupil y los pintores españoles', <i>Relecturas del pasado. Reflexiones sobre el gusto VI</i>, pp.477-488, 2024; Lanzarote Guiral 2016; Hélène Lafont-Couturier, 'La maison Goupil ou la notion d'œuvre originale remise en question', <i>Revue de l'Art</i>, no.112, 1996-2, pp.59-69; Beruete 1917; Viñaza 1887",
       "websites": "[Orsay](https://www.musee-orsay.fr/fr/ressources/repertoire-artistes-personnalites/adolphe-goupil-13880); [AGORHA](https://agorha.inha.fr/ark:/54721/916e6059-e6c4-4a9c-a238-50c9c8a1e037)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Goupil.jpg",
       "image source": "Devéria lithograph, c.1831",
@@ -8519,7 +8521,11 @@
       "to": "Mariano Fortuny y Marsal",
       "connection_level": "direct",
       "relationship type": "patronage (they were introduced by Eduardo Zamacois). In May 1874 Fortuny returns to Paris with the intention of breaking his contract with Goupil (did he?)", 
-      "collaborations": "Fortuny signs an exclusivity contract with Goupil in 1866",
+      "collaborations": [
+        "Fortuny signs an exclusivity contract with Goupil in 1866.",
+        "Goupil & Cie., <i>Œuvres de Fortuny reproduites en photographie</i>, Paris, 1875."
+
+      ],
       "artworks bought/sold": "Goupil buys Fortuny's <i>La Vicaría</i> for 70,000 fr. and resells it for 250,000"
     },
     {
@@ -8532,7 +8538,7 @@
       "from": "Théophile Gautier",
       "to": "Mariano Fortuny y Marsal",
       "connection_level": "secondary?",
-      "mentions": "Gautier praises Fortuny's work, which contributed to increase his fame. For instance, Gautier liked Fortuny's works exhibited at Goupil's (c.1870)",
+      "mentions": "Gautier praises Fortuny's work, which contributed to increase his fame. For instance, Gautier liked Fortuny's works exhibited at Goupil's (c.1870). 'Fortuny', <i>Journal Officiel de l'Empire Français</i>, II, no.137, Paris, 19 May 1870",
       "websites": "[Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)"
     },
     {
@@ -9552,7 +9558,11 @@
       "to": "Charles Yriarte",
       "connection_level": "secondary",
       "mentions": "Gautier writes a review of Yriarte's 1867 book on Goya: 'Goya, par Charles Yriarte', <i>Le Monde Illustré</i>, 27 April 1867, pp.261-62 (see Fayos Pérez 2024, Appendix II)",
-      "bibliography": "Fayos Pérez 2024"
+      "correspondence": [
+        "1864, 15 June: 'Mon bon ami, La Reine vient de me nommer par décret du 13 juin <i>Commandeur avec plaque de l'ordre Royal d'Isabelle la Catholique</i>. Je ne sais vos usages. Insère-t-on cela ? Si cela se peut, faites, et merci. [...]' (Lacoste-Veysseyre 1993, t.8, p.317)",
+        ""
+      ],
+      "bibliography": "Fayos Pérez 2024; Lacoste-Veysseyre, <i>Correspondance générale</i>, t.8, 1993"
     },
     {
       "from": "Édouard Manet",
