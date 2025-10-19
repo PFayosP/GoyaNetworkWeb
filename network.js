@@ -891,7 +891,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           { type: "field", key: "writes in", label: "Writes in" },
           { type: "field", key: "collaborates with", label: "Collaborates with" },
           { type: "field", key: "registered in", label: "Registered in" },
-          { type: "field", key: "mentions", label: "Mentions" },
           { type: "field", key: "mentioned in the French press", label: "Mentioned in the French press" },
           { type: "field", key: "decorations/awards", label: "Decorations/awards" },
           { type: "field", key: "tertulia", label: "Tertulia" },
@@ -937,6 +936,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           { type: "field", key: "copies after Spanish artworks", label: "Copies after Spanish artworks" },
         
           { type: "section", label: "Sources and Documentation" },
+          { type: "field", key: "mentions", label: "Mentions" },
           { type: "field", key: "archives", label: "Archives" },
           { type: "field", key: "bibliography", label: "Bibliography" },
           { type: "field", key: "conferences/seminars", label: "Conferences/seminars" },
