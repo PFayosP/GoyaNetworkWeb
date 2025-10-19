@@ -470,12 +470,12 @@
     <div class="nav-buttons">
       <button onclick="showSection('network')">Network</button>
       <button onclick="showSection('about')">About</button>
-      <button onclick="showSection('contributors')">Contributors</button>
-      <button onclick="showSection('bibliography')">Bibliography</button>
+      <button onclick="showSection('people')">People</button>
+      <button onclick="showSection('partners')">Partners</button>
       <button onclick="showSection('artworks')">Artworks</button>
+      <button onclick="showSection('bibliography')">Bibliography</button>
       <button onclick="showSection('cite')">How to cite</button>
       <button id="newInBtn">New in</button>
-      <button onclick="showSection('partners')">Partners</button>
     </div>
     <div class="controls">
       <input type="text" id="searchInput" placeholder="Search..." class="search-bar">
@@ -588,15 +588,6 @@
     <p><strong>User guide:</strong> There is data contained in each node (individual) and edge (connection between two individuals). On the nodes, users can see biographic information as well as artistic/literary production, art collection and link to Goya's work. On the edges, one can see the relationship type, correspondence, collaborations, and others. Edges in grey/silver colour are direct connections (friends, colleagues, relatives, acquaintances, etc.), while edges in golden colour are secondary connections (e.g. artists and writers who copied or wrote about Goya but never met him in person). The size of the nodes is proportional to the number of edges (connections) they hold.</p>
 
     <p><strong>Nature of the project:</strong> The Goya Network is conceived as a collaborative, crowd-sourced database with the aim of becoming a useful tool for scholars, students and the general public of Goya. We welcome contributions by art historians, historians, Hispanists, lecturers and curators specialised in Goya, 19th-century Spain, 19th-century France and in any of the members of the network (e.g. Federico Madrazo, Prosper Mérimée, Eugène Delacroix, etc.). To submit a contribution, please see the Contributions section on the website below.</p>
-      
-    <p><strong>Scientific Committee:</strong>The content of the Goya Network is periodically reviewed and discussed with the members of a scientific committee composed of external consultants renowned for their scholarly prestige, who provide guidance and advice on specific aspects of the project.</p>
-    <ul style="margin-top: 0.5rem; line-height: 1.6;">
-      <li><strong>Jean Michel Massing</strong>: Professor Emeritus of Art History at the University of Cambridge, King's College. Specialist in the history of printmaking, iconography, and African art.</li>
-      <li><strong>Aurélie Pétiot</strong>: Lecturer at the Université Paris Nanterre. Specialist in nineteenth-century art, decorative arts, gender studies, and the Pre-Raphaelites.</li>
-      <li><strong>Stephanie Loeb Stepanek</strong>: Curator Emerita of Prints and Drawings at the Museum of Fine Arts, Boston. Specialist in Goya's prints and the history of Goya collecting in the United States.</li>
-    </ul>
-    
-    <p><strong>Team:</strong> The project began with initial contributions by Anita L Verő, PhD in Artificial Intelligence (University of Cambridge, 2022), computer scientist and founder of <a href="https://www.consonant-ai.com" target="_blank">ConsonantAI.</a></p>
     
     <p><strong>Methodology:</strong> Art historical research: based on bibliographic and archival sources.<br>
 Web development: built using HTML and JavaScript, with structured data in JSON, and version control and deployment through GitHub, developed with the assistance of ChatGPT (OpenAI) and DeepSeek (High-Flyer).</p>
@@ -607,8 +598,22 @@ Its code and structure are licensed under <a href="https://creativecommons.org/l
     <p><strong>Data and cookies:</strong> This website uses cookies exclusively for Google Analytics, which anonymously tracks visitor behaviour. We use this information only to understand how the site is being used and to improve its content and navigation. You can opt out of Google Analytics cookies across all websites by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color:#66ccff;">Google Analytics Opt-out Browser Add-on</a>. For more information on how Google uses cookies, visit the <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" style="color:#66ccff;">Cookies & Google Analytics</a> page.</p>
   </div>
 
-  <div id="contributors" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6;">
-  <h2>Contributors</h2>
+
+<div id="people" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6;">
+  <h2>People</h2>
+
+  <p><strong>Project Director:</strong> Paula Fayos-Pérez, PhD (University of Cambridge, 2019). Postdoctoral researcher in History of Art. External member of SU+MA (Universidad Complutense de Madrid) and ARCHE (Université de Strasbourg).</p>
+
+  <p><strong>Scientific Committee:</strong> The content of the Goya Network is periodically reviewed and discussed with the members of a scientific committee composed of external consultants renowned for their scholarly prestige, who provide guidance and advice on specific aspects of the project.</p>
+  <ul style="margin-top: 0.5rem; line-height: 1.6;">
+    <li><strong>Jean Michel Massing</strong>: Professor Emeritus of Art History at the University of Cambridge, King's College. Specialist in the history of printmaking, iconography, and African art.</li>
+    <li><strong>Aurélie Pétiot</strong>: Lecturer at the Université Paris Nanterre. Specialist in nineteenth-century art, decorative arts, gender studies, and the Pre-Raphaelites.</li>
+    <li><strong>Stephanie Loeb Stepanek</strong>: Curator Emerita of Prints and Drawings at the Museum of Fine Arts, Boston. Specialist in Goya's prints and the history of Goya collecting in the United States.</li>
+  </ul>
+
+  <p><strong>Team:</strong> initial technical development by Anita L. Verő, PhD in Artificial Intelligence (University of Cambridge, 2022), computer scientist and founder of <a href="https://www.consonant-ai.com" target="_blank">ConsonantAI.</a></p>
+
+  <p class="section-heading">Contributors</p>
   <ul>
     <li><strong>Anita L Verő</strong>: PhD in Artificial Intelligence (University of Cambridge, 2022). Computer scientist and founder of <a href="https://www.consonant-ai.com" target="_blank">ConsonantAI.</a> Contribution: development and initial setup of the website (January 2025).</li> <br>
     <li><strong>Manuela B. Mena-Marqués</strong>: PhD in Art History (Complutense University of Madrid, 1976). Curator of the Prints and Drawings Department (1979-1981), Deputy Director (1981-1996) and Head of the Curatorial Department for 18th-Century Painting and Goya at the Prado Museum (1996-2019). Contribution: feedback on the website (June 2025).</li> <br>
@@ -616,6 +621,7 @@ Its code and structure are licensed under <a href="https://creativecommons.org/l
     <li><strong>Stephanie Loeb Stepanek</strong>: Curator Emerita of Prints and Drawings, Boston Museum of Fine Arts. Contribution: information on an early edition of <i>Disasters of War</i>, printed by Laureano Potenciano (October 2025).</li>
   </ul>
 </div>
+
 
 <div id="bibliography" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6;">
   <h2>Bibliography</h2>
@@ -953,19 +959,19 @@ Its code and structure are licensed under <a href="https://creativecommons.org/l
 function showSection(section) {
   const layout = document.getElementById('layout');
   const aboutDiv = document.getElementById('about');
-  const contributors = document.getElementById('contributors');
-  const bibliography = document.getElementById('bibliography');
-  const artworks = document.getElementById('artworks'); 
-  const cite = document.getElementById('cite');
+  const people = document.getElementById('people');
   const partners = document.getElementById('partners');
+  const artworks = document.getElementById('artworks');
+  const bibliography = document.getElementById('bibliography'); 
+  const cite = document.getElementById('cite');
 
   layout.classList.add('hidden');
   aboutDiv.style.display = 'none';
-  contributors.style.display = 'none';
-  bibliography.style.display = 'none';
-  artworks.style.display = 'none';
-  cite.style.display = 'none';
+  people.style.display = 'none';
   partners.style.display = 'none';
+  artworks.style.display = 'none';
+  bibliography.style.display = 'none';
+  cite.style.display = 'none';
 
   if (section === 'network') {
     layout.classList.remove('hidden');
@@ -994,16 +1000,16 @@ function showSection(section) {
     }, 50);
   } else if (section === 'about') {
     aboutDiv.style.display = 'block';
-  } else if (section === 'contributors') {
-    contributors.style.display = 'block';
-  } else if (section === 'bibliography') {
-    bibliography.style.display = 'block';
+  } else if (section === 'people') {
+    people.style.display = 'block';
+  } else if (section === 'partners') {
+    partners.style.display = 'block';
   } else if (section === 'artworks') { 
     artworks.style.display = 'block';
+  } else if (section === 'bibliography') {
+    bibliography.style.display = 'block';
   } else if (section === 'cite') {
   cite.style.display = 'block';
-  } else if (section === 'partners') {
-  partners.style.display = 'block';
   }
 }
 </script>
