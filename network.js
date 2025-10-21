@@ -37,7 +37,20 @@
       "In Spain":"In Spain",
       "Knows Goya's works":"Knows Goya's works",
       "Address":"Address",
-      "Link to Goya's work":"Link to Goya's work"
+      "Link to Goya's work":"Link to Goya's work",
+      "Interest in Spanish art":"Interest in Spanish art",
+      "Mentions of Goya":"Mentions of Goya",
+      "Collector of Goya's works":"Collector of Goya's works",
+      "In Paris":"In Paris",
+      "Mentions":"Mentions",
+      "Conferences/seminars":"Conferences/seminars",
+      "Trips":"Trips",
+      "Lives in":"Lives in",
+      "Patrons": "Patrons",
+      "Collector of":"Collector of",
+      "Copies after Goya":"Copies after Goya",
+      "Writes about Goya":"Writes about Goya",
+      "Mentions of Goya":"Mentions of Goya"
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -74,7 +87,20 @@
       "In Spain":"En España",
       "Knows Goya's works":"Conoce la obra de Goya",
       "Address":"Dirección",
-      "Link to Goya's work":"Enlace a obra de Goya"
+      "Link to Goya's work":"Vínculo con la obra de Goya",
+      "Interest in Spanish art":"Interés en el arte español",
+      "Mentions of Goya":"Menciones de Goya",
+      "Collector of Goya's works":"Coleccionista de la obra de Goya",
+      "In Paris":"En París",
+      "Mentions":"Menciones",
+      "Conferences/seminars":"Conferencias/seminarios",
+      "Trips":"Viajes",
+      "Lives in":"Vive en",
+      "Patrons": "Mecenas",
+      "Collector of":"Coleccionista de",
+      "Copies after Goya":"Copias de Goya",
+      "Writes about Goya":"Escribe sobre Goya",
+      "Mentions of Goya":"Menciones de Goya"
     }
   };
 
