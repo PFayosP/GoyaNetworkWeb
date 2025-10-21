@@ -31,7 +31,13 @@
       "Connections":"Connections",
       "Artistic Activity, Art Collecting and Patronage":"Artistic Activity, Art Collecting and Patronage",
       "Geographic Presence and Movement":"Geographic Presence and Movement",
-      "Relationship to Goya and His Work":"Relationship to Goya and His Work"
+      "Relationship to Goya and His Work":"Relationship to Goya and His Work",
+      "Portrayed by":"Portrayed by",
+      "Image source":"Image source",
+      "In Spain":"In Spain",
+      "Knows Goya's works":"Knows Goya's works",
+      "Address":"Address",
+      "Link to Goya's work":"Link to Goya's work"
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -62,7 +68,13 @@
       "Connections":"Conexiones",
       "Artistic Activity, Art Collecting and Patronage":"Actividad artística, coleccionismo y mecenazgo",
       "Geographic Presence and Movement":"Presencia geográfica y desplazamientos",
-      "Relationship to Goya and His Work":"Relación con Goya y su obra"
+      "Relationship to Goya and His Work":"Relación con Goya y su obra",
+      "Portrayed by":"Retratado/a por",
+      "Image source":"Fuente de la imagen",
+      "In Spain":"En España",
+      "Knows Goya's works":"Conoce la obra de Goya",
+      "Address":"Dirección",
+      "Link to Goya's work":"Enlace a obra de Goya"
     }
   };
 
