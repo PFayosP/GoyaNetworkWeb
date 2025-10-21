@@ -159,6 +159,29 @@
   function labelI18N(label){ return t(label); }
   // ====== /I18N ======
 
+  // --- Forzar re-render del panel lateral con el idioma actual ---
+  window.__lastSelection = null; // guardaremos el último nodo/arista mostrados
+
+  window.refreshNodeInfoLabels = function () {
+    const info = document.getElementById('nodeInfo');
+    if (!info) return;
+
+    // Si teníamos un nodo seleccionado, re-emite el click para regenerar el HTML con t(...)
+    if (window.__lastSelection && window.__lastSelection.type === 'node' && window.__lastSelection.id) {
+      network.emit('click', { nodes: [window.__lastSelection.id], edges: [] });
+      return;
+    }
+
+    // Si teníamos una arista seleccionada, re-emite el click para regenerar
+    if (window.__lastSelection && window.__lastSelection.type === 'edge' && window.__lastSelection.id) {
+      network.emit('click', { nodes: [], edges: [window.__lastSelection.id] });
+      return;
+    }
+
+    // Si no había selección, vuelve al panel por defecto y re-aplica los textos
+    if (typeof window.showDefaultNodeInfo === 'function') window.showDefaultNodeInfo();
+    applyUIStrings(); // actualiza “Members (A–Z…)”, placeholder, etc.
+  };
 
 let nodes, edges; // 👈 Hacemos estas variables globales
 
@@ -1180,6 +1203,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         html += `</ul></div>`;
         document.getElementById("nodeInfo").innerHTML = html;
         addShareButton(node.label);
+
+        // recordar esta selección para refrescar en cambios de idioma
+        window.__lastSelection = { type: 'node', id: node.id };
+
         
           } else if (params.edges.length > 0) {
 
@@ -1340,11 +1367,14 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
 
         document.getElementById("nodeInfo").innerHTML = html;
+        // recordar esta selección para refrescar en cambios de idioma
+        window.__lastSelection = { type: 'edge', id: selectedEdgeId };
       }
 
       if (params.nodes.length === 0 && params.edges.length === 0) {
         clearHighlights();
-        return; // Add this to exit early
+        window.__lastSelection = null; // nada seleccionado
+        return;
       }
 
     });
