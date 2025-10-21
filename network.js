@@ -168,13 +168,13 @@
 
     // Si teníamos un nodo seleccionado, re-emite el click para regenerar el HTML con t(...)
     if (window.__lastSelection && window.__lastSelection.type === 'node' && window.__lastSelection.id) {
-      network.emit('click', { nodes: [window.__lastSelection.id], edges: [] });
+      window.VIS_NETWORK.emit('click', { nodes: [window.__lastSelection.id], edges: [] });
       return;
     }
 
     // Si teníamos una arista seleccionada, re-emite el click para regenerar
     if (window.__lastSelection && window.__lastSelection.type === 'edge' && window.__lastSelection.id) {
-      network.emit('click', { nodes: [], edges: [window.__lastSelection.id] });
+      window.VIS_NETWORK.emit('click', { nodes: [], edges: [window.__lastSelection.id] });
       return;
     }
 
@@ -249,11 +249,11 @@ window.search = function() {
 
   if (matchingNodes.length > 0) {
     // Focus on first match
-    network.focus(matchingNodes[0].id, { animation: true });
+    window.VIS_NETWORK.focus(matchingNodes[0].id, { animation: true });
     // Select the node
-    network.selectNodes([matchingNodes[0].id]);
+    window.VIS_NETWORK.selectNodes([matchingNodes[0].id]);
     // Show node info
-    network.emit('click', { nodes: [matchingNodes[0].id] });
+    window.VIS_NETWORK.emit('click', { nodes: [matchingNodes[0].id] });
   } else {
     alert('No matching nodes found');
   }
@@ -287,7 +287,7 @@ window.filterGraph = function() {
     });
     
     // Focus on the first matching node
-    network.focus(matchingNodes[0].id, { animation: true });
+    window.VIS_NETWORK.focus(matchingNodes[0].id, { animation: true });
     lastHighlightedNodes = matchingNodes.map(node => node.id);
   } else {
     alert('No nodes match the selected filters');
@@ -813,6 +813,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         randomSeed: 1912  // Consistent layout
       }
     });
+    window.VIS_NETWORK = network;
 
     // ——— Loading progress (vis-network physics) ———
     const loadingEl = document.getElementById('loadingMessage');
