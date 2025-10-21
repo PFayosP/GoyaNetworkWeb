@@ -337,6 +337,15 @@
       line-height: 1.5;
     }
 
+  /* Colocar el selector de idioma arriba a la derecha del header */
+  #langSwitcher {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;         /* por si “pisa” otros elementos */
+  }
+
   .contributions-section {
     width: 100%;
     text-align: center;
@@ -463,6 +472,11 @@
         <h1>Goya Network</h1>
         <p>Mapping Goya's Impact in 19th-Century France and Spain</p>
       </div>
+      <!-- Selector de idioma -->
+      <select id="langSwitcher" onchange="setLanguage(this.value)" style="margin-left:8px">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
     </div>
   </div>
 
@@ -477,12 +491,6 @@
       <button onclick="showSection('cite')">How to cite</button>
       <button id="newInBtn">New in</button>
     </div>
-
-    <!-- Selector de idioma -->
-    <select id="langSwitcher" onchange="setLanguage(this.value)" style="margin-left:8px">
-      <option value="en">EN</option>
-      <option value="es">ES</option>
-    </select>
 
     <div class="controls">
       <input type="text" id="searchInput" placeholder="Search..." class="search-bar">

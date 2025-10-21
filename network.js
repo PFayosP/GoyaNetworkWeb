@@ -19,7 +19,19 @@
       "Registered in":"Registered in","Mentioned in the French press":"Mentioned in the French press","Decorations/awards":"Decorations/awards",
       "Tertulia":"Tertulia","Literary salon or tertulia":"Literary salon or tertulia","Author of":"Author of","Collection":"Collection",
       "Patronage":"Patronage","Portraits":"Portraits","Exhibitions":"Exhibitions","Bibliography":"Bibliography","Websites":"Websites",
-      "Podcasts":"Podcasts","Newspaper archive":"Newspaper archive","Archives":"Archives","Added":"Added","Last modified":"Last modified"
+      "Podcasts":"Podcasts","Newspaper archive":"Newspaper archive","Archives":"Archives","Added":"Added","Last modified":"Last modified",
+      "Identity and Personal Data":"Identity and Personal Data",
+      "Family and Personal Relationships":"Family and Personal Relationships",
+      "Education, Profession and Institutions":"Education, Profession and Institutions",
+      "Artistic/Literary Production and Collection":"Artistic/Literary Production and Collection",
+      "Exhibitions and Public Reception":"Exhibitions and Public Reception",
+      "Relationship with Goya":"Relationship with Goya",
+      "Copies after Spanish artworks":"Copies after Spanish artworks",
+      "Sources and Documentation":"Sources and Documentation",
+      "Connections":"Connections",
+      "Artistic Activity, Art Collecting and Patronage":"Artistic Activity, Art Collecting and Patronage",
+      "Geographic Presence and Movement":"Geographic Presence and Movement",
+      "Relationship to Goya and His Work":"Relationship to Goya and His Work"
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -38,7 +50,19 @@
       "Registered in":"Registrado/a en","Mentioned in the French press":"Mencionado/a en la prensa francesa","Decorations/awards":"Condecoraciones/premios",
       "Tertulia":"Tertulia","Literary salon or tertulia":"Salón literario o tertulia","Author of":"Autor/a de","Collection":"Colección",
       "Patronage":"Mecenazgo","Portraits":"Retratos","Exhibitions":"Exposiciones","Bibliography":"Bibliografía","Websites":"Webs",
-      "Podcasts":"Podcasts","Newspaper archive":"Hemeroteca","Archives":"Archivos","Added":"Añadido","Last modified":"Última modificación"
+      "Podcasts":"Podcasts","Newspaper archive":"Hemeroteca","Archives":"Archivos","Added":"Añadido","Last modified":"Última modificación", 
+      "Identity and Personal Data":"Identidad y datos personales",
+      "Family and Personal Relationships":"Familia y relaciones personales",
+      "Education, Profession and Institutions":"Formación, profesión e instituciones",
+      "Artistic/Literary Production and Collection":"Producción artística/literaria y colección",
+      "Exhibitions and Public Reception":"Exposiciones y recepción pública",
+      "Relationship with Goya":"Relación con Goya",
+      "Copies after Spanish artworks":"Copias de obras españolas",
+      "Sources and Documentation":"Fuentes y documentación",
+      "Connections":"Conexiones",
+      "Artistic Activity, Art Collecting and Patronage":"Actividad artística, coleccionismo y mecenazgo",
+      "Geographic Presence and Movement":"Presencia geográfica y desplazamientos",
+      "Relationship to Goya and His Work":"Relación con Goya y su obra"
     }
   };
 
@@ -1068,7 +1092,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       
           const hasData = fieldsInThisSection.some(f => node[f.key]);
           if (hasData) {
-            html += `<h3 class="section-heading">${field.label}</h3>`;
+            html += `<h3 class="section-heading">${t(field.label)}</h3>`;
           }
         } else if (field.type === "field" && node[field.key]) {
           let value = node[field.key];
@@ -1107,7 +1131,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
 
         const degreeCalc = connections.length;
-        html += `<p><strong>Connections:</strong> ${degreeCalc}</p><ul>`;
+        html += `<p><strong>${t('Connections')}:</strong> ${degreeCalc}</p><ul>`;
 
         connections
           .sort((a, b) => a.name.localeCompare(b.name))
