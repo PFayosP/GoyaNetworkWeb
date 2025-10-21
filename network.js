@@ -1,3 +1,103 @@
+  // ====== I18N ======
+  let CURRENT_LANG = localStorage.getItem('lang') || 'en';
+
+  const I18N = {
+    en: {
+      BTN_NETWORK:"Network", BTN_ABOUT:"About", BTN_PEOPLE:"People", BTN_PARTNERS:"Partners",
+      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWIN:"New in",
+      SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
+      MEMBERS_TITLE:"Members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update",
+
+      "Life dates":"Life dates","Full name":"Full name","Also known as":"Also known as","Other names":"Other names","Pseudonyms":"Pseudonyms",
+      "Profession":"Profession","Nationality":"Nationality","Born in":"Born in","Dies in":"Dies in","Considered as":"Considered as",
+      "Political views":"Political views","Military activity":"Military activity","Participates in":"Participates in",
+      "Aristocratic titles":"Aristocratic titles","Ties with slavery/colonialism":"Ties with slavery/colonialism","Curiosities":"Curiosities",
+      "Parents":"Parents","Siblings":"Siblings","Married to":"Married to","Partners/lovers":"Partners/lovers","Children":"Children",
+      "Friends":"Friends","Rivals":"Rivals","Correspondence":"Correspondence","Meets":"Meets","Studies in":"Studies in",
+      "Works as":"Works as","Works for":"Works for","Influenced by":"Influenced by","Follower of":"Follower of","Masters":"Masters","Students":"Students",
+      "Member of":"Member of","Founder of":"Founder of","Editor of":"Editor of","Writes in":"Writes in","Collaborates with":"Collaborates with",
+      "Registered in":"Registered in","Mentioned in the French press":"Mentioned in the French press","Decorations/awards":"Decorations/awards",
+      "Tertulia":"Tertulia","Literary salon or tertulia":"Literary salon or tertulia","Author of":"Author of","Collection":"Collection",
+      "Patronage":"Patronage","Portraits":"Portraits","Exhibitions":"Exhibitions","Bibliography":"Bibliography","Websites":"Websites",
+      "Podcasts":"Podcasts","Newspaper archive":"Newspaper archive","Archives":"Archives","Added":"Added","Last modified":"Last modified"
+    },
+    es: {
+      BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
+      BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWIN:"Novedades",
+      SEARCH_PH:"Buscar…", FILTER_PROF_ALL:"Todas las profesiones", FILTER_NAT_ALL:"Todas las nacionalidades",
+      MEMBERS_TITLE:"Miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización",
+
+      "Life dates":"Fechas de vida","Full name":"Nombre completo","Also known as":"También conocido/a como","Other names":"Otros nombres","Pseudonyms":"Seudónimos",
+      "Profession":"Profesión","Nationality":"Nacionalidad","Born in":"Nace en","Dies in":"Fallece en","Considered as":"Considerado/a como",
+      "Political views":"Ideas políticas","Military activity":"Actividad militar","Participates in":"Participa en",
+      "Aristocratic titles":"Títulos nobiliarios","Ties with slavery/colonialism":"Vínculos con esclavitud/colonialismo","Curiosities":"Curiosidades",
+      "Parents":"Padres","Siblings":"Hermanos/as","Married to":"Casado/a con","Partners/lovers":"Parejas/amantes","Children":"Hijos/as",
+      "Friends":"Amigos/as","Rivals":"Rivales","Correspondence":"Correspondencia","Meets":"Encuentros","Studies in":"Estudia en",
+      "Works as":"Trabaja como","Works for":"Trabaja para","Influenced by":"Influido/a por","Follower of":"Seguidor/a de","Masters":"Maestros/as","Students":"Alumnos/as",
+      "Member of":"Miembro de","Founder of":"Fundador/a de","Editor of":"Editor/a de","Writes in":"Escribe en","Collaborates with":"Colabora con",
+      "Registered in":"Registrado/a en","Mentioned in the French press":"Mencionado/a en la prensa francesa","Decorations/awards":"Condecoraciones/premios",
+      "Tertulia":"Tertulia","Literary salon or tertulia":"Salón literario o tertulia","Author of":"Autor/a de","Collection":"Colección",
+      "Patronage":"Mecenazgo","Portraits":"Retratos","Exhibitions":"Exposiciones","Bibliography":"Bibliografía","Websites":"Webs",
+      "Podcasts":"Podcasts","Newspaper archive":"Hemeroteca","Archives":"Archivos","Added":"Añadido","Last modified":"Última modificación"
+    }
+  };
+
+  function t(k){ return (I18N[CURRENT_LANG] && I18N[CURRENT_LANG][k]) || k; }
+
+  function applyUIStrings(){
+    // Botones del menú superior
+    const map = [
+      ['.nav-buttons button[onclick*="network"]','BTN_NETWORK'],
+      ['.nav-buttons button[onclick*="about"]','BTN_ABOUT'],
+      ['.nav-buttons button[onclick*="people"]','BTN_PEOPLE'],
+      ['.nav-buttons button[onclick*="partners"]','BTN_PARTNERS'],
+      ['.nav-buttons button[onclick*="artworks"]','BTN_ARTWORKS'],
+      ['.nav-buttons button[onclick*="bibliography"]','BTN_BIB'],
+      ['.nav-buttons button[onclick*="cite"]','BTN_CITE'],
+      ['#newInBtn','BTN_NEWIN'],
+      ['#searchInput::placeholder','SEARCH_PH']
+    ];
+    map.forEach(([sel,key])=>{
+      if (sel.endsWith('::placeholder')) {
+        const id = sel.replace('::placeholder','');
+        const el = document.querySelector(id);
+        if (el) el.setAttribute('placeholder', t(key));
+      } else {
+        const el = document.querySelector(sel);
+        if (el) el.textContent = t(key);
+      }
+    });
+
+    // Filtros
+    const profAll = document.querySelector('#professionFilter option[value=""]');
+    if (profAll) profAll.textContent = t('FILTER_PROF_ALL');
+    const natAll = document.querySelector('#nationalityFilter option[value=""]');
+    if (natAll) natAll.textContent = t('FILTER_NAT_ALL');
+
+    // Título “Members …”
+    const membersHeading = document.querySelector('#membersSection .section-heading');
+    if (membersHeading) membersHeading.textContent = t('MEMBERS_TITLE');
+
+    // Mensaje de carga
+    const loading = document.getElementById('loadingMessage');
+    if (loading) loading.firstChild.textContent = t('LOADING')+' ';
+
+    // Guarda etiqueta para “Last update”
+    window.LAST_UPDATE_LABEL = t('LAST_UPDATE');
+  }
+
+  window.setLanguage = function(lang='en') {
+    CURRENT_LANG = (lang === 'es') ? 'es' : 'en';
+    localStorage.setItem('lang', CURRENT_LANG);
+    applyUIStrings();
+    if (typeof window.refreshNodeInfoLabels === 'function') window.refreshNodeInfoLabels();
+  };
+
+  // Helper para traducir labels de panel
+  function labelI18N(label){ return t(label); }
+  // ====== /I18N ======
+
+
 let nodes, edges; // 👈 Hacemos estas variables globales
 
 function autoLinkNames(text, nodesMap) {
@@ -110,6 +210,10 @@ window.filterGraph = function() {
 };
 
 document.addEventListener('DOMContentLoaded', async function () {
+  applyUIStrings();
+  const sel = document.getElementById('langSwitcher');
+  if (sel) sel.value = CURRENT_LANG;
+
   // ——— Default snapshot del panel lateral (nodeInfo)
   let __defaultNodeInfoHTML = null;
   // Add this right after: document.addEventListener('DOMContentLoaded', async function () {
@@ -211,7 +315,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       ? new Date(lastModified).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
       : 'unknown';
 
-    document.getElementById("networkStats").innerHTML = `Nodes: ${data.nodes.length} | Connections: ${data.edges.length}<br><span style="font-size: 0.8rem; color: #999;">Last update: ${formattedUpdate}</span>`;
+    document.getElementById("networkStats").innerHTML =
+      `Nodes: ${data.nodes.length} | Connections: ${data.edges.length}<br>
+      <span style="font-size: 0.8rem; color: #999;">${window.LAST_UPDATE_LABEL}: ${formattedUpdate}</span>`;
 
 
     /* ---- NEW IN: funciones para la pestaña "New in" ---- */
@@ -985,7 +1091,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               htmlText = autoLinkNames(processMarkdownLinks(value), nodesMap);
             }
           }
-          html += `<p style="margin-top:0.3rem;"><strong>${field.label}:</strong> ${htmlText}</p>`;
+          html += `<p style="margin-top:0.3rem;"><strong>${labelI18N(field.label)}:</strong> ${htmlText}</p>`;
         }
       });
 
@@ -1167,7 +1273,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             // Debugging: Check the processed HTML
             console.log("Processed HTML:", htmlText);
         
-            html += `<p style="margin-top:0.3rem;"><strong>${field.label}:</strong> ${htmlText}</p>`;
+            html += `<p style="margin-top:0.3rem;"><strong>${labelI18N(field.label)}:</strong> ${htmlText}</p>`;
           }
         });
 
