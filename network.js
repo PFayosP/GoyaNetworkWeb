@@ -1136,6 +1136,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           { type: "field", key: "websites", label: "Websites" },
           { type: "field", key: "podcasts", label: "Podcasts" },
           { type: "field", key: "image source", label: "Image source" },
+          { type: "field", key: "wikidata", label: "Wikidate" },
+          { type: "field", key: "getty ulan", label: "Getty ULAN" },
           { type: "field", key: "added", label: "Added" },
           { type: "field", key: "last_modified", label: "Last modified" },
         ];
