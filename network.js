@@ -1136,7 +1136,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           { type: "field", key: "websites", label: "Websites" },
           { type: "field", key: "podcasts", label: "Podcasts" },
           { type: "field", key: "image source", label: "Image source" },
-          { type: "field", key: "wikidata", label: "Wikidate" },
+          { type: "field", key: "wikidata", label: "Wikidata" },
           { type: "field", key: "getty ulan", label: "Getty ULAN" },
           { type: "field", key: "added", label: "Added" },
           { type: "field", key: "last_modified", label: "Last modified" },
@@ -1159,6 +1159,25 @@ document.addEventListener('DOMContentLoaded', async function () {
             html += `<h3 class="section-heading">${t(field.label)}</h3>`;
           }
         } else if (field.type === "field" && node[field.key]) {
+          // 🔗 Caso especial: mostrar Wikidata y Getty ULAN como enlaces con icono
+          if (field.key === 'wikidata' || field.key === 'getty ulan') {
+            const url = String(node[field.key]).trim();
+            const iconClass = (field.key === 'wikidata')
+              ? 'fa-brands fa-wikipedia-w'
+              : 'fa-solid fa-landmark';
+            const linkLabel = (field.key === 'wikidata')
+              ? 'Wikidata'
+              : 'Getty (ULAN)';
+
+            html += `<p style="margin-top:0.3rem;">
+              <strong>${labelI18N(field.label)}:</strong>
+              <a href="${url}" target="_blank" style="color:#66ccff;">
+                <i class="${iconClass}" style="margin-right:6px;"></i>${linkLabel}
+              </a>
+            </p>`;
+            return; // 👉 importante: evitar que pase por el formateo genérico
+          }
+
           let value = node[field.key];
           let htmlText;
       
