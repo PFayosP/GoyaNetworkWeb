@@ -1170,8 +1170,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               : 'Getty (ULAN)';
 
             html += `<p style="margin-top:0.3rem;">
-              <strong>${labelI18N(field.label)}:</strong>
-              <a href="${url}" target="_blank" style="color:#66ccff;">
+              <a href="${url}" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">
                 <i class="${iconClass}" style="margin-right:6px;"></i>${linkLabel}
               </a>
             </p>`;
