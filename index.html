@@ -405,6 +405,19 @@
     color: #ccc;
   }
     
+  /* Tamaño y estilo de los logos de autoridades (Wikidata, Getty, BnF, etc.) */
+  .authority-badges img {
+    height: 28px !important;      /* ← ajusta aquí el tamaño general */
+    margin-bottom: 8px !important;
+    opacity: 0.95;
+    transition: transform 0.2s ease;
+  }
+
+  .authority-badges img:hover {
+    transform: scale(1.1);        /* efecto sutil al pasar el cursor */
+    opacity: 1;
+  }
+
 </style>
 
   
