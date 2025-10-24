@@ -406,15 +406,36 @@
   }
     
   /* Tamaño y estilo de los logos de autoridades (Wikidata, Getty, BnF, etc.) */
+  /* ===== Logos de autoridades (Wikidata, Getty, BnF, etc.) ===== */
+  .authority-badges {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* ✅ Alinea todos los logos al margen derecho */
+    margin-left: auto;     /* Empuja el bloque hacia la derecha */
+  }
+
   .authority-badges img {
-    height: 28px !important;      /* ← ajusta aquí el tamaño general */
-    margin-bottom: 8px !important;
+    display: block;
+    margin-bottom: 10px;
     opacity: 0.95;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  /* Tamaños individuales */
+  .authority-badges img[alt*="Wikidata"] {
+    height: 32px;   /* más grande */
+  }
+
+  .authority-badges img[alt*="Getty"] {
+    height: 30px;   /* más grande */
+  }
+
+  .authority-badges img[alt*="BnF"] {
+    height: 24px;   /* se mantiene como antes */
   }
 
   .authority-badges img:hover {
-    transform: scale(1.1);        /* efecto sutil al pasar el cursor */
+    transform: scale(1.1);
     opacity: 1;
   }
 
