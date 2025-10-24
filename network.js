@@ -1033,9 +1033,56 @@ document.addEventListener('DOMContentLoaded', async function () {
         const degree = edgeCount[node.id] || 0;
         let html = `<div class="node-info">`;
 
-        if (node.image) {
-          html += `<img src="${node.image}" alt="${node.id}" style="max-width: 150px;"><br>`;
+        // ——— Barra de logos de autoridades sobre la foto ———
+        {
+          // Dónde están tus logos en el repo
+          const ICON_SRC = {
+            'wikidata':     'images/Wikidata_logo.svg',
+            'getty ulan':   'images/Getty_logo.jpg',
+            'bnf':          'images/BnF_logo.jpg'
+          };
+
+          // Merge: usa el objeto authorities y además soporta campos sueltos como fallback
+          const authorities = Object.assign({}, node.authorities || {});
+          if (node['wikidata'])     authorities['wikidata']   = node['wikidata'];
+          if (node['getty ulan'])   authorities['getty ulan'] = node['getty ulan'];
+          if (node['bnf'])          authorities['bnf']        = node['bnf'];
+
+          const badges = Object.entries(authorities)
+            .filter(([key, url]) => url)
+            .map(([key, url]) => {
+              const k = String(key).toLowerCase();
+              const src = ICON_SRC[k] || ICON_SRC['ulan']; // fallback
+              const title =
+                (k === 'getty ulan' || k === 'ulan' || k === 'getty') ? 'Getty (ULAN)' :
+                (k === 'bnf' ? 'BnF' :
+                (k === 'wikidata' ? 'Wikidata' : key));
+              return `
+                <a href="${url}" target="_blank" rel="noopener noreferrer" title="${title}">
+                  <img src="${src}" alt="${title}"
+                      style="height:18px; margin-left:6px; vertical-align:middle; opacity:.9;">
+                </a>`;
+            }).join('');
+
+          if (node.image) {
+            html += `
+              <div class="portrait-wrap" style="position:relative; display:inline-block;">
+                <img src="${node.image}" alt="${node.id}" style="max-width:150px; display:block;">
+                ${badges ? `<div style="position:absolute; top:6px; right:6px; display:flex;">${badges}</div>` : ``}
+              </div><br>`;
+          } else {
+            // Si no hay imagen, muestra los logos arriba a la derecha igualmente
+            if (badges) {
+              html += `<div style="display:flex; justify-content:flex-end; gap:6px; margin-bottom:.5rem;">${badges}</div>`;
+            }
+          }
+
+          // Flag global para no repetir estos enlaces en el listado de campos abajo
+          window.__hasAuthoritiesBar = !!badges;
         }
+
+        html += `<h2>${node.id}</h2>`;
+
 
         html += `<h2>${node.id}</h2>`;
 
@@ -1160,29 +1207,36 @@ document.addEventListener('DOMContentLoaded', async function () {
             html += `<h3 class="section-heading">${t(field.label)}</h3>`;
           }
         } else if (field.type === "field" && node[field.key]) {
-          // 🔗 Caso especial: mostrar Wikidata, Getty ULAN y BnF como enlaces con icono
-          if (field.key === 'wikidata' || field.key === 'getty ulan' || field.key === 'bnf') {
-            const url = String(node[field.key]).trim();
+            // 🔗 Caso especial: Wikidata / Getty ULAN / BnF
+            if (field.key === 'wikidata' || field.key === 'getty ulan' || field.key === 'bnf') {
+              // Si ya mostramos la barra de logos arriba, NO repetir aquí
+              if (window.__hasAuthoritiesBar) {
+                return; // evita duplicado
+              }
 
-            let iconClass, linkLabel;
-            if (field.key === 'wikidata') {
-              iconClass = 'fa-brands fa-wikipedia-w';
-              linkLabel = 'Wikidata';
-            } else if (field.key === 'getty ulan') {
-              iconClass = 'fa-solid fa-landmark';
-              linkLabel = 'Getty (ULAN)';
-            } else { // 'bnf'
-              iconClass = 'fa-solid fa-book'; // o 'fa-solid fa-landmark' si prefieres
-              linkLabel = 'BnF';
+              // Si NO hay barra (porque no había imagen o logos), renderiza como enlace con icono
+              const url = String(node[field.key]).trim();
+
+              let iconClass, linkLabel;
+              if (field.key === 'wikidata') {
+                iconClass = 'fa-brands fa-wikipedia-w';
+                linkLabel = 'Wikidata';
+              } else if (field.key === 'getty ulan') {
+                iconClass = 'fa-solid fa-landmark';
+                linkLabel = 'Getty (ULAN)';
+              } else { // 'bnf'
+                iconClass = 'fa-solid fa-book'; // o 'fa-solid fa-landmark'
+                linkLabel = 'BnF';
+              }
+
+              html += `<p style="margin-top:0.3rem;">
+                <a href="${url}" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">
+                  <i class="${iconClass}" style="margin-right:6px;"></i>${linkLabel}
+                </a>
+              </p>`;
+              return; // evita el formateo genérico
             }
 
-            html += `<p style="margin-top:0.3rem;">
-              <a href="${url}" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">
-                <i class="${iconClass}" style="margin-right:6px;"></i>${linkLabel}
-              </a>
-            </p>`;
-            return; // 👉 evita el formateo genérico
-          }
 
           let value = node[field.key];
           let htmlText;
