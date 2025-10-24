@@ -405,13 +405,13 @@
     color: #ccc;
   }
     
-  /* Tamaño y estilo de los logos de autoridades (Wikidata, Getty, BnF, etc.) */
   /* ===== Logos de autoridades (Wikidata, Getty, BnF, etc.) ===== */
   .authority-badges {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* ✅ Alinea todos los logos al margen derecho */
-    margin-left: auto;     /* Empuja el bloque hacia la derecha */
+    align-items: flex-end;   /* coloca los logos al borde derecho */
+    margin-left: auto;
+    margin-right: -10px;     /* ✅ los empuja un poco más hacia el borde */
   }
 
   .authority-badges img {
@@ -421,17 +421,17 @@
     transition: transform 0.2s ease, opacity 0.2s ease;
   }
 
-  /* Tamaños individuales */
+  /* Tamaños individuales (ajustados según tu comentario) */
   .authority-badges img[alt*="Wikidata"] {
-    height: 32px;   /* más grande */
+    height: 40px;  /* más grande */
   }
 
   .authority-badges img[alt*="Getty"] {
-    height: 30px;   /* más grande */
+    height: 32px;  /* ligeramente más grande */
   }
 
   .authority-badges img[alt*="BnF"] {
-    height: 24px;   /* se mantiene como antes */
+    height: 34px;  /* más grande también */
   }
 
   .authority-badges img:hover {
