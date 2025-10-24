@@ -1058,7 +1058,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 (k === 'wikidata' ? 'Wikidata' : key));
               return `
                 <a href="${url}" target="_blank" rel="noopener noreferrer" title="${title}" style="display:block;">
-                  <img src="${src}" alt="${title}" style="height:18px; display:block; margin-bottom:6px; opacity:.9;">
+                  <img src="${src}" alt="${title}" style="height:28px; display:block; margin-bottom:8px; opacity:.95;">
                 </a>`;
             }).join('');
 
