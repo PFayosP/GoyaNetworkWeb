@@ -1138,6 +1138,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           { type: "field", key: "image source", label: "Image source" },
           { type: "field", key: "wikidata", label: "Wikidata" },
           { type: "field", key: "getty ulan", label: "Getty ULAN" },
+          { type: "field", key: "bnf", label: "BnF" },
           { type: "field", key: "added", label: "Added" },
           { type: "field", key: "last_modified", label: "Last modified" },
         ];
@@ -1159,22 +1160,28 @@ document.addEventListener('DOMContentLoaded', async function () {
             html += `<h3 class="section-heading">${t(field.label)}</h3>`;
           }
         } else if (field.type === "field" && node[field.key]) {
-          // 🔗 Caso especial: mostrar Wikidata y Getty ULAN como enlaces con icono
-          if (field.key === 'wikidata' || field.key === 'getty ulan') {
+          // 🔗 Caso especial: mostrar Wikidata, Getty ULAN y BnF como enlaces con icono
+          if (field.key === 'wikidata' || field.key === 'getty ulan' || field.key === 'bnf') {
             const url = String(node[field.key]).trim();
-            const iconClass = (field.key === 'wikidata')
-              ? 'fa-brands fa-wikipedia-w'
-              : 'fa-solid fa-landmark';
-            const linkLabel = (field.key === 'wikidata')
-              ? 'Wikidata'
-              : 'Getty (ULAN)';
+
+            let iconClass, linkLabel;
+            if (field.key === 'wikidata') {
+              iconClass = 'fa-brands fa-wikipedia-w';
+              linkLabel = 'Wikidata';
+            } else if (field.key === 'getty ulan') {
+              iconClass = 'fa-solid fa-landmark';
+              linkLabel = 'Getty (ULAN)';
+            } else { // 'bnf'
+              iconClass = 'fa-solid fa-book'; // o 'fa-solid fa-landmark' si prefieres
+              linkLabel = 'BnF';
+            }
 
             html += `<p style="margin-top:0.3rem;">
               <a href="${url}" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">
                 <i class="${iconClass}" style="margin-right:6px;"></i>${linkLabel}
               </a>
             </p>`;
-            return; // 👉 importante: evitar que pase por el formateo genérico
+            return; // 👉 evita el formateo genérico
           }
 
           let value = node[field.key];
