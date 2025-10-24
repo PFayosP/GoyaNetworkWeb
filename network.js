@@ -1033,43 +1033,43 @@ document.addEventListener('DOMContentLoaded', async function () {
         const degree = edgeCount[node.id] || 0;
         let html = `<div class="node-info">`;
 
-        // ——— Barra de logos de autoridades sobre la foto ———
+        // ——— Barra de logos de autoridades junto a la foto (vertical, a la derecha) ———
         {
-          // Dónde están tus logos en el repo
           const ICON_SRC = {
-            'wikidata':     'images/Wikidata_logo.svg',
-            'getty ulan':   'images/Getty_logo.jpg',
-            'bnf':          'images/BnF_logo.jpg'
+            'wikidata':   'images/Wikidata_logo.svg',
+            'getty ulan': 'images/Getty_logo.jpg',
+            'bnf':        'images/BnF_logo.jpg'
           };
 
-          // Merge: usa el objeto authorities y además soporta campos sueltos como fallback
+          // Mezcla: objeto authorities + posibles campos sueltos como fallback
           const authorities = Object.assign({}, node.authorities || {});
           if (node['wikidata'])     authorities['wikidata']   = node['wikidata'];
           if (node['getty ulan'])   authorities['getty ulan'] = node['getty ulan'];
           if (node['bnf'])          authorities['bnf']        = node['bnf'];
 
           const badges = Object.entries(authorities)
-            .filter(([key, url]) => url)
+            .filter(([_, url]) => url)
             .map(([key, url]) => {
               const k = String(key).toLowerCase();
-              const src = ICON_SRC[k] || ICON_SRC['ulan']; // fallback
+              const src = ICON_SRC[k] || ICON_SRC['getty ulan'];
               const title =
                 (k === 'getty ulan' || k === 'ulan' || k === 'getty') ? 'Getty (ULAN)' :
                 (k === 'bnf' ? 'BnF' :
                 (k === 'wikidata' ? 'Wikidata' : key));
               return `
-                <a href="${url}" target="_blank" rel="noopener noreferrer" title="${title}">
-                  <img src="${src}" alt="${title}"
-                      style="height:18px; margin-left:6px; vertical-align:middle; opacity:.9;">
+                <a href="${url}" target="_blank" rel="noopener noreferrer" title="${title}" style="display:block;">
+                  <img src="${src}" alt="${title}" style="height:18px; display:block; margin-bottom:6px; opacity:.9;">
                 </a>`;
             }).join('');
 
+          // Layout: imagen a la izquierda + logos en columna a la derecha
           if (node.image) {
             html += `
-              <div class="portrait-wrap" style="position:relative; display:inline-block;">
+              <div class="portrait-row" style="display:flex; align-items:flex-start; gap:10px;">
                 <img src="${node.image}" alt="${node.id}" style="max-width:150px; display:block;">
-                ${badges ? `<div style="position:absolute; top:6px; right:6px; display:flex;">${badges}</div>` : ``}
-              </div><br>`;
+                ${badges ? `<div class="authority-badges" style="display:flex; flex-direction:column;">${badges}</div>` : ``}
+              </div>
+            `;
           } else {
             // Si no hay imagen, muestra los logos arriba a la derecha igualmente
             if (badges) {
@@ -1077,11 +1077,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
           }
 
-          // Flag global para no repetir estos enlaces en el listado de campos abajo
+          // Flag global para no repetir los enlaces en el cuerpo
           window.__hasAuthoritiesBar = !!badges;
         }
-
-        html += `<h2>${node.id}</h2>`;
 
 
         html += `<h2>${node.id}</h2>`;
