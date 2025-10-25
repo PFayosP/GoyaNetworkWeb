@@ -794,13 +794,14 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       physics: {
         enabled: true,
-        solver: 'repulsion',
-        repulsion: {
-          nodeDistance: 600,         // antes: 420
-          centralGravity: 0.02,       // antes: 0.05
-          springLength: 180,         // antes 110
-          springConstant: 0.015,      // antes: 0.03
-          damping: 0.7             // antes 0.65
+        solver: 'hierarchicalRepulsion',  // ← ALTERNATIVA EXCELENTE
+        hierarchicalRepulsion: {
+          nodeDistance: 250,              // ← Distancia objetivo
+          centralGravity: 0.01,           // ← Mínima gravedad central
+          springLength: 200,              // ← Largo de resortes
+          springConstant: 0.01,           // ← Rigidez
+          damping: 0.09,                  // ← Amortiguación
+          avoidOverlap: 1.0               // ← Anti-overlap
         },
         stabilization: {
           enabled: true,
