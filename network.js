@@ -796,11 +796,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 420,         // antes: 300
-          centralGravity: 0.05,       // antes: 0.12
-          springLength: 110,         // antes 80
-          springConstant: 0.03,      // antes: 0.04
-          damping: 0.65               // Estabiliza más rápido sin perder suavidad
+          nodeDistance: 600,         // antes: 420
+          centralGravity: 0.02,       // antes: 0.05
+          springLength: 180,         // antes 110
+          springConstant: 0.015,      // antes: 0.03
+          damping: 0.7             // antes 0.65
         },
         stabilization: {
           enabled: true,
