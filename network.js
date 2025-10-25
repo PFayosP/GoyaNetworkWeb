@@ -801,19 +801,31 @@ document.addEventListener('DOMContentLoaded', async function () {
             springLength: 150,         // ↑ AUMENTADO de 120 a 150 (resortes más largos)
             springConstant: 0.015,     // ↓ DISMINUIDO de 0.02 a 0.015 (resortes más suaves)
             damping: 0.5               // ← MANTENIDO
+          }
         },
-        stabilization: {
-          enabled: true,
-          iterations: 120,      // antes: 100
-          updateInterval: 25,   //antes: 15
-          fit: false            // ← evita el auto-zoom al terminar
+
+        // 🔥 AÑADE ESTA NUEVA OPCIÓN (ANTI-OVERLAP INTEGRADO):
+        layout: {
+          improvedLayout: true,        // ← CAMBIA a TRUE
+          randomSeed: 1912,
+          hierarchical: {
+            enabled: false
+          }
+        },
+
+        // 🔥 Y ESTA OPCIÓN CRUCIAL:
+        interaction: {
+          dragNodes: true,
+          hideEdgesOnDrag: false,
+          hideNodesOnDrag: false
+        },
+        
+        // 🔥 Y ESTA MÁS:
+        configure: {
+          enabled: false,
+          filter: 'physics'
         }
-      },
-      layout: {
-        improvedLayout: false, // ← quita un pre-cálculo caro
-        randomSeed: 1912  // Consistent layout
-      }
-    });
+      });
     window.VIS_NETWORK = network;
 
     // ——— Loading progress (vis-network physics) ———
@@ -834,41 +846,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (el) el.style.display = 'none';
       }, 100);
     });
-
-
-    // ——— Nudge anti-overlap (suave, una sola pasada) ———
-    function nudgeOverlapsOnce(network, nodesDS) {
-      const ids = nodesDS.getIds();
-      if (!ids.length) return;
-
-      const dataById = {};
-      nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
-
-      const pos = network.getPositions(ids);
-      const minSepFactor = 2.5; // antes 2.2.
-
-      for (let i = 0; i < ids.length; i++) {
-        for (let j = i + 1; j < ids.length; j++) {
-          const a = ids[i], b = ids[j];
-          const pa = pos[a], pb = pos[b];
-          if (!pa || !pb) continue;
-
-          const dx = pb.x - pa.x, dy = pb.y - pa.y;
-          const dist = Math.hypot(dx, dy) || 1;
-          const ra = (dataById[a].size || 20);
-          const rb = (dataById[b].size || 20);
-          const minDist = (ra + rb) * minSepFactor;
-
-          if (dist < minDist) {
-            const push = (minDist - dist) * 1.5; // antes 2.0
-            const ux = dx / dist, uy = dy / dist;
-            // Mueve muy poco a cada uno en sentidos opuestos
-            network.moveNode(a, pa.x - ux * push, pa.y - uy * push);
-            network.moveNode(b, pb.x + ux * push, pb.y + uy * push);
-          }
-        }
-      }
-    }
 
     network.once('stabilizationIterationsDone', function () {
       console.log("🔧 Física estabilizada, aplicando separación final...");
