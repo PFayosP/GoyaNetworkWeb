@@ -806,7 +806,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // 🔥 AÑADE ESTA NUEVA OPCIÓN (ANTI-OVERLAP INTEGRADO):
         layout: {
-          improvedLayout: true,        // ← CAMBIA a TRUE
+          improvedLayout: false,
           randomSeed: 1912,
           hierarchical: {
             enabled: false
@@ -827,6 +827,38 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       });
     window.VIS_NETWORK = network;
+
+    // 🔥 SOLUCIÓN NUCLEAR ANTI-OVERLAP
+    network.once('stabilizationIterationsDone', function() {
+      console.log("🔥 ACTIVANDO MODO NUCLEAR ANTI-OVERLAP");
+      
+      // 1. RE-ACTIVAR física con configuración ultra-agresiva
+      network.setOptions({
+        physics: {
+          enabled: true,
+          solver: 'repulsion', 
+          repulsion: {
+            nodeDistance: 500,
+            centralGravity: 0.01,
+            springLength: 200,
+            springConstant: 0.02,
+            damping: 0.3
+          }
+        }
+      });
+      
+      // 2. Dejar que se re-estabilice
+      setTimeout(() => {
+        // 3. Forzar una segunda estabilización
+        network.stabilize(200);
+        
+        setTimeout(() => {
+          // 4. APAGAR física solo cuando esté PERFECTO
+          network.setOptions({ physics: { enabled: false } });
+          console.log("✅ OVERLAP ELIMINADO - MODO NUCLEAR COMPLETADO");
+        }, 2000);
+      }, 1000);
+    });
 
     // ——— Loading progress (vis-network physics) ———
     const loadingEl = document.getElementById('loadingMessage');
