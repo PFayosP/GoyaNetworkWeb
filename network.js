@@ -845,7 +845,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 1.8; // antes 1.35
+      const minSepFactor = 2.5; // ↑ AUMENTADO de 1.8 a 2.5 (MUCHO más separación)
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
@@ -871,18 +871,21 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     network.once('stabilizationIterationsDone', function () {
-    // pequeño retraso para asegurar posiciones finales
+    // 🔥 EJECUCIÓN INMEDIATA Y MÚLTIPLE
+    nudgeOverlapsOnce(network, nodes);
+    
     setTimeout(() => {
       nudgeOverlapsOnce(network, nodes);
-      network.setOptions({ physics: { enabled: false } }); // ← apaga física ya estable
-      
-      // 🔥 MÁS PASADAS Y MÁS FUERTE
-      setTimeout(() => {
-        nudgeOverlapsOnce(network, nodes);
-        setTimeout(() => nudgeOverlapsOnce(network, nodes), 50);
-        setTimeout(() => nudgeOverlapsOnce(network, nodes), 100);
-      }, 80);
-    }, 60);
+      network.setOptions({ physics: { enabled: false } });
+    }, 100);
+    
+    // 🔥 PASADAS ADICIONALES DESPUÉS DE APAGAR FÍSICA
+    setTimeout(() => {
+      nudgeOverlapsOnce(network, nodes);
+      setTimeout(() => nudgeOverlapsOnce(network, nodes), 80);
+      setTimeout(() => nudgeOverlapsOnce(network, nodes), 160);
+      setTimeout(() => nudgeOverlapsOnce(network, nodes), 240);
+    }, 200);
   });
 
 
@@ -900,7 +903,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('loadingMessage').style.display = 'none';
   
     // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 320;   // antes 250
+    const MIN_DISTANCE = 400;   // antes 320
     const positions = network.getPositions();
     const updates = [];
     const nodeArray = nodes.get();
