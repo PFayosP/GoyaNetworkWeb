@@ -845,7 +845,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 1.12; // ~12% más que la suma de radios
+      const minSepFactor = 1.18; // antes 1.12
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
@@ -930,9 +930,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (updates.length > 0) {
       nodes.update(updates);
     }
-
-    // FORZAR la física a estabilizar con las nuevas posiciones
-    network.stabilize();
 
     // 🔁 Ahora sí: detener la física
     network.setOptions({ physics: { enabled: false } });
