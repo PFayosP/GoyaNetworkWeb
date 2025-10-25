@@ -1036,12 +1036,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         // ——— Barra de logos de autoridades junto a la foto (vertical, a la derecha) ———
         {
           const ICON_SRC = {
-            'wikidata':   'images/Wikidata_logo.svg',
-            'getty ulan': 'images/Getty_logo.jpg',
-            'bnf':        'images/BnF_logo.jpg'
+            'wikidata':     'images/Wikidata_logo.svg',
+            'getty ulan':   'images/Getty_logo.jpg',
+            'bnf':          'images/BnF_logo.jpg'
           };
 
-          // Mezcla: objeto authorities + posibles campos sueltos como fallback
+          // Merge: objeto authorities + posibles campos sueltos
           const authorities = Object.assign({}, node.authorities || {});
           if (node['wikidata'])     authorities['wikidata']   = node['wikidata'];
           if (node['getty ulan'])   authorities['getty ulan'] = node['getty ulan'];
@@ -1056,25 +1056,22 @@ document.addEventListener('DOMContentLoaded', async function () {
                 (k === 'getty ulan' || k === 'ulan' || k === 'getty') ? 'Getty (ULAN)' :
                 (k === 'bnf' ? 'BnF' :
                 (k === 'wikidata' ? 'Wikidata' : key));
+              // 👇 Importante: SIN height inline (que pisaba el CSS)
               return `
                 <a href="${url}" target="_blank" rel="noopener noreferrer" title="${title}" style="display:block;">
-                  <img src="${src}" alt="${title}" style="height:28px; display:block; margin-bottom:8px; opacity:.95;">
+                  <img src="${src}" alt="${title}">
                 </a>`;
             }).join('');
 
-          // Layout: imagen a la izquierda + logos en columna a la derecha
           if (node.image) {
             html += `
               <div class="portrait-row" style="display:flex; align-items:flex-start; gap:10px;">
                 <img src="${node.image}" alt="${node.id}" style="max-width:150px; display:block;">
-                ${badges ? `<div class="authority-badges" style="display:flex; flex-direction:column;">${badges}</div>` : ``}
+                ${badges ? `<div class="authority-badges">${badges}</div>` : ``}
               </div>
             `;
-          } else {
-            // Si no hay imagen, muestra los logos arriba a la derecha igualmente
-            if (badges) {
-              html += `<div style="display:flex; justify-content:flex-end; gap:6px; margin-bottom:.5rem;">${badges}</div>`;
-            }
+          } else if (badges) {
+            html += `<div class="authority-badges">${badges}</div>`;
           }
 
           // Flag global para no repetir los enlaces en el cuerpo
