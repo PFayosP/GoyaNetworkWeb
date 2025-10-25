@@ -845,7 +845,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 1.35; // antes 1.18
+      const minSepFactor = 1.8; // antes 1.35
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
@@ -894,7 +894,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('loadingMessage').style.display = 'none';
   
     // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 250;   // antes 220
+    const MIN_DISTANCE = 320;   // antes 250
     const positions = network.getPositions();
     const updates = [];
     const nodeArray = nodes.get();
