@@ -845,7 +845,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 2.5; // ↑ AUMENTADO de 1.8 a 2.5 (MUCHO más separación)
+      const minSepFactor = 3.5; // antes 2.5
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
@@ -860,7 +860,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const minDist = (ra + rb) * minSepFactor;
 
           if (dist < minDist) {
-            const push = (minDist - dist) * 1.2; // ↑ AUMENTADO de /2 a *1.2 (más fuerte)
+            const push = (minDist - dist) * 2.0; // antes 1.2
             const ux = dx / dist, uy = dy / dist;
             // Mueve muy poco a cada uno en sentidos opuestos
             network.moveNode(a, pa.x - ux * push, pa.y - uy * push);
@@ -871,22 +871,22 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     network.once('stabilizationIterationsDone', function () {
-    // 🔥 EJECUCIÓN INMEDIATA Y MÚLTIPLE
-    nudgeOverlapsOnce(network, nodes);
-    
-    setTimeout(() => {
-      nudgeOverlapsOnce(network, nodes);
-      network.setOptions({ physics: { enabled: false } });
-    }, 100);
-    
-    // 🔥 PASADAS ADICIONALES DESPUÉS DE APAGAR FÍSICA
-    setTimeout(() => {
-      nudgeOverlapsOnce(network, nodes);
-      setTimeout(() => nudgeOverlapsOnce(network, nodes), 80);
-      setTimeout(() => nudgeOverlapsOnce(network, nodes), 160);
-      setTimeout(() => nudgeOverlapsOnce(network, nodes), 240);
-    }, 200);
-  });
+      console.log("🔨 APLICANDO MARTILLO NUCLEAR ANTI-OVERLAP");
+      
+      // 🔥 10 PASADAS DE SEPARACIÓN AGRESIVA
+      for (let i = 0; i < 10; i++) {
+        setTimeout(() => {
+          nudgeOverlapsOnce(network, nodes);
+          console.log(`🔨 Pasada anti-overlap ${i + 1}/10`);
+        }, i * 100);
+      }
+      
+      // Apagar física después de las pasadas
+      setTimeout(() => {
+        network.setOptions({ physics: { enabled: false } });
+        console.log("✅ Física apagada, overlap eliminado");
+      }, 1200);
+    });
 
 
     function loadFullImages() {
@@ -903,7 +903,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('loadingMessage').style.display = 'none';
   
     // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 400;   // antes 320
+    const MIN_DISTANCE = 500;   // antes 400
     const positions = network.getPositions();
     const updates = [];
     const nodeArray = nodes.get();
