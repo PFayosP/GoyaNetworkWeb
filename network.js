@@ -860,7 +860,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const minDist = (ra + rb) * minSepFactor;
 
           if (dist < minDist) {
-            const push = (minDist - dist) / 2;
+            const push = (minDist - dist) * 1.2; // ↑ AUMENTADO de /2 a *1.2 (más fuerte)
             const ux = dx / dist, uy = dy / dist;
             // Mueve muy poco a cada uno en sentidos opuestos
             network.moveNode(a, pa.x - ux * push, pa.y - uy * push);
@@ -875,7 +875,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     setTimeout(() => {
       nudgeOverlapsOnce(network, nodes);
       network.setOptions({ physics: { enabled: false } }); // ← apaga física ya estable
-      setTimeout(() => nudgeOverlapsOnce(network, nodes), 80); // segunda pasada suave
+      
+      // 🔥 MÁS PASADAS Y MÁS FUERTE
+      setTimeout(() => {
+        nudgeOverlapsOnce(network, nodes);
+        setTimeout(() => nudgeOverlapsOnce(network, nodes), 50);
+        setTimeout(() => nudgeOverlapsOnce(network, nodes), 100);
+      }, 80);
     }, 60);
   });
 
