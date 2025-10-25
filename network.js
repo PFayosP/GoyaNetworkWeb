@@ -871,20 +871,31 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     network.once('stabilizationIterationsDone', function () {
-      console.log("🎨 APLICANDO SEPARACIÓN ORGÁNICA");
+      console.log("🔧 Física estabilizada, aplicando separación final...");
       
-      // 🔥 4 PASADAS SUAVES (no 10 agresivas)
-      for (let i = 0; i < 4; i++) {
+      // ESPERAR un poco más para asegurar posiciones estables
+      setTimeout(() => {
+        // 🔥 EJECUTAR ANTI-OVERLAP MÚLTIPLES VECES
+        nudgeOverlapsOnce(network, nodes);
+        
         setTimeout(() => {
           nudgeOverlapsOnce(network, nodes);
-          console.log(`🎨 Ajuste orgánico ${i + 1}/4`);
-        }, i * 150); // ← MÁS ESPACIO ENTRE PASADAS
-      }
-      
-      setTimeout(() => {
-        network.setOptions({ physics: { enabled: false } });
-        console.log("✅ Física apagada, distribución orgánica lista");
-      }, 800);
+          
+          setTimeout(() => {
+            nudgeOverlapsOnce(network, nodes);
+            
+            setTimeout(() => {
+              nudgeOverlapsOnce(network, nodes);
+              console.log("✅ Separación anti-overlap completada");
+              
+              // SOLO APAGAR FÍSICA DESPUÉS de todo el anti-overlap
+              network.setOptions({ physics: { enabled: false } });
+              console.log("🎯 Física apagada - Red lista sin overlap");
+              
+            }, 200);
+          }, 200);
+        }, 200);
+      }, 300);
     });
 
 
@@ -902,7 +913,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('loadingMessage').style.display = 'none';
   
     // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 500;   // antes 400
+    const MIN_DISTANCE = 400;   // antes 500
     const positions = network.getPositions();
     const updates = [];
     const nodeArray = nodes.get();
