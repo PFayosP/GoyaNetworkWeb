@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const degree = edgeCount[node.id] || 1;
           const config = {
             ...node,
-            size: Math.min(20 + degree * 0.65, 46),
+            size: Math.min(28 + degree * 0.9, 60),  // ↑ AUMENTADO (más grandes)
             mass: 1 + degree * 0.06,   // ← antes 0.15
             font: {
               size: Math.min(11 + degree * 0.6, 24),
@@ -796,9 +796,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'hierarchicalRepulsion',  // ← ALTERNATIVA EXCELENTE
         hierarchicalRepulsion: {
-          nodeDistance: 250,              // ← Distancia objetivo
+          nodeDistance: 180,              // antes 250
           centralGravity: 0.01,           // ← Mínima gravedad central
-          springLength: 200,              // ← Largo de resortes
+          springLength: 150,              // antes 200
           springConstant: 0.01,           // ← Rigidez
           damping: 0.09,                  // ← Amortiguación
           avoidOverlap: 1.0               // ← Anti-overlap
