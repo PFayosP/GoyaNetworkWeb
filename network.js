@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const degree = edgeCount[node.id] || 1;
           const config = {
             ...node,
-            size: Math.min(28 + degree * 0.9, 60),  // ↑ AUMENTADO (más grandes)
+            size: Math.min(15 + degree * 1.2, 50),  // ↑ MÁS DIFERENCIACIÓN (1.2 vs 0.65)
             mass: 1 + degree * 0.06,   // ← antes 0.15
             font: {
               size: Math.min(11 + degree * 0.6, 24),
@@ -794,14 +794,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       physics: {
         enabled: true,
-        solver: 'hierarchicalRepulsion',  // ← ALTERNATIVA EXCELENTE
-        hierarchicalRepulsion: {
-          nodeDistance: 180,              // antes 250
-          centralGravity: 0.01,           // ← Mínima gravedad central
-          springLength: 150,              // antes 200
-          springConstant: 0.01,           // ← Rigidez
-          damping: 0.09,                  // ← Amortiguación
-          avoidOverlap: 1.0               // ← Anti-overlap
+        solver: 'repulsion',
+        repulsion: {
+          nodeDistance: 350,         // ← PUNTO MEDIO (ni muy juntos ni muy separados)
+          centralGravity: 0.03,      // ← SUAVE gravedad central (evita centro apelotonado)
+          springLength: 120,         // ← RESORTES más cortos (más natural)
+          springConstant: 0.02,      // ← Rigidez media
+          damping: 0.5               // ← Amortiguación natural
         },
         stabilization: {
           enabled: true,
@@ -846,7 +845,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 3.5; // antes 2.5
+      const minSepFactor = 2.2; // antes 3.5
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
@@ -861,7 +860,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const minDist = (ra + rb) * minSepFactor;
 
           if (dist < minDist) {
-            const push = (minDist - dist) * 2.0; // antes 1.2
+            const push = (minDist - dist) * 1.5; // antes 2.0
             const ux = dx / dist, uy = dy / dist;
             // Mueve muy poco a cada uno en sentidos opuestos
             network.moveNode(a, pa.x - ux * push, pa.y - uy * push);
@@ -872,21 +871,20 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     network.once('stabilizationIterationsDone', function () {
-      console.log("🔨 APLICANDO MARTILLO NUCLEAR ANTI-OVERLAP");
+      console.log("🎨 APLICANDO SEPARACIÓN ORGÁNICA");
       
-      // 🔥 10 PASADAS DE SEPARACIÓN AGRESIVA
-      for (let i = 0; i < 10; i++) {
+      // 🔥 4 PASADAS SUAVES (no 10 agresivas)
+      for (let i = 0; i < 4; i++) {
         setTimeout(() => {
           nudgeOverlapsOnce(network, nodes);
-          console.log(`🔨 Pasada anti-overlap ${i + 1}/10`);
-        }, i * 100);
+          console.log(`🎨 Ajuste orgánico ${i + 1}/4`);
+        }, i * 150); // ← MÁS ESPACIO ENTRE PASADAS
       }
       
-      // Apagar física después de las pasadas
       setTimeout(() => {
         network.setOptions({ physics: { enabled: false } });
-        console.log("✅ Física apagada, overlap eliminado");
-      }, 1200);
+        console.log("✅ Física apagada, distribución orgánica lista");
+      }, 800);
     });
 
 
