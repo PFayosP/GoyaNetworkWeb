@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const config = {
             ...node,
             size: Math.min(20 + degree * 0.65, 46),
-            mass: 1 + degree * 0.15,
+            mass: 1 + degree * 0.06,   // ← antes 0.15
             font: {
               size: Math.min(11 + degree * 0.6, 24),
               color: '#ffffff',
@@ -796,15 +796,15 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 300,         // antes: 260
-          centralGravity: 0.12,       // antes: 0.18
-          springLength: 80,         // antes 90
-          springConstant: 0.04,      // antes: 0.045
+          nodeDistance: 420,         // antes: 300
+          centralGravity: 0.05,       // antes: 0.12
+          springLength: 110,         // antes 80
+          springConstant: 0.03,      // antes: 0.04
           damping: 0.65               // Estabiliza más rápido sin perder suavidad
         },
         stabilization: {
           enabled: true,
-          iterations: 100,      // antes: 150
+          iterations: 120,      // antes: 100
           updateInterval: 25,   //antes: 15
           fit: false            // ← evita el auto-zoom al terminar
         }
@@ -845,7 +845,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 1.18; // antes 1.12
+      const minSepFactor = 1.35; // antes 1.18
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
@@ -894,7 +894,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('loadingMessage').style.display = 'none';
   
     // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 140;
+    const MIN_DISTANCE = 220;   // antes 140
     const positions = network.getPositions();
     const updates = [];
     const nodeArray = nodes.get();
