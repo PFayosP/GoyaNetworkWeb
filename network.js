@@ -795,12 +795,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       physics: {
         enabled: true,
         solver: 'repulsion',
-        repulsion: {
-          nodeDistance: 350,         // ← PUNTO MEDIO (ni muy juntos ni muy separados)
-          centralGravity: 0.03,      // ← SUAVE gravedad central (evita centro apelotonado)
-          springLength: 120,         // ← RESORTES más cortos (más natural)
-          springConstant: 0.02,      // ← Rigidez media
-          damping: 0.5               // ← Amortiguación natural
+          repulsion: {
+            nodeDistance: 450,         // ↑ AUMENTADO de 350 a 450 (más separación)
+            centralGravity: 0.025,     // ↓ DISMINUIDO de 0.03 a 0.025 (menos centro apelotonado)
+            springLength: 150,         // ↑ AUMENTADO de 120 a 150 (resortes más largos)
+            springConstant: 0.015,     // ↓ DISMINUIDO de 0.02 a 0.015 (resortes más suaves)
+            damping: 0.5               // ← MANTENIDO
         },
         stabilization: {
           enabled: true,
@@ -845,7 +845,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 2.2; // antes 3.5
+      const minSepFactor = 2.5; // antes 2.2.
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
