@@ -789,7 +789,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         width: 1,
         selectionWidth: 5, // aumenta el área clicable al seleccionar
         hoverWidth: 3,     // facilita el clic al pasar el ratón
-        smooth: { type: 'dynamic' } // mejora el render y mantiene compatibilidad
+        smooth: { type: 'continous' } // ← más rápido y visualmente igual en tu caso (antes: dynamic)
       },
 
       physics: {
@@ -804,12 +804,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         },
         stabilization: {
           enabled: true,
-          iterations: 150,      // antes: 120
-          updateInterval: 15
+          iterations: 100,      // antes: 150
+          updateInterval: 25,   //antes: 15
+          fit: false            // ← evita el auto-zoom al terminar
         }
       },
       layout: {
-        improvedLayout: true,
+        improvedLayout: false, // ← quita un pre-cálculo caro
         randomSeed: 1912  // Consistent layout
       }
     });
@@ -873,6 +874,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     // pequeño retraso para asegurar posiciones finales
     setTimeout(() => {
       nudgeOverlapsOnce(network, nodes);
+      network.setOptions({ physics: { enabled: false } }); // ← apaga física ya estable
       setTimeout(() => nudgeOverlapsOnce(network, nodes), 80); // segunda pasada suave
     }, 60);
   });
@@ -1549,9 +1551,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         document.getElementById('loadingMessage').style.display = 'none';
 
         const doLater = (fn) =>
-          (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 1500 }) : setTimeout(fn, 200));
+          (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 800 }) : setTimeout(fn, 200));
 
-        // 1) Hash inicial (rápido) primero
+        // 1) Hash inicial (rápido)
         handleInitialHash();
 
         // 2) Members list (medio)
@@ -1560,7 +1562,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 3) New in (medio)
         doLater(() => buildNewInList(data));
 
-        // 4) Cargar imágenes de los nodos (coste mayor)
+        // 4) Cargar imágenes (lo más pesado) + snapshot del panel por defecto
         doLater(() => {
           loadFullImages();
           __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
