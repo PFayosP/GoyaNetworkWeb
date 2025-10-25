@@ -789,7 +789,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         width: 1,
         selectionWidth: 5, // aumenta el área clicable al seleccionar
         hoverWidth: 3,     // facilita el clic al pasar el ratón
-        smooth: { type: 'continous' } // ← más rápido y visualmente igual en tu caso (antes: dynamic)
+        smooth: { type: 'continuous' } // ← más rápido y visualmente igual en tu caso (antes: dynamic)
       },
 
       physics: {
@@ -845,7 +845,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodesDS.get(ids).forEach(n => (dataById[n.id] = n));
 
       const pos = network.getPositions(ids);
-      const minSepFactor = 0.90; // 90% de la suma de radios: muy conservador
+      const minSepFactor = 1.12; // ~12% más que la suma de radios
 
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
