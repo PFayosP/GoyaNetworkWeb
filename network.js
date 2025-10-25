@@ -796,10 +796,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true,
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 260,         // antes: 320 — esto separa más los nodos
-          centralGravity: 0.18,       // antes: 0.12 — más atracción hacia el centro
-          springLength: 90,         // Menos distancia ideal entre nodos
-          springConstant: 0.045,      // antes: 0.04 — esto afloja los "muelles"
+          nodeDistance: 300,         // antes: 260
+          centralGravity: 0.12,       // antes: 0.18
+          springLength: 80,         // antes 90
+          springConstant: 0.04,      // antes: 0.045
           damping: 0.65               // Estabiliza más rápido sin perder suavidad
         },
         stabilization: {
