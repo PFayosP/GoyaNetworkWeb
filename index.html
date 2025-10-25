@@ -119,6 +119,12 @@
       color: #ccc;
     }
 
+    /* Desplaza sutilmente el subtítulo a la derecha */
+    .title-group p {
+      margin-left: 0.6rem;   /* ajusta fino: 0.5–1.0rem */
+      text-indent: 0;        /* por si el navegador aplica algo raro */
+    }
+
     .menu-bar {
       display: flex;
       flex-wrap: wrap;
@@ -423,15 +429,15 @@
 
   /* Tamaños individuales (ajustados según tu comentario) */
   .authority-badges img[alt*="Wikidata"] {
-    height: 40px;  /* más grande */
+    height: 44px;  /* antes 40 */
   }
 
   .authority-badges img[alt*="Getty"] {
-    height: 32px;  /* ligeramente más grande */
+    height: 36px;  /* antes 32 */
   }
 
   .authority-badges img[alt*="BnF"] {
-    height: 34px;  /* más grande también */
+    height: 28px;  /* antes 34 */
   }
 
   .authority-badges img:hover {
