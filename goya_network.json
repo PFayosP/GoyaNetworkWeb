@@ -4992,6 +4992,30 @@
       "added": "2025-09-29"
     },
     {
+      "id": "Asensio Julià",
+      "label": "A. Julià",
+      "full name": "Asensio Julià Alvarrachi",
+      "pseudonyms": "el Pescadoret; Peixcadoret",
+      "life dates": "1753/1760-1832", 
+      "nationality": "Spanish",
+      "born in": "Valencia",
+      "dies in": "Madrid",
+      "profession": "painter, engraver, draughtsman",
+      "studies in": "Real Academia de San Carlos (1771-75); RABASF",
+      "works as": "director de Ornamentos de la Escuela de Dibujo de la Merced; director of the RABASF",
+      "married to": "Rosa Fabre",
+      "children": "Jacinta Julià",
+      "author of": "<i>Escena de una comedia</i>, c.1798, oil painting, Prado (attributed); <i>Allá va cuarta estocada Por el Hércules Britano Al Padre de la Torada</i>, 1814, etching-aquating, Prado; <i>El Heroico Marqués de la Romana saca de la esclavitud á la desolada Galicia, y la infunde nuevo ser</i>, 1814-15, etching-aquatint, Prado; <i>El náufrago</i>, c.1816, Valencia Museum; <i>El duelo</i> or <i>El desafío</i>, private collection",
+      "masters": "Francisco de Goya",
+      "influenced by": "Francisco de Goya; Fernando Brambila (<i>Ruinas de Zaragoza</i>, 1808-12).",
+      "portrayed by": "Goya, 1798, [Thyssen Museum](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia), and 1814 (Clark Institute)",
+      "bibliography": "Matilla, <i>Memoria de Actividades 2016</i>, Prado, 2017, pp.32-36; A. Pérez Sánchez, 'La presencia de Goya y lo goyesco en el Liceo Artístico y Literario de Madrid', <i>Goya</i>, no.305, 2005, pp.93-104; J. D. Delgado, 'Algunas notas sobre la vida y la obra de Asensio Julià, discípulo de Goya', <i>Archivo Español de Arte</i>, no.66, 1993, pp.299-303; E. J. Sullivan, 'Asensio Julià and Goya', <i>Arts Magazine</i>, 1982, p.110; E. Lafuente Ferrari, 'La situación y la estela del arte de Goya', in <i>Antecedentes, coincidencias e influencias del Arte de Goya</i>, 1947, p.152; F. Boix, 'Asensio Julià el Pescadoret', <i>Archivo Español de Arte</i>, 1931, pp. 348-354",
+      "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/julia-asensio/628943ab-d844-46c3-a1b1-c61c71d4ae57); [Thyssen](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia); [RAH](https://historia-hispanica.rah.es/biografias/24632-asensio-julia-alvarrachi); [Valencia Museum](https://museobellasartesvalencia.gva.es/es/pintura/-/asset_publisher/KFeOnCE1wa8i/content/el-naufrago)",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Julia.jpg",
+      "image source": "Goya portrait 1814, Clark",
+      "added": "2025-10-04"
+    },
+    {
       "id": "Adolphe Goupil",
       "label": "Goupil",
       "full name": "Jean-Baptiste Michel Adolphe Goupil",
@@ -5135,6 +5159,85 @@
       "collaborations": "Quilliet made an inventory of Godoy's collection (commissioned by Godoy himself? Or when he was in exile?)",
       "bibliography": "Mano 2008; Sancho 2001; Antigüedad del Castillo-Olivares 1987",
       "archives": "<i>Catálogo de la colección de cuadros que poseía el Príncipe de la Paz en 1808</i>, BNE [MSS/21458/3](https://bdh.bne.es/bnesearch/detalle/bdh0000230113;jsessionid=0DE9CE03C99D72B56D0CFC2AFBC455FF)"
+    },
+    {
+      "from": "Mariano Salvador Maella",
+      "to": "Asensio Julià",
+      "connection_level": "direct",
+      "relationship type": "colleagues"
+    },
+    {
+      "from": "Agustín Esteve",
+      "to": "Asensio Julià",
+      "connection_level": "direct",
+      "relationship type": "colleagues"
+    },
+    {
+      "from": "1st Duke of Wellington",
+      "to": "Asensio Julià",
+      "connection_level": "secondary?",
+      "relationship type": "portraitist-sitter (indirect?)",
+      "portraits": "<i>Allá va cuarta estocada Por el Hércules Britano Al Padre de la Torada</i>, c.1814, etching-aquatint, [Prado G005850](https://www.museodelprado.es/coleccion/obra-de-arte/alla-va-cuarta-estocada-por-el-hercules-britano/1b6f4e09-9461-486b-8e1b-eed25ef93d96)",
+      "bibliography": "Matilla, <i>Memoria de Actividades 2016</i>, Prado, 2017, pp.32-36",
+      "websites": "[Prado](http://museodelprado.es/coleccion/obra-de-arte/alla-va-cuarta-estocada-por-el-hercules-britano/1b6f4e09-9461-486b-8e1b-eed25ef93d96)"
+    },
+    {
+      "from": "Fernando VII",
+      "to": "Asensio Julià",
+      "connection_level": "secondary?",
+      "relationship type": "portraitist-sitter (indirect?)",
+      "portraits": "drawing portraying Fernando VII on the tightrope (for sale in Subastas Alcalá, 4-5 March 2015, lot 564) (Matilla 2017)",
+      "bibliography": "Matilla, <i>Memoria de Actividades 2016</i>, Prado, 2017, pp.32-36",
+      "websites": "[Prado](http://museodelprado.es/coleccion/obra-de-arte/alla-va-cuarta-estocada-por-el-hercules-britano/1b6f4e09-9461-486b-8e1b-eed25ef93d96)"
+    },
+    {
+      "from": "Charles Yriarte",
+      "to": "Asensio Julià",
+      "connection_level": "seconary",
+      "relationship type": "mention",
+      "link to Goya's work": "Goya's 1798 portrait of Julià (Thyssen) was mentioned by Charles Yriarte in 1867 as part of Louis-Philippe I's Galerie espagnole. However, J. Wilson-Bareau and G. Maurer affirm the painting was catalogued by 1846 in the collection of María Cristina de Borbón-Dos Sicilias (Vista Alegre Palace, Madrid), and that it may have belonged to its author until his death in 1832. The painting then became part of the collection of Infanta Luisa Fernanda de Borbón and Prince Antoine, Duke of Montpensier (San Telmo Palace, Sevilla). Afterwards, the artwork was for sale 3 times in Paris: 2 at Durand-Ruel, and then at Arthur Sachs; then acquired by the Thyssen in 1971.",
+      "websites": "[Thyssen, profile by Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)"
+    },
+    {
+      "from": "Prince Antoine, Duke of Montpensier",
+      "to": "Asensio Julià",
+      "connection_level": "seconary?",
+      "relationship type": "patronage; collector",
+      "collector of Goya's works": "Goya's 1798 portrait of Julià (Thyssen) was mentioned by Charles Yriarte in 1867 as part of Louis-Philippe I's Galerie espagnole. However, J. Wilson-Bareau and G. Maurer affirm the painting was catalogued by 1846 in the collection of María Cristina de Borbón-Dos Sicilias (Vista Alegre Palace, Madrid), and that it may have belonged to its author until his death in 1832. The painting then became part of the collection of Infanta Luisa Fernanda de Borbón and Prince Antoine, Duke of Montpensier (San Telmo Palace, Sevilla). Afterwards, the artwork was for sale 3 times in Paris: 2 at Durand-Ruel, and then at Arthur Sachs; then acquired by the Thyssen in 1971.",
+      "websites": "[Thyssen, profile by Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)"
+    },
+    {
+      "from": "Infanta Luisa Fernanda de Borbón",
+      "to": "Asensio Julià",
+      "connection_level": "seconary?",
+      "relationship type": "patronage; collector",
+      "collector of Goya's works": "Goya's 1798 portrait of Julià (Thyssen) was mentioned by Charles Yriarte in 1867 as part of Louis-Philippe I's Galerie espagnole. However, J. Wilson-Bareau and G. Maurer affirm the painting was catalogued by 1846 in the collection of María Cristina de Borbón-Dos Sicilias (Vista Alegre Palace, Madrid), and that it may have belonged to its author until his death in 1832. The painting then became part of the collection of Infanta Luisa Fernanda de Borbón and Prince Antoine, Duke of Montpensier (San Telmo Palace, Sevilla). Afterwards, the artwork was for sale 3 times in Paris: 2 at Durand-Ruel, and then at Arthur Sachs; then acquired by the Thyssen in 1971.",
+      "websites": "[Thyssen, profile by Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)"
+    },
+    {
+      "from": "María Cristina de Borbón-Dos Sicilias",
+      "to": "Asensio Julià",
+      "connection_level": "seconary?",
+      "relationship type": "patronage; collector",
+      "collector of Goya's works": "Goya's 1798 portrait of Julià (Thyssen) was mentioned by Charles Yriarte in 1867 as part of Louis-Philippe I's Galerie espagnole. However, J. Wilson-Bareau and G. Maurer affirm the painting was catalogued by 1846 in the collection of María Cristina de Borbón-Dos Sicilias (Vista Alegre Palace, Madrid), and that it may have belonged to its author until his death in 1832. The painting then became part of the collection of Infanta Luisa Fernanda de Borbón and Prince Antoine, Duke of Montpensier (San Telmo Palace, Sevilla). Afterwards, the artwork was for sale 3 times in Paris: 2 at Durand-Ruel, and then at Arthur Sachs; then acquired by the Thyssen in 1971.",
+      "websites": "[Thyssen, profile by Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)"
+    },
+    {
+      "from": "Francisco de Goya",
+      "to": "Asensio Julià",
+      "connection_level": "direct",
+      "relationship type": "colleagues; friends; master-student; portraitist-sitter",
+      "know each other since": "at least 1789",
+      "introductions": "they were introduced by Mariano Salvador Maella",
+      "portraits": "Goya portrayed Julià in c.1798 [Thyssen 166 (1971.1)] and 1814 (Clark)",
+      "link to Goya's work": "Goya's 1798 portrait of Julià (Thyssen) was mentioned by Charles Yriarte in 1867 as part of Louis-Philippe I's Galerie espagnole. However, J. Wilson-Bareau and G. Maurer affirm the painting was catalogued by 1846 in the collection of María Cristina de Borbón-Dos Sicilias (Vista Alegre Palace, Madrid), and that it may have belonged to its author until his death in 1832. The painting then became part of the collection of Infanta Luisa Fernanda de Borbón and Prince Antoine, Duke of Montpensier (San Telmo Palace, Sevilla). Afterwards, the artwork was for sale 3 times in Paris: 2 at Durand-Ruel, and then at Arthur Sachs; then acquired by the Thyssen in 1971.",
+      "mentions": "Goya's letter to Martín Zapater, 5 Aug 1789: 'Aquí se me ha presentado hoy Asensio, que pretende aprobarse por esta Academia de Ma(es)tro de Obras, el que me ha traído su carta de recomendación'; although this could be as well the architect Joaquín Asensio Martínez (Ansón Navarro 1995, pp.274-75).",
+      "collaborations": [
+        "Julià assisted Goya in the frescoes of San Antonio de la Florida.",
+        "Julià signed a medalion to decorate Tadeo Bravo de Rivero's house as 'bajo la dirección del célebre D. Francisco Goya' (Blanco Mozo 2013, p.358; Ansón Navarro 2013, p.219)."
+      ],
+      "websites": "[Thyssen, profile by Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)",
+      "bibliography": "Blanco Mozo 2013; Ansón Navarro 2013; Ansón Navarro 1995"
     },
     {
       "from": "Mariano Salvador Maella",
