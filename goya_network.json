@@ -5039,6 +5039,7 @@
       "author of": [
         "1797-98 prints for <i>El Quijote</i> (16º), edited by the Imprenta Real.",
         "1799 reproductive prints of Spanish kings after his uncle Agustín Esteve's drawings after Goya's paintings.",
+        "1803 drawing of Miguel Cayetano Soler after Goya (lost work) [Prado D009422](https://www.museodelprado.es/coleccion/obra-de-arte/miguel-cayetano-soler/da362b32-7f28-41cf-8191-b67fcf328d2a).",
         "1839 reproductive print after Murillo's <i>Moisés haciendo brotar el agua de la roca</i> (gold medal at the Paris exhibition [Salon?])."
       ],
       "portrayed by": "Francisco de Goya, 1815 (Museo de Bellas Artes de Valencia); Ricardo Franch y Mira, print after Goya (Prado); Federico Navarrete y Fos, print after Goya (Prado)",
@@ -5046,6 +5047,35 @@
       "websites": "[Prado](https://www.museodelprado.es/coleccion/artista/esteve-y-vilella-rafael/95a97b6f-54ea-4942-b227-7f487edf2875)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Esteve_Rafael.jpg",
       "image source": "Goya portrait 1815, Valencia",
+      "added": "2025-11-04"
+    },
+    {
+      "id": "Isidoro Máiquez",
+      "label": "Máiquez",
+      "full name": "Isidoro Máiquez Rabay",
+      "life dates": "1768-1820", 
+      "nationality": "Spanish",
+      "born in": "Cartagena",
+      "dies in": "Granada",
+      "profession": "actor, playwright, businessman",
+      "married to": "Antonia Prado (actress)",
+      "curiosities": [
+        "Máiquez participated in the famous Levantamiento del 2 de mayo (1808), depicted by Goya.",
+        "The theatre company of the actor Martínez, where Máiquez worked, also included actresses such as María del Rosario Fernández, 'la Tirana', and Rita Luna, both portrayed by Goya."
+      ],
+      "portrayed by": "José Ribelles (attributed), c.1795, oil painting, Fundación Lázaro Galdiano; José Ribelles, print portraying Máiquez as Otello, 1802 (Museo del Romanticismo); Francisco de Goya, 1807, Prado; Rafael Esteve, drawing (c.1807) and prints (1810 and 1815) after Goya.",
+      "mentions": "Antonio Alcalá Galiano: a literary portrait (see Huerta 2005, p.432); Leandro Fernández de Moratín; Benito Pérez Galdós, <i>Episodios nacionales</i> ('La Corte de Carlos IV').",
+      "works as": "actor: representing plays by Shakespeare, among other authors",
+      "political views": "liberal. With the restoration of Fernando VII, Máiquez survived the government's censorship but when he refused to play a comedy by Javier de Burgos, José Manuel de Arjona y Cubas sentenced him to exile in Ciudad Real and then Granada, where he died with a mental illnes.",
+      "in Paris": "c.1801-1802 trip to meet French actor François-Joseph Talma (facilitated by Manuel Godoy)",
+      "in France": [
+        "c.1801-1802: Paris.",
+        "1808 exiled after participating in the Levantamiento del 2 de mayo (Paris?). Pardoned by Joseph Bonaparte."
+      ],
+      "websites": "[Prado](); [RAH](https://historia-hispanica.rah.es/biografias/27089-isidoro-maiquez-rabay)",
+      "bibliography": "Huerta (ed.), <i>Teatro español de la A a la Z</i>, 2005",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Maiquez.jpg",
+      "image source": "Goya portrait 1807, Prado",
       "added": "2025-11-04"
     },
     {
@@ -5195,6 +5225,35 @@
     },
     {
       "from": "Rafael Esteve",
+      "to": "Isidoro Máiquez",
+      "connection_level": "direct?",
+      "relationship type": "colleagues; portraitist-sitter (indirect)",
+      "portraits": "portrait of Máiquez, drawing (c.1807) and prints (1810 and 1815) after Francisco de Goya (1807)"
+    },
+    {
+      "from": "Joseph Bonaparte",
+      "to": "Isidoro Máiquez",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; protegé",
+      "interactions": "Máiquez was exiled in France in 1808 after participating in the Levantamiento del 2 de mayo (Paris?), but he was then pardoned by Joseph Bonaparte and given a pension of 24,000 reales (Gómez García 1998, p.505)."
+    },
+    {
+      "from": "Manuel Godoy",
+      "to": "Isidoro Máiquez",
+      "connection_level": "direct",
+      "relationship type": "employer-employee; protegé",
+      "interactions": "Godoy facilitated Máiquez's trip to Paris to meet the French actor François-Joseph Talma (he returns to Spain in 1802)"
+    },
+    {
+      "from": "Francisco de Goya",
+      "to": "Isidoro Máiquez",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; portraitist-sitter",
+      "know each other since": "at least 1807",
+      "portraits": "portrait of Máiquez, 1807, Prado"
+    },
+    {
+      "from": "Rafael Esteve",
       "to": "Agustín Esteve",
       "connection_level": "direct",
       "relationship type": "relatives: uncle-nephew",
@@ -5207,7 +5266,17 @@
       "relationship type": "colleagues; portraitist-sitter",
       "know each other since": "c.1799",
       "portraits": "Goya portrayed R. Esteve in 1815 (Museo de Bellas Artes de Valencia)",
-      "collaborations": "Rafael Esteve made reproductive prints of Spanish kings after his uncle Agustín Esteve's drawings after Goya (1799)"
+      "collaborations": [
+        "Rafael Esteve made reproductive prints of Spanish kings after his uncle Agustín Esteve's drawings after Goya (1799).",
+        "c.1803 R. Esteve's drawing of Miguel Cayetano Soler after Goya (lost work), [Prado D009422](https://www.museodelprado.es/coleccion/obra-de-arte/miguel-cayetano-soler/da362b32-7f28-41cf-8191-b67fcf328d2a)."
+      ]
+    },
+    {
+      "from": "Rafael Esteve",
+      "to": "María Luisa de Parma",
+      "connection_level": "direct?",
+      "relationship type": "portraitist-sitter (indirect?)",
+      "portraits": "drawing in wash and black pencil, 1806 (Prado)"
     },
     {
       "from": "Rafael Esteve",
