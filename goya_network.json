@@ -2098,18 +2098,28 @@
       "label": "Desbordes-V.",
       "life dates": "1786-1859", 
       "nationality": "French",
+      "born in": "Douai",
       "profession": "poet, actress, writer, lyrical artist", 
-      "author of": "<i>Poésies</i>; <i>Les Pleurs</i> (poems; 1833); <i>Violette</i> (novel); <i>L'Atelier d'un peintre</i> (1833; autobiography)",
+      "political views": "abolitionist of slavery",
+      "author of": [
+        "Poetry: <i>Le Billet</i>; <i>Élégies, Marie et Romances</i> (1819; signed 'Desbordes'); <i>Veillées des Antilles</i> (1820); <i>Poésies de Mme Desbordes-Valmore</i>; reeditions in 1822, 1825 and 1830; <i>Poésies</i>; <i>Les Pleurs</i> (1833), <i>Pauvres Fleurs</i> (1839), <i>Bouquets et prières</i> (1843), <i>Poésies inédites</i> (posthumous) (which included <i>Une lettre de femme</i>).",
+        "Fiction: <i>Une raillerie de l'amour</i> (1833); <i>L'Atelier d'un peintre scènes de la vie privée</i> (1833); <i>L'Atelier d'un peintre</i> (1833); <i>Violette</i> (1839).",
+        "Children literature: <i>À mes jeunes amis : Album du jeune âge</i> (1830); <i>Les Anges de la famille</i> (1849)."
+      ],
+      "correspondence": "forthcoming edition of the <i>correspondance générale</i> (Pierre-Jacques Lamblin, Delphine Mantienne, Élodie Saliceto, Jean Vilbas, dir. Christine Planté); Pierre-Jacques Lamblin & Christine Planté, 'Les réseaux épistolaires de Marceline Desbordes-Valmore', <i>Le Magasin du XIXe siècle</i>, no.10, 2020; <i>Lettres inédites, 1812-1857 recueillies et annotées par son fils Hippolyte Valmore, Préface de Boyer d'Agen</i>, 1912; <i>La Jeunesse de Mme Desbordes-Valmore par Arthur Pougin</i>, 1898; <i>Madame Desbordes-Valmore à Lyon par Auguste Bleton</i>, 1896; Charles-Augustin Sainte-Beuve, <i>Madame Desbordes-Valmore : sa vie et sa correspondance</i> (1870)",
+      "curiosities": "she was admired by Charles Baudelaire, Stéphane Mallarmé, Rilke, Aragon, Yves Bonnefoy and Verlaine. The latter quoted some of her poems (like <i>Une lettre de femme</i>) in <i>Les poètes maudits</i>",
       "member of": "Académie des sciences, belles-lettres et arts de Lyon (1835)",
       "works in": "théâtre de l'Odéon; Opéra-Comique; théâtre de la Monnaie (Brussels), where she plays Rosina in Le Barbier de Séville (1815)",
       "decorations/awards": "Prix Lambert (1859)",
+      "lives in": "Douai; Guadeloupe; Paris; Lyon (1821-23, 27-32, 34-37); Bordeaux (1823-27)",
       "portrayed by": "Constant Joseph Desbordes, Douai, Musée de la Chartreuse, c.1811 (oil painting); Baugé, 1833 (lithograph); Nadar, 1854 (photograph)",
       "parents": "Catherine Lucas and Félix Desbordes",
-      "partners/lovers": "Eugène Debonne (1808-12)",
+      "partners/lovers": "Eugène Debonne (1808-12); Hyacinthe de Latouche",
       "married to": "Prosper Valmore (Prosper Lanchantin) (1817)",
-      "children": "Louisa Desbordes, Marie-Eugène Desbordes, Junie Valmore, Hippolyte Valmore, Ondine Valmore, Inès Valmore",
-      "websites": "[Société des études Marceline Desbordes-Valmore](https://www.societedesetudesmarcelinedesbordesvalmore.fr/); [Wikipedia](https://fr.wikipedia.org/wiki/Marceline_Desbordes-Valmore)",
-      "bibliography": "Aimée Boutin & Catherine Witt, upcoming article in <i>J'écris pourtant</i>, 2025; Michel Suffran, <i>Un chemin jusqu'à toi: Rencontre entre Goya et Marceline Desbordes-Valmore (1823-1827)</i>, 2013.",
+      "children": "Louisa Desbordes, Marie-Eugène Desbordes (dies in 1816), Junie Valmore (dies after birth), Hippolyte Valmore, Ondine Valmore (dies in 1853), Inès Valmore (dies in 1846)",
+      "websites": "[Société des études Marceline Desbordes-Valmore](https://www.societedesetudesmarcelinedesbordesvalmore.fr/); [Wikipedia](https://fr.wikipedia.org/wiki/Marceline_Desbordes-Valmore); correspondence in [Xavier Lang's blog](https://correspondancedv.blogspot.com/)",
+      "bibliography": "Philippe Gambette, 'Sur les traces d'un portrait de Marceline Desbordes-Valmore par Goya', in Aimée Boutin & Catherine Witt (eds.), [<i>Marceline Desbordes-Valmore traductrice et traduite</i>](https://www.societedesetudesmarcelinedesbordesvalmore.fr/?event=parution-des-cahiers-jecris-pourtant-n-6), Cahiers <i>J'écris pourtant</i> (Société des études Marceline Desbordes-Valmore), no.6, 2025; Michel Suffran, <i>Un chemin jusqu'à toi: Rencontre entre Goya et Marceline Desbordes-Valmore (1823-1827)</i>, 2013; M. H. Corne, <i>La vie et les œuvres de Madame Desbordes-Valmore</i>, 1876, [Wikisource](https://fr.wikisource.org/wiki/La_Vie_et_les_%C5%92uvres_de_Madame_Desbordes-Valmore/Texte_entier).",
+      "newspaper archive": "Mara Goyet, 'La vie si difficile de l'écrivaine Marceline Desbordes-Valmore est à vous fendre le cœur', <i>Le Monde</i>, 8 Aug 2025",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Desbordes_Valmore.jpg",
       "image source": "Desbordes portrait, c.1811" 
     },
@@ -10528,7 +10538,7 @@
       "connection_level": "direct?",
       "relationship type": "acquaintances?",
       "portraits": "Goya allegedly made a portrait of Desbordes-Valmore in Bordeaux c.1825 (private collection)",
-      "bibliography": "Aimée Boutin & Catherine Witt, upcoming article in <i>J'écris pourtant</i>, 2025; Michel Suffran, <i>Un chemin jusqu'à toi: Rencontre entre Goya et Marceline Desbordes-Valmore (1823-1827)</i>, 2013,"
+      "bibliography": "Philippe Gambette, 'Sur les traces d'un portrait de Marceline Desbordes-Valmore par Goya', in Aimée Boutin & Catherine Witt (eds.), [<i>Marceline Desbordes-Valmore traductrice et traduite</i>](https://www.societedesetudesmarcelinedesbordesvalmore.fr/?event=parution-des-cahiers-jecris-pourtant-n-6), Cahiers <i>J'écris pourtant</i> (Société des études Marceline Desbordes-Valmore), no.6, 2025; Michel Suffran, <i>Un chemin jusqu'à toi: Rencontre entre Goya et Marceline Desbordes-Valmore (1823-1827)</i>, 2013,"
     },
     {
       "from": "George Sand",
@@ -10952,8 +10962,17 @@
       "from": "Marceline Desbordes-Valmore",
       "to": "Charles Baudelaire",
       "connection_level": "secondary",
-      "relationship type": "Baudelaire admired her writing",
-      "mentions": "Baudelaire wrote about her in 1861 that she was 'une âme d'élite […] qui est et sera toujours un grand poète' (Baudelaire, <i>Œuvres complètes</i>, 1968, p.474); 'Mme Desbordes-Valmore fut femme, fut toujours femme et ne fut absolument que femme ; mais elle fut à un degré extraordinaire l'expression poétique de toutes les beautés naturelles de la femme' (Curiosités esthétiques, L'Art romantique, Classiques Garnier, 1962, p. 745)."
+      "relationship type": "Baudelaire admired her poetry",
+      "mentions": "Baudelaire wrote about her in 1861 that she was 'une âme d'élite […] qui est et sera toujours un grand poète' (Baudelaire 1968, p.474); 'Mme Desbordes-Valmore fut femme, fut toujours femme et ne fut absolument que femme ; mais elle fut à un degré extraordinaire l'expression poétique de toutes les beautés naturelles de la femme' (Baudelaire 1962, p.745).",
+      "bibliography": "Baudelaire, <i>Œuvres complètes</i>, 1968; Baudelaire, 'Curiosités esthétiques', <i>L'Art romantique</i>, Classiques Garnier, 1962",
+      "websites": "[Société des études Marceline Desbordes-Valmore](https://www.societedesetudesmarcelinedesbordesvalmore.fr/?p=238)"
+    },
+    {
+      "from": "Marceline Desbordes-Valmore",
+      "to": "Stéphane Mallarmé",
+      "connection_level": "secondary",
+      "relationship type": "Mallarmé admired her poetry",
+      "websites": "[Société des études Marceline Desbordes-Valmore](https://www.societedesetudesmarcelinedesbordesvalmore.fr/?p=238)"
     },
     {
       "from": "Théophile Gautier",
@@ -10976,9 +10995,13 @@
     {
       "from": "Marceline Desbordes-Valmore",
       "to": "Charles-Augustin Sainte-Beuve",
-      "connection_level": "secondary",
-      "relationship type": "Sainte-Beuve admired her writing",
-      "mentions": "Sainte-Beuve wrote about her: 'Elle a chanté comme l'oiseau chante' (numericable.fr, Marceline Desbordes-Valmore); he defines her poetry as 'si passionnée, si tendre, et véritablement unique en notre temps' (Notice dans Marceline Desbordes-Valmore, <i>Poésies</i>, Paris, Charpentier, 1842, p. I.)"
+      "connection_level": "direct?",
+      "relationship type": "colleagues; acquaintances; Sainte-Beuve admired her writing",
+      "mentions": [
+        "Sainte-Beuve wrote about her: 'Elle a chanté comme l'oiseau chante'; he defines her poetry as 'si passionnée, si tendre, et véritablement unique en notre temps', Notice dans Marceline Desbordes-Valmore, <i>Poésies</i>, Paris, Charpentier, 1842, p.I., [text](https://www.societedesetudesmarcelinedesbordesvalmore.fr/wp-content/uploads/2020/07/Bulletin-SEMDV-01-2017-034-038.pdf).",
+        "1870 Sainte-Beuve wrote <i>Madame Desbordes-Valmore : sa vie et sa correspondance</i>."
+      ],
+      "websites": "numericable.fr, Marceline Desbordes-Valmore"
     },
     {
       "from": "Théophile Gautier",
