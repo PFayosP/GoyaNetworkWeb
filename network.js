@@ -832,6 +832,36 @@ document.addEventListener('DOMContentLoaded', async function () {
     window.VIS_NETWORK = network;
 
     // 🔥 SOLUCIÓN NUCLEAR ANTI-OVERLAP
+    // Empuja pares de nodos que se solapan una sola pasada
+    function nudgeOverlapsOnce(network, nodes) {
+      const ids = nodes.getIds();
+      const pos = network.getPositions(ids);
+
+      // radio visual aproximado; ajústalo si hace falta
+      const R = 22; // px
+
+      for (let i = 0; i < ids.length; i++) {
+        for (let j = i + 1; j < ids.length; j++) {
+          const a = ids[i], b = ids[j];
+          const pA = pos[a], pB = pos[b];
+          if (!pA || !pB) continue;
+
+          const dx = pB.x - pA.x;
+          const dy = pB.y - pA.y;
+          const d  = Math.hypot(dx, dy) || 1;
+
+          const minD = R * 2;
+          if (d < minD) {
+            const push = (minD - d) / 2;
+            const ux = dx / d, uy = dy / d;
+
+            // desplazar ambos en sentidos opuestos
+            network.moveNode(a, pA.x - ux * push, pA.y - uy * push);
+            network.moveNode(b, pB.x + ux * push, pB.y + uy * push);
+          }
+        }
+      }
+    }
     network.once('stabilizationIterationsDone', function() {
       console.log("🔥 ACTIVANDO MODO NUCLEAR ANTI-OVERLAP");
       
