@@ -287,7 +287,10 @@ window.filterGraph = function() {
     });
     
     // Focus on the first matching node
-    window.VIS_NETWORK.focus(matchingNodes[0].id, { animation: true });
+    const id = matchingNodes[0].id;
+    const scale = window.VIS_NETWORK.getScale();
+    const pos = window.VIS_NETWORK.getPosition(id);
+    window.VIS_NETWORK.moveTo({ position: pos, scale, animation: { duration: 500 } });
     lastHighlightedNodes = matchingNodes.map(node => node.id);
   } else {
     alert('No nodes match the selected filters');
@@ -1485,12 +1488,16 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     window.focusNode = function (nodeId) {
       clearHighlights();
-    
-      network.focus(nodeId, {
-        scale: 1.2,
+
+      const scale = window.VIS_NETWORK.getScale();
+      const pos = window.VIS_NETWORK.getPosition(nodeId);
+
+      window.VIS_NETWORK.moveTo({
+        position: pos,
+        scale,                         // ← conserva el zoom actual
         animation: { duration: 500 }
       });
-    
+
       nodes.update({ id: nodeId, color: { border: 'red' }, borderWidth: 4 });
       lastHighlightedNode = nodeId;
     };
