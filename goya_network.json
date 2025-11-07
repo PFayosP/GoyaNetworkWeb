@@ -60,11 +60,32 @@
       "image source": "Portrait by Goya, 1827, Meadows Museum, Texas (67.03)"
     },
     {
-      "id": "Marquis de la Romana",
+      "id": "Marquis of La Romana",
       "label": "Romana",
       "life dates": "1761-1811",
       "nationality": "Spanish",
-      "portrayed by": "Eduardo Carrió after Vicente López",
+      "born in": "Palma de Mallorca",
+      "dies in": "Cartaxo (Portugal)",
+      "profession": "aristocrat, military member",
+      "military activity": [
+        "American Revolutionary War; War of the First Coalition (1792-97); commandment of Divison of the North in Hamburg and Denmark under Marshal Bernadotte (1808-08); Peninsular War and Napoleonic Wars.",
+        "Field Marshal (1794); Capitán general de Cataluña (1800-01); Capitán General de Galicia (1809); Lieutenant-General."
+      ],
+      "portrayed by": "Juan Rodríguez Jiménez, <i>Embarque del marqués de la Romana</i>, 1809, oil on canvas, Museo Romanticismo; Vicente López, oil painting, c.1815, Prado P006548; Manuel Castellano, <i>General Romana with the Spanish Division of the North, sent to Denmark to fight against the British [...] 1808</i>, c.1870, Prado; Eduardo Carrió (after Vicente López), c.1878, Prado",
+      "parents": "Pedro Caro Fontes y Maza de Lizana & Doña Margarita Sureda y Valero",
+      "children": "Pedor Caro y Salas",
+      "siblings": "José Caro Sureda and Juan Caro Sureda",
+      "studies in": "collège de l'Oratoire, Lyon (Greek and Latin); Universidad de Salamanca (Hebrew and Math); Real Seminario de Nobles, Madrid (Humanities)",
+      "friends": "John Hookham Frere",
+      "collector of Goya's works": "9 paintings survive out of 11: <i>The Visit of the Friar</i> (1808-10), <i>Interior of a Prison</i> (1808-12), <i>Interior fo a prison</i> (1793), <i>Bandits shooting their prisoners</i> (1808-12), <i>Bandit undressing a woman</i> (1798-1800), <i>Bandit stabbing a woman</i> (1798-1800), <i>Plague Hospital</i> (1808-10), <i>Shooting in a military camp</i> (1808-10), <i>Gypsy Cave</i> (1808-10).",
+      "trips": "Vienna, Berlin, Moscow (trip authorized by Carlos III); Paris, Italy, Flandes, Prussia, Denmark, Sewden, Great Britain",
+      "lives in": "Lyon, Cartagena, Valencia",
+      "decorations/awards": [
+        "Marqués de la Romana, viz­conde de Benabre, barón y señor de Novelda, Cas­tillo de la Mola, Casa y estados de Maza en el reino de Valencia; caballero de Lloró y San Juan en Ma­llorca, grande de España de 1.ª clase",
+        "Gran Cruz de la Orden de Carlos III"
+      ],
+      "bibliography": "Magnus Mörner (ed.), <i>La expedición del Marqués de La Romana</i>, Fundación Instituto de Empresa, Madrid, 2007; José Luis Díez García, <i>Vicente López (1772-1850) II. Catálogo razonado</i>, Madrid, Fundación de Apoyo a la Historia del Arte Hispánico, 1999.",
+      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/9472-pedro-caro-sureda)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Romana.jpg",
       "image source": "Carrió after López"
     },
@@ -6236,17 +6257,44 @@
       "know each other since": "at least 1800"
     },
     {
-      "from": "Marquis de la Romana",
-      "to": "Francisco de Goya",
+      "from": "Marquis of La Romana",
+      "to": "Carlos III",
       "connection_level": "direct",
-      "relationship type": "patronage"
+      "relationship type": "employer-employee (Guardia Marina in 1775)"
     },
     {
-      "from": "Marquis de la Romana",
-      "to": "Vicente López",
+      "from": "Marquis of La Romana",
+      "to": "Carlos IV",
       "connection_level": "direct",
+      "relationship type": "employer-employee (Capitán General de Cataluña and Dirección General de Ingenieros)"
+    },
+    {
+      "from": "Marquis of La Romana",
+      "to": "Count of Floridablanca",
+      "connection_level": "direct",
+      "relationship type": "employer-employee"
+    },
+    {
+      "from": "Marquis of La Romana",
+      "to": "1st Duke of Wellington",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; colleagues",
+      "mentions": "when Romana died, Wellington said: 'his loss is the greatest which the cause could sustain' (Longford 1969, p.309)",
+      "bibliography": "David G. Chandler, <i>The Campaigns of Napoleon</i>, 1995; Elizabeth Longford, <i>Wellington: The Years of the Sword</i>, 1969"
+    },
+    {
+      "from": "Marquis of La Romana",
+      "to": "Francisco de Goya",
+      "connection_level": "direct",
+      "relationship type": "patronage",
+      "artworks bought/sold": "9 paintings survive out of 11: <i>The Visit of the Friar</i> (1808-10), <i>Interior of a Prison</i> (1808-12), <i>Interior fo a prison</i> (1793), <i>Bandits shooting their prisoners</i> (1808-12), <i>Bandit undressing a woman</i> (1798-1800), <i>Bandit stabbing a woman</i> (1798-1800), <i>Plague Hospital</i> (1808-10), <i>Shooting in a military camp</i> (1808-10), <i>Gypsy Cave</i> (1808-10)."
+    },
+    {
+      "from": "Marquis of La Romana",
+      "to": "Vicente López",
+      "connection_level": "direct?",
       "relationship type": "portraitist-sitter",
-      "portraits": "1878 (copy by E. Carrió)"
+      "portraits": "c.1815, Prado (painted from an effigy: Romana dies in 1811)"
     },
     {
       "from": "Josefa Tudó",
