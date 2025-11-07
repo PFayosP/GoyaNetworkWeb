@@ -60,6 +60,15 @@
       "image source": "Portrait by Goya, 1827, Meadows Museum, Texas (67.03)"
     },
     {
+      "id": "Marquis de la Romana",
+      "label": "Romana",
+      "life dates": "1761-1811",
+      "nationality": "Spanish",
+      "portrayed by": "Eduardo Carrió after Vicente López",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Romana.jpg",
+      "image source": "Carrió after López"
+    },
+    {
       "id": "Martín Zapater",
       "label": "Zapater",
       "life dates": "1746-1803",
