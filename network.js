@@ -820,7 +820,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         interaction: {
           dragNodes: true,
           hideEdgesOnDrag: false,
-          hideNodesOnDrag: false
+          hideNodesOnDrag: false,
+          zoomView: true,          // ✅ permite hacer zoom
+          dragView: true,          // ✅ permite mover la vista (pan)
+          navigationButtons: true  // opcional: añade iconos de zoom y movimiento
         },
         
         // 🔥 Y ESTA MÁS:
