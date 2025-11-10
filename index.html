@@ -45,6 +45,13 @@
       border-radius: 4px;
     }
 
+    #network, #network canvas { pointer-events: auto !important; }
+    #newInPanel[style*="display: none"],
+    #shareModal[style*="display: none"] { pointer-events: none !important; }
+
+    #newInPanel[style*="visibility: hidden"],
+    #shareModal[style*="visibility: hidden"] { pointer-events: none !important; }
+
     #about strong {
       display: block;
       margin-top: 1.5rem;

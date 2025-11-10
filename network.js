@@ -834,6 +834,24 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     window.VIS_NETWORK = network;
 
+    // Garantiza que los eventos de zoom lleguen al canvas del vis-network
+    (function ensureZoomEventsReachCanvas() {
+      const root = document.getElementById('network');
+      const getCanvas = () => root && root.querySelector('canvas.vis-network');
+      const attach = () => {
+        const c = getCanvas();
+        if (!c) { requestAnimationFrame(attach); return; }
+        ['wheel','gesturestart','gesturechange','gestureend','touchstart','touchmove']
+          .forEach(ev => {
+            c.addEventListener(ev, e => {
+              // No bloquees el zoom (sin preventDefault), solo evita que lo “secuestren” otros listeners.
+              e.stopPropagation();
+            }, { capture: true, passive: true });
+          });
+      };
+      attach();
+    })();
+
     // 🔥 SOLUCIÓN NUCLEAR ANTI-OVERLAP
     // Empuja pares de nodos que se solapan una sola pasada
     function nudgeOverlapsOnce(network, nodes) {
