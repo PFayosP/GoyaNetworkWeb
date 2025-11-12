@@ -1467,6 +1467,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           { key: "artworks influenced by Goya", label: "Artworks influenced by Goya" },
           { key: "interest in Spanish art", label: "Interest in Spanish art" },
           { key: "artworks bought/sold/given", label: "Artworks bought/sold/given" },
+          { key: "artworks bought/sold", label: "Artworks bought/sold" },
           { key: "comparisons", label: "Comparisons" },
           { key: "criticism", label: "Criticism" },
           { key: "rivalry", label: "Rivalry" },
