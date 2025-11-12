@@ -967,10 +967,38 @@
     {
       "id": "Antonio de Brugada",
       "label": "Brugada",
+      "full name": "Antonio de Brugada Vila",
       "life dates": "1804-1863",
       "nationality": "Spanish",
+      "born in": "Madrid",
+      "dies in": "San Sebastián",
       "profession": "painter",
-      "curiosities": "he witnessed Goya'death in Bordeaux, alongside Molina (Canellas, <i>Diplomatario</i>,  no.181, p.512).",
+      "siblings": "José Brugada (painter)",
+      "studies in": "RABASF (1818-1821): with Goya",
+      "masters": "Francisco de Goya (1818-21: RABASF); Théodore Gudin in Paris (Gudin's brother Louis was a painter and student of Horace Vernet, joining the workshop of Anne-Louis Girodet)",
+      "in France": [
+        "c.1823-1834: 11-year exile, according to his petition to Isabel II to become a Chamber Painter (Arias 1989, p.29). Studies under Théodore Gudin (in Paris? dates?)."
+      ],
+      "married to": "Rafaela Costa y Bonells (from 1829)",
+      "partners/lovers": "Marguerite Fany Brosse (Bordeaux) (she was the granddaughter of Jaime Bonells, the XIII Duchess of Alba's medical doctor)",
+      "exhibitions": [
+        "1838 Liceo Artístico y Literario Español: <i>La marina en calma</i>.",
+        "1848 annual exhibition of the RABASF: <i>La pesca milagrosa</i> and <i>La tempestad apaciguada</i>.",
+        "1850 annual exhibition of the RABASF: <i>Jesús con los Apóstoles conteniendo las olas del mar</i> and <i>Asalto y toma de Balanguigui en las Filipinas</i>.",
+        "1856 Exposición Nacional: honorific mention. His <i>Episodio del combate naval de Lepante</i> gets acquired by the Estate fro 1,000 reales (for the Museo Nacional de Pinturas).",
+        "1858 Exposición Nacional: <i>Efecto del sol poniente en las costas catalanas</i>, <i>Efecto de mar borrascoso</i> and <i>Vista del torreón y salida del puerto de Pasajes</i>."
+      ],
+      "author of": [
+        "Marine paintings: <i>El navío Pelayo acude en auxilio del Santísima Trinidad durante la batalla del Cabo de San Vicente</i>, 1856, Museo Naval (Madrid); <i>Naufragio de un navío francés junto a un faro</i>, 1830-1860, Fundación Santamarca; <i>Rescate del Santísima Trinidad por el Pelayo en Cabo San Vicente</i>, 1863, Museo Naval",
+        "Satirical lithographs: illustrations in Pedro Martínez López's <i>Las brujas de Zugarramurdi</i> (Bordeaux 1835), against the politican Francisco Martínez de la Rosa."
+      ],
+      "works as": "Pintor de Cámara; académico de mérito of the RABASF (from 1841); académico de mérito of the Academia de San Carlos (Valencia)",
+      "political views": "liberal",
+      "decorations/awards": "Caballero de la Real Orden de Carlos III; Caballero de la Orden de Isabel la Católica (1841)",
+      "military activity": "Milicia Nacional de Madrid: lieutenant during the Trienio Liberal (1820-23)",
+      "link to Goya's work": "Brugada made an inventory of Goya's Black Paintings in an unknown date (mid-19th century), which has been a fundamental source to understand the original location and circumstances of the paintings. It was first published by X. Desparmet Fitz-Gerald.",
+      "bibliography": "Junquera, 'Los Goya: de la Quinta a Burdeos y vuelta', <i>Archivo Español de Arte</i> 76 (304), 2003, pp.353-70; Enrique Arias Anglés, <i>Antonio de Brugada. Pintor romántico y libera</i>, 1989; E. Arias Anglés, 'Antonio Brugada pintor de la mar', <i>Reales Sitios</i>, 61 1979, pp.40-52",
+      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/7479-antonio-de-brugada-vila)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Brugada_AI.jpg",
       "image source": "AI generated (DeepAI) because there is no known portrait"
     },
@@ -5179,6 +5207,17 @@
       "relationship type": "professional. In 1831, López made a valuation of Goya's paintings inherited by Javier Goya"
     },
     {
+      "from": "Adrien Dauzats",
+      "to": "Javier Goya",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; business partners?",
+      "link to Goya's work": [
+        "1834 Dauzats was probably the author of the <i>Magasin pittoresque</i> article on Goya: 1834-IX-29, Dauzats to Federico de Madrazo: 'Je m'occupe d'une notice sur la vie et les ouvrages de Goya. C'est un hommage que nous voulons rendre à l'un des peintres les plus célèbres de l'Espagne' (Archivo Madrazo) (see Guinard 1967-B, p.323; Fayos Pérez 2024, p.50). It mentions the Prado commentaries (Goya's manuscript explanations of the <i>Caprichos</i>), which were by then in the possession of Javier Goya.",
+        "1835-IV-1, Federico de Madrazo to Dauzats (in French) (INHA): Dauzats had asked for a notice about Goya, which Madrazo is waiting to ask for to Javier Goya when he is back in Madrid (Fayos-Pérez 2026, upcoming)."
+      ],
+      "bibliography": "Fayos Pérez 2024; Guinard 1967-B"
+    },
+    {
       "from": "Francisco de Goya",
       "to": "Martín Zapater",
       "connection_level": "direct",
@@ -6011,6 +6050,7 @@
       "connection_level": "direct",
       "relationship type": "friends",
       "collaborations": "Santiago collaborates as music critic in <i>El Artista</i>, a journal founded by Federico de Madrazo, Pedro de Madrazo and Eugenio Ochoa in 1835.",
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Adrien Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
       "know each other since": "at least 1835"
     },
     {
@@ -6577,7 +6617,21 @@
       "from": "Francisco de Goya",
       "to": "Antonio de Brugada",
       "connection_level": "direct",
-      "relationship type": "close friends" 
+      "relationship type": "close friends",
+      "interactions": [
+        "They lived in Bordeaux at the same time and became close friends.",
+        "Brugada was present when Goya died, alongside Molina (Canellas 1981, no.181, p.512).",
+        "Brugada made a painting of Goya's tomb and framed it with golden leaf (Arias 1989, pp.38-42, 54): [RABASF 0885](https://www.academiacolecciones.com/pinturas/inventario.php?id=0885).",
+        "Brugada made the famous inventory of the Black Paintings (unknown date)."
+      ],
+      "websites": "[RABASF](https://www.academiacolecciones.com/pinturas/inventario.php?id=0885)",
+      "bibliography": "Junquera, 'Los Goya: de la Quinta a Burdeos y vuelta', <i>Archivo Español de Arte</i> 76 (304), 2003, pp.353-70; Arias 1989; J. Fauque y R. Villanueva Etcheverría, <i>Goya y Burdeos (1824-1828)</i>, 1982, pp.198-200; Canellas 1981; X. de Salas, 'Sobre Antonio de Brugada y un posible retrato de Goya', <i>Goya</i>, 148-150, 1979, pp.216-220"
+    },
+    {
+      "from": "Isabel II",
+      "to": "Antonio de Brugada",
+      "connection_level": "direct",
+      "relationship type": "employer-employee (pintor honorario de cámara from 1844)"
     },
     {
       "from": "Francisco de Goya",
@@ -7384,7 +7438,8 @@
       "to": "Eugenio Ochoa",
       "connection_level": "direct",
       "relationship type": "close friends",
-      "collaborations": "the found the journal <i>El Artista</i> in 1835 in Madrid with Pedro de Madrazo (after visiting <i>L'Artiste</i> in Paris in 1833)."
+      "collaborations": "the found the journal <i>El Artista</i> in 1835 in Madrid with Pedro de Madrazo (after visiting <i>L'Artiste</i> in Paris in 1833).",
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming)."
     },
     {
       "from": "Federico de Madrazo",
@@ -8590,7 +8645,7 @@
       "correspondence": [
         "1834-IX-29, Dauzats to Madrazo: 'Je m'occupe d'une notice sur la vie et les ouvrages de Goya. C'est un hommage que nous voulons rendre à l'un des peintres les plus célèbres de l'Espagne' (Archivo Madrazo). Quoted in Guinard 1967-B, p.323 (Guinard thinks Dauzats could be the author of the article on Goya in 1834 in <i>Le Magasin pittoresque</i>); Fayos Pérez 2024, p.50.",
         "1835-III-24, Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
-        "1835-IV-1, Madrazo to Dauzats (in French) (INHA): Dauzats had asked for a notice about Goya, which Madrazo is waiting to ask for to Javier Goya when he is back in Madrid. Madrazo says the gave Pharamond Blanchard two lithographies for him from <i>El Artista</i>. Mention of Eugenio Ochoa and Alejandro Sureda. His brother (Pedro de Madrazo?) sends regards. He also sends regards to Baron Taylor (Fayos-Pérez 2026, upcoming).",
+        "1835-IV-1, Madrazo to Dauzats (in French) (INHA): Dauzats had asked for a notice about Goya, which Madrazo is waiting to ask for to Javier Goya when he is back in Madrid. Madrazo says he gave Pharamond Blanchard two lithographies for him from <i>El Artista</i>. Mention of Eugenio Ochoa and Alejandro Sureda. His brother (Pedro de Madrazo?) sends regards. He also sends regards to Baron Taylor (Fayos-Pérez 2026, upcoming).",
         "1837-I-24, Madrazo to Dauzats (INHA). He says that Pharamond Blanchard told him that Baron Taylor was coming back soon (to Paris). Mentions Eugenio Ochoa and Carlos Luis de Ribera.",
         "1837-VI-17, Dauzats to Madrazo (Archivo Madrazo) (Guinard 1967-B, p.269).",
         "1838-III-12, Madrazo to Dauzats (INHA): Madrazo asks Dauzats for drawing tools.",
@@ -8959,7 +9014,10 @@
       "connection_level": "direct",
       "relationship type": "acquaintances; friends?",
       "know each other since": "at least 1837",
-      "mentions": "1837, 28 June, letter from Federico de Madrazo to Valentín Carderera, repeating what Dauzats said about Ribera: 'que Ribera trabaja mucho, que ha dejado un poco su timidez y que si tardo un poco en ir a París no le reconoceré, y además dice que me parecerá un hombre natural y que su padre bramaría si viese la influencia que ha ejercido París en él'.",
+      "mentions": [
+        "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
+        "1837-VI-28, letter from Federico de Madrazo to Valentín Carderera, repeating what Dauzats said about Ribera: 'que Ribera trabaja mucho, que ha dejado un poco su timidez y que si tardo un poco en ir a París no le reconoceré, y además dice que me parecerá un hombre natural y que su padre bramaría si viese la influencia que ha ejercido París en él'."
+      ],
       "added": "2025-09-06"
     },
     {
@@ -9978,6 +10036,7 @@
       "know each other since": "at least 1835",
       "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Pascual de Gayangos y Arce, Vicente Masarnau and Santiago Masarnau",
       "collaborations": "Carderera published his first article on Goya in 1835 in <i>El Artista</i>, founded by Federico de Madrazo, Pedro de Madrazo and Eugenio Ochoa.", 
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
       "they met": [
         "On many occasions. Some of them are:",
         "1855 (Paris): 5, 9, 16, 19, 21 and 29 September, 11, 17, 19 October, 11 and 27 November.",
@@ -10295,6 +10354,7 @@
       "connection_level": "direct",
       "relationship type": "friends",
       "know each other since": "at least 1835", 
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
       "curiosities": "Dauzats introduces Ochoa to Victor Hugo"
     },
     {
