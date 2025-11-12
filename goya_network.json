@@ -71,7 +71,7 @@
         "American Revolutionary War; War of the First Coalition (1792-97); commandment of Divison of the North in Hamburg and Denmark under Marshal Bernadotte (1808-08); Peninsular War and Napoleonic Wars.",
         "Field Marshal (1794); Capitán general de Cataluña (1800-01); Capitán General de Galicia (1809); Lieutenant-General."
       ],
-      "portrayed by": "Juan Rodríguez Jiménez, <i>Embarque del marqués de la Romana</i>, 1809, oil on canvas, Museo Romanticismo; Vicente López, oil painting, c.1815, Prado P006548; Manuel Castellano, <i>General Romana with the Spanish Division of the North, sent to Denmark to fight against the British [...] 1808</i>, c.1870, Prado; Eduardo Carrió (after Vicente López), c.1878, Prado",
+      "portrayed by": "Juan Rodríguez Jiménez, <i>Embarque del marqués de la Romana</i>, 1809, oil on canvas, Museo Romanticismo; Vicente López, oil painting, c.1815, Prado P006548; Rafael Esteve (attributed) after Vicente López, c.1815, drawing, Prado [D009428](https://www.museodelprado.es/coleccion/obra-de-arte/pedro-caro-sureda-marques-de-la-romana/7ca2b030-2845-47f3-af59-48da40ef1f18); Manuel Castellano, <i>General Romana with the Spanish Division of the North, sent to Denmark to fight against the British [...] 1808</i>, c.1870, Prado; Eduardo Carrió (after Vicente López), c.1878, Prado",
       "parents": "Pedro Caro Fontes y Maza de Lizana & Doña Margarita Sureda y Valero",
       "children": "Pedor Caro y Salas",
       "siblings": "José Caro Sureda and Juan Caro Sureda",
@@ -997,8 +997,8 @@
       "decorations/awards": "Caballero de la Real Orden de Carlos III; Caballero de la Orden de Isabel la Católica (1841)",
       "military activity": "Milicia Nacional de Madrid: lieutenant during the Trienio Liberal (1820-23)",
       "link to Goya's work": "Brugada made an inventory of Goya's Black Paintings in an unknown date (mid-19th century), which has been a fundamental source to understand the original location and circumstances of the paintings. It was first published by X. Desparmet Fitz-Gerald.",
-      "bibliography": "Junquera, 'Los Goya: de la Quinta a Burdeos y vuelta', <i>Archivo Español de Arte</i> 76 (304), 2003, pp.353-70; Enrique Arias Anglés, <i>Antonio de Brugada. Pintor romántico y libera</i>, 1989; E. Arias Anglés, 'Antonio Brugada pintor de la mar', <i>Reales Sitios</i>, 61 1979, pp.40-52",
-      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/7479-antonio-de-brugada-vila)",
+      "bibliography": "D. Fernández Martínez, E.M.N.P., 2006, T.II, p.570; Junquera, 'Los Goya: de la Quinta a Burdeos y vuelta', <i>Archivo Español de Arte</i> 76 (304), 2003, pp.353-70; Enrique Arias Anglés, <i>Antonio de Brugada. Pintor romántico y libera</i>, 1989; E. Arias Anglés, 'Antonio Brugada pintor de la mar', <i>Reales Sitios</i>, 61 1979, pp.40-52",
+      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/7479-antonio-de-brugada-vila); [Prado](https://www.museodelprado.es/coleccion/artista/brugada-vila-antonio-de/b9c4f839-49c1-4698-a12d-956e162a79dc)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Brugada_AI.jpg",
       "image source": "AI generated (DeepAI) because there is no known portrait"
     },
@@ -5386,6 +5386,13 @@
     },
     {
       "from": "Rafael Esteve",
+      "to": "Marquis of La Romana",
+      "connection_level": "direct?",
+      "relationship type": "portraitist-sitter (indirect?)",
+      "portraits": "Rafael Esteve (attributed) after Vicente López, c.1815, drawing, Prado [D009428](https://www.museodelprado.es/coleccion/obra-de-arte/pedro-caro-sureda-marques-de-la-romana/7ca2b030-2845-47f3-af59-48da40ef1f18)"
+    },
+    {
+      "from": "Rafael Esteve",
       "to": "Asensio Julià",
       "connection_level": "direct",
       "relationship type": "colleagues",
@@ -6618,6 +6625,7 @@
       "to": "Antonio de Brugada",
       "connection_level": "direct",
       "relationship type": "close friends",
+      "know each other since": "at least 1824",
       "interactions": [
         "They lived in Bordeaux at the same time and became close friends.",
         "Brugada was present when Goya died, alongside Molina (Canellas 1981, no.181, p.512).",
@@ -6625,7 +6633,28 @@
         "Brugada made the famous inventory of the Black Paintings (unknown date)."
       ],
       "websites": "[RABASF](https://www.academiacolecciones.com/pinturas/inventario.php?id=0885)",
-      "bibliography": "Junquera, 'Los Goya: de la Quinta a Burdeos y vuelta', <i>Archivo Español de Arte</i> 76 (304), 2003, pp.353-70; Arias 1989; J. Fauque y R. Villanueva Etcheverría, <i>Goya y Burdeos (1824-1828)</i>, 1982, pp.198-200; Canellas 1981; X. de Salas, 'Sobre Antonio de Brugada y un posible retrato de Goya', <i>Goya</i>, 148-150, 1979, pp.216-220"
+      "mentions": [
+        "1828-IV-28 letter from Leocadia Zorrilla y Galarza to Leandro Fernández de Moratín: 'Molina y Brugada le vieron morir y yo estuve en el cuarto hasta dos minutos antes' (Canellas López 1981, no.181, p.512)",
+        "1888 letter from Gustave Labat to the Academy of Bordeaux: 'la viuda de Brugada le ha afirmado que a Goya se le enterró envuelto en su capa --de la que se han encontrado trozos-- y con la gorra de visera de la que no ha aparecido ningún vestigio' (Canellas López 1981, no.193, p.521)."
+      ],
+      "bibliography": "Junquera, 'Los Goya: de la Quinta a Burdeos y vuelta', <i>Archivo Español de Arte</i> 76 (304), 2003, pp.353-70; Arias 1989; J. Fauque y R. Villanueva Etcheverría, <i>Goya y Burdeos (1824-1828)</i>, 1982, pp.198-200; Canellas 1981; Canellas López 1981; X. de Salas, 'Sobre Antonio de Brugada y un posible retrato de Goya', <i>Goya</i>, 148-150, 1979, pp.216-220"
+    },
+    {
+      "from": "Leocadia Zorrilla y Galarza",
+      "to": "Antonio de Brugada",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "mentions": "1828-IV-28 letter from Leocadia to Leandro Fernández de Moratín (about Goya's death): 'Molina y Brugada le vieron morir y yo estuve en el cuarto hasta dos minutos antes' (Canellas 1981, no.181, p.512)"
+    },
+    {
+      "from": "Javier Goya",
+      "to": "Antonio de Brugada",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "at least since 1828",
+      "interactions": "Javier Goya asked Brugada to make the inventory of the Black Paintings after Goya's death (D. Fernández Martínez, E.M.N.P., 2006, T.II, p.570)",
+      "bibliography": "D. Fernández Martínez, E.M.N.P., 2006, T.II",
+      "websites": "[Prado](https://www.museodelprado.es/coleccion/artista/brugada-vila-antonio-de/b9c4f839-49c1-4698-a12d-956e162a79dc)"
     },
     {
       "from": "Isabel II",
