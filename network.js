@@ -834,24 +834,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     window.VIS_NETWORK = network;
 
-    // Garantiza que los eventos de zoom lleguen al canvas del vis-network
-    (function ensureZoomEventsReachCanvas() {
-      const root = document.getElementById('network');
-      const getCanvas = () => root && root.querySelector('canvas.vis-network');
-      const attach = () => {
-        const c = getCanvas();
-        if (!c) { requestAnimationFrame(attach); return; }
-        ['wheel','gesturestart','gesturechange','gestureend','touchstart','touchmove']
-          .forEach(ev => {
-            c.addEventListener(ev, e => {
-              // No bloquees el zoom (sin preventDefault), solo evita que lo “secuestren” otros listeners.
-              e.stopPropagation();
-            }, { capture: true, passive: true });
-          });
-      };
-      attach();
-    })();
-
     // 🔥 SOLUCIÓN NUCLEAR ANTI-OVERLAP
     // Empuja pares de nodos que se solapan una sola pasada
     function nudgeOverlapsOnce(network, nodes) {
@@ -883,36 +865,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       }
     }
-    network.once('stabilizationIterationsDone', function() {
-      console.log("🔥 ACTIVANDO MODO NUCLEAR ANTI-OVERLAP");
-      
-      // 1. RE-ACTIVAR física con configuración ultra-agresiva
-      network.setOptions({
-        physics: {
-          enabled: true,
-          solver: 'repulsion', 
-          repulsion: {
-            nodeDistance: 500,
-            centralGravity: 0.01,
-            springLength: 200,
-            springConstant: 0.02,
-            damping: 0.3
-          }
-        }
-      });
-      
-      // 2. Dejar que se re-estabilice
-      setTimeout(() => {
-        // 3. Forzar una segunda estabilización
-        network.stabilize(200);
-        
-        setTimeout(() => {
-          // 4. APAGAR física solo cuando esté PERFECTO
-          network.setOptions({ physics: { enabled: false } });
-          console.log("✅ OVERLAP ELIMINADO - MODO NUCLEAR COMPLETADO");
-        }, 2000);
-      }, 1000);
-    });
 
     // ——— Loading progress (vis-network physics) ———
     const loadingEl = document.getElementById('loadingMessage');
@@ -923,44 +875,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       const pct = Math.max(1, Math.min(100, Math.round((params.iterations / params.total) * 100)));
       loadingPct.textContent = pct + '%';
     });
-
-    // Al terminar, asegúrate de mostrar 100% un instante y ocultar
-    network.once('stabilizationIterationsDone', function () {
-      if (loadingPct) loadingPct.textContent = '100%';
-      setTimeout(() => {
-        const el = document.getElementById('loadingMessage');
-        if (el) el.style.display = 'none';
-      }, 100);
-    });
-
-    network.once('stabilizationIterationsDone', function () {
-      console.log("🔧 Física estabilizada, aplicando separación final...");
-      
-      // ESPERAR un poco más para asegurar posiciones estables
-      setTimeout(() => {
-        // 🔥 EJECUTAR ANTI-OVERLAP MÚLTIPLES VECES
-        nudgeOverlapsOnce(network, nodes);
-        
-        setTimeout(() => {
-          nudgeOverlapsOnce(network, nodes);
-          
-          setTimeout(() => {
-            nudgeOverlapsOnce(network, nodes);
-            
-            setTimeout(() => {
-              nudgeOverlapsOnce(network, nodes);
-              console.log("✅ Separación anti-overlap completada");
-              
-              // SOLO APAGAR FÍSICA DESPUÉS de todo el anti-overlap
-              network.setOptions({ physics: { enabled: false } });
-              console.log("🎯 Física apagada - Red lista sin overlap");
-              
-            }, 200);
-          }, 200);
-        }, 200);
-      }, 300);
-    });
-
 
     function loadFullImages() {
       const imageUpdates = data.nodes
