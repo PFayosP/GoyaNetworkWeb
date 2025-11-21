@@ -890,7 +890,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('loadingMessage').style.display = 'none';
   
     // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 400;   // antes 500
+    const MIN_DISTANCE = 440;   // antes 400
     const positions = network.getPositions();
     const updates = [];
     const nodeArray = nodes.get();
