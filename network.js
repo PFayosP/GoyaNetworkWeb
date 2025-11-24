@@ -927,6 +927,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       nodes.update(updates);
     }
 
+    // 💥 Cargar las imágenes ANTES de apagar la física
+    loadFullImages();
+
     // 🔁 Ahora sí: detener la física
     network.setOptions({ physics: { enabled: false } });
 
@@ -1562,7 +1565,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // 4) Cargar imágenes (lo más pesado) + snapshot del panel por defecto
         doLater(() => {
-          loadFullImages();
           __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
         });
       });
