@@ -888,44 +888,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     
   network.once("stabilizationIterationsDone", function () {
     document.getElementById('loadingMessage').style.display = 'none';
-  
-    // 1. Separar nodos que están demasiado cerca
-    const MIN_DISTANCE = 440;   // antes 400
-    const positions = network.getPositions();
-    const updates = [];
-    const nodeArray = nodes.get();
-
-    for (let i = 0; i < nodeArray.length; i++) {
-      const node1 = nodeArray[i];
-      const p1 = positions[node1.id];
-      
-      for (let j = i + 1; j < nodeArray.length; j++) {
-        const node2 = nodeArray[j];
-        const p2 = positions[node2.id];
-        
-        const dx = p2.x - p1.x;
-        const dy = p2.y - p1.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        
-        if (distance < MIN_DISTANCE && distance > 0.5) {
-          const push = (MIN_DISTANCE - distance) * 1.2;
-          updates.push({ 
-            id: node1.id, 
-            x: p1.x - dx * push / distance, 
-            y: p1.y - dy * push / distance 
-          });
-          updates.push({ 
-            id: node2.id, 
-            x: p2.x + dx * push / distance, 
-            y: p2.y + dy * push / distance 
-          });
-        }
-      }
-    }
-
-    if (updates.length > 0) {
-      nodes.update(updates);
-    }
 
     // 💥 Cargar las imágenes ANTES de apagar la física
     loadFullImages();
@@ -1725,13 +1687,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
   // Activar física solo mientras se arrastra un nodo
-  network.on("dragStart", () => {
+  /*network.on("dragStart", () => {
     network.setOptions({ physics: { enabled: true } });
   });
   
   network.on("dragEnd", () => {
     network.setOptions({ physics: { enabled: false } });
-  });
+  });*/
     
   } catch (err) {
     console.error("Error cargando o renderizando la red:", err);
