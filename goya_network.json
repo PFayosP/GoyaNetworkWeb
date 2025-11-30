@@ -5703,12 +5703,9 @@
     {
       "from": "Federico de Madrazo",
       "to": "Louis Daguerre",
-      "connection_level": "direct",
-      "relationship type": "friends",
-      "know each other since": "1836",
+      "connection_level": "direct?",
+      "relationship type": "acquaintances?",
       "mentions": [
-        "1836 (no date) ([Madrid]-Sevilla) (letter from Federico de Madrazo to Adrien Dauzats): Madrazo mentions that he had to 'tomar el fusil' (enlist in the army), as did Eugenio Ochoa, Santiago Masarnau and Daguerre (INHA aut. 1327).",
-        "1837, 6 Sept, Bordeaux (letter to José de Madrazo): during Federico's trip to Paris; he has sent a letter to Eugenio Ochoa via Daguerre (then in Madrid?) (<i>Epistolario</i>, 1994, no.7, p.22).",
         "1839, 25 Jan, Paris (letter to José de Madrazo): Federico talks about the <i>Daguerretipe</i> and the reaction from the public and from painters such as Paul Delaroche. He also says that this new invention is the end for landscape and still-life painters: '¡Qué cosas tan hermosas se pudieran hacer en Toledo, y en toda España!, si consigue Daguerre el sacar los colores, cosa en que se está ocupando hace mucho tiempo. Dígole a V. que los pintores de países y de género se pueden ir a cardar cebollinos' (<i>Epistolario</i>, 1994, no.71, p.188)."
       ],
       "bibliography": "Afinoguénova 2019, p.138; <i>Federico de Madrazo. Epistolario</i>, vol.1, 1994",
@@ -5734,10 +5731,8 @@
       "from": "José de Madrazo",
       "to": "Louis Daguerre",
       "connection_level": "direct",
-      "relationship type": "friends",
-      "know each other since": "at least 1837",
-      "mentions": "1837, 6 Sept, Bordeaux (letter from Federico de Madrazo to José de Madrazo): during Federico's trip to Paris; he has sent a letter to  Ochoa via Daguerre (then in Madrid?) (<i>Epistolario</i>, 1994, no.7, p.22)",
-      "bibliography": "Afinoguénova 2019, p.138; <i>Federico de Madrazo. Epistolario</i>, vol.1, 1994"
+      "relationship type": "acquaintances",
+      "bibliography": "Afinoguénova 2019, p.138"
     },
     {
       "from": "Baron Taylor",
