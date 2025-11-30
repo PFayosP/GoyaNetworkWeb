@@ -491,9 +491,9 @@
       "nationality": "Spanish",
       "profession": "writer, editor, politician",
       "in Paris": [
-        "1828-1834 at the École d'Arts et d'Offices. He meets Leandro Fernández de Moratín and Manuel Godoy",
-        "1837-1844: works for editors Baudry & Rosa. In contact with circle of politicians around the exiled Queen María Cristina de Borbón-Dos Sicilias",
-        "1855: visits Exposition Universelle"
+        "1828-1834 at the École d'Arts et d'Offices. He meets Leandro Fernández de Moratín and Manuel Godoy.",
+        "1837-1844: works for editors Baudry & Rosa. In contact with circle of politicians around the exiled Queen María Cristina de Borbón-Dos Sicilias. In 1837, via Adrien Dauzats, he attended Victor Hugo's salon, seeing there many people such as Louis Boulanger, George Sand, Théophile Gautier, Arsène Houssaye, Charles Nodier and Franz Liszt (Ochoa 1861, pp.199-207).",
+        "1855: visits Exposition Universelle."
         ],
       "in Spain": "1834-1837. 1844-1856",
       "author of": [
@@ -1551,7 +1551,7 @@
       "life dates": "1806-1867",
       "nationality": "French",
       "profession": "painter, lithographer, illustrator",
-      "author of": "he illustrated Victor Hugo's <i>Les Orientales</i> (1829), which was partly inspired by Goya's <i>Caprichos</i>",
+      "author of": "he illustrated Victor Hugo's <i>Odes et ballades</i> (1828) and <i>Les Orientales</i> (1829), which was partly inspired by Goya's <i>Caprichos</i>",
       "knows Goya's works": "knows the <i>Caprichos</i> since at least 1828-29",
       "bibliography": "Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Boulanger.jpg"
@@ -7372,11 +7372,11 @@
     {
       "from": "Arsène Houssaye",
       "to": "Eugenio Ochoa",
-      "connection_level": "direct?",
-      "relationship type": "acquaintances?",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
       "know each other since": "1837",
-      "interactions": "when Ochoa visits Hugo in 1837, he mentions Houssaye among the artists and writers who followed him, as 'jóvenes poetas y novelistas en la aurora de una brillante reputación') (Romero Tobar 1997, p. 222).",
-      "bibliography": "Romero Tobar 1997"
+      "interactions": "when Ochoa attends Victor Hugo's salon in 1837 (via Adrien Dauzats), he mentions Houssaye among the artists and writers who followed him, as 'jóvenes poetas y novelistas en la aurora de una brillante reputación') (Ochoa 1861, p.207; Romero Tobar 1997, p.222).",
+      "bibliography": "Romero Tobar 1997; Ochoa 1861"
     },
     {
       "from": "Arsène Houssaye",
@@ -10552,7 +10552,8 @@
       "relationship type": "friends",
       "know each other since": "at least 1835", 
       "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
-      "curiosities": "Dauzats introduces Ochoa to Victor Hugo"
+      "curiosities": "Dauzats introduces Ochoa to Victor Hugo in 1837 (Ochoa 1861, p.199; Romero Tobar 1997, p.222).",
+      "bibliography": "Romero Tobar 1997; Ochoa 1861"
     },
     {
       "from": "Adrien Dauzats",
@@ -10631,19 +10632,23 @@
     {
       "from": "Eugenio Ochoa",
       "to": "Alexandre Dumas père",
-      "connection_level": "direct? and secondary",
-      "relationship type": "acquaintances"
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "1837",
+      "they met": "at the salon of Victor Hugo (Ochoa 1861, p.203)",
+      "bibliography": "Ochoa 1861"
     },
     {
       "from": "Eugenio Ochoa",
       "to": "Théophile Gautier",
-      "connection_level": "direct? and secondary",
+      "connection_level": "direct",
       "relationship type": "acquaintances",
       "mentions": [
+        "In 1837, Ochoa attended Victor Hugo's salon (via Adrien Dauzats), meeting there Gautier, among other people (written as 'Teófilo Gauthier') (Ochoa 1861, p.207).",
         "In 1840, Gautier and Eugène Piot watch Hugo's <i>Hernani</i> in Spain, translated by Eugenio Ochoa. Gautier praises the translation.",
         "Eugenio Ochoa criticizes Gautier: “la vergonzosa tutela literaria en que nos tienen hace tanto tiempo los novelistas de Tras-os-Montes”, y en una nota: “Así titula M. Th. Gautier su llamado Viaje a España, libro tan verídico, tan chusco como las flamantes cartas de M. Alejandro Dumas” (Eugenio Ochoa, 'Doña Blanca de Navarra, crónica del siglo XV por D. F. Navarro Villoslada, Art. II', Renacimiento, 1847, p.79) (Randolph 1966, p.55)."
       ],
-      "bibliography": "Randolph 1966"
+      "bibliography": "Randolph 1966; Ochoa 1861"
     },
     {
       "from": "Eugenio Ochoa",
@@ -10663,10 +10668,28 @@
       "connection_level": "direct",
       "relationship type": "acquaintances",
       "know each other since": "1837",
-      "mentions": "Ochoa describes his visit to Hugo (introduced by Adrien Dauzats) in 1837: 'Un padre rodeado de sus hijos, un monarca rodeado de su corte, no reciben más señales, aquel de cariño, este de respeto, que Victor Hugo en medio de sus habituales tertulianos, la mayor parte dscípulos suyos, imitadores de sus <i>formas</i> literarias, exageradores de sus extravíos, fanáticos de su gloria' (among this group of followers he mentions Vacqueria, Viardot, Nodier, Féval, Lucas, Feuillet, Gautier, Houssaye: 'jóvenes poetas y novelistas en la aurora de una brillante reputación') (Romero Tobar 1997, p. 222).",
+      "mentions": "Ochoa describes his visit to Hugo (introduced by Adrien Dauzats) in 1837: 'Un padre rodeado de sus hijos, un monarca rodeado de su corte, no reciben más señales, aquel de cariño, este de respeto, que Victor Hugo en medio de sus habituales tertulianos, la mayor parte dscípulos suyos, imitadores de sus <i>formas</i> literarias, exageradores de sus extravíos, fanáticos de su gloria' (among this group of followers he mentions Vacqueria, Viardot, Nodier, Féval, Lucas, Feuillet, Gautier, Houssaye: 'jóvenes poetas y novelistas en la aurora de una brillante reputación') (Ochoa 1861, pp.199-207; Romero Tobar 1997, p.222).",
       "collaborations": "in 1836, Ochoa makes the translation of Hugo's <i>Hernani</i> (1830; set in 16th-century Spain). It first plays in Spain on 24 August 1836 at the Teatro del Príncipe in Madrid. This translation is praised by Gautier when he sees a representation in Spain with Piot in 1840. However, Ochoa made considerable changes from the original, removing any criticism towards the Church and elements perceived as 'immoral'. He also downplayed the 'diavolical and pathetic' nature of King Carlos, who was considered a historic hero of Carlism in the conservative sectors of 1830s Spain (Wikipedia). Dengler Gassin (1991, p.338-339) argues instead that Ochoa's translation is very close to the original, althoug he discusses some differences (such as translating 'baiser' as 'hug' instead of 'kiss' and ommitting a passage from Don Carlos) and says Ochoa falls into 'self-censorship'. Avrett (1954) did think that Ochoa's translation took far too many liberties, partly due to 'deep-rooted national and racial ideologies' and Spanish prudishness (p.362).",
       "bibliography": "Ozaeta 2002; Romero Tobar 1997; Dengler Gassin 1991; Avrett 1954; Ochoa, 1861, <i>París, Londres y Madrid</i>.",
-      "websites": "[Wikipedia]https://es.wikipedia.org/wiki/Hernani_(obra_de_teatro)"
+      "websites": "[Wikipedia](https://es.wikipedia.org/wiki/Hernani_(obra_de_teatro))"
+    },
+    {
+      "from": "Eugenio Ochoa",
+      "to": "Louis Boulanger",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "1837",
+      "they met": "at the salon of Victor Hugo (written as 'Luis Boulanger') (Ochoa 1861, p.203)",
+      "bibliography": "Romero Tobar 1997; Ochoa 1861"
+    },
+    {
+      "from": "Eugenio Ochoa",
+      "to": "George Sand",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "1837",
+      "they met": "at the salon of Victor Hugo (written as 'Dudevant (Jorge Sand)') (Ochoa 1861, p.203)",
+      "bibliography": "Romero Tobar 1997; Ochoa 1861"
     },
     {
       "from": "Eugenio Ochoa",
