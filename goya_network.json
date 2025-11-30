@@ -5705,7 +5705,7 @@
       "to": "Louis Daguerre",
       "connection_level": "direct",
       "relationship type": "friends",
-      "know each other since": "1837",
+      "know each other since": "1836",
       "mentions": [
         "1836 (no date) ([Madrid]-Sevilla) (letter from Federico de Madrazo to Adrien Dauzats): Madrazo mentions that he had to 'tomar el fusil' (enlist in the army), as did Eugenio Ochoa, Santiago Masarnau and Daguerre (INHA aut. 1327).",
         "1837, 6 Sept, Bordeaux (letter to José de Madrazo): during Federico's trip to Paris; he has sent a letter to Eugenio Ochoa via Daguerre (then in Madrid?) (<i>Epistolario</i>, 1994, no.7, p.22).",
@@ -5726,6 +5726,7 @@
       "to": "Louis Daguerre",
       "connection_level": "direct",
       "relationship type": "friends?",
+      "know each other since": "at least 1837",
       "mentions": "1837, 6 Sept, Bordeaux (letter from Federico de Madrazo to José de Madrazo): during Federico's trip to Paris; he has sent a letter to  Ochoa via Daguerre (then in Madrid?) (<i>Epistolario</i>, 1994, no.7, p.22)",
       "bibliography": "<i>Federico de Madrazo. Epistolario</i>, vol.1, 1994"
     },
