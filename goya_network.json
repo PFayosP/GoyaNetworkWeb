@@ -5227,6 +5227,33 @@
       "added": "2025-09-29"
     },
     {
+      "id": "Louis Daguerre",
+      "label": "Daguerre",
+      "full name": "Louis Jacques Mandé Daguerre",
+      "life dates": "1787-1851", 
+      "nationality": "French",
+      "born in": "Cormeille-en-Parisis",
+      "dies in": "Bry-sur-Marne",
+      "profession": "painter, photographer",
+      "parents": "Louis Jacques Daguerre and Antoinette Hauterre",
+      "author of": [
+        "Photography: <i>L'atelier de l'artiste</i>, daguerrotype, 1837.",
+        "Essays: <i>Historique et description du daguerréotype et du diorama</i>, 1839.",
+        "Painting: <i>Effet de brouillard et de neige à travers une colonnade gothique en ruines</i> (1826); <i>Le Campo Santo de Pise</i> (1834-39).",
+        "Illustrations: collaboration in Baron Taylor's <i>Voyages pittoresques et romantiques dans l'ancienne France</i>."
+      ],
+      "decorations/awards": "Officier de la Légion d'honneur (1839)",
+      "married to": "Louise Georgina Smith",
+      "masters": "Pierre Prévost; Ignazio Degotti",
+      "students": "Philippe Rondé (painter); Jean Nicolas Truchelut (photographer)",
+      "member of": "Académie bavaroise des sciences",
+      "portrayed by": "Jean-Baptiste Sabatier-Blot, photograph, 1844; Charles-Romain Capellaro, bronze bust, 1883; Mathieu-Meusnier, marble bust, 1883; Émile Soldi, <i>Nicéphore Niepce et Louis Daguerre</i>, medal, 1889",
+      "websites": "[BNE](https://datos.bne.es/persona/XX1263095.html)",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Daguerre.jpg",
+      "image source": "photograph by Jean-Baptiste Sabatier-Blot",
+      "added": "2025-11-30"
+    },
+    {
       "id": "Asensio Julià",
       "label": "A. Julià",
       "full name": "Asensio Julià Alvarrachi",
@@ -5672,6 +5699,51 @@
       "to": "Mariano Salvador Maella",
       "connection_level": "direct",
       "relationship type": "master-student"
+    },
+    {
+      "from": "Federico de Madrazo",
+      "to": "Louis Daguerre",
+      "connection_level": "direct",
+      "relationship type": "friends",
+      "know each other since": "1837",
+      "mentions": [
+        "1836 (no date) ([Madrid]-Sevilla) (letter from Federico de Madrazo to Adrien Dauzats): Madrazo mentions that he had to 'tomar el fusil' (enlist in the army), as did Eugenio Ochoa, Santiago Masarnau and Daguerre (INHA aut. 1327).",
+        "1837, 6 Sept, Bordeaux (letter to José de Madrazo): during Federico's trip to Paris; he has sent a letter to Eugenio Ochoa via Daguerre (then in Madrid?) (<i>Epistolario</i>, 1994, no.7, p.22).",
+        "1839, 25 Jan, Paris (letter to José de Madrazo): Federico talks about the <i>Daguerretipe</i> and the reaction from the public and from painters such as Paul Delaroche. He also says that this new invention is the end for landscape and still-life painters: '¡Qué cosas tan hermosas se pudieran hacer en Toledo, y en toda España!, si consigue Daguerre el sacar los colores, cosa en que se está ocupando hace mucho tiempo. Dígole a V. que los pintores de países y de género se pueden ir a cardar cebollinos' (<i>Epistolario</i>, 1994, no.71, p.188)."
+      ],
+      "bibliography": "<i>Federico de Madrazo. Epistolario</i>, vol.1, 1994",
+      "archives": "INHA"
+    },
+    {
+      "from": "Paul Delaroche",
+      "to": "Louis Daguerre",
+      "connection_level": "direct?",
+      "mentions": "in a letter to José de Madrazo, Federico de Madrazo talks about the new invention of the <i>Daguerretipe</i>: 'Dice P. Delaroche que este descubrimiento es muy útil para lo pintores para aprender bien a modelar los objetos y a dar a cada cosa su justo relieve y valor. Y lo más particular de este descubrimiento es el cómo se hace para que la luz no influya en él después de sacado de la cámara oscura' (<i>Epistolario</i>, 1994, no.71, p.188).",
+      "bibliography": "<i>Federico de Madrazo. Epistolario</i>, vol.1, 1994"
+    },
+    {
+      "from": "Eugenio Ochoa",
+      "to": "Louis Daguerre",
+      "connection_level": "direct",
+      "relationship type": "friends?",
+      "mentions": "1837, 6 Sept, Bordeaux (letter from Federico de Madrazo to José de Madrazo): during Federico's trip to Paris; he has sent a letter to  Ochoa via Daguerre (then in Madrid?) (<i>Epistolario</i>, 1994, no.7, p.22)",
+      "bibliography": "<i>Federico de Madrazo. Epistolario</i>, vol.1, 1994"
+    },
+    {
+      "from": "José de Madrazo",
+      "to": "Louis Daguerre",
+      "connection_level": "direct",
+      "relationship type": "friends",
+      "know each other since": "at least 1837",
+      "mentions": "1837, 6 Sept, Bordeaux (letter from Federico de Madrazo to José de Madrazo): during Federico's trip to Paris; he has sent a letter to  Ochoa via Daguerre (then in Madrid?) (<i>Epistolario</i>, 1994, no.7, p.22)",
+      "bibliography": "<i>Federico de Madrazo. Epistolario</i>, vol.1, 1994"
+    },
+    {
+      "from": "Baron Taylor",
+      "to": "Louis Daguerre",
+      "connection_level": "direct",
+      "relationship type": "colleagues",
+      "collaborations": "Daguerre produces illustrations for Taylor's <i>Voyages pittoresques et romantiques dans l'ancienne France</i>"
     },
     {
       "from": "Laureano Potenciano",
