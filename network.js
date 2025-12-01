@@ -503,16 +503,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     });
 
-    // Llamada a buildNewInList(data) — inserta esto donde llamas a handleInitialHash() / loadFullImages()
-    // En tu archivo ya existe un setTimeout que hace handleInitialHash() y loadFullImages(); añade buildNewInList(data) allí.
-    // Ejemplo (edita la llamada existente para incluir buildNewInList):
-    /*
-    setTimeout(() => {
-      handleInitialHash();
-      loadFullImages();
-      buildNewInList(data); // <-- nueva llamada
-    }, 500);
-    */
+    // Construir la lista inicial de “New in”
+    buildNewInList(data);
 
     // ---- MEMBERS LIST: manual overrides (edit these if needed) ----
     // 1) Para nombres completos donde quieras forzar el apellido clave (usa la grafía exacta)
