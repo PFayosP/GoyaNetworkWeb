@@ -5254,6 +5254,30 @@
       "added": "2025-11-30"
     },
     {
+      "id": "Ramón de Mesonero Romanos",
+      "label": "Mesonero R.",
+      "pseudonyms": "El Curioso Parlante",
+      "life dates": "1803-1882", 
+      "nationality": "Spanish",
+      "born in": "Madrid",
+      "dies in": "Madrid",
+      "profession": "writer, journalist, historian",
+      "member of": "Real Academia Española: académico honorario (1838) and miembro de número (1847)",
+      "author of": "<i>Manual de Madrid: descripción de la corte y de la villa</i> (1831); <i>Recuerdos de viaje por Francia y Bélgica en 1840 y 1841</i> (1841; reedited 1881); Mesonero Romanos, <i>Memorias de un setentón, natural y vecino de Madrid</i>, 1880.",
+      "founder of": "<i>Semanario pintoresco español</i> (1836)",
+      "in Paris": [
+        "1833-1834: he wrote a diary, partially published as <i>Fragmentos de un diario de viaje</i>.",
+        "1840-1841: he witnesses the translation of Napoleon's ashes."
+      ],
+      "portrayed by": "Esquivel, <i>Los poetas contemporáneos</i>, 1846, oil painting (collective portrait); Víctor Manzano y Mejorada, oil painting, 1850; Casado del Alisal, oil painting, Ateneo de Madrid; Cilla, caricature, <i>Madrid Cómico</i>, 1880",
+      "influenced by": "Leandro Fernández de Moratín; Bartolomé José Gallardo; Sebastián de Miñano",
+      "writes in": "<i>Cartas Españolas</i>; <i>Semanario pintoresco español</i>; <i>Diario de Madrid</i>",
+      "military activity": "during the Trienio Liberal (1820-23) he enlisted as <i>miliciano nacional</i>",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Mesonero_Romanos.jpg",
+      "image source": "Víctor Manzano y Mejorada, oil painting, 1850",
+      "added": "2025-11-30"
+    },
+    {
       "id": "Asensio Julià",
       "label": "A. Julià",
       "full name": "Asensio Julià Alvarrachi",
@@ -5699,6 +5723,61 @@
       "to": "Mariano Salvador Maella",
       "connection_level": "direct",
       "relationship type": "master-student"
+    },
+    {
+      "from": "Leandro Fernández de Moratín",
+      "to": "Ramón de Mesonero Romanos",
+      "connection_level": "seconary?",
+      "relationship type": "Mesonero admired Moratín's work"
+    },
+    {
+      "from": "Louis Daguerre",
+      "to": "Ramón de Mesonero Romanos",
+      "connection_level": "seconary?",
+      "interactions": "in 1837 Mesonero presented to his public Daguerre's methods: the <i>pantógrafo</i>, <i>diágrafo</i> and the <i>torno de retrato</i>, useful to copy <i>bajorelieves</i> (Afinoguénova 2002, p.136).",
+      "bibliography": "Afinoguénova 2002"
+    },
+    {
+      "from": "Louis Daguerre",
+      "to": "Ramón de Mesonero Romanos",
+      "connection_level": "seconary?",
+      "mentions": "Mesonero mentioned Sand (Romero Tobar 1997, p.225)",
+      "bibliography": "Romero Tobar 1997"
+    },
+    {
+      "from": "José de Espronceda",
+      "to": "Ramón de Mesonero Romanos",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "they share": "they both attended the tertulia <i>El Parnasillo</i>"
+    },
+    {
+      "from": "Mariano José Larra",
+      "to": "Ramón de Mesonero Romanos",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "they share": "they both attended the tertulia <i>El Parnasillo</i>"
+    },
+    {
+      "from": "Valentín Carderera",
+      "to": "Ramón de Mesonero Romanos",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; friends",
+      "bibliography": "Lanzarote Guiral 2016; Romero Tobar 1997"
+    },
+    {
+      "from": "Victor Hugo",
+      "to": "Ramón de Mesonero Romanos",
+      "connection_level": "seconary?",
+      "mentions": "Mesonero mentions Hugo's poem commemorating the translation of Napoleon's ashes (known as <i>Le retour des cendres</i>), an event that he witnessed (15 Oct 1840)",
+      "bibliography": "Lanzarote Guiral 2016; Romero Tobar 1997"
+    },
+    {
+      "from": "Théophile Gautier",
+      "to": "Ramón de Mesonero Romanos",
+      "connection_level": "seconary?",
+      "mentions": "Mesonero criticises Gautier for 'offering an image of the country full of all sorts of Romantic stereotypes' (García Melero 2002, p.186)",
+      "bibliography": "Lanzarote Guiral 2016;García Melero 2002; Romero Tobar 1997"
     },
     {
       "from": "Federico de Madrazo",
