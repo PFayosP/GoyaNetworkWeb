@@ -884,9 +884,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     // 💥 Cargar las imágenes ANTES de apagar la física
     loadFullImages();
 
-    // 🔁 Ahora sí: detener la física
-    network.setOptions({ physics: { enabled: false } });
-
     function highlightNeighborhood(nodeId) {
       const connectedEdges = edges.get({
         filter: edge => edge.from === nodeId || edge.to === nodeId
