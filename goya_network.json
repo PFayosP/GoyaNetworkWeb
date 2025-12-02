@@ -7785,12 +7785,12 @@
       "to": "José de Madrazo",
       "connection_level": "direct",
       "relationship type": "relatives; father-son",
-      "correspondence": "from 1834",
+      "correspondence": "from 1834 (Díez 1994)",
       "portraits": [
         "Federico de Madrazo by José de Madrazo, 1833, [Hispanic Society A278](https://hispanicsociety.emuseum.com/objects/2787/federico-de-madrazo-y-kuntz;jsessionid=482AACCDA830CE79328BDC311E568EA1?ctx=9989e28b-9cb7-45f4-864f-25fd40bdcf0c&idx=7).",
         "José de Madrazo by Federico de Madrazo, c.1832, lost in a fire in 1935."
       ],
-      "bibliography": "<i>Federico de Madrazo. Epistolario</i>, vol.1, 1994, Museo del Prado."
+      "bibliography": "Díez (ed.), <i>Federico de Madrazo. Epistolario</i>, vol.1, 1994, Museo del Prado."
     },
     {
       "from": "Federico de Madrazo",
@@ -9012,7 +9012,11 @@
         "1838-VI-11, Madrazo to Dauzats (INHA): mention of a suit of armour and a mannequin for a painting.",
         "1839-VI-25, Madrazo to Dauzats (INHA): mention of a visit to the Louvre."
       ],
-        "bibliography": "Fayos Pérez 2026 (upcoming); Fayos Pérez 2024; Guinard 1967-A; Guinard 1967-B."
+      "interactions": [
+        "1837, 13 Oct: as soon as he arrives in Paris, Madrazo goes see Santiago Masarnau, Adrien Dauzats and Baron Taylor (Díez 1994, p.32).",
+        "1837, 18 Oct: on 17 Oct Madrazo goes to Dauzats to the Louvre. They see paintings by Gros, Letiers, Guérin, Géricault (<i>Méduse</i>) (Díez 1994, p.34)."
+      ],
+      "bibliography": "Fayos Pérez 2026 (upcoming); Fayos Pérez 2024; Díez 1994; Guinard 1967-A; Guinard 1967-B."
     },
     {
       "from": "Federico de Madrazo",
@@ -9020,7 +9024,12 @@
       "connection_level": "direct",
       "relationship type": "friends",
       "know each other since": "1833, during Federico's 1st trip to Paris (with Vicente Masarnau). Federico also meets Adrien Dauzats",
-      "collaborations": "c.1835-1837 the Madrazo family is involved in Taylor's acquisition of Spanish paintings for the Galerie espagnole (1838-48)"
+      "collaborations": "c.1835-1837 the Madrazo family is involved in Taylor's acquisition of Spanish paintings for the Galerie espagnole (1838-48)",
+      "interactions": [
+        "1837, 13 Oct: as soon as he arrives in Paris, Madrazo goes see Santiago Masarnau, Adrien Dauzats and Baron Taylor (Díez 1994, p.32).",
+        "1837, 27 Oct: Madrazo goes with Taylor to the Louvre to see how the hang the new Spanish paintings. 'El otro día, antes de ayer, estuve con Mr. Taylor a ver los cuadros españoles que ha traido. Ya están acabándose de colocar. Habrá cuatro o cinco salas grandes en el Louvre de escuela española' (Díez 1994, p.39) 'Parece que al Rey le gustan mucho los cuadros que ha traido Mr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver como se colocan' (ibid., p.40)."
+      ],
+      "bibliography": "Díez 1994."
     },
     {
       "from": "Mariano Fortuny y Marsal",
@@ -9194,7 +9203,9 @@
       "from": "Baron Taylor",
       "to": "Louis Philippe I",
       "connection_level": "direct",
-      "employment/patronage": "Baron Taylor was in charge of the acquisition of paintings c.1835-37 for the Galerie espagnole (1838-48), with the collaboration of Adrien Dauzats, Pharamond Blanchard, and partly via Javier Goya and Federico de Madrazo"
+      "employment/patronage": "Baron Taylor was in charge of the acquisition of paintings c.1835-37 for the Galerie espagnole (1838-48), with the collaboration of Adrien Dauzats, Pharamond Blanchard, and partly via Javier Goya and Federico de Madrazo",
+      "link to Goya's work": "in a letter from Federico de Madrazo to José de Madrazo on 27 Oct 1837, he writes that the King didn't like Goya's paintings brought by Taylor: 'Parece que al Rey le gustan mucho los cuadros que ha traido Mr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver como se colocan' (Díez 1994, p.40).",
+      "bibliography": "Díez 1994"
     },
     {
       "from": "Adrien Dauzats",
@@ -9221,9 +9232,12 @@
       "to": "Louis Philippe I",
       "connection_level": "direct",
       "relationship type": "bussiness/art dealing; patronage",
-      "link to Goya's work": "Louis-Philippe commissioned Baron Taylor and Adrien Dauzats to acquire the paintings c.1835-37 for the Galerie espagnole (1838-48), partly via the Madrazo family",
+      "link to Goya's work": [
+        "Louis-Philippe commissioned Baron Taylor and Adrien Dauzats to acquire the paintings c.1835-37 for the Galerie espagnole (1838-48), partly via the Madrazo family",
+        "In a letter from Federico de Madrazo to José de Madrazo on 27 Oct 1837, he writes that the King didn't like Goya's paintings brought by Taylor: 'Parece que al Rey le gustan mucho los cuadros que ha traido Mr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver como se colocan' (Díez 1994, p.40)"
+      ],
       "patronage": "1838 Louis-Philippe commissioned Madrazo with the painting <i>Godofredo de Bouillon</i> for Versailles",
-      "bibliography": "Fayos Pérez 2024"
+      "bibliography": "Fayos Pérez 2024; Díez 1994"
     },
     {
       "from": "Federico de Madrazo",
@@ -10304,6 +10318,18 @@
       "connection_level": "direct",
       "mentions": "Yriarte acknowledges Carderera, Zarco del Valle, Fco Zapater and Lefort ('nous ont aidé de leurs lumières et de leurs documents), 1867, Avant-propos",
       "relationship type": "acquaintances"
+    },
+    {
+      "from": "Federico de Madrazo",
+      "to": "Charles Yriarte",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "at least 1866",
+      "interactions": [
+        "1866, 23 Aug (Madrid): Madrazo wrote in his diary that he had lunch with Yriarte and then visited the RABASF and Valentín Carderera's house (AMNP Agenda-diario de Federico de Madrazo 1866, sig. AP:17, no. exp. 10).",
+        "1866, 13 Sept (Madrid): Madrazo notes that [Yriarte] had passed by his house to say goodbye before returning to Paris (AMNP Agenda-diario de Federico de Madrazo 1866, sig. AP:17, no. exp. 10)."
+      ],
+      "archives": "AMNP"
     },
     {
       "from": "Charles Yriarte",
