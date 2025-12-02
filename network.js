@@ -885,69 +885,75 @@ document.addEventListener('DOMContentLoaded', async function () {
     loadFullImages();
 
     function highlightNeighborhood(nodeId) {
+      // 1) Obtener edges conectados
       const connectedEdges = edges.get({
         filter: edge => edge.from === nodeId || edge.to === nodeId
       });
-      
+
+      // 2) Conjunto de nodos conectados (vecinos directos)
       const connectedNodes = new Set();
       connectedEdges.forEach(edge => {
         connectedNodes.add(edge.from === nodeId ? edge.to : edge.from);
       });
 
-      const allEdgeIds = edges.getIds();
-      const connectedEdgeIds = new Set(connectedEdges.map(e => e.id));
-      // Guarda los edges conectados como "activos" para priorizar el clic
-      activeEdgeIds = new Set(connectedEdgeIds);
-      
-      const fadedEdges = allEdgeIds.filter(id => !connectedEdgeIds.has(id)).map(id => ({
-        id,
-        color: { color: 'rgba(200,200,200,0.3)' },
-        width: 1
-      }));
-
+      // 3) Listas de ids
       const allNodeIds = nodes.getIds();
-      const nonConnected = allNodeIds.filter(id => id !== nodeId && !connectedNodes.has(id));
-      nodes.update(nonConnected.map(id => ({ id, opacity: 0.3 })));
+      const nonConnected = allNodeIds.filter(
+        id => id !== nodeId && !connectedNodes.has(id)
+      );
 
-      // Atenuar edges no conectados
-      const edgeIds = edges.getIds();
-      edges.update(edgeIds.map(id => {
-        const isConnected = connectedEdgeIds.has(id);
-        return {
+      const allEdges = edges.get();
+      const connectedEdgeIds = new Set(connectedEdges.map(e => e.id));
+      activeEdgeIds = new Set(connectedEdgeIds); // por si lo usas en otros sitios
+
+      // 4) Actualizar NODOS en un solo batch
+      const nodeUpdates = [];
+
+      // Nodo clicado: rojo
+      nodeUpdates.push({
+        id: nodeId,
+        color: { border: 'red' },
+        borderWidth: 4,
+        opacity: 1
+      });
+
+      // Vecinos: naranja
+      connectedNodes.forEach(id => {
+        nodeUpdates.push({
           id,
-          color: { color: isConnected ? 'red' : 'rgba(200,200,200,0.05)' },
-          width: isConnected ? 3 : 0.5
-        };
-      }));
-      // 🔥 Bring connected edges visually to the front and make them easier to click
-      connectedEdges.forEach(edge => {
-        edges.update({
-          id: edge.id,
-          width: 6, // thicker, easier to click
-          smooth: { type: 'continuous' },
-          color: { color: 'rgba(255, 0, 0, 0.9)' },
-          chosen: { edge: true, label: true } // ensures they render above others
+          color: { border: '#ffa500' },
+          borderWidth: 3,
+          opacity: 1
         });
       });
 
-      // Batch updates
-      const updates = [
-        { id: nodeId, color: { border: 'red' }, borderWidth: 4 }
-      ];
-      
-      // Highlight connected nodes
-      Array.from(connectedNodes).forEach(id => {
-        updates.push({ id, color: { border: '#ffa500' }, borderWidth: 3 });
+      // No conectados: atenuados (pero visibles)
+      nonConnected.forEach(id => {
+        nodeUpdates.push({
+          id,
+          opacity: 0.4
+        });
       });
-    
-      const nonConnectedUpdates = nonConnected.map(id => ({
-        id,
-        opacity: 0.3
-      }));
-      
-      nodes.update(updates);
-      nodes.update(nonConnectedUpdates);
-      
+
+      nodes.update(nodeUpdates);
+
+      // 5) Actualizar EDGES en un solo batch
+      const edgeUpdates = allEdges.map(edge => {
+        const isConnected = connectedEdgeIds.has(edge.id);
+        return {
+          id: edge.id,
+          color: {
+            color: isConnected
+              ? 'rgba(255, 0, 0, 0.9)'    // rojo fuerte para edges del vecindario
+              : 'rgba(200, 200, 200, 0.15)' // un poco más atenuado el resto
+          },
+          width: isConnected ? 3 : 1.5
+        };
+      });
+
+      edges.update(edgeUpdates);
+
+      // 6) Guardar estado para clearHighlights()
       lastHighlightedNode = nodeId;
       lastHighlightedNodes = Array.from(connectedNodes);
       lastNonHighlightedNodes = nonConnected;
