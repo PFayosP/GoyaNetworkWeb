@@ -5438,15 +5438,23 @@
       "born in": "La Habana",
       "dies in": "Madrid",
       "profession": "military member, engineer, writer",
-      "military activity": "Peninsular War",
+      "children": "Manuel Remón Zarco del Valle y Espinosa de los Monteros (1833-1922): he worked for Isabel II, Alfonso XII and Alfonso XIII, and was in exile in Paris with the royal family after the 1868 Revolution in Spain",
+      "military activity": "Peninsular War: he was made a prisoner in France from 1812 to 1814 (RAH)",
       "studies in": "Academia de Ingenieros de Alcalá de Henares",
+      "in France": [
+        "1812-1814 as a prisoner",
+        "1815 as a soldier",
+        "1848-49 he was appointed with the important mission to achieve recognition for the reign of Isabel II by foreign governments, which he did in Paris, Berlin, Vienna and St Petersburg"
+      ],
+      "political views": "liberal (active during the Trienio Liberal 1820-23 in scientific and cultural matters)",
       "works as": "Embajador de España en el Reino Unido de Gran Bretaña e Irlanda (1822); Capitán general de Aragón (1822-1823); Ministro de Marina de España (1833-1834); Ministro de la Guerra (1833-1834); Senador del Reino por Provincia de Málaga (1838-1845); Senador de España vitalicio de la Restauración (1845-1866); Académico de la Real Academia de Bellas Artes de San Fernando (1846-1866); Académico de la Real Academia de Ciencias Exactas, Físicas y Naturales (1847-1866); Académico de la Real Academia de la Historia (1847-1866); Presidente de la Real Academia de Ciencias Exactas, Físicas y Naturales (1848-1866)",
       "correspondence": "Karl Justi, William Stirling-Maxwell, Paul Lefort. All of them wrote about Velázquez, Murillo and Goya, and Zarco provided them with information, documents and bibliography (Elena Santiago, <i>Papeles varios impresos y manuscritos con noticias y documentos sobre Velázquez, reunidos por Don Manuel Remón Zarco del Valle</i>, BNE).",
-      "member of": "Real Academia de la Historia; Real Academia de Bellas Artes de la Purísima Concepción; Sociedad geológica de Francia; Real Academia de Ciencias y Artes de Barcelona; Real Academia de Ciencias Exactas, Físicas y Naturales (1848-1866)",
+      "member of": "Real Academia de la Historia; Real Academia de Bellas Artes de la Purísima Concepción; Société géologique (France); Real Academia de Ciencias y Artes de Barcelona; Real Academia de Ciencias Exactas, Físicas y Naturales (1848-1866)",
       "decorations/awards": "Gran Cruz de la Orden de Isabel la Católica; Gran Cruz de la Orden de Carlos III (1834); Caballero de la Orden del Toisón de Oro (1860)",
-      "websites": "[Prado, profile by Pierre Géal](https://www.museodelprado.es/aprende/enciclopedia/voz/davillier-charles/7b6b7228-20a4-4dd9-b1a7-faa6c03377af)",
+      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/38430-antonio-remon-zarco-del-valle-y-huet)",
+      "portrayed by": "unknown painter, oil painting, Real Academia de Ciencias Exactas, Físicas y Naturales",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Zarco_del_Valle.jpg",
-      "image source": "Atelier Nadar, photograph",
+      "image source": "unknown, oil painting",
       "bibliography": "Wilson-Bareau & Mena Marqués 1993, pp.366, 367, 386",
       "archives": "BNE (Real Biblioteca II/4056)",
       "added": "2025-12-07"
@@ -10085,6 +10093,13 @@
         "1867, 11 Feb: letter from Brunet to Zarco (Bordeaux): 'en a aussi fait des photographies de douze sujets traités à fresque peints par Goya dans la maison qu'il occupait dans une faubourg de Madrid, maison qui va être démolie [Quinta del Sordo]'."
       ],
       "mentions": "Brunet mentions Zarco in his 1865 book on Goya"
+    },
+    {
+      "from": "Antonio Remón Zarco del Valle y Huet",
+      "to": "Isabel II",
+      "connection_level": "direct",
+      "relationship type": "employer-employee",
+      "interactions": "1848-49 he was appointed with the important mission to achieve recognition for the reign of Isabel II by foreign governments, which he did in Paris, Berlin, Vienna and St Petersburg"
     },
     {
       "from": "Antonio Remón Zarco del Valle y Huet",
