@@ -36,6 +36,7 @@
         "2002 Madrid (Prado) / NGA (Washington): <i>Goya: Images of Women</i> (Calvo Serraller & Tomlinson).",
         "2008 Madrid (Prado): <i>Goya en tiempos de guerra</i> (Mena Marqués).",
         "2013 London (Courtauld): <i>Goya: The Witches and Old Women Album</i> (Wilson-Bareau).",
+        "2015-16 London (NG): <i>Goya: The Portraits</i> (Bray).",
         "2019 Madrid (Prado): <i>Goya: Dibujos. 'Solo la libertad me sobra'</i> (Mena Marqués & Matilla).",
         "2019 New York (Prado): <i>Goya's Graphic Imagination</i> (McDonald).",
         "2021 Basel (Beyeler): retrospective exhibition."
@@ -407,7 +408,10 @@
         "Inspecteur général des Beaux-Arts (1835): Galerie espagnole.",
         "Senator (1869)"
         ],
-      "author of": "<i>Voyage pittoresque en Espagne, en Portugal et sur la côte d'Afrique, de Tanger a Tétuan</i> (1826); <i>Voyages pittoresques et romantiques dans l'ancienne France</i>, in collaboration with Charles Nodier and Alphonse de Cailleux (started in 1818; published 1820-1878)",
+      "author of": [
+        "1826 <i>Voyage pittoresque en Espagne, en Portugal et sur la côte d'Afrique, de Tanger a Tétuan</i>.", 
+        "1818; 1820-1878 <i>Voyages pittoresques et romantiques dans l'ancienne France</i>, in collaboration with Charles Nodier and Alphonse de Cailleux. Illustrations were made by Adrien Dauzats, Eugène Delacroix, Géricault, Bonington, Horace Vernet, Jean-Auguste-Dominique Ingres and E. Isabey, among others."
+      ],
       "founder of": [
         "1844 Association des artistes with Adrien Dauzats, now called [Fondation Taylor](https://www.taylor.fr/).",
         "Societés des peintres et sculpteurs; des musiciens; des inventeurs industriels; des professeurs (Challamel 1885, p.336)."
@@ -435,35 +439,41 @@
       "born in": "Bordeaux",
       "dies in": "Paris",
       "studies in": "École nationale supérieure d'Arts et Métiers (Angers 1819); Bordeaux École de Dessin",
-      "masters": "Michel-Julien Gué; Pierre Lacour (fils?) (see Tinterow 2003, p.75); he studies decorative painting with his father at the Grand-Théâtre de Bordeaux",
+      "masters": "Pierre Lacour or Pierre Lacour fils (see Tinterow 2003, p.75); Michel-Julien Gué (from c.1825); he studies decorative painting with his father at the Grand-Théâtre de Bordeaux",
+      "works in": [
+        "Theatre decoration: 1821-23 Grand-Théâtre of Bordeaux under Olliver; Paris, Théâtre des Italiens with Pharamond Blanchard, Mathis and Desroches (Burty 1869, catalogue of Dauzats sale, p.IV)."
+      ],
       "nationality": "French",
+      "mentions": "Philippe Burty says about Dauzats: 'Personne, après Eugène Delacroix, n'a saisi plus juste la rêverie farouche ou l'indifférence fataliste du Mahométan. On retrouve au même degré ces qualités d'observation intelligente dans les études de personnages faites, plus tard, en Portugal et en Espagne. La série des curés et des sacristains madrilènes [...] C'est le dernier chapitre de l'histoire monacale de l'Espagne' (1869, p.VII).",
       "lives in": "Bordeaux; Paris (from 1823)",
       "profession": "painter, engraver, illustrator, lithographer",
-      "trips": "Egypt, Syria, Mount Sinai and Palestine with Baron Taylor (1829); Egypt and Middle East with Alexandre Dumas père (1830); Spain (1833; 1835, 1837); Portugal; Algeria with the Duke of Orléans (1839); Tanger; Ottoman Empire.",
+      "trips": "Egypt, Syria, Mount Sinai and Palestine with Baron Taylor (1829); Egypt and Middle East with Alexandre Dumas père (1830); Spain (1833; 1835, 1837); Portugal; Algeria with the Duke of Orléans (1839); Sicity; Germany; Belgium; England (Universal Exhibition 1862: French artists); Tanger; Ottoman Empire.",
+      "interest in Spanish art": "Dauzats made countless drawings during his trips to Spain, mostly watercolour views of different cities, including Zaragoza, Córdoba, Málaga, Cádiz, Toledo, Sevilla, Xàtiva, Valencia, Burgos and Barcelona, and ecclesiastic robes.",
       "in Spain": [
         "1832 with Baron Taylor",
         "1833 June-July with Baron Taylor",
         "1835 Oct-1837 Oct: assists Baron Taylor in the acquisition of artworks for the Galerie espagnole (1838-48). He meets Pharamond Blanchard, who introduces him to the Madrazo family. Meets prominent Spanish artists and develops an interest in Spanish art (see Tinterow 2003, p.180). He produces 3 notebooks of notes and drawings during this trip (Carnet de voyage en Espagne); see Archives."
         ],
       "author of": [
-        "1820-63 illustrations for Baron Taylor's <i>Voyages Pittoresques et Romantiques de l'ancienne France</i>",
-        "1826-32 illustrations for Baron Taylor's <i>Voyage Pittoresque en Espagne, en Portugal, et sur la côte d'Afrique, de Tanger à Tetouan</i>",
-        "Probable author: 1834 article in <i>Le Magasin pittoresque</i>? (mentions Prado commentaries, in the possession of Javier Goya until 1861) (Guinard 1967-B, p.323)",
-        "1836 <i>Vue de Malaga depuis le nord</i> (drawing)",
-        "1838 co-autor with Alexandre Dumas père of <i>Quinze Jours au Sinai</i>",
-        "1839 illustrations for Baron Taylor's <i>La Syrie, I'Egypte, la Palestine et la Judée</i>",
-        "1839 illustrations (with Pharamond Blanchard) for <i>San Juan de Ulúa, ou Relation de l'expédition française au Mexique</i>",
+        "1820-63 illustrations for <i>Voyages Pittoresques et Romantiques de l'ancienne France</i>, edited by Baron Taylor in collaboration with Charles Nodier and Alphonse de Cailleux; such as <i>Maison des Bains, Bagnoles</i>, 1834. See the exhibition <i>La Fabrique du Romantisme, Charles Nodier et les Voyages pittoresques</i>, Musée de la vie romantique, 2014-2015.",
+        "1826-32 illustrations for Baron Taylor's <i>Voyage Pittoresque en Espagne, en Portugal, et sur la côte d'Afrique, de Tanger à Tetouan</i>.",
+        "Probable author: 1834 article in <i>Le Magasin pittoresque</i>? (mentions Prado commentaries, in the possession of Javier Goya until 1861) (Guinard 1967-B, p.323).",
+        "1836 <i>Vue de Malaga depuis le nord</i> (drawing).",
+        "1838 co-autor with Alexandre Dumas père of <i>Quinze Jours au Sinai</i>.",
+        "1839 illustrations for Baron Taylor's <i>La Syrie, I'Egypte, la Palestine et la Judée</i>.",
+        "1839 illustrations (with Pharamond Blanchard) for <i>San Juan de Ulúa, ou Relation de l'expédition française au Mexique</i>.",
         "1868 commissioned by Madame Aldema with four illustrations of characters from the Arabian folktale <i>One Thousand and One Nights</i>. He died before being able to finish and there was a lawsuit."
         ],
-      "member of": "the Société archéologique du Midi de la France (from 1831)",
+      "member of": "the Société archéologique du Midi de la France (from 1831); Société des Amis des Arts de Bordeaux (convincing Eugène Delacroix to participate); Société des ARtistes Peintres, Sculpteurs et Graveurs (from 1844).",
       "founder of": "1844 Association des artistes with Baron Taylor, now called [Fondation Taylor](https://www.taylor.fr/); becomes its Vicepresident (1846) and President (1850)",
-      "portrayed by": "Jean Pierre Dantan (Dantan Jeune), 1834, sculpture (<i>Portrait sérieux</i>), Musée Carnavalet S1194; Federico de Madrazo, 1837, Musée National du Château de Versailles; Carjat & Cie., 1868, photograph (Getty); Chenu, 1868, lithograph, <i>L'Illustration</i>; Loÿs Delteil (after Claude-Marie Dubufe), print, April 1896 (posthumous), <i>L'Artiste</i>, vol.XI",
+      "portrayed by": "Jean Pierre Dantan (Dantan Jeune), 1834, sculpture (<i>Portrait sérieux</i>), Musée Carnavalet S1194; Federico de Madrazo, 1837, Musée National du Château de Versailles; Nadar, photograph, 1855, [Gallica](https://gallica.bnf.fr/ark:/12148/btv1b10535619d.r=Dauzats%201869?rk=64378;0), and 1854-68, [Gallica](https://gallica.bnf.fr/ark:/12148/btv1b10535615m.r=Dauzats%201869?rk=42918;4); Carjat & Cie., 1868, photograph (Getty); Chenu, 1868, lithograph, <i>L'Illustration</i>; Loÿs Delteil (after Claude-Marie Dubufe), print, April 1896 (posthumous), <i>L'Artiste</i>, vol.XI",
       "decorations/awards": "Chevalier de la Légion d'honneur (1837); Orden de Carlos III (1856)",
       "exhibitions": [
-        "Paris Salon: from 1831.",
+        "Paris Salon: from 1831 to 1867.",
         "1862 organises the participation of French artists at the Universal Exhibition in London."
       ],
-      "sales": "Hôtel Drouot, February 1869: sketchbooks, Spanish masterpieces and an extensive library (Tinterow 2003, p.395)",
+      "sales": "Hôtel Drouot, February 1869 (L.653): <i>Catalogue des tableaux, études, esquisses peintes... laissés par A. Dauzats</i>; Sketchbooks, Spanish masterpieces and an extensive library (see Tinterow 2003, p.395). [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k1240190h).",
+      "art collection": "included Eugène Delacroix's <i>Hésiode et la Muse</i>",
       "correspondence": [
         "Bibliothèque historique de la Ville de Paris, [4-MS-3047](https://bibliotheques-specialisees.paris.fr/ark:/73873/FRCGMNOV-751045102-FG02C/A2002740): 12 letters 1860-1862 and non-dated.",
         "Schopp 1993."
@@ -472,7 +482,7 @@
         "Bibliothèque historique de la Ville de Paris",
         "INHA: <i>Carnet de voyage en Espagne d'Adrien Dauzats: premier cahier, 1836-1837</i>, [INHA NUM MS 152 (1)](https://bibliotheque-numerique.inha.fr/collection/item/67877-carnet-de-voyage-en-espagne-d-adrien-dauzats-premier-cahier-1836-1837), <i>Deuxième cahier, 1837</i>, [INHA NUM MS 152 (2)](https://bibliotheque-numerique.inha.fr/collection/item/67886-carnet-de-voyage-en-espagne-d-adrien-dauzats-deuxieme-cahier-1837?offset=7), and <i>Troisième cahier, 1837</i>, [NUM MS 152 (3)](https://bibliotheque-numerique.inha.fr/collection/item/67885-carnet-de-voyage-en-espagne-d-adrien-dauzats-troisieme-cahier-1837?offset=1)."
       ],
-      "bibliography": "Tinterow 2003; Schopp 1993; Ghislaine Plessier, <i>Adrien Dauzats ou la Tentation de l'Orient</i>, exh. cat., Bordeaux, 1990; <i>Adrien Dauzats et les Voyages pittoresques et romantiques dans l'ancienne France du baron Taylor</i>, Fondation Taylor, 1990; Guinard 1967-B",
+      "bibliography": "Tinterow 2003; Schopp 1993; Ghislaine Plessier, <i>Adrien Dauzats ou la Tentation de l'Orient</i>, exh. cat., Bordeaux, 1990; <i>Adrien Dauzats et les Voyages pittoresques et romantiques dans l'ancienne France du baron Taylor</i>, Fondation Taylor, 1990; Guinard 1967-B; Henri Jouin 1897; Philippe Burty 1869, catalogue of the Dauzats sale",
       "websites": "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q970806",
@@ -9778,7 +9788,11 @@
       "to": "Philippe Burty",
       "connection_level": "direct",
       "relationship type": "colleagues; acquaintances",
-      "collaborations": "Burty and Dauzats catalogued Delacroix's drawings and albums (alongside Andrieu, Dutilleux and Schwiter)"
+      "collaborations": [
+        "Burty and Dauzats catalogued Delacroix's drawings and albums (alongside Andrieu, Dutilleux and Schwiter).",
+        "Burty wrote a biographical essay for the Dauzats sale, <i>Catalogue des Tableaux</i> (Vente Dauzats), 1-4 Feb 1869, Paris, Drouot (see Luxenberg 2008, pp.72, 91)."
+      ],
+      "bibliography": "Luxenberg 2008; Dauzats sale catalogue 1869 (microfiche copy at the Cabinet des Estampes, BnF), [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k1240190h)"
     },
     {
       "from": "Édouard Manet",
@@ -10569,6 +10583,13 @@
     },
     {
       "from": "Nadar",
+      "to": "Adrien Dauzats",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; portraitist-sitter",
+      "portraits": "Nadar's photograph of Dauzats, 1855, [Gallica](https://gallica.bnf.fr/ark:/12148/btv1b10535619d.r=Dauzats%201869?rk=64378;0), and 1854-68, [Gallica](https://gallica.bnf.fr/ark:/12148/btv1b10535615m.r=Dauzats%201869?rk=42918;4)" 
+    },
+    {
+      "from": "Nadar",
       "to": "Félix Bracquemond",
       "connection_level": "direct",
       "relationship type": "friends",
@@ -10852,7 +10873,7 @@
       "know each other since": "1823",
       "relationship type": "close friends",
       "collaborations": [
-        "c.1823 Dauzats makes illustrations for Baron Taylor's <i>Voyages pittoresques et romantiques dans l'ancienne France</i>.",
+        "c.1823-1834 Dauzats makes illustrations for <i>Voyages pittoresques et romantiques dans l'ancienne France</i>, edited by Baron Taylor in collaboration with Charles Nodier and Alphonse de Cailleux; such as <i>Maison des Bains, Bagnoles</i>, 1834. See the exhibition <i>La Fabrique du Romantisme, Charles Nodier et les Voyages pittoresques</i>, Musée de la vie romantique, 2014-2015.",
         "1835-37 travelled together to Spain to acquire artworks for the Galerie espagnole"
         ],
       "in Spain": "July 1833 (Guinard 1967-A, p.86); 1835-1837", 
@@ -10976,23 +10997,33 @@
       "from": "Adrien Dauzats",
       "to": "Pharamond Blanchard",
       "connection_level": "direct",
-      "relationship type": "colleagues",
-      "know each other since": "1835 (in Spain)"
+      "relationship type": "colleagues; friends",
+      "know each other since": "the early 1820s, working at the Théâtre des Italiens (according to Philippe Burty)",
+      "collaborations": [
+        "1835 trip to Spain (for Baron Taylor and Louis Philippe I).",
+        "1840 publication of <i>Relation de l'Expédition française au Mexique</i>."
+      ],
+      "bibliography": "Philippe Burty, <i>Catalogue des Tableaux</i> (Vente Dauzats), 1-4 Feb 1869, Paris, Drouot"
     },
     {
       "from": "Adrien Dauzats",
       "to": "Eugène Delacroix",
-      "relationship type": "friends",
-      "know each other since": "at least 1845",
+      "relationship type": "friends; colleagues; neighbours",
+      "know each other since": "at least 1844",
       "correspondence": [
         "1845 (circa): no.878 in the 1930 Delacroix exhibition (Huyghe); 'faisant partie d'un recueil de lettres envoyées au même destinataire. Delacroix exprime ses regrets de ne pouvoir remettre à Dauzats ses deux tableaux de Marc-Aurèle et du Doge. Il indique les accidents survenus à ses toiles' (Louvre, collection Moreau-Nélation) (Huyghe 1930, p.337).",
         "1846, 12 Aug: Delacroix asks Dauzats for Goya's lithographies ('Goya ou la mort, cher ami') (Delacroix - Joubin 1936, p.275)"
       ],
+      "they share": [
+        "Dauzats convinced Delacroix to become member of the Société des Amis des Arts de Bordeaux (Marques de collections.fr)",
+        "They were neighbours at the rue Notre-Dame-de-Lorette (from 1844)."
+      ],
       "mentions": "1856-X-10, Delacroix's journal: 'Funeral procession of poor Chassériau. I saw Dauzats, Diaz, and the young Moreau. I quite like him'.",
       "curiosities": "Delacroix named Dauzats the executor of his will (Mainer and Enguita 1999, p.128)",
-      "collaborations": "Delacroix asked Dauzats and Burty to catalogue his drawings and albums (which included Delacroix's copies after Goya's <i>Caprichos</i>)",
-      "artworks bought/sold": "the 1930 Delacroix exhibition mentiones the watercolour <i>La Muse inspirant Hésiode</i> as 'Legs d'Eug. Delacroix à M. Dauzats' (Huyghe 1930, no.392, pp.185-86), as well as <i>Étude d'intérieur marocain</i> 'Vente Delacroix 1864, Vente Dauzats 1869, Vente Chocquet 1899, Donation Moreau-Nélation' (no.405, p.200).",
-      "bibliography": "Huyghe 1930"
+      "collaborations": "Delacroix asked Dauzats and Philippe Burty to catalogue his drawings and albums (which included Delacroix's copies after Goya's <i>Caprichos</i>)",
+      "artworks bought/sold": "Dauzats owned Delacroix's watercolour <i>La Muse inspirant Hésiode</i>, mentioned in the 1930 Delacroix exh. cat. as 'Legs d'Eug. Delacroix à M. Dauzats' (Huyghe 1930, no.392, pp.185-86), as well as <i>Étude d'intérieur marocain</i> 'Vente Delacroix 1864, Vente Dauzats 1869, Vente Chocquet 1899, Donation Moreau-Nélation' (no.405, p.200).",
+      "bibliography": "Huyghe 1930",
+      "websites": "[Marques des collections](https://www.marquesdecollections.fr/FtDetail/be9750d0-4dc3-4641-860c-7ae82e4aa5b0)"
     },
     {
       "from": "Adrien Dauzats",
@@ -11037,14 +11068,16 @@
       "from": "Adrien Dauzats",
       "to": "Pierre Lacour",
       "connection_level": "direct",
-      "relationship type": "master-student? Was it Pierre Lacour fils? (Pierre Lacour père dies in 1814)"
+      "relationship type": "master-student? Was it Pierre Lacour fils? (Pierre Lacour père dies in 1814). 'Dauzats, après un court séjour à l'école d'Angers, suivit l'École de dessin de Bordeaux, dirigée par un vieil artiste, survivant du XVIIIe siècle, l'excellent et trop peu connu Lacour' (Burty 1869, p.IV).",
+      "bibliography": "Philippe Burty, catalogue of the Dauzats sale, 1869"
     },
     {
       "from": "Adrien Dauzats",
       "to": "Pierre Lacour fils",
       "connection_level": "direct",
       "relationship type": "master-student?",
-      "they met": "in 1824 in Bordeaux"
+      "they met": "in 1824 in Bordeaux",
+      "bibliography": "Philippe Burty, catalogue of the Dauzats sale, 1869"
     },
     {
       "from": "Adrien Dauzats",
@@ -11060,8 +11093,9 @@
       "from": "Adrien Dauzats",
       "to": "Charles Nodier",
       "connection_level": "direct",
-      "relationship type": "friends",
+      "relationship type": "friends; colleagues",
       "know each other since": "1823",
+      "collaborations": "c.1823-1834 Dauzats makes illustrations for <i>Voyages pittoresques et romantiques dans l'ancienne France</i>, edited by Baron Taylor in collaboration with Charles Nodier and Alphonse de Cailleux; such as <i>Maison des Bains, Bagnoles</i>, 1834. See the exhibition <i>La Fabrique du Romantisme, Charles Nodier et les Voyages pittoresques</i>, Musée de la vie romantique, 2014-2015.",
       "websites": "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)"
     },
     {
