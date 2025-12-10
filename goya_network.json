@@ -9363,7 +9363,8 @@
       "to": "Victor Hugo",
       "connection_level": "direct",
       "relationship type": "acquaintances",
-      "know each other since": "c.1837-1840"
+      "know each other since": "c.1837-1840",
+      "bibliography": "no.181 in the catalogue <i>Victor-Hugo raconté par l'image</i> is '<i>Le baron Taylor</i>, par Madrazo. Peinture. (Musée de Versailles.)' (Escholier 1930, p.24), [Paris Bibliothèques patrimoniales](https://bibliotheques-specialisees.paris.fr/ark:/73873/pf0000257525?posInSet=15&queryId=6b943859-d29e-4da6-ae1e-858ebfab4611)"
     },
     {
       "from": "Federico de Madrazo",
@@ -10982,11 +10983,16 @@
       "from": "Adrien Dauzats",
       "to": "Eugène Delacroix",
       "relationship type": "friends",
-      "know each other since": "at least 1846",
-      "correspondence": "1846, 12 Aug: Delacroix asks Dauzats for Goya's lithographies ('Goya ou la mort, cher ami') (Delacroix - Joubin 1936, p.275)",
-      "mentions": "Delacroix's journal, 1856-X-10: 'Funeral procession of poor Chassériau. I saw Dauzats, Diaz, and the young Moreau. I quite like him'",
+      "know each other since": "at least 1845",
+      "correspondence": [
+        "1845 (circa): no.878 in the 1930 Delacroix exhibition (Huyghe); 'faisant partie d'un recueil de lettres envoyées au même destinataire. Delacroix exprime ses regrets de ne pouvoir remettre à Dauzats ses deux tableaux de Marc-Aurèle et du Doge. Il indique les accidents survenus à ses toiles' (Louvre, collection Moreau-Nélation) (Huyghe 1930, p.337).",
+        "1846, 12 Aug: Delacroix asks Dauzats for Goya's lithographies ('Goya ou la mort, cher ami') (Delacroix - Joubin 1936, p.275)"
+      ],
+      "mentions": "1856-X-10, Delacroix's journal: 'Funeral procession of poor Chassériau. I saw Dauzats, Diaz, and the young Moreau. I quite like him'.",
       "curiosities": "Delacroix named Dauzats the executor of his will (Mainer and Enguita 1999, p.128)",
-      "collaborations": "Delacroix asked Dauzats and Burty to catalogue his drawings and albums (which included Delacroix's copies after Goya's <i>Caprichos</i>)"
+      "collaborations": "Delacroix asked Dauzats and Burty to catalogue his drawings and albums (which included Delacroix's copies after Goya's <i>Caprichos</i>)",
+      "artworks bought/sold": "the 1930 Delacroix exhibition mentiones the watercolour <i>La Muse inspirant Hésiode</i> as 'Legs d'Eug. Delacroix à M. Dauzats' (Huyghe 1930, no.392, pp.185-86), as well as <i>Étude d'intérieur marocain</i> 'Vente Delacroix 1864, Vente Dauzats 1869, Vente Chocquet 1899, Donation Moreau-Nélation' (no.405, p.200).",
+      "bibliography": "Huyghe 1930"
     },
     {
       "from": "Adrien Dauzats",
@@ -10999,7 +11005,9 @@
       "to": "Victor Hugo",
       "connection_level": "direct",
       "relationship type": "acquaintances. Hugo 'témoigne son admiration' for Dauzats",
-      "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Adrien_Dauzats)"
+      "artworks bought/sold": "no.283 in the catalogue <i>Victor-Hugo raconté par l'image</i> is <i>Rue à Cadix, par Dauzats. Aquarelle. (Musée du Louvre)</i> (Escholier 1930, p.33); from Hugo's art collection?",
+      "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Adrien_Dauzats)",
+      "bibliography": "Escholier 1930, [Paris Bibliothèques patrimoniales](https://bibliotheques-specialisees.paris.fr/ark:/73873/pf0000257525?posInSet=15&queryId=6b943859-d29e-4da6-ae1e-858ebfab4611)"
     },
     {
       "from": "Adrien Dauzats",
