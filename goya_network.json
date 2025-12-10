@@ -21,12 +21,25 @@
       "parents": "José Goya and Gracia Lucientes",
       "nationality": "Spanish",
       "address": "C/ Desengaño, 1, Madrid (by 1784); Quinta del Sordo, Madrid (acquired in 1819)",
-      "bibliography": "Schwander 2021; Tomlinson 2020; Mena Marqués & Manuel Matilla, 2019; Mena Marqués & Manuel Matilla, 2018; Mena Marqués 2008; Schulz 2005; Wolf 1994; Bozal 1994; Tomlinson 1992; Carreta Parrondo & Vega 1991; Águeda & Salas 1982; López Canellas 1981; Glendinning 1977; Gassier 1973; Gassier & Wilson-Bareau 1971; Harris 1964",
+      "bibliography": "Fayos Pérez 2024; Schwander 2021; Tomlinson 2020; Mena Marqués & Manuel Matilla, 2019; Mena Marqués & Manuel Matilla, 2018; Mena Marqués 2008; Schulz 2005; Wolf 1994; Bozal 1994; Tomlinson 1992; Carreta Parrondo & Vega 1991; Águeda & Salas 1982; López Canellas 1981; Glendinning 1977; Gassier 1973; Gassier & Wilson-Bareau 1971; Harris 1964",
       "websites": [
         "[Fundación Goya en Aragón](https://fundaciongoyaenaragon.es/)",
         "[Museo del Prado](https://www.museodelprado.es/coleccion/artista/goya-y-lucientes-francisco-de/39568a17-81b5-4d6f-84fa-12db60780812)",
         "[Real Academia de Historia](https://historia-hispanica.rah.es/biografias/20790-francisco-de-goya-y-lucientes)"
         ],
+      "exhibitions": [
+        "1946 Madrid: <i>Exposición conmemorativa del centenario de Goya</i>; <i>Goya y el arte francés</i> (Instituto francés en España).",
+        "1957 Bordeaux: <i>Bosch, Goya et le fantastique</i> (Gilberte Martin-Méry).",
+        "1971 Boston: <i>The Changing Image: Prints by Francisco de Goya</i> (Sayre).",
+        "1993-94 Madrid (Prado): <i>Goya: el capricho y la invención</i> (Wilson-Bareau & Mena Marqués).",
+        "1998 Bordeaux: <i>Goya, hommages: les années bordelaises, 1824-1828</i> (Francis Ribemont).",
+        "2002 Madrid (Prado) / NGA (Washington): <i>Goya: Images of Women</i> (Calvo Serraller & Tomlinson).",
+        "2008 Madrid (Prado): <i>Goya en tiempos de guerra</i> (Mena Marqués).",
+        "2013 London (Courtauld): <i>Goya: The Witches and Old Women Album</i> (Wilson-Bareau).",
+        "2019 Madrid (Prado): <i>Goya: Dibujos. 'Solo la libertad me sobra'</i> (Mena Marqués & Matilla).",
+        "2019 New York (Prado): <i>Goya's Graphic Imagination</i> (McDonald).",
+        "2021 Basel (Beyeler): retrospective exhibition."
+      ],
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q5432",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500118936",
@@ -962,7 +975,13 @@
       "decorations/awards": "Commandeur de la Légion d'honneur (1855)",
       "portrayed by": "Eugène Delacroix/Géricault, c.1816, Rouen (oil painting); Nadar, 1858 (photograph)",
       "curiosities": "he became interested in photography since 1851, and commissioned the photographer Eugène Durieu with a series of pictures of nude models (male and female).",
-      "bibliography": "Sébastien Allard et al., 2018 exhibition catalogue, Louvre; Maurice Sérullaz, 1989, <i>Delacroix</i>",
+      "sales": "1864, 22-29 Feb (L.838a)",
+      "exhibitions":[
+        "1930 Paris, Louvre: <i>Exposition Eugène Delacroix : peintures, aquarelles, pastels, dessins, gravures, documents</i>. It included some drawings after Goya's <i>Caprichos</i> (nos.746-750, 786) (see Fayos Pérez 2024, Appendix III: D3, D5, D7-10). [Paris Bibliothèques patrimoniales](https://bibliotheques-specialisees.paris.fr/ark:/73873/pf0000047979?posInSet=14&queryId=6b943859-d29e-4da6-ae1e-858ebfab4611)",
+        "1963 Bordeaux: <i>Delacroix: ses maîtres, ses amis, ses élèves</i> (Gilberte Martin-Méry).",
+        "Recent years: 2018 Paris (Louvre), Allard & Fabre."
+      ],
+      "bibliography": "Fayos Pérez 2024; Sébastien Allard et al., 2018 exhibition catalogue, Louvre; Maurice Sérullaz, 1989, <i>Delacroix</i>",
       "websites": "[Musée National Eugène Delacroix](https://www.musee-delacroix.fr/fr/)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q33477",
