@@ -57,7 +57,13 @@
       "Type of connection": "Type of connection",
       "Type of relationship": "Type of relationship", 
       "Know each other since": "Know each other since",
-      "Search": "Search"
+      "Search": "Search",
+      "Collaborations": "Collaborations",
+      "They met": "They met",
+      "direct": "direct",
+      "Artworks bought/sold": "Artworks bought/sold",
+      "Interactions": "Interactions",
+      "Employment/patronage": "Employment/patronage"
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -114,7 +120,13 @@
       "Type of connection": "Tipo de conexión",
       "Type of relationship": "Tipo de relación", 
       "Know each other since": "Se conocen desde", 
-      "Search": "Buscar"
+      "Search": "Buscar",
+      "Collaborations": "Colaboraciones",
+      "They met": "Se encontraron",
+      "direct": "directa",
+      "Artworks bought/sold": "Compraventa de obras",
+      "Interactions": "Interacciones",
+      "Employment/patronage": "Empleo/patronazgo"
     }
   };
 
