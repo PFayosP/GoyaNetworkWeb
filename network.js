@@ -74,11 +74,15 @@
       "family": "family",
       "friends": "friends",
       "acquaintances": "acquaintances",
+      "acquaintances?": "acquaintances?",
+      "direct?": "direct?",
+      "secondary?": "secondary?",
       "master-student": "master-student",
       "partners/lovers": "lovers",
       "artworks influenced by Goya": "influenced by Goya",
       "knows Goya's works": "knows Goya's works",
-      "Sales": "Sales"
+      "Sales": "Sales",
+      "colleagues": "colleagues"
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -147,6 +151,9 @@
       "In Italy": "En Italia",
       "direct": "directa",
       "secondary": "secundaria",
+      "acquaintances?": "¿conocidos?",
+      "direct?": "¿directa?",
+      "secondary?": "¿secundaria?",
       "portraitist-sitter": "retratista-retratado",
       "employer-employee": "empleador-empleado",
       "family": "familia",
@@ -156,7 +163,8 @@
       "partners/lovers": "parejas/amantes",
       "artworks influenced by Goya": "influenciado por Goya",
       "knows Goya's works": "conoce la obra de Goya",
-      "Sales": "Ventas"
+      "Sales": "Ventas",
+      "colleagues": "colegas"
     }
   };
 
