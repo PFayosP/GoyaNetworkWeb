@@ -1,5 +1,8 @@
   // ====== I18N ======
   let CURRENT_LANG = localStorage.getItem('lang') || 'en';
+  function getDataFileForLang(lang) {
+    return (lang === 'es') ? 'goya_network_ES.json' : 'goya_network.json';
+  }
 
   const I18N = {
     en: {
@@ -54,7 +57,7 @@
     const natAll = document.querySelector('#nationalityFilter option[value=""]');
     if (natAll) natAll.textContent = t('FILTER_NAT_ALL');
 
-    // Título “Members …”
+    // Título "Members …"
     const membersHeading = document.querySelector('#membersSection .section-heading');
     if (membersHeading) membersHeading.textContent = t('MEMBERS_TITLE');
 
@@ -62,7 +65,7 @@
     const loading = document.getElementById('loadingMessage');
     if (loading) loading.firstChild.textContent = t('LOADING')+' ';
 
-    // Guarda etiqueta para “Last update”
+    // Guarda etiqueta para "Last update"
     window.LAST_UPDATE_LABEL = t('LAST_UPDATE');
 
     // Textos declarados con data-i18n (p.ej. HELP_TEXT_1/2)
@@ -77,6 +80,7 @@
     localStorage.setItem('lang', CURRENT_LANG);
     applyUIStrings();
     if (typeof window.refreshNodeInfoLabels === 'function') window.refreshNodeInfoLabels();
+    location.reload();
   };
 
   // Helper para traducir labels de panel
@@ -104,7 +108,7 @@
 
     // Si no había selección, vuelve al panel por defecto y re-aplica los textos
     if (typeof window.showDefaultNodeInfo === 'function') window.showDefaultNodeInfo();
-    applyUIStrings(); // actualiza “Members (A–Z…)”, placeholder, etc.
+    applyUIStrings(); // actualiza "Members (A–Z…)", placeholder, etc.
   };
 
 let nodes, edges; // 👈 Hacemos estas variables globales
@@ -246,7 +250,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         };
     
         // Load the network data
-        const response = await fetch('goya_network.json');
+        const response = await fetch(getDataFileForLang(CURRENT_LANG));
         if (!response.ok) throw new Error('Error cargando datos');
         const data = await response.json();
         
@@ -299,8 +303,8 @@ document.addEventListener('DOMContentLoaded', async function () {
     edges = new vis.DataSet(data.edges.map(edge => {
       const level = edge.connection_level || "direct";
 
-      // Muestra etiqueta solo si es “direct” o “secondary”.
-      // Si termina en “?” (p. ej. “direct?”) NO la pintamos y la ponemos como tooltip.
+      // Muestra etiqueta solo si es "direct" o "secondary".
+      // Si termina en "?" (p. ej. "direct?") NO la pintamos y la ponemos como tooltip.
       const label =
         edge.label === 'direct' || edge.label === 'secondary'
           ? edge.label
@@ -428,7 +432,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     });
 
-    // Construir la lista inicial de “New in”
+    // Construir la lista inicial de "New in"
     buildNewInList(data);
 
     // ---- MEMBERS LIST: manual overrides (edit these if needed) ----
@@ -475,10 +479,10 @@ document.addEventListener('DOMContentLoaded', async function () {
     function surnameKey(name) {
       if (!name) return '';
 
-      // Normaliza a “base”: quita paréntesis y corta por coma (para eliminar títulos)
+      // Normaliza a "base": quita paréntesis y corta por coma (para eliminar títulos)
       let base = String(name)
         .replace(/\(.*?\)/g, '')   // (widow), (husband of), etc.
-        .split(',')[0]             // “, Duke of Alba” fuera
+        .split(',')[0]             // ", Duke of Alba" fuera
         .replace(/[.]/g, ' ')
         .replace(/\s+/g, ' ')
         .trim();
@@ -510,12 +514,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       ]);
       const roman = /^[IVXLCDM]+$/i;
 
-      // 1) Si hay un título con “of …” (Duchess of Abrantes), coge el último token
+      // 1) Si hay un título con "of …" (Duchess of Abrantes), coge el último token
       if (tf.some(t => titles.has(t)) && tf.includes('of') && tokens.length >= 2) {
         return fold(tokens[tokens.length - 1]);
       }
 
-      // 2) Caso “X y Y”: toma el anterior a 'y' (apellido español tradicional)
+      // 2) Caso "X y Y": toma el anterior a 'y' (apellido español tradicional)
       const yIndex = tf.indexOf('y');
       if (yIndex > 0 && yIndex < tf.length - 1) {
         return fold(tokens[yIndex - 1]);
@@ -542,7 +546,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const first = tf[0];
         const second = normalizeToken(tokens[1]) || tf[1];
 
-        // “Antoine-Jean” u otros compuestos: si todas las partes están forzadas como nombre → usa el segundo
+        // "Antoine-Jean" u otros compuestos: si todas las partes están forzadas como nombre → usa el segundo
         const isHyphenGiven = first.includes('-') &&
           first.split('-').every(p => GIVEN_FORCE_TOKENS.has(p));
 
@@ -566,7 +570,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (n) return n;
       }
 
-      // 6) Fallback: último token “tal cual”
+      // 6) Fallback: último token "tal cual"
       return tf[tf.length - 1];
     }
 
@@ -609,7 +613,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     let lastNonHighlightedNodes = [];
     let activeEdgeIds = new Set();   // Edges activos (los conectados al nodo resaltado)
 
-    // ——— limpia SOLO el “rojo” de nodos; no toca edges ni estados globales ———
+    // ——— limpia SOLO el "rojo" de nodos; no toca edges ni estados globales ———
     function clearNodeHighlightsOnly() {
       const nodeUpdates = [];
 
@@ -1116,7 +1120,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           let value = node[field.key];
           let htmlText;
       
-          // helper: traduce valores “cortos” tipo direct/acquaintances/etc.
+          // helper: traduce valores "cortos" tipo direct/acquaintances/etc.
           function translateValue(v) {
             if (typeof v !== "string") return v;
             const raw = v.trim();
@@ -1209,7 +1213,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               }
             }
 
-      // Fuerza la selección de ese edge “mejor”
+      // Fuerza la selección de ese edge "mejor"
       network.selectEdges([selectedEdgeId]);
       // === Fin smart selection ===
       clearNodeHighlightsOnly();   //  limpia el rojo de nodos del edge anterior
@@ -1247,7 +1251,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Título traducible
         html += `<h3 class="section-heading">${t('Connection')}</h3>`;
 
-        // Línea “Between … and …” traducible
+        // Línea "Between … and …" traducible
         const betweenLabel = t('Between');
         const andWord = t('and');
 
