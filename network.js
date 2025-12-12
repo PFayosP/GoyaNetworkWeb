@@ -64,7 +64,9 @@
       "Employment/patronage": "Employment/patronage",
       "Between": "Between",
       "and": "and",
-      "Between [X] and [Y]": "Between [X] and [Y]"
+      "Between [X] and [Y]": "Between [X] and [Y]",
+      "In France": "In France", 
+      "In Italy": "In Italy"
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -128,7 +130,9 @@
       "Employment/patronage": "Empleo/patronazgo",
       "Between": "Entre",
       "and": "y",
-      "Between [X] and [Y]": "Entre [X] y [Y]"
+      "Between [X] and [Y]": "Entre [X] y [Y]",
+      "In France": "En Francia", 
+      "In Italy": "En Italia"
     }
   };
 
