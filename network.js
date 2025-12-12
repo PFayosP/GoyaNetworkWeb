@@ -50,7 +50,14 @@
       "Collector of":"Collector of",
       "Copies after Goya":"Copies after Goya",
       "Writes about Goya":"Writes about Goya",
-      "Mentions of Goya":"Mentions of Goya"
+      "Mentions of Goya":"Mentions of Goya",
+      "Connection": "Connection",
+      "Between": "Between",
+      "and": "and",
+      "Type of connection": "Type of connection",
+      "Type of relationship": "Type of relationship", 
+      "Know each other since": "Know each other since",
+      "Search": "Search"
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -100,7 +107,14 @@
       "Collector of":"Coleccionista de",
       "Copies after Goya":"Copias de Goya",
       "Writes about Goya":"Escribe sobre Goya",
-      "Mentions of Goya":"Menciones de Goya"
+      "Mentions of Goya":"Menciones de Goya",
+      "Connection": "Conexión",
+      "Between": "Entre",
+      "and": "y",
+      "Type of connection": "Tipo de conexión",
+      "Type of relationship": "Tipo de relación", 
+      "Know each other since": "Se conocen desde", 
+      "Search": "Buscar"
     }
   };
 
