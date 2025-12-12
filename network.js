@@ -52,9 +52,6 @@
       "Writes about Goya":"Writes about Goya",
       "Mentions of Goya":"Mentions of Goya",
       "Connection": "Connection",
-      "Between": "Between",
-      "and": "and",
-      "Between [X] and [Y]": "Between [X] and [Y]",
       "Type of connection": "Type of connection",
       "Type of relationship": "Type of relationship", 
       "Know each other since": "Know each other since",
@@ -116,9 +113,6 @@
       "Writes about Goya":"Escribe sobre Goya",
       "Mentions of Goya":"Menciones de Goya",
       "Connection": "Conexión",
-      "Between": "Entre",
-      "and": "y",
-      "Between [X] and [Y]": "Entre [X] y [Y]",
       "Type of connection": "Tipo de conexión",
       "Type of relationship": "Tipo de relación", 
       "Know each other since": "Se conocen desde", 
@@ -1331,8 +1325,19 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
         html += `</div>`;
-        html += `<h3>Connection</h3>`;
-        html += `<p><strong>Between:</strong> <a href="#" style="color:#66ccff" onclick="focusNode('${fromNodeMap.id}')">${fromNodeMap.id}</a> and <a href="#" style="color:#66ccff" onclick="focusNode('${toNodeMap.id}')">${toNodeMap.id}</a></p>`;
+
+        // Título traducible
+        html += `<h3 class="section-heading">${t('Connection')}</h3>`;
+
+        // Línea “Between … and …” traducible
+        const betweenLabel = t('Between');
+        const andWord = t('and');
+
+        html += `<p><strong>${betweenLabel}:</strong> 
+          <a href="#" style="color:#66ccff" onclick="focusNode('${fromNodeMap.id}')">${fromNodeMap.id}</a> 
+          ${andWord} 
+          <a href="#" style="color:#66ccff" onclick="focusNode('${toNodeMap.id}')">${toNodeMap.id}</a>
+        </p>`;
 
         const edgeFields = [
           { key: "connection_level", label: "Type of connection" },
