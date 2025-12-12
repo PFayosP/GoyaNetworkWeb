@@ -6,7 +6,7 @@
       BTN_NETWORK:"Network", BTN_ABOUT:"About", BTN_PEOPLE:"People", BTN_PARTNERS:"Partners",
       BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWIN:"New in",
       SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
-      MEMBERS_TITLE:"Members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update",
+      MEMBERS_TITLE:"Members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)",
 
       "Life dates":"Life dates","Full name":"Full name","Also known as":"Also known as","Other names":"Other names","Pseudonyms":"Pseudonyms",
       "Profession":"Profession","Nationality":"Nationality","Born in":"Born in","Dies in":"Dies in","Considered as":"Considered as",
@@ -88,7 +88,7 @@
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
       BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWIN:"Novedades",
       SEARCH_PH:"Buscar…", FILTER_PROF_ALL:"Todas las profesiones", FILTER_NAT_ALL:"Todas las nacionalidades",
-      MEMBERS_TITLE:"Miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización",
+      MEMBERS_TITLE:"Miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)",
 
       "Life dates":"Fechas de vida","Full name":"Nombre completo","Also known as":"También conocido/a como","Other names":"Otros nombres","Pseudonyms":"Seudónimos",
       "Profession":"Profesión","Nationality":"Nacionalidad","Born in":"Nace en","Dies in":"Fallece en","Considered as":"Considerado/a como",
@@ -210,6 +210,12 @@
 
     // Guarda etiqueta para “Last update”
     window.LAST_UPDATE_LABEL = t('LAST_UPDATE');
+
+    // Textos declarados con data-i18n (p.ej. HELP_TEXT_1/2)
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (key) el.textContent = t(key);
+    });
   }
 
   window.setLanguage = function(lang='en') {
@@ -1255,23 +1261,38 @@ document.addEventListener('DOMContentLoaded', async function () {
           let value = node[field.key];
           let htmlText;
       
+          // helper: traduce valores “cortos” tipo direct/acquaintances/etc.
+          function translateValue(v) {
+            if (typeof v !== "string") return v;
+            const raw = v.trim();
+            // 1) intento literal
+            let out = t(raw);
+            // 2) fallback por si en JSON viene con mayúsculas (Direct) o variantes
+            if (out === raw) out = t(raw.toLowerCase());
+            return out;
+          }
+
           if (Array.isArray(value)) {
             const processedItems = value.map(item => {
-              if (typeof item === 'string' && (item.includes('<img') || item.includes('<div'))) {
-                return `<li>${item}</li>`; // Ya es HTML, no volver a procesar
+              if (typeof item === "object") {
+                const caption = item.caption
+                  ? autoLinkNames(processMarkdownLinks(item.caption), nodesMap)
+                  : "";
+                const url = item.url ? item.url : "";
+                return `<li>${caption}${url ? `<img src="${url}" alt="Portrait" style="max-width:100%; margin-left: 0.5rem; vertical-align: middle;">` : ""}</li>`;
               } else {
-                return `<li>${autoLinkNames(processMarkdownLinks(item), nodesMap)}</li>`;
+                const translatedItem = translateValue(item);
+                return `<li>${autoLinkNames(processMarkdownLinks(translatedItem), nodesMap)}</li>`;
               }
             });
-            htmlText = `${processedItems.join("")}`; // sin <ul> ni <li>
+
+            htmlText = `<ul>${processedItems.join("")}</ul>`;
 
           } else {
-            if (typeof value === 'string' && (value.includes('<img') || value.includes('<div'))) {
-              htmlText = value; // Ya es HTML
-            } else {
-              htmlText = autoLinkNames(processMarkdownLinks(value), nodesMap);
-            }
+            const translatedValue = translateValue(value);
+            htmlText = autoLinkNames(processMarkdownLinks(translatedValue), nodesMap);
           }
+
           html += `<p style="margin-top:0.3rem;"><strong>${labelI18N(field.label)}:</strong> ${htmlText}</p>`;
         }
       });
