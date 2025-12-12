@@ -61,7 +61,10 @@
       "direct": "direct",
       "Artworks bought/sold": "Artworks bought/sold",
       "Interactions": "Interactions",
-      "Employment/patronage": "Employment/patronage"
+      "Employment/patronage": "Employment/patronage",
+      "Between": "Between",
+      "and": "and",
+      "Between [X] and [Y]": "Between [X] and [Y]"
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -122,7 +125,10 @@
       "direct": "directa",
       "Artworks bought/sold": "Compraventa de obras",
       "Interactions": "Interacciones",
-      "Employment/patronage": "Empleo/patronazgo"
+      "Employment/patronage": "Empleo/patronazgo",
+      "Between": "Entre",
+      "and": "y",
+      "Between [X] and [Y]": "Entre [X] y [Y]"
     }
   };
 
