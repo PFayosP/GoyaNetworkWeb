@@ -77,7 +77,8 @@
       "master-student": "master-student",
       "partners/lovers": "lovers",
       "artworks influenced by Goya": "influenced by Goya",
-      "knows Goya's works": "knows Goya's works"
+      "knows Goya's works": "knows Goya's works",
+      "Sales": "Sales"
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -154,7 +155,8 @@
       "master-student": "maestro-alumno",
       "partners/lovers": "parejas/amantes",
       "artworks influenced by Goya": "influenciado por Goya",
-      "knows Goya's works": "conoce la obra de Goya"
+      "knows Goya's works": "conoce la obra de Goya",
+      "Sales": "Ventas"
     }
   };
 
@@ -1453,8 +1455,12 @@ document.addEventListener('DOMContentLoaded', async function () {
               htmlText = `<ul>${processedItems.join("")}</ul>`;
             
             } else {
-              // ✅ Si es string normal
-              htmlText = autoLinkNames(processMarkdownLinks(value), nodesMap);
+              // ✅ Si es string normal: pásalo por el diccionario i18n
+              let translatedValue = value;
+              if (typeof translatedValue === "string") {
+                translatedValue = t(translatedValue.trim());
+              }
+              htmlText = autoLinkNames(processMarkdownLinks(translatedValue), nodesMap);
             }
 
             // Debugging: Check the processed HTML
