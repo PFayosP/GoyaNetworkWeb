@@ -488,6 +488,12 @@ function processMarkdownLinks(text) {
   return text;
 }
 
+function isImageUrl(u) {
+  if (!u) return false;
+  const s = String(u).trim();
+  return /\.(png|jpe?g|gif|webp|svg)(\?.*)?$/i.test(s);
+}
+
 // Add these two functions at the top of network.js
 window.search = function() {
   const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
@@ -1469,20 +1475,35 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           if (Array.isArray(value)) {
             const processedItems = value.map(item => {
-              if (typeof item === "object") {
-                const caption = item.caption
-                  ? autoLinkNames(processMarkdownLinks(item.caption), nodesMap)
-                  : "";
-                const url = item.url ? item.url : "";
-                return `<li>${caption}${url ? `<img src="${url}" alt="Portrait" style="max-width:100%; margin-left: 0.5rem; vertical-align: middle;">` : ""}</li>`;
-              } else {
+
+              if (typeof item === "string") {
                 const translatedItem = translateValue(item);
                 return `<li>${autoLinkNames(processMarkdownLinks(translatedItem), nodesMap)}</li>`;
               }
-            });
+
+              if (typeof item === "object" && item !== null) {
+                const u = item.url ? String(item.url).trim() : "";
+
+                // Links (websites)
+                if (u && !isImageUrl(u)) {
+                  const text = item.label || item.caption || u;
+                  const lab = autoLinkNames(processMarkdownLinks(text), nodesMap);
+                  return `<li><a href="${u}" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">${lab}</a></li>`;
+                }
+
+                // Images
+                if (u && isImageUrl(u)) {
+                  const caption = item.caption
+                    ? autoLinkNames(processMarkdownLinks(item.caption), nodesMap)
+                    : "";
+                  return `<li>${caption}${caption ? " " : ""}<img src="${u}" alt="Image" style="max-width:100%; margin-left:0.5rem; vertical-align:middle;"></li>`;
+                }
+              }
+
+              return null;
+            }).filter(Boolean);
 
             htmlText = `<ul>${processedItems.join("")}</ul>`;
-
           } else {
             const translatedValue = translateValue(value);
             htmlText = autoLinkNames(processMarkdownLinks(translatedValue), nodesMap);
