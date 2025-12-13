@@ -204,7 +204,7 @@
 
         ITALIA<br>
         <li><strong>Uffizi</strong> (Florencia): <a href="https://www.virtualuffizi.com/es/retrato-de-la-condesa-de-chinc%C3%B3n.html" target="_blank"><em>Equestrian portrait of María Teresa de Vallabriga</em></a>.</li>
-        <li><strong>Fondazione Magnani Rocca</strong> (Parma): <a href="https://www.magnanirocca.it/goya-la-famiglia-dell-infante-don-luis/" target="_blank"><em>The Family of Infante Don Luis</em></a>.</li><br>
+        <li><strong>Fondazione Magnani Rocca</strong> (Parma): <a href="https://www.magnanirocca.it/goya-la-famiglia-dell-infante-don-luis/" target="_blank"><em>La familia del Infante Don Luis</em></a>.</li><br>
 
       </p>
       `,
