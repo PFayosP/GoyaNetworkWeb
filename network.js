@@ -126,6 +126,35 @@
         <li><strong>Stephanie Loeb Stepanek</strong>: Curator Emerita of Prints and Drawings, Boston Museum of Fine Arts. Contribution: information on an early edition of <i>Disasters of War</i>, printed by Laureano Potenciano (October 2025).</li>
       </ul>
       `,
+
+      ABOUT_TITLE: "About the Goya Network",
+      ABOUT_BODY: `
+      <p style="background: #333; color: white; padding: 1rem; border-left: 5px solid #66ccff; font-size: 1.1rem;">
+        <span style="font-weight: bold;">📣 Forthcoming (c. 2026): Fayos-Pérez & Verő, "The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain"</span>, to be published in 
+        <a href="https://leonardo.info/leonardo/" target="_blank" style="color: #66ccff; font-weight: bold;"><em>Leonardo</em></a>, a peer-reviewed academic journal published by the 
+        <span style="font-weight: bold;">MIT Press</span> covering the application of contemporary science and technology to the arts and music.
+      </p>
+
+      <p><strong>Introduction:</strong> Throughout the 18th and 19th centuries, networks of artists, writers, collectors and intellectuals were crucial for artistic production, as well as for the dissemination and understanding of historical figures. Mapping these connections allows us to better understand the dynamics of sociability and the circulation of ideas. In recent years, projects in the Digital Humanities have demonstrated the potential of network analysis to illuminate historical artistic milieus, such as the <a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank">Thorvaldsen Letter Archive</a>, <a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank">Mapping the Republic of Letters</a> (University of Stanford), <a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank">Early Modern Letters Online (EMLO)</a> (University of Oxford), <a href="https://mappingrome.com/" target="_blank">Mapping Rome</a>, and <a href="https://womensbios.lib.virginia.edu/index.html" target="_blank">Collective Biographies of Women</a> (Alison Booth, University of Virginia).</p> 
+
+      <p><em>The Goya Network</em> builds on these methods, offering an interactive database that maps the social and professional relationships surrounding the Spanish artist Francisco de Goya, focusing on his connections with artists, critics, and collectors in 19th-century Spain and France. Unlike traditional studies of his work, this project emphasizes the relational context that shaped Goya’s legacy, offering a novel tool for the study of historical artists' social networks. As a 'living' database, it facilitates cross-disciplinary collaboration and serves as both a research tool and a public resource, providing insight into the scope of Goya’s influence and the reception of his work.</p>
+
+      <p><strong>Origin:</strong> This is a research-based digital project developed by Paula Fayos-Pérez as part of her postdoctoral work on Goya's social and professional networks. It is a continuation of the research done during her PhD (University of Cambridge, 2018) <a href="https://www.repository.cam.ac.uk/items/8d9751ce-aca1-4d35-9436-0820ecbc98d4" target="_blank">(repository)</a>, which was later transformed into a book: <a href="https://www.ceeh.es/en/publicacion/goyas-caprichos-in-nineteenth-century-france-politics-of-the-grotesque/" target="_blank"><em>Goya’s Caprichos in Nineteenth-Century France. Politics of the Grotesque</em></a> (CEEH, 2024).</p>
+
+      <p><strong>Funding:</strong> Work produced with the support of a 2024 Leonardo Grant (<a href="https://www.redleonardo.es/beneficiario/paula-fayos-perez/" target="_blank">Beca Leonardo</a>) for Scientific Research and Cultural Creation, <a href="https://www.fbbva.es/" target="_blank">BBVA Foundation.</a> The Foundation takes no responsibility for the opinions, statements and contents of this project, which are entirely the responsibility of its authors.</p>
+
+      <p><strong>User guide:</strong> There is data contained in each node (individual) and edge (connection between two individuals). On the nodes, users can see biographic information as well as artistic/literary production, art collection and link to Goya's work. On the edges, one can see the relationship type, correspondence, collaborations, and others. Edges in grey/silver colour are direct connections (friends, colleagues, relatives, acquaintances, etc.), while edges in golden colour are secondary connections (e.g. artists and writers who copied or wrote about Goya but never met him in person). The size of the nodes is proportional to the number of edges (connections) they hold.</p>
+
+      <p><strong>Nature of the project:</strong> The Goya Network is conceived as a collaborative, crowd-sourced database with the aim of becoming a useful tool for scholars, students and the general public of Goya. We welcome contributions by art historians, historians, Hispanists, lecturers and curators specialised in Goya, 19th-century Spain, 19th-century France and in any of the members of the network (e.g. Federico Madrazo, Prosper Mérimée, Eugène Delacroix, etc.). To submit a contribution, please see the Contributions section on the website below.</p>
+
+      <p><strong>Methodology:</strong> Art historical research: based on bibliographic and archival sources.<br>
+      Web development: built using HTML and JavaScript, with structured data in JSON, and version control and deployment through GitHub, developed with the assistance of ChatGPT (OpenAI) and DeepSeek (High-Flyer).</p>
+
+      <p><strong>Copyright and License:</strong> The Goya Network is protected by notarial deed (Madrid, 2025), documenting the research and development process from 2018 to 2025.  
+      Its code and structure are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color:#66ccff;">CC BY-NC 4.0</a>, allowing non-commercial academic use with proper attribution to the author.</p>
+
+      <p><strong>Data and cookies:</strong> This website uses cookies exclusively for Google Analytics, which anonymously tracks visitor behaviour. We use this information only to understand how the site is being used and to improve its content and navigation. You can opt out of Google Analytics cookies across all websites by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color:#66ccff;">Google Analytics Opt-out Browser Add-on</a>. For more information on how Google uses cookies, visit the <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" style="color:#66ccff;">Cookies & Google Analytics</a> page.</p>
+      `,
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -248,6 +277,35 @@
         <li><strong>Stephanie Loeb Stepanek</strong>: conservadora emérita de Estampas y Dibujos, Boston Museum of Fine Arts. Contribución: información sobre una edición temprana de <i>Disasters of War</i>, impresa por Laureano Potenciano (octubre de 2025).</li>
       </ul>
       `,
+
+      ABOUT_TITLE: "Acerca de la Goya Network / Red Goya",
+      ABOUT_BODY: `
+      <p style="background: #333; color: white; padding: 1rem; border-left: 5px solid #66ccff; font-size: 1.1rem;">
+        <span style="font-weight: bold;">📣 Próximamente (c. 2026): Fayos-Pérez & Verő, "The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain"</span>, que se publicará en 
+        <a href="https://leonardo.info/leonardo/" target="_blank" style="color: #66ccff; font-weight: bold;"><em>Leonardo</em></a>, revista académica revisada por pares publicada por 
+        <span style="font-weight: bold;">MIT Press</span> dedicada a la aplicación de la ciencia y la tecnología contemporáneas a las artes y la música.
+      </p>
+
+      <p><strong>Introducción:</strong> A lo largo de los siglos XVIII y XIX, las redes de artistas, escritores, coleccionistas e intelectuales fueron cruciales tanto para la producción artística como para la difusión y comprensión de figuras históricas. Cartografiar estas conexiones permite entender mejor las dinámicas de sociabilidad y la circulación de ideas. En los últimos años, diversos proyectos en Humanidades Digitales han demostrado el potencial del análisis de redes para iluminar contextos artísticos históricos, como el <a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank">Thorvaldsen Letter Archive</a>, <a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank">Mapping the Republic of Letters</a> (Universidad de Stanford), <a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank">Early Modern Letters Online (EMLO)</a> (Universidad de Oxford), <a href="https://mappingrome.com/" target="_blank">Mapping Rome</a> y <a href="https://womensbios.lib.virginia.edu/index.html" target="_blank">Collective Biographies of Women</a> (Alison Booth, University of Virginia).</p> 
+
+      <p><em>The Goya Network</em> se apoya en estos métodos y ofrece una base de datos interactiva que cartografía las relaciones sociales y profesionales en torno al artista español Francisco de Goya, con especial atención a sus conexiones con artistas, críticos y coleccionistas en la España y la Francia del siglo XIX. A diferencia de los estudios tradicionales centrados en su obra, este proyecto pone el énfasis en el contexto relacional que configuró el legado de Goya, y ofrece una herramienta novedosa para el estudio de las redes sociales de artistas históricos. Como base de datos «viva», facilita la colaboración interdisciplinar y funciona tanto como herramienta de investigación como recurso público, proporcionando una visión del alcance de la influencia de Goya y de la recepción de su obra.</p>
+
+      <p><strong>Origen:</strong> Se trata de un proyecto digital basado en investigación, desarrollado por Paula Fayos-Pérez en el marco de su trabajo postdoctoral sobre las redes sociales y profesionales de Goya. Constituye una continuación de la investigación realizada durante su doctorado (Universidad de Cambridge, 2018) <a href="https://www.repository.cam.ac.uk/items/8d9751ce-aca1-4d35-9436-0820ecbc98d4" target="_blank">(repositorio)</a>, que posteriormente se transformó en un libro: <a href="https://www.ceeh.es/en/publicacion/goyas-caprichos-in-nineteenth-century-france-politics-of-the-grotesque/" target="_blank"><em>Goya’s Caprichos in Nineteenth-Century France. Politics of the Grotesque</em></a> (CEEH, 2024).</p>
+
+      <p><strong>Financiación:</strong> Trabajo realizado con el apoyo de una Beca Leonardo 2024 (<a href="https://www.redleonardo.es/beneficiario/paula-fayos-perez/" target="_blank">Beca Leonardo</a>) para Investigación Científica y Creación Cultural, <a href="https://www.fbbva.es/" target="_blank">Fundación BBVA.</a> La Fundación no asume responsabilidad alguna por las opiniones, afirmaciones y contenidos de este proyecto, que son enteramente responsabilidad de sus autores.</p>
+
+      <p><strong>Guía de uso:</strong> Cada nodo (individuo) y cada arista/conexión (vínculo entre dos individuos) contiene datos. En los nodos, los usuarios pueden consultar información biográfica, así como producción artística/literaria, coleccionismo y enlaces a la obra de Goya. En las conexiones se muestra el tipo de relación, correspondencia, colaboraciones y otros datos. Las conexiones en color gris/plateado son conexiones directas (amistades, colegas, familiares, conocidos, etc.), mientras que las conexiones en color dorado son conexiones secundarias (por ejemplo, artistas y escritores que copiaron o escribieron sobre Goya pero no llegaron a conocerlo en persona). El tamaño de los nodos es proporcional al número de conexiones (aristas) que tienen.</p>
+
+      <p><strong>Naturaleza del proyecto:</strong> La Goya Network está concebida como una base de datos colaborativa y de contribución abierta, con el objetivo de convertirse en una herramienta útil para especialistas, estudiantes y el público general interesado en Goya. Se acogen contribuciones de historiadores del arte, historiadores, hispanistas, docentes y conservadores especializados en Goya, en la España del siglo XIX, en la Francia del siglo XIX o en cualquiera de los miembros de la red (por ejemplo, Federico Madrazo, Prosper Mérimée, Eugène Delacroix, etc.). Para enviar una contribución, véase la sección Contributions en el sitio web (más abajo).</p>
+
+      <p><strong>Metodología:</strong> Investigación en Historia del arte: basada en fuentes bibliográficas y de archivo.<br>
+      Desarrollo web: realizado con HTML y JavaScript, con datos estructurados en JSON, y control de versiones y despliegue mediante GitHub; desarrollado con el apoyo de ChatGPT (OpenAI) y DeepSeek (High-Flyer).</p>
+
+      <p><strong>Derechos de autor y licencia:</strong> La Goya Network está protegida por acta notarial (Madrid, 2025), que documenta el proceso de investigación y desarrollo entre 2018 y 2025.  
+      Su código y estructura están licenciados bajo <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color:#66ccff;">CC BY-NC 4.0</a>, lo que permite el uso académico no comercial con la debida atribución a la autora.</p>
+
+      <p><strong>Datos y cookies:</strong> Este sitio web utiliza cookies exclusivamente para Google Analytics, que registra de forma anónima el comportamiento de los visitantes. Utilizamos esta información únicamente para comprender cómo se usa el sitio y mejorar su contenido y navegación. Puedes desactivar las cookies de Google Analytics en todos los sitios web instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color:#66ccff;">complemento de inhabilitación para navegadores de Google Analytics</a>. Para más información sobre el uso de cookies por parte de Google, consulta la página <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" style="color:#66ccff;">Cookies & Google Analytics</a>.</p>
+      `,
     }
   };
 
@@ -298,6 +356,7 @@
     const HTML_I18N_KEYS = new Set([
       'ARTWORKS_BODY',
       'PEOPLE_BODY',
+      'ABOUT_BODY',
       // añade aquí futuras secciones largas con HTML, ej:
       // 'ABOUT_BODY', 'PARTNERS_BODY'
     ]);
