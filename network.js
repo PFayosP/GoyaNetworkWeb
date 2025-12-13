@@ -9,10 +9,10 @@
       BTN_NETWORK:"Network", BTN_ABOUT:"About", BTN_PEOPLE:"People", BTN_PARTNERS:"Partners",
       BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWIN:"New in",
       SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
-      MEMBERS_TITLE:"Members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", CONTRIBUTIONS_TITLE: "Contributions", CONTRIBUTIONS_TEXT: "The Goya Network is conceived as a collaborative, crowd-sourced database. Contributions and suggestions are welcome and encouraged, and contributors will be credited if requested.", 
+      MEMBERS_TITLE:"Members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", CONTRIBUTIONS_TITLE: "Contributions", CONTRIBUTIONS_TEXT: "The Goya Network is conceived as a collaborative, crowd-sourced database. <br>Contributions and suggestions are welcome and encouraged, and contributors will be credited if requested.", 
       
       RIGHTS_LABEL: "Rights:",
-      NOTARIAL_PROTECTION: "protected by notarial deed (Madrid, 2025)",
+      NOTARIAL_PROTECTION: "Protected by notarial deed (Madrid, 2025)",
       ACCESS_FORM: "Access form",
 
       CITE_TITLE: "How to cite The Goya Network",
@@ -165,9 +165,9 @@
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
       BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWIN:"Novedades",
       SEARCH_PH:"Buscar…", FILTER_PROF_ALL:"Todas las profesiones", FILTER_NAT_ALL:"Todas las nacionalidades",
-      MEMBERS_TITLE:"Miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", CONTRIBUTIONS_TITLE: "Contribuciones", CONTRIBUTIONS_TEXT: "La Red Goya se concibe como una base de datos colaborativa y abierta. Las contribuciones y sugerencias son bienvenidas, y los colaboradores serán acreditados si así lo desean.", 
+      MEMBERS_TITLE:"Miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", CONTRIBUTIONS_TITLE: "Contribuciones", CONTRIBUTIONS_TEXT: "La Red Goya se concibe como una base de datos colaborativa y abierta. <br>Las contribuciones y sugerencias son bienvenidas, y los colaboradores serán acreditados si así lo desean.", 
 
-      NOTARIAL_PROTECTION: "protegido por acta notarial (Madrid, 2025)",
+      NOTARIAL_PROTECTION: "Protegido por acta notarial (Madrid, 2025)",
       ACCESS_FORM: "Formulario de acceso",
       RIGHTS_LABEL: "Derechos:",
 
