@@ -1147,9 +1147,22 @@ document.addEventListener('DOMContentLoaded', async function () {
     
   network.once("stabilizationIterationsDone", function () {
     document.getElementById('loadingMessage').style.display = 'none';
-    // 💥 Cargar las imágenes ANTES de apagar la física
+
+    // 1) Carga imágenes
     loadFullImages();
-    nudgeOverlaps(network, nodes, 6);
+
+    // 2) Apaga física para fijar posiciones
+    network.setOptions({ physics: { enabled: false } });
+
+    // 3) Empujón anti-overlap cuando ya están puestas las imágenes
+    setTimeout(() => {
+      if (!window.__didNudgeOnce) {
+        window.__didNudgeOnce = true;
+        nudgeOverlaps(network, nodes, 10);
+        network.redraw();
+      }
+    }, 150);
+  });
 
     function highlightNeighborhood(nodeId) {
       // 1) Obtener edges conectados
@@ -1877,8 +1890,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           buildMembersList(data);
         }
       };
-
-      }, 300);
 
     // Búsqueda funcional
     const searchInput = document.getElementById('searchInput');
