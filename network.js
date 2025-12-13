@@ -1090,33 +1090,36 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     window.VIS_NETWORK = network;
 
-    // 🔥 SOLUCIÓN NUCLEAR ANTI-OVERLAP
-    // Empuja pares de nodos que se solapan una sola pasada
-    function nudgeOverlapsOnce(network, nodes) {
-      const ids = nodes.getIds();
-      const pos = network.getPositions(ids);
+    // 🔥 SOLUCIÓN NUCLEAR ANTI-OVERLAP (MULTI-PASS, RADIO REAL)
+    function nudgeOverlaps(network, nodes, passes = 5) {
+      for (let p = 0; p < passes; p++) {
+        const ids = nodes.getIds();
+        const pos = network.getPositions(ids);
 
-      // radio visual aproximado; ajústalo si hace falta
-      const R = 22; // px
+        for (let i = 0; i < ids.length; i++) {
+          for (let j = i + 1; j < ids.length; j++) {
+            const a = ids[i], b = ids[j];
+            const pA = pos[a], pB = pos[b];
+            if (!pA || !pB) continue;
 
-      for (let i = 0; i < ids.length; i++) {
-        for (let j = i + 1; j < ids.length; j++) {
-          const a = ids[i], b = ids[j];
-          const pA = pos[a], pB = pos[b];
-          if (!pA || !pB) continue;
+            const nodeA = nodes.get(a);
+            const nodeB = nodes.get(b);
 
-          const dx = pB.x - pA.x;
-          const dy = pB.y - pA.y;
-          const d  = Math.hypot(dx, dy) || 1;
+            const rA = nodeA?.size || 25;
+            const rB = nodeB?.size || 25;
+            const minD = rA + rB + 6;
 
-          const minD = R * 2;
-          if (d < minD) {
-            const push = (minD - d) / 2;
-            const ux = dx / d, uy = dy / d;
+            const dx = pB.x - pA.x;
+            const dy = pB.y - pA.y;
+            const d = Math.hypot(dx, dy) || 1;
 
-            // desplazar ambos en sentidos opuestos
-            network.moveNode(a, pA.x - ux * push, pA.y - uy * push);
-            network.moveNode(b, pB.x + ux * push, pB.y + uy * push);
+            if (d < minD) {
+              const push = (minD - d) / 2;
+              const ux = dx / d, uy = dy / d;
+
+              network.moveNode(a, pA.x - ux * push, pA.y - uy * push);
+              network.moveNode(b, pB.x + ux * push, pB.y + uy * push);
+            }
           }
         }
       }
@@ -1144,9 +1147,9 @@ document.addEventListener('DOMContentLoaded', async function () {
     
   network.once("stabilizationIterationsDone", function () {
     document.getElementById('loadingMessage').style.display = 'none';
-
     // 💥 Cargar las imágenes ANTES de apagar la física
     loadFullImages();
+    nudgeOverlaps(network, nodes, 6);
 
     function highlightNeighborhood(nodeId) {
       // 1) Obtener edges conectados
