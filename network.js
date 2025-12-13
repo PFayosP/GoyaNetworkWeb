@@ -579,7 +579,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (!container) return;
 
       // Recoge nombres desde data.nodes (el mismo que se muestra en la red)
-      const names = (data.nodes || []).map(n => n.id).filter(Boolean);
+      const items = (data.nodes || [])
+        .map(n => ({
+          id: n.id,
+          display: (CURRENT_LANG === 'es' && n['display name es']) ? n['display name es'] : n.id
+        }))
+        .filter(x => x.id);
 
       // Ordena por clave de "apellido"
       const collator = new Intl.Collator(undefined, { sensitivity: 'base' });
@@ -963,7 +968,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
 
-        html += `<h2>${node.id}</h2>`;
+        const displayName =
+          (CURRENT_LANG === 'es' && node['display name es'])
+            ? node['display name es']
+            : node.id;
+
+        html += `<h2>${displayName}</h2>`;
 
         const fieldsToShow = [
           { type: "section", label: "Identity and Personal Data" },
