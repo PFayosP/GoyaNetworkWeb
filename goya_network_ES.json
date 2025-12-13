@@ -277,8 +277,8 @@
       "dies in": "Madrid",
       "profession": "pintor, coleccionista, marchante de arte",
       "in Paris": [
-        "1833 (primer viaje; con Vicente Masarnau): conoce al barón Taylor y a Adrien Dauzats",
-        "1837-1839 (retrata a Adrien Dauzats en 1837): se beneficia de los contactos con el barón Taylor. Durante estos dos años, escribe en su correspondencia sobre las relaciones que está estableciendo con pintores franceses (Romero Tobar 1997, p.217; González López 1994, pp. 28-36)",
+        "1833 (primer viaje; con Vicente Masarnau): conoce al Baron Taylor y a Adrien Dauzats",
+        "1837-1839 (retrata a Adrien Dauzats en 1837): se beneficia de los contactos con el Baron Taylor. Durante estos dos años, escribe en su correspondencia sobre las relaciones que está estableciendo con pintores franceses (Romero Tobar 1997, p.217; González López 1994, pp. 28-36)",
         "1838 encargo de Louis Philippe I para el cuadro Godofredo de Bouillon para Versalles"
       ],
       "address": "1833 París: Hôtel Bourbonne-Les-Bains (muy cerca de Adrien Dauzat); 30 rue de la Tour de Auvergne (taller) (hacia 1839)",
@@ -388,7 +388,8 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Jose_Madrazo.jpg"
     },
     {
-      "id": "Barón Taylor",
+      "id": "Baron Taylor",
+      "display name es": "Barón Taylor",
       "label": "Taylor",
       "life dates": "1789-1879", 
       "full name": "Isidore-Justin-Séverin Taylor",
@@ -448,25 +449,25 @@
       "mentions": "Philippe Burty dice sobre Dauzats: 'Personne, après Eugène Delacroix, n'a saisi plus juste la rêverie farouche ou l'indifférence fataliste du Mahométan. On retrouve au même degré ces qualités d'observation intelligente dans les études de personnages faites, plus tard, en Portugal et en Espagne. La serie de curas y sacristanes madrileños [...] Es el último capítulo de la historia monástica de España' (1869, p.VII).",
       "lives in":"Burdeos; París (desde 1823)",
       "profession": "pintor, grabador, ilustrador, litógrafo",
-      "trips": "Egipto, Siria, Monte Sinaí y Palestina con el barón Taylor (1829); Egipto y Oriente Medio con Alexandre Dumas padre (1830); España (1833; 1835, 1837); Portugal; Argelia con el duque de Orleans (1839); Sicilia; Alemania; Bélgica; Inglaterra (Exposición Universal de 1862: artistas franceses); Tánger; Imperio otomano.",
+      "trips": "Egipto, Siria, Monte Sinaí y Palestina con el Baron Taylor (1829); Egipto y Oriente Medio con Alexandre Dumas père (1830); España (1833; 1835, 1837); Portugal; Argelia con el duque de Orleans (1839); Sicilia; Alemania; Bélgica; Inglaterra (Exposición Universal de 1862: artistas franceses); Tánger; Imperio otomano.",
       "interest in Spanish art": "Dauzats realizó innumerables dibujos durante sus viajes a España, en su mayoría acuarelas de diferentes ciudades, entre ellas Zaragoza, Córdoba, Málaga, Cádiz, Toledo, Sevilla, Xàtiva, Valencia, Burgos y Barcelona, y vestimentas eclesiásticas.",
       "in Spain": [
-        "1832 con el barón Taylor",
-        "Junio-julio de 1833 con el barón Taylor",
-        "Octubre de 1835-octubre de 1837: ayuda al barón Taylor en la adquisición de obras de arte para la Galerie espagnole (1838-48). Conoce a Pharamond Blanchard, quien le presenta a la familia Madrazo. Conoce a destacados artistas españoles e es y desarrolla un interés por el arte español (véase Tinterow 2003, p.180). Durante este viaje, produce tres cuadernos de notas y dibujos (Carnet de voyage en Espagne); véase Archivos"
+        "1832 con el Baron Taylor",
+        "Junio-julio de 1833 con el Baron Taylor",
+        "Octubre de 1835-octubre de 1837: ayuda al Baron Taylor en la adquisición de obras de arte para la Galerie espagnole (1838-48). Conoce a Pharamond Blanchard, quien le presenta a la familia Madrazo. Conoce a destacados artistas españoles e es y desarrolla un interés por el arte español (véase Tinterow 2003, p.180). Durante este viaje, produce tres cuadernos de notas y dibujos (Carnet de voyage en Espagne); véase Archivos"
         ],
       "author of": [
         "1820-63 ilustraciones para Voyages Pittoresques et Romantiques de l'ancienne France, editado por Baron Taylor en colaboración con Charles Nodier y Alphonse de Cailleux; como Maison des Bains, Bagnoles, 1834. Véase la exposición La Fabrique du Romantisme, Charles Nodier et les Voyages pittoresques, Musée de la vie romantique, 2014-2015.",
-        "Ilustraciones de 1826-32 para Voyage Pittoresque en Espagne, en Portugal, et sur la côte d'Afrique, de Tanger à Tetouan, del barón Taylor.",
+        "Ilustraciones de 1826-32 para Voyage Pittoresque en Espagne, en Portugal, et sur la côte d'Afrique, de Tanger à Tetouan, del Baron Taylor.",
         "Autor probable: artículo de 1834 en Le Magasin pittoresque? (menciona comentarios sobre el Prado, en posesión de Javier Goya hasta 1861) (Guinard 1967-B, p.323)",
         "1836 Vue de Malaga depuis le nord (dibujo)",
-        "1838 coautor con Alexandre Dumas padre de <i>Quinze Jours au Sinai</i>.",
-        "1839 Ilustraciones para <i>La Syrie, I'Egypte, la Palestine et la Judée</i> del barón Taylor.",
+        "1838 coautor con Alexandre Dumas père de <i>Quinze Jours au Sinai</i>.",
+        "1839 Ilustraciones para <i>La Syrie, I'Egypte, la Palestine et la Judée</i> del Baron Taylor.",
         "1839 Ilustraciones (con Pharamond Blanchard) para San Juan de Ulúa, ou Relation de l'expédition française au Mexique.",
         "1868 encargo de Madame Aldema con cuatro ilustraciones de personajes del cuento popular árabe Las mil y una noches. Murió antes de poder terminarlo y hubo un pleito"
         ],
       "member of": "la Société archéologique du Midi de la France (desde 1831); la Société des Amis des Arts de Bordeaux (convenciendo a Eugène Delacroix para que participara); la Société des ARtistes Peintres, Sculpteurs et Graveurs (desde 1844)",
-      "founder of": "1844 Association des artistes con el barón Taylor, ahora llamada [Fondation Taylor](https://www.taylor.fr/); se convierte en su vicepresidente (1846) y presidente (1850)",
+      "founder of": "1844 Association des artistes con el Baron Taylor, ahora llamada [Fondation Taylor](https://www.taylor.fr/); se convierte en su vicepresidente (1846) y presidente (1850)",
       "portrayed by": "Jean Pierre Dantan (Dantan Jeune), 1834, escultura (<i>Portrait sérieux</i>), Musée Carnavalet S1194; Federico de Madrazo, 1837, Musée National du Château de Versailles; Nadar, fotografía, 1855, [Gallica](https://gallica.bnf.fr/ark:/12148/btv1b10535619d.r=Dauzats%201869?rk=64378;0), y 1854-68, [Gallica](https://gallica.bnf.fr/ark:/12148/btv1b10535615m.r=Dauzats%201869?rk=42918;4); Carjat & Cie., 1868, fotografía (Getty); Chenu, 1868, litografía, <i>L'Illustration</i>; Loÿs Delteil (según Claude-Marie Dubufe), grabado, abril de 1896 (póstumo), <i>L'Artiste</i>, vol. XI",
       "decorations/awards": "Chevalier de la Légion d'honneur (1837); Orden de Carlos III (1856)",
       "exhibitions":[
@@ -501,7 +502,7 @@
       "profession": "pintor, dibujante",
       "in Spain": [
         "1824-1837 trabaja como pintor y grabador; contratado por José de Madrazo para realizar reproducciones litográficas en el Real Museo de Madrid",
-        "1835-37 ayuda al barón Taylor y a Dauzats a adquirir pinturas para la Galerie espagnole de Louis Philippe I (1838-48)"
+        "1835-37 ayuda al Baron Taylor y a Dauzats a adquirir pinturas para la Galerie espagnole de Louis Philippe I (1838-48)"
         ],
       "in Paris": "después de 1837 (citado por el diario de Valentín Carderera) (Lanzarote Guiral 2016, p.537)",
       "author of": "Course de taureaux dans un bourg d'Espagne (Salón de 1834)",
@@ -524,7 +525,7 @@
         "Traducciones de obras románticas francesas: Hernani de Victor Hugo (vista por Théophile Gautier en 1840 en Valladolid); George Sand; Honoré de Balzac; Jules Janin; Jules Sandeau; Alexandre Dumas père; Frédéric Soulié",
         "Traducciones del inglés: David Hume (Historia de Inglaterra; Walter Scott",
         "1844 Catálogo razonado de los manuscritos españoles existentes en la Biblioteca Real de París: seguido de un suplemento que contiene los de las otras tres bibliotecas públicas (Arsenal, Ste Geneviève y Mazarine), París, Imprenta Real",
-        "1861 <i>París, Londres y Madrid</i>: menciona a Alexandre Dumas padre, Honoré de Balzac, Théophile Gautier, Eugène Delacroix, Adrien Dauzats, Charles Nodier, Alphonse de Lamartine,  Jean-Auguste-Dominique Ingres, Vernet, Decamps, Paul Delaroche, Eugène Sue, Feuillet, Arsène Houssaye y otros. NO menciona a Goya, Baron Taylor, Javier Goya ni Mariano Goya. [HathiTrust](https://babel.hathitrust.org/cgi/pt?id=hvd.32044014808356&seq=203&q1=Sand)"
+        "1861 <i>París, Londres y Madrid</i>: menciona a Alexandre Dumas père, Honoré de Balzac, Théophile Gautier, Eugène Delacroix, Adrien Dauzats, Charles Nodier, Alphonse de Lamartine,  Jean-Auguste-Dominique Ingres, Vernet, Decamps, Paul Delaroche, Eugène Sue, Feuillet, Arsène Houssaye y otros. NO menciona a Goya, Baron Taylor, Javier Goya ni Mariano Goya. [HathiTrust](https://babel.hathitrust.org/cgi/pt?id=hvd.32044014808356&seq=203&q1=Sand)"
         ],
       "editor de": [
         "<i>El Artista</i> (1835) con Federico de Madrazo y Pedro de Madrazo: difunde el romanticismo en España e imita la revista francesa <i>L'Artiste</i> (que visitan en 1833)",
@@ -576,7 +577,7 @@
       "nationality": "española",
       "studies in": "Seminario de Vergara; Instituto de San Isidro",
       "in Paris": [
-        "1833 con Federico de Madrazo: conocen al barón Taylor y a Adrien Dauzats.",
+        "1833 con Federico de Madrazo: conocen al Baron Taylor y a Adrien Dauzats.",
         "1841 (parte hacia París el 13 de julio)"
       ],
       "military activity": "1836 se alista como voluntario con su hermano Santiago Masarnau en los granaderos de la Milicia Nacional de Madrid (6.º Batallón, 1.ª Compañía de Fusileros), junto a Andrés Borrego; nombrado capitán en 1839. Otros voluntarios fueron Federico de Madrazo, Pedro de Madrazo, Pascual de Gayangos y Arce y Valentín Carderera.",
@@ -620,7 +621,7 @@
         "Carta del 28 de junio de 1856: 'Me iré a Italia si tengo valor, o a España si no lo tengo' (Correspondance inédite, 1896)",
         "Carta del 6 de marzo de 1857: 'Aún no tengo una opinión definida sobre Felipe II. Oscila entre gran hombre o imbécil, gran político de la escuela de Maquiavelo o simplemente muy malvado. En España se respeta su memoria y, sin embargo, es a él a quien hay que atribuir todas las miserias de este país. A menudo he tenido grandes discusiones sobre él con Mme de Montijo, que lo admiraba mucho'."
         ],
-      "visita el Museo del Prado": "en 1830 (no menciona a Goya en su relato)",
+      "visits the Prado Museum": "en 1830 (no menciona a Goya en su relato)",
       "parents": "Léonor Mérimée y Anne Louise Moreau",
       "portrayed by": "Anne Moreau en 1808 (de niño); Charles Reutilinger, fotografía (1850); Simon Jacques Rochard, pastel, 1852 (Musée Carnavalet); Mathilde Bonaparte, dibujo, 1869 (Musée Carnavalet); Nadar, caricatura, BnF RESERVE BOITE ECU-NA-88, [Gallica](https://gallica.bnf.fr/ark:/12148/btv1b8540006w.item)",
       "pseudonyms": "L' Auteur du Théâtre de Clara Gazul, Clara Gazul, Joseph Lestrange, Hyacinthe Maglanovich",
@@ -672,10 +673,10 @@
       "parents": "Louis Philippe I de Orleans, duque de Orleans, y María Adelaida de Borbón",
       "married to": "María Amelia de Borbón-Sicilia",
       "children": "10, entre ellos Fernando Felipe (duque de Orleans), Luisa (esposa de Leopoldo I de Bélgica), María, Luis, Clementina, Francisco, Enrique (duque de Aumale) y el príncipe Antonio, duque de Montpensier (casado con Luisa Fernanda de Borbón)",
-      "founder of": "Galerie espagnole en el Louvre (1838-48): colección de pinturas españolas adquiridas por el barón Taylor y Adrien Dauzats en España entre 1835 y 1837 (en colaboración con Javier Goya, Federico de Madrazo y Pharamond Blanchard)",
+      "founder of": "Galerie espagnole en el Louvre (1838-48): colección de pinturas españolas adquiridas por el Baron Taylor y Adrien Dauzats en España entre 1835 y 1837 (en colaboración con Javier Goya, Federico de Madrazo y Pharamond Blanchard)",
       "art collection": "cuando la Galerie espagnole cerró en 1848 con la derrota de su gobierno, Louis Philippe I se llevó las pinturas a Inglaterra como parte de su colección privada (aunque habían sido adquiridas con la lista civil pública)",
       "collector of Goya's works": [
-        "Galerie espagnole (que él afirmaba que era su colección personal): el original de Las majas en el balcón (1808-12; colección privada), Las jóvenes / La carta (1814-19; Lille), La fragua (c. 1815-20; Frick), <i>Lazarillo de Tormes</i> (1808-12; colección privada), Asensio Julià (posiblemente c. 1798, Thyssen 166 1971.1); las obras sin localizar <i>Un entierro</i> y <i>Última oración de un condenado a muerte</i>; y según el catálogo del barón Taylor, también <i>Ancianas/El tiempo</i> (Lille), un <i>Retrato de la duquesa de Alba</i> (Sociedad Hispánica A102) y un <i>Retrato de Goya</i> (desconocido) (Fayos Pérez 2024, p.49; Baticle y Marinas 1981, núms. 82-90)",
+        "Galerie espagnole (que él afirmaba que era su colección personal): el original de Las majas en el balcón (1808-12; colección privada), Las jóvenes / La carta (1814-19; Lille), La fragua (c. 1815-20; Frick), <i>Lazarillo de Tormes</i> (1808-12; colección privada), Asensio Julià (posiblemente c. 1798, Thyssen 166 1971.1); las obras sin localizar <i>Un entierro</i> y <i>Última oración de un condenado a muerte</i>; y según el catálogo del Baron Taylor, también <i>Ancianas/El tiempo</i> (Lille), un <i>Retrato de la duquesa de Alba</i> (Sociedad Hispánica A102) y un <i>Retrato de Goya</i> (desconocido) (Fayos Pérez 2024, p.49; Baticle y Marinas 1981, núms. 82-90)",
         "Un retrato de Zurbarán (dibujo) realizado por Goya, adquirido a través de Valentín Carderera en 1841 (Fayos Pérez 2024, p.45)"
       ],
       "address": "Palais-Royal (1830-31); Palais des Tuileries (1831-48); Claremont House (1848-50)",
@@ -943,7 +944,7 @@
       "in France": "1814 con el regreso de Fernando VII",
       "profession": "político, diplomático, coleccionista",
       "works as": "1780 Consejero de Indias (colonias); 1792 miembro del Consejo de Comercio; 1792 viceprotector de la RABASF; 1797 ministro de Agricultura, Comercio y Navegación; 1809 diputado de Madrid y consejero de Estado de la Corona (José I)",
-      "Trabajos para": "Fernando VI, Carlos III, Carlos IV, José I (Joseph Bonaparte)",
+      "works for": "Fernando VI, Carlos III, Carlos IV, José I (Joseph Bonaparte)",
       "author of": "una traducción de <i>Tancrède</i> de Voltaire (1765), en colaboración con el embajador francés Pierre-Paul d'Ossun (<i>Tragedia. El Tancredo</i>).",
       "member of": "Real Academia Española; Real Academia de Ciencias y Artes de Barcelona",
       "link to Goya's work":"es a Iriarte a quien Goya envía una carta el 7 de enero de 1794 acompañando la serie de 14 pequeños cuadros que realizó tras su enfermedad, con temas de 'capricho e invención'.",
@@ -1145,7 +1146,7 @@
       "member of": "Junta de Damas de Honor y Mérito de la Real Sociedad Matritense de Amigos del País",
       "parents": "Antonio Bruno de Pontejos y Sesma (III marqués de Casa Pontejos) y María Vicenta de Sandoval y Blasco de Orozco (VII condesa de La Ventosa)",
       "married to": [
-        "Francisco Antonio Moñino y Redondo (1786-1808): embajador de Portugal; hermano del conde de Floridablanca",
+        "Francisco Antonio Moñino y Redondo (1786-1808): embajador de Portugal; hermano del Count of Floridablanca",
         "Fernando de Silva Meneses y Ascarza (1808-1817): oficial de Guardias de Corps",
         "Joaquín Vizcaíno y Martínez Moles (1817-): capitán de dragones y caballero de la Orden de Santiago (18 años menor que ella)"
       ],
@@ -1262,7 +1263,7 @@
       "patronage": "encargó retratos a todos los principales artistas del momento, incluido Francisco de Goya",
       "collector of Goya's works": "Godoy encargó a Goya un retrato (1801) y las dos famosas Majas: la Maja vestida y la Maja desnuda, ambas pinturas ahora en el Prado (véase el borde Goya-Godoy)",
       "menciones a Goya": "en sus Memorias, Madrid, Imprenta de I. Sancha: t.II, 1836, p.233 (mención a Goya entre otros artistas); t.III, 1836, p.375 ('La calcografía real publicaba la colección de vistas del Escorial y las ochenta estampas de los bellos caprichos de don Francisco Goya, dibujados por él mismo'); t.IV, 1837, p.238 (mención del retrato de Goya)",
-      "rivals": "conde de Floridablanca; conde de Aranda; Fernando VII",
+      "rivals": "Count of Floridablanca; conde de Aranda; Fernando VII",
       "works for": "Carlos III; Carlos IV",
       "military activity": "Guardia de Corps (1784), para Carlos III; Mariscal de campo (febrero de 1791), teniente general (julio de 1791), Generalísimo (1801) y Gran almirante (1807) de los Reales Ejércitos; Almirante general de España e Indias (1807) (Alteza Serenísima); Jefe superior de los Reales Cuerpos de Artillería e Ingenieros; Ayudante general del Real Cuerpo de Guardias de Corps; Coronel general de la Guardia Suiza Pontificia.",
       "works as": "militar; Primer Secretario de Estado (1792-1798) y Presidente del Consejo de Estado; Primer Ministro; Gentilhombre de la Cámara del Rey con ejercicio; Superintendente general de la Renta de Correos (1792-1798)",
@@ -1564,7 +1565,7 @@
       "born in": "Roma",
       "profession": "pintor, dibujante, litógrafo (grabado, litografía, xilografía), ilustrador, conservador de museo",
       "author of": [
-        "Portadas para sus amigos: <i>Albertus</i> y <i>Les Jeunes-France</i> de Théophile Gautier; cuatro portadas para la edición de las obras de Victor Hugo (1832); Impressions de voyage : de Paris à Cádiz (1846), de Alexandre Dumas padre, Angèle y la primera edición de Théâtre.",
+        "Portadas para sus amigos: <i>Albertus</i> y <i>Les Jeunes-France</i> de Théophile Gautier; cuatro portadas para la edición de las obras de Victor Hugo (1832); Impressions de voyage : de Paris à Cádiz (1846), de Alexandre Dumas père, Angèle y la primera edición de Théâtre.",
         "Colabora en las ilustraciones de la edición de Furne de la obra de Honoré de Balzac.",
         "Anuncio de Cent et un Robert-Macaire (1839), de Honoré Daumier.",
         "Litografía: Rabelais (1836) según Eugène Delacroix; reproducciones según Tiziano, José de Ribera, Velázquez y otros para ilustrar una antología de pinturas del Museo Real de Madrid (Prado) de Juan José Martínez (Madrid, 1857)",
@@ -1642,7 +1643,7 @@
       "in Spain": "En 1811 (a los 9 años)",
       "address": "90 rue Vaugirard (más tarde n.º 88); 11 rue Notre-Dame-des-Champs (más tarde n.º 27), muy cerca de Achille Devéria",
       "influenced by": "Chateaubriand",
-      "portrayed by": "Jean Alaux (1825; Maison Victor Hugo 253); Achille Devéria, litografía (1829); Josef Danhauser, Liszt am Klavier, 1840, óleo, retrato colectivo con Alexandre Dumas padre, George Sand, Marie d'Agoult, Liszt, Paganini y Rossini (con el busto de Beethoven y el retrato de Byron), Alte Nationalgalerie, F.V.42; Charles Hugo, fotografía (c. 1853-55); Étienne Carjat, fotografía, 1875; Nadar, fotografía, c. 1884",
+      "portrayed by": "Jean Alaux (1825; Maison Victor Hugo 253); Achille Devéria, litografía (1829); Josef Danhauser, Liszt am Klavier, 1840, óleo, retrato colectivo con Alexandre Dumas père, George Sand, Marie d'Agoult, Liszt, Paganini y Rossini (con el busto de Beethoven y el retrato de Byron), Alte Nationalgalerie, F.V.42; Charles Hugo, fotografía (c. 1853-55); Étienne Carjat, fotografía, 1875; Nadar, fotografía, c. 1884",
       "studies in": "Real Colegio de San Antonio de Abad (Madrid); Lycée Louis le Grand (París)",
       "editor de": "Le Conservateur littéraire (1819)",
       "married to": "Adèle Foucher (1822)",
@@ -1715,7 +1716,7 @@
         "En 1846, invitado por Louis Philippe I a la boda de su hijo, el duque de Montpensier, con la infanta Luisa Fernanda de Borbón en Madrid"
         ],
       "studies in":"Lycée Louis-le-Grand (1820); Lycée Charlemagne, donde conoce a Gérard de Nerval (Gérard Labrunie)",
-      "Visita el Museo del Prado": "en 1842 (menciona a Goya en su relato)",
+      "visits the Prado Museum": "en 1842 (menciona a Goya en su relato)",
       "writes in": "La Chronique de Paris, La Presse (de Émile Girardin) (editor hasta 1855), L'Artiste, Le Moniteur universel (desde 1855), <i>Le cabinet de l'amateur</i>, <i>Le Figaro</i>, <i>L'Univers illustré</i>, <i>Revue nationale et étrangère</i>",
       "decorations/awards": "Officier de La Légion d'honneur",
       "masters": "Louis-Édouard Rioult",
@@ -1848,7 +1849,7 @@
       "trips": "Lisboa (1835), Londres (1835), Bruselas (1835), París (1835)",
       "in Paris": [
         "1813-1818: en 1813 (cuando Larra tenía 4 años), su familia se exilió tras la derrota de Joseph Bonaparte porque el padre de Larra era un afrancesado",
-        "1835-1836: conoce (supuestamente) a Víctor Hugo y Alexandre Dumas padre. Está en contacto con los españoles exiliados en la ciudad, así como con 'las notabilidades' de los círculos literarios y artísticos parisinos (Charles Nodier, Baron Taylor, Eugène Scribe, Pharamond Blanchard, Adrien Dauzats) (Torres González 2009, p.187). Larra escribe una serie de cartas, publicadas en 1836 (<i>Fígaro de vuelta</i>): menciona a Francisco Martínez de la Rosa"
+        "1835-1836: conoce (supuestamente) a Víctor Hugo y Alexandre Dumas père. Está en contacto con los españoles exiliados en la ciudad, así como con 'las notabilidades' de los círculos literarios y artísticos parisinos (Charles Nodier, Baron Taylor, Eugène Scribe, Pharamond Blanchard, Adrien Dauzats) (Torres González 2009, p.187). Larra escribe una serie de cartas, publicadas en 1836 (<i>Fígaro de vuelta</i>): menciona a Francisco Martínez de la Rosa"
       ],
       "political views": "Larra estaba en contra del absolutismo y el carlismo, además de ser crítico con los males sociales como la ignorancia, la mentalidad retrógrada y la falta de educación y cultura. Progresista e ilustrado. Apoya al liberal Mendizábal; luego trabaja en el partido moderado (Ávila 1836)",
       "parents": "Mariano de Larra y Langelot y María de los Dolores Sánchez de Castro",
@@ -1890,7 +1891,7 @@
       "lives in":"Valladolid, Burgos, Madrid, Burdeos (1847), París, México (1855-1865)",
       "trips": "Londres (1853); 1866 La Habana, Saint-Nazaire, París, Lyon, Aviñón, Nimes, Perpiñán, Barcelona, Valladolid",
       "in Paris": [
-        "1845-1846: publica sus obras con Baudry (1846-47; 1852). Entabla amistad con Alexandre Dumas padre, Alfred de Musset, Victor Hugo, Théophile Gautier y George Sand. Escribe para la <i>Revue des Deux Mondes</i>.",
+        "1845-1846: publica sus obras con Baudry (1846-47; 1852). Entabla amistad con Alexandre Dumas père, Alfred de Musset, Victor Hugo, Théophile Gautier y George Sand. Escribe para la <i>Revue des Deux Mondes</i>.",
         "1850-[1855]: publica otro volumen de obras con Baudry; también Granada. Poema oriental, precedido de la leyenda de Al-Hamar (Pillet fils ainé, 1852).",
         "1866: breve estancia"
       ],
@@ -1899,7 +1900,7 @@
       "partners/lovers": "muchas",
       "author of": [
         "Poesía: volumen de 1837, inspirado en Alphonse de Lamartine y Victor Hugo",
-        "Obras de teatro: <i>Vivir loco y morir más</i> (1837: la más antigua); <i>Don Juan Tenorio</i> (1844): inspirada en <i>El burlador de Sevilla</i> (1612-25) de Tirso de Molina y en <i>Don Juan de Marana</i> (1836) de Alejandro Dumas padre (a su vez inspirada en <i>Les Âmes du purgatoire</i> de Prosper Mérimée); Sancho García (1842); El puñal del Godo (1843); El Alcalde Ronquillo (1845); El Rey loco (1846); Traidor, inconfeso y mártir (1849).",
+        "Obras de teatro: <i>Vivir loco y morir más</i> (1837: la más antigua); <i>Don Juan Tenorio</i> (1844): inspirada en <i>El burlador de Sevilla</i> (1612-25) de Tirso de Molina y en <i>Don Juan de Marana</i> (1836) de Alexandre Dumas père (a su vez inspirada en <i>Les Âmes du purgatoire</i> de Prosper Mérimée); Sancho García (1842); El puñal del Godo (1843); El Alcalde Ronquillo (1845); El Rey loco (1846); Traidor, inconfeso y mártir (1849).",
         "Autobiografía: <i>Recuerdos del tiempo viejo</i> (1880)."
       ],
       "writes in": [
@@ -2109,6 +2110,7 @@
     },
     {
       "id": "Alexandre Dumas père",
+      "display name es": "Alejandro Dumas padre",
       "label": "Dumas",
       "life dates": "1802-1870", 
       "nationality": "French",
@@ -2116,7 +2118,7 @@
       "profession": "escritor, novelista, dramaturgo", 
       "author of": [
         "<i>Henri III et sa cour</i> (1829) (obra de teatro); <i>Los tres mosqueteros</i> (1844) (novela); <i>El conde de Montecristo</i> (1844-46) (novela); <i>La reina Margot</i> (1845), <i>Impresiones de viaje: de París a Cádiz</i> (1846).",
-        "Obras colectivas: <i>Les Français peints par eux-mêmes</i> (1840) (ed. Léon Curmer), junto con Théophile Gautier, Alexandre Dumas padre, J. J. Grandville, Honoré Daumier y Paul Gavarni."
+        "Obras colectivas: <i>Les Français peints par eux-mêmes</i> (1840) (ed. Léon Curmer), junto con Théophile Gautier, Alexandre Dumas père, J. J. Grandville, Honoré Daumier y Paul Gavarni."
       ],
       "mentions of Goya": [
         "1837-V-28 28 '[…] Goya, ese fantasioso [sic] discípulo del veneciano Tiepolo, con el que murió la gran pintura española, y que en sus composiciones, cuya veracidad se convirtió en sátira, atacó todo: monjes, nobles y reyes' (p.2). Sobre la Galerie espagnole: '[…] dotó a Francia de un tesoro que iba a perderse para el mundo, y que se trajo por 800 000 francos, cuatrocientos cuadros que valen tres millones' (p.2) 'Feuilleton: M. le Baron Taylor en Espagne', <i>La Presse</i>, pp. 1-2 (digitalizado en Gallica; Fayos-Pérez 2024, apéndice II; Schopp 1993, p.202)",
@@ -2127,7 +2129,7 @@
       "in Spain": "De octubre de 1846 a enero de 1847, acompañado por su hijo Alexandre y su colaborador Auguste Maquet. Escribe Impressions de voyage : de Paris à Cádiz (1846), ilustrado por Nanteuil. En el mismo viaje va a Argelia",
       "portrayed by": "Joseph Guichard, 1828 (Louvre); Achille Devéria, c. 1829; Achille Devéria, c. 1832 (litografía publicada por Charles Motte); Josef Danhauser, Liszt am Klavier, 1840, óleo, retrato de grupo con George Sand, Hugo, Marie d'Agoult, Liszt, Paganini y Rossini (con el busto de Beethoven y el retrato de Byron), Alte Nationalgalerie, F.V.42; Cham, 1846 (caricatura); Gouin, 1852 (fotografía); Nadar, 1855 (fotografía); William Henry Powell, 1855 (óleo); Gustave Le Gray, c. 1859 (fotografía); Cham, 1860 (caricatura); André Gill, 2 de diciembre de 1866 (caricatura); Alphonse Liébert, 1867 (fotografía).",
       "parents": "Marie-Louise Labouret y Thomas Alexandre Davy de La Pailleterie",
-      "children": "Alexandre Dumas fils; Henry Bauër",
+      "children": "Alexandre Dumas hijo; Henry Bauër",
       "curiosities": "a pesar de tener todos los méritos para ello, Dumas padre nunca fue aceptado como miembro de la Académie française, muy probablemente debido al racismo. Solo su hijo Alexandre Dumas (hijo) fue aceptado en 1874", 
       "correspondence": [
         "Correspondance générale, t. I (2014), t. II (2016), t. III (2019), t. IV (2021), t. V (2021), t. VI (enero de 1850-noviembre de 1853) (2023), t.VII (2023), t.VIII (2024), t.IX (abril de 1857-diciembre de 1859) (2025), t.X (enero de 1860-diciembre de 1863) (2025), ed. Claude Schopp, Classiques Garnier, Le XIXe siècle n.º 25.",
@@ -2175,7 +2177,7 @@
       "profession": "escritor, bibliotecario, anticuario",
       "writes in": "<i>La Quotidienne</i> (1821-1830): presenta la obra de Walter Scott, Rabelais, Marot, Alphonse de Lamartine, Lord Byron y Victor Hugo; <i>Revue des Deux Mondes</i>; <i>Revue de Paris</i> (desde 1829)",
       "political views": "favorable a la Revolución Francesa (Société des amis de la Constitution; Club des Jacobins), pero también monárquico. Fundamentalmente contrario al poder despótico",
-      "works as": "bibliotecario del conde de Artois, futuro Carlos X. Vive en el Arsenal (Bibliothèque de l'Arsenal), donde celebra un salón literario conocido como 'cénacle' (mencionado por Alexandre Dumas padre como un lugar donde se daban cita todos los grandes nombres de la literatura romántica). Destituido por Polignac en julio de 1830, fue reinstaurado por Louis Philippe I cuando la biblioteca pasó a manos del Estado en agosto.",
+      "works as": "bibliotecario del conde de Artois, futuro Carlos X. Vive en el Arsenal (Bibliothèque de l'Arsenal), donde celebra un salón literario conocido como 'cénacle' (mencionado por Alexandre Dumas père como un lugar donde se daban cita todos los grandes nombres de la literatura romántica). Destituido por Polignac en julio de 1830, fue reinstaurado por Louis Philippe I cuando la biblioteca pasó a manos del Estado en agosto.",
       "portrayed by": "Jean-Baptiste Paulin Guérin, óleo sobre lienzo, 1844, Versalles MV 3018; litografía en Cénacle de la Muse française (1827)",
       "author of": [
         "<i>Smarra ou les Démons de la nuit</i> (1821): de enorme influencia en la generación romántica; <i>Infernalia</i> (1822); <i>Trillby ou le lutin d'Argail</i> (1822); <i>Examen critique des dictionnaires de la langue française</i> (1828); <i>Le Vieux Marinier</i> (1832)",
@@ -2199,7 +2201,8 @@
       "image source": "Retrato de Guérin, 1844"
     },
     {
-      "id": "Marqués de Custine",
+      "id": "Marquis of Custine",
+      "display name es": "Marqués de Custine",
       "label": "Custine",
       "full name": "Astolphe-Louis-Léonor de Custine",
       "life dates": "1790-1857",
@@ -2243,7 +2246,7 @@
       "profession": "mujer de letras, traductora", 
       "knows Goya's works": "en abril de 1831, a través de Fontaney (tras su regreso de España en enero de 1831)",
       "escribe sobre Goya": "En abril de 1831: firmada como 'Ad. M' (Revue encyclopédique n.º 50, pp. 316-331). Partes de su ensayo son plagiadas por escritores masculinos como Gustave Brunet (1855, Revue Universelle des Arts) y Théophile Thoré (10 de septiembre de 1842)",
-      "autora de": "es coautora, junto con Louise Swanton Belloc, de varios libros infantiles (Buell Hale 1874, pp. 583-84)",
+      "author of": "es coautora, junto con Louise Swanton Belloc, de varios libros infantiles (Buell Hale 1874, pp. 583-84)",
       "writes in": "Revue encyclopédique",
       "fundadora de": "La Ruche, journal d'études familière (junto con Louise Swanton Belloc), una revista mensual dedicada a la educación de las jóvenes (Buell Hale 1874, p.583-84)",
       "curiosities": [
@@ -2306,7 +2309,7 @@
       "children": "Louisa Desbordes, Marie-Eugène Desbordes (fallecida en 1816), Junie Valmore (fallecida tras el parto), Hippolyte Valmore, Ondine Valmore (fallecida en 1853), Inès Valmore (fallecida en 1846)",
       "websites": "Sociedad de Estudios Marceline Desbordes-Valmore (https://www.societedesetudesmarcelinedesbordesvalmore.fr/); [Wikipedia](https://fr.wikipedia.org/wiki/Marceline_Desbordes-Valmore); correspondencia en [el blog de Xavier Lang](https://correspondancedv.blogspot.com/)",
       "bibliography": "Philippe Gambette, 'Sur les traces d'un portrait de Marceline Desbordes-Valmore par Goya', en Aimée Boutin y Catherine Witt (eds.), [<i>Marceline Desbordes-Valmore traductrice et traduite</i>](https://www.societedesetudesmarcelinedesbordesvalmore.fr/?event=parution-des-cahiers-jecris-pourtant-n-6), Cahiers <i>J'écris pourtant</i> (Société des études Marceline Desbordes-Valmore), n.º 6, 2025; Michel Suffran, Un camino hacia ti: Encuentro entre Goya y Marceline Desbordes-Valmore (1823-1827), 2013; M. H. Corne, La vie et les œuvres de Madame Desbordes-Valmore, 1876, [Wikisource](https://fr.wikisource.org/wiki/La_Vie_et_les_%C5%92uvres_de_Madame_Desbordes-Valmore/Texte_entier).",
-      "archivo de periódico": "Mara Goyet, 'La vie si difficile de l'écrivaine Marceline Desbordes-Valmore est à vous fendre le cœur', <i>Le Monde</i>, 8 de agosto de 2025",
+      "newspaper archive": "Mara Goyet, 'La vie si difficile de l'écrivaine Marceline Desbordes-Valmore est à vous fendre le cœur', <i>Le Monde</i>, 8 de agosto de 2025",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q466987",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500339012",
@@ -2324,7 +2327,7 @@
       "profession": "escritora feminista y ensayista", 
       "works as": "institutriz en la casa del general Bertrand",
       "political views": "entusiasta partidaria de Napoleón. Se ofreció a viajar a Santa Elena para cuidar al antiguo emperador",
-      "autora de": "<i>Essai sur la religion intérieure</i> (1824); <i>Lettres sur les ouvrages de Madame de Staël</i> (1824); <i>Jerome</i> (1829; novela): sobre sus relaciones con Sampayo; <i>Settimia</i> (novela; 1836); <i>La femme et la démocratie de nos temps</i> (1836); <i>Les enchantements de Prudence, Avec George Sand</i> (1873): tuvo un 'éxito escandaloso'.",
+      "author of": "<i>Essai sur la religion intérieure</i> (1824); <i>Lettres sur les ouvrages de Madame de Staël</i> (1824); <i>Jerome</i> (1829; novela): sobre sus relaciones con Sampayo; <i>Settimia</i> (novela; 1836); <i>La femme et la démocratie de nos temps</i> (1836); <i>Les enchantements de Prudence, Avec George Sand</i> (1873): tuvo un 'éxito escandaloso'.",
       "partners/lovers": "Comte de Sampayo; Gino Capponi?; George Sand?; François-René de Chateaubriand; Henry Bulwer Lytton (Lord Dalling)",
       "married to": "Napoléon Louis Frédéric Corneille de Méritens de Malvézie (1843: solo un año)",
       "children": "Marcus",
@@ -2344,7 +2347,7 @@
       "nationality": "francés",
       "profession": "mujer de letras, escritora, poeta, libretista", 
       "writes in": "Le Mercure de France; La Muse française",
-      "autora de": "poesía; obras pedagógicas; traducciones; Cours d'histoire de France (1837); un volumen sobre literatura alemana; un volumen sobre literatura italiana",
+      "author of": "poesía; obras pedagógicas; traducciones; Cours d'histoire de France (1837); un volumen sobre literatura alemana; un volumen sobre literatura italiana",
       "works as": "libretista para músicos como Saint-Saëns (La Feuille de peuplier, Plainte, 1853)",
       "member of": "Société linnéenne de Paris (1822)",
       "pseudonyms": "Amable Tastu, Amable Voïart",
@@ -2399,7 +2402,7 @@
       "nationality": "francesa",
       "profession": "mujer de letras, escritora, novelista, compositora, poeta", 
       "writes in": "Revue des Deux Mondes",
-      "autora de": "<i>Sonnet à Mélanie Gaume</i> (1830); Mélodies romantiques (1831); 'Lettres d'une hirondelle à une serine élevée au Couvent des oiseaux', en <i>Scènes de la vie privée et publique des animaux</i> (1842), de J. J. Grandville; <i>Charles Nodier, épisodes et souvenirs de sa vie</i> (1867)",
+      "author of": "<i>Sonnet à Mélanie Gaume</i> (1830); Mélodies romantiques (1831); 'Lettres d'une hirondelle à une serine élevée au Couvent des oiseaux', en <i>Scènes de la vie privée et publique des animaux</i> (1842), de J. J. Grandville; <i>Charles Nodier, épisodes et souvenirs de sa vie</i> (1867)",
       "correspondence": "<i>Correspondance</i>, Classiques Garnier, Le XIXe siècle, vol. 1 (1821-1848: París, l'Arsenal, Château-Chinon) (2019), II (1849-1892), III (Lettres à Marie), en 2019, 2020 y 2021 respectivamente",
       "portrayed by": "Jean Gigoux, Musée de Besançon, 902.6.1 (pintura al óleo); Hyppolyte Masson, 1838, coll. Mennessier-Nodier (dibujo)",
       "married to": "Jules Mennessier (1830)",
@@ -2430,7 +2433,7 @@
       "in Spain": "1808-1809 su familia vivió en España en el palacio de Manuel Godoy cuando este fue exiliado a París",
       "knows Goya's works": "en 1834",
       "menciones a Goya": "Journal intime, 25 de noviembre de 1834 (celos por las mujeres de Goya en relación con Alfred de Musset)",
-      "autora de": [
+      "author of": [
         "<i>Voyage chez Mr. Blaise</i> (1829); <i>Voyage en Auvergne</i> (1829); <i>Voyage en Espagne</i> (1829); <i>Un hiver en Majorque</i> (1841); La Petite Fadette (1849); Histoire de ma vie (1855). Álbum de dibujos. Torpe copia de La infanta Margarita de Velázquez. Colección Lovenjoul Chantily [¿ahora en el Institut de France? (Lipschutz 1972, p.117).",
         "Obras colectivas: 1842 Scènes de la vie privée et publique des animaux, de J. J. Grandville, junto con Charles Nodier y Honoré de Balzac; 1845-46 <i>Le diable à Paris: Paris et les parisiens: mœurs et coutumes, caractères et portraits des habitants de Paris</i> (ilustrado por Paul Gavarni), con textos de Honoré de Balzac, Théophile Gautier y Alfred de Musset"
       ],
@@ -2440,7 +2443,7 @@
       "partners/lovers": "Prosper Mérimée; Jules Sandeau; Alfred de Musset (1833-35); Félicien Mallefille; Hortense Allart?; Marie Dorval?; Frédéric Chopin; Victor Borie (1848-49); Alexandre Manceau (1849-64)",
       "children": "Maurice Sand; Solange Sand",
       "pseudonyms": "George Sand; Amandine; Amantine",
-      "portrayed by": "Marie-Aurore de Saxe (su abuela), dibujo al pastel, 1810, Musée de la vie romantique; François-Auguste Biard, <i>Portrait de Goerge Sand et de son époux, le baron François Casimir Dudevant</i>, c. 1823, óleo sobre lienzo, Musée George Sand; Thomas Sully, óleo sobre lienzo?, 1826, Colección Johnson, Spartanburg, Carolina del Sur; autorretrato, c. 1830, Musée Carnavalet; Alfred de Musset, 1833, dibujos, Bibliotèque de l'Institut de France (MsE956-fol.4, fol.7, fol.14, fol.16, fol.17, fol.20); Delacroix, 1834, óleo sobre tabla, Museo Delacroix; Jean-Baptiste Isabey, c. 1835; Charles Louis Gratia, dibujo al pastel, c. 1835, colección privada; François Théodore Rochard, c. 1835; Auguste Charpentier, óleo, 1838, Museo de la Vida Romántica; Delacroix, boceto al óleo, 1838, Copenhague; Josef Danhauser, Liszt am Klavier, 1840, óleo, retrato colectivo con Alexandre Dumas padre, Victor Hugo, Marie d'Agoult, Franz Liszt, Paganini y Rossini (con el busto de Beethoven y el retrato de Lord Byron), Alte Nationalgalerie, F.V.42; Thomas Couture, 1850, dibujo; Nadar, fotografía, c. 1864, [Getty](https://www.getty.edu/art/collection/object/1098NS)",
+      "portrayed by": "Marie-Aurore de Saxe (su abuela), dibujo al pastel, 1810, Musée de la vie romantique; François-Auguste Biard, <i>Portrait de Goerge Sand et de son époux, le baron François Casimir Dudevant</i>, c. 1823, óleo sobre lienzo, Musée George Sand; Thomas Sully, óleo sobre lienzo?, 1826, Colección Johnson, Spartanburg, Carolina del Sur; autorretrato, c. 1830, Musée Carnavalet; Alfred de Musset, 1833, dibujos, Bibliotèque de l'Institut de France (MsE956-fol.4, fol.7, fol.14, fol.16, fol.17, fol.20); Delacroix, 1834, óleo sobre tabla, Museo Delacroix; Jean-Baptiste Isabey, c. 1835; Charles Louis Gratia, dibujo al pastel, c. 1835, colección privada; François Théodore Rochard, c. 1835; Auguste Charpentier, óleo, 1838, Museo de la Vida Romántica; Delacroix, boceto al óleo, 1838, Copenhague; Josef Danhauser, Liszt am Klavier, 1840, óleo, retrato colectivo con Alexandre Dumas père, Victor Hugo, Marie d'Agoult, Franz Liszt, Paganini y Rossini (con el busto de Beethoven y el retrato de Lord Byron), Alte Nationalgalerie, F.V.42; Thomas Couture, 1850, dibujo; Nadar, fotografía, c. 1864, [Getty](https://www.getty.edu/art/collection/object/1098NS)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q3816",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500054039",
@@ -2801,7 +2804,7 @@
       "life dates": "1814-1843",
       "nationality": "española",
       "profession": "pintora, grabadora, dibujante",
-      "autora de": "un corpus de 77 dibujos que actualmente se encuentra en la Hispanic Society of America (atribuido en 1956 por José López-Ray); posiblemente, <i>La lechera de Burdeos</i>, atribuido a Goya",
+      "author of": "un corpus de 77 dibujos que actualmente se encuentra en la Hispanic Society of America (atribuido en 1956 por José López-Ray); posiblemente, <i>La lechera de Burdeos</i>, atribuido a Goya",
       "works as": "copista en el Museo del Prado: obras de Murillo, Vicente López y otros; profesora de dibujo de las infantas Isabel (futura Isabel II) y Luisa Fernanda",
       "member of": "Real Academia de Bellas Artes de San Fernando, como 'Académica de mérito' (1842)",
       "parents": "Leocadia Zorrilla e Isidoro Weiss Alonso",
@@ -2865,7 +2868,7 @@
       "writes in": "Le Monde Illustré",
       "escribe sobre Goya": [
         "Numerosas menciones a Goya en Le Monde Illustré, L'Art y otras revistas, entre 1860 y 1877",
-        "<i>Goya, sa vie, son œuvre</i> (1867): con 229 obras de arte. Con ilustraciones de Tabar, Bocourt e Yriarte, entre las que se incluyen <i>La maja</i>, <i>La lámpara del diablo</i> y <i>Saturno</i> (Pinturas negras). Menciona, entre otras obras, los Caprichos, los Disparates y el Álbum A-B (p. 93). Menciona al conde de Floridablanca, al conde de Aranda y a Manuel Godoy (príncipe de la Paz)",
+        "<i>Goya, sa vie, son œuvre</i> (1867): con 229 obras de arte. Con ilustraciones de Tabar, Bocourt e Yriarte, entre las que se incluyen <i>La maja</i>, <i>La lámpara del diablo</i> y <i>Saturno</i> (Pinturas negras). Menciona, entre otras obras, los Caprichos, los Disparates y el Álbum A-B (p. 93). Menciona al Count of Floridablanca, al conde de Aranda y a Manuel Godoy (príncipe de la Paz)",
         "'Goya aquafortiste', <i>L'Art</i>, 1877, vol. 2, pp. 2-10, 33-40, 56-60, 78-93."
         ],
       "knows Goya's works": "se centró especialmente en la serie de grabados Los desastres de la guerra",
@@ -2931,7 +2934,7 @@
       "profession": "compositora, poeta, mujer de letras",
       "masters": "François-Joseph Fétis; Antoine Reicha (también maestro de Berlioz y Liszt)",
       "decorations/awards": "Prix Montyon (1896)",
-      "autora de": "Le Loup-garou (ópera cómica) (1827); Fausto (1831); La Esmeralda (1836)",
+      "author of": "Le Loup-garou (ópera cómica) (1827); Fausto (1831); La Esmeralda (1836)",
       "portrayed by": "Victor Mottez (hacia 1840); artista desconocido (hacia 1860)",
       "parents": "Louis-François Bertin (periodista, editor) y Geneviève-Aimée-Victoire Boutard (pianista)",
       "siblings": "Édouard Bertin, Armand Bertin, Geneviève Bertin",
@@ -3054,7 +3057,7 @@
       "parents": "Manuel Pérez de Villaamil",
       "lives in":"Madrid; Francia y Bélgica",
       "works for": "Isabel II (desde 1844)",
-      "mecenas": "Barón Taylor (para Louis Philippe I)",
+      "mecenas": "Baron Taylor (para Louis Philippe I)",
       "works as": [
         "Académico de mérito (desde 1835) y profesor de paisaje (desde 1845) en la RABASF", 
         "Pintor de cámara honorario de Isabel II (1840)"
@@ -3120,7 +3123,7 @@
       "lives in":"Castres, Barcelona (1854-55), Madrid (1855-56), París (desde 1859)",
       "in Spain": "Barcelona (1854-55) y Madrid (1855-56)",
       "in Madrid": "1855-56 (RABASF), junio de 1867, marzo de 1881, noviembre de 1882",
-      "visita el Museo del Prado": "hacia 1855-56: realiza copias de Velázquez (<i>La infanta Margarita</i>, Musée Goya 28-1-16; <i>Christ en croix</i>, Musée Goya 28-1-90; <i>Portrait de Juan Martínez y Montañez</i>, Musée Goya 28-1-9; <i>La Rédition de Bréda</i>, Musée Goya 28-1-2), Tiziano (<i>Bacchanale</i>, Musée Goya 28-1-197; Diane et Acteon, Museo Goya 28-1-87) y Rubens (Retrato de Isabelle Brandt, Museo Goya 28-1-169). Más tarde, también realizaría copias de Francisco de Goya, en óleo y acuarela (Museo Goya Castres).",
+      "visits the Prado Museum": "hacia 1855-56: realiza copias de Velázquez (<i>La infanta Margarita</i>, Musée Goya 28-1-16; <i>Christ en croix</i>, Musée Goya 28-1-90; <i>Portrait de Juan Martínez y Montañez</i>, Musée Goya 28-1-9; <i>La Rédition de Bréda</i>, Musée Goya 28-1-2), Tiziano (<i>Bacchanale</i>, Musée Goya 28-1-197; Diane et Acteon, Museo Goya 28-1-87) y Rubens (Retrato de Isabelle Brandt, Museo Goya 28-1-169). Más tarde, también realizaría copias de Francisco de Goya, en óleo y acuarela (Museo Goya Castres).",
       "interest in Spanish art": [
         "Era un gran admirador de la pintura española.",
         "Realizó copias de Velázquez y Goya en el Prado.",
@@ -3166,7 +3169,7 @@
       "curiosities": "Manet contrajo la sífilis",
       "military activity": "1870 Guerra franco-prusiana: Manet (38), junto con Edgar Degas (36), es reclutado por la Garde Nationale Sédentaire. Ambos están bajo las órdenes de Ernest Meissonier. Noviembre: se une a la artillería, siguiendo a Edgar Degas. Tienen un conflicto sobre la estrategia de defensa de París.",
       "masters": "Thomas Couture (de 1850 a 1856)",
-      "Estudiantes": "Eva Gonzalès",
+      "students": "Eva Gonzalès",
       "literary salon or tertulia": "al que asistían, entre otros, la familia de Berthe Morisot y la familia de Edgar Degas",
       "member of": [
         "'Cénacle des Batignolles', del que surge el movimiento impresionista",
@@ -3183,7 +3186,7 @@
         "1906 Nápoles"
       ],
       "in Spain": "1865, agosto-septiembre: siguiendo un itinerario proporcionado por su amigo Zacharie Astruc. Pudo tomar el nuevo tren París-Madrid (vía Irún), inaugurado el 15 de agosto de 1864. Manet visita el Prado (con Théodore Duret el 1 de septiembre) y el RABASF (para ver las obras de Goya), y también va a Toledo, Valladolid (donde ve San Pablo de Valladolid), Burgos y Hendaya. Véase Hansen 2021, [Bremen Kunsthalle](https://www.kunsthalle-bremen.de/en/view/exhibitions/exb-page/manet-and-astruc) y la herramienta digital relacionada [<i>Manets Spanienreise 1865</i>](https://uploads.knightlab.com/storymapjs/60057410242989e7510095c3abd187e2/edouard-manets-spanienreise-1865/index.html) para seguir el itinerario de Manet en España.",
-      "Visita el Museo del Prado": "Manet visita el Prado con Théodore Duret el 1 de septiembre de 1865. Lo menciona en una carta a Henri Fantin-Latour (3 de septiembre de 1865): 'Mon cher ami, que je vous regrette ici et quelle joie c'eût pour vous de voir ce Vélasquez qui à lui tout seul vaut le voyage... Es el pintor de los pintores; no me ha sorprendido, pero me ha encantado. El retrato de cuerpo entero que tenemos en el Louvre no es suyo. Solo <i>La infanta</i> es indiscutible [...]. Las <i>hilanderas</i>, el hermoso retrato de Alonzo Cano, Las Meninas (los enanos), cuadros extraordinarios, sus filósofos, piezas sorprendentes... Todos los enanos, sobre todo el que está sentado de frente con los puños en las caderas, pintura de elección para un verdadero conocedor, sus magníficos retratos... Habría que enumerarlo todo, solo hay obras maestras... Y Goya, el más curioso después del maestro, al que imitó demasiado en el sentido más servil de la imitación. Sin embargo, con gran brío. En el museo hay dos hermosos retratos ecuestres suyos al estilo de Velázquez, aunque muy inferiores. Lo que he visto de él hasta ahora no me ha gustado mucho; estos días tengo que ver una magnífica colección en casa del duque de Ossuna... Mañana voy a hacer una excursión a Toledo. Allí veré muchas obras de El Greco y Goya, según me han dicho' (Tinterow 2003, p.293).",
+      "visits the Prado Museum": "Manet visita el Prado con Théodore Duret el 1 de septiembre de 1865. Lo menciona en una carta a Henri Fantin-Latour (3 de septiembre de 1865): 'Mon cher ami, que je vous regrette ici et quelle joie c'eût pour vous de voir ce Vélasquez qui à lui tout seul vaut le voyage... Es el pintor de los pintores; no me ha sorprendido, pero me ha encantado. El retrato de cuerpo entero que tenemos en el Louvre no es suyo. Solo <i>La infanta</i> es indiscutible [...]. Las <i>hilanderas</i>, el hermoso retrato de Alonzo Cano, Las Meninas (los enanos), cuadros extraordinarios, sus filósofos, piezas sorprendentes... Todos los enanos, sobre todo el que está sentado de frente con los puños en las caderas, pintura de elección para un verdadero conocedor, sus magníficos retratos... Habría que enumerarlo todo, solo hay obras maestras... Y Goya, el más curioso después del maestro, al que imitó demasiado en el sentido más servil de la imitación. Sin embargo, con gran brío. En el museo hay dos hermosos retratos ecuestres suyos al estilo de Velázquez, aunque muy inferiores. Lo que he visto de él hasta ahora no me ha gustado mucho; estos días tengo que ver una magnífica colección en casa del duque de Ossuna... Mañana voy a hacer una excursión a Toledo. Allí veré muchas obras de El Greco y Goya, según me han dicho' (Tinterow 2003, p.293).",
       "mecenas": "Paul Durand-Ruel: adquiere obras de Manet por primera vez en 1872 (24 cuadros por 35 000 francos)",
       "exhibitions":[
         "Salón de París: 1859, rechazo de <i>Le Buveur d'absinthe</i>; <i>Chanteur espagnol</i> (1860; Salón de 1861: mención honorífica); <i>Olympe</i> (1863; Salón de 1865): vilipendiado por la crítica y el público, defendido por Zola, que pierde su trabajo; 1866 rechazo de <i>El flautista</i> (Orsay) y <i>El actor trágico (Rouvière como Hamlet)</i> (NGA); 1869: rechazo de La ejecución de Maximiliano y prohibición de distribuir su litografía relacionada (defendida por Zola); El balcón, El almuerzo y 5 grabados (Salón de 1869); <i>La lección de música</i> y <i>Eva Gonzalès</i> (Salón de 1870); <i>La batalla del Kearsarge y el Alabama</i> (Salón de 1872); <i>Reposo</i> y <i>Le Bon Bock</i> (con un éxito sin precedentes) (Salón de 1873); <i>El ferrocarril</i> y <i>Polichinelle</i> (acuarela), rechazo de <i>Las golondrinas</i> (Bührle) y <i>Baile de máscaras en la ópera</i> (NGA) (Manet es defendido por Mallarmé); <i>Argenteuil</i> (Salón de 1875); rechazo de <i>La lavandería</i> y <i>El artista (Marcellin Desboutin)</i> (Salón de 1876); <i>Retrato de Faure como Hamlet</i> (Salón de 1877), rechazo de <i>Nana</i>; <i>En barca</i> y <i>En el conservatorio</i> (Berlín) (Salón de 1879); Antonin Proust y Chez le Père Lathuille (Salón de 1880); M. Eugène Pertuiset, el cazador de leones (medalla de segunda clase) y Retrato de M. Henri Rochefort (Salón de 1881); Jeanne (Getty) y Un bar en las Folies-Bergère (Salón de 1881). En 1870, se une a un comité que tiene como objetivo reformar el proceso de selección del jurado del Salón.",
@@ -3367,7 +3370,7 @@
       ],
       "influenced by": "Édouard Manet; Stéphane Mallarmé; Corot",
       "friends": "Édouard Manet; Émile Zola; Stéphane Mallarmé; Camille Pissarro; Claude Monet; Auguste Renoir",
-      "Autora de": "416 óleos, 191 pasteles, 240 acuarelas, 8 grabados, 2 esculturas y entre 200 y 300 dibujos. <i>Edma Morisot lisant</i> (1867, Cleveland); <i>Jeune femme à sa fenêtre (Madame Pontillon)</i> (retrato de Edma Morisot) (1869); La lecture o Madame Morisot et sa fille, Madame Pontillon (1869-70, NGA); Intérieur (1871); Femme et enfant au balcon (su hermana y su sobrina) (1872); <i>Le Berceau</i> (1872); <i>Chasse aux papillons</i> (1874, Orsay); <i>Femme à sa toilette</i> (1875); <i>Eugène Manet à l'île de Wight</i> (1875, Museo Marmottan-Monet); <i>Femme en noir (Avant le théâtre)</i> (1875, Tokio); <i>La Psyché</i> (1876, Thyssen); <i>Le Port de Nice</i> (1881, Dallas); <i>Bords de Seine</i> (1883, Oslo); <i>Dans la salle à manger</i> (1886, NGA); <i>Paule Gobillard</i> (1886, Marmottan); escultura en bronce de la cabeza de Julie Manet (c. 1886); <i>Enfants à la vasque</i> (1886, Marmottan); <i>Le Flageolet</i> (1890); <i>Bergère nue couchée</i> (1891); <i>Julie et son lévrier</i> (1893); <i>Julie rêveuse</i> (1894)",
+      "author of": "416 óleos, 191 pasteles, 240 acuarelas, 8 grabados, 2 esculturas y entre 200 y 300 dibujos. <i>Edma Morisot lisant</i> (1867, Cleveland); <i>Jeune femme à sa fenêtre (Madame Pontillon)</i> (retrato de Edma Morisot) (1869); La lecture o Madame Morisot et sa fille, Madame Pontillon (1869-70, NGA); Intérieur (1871); Femme et enfant au balcon (su hermana y su sobrina) (1872); <i>Le Berceau</i> (1872); <i>Chasse aux papillons</i> (1874, Orsay); <i>Femme à sa toilette</i> (1875); <i>Eugène Manet à l'île de Wight</i> (1875, Museo Marmottan-Monet); <i>Femme en noir (Avant le théâtre)</i> (1875, Tokio); <i>La Psyché</i> (1876, Thyssen); <i>Le Port de Nice</i> (1881, Dallas); <i>Bords de Seine</i> (1883, Oslo); <i>Dans la salle à manger</i> (1886, NGA); <i>Paule Gobillard</i> (1886, Marmottan); escultura en bronce de la cabeza de Julie Manet (c. 1886); <i>Enfants à la vasque</i> (1886, Marmottan); <i>Le Flageolet</i> (1890); <i>Bergère nue couchée</i> (1891); <i>Julie et son lévrier</i> (1893); <i>Julie rêveuse</i> (1894)",
       "mecenas": "Paul Durand-Ruel: en 1872 adquirió obras de Morisot a través de Manet; hacia 1875, Femme à sa toilette fue vendida a Hoschedé a través de Durand-Ruel",
       "exhibitions":[
         "Salón de París: <i>Souvenir des bords de l'Oise</i> y <i>Un vieux chemin à Auvers</i> (Salón de 1864); <i>Vue de Paris prise des hauteurs du Trocadéro</i> (Salón de 1867, Museo de Santa Bárbara); <i>Vue de la rivière de Pont-Aven à Rozbras</i> (Salón de 1868): rechazada por la crítica, excepto por Zola; <i>Joven mujer en su ventana ( )</i> (retrato de Edma Morisot) y <i>La lectura</i> o <i> Morisot y su hija, Madame Pontillon</i> (Salón de 1870); rechazo de <i>Intérieur</i> (Salón de 1872) (lo que enfureció a Puvis de Chavannes); <i>Le Berceau</i> (Salón de 1872); <i>Blanche</i> (Blanche Pontillon) (1873)",
@@ -3481,7 +3484,7 @@
       "profession": "crítico de arte, poeta, pintor (desde finales de la década de 1860), escultor, coleccionista de arte",
       "born in": "Angers",
       "trips": "Inglaterra, Flandes, España",
-      "visita el Museo del Prado": "por primera vez en 1864",
+      "visits the Prado Museum": "por primera vez en 1864",
       "copies after Goya": "en su primera visita a España en 1864, Astruc realiza una pequeña copia de La maja vestida en la RABASF (La maja desnuda no se exhibía al público) (Maurer 2021, p.37)",
       "in Spain": [
         "1864 (3 meses): influenciado por los escritos de Théophile Gautier y Victor Hugo ('forgèrent dans son esprit l'image d'une Espagne aux allures romantiques' [...] 'cette vision fantasmée, entre pittoresque et romantique, ne le quitta jamais'). En su primer viaje, 'il fut un peu déçu de constater le décalage entre la réalité et le songe hispanique qu'il avait à l'esprit. Il ne se démoralisa pas pour autant et visita minutieusement l'Espagne pendant trois mois. Durante su estancia, y durante todas las demás posteriores, tomó gran cantidad de notas y dibujos que algún día le servirían para escribir un libro sobre España' (Cantenot 2017, resumen). Visita el Prado, el RABASF y probablemente la Alameda de Osuna (con pinturas de Goya), ya que recomendó a Manet que la visitara.",
@@ -3553,7 +3556,7 @@
         "Salón de París: desde 1864 (<i>Esméralda</i>: Renoir la destruyó); <i>Lise à l'ombrelle</i> (1868): elogiada por Émile Zola",
         "1874 Primera exposición impresionista"
        ],
-      "estudiantes": "Jeanne Baudot",
+      "students": "Jeanne Baudot",
       "influenced by": [
         "Francés: Fragonard; Boucher; Édouard Manet (c. 1871); Eugène Delacroix (principios de la década de 1870); Jean-Auguste-Dominique Ingres; Courbet; Claude Monet",
         "españoles: Velázquez: Renoir consideraba que en la Infanta Margarita de Velázquez (1653, Louvre), sus cintas reconciliaban 'todo el arte de la pintura' (tout l'art de la peinture est là) (Tinterow 2003, p.457; citado de García Felguera 1991, p.143)",
@@ -3740,7 +3743,7 @@
       "nationality": "francesa (con ascendencia irlandesa)",
       "profession": "mujer de letras, traductora, escritora",
       "writes in": "Revue encyclopédique",
-      "Autora de": "las traducciones de La cabaña del tío Tom (1852), de Harriet Beecher Stowe; las memorias de Lord Byron; las obras de Walter Scott y cuatro obras de Charles Dickens, entre otras. También fue autora de más de cuarenta libros, incluida una biografía de Byron, publicada con una introducción de Stendhal. Fue coautora, junto con Adélaïde de Montgolfier, de varios libros infantiles (Buell Hale 1874, p.583-84)",
+      "author of": "las traducciones de La cabaña del tío Tom (1852), de Harriet Beecher Stowe; las memorias de Lord Byron; las obras de Walter Scott y cuatro obras de Charles Dickens, entre otras. También fue autora de más de cuarenta libros, incluida una biografía de Byron, publicada con una introducción de Stendhal. Fue coautora, junto con Adélaïde de Montgolfier, de varios libros infantiles (Buell Hale 1874, p.583-84)",
       "participó en": "un proyecto tras la Revolución de 1830 para ayudar al general Lafayette a establecer bibliotecas públicas en Francia, pero no tuvo éxito (Buell Hale 1874, p.583-84)",
       "fundadora de": "La Ruche, journal d'études familière (junto con Adélaïde de Montgolfier), una revista mensual dedicada a la educación de las mujeres jóvenes (Buell Hale 1874, p.583-84)",
       "married to": "Jean-Hilaire Belloc (pintor francés)",
@@ -3761,7 +3764,7 @@
       "life dates": "1766-1817", 
       "nationality": "francesa (de ascendencia suiza)",
       "profession": "novelista, escritora, filósofa, salonnière",
-      "autora de": "Delphine (1802); <i>Corinne ou l'Italie</i> (1807) [estas dos novelas se publicaron en España antes de 1828]; <i>De l'Allegmagne</i> (1810-13); <i>Considérations sur les principaux événements de la Révolution française</i> (1818, póstuma)",
+      "author of": "Delphine (1802); <i>Corinne ou l'Italie</i> (1807) [estas dos novelas se publicaron en España antes de 1828]; <i>De l'Allegmagne</i> (1810-13); <i>Considérations sur les principaux événements de la Révolution française</i> (1818, póstuma)",
       "correspondence": "Correspondance générale, ed. Béatrice W. Jasinski y Othenin d'Haussonville, 2008-09",
       "parents": "Suzanne Curchod y Jacques Necker",
       "married to": "Erik Magnus Stael (de 1786 a 1802); Albert de Roca (desde 1811)",
@@ -3801,7 +3804,7 @@
       "author of": "<i>Annals of the Artists of Spain</i>, 3 vols. (1848; reeditado en 1891); <i>La vida monástica del emperador Carlos V</i> (1852); <i>Velázquez y sus obras</i> (1855); <i>El legado de Napoleón a Cantillon: un fragmento de historia internacional</i> (1858); Ensayo para una colección de libros relacionados con proverbios, emblemas, apotegmas, epitafios y ana (1860); Ensayo para un catálogo de grabados de las obras de Diego Rodríguez de Silva y Velázquez y Bartolomé Esteban Murillo (1873); Don Juan de Austria (1883, póstumo); Obras de Sir William Stirling Maxwell, baronet, 4 vols. (1891, póstumo); Historias de los artistas españoles hasta Goya (1910, póstumo).",
       "trips": "España; Oriente Medio",
       "in Spain": "[¿fecha?] Andalucía (Sevilla), Valencia y Castilla; 1842 Madrid, El Escorial; 1845 Madrid; 1849",
-      "visita el Museo del Prado": "1842 (admiraba especialmente La crucifixión de Velázquez; 1845",
+      "visits the Prado Museum": "1842 (admiraba especialmente La crucifixión de Velázquez; 1845",
       "writes in": "Fraser's Magazine; The Examiner",
       "interest in Spanish art": [
         "Como historiador del arte, durante sus primeras visitas a España, abandonó rápidamente su romanticismo inicial y rechazó el mito orientalista de España propagado por otros hispanistas británicos, como Richard Ford, quien, sin embargo, era su amigo y le ayudó en las etapas finales de la preparación de los <i>Anales</i>.",
@@ -3971,7 +3974,7 @@
       "military activity": "Guerra anglo-española (1779-1783)",
       "portrayed by": "Goya, 1785, colección privada; Agustín Esteve, 1785, Museo Lázaro Galdiano (Madrid); Goya, 1788, retrato familiar, Prado; Goya, c. 1798, Frick Collection (Nueva York); Guillermo Ducker, 1805, Prado",
       "married to": "María Josefa de Borja Pimentel y Téllez-Girón, XII Countess-Duchess of Benavente and Duchess of Osuna",
-      "children": "9, de los cuales sobrevivieron 5. Josefa Manuela Téllez-Girón, marquesa de Camarasa; Joaquina Téllez-Girón y Pimentel, condesa de Osila, X Marchioness of Santa Cruz (retratada por Goya); Francisco de Borja Téllez-Girón y Pimentel, X Duke of Osuna (retratado por Goya); Pedro de Alcántara Téllez-Girón y Pimentel, príncipe de Anglona y marqués de Javalquinto; Manuela Isidra Téllez-Girón y Pimentel, condesa de Coginas, VIII duquesa de Abrantes (retratada por Goya)",
+      "children": "9, de los cuales sobrevivieron 5. Josefa Manuela Téllez-Girón, marquesa de Camarasa; Joaquina Téllez-Girón y Pimentel, condesa de Osila, X Marchioness of Santa Cruz (retratada por Goya); Francisco de Borja Téllez-Girón y Pimentel, X Duke of Osuna (retratado por Goya); Pedro de Alcántara Téllez-Girón y Pimentel, príncipe de Anglona y marqués de Javalquinto; Manuela Isidra Téllez-Girón y Pimentel, condesa de Coginas, VIII Duchess of Abrantes (retratada por Goya)",
       "parents": "Pedro Zoilo Téllez-Girón y Pérez de Guzmán y María Vicenta Pacheco y Téllez-Girón",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Osuna_IX.jpg",
       "image source": "Retrato de Goya, c. 1798, Colección Frick"
@@ -3991,7 +3994,7 @@
         "Por herencia: principado de Anglona, principado de Esquilache, ducado de Arcos, Béjar, Benavente (XII), Gandía y otros",
         "Por matrimonio: duquesa de Osuna, marquesa de Peñafiel, condado de Fontanar y Ureña"
         ],
-      "children": "9, de los cuales sobrevivieron 5. Josefa Manuela Téllez-Girón, marquesa de Camarasa; Joaquina Téllez-Girón y Pimentel, condesa de Osila, X Marchioness of Santa Cruz (retratada por Goya); Francisco de Borja Téllez-Girón y Pimentel, X Duke of Osuna (retratado por Goya); Pedro de Alcántara Téllez-Girón y Pimentel, príncipe de Anglona y marqués de Javalquinto; Manuela Isidra Téllez-Girón y Pimentel, condesa de Coginas, VIII duquesa de Abrantes (retratada por Goya)",
+      "children": "9, de los cuales sobrevivieron 5. Josefa Manuela Téllez-Girón, marquesa de Camarasa; Joaquina Téllez-Girón y Pimentel, condesa de Osila, X Marchioness of Santa Cruz (retratada por Goya); Francisco de Borja Téllez-Girón y Pimentel, X Duke of Osuna (retratado por Goya); Pedro de Alcántara Téllez-Girón y Pimentel, príncipe de Anglona y marqués de Javalquinto; Manuela Isidra Téllez-Girón y Pimentel, condesa de Coginas, VIII Duchess of Abrantes (retratada por Goya)",
       "parents": "Francisco Alfonso-Pimentel y Borja y María Faustina Téllez-Girón y Pérez de Guzmán",
       "member of": "Junta de Damas de Honor y Mérito (1787: presidenta); Real Sociedad Económica Matritense (una de las dos primeras mujeres admitidas)",
       "portrayed by": "Goya, c. 1785, Fundación Bartolomé March (Palma de Mallorca); Goya, 1788, retrato familiar, Prado",
@@ -4000,12 +4003,13 @@
       "image source": "Retrato de Goya, c. 1785, Fundación Bartolomé March"
     },
         {
-      "id": "VIII duquesa de Abrantes",
+      "id": "VIII Duchess of Abrantes",
+      "display name es": "VIII duquesa de Abrantes",
       "label": "Abrantes VIII",
       "full name": "Manuela Isidra Téllez-Girón y Alonso de Pimentel",
       "life dates": "1793-1838", 
       "nationality": "española",
-      "aristocratic titles": "Condesa de Coginas; VIII duquesa de Abrantes",
+      "aristocratic titles": "Condesa de Coginas; VIII Duchess of Abrantes",
       "parents": "Pedro de Alcántara Téllez Girón y Pacheco (IX duque de Osuna) y María Josefa de Borja Pimentel y Téllez-Girón (XII Countess-Duchess of Benavente and Duchess of Osuna)",
       "siblings": "entre ellos Josefa Manuela Téllez-Girón, marquesa de Marchini y de Camarasa; Joaquina Téllez-Girón y Pimentel, X Marchioness of Santa Cruz (retratada por Goya); Francisco de Borja Téllez-Girón y Pimentel, X Duke of Osuna (retratado por Goya); Pedro de Alcántara Téllez-Girón y Pimentel, príncipe de Anglona y marqués de Javalquinto",
       "married to": "Ángel María de Carvajal y Fernández de Córdoba y Gonzaga (1813), VIII duque de Abrantes",
@@ -4337,7 +4341,7 @@
       "ocupación": "pintora; presidenta de la Junta de Damas de Honor y Mérito (1818-1824), la primera asociación de mujeres fundada en España (desde 1787)",
       "profession": "artista, pintora, intelectual, escritora, salonnière, socialité",
       "literary salon or tertulia": "tertulia",
-      "autora de": "Elogio a la reina Isabel de Braganza (1819); Memorias de su labor como presidenta de la Junta de Damas",
+      "author of": "Elogio a la reina Isabel de Braganza (1819); Memorias de su labor como presidenta de la Junta de Damas",
       "aristocratic titles": "marquesa de Villafranca, Grande de España",
       "portrayed by": "Goya, 1804, Prado (como pintora), en el acto de retratar a su marido; José Alonso del Rivero, c. 1805",
       "member of": "RABASF: miembro de honor (1805); presidenta de la Junta de Damas de Honor y Mérito (1818-1824)",
@@ -4442,7 +4446,7 @@
       "correspondence": "mantuvo correspondencia con escritores de toda Europa (Franco Rubio 2011; Pérez Cantó y Mó Romero 2007)",
       "fundadora de": "cofundadora de la Junta de Damas de Honor y Mérito (1787), adscrita a la Sociedad Económica Matritense de Amigos del País (1775); cofundadora de una Asociación de Presas de la Galera, para enseñar oficios a las reclusas",
       "member of": "Comisión de Educación Moral (fundada en 1794)",
-      "curiosities": "Cuando el conde de Floridablanca intentó imponer un vestido nacional para las mujeres con el fin de controlar los gastos de la moda femenina, fue ella quien rechazó la propuesta (de la Junta de Damas), argumentando que la única solución era la educación (Trueba 2003)",
+      "curiosities": "Cuando el Count of Floridablanca intentó imponer un vestido nacional para las mujeres con el fin de controlar los gastos de la moda femenina, fue ella quien rechazó la propuesta (de la Junta de Damas), argumentando que la única solución era la educación (Trueba 2003)",
       "works as": "Directora de la <i>Escuela Patriótica de San Andrés</i>, con 96 alumnos; reforma la <i>Inclusa</i> de Madrid (institución para bebés abandonados), reduciendo la tasa de mortalidad del 80 % al 46 % en un año.",
       "works for": "La reina María Luisa de Parma como dama noble",
       "portrayed by": "Andrés de la Calleja (atribuido), 1765, colección de los duques de Alba; anónimo, c. 1785, colección privada",
@@ -4654,7 +4658,7 @@
         ],
       "writes in": "las revistas <i>Le Globe</i> (desde 1828), <i>Le National</i> (1830-1836), <i>Le Siècle</i> (1836); las revistas <i>Revue des Deux Mondes</i> y <i>Revue de Paris</i>, <i>Revue Indépendante</i>",
       "founder of": "Revue Indépendante junto con Pierre Leroux y George Sand (1841), una revista 'démocratique à tendance socialisante et républicaine'",
-      "visita el Museo del Prado": "en 1834 (menciona a Goya en su relato); 1835",
+      "visits the Prado Museum": "en 1834 (menciona a Goya en su relato); 1835",
       "menciones a Goya": [
         "Según Pierre Géal: 'Su opinión sobre Goya sigue siendo ambivalente, entre el elogio por la fuerza y la audacia de su pincelada y la reticencia ante las imperfecciones del dibujo'.",
         "1834: 'Hay […] una buena obra del viejo Goya, fallecido hace unos años, y cuya obra fantasiosa es muy apreciada por nuestros románticos; se trata del retrato ecuestre de Carlos IV, que el pintor parece haber montado más bien sobre un cerdo que sobre un caballo, pero que ofrece singulares bellezas en la cabeza y el busto e . Goya, c'est toute la liste des peintres contemporains, le reste ne vaut pas l'honneur d'être nommé' ('Le Musée de Madrid', <i>Revue Républicaine</i>, pp. 303-47; p.307)",
@@ -4692,7 +4696,7 @@
         "Saint-Saëns le dedicó su Samson et Dalila",
         "Fue la musa y amante de Iván Turguénev"
       ],
-      "literary salon or tertulia": "Pauline Viardot tenía un importante salón musical (Le Salon Musical), al que asistían I. Turguénev, Alexandre Dumas padre, Honoré de Balzac, George Sand, C. Beriot, A. Vieuxtemps. El salón fue retratado el 19 de marzo de 1853 por H. Val y W. Best (<i>L'Illustration</i>); también fue retratado en 1865 en Baden[-Baden",
+      "literary salon or tertulia": "Pauline Viardot tenía un importante salón musical (Le Salon Musical), al que asistían I. Turguénev, Alexandre Dumas père, Honoré de Balzac, George Sand, C. Beriot, A. Vieuxtemps. El salón fue retratado el 19 de marzo de 1853 por H. Val y W. Best (<i>L'Illustration</i>); también fue retratado en 1865 en Baden[-Baden",
       "portrayed by": [
         "Ary Scheffer, óleo, 1840; George Sand, dibujo, 1840-45; Maurice Sand, óleo, 1844, Musée de la Vie romantique; desconocido, grabado, c. 1845; Ary Scheffer, 1851 (para un órgano de salón); Pierre Petit, fotografía, 1860; Eugène Disdéri, fotografía, 1861 (Pauline Viardot y Pierre-Jules Michot; Pierre Petit, fotografía, 1860-90, Musée Carnavalet PH57485; Alexei Harlamov, óleo, 1874; fotografía, 1908.",
         "Birgit Stauch, busto de bronce, 2004"
@@ -4850,7 +4854,8 @@
       "image source": "Retrato de Goya, 1826"
     },
     {
-      "id": "XI conde de Altamira",
+      "id": "XI Count of Altamira",
+      "display name es": "XI conde de Altamira",
       "label": "Altamira",
       "full name": "Vicente Joaquín Osorio de Moscoso y Guzmán",
       "life dates": "1756-1816", 
@@ -4899,7 +4904,8 @@
       "image source": "Retrato de Goya, 1798, Prado"
     },
     {
-      "id": "Conde de Floridablanca",
+      "id": "Count of Floridablanca",
+      "display name es": "Conde de Floridablanca",
       "label": "Floridablanca",
       "full name": "José Moñino y Redondo",
       "life dates": "1728-1808", 
@@ -4911,11 +4917,11 @@
       "works for": "Carlos III; Carlos IV",
       "member of": "Real Academia de Jurisprudencia y Legislación; Real Academia de Ciencias y Artes de Barcelona",
       "portrayed by": "Pompeo Batoni, c. 1776 (Art Institute of Chicago); Francisco de Goya, 1783, [Prado P003255](https://www.museodelprado.es/en/the-collection/art-work/jose-moino-first-count-of-floridablanca/dcce9918-e23b-4a4d-8faa-33b9448606a2?searchid=ef67a880-fbe4-7348-f83c-d527880eb4fd); Francisco de Goya, 1783, [Banco de España](https://coleccion.bde.es/wca/es/secciones/coleccion/obras/don-francisco-de-cabarrus-y-lalanne-p_136.html)",
-      "aristocratic titles": "I conde de Floridablanca (desde 1773)",
+      "aristocratic titles": "I Count of Floridablanca (desde 1773)",
       "decorations/awards": "Caballero de la Orden del Toisón de Oro; Orden de Carlos III",
       "studies in": "Universidad de Salamanca",
       "pseudonyms": "Antonio José Dorre",
-      "curiosities": "Carlos III le concede el título de conde de Floridablanca (1773) por su labor como embajador ante la Santa Sede, contribuyendo a la abolición de la orden de los jesuitas.",
+      "curiosities": "Carlos III le concede el título de Count of Floridablanca (1773) por su labor como embajador ante la Santa Sede, contribuyendo a la abolición de la orden de los jesuitas.",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Floridablanca.jpg",
       "image source": "Retrato de Goya, 1783, Prado"
     },
@@ -4938,7 +4944,7 @@
       "aristocratic titles": "conde de Cabarrús (1789, Carlos IV); vizconde de Rambouillet; Grande de España",
       "studies in": "Collège de l'Esquile",
       "parents": "Dominique Cabarrus; Marie-Anne Lalanne",
-      "friends": "Gaspar Melchor de Jovellanos; conde de Floridablanca; conde de Aranda; conde de Campomanes",
+      "friends": "Gaspar Melchor de Jovellanos; Count of Floridablanca; conde de Aranda; conde de Campomanes",
       "married to": "Antonia Galabert Casanova",
       "children": "Teresa Cabarrús; Domingo Cabarrús Galabert",
       "curiosities": "Fue enterrado en la Capilla de la Concepción de la catedral de Sevilla (durante la guerra napoleónica). Tras la guerra, sus restos fueron exhumados y, según se dice, arrojados a la fosa común del Patio de los Naranjos (junto a las víctimas de la pena de muerte) o al río Guadalquivir.",
@@ -5223,7 +5229,7 @@
         "Exposición Universal de 1878 (medalla honorífica)",
         "1879 Primera exposición de la Société d'aquarellistes français, en Durand-Ruel: expone nueve obras, entre ellas <i>Les platanes en hiver</i>"
       ],
-      "Trabajos para": "el Museo Metropolitano de Arte (copias de las pinturas expuestas, entre ellas <i>Le Soldat et la fillette qui rit</i> de Vermeer), 1871; Joseph Florimond, duque de Loubat (60 copias de medallas), 1878.",
+      "works for": "el Museo Metropolitano de Arte (copias de las pinturas expuestas, entre ellas <i>Le Soldat et la fillette qui rit</i> de Vermeer), 1871; Joseph Florimond, duque de Loubat (60 copias de medallas), 1878.",
       "copies after Goya": [
         "1863 <i>Scène espagnole</i>, publicada en la <i>Gazette des beaux-arts</i> para ilustrar el segundo artículo de Valentín Carderera sobre Goya (Fayos Pérez 2024, fig. II.44); reimpresa el 1 de julio de 1870. Este grabado es o bien un pastiche basado en el Capricho 17, 'Bien tirada está', o bien un grabado basado en un dibujo perdido de la colección Carderera; lo menciona Gustave Brunet en su libro de 1865 (p. 14).",
         "Grabado de 1873 <i>La nuera de Goya</i> (Gumersinda Goicoechea) Museo Británico [1982, U.1280] (https://www.britishmuseum.org/collection/object/P_1982-U-1280). El óleo original (c. 1805) se encuentra en una colección privada (París)"
@@ -5341,7 +5347,7 @@
         "Fotografía: <i>L'atelier de l'artiste</i>, daguerrotipo, 1837.",
         "Ensayos: <i>Historique et description du daguerréotype et du diorama</i>, 1839.",
         "Pintura: <i>Effet de brouillard et de neige à travers une colonnade gothique en ruines</i> (1826); <i>Le Campo Santo de Pise</i> (1834-39)",
-        "Ilustraciones: colaboración en <i>Voyages pittoresques et romantiques dans l'ancienne France</i> del barón Taylor"
+        "Ilustraciones: colaboración en <i>Voyages pittoresques et romantiques dans l'ancienne France</i> del Baron Taylor"
       ],
       "decorations/awards": "Officier de la Légion d'honneur (1839)",
       "married to": "Louise Georgina  (o Arrowsmith) (en 1810)",
@@ -5614,7 +5620,7 @@
       "relationship type": "mejores amigos",
       "know each other since": "1765",
       "correspondence": "1765-1803. Primera carta: primera carta en Diplomatario (Canellas López): 1774? (n.º 4); 6 de septiembre de 1775 (n.º 7); 22 de enero de 1777 (n.º 11); marzo de 1777 (n.º 13); 16 de abril de 1777 (n.º 14); 16 de abril de 1777 (n.º 15); 21 de e de enero de 1778 (n.º 17); 31 de enero de 1778 (n.º 19); 7 de octubre de 1778 (n.º 21); diciembre de 1778 (n.º 23); 9 de enero de 1779 (n.º 25); 25 de febrero de 1780 (n.º 29); 10 de mayo de 1780 (n.º 31); 17 de mayo de 1780 (n.º 32); 24 de mayo de 1780 (n.º 33); [21] de julio de 1780 (n.º 34); 9 de agosto de 1780 (n.º 35); 16 de agosto de 1780 (n.º 36); 23 de agosto de 1780 (n.º 37); 23 de agosto de 1780 (n.º 37); ... (Bib: Cartas a Martín Zapater, ed. Águeda y Salas, 2003)",
-      "se conocieron": "en Zaragoza",
+      "they met": "en Zaragoza",
       "portraits": "Goya retrató a Zapater hacia 1780 (colección privada), 1790 (Museo de Arte de Ponce, Puerto Rico) y 1797 (Museo de Bellas Artes de Bilbao)"
     },
     {
@@ -5985,7 +5991,7 @@
       "bibliography": "Afinoguénova 2019, p.138"
     },
     {
-      "from": "Barón Taylor",
+      "from": "Baron Taylor",
       "to": "Louis Daguerre",
       "connection_level": "directo",
       "relationship type": "compañeros de trabajo",
@@ -6203,7 +6209,7 @@
       "to": "José de Espronceda",
       "connection_level": "directo",
       "relationship type": "conocidos",
-      "se conocieron": "en París, el 30 de diciembre de 1841 y el 6, 15 y 18 de enero de 1842 (LG 2016, pp. 91-93)",
+      "they met": "en París, el 30 de diciembre de 1841 y el 6, 15 y 18 de enero de 1842 (LG 2016, pp. 91-93)",
       "bibliography": "Lanzarote Guiral 2016"
     },
     {
@@ -6230,16 +6236,16 @@
     },
     {
       "from": "Mariano José Larra",
-      "to": "Barón Taylor",
+      "to": "Baron Taylor",
       "connection_level": "directo",
       "relationship type": "conocidos; colegas",
       "know each other since": "al menos desde 1832",
       "interactions": [
-        "Se conocieron en el viaje de Larra a París en 1835. En agosto de 1835, el barón Taylor organizó un viaje para Larra y Pharamond Blanchard (Torres González 2009, p.187), probablemente el viaje a Montmorency, Saint-Cloud y Versalles mencionado por Taylor en una carta a Dauzats (véase Menciones).",
+        "Se conocieron en el viaje de Larra a París en 1835. En agosto de 1835, el Baron Taylor organizó un viaje para Larra y Pharamond Blanchard (Torres González 2009, p.187), probablemente el viaje a Montmorency, Saint-Cloud y Versalles mencionado por Taylor en una carta a Dauzats (véase Menciones).",
         "Las Obras completas de Larra de 1848 reconocen a Taylor como su 'amigo particular', a quien 'ya conocía de España' (p. XV). Taylor viajó por primera vez a España en 1820, y luego en 1823, 1832 y 1833"
       ],
       "collaborations": "Taylor involucró a Larra en la redacción y el proceso editorial de Voyage pittoresque en Espagne (Romero Tobar 1997, p.224; Guinard 1967-B, p.136), aunque Taylor reeditó posteriormente el texto de Larra (García Melero 2002, p.184). Esta obra se publicó entre 1826 y 1832, por lo que Taylor debió conocer a Larra antes del viaje de este último a París en 1835.",
-      "mentions": "1835, 20 de agosto, carta del barón Taylor a Adrien Dauzats: 'J'ai conduit de Lara [Mariano José Larra] et Blanchard [Pharamond Blanchard] à Montmorency, ils sont revenus de Montmorency en roulant jusqu'à St Denis. Pour retourner nous avions pris des ânes. Blanchard prétendait qu'il montait à cheval comme défunt le Cid. [...] Blanchard avait le genou dans un état affreux, et de Lara la figure tout en sang. Ils se sont parfaitement amusés. Je dois les conduire encore à Saint-Cloud et à Versailles' (Guinard 1967-A, p.139).",
+      "mentions": "1835, 20 de agosto, carta del Baron Taylor a Adrien Dauzats: 'J'ai conduit de Lara [Mariano José Larra] et Blanchard [Pharamond Blanchard] à Montmorency, ils sont revenus de Montmorency en roulant jusqu'à St Denis. Pour retourner nous avions pris des ânes. Blanchard prétendait qu'il montait à cheval comme défunt le Cid. [...] Blanchard avait le genou dans un état affreux, et de Lara la figure tout en sang. Ils se sont parfaitement amusés. Je dois les conduire encore à Saint-Cloud et à Versailles' (Guinard 1967-A, p.139).",
       "bibliography": "Torres González 2009; Romero Tobar 1997; Guinard 1967-A; José Enrique García Melero, Literatura española sobre artes plásticas, t. 2, 2002; Obras completas de Figaro (Don Mariano José de Larra), t. 1, 1848"
     },
     {
@@ -6249,9 +6255,9 @@
       "relationship type": "conocidos",
       "interactions": [
         "Según Romero Tobar, Larra era muy amigo de Blanchard y Adrien Dauzats (1997, p.223).",
-        "Se conocieron en el viaje de Larra a París en 1835. En agosto de 1835, el barón Taylor organizó un viaje para Larra y Blanchard (Torres González 2009, p.187), probablemente el viaje a Montmorency, Saint-Cloud y Versalles mencionado por Taylor en una carta a Dauzats (véase Menciones)."
+        "Se conocieron en el viaje de Larra a París en 1835. En agosto de 1835, el Baron Taylor organizó un viaje para Larra y Blanchard (Torres González 2009, p.187), probablemente el viaje a Montmorency, Saint-Cloud y Versalles mencionado por Taylor en una carta a Dauzats (véase Menciones)."
       ],
-      "mentions": "1835, 20 de agosto, carta del barón Taylor a Adrien Dauzats: 'J'ai conduit de Lara [Mariano José Larra] et Blanchard à Montmorency, ils sont revenus de Montmorency en roulant jusqu'à St Denis. Pour retourner nous avions pris des ânes. Blanchard prétendait qu'il montait à cheval comme défunt le Cid. [...] Blanchard tenía la rodilla en un estado espantoso y Lara tenía la cara llena de sangre. Se lo pasaron en grande. Tengo que llevarlos otra vez a Saint-Cloud y a Versalles' (Guinard 1967-A, p.139).",
+      "mentions": "1835, 20 de agosto, carta del Baron Taylor a Adrien Dauzats: 'J'ai conduit de Lara [Mariano José Larra] et Blanchard à Montmorency, ils sont revenus de Montmorency en roulant jusqu'à St Denis. Pour retourner nous avions pris des ânes. Blanchard prétendait qu'il montait à cheval comme défunt le Cid. [...] Blanchard tenía la rodilla en un estado espantoso y Lara tenía la cara llena de sangre. Se lo pasaron en grande. Tengo que llevarlos otra vez a Saint-Cloud y a Versalles' (Guinard 1967-A, p.139).",
       "bibliography": "Torres González 2009; Romero Tobar 1997; Guinard 1967-A"
     },
     {
@@ -6282,7 +6288,7 @@
     },
     {
       "from": "José Zorrilla",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo",
       "relationship type": "conocidos",
       "know each other since": "hacia 1846",
@@ -6340,7 +6346,7 @@
       "relationship type": "amigos",
       "know each other since": "al menos desde 1835",
       "they share": "estudiaron juntos Derecho, pero ambos se sentían igualmente atraídos por la literatura y las artes",
-      "interactions": "Zorrilla descubrió en la biblioteca de Pedro las obras de Chateaubriand, Alexandre Dumas padre, Víctor Hugo, Duque de Rivas y José de Espronceda"
+      "interactions": "Zorrilla descubrió en la biblioteca de Pedro las obras de Chateaubriand, Alexandre Dumas père, Víctor Hugo, Duque de Rivas y José de Espronceda"
     },
     {
       "from": "Mariano José Larra",
@@ -6362,15 +6368,15 @@
       "to": "Victor Hugo",
       "connection_level": "directo",
       "relationship type": "conocidos",
-      "se conocieron": "en París en 1835-36",
+      "they met": "en París en 1835-36",
       "mentions": "Larra menciona las obras de Hugo en París, como <i>Lucrèce Borgia</i> y <i>Marie Tudor</i>"
     },
     {
       "from": "Mariano José Larra",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo",
       "relationship type": "conocidos",
-      "se conocieron": "en París en 1835-36",
+      "they met": "en París en 1835-36",
       "collaborations": "en 1836 Larra traduce la obra de Dumas <i>Antony</i> (1831)",
       "mentions": [
         "González Blanco 1909: 'La opinión dispuso que la novela fuese el género favorito, mimado del público —y en especial de las damas— durante todo el siglo pasado; y así se hizo. Las <i>fábulas amatorias</i>, como se dice en el <i>Index librorum prohibitorum</i>, al condenar las de Jorge Sand [George Sand], Eugenio Sue [Eugène Sue], Dumas [Alexandre Dumas Père] y Balzac [Honoré de Balzac], todos en montón (2)'. (2): '[...] nada menos que Larra, habló alguna vez de la influencia nefasta de las obras de Eugenio Sue (?), Alfredo de Vigny (!!) [Alfred de Vigny] y Balzac, sin hacer distinciones' (p.9).",
@@ -6556,7 +6562,7 @@
       "relationship type": "amigos",
       "know each other since": "al menos desde 1835",
       "compartieron": "se alistaron como voluntarios en los granaderos de la Milicia Nacional de Madrid (6.º Batallón) en 1835, junto a Federico de Madrazo, Vicente Masarnau, Pedro de Madrazo y Pascual de Gayangos y Arce",
-      "se conocieron": "en París, donde Santiago vivió entre 1837 y 1843. Hay varias referencias en los diarios de Carderera desde el 14 de noviembre de 1841 hasta 1843 (Lanzarote Guiral 2016, p.71)",
+      "they met": "en París, donde Santiago vivió entre 1837 y 1843. Hay varias referencias en los diarios de Carderera desde el 14 de noviembre de 1841 hasta 1843 (Lanzarote Guiral 2016, p.71)",
       "bibliography": "Lanzarote Guiral 2016"
     },
     {
@@ -6565,7 +6571,7 @@
       "connection_level": "directo",
       "relationship type": "amigos",
       "collaborations": "Santiago colabora como crítico musical en <i>El Artista</i>, una revista fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa en 1835.",
-      "mentions": "1835-III-24, carta de Federico de Madrazo a Adrien Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el barón Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación).",
+      "mentions": "1835-III-24, carta de Federico de Madrazo a Adrien Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación).",
       "know each other since": "al menos desde 1835"
     },
     {
@@ -6604,7 +6610,7 @@
       "know each other since": "al menos desde 1833",
       "portraits": "1834, dibujo (Prado); 1836, dibujo (BNE)",
       "compartido": [
-        "1833 Primer viaje de Federico a París: conocen al barón Taylor y a Adrien Dauzats",
+        "1833 Primer viaje de Federico a París: conocen al Baron Taylor y a Adrien Dauzats",
         "1836 ambos se alistaron en los granaderos de la Milicia Nacional de Madrid (6.º Batallón)"
       ]
     },
@@ -6688,14 +6694,14 @@
       "compartieron": "un viaje a París en 1787, donde Moratín actuó como secretario de Cabarrús en su misión de asesorar a Luis XVI sobre medidas contrarrevolucionarias"
     },
     {
-      "from": "conde de Floridablanca",
+      "from": "Count of Floridablanca",
       "to": "Leandro Fernández de Moratín",
       "connection_level": "directo",
       "relationship type": "conocidos; mecenazgo",
-      "empleo/mecenazgo": "Floridablanca le concedió una pensión de trescientos ducados del arzobispado de Burgos"
+      "employment/patronage": "Floridablanca le concedió una pensión de trescientos ducados del arzobispado de Burgos"
     },
     {
-      "from": "Conde de Floridablanca",
+      "from": "Count of Floridablanca",
       "to": "IV Marchioness of Pontejos",
       "connection_level": "directa",
       "relationship type": "parientes; cuñado, cuñada"
@@ -6767,7 +6773,7 @@
       "interactions": "en París durante su exilio (hacia 1820)"
     },
     {
-      "from": "Conde de Floridablanca",
+      "from": "Count of Floridablanca",
       "to": "Manuel Godoy",
       "connection_level": "directo",
       "relationship type": "compañeros; rivales"
@@ -6828,7 +6834,7 @@
     },
     {
       "from": "Marqués de La Romana",
-      "to": "conde de Floridablanca",
+      "to": "Count of Floridablanca",
       "connection_level": "directo",
       "relationship type": "empleador-empleado"
     },
@@ -6918,7 +6924,7 @@
       "relationship type": "mecenazgo"
     },
     {
-      "from": "Conde de Floridablanca",
+      "from": "Count of Floridablanca",
       "to": "Luis Paret",
       "connection_level": "directo",
       "relationship type": "mecenazgo",
@@ -7092,8 +7098,8 @@
       "to": "Leandro Fernández de Moratín",
       "connection_level": "directa",
       "relationship type": "conocidos; mecenazgo",
-      "se conocieron": "Godoy asistió al estreno de El sí de las niñas, el 24 de enero de 1806 en el Coliseo de la Cruz",
-      "empleo/mecenazgo": "Godoy ayudó a Moratín a estrenar sus comedias y aumentó sus ingresos con otros cargos eclesiásticos honoríficos: 3000 ducados de una parroquia en Montoro y 600 de la mitra de Oviedo. Entre 1792 y 1797, Godoy financió la gira europea de Moratín por Inglaterra, Bélgica, Alemania, Suiza e Italia"
+      "they met": "Godoy asistió al estreno de El sí de las niñas, el 24 de enero de 1806 en el Coliseo de la Cruz",
+      "employment/patronage": "Godoy ayudó a Moratín a estrenar sus comedias y aumentó sus ingresos con otros cargos eclesiásticos honoríficos: 3000 ducados de una parroquia en Montoro y 600 de la mitra de Oviedo. Entre 1792 y 1797, Godoy financió la gira europea de Moratín por Inglaterra, Bélgica, Alemania, Suiza e Italia"
     },
     {
       "from": "Manuel Godoy",
@@ -7207,7 +7213,7 @@
       "connection_level": "directo",
       "relationship type": "amigos",
       "know each other since": "hacia 1797",
-      "se conocieron": "1824 en Burdeos (carta de Moratín a Juan Antonio Melón, 30 de septiembre de 1824, Canellas n.º 154)",
+      "they met": "1824 en Burdeos (carta de Moratín a Juan Antonio Melón, 30 de septiembre de 1824, Canellas n.º 154)",
       "mentions": "Moratín escribe <i>Silva á D. Francisco Goya, insigne pintor</i> en 1799 para agradecerle su nuevo retrato. [Wikipedia](https://es.wikisource.org/wiki/Silva_a_don_Francisco_Goya)"
     },
     {
@@ -7267,7 +7273,7 @@
       "to": "Adrien Dauzats",
       "connection_level": "directo",
       "relationship type": "conocidos",
-      "se conocieron": "en Burdeos (1824-28) en el establecimiento de Pierre Lacour",
+      "they met": "en Burdeos (1824-28) en el establecimiento de Pierre Lacour",
       "link to Goya's work":"en 1871, Gautier quiere ver el conjunto de pruebas de trabajo de Burty de <i>Los desastres de la guerra</i>. Asselineau a Burty: 'Gautier tiene la urgente necesidad de volver a examinar Los desastres de la guerra (la invasión de Goya), cuyas planchas de cobre fueron traídas por Dauzats' (Fayos Pérez 2024, p.54; Delesalle 1983, p.104)",
       "bibliography": "Fayos Pérez 2024; Delesalle 1983"
     },
@@ -7371,7 +7377,7 @@
     },
     {
       "from": "Jenaro Pérez Villaamil",
-      "to": "Barón Taylor",
+      "to": "Baron Taylor",
       "connection_level": "directo",
       "relationship type": "conocidos; mecenazgo",
       "artworks bought/sold": "Baron Taylor adquiere varias pinturas suyas para la colección del rey Louis Philippe I",
@@ -7382,7 +7388,7 @@
       "to": "Louis Philippe I I",
       "connection_level": "directo",
       "relationship type": "conocidos",
-      "se conocieron": "en 1843"
+      "they met": "en 1843"
     },
     {
       "from": "Manuel Godoy",
@@ -7450,7 +7456,7 @@
       "to": "Isabel II",
       "connection_level": "directo",
       "relationship type": "empleador-empleado",
-      "empleo/mecenazgo": "Martínez de la Rosa es elegido para formar gobierno en 1834-35 durante la regencia de Isabel II"
+      "employment/patronage": "Martínez de la Rosa es elegido para formar gobierno en 1834-35 durante la regencia de Isabel II"
     },
     {
       "from": "Francisco Martínez de la Rosa",
@@ -7815,7 +7821,7 @@
       "collaborations": "como administrador general de la Comédie-Française, Houssaye presenta las obras de Hugo"
     },
     {
-      "from": "Alexandre Dumas padre",
+      "from": "Alexandre Dumas père",
       "to": "Arsène Houssaye",
       "connection_level": "directo",
       "relationship type": "compañeros de trabajo",
@@ -7824,7 +7830,7 @@
     },
     {
       "from": "Javier Goya",
-      "to": "barón Taylor",
+      "to": "Baron Taylor",
       "connection_level": "directa",
       "relationship type": "socios comerciales (vendió un grupo de pinturas atribuidas a Francisco de Goya en 1837 para la Galerie espagnole)"
     },
@@ -8019,7 +8025,7 @@
       "connection_level": "directo",
       "relationship type": "amigos íntimos",
       "collaborations": "fundó la revista <i>El Artista</i> en 1835 en Madrid junto con Pedro de Madrazo (tras visitar <i>L'Artiste</i> en París en 1833)",
-      "mentions": "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el barón Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación)"
+      "mentions": "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación)"
     },
     {
       "from": "Federico de Madrazo",
@@ -8032,7 +8038,7 @@
       "to": "Rosa Bonheur",
       "connection_level": "directo",
       "relationship type": "conocidas; protegida",
-      "se conocieron": "en 1864, Eugenia visita por sorpresa a Bonheur y la invita a almorzar en Fontainebleau con Napoleón III (esta visita aparece representada en un grabado de Auguste Victor Deroy: <i>L'impératrice Eugenia rendant visite à Rosa Bonheur</i>). Al año siguiente, en 1865, Eugenia vuelve a visitar a Bonheur para nombrarla Caballero de la Legión de Honor, convirtiéndola en la primera mujer artista y la novena mujer en recibirla. Se dice que en ese momento Eugenia dijo: 'Enfin, vous voilà chevalier. Je suis tout heureuse d'être la marraine de la première femme artiste qui reçoive cette haute distinction. J'ai voulu que le dernier acte de ma régence fût consacré à montrer qu'à mes yeux le génie n'a pas de sexe'.",
+      "they met": "en 1864, Eugenia visita por sorpresa a Bonheur y la invita a almorzar en Fontainebleau con Napoleón III (esta visita aparece representada en un grabado de Auguste Victor Deroy: <i>L'impératrice Eugenia rendant visite à Rosa Bonheur</i>). Al año siguiente, en 1865, Eugenia vuelve a visitar a Bonheur para nombrarla Caballero de la Legión de Honor, convirtiéndola en la primera mujer artista y la novena mujer en recibirla. Se dice que en ese momento Eugenia dijo: 'Enfin, vous voilà chevalier. Je suis tout heureuse d'être la marraine de la première femme artiste qui reçoive cette haute distinction. J'ai voulu que le dernier acte de ma régence fût consacré à montrer qu'à mes yeux le génie n'a pas de sexe'.",
       "interactions": "Eugenia intervino para que se concediera la Legión de Honor a la pintora Rosa Bonheur",
       "websites": "Visita de la emperatriz Eugenia a la artista Rosa Bonheur, condecorada con la Legión de Honor (1865), [Napoleon.org](https://www.napoleon.org/histoire-des-2-empires/articles/la-famille-imperiale-et-rosa-bonheur/)"
     },
@@ -8331,7 +8337,7 @@
       "connection_level": "directo",
       "relationship type": "socios comerciales",
       "know each other since": "1841",
-      "se conocieron": "en París en 1841", 
+      "they met": "en París en 1841", 
       "they share": "negocios lucrativos, muchos de los cuales eran profundamente corruptos"
     },
     {
@@ -8382,7 +8388,7 @@
       "to": "Eugène Delacroix",
       "connection_level": "directo",
       "relationship type": "conocidos. Marcello realizó 9 grabados y algunas litografías inspiradas en Eugène Delacroix (1873)",
-      "se conocieron": "el 6 de septiembre de 1860"
+      "they met": "el 6 de septiembre de 1860"
     },
     {
       "from": "Ernest Meissonier",
@@ -8548,7 +8554,7 @@
       "connection_level": "directo", 
       "relationship type": "conocidos; colegas",
       "influencia": "Astruc viajó a España llevando consigo la influencia de los escritos de Hugo y Gautier, que 'forjaron en su mente la imagen de una España de aires románticos' [...] 'esa visión fantaseada, entre pintoresca y romántica, nunca le abandonó' (Cantenot 2017, resumen).", 
-      "portraits": "La máscara facial de Hugo es representada por Astruc en su escultura <i>Le Marchand de masques</i> (1883, Jardín de Luxemburgo), que también representa a Corot, Alexandre Dumas padre, Berlioz, Carpeaux, Faure, Eugène Delacroix, Honoré de Balzac y Barbey d'Aurevilly.",
+      "portraits": "La máscara facial de Hugo es representada por Astruc en su escultura <i>Le Marchand de masques</i> (1883, Jardín de Luxemburgo), que también representa a Corot, Alexandre Dumas père, Berlioz, Carpeaux, Faure, Eugène Delacroix, Honoré de Balzac y Barbey d'Aurevilly.",
       "collaborations": "Hugo escribió el epílogo de <i>Les Quatorze Stations du Salon</i> (1859) de Astruc, con un prefacio de George Sand.",
       "bibliography": "Mathilde Cantenot 2017, Zacharie Astruc (1833-1907) et l'Espagne : à la rencontre d'un idéal, à l'épreuve du réel, École du Louvre, tesis"
     }, 
@@ -8571,11 +8577,11 @@
       "to": "Eugène Delacroix",
       "connection_level": "¿directo?", 
       "relationship type": "¿conocidos?",
-      "portraits": "La máscara facial de Delacroix es representada por Astruc en su escultura <i>Le Marchand de masques</i> (1883, Jardín de Luxemburgo), que también representa a Corot, Alexandre Dumas padre, Berlioz, Carpeaux, Faure, Victor Hugo, Honoré de Balzac y Barbey d'Aurevilly"
+      "portraits": "La máscara facial de Delacroix es representada por Astruc en su escultura <i>Le Marchand de masques</i> (1883, Jardín de Luxemburgo), que también representa a Corot, Alexandre Dumas père, Berlioz, Carpeaux, Faure, Victor Hugo, Honoré de Balzac y Barbey d'Aurevilly"
     }, 
     {
       "from": "Zacharie Astruc",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo?", 
       "relationship type": "¿conocidos?",
       "portraits": "La máscara facial de Dumas es representada por Astruc en su escultura <i>Le Marchand de masques</i> (1883, Jardín de Luxemburgo), que también representa a Corot, Eugène Delacroix, Berlioz, Carpeaux, Faure, Victor Hugo, Honoré de Balzac y Barbey d'Aurevilly."
@@ -8591,7 +8597,7 @@
       "from": "Zacharie Astruc",
       "to": "Félix Bracquemond",
       "connection_level": "direct", 
-      "amigos comunes": "Édouard Manet, Edgar Degas, Philippe Burty, Henri Fantin-Latour",
+      "common friends": "Édouard Manet, Edgar Degas, Philippe Burty, Henri Fantin-Latour",
       "relationship type": "¿conocidos?",
       "compartían": "el interés por los grabados, el arte japonés y la pertenencia a la Société du Jinglar"
     }, 
@@ -8613,7 +8619,7 @@
       "to": "Félix Bracquemond",
       "connection_level": "directo", 
       "relationship type": "¿amigos?",
-      "amigos comunes": "posiblemente Philippe Burty",
+      "common friends": "posiblemente Philippe Burty",
       "know each other since": "al menos desde 1867",
       "compartían": "ser grabadores; el interés por el arte japonés y pertenecer a la Société du Jinglar (desde 1867)",
       "artworks bought/sold": "La colección de arte de Hirsch incluía grabados de Bracquemond"
@@ -8661,7 +8667,7 @@
       "from": "Félix Bracquemond",
       "to": "Jules Jacquemart",
       "connection_level": "directo", 
-      "amigos comunes": "posiblemente Philippe Burty",
+      "common friends": "posiblemente Philippe Burty",
       "relationship type": "¿amigos?; ¿compañeros de trabajo?",
       "know each other since": "al menos desde 1867",
       "compartían": "ser grabadores; el interés por el arte japonés y pertenecer a la Société du Jinglar (desde 1867)"
@@ -8687,7 +8693,7 @@
       "from": "Henri Fantin-Latour",
       "to": "Zacharie Astruc",
       "connection_level": "directo", 
-      "amigos comunes": "Manet",
+      "common friends": "Manet",
       "relationship type": "conocidos; ¿amigos?",
       "portraits": "en <i>Un atelier aux Batignolles</i> (1870, Orsay) de Fantin-Latour, Manet está pintando el retrato de Astruc, junto a Otto Scholderer, Pierre-Auguste Renoir, Émile Zola, Edmond Maître, Frédéric Bazille y Claude Monet.",
       "interactions": "hacia 1866-1877 en el Café Gerbois (avenida Clichy): Edgar Degas, Édouard Manet, Duranty, Émile Zola, Fantin-Latour, A. Proust, Philippe Burty, Bazille, Whistler, Auguste Renoir.",
@@ -8996,7 +9002,7 @@
     },
     {
       "from": "Pauline Viardot-García",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo", 
       "relationship type": "conocidos",
       "interactions": "Dumas asistió a su salón musical (<i>Salon musical</i>)"
@@ -9246,12 +9252,12 @@
       "to": "Mariano Fortuny y Marsal",
       "connection_level": "directo",
       "relationship type": "conocidos",
-      "se conocieron": "hacia 1868 en Marruecos",
+      "they met": "hacia 1868 en Marruecos",
       "bibliography": "Griener y Guerdat 2015, p.366"
     },
     {
       "from": "Federico de Madrazo",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo",
       "relationship type": "conocidos",
       "know each other since": "hacia 1837 en París (¿con Pedro de Madrazo?)"
@@ -9261,13 +9267,13 @@
       "to": "Adrien Dauzats",
       "connection_level": "directo",
       "relationship type": "amigos íntimos",
-      "know each other since": "1833, durante el primer viaje de Federico a París (con Vicente Masarnau). Federico también conoce al barón Taylor",
+      "know each other since": "1833, durante el primer viaje de Federico a París (con Vicente Masarnau). Federico también conoce al Baron Taylor",
       "portraits": "Madrazo retrata a Adrien Dauzats en 1837",
       "correspondence": [
         "29 de septiembre de 1834, Dauzats a Madrazo: 'Je m'occupe d'une notice sur la vie et les ouvrages de Goya. C'est un hommage que nous voulons rendre à l'un des peintres les plus célèbres de l'Espagne' (Archivo Madrazo). Citado en Guinard 1967-B, p.323 (Guinard cree que Dauzats podría ser el autor del artículo sobre Goya de 1834 en <i>Le Magasin pittoresque</i>); Fayos Pérez 2024, p.50.",
-        "1835-III-24, Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el barón Taylor. Madrazo menciona al barón Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación).",
-        "1835-IV-1, Madrazo a Dauzats (en francés) (INHA): Dauzats había pedido una nota sobre Goya, que Madrazo está esperando para pedirle a Javier Goya cuando vuelva a Madrid. Madrazo dice que le dio a Pharamond Blanchard dos litografías para él de El Artista. Menciona a Eugenio Ochoa y a Alejandro Sureda. Su hermano (¿Pedro de Madrazo?) le envía saludos. También envía saludos al barón Taylor (Fayos-Pérez 2026, de próxima publicación).",
-        "1837-I-24, Madrazo a Dauzats (INHA). Dice que Pharamond Blanchard le ha dicho que el barón Taylor volverá pronto (a París). Menciona a Eugenio Ochoa y a Carlos Luis de Ribera.",
+        "1835-III-24, Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona al Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación).",
+        "1835-IV-1, Madrazo a Dauzats (en francés) (INHA): Dauzats había pedido una nota sobre Goya, que Madrazo está esperando para pedirle a Javier Goya cuando vuelva a Madrid. Madrazo dice que le dio a Pharamond Blanchard dos litografías para él de El Artista. Menciona a Eugenio Ochoa y a Alejandro Sureda. Su hermano (¿Pedro de Madrazo?) le envía saludos. También envía saludos al Baron Taylor (Fayos-Pérez 2026, de próxima publicación).",
+        "1837-I-24, Madrazo a Dauzats (INHA). Dice que Pharamond Blanchard le ha dicho que el Baron Taylor volverá pronto (a París). Menciona a Eugenio Ochoa y a Carlos Luis de Ribera.",
         "1837-VI-17, Dauzats a Madrazo (Archivo Madrazo) (Guinard 1967-B, p.269)",
         "1838-III-12, Madrazo a Dauzats (INHA): Madrazo le pide a Dauzats herramientas de dibujo.",
         "1838?-V-7, Madrazo a Dauzats (INHA): menciona a Eugenio Ochoa, Pedro de Madrazo, Valentín Carderera, Luisa y Carlota.",
@@ -9275,20 +9281,20 @@
         "1839-VI-25, Madrazo a Dauzats (INHA): mención de una visita al Louvre"
       ],
       "interactions": [
-        "1837, 13 de octubre: nada más llegar a París, Madrazo va a ver a Santiago Masarnau, Adrien Dauzats y al barón Taylor (Díez 1994, p.32)",
+        "1837, 13 de octubre: nada más llegar a París, Madrazo va a ver a Santiago Masarnau, Adrien Dauzats y al Baron Taylor (Díez 1994, p.32)",
         "1837, 18 de octubre: el 17 de octubre, Madrazo acude a Dauzats al Louvre. Ven pinturas de Gros, Letiers, Guérin, Géricault (<i>Méduse</i>) (Díez 1994, p.34)"
       ],
       "bibliography": "Fayos Pérez 2026 (de próxima publicación); Fayos Pérez 2024; Díez 1994; Guinard 1967-A; Guinard 1967-B"
     },
     {
       "from": "Federico de Madrazo",
-      "to": "Barón Taylor",
+      "to": "Baron Taylor",
       "connection_level": "directo",
       "relationship type": "amigos",
       "know each other since": "1833, durante el primer viaje de Federico a París (con Vicente Masarnau). Federico también conoce a Adrien Dauzats",
       "collaborations": "hacia 1835-1837, la familia Madrazo participa en la adquisición por parte de Taylor de pinturas españolas para la Galerie espagnole (1838-48)",
       "interactions": [
-        "1837, 13 de octubre: nada más llegar a París, Madrazo va a ver a Santiago Masarnau, Adrien Dauzats y el barón Taylor (Díez 1994, p.32)",
+        "1837, 13 de octubre: nada más llegar a París, Madrazo va a ver a Santiago Masarnau, Adrien Dauzats y el Baron Taylor (Díez 1994, p.32)",
         "1837, 27 de octubre: Madrazo acompaña a Taylor al Louvre para ver cómo cuelgan los nuevos cuadros españoles. 'El otro día, anteayer, estuve con el Sr. Taylor a ver los cuadros españoles que ha traído. Ya están acabándose de colocar. Habrá cuatro o cinco salas grandes en el Louvre de escuela española' (Díez 1994, p.39). 'Parece que al Rey le gustan mucho los cuadros que ha traído el Sr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver cómo se colocan' (ibíd., p.40)."
       ],
       "bibliography": "Díez 1994."
@@ -9470,10 +9476,10 @@
       "collaborations": "proyecto de 1843 para la edición <i>Le Musée d'artillerie</i>, con Félix de Saulcy"
     },
     {
-      "from": "Barón Taylor",
+      "from": "Baron Taylor",
       "to": "Louis Philippe I I",
       "connection_level": "directo",
-      "empleo/mecenazgo": "El barón Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo",
+      "employment/patronage": "El Baron Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo",
       "link to Goya's work": "en una carta de Federico de Madrazo a José de Madrazo del 27 de octubre de 1837, escribe que al rey no le gustaban los cuadros de Goya traídos por Taylor: 'Parece que al Rey le gustan mucho los cuadros que ha traído el Sr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver cómo se colocan' (Díez 1994, p.40).",
       "bibliography": "Díez 1994"
     },
@@ -9481,13 +9487,13 @@
       "from": "Adrien Dauzats",
       "to": "Louis Philippe I I",
       "connection_level": "directo",
-      "empleo/mecenazgo": "El barón Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo"
+      "employment/patronage": "El Baron Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo"
     },
     {
       "from": "Pharamond Blanchard",
       "to": "Louis Philippe I I",
       "connection_level": "directo",
-      "empleo/mecenazgo": "El barón Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo"
+      "employment/patronage": "El Baron Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo"
     },
     {
       "from": "Valentín Carderera",
@@ -9503,7 +9509,7 @@
       "connection_level": "directo",
       "relationship type": "negocios/comercio de arte; mecenazgo",
       "link to Goya's work":[
-        "Louis Philippe I encargó al barón Taylor y a Adrien Dauzats que adquirieran las pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), en parte a través de la familia Madrazo",
+        "Louis Philippe I encargó al Baron Taylor y a Adrien Dauzats que adquirieran las pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), en parte a través de la familia Madrazo",
         "En una carta de Federico de Madrazo a José de Madrazo del 27 de octubre de 1837, escribe que al rey no le gustaban los cuadros de Goya traídos por Taylor: 'Parece que al Rey le gustan mucho los cuadros que ha traído el Sr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver cómo se colocan' (Díez 1994, p.40)"
       ],
       "patronage": "En 1838, Louis Philippe I encargó a Madrazo el cuadro Godofredo de Bouillon para Versalles",
@@ -9658,7 +9664,7 @@
       "relationship type": "conocidos; ¿amigos?",
       "know each other since": "al menos desde 1837",
       "mentions": [
-        "24 de marzo de 1835, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el barón Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación)",
+        "24 de marzo de 1835, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación)",
         "1837-VI-28, carta de Federico de Madrazo a Valentín Carderera, repitiendo lo que Dauzats dijo sobre Ribera: 'que Ribera trabaja mucho, que ha dejado un poco su timidez y que si tardo un poco en ir a París no le reconoceré, y además dice que me parecerá un hombre natural y que su padre bramaría si viese la influencia que ha ejercido París en él'."
       ],
       "added": "2025-09-06"
@@ -9700,7 +9706,7 @@
       "connection_level": "direct",
       "relationship type": "empleador-empleado",
       "know each other since": "al menos desde 1846",
-      "empleo/mecenazgo": "Ribera fue pintor de cámara honorario desde 1846",
+      "employment/patronage": "Ribera fue pintor de cámara honorario desde 1846",
       "portraits": "1835",
       "added": "2025-09-06"
     },
@@ -9770,7 +9776,7 @@
       "relationship type": "conocido", 
       "know each other since": "al menos desde el 13 de mayo de 1841, en París. Diario de Carderera: 'Por la mañana estuve a almorzar con Mr. Piot y con Mr. Teófilo Gautier' (Lanzarote Guiral 2016, p.12). Carderera ayudó a Gautier con un artículo de 1842 en <i>Le Cabinet de l'amateur</i> (LG 2016, p.550)",
       "mentions": "1859, 12 de noviembre, Carderera escribe en su diario: 'Entré a un librero. Compré el libro de T. Gautier intitulado <i>Constantinopla</i> por 17 sous' (LG 2016, p.430)",
-      "se conocieron": "París, 1859-XI-13: 'Fuime al quai Voltaire, redacción del Monitor (sic) [Le Moniteur universel] y pude entrar en el gabinete de Théophile Gautier, que estuvo amable. Vio la serie de toros, que le regalé y después mis entregas [...]' (Lanzarote Guiral 2016, p.431)",
+      "they met": "París, 1859-XI-13: 'Fuime al quai Voltaire, redacción del Monitor (sic) [Le Moniteur universel] y pude entrar en el gabinete de Théophile Gautier, que estuvo amable. Vio la serie de toros, que le regalé y después mis entregas [...]' (Lanzarote Guiral 2016, p.431)",
       "obras compradas/vendidas/regaladas": "el 13 de noviembre de 1859, Carderera mostró a Gautier la Tauromaquia de Goya y luego se la regaló. Probablemente se trate de la colección <i>Tauromaquia</i> que se vendió en Sotheby's París, el 14 de diciembre de 2022 (Biblioteca de Jorge Ortiz Linares), lote 37, por 132 300 €. [Sotheby's](https://www.sothebys.com/en/buy/auction/2022/de-la-precieuse-bibliotheque-jorge-ortiz-linares/madrid-1816-33-eaux-fortes-envoi-de-valentin?locale=en). [Vídeo de YouTube](https://www.youtube.com/watch?v=6A2iC0fEZxs) de Jean-Baptiste de Proyart hablando sobre el conjunto de la Tauromaquia (min 2:10)",
       "bibliography": "Fayos Pérez 2020; Lanzarote Guiral 2016"
     },
@@ -9780,7 +9786,7 @@
       "connection_level": "directo",
       "relationship type": "compañeros de trabajo; amigos",
       "know each other since": "al menos desde 1859",
-      "descubre las obras de Goya": "Burty probablemente adquirió su conjunto de pruebas de trabajo de Los desastres de la guerra de Goya (ahora en el Museo Británico), entre otros grabados de Goya, a través de Carderera",
+      "discovers Goya's works": "Burty probablemente adquirió su conjunto de pruebas de trabajo de Los desastres de la guerra de Goya (ahora en el Museo Británico), entre otros grabados de Goya, a través de Carderera",
       "collaborations": "en la Gazette des Beaux-arts, c. 1859-1861",
       "interactions": [
         "1859, 5 de noviembre (París): Carderera muestra a Burty los dibujos de Goya y algunos grabados. A continuación, le regala cinco grabados de Los disparates: [le enseñé] 'mis dibujos, los de Goya, y varias estampas. Le regalé cinco de Los Proverbios. Dile las notas y la carta para Blanc' (Lanzarote Guiral 2016, p.425).",
@@ -9882,7 +9888,7 @@
       "connection_level": "directo",
       "relationship type": "compañeros, amigos, rivales",
       "know each other since": "hacia 1864, en el Louvre", 
-      "se conocieron": "Se cree que Degas conoció a Manet por primera vez hacia 1864, cuando ambos estaban copiando (en grabado) la obra de Velázquez <i>Infanta Margarita</i> en el Louvre (Wolohojian y Dunn 2023, p.277; Gordon y Forge 1988, p.23)",
+      "they met": "Se cree que Degas conoció a Manet por primera vez hacia 1864, cuando ambos estaban copiando (en grabado) la obra de Velázquez <i>Infanta Margarita</i> en el Louvre (Wolohojian y Dunn 2023, p.277; Gordon y Forge 1988, p.23)",
       "portraits": [
         "Manet por Degas: varios grabados y dibujos, hacia 1868-69, entre ellos <i>Édouard Manet, sentado, sosteniendo su sombrero</i> (hacia 1868) (y grabado de 1868); <i>Édouard Manet, retrato de busto</i> (hacia 1868, Met 49.127.7) [Met](https://www.metmuseum.org/art/collection/search/358782); <i>Édouard Manet en las carreras</i> (c. 1868-69). (Wolohojian y Dunn 2023, p.277)",
         "Degar por Manet: lo representa en un rincón de <i>Las carreras en el Bois de Boulogne</i> (1872)"
@@ -10003,7 +10009,7 @@
       "to": "Marcello (Adèle d'Affry)",
       "connection_level": "directo",
       "relationship type": "conocidos",
-      "se conocieron": "Marcello conoce a Regnault y Georges Clarin en España en 1868 (durante la Revolución)"
+      "they met": "Marcello conoce a Regnault y Georges Clarin en España en 1868 (durante la Revolución)"
     },
     {
       "from": "Henri Regnault",
@@ -10043,7 +10049,7 @@
       "to": "Isabel II",
       "connection_level": "directo",
       "relationship type": "conocidos; empleador-empleado",
-      "empleo/mecenazgo": "Pérez Villaamil fue nombrado pintor de cámara honorario de Isabel II en 1840"
+      "employment/patronage": "Pérez Villaamil fue nombrado pintor de cámara honorario de Isabel II en 1840"
     },
     {
       "from": "Léon Auguste Asselineau",
@@ -10111,7 +10117,7 @@
       "to": "Félix Bracquemond",
       "connection_level": "directo",
       "relationship type": "compañeros",
-      "se conocieron": "el 12 de noviembre de 1859, Carderera le muestra a Bracquemond algunos dibujos de Goya: 'Me encontré con el grabador que grabó mi dibujo de Don Quijote. Le mostré el resto' (Lanzarote Guiral 2016, p.430)",
+      "they met": "el 12 de noviembre de 1859, Carderera le muestra a Bracquemond algunos dibujos de Goya: 'Me encontré con el grabador que grabó mi dibujo de Don Quijote. Le mostré el resto' (Lanzarote Guiral 2016, p.430)",
       "link to Goya's work": "para copiar el dibujo de Goya (<i>Don Quijote</i>) para el artículo, Bracquemond debió de haber visto esta obra de la colección de Carderera en París antes de 1860",
       "collaborations": "Bracquemond realizó un grabado basado en Goya para ilustrar el primer artículo de Carderera en la Gazette des Beaux-arts en 1860: Don Quijote, basado en el dibujo F.54 (Fayos Pérez 2024, pp. 43, 164, fig. II.42)",
       "bibliography": "Fayos Pérez 2024; Lanzarote Guiral 2016"
@@ -10355,7 +10361,7 @@
       "relationship type": "compañeros",
       "correspondence": "no localizada (esta correspondencia existe según Bonnaffé 1890, p.35)",
       "know each other since": "al menos desde 1842",
-      "se conocieron": "22 de noviembre de 1842 (diario): Carderera revisa con Piot sus notas sobre Goya (Lanzarote Guiral 2016, p.167); 24 de septiembre de 1855: Carderera visita la casa de Piot (ibíd., p.565); 13 de julio de 1861 Carderera muestra a Piot sus dibujos y los de Goya; 2 de agosto de 1861 Carderera entrega a Piot las copias con la explicación de Goya (comentarios del Prado) (ibíd., p.454, 462; también se reúnen en otras ocasiones en 1861: pp. 453, 459, 464)",
+      "they met": "22 de noviembre de 1842 (diario): Carderera revisa con Piot sus notas sobre Goya (Lanzarote Guiral 2016, p.167); 24 de septiembre de 1855: Carderera visita la casa de Piot (ibíd., p.565); 13 de julio de 1861 Carderera muestra a Piot sus dibujos y los de Goya; 2 de agosto de 1861 Carderera entrega a Piot las copias con la explicación de Goya (comentarios del Prado) (ibíd., p.454, 462; también se reúnen en otras ocasiones en 1861: pp. 453, 459, 464)",
       "collaborations": "Carderera ayudó a Piot con su catálogo razonado de Goya (1842), al igual que Gautier. Es muy probable que Piot descubriera Los desastres de la guerra de Goya por aquella época a través de Carderera",
       "mentions": "Piot menciona a Carderera y a Agustín Ceán Bermúdez en su catálogo razonado de 1842 (p. 346)",
       "bibliography": "Fayos Pérez 2024; Lanzarote Guiral 2016; Bonnaffé 1890"
@@ -10366,28 +10372,28 @@
       "connection_level": "directo",
       "relationship type": "conocidos",
       "know each other since": "1841", 
-      "se conocieron": "en París, Carderera visita la galería de arte de Aguado el 17 de mayo de 1841 (Lanzarote Guiral 2016, p.LV)"
+      "they met": "en París, Carderera visita la galería de arte de Aguado el 17 de mayo de 1841 (Lanzarote Guiral 2016, p.LV)"
     },
     {
-      "from": "XI conde de Altamira",
+      "from": "XI Count of Altamira",
       "to": "Alejandro Aguado",
       "connection_level": "secundario",
       "relationship type": "Aguado adquirió una parte de la colección de Altamira (Lanzarote Guiral 2016, p.LV)"
     },
     {
-      "from": "XI conde de Altamira",
-      "to": "Conde de Floridablanca",
+      "from": "XI Count of Altamira",
+      "to": "Count of Floridablanca",
       "connection_level": "directo",
       "relationship type": "conocido"
     },
     {
       "from": "Gaspar Melchor de Jovellanos",
-      "to": "Conde de Floridablanca",
+      "to": "Count of Floridablanca",
       "connection_level": "directo",
       "relationship type": "conocido"
     },
     {
-      "from": "Conde de Floridablanca",
+      "from": "Count of Floridablanca",
       "to": "Francisco de Goya",
       "connection_level": "directo",
       "relationship type": "mecenazgo; retratista-modelo",
@@ -10396,7 +10402,7 @@
     },
     {
       "from": "Gaspar Melchor de Jovellanos",
-      "to": "XI conde de Altamira",
+      "to": "XI Count of Altamira",
       "connection_level": "directo",
       "relationship type": "conocido"
     },
@@ -10409,7 +10415,7 @@
       "portraits": "1798, Prado"
     },
     {
-      "from": "XI conde de Altamira",
+      "from": "XI Count of Altamira",
       "to": "Francisco Cabarrús",
       "connection_level": "directo",
       "relationship type": "conocido"
@@ -10421,7 +10427,7 @@
       "relationship type": "amigos"
     },
     {
-      "from": "Conde de Floridablanca",
+      "from": "Count of Floridablanca",
       "to": "Francisco Cabarrús",
       "connection_level": "directo",
       "relationship type": "conocido"
@@ -10441,7 +10447,7 @@
       "relationship type": "Aguado adquirió una parte de la colección de Iriarte (Lanzarote Guiral 2016, p.LV)"
     },
     {
-      "from": "XI conde de Altamira",
+      "from": "XI Count of Altamira",
       "to": "Francisco de Goya",
       "connection_level": "directo",
       "relationship type": "mecenazgo; retratista-modelo",
@@ -10456,7 +10462,7 @@
       "know each other since": "al menos desde 1794", 
       "correspondence": "1794-I-4 Goya a Iriarte: la famosa carta en la que Goya anuncia que deja de pintar sus pequeños cuadros de gabinete, sobre temas extraídos del 'capricho e invención' (Canellas p.314, n.º 188; también n.º 189, 1794-I-7)",
       "portraits": "Goya retrata a Iriarte en 1797 (Museo de Estrasburgo). Copia en el Museo Metropolitano (50.145.19)",
-      "se conocieron": "en París, Valentín Carderera visita la galería de arte de Aguado el 17 de mayo de 1841 (Lanzarote Guiral 2016, p.LV)"
+      "they met": "en París, Valentín Carderera visita la galería de arte de Aguado el 17 de mayo de 1841 (Lanzarote Guiral 2016, p.LV)"
     },
     {
       "from": "Nadar",
@@ -10500,7 +10506,7 @@
     },
     {
       "from": "Nadar",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo",
       "relationship type": "conocidos", 
       "collaborations": "Dumas participó en <i>Le Livre d'Or</i> (1839) de Nadar",
@@ -10575,7 +10581,7 @@
     },
     {
       "from": "Nadar",
-      "to": "Barón Taylor",
+      "to": "Baron Taylor",
       "connection_level": "directo",
       "relationship type": "conocidos",
       "portraits": [
@@ -10727,15 +10733,15 @@
     },
     {
       "from": "Valentín Carderera",
-      "to": "Barón Taylor",
+      "to": "Baron Taylor",
       "connection_level": "direct",
       "relationship type": "amigos",
       "know each other since": "hacia 1835",
       "collaborations": "durante su misión para adquirir obras de arte para la Galerie espagnole en 1835-36, Taylor contó con la ayuda de Dauzats y Blanchard, así como de la familia Madrazo y Carderera",
-      "se conocieron": [
-        "1837-X-2 Carderera ofrece a Taylor la venta de dos cuadros de Morales, a través de Federico de Madrazo (carta de Federico de Madrazo al barón Taylor, Burdeos, 2 de octubre de 1837: Lanzarote Guiral 2016, p.XXIII; Porée 1907, p.296)",
+      "they met": [
+        "1837-X-2 Carderera ofrece a Taylor la venta de dos cuadros de Morales, a través de Federico de Madrazo (carta de Federico de Madrazo al Baron Taylor, Burdeos, 2 de octubre de 1837: Lanzarote Guiral 2016, p.XXIII; Porée 1907, p.296)",
         "1841-V-5, París: Taylor lo invita a la Comédie Française (Lanzarote Guiral 2016, p.XLIX, p.11); 1841 V 7, 9, 21; 1841 XI 21 (presenta a Ferdinand Denis); 1841 XII 19",
-        "1842 I 2, 5-7, 13, 17; 1842 IV 10; 1842 VIII 28; 1842 IX 11, 24, 28 (Taylor estaba 'catequizándome para que le vendiese mis dibujos y escritos' [Lanzarote Guiral 2016, p.XXXI]), 30 (el barón Taylor ve un retrato); 1842-XI-27",
+        "1842 I 2, 5-7, 13, 17; 1842 IV 10; 1842 VIII 28; 1842 IX 11, 24, 28 (Taylor estaba 'catequizándome para que le vendiese mis dibujos y escritos' [Lanzarote Guiral 2016, p.XXXI]), 30 (el Baron Taylor ve un retrato); 1842-XI-27",
         "1843-I-8",
         "1845-V-6; 1845 X 12 (ve un retrato de Velázquez 'en Viena'); 1845 XI 12, 14, 15",
         "1855 X-9, XI 3, 25, 26",
@@ -10751,7 +10757,7 @@
       "connection_level": "directo",
       "relationship type": "amigos",
       "know each other since": "al menos desde 1835",
-      "se conocieron": "coincidieron en París (Ochoa vivió allí entre 1837 y 1843)",
+      "they met": "coincidieron en París (Ochoa vivió allí entre 1837 y 1843)",
       "collaborations": "Carderera publicó su primer artículo sobre Goya en 1835 en <i>El Artista</i>, fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa.",
       "bibliography": "Lanzarote Guiral 2016, p.563"
     },
@@ -10770,13 +10776,13 @@
       "know each other since": "al menos desde 1835",
       "compartieron": "se alistaron como voluntarios en los granaderos de la Milicia Nacional de Madrid (6.º Batallón) en 1835, junto con Pedro de Madrazo, Pascual de Gayangos y Arce, Vicente Masarnau y Santiago Masarnau",
       "collaborations": "Carderera publicó su primer artículo sobre Goya en 1835 en El Artista, fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa", 
-      "mentions": "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el barón Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación)",
+      "mentions": "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación)",
       "se reunieron": [
         "En numerosas ocasiones. Algunas de ellas son:",
         "1855 (París): 5, 9, 16, 19, 21 y 29 de septiembre, 11, 17 y 19 de octubre, 11 y 27 de noviembre.",
         "1856, 3 de agosto (París): 'Después de ir de Ottoz con López a hacer el encargo de Federico de Madrazo' (LG 2016, p.337).",
         "1861 ambos participan en el Congreso Artístico de Amberes.",
-        "19 de agosto de 1861 (París), con el barón Taylor y Eugenio Ochoa"
+        "19 de agosto de 1861 (París), con el Baron Taylor y Eugenio Ochoa"
       ],
       "correspondence": [
         "3 de diciembre de 1837, París, Madrazo a Carderera: Adrien Dauzats recomienda a Carderera, a través de Federico de Madrazo, que vaya a París ('de pensar venirse a Francia debe indudablemente  ser a París').",
@@ -10832,7 +10838,7 @@
     },
     {
       "from": "José de Madrazo",
-      "to": "Barón Taylor",
+      "to": "Baron Taylor",
       "connection_level": "directo",
       "relationship type": "conocidos; mecenazgo",
       "know each other since": "al menos desde 1833 (a través de Blanchard, en Madrid)",
@@ -10890,13 +10896,13 @@
       "relationship type": "maestro-alumno"
     },
     {
-      "from": "Barón Taylor",
+      "from": "Baron Taylor",
       "to": "Adrien Dauzats",
       "connection_level": "directo",
       "know each other since": "1823",
       "relationship type": "amigos íntimos",
       "collaborations": [
-        "c.1823-1834 Dauzats realiza ilustraciones para <i>Voyages pittoresques et romantiques dans l'ancienne France</i>, editado por el barón Taylor en colaboración con Charles Nodier y Alphonse de Cailleux; como <i>Maison des Bains, Bagnoles</i>, 1834. Véase la exposición <i>La Fabrique du Romantisme, Charles Nodier et les Voyages pittoresques</i>, Musée de la vie romantique, 2014-2015.",
+        "c.1823-1834 Dauzats realiza ilustraciones para <i>Voyages pittoresques et romantiques dans l'ancienne France</i>, editado por el Baron Taylor en colaboración con Charles Nodier y Alphonse de Cailleux; como <i>Maison des Bains, Bagnoles</i>, 1834. Véase la exposición <i>La Fabrique du Romantisme, Charles Nodier et les Voyages pittoresques</i>, Musée de la vie romantique, 2014-2015.",
         "1835-37 viajaron juntos a España para adquirir obras de arte para la Galerie espagnole"
         ],
       "in Spain": "julio de 1833 (Guinard 1967-A, p.86); 1835-1837", 
@@ -10909,30 +10915,30 @@
       "websites": "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)"
     },
     {
-      "from": "Barón Taylor",
+      "from": "Baron Taylor",
       "to": "Eugenio Ochoa",
       "connection_level": "directo",
       "relationship type": "¿conocidos?"
     },
     {
-      "from": "Barón Taylor",
+      "from": "Baron Taylor",
       "to": "Pharamond Blanchard",
       "connection_level": "directo",
       "relationship type": "compañeros de trabajo"
     },
     {
-      "from": "Barón Taylor",
+      "from": "Baron Taylor",
       "to": "Théophile Gautier",
       "connection_level": "directo",
       "relationship type": "conocidos"
     },
     {
-      "from": "Barón Taylor",
+      "from": "Baron Taylor",
       "to": "Victor Hugo",
       "connection_level": "directo",
       "relationship type": "compañeros de trabajo; amigos",
       "know each other since": "al menos desde 1829",
-      "se conocieron": [
+      "they met": [
         "1829: Victor Hugo leyó Un duelo bajo Richelieu a su círculo ampliado el 10 de julio de 1829: Sainte-Beuve, Boulanger, Vigny, Dumas, Soumet, Delacroix, Taylor, Musset, Mérimée, los Devéria, los Deschamps, los Bertin, otros más, todos estaban allí, e incluso Balzac, que acababa de publicar su primer libro bajo su nombre, <i>Le Dernier Chouan, ou la Bretagne en 1800</i>' (Hovasse 2001, p.403)",
         "1830 Hernani: 'Hugo y Taylor, escondidos en un rincón, asistieron al desfile de los excéntricos conspiradores, que se dirigían a metas elevadas por caminos estrechos' (Hovasse 2001, p.424; citando Victor Hugo raconté, p.462-63).",
         "1832 Taylor comunica a Hugo la censura gubernamental de su obra Le roi s'aume (Hovasse 2001, p.570)"
@@ -10966,7 +10972,7 @@
       "collaborations": "Nanteuil ilustró cuatro portadas para las obras de Hugo en 1832"
     },
     {
-      "from": "Alexandre Dumas padre",
+      "from": "Alexandre Dumas père",
       "to": "Célestin Nanteuil",
       "connection_level": "directo",
       "relationship type": "amigos",
@@ -10995,7 +11001,7 @@
       "collaborations": "Nanteuil contribuyó a las ilustraciones de la edición de Furne de la obra de Balzac (<i>La Comédie Humaine</i>, de 1841-42)"
     },
     {
-      "from": "Barón Taylor",
+      "from": "Baron Taylor",
       "to": "Charles Nodier",
       "connection_level": "directo",
       "relationship type": "amigos; colegas",
@@ -11004,17 +11010,17 @@
       "collaborations": "en 1818 iniciaron el proyecto <i>Voyages pittoresques et romantiques dans l'ancienne France</i> (publicado entre 1820 y 1878); fueron coautores de una adaptación de <i>Bertram ou le pirate</i> (1821), de Charles Maturin"
     },
     {
-      "from": "Barón Taylor",
+      "from": "Baron Taylor",
       "to": "Louis Viardot",
       "label": ""
     },
     {
-      "from": "Barón Taylor",
+      "from": "Baron Taylor",
       "to": "Jean-Auguste-Dominique Ingres",
       "connection_level": "direct",
       "relationship type": "conocidos",
       "know each other since": "al menos desde 1833",
-      "se conocieron": "en 1833, durante una visita al departamento de escultura del Louvre con Federico de Madrazo"
+      "they met": "en 1833, durante una visita al departamento de escultura del Louvre con Federico de Madrazo"
     },
     {
       "from": "Adrien Dauzats",
@@ -11023,7 +11029,7 @@
       "relationship type": "compañeros de trabajo; amigos",
       "know each other since": "principios de la década de 1820, cuando trabajaban en el Théâtre des Italiens (según Philippe Burty)",
       "collaborations": [
-        "Viaje a España en 1835 (para el barón Taylor y Louis Philippe I I)",
+        "Viaje a España en 1835 (para el Baron Taylor y Louis Philippe I I)",
         "publicación en 1840 de <i>Relation de l'Expédition française au Mexique</i>"
       ],
       "bibliography": "Philippe Burty, <i>Catalogue des Tableaux</i> (Vente Dauzats), 1-4 de febrero de 1869, París, Drouot"
@@ -11099,7 +11105,7 @@
       "to": "Pierre Lacour fils",
       "connection_level": "directo",
       "relationship type": "maestro-alumno?",
-      "se conocieron": "en 1824 en Burdeos",
+      "they met": "en 1824 en Burdeos",
       "bibliography": "Philippe Burty, catálogo de la venta Dauzats, 1869"
     },
     {
@@ -11108,7 +11114,7 @@
       "connection_level": "directo",
       "relationship type": "amigos",
       "know each other since": "al menos desde 1835", 
-      "mentions": "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el barón Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación)",
+      "mentions": "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación)",
       "curiosities": "Dauzats presenta a Ochoa a Víctor Hugo en 1837 (Ochoa 1861, p.199; Romero Tobar 1997, p.222).",
       "bibliography": "Romero Tobar 1997; Ochoa 1861"
     },
@@ -11130,13 +11136,13 @@
     },
     {
       "from": "Pharamond Blanchard",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directa",
-      "se conocieron": "1846 en Madrid: boda real (también Théophile Gautier)"
+      "they met": "1846 en Madrid: boda real (también Théophile Gautier)"
     },
     {
-      "from": "Barón Taylor",
-      "to": "Alexandre Dumas padre",
+      "from": "Baron Taylor",
+      "to": "Alexandre Dumas père",
       "connection_level": "directa",
       "relationship type": "amigos; colegas",
       "correspondence": [
@@ -11165,7 +11171,7 @@
       "from": "Pharamond Blanchard",
       "to": "Théophile Gautier",
       "connection_level": "direct",
-      "se conocieron": "1846 en Madrid: boda real (también Alexandre Dumas padre)"
+      "they met": "1846 en Madrid: boda real (también Alexandre Dumas père)"
     },
     {
       "from": "Eugenio Ochoa",
@@ -11189,11 +11195,11 @@
     },
     {
       "from": "Eugenio Ochoa",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directa",
       "relationship type": "conocidos",
       "know each other since": "1837",
-      "se conocieron": "en el salón de Víctor Hugo (Ochoa 1861, p.203)",
+      "they met": "en el salón de Víctor Hugo (Ochoa 1861, p.203)",
       "bibliography": "Ochoa 1861"
     },
     {
@@ -11237,7 +11243,7 @@
       "connection_level": "directo",
       "relationship type": "conocidos",
       "know each other since": "1837",
-      "se conocieron": "en el salón de Víctor Hugo (escrito como 'Luis Boulanger') (Ochoa 1861, p.203)",
+      "they met": "en el salón de Víctor Hugo (escrito como 'Luis Boulanger') (Ochoa 1861, p.203)",
       "bibliography": "Romero Tobar 1997; Ochoa 1861"
     },
     {
@@ -11246,7 +11252,7 @@
       "connection_level": "directo",
       "relationship type": "conocidos",
       "know each other since": "1837",
-      "se conocieron": "en el salón de Víctor Hugo (escrito como 'Dudevant (Jorge Sand)') (Ochoa 1861, p.203)",
+      "they met": "en el salón de Víctor Hugo (escrito como 'Dudevant (Jorge Sand)') (Ochoa 1861, p.203)",
       "bibliography": "Romero Tobar 1997; Ochoa 1861"
     },
     {
@@ -11638,7 +11644,7 @@
     },
     {
       "from": "Eugène Delacroix",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo",
       "relationship type": "amigos; corresponsales", 
       "correspondence": "desde 1840 (Burty 1880, t. I, p.238, 240)",
@@ -11806,7 +11812,7 @@
     },
     {
       "from": "Achille Devéria",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo",
       "relationship type": "conocidos",
       "portraits": "Devéria retrató a Dumas en torno a 1829 y 1832 (litografía publicada por Charles Motte)"
@@ -11979,7 +11985,7 @@
     },
     {
       "from": "George Sand",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo",
       "relationship type": "conocidos",
       "portraits": "Josef Danhauser, <i>Liszt am Klavier</i>, 1840, óleo, retrato colectivo con George Sand, Dumas, Hugo, Marie d'Agoult, Liszt, Paganini y Rossini (con el busto de Beethoven y el retrato de Byron), Alte Nationalgalerie, F.V.42"
@@ -12000,7 +12006,7 @@
     },
     {
       "from": "Antoine Fontaney",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo",
       "relationship type": "¿conocidos?",
       "compartido": "círculo social del salón de Nodier en el Arsenal y el Cenáculo de Víctor Hugo"
@@ -12085,7 +12091,7 @@
     },
     {
       "from": "Madame de Staël",
-      "to": "Marqués de Custine",
+      "to": "Marquis of Custine",
       "connection_level": "directo",
       "relationship type": "conocidos",
       "compartido": "La madre de Custine, Delphine, era una amiga íntima de Staël, quien le dedicaría su novela <i>Delphine</i> (1802).",
@@ -12097,7 +12103,7 @@
     },
     {
       "from": "Victor Hugo",
-      "to": "Marqués de Custine",
+      "to": "Marquis of Custine",
       "connection_level": "directo",
       "relationship type": "conocidos",
       "know each other since": "al menos desde 1829",
@@ -12147,7 +12153,7 @@
       "to": "Charles Nodier",
       "connection_level": "directo",
       "relationship type": "amigos; colegas; rivales. Hugo fue influenciado por Nodier",
-      "rivalidad": "Hugo estaba empezando a sustituir a Nodier como líder del 'Cénacle romantique'. Nodier publicó un artículo hostil sobre Le Dernier jour d'un condamné de Hugo (<i>Le Journal des débats</i>, 26 de febrero [1829]). También hizo una alusión 'venenosa' a Les Orientales, en un artículo sobre Byron (<i>La Quotidienne</i>, 1 de noviembre [1829]).",
+      "rivalry": "Hugo estaba empezando a sustituir a Nodier como líder del 'Cénacle romantique'. Nodier publicó un artículo hostil sobre Le Dernier jour d'un condamné de Hugo (<i>Le Journal des débats</i>, 26 de febrero [1829]). También hizo una alusión 'venenosa' a Les Orientales, en un artículo sobre Byron (<i>La Quotidienne</i>, 1 de noviembre [1829]).",
       "curiosities": "Asistieron juntos al funeral de Carlos X en Reims en 1825",
       "bibliography": "Maynial 1943, p.78",
       "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Charles_Nodier)"
@@ -12195,7 +12201,7 @@
       "to": "Pedro de Madrazo",
       "connection_level": "directo",
       "know each other since": "1837", 
-      "se conocieron": "en 1837 en París (con Federico de Madrazo) [Wikipedia](https://es.wikipedia.org/wiki/Pedro_de_Madrazo_y_Kuntz)"
+      "they met": "en 1837 en París (con Federico de Madrazo) [Wikipedia](https://es.wikipedia.org/wiki/Pedro_de_Madrazo_y_Kuntz)"
     },
     {
       "from": "Théophile Gautier",
@@ -12259,7 +12265,7 @@
       "relationship type": "amigos", 
       "know each other since": "al menos desde 1837",
       "correspondence": "1837, febrero (después del 13), carta de Dumas a Gautier: 'Le envío a Bard, un buen amigo mío al que estuve a punto de fusilar en 1830 y al que debo una indemnización en 1837: por favor, entréguesela en mi nombre y ocúpese de su cuadro rechazado' (Lacoste-Veysseyre 1985, p.85).",
-      "Se conocieron": "1846 en Madrid: boda real (también Pharamond Blanchard)",
+      "they met": "1846 en Madrid: boda real (también Pharamond Blanchard)",
       "collaborations": "ambos colaboraron en <i>Les Français peints par eux-mêmes</i> (1840)",
       "bibliography": "Lacoste-Veysseyre 1985"
     },
@@ -12273,14 +12279,14 @@
     },
     {
       "from": "Théophile Gautier",
-      "to": "Marqués de Custine",
+      "to": "Marquis of Custine",
       "connection_level": "directo",
       "relationship type": "conocidos", 
       "compartido": "Gautier asistía al salón de Custine [Wikipedia](https://nl.wikipedia.org/wiki/Astolphe_de_Custine)"
     },
     {
       "from": "Frédéric Chopin",
-      "to": "Marqués de Custine",
+      "to": "Marquis of Custine",
       "connection_level": "directo",
       "relationship type": "amigos", 
       "correspondence": [
@@ -12296,7 +12302,7 @@
     },
     {
       "from": "Eugène Delacroix",
-      "to": "Marqués de Custine",
+      "to": "Marquis of Custine",
       "connection_level": "directo",
       "relationship type": "conocidos",
       "know each other since": "al menos desde 1840",
@@ -12305,7 +12311,7 @@
     },
     {
       "from": "Honoré de Balzac",
-      "to": "Marqués de Custine",
+      "to": "Marquis of Custine",
       "connection_level": "directo",
       "relationship type": "amigos",
       "know each other since": "hacia 1830", 
@@ -12364,7 +12370,7 @@
     },
     {
       "from": "Honoré de Balzac",
-      "to": "Barón Taylor",
+      "to": "Baron Taylor",
       "connection_level": "directo",
       "relationship type": "conocidos", 
       "correspondence": "al menos una carta de 1838 (Pierrot y Yon 2011, 38-54)",
@@ -12394,7 +12400,7 @@
     },
     {
       "from": "Honoré de Balzac",
-      "to": "Alexandre Dumas padre",
+      "to": "Alexandre Dumas père",
       "connection_level": "directo",
       "relationship type": "conocidos (no se tenían especial simpatía)", 
       "correspondence": "al menos tres cartas de 1840 (Pierrot y Yon 2011, 40-93, 40-96, 40-97)",
@@ -12464,7 +12470,7 @@
       "mentions": "Gautier menciona la obra de Nodier Histoire du roi de Bohême (1830), Le Figaro, 19 de octubre de 1836, Les récréations du génie (Lacsote-Veysseyre 2014, p.218)"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "George Sand",
       "connection_level": "directo",
       "relationship type": "conocidos", 
@@ -12481,14 +12487,14 @@
       "bibliography": "Samantha Caretti, 'La vérité et l'idéal: Astolphe de Custine, lecteur de George Sand', <i>Cahiers George Sand</i>, n.º 41, septiembre de 2019; H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "Louise Bertin",
       "relationship type": "conocidos", 
       "interactions": "1843, 7 de marzo, carta de Custine a Varnhagen: 'Mlle Bertin me disait hier un mot que je veux vous citer: Mme Sand, disait-elle, 'n'a rien fait pour les femmes, au contraire; elle abdique leur vrai pouvoir, c'est Omphale <i>fumant</i> aux pieds d'Hercule, j'amais mieux le contraire' (Merzbach 1870, p.443).",
       "bibliography": "H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "Sophie Gay",
       "relationship type": "amigos íntimos", 
       "correspondence": "sí. Por ejemplo, el 22 de octubre de 1838 describió el último concierto que Chopin dio en París antes de partir hacia Mallorca, en el castillo de Custine (véase Custine-Chopin's edge)",
@@ -12496,14 +12502,14 @@
       "websites": "[Publicación en Facebook](https://www.facebook.com/JackGibbonsPiano/posts/astolphe-de-custine-was-a-huge-supporter-of-chopin-and-one-of-the-very-first-to-/10157874644944384/) de Jack Gibbons, 26 de julio de 2019"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "Delphine de Girardin",
       "relationship type": "amigos", 
       "mentions": "1842, 26 de diciembre, carta de Custine a Vernhagen: 'Mme Émile de Girardin ha escrito una tragedia sobre Judith: la ha leído todo París' (Merzbach 1870, p.439)",
       "bibliography": "H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "Charles Baudelaire",
       "connection_level": "directo",
       "relationship type": "conocidos"
@@ -12582,7 +12588,7 @@
       "compartido": "Musset asistía con frecuencia al salón de Delphine de Girardin"
     },
     {
-      "from": "Alexandre Dumas padre",
+      "from": "Alexandre Dumas père",
       "to": "Delphine de Girardin",
       "connection_level": "directo",
       "relationship type": "conocidos",
@@ -12649,7 +12655,7 @@
       "crítica": "Flaubert dijo sobre <i>Los miserables</i> (1862) que no tenía 'ni verdad ni grandeza'"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "Alphonse de Lamartine",
       "connection_level": "¿directa?",
       "relationship type": "¿conocidos? Custine admiraba mucho a Lamartine",
@@ -12657,7 +12663,7 @@
       "bibliography": "H. Merzbach (ed.), Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense, 1870"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "Juliette Récamier",
       "connection_level": "directo",
       "relationship type": "conocidos",
@@ -12666,7 +12672,7 @@
       "bibliography": "H. Merzbach (ed.), Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense, 1870"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "Stendhal",
       "connection_level": "directo",
       "relationship type": "conocidos",
@@ -12674,7 +12680,7 @@
       "websites": "[Wikipedia](https://nl.wikipedia.org/wiki/Astolphe_de_Custine)"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "Charles-Augustin Sainte-Beuve",
       "connection_level": "direct",
       "relationship type": "conocidos"
@@ -12688,17 +12694,17 @@
       "bibliography": "André Guyaux y Aurélia Cervoni, <i>La querelle de la statue de Baudelaire</i>, 2007; Fernand Vandérem, <i>Baudelaire et Sainte-Beuve. Nouvelle édition. Augmentée de notes et d'un chapitre inédit</i>, 1917, París, Henri Leclerc"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "Fernando VII",
       "connection_level": "secundario",
       "mentions": "Custine escribe <i>L'Espagne sous Ferdinand VII</i> en 1838"
     },
     {
-      "from": "Marqués de Custine",
+      "from": "Marquis of Custine",
       "to": "Madame Ewelina Hanska",
       "connection_level": "directo",
       "relationship type": "conocidos",
-      "se conocieron": "en 1835 en Viena",
+      "they met": "en 1835 en Viena",
       "mentions": "en una carta de noviembre de 1838, Honoré de Balzac escribe a Custine: 'J'ai des compliments à vous reporter de la Comtesse de H[anska] que vous avez vue un jour à Vienne et qui a été ravie de Séville et de Cordoue d'après votre livre. Tengo sobre ella media página' (Pierrot & Yon 2011, vol. 2, p.388)",
       "bibliography": "Pierrot & Yon 2011"
     },
@@ -12839,13 +12845,13 @@
     },
     {
       "from": "XII Countess-Duchess of Benavente and Duchess of Osuna",
-      "to": "VIII duquesa de Abrantes",
+      "to": "VIII Duchess of Abrantes",
       "connection_level": "directo",
       "relationship type": "parientes; madre-hija"
     },
     {
       "from": "IX Duke of Osuna",
-      "to": "VIII duquesa de Abrantes",
+      "to": "VIII Duchess of Abrantes",
       "connection_level": "directo",
       "relationship type": "parientes; padre-hija"
     },
@@ -12862,13 +12868,13 @@
       "relationship type": "Santa Cruz fue la <i>aya</i> de la reina Isabel II y de la infanta Luisa Fernanda de Borbón"
     },
     {
-      "from": "VIII duquesa de Abrantes",
+      "from": "VIII Duchess of Abrantes",
       "to": "X Marchioness of Santa Cruz",
       "connection_level": "directo",
       "relationship type": "parientes; hermanas"
     },
     {
-      "from": "VIII duquesa de Abrantes",
+      "from": "VIII Duchess of Abrantes",
       "to": "X Duke of Osuna",
       "connection_level": "directo",
       "relationship type": "parientes; hermano-hermana"
@@ -12888,7 +12894,7 @@
       "portraits": "retrato familiar (1786-87, Prado) y retrato individual (1805, Prado)"
     },
     {
-      "from": "VIII duquesa de Abrantes",
+      "from": "VIII Duchess of Abrantes",
       "to": "Francisco de Goya",
       "connection_level": "directo",
       "relationship type": "mecenazgo",
@@ -12933,7 +12939,7 @@
     },
     {
       "from": "Carlos III",
-      "to": "Conde de Floridablanca",
+      "to": "Count of Floridablanca",
       "connection_level": "directo",
       "relationship type": "empleador-empleado"
     },
@@ -13023,7 +13029,7 @@
       "relationship type": "empleador-empleado"
     },
     {
-      "from": "Conde de Floridablanca",
+      "from": "Count of Floridablanca",
       "destino": "Carlos IV",
       "connection_level": "directo",
       "relationship type": "empleador-empleado"
@@ -13358,11 +13364,11 @@
       "relationship type": "familiares; abuela-nieta"
     },
     {
-      "from": "Conde de Floridablanca",
+      "from": "Count of Floridablanca",
       "to": "María Francisca de Sales Portocarrero, VI condesa de Montijo",
       "connection_level": "directo",
       "relationship type": "conocidos",
-      "interactions": "cuando el conde de Floridablanca intentó imponer un vestido nacional para las mujeres con el fin de controlar los gastos de la moda femenina, fue ella quien rechazó la propuesta (de la Junta de Damas), argumentando que la única solución era la educación (Trueba 2003)",
+      "interactions": "cuando el Count of Floridablanca intentó imponer un vestido nacional para las mujeres con el fin de controlar los gastos de la moda femenina, fue ella quien rechazó la propuesta (de la Junta de Damas), argumentando que la única solución era la educación (Trueba 2003)",
       "bibliography": "Trueba 2003"
     },
     {
@@ -13897,7 +13903,7 @@
       "to": "Francisco de Goya",
       "connection_level": "secundario",
       "relationship type": "influenciado por Goya, desde aproximadamente 1819",
-      "descubre las obras de Goya": "durante su infancia, a través de Ferdinand Guillemardet (padre de sus amigos íntimos Louis y Félix), quien lleva a Francia el retrato de Goya (1798) y una serie de los Caprichos desde España hacia 1800",
+      "discovers Goya's works": "durante su infancia, a través de Ferdinand Guillemardet (padre de sus amigos íntimos Louis y Félix), quien lleva a Francia el retrato de Goya (1798) y una serie de los Caprichos desde España hacia 1800",
       "copies after Goya": "al menos 42 (véase Fayos Pérez 2024, Apéndice III, Catálogo de las obras de Eugène Delacroix basadas en los Caprichos de Goya, c. 1819-1827)",
       "obras influenciadas por Goya": "entre otras, la portada de Fausto (1828), basada en el Capricho 66",
       "bibliography": "Fayos Pérez 2024; Fayos Pérez 2019"
