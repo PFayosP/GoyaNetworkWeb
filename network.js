@@ -186,7 +186,7 @@
       CITE_TITLE: "Cómo citar la Red Goya",
       BIB_TITLE: "Bibliografía", BIB_INTRO: "Esta sección reúne las fuentes bibliográficas empleadas a lo largo del proyecto. Las referencias que aparecen en los nodos y en las conexiones se presentan en forma de citas abreviadas (por ejemplo, Adhémar 1958).",
 
-      "Life dates":"Fechas de vida","Full name":"Nombre completo","Also known as":"También conocido/a como","Other names":"Otros nombres","Pseudonyms":"Seudónimos", "Profession":"Profesión","Nationality":"Nacionalidad","Born in":"Nace en","Dies in":"Fallece en","Considered as":"Considerado/a como", "Political views":"Ideas políticas","Military activity":"Actividad militar","Participates in":"Participa en", "Aristocratic titles":"Títulos nobiliarios","Ties with slavery/colonialism":"Vínculos con esclavitud/colonialismo","Curiosities":"Curiosidades", "Parents":"Padres","Siblings":"Hermanos/as","Married to":"Casado/a con","Partners/lovers":"Parejas/amantes","Children":"Hijos/as", "Friends":"Amigos/as","Rivals":"Rivales","Correspondence":"Correspondencia","Meets":"Encuentros","Studies in":"Estudia en", "Works as":"Works as","Works for":"Works for","Influenced by":"Influido/a por","Follower of":"Seguidor/a de","Masters":"Maestros/as","Students":"Alumnos/as", "Member of":"member of","Founder of":"Fundador/a de","Editor of":"Editor/a de","Writes in":"Escribe en","Collaborates with":"Colabora con", "Registered in":"Registrado/a en","Mentioned in the French press":"Mencionado/a en la prensa francesa","Decorations/awards":"Condecoraciones/premios", "Tertulia":"Tertulia","Literary salon or tertulia":"Salón literario o tertulia","Author of":"Autor/a de","Collection":"Colección", "Patronage":"Mecenazgo","Portraits":"Retratos","Exhibitions":"Exposiciones", "Bibliography":"bibliography","Websites":"Páginas web", "Podcasts":"Podcasts","Newspaper archive":"Hemeroteca","Archives":"Archivos","Added":"Añadido","Last modified":"Última modificación", "Identity and Personal Data":"Identidad y datos personales", "Family and Personal Relationships":"Familia y relaciones personales", "Education, Profession and Institutions":"Formación, profesión e instituciones", "Artistic/Literary Production and Collection":"Producción artística/literaria y colección", "Exhibitions and Public Reception":"Exposiciones y recepción pública", "Relationship with Goya":"Relación con Goya", "Copies after Spanish artworks":"Copias de obras españolas", 
+      "Life dates":"Fechas de vida","Full name":"Nombre completo","Also known as":"También conocido/a como","Other names":"Otros nombres","Pseudonyms":"Seudónimos", "Profession":"Profesión","Nationality":"Nacionalidad","Born in":"Nace en","Dies in":"Fallece en","Considered as":"Considerado/a como", "Political views":"Ideas políticas","Military activity":"Actividad militar","Participates in":"Participa en", "Aristocratic titles":"Títulos nobiliarios","Ties with slavery/colonialism":"Vínculos con esclavitud/colonialismo","Curiosities":"Curiosidades", "Parents":"Padres","Siblings":"Hermanos/as","Married to":"Casado/a con","Partners/lovers":"Parejas/amantes","Children":"Hijos/as", "Friends":"Amigos/as","Rivals":"Rivales","Correspondence":"Correspondencia","Meets":"Encuentros","Studies in":"Estudia en", "Works as":"Trabaja como","Works for":"Trabaja para","Influenced by":"Influido/a por","Follower of":"Seguidor/a de","Masters":"Maestros/as","Students":"Alumnos/as", "Member of":"member of","Founder of":"Fundador/a de","Editor of":"Editor/a de","Writes in":"Escribe en","Collaborates with":"Colabora con", "Registered in":"Registrado/a en","Mentioned in the French press":"Mencionado/a en la prensa francesa","Decorations/awards":"Condecoraciones/premios", "Tertulia":"Tertulia","Literary salon or tertulia":"Salón literario o tertulia","Author of":"Autor/a de","Collection":"Colección", "Patronage":"Mecenazgo","Portraits":"Retratos","Exhibitions":"Exposiciones", "Bibliography":"Bibliografía","Websites":"Páginas web", "Podcasts":"Podcasts","Newspaper archive":"Hemeroteca","Archives":"Archivos","Added":"Añadido","Last modified":"Última modificación", "Identity and Personal Data":"Identidad y datos personales", "Family and Personal Relationships":"Familia y relaciones personales", "Education, Profession and Institutions":"Formación, profesión e instituciones", "Artistic/Literary Production and Collection":"Producción artística/literaria y colección", "Exhibitions and Public Reception":"Exposiciones y recepción pública", "Relationship with Goya":"Relación con Goya", "Copies after Spanish artworks":"Copias de obras españolas", 
       "Sources and Documentation":"Fuentes y documentación", "Connections":"Conexiones", "Artistic Activity, Art Collecting and Patronage":"Actividad artística, coleccionismo y mecenazgo", "Geographic Presence and Movement":"Presencia geográfica y desplazamientos", "Relationship to Goya and His Work":"Relación con Goya y su obra", "Portrayed by":"Retratado/a por", "Image source":"Origen de la imagen", "In Spain":"En España", "Knows Goya's works":"Conoce la obra de Goya", "Address":"Dirección", "Link to Goya's work":"Vínculo con la obra de Goya", "Interest in Spanish art":"Interés en el arte español", "Mentions of Goya":"Menciones de Goya", "Collector of Goya's works":"Coleccionista de la obra de Goya", "In Paris":"En París", "mentions": "Menciones", "Conferences/seminars":"Conferencias/seminarios", "Trips":"Viajes", "Lives in":"Vive en", "Patrons": "Mecenas", "Collector of":"Coleccionista de", "Copies after Goya":"Copias de Goya", "Writes about Goya":"Escribe sobre Goya", "Mentions of Goya":"Menciones de Goya", "Connection": "Conexión", "Type of connection": "Tipo de conexión", "Type of relationship": "Tipo de relación", "Know each other since": "Se conocen desde", "Search": "Buscar", "Collaborations": "Colaboraciones", "They met": "Se encontraron", "direct": "directa", "Artworks bought/sold": "Compraventa de obras", "Interactions": "Interacciones", "Employment/patronage": "Empleo/patronazgo", "Between": "Entre", "and": "y", "Between [X] and [Y]": "Entre [X] y [Y]", "In France": "En Francia", "In Italy": "En Italia", "direct": "directa", "secondary": "secundaria", "acquaintances?": "¿conocidos?", "direct?": "¿directa?", "secondary?": "¿secundaria?", "portraitist-sitter": "retratista-retratado", "employer-employee": "empleador-empleado", "family": "familia", "friends": "amigos", "acquaintances": "conocidos", "master-student": "maestro-alumno", "partners/lovers": "parejas/amantes", "artworks influenced by Goya": "influenciado por Goya", "knows Goya's works": "conoce la obra de Goya", "Sales": "Ventas", "colleagues": "colegas", "copies": "copias", "Nodes": "Nodos", "Connections": "Conexiones", "Access form": "Acceder al formulario", "Unknown": "desconocida",
 
       ARTWORKS_TITLE: "La obra de Goya",
@@ -1663,18 +1663,35 @@ document.addEventListener('DOMContentLoaded', async function () {
         
             if (Array.isArray(value)) {
               // ✅ Si es un array de strings u objetos con imagen
-              const processedItems = value.map(item => {
-                if (typeof item === "object") {
-                  const caption = item.caption
-                    ? autoLinkNames(processMarkdownLinks(item.caption), nodesMap)
-                    : "";
-                  const url = item.url ? item.url : "";
+              const processedItems = value
+                .map(item => {
 
-                  return `<li>${caption}${url ? `<img src="${url}" alt="Portrait" style="max-width:100%; margin-left: 0.5rem; vertical-align: middle;">` : ""}</li>`;
-                } else {
-                  return `<li>${autoLinkNames(processMarkdownLinks(item), nodesMap)}</li>`;
-                }
-              });
+                  // ✅ Caso 1: array de strings
+                  if (typeof item === "string") {
+                    return `<li>${autoLinkNames(processMarkdownLinks(item), nodesMap)}</li>`;
+                  }
+
+                  // ✅ Caso 2: objetos (y no null)
+                  if (typeof item === "object" && item !== null) {
+
+                    // ✅ websites: {label, url}
+                    if (item.label && item.url) {
+                      const lab = autoLinkNames(processMarkdownLinks(item.label), nodesMap);
+                      const u = String(item.url).trim();
+                      return `<li><a href="${u}" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">${lab}</a></li>`;
+                    }
+
+                    // ✅ portraits/images: {caption, url}
+                    const caption = item.caption
+                      ? autoLinkNames(processMarkdownLinks(item.caption), nodesMap)
+                      : "";
+                    const url = item.url ? item.url : "";
+                    return `<li>${caption}${url ? `<img src="${url}" alt="Portrait" style="max-width:100%; margin-left: 0.5rem; vertical-align: middle;">` : ""}</li>`;
+                  }
+
+                  return null;
+                })
+                .filter(Boolean);
 
               htmlText = `<ul>${processedItems.join("")}</ul>`;
             
