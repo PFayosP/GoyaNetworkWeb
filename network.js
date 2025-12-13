@@ -254,10 +254,25 @@
     // Guarda etiqueta para "Last update"
     window.LAST_UPDATE_LABEL = t('LAST_UPDATE');
 
-    // Textos declarados con data-i18n (p.ej. HELP_TEXT_1/2)
+    // Textos declarados con data-i18n
+    const HTML_I18N_KEYS = new Set([
+      'ARTWORKS_BODY',
+      // añade aquí futuras secciones largas con HTML, ej:
+      // 'ABOUT_BODY', 'PARTNERS_BODY'
+    ]);
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      if (key) el.textContent = t(key);
+      if (!key) return;
+
+      const val = t(key);
+
+      // Si el string contiene HTML, hay que usar innerHTML
+      if (HTML_I18N_KEYS.has(key)) {
+        el.innerHTML = val;
+      } else {
+        el.textContent = val;
+      }
     });
   }
 
