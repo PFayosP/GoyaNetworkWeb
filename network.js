@@ -379,6 +379,7 @@
       'ARTWORKS_BODY',
       'PEOPLE_BODY',
       'ABOUT_BODY',
+      'CONTRIBUTIONS_TEXT',
       // añade aquí futuras secciones largas con HTML, ej:
       // 'ABOUT_BODY', 'PARTNERS_BODY'
     ]);
