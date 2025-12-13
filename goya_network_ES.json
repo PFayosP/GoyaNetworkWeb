@@ -3926,7 +3926,7 @@
       "added": "12-10-2025"
     },
     {
-      "id": "Primer duque de Wellington",
+      "id": "I duque de Wellington",
       "label": "Wellington",
       "full name": "Arthur Wellesley (nacido Wesley)",
       "life dates": "1769-1852", 
@@ -5789,7 +5789,7 @@
       "relationship type": "¿conocidos?"
     },
     {
-      "from": "primer duque de Wellington",
+      "from": "I duque de Wellington",
       "to": "Asensio Julià",
       "connection_level": "¿secundario?",
       "relationship type": "retratista-modelo (¿indirecto?)",
@@ -6002,7 +6002,7 @@
     },
     {
       "from": "Richard Ford",
-      "to": "primer duque de Wellington",
+      "to": "I duque de Wellington",
       "connection_level": "¿secundario?",
       "relationship type": "Ford era un gran admirador de Wellington"
     },
@@ -6819,7 +6819,7 @@
     },
     {
       "from": "Marqués de La Romana",
-      "to": "primer duque de Wellington",
+      "to": "I duque de Wellington",
       "connection_level": "directo",
       "relationship type": "conocidos; colegas",
       "menciones": "cuando Romana murió, Wellington dijo: 'su pérdida es la mayor que la causa podría sufrir' (Longford 1969, p.309)",
@@ -12771,7 +12771,7 @@
       "correspondence": "Sí. (<i>Lettres de Madame de Staël à Madame de Récamier</i>, París, Domat, 1952)"
     },
     {
-      "from": "Primer duque de Wellington",
+      "from": "I duque de Wellington",
       "to": "Madame de Staël",
       "connection_level": "directo",
       "relationship type": "amigos", 
@@ -12781,7 +12781,7 @@
       "bibliography": "Elizabeth Longford, Wellington: Pillar of State, 1972, Londres"
     },
     {
-      "from": "primer duque de Wellington",
+      "from": "I duque de Wellington",
       "to": "Francisco de Goya",
       "connection_level": "directo",
       "relationship type": "mecenazgo", 
@@ -13155,7 +13155,7 @@
     },
     {
       "from": "José Bonaparte",
-      "to": "primer duque de Wellington",
+      "to": "I duque de Wellington",
       "connection_level": "directo",
       "relationship type": "rivals"
     },
