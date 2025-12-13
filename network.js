@@ -130,7 +130,7 @@
       ABOUT_TITLE: "About the Goya Network",
       ABOUT_BODY: `
       <p style="background: #333; color: white; padding: 1rem; border-left: 5px solid #66ccff; font-size: 1.1rem;">
-        <span style="font-weight: bold;">📣 Forthcoming (c. 2026): Fayos-Pérez & Verő, "The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain"</span>, to be published in 
+        <span style="font-weight: bold;">📣 Forthcoming: Fayos-Pérez & Verő, "The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain"</span>, to be published in 
         <a href="https://leonardo.info/leonardo/" target="_blank" style="color: #66ccff; font-weight: bold;"><em>Leonardo</em></a>, a peer-reviewed academic journal published by the 
         <span style="font-weight: bold;">MIT Press</span> covering the application of contemporary science and technology to the arts and music.
       </p>
@@ -281,7 +281,7 @@
       ABOUT_TITLE: "Acerca de la Goya Network / Red Goya",
       ABOUT_BODY: `
       <p style="background: #333; color: white; padding: 1rem; border-left: 5px solid #66ccff; font-size: 1.1rem;">
-        <span style="font-weight: bold;">📣 Próximamente (c. 2026): Fayos-Pérez & Verő, "The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain"</span>, que se publicará en 
+        <span style="font-weight: bold;">📣 Próximamente: Fayos-Pérez & Verő, "The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain"</span>, que se publicará en 
         <a href="https://leonardo.info/leonardo/" target="_blank" style="color: #66ccff; font-weight: bold;"><em>Leonardo</em></a>, revista académica revisada por pares publicada por 
         <span style="font-weight: bold;">MIT Press</span> dedicada a la aplicación de la ciencia y la tecnología contemporáneas a las artes y la música.
       </p>
