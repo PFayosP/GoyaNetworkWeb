@@ -106,6 +106,26 @@
 
       </p>
       `,
+
+      PEOPLE_TITLE: "People",
+      PEOPLE_BODY: `
+      <p><strong>Project Director:</strong> Paula Fayos-Pérez, PhD (University of Cambridge, 2019). Postdoctoral researcher in History of Art. Associate member of ARCHE (Université de Strasbourg) and SU+MA (Universidad Complutense de Madrid).</p>
+
+      <p><strong>Scientific Committee:</strong> The content of the Goya Network is periodically reviewed and discussed with the members of a scientific committee composed of external consultants renowned for their scholarly prestige, who provide guidance and advice on specific aspects of the project.</p>
+      <ul style="margin-top: 0.5rem; line-height: 1.6;">
+        <li><strong>Jean Michel Massing</strong>: Professor Emeritus of Art History at the University of Cambridge, King's College. Specialist in the history of printmaking, iconography, and African art.</li> <br>
+        <li><strong>Aurélie Pétiot</strong>: Lecturer at the Université Paris Nanterre. Specialist in nineteenth-century art, decorative arts, gender studies, and the Pre-Raphaelites.</li> <br>
+        <li><strong>Stephanie Loeb Stepanek</strong>: Curator Emerita of Prints and Drawings at the Museum of Fine Arts, Boston. Specialist in Goya's prints and the history of Goya collecting in the United States.</li> <br>
+        <li><strong>Anita L. Verő</strong>: PhD in Artificial Intelligence (University of Cambridge, 2022), computer scientist and founder of <a href="https://www.consonant-ai.com" target="_blank">ConsonantAI</a>. Support with the technical development of the website.</li>
+      </ul>
+
+      <p class="section-heading">Contributors</p>
+      <ul>
+        <li><strong>Manuela B. Mena-Marqués</strong>: PhD in Art History (Complutense University of Madrid, 1976). Curator of the Prints and Drawings Department (1979-1981), Deputy Director (1981-1996) and Head of the Curatorial Department for 18th-Century Painting and Goya at the Prado Museum (1996-2019). Contribution: feedback on the website (June 2025).</li> <br>
+        <li><strong>Joëlle Arches</strong>, Chief Curator and Director of the <a href="https://www.museegoya.fr/" target="_blank">Musée Goya</a> and Jean Jaurès Museum, and <strong>Cécile Berthoumieu</strong>, Senior Heritage Curator (Attachée principale de conservation du patrimoine). Contribution: website feedback; suggested adding Marcel Briguiboul to the network (September 2025).</li> <br>
+        <li><strong>Stephanie Loeb Stepanek</strong>: Curator Emerita of Prints and Drawings, Boston Museum of Fine Arts. Contribution: information on an early edition of <i>Disasters of War</i>, printed by Laureano Potenciano (October 2025).</li>
+      </ul>
+      `,
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
@@ -208,6 +228,26 @@
 
       </p>
       `,
+
+      PEOPLE_TITLE: "Equipo",
+      PEOPLE_BODY: `
+      <p><strong>Directora del proyecto:</strong> Paula Fayos-Pérez, PhD (Universidad de Cambridge, 2019). Investigadora postdoctoral en Historia del arte. Miembro asociado de ARCHE (Université de Strasbourg) y de SU+MA (Universidad Complutense de Madrid).</p>
+
+      <p><strong>Comité científico:</strong> El contenido de la Goya Network se revisa y debate periódicamente con los miembros de un comité científico integrado por consultores externos de reconocido prestigio académico, que aportan orientación y asesoramiento sobre aspectos específicos del proyecto.</p>
+      <ul style="margin-top: 0.5rem; line-height: 1.6;">
+        <li><strong>Jean Michel Massing</strong>: profesor emérito de Historia del arte en la Universidad de Cambridge, King's College. Especialista en historia del grabado, iconografía y arte africano.</li> <br>
+        <li><strong>Aurélie Pétiot</strong>: profesora (lecturer) en la Université Paris Nanterre. Especialista en arte del siglo XIX, artes decorativas, estudios de género y prerrafaelismo.</li> <br>
+        <li><strong>Stephanie Loeb Stepanek</strong>: conservadora emérita de Estampas y Dibujos en el Museum of Fine Arts, Boston. Especialista en la obra gráfica de Goya y en la historia del coleccionismo de Goya en Estados Unidos.</li> <br>
+        <li><strong>Anita L. Verő</strong>: doctora en Inteligencia Artificial (Universidad de Cambridge, 2022), informática y fundadora de <a href="https://www.consonant-ai.com" target="_blank">ConsonantAI</a>. Apoyo en el desarrollo técnico del sitio web.</li>
+      </ul>
+
+      <p class="section-heading">Colaboradores</p>
+      <ul>
+        <li><strong>Manuela B. Mena-Marqués</strong>: doctora en Historia del arte (Universidad Complutense de Madrid, 1976). Conservadora del Gabinete de Dibujos y Estampas (1979-1981), subdirectora (1981-1996) y jefa del Área de Conservación de Pintura del siglo XVIII y Goya del Museo del Prado (1996-2019). Contribución: comentarios sobre el sitio web (junio de 2025).</li> <br>
+        <li><strong>Joëlle Arches</strong>, conservadora jefe y directora del <a href="https://www.museegoya.fr/" target="_blank">Musée Goya</a> y del Museo Jean Jaurès, y <strong>Cécile Berthoumieu</strong>, conservadora principal de patrimonio (Attachée principale de conservation du patrimoine). Contribución: comentarios sobre el sitio web; sugerencia de incorporar a Marcel Briguiboul a la red (septiembre de 2025).</li> <br>
+        <li><strong>Stephanie Loeb Stepanek</strong>: conservadora emérita de Estampas y Dibujos, Boston Museum of Fine Arts. Contribución: información sobre una edición temprana de <i>Disasters of War</i>, impresa por Laureano Potenciano (octubre de 2025).</li>
+      </ul>
+      `,
     }
   };
 
@@ -257,6 +297,7 @@
     // Textos declarados con data-i18n
     const HTML_I18N_KEYS = new Set([
       'ARTWORKS_BODY',
+      'PEOPLE_BODY',
       // añade aquí futuras secciones largas con HTML, ej:
       // 'ABOUT_BODY', 'PARTNERS_BODY'
     ]);
