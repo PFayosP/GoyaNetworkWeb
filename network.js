@@ -683,6 +683,115 @@ document.addEventListener('DOMContentLoaded', async function () {
     }));
     window.edges = edges;
 
+    // ===================== MINI-FAMILIAS (anchors invisibles) =====================
+    // NOTA: esto NO toca tus edges reales. Añade nodos/edges "fantasma" para compactar grupos.
+
+    const CLUSTERS = {
+      "MADRAZO_FAMILY": {
+        members: [
+          "José de Madrazo",
+          "Federico de Madrazo",
+          "Pedro de Madrazo",
+          "Luis de Madrazo",
+          "Raimundo de Madrazo",
+          "Cecilia de Madrazo"
+        ],
+        radius: 55
+      },
+
+      "HUGO_CENACLE": {
+        members: [
+          "Victor Hugo",
+          "Théophile Gautier",
+          "Alfred de Musset",
+          "George Sand",
+          "Alexandre Dumas père",
+          "Charles Nodier",
+          "Louis Boulanger",
+          "Charles-Augustin Sainte-Beuve",
+          "Antoine Fontaney"
+        ],
+        radius: 60
+      },
+
+      "OSUNA_FAMILY": {
+        members: [
+          "IX Duke of Osuna",
+          "X Duke of Osuna",
+          "VIII Duchess of Abrantes",
+          "X Marchioness of Santa Cruz"
+        ],
+        radius: 50
+      },
+
+      "BORBONS": {
+        members: [
+          "Carlos III",
+          "Carlos IV",
+          "María Luisa de Parma",
+          "Fernando VII",
+          "Isabel II"
+        ],
+        radius: 75
+      },
+
+      "GOYA_FAMILY": {
+        members: [
+          "Francisco de Goya",
+          "Javier Goya"
+        ],
+        radius: 45
+      }
+    };
+
+    (function addClusterAnchors(nodes, edges, clusters) {
+      const anchorNodes = [];
+      const anchorEdges = [];
+
+      Object.entries(clusters).forEach(([clusterId, cfg]) => {
+        const members = (cfg?.members || []).filter(id => nodes.get(id));
+        if (members.length < 2) return;
+
+        const anchorId = `ANCHOR__${clusterId}`;
+
+        // Nodo-ancla invisible (no aparece en pantalla)
+        anchorNodes.push({
+          id: anchorId,
+          label: "",
+          shape: "dot",
+          size: 1,
+          mass: 8,
+          hidden: true,
+          physics: true,
+          color: { border: "rgba(0,0,0,0)", background: "rgba(0,0,0,0)" }
+        });
+
+        const L = typeof cfg.radius === "number" ? cfg.radius : 60;
+
+        // Aristas invisibles cortas hacia cada miembro
+        members.forEach(memberId => {
+          anchorEdges.push({
+            id: `AEDGE__${clusterId}__${memberId}`,
+            from: anchorId,
+            to: memberId,
+            physics: true,
+            smooth: false,
+            hidden: true,
+            length: L,
+            width: 0.1,
+            selectionWidth: 0,
+            hoverWidth: 0,
+            color: { color: "rgba(0,0,0,0.01)" }
+          });
+        });
+      });
+
+      if (anchorNodes.length) nodes.add(anchorNodes);
+      if (anchorEdges.length) edges.add(anchorEdges);
+    })(nodes, edges, CLUSTERS);
+    // =================== /MINI-FAMILIAS (anchors invisibles) ===================
+
+
     const lastModified = response.headers.get("Last-Modified");
 
     const locale = (CURRENT_LANG === 'es') ? 'es-ES' : 'en-GB';
