@@ -774,7 +774,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           shape: "dot",
           size: 1,
           mass: 0.01,
-          hidden: true,
           clusterAnchor: true,
           physics: true,
           color: { border: "rgba(0,0,0,0)", background: "rgba(0,0,0,0)" }
@@ -792,12 +791,12 @@ document.addEventListener('DOMContentLoaded', async function () {
               to: memberId,
               physics: true,
               smooth: false,
-              hidden: true,
+              _isClusterEdge: true,
               length: L,
               width: 0.1,
               selectionWidth: 0,
               hoverWidth: 0,
-              color: { color: "rgba(0,0,0,0.01)" }
+              color: { color: "rgba(0,0,0,0)" }
             });
           }
         });
@@ -1318,7 +1317,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     function highlightNeighborhood(nodeId) {
       // 1) Obtener edges conectados
       const connectedEdges = edges.get({
-        filter: edge => edge.from === nodeId || edge.to === nodeId
+        filter: edge => !edge._isClusterEdge && (edge.from === nodeId || edge.to === nodeId)
       });
 
       // 2) Conjunto de nodos conectados (vecinos directos)
@@ -1682,6 +1681,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const connections = [];
         edges.get().forEach(edge => {
+          if (edge._isClusterEdge) return;
           if (edge.from === node.id || edge.to === node.id) {
             const otherId = edge.from === node.id ? edge.to : edge.from;
             if (String(otherId).startsWith('ANCHOR__')) return;
