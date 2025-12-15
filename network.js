@@ -746,7 +746,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Gumersinda Goicoechea",
           "Josefa Bayeu"
         ],
-        radius: 35
+        radius: 35,
+        pulls: 5
       }
     };
 
@@ -769,8 +770,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           label: "",
           shape: "dot",
           size: 1,
-          mass: 8,
+          mass: 0.01,
           hidden: true,
+          clusterAnchor: true,
           physics: true,
           color: { border: "rgba(0,0,0,0)", background: "rgba(0,0,0,0)" }
         });
@@ -779,19 +781,22 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // Aristas invisibles cortas hacia cada miembro
         members.forEach(memberId => {
-          anchorEdges.push({
-            id: `AEDGE__${clusterId}__${memberId}`,
-            from: anchorId,
-            to: memberId,
-            physics: true,
-            smooth: false,
-            hidden: true,
-            length: L,
-            width: 0.1,
-            selectionWidth: 0,
-            hoverWidth: 0,
-            color: { color: "rgba(0,0,0,0.01)" }
-          });
+          const pulls = cfg?.pulls ?? 3; // nº de “muelles” paralelos (más = más compacto)
+          for (let k = 0; k < pulls; k++) {
+            anchorEdges.push({
+              id: `AEDGE__${clusterId}__${memberId}__${k}`,
+              from: anchorId,
+              to: memberId,
+              physics: true,
+              smooth: false,
+              hidden: true,
+              length: L,
+              width: 0.1,
+              selectionWidth: 0,
+              hoverWidth: 0,
+              color: { color: "rgba(0,0,0,0.01)" }
+            });
+          }
         });
       });
 
@@ -1234,7 +1239,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     // 🔥 SOLUCIÓN NUCLEAR ANTI-OVERLAP (MULTI-PASS, RADIO REAL)
     function nudgeOverlaps(network, nodes, clusterOf = null, passes = 5) {
       for (let p = 0; p < passes; p++) {
-        const ids = nodes.getIds();
+        const ids = nodes.getIds().filter(id => !String(id).startsWith('ANCHOR__'));
         const pos = network.getPositions(ids);
 
         for (let i = 0; i < ids.length; i++) {
@@ -1676,6 +1681,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         edges.get().forEach(edge => {
           if (edge.from === node.id || edge.to === node.id) {
             const otherId = edge.from === node.id ? edge.to : edge.from;
+            if (String(otherId).startsWith('ANCHOR__')) return;
             const otherNode = nodes.get(otherId);
             if (otherNode) {
               connections.push({ id: otherId, name: otherNode.id });
