@@ -10,6 +10,7 @@
       BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWIN:"New in",
       SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
       MEMBERS_TITLE:"Members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
+      BTN_SEARCH: "Search",
       
       CONTRIBUTIONS_TITLE: "Contributions", 
       CONTRIBUTIONS_TEXT: `
@@ -178,6 +179,7 @@
       BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWIN:"Novedades",
       SEARCH_PH:"Buscar…", FILTER_PROF_ALL:"Todas las profesiones", FILTER_NAT_ALL:"Todas las nacionalidades",
       MEMBERS_TITLE:"Miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
+      BTN_SEARCH: "Buscar",
       
       CONTRIBUTIONS_TITLE: "Contribuciones", 
       CONTRIBUTIONS_TEXT: `
@@ -357,7 +359,8 @@
       ['.nav-buttons button[onclick*="bibliography"]','BTN_BIB'],
       ['.nav-buttons button[onclick*="cite"]','BTN_CITE'],
       ['#newInBtn','BTN_NEWIN'],
-      ['#searchInput::placeholder','SEARCH_PH']
+      ['#searchInput::placeholder','SEARCH_PH'],
+      ['.search-button','BTN_SEARCH'],
     ];
     map.forEach(([sel,key])=>{
       if (sel.endsWith('::placeholder')) {
@@ -375,6 +378,17 @@
     if (profAll) profAll.textContent = t('FILTER_PROF_ALL');
     const natAll = document.querySelector('#nationalityFilter option[value=""]');
     if (natAll) natAll.textContent = t('FILTER_NAT_ALL');
+
+    // Traduce el texto visible de cada opción (sin tocar el value)
+    document.querySelectorAll('#professionFilter option').forEach(opt => {
+      if (!opt.value) return;
+      opt.textContent = t(opt.value);
+    });
+
+    document.querySelectorAll('#nationalityFilter option').forEach(opt => {
+      if (!opt.value) return;
+      opt.textContent = t(opt.value);
+    });
 
     // Título "Members …"
     const membersHeading = document.querySelector('#membersSection .section-heading');
@@ -596,6 +610,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const response = await fetch(getDataFileForLang(CURRENT_LANG));
         if (!response.ok) throw new Error('Error cargando datos');
         const data = await response.json();
+        window.__GN_DATA = data;
         
         // Start image preloading
         // const imagePreload = preloadImages(data.nodes);
@@ -917,29 +932,25 @@ document.addEventListener('DOMContentLoaded', async function () {
       return tf[tf.length - 1];
     }
 
-    function buildMembersList(data) {
+    function buildMembersList(data = window.__GN_DATA) {
       const container = document.getElementById('membersList');
       if (!container) return;
 
-      // Recoge nombres desde data.nodes (el mismo que se muestra en la red)
-      const items = (data.nodes || [])
+      const items = (data?.nodes || [])
         .map(n => ({
           id: n.id,
           display: (CURRENT_LANG === 'es' && n['display name es']) ? n['display name es'] : n.id
         }))
         .filter(x => x.id);
 
-      // Ordena por clave de "apellido"
       const collator = new Intl.Collator(undefined, { sensitivity: 'base' });
-      names.sort((a,b) => collator.compare(surnameKey(a), surnameKey(b)));
+      items.sort((a,b) => collator.compare(surnameKey(a.id), surnameKey(b.id)));
 
-      // Escapa comillas para usar en onclick inline
       const esc = s => String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'");
 
-      // Render A–Z con cabeceras por letra
       let html = '';
       let currentLetter = '';
-      names.forEach(id => {
+      items.forEach(({id, display}) => {
         const key = surnameKey(id);
         const letter = (key.charAt(0) || '#').toUpperCase();
         if (letter !== currentLetter) {
@@ -947,10 +958,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           html += `<div class="section-heading" style="margin-top:0.8rem;">${letter}</div><ul style="list-style:none; padding-left:0.5rem; margin:0;">`;
           currentLetter = letter;
         }
-        // Igual que en la lista de conexiones: enfoca el nodo
-        html += `<li style="margin:0.1rem 0;"><a href="#" onclick="focusNode('${esc(id)}'); return false;" style="color:#66ccff; text-decoration:none;">${id}</a></li>`;
+        html += `<li style="margin:0.1rem 0;"><a href="#" onclick="focusNode('${esc(id)}'); return false;" style="color:#66ccff; text-decoration:none;">${display}</a></li>`;
       });
-      if (names.length) html += '</ul>';
+      if (items.length) html += '</ul>';
 
       container.innerHTML = html;
     }
