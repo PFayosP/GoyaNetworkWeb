@@ -733,7 +733,10 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Carlos IV",
           "María Luisa de Parma",
           "Fernando VII",
-          "Isabel II"
+          "Isabel II",
+          "XV Countess of Chinchón",
+          "María Teresa de Vallabriga",
+          "Luis de Borbón"
         ],
         radius: 75
       },
