@@ -697,7 +697,7 @@
       "dies in": "Sevilla",
       "lives in":"Madrid, París, Sevilla",
       "parents": "Fernando VII y María Cristina de Borbón-Dos Sicilias",
-      "married to": "Príncipe Antonio, duque de Montpensier (1846)",
+      "married to": "Prince Antoine, Duke of Montpensier (1846)",
       "decorations/awards": "Infanta de España; duquesa de Montpensier",
       "children": "10, entre ellos María Isabel, María Amelia, María Cristina, Mercedes (casada con su primo hermano Alfonso XII) y Antonio (duque de Galliera; casado con su prima hermana, la infanta Eulalia de España)",
       "address": "Palacio Real de Madrid; Palacio de Orleans-Borbón (Sanlúcar de Barrameda); Palacio de San Telmo (Sevilla)",
@@ -8278,7 +8278,7 @@
     },
     {
       "from": "Fernando VII",
-      "to": "Príncipe Antonio, duque de Montpensier",
+      "to": "Prince Antoine, Duke of Montpensier",
       "connection_level": "direct",
       "relationship type": "parientes; suegro, yerno"
     },
@@ -8295,20 +8295,20 @@
       "relationship type": "parientes: <i>consuegros</i>; Louis Philippe I era el suegro de la hija de Fernando VII, la infanta Luisa Fernanda de Borbón"
     },
     {
-      "from": "Príncipe Antonio, duque de Montpensier",
+      "from": "Prince Antoine, Duke of Montpensier",
       "to": "Federico de Madrazo",
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
       "portraits": "1851, óleo, Palacio Real de Madrid"
     },
     {
-      "from": "Príncipe Antonio, duque de Montpensier",
+      "from": "Prince Antoine, Duke of Montpensier",
       "to": "Louis Philippe I",
       "connection_level": "direct",
       "relationship type": "parientes: padre-hijo"
     },
     {
-      "from": "Príncipe Antonio, duque de Montpensier",
+      "from": "Prince Antoine, Duke of Montpensier",
       "to": "Infanta Luisa Fernanda de Borbón",
       "connection_level": "direct",
       "relationship type": "cónyuges; marido y mujer (1846)",
