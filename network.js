@@ -694,7 +694,10 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Pedro de Madrazo",
           "Luis de Madrazo",
           "Raimundo de Madrazo",
-          "Cecilia de Madrazo"
+          "Cecilia de Madrazo",
+          "Román Garreta",
+          "Mariano Fortuny y Madrazo",
+          "Mariano Fortuny y Marsal"
         ],
         radius: 55
       },
@@ -738,11 +741,16 @@ document.addEventListener('DOMContentLoaded', async function () {
       "GOYA_FAMILY": {
         members: [
           "Francisco de Goya",
-          "Javier Goya"
+          "Javier Goya",
+          "Mariano Goya",
+          "Gumersinda Goicoechea",
+          "Josefa Bayeu"
         ],
-        radius: 45
+        radius: 35
       }
     };
+
+    window.__clusterOf = {}; // nodeId -> clusterId
 
     (function addClusterAnchors(nodes, edges, clusters) {
       const anchorNodes = [];
@@ -750,6 +758,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       Object.entries(clusters).forEach(([clusterId, cfg]) => {
         const members = (cfg?.members || []).filter(id => nodes.get(id));
+        members.forEach(id => { window.__clusterOf[id] = clusterId; });
         if (members.length < 2) return;
 
         const anchorId = `ANCHOR__${clusterId}`;
@@ -1223,7 +1232,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     window.VIS_NETWORK = network;
 
     // 🔥 SOLUCIÓN NUCLEAR ANTI-OVERLAP (MULTI-PASS, RADIO REAL)
-    function nudgeOverlaps(network, nodes, passes = 5) {
+    function nudgeOverlaps(network, nodes, clusterOf = null, passes = 5) {
       for (let p = 0; p < passes; p++) {
         const ids = nodes.getIds();
         const pos = network.getPositions(ids);
@@ -1231,6 +1240,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         for (let i = 0; i < ids.length; i++) {
           for (let j = i + 1; j < ids.length; j++) {
             const a = ids[i], b = ids[j];
+            // No romper mini-familias: si ambos están en el mismo cluster, no los separes
+            if (clusterOf && clusterOf[a] && clusterOf[a] === clusterOf[b]) continue;
             const pA = pos[a], pB = pos[b];
             if (!pA || !pB) continue;
 
@@ -1290,7 +1301,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     setTimeout(() => {
       if (!window.__didNudgeOnce) {
         window.__didNudgeOnce = true;
-        nudgeOverlaps(network, nodes, 10);
+        nudgeOverlaps(network, nodes, window.__clusterOf, 10);
         network.redraw();
       }
     }, 150);
