@@ -74,7 +74,8 @@
       "image source": "Retrato de Goya, 1827, Meadows Museum, Texas (67.03)"
     },
     {
-      "id": "Marqués de La Romana",
+      "id": "Marquis of La Romana",
+      "display name es": "Marqués de La Romana",
       "label": "Romana",
       "life dates": "1761-1811",
       "nationality": "Spanish",
@@ -223,7 +224,7 @@
       "born in": "Venecia",
       "fallece en": "Madrid",
       "profession": "painter, engraver",
-      "nationality": "italiano",
+      "nationality": "Italian",
       "parents": "Domenico y Orsetta Tiepolo",
       "married to": "María Cecilia Guardi (1719): hermana del pintor Francesco Guardi",
       "children": "Giovanni Domenico (pintor y engraver, con quien colabora desde 1740) y Lorenzo Tiepolo (pintor y engraver; autor de Pasiega y soldados, 1773-74, y La mielera, c.1775, Galería de las Colecciones reales)",
@@ -247,7 +248,7 @@
       "full name": "Giovanni Domenico Tiepolo",
       "label": "G.D. Tiepolo",
       "life dates": "1727-1804",
-      "nationality": "italiana",
+      "nationality": "Italian",
       "born in": "Venecia",
       "dies in": "Venecia",
       "lives in": "Venecia; Würzburg, Baviera (1751-53); Madrid (1762-70): ayudó a su padre en la decoración del Palacio Real",
@@ -366,7 +367,7 @@
       "nationality": "Spanish",
       "born in": "Santander",
       "dies in": "Madrid",
-      "profession": "painter, engraver, draughtsman, art collector, teacher",
+      "profession": "painter, engraver, draughtsman, art collector, teacher, curator",
       "en Italia": "1803-(1815), Academia de San Lucas",
       "in Madrid": "1818",
       "in Paris": "en 1829 (primer viaje): ve la obra de Eugène Delacroix",
@@ -1140,7 +1141,7 @@
       "nationality": "Spanish",
       "portrayed by": "Francisco de Goya, óleo, c.1786, NGA [1937.1.85] (https://www.nga.gov/artworks/92-marquesa-de-pontejos)",
       "address": "10 rue St Georges (París)",
-      "in Paris": "1823-1833, en el exilio. Aquí estuvo en contacto con muchos españoles exiliados: XV condesa de Chinchón, marquesa de Castillo Fiel (Josefa Tudó), duque de San Lorenzo, marqués de Toreno, Mariano de Camero, duque de Berwick, marqués del Espinardo, conde de Sástago, II duque de San Carlos, conde de Fernán Núñez",
+      "in Paris": "1823-1833, en el exilio. Aquí estuvo en contacto con muchos españoles exiliados: XV Countess of Chinchón, marquesa de Castillo Fiel (Josefa Tudó), duque de San Lorenzo, marqués de Toreno, Mariano de Camero, duque de Berwick, marqués del Espinardo, conde de Sástago, II Duke of San Carlos, conde de Fernán Núñez",
       "aristocratic titles": "IV marquesa de Casa Pontejos; VIII condesa de La Ventosa",
       "literary salon or tertulia": "tertulia política en Cádiz con su segundo marido",
       "studies in": "Colegio de las Salesas Reales (Madrid)",
@@ -1158,14 +1159,15 @@
       "image source": "Retrato de Goya, c.1786, NGA"
     },
     {
-      "id": "II duque de San Carlos",
+      "id": "II Duke of San Carlos",
       "label": "San Carlos",
+      "display name es": "II duque de San Carlos",
       "life dates": "1771-1828",
       "nationality": "Spanish",
       "born in": "Lima",
       "dies in": "París",
       "full name": "José Miguel de Carvajal-Vargas y Manrique de Lara Polanco",
-      "parents": "Don Mariano Joaquín de Carvajal y Vargas, II duque de San Carlos, y Doña Mariana Eusebia Manrique de Lara",
+      "parents": "Don Mariano Joaquín de Carvajal y Vargas, II Duke of San Carlos, y Doña Mariana Eusebia Manrique de Lara",
       "curiosities": "cuando estuvo en París, fue acogido por Talleyrand y se convirtió en amante de su esposa, lo que supuestamente enfureció a Napoleón (Waresquiel 2015)",
       "partners/lovers": "la esposa de Talleyrand",
       "aristocratic titles": "Caballero de Santiago (1784); Caballero de la Orden del Toisón de Oro; Caballero gran cruz de la Orden de Carlos III; Caballero gran cruz de la Orden Española y Americana de Isabel la Católica; Orden de Alcántara; Caballero Gran cruz de la Real y Militar Orden de San Hermenegildo; Grande de España. Muchas otras condecoraciones del Reino de Francia, Reino de las Dos Sicilias, Reino de Prusia, Imperio Austriaco, Reino de Hannover",
@@ -1207,7 +1209,7 @@
       "label": "Moratín",
       "full name": "Leandro Eulogio Melitón Fernández de Moratín y Cabo",
       "life dates": "1760-1828", 
-      "nationality": "española; French",
+      "nationality": "Spanish; French",
       "born in": "Madrid",
       "dies in": "París",
       "profession": "playwright, poet, actor, writer, translator (de Molière y Voltaire)",
@@ -1294,7 +1296,7 @@
       "children": "Manuel Luis de Godoy y Tudó; Luis Carlos de Godoy y Tudó",
       "in Paris": [
         "A partir de 1819, vive en París mientras Godoy permanece en Roma. Ella y Godoy realizan varias inversiones inmobiliarias.",
-        "En la década de 1820 está en contacto con muchos españoles famosos exiliados en París, como el conde de Toreno, la IV Marchioness of Pontejos, la duquesa de Híjar y el II duque de San Carlos. Asiste a las veladas organizadas por Madame Salazar (La Parra López 1997, p.81)",
+        "En la década de 1820 está en contacto con muchos españoles famosos exiliados en París, como el conde de Toreno, la IV Marchioness of Pontejos, la duquesa de Híjar y el II Duke of San Carlos. Asiste a las veladas organizadas por Madame Salazar (La Parra López 1997, p.81)",
         "1831-1834: vive con Godoy en París (9 rue des Mathurins)"
       ],
       "link to Goya's work": "Pedro de Madrazo creó el mito de que Josefa Tudó era la modelo de las <i>Majas</i> desnudas y vestidas de Goya, pero se trata de una historia inventada, como explica Carlos G. Navarro (véase <i>Arte compacto</i>, [27 de abril de 2025](https://www.youtube.com/shorts/2HRbEYmYGWY), 'José de Madrazo').",
@@ -1310,7 +1312,8 @@
       "added": "13-08-2025"
     },
     {
-      "id": "XV condesa de Chinchón",
+      "id": "XV Countess of Chinchón",
+      "display name es": "XV condesa de Chinchón",
       "label": "Chinchón",
       "full name": "María Teresa Josefa de Borbón y Vallabriga",
       "life dates": "1780-1828", 
@@ -1324,7 +1327,7 @@
       "amantes": "¿Coronal Mateos?",
       "art collection": "su impresionante colección incluía el Cristo de San Plácido de Velázquez, ahora en el Prado",
       "sales": "intentó vender su colección en julio de 1824 y luego en 1826",
-      "aristocratic titles": "XV condesa de Chinchón; I marquesa de Boadilla del Monte (1799). Grande de España (1823)",
+      "aristocratic titles": "XV Countess of Chinchón; I marquesa de Boadilla del Monte (1799). Grande de España (1823)",
       "bibliography": "Calvo Ruata 2020; Gerard Powell 2014",
       "portrayed by": "Goya, 1783, Galería Nacional, Washington; Goya, 1784, en Retrato del Infante Don Luis (Fundación Magnani-Rocca, Italia); Goya, 1800, Prado",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Chinchon.jpg",
@@ -1339,7 +1342,7 @@
       "nationality": "Spanish",
       "parents": "José Ignacio de Vallabriga y Español y Josefa de Rozas y Drummond de Melfort",
       "married to": "Luis de Borbón (1776-1820), 32 años mayor",
-      "children": "María Teresa de Borbón y Vallabriga, XV condesa de Chinchón; cardenal Luis de Borbón; Luisa, duquesa de San Fernando de Quiroga",
+      "children": "María Teresa de Borbón y Vallabriga, XV Countess of Chinchón; cardenal Luis de Borbón; Luisa, duquesa de San Fernando de Quiroga",
       "aristocratic titles": "Dama de la Orden de las Damas Nobles de la reina María Luisa",
       "portrayed by": "Goya, 1783, [Galleria degli Uffizi](https://www.virtualuffizi.com/es/retrato-de-la-condesa-de-chinc%C3%B3n.html) (retrato ecuestre); Goya, 1783, retrato de busto (perfil), Pardo; Goya, 1783, Neue Pinakothek de Múnich; Goya, c.1783, colección privada",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Vallabriga.jpg",
@@ -1357,7 +1360,7 @@
       "parents": "Felipe V e Isabel de Farnesio",
       "profession": "clergyman (cardenal); aristocrat",
       "married to": "María Teresa de Vallabriga (1776-1820), 32 años más joven",
-      "children": "María Teresa de Borbón y Vallabriga, XV condesa de Chinchón; cardenal Luis de Borbón; Luisa, duquesa de San Fernando de Quiroga",
+      "children": "María Teresa de Borbón y Vallabriga, XV Countess of Chinchón; cardenal Luis de Borbón; Luisa, duquesa de San Fernando de Quiroga",
       "aristocratic titles": "Infante de España; XIII conde de Chinchón (1761)",
       "works as": "arzobispo de Sevilla; cardenal-arzobispo de Toledo y Primado de España",
       "patronage": "Francisco de Goya; Luis Paret; Luigi Boccherini",
@@ -1442,8 +1445,8 @@
       "full name": "Alexandre-Mathieu Sureda Chappron",
       "life dates": "1815-1889", 
       "born in": "París",
-      "nationality": "española; French",
-      "profession": "arquitecto",
+      "nationality": "Spanish; French",
+      "profession": "architect",
       "parents": "Bartolomé Sureda y Thérèse Louise de Sureda",
       "married to": "Pauline-Alexandrine Guignon (1840)",
       "children": "Luis Sureda Guignon (arquitecto; trabajó en la Exposición Universal de París de 1878)",
@@ -2203,7 +2206,7 @@
       "image source": "Retrato de Guérin, 1844"
     },
     {
-      "id": "Marquis of Custine",
+      "id": "Marquis de Custine",
       "display name es": "Marqués de Custine",
       "label": "Custine",
       "full name": "Astolphe-Louis-Léonor de Custine",
@@ -2325,7 +2328,7 @@
       "label": "H. Allart",
       "full name": "Hortense Allart de Méritens",
       "life dates": "1801-1879", 
-      "nationality": "French; italiana",
+      "nationality": "French; Italian",
       "profession": "writer feminista y essayist", 
       "works as": "institutriz en la casa del general Bertrand",
       "political views": "entusiasta partidaria de Napoleón. Se ofreció a viajar a Santa Elena para cuidar al antiguo emperador",
@@ -3742,7 +3745,7 @@
       "id": "Louise Swanton Belloc",
       "label": "Swanton-Belloc",
       "life dates": "1796-1881", 
-      "nationality": "French (con ascendencia irlandesa)",
+      "nationality": "French (con ascendencia Irish)",
       "profession": "femme de lettres, translator, writer",
       "writes in": "Revue encyclopédique",
       "author of": "las traducciones de La cabaña del tío Tom (1852), de Harriet Beecher Stowe; las memorias de Lord Byron; las obras de Walter Scott y cuatro obras de Charles Dickens, entre otras. También fue autora de más de cuarenta libros, incluida una biografía de Byron, publicada con una introducción de Stendhal. Fue coautora, junto con Adélaïde de Montgolfier, de varios libros infantiles (Buell Hale 1874, p.583-84)",
@@ -3764,7 +3767,7 @@
       "label": "Staël",
       "full name": "Anne-Louise Germaine Necker",
       "life dates": "1766-1817", 
-      "nationality": "French (de ascendencia suiza)",
+      "nationality": "French (de ascendencia Swiss)",
       "profession": "novelist, writer, philosopher, salonnière",
       "author of": "Delphine (1802); <i>Corinne ou l'Italie</i> (1807) [estas dos novelas se publicaron en España antes de 1828]; <i>De l'Allegmagne</i> (1810-13); <i>Considérations sur les principaux événements de la Révolution française</i> (1818, póstuma)",
       "correspondence": "Correspondance générale, ed. Béatrice W. Jasinski y Othenin d'Haussonville, 2008-09",
@@ -4329,13 +4332,13 @@
       "parents": "Antonio Álvarez de Toledo, X marqués de Villafranca, y María Antonia Gonzaga, X marquesa de Villafranca",
       "decorations/awards": "Gran Cruz de la Orden de Carlos III; caballero de la Orden del Toisón de Oro; Medalla de Sufrimientos por la Patria (1819)",
       "children": "9 hijos, entre ellos Francisco (1799-1816), María Teresa (1801-1866), Pedro de Alcántara (1803-1867) (futuro XIII marqués de Villafranca), María Tomasa (1805-1870) y los gemelos José (1812-1885) e Ignacio (1812-1878)",
-      "married to": "María Tomasa Palafox, marchioness of Villafranca",
+      "married to": "María Tomasa Palafox, Marchioness of Villafranca",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Villafranca_XII.jpg",
       "image source": "Retrato de Goya, 1795, Prado",
       "added": "03-08-2025"
     },
     {
-      "id": "María Tomasa Palafox, marchioness of Villafranca",
+      "id": "María Tomasa Palafox, Marchioness of Villafranca",
       "display name es": "María Tomasa Palafox, marquesa de Villafranca",
       "label": "Villafranca",
       "full name": "María Tomasa Palafox y Portocarrero",
@@ -4368,7 +4371,7 @@
       "political views": "fue procesada por la Inquisición, acusada de ser jansenista como su madre; encarcelada en 1821 y liberada pocos días después cuando se demostró su inocencia",
       "portrayed by": "Goya, c.1790, coll. Hidalgo de Rivas, Málaga (robado); Goya, 1800-04, Palacio de Liria (Fundación Casa de Alba); José Alonso del Rivero, c.1805, gouache, Prado",
       "parents": "Felipe de Palafox y Cröy y María Francisca de Sales Portocarrero, VI Countess of Montijo",
-      "siblings": "María Tomasa Palafox, marchioness of Villafranca; Eugenio Eulalio Palafox, VII Count of Montijo (XVII conde de Teba); Cipriano Palafox (VIII conde de Montijo)",
+      "siblings": "María Tomasa Palafox, Marchioness of Villafranca; Eugenio Eulalio Palafox, VII Count of Montijo (XVII conde de Teba); Cipriano Palafox (VIII conde de Montijo)",
       "married to": "su primo Luis Rebolledo de Palafox y Melzi, IV marqués de Lazán (1797: a los 14 años)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Lazan.jpg",
       "image source": "Retrato de Goya 1800-04, Palacio de Liria",
@@ -4399,7 +4402,7 @@
         "Manifiesto de lo que no ha hecho el conde del Montijo, escrito para desengaño ú confusión de los que de buena ó mala fé le dicen autor de sediciones que no ha hecho ni podido hacer (1810)."
       ],
       "parents": "Felipe de Palafox y Cröy y María Francisca de Sales Portocarrero, VI Countess of Montijo",
-      "siblings": "María Tomasa Palafox, marchioness of Villafranca; María Gabriela de Palafox, Marchioness of Lazán; Cipriano Palafox, VIII conde de Montijo",
+      "siblings": "María Tomasa Palafox, Marchioness of Villafranca; María Gabriela de Palafox, Marchioness of Lazán; Cipriano Palafox, VIII conde de Montijo",
       "married to": "Ignacia Idiáquez; Magdalena Lázaro",
       "websites": "[Wikipedia](https://es.wikipedia.org/wiki/Eugenio_Eulalio_Palafox_Portocarrero)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Montijo_VII.jpg",
@@ -4430,7 +4433,7 @@
       "portrayed by": "Vicente López, hacia 1820, óleo",
       "decorations/awards": "Légion d'honneur (1814): otorgada por Napoleón",
       "parents": "Felipe de Palafox y Cröy y María Francisca de Sales Portocarrero, VI Countess of Montijo",
-      "siblings": "María Tomasa Palafox, marchioness of Villafranca; María Gabriela de Palafox, Marchioness of Lazán; Cipriano Palafox, VIII conde de Montijo",
+      "siblings": "María Tomasa Palafox, Marchioness of Villafranca; María Gabriela de Palafox, Marchioness of Lazán; Cipriano Palafox, VIII conde de Montijo",
       "married to": "María Manuela Kirkpatrick",
       "children": "María Francisca de Sales Portocarrero Palafox y Kirkpatrick, IX condesa de Montijo, conocida como Paca Alba, (casada con el duque de Alba), y María Eugenia de Guzmán, conocida como Eugenia de Montijo, condesa de Teba, emperatriz de Francia (casada con Napoleón III)",
       "websites": "[Wikipedia](https://es.wikipedia.org/wiki/Cipriano_Portocarrero)",
@@ -4457,7 +4460,7 @@
       "works for": "La reina María Luisa de Parma como dama noble",
       "portrayed by": "Andrés de la Calleja (atribuido), 1765, colección de los duques de Alba; anónimo, c.1785, colección privada",
       "parents": "Cristóbal de Portocarrero y Fernández de Córdova, VI marqués de Valderrábano, y María Josefa López de Zúñiga y Téllez-Girón, XVI vizcondesa de la Valduerna",
-      "children": "6 hijos, entre ellos Eugenio Eulalio Palafox Portocarrero (VII conde de Montijo; sin descendientes); María Ramona Palafox y Portocarrero (casada con el VI conde de Parcent); María Gabriela de Palafox, Marchioness of Lazán (casada con su primo, el IV marqués de Lazán; retratada por Goya); María Tomasa Palafox, marchioness of Villafranca (casada con el XII marqués de Villafranca); María Benita de los Dolores Palafox y Portocarrero (casada con el XVI marqués de Mondéjar); Cipriano Portocarrero (VIII conde de Montijo)", 
+      "children": "6 hijos, entre ellos Eugenio Eulalio Palafox Portocarrero (VII conde de Montijo; sin descendientes); María Ramona Palafox y Portocarrero (casada con el VI conde de Parcent); María Gabriela de Palafox, Marchioness of Lazán (casada con su primo, el IV marqués de Lazán; retratada por Goya); María Tomasa Palafox, Marchioness of Villafranca (casada con el XII marqués de Villafranca); María Benita de los Dolores Palafox y Portocarrero (casada con el XVI marqués de Mondéjar); Cipriano Portocarrero (VIII conde de Montijo)", 
       "married to": "Felipe de Palafox y Croy; Estanislao de Lugo y Molina",
       "patronage": "fue protectora de la revista El Censor",
       "friends": "Marquesa de Fuerte Híjar, que también era salonnière",
@@ -4936,7 +4939,7 @@
       "label": "Cabarrús",
       "full name": "Francisco Cabarrús Lalanne",
       "life dates": "1752-1810", 
-      "nationality": "española y French",
+      "nationality": "Spanish y French",
       "born in": "Bayona",
       "dies in": "Sevilla",
       "profession": "economist, banker, diplomat, politician, civil servant",
@@ -5833,7 +5836,7 @@
     },
     {
       "from": "Rafael Esteve",
-      "to": "marqués de La Romana",
+      "to": "Marquis of La Romana",
       "connection_level": "directo?",
       "relationship type": "retratista-modelo (¿indirecto?)",
       "portraits": "Rafael Esteve (atribuido) según Vicente López, c.1815, dibujo, Prado [D009428](https://www.museodelprado.es/coleccion/obra-de-arte/pedro-caro-sureda-marques-de-la-romana/7ca2b030-2845-47f3-af59-48da40ef1f18)"
@@ -6758,46 +6761,46 @@
       "relationship type": "parientes; cuñado, cuñada"
     },
     {
-      "from": "II duque de San Carlos",
+      "from": "II Duke of San Carlos",
       "to": "Francisco de Goya",
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
       "portraits": "1815, óleo, Museo de Zaragoza"
     },
     {
-      "from": "II duque de San Carlos",
+      "from": "II Duke of San Carlos",
       "to": "IV Marchioness of Pontejos",
       "connection_level": "direct",
       "relationship type": "conocidos",
       "interactions": "en París, alrededor de la década de 1820"
     },
     {
-      "from": "II duque de San Carlos",
+      "from": "II Duke of San Carlos",
       "to": "Josefa Tudó",
       "connection_level": "direct",
       "relationship type": "conocidos",
       "interactions": "en París, alrededor de la década de 1820"
     },
     {
-      "from": "II duque de San Carlos",
+      "from": "II Duke of San Carlos",
       "to": "Carlos IV",
       "connection_level": "direct",
       "relationship type": "empleador-empleado"
     },
     {
-      "from": "II duque de San Carlos",
+      "from": "II Duke of San Carlos",
       "to": "María Luisa de Parma",
       "connection_level": "direct",
       "relationship type": "empleador-empleado"
     },
     {
-      "from": "II duque de San Carlos",
+      "from": "II Duke of San Carlos",
       "to": "Fernando VII",
       "connection_level": "direct",
       "relationship type": "empleador-empleado; amigos"
     },
     {
-      "from": "II duque de San Carlos",
+      "from": "II Duke of San Carlos",
       "to": "Manuel Godoy",
       "connection_level": "direct",
       "relationship type": "rivals"
@@ -6810,7 +6813,7 @@
       "portraits": "c. 1786, óleo, NGA"
     },
     {
-      "from": "XV condesa de Chinchón",
+      "from": "XV Countess of Chinchón",
       "to": "IV Marchioness of Pontejos",
       "connection_level": "direct",
       "relationship type": "conocidos",
@@ -6872,25 +6875,25 @@
       "know each other since": "al menos desde 1800"
     },
     {
-      "from": "Marqués de La Romana",
+      "from": "Marquis of La Romana",
       "hasta": "Carlos III",
       "connection_level": "direct",
       "relationship type": "empleador-empleado (Guardia Marina en 1775)"
     },
     {
-      "from": "Marqués de La Romana",
+      "from": "Marquis of La Romana",
       "to": "Carlos IV",
       "connection_level": "direct",
       "relationship type": "empleador-empleado (Capitán General de Cataluña y Dirección General de Ingenieros)"
     },
     {
-      "from": "Marqués de La Romana",
+      "from": "Marquis of La Romana",
       "to": "Count of Floridablanca",
       "connection_level": "direct",
       "relationship type": "empleador-empleado"
     },
     {
-      "from": "Marqués de La Romana",
+      "from": "Marquis of La Romana",
       "to": "1st Duke of Wellington",
       "connection_level": "direct",
       "relationship type": "conocidos; colegas",
@@ -6898,14 +6901,14 @@
       "bibliography": "David G. Chandler, <i>Las campañas de Napoleón</i>, 1995; Elizabeth Longford, <i>Wellington: Los años de la espada</i>, 1969"
     },
     {
-      "from": "Marqués de La Romana",
+      "from": "Marquis of La Romana",
       "to": "Francisco de Goya",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
       "artworks bought/sold": "9 pinturas conservadas de un total de 11: <i>La visita del fraile</i> (1808-10), <i>Interior de una prisión</i> (1808-12), <i>Interior de una prisión</i> (1793), <i>Bandidos fusilando a sus prisioneros</i> (1808-12), <i>Bandido desnudando a una mujer</i> (1798-1800), <i>Bandido apuñalando a una mujer</i> (1798-1800), <i>Hospital de la peste</i> (1808-10), <i>Fusilamiento en un campamento militar</i> (1808-10), <i>Cueva gitana</i> (1808-10)."
     },
     {
-      "from": "Marqués de La Romana",
+      "from": "Marquis of La Romana",
       "to": "Vicente López",
       "connection_level": "directo?",
       "relationship type": "retratista-modelo",
@@ -6934,14 +6937,14 @@
       "mentions": "Jovellanos fue invitado a una cena en casa de Godoy, donde tanto su esposa (Chinchón) como su amante (Tudó) estaban sentadas a la mesa, y afirmó: 'A su lado derecho, la princesa; a su izquierdo, Pepita Tudó. Este espectáculo acaba en mi desconcierto. Mi alma no pudo sufrirlo. Ni comí, ni hablé, ni pude sosegar mi espíritu. Huí de allí'."
     },
     {
-      "from": "XV condesa de Chinchón",
+      "from": "XV Countess of Chinchón",
       "to": "Gaspar Melchor de Jovellanos",
       "connection_level": "direct",
       "relationship type": "conocidos",
       "mentions": "Jovellanos fue invitado a una cena en casa de Godoy, donde tanto su esposa (Chinchón) como su amante (Tudó) estaban sentadas a la mesa, y afirmó: 'A su lado derecho, la princesa; a su izquierdo, Pepita Tudó. Este espectáculo acaba en mi desconcierto. Mi alma no pudo sufrirlo. Ni comí, ni hablé, ni pude sosegar mi espíritu. Huí de allí.'"
     },
     {
-      "from": "XV condesa de Chinchón",
+      "from": "XV Countess of Chinchón",
       "to": "María Teresa de Vallabriga",
       "connection_level": "direct",
       "relationship type": "familiares; madre-hija"
@@ -7045,44 +7048,44 @@
       "relationship type": "parientes; tío abuelo, sobrino nieto"
     },
     {
-      "from": "XV condesa de Chinchón",
+      "from": "XV Countess of Chinchón",
       "to": "Luis de Borbón",
       "connection_level": "direct",
       "relationship type": "parientes; padre-hija"
     },
     {
-      "from": "XV condesa de Chinchón",
+      "from": "XV Countess of Chinchón",
       "to": "Carlos III",
       "connection_level": "direct",
       "relationship type": "familiares; tío-sobrina"
     },
     {
-      "from": "XV condesa de Chinchón",
+      "from": "XV Countess of Chinchón",
       "to": "Carlos IV",
       "connection_level": "direct",
       "relationship type": "parientes; primos hermanos"
     },
     {
-      "from": "XV condesa de Chinchón",
+      "from": "XV Countess of Chinchón",
       "to": "María Luisa de Parma",
       "connection_level": "direct",
       "relationship type": "parientes; primos hermanos"
     },
     {
-      "from": "XV condesa de Chinchón",
+      "from": "XV Countess of Chinchón",
       "to": "Josefa Tudó",
       "connection_level": "direct",
       "relationship type": "Tudó fue la amante de Godoy mientras él estuvo casado con la condesa de Chinchón hasta la muerte de esta en 1828.",
       "curiosities": "Gaspar Melchor de Jovellanos fue invitado a una cena en casa de Godoy, donde tanto su esposa (Chinchón) como su amante (Tudó) estaban sentadas a la mesa, y afirmó: 'A su lado derecho, la princesa; a su izquierdo, Pepita Tudó. Este espectáculo acaba en mi desconcierto. Mi alma no pudo sufrirlo. Ni comí, ni hablé, ni pude sosegar mi espíritu. Huí de allí"
     },
     {
-      "from": "XV condesa de Chinchón",
+      "from": "XV Countess of Chinchón",
       "to": "Manuel Godoy",
       "connection_level": "direct",
       "relationship type": "cónyuges; marido y mujer (1797-1828)"
     },
     {
-      "from": "XV condesa de Chinchón",
+      "from": "XV Countess of Chinchón",
       "to": "Francisco de Goya",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
@@ -7412,7 +7415,7 @@
     },
     {
       "from": "Jenaro Pérez Villaamil",
-      "to": "II duque de San Carlos",
+      "to": "II Duke of San Carlos",
       "connection_level": "direct",
       "relationship type": "conocidos",
       "interactions": "Villaamil conoció a San Carlos el 13 de julio de 1843 en Montmorency (LG 2016, p.210), una reunión a la que también asistieron Valentín Carderera y Eugenio Ochoa, entre otros",
@@ -7454,7 +7457,7 @@
       "connection_level": "direct",
       "relationship type": "amigos",
       "interactions": [
-        "Ambos asistieron a una reunión en Montmorency el 13 de julio de 1843 (LG 2016, p.210), junto con el II duque de San Carlos y Valentín Carderera.",
+        "Ambos asistieron a una reunión en Montmorency el 13 de julio de 1843 (LG 2016, p.210), junto con el II Duke of San Carlos y Valentín Carderera.",
         "Villaamil asistió al entierro de Ochoa en 1872, según lo escrito por Antonio María Segovia (LG 2016, p.XXV)"
       ],
       "bibliography": "Lanzarote Guiral 2016"
@@ -8195,7 +8198,7 @@
     },
     {
       "from": "María Manuela Kirkpatrick",
-      "to": "María Tomasa Palafox, marchioness of Villafranca",
+      "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
       "relationship type": "parientes; cuñadas"
     },
@@ -12331,7 +12334,7 @@
     },
     {
       "from": "Madame de Staël",
-      "to": "Marquis of Custine",
+      "to": "Marquis de Custine",
       "connection_level": "direct",
       "relationship type": "conocidos",
       "compartido": "La madre de Custine, Delphine, era una amiga íntima de Staël, quien le dedicaría su novela <i>Delphine</i> (1802).",
@@ -12343,7 +12346,7 @@
     },
     {
       "from": "Victor Hugo",
-      "to": "Marquis of Custine",
+      "to": "Marquis de Custine",
       "connection_level": "direct",
       "relationship type": "conocidos",
       "know each other since": "al menos desde 1829",
@@ -12519,14 +12522,14 @@
     },
     {
       "from": "Théophile Gautier",
-      "to": "Marquis of Custine",
+      "to": "Marquis de Custine",
       "connection_level": "direct",
       "relationship type": "conocidos", 
       "compartido": "Gautier asistía al salón de Custine [Wikipedia](https://nl.wikipedia.org/wiki/Astolphe_de_Custine)"
     },
     {
       "from": "Frédéric Chopin",
-      "to": "Marquis of Custine",
+      "to": "Marquis de Custine",
       "connection_level": "direct",
       "relationship type": "amigos", 
       "correspondence": [
@@ -12542,7 +12545,7 @@
     },
     {
       "from": "Eugène Delacroix",
-      "to": "Marquis of Custine",
+      "to": "Marquis de Custine",
       "connection_level": "direct",
       "relationship type": "conocidos",
       "know each other since": "al menos desde 1840",
@@ -12551,7 +12554,7 @@
     },
     {
       "from": "Honoré de Balzac",
-      "to": "Marquis of Custine",
+      "to": "Marquis de Custine",
       "connection_level": "direct",
       "relationship type": "amigos",
       "know each other since": "hacia 1830", 
@@ -12710,7 +12713,7 @@
       "mentions": "Gautier menciona la obra de Nodier Histoire du roi de Bohême (1830), Le Figaro, 19 de octubre de 1836, Les récréations du génie (Lacsote-Veysseyre 2014, p.218)"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "George Sand",
       "connection_level": "direct",
       "relationship type": "conocidos", 
@@ -12727,14 +12730,14 @@
       "bibliography": "Samantha Caretti, 'La vérité et l'idéal: Astolphe de Custine, lecteur de George Sand', <i>Cahiers George Sand</i>, no.41, septiembre de 2019; H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "Louise Bertin",
       "relationship type": "conocidos", 
       "interactions": "1843, 7 de marzo, carta de Custine a Varnhagen: 'Mlle Bertin me disait hier un mot que je veux vous citer: Mme Sand, disait-elle, 'n'a rien fait pour les femmes, au contraire; elle abdique leur vrai pouvoir, c'est Omphale <i>fumant</i> aux pieds d'Hercule, j'amais mieux le contraire' (Merzbach 1870, p.443).",
       "bibliography": "H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "Sophie Gay",
       "relationship type": "amigos íntimos", 
       "correspondence": "sí. Por ejemplo, el 22 de octubre de 1838 describió el último concierto que Chopin dio en París antes de partir hacia Mallorca, en el castillo de Custine (véase Custine-Chopin's edge)",
@@ -12742,14 +12745,14 @@
       "websites": "[Publicación en Facebook](https://www.facebook.com/JackGibbonsPiano/posts/astolphe-de-custine-was-a-huge-supporter-of-chopin-and-one-of-the-very-first-to-/10157874644944384/) de Jack Gibbons, 26 de julio de 2019"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "Delphine de Girardin",
       "relationship type": "amigos", 
       "mentions": "1842, 26 de diciembre, carta de Custine a Vernhagen: 'Mme Émile de Girardin ha escrito una tragedia sobre Judith: la ha leído todo París' (Merzbach 1870, p.439)",
       "bibliography": "H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "Charles Baudelaire",
       "connection_level": "direct",
       "relationship type": "conocidos"
@@ -12895,7 +12898,7 @@
       "crítica": "Flaubert dijo sobre <i>Los miserables</i> (1862) que no tenía 'ni verdad ni grandeza'"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "Alphonse de Lamartine",
       "connection_level": "¿directa?",
       "relationship type": "¿conocidos? Custine admiraba mucho a Lamartine",
@@ -12903,7 +12906,7 @@
       "bibliography": "H. Merzbach (ed.), Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense, 1870"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "Juliette Récamier",
       "connection_level": "direct",
       "relationship type": "conocidos",
@@ -12912,7 +12915,7 @@
       "bibliography": "H. Merzbach (ed.), Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense, 1870"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "Stendhal",
       "connection_level": "direct",
       "relationship type": "conocidos",
@@ -12920,7 +12923,7 @@
       "websites": "[Wikipedia](https://nl.wikipedia.org/wiki/Astolphe_de_Custine)"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "Charles-Augustin Sainte-Beuve",
       "connection_level": "direct",
       "relationship type": "conocidos"
@@ -12934,13 +12937,13 @@
       "bibliography": "André Guyaux y Aurélia Cervoni, <i>La querelle de la statue de Baudelaire</i>, 2007; Fernand Vandérem, <i>Baudelaire et Sainte-Beuve. Nouvelle édition. Augmentée de notes et d'un chapitre inédit</i>, 1917, París, Henri Leclerc"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "Fernando VII",
       "connection_level": "secondary",
       "mentions": "Custine escribe <i>L'Espagne sous Ferdinand VII</i> en 1838"
     },
     {
-      "from": "Marquis of Custine",
+      "from": "Marquis de Custine",
       "to": "Madame Ewelina Hanska",
       "connection_level": "direct",
       "relationship type": "conocidos",
@@ -13553,7 +13556,7 @@
     },
     {
       "from": "Francisco de Goya",
-      "to": "María Tomasa Palafox, marchioness of Villafranca",
+      "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
       "encargos": "retrato",
@@ -13581,12 +13584,12 @@
     },
     {
       "from": "María Gabriela de Palafox, Marchioness of Lazán",
-      "to": "María Tomasa Palafox, marchioness of Villafranca",
+      "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
       "relationship type": "parientes; hermanas"
     },
     {
-      "from": "María Tomasa Palafox, marchioness of Villafranca",
+      "from": "María Tomasa Palafox, Marchioness of Villafranca",
       "to": "Eugenio Eulalio Palafox, VII Count of Montijo",
       "connection_level": "direct",
       "relationship type": "parientes; hermano-hermana"
@@ -13613,7 +13616,7 @@
     },
     {
       "from": "Eugenia de Montijo",
-      "to": "María Tomasa Palafox, marchioness of Villafranca",
+      "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
       "relationship type": "familiares; tía-sobrina"
     },
@@ -13649,7 +13652,7 @@
     },
     {
       "from": "Cipriano Portocarrero, VIII Count of Montijo",
-      "to": "María Tomasa Palafox, marchioness of Villafranca",
+      "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
       "relationship type": "parientes; hermano-hermana"
     },
@@ -13715,13 +13718,13 @@
     },
     {
       "from": "José Álvarez de Toledo, Duke of Alba",
-      "to": "María Tomasa Palafox, marchioness of Villafranca",
+      "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
       "relationship type": "parientes; cuñado, cuñada"
     },
     {
       "from": "María Francisca de Sales Portocarrero, VI Countess of Montijo",
-      "to": "María Tomasa Palafox, marchioness of Villafranca",
+      "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
       "relationship type": "familiares; madre-hija"
     },
@@ -13733,7 +13736,7 @@
     },
     {
       "from": "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
-      "to": "María Tomasa Palafox, marchioness of Villafranca",
+      "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
       "relationship type": "cónyuges; marido-mujer",
       "children": "9"
@@ -13782,7 +13785,7 @@
       "relationship type": "empleador-empleado. Villafranca fue nombrado teniente general del Ejército Real (1816) y capitán general de Murcia (1817)"
     },
     {
-      "from": "María Tomasa Palafox, marchioness of Villafranca",
+      "from": "María Tomasa Palafox, Marchioness of Villafranca",
       "to": "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
       "connection_level": "direct",
       "relationship type": "familiares; suegra, nuera"
