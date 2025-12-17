@@ -1671,7 +1671,18 @@ document.addEventListener('DOMContentLoaded', async function () {
 
             htmlText = `<ul>${processedItems.join("")}</ul>`;
           } else {
-            const translatedValue = translateValue(value);
+            let translatedValue = value;
+
+            // Solo para profession/nationality: traducir item por item si viene como "a, b, c"
+            if (typeof value === "string" && (field.key === "profession" || field.key === "nationality")) {
+              translatedValue = value
+                .split(',')
+                .map(v => translateValue(v.trim()))
+                .join(', ');
+            } else {
+              translatedValue = translateValue(value);
+            }
+
             htmlText = autoLinkNames(processMarkdownLinks(translatedValue), nodesMap);
           }
 
