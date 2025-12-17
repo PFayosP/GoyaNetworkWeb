@@ -1629,14 +1629,21 @@ document.addEventListener('DOMContentLoaded', async function () {
           // helper: traduce valores "cortos" tipo direct/acquaintances/etc.
           function translateValue(v) {
             if (typeof v !== "string") return v;
+
             const raw = v.trim();
+            if (!raw) return raw;
 
-            // Solo intentamos traducir el string tal cual.
-            // NO lo pasamos a minúsculas porque eso destroza nombres propios y topónimos.
-            const out = t(raw);
+            // 1) intento literal (por si ya viene "Poet", "Spanish", etc.)
+            let out = t(raw);
+            if (out !== raw) return out;
 
-            // Si no hay traducción, devolvemos el original intacto.
-            return (out === raw) ? raw : out;
+            // 2) intento con mayúscula inicial ("poet" -> "Poet", "art critic" -> "Art critic")
+            const capFirst = raw.charAt(0).toUpperCase() + raw.slice(1);
+            out = t(capFirst);
+            if (out !== capFirst) return out;
+
+            // 3) sin traducción: devolver original
+            return raw;
           }
 
           if (Array.isArray(value)) {
@@ -1896,11 +1903,29 @@ document.addEventListener('DOMContentLoaded', async function () {
               htmlText = `<ul>${processedItems.join("")}</ul>`;
             
             } else {
-              // ✅ Si es string normal: pásalo por el diccionario i18n
               let translatedValue = value;
-              if (typeof translatedValue === "string") {
-                translatedValue = t(translatedValue.trim());
+
+              if (typeof value === "string") {
+                translatedValue = value
+                  .split(',')
+                  .map(v => {
+                    const raw = v.trim();
+
+                    // 1) intento literal
+                    let out = t(raw);
+                    if (out !== raw) return out;
+
+                    // 2) intento con mayúscula inicial: "poet" → "Poet"
+                    const cap = raw.charAt(0).toUpperCase() + raw.slice(1);
+                    out = t(cap);
+                    if (out !== cap) return out;
+
+                    // 3) fallback
+                    return raw;
+                  })
+                  .join(', ');
               }
+
               htmlText = autoLinkNames(processMarkdownLinks(translatedValue), nodesMap);
             }
 
