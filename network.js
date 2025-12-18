@@ -382,7 +382,7 @@
     // Traduce el texto visible de cada opción (sin tocar el value)
     document.querySelectorAll('#professionFilter option').forEach(opt => {
       if (!opt.value) return;
-      opt.textContent = t(opt.value);
+      opt.textContent = t(opt.value).toLowerCase();
     });
 
     document.querySelectorAll('#nationalityFilter option').forEach(opt => {
@@ -1627,6 +1627,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           let htmlText;
       
           // helper: traduce valores "cortos" tipo direct/acquaintances/etc.
+          const isProfessionField = (field.key === "works as" || field.key === "profession");
           function translateValue(v) {
             if (typeof v !== "string") return v;
 
@@ -1635,15 +1636,14 @@ document.addEventListener('DOMContentLoaded', async function () {
 
             // 1) intento literal (por si ya viene "Poet", "Spanish", etc.)
             let out = t(raw);
-            if (out !== raw) return out;
+            if (out !== raw) return isProfessionField ? out.toLowerCase() : out;
 
-            // 2) intento con mayúscula inicial ("poet" -> "Poet", "art critic" -> "Art critic")
             const capFirst = raw.charAt(0).toUpperCase() + raw.slice(1);
             out = t(capFirst);
-            if (out !== capFirst) return out;
+            if (out !== capFirst) return isProfessionField ? out.toLowerCase() : out;
 
-            // 3) sin traducción: devolver original
-            return raw;
+            // 3) sin traducción
+            return isProfessionField ? raw.toLowerCase() : raw;
           }
 
           if (Array.isArray(value)) {
