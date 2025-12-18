@@ -1799,9 +1799,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         const andWord = t('and');
 
         html += `<p><strong>${betweenLabel}:</strong> 
-          <a href="#" style="color:#66ccff" onclick="focusNode('${fromNodeMap.id}')">${fromNodeMap.id}</a> 
+          <a href="#" style="color:#66ccff; text-transform:none;" onclick="focusNode('${fromNodeMap.id}')">${fromNodeMap.id}</a> 
           ${andWord} 
-          <a href="#" style="color:#66ccff" onclick="focusNode('${toNodeMap.id}')">${toNodeMap.id}</a>
+          <a href="#" style="color:#66ccff; text-transform:none;" onclick="focusNode('${toNodeMap.id}')">${toNodeMap.id}</a>
         </p>`;
 
         const edgeFields = [
