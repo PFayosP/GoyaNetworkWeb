@@ -1921,7 +1921,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                     if (out !== cap) return out;
 
                     // 3) fallback
-                    return raw.toLowerCase();
+                    return raw;
                   })
                   .join(', ');
               }
