@@ -10401,13 +10401,15 @@
       "connection_level": "direct",
       "relationship type": "acquaintances",
       "know each other since": "1841", 
-      "they met": "in Paris, Carderera visits Aguado's art gallery on 17 May 1841 (Lanzarote Guiral 2016, p.LV)"
+      "they met": "in Paris, Carderera visits Aguado's art gallery on 17 May 1841 (Lanzarote Guiral 2016, p.LV)",
+      "bibliography": "Lanzarote Guiral 2016"
     },
     {
       "from": "XI Count of Altamira",
       "to": "Alejandro Aguado",
       "connection_level": "secondary",
-      "relationship type": "Aguado acquired a part of Altamira's collection (Lanzarote Guiral 2016, p.LV)."
+      "relationship type": "Aguado acquired a part of Altamira's collection (Lanzarote Guiral 2016, p.LV).",
+      "bibliography": "Lanzarote Guiral 2016"
     },
     {
       "from": "XI Count of Altamira",
