@@ -957,7 +957,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       'Juan Meléndez Valdés': 'melendez',
       'Jenaro Pérez Villaamil': 'perez',
       'Antonio Remón Zarco del Valle y Huet': 'remon',
-      'María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin': 'merlin'
+      'María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin': 'merlin',
+      'Ramón de Mesonero Romanos': 'mesonero'
     });
 
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
