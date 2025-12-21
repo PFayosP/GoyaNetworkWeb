@@ -955,7 +955,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       'Alexandre Dumas père': 'dumas',
       'Francisco Martínez de la Rosa': 'martinez',
       'Juan Meléndez Valdés': 'melendez',
-      'Jenaro Pérez Villaamil': 'perez'
+      'Jenaro Pérez Villaamil': 'perez',
+      'Antonio Remón Zarco del Valle y Huet': 'remon',
+      'María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin': 'merlin'
     });
 
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
