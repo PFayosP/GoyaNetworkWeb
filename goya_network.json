@@ -6205,8 +6205,10 @@
       "to": "Pascual de Gayangos y Arce",
       "connection_level": "direct",
       "relationship type": "acquaintances (possibly via Valentín Carderera); business partners",
-      "know each other since": "at least 1856",
-      "link to Goya's work": "from 1856, Stirling owned a working-proof set of the <i>Caprichos</i> before letters that belonged to Gayangos (Boston MoFA 2002.497)"
+      "know each other since": "at least 1855",
+      "mentions": "1855, 25 Sept: [unpublished?] letter from Stirling to Valentín Carderera. It mentions Gayangos twice. 'I hope you have received or will soon receive the copy of my Velazquez about which should much like to have some talk with you' (Carderera archive).",
+      "link to Goya's work": "from 1856, Stirling owned a working-proof set of the <i>Caprichos</i> before letters that belonged to Gayangos (Boston MoFA 2002.497)",
+      "archives": "Carderera archive"
     },
     {
       "from": "Valentín Carderera",
@@ -6227,9 +6229,12 @@
       ],
       "link to Goya's work": "Stirling acquired through Carderera state proofs of Goya's <i>Disasters of War</i> and the <i>Disparates</i>, as well as two ivory miniatures (Lanzarote Guiral 2016, p.LXVIII; Glendinning 2010-A, pp.44-63). At the Boston MoFA are: <i>Disasters of War</i>, working-proof set (1810), acquired via Valentín Carderera 1863 (51.1653); copies after Velázquez, working-proof set (1779-85), acquired via Valentín Carderera 1863 (<i>Las Meninas</i> 51.1699).",
       "correspondence": [
-        "Carderera writes a letter to Stirling on 7 Oct, 10 Nov and 26 Nov 1855; 25 Nov 1856 (LG 2016, pp.292, 306, 312, 368).",
+        "1855, 25 Sept: [unpublished?] letter from Stirling to Carderera. It mentions Pascual de Gayangos y Arce twice. 'I hope you have received or will soon receive the copy of my Velazquez about which should much like to have some talk with you' (Carderera family archive).",
+        "1855, 7 Oct, 10 Nov and 26 Nov: Carderera to Stirling (LG 2016, pp.292, 306, 312, 368).",
+        "1856, 25 Nov: Carderera to Stirling (LG 2016, pp.292, 306, 312, 368).",
         "Carderera receives a latter from Stirling on 22 Nov 1855; 19 July, 2 Dec 1856 (LG 2016, pp.311, 332, 370)."
       ],
+      "archives": "Carderera family archive",
       "bibliography": "Lanzarote Guiral 2016; Glendinning 2010"
     },
     {
