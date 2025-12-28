@@ -7107,6 +7107,15 @@
       "collaborations": "restoration of the Belmonte Castle in Cuenca (1857-71)"
     },
     {
+      "from": "[J./L.] Carresse",
+      "to": "Alejandro Sureda",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "at least since 1857",
+      "mentions": "letter from Carresse to Valentín Carderera, 21 June 1857 (Paris): 'N'ayant pas votre adresse, je fais parvenir cette lettre à Sureda avec prière de vous l'envoyer' (Fayos Pérez 2020, p.1055).",
+      "bibliography": "Fayos Pérez 2020"
+    },
+    {
       "from": "Federico de Madrazo",
       "to": "Alejandro Sureda",
       "connection_level": "direct",
