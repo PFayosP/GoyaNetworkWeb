@@ -9356,6 +9356,11 @@
         "1837, 13 de octubre: nada más llegar a París, Madrazo va a ver a Santiago Masarnau, Adrien Dauzats y al Baron Taylor (Díez 1994, p.32)",
         "1837, 18 de octubre: el 17 de octubre, Madrazo acude a Dauzats al Louvre. Ven pinturas de Gros, Letiers, Guérin, Géricault (<i>Méduse</i>) (Díez 1994, p.34)"
       ],
+      "mentions": [
+        "Among many examples:",
+        "1837, 4 nov, carta de Federico de Madrazo a José de Madrazo: 'La carta que venía dentro de la mía para Mr. Dauzats se la di ayer. Hará como cosa de 6 días hablé con Dauzats sobre el asunto de las estampas y me dijo que me acompañaría con mucho gusto uno de estos días a casa de Rittner que es bastante amigo suyo, por lo tanto creo que en mi carta siguiente podré decir a V. algo sobre el particular. No crea V. que me olvido de esto. Estoy segurísimo que Dauzats me ayudará en esto como en todas las cosas, pues además de ser sumamente formal es muy buen amigo y tanto más habiéndole yo hablado sobre este particular con bastante empeño' (Díez 1994, no.15, p.45).",
+        "1837, 10 nov, carta de Federico de Madrazo a José de Madrazo: 'Antes de ayer fuimos Dauzats y yo a casa de Rittner para hablarle sobre el negocio de las estampas [...] Nos dijo además que su compañero Mr. Goupil [Adolphe Goupil] se halla en este momento en Londres, que le espera de un día para otro y que en cuanto venga pasará con él a casa de Dauzats para ver la obra completa; prefiere ver la obra completa para formar un juicio más exacto (Dauzats dijo ayer delante de mí a Mr. Taylor que le mandara a su casa los tres tomos)' (Díez 1994, no.16, p.46)."
+      ],
       "bibliography": "Fayos Pérez 2026 (de próxima publicación); Fayos Pérez 2024; Díez 1994; Guinard 1967-A; Guinard 1967-B"
     },
     {
@@ -9803,7 +9808,7 @@
       "to": "Adrien Dauzats",
       "connection_level": "direct",
       "relationship type": "amigos",
-      "know each other since": "al menos desde 1841",
+      "know each other since": "c. 1835",
       "interactions": [
         "1841, 4 de mayo, 7 (con Blanchard y Taylor), 9 (Dauzats vio sus dibujos), 2 de diciembre, 15 (Carderera le entrega el dibujo que le pidió), 16, 30 (París): se encuentran (LG 2016, pp.10, 11, 12, 87, 92).",
         "1842, 27 de enero (París): Carderera va a casa de Dauzats y le deja una carta (Lanzarote Guiral 2016, p.100).",
@@ -9814,6 +9819,7 @@
         "BNE (MSS/23291/39). Pendiente de publicación (Fayos Pérez 2025-2026)",
         "Archivo familiar Carderera: al menos dos cartas. No hay menciones aparentes de Goya"
       ],
+      "mentions": "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats está entonces en Valencia con Baron Taylor. Madrazo menciona a Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, próxima publicación)",
       "archives": "BNE; Archivo familiar Carderera (Madrid)",
       "bibliography": "Fayos Pérez 2026 (próxima publicación); Fayos Pérez 2024; Lanzarote Guiral 2016"
     },
@@ -10850,7 +10856,7 @@
       "know each other since": "al menos desde 1835",
       "compartieron": "se alistaron como voluntarios en los granaderos de la Milicia Nacional de Madrid (6.º Batallón) en 1835, junto con Pedro de Madrazo, Pascual de Gayangos y Arce, Vicente Masarnau y Santiago Masarnau",
       "collaborations": "Carderera publicó su primer artículo sobre Goya en 1835 en <i>El Artista</i>, fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa", 
-      "mentions": "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación)",
+      "mentions": "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, próxima publicación)",
       "se reunieron": [
         "En numerosas ocasiones. Algunas de ellas son:",
         "1855 (París): 5, 9, 16, 19, 21 y 29 de septiembre, 11, 17 y 19 de octubre, 11 y 27 de noviembre.",
