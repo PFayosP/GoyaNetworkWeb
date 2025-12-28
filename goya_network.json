@@ -9704,12 +9704,20 @@
       "to": "Adrien Dauzats",
       "connection_level": "direct",
       "relationship type": "acquaintances; friends?",
-      "know each other since": "at least 1837",
+      "know each other since": "c. 1835",
       "mentions":  [
         "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
         "1837-VI-28, letter from Federico de Madrazo to Valentín Carderera, repeating what Dauzats said about Ribera: 'que Ribera trabaja mucho, que ha dejado un poco su timidez y que si tardo un poco en ir a París no le reconoceré, y además dice que me parecerá un hombre natural y que su padre bramaría si viese la influencia que ha ejercido París en él'."
       ],
       "added": "2025-09-06"
+    },
+    {
+      "from": "Santiago Masarnau",
+      "to": "Adrien Dauzats", 
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming)",
+      "bibliography": "Fayos Pérez 2026 (próxima upcoming)"
     },
     {
       "from": "Federico de Madrazo",
@@ -9773,7 +9781,7 @@
       "to": "Adrien Dauzats",
       "connection_level": "direct",
       "relationship type": "friends",
-      "know each other since": "around 1835",
+      "know each other since": "c. 1835",
       "interactions": [
         "1841, May 4, 7 (with Blanchard and Taylor), 9 (Dauzats saw his drawings), Dec 2, 15 (Carderera gives him the drawing he asked for), 16, 30 (Paris): they meet (LG 2016, pp.10, 11, 12, 87, 92).",
         "1842, 27 Jan (Paris): Carderera goes to Dauzats's and leaves a letter for him (Lanzarote Guiral 2016, p.100).",

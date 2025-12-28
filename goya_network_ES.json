@@ -9739,12 +9739,20 @@
       "to": "Adrien Dauzats",
       "connection_level": "direct",
       "relationship type": "conocidos; ¿amigos?",
-      "know each other since": "al menos desde 1837",
+      "know each other since": "c. 1835",
       "mentions": [
-        "24 de marzo de 1835, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación)",
+        "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona a Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación).",
         "1837-VI-28, carta de Federico de Madrazo a Valentín Carderera, repitiendo lo que Dauzats dijo sobre Ribera: 'que Ribera trabaja mucho, que ha dejado un poco su timidez y que si tardo un poco en ir a París no le reconoceré, y además dice que me parecerá un hombre natural y que su padre bramaría si viese la influencia que ha ejercido París en él'."
       ],
       "added": "2025-09-06"
+    },
+    {
+      "from": "Santiago Masarnau",
+      "to": "Adrien Dauzats", 
+      "connection_level": "direct",
+      "relationship type": "conocidos",
+      "mentions": "1835-III-24, carta de Federico de Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con Baron Taylor. Madrazo menciona a Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, próxima publicación)",
+      "bibliography": "Fayos Pérez 2026 (próxima publicación)"
     },
     {
       "from": "Federico de Madrazo",
