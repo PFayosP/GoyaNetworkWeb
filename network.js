@@ -808,12 +808,15 @@ document.addEventListener('DOMContentLoaded', async function () {
     // =================== /MINI-FAMILIAS (anchors invisibles) ===================
 
 
-    const lastModified = response.headers.get("Last-Modified");
-
     const locale = (CURRENT_LANG === 'es') ? 'es-ES' : 'en-GB';
 
-    const formattedUpdate = lastModified
-      ? new Date(lastModified).toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
+    const lastUpdate = data.last_update;
+
+    const formattedUpdate = lastUpdate
+      ? new Date(lastUpdate + 'T00:00:00').toLocaleDateString(
+          locale,
+          { day: 'numeric', month: 'long', year: 'numeric' }
+        )
       : t('Unknown');
 
     document.getElementById("networkStats").innerHTML =
