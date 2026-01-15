@@ -9682,9 +9682,22 @@
       "connection_level": "direct",
       "relationship type": "conocidos, socios comerciales. Carderera parece haber comprado y vendido obras de arte a/de Goupil, dadas las frecuentes reuniones, visitas a su tienda y menciones de dinero involucrado",
       "know each other since": "al menos desde 1842",
-      "interactions": "1842, 30 de agosto, Carderera buscaba un impresor y mostró sus dibujos a Goupil y Vivert: 'Les gustó mucho mis retratos y se admiraron del número, y de las monjas de Sigena, que encontró Vibert bellísimas, y las del Santo Sepulcro, etc.' (Lanzarote Guiral 2016, p.XXXVI)",
+      "interactions": [
+        "1842, 7 de febrero: 'Entré a casa de Rittner y Goupil' (LG 2016, p.103).",
+        "1842, 30 de agosto, Carderera buscaba un impresor y mostró sus dibujos a Goupil y Vivert: 'Les gustó mucho mis retratos y se admiraron del número, y de las monjas de Sigena, que encontró Vibert bellísimas, y las del Santo Sepulcro, etc.' (Lanzarote Guiral 2016, p.XXXVI)"
+      ],
       "mentions": "Carderera menciona a Goupil en numerosas ocasiones en su diario, desde 1842 hasta 1861. La más antigua es del 7 de febrero de 1842: 'Entré a casa de Rittner y Goupil'; también del 28 de febrero y del 22 de agosto de 1842 ('Después vi a Guiaut, que no se atrevína a tomar mis dibujos porque costarían mucho. Avisé a Goupil y Vibert', 30 de agosto, 31 de agosto, 29 de octubre; 1845, 11 de octubre, 18 de octubre, 1856, 22 de agosto, 6 de noviembre; 1859, 27 de agosto, 6 de septiembre, 10 de septiembre, 16 de septiembre, 24 de septiembre, 19 de octubre, 22 de octubre, 24 de octubre, 1 de noviembre, 2 de noviembre, 4 de noviembre, 9 de noviembre, 12 de noviembre, 15 de noviembre, 17 de noviembre; 1861, 6 de julio (recoge dinero de Colnaghi), 12 de julio, 25 de julio, 6 de agosto, 15 de agosto, 10 de septiembre, 4 de octubre, 8 de octubre, 13 de octubre (Lanzarote Guiral 2016)",
       "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "from": "Adolphe Goupil",
+      "to": "Federico de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "acquaintances, business partners",
+      "mentions": [
+        "1837, 10 Nov: carta de Federico de Madrazo a José de Madrazo. 'Antes de ayer fuimos Dauzats [Adrien Dauzats] y yo a casa de Rittner [Henri Rittner] para hablarle sobre el negocio de las estampas [...]. Nos dijo además que su compañero Mr. Goupil se halla en este momento en Londres' (Díez 1994, no.16, p.46)."
+      ],
+      "bibliography": "Lanzarote Guiral 2016; Díez 1994"
     },
     {
       "from": "Adolphe Goupil",

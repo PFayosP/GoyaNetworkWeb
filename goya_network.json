@@ -9647,9 +9647,22 @@
       "connection_level": "direct",
       "relationship type": "acquaintances, business partners. Carderera seems to have bought and sold artworks to/from Goupil, given the frequent encounters, visits to his shop, and mentions of money involved",
       "know each other since": "at least 1842",
-      "interactions": "1842, 30 Aug, Carderera was looking for a printer and shows his drawings to Goupil and Vivert: 'Les gustó mucho mis retratos y se admiraron del número, y de las monjas de Sigena, que encontró Vibert bellísimas, y las del Santo Sepulcro, etc.' (Lanzarote Guiral 2016, p.XXXVI)",
+      "interactions": [
+        "1842, 7 Feb: 'Entré a casa de Rittner y Goupil' (LG 2016, p.103).",
+        "1842, 30 Aug, Carderera was looking for a printer and shows his drawings to Goupil and Vivert: 'Les gustó mucho mis retratos y se admiraron del número, y de las monjas de Sigena, que encontró Vibert bellísimas, y las del Santo Sepulcro, etc.' (Lanzarote Guiral 2016, p.XXXVI)"
+      ],
       "mentions":  "Carderera has many mentions of Goupil in his journal, from 1842 to 1861. The earliest one is 1842, 7 Feb: 'Entré a casa de Rittner y Goupil'; also 1842, 28 Feb, 22 Aug ('Después vi a Guiaut, que no se atrevína a tomar mis dibujos porque costarían mucho. Avisé a Goupil y Vibert', 30 Aug, 31 Aug, 29 Oct; 1845, 11 Oct, 18 Oct, 1856, 22 Aug, 6 Nov; 1859, 27 Aug, 6 Sept, 10 Sept, 16 Sept, 24 Sept, 19 Oct, 22 Oct, 24 Oct, 1 Nov, 2 Nov, 4 Nov, 9 Nov, 12 Nov, 15 Nov, 17 Nov; 1861, 6 July (he picks up money from Colnaghi), 12 July, 25 July, 6 Aug, 15 Aug, 10 Sept, 4 Oct, 8 Oct, 13 Oct (Lanzarote Guiral 2016)",
       "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "from": "Adolphe Goupil",
+      "to": "Federico de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "acquaintances, business partners",
+      "mentions": [
+        "1837, 10 Nov: letter from Federico de Madrazo to José de Madrazo. 'Antes de ayer fuimos Dauzats [Adrien Dauzats] y yo a casa de Rittner [Henri Rittner] para hablarle sobre el negocio de las estampas [...]. Nos dijo además que su compañero Mr. Goupil se halla en este momento en Londres' (Díez 1994, no.16, p.46)."
+      ],
+      "bibliography": "Lanzarote Guiral 2016; Díez 1994"
     },
     {
       "from": "Adolphe Goupil",
