@@ -5642,6 +5642,29 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Goupil.jpg",
       "image source": "Litografía de Devéria, c.1831",
       "added": "2025-10-16"
+    },
+    {
+      "id": "Heinrich Rittner",
+      "label": "Rittner",
+      "full name": "Joseph-Heinrich Rittner",
+      "also known as": "Henri Ritther; Joseph-Henri Rittner",
+      "life dates": "1802-1840 (another Heinrich Rittner: 1765-1835 (portrait at the Sachsen Museum by Gerhard von Kügelgen, Dresden 1812)", 
+      "nationality": "German",
+      "born in": "Dresden",
+      "dies in": "París",
+      "profession": "art dealer, print dealer, print editor",
+      "parents": "Frédérique Andreae and Henri Rittner",
+      "in Paris": "desde c.1828",
+      "lives in": "Dresde; Londres; París",
+      "editor of": "grabados de Paul Gavarni, Achille Devéria y otros; también copiando a Paul Delaroche, Léopold Robert, Franz y Xaver Winterhalter",
+      "married to": "Julie Antoinette Brincard (cuñada de Adolphe Goupil)",
+      "works with": "Adolphe Goupil",
+      "founder of": "'Rittner & Goupil' en 1829",
+      "bibliography": "Lanzarote Guiral 2016; McIntosh DeCourcy, 'The origins of the Maison Goupil in the age of Romanticism', <i>The British Art Journal</i>, vol.5, no.1, 2004, pp.64-76; Díez 1994",
+      "websites": "[Wikipedia](https://de.wikipedia.org/wiki/Heinrich_Rittner)",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Rittner_AI.jpg",
+      "image source": "Generada por IA (DeepAI) porque no se conoce ningún retrato",
+      "added": "2026-01-15"
     }
   ],
   "edges": [
@@ -9641,6 +9664,48 @@
     },
     {
       "from": "Adolphe Goupil",
+      "to": "Heinrich Rittner",
+      "connection_level": "direct",
+      "relationship type": "business partners; relatives (brothers-in-law)",
+      "know each other since": "al menos 1829",
+      "collaborations": "co-fundadores de Rittner & Goupil",
+      "bibliography": "Lanzarote Guiral 2016; DeCourcy 2004"
+    },
+    {
+      "from": "Valentín Carderera",
+      "to": "Heinrich Rittner",
+      "connection_level": "direct",
+      "relationship type": "acquaintances, business partners",
+      "know each other since": "al menos 1842",
+      "interactions": [
+        "1842, 7 febrero: 'Entré a casa de Rittner y Goupil' (LG 2016, p.103)."
+      ],
+      "bibliography": "Lanzarote Guiral 2016; DeCourcy 2004"
+    },
+    {
+      "from": "Federico de Madrazo",
+      "to": "Heinrich Rittner",
+      "connection_level": "direct",
+      "relationship type": "acquaintances, business partners",
+      "know each other since": "al menos 1837",
+      "interactions": [
+        "1837, 10 nov: carta de Federico de Madrazo a José de Madrazo. 'Antes de ayer fuimos Dauzats [Adrien Dauzats] y yo a casa de Rittner [Heinrich Rittner] para hablarle sobre el negocio de las estampas [...]. Nos dijo además que su compañero Mr. Goupil se halla en este momento en Londres' (Díez 1994, no.16, p.46)."
+      ],
+      "bibliography": "Díez 1994"
+    },
+    {
+      "from": "Adrien Dauzats",
+      "to": "Heinrich Rittner",
+      "connection_level": "direct",
+      "relationship type": "acquaintances, business partners",
+      "know each other since": "al menos 1837",
+      "interactions": [
+        "1837, 10 nov: carta de Federico de Madrazo a José de Madrazo. 'Antes de ayer fuimos Dauzats [Adrien Dauzats] y yo a casa de Rittner [Heinrich Rittner] para hablarle sobre el negocio de las estampas [...]. Nos dijo además que su compañero Mr. Goupil se halla en este momento en Londres' (Díez 1994, no.16, p.46)."
+      ],
+      "bibliography": "Díez 1994"
+    },
+    {
+      "from": "Adolphe Goupil",
       "to": "Eduardo Zamacois",
       "connection_level": "direct",
       "relationship type": "mecenazgo"
@@ -9695,7 +9760,7 @@
       "connection_level": "direct",
       "relationship type": "acquaintances, business partners",
       "mentions": [
-        "1837, 10 Nov: carta de Federico de Madrazo a José de Madrazo. 'Antes de ayer fuimos Dauzats [Adrien Dauzats] y yo a casa de Rittner [Henri Rittner] para hablarle sobre el negocio de las estampas [...]. Nos dijo además que su compañero Mr. Goupil se halla en este momento en Londres' (Díez 1994, no.16, p.46)."
+        "1837, 10 Nov: carta de Federico de Madrazo a José de Madrazo. 'Antes de ayer fuimos Dauzats [Adrien Dauzats] y yo a casa de Rittner [Heinrich Rittner] para hablarle sobre el negocio de las estampas [...]. Nos dijo además que su compañero Mr. Goupil se halla en este momento en Londres' (Díez 1994, no.16, p.46)."
       ],
       "bibliography": "Lanzarote Guiral 2016; Díez 1994"
     },
@@ -9714,7 +9779,8 @@
       "connection_level": "direct",
       "relationship type": "conocidos; retratista-modelo",
       "know each other since": "al menos desde 1831",
-      "portraits": "Devéria realizó un retrato de Goupil (litografía, c.1831, Musée Carnavalet)"
+      "portraits": "Devéria hizo un retrato de Goupil, litografía, c.1831, Musée Carnavalet / BNF Dc-136 Fol. T III (DeCourcy 2004, p.72)",
+      "bibliography": "DeCourcy 2004"
     },
     {
       "from": "Valentín Carderera",
