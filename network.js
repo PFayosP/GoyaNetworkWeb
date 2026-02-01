@@ -544,52 +544,128 @@ window.search = function() {
   }
 };
 
-window.filterGraph = function() {
-  const professionFilter = document.getElementById('professionFilter').value;
-  const nationalityFilter = document.getElementById('nationalityFilter').value;
+// ===============================
+// Filters: highlight + right panel
+// ===============================
+let __filterHighlightedIds = [];
+let __filterDefaultNodeInfoHTML = null;
 
-  // Limpia resaltados previos
-  clearHighlights();
+// Save current nodeInfo as "default" once
+function __ensureDefaultNodeInfoSnapshot() {
+  if (__filterDefaultNodeInfoHTML) return;
+  const nodeInfoEl = document.getElementById("nodeInfo");
+  if (nodeInfoEl) __filterDefaultNodeInfoHTML = nodeInfoEl.innerHTML;
+}
 
-  // Si no hay filtros activos, restaura panel por defecto y termina
-  if (!professionFilter && !nationalityFilter) {
-    renderFilterPanel({ professionFilter: '', nationalityFilter: '', matchingNodeIds: [] });
+function __escapeHtml(s) {
+  return String(s ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function __clearFilterHighlights() {
+  if (!window.nodes || !__filterHighlightedIds.length) return;
+
+  // Restore ONLY what this filter changed (border + borderWidth)
+  const updates = __filterHighlightedIds.map(id => ({
+    id,
+    color: { border: "#2B7CE9" },
+    borderWidth: 2
+  }));
+
+  nodes.update(updates);
+  __filterHighlightedIds = [];
+}
+
+function __renderFilterPanel({ profession, nationality, matchingCount, totalCount, matchingNodes }) {
+  const nodeInfoEl = document.getElementById("nodeInfo");
+  if (!nodeInfoEl) return;
+
+  const parts = [];
+  if (nationality) parts.push(`Nationality: ${nationality}`);
+  if (profession) parts.push(`Profession: ${profession}`);
+  const title = parts.join(" · ");
+
+  const sorted = (matchingNodes || [])
+    .slice()
+    .sort((a, b) => (a.label || "").localeCompare((b.label || ""), undefined, { sensitivity: "base" }));
+
+  const listHtml = sorted.map(n => {
+    const safeLabel = __escapeHtml(n.label || n.id);
+    return `<li><a href="#" onclick="focusNode('${n.id}'); return false;">${safeLabel}</a></li>`;
+  }).join("");
+
+  nodeInfoEl.innerHTML = `
+    <div>
+      <h3 style="margin:0 0 0.5rem 0;">${__escapeHtml(title)}</h3>
+      <p style="margin:0 0 0.75rem 0;">
+        <strong>${matchingCount}</strong> nodes out of <strong>${totalCount}</strong>
+      </p>
+      <div class="section-heading">Results (A–Z)</div>
+      <ul style="margin:0; padding-left:1.2rem; columns:2; -webkit-columns:2; -moz-columns:2;">
+        ${listHtml || "<li>No results</li>"}
+      </ul>
+    </div>
+  `;
+}
+
+window.filterGraph = function () {
+  // Guard: dataset not ready yet
+  if (!window.nodes) return;
+
+  __ensureDefaultNodeInfoSnapshot();
+
+  const profession = document.getElementById("professionFilter")?.value || "";
+  const nationality = document.getElementById("nationalityFilter")?.value || "";
+
+  // Reset previous filter highlights
+  __clearFilterHighlights();
+
+  // If nothing selected: restore default panel and exit
+  if (!profession && !nationality) {
+    const nodeInfoEl = document.getElementById("nodeInfo");
+    if (nodeInfoEl && __filterDefaultNodeInfoHTML) nodeInfoEl.innerHTML = __filterDefaultNodeInfoHTML;
     return;
   }
 
-  const matchingNodes = nodes.get().filter(node => {
-    const professionMatch = !professionFilter ||
-      (node.profession && node.profession.includes(professionFilter));
-    const nationalityMatch = !nationalityFilter ||
-      (node.nationality && node.nationality.includes(nationalityFilter));
-    return professionMatch && nationalityMatch;
+  const all = nodes.get();
+  const totalCount = all.length;
+
+  const matching = all.filter(n => {
+    const profOk = !profession || (n.profession && n.profession.includes(profession));
+    const natOk  = !nationality || (n.nationality && n.nationality.includes(nationality));
+    return profOk && natOk;
   });
 
-  const matchingIds = matchingNodes.map(n => n.id);
-
-  // Resalta nodos
-  matchingNodes.forEach(node => {
+  // Highlight matching nodes in red border
+  matching.forEach(n => {
     nodes.update({
-      id: node.id,
-      color: { ...node.color, border: 'red' },
+      id: n.id,
+      color: { ...n.color, border: "red" },
       borderWidth: 4
     });
   });
 
-  lastHighlightedNodes = matchingIds;
+  __filterHighlightedIds = matching.map(n => n.id);
 
-  // Actualiza panel derecho con resumen + lista
-  renderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds: matchingIds });
+  // Update right panel
+  __renderFilterPanel({
+    profession,
+    nationality,
+    matchingCount: matching.length,
+    totalCount,
+    matchingNodes: matching
+  });
 
-  // Enfoca el primero si existe
-  if (matchingIds.length > 0) {
-    const id = matchingIds[0];
+  // Optional: focus first match
+  if (matching.length && window.VIS_NETWORK) {
+    const id = matching[0].id;
     const scale = window.VIS_NETWORK.getScale();
     const pos = window.VIS_NETWORK.getPosition(id);
     window.VIS_NETWORK.moveTo({ position: pos, scale, animation: { duration: 500 } });
-  } else {
-    // Opcional: alerta (si la quieres, deja esto)
-    alert('No nodes match the selected filters');
   }
 };
 
@@ -2179,69 +2255,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (e.key === 'Enter') {
         searchButton.click();
       }
-    });
-
-    document.getElementById('nationalityFilter').addEventListener('change', function () {
-      window.filterGraph();
-    });
-
-    function renderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds }) {
-      const nodeInfo = document.getElementById('nodeInfo');
-      if (!nodeInfo) return;
-
-      const total = nodes.get().length;
-
-      // Si no hay filtros activos, vuelve al panel por defecto
-      if (!professionFilter && !nationalityFilter) {
-        if (typeof window.showDefaultNodeInfo === 'function') window.showDefaultNodeInfo();
-        window.__lastSelection = null;
-        return;
-      }
-
-      // Construye el título de filtro (pueden ser 1 o 2 filtros a la vez)
-      const parts = [];
-      if (professionFilter) parts.push(`<strong>Profession:</strong> ${professionFilter}`);
-      if (nationalityFilter) parts.push(`<strong>Nationality:</strong> ${nationalityFilter}`);
-
-      // Orden alfabético por label (fallback id)
-      const items = matchingNodeIds
-        .map(id => nodes.get(id))
-        .filter(Boolean)
-        .map(n => ({ id: n.id, name: (n.label || n.id) }))
-        .sort((a, b) => a.name.localeCompare(b.name));
-
-      const count = items.length;
-
-      let html = `
-        <div class="node-overview">
-          <div>${parts.join(' &nbsp;|&nbsp; ')}</div>
-          <div>${count} nodes out of ${total}</div>
-        </div>
-        <div class="section-heading">Results (A–Z)</div>
-        <div style="line-height:1.6;">
-      `;
-
-      if (count === 0) {
-        html += `<p style="color:#ccc;">No nodes match the selected filters.</p>`;
-      } else {
-        // Lista en forma de enlaces
-        html += `<ul style="margin-top:0.4rem;">`;
-        items.forEach(it => {
-          html += `<li><a href="#" style="color:#66ccff" onclick="focusNode('${it.id}'); return false;">${it.name}</a></li>`;
-        });
-        html += `</ul>`;
-      }
-
-      html += `</div>`;
-
-      nodeInfo.innerHTML = html;
-
-      // Guardar estado para cambios de idioma (si no lo usas, no molesta)
-      window.__lastSelection = { type: 'filter', professionFilter, nationalityFilter, ids: matchingNodeIds.slice() };
-    }
-
-    document.getElementById('nationalityFilter').addEventListener('change', function () {
-      window.filterGraph();
     });
 
         window.toggleFullScreen = function () {
