@@ -651,11 +651,7 @@ window.renderFilterPanel = function ({ professionFilter, nationalityFilter, matc
     .map(id => nodes.get(id))
     .filter(Boolean)
     .map(n => ({ id: n.id, name: n.id }))
-    .sort((a, b) => {
-      const ka = __gnSurnameKeyForSort(a.name);
-      const kb = __gnSurnameKeyForSort(b.name);
-      if (ka !== kb) return ka.localeCompare(kb);
-      return a.name.localeCompare(b.name);
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   const count = items.length;
 
