@@ -434,6 +434,24 @@
     location.reload();
   };
 
+  function sortSelectOptionsAlphabetically(selectId) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+
+    const options = Array.from(select.options);
+
+    // Mantener la primera opción tipo "All professions"
+    const first = options.shift();
+
+    options.sort((a, b) =>
+      a.textContent.localeCompare(b.textContent, 'es', { sensitivity: 'base' })
+    );
+
+    select.innerHTML = '';
+    select.appendChild(first);
+    options.forEach(opt => select.appendChild(opt));
+  }
+
   // Helper para traducir labels de panel
   function labelI18N(label){ return t(label); }
   // ====== /I18N ======
@@ -966,7 +984,13 @@ window.filterGraph = function() {
 };
 
 document.addEventListener('DOMContentLoaded', async function () {
+  
   applyUIStrings();
+
+  if (CURRENT_LANG === 'es') {
+        sortSelectOptionsAlphabetically('professionFilter');
+      }
+
   const sel = document.getElementById('langSwitcher');
   if (sel) sel.value = CURRENT_LANG;
 
