@@ -547,37 +547,48 @@ window.search = function() {
 window.filterGraph = function() {
   const professionFilter = document.getElementById('professionFilter').value;
   const nationalityFilter = document.getElementById('nationalityFilter').value;
-  
-  // Clear previous highlights
+
+  // Limpia resaltados previos
   clearHighlights();
 
-  if (!professionFilter && !nationalityFilter) return;
+  // Si no hay filtros activos, restaura panel por defecto y termina
+  if (!professionFilter && !nationalityFilter) {
+    renderFilterPanel({ professionFilter: '', nationalityFilter: '', matchingNodeIds: [] });
+    return;
+  }
 
   const matchingNodes = nodes.get().filter(node => {
-    const professionMatch = !professionFilter || 
+    const professionMatch = !professionFilter ||
       (node.profession && node.profession.includes(professionFilter));
-    const nationalityMatch = !nationalityFilter || 
+    const nationalityMatch = !nationalityFilter ||
       (node.nationality && node.nationality.includes(nationalityFilter));
     return professionMatch && nationalityMatch;
   });
 
-  if (matchingNodes.length > 0) {
-    // Highlight matching nodes
-    matchingNodes.forEach(node => {
-      nodes.update({ 
-        id: node.id, 
-        color: { ...node.color, border: 'red' }, 
-        borderWidth: 4 
-      });
+  const matchingIds = matchingNodes.map(n => n.id);
+
+  // Resalta nodos
+  matchingNodes.forEach(node => {
+    nodes.update({
+      id: node.id,
+      color: { ...node.color, border: 'red' },
+      borderWidth: 4
     });
-    
-    // Focus on the first matching node
-    const id = matchingNodes[0].id;
+  });
+
+  lastHighlightedNodes = matchingIds;
+
+  // Actualiza panel derecho con resumen + lista
+  renderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds: matchingIds });
+
+  // Enfoca el primero si existe
+  if (matchingIds.length > 0) {
+    const id = matchingIds[0];
     const scale = window.VIS_NETWORK.getScale();
     const pos = window.VIS_NETWORK.getPosition(id);
     window.VIS_NETWORK.moveTo({ position: pos, scale, animation: { duration: 500 } });
-    lastHighlightedNodes = matchingNodes.map(node => node.id);
   } else {
+    // Opcional: alerta (si la quieres, deja esto)
     alert('No nodes match the selected filters');
   }
 };
@@ -2170,45 +2181,67 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     });
 
-    document.getElementById('professionFilter').addEventListener('change', function () {
-  const selected = this.value.toLowerCase();
-
-  // Quitar anteriores
-  clearHighlights();
-
-  if (!selected) return;
-
-  const matchingNodes = [];
-
-      nodes.get().forEach(n => {
-        const profession = (n["profession"] || "").toLowerCase();
-        if (profession.includes(selected)) {
-          nodes.update({ id: n.id, color: { ...n.color, border: 'red' }, borderWidth: 4 });
-          matchingNodes.push(n.id);
-        }
-      });
-    
-      lastHighlightedNodes = matchingNodes;
+    document.getElementById('nationalityFilter').addEventListener('change', function () {
+      window.filterGraph();
     });
 
+    function renderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds }) {
+      const nodeInfo = document.getElementById('nodeInfo');
+      if (!nodeInfo) return;
+
+      const total = nodes.get().length;
+
+      // Si no hay filtros activos, vuelve al panel por defecto
+      if (!professionFilter && !nationalityFilter) {
+        if (typeof window.showDefaultNodeInfo === 'function') window.showDefaultNodeInfo();
+        window.__lastSelection = null;
+        return;
+      }
+
+      // Construye el título de filtro (pueden ser 1 o 2 filtros a la vez)
+      const parts = [];
+      if (professionFilter) parts.push(`<strong>Profession:</strong> ${professionFilter}`);
+      if (nationalityFilter) parts.push(`<strong>Nationality:</strong> ${nationalityFilter}`);
+
+      // Orden alfabético por label (fallback id)
+      const items = matchingNodeIds
+        .map(id => nodes.get(id))
+        .filter(Boolean)
+        .map(n => ({ id: n.id, name: (n.label || n.id) }))
+        .sort((a, b) => a.name.localeCompare(b.name));
+
+      const count = items.length;
+
+      let html = `
+        <div class="node-overview">
+          <div>${parts.join(' &nbsp;|&nbsp; ')}</div>
+          <div>${count} nodes out of ${total}</div>
+        </div>
+        <div class="section-heading">Results (A–Z)</div>
+        <div style="line-height:1.6;">
+      `;
+
+      if (count === 0) {
+        html += `<p style="color:#ccc;">No nodes match the selected filters.</p>`;
+      } else {
+        // Lista en forma de enlaces
+        html += `<ul style="margin-top:0.4rem;">`;
+        items.forEach(it => {
+          html += `<li><a href="#" style="color:#66ccff" onclick="focusNode('${it.id}'); return false;">${it.name}</a></li>`;
+        });
+        html += `</ul>`;
+      }
+
+      html += `</div>`;
+
+      nodeInfo.innerHTML = html;
+
+      // Guardar estado para cambios de idioma (si no lo usas, no molesta)
+      window.__lastSelection = { type: 'filter', professionFilter, nationalityFilter, ids: matchingNodeIds.slice() };
+    }
+
     document.getElementById('nationalityFilter').addEventListener('change', function () {
-      const selected = this.value.toLowerCase();
-    
-      clearHighlights();
-    
-      if (!selected) return;
-    
-      const matchingNodes = [];
-    
-      nodes.get().forEach(n => {
-        const nationality = (n["nationality"] || "").toLowerCase();
-        if (nationality.includes(selected)) {
-          nodes.update({ id: n.id, color: { ...n.color, border: 'red' }, borderWidth: 4 });
-          matchingNodes.push(n.id);
-        }
-      });
-    
-      lastHighlightedNodes = matchingNodes;
+      window.filterGraph();
     });
 
         window.toggleFullScreen = function () {
