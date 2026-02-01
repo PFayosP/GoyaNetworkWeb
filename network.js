@@ -872,6 +872,37 @@ function __gnRenderFilterPanel({ professionFilter, nationalityFilter, matchingNo
 // ==============================
 // REEMPLAZAR COMPLETO: window.filterGraph
 // ==============================
+function splitAndNormalizeList(v) {
+  if (!v) return [];
+  const raw = Array.isArray(v) ? v : String(v).split(/[;,]/); // soporta coma y punto y coma
+  return raw
+    .map(s => String(s).trim().toLowerCase())
+    .filter(Boolean);
+}
+
+// Convierte valores en ES (p.ej. "marchante de arte") a la clave canónica ("art dealer"),
+// usando los <option value="..."> del selector + los textos I18N.
+function buildCanonicalMap(selectId, lang) {
+  const map = Object.create(null);
+  const sel = document.getElementById(selectId);
+  if (!sel) return map;
+
+  const dict = (I18N && I18N[lang]) ? I18N[lang] : {};
+
+  [...sel.options].forEach(opt => {
+    if (!opt.value) return; // salta "All ..."
+    const canonical = opt.value.trim().toLowerCase(); // p.ej. "art dealer"
+    map[canonical] = canonical;
+
+    // texto visible del option (si está traducido por applyUIStrings)
+    if (opt.textContent) map[opt.textContent.trim().toLowerCase()] = canonical;
+
+    // traducción desde I18N (por si el dato viene en ES pero el option aún no)
+    if (dict[opt.value]) map[String(dict[opt.value]).trim().toLowerCase()] = canonical;
+  });
+
+  return map;
+}
 window.filterGraph = function() {
   const professionFilter = document.getElementById('professionFilter')?.value || '';
   const nationalityFilter = document.getElementById('nationalityFilter')?.value || '';
