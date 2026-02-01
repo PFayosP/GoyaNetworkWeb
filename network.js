@@ -643,27 +643,6 @@ window.renderFilterPanel = function ({ professionFilter, nationalityFilter, matc
     return;
   }
 
-  const parts = [];
-  if (professionFilter) parts.push(`<strong>Profession:</strong> ${professionFilter}`);
-  if (nationalityFilter) parts.push(`<strong>Nationality:</strong> ${nationalityFilter}`);
-
-  const items = (matchingNodeIds || [])
-    .map(id => nodes.get(id))
-    .filter(Boolean)
-    .map(n => ({ id: n.id, name: n.id }))
-    .sort((a, b) => a.name.localeCompare(b.name));
-
-  const count = items.length;
-
-  let html = `
-    <div class="node-overview">
-      <div>${parts.join(' &nbsp;|&nbsp; ')}</div>
-      <div>${count} nodes out of ${total}</div>
-    </div>
-    <div class="section-heading">Results (A–Z)</div>
-    <div style="line-height:1.6;">
-  `;
-
   if (count === 0) {
     html += `<p style="color:#ccc;">No nodes match the selected filters.</p>`;
   } else {
