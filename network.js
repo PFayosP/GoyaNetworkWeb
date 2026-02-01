@@ -598,38 +598,6 @@ function __clearFilterHighlights() {
   __filterHighlightedIds = [];
 }
 
-function __renderFilterPanel({ profession, nationality, matchingCount, totalCount, matchingNodes }) {
-  const nodeInfoEl = document.getElementById("nodeInfo");
-  if (!nodeInfoEl) return;
-
-  const parts = [];
-  if (nationality) parts.push(`Nationality: ${nationality}`);
-  if (profession) parts.push(`Profession: ${profession}`);
-  const title = parts.join(" · ");
-
-  const sorted = (matchingNodes || [])
-    .slice()
-    .sort((a, b) => (a.label || "").localeCompare((b.label || ""), undefined, { sensitivity: "base" }));
-
-  const listHtml = sorted.map(n => {
-    const safeLabel = __escapeHtml(n.label || n.id);
-    return `<li><a href="#" onclick="focusNode('${n.id}'); return false;">${safeLabel}</a></li>`;
-  }).join("");
-
-  nodeInfoEl.innerHTML = `
-    <div>
-      <h3 style="margin:0 0 0.5rem 0;">${__escapeHtml(title)}</h3>
-      <p style="margin:0 0 0.75rem 0;">
-        <strong>${matchingCount}</strong> nodes out of <strong>${totalCount}</strong>
-      </p>
-      <div class="section-heading">Results (A–Z)</div>
-      <ul style="margin:0; padding-left:1.2rem; columns:2; -webkit-columns:2; -moz-columns:2;">
-        ${listHtml || "<li>No results</li>"}
-      </ul>
-    </div>
-  `;
-}
-
 window.renderFilterPanel = function ({ professionFilter, nationalityFilter, matchingNodeIds }) {
   const nodeInfo = document.getElementById('nodeInfo');
   if (!nodeInfo) return;
@@ -830,15 +798,17 @@ function __gnRenderFilterPanel({ professionFilter, nationalityFilter, matchingNo
   if (professionFilter) parts.push(`<strong>Profession:</strong> ${professionFilter}`);
   if (nationalityFilter) parts.push(`<strong>Nationality:</strong> ${nationalityFilter}`);
 
-  const items = matchingNodeIds
+  const items = (matchingNodeIds || [])
     .map(id => nodes.get(id))
     .filter(Boolean)
-    .map(n => ({ id: n.id, name: (n.label || n.id) }))
+    // mostrar SIEMPRE el id (nombre completo)
+    .map(n => ({ id: n.id, name: n.id }))
+    // ordenar por apellido (pero sin mutilar el nombre mostrado)
     .sort((a, b) => {
       const ka = __gnSurnameKeyForSort(a.name);
       const kb = __gnSurnameKeyForSort(b.name);
-      if (ka !== kb) return ka.localeCompare(kb);
-      return a.name.localeCompare(b.name);
+      if (ka !== kb) return ka.localeCompare(kb, undefined, { sensitivity: 'base' });
+      return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
     });
 
   const count = items.length;
