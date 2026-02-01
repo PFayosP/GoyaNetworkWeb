@@ -612,59 +612,107 @@ function __renderFilterPanel({ profession, nationality, matchingCount, totalCoun
   `;
 }
 
-window.filterGraph = function () {
-  // Guard: dataset not ready yet
-  if (!window.nodes) return;
+window.renderFilterPanel = function ({ professionFilter, nationalityFilter, matchingNodeIds }) {
+  const nodeInfo = document.getElementById('nodeInfo');
+  if (!nodeInfo) return;
 
-  __ensureDefaultNodeInfoSnapshot();
+  const total = nodes.get().length;
 
-  const profession = document.getElementById("professionFilter")?.value || "";
-  const nationality = document.getElementById("nationalityFilter")?.value || "";
-
-  // Reset previous filter highlights
-  __clearFilterHighlights();
-
-  // If nothing selected: restore default panel and exit
-  if (!profession && !nationality) {
-    const nodeInfoEl = document.getElementById("nodeInfo");
-    if (nodeInfoEl && __filterDefaultNodeInfoHTML) nodeInfoEl.innerHTML = __filterDefaultNodeInfoHTML;
+  // Si no hay filtros activos, vuelve al panel por defecto
+  if (!professionFilter && !nationalityFilter) {
+    if (typeof window.showDefaultNodeInfo === 'function') window.showDefaultNodeInfo();
+    window.__lastSelection = null;
     return;
   }
 
-  const all = nodes.get();
-  const totalCount = all.length;
+  const parts = [];
+  if (professionFilter) parts.push(`<strong>Profession:</strong> ${professionFilter}`);
+  if (nationalityFilter) parts.push(`<strong>Nationality:</strong> ${nationalityFilter}`);
 
-  const matching = all.filter(n => {
-    const profOk = !profession || (n.profession && n.profession.includes(profession));
-    const natOk  = !nationality || (n.nationality && n.nationality.includes(nationality));
-    return profOk && natOk;
-  });
+  const items = (matchingNodeIds || [])
+    .map(id => nodes.get(id))
+    .filter(Boolean)
+    .map(n => ({ id: n.id, name: (n.label || n.id) }))
+    .sort((a, b) => a.name.localeCompare(b.name));
 
-  // Highlight matching nodes in red border
-  matching.forEach(n => {
-    nodes.update({
-      id: n.id,
-      color: { ...n.color, border: "red" },
-      borderWidth: 4
+  const count = items.length;
+
+  let html = `
+    <div class="node-overview">
+      <div>${parts.join(' &nbsp;|&nbsp; ')}</div>
+      <div>${count} nodes out of ${total}</div>
+    </div>
+    <div class="section-heading">Results (A–Z)</div>
+    <div style="line-height:1.6;">
+  `;
+
+  if (count === 0) {
+    html += `<p style="color:#ccc;">No nodes match the selected filters.</p>`;
+  } else {
+    html += `<ul style="margin-top:0.4rem;">`;
+    items.forEach(it => {
+      html += `<li><a href="#" style="color:#66ccff" onclick="focusNode('${it.id}'); return false;">${it.name}</a></li>`;
     });
+    html += `</ul>`;
+  }
+
+  html += `</div>`;
+  nodeInfo.innerHTML = html;
+
+  // Guardar estado
+  window.__lastSelection = { type: 'filter', professionFilter, nationalityFilter, ids: (matchingNodeIds || []).slice() };
+};
+
+window.filterGraph = function () {
+  const professionFilter = document.getElementById('professionFilter')?.value || '';
+  const nationalityFilter = document.getElementById('nationalityFilter')?.value || '';
+
+  // Espera a que exista la red/datasets
+  if (!window.VIS_NETWORK || !nodes) return;
+
+  // Limpia highlights previos usando el clear del scope interno (lo exponemos en el paso 2)
+  if (typeof window.__GN_clearHighlights === 'function') window.__GN_clearHighlights();
+
+  // Sin filtros: restaura panel por defecto y sal
+  if (!professionFilter && !nationalityFilter) {
+    if (typeof window.showDefaultNodeInfo === 'function') window.showDefaultNodeInfo();
+    window.__lastSelection = null;
+    return;
+  }
+
+  const profNeedle = professionFilter.trim().toLowerCase();
+  const natNeedle  = nationalityFilter.trim().toLowerCase();
+
+  const matching = nodes.get().filter(n => {
+    const profHay = String(n.profession || '').toLowerCase();
+    const natHay  = String(n.nationality || '').toLowerCase();
+
+    const professionMatch  = !profNeedle || profHay.includes(profNeedle);
+    const nationalityMatch = !natNeedle  || natHay.includes(natNeedle);
+
+    return professionMatch && nationalityMatch;
   });
 
-  __filterHighlightedIds = matching.map(n => n.id);
+  const ids = matching.map(n => n.id);
 
-  // Update right panel
-  __renderFilterPanel({
-    profession,
-    nationality,
-    matchingCount: matching.length,
-    totalCount,
-    matchingNodes: matching
+  // Guarda en el estado interno para que clearHighlights() pueda “des-rojar” luego
+  if (typeof window.__GN_setLastHighlightedNodes === 'function') {
+    window.__GN_setLastHighlightedNodes(ids);
+  }
+
+  // Pinta en rojo
+  ids.forEach(id => {
+    nodes.update({ id, color: { border: 'red' }, borderWidth: 4, opacity: 1 });
   });
 
-  // Optional: focus first match
-  if (matching.length && window.VIS_NETWORK) {
-    const id = matching[0].id;
+  // Panel derecho
+  window.renderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds: ids });
+
+  // (Opcional) mover la cámara al primer match
+  if (ids.length) {
+    const id0 = ids[0];
     const scale = window.VIS_NETWORK.getScale();
-    const pos = window.VIS_NETWORK.getPosition(id);
+    const pos = window.VIS_NETWORK.getPosition(id0);
     window.VIS_NETWORK.moveTo({ position: pos, scale, animation: { duration: 500 } });
   }
 };
@@ -1220,6 +1268,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       lastHighlightedNodes = [];
     }
 
+    // Exponer a window para que filterGraph() (global) pueda limpiar y registrar highlights
+      window.__GN_clearHighlights = clearHighlights;
+      window.__GN_setLastHighlightedNodes = function (ids) {
+        lastHighlightedNodes = Array.isArray(ids) ? ids : [];
+      };
 
     function clearHighlights() {
       // Batch update nodes
