@@ -663,58 +663,275 @@ window.renderFilterPanel = function ({ professionFilter, nationalityFilter, matc
   window.__lastSelection = { type: 'filter', professionFilter, nationalityFilter, ids: (matchingNodeIds || []).slice() };
 };
 
-window.filterGraph = function () {
-  const professionFilter = document.getElementById('professionFilter')?.value || '';
-  const nationalityFilter = document.getElementById('nationalityFilter')?.value || '';
+// ==============================
+// FILTER HELPERS (PEGAR ENCIMA de window.filterGraph)
+// ==============================
+function __gnFold(s) {
+  return String(s || '')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
 
-  // Espera a que exista la red/datasets
-  if (!window.VIS_NETWORK || !nodes) return;
+function __gnTokenizeList(val) {
+  if (!val) return [];
+  if (Array.isArray(val)) return val.flatMap(__gnTokenizeList);
 
-  // Limpia highlights previos usando el clear del scope interno (lo exponemos en el paso 2)
-  if (typeof window.__GN_clearHighlights === 'function') window.__GN_clearHighlights();
+  // Split por comas, punto y coma, slash, etc.
+  return String(val)
+    .split(/[,;\/|]/g)
+    .map(x => __gnFold(x))
+    .filter(Boolean);
+}
 
-  // Sin filtros: restaura panel por defecto y sal
+function __gnVariants(term) {
+  const t = __gnFold(term);
+  const out = new Set([t]);
+
+  // singular/plural simples
+  if (t.endsWith('s')) out.add(t.slice(0, -1));
+  else out.add(t + 's');
+
+  if (t.endsWith('es')) out.add(t.slice(0, -2));
+  else out.add(t + 'es');
+
+  return out;
+}
+
+// Variantes ES/EN para nacionalidades (para igualar conteos ES vs EN)
+const __GN_NAT_SYNONYMS = {
+  spanish: ['spanish', 'espanol', 'español', 'espanola', 'española'],
+  french:  ['french', 'frances', 'francés', 'francesa', 'française', 'francais', 'français'],
+  british: ['british', 'ingles', 'inglés', 'inglesa', 'ingleses', 'britanico', 'británico', 'britanica', 'británica'],
+  german:  ['german', 'aleman', 'alemán', 'alemana', 'deutsch'],
+  italian: ['italian', 'italiano', 'italiana'],
+  irish:   ['irish', 'irlandes', 'irlandés', 'irlandesa'],
+  swiss:   ['swiss', 'suizo', 'suiza'],
+  cuban:   ['cuban', 'cubano', 'cubana'],
+  polish:  ['polish', 'polaco', 'polaca']
+};
+
+// Variantes ES/EN para profesiones (mínimo: arregla “art dealer”)
+const __GN_PROF_SYNONYMS = {
+  'art dealer': ['art dealer', 'art dealers', 'marchante de arte', 'marchantes de arte', 'marchante', 'marchantes']
+};
+
+// Clave de orden por apellido (versión “global” equivalente a la lógica de Members list)
+function __gnSurnameKeyForSort(name) {
+  if (!name) return '';
+  let base = String(name)
+    .replace(/\(.*?\)/g, '')
+    .split(',')[0]
+    .replace(/[.]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const fold = __gnFold;
+  const tokens = base.split(' ').filter(Boolean);
+  if (!tokens.length) return '';
+
+  const tf = tokens.map(fold);
+
+  const titles = new Set([
+    'duchess','duke','count','countess','marquis','marchioness',
+    'queen','king','prince','princess','emperor','empress'
+  ]);
+  const roman = /^[IVXLCDM]+$/i;
+
+  // “Duchess of Abrantes” => Abrantes
+  if (tf.some(t => titles.has(t)) && tf.includes('of') && tokens.length >= 2) {
+    return fold(tokens[tokens.length - 1]);
+  }
+
+  // “X y Y” => toma el anterior a 'y'
+  const yIndex = tf.indexOf('y');
+  if (yIndex > 0 && yIndex < tf.length - 1) {
+    return fold(tokens[yIndex - 1]);
+  }
+
+  // Si empieza por inicial “A. Dutuit” => usar último token
+  // (ya quitamos puntos arriba, así que quedará “A Dutuit”)
+  if (tokens.length >= 2 && tokens[0].length === 1) {
+    return fold(tokens[tokens.length - 1]);
+  }
+
+  // por defecto: último token que no sea romano
+  for (let i = tokens.length - 1; i >= 0; i--) {
+    const t = fold(tokens[i]);
+    if (!roman.test(t)) return t;
+  }
+  return fold(tokens[tokens.length - 1]);
+}
+
+function __gnMatchesProfession(nodeProf, selectedProf) {
+  if (!selectedProf) return true;
+
+  const sel = __gnFold(selectedProf);
+  const candidates = new Set();
+
+  // 1) valor tal cual + variantes
+  for (const v of __gnVariants(sel)) candidates.add(v);
+
+  // 2) sinónimos explícitos
+  if (__GN_PROF_SYNONYMS[sel]) {
+    __GN_PROF_SYNONYMS[sel].forEach(s => __gnVariants(s).forEach(v => candidates.add(__gnFold(v))));
+  }
+
+  // 3) si existe función t() (i18n), añade traducción como posible match
+  try {
+    if (typeof t === 'function') {
+      const tr = __gnFold(t(selectedProf));
+      if (tr) __gnVariants(tr).forEach(v => candidates.add(v));
+      if (__GN_PROF_SYNONYMS[tr]) {
+        __GN_PROF_SYNONYMS[tr].forEach(s => __gnVariants(s).forEach(v => candidates.add(__gnFold(v))));
+      }
+    }
+  } catch (_) {}
+
+  const profTokens = __gnTokenizeList(nodeProf);
+  return profTokens.some(tok => candidates.has(tok));
+}
+
+function __gnMatchesNationality(nodeNat, selectedNat) {
+  if (!selectedNat) return true;
+
+  const sel = __gnFold(selectedNat);
+  const candidates = new Set([sel]);
+
+  // añade sinónimos ES/EN si existen
+  if (__GN_NAT_SYNONYMS[sel]) {
+    __GN_NAT_SYNONYMS[sel].forEach(s => candidates.add(__gnFold(s)));
+  }
+
+  // traducción i18n si existiera
+  try {
+    if (typeof t === 'function') {
+      const tr = __gnFold(t(selectedNat));
+      if (tr) candidates.add(tr);
+      if (__GN_NAT_SYNONYMS[tr]) {
+        __GN_NAT_SYNONYMS[tr].forEach(s => candidates.add(__gnFold(s)));
+      }
+    }
+  } catch (_) {}
+
+  const natTokens = __gnTokenizeList(nodeNat);
+  // normalmente nationality es un único valor; pero lo tratamos igual
+  return natTokens.some(tok => candidates.has(tok));
+}
+
+function __gnRenderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds, totalCount }) {
+  const nodeInfo = document.getElementById('nodeInfo');
+  if (!nodeInfo) return;
+
+  // Si no hay filtros activos: vuelve al panel por defecto
   if (!professionFilter && !nationalityFilter) {
     if (typeof window.showDefaultNodeInfo === 'function') window.showDefaultNodeInfo();
-    window.__lastSelection = null;
     return;
   }
 
-  const profNeedle = professionFilter.trim().toLowerCase();
-  const natNeedle  = nationalityFilter.trim().toLowerCase();
+  const parts = [];
+  if (professionFilter) parts.push(`<strong>Profession:</strong> ${professionFilter}`);
+  if (nationalityFilter) parts.push(`<strong>Nationality:</strong> ${nationalityFilter}`);
 
-  const matching = nodes.get().filter(n => {
-    const profHay = String(n.profession || '').toLowerCase();
-    const natHay  = String(n.nationality || '').toLowerCase();
+  const items = matchingNodeIds
+    .map(id => nodes.get(id))
+    .filter(Boolean)
+    .map(n => ({ id: n.id, name: (n.label || n.id) }))
+    .sort((a, b) => {
+      const ka = __gnSurnameKeyForSort(a.name);
+      const kb = __gnSurnameKeyForSort(b.name);
+      if (ka !== kb) return ka.localeCompare(kb);
+      return a.name.localeCompare(b.name);
+    });
 
-    const professionMatch  = !profNeedle || profHay.includes(profNeedle);
-    const nationalityMatch = !natNeedle  || natHay.includes(natNeedle);
+  const count = items.length;
 
-    return professionMatch && nationalityMatch;
-  });
+  let html = `
+    <div class="node-overview">
+      <div>${parts.join(' &nbsp;|&nbsp; ')}</div>
+      <div>${count} nodes out of ${totalCount}</div>
+    </div>
+    <div class="section-heading">Results (A–Z)</div>
+    <div style="line-height:1.6;">
+  `;
 
-  const ids = matching.map(n => n.id);
-
-  // Guarda en el estado interno para que clearHighlights() pueda “des-rojar” luego
-  if (typeof window.__GN_setLastHighlightedNodes === 'function') {
-    window.__GN_setLastHighlightedNodes(ids);
+  if (!count) {
+    html += `<p style="color:#ccc;">No nodes match the selected filters.</p>`;
+  } else {
+    html += `<ul style="margin-top:0.4rem;">`;
+    items.forEach(it => {
+      html += `<li><a href="#" style="color:#66ccff" onclick="focusNode('${it.id}'); return false;">${it.name}</a></li>`;
+    });
+    html += `</ul>`;
   }
 
-  // Pinta en rojo
-  ids.forEach(id => {
-    nodes.update({ id, color: { border: 'red' }, borderWidth: 4, opacity: 1 });
+  html += `</div>`;
+  nodeInfo.innerHTML = html;
+}
+
+// ==============================
+// REEMPLAZAR COMPLETO: window.filterGraph
+// ==============================
+window.filterGraph = function() {
+  const professionFilter = document.getElementById('professionFilter')?.value || '';
+  const nationalityFilter = document.getElementById('nationalityFilter')?.value || '';
+
+  // 1) limpiar highlights previos (usa tu clearHighlights si existe; si no, usa el “expuesto”)
+  if (typeof clearHighlights === 'function') clearHighlights();
+  else if (typeof window.__GN_clearHighlights === 'function') window.__GN_clearHighlights();
+
+  // 2) sin filtros: salir + restaurar panel
+  if (!professionFilter && !nationalityFilter) {
+    __gnRenderFilterPanel({ professionFilter:'', nationalityFilter:'', matchingNodeIds:[], totalCount: (window.__GN_DATA?.nodes?.length || nodes.get().length) });
+    return;
+  }
+
+  // 3) total “real” desde JSON (evita 207 vs 202)
+  const baseNodes = (window.__GN_DATA?.nodes && Array.isArray(window.__GN_DATA.nodes))
+    ? window.__GN_DATA.nodes
+    : nodes.get();
+
+  const totalCount = baseNodes.length;
+
+  // 4) matching robusto (case-insensitive + listas + ES/EN variantes)
+  const matchingIds = baseNodes
+    .filter(n => __gnMatchesProfession(n.profession, professionFilter) && __gnMatchesNationality(n.nationality, nationalityFilter))
+    .map(n => n.id);
+
+  // 5) si no hay resultados, renderiza panel (sin alert)
+  if (!matchingIds.length) {
+    __gnRenderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds: [], totalCount });
+    return;
+  }
+
+  // 6) resaltar en rojo (borde rojo + ancho)
+  matchingIds.forEach(id => {
+    const node = nodes.get(id);
+    if (!node) return;
+    nodes.update({
+      id,
+      color: { ...(node.color || {}), border: 'red' },
+      borderWidth: 4
+    });
   });
 
-  // Panel derecho
-  window.renderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds: ids });
-
-  // (Opcional) mover la cámara al primer match
-  if (ids.length) {
-    const id0 = ids[0];
+  // 7) foco en el primer match
+  const firstId = matchingIds[0];
+  try {
     const scale = window.VIS_NETWORK.getScale();
-    const pos = window.VIS_NETWORK.getPosition(id0);
+    const pos = window.VIS_NETWORK.getPosition(firstId);
     window.VIS_NETWORK.moveTo({ position: pos, scale, animation: { duration: 500 } });
+  } catch (_) {}
+
+  // 8) registra lastHighlightedNodes para tu sistema de “clearHighlights”
+  if (typeof window.__GN_setLastHighlightedNodes === 'function') {
+    window.__GN_setLastHighlightedNodes(matchingIds);
+  } else if (typeof lastHighlightedNodes !== 'undefined') {
+    lastHighlightedNodes = matchingIds;
   }
+
+  // 9) pinta panel derecho
+  __gnRenderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds: matchingIds, totalCount });
 };
 
 document.addEventListener('DOMContentLoaded', async function () {
