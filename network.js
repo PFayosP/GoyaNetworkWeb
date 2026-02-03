@@ -1132,7 +1132,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           mass: 0.01,
           clusterAnchor: true,
           physics: true,
-          color: { border: "rgba(0,0,0,0)", background: "rgba(0,0,0,0)" }
+          color: { border: "rgba(0,0,0,0)", background: "rgba(0,0,0,0)" },
+          hidden: true,
+          selectable: false
         });
 
         const L = typeof cfg.radius === "number" ? cfg.radius : 60;
@@ -1769,13 +1771,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     network.on("click", function (params) {
+      
       // Cerrar "New in" solo cuando se hace clic en nodos o edges
       if ((params.nodes.length > 0 || params.edges.length > 0) && typeof showNewInPanel === 'function') {
         showNewInPanel(false);
       }
 
+      // --- NODO ---
       if (params.nodes.length > 0) {
         const node = nodes.get(params.nodes[0]);
+
+        if (!node || node.clusterAnchor) return;
+        
         updateURL(node.id);  // This line should be here
 
         clearHighlights();
@@ -2093,7 +2100,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         // recordar esta selección para refrescar en cambios de idioma
         window.__lastSelection = { type: 'node', id: node.id };
 
-        
           } else if (params.edges.length > 0) {
 
             // === Smart selection: elegir el edge correcto entre varios candidatos ===
@@ -2130,6 +2136,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       const edge = edges.get(selectedEdgeId);
       if (!edge) return;
+      if (edge._isClusterEdge) return;
       const fromNode = nodes.get(edge.from);
       const toNode = nodes.get(edge.to);
       
