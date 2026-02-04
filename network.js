@@ -1782,7 +1782,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const node = nodes.get(params.nodes[0]);
 
         if (!node || node.clusterAnchor) return;
-        
+
         updateURL(node.id);  // This line should be here
 
         clearHighlights();
@@ -2001,7 +2001,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           let htmlText;
       
           // helper: traduce valores "cortos" tipo direct/acquaintances/etc.
-          const isProfessionField = (field.key === "works as" || field.key === "profession");
+          const isProfessionField = (field.key === "profession");
           function translateValue(v) {
             if (typeof v !== "string") return v;
 
