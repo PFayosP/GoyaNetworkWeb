@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-02-01",
+  "last_update": "2026-02-07",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -10163,8 +10163,8 @@
       "relationship type": "conocidos",
       "mentions": "en el Salón de 1870, Gautier elogia <i>Juan Prim. 8 octobre 1868</i> (1869, Orsay) y <i>Salomé</i> (1870, Metropolitan): '<i>Prim</i> c'est toute l'Espagne, <i>Salomé</i> c'est tout l'Orient'.",
       "link to Goya's work":[
-        "En 1870-71, Gautier quiere ver el conjunto de pruebas de trabajo de Burty de <i>Los desastres de la guerra</i>, probablemente para escribir su necrológica sobre Regnault. Asselineau a Burty: 'Gautier tiene la urgente necesidad de volver a examinar Los desastres de la guerra (la invasión de Goya), cuyas planchas de cobre fueron traídas por Dauzats' (Fayos Pérez 2024, p.54; Delesalle 1983, p.104)",
-        "2 de febrero de 1871, 'Henri Regnault', <i>Journal Officiel de la République Française</i>, 33, pp.65-66: Gautier cuenta un encuentro con Regnault en el que hablaron de Goya y vieron el conjunto de pruebas de trabajo de Burty de Los desastres de la guerra. El artículo de Gautier se centra en describir diferentes láminas de la serie. 'La conversación se entabló. On parla de l'Espagne et du Maroc. […] Après divers détours, la conversation en vint sur Goya. Nous avions précisément à la maison un superbe exemplaire des Estragos y desastres de la guerra, que nous avait prêté Ph. Burty, qui possède toutes les belles choses dans le meilleur état' (Fayos Pérez 2024, Apéndice III, p.371). El artículo de Gautier sobre Regnault se incluyó entonces en Tableaux de siège. París, 1870-1871, 1871"
+        "En 1870-71, Théophile Gautier quiere ver el ejemplar de pruebas de estado de Philippe Burty de <i>Los desastres de la guerra</i>, probablemente para escribir su necrológica sobre Henri Regnault. Charles Asselineau a Philippe Burty: 'Mi querido Burty, Gautier [Théophile Gautier] tiene la imperiosa necesidad de volver a ver los <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) [los <i>Desastres de la guerra</i>], cuyas planchas ['<i>cuivres'</i>] fueron traídas por Dauzats [Adrien Dauzats]. ¿De qué forma podría comunicárselas durante unas horas? Atentamente, Charles Asselineau. Hasta el jueves, Gautier reside en el número 12 de la rue de Beaune' [sept 1870-marzo 1871] (Fayos Pérez 2024, p.54; Delesalle 1983, p.104).",
+        "2 de febrero de 1871, 'Henri Regnault', <i>Journal Officiel de la République Française</i>, 33, pp.65-66: Gautier cuenta un encuentro con Regnault en el que hablaron de Goya y vieron el ejemplar de pruebas de estado de Burty de <i>Los desastres de la guerra</i>. El artículo de Gautier se centra en describir diferentes láminas de la serie. 'La conversación se entabló. On parla de l'Espagne et du Maroc. […] Après divers détours, la conversation en vint sur Goya. Nous avions précisément à la maison un superbe exemplaire des Estragos y desastres de la guerra, que nous avait prêté Ph. Burty [Philippe Burty], qui possède toutes les belles choses dans le meilleur état' (Fayos Pérez 2024, Apéndice III, p.371). El artículo de Gautier sobre Regnault se incluyó entonces en <i>Tableaux de siège. París, 1870-1871</i>, 1871."
         ],
       "bibliography": "Fayos Pérez 2024; Delesalle 1982"
     },
@@ -10250,31 +10250,31 @@
       "to": "Charles Asselineau",
       "connection_level": "direct",
       "relationship type": "conocidos; ¿amigos?",
-      "correspondence": "'Mi querido Burty, Gautier tiene la imperiosa necesidad de volver a ver las <i>Desgracias de la guerra</i> (<i>la invasión</i> de Goya), cuyos cobre fueron traídos por Dauzats. ¿De qué forma podría usted comunicárselas durante unas horas? Su Charles Asselineau. Hasta el jueves, Gautier reside en el 12 de la rue de Beaune' [septiembre de 1870-marzo de 1871]. Probablemente, Gautier quería ver Los desastres de la guerra para escribir su necrológica sobre Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle, 'Théophile et les <i>Desastres de la guerre</i> de Goya (A propos d'un billet de Charles Asselineau à Philippe Burty)', 1982"
+      "correspondence": "Sept 1870-marzo 1871, Charles Asselineau a Philippe Burty: 'Mi querido Burty, Gautier [Théophile Gautier] tiene la imperiosa necesidad de volver a ver los <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) [los <i>Desastres de la guerra</i>], cuyas planchas ['<i>cuivres'</i>] fueron traídas por Dauzats [Adrien Dauzats]. ¿De qué forma podría comunicárselas durante unas horas? Atentamente, Charles Asselineau. Hasta el jueves, Gautier reside en el número 12 de la rue de Beaune'. Probablemente, Théophile Gautier quería ver <i>Los desastres de la guerra</i> para escribir su necrológica sobre Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
+      "bibliography": "Fayos Pérez 2024; Delesalle 1982 & 1983"
     },
     {
       "from": "Adrien Dauzats",
       "to": "Charles Asselineau",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "¿conocidos?",
-      "link to Goya's work": "Asselineau a Burty: 'Mi querido Burty, Gautier tiene la imperiosa necesidad de volver a ver las <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya), cuyos grabados han sido traídos por Dauzats. ¿De qué forma podría comunicárselas durante unas horas? Suyo, Charles Asselineau. Hasta el jueves, Gautier, 12 rue de Beaune' [septiembre de 1870-marzo de 1871]. Probablemente, Gautier quería ver Los desastres de la guerra para escribir su necrológica sobre Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle, 'Théophile et les <i>Desastres de la guerre</i> de Goya (A propos d'un billet de Charles Asselineau à Philippe Burty), 1982'"
+      "link to Goya's work": "Sept 1870-marzo 1871, Charles Asselineau a Philippe Burty: 'Mi querido Burty, Gautier [Théophile Gautier] tiene la imperiosa necesidad de volver a ver los <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) [los <i>Desastres de la guerra</i>], cuyas planchas ['<i>cuivres'</i>] fueron traídas por Dauzats [Adrien Dauzats]. ¿De qué forma podría comunicárselas durante unas horas? Atentamente, Charles Asselineau. Hasta el jueves, Gautier reside en el número 12 de la rue de Beaune'. Probablemente, Gautier quería ver <i>Los desastres de la guerra</i> para escribir su necrológica sobre Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
+      "bibliography": "Fayos Pérez 2024; Delesalle 1982 & 1983"
     },
     {
       "from": "Théophile Gautier",
       "to": "Charles Asselineau",
       "connection_level": "direct",
       "relationship type": "conocidos; ¿amigos?",
-      "link to Goya's work": "Asselineau a Burty: 'Mon cher Burty, Gautier a l'impérieux besoin de revoir les <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) dont les cuivres ont été rapportés par Dauzats. ¿De qué forma podría comunicárselas durante unas horas? Suyo, Charles Asselineau. Hasta el jueves, Gautier, 12 rue de Beaune' [septiembre de 1870-marzo de 1871]. Probablemente, Gautier quería ver Los desastres de la guerra para escribir su necrológica sobre Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle, 'Théophile et les <i>Desastres de la guerre</i> de Goya (A propos d'un billet de Charles Asselineau à Philippe Burty)', 1982"
+      "link to Goya's work": "Sept 1870-marzo 1871, Charles Asselineau a Philippe Burty: 'Mi querido Burty, Gautier [Théophile Gautier] tiene la imperiosa necesidad de volver a ver los <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) [los <i>Desastres de la guerra</i>], cuyas planchas ['<i>cuivres'</i>] fueron traídas por Dauzats [Adrien Dauzats]. ¿De qué forma podría comunicárselas durante unas horas? Atentamente, Charles Asselineau. Hasta el jueves, Gautier reside en el número 12 de la rue de Beaune'. Probablemente, Théophile Gautier quería ver <i>Los desastres de la guerra</i> para escribir su necrológica sobre Henri Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
+      "bibliography": "Fayos Pérez 2024; Delesalle 1982 & 1983"
     },
     {
       "from": "Francisco de Goya",
       "to": "Charles Asselineau",
       "connection_level": "secondary",
-      "link to Goya's work": "Asselineau a Burty: 'Mi querido Burty, Gautier tiene la imperiosa necesidad de volver a ver las <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya), cuyos cobre fueron traídos por Dauzats. ¿De qué forma podría comunicárselas durante unas horas? Atentamente, Charles Asselineau. Hasta el jueves, Gautier reside en el número 12 de la rue de Beaune' [septiembre de 1870-marzo de 1871]. Probablemente, Gautier quería ver Los desastres de la guerra para escribir su necrológica sobre Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle, 'Théophile et les <i>Desastres de la guerre</i> de Goya (A propos d'un billet de Charles Asselineau à Philippe Burty)', 1982"
+      "link to Goya's work": "Sept 1870-marzo 1871, Charles Asselineau a Philippe Burty: 'Mi querido Burty, Gautier [Théophile Gautier] tiene la imperiosa necesidad de volver a ver los <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) [los <i>Desastres de la guerra</i>], cuyas planchas ['<i>cuivres'</i>] fueron traídas por Dauzats [Adrien Dauzats]. ¿De qué forma podría comunicárselas durante unas horas? Atentamente, Charles Asselineau. Hasta el jueves, Gautier reside en el número 12 de la rue de Beaune'. Probablemente, Théophile Gautier quería ver <i>Los desastres de la guerra</i> para escribir su necrológica sobre Henri Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
+      "bibliography": "Fayos Pérez 2024; Delesalle 1982 & 1983"
     },
     {
       "from": "Philippe Burty",
