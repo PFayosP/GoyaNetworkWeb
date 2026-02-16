@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-02-07",
+  "last_update": "2026-02-16",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -1187,6 +1187,7 @@
       "works as": "Pintor de Cámara (from 1800); art professor (RABASF)",
       "member of": "RABASF (académico de mérito) (from 1800)",
       "decorations/awards": "first prize of painting at the RABASF (1778)",
+      "art collection": "included Ribera's <i>Trinidad</i>, acquired by Fernando VII in 1820, the first artwork expressly purchased for the Prado Museum (founded in 1819)",
       "bibliography": "Albarrán 2018; Albarrán (upcoming)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Esteve.jpg",
       "image source": "self-portrait, c.1815, Museo Lázaro Galdiano"
@@ -7185,6 +7186,13 @@
       "connection_level": "direct",
       "relationship type": "patronage",
       "portraits": "1800, Chicago Art Institute"
+    },
+    {
+      "from": "Fernando VII",
+      "to": "Agustín Esteve",
+      "connection_level": "direct",
+      "relationship type": "patronage; business partners",
+      "artworks bought/sold": "Fernando VII acquired Ribera's <i>Trinidad</i> from Esteve in 1820; the first artwork to be expressly purchased for the Prado Museum (founded in 1819)"
     },
     {
       "from": "Manuel Godoy",
