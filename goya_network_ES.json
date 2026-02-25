@@ -531,6 +531,8 @@
       "label": "Ochoa",
       "life dates": "1815-1872",
       "nationality": "Spanish",
+      "born in": "Lezo (Guipúzcoa, País Vasco)",
+      "dies in": "Madrid",
       "profession": "writer, editor, politician",
       "in Paris": [
         "1828-1834 en la École d'Arts et d'Offices. Conoce a Leandro Fernández de Moratín y Manuel Godoy.",
@@ -555,6 +557,9 @@
       "married to": "Carlota Madrazo (1835)",
       "bibliography": "Raquel Sánchez, 'Busto de Eugenio Ochoa por Ponciano Ponzano (Pieza del trimestre julio-septiembre 2018)', Ministerio de Cultura; Romero Tobar 1997; Ochoa 1861",
       "member of": "Real Academia Española: miembro honorario, luego miembro titular en 1847 (para la letra 'H')",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/32527-eugenio-de-ochoa-y-montel"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Ochoa.jpg"
     },
     {
