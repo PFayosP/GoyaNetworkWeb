@@ -413,21 +413,23 @@
   }
     
   /* ===== Logos de autoridades (Wikidata, Getty, BnF, etc.) ===== */
-  .authority-badges {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;   /* coloca los logos al borde derecho */
+  .authority-badges{
+    display: grid;
+    grid-template-columns: auto auto;   /* 2 columnas */
+    grid-auto-rows: min-content;
+    gap: 10px 10px;                     /* fila / columna */
+    justify-content: end;               /* pega el bloque al borde derecho */
+    justify-items: end;                 /* cada logo alineado a la derecha */
+    align-content: start;               /* evita que se “hunda” hacia abajo */
     margin-left: auto;
-    margin-right: -10px;     /* ✅ los empuja un poco más hacia el borde */
+    margin-right: -10px;
   }
 
-  .authority-badges img {
+  .authority-badges img{
     display: block;
-    margin-bottom: 10px;
     opacity: 0.95;
     transition: transform 0.2s ease, opacity 0.2s ease;
     width: auto;
-    max-height: 44px;   /* o 36px si quieres forzar más */
     object-fit: contain;
   }
 
@@ -445,7 +447,7 @@
   }
 
   .authority-badges img[src*="RAH"] {
-    max-height: 28px;
+    height: 34px;  /* prueba 34–38 */
   }
 
   .authority-badges img:hover {
