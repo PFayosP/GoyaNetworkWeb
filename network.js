@@ -1797,7 +1797,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           const ICON_SRC = {
             'wikidata':     'images/Wikidata_logo.svg',
             'getty ulan':   'images/Getty_logo.jpg',
-            'bnf':          'images/BnF_logo.jpg'
+            'bnf':          'images/BnF_logo.jpg',
+            'rah':          'images/RAH_logo.jpg'
           };
 
           // Merge: objeto authorities + posibles campos sueltos
@@ -1805,6 +1806,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           if (node['wikidata'])     authorities['wikidata']   = node['wikidata'];
           if (node['getty ulan'])   authorities['getty ulan'] = node['getty ulan'];
           if (node['bnf'])          authorities['bnf']        = node['bnf'];
+          if (node['rah'])          authorities['rah']        = node['rah'];
 
           const badges = Object.entries(authorities)
             .filter(([_, url]) => url)
@@ -1814,7 +1816,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               const title =
                 (k === 'getty ulan' || k === 'ulan' || k === 'getty') ? 'Getty (ULAN)' :
                 (k === 'bnf' ? 'BnF' :
-                (k === 'wikidata' ? 'Wikidata' : key));
+                (k === 'wikidata' ? 'Wikidata' :
+                (k === 'rah' ? 'RAH' : key)));
               // 👇 Importante: SIN height inline (que pisaba el CSS)
               return `
                 <a href="${url}" target="_blank" rel="noopener noreferrer" title="${title}" style="display:block;">
@@ -1945,6 +1948,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           { type: "field", key: "wikidata", label: "Wikidata" },
           { type: "field", key: "getty ulan", label: "Getty ULAN" },
           { type: "field", key: "bnf", label: "BnF" },
+          { type: "field", key: "rah", label: "RAH" },
           { type: "field", key: "added", label: "Added" },
           { type: "field", key: "last_modified", label: "Last modified" },
         ];
@@ -1967,7 +1971,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
         } else if (field.type === "field" && node[field.key]) {
             // 🔗 Caso especial: Wikidata / Getty ULAN / BnF
-            if (field.key === 'wikidata' || field.key === 'getty ulan' || field.key === 'bnf') {
+            if (field.key === 'wikidata' || field.key === 'getty ulan' || field.key === 'bnf' || field.key === 'rah') {
               // Si ya mostramos la barra de logos arriba, NO repetir aquí
               if (window.__hasAuthoritiesBar) {
                 return; // evita duplicado
@@ -1983,9 +1987,12 @@ document.addEventListener('DOMContentLoaded', async function () {
               } else if (field.key === 'getty ulan') {
                 iconClass = 'fa-solid fa-landmark';
                 linkLabel = 'Getty (ULAN)';
-              } else { // 'bnf'
-                iconClass = 'fa-solid fa-book'; // o 'fa-solid fa-landmark'
+              } else if (field.key === 'bnf') {
+                iconClass = 'fa-solid fa-book';
                 linkLabel = 'BnF';
+              } else { // 'rah'
+                iconClass = 'fa-solid fa-building-columns';
+                linkLabel = 'RAH';
               }
 
               html += `<p style="margin-top:0.3rem;">
