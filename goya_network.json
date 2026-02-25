@@ -45,7 +45,8 @@
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q5432",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500118936",
-        "bnf": "https://data.bnf.fr/fr/ark:/12148/cb11905615r"
+        "bnf": "https://data.bnf.fr/fr/ark:/12148/cb11905615r",
+        "rah": "https://historia-hispanica.rah.es/biografias/20790-francisco-de-goya-y-lucientes"
       },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Goya.jpg",
       "image source": "New York, Metropolitan Museum, Self-portrait, drawing, 35.103.1"
