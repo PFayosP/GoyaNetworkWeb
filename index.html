@@ -426,19 +426,26 @@
     margin-bottom: 10px;
     opacity: 0.95;
     transition: transform 0.2s ease, opacity 0.2s ease;
+    width: auto;
+    max-height: 44px;   /* o 36px si quieres forzar más */
+    object-fit: contain;
   }
 
   /* Tamaños individuales (ajustados según tu comentario) */
-  .authority-badges img[alt*="Wikidata"] {
+  .authority-badges img[src*="Wikidata"] {
     height: 44px;  /* antes 40 */
   }
 
-  .authority-badges img[alt*="Getty"] {
+  .authority-badges img[src*="Getty"] {
     height: 36px;  /* antes 32 */
   }
 
-  .authority-badges img[alt*="BnF"] {
+  .authority-badges img[src*="BnF"] {
     height: 28px;  /* antes 34 */
+  }
+
+  .authority-badges img[src*="RAH"] {
+    max-height: 28px;
   }
 
   .authority-badges img:hover {
