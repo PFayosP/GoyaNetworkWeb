@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-02-16",
+  "last_update": "2026-02-25",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -129,6 +129,7 @@
     {
       "id": "Francisco Bayeu",
       "label": "F. Bayeu",
+      "full name": "Francisco Bayeu y Subías",
       "life dates": "1734-1795",
       "profession": "painter",
       "nationality": "Spanish",
@@ -139,6 +140,9 @@
       "member of": "RABASF",
       "studies in": "Escuelas Pías de Zaragoza; RABASF",
       "portrayed by": "Francisco de Goya (1795)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/6047-francisco-bayeu-y-subias"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Francisco_Bayeu.jpg",
       "image source": "Retrato de Goya, 1795, Prado"
     },
@@ -169,6 +173,9 @@
       "portrayed by": "Autorretratos: 1740 (dibujo); 1774, Walker Art Gallery, Liverpool; 1744, óleo, Gemäldegalerie Alte Meister, Dresde; c.1775, Uffizi; c.1775, Hermitage (copia del retrato de los Uffizi)",
       "decorations/awards": "Orden de la Espuela de Oro",
       "websites": "[Prado](https://www.museodelprado.es/coleccion/artista/mengs-antonio-rafael/bcd5ee4e-bcc3-472b-a832-a4800279e0e0)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/30259-antonio-rafael-mengs"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Mengs.jpg",
       "image source": "autorretrato, c.1775, Hermitage"
     },
@@ -305,6 +312,9 @@
       "bibliography": "Gilarranz Ibáñez 2020; Martínez Plaza 2017; G. Navarro 2007 (en <i>El siglo XIX en el Prado</i>); Martí 2007; Torres González, 'La larga sombra de los Madrazo', en López y Martí (eds.), El mundo de los Madrazo, 2007; Javier Barón, El legado Ramón de Errazu: Fortuny, Madrazo y Rico, Prado, 2005; Romero Tobar 1997; González López 1994; Díez 1994; Harris 1964",
       "websites": "[sitio web del Prado](https://www.museodelprado.es/coleccion/artista/madrazo-y-kuntz-federico-de/9bdb1678-fdd4-47bb-92e3-6833fadc8a50), Carlos G. Navarro; [Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7)",
       "conferences/seminars": "Javier Barón, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i>, 2015, Prado, [YouTube](https://www.youtube.com/watch?v=JY0qD-vB3hw)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/27497-federico-de-madrazo-y-kuntz"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Federico_Madrazo.jpg",
       "image source": "retrato de Raimundo de Madrazo, 1875, Museo de Bellas Artes de Bilbao"
     },
@@ -355,7 +365,8 @@
       "bibliography": "Fayos Pérez 2024 y 2020; Lanzarote Guiral 2016; Harris 1964; Viñaza 1887",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q3574278",
-        "getty ulan": "http://vocab.getty.edu/page/ulan/500031098"
+        "getty ulan": "http://vocab.getty.edu/page/ulan/500031098",
+        "rah": "https://historia-hispanica.rah.es/biografias/9979-valentin-carderera-y-solano"
       },
       "websites": "[Wikiwand](https://www.wikiwand.com/es/articles/Valent%C3%ADn_Carderera)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Carderera.jpg",
@@ -388,6 +399,9 @@
       "podcasts": "<i>Arte compacto</i>, 27 de abril de 2025, ['José de Madrazo'](https://creators.spotify.com/pod/profile/arte-compacto/episodes/85--Jos-de-Madrazo--apoltico-y-padrazo--con-Carlos-G--Navarro-e3227l8), ft. Carlos G. Navarro",
       "bibliography": "Sánchez 2024; González Navarro 2023; Guinard 1967-A, p.85",
       "websites": "[Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); [<i>Colección y biblioteca Madrazo</i>](https://www.museodelprado.es/aprende/enciclopedia/voz/coleccion-y-biblioteca-madrazo/7aad2cf0-13c2-404c-ba9f-ba045450200a) en el Prado",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/27492-jose-de-madrazo-y-agudo"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Jose_Madrazo.jpg"
     },
     {
@@ -1109,7 +1123,10 @@
       "married to": "Manuela Camas y de las Heras",
       "friends": "Gaspar Melchor de Jovellanos; Leandro Fernández de Moratín; Francisco de Goya",
       "studies in": "Gijón (latín); Universidad de Alcalá de Henares (Filosofía); Universidad Complutense; Academia de Diseño de Sevilla",
-      "websites": "[BNE, Ceán Bermúdez](https://ceanbermudez.bne.es/); [RAH](https://historia-hispanica.rah.es/biografias/11546-juan-agustin-cean-bermudez); [Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/cean-bermudez-juan-agustin/b86ae57b-7f1b-4d3e-83b3-37dde97db5bc)",
+      "websites": "[BNE, Ceán Bermúdez](https://ceanbermudez.bne.es/); [Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/cean-bermudez-juan-agustin/b86ae57b-7f1b-4d3e-83b3-37dde97db5bc)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/11546-juan-agustin-cean-bermudez"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Cean_Bermudez.jpg",
       "image source": "retrato atribuido a Goya, c.1783"
     },
@@ -1240,6 +1257,9 @@
         ],
       "portrayed by": "Francisco de Goya, 1799, RABASF; Luis Paret y Alcázar, Museo de Navarra; Francisco de Goya, 1824, Museo de Bellas Artes de Bilbao",
       "curiosities": "sus restos se encuentran en el mausoleo colectivo junto a Goya, Meléndez Valdés y Donoso Cortés en el cementerio de San Isidro (Madrid).",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/16740-leandro-fernandez-de-moratin"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Moratin.jpg",
       "image source": "Retrato de Goya, 1799"
     },
@@ -1282,6 +1302,9 @@
       "retratados por": "Francisco Folch de Cardona, 1788, RABASF; Francisco Bayeu, 1792, RABASF; Juan Adán, 1794, RABASF (escultura: busto); Francisco de Goya, 1794, colección privada (retrato ecuestre); Agustín Esteve, 1800, Instituto de Arte de Chicago; Francisco de Goya, 1801, RABASF; Agustín Esteve, c.1806, retrato como fundador del Instituto Pestalozzi, Museo de Bellas Artes de Valencia; Antonio Carnicero, c.1807-1808, RABASF; José de Madrazo, c.1816, RABASF",
       "bibliography": "José Belmonte Díaz y Pilar Leseduarte, Godoy: historia documentada de un expolio, 2004; Emilio La Parra López, 'Godoy en el París de Louis Philippe I. La atracción de una imagen de prosperidad', <i>La imagen de Francia en España (1808-1850)</i>, pp.79-86; Memorias de don Manuel Godoy, Príncipe de la Paz, ó sea cuenta dada de su vida política, para servir a la historia del reinado del señor don Carlos IV de Borbón, 6 volúmenes, 1839-1841",
       "websites": "[Wikipedia](https://es.wikipedia.org/wiki/Manuel_Godoy)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/20230-manuel-de-godoy-y-alvarez-de-faria"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Godoy.jpg",
       "image source": "Retrato de Goya, 1801, RABASF"
     },
@@ -1334,6 +1357,9 @@
       "aristocratic titles": "XV Countess of Chinchón; I marquesa de Boadilla del Monte (1799). Grande de España (1823)",
       "bibliography": "Calvo Ruata 2020; Gerard Powell 2014",
       "portrayed by": "Goya, 1783, Washington, National Gallery of Art; Goya, 1784, en Retrato del Infante Don Luis (Fundación Magnani-Rocca, Italia); Goya, 1800, Prado",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/8197-maria-teresa-de-borbon-y-vallabriga"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Chinchon.jpg",
       "image source": "Retrato de Goya, 1800, Prado"
     },
@@ -1440,6 +1466,9 @@
       "works as": "Director de la Real Fábrica de Porcelana del Buen Retiro (hasta su destrucción en 1812 hasta 1820) y de la Real Fábrica de La Moncloa (desde 1817); también director de la Real Fábrica de Paños de Guadalajara y de la Real Fábrica de Cristales de La Granja (desde 1822)", 
       "portrayed by": "Goya, c.1803-04, Washington, National Gallery of Art. Según Sazatornil y Jiméno, Goya realizó este retrato para agradecer a Sureda su ayuda con la técnica de impresión de los Caprichos (2014, pp.108-112)",
       "bibliography": "Sazatornil y Jiméno 2014; Gassier y Wilson Bareau 1971",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/48883-bartolome-sureda-y-miserol"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Sureda_Bartolome.jpg",
       "image source": "Retrato de Goya, c.1803-04, Washington"
     },
@@ -1814,7 +1843,8 @@
       "portrayed by": "Antonio María Esquivel, óleo, 1842, Prado",
       "bibliography": "Lanzarote Guiral 2016",
       "authorities": {
-        "wikidata": "https://www.wikidata.org/wiki/Q209077"
+        "wikidata": "https://www.wikidata.org/wiki/Q209077",
+        "rah": "https://historia-hispanica.rah.es/biografias/14588-jose-de-espronceda-y-delgado"
       },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Espronceda.jpg",
       "image source": "Esquivel 1842",
@@ -1880,7 +1910,8 @@
       "bibliography": "A. Pérez (ed.), <i>Fígaro. Colección de artículos dramáticos, literarios, políticos y de costumbres</i>, RAE, 2016; Álvarez Barrientos. J., Ferri Coll, J. M. y Rubio Cremades, E. (eds.), <i>Larra en el mundo. La misión de un escritor moderno</i>, Univ. Alicante, 2011; <i>Larra: Fígaro de vuelta, 1809-2009</i>, catálogo y actas del congreso (2 vols.), BNE, 2009; Torres González 2009; M. J. de Larra, <i>Larra. Biografía de un hombre desesperado</i>, 2009; Luxenberg 2008; Romero Tobar 1997; J. L. Varela, <i>Larra y España</i>, 1983; S. Kirkpatrick, <i>Larra, el laberinto inextricable de un romántico liberal</i>, 1977; Guinard 1967-A; González-Blanco, Historia de la novela en España: desde el Romanticismo a nuestros días, 1909; Mesonero Romanos, Memorias de un setentón, natural y vecino de Madrid, 1880",
       "conferences/seminars": "Madrid BNE 2009, <i>Fígaro de vuelta</i>; Fundación Juan March, Madrid, 2005, <i>Originalidad literaria de Mariano José de Larra</i>, Domingo Ródenas de Moya, [enlace](https://www.march.es/es/madrid/conferencia/mariano-jose-larra-su-vida-su-obra-su-tiempo-ii-originalidad-literaria-mariano)",
       "authorities": {
-        "wikidata": "https://www.wikidata.org/wiki/Q298773"
+        "wikidata": "https://www.wikidata.org/wiki/Q298773",
+        "rah": "https://historia-hispanica.rah.es/biografias/24197-mariano-jose-de-larra-y-sanchez-de-castro"
       },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Larra.jpg",
       "image source": "Gutiérrez de la Vega, c.1835",
@@ -2726,6 +2757,9 @@
       "students": "Justo María de Velasco; José Ribelles",
       "children": "Bernardo López Piquer; Luis López Piquer",
       "curiosities": "su rostro apareció en el billete de 25 pesetas en 1931 (Segunda República Española)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/26432-vicente-lopez-portana"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Lopez.jpg"
     },
     {
@@ -2837,8 +2871,13 @@
       "label": "S. Martínez",
       "life dates": "1747-1800",
       "nationality": "Spanish",
+      "born in": "Treguajantes (La Rioja)",
+      "dies in": "Madrid",
       "profession": "businessman, politician, collector",
       "portrayed by": "Francisco de Goya, 1792, Nueva York, Museo Metropolitano",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/29551-sebastian-martinez-perez"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Sebastian_Martinez.jpg",
       "image source": "Retrato de Goya, 1792"
     },
@@ -3057,6 +3096,7 @@
     {
       "id": "Jenaro Pérez Villaamil",
       "full name": "Jenaro Pérez de Villaamil y d'Huguet",
+      "also known as": "Jenaro Pérez de Villaamil Dughet",
       "label": "Pérez Villaamil",
       "life dates": "1807-1854",
       "nationality": "Spanish",
@@ -3083,6 +3123,9 @@
       "bibliography": "Hopkins 2021; E. Arias Anglés, <i>El paisajista romántico Jenaro Pérez Villaamil</i>, 1986, CSIC; Xavier de Salas Bosch, 'Varias notas sobre Jenaro Pérez Villaamil', <i>Archivo Español de Arte</i>, vol.31, no.124, pp.273-98; Diario de Pérez Villaamil, publicado por Méndez Casal en 1921 y por Arias Anglés en 1986",
       "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/perez-villaamil-y-duguet-genaro/630f8e4b-2e3e-49a0-b54b-fa79a8948b6f)",
       "decorations/awards": "Caballero de la Orden de Isabel la Católica (1838); Encomienda de la Orden de Isabel la Católica (1840); Caballero de la Orden Nacional de la Legión de Honor (1844); Cruz de la Orden de Carlos III (1844); Caballero de La Orden de Leopoldo (1845)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/36717-jenaro-perez-villaamil-dughet"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Perez_Villaamil.jpg",
       "image source": "Retrato de Ghémar, 1850",
       "added": "2025-08-06",
@@ -3936,6 +3979,9 @@
       "married to": "Frances Revell (1828)",
       "portrayed by": "Valentín Carderera, 1841, óleo (Museo de Zaragoza): identificado por Lanzarote Guiral (2016, p.XLI); anónimo, 1897, grabado en <i>La Ilustración Española y Americana</i>",
       "bibliography": "Lanzarote Guiral 2016; Álvarez Millán y Heide (eds.), <i>Pascual de Gallangos: a nineteenth-century Spanish Arabist</i>, Edimburgo, 2008; Álvarez Ramos y Álvarez Millán, Los viajes literarios de Pascual de Gayangos (1850-1857) y el origen de la archivística española moderna, CSIC, 2007; Calderón Quijano, 'Correspondencia de don Pascual de Gayangos y de su hija Emilia G. de Riaño en el British Museum', <i>Boletín de la Real Academia de la Historia</i>, 182 (2), 1985, pp.217-308; Juan Bautista Vilar Ramírez, 'El arabista Pascual de Gayangos en los orígenes de la ciencia numismática española: su viaje a París y Londres en 1835', Sharq-Al-Andalus, 1, 1984, pp.161-165; Gardiner, 'Prescott's Most Indispensable Aide: Pascual de Gayangos', <i>The Hispanic American Historical Review</i>, 39 (1), 1959, pp.81-115",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/19103-pascual-de-gayangos-y-arce"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Gayangos.jpg",
       "image source": "Retrato de Carderera, 1841",
       "added": "12-10-2025"
@@ -3961,7 +4007,8 @@
       "portrayed by": "John Hoppner, 1795 (óleo); Robert Home, 1804 (óleo); Francisco de Goya, 1812, retrato ecuestre, Apsley House (óleo); Francisco de Goya, c.1812, dibujo preparatorio (British Museum) y óleo (National Gallery de Londres); William Say (grabado) según Thomas Phillips, 1814; Thomas Lawrence, 1815-16 (óleo); Jan Willem Pieneman, <i>La batalla de Waterloo</i>, 1824; John Jackson, 1830-31 (óleo)",
       "curiosities": "Beethoven compuso <i>La victoria de Wellington</i> o <i>La batalla de Vitoria</i> (Opus 91)",
       "authorities": {
-        "wikidata": "https://www.wikidata.org/wiki/Q131691"
+        "wikidata": "https://www.wikidata.org/wiki/Q131691",
+        "rah": "https://historia-hispanica.rah.es/biografias/46026-arthur-wellesley"
       },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Wellington.jpg",
       "image source": "Retrato de Goya, 1812"
@@ -3985,6 +4032,9 @@
       "married to": "María Josefa de Borja Pimentel y Téllez-Girón, XII Countess-Duchess of Benavente and Duchess of Osuna",
       "children": "9, de los cuales sobrevivieron 5. Josefa Manuela Téllez-Girón, marquesa de Camarasa; Joaquina Téllez-Girón y Pimentel, condesa de Osila, X Marchioness of Santa Cruz (retratada por Goya); Francisco de Borja Téllez-Girón y Pimentel, X Duke of Osuna (retratado por Goya); Pedro de Alcántara Téllez-Girón y Pimentel, príncipe de Anglona y marqués de Javalquinto; Manuela Isidra Téllez-Girón y Pimentel, condesa de Coginas, VIII Duchess of Abrantes (retratada por Goya)",
       "parents": "Pedro Zoilo Téllez-Girón y Pérez de Guzmán y María Vicenta Pacheco y Téllez-Girón",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/34828-pedro-de-alcantara-tellez-giron-y-pacheco"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Osuna_IX.jpg",
       "image source": "Retrato de Goya, c.1798, Colección Frick"
     },
@@ -3992,7 +4042,7 @@
       "id": "XII Countess-Duchess of Benavente and Duchess of Osuna",
       "display name es": "XII condesa de Benavente y duquesa de Osuna",
       "label": "Benavente",
-      "full name": "María Josefa de Borja Pimentel y Téllez-Girón",
+      "full name": "María Josefa Alonso Pimentel y Borja (y Téllez-Girón)",
       "life dates": "1752-1834", 
       "nationality": "Spanish",
       "profession": "socialite, salonnière, art patron, aristocrat",
@@ -4005,9 +4055,12 @@
         ],
       "children": "9, de los cuales sobrevivieron 5. Josefa Manuela Téllez-Girón, marquesa de Camarasa; Joaquina Téllez-Girón y Pimentel, condesa de Osila, X Marchioness of Santa Cruz (retratada por Goya); Francisco de Borja Téllez-Girón y Pimentel, X Duke of Osuna (retratado por Goya); Pedro de Alcántara Téllez-Girón y Pimentel, príncipe de Anglona y marqués de Javalquinto; Manuela Isidra Téllez-Girón y Pimentel, condesa de Coginas, VIII Duchess of Abrantes (retratada por Goya)",
       "parents": "Francisco Alfonso-Pimentel y Borja y María Faustina Téllez-Girón y Pérez de Guzmán",
-      "member of": "Junta de Damas de Honor y Mérito (1787: presidenta); Real Sociedad Económica Matritense (una de las dos primeras mujeres admitidas)",
+      "member of": "Junta de Damas de Honor y Mérito (1787: presidenta); Real Sociedad Económica Matritense de Amigos del País (una de las dos primeras mujeres admitidas)",
       "portrayed by": "Goya, c.1785, Fundación Bartolomé March (Palma de Mallorca); Goya, 1788, retrato familiar, Prado",
       "bibliography": "Pérez Cantó y Mó Romero 2007",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/2249-maria-josefa-alonso-pimentel-y-borja"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Benavente.jpg",
       "image source": "Retrato de Goya, c.1785, Fundación Bartolomé March"
     },
@@ -4047,6 +4100,9 @@
       "portrayed by": "Francisco de Goya, Los duques de Osuna y sus hijos, 1787-88 (cuando tenía 3-4 años), Prado [P000739](https://www.museodelprado.es/coleccion/obra-de-arte/los-duques-de-osuna-y-sus-hijos/09085b96-441d-40e3-9092-9230bbe1fa99?searchMeta=los%20duques%20de%20osuna), y <i>La marquesa de Santa Cruz</i>, 1805 (cuando tenía 20 años), Prado [P007070](https://www.museodelprado.es/coleccion/obra-de-arte/la-marquesa-de-santa-cruz/e1d2cbc6-8549-4ade-9383-2dde4ee6dfeb); Guillermo Ducker, miniatura, 1813, Prado",
       "websites": "Prado, explicación de [Manuela Mena](https://www.youtube.com/watch?v=KbowsnUBey0); [Real Academia de la Historia](https://historia-hispanica.rah.es/biografias/43544-joaquina-tellez-giron-y-pimentel); [Wikipedia](https://es.wikipedia.org/wiki/Joaquina_T%C3%A9llez-Gir%C3%B3n_y_Pimentel)",
       "bibliography": "Joaquín Álvarez Barrientos, <i>Espacios de la comunicación literaria</i>, CSIC, 2002",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/43544-joaquina-tellez-giron-y-pimentel"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Santa_Cruz_X.jpg",
       "image source": "Retrato de Goya, 1805, Prado",
       "added": "2025-08-02"
@@ -4115,6 +4171,9 @@
       ],
       "websites": "[Perfil del Prado por Javier Portús](https://www.museodelprado.es/aprende/enciclopedia/voz/madrazo-pedro-de/0931bfd5-a04f-4b4c-b435-3dec628fa9bc); [RAH](https://historia-hispanica.rah.es/biografias/27500-pedro-de-madrazo-y-kuntz); [Colección Madrazo](https://ceres.mcu.es/pages/ResultSearch?txtSimpleSearch=Pedro%20de%20Madrazo&simpleSearch=0&hipertextSearch=1&search=simpleSelection&MuseumsSearch=CSGMM%7C&MuseumsRolSearch=1&listaMuseos=[Colecci%F3n%20Madrazo.%20Comunidad%20de%20Madrid]); [Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7)",
       "archives": "Bibliothèque historique de la Ville de Paris",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/27500-pedro-de-madrazo-y-kuntz"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Pedro_Madrazo.jpg",
       "image source": "Retrato de Federico de Madrazo, 1842, Hispanic Society"
     },
@@ -4134,6 +4193,9 @@
       "parents": "Felipe V e Isabel Farnesio",
       "married to": "María Amalia de Sajonia",
       "children": "de 13, 7 alcanzaron la edad adulta: María Josefa Carmela, María Luisa, Felipe Antonio, Carlos IV, Fernando I, Gabriel, Antonio Pascual, Francisco Javier",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/9670-carlos-iii"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Carlos_III.jpg",
       "image source": "Retrato de Goya, 1786-88, Prado"
     },
@@ -4176,6 +4238,9 @@
       "in France": "desde 1808, exiliado en Compiègne, cerca de París; luego en Marsella, hasta 1812", 
       "en Italia": "Palacio Borghese en Roma, desde 1812. Tras la caída de Napoleón en 1814, traslado al Palacio Barberini",
       "children": "de 24 embarazos, nacieron 14 hijos, de los cuales sobrevivieron 7, entre ellos Carlota Joaquina, María Amalia, María Luisa Josefina, Carlos María Isidro (fundador del carlismo), María Isabel, Francisco de Paula Antonio (duque de Cádiz) y Fernando (futuro Fernando VII)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/28677-maria-luisa-de-parma"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/MLuisa_Parma.jpg",
       "image source": "Retrato de Goya (ecuestre), 1799, Prado"
     },
@@ -4199,6 +4264,9 @@
         "Goya, en un campamento militar, después de 1815, Prado P000724",
         "Vicente López, 1828, Banco de España"
         ],
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/16477-fernando-vii"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Fernando_VII.jpg",
       "image source": "Retrato de Goya, 1814, Prado"
     },
@@ -4217,6 +4285,9 @@
       "portrayed by": "Carlos Luis de Ribera, La reina niña Isabel II de España, 1835, Museo del Romanticismo; Antonio María Esquivel, 1843, Museo de Bellas Artes de Sevilla; José Castelaro y Perea, 1844, Isabel II jurando la Constitución de 1837; Federico de Madrazo, 1844, RABASF; Jean Laurent, c.1860, fotografía; L. Mouton, c.1868, fotografía; Francisco Ortego, '¡A Francia!', caricatura en <i>Gil Blas</i>, 4 de octubre de 1868; anónimo, c.1870, fotografía (en el exilio en París); 1875, fotografía (la reina Isabel II de España con sus tres hijas menores: Pilar, Paz y Eulalia); retrato de Isabel II y el rey consorte, fotografía, antes de 1902",
       "curiosities": "apareció un álbum anónimo de 107 dibujos, Los Borbones en pelota, que mostraba imágenes sexualmente explícitas de la reina con diferentes hombres. Los posibles autores son los hermanos Gustavo Adolfo y Valeriano Bécquer, o el draughtsman Francisco Ortego. Se encontraba en paradero desconocido hasta 1986 y ahora se conserva en la BNE. No se publicó oficialmente hasta 1991.",
       "bibliography": "Fayos Pérez 2024; Tinterow 2003",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/24041-isabel-ii"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Isabel_II.jpg",
       "image source": "Jean Laurent, fotografía, c.1860"
     },
@@ -4251,6 +4322,9 @@
       "podcasts": "Cualquier tiempo pasado fue anterior, María Cristina de Borbón. Con ella empezó la fiesta (18 de junio de 2023), [Spotify](https://open.spotify.com/episode/5wjmQWtHTQPknQOr5NOTSj).",
       "newspaper archive": "'¿Qué tesoros se llevó de España la reina María Cristina?', <i>La Vanguardia</i> (21 de abril de 2022); 'De la corrupta María Cristina de Borbón al aún presunto Juan Carlos I', <i>elDiario.e</i> (7 de septiembre de 2021); 'María Cristina de Borbón, la vergonzosa ambición económica de una reina impune', <i>El Confidencial</i> (14 de noviembre de 2020); 'María Cristina de Borbón: la reina de la corrupción', <i>El Nacional.cat</i> (22 de marzo de 2020).",
       "websites": "'La esclavitud en España. El signo de la ignominia', Ministerio de Inclusión, Seguridad Social y Migraciones, [Ezequiel Paz](https://www.inclusion.gob.es/web/cartaespana/w/la-esclavitud-en-espana.-el-signo-de-la-ignominia)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/28582-maria-cristina-de-borbon-dos-sicilias"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Maria_Cristina.jpg",
       "image source": "fotografía de 1870",
       "added": "24-08-2025"
@@ -4273,6 +4347,9 @@
       "siblings": "Napoleon Bonaparte",
       "portrayed by": "Jean Baptiste Joseph Wicar, 1808, Palacio de Versalles; François Gérard, 1808, como rey de España, Museo Nacional del Castillo de Fontainebleau; Joseph Flaugier, 1809, MNAC",
       "bibliography": "Mano 2008",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/24612-jose-bonaparte"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Jose_Bonaparte.jpg",
       "image source": "Retrato de Flaugier, 1809, MNAC"
     },
@@ -4289,6 +4366,9 @@
       "children": "adoptó a una niña a la que llamó María de la Luz, a quien Goya retrató en brazos de la duquesa en sus álbumes de dibujos, c.1794-95 (A.f), [Prado D004183](https://www.museodelprado.es/coleccion/obra-de-arte/la-duquesa-de-alba-teniendo-en-sus-brazos-a-maria/eeee25da-d6fd-493f-af37-c6eeb6518e50)",
       "parents": "Francisco de Paula de Silva y Álvarez de Toledo y Mariana de Silva Bazán y Sarmiento",
       "married to": "José Álvarez de Toledo, XI marqués de Villafranca del Bierzo y XV duque de Medina Sidonia, en 1775 (cuando ella tenía 12 años)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/42509-maria-del-pilar-teresa-cayetana-silva-y-alvarez-de-toledo"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Alba_XIII.jpg",
       "image source": "Retrato de Goya, 1795, Palacio de Liria"
     },
@@ -4296,8 +4376,10 @@
       "id": "José Álvarez de Toledo, Duke of Alba",
       "display name es": "José Álvarez de Toledo, duque de Alba",
       "label": "Duque de Alba",
-      "full name": "José Álvarez de Toledo y Gonzaga",
+      "full name": "José María Álvarez de Toledo y Guzmán",
       "life dates": "1756-1796", 
+      "born in": "Madrid",
+      "dies in": "Sevilla",
       "profession": "aristocrat, art patron, aristocrat",
       "works as": "Gran canciller y registrador de las Indias (1793)",
       "nationality": "Spanish",
@@ -4311,6 +4393,9 @@
       "married to": "María Teresa de Silva, XIII Duchess of Alba, en 1775 (cuando ella tenía 12 años)",
       "decorations/awards": "caballero gran cruz de la Orden de Carlos III (1789); caballero de la Orden del Toisón de Oro (1791)",
       "curiosities": "como mecenas de las artes, mantuvo una larga correspondencia con el compositor Joseph Haydn",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/2095-jose-maria-alvarez-de-toledo-y-guzman"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Alba_XIII_duque.jpg",
       "image source": "Retrato de Goya, 1795, Prado"
     },
@@ -4502,6 +4587,9 @@
       "parents": "José de Madrazo e Isabel Kuntz y Valentini",
       "siblings": "Federico de Madrazo; Luis de Madrazo, Pedro de Madrazo y Carlota de Madrazo (casada con Eugenio Ochoa)",
       "websites": "[Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/27498-juan-de-madrazo-y-kuntz"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Juan_Madrazo.jpg"
     },
     {
@@ -4516,6 +4604,9 @@
       "in Paris": "vivió allí durante un tiempo. Su obra fue reconocida en la Exposición Universal de París de 1855",
       "author of": "<i>Entierro de Santa Cecilia en las catacumbas de Roma</i> (1852, Prado, depósito en el Museo de Granada)",
       "websites": "[Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/27499-luis-de-madrazo-y-kuntz"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Luis_Madrazo.jpg"
     },
     {
@@ -4566,6 +4657,9 @@
       "bibliography": "Alzaga 2012",
       "websites": "[Prado, perfil de Javier Barón](https://www.museodelprado.es/aprende/enciclopedia/voz/madrazo-y-garreta-raimundo-de/c01c352f-9b38-4504-b54e-29c70a1bfe7e); [Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); [Museo de Bilbao](https://bilbaomuseoa.eus/explora/artista/raimundo-de-madrazo/7f610858-52c3-4522-8096-29aab2a13d60), Carlos González López y Montserrat Martí Ayxelá, 2008; [Fundación Masaveu](https://www.fundacioncristinamasaveu.com/portfolio/madrazo-y-garreta- raimundo-de/); [Orsay](https://www.musee-orsay.fr/fr/ressources/repertoire-artistes-personnalites/raimundo-de-madrazo-y-garreta-17391)",
       "newspaper archive": "Alberto Frutos, 'Raimundo de Madrazo, retratista de la élite parisina de la Belle Époque, en la sede de Fundación MAPFRE en Madrid', <i>La Vanguardia</i>, 19 de septiembre de 2025",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/27518-raimundo-de-madrazo-y-garreta"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Raimundo_Madrazo.jpg"
     },
     {
@@ -4625,6 +4719,9 @@
       "lives in": "Reus, París, Granada",
       "bibliography": "Daniel S. Ralston, tesis doctoral, Columbia (inédita); Javier Barón (ed.), cat. exp. Prado, 2017; Javier Barón, El legado Ramón de Errazu: Fortuny, Madrazo y Rico, Prado, 2005; Beruete 1917; Charles Yriarte, Fortuny (serie Artistes célèbres), 1889; Charles Davillier, Fortuny sa vie, son œuvre, sa correspondance, 1875", 
       "websites": "Prado, [entrada de M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08); Prado, [Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); Orsay, [entrada de M. Fortuny](https://www.musee-orsay.fr/en/ressources/artists-personalities-catalog/mariano-fortuny-y-marsal-12627); [Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/17501-mariano-fortuny-marsal"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Mariano_Fortuny_Marsal.jpg",
       "image source": "retrato de Federico de Madrazo, 1867, MNAC"
     },
@@ -4651,6 +4748,9 @@
       ],
       "influenced by": "Raimundo de Madrazo (su tío)",
       "websites": "[Prado](https://www.museodelprado.es/coleccion/artista/fortuny-y-madrazo-mariano/0faef3f6-0929-4971-8a3d-13f835d6721b); [Museo del Traje](https://museodeltrajevirtual.com/mariano-fortuny-y-madrazo/); [Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/17500-mariano-fortuny-y-madrazo"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Mariano_Fortuny_Madrazo.jpg",
       "image source": "autorretrato 1947",
       "added": "30-08-2025"
@@ -4903,11 +5003,12 @@
     },
     {
       "id": "Gaspar Melchor de Jovellanos",
+      "full name": "Gaspar Melchor de Jovellanos y Ramírez",
       "label": "Jovellanos",
       "life dates": "1744-1811", 
       "nationality": "Spanish",
-      "born in": "Gijón",
-      "dies in": "Puerto de Vega, Asturias",
+      "born in": "Gijón (Asturias)",
+      "dies in": "Puerto de Vega (Asturias)",
       "profession": "writer, jurist, politician",
       "considered as": "parte del grupo de los ilustrados españoles",
       "political views": "liberal. Fue un agente clave en el llamado 'reformismo ilustrado', especialmente en lo que respecta al desarrollo económico y cultural. Sin embargo, con la Revolución Francesa paralizó las ideas liberales y destituyó a todos los pensadores liberales. Con la caída de su amigo Francisco Cabarrús, Gaspar Melchor de Jovellanos abandonó la Corte y se exilió en 1790. Regresó a la política en 1797 como ministro de Gracia y Justicia e intentó reformar el sistema judicial y reducir la influencia de la Inquisición, pero dimitió tras nueve meses. Volvió a Asturias en 1798 y se dedicó al estudio de la lengua asturiana. En 1800, Manuel Godoy ordenó su detención y fue exiliado a Mallorca, encarcelado en la Real Cartuja de Jesús de Nazaret y, posteriormente, en el Castillo de Bellver. Liberado en 1808, se negó a formar parte del gobierno de Joseph Bonaparte. Representó a Asturias en la Junta Central.",
@@ -4924,6 +5025,9 @@
       "portrayed by": "Francisco de Goya, 1798 (Prado P003255); atribución a Antonio Carnicero, c.1797 (Museo Lázaro Galdiano)",
       "studies in": "Real Monasterio de Santo Tomás (Universidad de Ávila)",
       "correspondence": "<i>Obras completas</i>, ed. José Miguel Caso González, 1985, 1986, 1988, 1990",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/24875-gaspar-melchor-de-jovellanos-y-ramirez"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Jovellanos.jpg",
       "image source": "Retrato de Goya, 1798, Prado"
     },
@@ -4946,13 +5050,16 @@
       "studies in": "Universidad de Salamanca",
       "pseudonyms": "Antonio José Dorre",
       "curiosities": "Carlos III le concede el título de Count of Floridablanca (1773) por su labor como embajador ante la Santa Sede, contribuyendo a la abolición de la orden de los jesuitas.",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/30748-jose-monino-y-redondo"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Floridablanca.jpg",
       "image source": "Retrato de Goya, 1783, Prado"
     },
     {
       "id": "Francisco Cabarrús",
       "label": "Cabarrús",
-      "full name": "Francisco Cabarrús Lalanne",
+      "full name": "Francisco Cabarrús y Lalanne",
       "life dates": "1752-1810", 
       "nationality": "Spanish; French",
       "born in": "Bayona",
@@ -4972,6 +5079,9 @@
       "married to": "Antonia Galabert Casanova",
       "children": "Teresa Cabarrús; Domingo Cabarrús Galabert",
       "curiosities": "Fue enterrado en la Capilla de la Concepción de la catedral de Sevilla (durante la guerra napoleónica). Tras la guerra, sus restos fueron exhumados y, según se dice, arrojados a la fosa común del Patio de los Naranjos (junto a las víctimas de la pena de muerte) o al río Guadalquivir.",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/8990-francisco-cabarrus-y-lalanne"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Cabarrus.jpg",
       "image source": "Retrato de Goya, 1788, Banco de España"
     },
@@ -4993,6 +5103,9 @@
       "married to": "María Andrea de Coca",
       "parents": "Juan Antonio Meléndez Valdés y María de los Ángeles Díaz Cacho",
       "curiosities": "Sus restos fueron trasladados a Madrid en 1900, tras una breve estancia en el Panteón de Hombres Ilustres (Madrid), y ahora se encuentran en el mausoleo colectivo con Francisco de Goya, Leandro Fernández de Moratín y Donoso Cortés en el Cementerio de San Isidro",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/30506-juan-melendez-valdes"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Melendez_Valdes.jpg",
       "image source": "Retrato de Goya, 1797, Museo Bowes"
     },
