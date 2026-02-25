@@ -1827,8 +1827,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           if (node.image) {
             html += `
-              <div class="portrait-row" style="display:flex; align-items:flex-start; gap:10px;">
-                <img src="${node.image}" alt="${node.id}" style="max-width:150px; display:block;">
+              <div class="photo-with-authorities">
+                <img src="${node.image}" alt="${node.id}" class="node-portrait">
                 ${badges ? `<div class="authority-badges">${badges}</div>` : ``}
               </div>
             `;
