@@ -991,7 +991,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const config = {
             ...node,
             size: Math.min(14 + degree * 0.8, 42),  // ↑ MÁS DIFERENCIACIÓN (1.2 vs 0.65). Before: Math.min(15 + degree * 1.2, 50)
-            mass: 1 + degree * 0.05,   // ← antes 0.06
+            mass: 1 + degree * 0.025,   // ← antes 0.05
             font: {
               size: Math.min(11 + degree * 0.45, 19), // before: Math.min(11 + degree * 0.6, 24),
               color: '#ffffff',
@@ -1037,6 +1037,25 @@ document.addEventListener('DOMContentLoaded', async function () {
         width: 1.5
       };
     }));
+
+    PROXIMITY_GROUPS.forEach(group => {
+      for (let i = 0; i < group.length; i++) {
+        for (let j = i + 1; j < group.length; j++) {
+          const from = labelToId[group[i]];
+          const to = labelToId[group[j]];
+          if (!from || !to) continue;
+
+          edges.add({
+            from,
+            to,
+            hidden: true,
+            physics: true,
+            length: 80,
+            strength: 0.15
+          });
+        }
+      }
+    });
     window.edges = edges;
 
     // ===================== MINI-FAMILIAS (anchors invisibles) =====================
