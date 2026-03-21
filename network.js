@@ -990,10 +990,10 @@ document.addEventListener('DOMContentLoaded', async function () {
           const degree = edgeCount[node.id] || 1;
           const config = {
             ...node,
-            size: Math.min(15 + degree * 1.2, 50),  // ↑ MÁS DIFERENCIACIÓN (1.2 vs 0.65)
-            mass: 1 + degree * 0.06,   // ← antes 0.15
+            size: Math.min(14 + degree * 0.8, 42),  // ↑ MÁS DIFERENCIACIÓN (1.2 vs 0.65). Before: Math.min(15 + degree * 1.2, 50)
+            mass: 1 + degree * 0.05,   // ← antes 0.06
             font: {
-              size: Math.min(11 + degree * 0.6, 24),
+              size: Math.min(11 + degree * 0.45, 19), // before: Math.min(11 + degree * 0.6, 24),
               color: '#ffffff',
               strokeWidth: 3,
               strokeColor: '#111111', 
@@ -1055,7 +1055,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Mariano Fortuny y Madrazo",
           "Mariano Fortuny y Marsal"
         ],
-        radius: 165, //before: 55
+        radius: 220, //before: 165
         startAngle: -Math.PI / 2
       },
 
@@ -1071,7 +1071,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Charles-Augustin Sainte-Beuve",
           "Antoine Fontaney"
         ],
-        radius: 165, // before: 60
+        radius: 210, // before: 165
         startAngle: -Math.PI / 2
       },
 
@@ -1083,7 +1083,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "VIII Duchess of Abrantes",
           "X Marchioness of Santa Cruz"
         ],
-        radius: 150, //before: 50
+        radius: 180, //before: 150
         startAngle: -Math.PI / 2
       },
 
@@ -1098,7 +1098,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "María Teresa de Vallabriga",
           "Luis de Borbón"
         ],
-        radius: 170, // before: 75
+        radius: 230, // before: 170
         startAngle: -Math.PI / 2
       },
 
@@ -1111,7 +1111,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Josefa Bayeu",
           "Francisco Bayeu"
         ],
-        radius: 150, // before: 80
+        radius: 180, // before: 150
         startAngle: -Math.PI / 2,
       }
     };
@@ -1627,22 +1627,16 @@ document.addEventListener('DOMContentLoaded', async function () {
         for (let i = 0; i < ids.length; i++) {
           for (let j = i + 1; j < ids.length; j++) {
             const a = ids[i], b = ids[j];
-            // No romper mini-familias: si ambos están en el mismo cluster, no los separes
-            if (
-              clusterOf &&
-              clusterOf[a] &&
-              clusterOf[a] === clusterOf[b] &&
-              clusterOf[a] !== "GOYA_FAMILY"
-            ) continue;
-            const pA = pos[a], pB = pos[b];
-            if (!pA || !pB) continue;
+            // Permitir separación incluso dentro del mismo cluster
+              const pA = pos[a], pB = pos[b];
+              if (!pA || !pB) continue;
 
             const nodeA = nodes.get(a);
             const nodeB = nodes.get(b);
 
-            const rA = (nodeA?.size || 25) + ((nodeA?.font?.size || 16) * 1.2); //before: const rA = nodeA?.size || 25;
-            const rB = (nodeB?.size || 25) + ((nodeB?.font?.size || 16) * 1.2); //before: const rB = nodeB?.size || 25;
-            const minD = rA + rB + 12; //before: const minD = rA + rB + 6;
+            const rA = (nodeA?.size || 25) + ((nodeA?.font?.size || 16) * 1.8); //before: ((nodeA?.font?.size || 16) * 1.2);
+            const rB = (nodeB?.size || 25) + ((nodeB?.font?.size || 16) * 1.8); //before: ((nodeB?.font?.size || 16) * 1.2);
+            const minD = rA + rB + 24; //before: const minD = rA + rB + 12;
 
             const dx = pB.x - pA.x;
             const dy = pB.y - pA.y;
@@ -1710,7 +1704,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (!window.__didNudgeOnce) {
         window.__didNudgeOnce = true;
 
-        nudgeOverlaps(network, nodes, window.__clusterOf, 10);
+        nudgeOverlaps(network, nodes, window.__clusterOf, 12);
 
         Object.values(CLUSTERS).forEach(cfg => {
           if (!cfg.center || !cfg.members || !cfg.members.length) return;
@@ -1725,7 +1719,22 @@ document.addEventListener('DOMContentLoaded', async function () {
           );
         });
 
-        nudgeOverlaps(network, nodes, window.__clusterOf, 12); // before: 4
+        nudgeOverlaps(network, nodes, window.__clusterOf, 14);
+
+        Object.values(CLUSTERS).forEach(cfg => {
+          if (!cfg.center || !cfg.members || !cfg.members.length) return;
+
+          placeFamilyAroundCenter(
+            network,
+            nodes,
+            cfg.center,
+            cfg.members,
+            cfg.radius || 150,
+            cfg.startAngle ?? (-Math.PI / 2)
+          );
+        });
+
+        nudgeOverlaps(network, nodes, window.__clusterOf, 8);
 
         network.redraw();
       }
