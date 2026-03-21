@@ -172,8 +172,13 @@
       "portrayed by": "Self-portraits: 1740 (drawing); 1774, Walker Art Gallery, Liverpool; 1744, oil painting, Gemäldegalerie Alte Meister, Dresden; c.1775, Uffizi; c.1775, Hermitage (copy of Uffizi portrait)",
       "decorations/awards": "Orden de la Espuela de Oro",
       "websites": "[Prado](https://www.museodelprado.es/coleccion/artista/mengs-antonio-rafael/bcd5ee4e-bcc3-472b-a832-a4800279e0e0)",
+      "exhibitions": [
+        "Recent years: 2025-2026 Prado, [Antonio Raphael Mengs (1728-1779)](https://www.museodelprado.es/actualidad/exposicion/antonio-raphael-mengs-1728-1779/4be2964e-3169-c21d-52ec-9c6caf24cbfb), curated by Andrés Úbeda and Javier Jordán de Urríes."
+      ],
       "authorities": {
-        "rah": "https://historia-hispanica.rah.es/biografias/30259-antonio-rafael-mengs"
+        "rah": "https://historia-hispanica.rah.es/biografias/30259-antonio-rafael-mengs",
+        "getty ulan": "http://vocab.getty.edu/page/ulan/500009824",
+        "wikidata": "https://www.wikidata.org/wiki/Q76718"
       },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Mengs.jpg",
       "image source": "self-portrait, c.1775, Hermitage"
