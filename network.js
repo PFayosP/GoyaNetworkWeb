@@ -990,10 +990,10 @@ document.addEventListener('DOMContentLoaded', async function () {
           const degree = edgeCount[node.id] || 1;
           const config = {
             ...node,
-            size: Math.min(14 + degree * 0.8, 42),  // ↑ MÁS DIFERENCIACIÓN (1.2 vs 0.65). Before: Math.min(15 + degree * 1.2, 50)
+            size: Math.min(13 + degree * 0.72, 38),  // ↑ MÁS DIFERENCIACIÓN (1.2 vs 0.65). Before: Math.min(15 + degree * 1.2, 50)
             mass: 1 + degree * 0.025,   // ← antes 0.05
             font: {
-              size: Math.min(11 + degree * 0.45, 19), // before: Math.min(11 + degree * 0.6, 24),
+              size: Math.min(11 + degree * 0.42, 18), // before: Math.min(11 + degree * 0.6, 24),
               color: '#ffffff',
               strokeWidth: 3,
               strokeColor: '#111111', 
@@ -1124,7 +1124,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Charles-Augustin Sainte-Beuve",
           "Antoine Fontaney"
         ],
-        radius: 160, // before: 210
+        radius: 190, // before: 160
         startAngle: -Math.PI / 2
       },
 
@@ -1934,6 +1934,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.35); //before: 0.18
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.20);
+
+      nudgeOverlaps(network, nodes, window.__clusterOf, 6);
 
       network.redraw();
     }
