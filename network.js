@@ -1055,7 +1055,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Mariano Fortuny y Madrazo",
           "Mariano Fortuny y Marsal"
         ],
-        radius: 220, //before: 165
+        radius: 165, //before: 220
         startAngle: -Math.PI / 2
       },
 
@@ -1071,7 +1071,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Charles-Augustin Sainte-Beuve",
           "Antoine Fontaney"
         ],
-        radius: 210, // before: 165
+        radius: 160, // before: 210
         startAngle: -Math.PI / 2
       },
 
@@ -1083,7 +1083,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "VIII Duchess of Abrantes",
           "X Marchioness of Santa Cruz"
         ],
-        radius: 180, //before: 150
+        radius: 135, //before: 180
         startAngle: -Math.PI / 2
       },
 
@@ -1098,7 +1098,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "María Teresa de Vallabriga",
           "Luis de Borbón"
         ],
-        radius: 230, // before: 170
+        radius: 165, // before: 230
         startAngle: -Math.PI / 2
       },
 
@@ -1111,12 +1111,42 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Josefa Bayeu",
           "Francisco Bayeu"
         ],
-        radius: 180, // before: 150
+        radius: 145, // before: 180
+        startAngle: -Math.PI / 2,
+      },
+
+      /*
+      "ILUSTRADOS": {
+        center: "Francisco de Goya",
+        members: [
+          "Gaspar Melchor de Jovellanos",
+          "Francisco Cabarrús",
+          "Count of Floridablanca",
+          "Juan Agustín Ceán Bermúdez",
+          "Leandro Fernández de Moratín",
+          "IX Duke of Osuna",
+          "XII Countess-Duchess of Benavente and Duchess of Osuna"
+        ],
+        radius: 145, 
         startAngle: -Math.PI / 2,
       }
+      */
     };
 
     window.__clusterOf = {}; // nodeId -> clusterId
+
+    Object.entries(CLUSTERS).forEach(([clusterId, cfg]) => {
+      if (cfg.center && nodes.get(cfg.center)) {
+        if (!window.__clusterOf[cfg.center]) window.__clusterOf[cfg.center] = [];
+        window.__clusterOf[cfg.center].push(clusterId);
+      }
+
+      (cfg.members || []).forEach(id => {
+        if (!nodes.get(id)) return;
+        if (!window.__clusterOf[id]) window.__clusterOf[id] = [];
+        window.__clusterOf[id].push(clusterId);
+      });
+    });
 
     /*
     (function addClusterAnchors(nodes, edges, clusters) {
@@ -1696,12 +1726,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const clusterIds = new Set([cfg.center, ...cfg.members]);
 
-        const baseRadius = Math.max(
-          cfg.radius || 150,
-          120 + (cfg.members?.length || 0) * 8
-        );
-
-        const halo = baseRadius + 120;
+        const baseRadius = cfg.radius || 150;
+        const halo = baseRadius + 45; 
 
         allIds.forEach(id => {
           if (clusterIds.has(id)) return;
@@ -1714,7 +1740,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const d = Math.hypot(dx, dy) || 1;
 
           if (d < halo) {
-            const push = (halo - d) * 1.8;
+            const push = (halo - d) * 0.8;
             const ux = dx / d;
             const uy = dy / d;
             network.moveNode(id, p.x + ux * push, p.y + uy * push);
@@ -1802,6 +1828,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       // último paso: fijar definitivamente
       Object.values(CLUSTERS).forEach(cfg => {
         if (!cfg.center || !cfg.members?.length) return;
+
+        const baseRadius = cfg.radius || 150;
 
         placeFamilyAroundCenter(
           network,
