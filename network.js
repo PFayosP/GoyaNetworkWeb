@@ -2582,6 +2582,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (params.nodes.length === 0 && params.edges.length === 0) {
         clearHighlights();
         window.__lastSelection = null; // nada seleccionado
+
+        if (window.VIS_NETWORK) {
+          window.VIS_NETWORK.unselectAll();
+        }
+
+        if (typeof window.showDefaultNodeInfo === 'function') {
+          window.showDefaultNodeInfo();
+        }
+
         return;
       }
 
