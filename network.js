@@ -1175,7 +1175,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     window.__clusterOf = {}; // nodeId -> clusterId
 
-    Object.entries(CLUSTERS).forEach(([clusterId, cfg]) => {
+    Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
       if (cfg.center && nodes.get(cfg.center)) {
         if (!window.__clusterOf[cfg.center]) window.__clusterOf[cfg.center] = [];
         window.__clusterOf[cfg.center].push(clusterId);
@@ -1852,7 +1852,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nudgeOverlaps(network, nodes, window.__clusterOf, 12);
 
       // 2) coloca clusters en radial
-      Object.values(CLUSTERS).forEach(cfg => {
+      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.center || !cfg.members || !cfg.members.length) return;
 
         const baseRadius = Math.max(
@@ -1874,7 +1874,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       nudgeOverlaps(network, nodes, window.__clusterOf, 10);
 
       // 4) vuelve a imponer la geometría radial
-      Object.values(CLUSTERS).forEach(cfg => {
+      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.center || !cfg.members || !cfg.members.length) return;
 
         placeFamilyAroundCenter(
@@ -1888,10 +1888,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
 
       // 5) AHORA termina aquí: no vuelvas a empujar
-      pushOutsidersFromClusters(network, nodes, CLUSTERS, 70);
+      pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 70);
 
       // último paso: fijar definitivamente
-      Object.values(CLUSTERS).forEach(cfg => {
+      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.center || !cfg.members?.length) return;
 
         const baseRadius = cfg.radius || 150;
