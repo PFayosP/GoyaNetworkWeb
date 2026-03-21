@@ -1077,18 +1077,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         startAngle: -Math.PI / 2
       },
 
-      "OSUNA_FAMILY": {
-        center: "IX Duke of Osuna",
-        members: [
-          "XII Countess-Duchess of Benavente and Duchess of Osuna",
-          "X Duke of Osuna",
-          "VIII Duchess of Abrantes",
-          "X Marchioness of Santa Cruz"
-        ],
-        radius: 135, //before: 180
-        startAngle: -Math.PI / 2
-      },
-
       "GOYA_FAMILY": {
         center: "Francisco de Goya",
         members: [
@@ -1140,6 +1128,13 @@ document.addEventListener('DOMContentLoaded', async function () {
       "Ferdinand Guillemardet"
     ],
 
+    "OSUNA_FAMILY": [
+      "XII Countess-Duchess of Benavente and Duchess of Osuna",
+      "X Duke of Osuna",
+      "VIII Duchess of Abrantes",
+      "X Marchioness of Santa Cruz"
+    ],
+
     /*
     "ILUSTRADOS": [
       "Francisco de Goya",
@@ -1151,7 +1146,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       "Leandro Fernández de Moratín",
       "IX Duke of Osuna",
       "XII Countess-Duchess of Benavente and Duchess of Osuna",
-      "Sebastián Martínez y Pérez"
+      "Sebastián Martínez y Pérez",
+      "Juan Antonio Melón",
+      "Juan Antonio Llorente"
       ],
     */
 
@@ -1167,9 +1164,37 @@ document.addEventListener('DOMContentLoaded', async function () {
       "María Luisa de Parma",
       "Fernando VII",
       "Isabel II",
+      "Infanta Luisa Fernanda de Borbón",
       "XV Countess of Chinchón",
       "María Teresa de Vallabriga",
-      "Luis de Borbón"
+      "Luis de Borbón",
+      "María Cristina de Borbón-Dos Sicilias"
+    ],
+
+    "MONTPENSIER-ORLEANS": [
+      "Prince Antoine, Duke of Montpensier",
+      "Louis Philippe I"
+    ],
+
+    "ALBA-VILLAFRANCA": [
+      "María Teresa de Silva, XIII Duchess of Alba",
+      "José Álvarez de Toledo, Duke of Alba",
+      "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
+      "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
+      "María Tomasa Palafox, Marchioness of Villafranca"
+    ],
+
+    "MONTIJO": [
+      "María Francisca de Sales Portocarrero, VI Countess of Montijo",
+      "Cipriano Portocarrero, VIII Count of Montijo",
+      "Eugenio Eulalio Palafox, VII Count of Montijo",
+      "María Manuela Kirkpatrick",
+      "Eugenia de Montijo"
+    ],
+
+    "GODOY-TUDÓ": [
+      "Josefa Tudó",
+      "Manuel Godoy"
     ]
   };
 
