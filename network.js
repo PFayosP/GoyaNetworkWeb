@@ -1103,10 +1103,11 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Javier Goya",
           "Mariano Goya",
           "Gumersinda Goicoechea",
-          "Josefa Bayeu"
+          "Josefa Bayeu",
+          "Francisco Bayeu"
         ],
-        radius: 35,
-        pulls: 5
+        radius: 80, // before: 35
+        pulls: 1 //before: 5
       }
     };
 
@@ -1617,7 +1618,12 @@ document.addEventListener('DOMContentLoaded', async function () {
           for (let j = i + 1; j < ids.length; j++) {
             const a = ids[i], b = ids[j];
             // No romper mini-familias: si ambos están en el mismo cluster, no los separes
-            if (clusterOf && clusterOf[a] && clusterOf[a] === clusterOf[b]) continue;
+            if (
+              clusterOf &&
+              clusterOf[a] &&
+              clusterOf[a] === clusterOf[b] &&
+              clusterOf[a] !== "GOYA_FAMILY"
+            ) continue;
             const pA = pos[a], pB = pos[b];
             if (!pA || !pB) continue;
 
@@ -1642,6 +1648,22 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
         }
       }
+    }
+
+    function placeFamilyAroundCenter(network, nodes, centerId, memberIds, radius = 140, startAngle = -Math.PI / 2) {
+      const centerPos = network.getPositions([centerId])[centerId];
+      if (!centerPos) return;
+
+      const validMembers = memberIds.filter(id => nodes.get(id) && id !== centerId);
+      const count = validMembers.length;
+      if (!count) return;
+
+      validMembers.forEach((id, index) => {
+        const angle = startAngle + (2 * Math.PI * index / count);
+        const x = centerPos.x + Math.cos(angle) * radius;
+        const y = centerPos.y + Math.sin(angle) * radius;
+        network.moveNode(id, x, y);
+      });
     }
 
     // ——— Loading progress (vis-network physics) ———
@@ -1677,7 +1699,26 @@ document.addEventListener('DOMContentLoaded', async function () {
     setTimeout(() => {
       if (!window.__didNudgeOnce) {
         window.__didNudgeOnce = true;
+
         nudgeOverlaps(network, nodes, window.__clusterOf, 10);
+
+        placeFamilyAroundCenter(
+          network,
+          nodes,
+          "Francisco de Goya",
+          [
+            "Javier Goya",
+            "Josefa Bayeu",
+            "Francisco Bayeu",
+            "Gumersinda Goicoechea",
+            "Mariano Goya"
+          ],
+          150,
+          -Math.PI / 2
+        );
+
+        nudgeOverlaps(network, nodes, window.__clusterOf, 4);
+
         network.redraw();
       }
     }, 150);
