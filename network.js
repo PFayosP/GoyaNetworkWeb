@@ -1118,6 +1118,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     window.__clusterOf = {}; // nodeId -> clusterId
 
+    /*
     (function addClusterAnchors(nodes, edges, clusters) {
       const anchorNodes = [];
       const anchorEdges = [];
@@ -1174,6 +1175,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (anchorNodes.length) nodes.add(anchorNodes);
       if (anchorEdges.length) edges.add(anchorEdges);
     })(nodes, edges, CLUSTERS);
+    */
     // =================== /MINI-FAMILIAS (anchors invisibles) ===================
 
 
@@ -1670,6 +1672,39 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
+    function pushOutsidersFromClusters(network, nodes, clusters, padding = 70) {
+      const allIds = nodes.getIds().filter(id => !String(id).startsWith('ANCHOR__'));
+      const pos = network.getPositions(allIds);
+
+      Object.values(clusters).forEach(cfg => {
+        if (!cfg.center || !cfg.members || !cfg.members.length) return;
+
+        const centerPos = pos[cfg.center];
+        if (!centerPos) return;
+
+        const clusterIds = new Set([cfg.center, ...cfg.members]);
+        const halo = (cfg.radius || 150) + padding;
+
+        allIds.forEach(id => {
+          if (clusterIds.has(id)) return;
+
+          const p = pos[id];
+          if (!p) return;
+
+          const dx = p.x - centerPos.x;
+          const dy = p.y - centerPos.y;
+          const d = Math.hypot(dx, dy) || 1;
+
+          if (d < halo) {
+            const push = halo - d;
+            const ux = dx / d;
+            const uy = dy / d;
+            network.moveNode(id, p.x + ux * push, p.y + uy * push);
+          }
+        });
+      });
+    }
+
     // ——— Loading progress (vis-network physics) ———
     const loadingEl = document.getElementById('loadingMessage');
     const loadingPct = document.getElementById('loadingProgress');
@@ -1700,45 +1735,50 @@ document.addEventListener('DOMContentLoaded', async function () {
     network.setOptions({ physics: { enabled: false } });
 
     // 3) Empujón anti-overlap cuando ya están puestas las imágenes
-    setTimeout(() => {
-      if (!window.__didNudgeOnce) {
-        window.__didNudgeOnce = true;
+   setTimeout(() => {
+    if (!window.__didNudgeOnce) {
+      window.__didNudgeOnce = true;
 
-        nudgeOverlaps(network, nodes, window.__clusterOf, 12);
+      // 1) limpia solapes globales iniciales
+      nudgeOverlaps(network, nodes, window.__clusterOf, 12);
 
-        Object.values(CLUSTERS).forEach(cfg => {
-          if (!cfg.center || !cfg.members || !cfg.members.length) return;
+      // 2) coloca clusters en radial
+      Object.values(CLUSTERS).forEach(cfg => {
+        if (!cfg.center || !cfg.members || !cfg.members.length) return;
 
-          placeFamilyAroundCenter(
-            network,
-            nodes,
-            cfg.center,
-            cfg.members,
-            cfg.radius || 150,
-            cfg.startAngle ?? (-Math.PI / 2)
-          );
-        });
+        placeFamilyAroundCenter(
+          network,
+          nodes,
+          cfg.center,
+          cfg.members,
+          cfg.radius || 150,
+          cfg.startAngle ?? (-Math.PI / 2)
+        );
+      });
 
-        nudgeOverlaps(network, nodes, window.__clusterOf, 14);
+      // 3) corrige solapes provocados por la recolocación
+      nudgeOverlaps(network, nodes, window.__clusterOf, 10);
 
-        Object.values(CLUSTERS).forEach(cfg => {
-          if (!cfg.center || !cfg.members || !cfg.members.length) return;
+      // 4) vuelve a imponer la geometría radial
+      Object.values(CLUSTERS).forEach(cfg => {
+        if (!cfg.center || !cfg.members || !cfg.members.length) return;
 
-          placeFamilyAroundCenter(
-            network,
-            nodes,
-            cfg.center,
-            cfg.members,
-            cfg.radius || 150,
-            cfg.startAngle ?? (-Math.PI / 2)
-          );
-        });
+        placeFamilyAroundCenter(
+          network,
+          nodes,
+          cfg.center,
+          cfg.members,
+          cfg.radius || 150,
+          cfg.startAngle ?? (-Math.PI / 2)
+        );
+      });
 
-        nudgeOverlaps(network, nodes, window.__clusterOf, 8);
+      // 5) AHORA termina aquí: no vuelvas a empujar
+      pushOutsidersFromClusters(network, nodes, CLUSTERS, 70);
 
-        network.redraw();
-      }
-    }, 150);
+      network.redraw();
+    }
+  }, 150);
   });
 
     function highlightNeighborhood(nodeId) {
