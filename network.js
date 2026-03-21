@@ -1042,7 +1042,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     // ===================== MINI-FAMILIAS (anchors invisibles) =====================
     // NOTA: esto NO toca tus edges reales. Añade nodos/edges "fantasma" para compactar grupos.
 
-    const CLUSTERS = {
+    const RADIAL_CLUSTERS = {
       "MADRAZO_FAMILY": {
         center: "José de Madrazo",
         members: [
@@ -1053,7 +1053,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Cecilia de Madrazo",
           "Román Garreta",
           "Mariano Fortuny y Madrazo",
-          "Mariano Fortuny y Marsal"
+          "Mariano Fortuny y Marsal",
+          "Luisa Garreta",
+          "Juan de Madrazo"
         ],
         radius: 165, //before: 220
         startAngle: -Math.PI / 2
@@ -1087,21 +1089,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         startAngle: -Math.PI / 2
       },
 
-      "BORBONS": {
-        center: "Carlos IV",
-        members: [
-          "Carlos III",
-          "María Luisa de Parma",
-          "Fernando VII",
-          "Isabel II",
-          "XV Countess of Chinchón",
-          "María Teresa de Vallabriga",
-          "Luis de Borbón"
-        ],
-        radius: 165, // before: 230
-        startAngle: -Math.PI / 2
-      },
-
       "GOYA_FAMILY": {
         center: "Francisco de Goya",
         members: [
@@ -1114,24 +1101,77 @@ document.addEventListener('DOMContentLoaded', async function () {
         radius: 145, // before: 180
         startAngle: -Math.PI / 2,
       },
-
-      /*
-      "ILUSTRADOS": {
-        center: "Francisco de Goya",
-        members: [
-          "Gaspar Melchor de Jovellanos",
-          "Francisco Cabarrús",
-          "Count of Floridablanca",
-          "Juan Agustín Ceán Bermúdez",
-          "Leandro Fernández de Moratín",
-          "IX Duke of Osuna",
-          "XII Countess-Duchess of Benavente and Duchess of Osuna"
-        ],
-        radius: 145, 
-        startAngle: -Math.PI / 2,
-      }
-      */
     };
+
+    const PROXIMITY_GROUPS = {
+    "TIEPOLOS": [
+      "Giambattista Tiepolo",
+      "Giovanni Domenico Tiepolo",
+      "Lorenzo Tiepolo"
+    ],
+
+    "LACOUR": [
+      "Pierre Lacour père",
+      "Pierre Lacour fils"
+    ],
+
+    "DUTUIT": [
+      "Auguste Dutuit",
+      "Eugène Dutuit"
+    ],
+
+    "WEISS": [
+      "Rosario Weiss Zorrilla",
+      "Leocadia Zorrilla y Galarza"
+    ],
+
+    "SUREDAS": [
+      "Bartolomé Sureda",
+      "Alejandro Sureda"
+    ],
+
+    "GAY-GIRARDIN": [
+      "Delphine de Girardin",
+      "Sophie Gay"
+    ],
+
+    "GUILLEMARDETS": [
+      "Félix Guillemardet",
+      "Ferdinand Guillemardet"
+    ],
+
+    /*
+    "ILUSTRADOS": [
+      "Francisco de Goya",
+      "Martín Zapater",
+      "Gaspar Melchor de Jovellanos",
+      "Francisco Cabarrús",
+      "Count of Floridablanca",
+      "Juan Agustín Ceán Bermúdez",
+      "Leandro Fernández de Moratín",
+      "IX Duke of Osuna",
+      "XII Countess-Duchess of Benavente and Duchess of Osuna",
+      "Sebastián Martínez y Pérez"
+      ],
+    */
+
+    "SPANISH ROMANTICS": [
+      "José de Espronceda",
+      "Mariano José Larra",
+      "José Zorrilla"
+    ],
+
+    "BORBONS": [
+      "Carlos IV",
+      "Carlos III",
+      "María Luisa de Parma",
+      "Fernando VII",
+      "Isabel II",
+      "XV Countess of Chinchón",
+      "María Teresa de Vallabriga",
+      "Luis de Borbón"
+    ]
+  };
 
     window.__clusterOf = {}; // nodeId -> clusterId
 
@@ -1749,6 +1789,31 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
+    function tightenProximityGroups(network, nodes, groups, strength = 0.18) {
+      Object.values(groups).forEach(group => {
+        const valid = group.filter(id => nodes.get(id));
+        if (valid.length < 2) return;
+
+        // centroide actual del grupo
+        const pos = network.getPositions(valid);
+        let cx = 0, cy = 0;
+        valid.forEach(id => {
+          cx += pos[id].x;
+          cy += pos[id].y;
+        });
+        cx /= valid.length;
+        cy /= valid.length;
+
+        // acerca cada nodo un poco al centroide, sin imponer círculo
+        valid.forEach(id => {
+          const p = pos[id];
+          const nx = p.x + (cx - p.x) * strength;
+          const ny = p.y + (cy - p.y) * strength;
+          network.moveNode(id, nx, ny);
+        });
+      });
+    }
+
     // ——— Loading progress (vis-network physics) ———
     const loadingEl = document.getElementById('loadingMessage');
     const loadingPct = document.getElementById('loadingProgress');
@@ -1840,6 +1905,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           cfg.startAngle ?? (-Math.PI / 2)
         );
       });
+
+      tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.18);
 
       network.redraw();
     }
