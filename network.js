@@ -1661,14 +1661,26 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (!centerPos) return;
 
       const validMembers = memberIds.filter(id => nodes.get(id) && id !== centerId);
-      const count = validMembers.length;
-      if (!count) return;
+      if (!validMembers.length) return;
 
-      validMembers.forEach((id, index) => {
-        const angle = startAngle + (2 * Math.PI * index / count);
+      const totalWeight = validMembers.reduce((acc, id) => {
+        const n = nodes.get(id);
+        return acc + (n?.size || 20);
+      }, 0);
+
+      let currentAngle = startAngle;
+
+      validMembers.forEach(id => {
+        const n = nodes.get(id);
+        const weight = (n?.size || 20) / totalWeight;
+        const angleSpan = weight * 2 * Math.PI;
+        const angle = currentAngle + angleSpan / 2;
+
         const x = centerPos.x + Math.cos(angle) * radius;
         const y = centerPos.y + Math.sin(angle) * radius;
+
         network.moveNode(id, x, y);
+        currentAngle += angleSpan;
       });
     }
 
@@ -1683,7 +1695,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (!centerPos) return;
 
         const clusterIds = new Set([cfg.center, ...cfg.members]);
-        const halo = (cfg.radius || 150) + padding;
+
+        const baseRadius = Math.max(
+          cfg.radius || 150,
+          120 + (cfg.members?.length || 0) * 8
+        );
+
+        const halo = baseRadius + 120;
 
         allIds.forEach(id => {
           if (clusterIds.has(id)) return;
@@ -1696,7 +1714,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const d = Math.hypot(dx, dy) || 1;
 
           if (d < halo) {
-            const push = halo - d;
+            const push = (halo - d) * 1.8;
             const ux = dx / d;
             const uy = dy / d;
             network.moveNode(id, p.x + ux * push, p.y + uy * push);
@@ -1746,12 +1764,17 @@ document.addEventListener('DOMContentLoaded', async function () {
       Object.values(CLUSTERS).forEach(cfg => {
         if (!cfg.center || !cfg.members || !cfg.members.length) return;
 
+        const baseRadius = Math.max(
+          cfg.radius || 150,
+          120 + (cfg.members?.length || 0) * 8
+        );
+
         placeFamilyAroundCenter(
           network,
           nodes,
           cfg.center,
           cfg.members,
-          cfg.radius || 150,
+          baseRadius,
           cfg.startAngle ?? (-Math.PI / 2)
         );
       });
@@ -1775,6 +1798,20 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // 5) AHORA termina aquí: no vuelvas a empujar
       pushOutsidersFromClusters(network, nodes, CLUSTERS, 70);
+
+      // último paso: fijar definitivamente
+      Object.values(CLUSTERS).forEach(cfg => {
+        if (!cfg.center || !cfg.members?.length) return;
+
+        placeFamilyAroundCenter(
+          network,
+          nodes,
+          cfg.center,
+          cfg.members,
+          baseRadius,
+          cfg.startAngle ?? (-Math.PI / 2)
+        );
+      });
 
       network.redraw();
     }
