@@ -1013,6 +1013,39 @@ document.addEventListener('DOMContentLoaded', async function () {
           return config;
         }));
 
+      const PROXIMITY_GROUPS = {
+        "TIEPOLOS": ["Giambattista Tiepolo", "Giovanni Domenico Tiepolo", "Lorenzo Tiepolo"],
+
+        "LACOUR": ["Pierre Lacour père", "Pierre Lacour fils"],
+
+        "DUTUIT": ["Auguste Dutuit", "Eugène Dutuit"],
+
+        "MASARNAU": ["Santiago Masarnau", "Vicente Masarnau"],
+
+        "WEISS": ["Rosario Weiss Zorrilla", "Leocadia Zorrilla y Galarza"],
+
+        "SUREDAS": ["Bartolomé Sureda", "Alejandro Sureda"],
+
+        "GONCOURT": ["Edmond de Goncourt", "Jules de Goncourt"],
+
+        "VIARDOT": ["Pauline Viardot-García", "Louis Viardot"],
+
+        "NODIER": ["Marie Nodier", "Charles Nodier"],
+
+        "GUYE": ["Nicolas Philippe Guye", "Victor Guye"],
+
+        "GAY-GIRARDIN": ["Delphine de Girardin", "Sophie Gay"],
+
+        "GUILLEMARDETS": ["Félix Guillemardet", "Ferdinand Guillemardet"],
+
+        "GODOY-TUDÓ": ["Josefa Tudó", "Manuel Godoy"],
+
+        "SPANISH ROMANTICS": ["José de Espronceda", "Mariano José Larra", "José Zorrilla"],
+
+        "MONTPENSIER-ORLEANS": ["Prince Antoine, Duke of Montpensier", "Louis Philippe I"],
+
+      };
+
     // Edges más transparentes (general)
     edges = new vis.DataSet(data.edges.map(edge => {
       const level = edge.connection_level || "direct";
@@ -1038,7 +1071,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       };
     }));
 
-    PROXIMITY_GROUPS.forEach(group => {
+    Object.values(PROXIMITY_GROUPS).forEach(group => {
       for (let i = 0; i < group.length; i++) {
         for (let j = i + 1; j < group.length; j++) {
           const from = labelToId[group[i]];
@@ -1050,8 +1083,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             to,
             hidden: true,
             physics: true,
-            length: 80,
-            strength: 0.15
+            length: 45, // before: 80
           });
         }
       }
@@ -1109,138 +1141,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         startAngle: -Math.PI / 2,
       },
     };
-
-    const PROXIMITY_GROUPS = {
-    "TIEPOLOS": [
-      "Giambattista Tiepolo",
-      "Giovanni Domenico Tiepolo",
-      "Lorenzo Tiepolo"
-    ],
-
-    "LACOUR": [
-      "Pierre Lacour père",
-      "Pierre Lacour fils"
-    ],
-
-    "DUTUIT": [
-      "Auguste Dutuit",
-      "Eugène Dutuit"
-    ],
-
-    "MASARNAU": [
-      "Santiago Masarnau",
-      "Vicente Masarnau"
-    ],
-
-    "WEISS": [
-      "Rosario Weiss Zorrilla",
-      "Leocadia Zorrilla y Galarza"
-    ],
-
-    "SUREDAS": [
-      "Bartolomé Sureda",
-      "Alejandro Sureda"
-    ],
-
-    "GONCOURT": [
-      "Edmond de Goncourt",
-      "Jules de Goncourt"
-    ],
-
-    "VIARDOT": [
-      "Pauline Viardot-García",
-      "Louis Viardot"
-    ],
-
-    "NODIER": [
-      "Marie Nodier",
-      "Charles Nodier"
-    ],
-
-    "GUYE": [
-      "Nicolas Philippe Guye",
-      "Victor Guye"
-    ],
-
-    "GAY-GIRARDIN": [
-      "Delphine de Girardin",
-      "Sophie Gay"
-    ],
-
-    "GUILLEMARDETS": [
-      "Félix Guillemardet",
-      "Ferdinand Guillemardet"
-    ],
-
-    "OSUNA_FAMILY": [
-      "XII Countess-Duchess of Benavente and Duchess of Osuna",
-      "X Duke of Osuna",
-      "VIII Duchess of Abrantes",
-      "X Marchioness of Santa Cruz"
-    ],
-
-    /*
-    "ILUSTRADOS": [
-      "Francisco de Goya",
-      "Martín Zapater",
-      "Gaspar Melchor de Jovellanos",
-      "Francisco Cabarrús",
-      "Count of Floridablanca",
-      "Juan Agustín Ceán Bermúdez",
-      "Leandro Fernández de Moratín",
-      "IX Duke of Osuna",
-      "XII Countess-Duchess of Benavente and Duchess of Osuna",
-      "Sebastián Martínez y Pérez",
-      "Juan Antonio Melón",
-      "Juan Antonio Llorente"
-      ],
-    */
-
-    "SPANISH ROMANTICS": [
-      "José de Espronceda",
-      "Mariano José Larra",
-      "José Zorrilla"
-    ],
-
-    "BORBONS": [
-      "Carlos IV",
-      "Carlos III",
-      "María Luisa de Parma",
-      "Fernando VII",
-      "Isabel II",
-      "Infanta Luisa Fernanda de Borbón",
-      "XV Countess of Chinchón",
-      "María Teresa de Vallabriga",
-      "Luis de Borbón",
-      "María Cristina de Borbón-Dos Sicilias"
-    ],
-
-    "MONTPENSIER-ORLEANS": [
-      "Prince Antoine, Duke of Montpensier",
-      "Louis Philippe I"
-    ],
-
-    "ALBA-VILLAFRANCA": [
-      "María Teresa de Silva, XIII Duchess of Alba",
-      "José Álvarez de Toledo, Duke of Alba",
-      "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
-      "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
-      "María Tomasa Palafox, Marchioness of Villafranca"
-    ],
-
-    "MONTIJO": [
-      "María Francisca de Sales Portocarrero, VI Countess of Montijo",
-      "Cipriano Portocarrero, VIII Count of Montijo",
-      "Eugenio Eulalio Palafox, VII Count of Montijo",
-      "María Manuela Kirkpatrick",
-      "Eugenia de Montijo"
-    ],
-
-    "GODOY-TUDÓ": [
-      "Josefa Tudó",
-      "Manuel Godoy"
-    ]
-  };
 
     window.__clusterOf = {}; // nodeId -> clusterId
 
@@ -1975,7 +1875,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         );
       });
 
-      tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.18);
+      tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.35); //before: 0.18
+      tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.20);
 
       network.redraw();
     }
