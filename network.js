@@ -1074,16 +1074,16 @@ document.addEventListener('DOMContentLoaded', async function () {
     Object.values(PROXIMITY_GROUPS).forEach(group => {
       for (let i = 0; i < group.length; i++) {
         for (let j = i + 1; j < group.length; j++) {
-          const from = labelToId[group[i]];
-          const to = labelToId[group[j]];
-          if (!from || !to) continue;
+          const from = group[i];
+          const to = group[j];
+          if (!nodes.get(from) || !nodes.get(to)) continue;
 
           edges.add({
             from,
             to,
             hidden: true,
             physics: true,
-            length: 45, // before: 80
+            length: 45
           });
         }
       }
