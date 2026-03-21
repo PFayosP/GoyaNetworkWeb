@@ -1108,6 +1108,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       "Eugène Dutuit"
     ],
 
+    "MASARNAU": [
+      "Santiago Masarnau",
+      "Vicente Masarnau"
+    ],
+
     "WEISS": [
       "Rosario Weiss Zorrilla",
       "Leocadia Zorrilla y Galarza"
