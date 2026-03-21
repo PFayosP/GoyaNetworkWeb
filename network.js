@@ -1123,6 +1123,26 @@ document.addEventListener('DOMContentLoaded', async function () {
       "Alejandro Sureda"
     ],
 
+    "GONCOURT": [
+      "Edmond de Goncourt",
+      "Jules de Goncourt"
+    ],
+
+    "VIARDOT": [
+      "Pauline Viardot-García",
+      "Louis Viardot"
+    ],
+
+    "NODIER": [
+      "Marie Nodier",
+      "Charles Nodier"
+    ],
+
+    "GUYE": [
+      "Nicolas Philippe Guye",
+      "Victor Guye"
+    ],
+
     "GAY-GIRARDIN": [
       "Delphine de Girardin",
       "Sophie Gay"
