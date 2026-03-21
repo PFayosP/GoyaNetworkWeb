@@ -1044,8 +1044,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     const CLUSTERS = {
       "MADRAZO_FAMILY": {
+        center: "José de Madrazo",
         members: [
-          "José de Madrazo",
           "Federico de Madrazo",
           "Pedro de Madrazo",
           "Luis de Madrazo",
@@ -1055,12 +1055,13 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Mariano Fortuny y Madrazo",
           "Mariano Fortuny y Marsal"
         ],
-        radius: 55
+        radius: 165, //before: 55
+        startAngle: -Math.PI / 2
       },
 
       "HUGO_CENACLE": {
+        center: "Victor Hugo",
         members: [
-          "Victor Hugo",
           "Théophile Gautier",
           "Alfred de Musset",
           "George Sand",
@@ -1070,23 +1071,26 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Charles-Augustin Sainte-Beuve",
           "Antoine Fontaney"
         ],
-        radius: 60
+        radius: 165, // before: 60
+        startAngle: -Math.PI / 2
       },
 
       "OSUNA_FAMILY": {
+        center: "IX Duke of Osuna",
         members: [
-          "IX Duke of Osuna",
+          "XII Countess-Duchess of Benavente and Duchess of Osuna",
           "X Duke of Osuna",
           "VIII Duchess of Abrantes",
           "X Marchioness of Santa Cruz"
         ],
-        radius: 50
+        radius: 150, //before: 50
+        startAngle: -Math.PI / 2
       },
 
       "BORBONS": {
+        center: "Carlos IV",
         members: [
           "Carlos III",
-          "Carlos IV",
           "María Luisa de Parma",
           "Fernando VII",
           "Isabel II",
@@ -1094,20 +1098,21 @@ document.addEventListener('DOMContentLoaded', async function () {
           "María Teresa de Vallabriga",
           "Luis de Borbón"
         ],
-        radius: 75
+        radius: 170, // before: 75
+        startAngle: -Math.PI / 2
       },
 
       "GOYA_FAMILY": {
+        center: "Francisco de Goya",
         members: [
-          "Francisco de Goya",
           "Javier Goya",
           "Mariano Goya",
           "Gumersinda Goicoechea",
           "Josefa Bayeu",
           "Francisco Bayeu"
         ],
-        radius: 80, // before: 35
-        pulls: 1 //before: 5
+        radius: 150, // before: 80
+        startAngle: -Math.PI / 2,
       }
     };
 
@@ -1630,9 +1635,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             const nodeA = nodes.get(a);
             const nodeB = nodes.get(b);
 
-            const rA = nodeA?.size || 25;
-            const rB = nodeB?.size || 25;
-            const minD = rA + rB + 6;
+            const rA = (nodeA?.size || 25) + ((nodeA?.font?.size || 16) * 1.2); //before: const rA = nodeA?.size || 25;
+            const rB = (nodeB?.size || 25) + ((nodeB?.font?.size || 16) * 1.2); //before: const rB = nodeB?.size || 25;
+            const minD = rA + rB + 12; //before: const minD = rA + rB + 6;
 
             const dx = pB.x - pA.x;
             const dy = pB.y - pA.y;
