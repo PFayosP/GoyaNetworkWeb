@@ -1124,6 +1124,11 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       Object.entries(clusters).forEach(([clusterId, cfg]) => {
         const members = (cfg?.members || []).filter(id => nodes.get(id));
+        const center = cfg?.center && nodes.get(cfg.center) ? cfg.center : null;
+
+        if (center) {
+          window.__clusterOf[center] = clusterId;
+        }
         members.forEach(id => { window.__clusterOf[id] = clusterId; });
         if (members.length < 2) return;
 
@@ -1707,22 +1712,20 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         nudgeOverlaps(network, nodes, window.__clusterOf, 10);
 
-        placeFamilyAroundCenter(
-          network,
-          nodes,
-          "Francisco de Goya",
-          [
-            "Javier Goya",
-            "Josefa Bayeu",
-            "Francisco Bayeu",
-            "Gumersinda Goicoechea",
-            "Mariano Goya"
-          ],
-          150,
-          -Math.PI / 2
-        );
+        Object.values(CLUSTERS).forEach(cfg => {
+          if (!cfg.center || !cfg.members || !cfg.members.length) return;
 
-        nudgeOverlaps(network, nodes, window.__clusterOf, 4);
+          placeFamilyAroundCenter(
+            network,
+            nodes,
+            cfg.center,
+            cfg.members,
+            cfg.radius || 150,
+            cfg.startAngle ?? (-Math.PI / 2)
+          );
+        });
+
+        nudgeOverlaps(network, nodes, window.__clusterOf, 12); // before: 4
 
         network.redraw();
       }
