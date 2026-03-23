@@ -7,7 +7,7 @@
   const I18N = {
     en: {
       BTN_NETWORK:"Network", BTN_ABOUT:"About", BTN_PEOPLE:"People", BTN_PARTNERS:"Partners",
-      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWIN:"New in",
+      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWIN:"New in", BTN_NEWS:"News", BTN_CONTACT:"Contact",
       SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
       MEMBERS_TITLE:"Members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
       BTN_SEARCH: "Search",
@@ -167,6 +167,36 @@
       Its code and structure are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color:#66ccff;">CC BY-NC 4.0</a>, allowing non-commercial academic use with proper attribution to the author.</p>
 
       <p><strong>Data and cookies:</strong> This website uses cookies exclusively for Google Analytics, which anonymously tracks visitor behaviour. We use this information only to understand how the site is being used and to improve its content and navigation. You can opt out of Google Analytics cookies across all websites by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color:#66ccff;">Google Analytics Opt-out Browser Add-on</a>. For more information on how Google uses cookies, visit the <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" style="color:#66ccff;">Cookies & Google Analytics</a> page.</p>
+      `,
+
+      NEWS_TITLE: "News",
+      NEWS_BODY: `
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li>
+          <strong>March 2026.</strong> The Goya Network continues to expand with new members and partnerships. New partnership: <a href="https://crimic-sorbonne.fr/" target="_blank">CRIMIC (Sorbonne Université)</a>.
+        </li>
+        <li>
+          <strong>September 2025.</strong> A new partnership has been established with <a href="https://artes-uk.org/" target="_blank">ARTES (Iberian & Latin American Visual Culture Group) (UK)</a>.
+        </li>
+        <li>
+          <strong>Forthcoming.</strong> Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain”, to be published in <a href="https://leonardo.info/leonardo/" target="_blank"><em>Leonardo</em></a> (MIT Press).
+        </li>
+      </ul>
+      `,
+
+      CONTACT_TITLE: "Contact",
+      CONTACT_BODY: `
+      <p>For collaborations, suggestions, or contributions:</p>
+
+      <p style="margin-top:0.5rem;">
+        <a href="mailto:contact@goyanetwork.com" style="font-weight:bold;">
+          contact@goyanetwork.com
+        </a>
+      </p>
+
+      <p style="margin-top:1.5rem;">
+        See also the contributions form at the bottom of the page.
+      </p>
       `,
     },
     es: {
@@ -337,16 +367,32 @@
 
     CONTACT_TITLE: "Contacto",
     CONTACT_BODY: `
-    Para colaboraciones, sugerencias o contribuciones: 
-    
-    contact@goyanetwork.com
+    <p>Para colaboraciones, sugerencias o contribuciones:</p>
 
-    Consulte también el formulario de contribuciones al final de la página.
+    <p style="margin-top:0.5rem;">
+      <a href="mailto:contact@goyanetwork.com" style="font-weight:bold;">
+        contact@goyanetwork.com
+      </a>
+    </p>
+
+    <p style="margin-top:1.5rem;">
+      Véase también el formulario de contribuciones al final de la página.
+    </p>
     `,
 
     NEWS_TITLE: "Noticias",
     NEWS_BODY: `
-    Aquí se recogen publicaciones, eventos y actualizaciones relevantes relacionadas con la Goya Network.
+    <ul style="padding-left:1.2rem; line-height:1.7;">
+      <li>
+        <strong>Marzo de 2026.</strong> La Goya Network sigue ampliándose con nuevos miembros y colaboraciones. Nueva colaboración: <a href="https://crimic-sorbonne.fr/" target="_blank">CRIMIC (Sorbonne Université)</a>.
+      </li>
+      <li>
+        <strong>Septiembre de 2025.</strong> Se estableció una nueva colaboración con <a href="https://artes-uk.org/" target="_blank">ARTES (Iberian & Latin American Visual Culture Group, Reino Unido)</a>.
+      </li>
+      <li>
+        <strong>Próximamente.</strong> Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain”, se publicará en <a href="https://leonardo.info/leonardo/" target="_blank"><em>Leonardo</em></a> (MIT Press).
+      </li>
+    </ul>
     `,
 
   };
@@ -362,8 +408,10 @@
       ['.nav-buttons button[onclick*="partners"]','BTN_PARTNERS'],
       ['.nav-buttons button[onclick*="artworks"]','BTN_ARTWORKS'],
       ['.nav-buttons button[onclick*="bibliography"]','BTN_BIB'],
-      ['.nav-buttons button[onclick*="cite"]','BTN_CITE'],
       ['#newInBtn','BTN_NEWIN'],
+      ['.nav-buttons button[onclick*="news"]','BTN_NEWS'],
+      ['.nav-buttons button[onclick*="cite"]','BTN_CITE'],
+      ['.nav-buttons button[onclick*="contact"]','BTN_CONTACT'],
       ['#searchInput::placeholder','SEARCH_PH'],
       ['.search-button','BTN_SEARCH'],
     ];
@@ -412,6 +460,8 @@
       'PEOPLE_BODY',
       'ABOUT_BODY',
       'CONTRIBUTIONS_TEXT',
+      'NEWS_BODY',
+      'CONTACT_BODY',
       // añade aquí futuras secciones largas con HTML, ej:
       // 'ABOUT_BODY', 'PARTNERS_BODY'
     ]);

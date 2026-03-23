@@ -361,6 +361,14 @@
     margin-top: 1rem;
   }
 
+  .news-section ul {
+    padding-left: 1.2rem;
+  }
+
+  .news-section li {
+    margin-bottom: 1.2rem;
+  }
+
   footer {
     font-family: "EB Garamond", serif;
     font-size: 0.85rem;
@@ -535,8 +543,8 @@
     </div>
     <!-- Selector de idioma -->
     <select id="langSwitcher" onchange="setLanguage(this.value)" style="margin-left:8px">
-      <option value="en">EN</option>
-      <option value="es">ES</option>
+      <option value="en">English</option>
+      <option value="es">Español</option>
     </select>
   </div>
 
@@ -817,19 +825,9 @@
   <div data-i18n="ARTWORKS_BODY"></div>
 </div>
 
-<div id="news" style="display:none; padding:2rem; max-width:800px; margin:auto; line-height:1.6;">
-  <h2>News</h2>
-  <ul style="padding-left:1.2rem; line-height:1.7;">
-    <li>
-      <strong>March 2026.</strong> The Goya Network continues to expand with new members and partnerships. New partnership: <a href="https://crimic-sorbonne.fr/" target="_blank">CRIMIC (Sorbonne Université)</a>.
-    </li>
-    <li>
-      <strong>September 2025.</strong> A new partnership has been established with <a href="https://artes-uk.org/" target="_blank">ARTES (Iberian & Latin American Visual Culture Group) (UK)</a>.
-    </li>
-    <li>
-      <strong>Forthcoming.</strong> Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain”, to be published in <a href="https://leonardo.info/leonardo/" target="_blank"><em>Leonardo</em></a> (MIT Press).
-    </li>
-  </ul>
+<div id="news" class="news-section" style="display:none; padding:2rem; max-width:800px; margin:auto; line-height:1.6;">
+  <h2 data-i18n="NEWS_TITLE"></h2>
+  <div data-i18n="NEWS_BODY"></div>
 </div>
 
 <div id="cite" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6;">
@@ -862,19 +860,8 @@
 </div>
 
 <div id="contact" style="display:none; padding:2rem; max-width:800px; margin:auto; line-height:1.6;">
-  <h2>Contact</h2>
-  <p>For collaborations, suggestions, or contributions:</p>
-
-  <p style="margin-top:0.5rem;">
-    <a href="mailto:contact@goyanetwork.com" style="font-weight: bold;">
-      contact@goyanetwork.com
-    </a>
-  </p>
-  
-  <p style="margin-top:1.5rem;">
-    See also the contributions form at the bottom of the page.
-  </p>
-
+  <h2 data-i18n="CONTACT_TITLE"></h2>
+  <div data-i18n="CONTACT_BODY"></div>
 </div>
 
 <!-- PANEL LATERAL / POPUP (colócalo junto a los otros paneles, por ejemplo después de #cite panel) -->
