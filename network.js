@@ -363,7 +363,6 @@
 
       <p><strong>Datos y cookies:</strong> Este sitio web utiliza cookies exclusivamente para Google Analytics, que registra de forma anónima el comportamiento de los visitantes. Utilizamos esta información únicamente para comprender cómo se usa el sitio y mejorar su contenido y navegación. Puedes desactivar las cookies de Google Analytics en todos los sitios web instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color:#66ccff;">complemento de inhabilitación para navegadores de Google Analytics</a>. Para más información sobre el uso de cookies por parte de Google, consulta la página <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" style="color:#66ccff;">Cookies & Google Analytics</a>.</p>
       `,
-    },
 
     CONTACT_TITLE: "Contacto",
     CONTACT_BODY: `
@@ -394,7 +393,7 @@
       </li>
     </ul>
     `,
-
+    },
   };
 
   function t(k){ return (I18N[CURRENT_LANG] && I18N[CURRENT_LANG][k]) || k; }
