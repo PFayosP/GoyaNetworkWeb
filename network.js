@@ -312,11 +312,6 @@
 
       ABOUT_TITLE: "Acerca de la Goya Network / Red Goya",
       ABOUT_BODY: `
-      <p style="background: #333; color: white; padding: 1rem; border-left: 5px solid #66ccff; font-size: 1.1rem;">
-        <span style="font-weight: bold;">📣 Próximamente: Fayos-Pérez & Verő, "The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain"</span>, que se publicará en 
-        <a href="https://leonardo.info/leonardo/" target="_blank" style="color: #66ccff; font-weight: bold;"><em>Leonardo</em></a>, revista académica revisada por pares publicada por 
-        <span style="font-weight: bold;">MIT Press</span> dedicada a la aplicación de la ciencia y la tecnología contemporáneas a las artes y la música.
-      </p>
 
       <p><strong>Introducción:</strong> A lo largo de los siglos XVIII y XIX, las redes de artistas, escritores, coleccionistas e intelectuales fueron cruciales tanto para la producción artística como para la difusión y comprensión de figuras históricas. Cartografiar estas conexiones permite entender mejor las dinámicas de sociabilidad y la circulación de ideas. En los últimos años, diversos proyectos en Humanidades Digitales han demostrado el potencial del análisis de redes para iluminar contextos artísticos históricos, como el <a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank">Thorvaldsen Letter Archive</a>, <a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank">Mapping the Republic of Letters</a> (Universidad de Stanford), <a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank">Early Modern Letters Online (EMLO)</a> (Universidad de Oxford), <a href="https://mappingrome.com/" target="_blank">Mapping Rome</a> y <a href="https://womensbios.lib.virginia.edu/index.html" target="_blank">Collective Biographies of Women</a> (Alison Booth, University of Virginia).</p> 
 
@@ -338,7 +333,22 @@
 
       <p><strong>Datos y cookies:</strong> Este sitio web utiliza cookies exclusivamente para Google Analytics, que registra de forma anónima el comportamiento de los visitantes. Utilizamos esta información únicamente para comprender cómo se usa el sitio y mejorar su contenido y navegación. Puedes desactivar las cookies de Google Analytics en todos los sitios web instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color:#66ccff;">complemento de inhabilitación para navegadores de Google Analytics</a>. Para más información sobre el uso de cookies por parte de Google, consulta la página <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" style="color:#66ccff;">Cookies & Google Analytics</a>.</p>
       `,
-    }
+    },
+
+    CONTACT_TITLE: "Contacto",
+    CONTACT_BODY: `
+    Para colaboraciones, sugerencias o contribuciones: 
+    
+    contact@goyanetwork.com
+
+    Consulte también el formulario de contribuciones al final de la página.
+    `,
+
+    NEWS_TITLE: "Noticias",
+    NEWS_BODY: `
+    Aquí se recogen publicaciones, eventos y actualizaciones relevantes relacionadas con la Goya Network.
+    `,
+
   };
 
   function t(k){ return (I18N[CURRENT_LANG] && I18N[CURRENT_LANG][k]) || k; }
