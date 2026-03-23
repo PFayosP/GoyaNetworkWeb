@@ -548,8 +548,10 @@
       <button onclick="showSection('partners')">Partners</button>
       <button onclick="showSection('artworks')">Artworks</button>
       <button onclick="showSection('bibliography')">Bibliography</button>
+      <button id="newInBtn">Recently added</button>
+      <button onclick="showSection('news')">News</button>
       <button onclick="showSection('cite')">How to cite</button>
-      <button id="newInBtn">New in</button>
+      <button onclick="showSection('contact')">Contact</button>
     </div>
 
     <div class="controls">
@@ -815,6 +817,21 @@
   <div data-i18n="ARTWORKS_BODY"></div>
 </div>
 
+<div id="news" style="display:none; padding:2rem; max-width:800px; margin:auto; line-height:1.6;">
+  <h2>News</h2>
+  <ul style="padding-left:1.2rem; line-height:1.7;">
+    <li>
+      <strong>March 2026.</strong> The Goya Network continues to expand with new members and partnerships. New partnership: <a href="https://crimic-sorbonne.fr/" target="_blank">CRIMIC (Sorbonne Université)</a>.
+    </li>
+    <li>
+      <strong>September 2025.</strong> A new partnership has been established with <a href="https://artes-uk.org/" target="_blank">ARTES (Iberian & Latin American Visual Culture Group) (UK)</a>.
+    </li>
+    <li>
+      <strong>Forthcoming.</strong> Paula Fayos-Pérez and Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain”, to appear in <em>Leonardo</em> (MIT Press).
+    </li>
+  </ul>
+</div>
+
 <div id="cite" style="display: none; padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6;">
   <h2 data-i18n="CITE_TITLE"></h2>
   <ul>
@@ -844,11 +861,22 @@
   </div>
 </div>
 
+<div id="contact" style="display:none; padding:2rem; max-width:800px; margin:auto; line-height:1.6;">
+  <h2>Contact</h2>
+  <p>For collaborations, corrections, suggestions, or contributions to the database:</p>
+  <p>
+    <a href="mailto:contact@goyanetwork.com">contact@goyanetwork.com</a>
+  </p>
+  <p style="color:#ccc; font-size:0.95rem;">
+    A dedicated email address for the website is recommended instead of using a personal academic account.
+  </p>
+</div>
+
 <!-- PANEL LATERAL / POPUP (colócalo junto a los otros paneles, por ejemplo después de #cite panel) -->
 <div id="newInPanel" style="display:none; position: absolute; right: 12px; top: 58px; width: 320px; max-height: 70vh; overflow-y: auto; background: #111; color: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.6); z-index: 9999;">
-  <h3 style="margin:0 0 0.5rem 0; font-size:1rem;">New in</h3>
+  <h3 style="margin:0 0 0.5rem 0; font-size:1rem;">Recently added</h3>
   <div id="newInList" style="font-size:0.95rem; line-height:1.4;"></div>
-  <div style="margin-top:0.5rem; font-size:0.75rem; color:#bbb;">Most recent first — click to jump to node</div>
+  <div style="margin-top:0.5rem; font-size:0.75rem; color:#bbb;">Most recent nodes first — click to jump to node</div>
 </div>
 
  <div id="partners" style="display: none; padding: 2rem; max-width: 1200px; margin: auto; line-height: 1.6; text-align: center;">
@@ -964,6 +992,8 @@ function showSection(section) {
   const artworks = document.getElementById('artworks');
   const bibliography = document.getElementById('bibliography'); 
   const cite = document.getElementById('cite');
+  const news = document.getElementById('news');
+  const contact = document.getElementById('contact');
 
   layout.classList.add('hidden');
   aboutDiv.style.display = 'none';
@@ -972,6 +1002,8 @@ function showSection(section) {
   artworks.style.display = 'none';
   bibliography.style.display = 'none';
   cite.style.display = 'none';
+  news.style.display = 'none';
+  contact.style.display = 'none';
 
   if (section === 'network') {
     layout.classList.remove('hidden');
@@ -1010,6 +1042,10 @@ function showSection(section) {
     bibliography.style.display = 'block';
   } else if (section === 'cite') {
   cite.style.display = 'block';
+  } else if (section === 'contact') {
+    contact.style.display = 'block';
+  } else if (section === 'news') {
+    news.style.display = 'block';
   }
 }
 </script>

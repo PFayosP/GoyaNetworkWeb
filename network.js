@@ -1290,7 +1290,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       `${t('Nodes')}: ${data.nodes.length} | ${t('Connections')}: ${data.edges.length}<br>
       <span style="font-size: 0.8rem; color: #999;">${window.LAST_UPDATE_LABEL}: ${formattedUpdate}</span>`;
 
-    /* ---- NEW IN: funciones para la pestaña "New in" ---- */
+    /* ---- RECENTLY ADDED: funciones del panel de nodos recientes ---- */
 
     function showNewInPanel(show = true) {
       const panel = document.getElementById('newInPanel');
@@ -1319,7 +1319,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       if (!items.length) {
         container.innerHTML =
-          '<em>No hay nodos con "added" desde mayo de 2025. Añade "added" en goya_network.json (ISO) para que aparezcan aquí.</em>';
+          '<em>No nodes with "added" date since April 2025. Add "added" in goya_network.json (ISO format) for them to appear here.</em>';
         return;
       }
 
@@ -1385,7 +1385,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     });
 
-    // Construir la lista inicial de "New in"
+    // Construir la lista inicial de "Recently added"
     buildNewInList(data);
 
     // ---- MEMBERS LIST: manual overrides (edit these if needed) ----
