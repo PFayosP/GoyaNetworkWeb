@@ -1596,6 +1596,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       container.innerHTML = html;
     }
 
+    window.buildMembersList = buildMembersList;
 
     let lastHighlightedNode = null;
     let lastHighlightedNodes = [];
@@ -1750,13 +1751,9 @@ document.addEventListener('DOMContentLoaded', async function () {
     window.VIS_NETWORK = network;
 
     const HALO_PRIORITY_BY_NODE = {
-      "Adrien Dauzats": 34,
-      "Valentín Carderera": 34, //separación adicional notable
-      "Federico de Madrazo": 40, //separación muy fuerte
-      "Eugène Delacroix": 34,
-      "Théophile Gautier": 34,
-      "Honoré de Balzac": 34,
-      "Achille Devéria": 34
+      "Adrien Dauzats": 18,
+      "Valentín Carderera": 18, //separación adicional notable
+      "Federico de Madrazo": 22, //separación muy fuerte
     };
 
     function getNodeHalo(node) {
@@ -2817,7 +2814,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         doLater(() => buildMembersList(data));
 
         // 3) New in (medio)
-        doLater(() => buildNewInList(data));
+        doLater(() => buildNewNodesList(data));
 
         // 4) Cargar imágenes (lo más pesado) + snapshot del panel por defecto
         doLater(() => {
