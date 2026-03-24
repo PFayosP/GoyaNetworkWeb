@@ -1749,13 +1749,24 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     window.VIS_NETWORK = network;
 
-    
+    const HALO_PRIORITY_BY_NODE = {
+      "Adrien Dauzats": 34,
+      "Valentín Carderera": 34, //separación adicional notable
+      "Federico de Madrazo": 40, //separación muy fuerte
+      "Eugène Delacroix": 34,
+      "Théophile Gautier": 34,
+      "Honoré de Balzac": 34,
+      "Achille Devéria": 34
+    };
+
     function getNodeHalo(node) {
       const size = node?.size || 25;
       const fontSize = node?.font?.size || 16;
+      const id = node?.id || node?.label || '';
+      const priorityExtra = HALO_PRIORITY_BY_NODE[id] || 0;
 
       // halo visual = tamaño del nodo + peso de etiqueta + colchón extra
-      return size + (fontSize * 1.8) + 18; // before: 1.8 + 12 (it could reach 24)
+      return size + (fontSize * 1.8) + 18 + priorityExtra;
     }
 
     function enforceGlobalNodeHalo(network, nodes, passes = 20) {
