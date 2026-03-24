@@ -1751,16 +1751,25 @@ document.addEventListener('DOMContentLoaded', async function () {
     window.VIS_NETWORK = network;
     
     const HALO_PRIORITY_BY_NODE = {
+      "Francisco de Goya": 25,
       "Adrien Dauzats": 18,
       "Valentín Carderera": 18,
-      "Federico de Madrazo": 22,
-      "Eugène Delacroix": 22
+      "Federico de Madrazo": 24,
+      "Eugène Delacroix": 22,
+      "Charles Baudelaire": 22,
+      "Nadar": 22,
+      "Manuel Godoy": 22,
+      "Mariano José Larra": 18,
+      "Mariano Salvador Maella": 18,
+      "Eugenia de Montijo": 20
     };
 
     const PRIORITY_SEPARATION_PAIRS = [
-      ["Adrien Dauzats", "Valentín Carderera", 170],
-      ["Eugenio de Ochoa", "Baron Taylor", 165],
-      ["Arsène Houssaye", "Achille Devéria", 165],
+      ["Adrien Dauzats", "Valentín Carderera", 120],
+      ["Adrien Dauzats", "Federico de Madrazo", 120],
+      ["Eugenio de Ochoa", "Baron Taylor", 150],
+      ["Eugenio de Ochoa", "Valentín Carderera", 150],
+      ["Arsène Houssaye", "Achille Devéria", 130],
     ];
 
     function getNodeHalo(node) {
