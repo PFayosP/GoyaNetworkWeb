@@ -1750,11 +1750,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     window.VIS_NETWORK = network;
 
-    const HALO_PRIORITY_BY_NODE = {
-      "Adrien Dauzats": 18,
-      "Valentín Carderera": 18, //separación adicional notable
-      "Federico de Madrazo": 22, //separación muy fuerte
-    };
+    const PRIORITY_SEPARATION_PAIRS = [
+      ["Adrien Dauzats", "Valentín Carderera", 170],
+      ["Eugenio de Ochoa", "Sir Edward Burne-Jones Taylor", 165],
+      ["Arsène Houssaye", "Achille Devéria", 165]
+    ];
 
     function getNodeHalo(node) {
       const size = node?.size || 25;
@@ -1950,6 +1950,45 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
+    function enforcePriorityPairSeparation(network, nodes, pairs, passes = 8) {
+      for (let p = 0; p < passes; p++) {
+        let movedAny = false;
+
+        pairs.forEach(([aId, bId, minD]) => {
+          if (!nodes.get(aId) || !nodes.get(bId)) return;
+
+          const pos = network.getPositions([aId, bId]);
+          const pA = pos[aId];
+          const pB = pos[bId];
+          if (!pA || !pB) return;
+
+          let dx = pB.x - pA.x;
+          let dy = pB.y - pA.y;
+          let d = Math.hypot(dx, dy);
+
+          if (d < 0.001) {
+            dx = 1;
+            dy = 0;
+            d = 1;
+          }
+
+          if (d < minD) {
+            const overlap = minD - d;
+            const ux = dx / d;
+            const uy = dy / d;
+            const shift = overlap / 2;
+
+            network.moveNode(aId, pA.x - ux * shift, pA.y - uy * shift);
+            network.moveNode(bId, pB.x + ux * shift, pB.y + uy * shift);
+
+            movedAny = true;
+          }
+        });
+
+        if (!movedAny) break;
+      }
+    }
+
     // ——— Loading progress (vis-network physics) ———
     const loadingEl = document.getElementById('loadingMessage');
     const loadingPct = document.getElementById('loadingProgress');
@@ -2042,14 +2081,17 @@ document.addEventListener('DOMContentLoaded', async function () {
         );
       });
 
-      tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.35); //before: 0.18
+      tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.35);
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.20);
 
       nudgeOverlaps(network, nodes, window.__clusterOf, 6);
 
-      // imposición global final de halo mínimo entre todos los nodos
+      // halo global final
       enforceGlobalNodeHalo(network, nodes, 30);
       enforceGlobalNodeHalo(network, nodes, 12);
+
+      // separación quirúrgica de pares conflictivos
+      enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 12);
 
       network.redraw();
     }
