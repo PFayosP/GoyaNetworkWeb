@@ -7,8 +7,9 @@
   const I18N = {
     en: {
       BTN_NETWORK:"Network", BTN_ABOUT:"About", BTN_PEOPLE:"People", BTN_PARTNERS:"Partners",
-      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWIN:"New in", BTN_NEWS:"News", BTN_CONTACT:"Contact",
+      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWS:"News", BTN_CONTACT:"Contact",
       SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
+      NEW_NODES_TITLE: "New nodes",
       MEMBERS_TITLE:"Members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
       BTN_SEARCH: "Search",
       
@@ -201,8 +202,9 @@
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
-      BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWIN:"Nuevos nodos", BTN_NEWS:"Noticias", BTN_CONTACT:"Contacto",
+      BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWS:"Noticias", BTN_CONTACT:"Contacto",
       SEARCH_PH:"Buscar…", FILTER_PROF_ALL:"Todas las profesiones", FILTER_NAT_ALL:"Todas las nacionalidades",
+      NEW_NODES_TITLE: "Nodos nuevos",
       MEMBERS_TITLE:"Miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
       BTN_SEARCH: "Buscar",
       
@@ -407,7 +409,6 @@
       ['.nav-buttons button[onclick*="partners"]','BTN_PARTNERS'],
       ['.nav-buttons button[onclick*="artworks"]','BTN_ARTWORKS'],
       ['.nav-buttons button[onclick*="bibliography"]','BTN_BIB'],
-      ['#newInBtn','BTN_NEWIN'],
       ['.nav-buttons button[onclick*="news"]','BTN_NEWS'],
       ['.nav-buttons button[onclick*="cite"]','BTN_CITE'],
       ['.nav-buttons button[onclick*="contact"]','BTN_CONTACT'],
@@ -1344,103 +1345,62 @@ document.addEventListener('DOMContentLoaded', async function () {
       `${t('Nodes')}: ${data.nodes.length} | ${t('Connections')}: ${data.edges.length}<br>
       <span style="font-size: 0.8rem; color: #999;">${window.LAST_UPDATE_LABEL}: ${formattedUpdate}</span>`;
 
-    /* ---- RECENTLY ADDED: funciones del panel de nodos recientes ---- */
 
-    function showNewInPanel(show = true) {
-      const panel = document.getElementById('newInPanel');
-      if (!panel) return;
-      panel.style.display = show ? 'block' : 'none';
-    }
-
-    // Construye la lista "New in" a partir de data.nodes (solo nodos desde mayo 2025)
-    function buildNewInList(data) {
-      const container = document.getElementById('newInList');
+    // ===== NEW NODES
+    function buildNewNodesList(data) {
+      const container = document.getElementById('newNodesList');
       if (!container) return;
 
-      // ✅ Mostrar SOLO NODOS añadidos desde 1 abril 2025 (UTC)
-      const CUTOFF_STR = '2025-04-01'; // comparar como string ISO YYYY-MM-DD
+      const CUTOFF_STR = '2025-04-01';
 
       const items = (data.nodes || [])
         .filter(n => typeof n.added === 'string' && n.added >= CUTOFF_STR)
-
         .map(n => ({
-          type: 'node',
           id: n.id,
-          label: n.label || n.id,
+          label: (CURRENT_LANG === 'es' && n['display name es']) ? n['display name es'] : (n.label || n.id),
           date: n.added
         }))
         .sort((a, b) => new Date(b.date) - new Date(a.date));
 
       if (!items.length) {
-        container.innerHTML =
-          '<em>No nodes with "added" date since April 2025. Add "added" in goya_network.json (ISO format) for them to appear here.</em>';
+        container.innerHTML = `<em>${CURRENT_LANG === 'es'
+          ? 'No hay nodos añadidos desde abril de 2025.'
+          : 'No nodes added since April 2025.'}</em>`;
         return;
       }
 
-      // Limitar y renderizar
       container.innerHTML = '';
+
       items.forEach(item => {
         const wrapper = document.createElement('div');
-        wrapper.style.marginBottom = '0.4rem';
+        wrapper.className = 'new-node-item';
 
-        // enlace (solo el label)
         const a = document.createElement('a');
         a.href = '#';
-        a.className = 'newin-link';
         a.style.color = '#66ccff';
         a.textContent = item.label;
 
-        // fecha (texto normal)
         const dateSpan = document.createElement('span');
-        const dateStr = new Date(item.date + 'T00:00:00Z')
-          .toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' });
-        dateSpan.textContent = ` — ${dateStr}`;
-        dateSpan.style.color = '#bbb';
+        dateSpan.className = 'new-node-date';
 
-        // click en el link (solo nodos)
+        const locale = (CURRENT_LANG === 'es') ? 'es-ES' : 'en-GB';
+        const dateStr = new Date(item.date + 'T00:00:00')
+          .toLocaleDateString(locale, { day: '2-digit', month: 'short', year: 'numeric' });
+
+        dateSpan.textContent = ` — ${dateStr}`;
+
         a.onclick = (e) => {
           e.preventDefault();
-          e.stopPropagation(); // ⬅️ evita que el click cierre el panel antes de tiempo
-
-          if (typeof focusNode === 'function') {
-            focusNode(item.id);
-          }
-          showNewInPanel(false);
+          if (typeof focusNode === 'function') focusNode(item.id);
         };
 
         wrapper.appendChild(a);
         wrapper.appendChild(dateSpan);
         container.appendChild(wrapper);
-        });
-        }
+      });
+    }
 
-    // Conectar el botón (pon esto en el mismo scope que tu otro JS)
-    document.addEventListener('click', function (e) {
-      if (e.target && e.target.id === 'newInBtn') {
-        const panel = document.getElementById('newInPanel');
-        if (!panel) return;
-        // Evita que el clic se propague y cierre el panel inmediatamente
-        e.stopPropagation();
-        showNewInPanel(panel.style.display === 'block' ? false : true);
-      }
-    });
-
-    // Cerrar "New in" al hacer clic en cualquier parte fuera del panel
-    document.addEventListener('click', function (e) {
-      const panel = document.getElementById('newInPanel');
-      const btn = document.getElementById('newInBtn');
-      
-      // Si el clic NO fue en el panel NI en el botón, cerrar el panel
-      if (panel && panel.style.display === 'block' && 
-          !panel.contains(e.target) && 
-          e.target !== btn && 
-          !btn.contains(e.target)) {
-        showNewInPanel(false);
-      }
-    });
-
-    // Construir la lista inicial de "Recently added"
-    buildNewInList(data);
+    buildNewNodesList(data);
 
     // ---- MEMBERS LIST: manual overrides (edit these if needed) ----
     // 1) Para nombres completos donde quieras forzar el apellido clave (usa la grafía exacta)

@@ -471,6 +471,15 @@
     opacity: 1;
   }
 
+  #newNodesList .new-node-item {
+    margin-bottom: 0.4rem;
+  }
+
+  #newNodesList .new-node-date {
+    color: #bbb;
+    font-size: 0.95em;
+  }
+
 </style>
 
   
@@ -556,7 +565,6 @@
       <button onclick="showSection('partners')">Partners</button>
       <button onclick="showSection('artworks')">Artworks</button>
       <button onclick="showSection('bibliography')">Bibliography</button>
-      <button id="newInBtn">New nodes</button>
       <button onclick="showSection('news')">News</button>
       <button onclick="showSection('cite')">How to cite</button>
       <button onclick="showSection('contact')">Contact</button>
@@ -659,6 +667,11 @@
     <div id="nodeInfo">
       <p data-i18n="HELP_TEXT_1"></p>
       <p data-i18n="HELP_TEXT_2"></p>
+
+      <div id="newNodesSection" style="margin-top: 1rem;">
+        <div class="section-heading" data-i18n="NEW_NODES_TITLE"></div>
+        <div id="newNodesList" style="line-height:1.5;"></div>
+      </div>
 
       <!-- NEW: Members list (A–Z by surname) -->
       <div id="membersSection" style="margin-top: 1rem;">
@@ -862,13 +875,6 @@
 <div id="contact" style="display:none; padding:2rem; max-width:800px; margin:auto; line-height:1.6;">
   <h2 data-i18n="CONTACT_TITLE"></h2>
   <div data-i18n="CONTACT_BODY"></div>
-</div>
-
-<!-- PANEL LATERAL / POPUP (colócalo junto a los otros paneles, por ejemplo después de #cite panel) -->
-<div id="newInPanel" style="display:none; position: absolute; right: 12px; top: 58px; width: 320px; max-height: 70vh; overflow-y: auto; background: #111; color: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.6); z-index: 9999;">
-  <h3 style="margin:0 0 0.5rem 0; font-size:1rem;">New nodes</h3>
-  <div id="newInList" style="font-size:0.95rem; line-height:1.4;"></div>
-  <div style="margin-top:0.5rem; font-size:0.75rem; color:#bbb;">Most recent nodes first — click to jump to node</div>
 </div>
 
  <div id="partners" style="display: none; padding: 2rem; max-width: 1200px; margin: auto; line-height: 1.6; text-align: center;">
