@@ -1749,6 +1749,71 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     window.VIS_NETWORK = network;
 
+    
+    function getNodeHalo(node) {
+      const size = node?.size || 25;
+      const fontSize = node?.font?.size || 16;
+
+      // halo visual = tamaño del nodo + peso de etiqueta + colchón extra
+      return size + (fontSize * 1.8) + 12;
+    }
+
+    function enforceGlobalNodeHalo(network, nodes, passes = 20) {
+      const ids = nodes.getIds().filter(id => !String(id).startsWith('ANCHOR__'));
+
+      for (let p = 0; p < passes; p++) {
+        const pos = network.getPositions(ids);
+        let movedAny = false;
+
+        for (let i = 0; i < ids.length; i++) {
+          for (let j = i + 1; j < ids.length; j++) {
+            const a = ids[i];
+            const b = ids[j];
+
+            const pA = pos[a];
+            const pB = pos[b];
+            if (!pA || !pB) continue;
+
+            const nodeA = nodes.get(a);
+            const nodeB = nodes.get(b);
+            if (!nodeA || !nodeB) continue;
+
+            const haloA = getNodeHalo(nodeA);
+            const haloB = getNodeHalo(nodeB);
+            const minD = haloA + haloB;
+
+            let dx = pB.x - pA.x;
+            let dy = pB.y - pA.y;
+            let d = Math.hypot(dx, dy);
+
+            // evita división por cero
+            if (d < 0.001) {
+              dx = 1;
+              dy = 0;
+              d = 1;
+            }
+
+            if (d < minD) {
+              const overlap = minD - d;
+              const ux = dx / d;
+              const uy = dy / d;
+
+              // mover cada nodo la mitad
+              const shift = overlap / 2;
+
+              network.moveNode(a, pA.x - ux * shift, pA.y - uy * shift);
+              network.moveNode(b, pB.x + ux * shift, pB.y + uy * shift);
+
+              movedAny = true;
+            }
+          }
+        }
+
+        // si ya no ha movido nada, salir antes
+        if (!movedAny) break;
+      }
+    }
+
     // 🔥 SOLUCIÓN NUCLEAR ANTI-OVERLAP (MULTI-PASS, RADIO REAL)
     function nudgeOverlaps(network, nodes, clusterOf = null, passes = 5) {
       for (let p = 0; p < passes; p++) {
@@ -1969,6 +2034,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.20);
 
       nudgeOverlaps(network, nodes, window.__clusterOf, 6);
+
+      // imposición global final de halo mínimo entre todos los nodos
+      enforceGlobalNodeHalo(network, nodes, 30);
+      enforceGlobalNodeHalo(network, nodes, 12);
 
       network.redraw();
     }
