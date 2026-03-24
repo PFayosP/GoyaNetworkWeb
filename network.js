@@ -1755,7 +1755,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       const fontSize = node?.font?.size || 16;
 
       // halo visual = tamaño del nodo + peso de etiqueta + colchón extra
-      return size + (fontSize * 1.8) + 12;
+      return size + (fontSize * 1.8) + 18; // before: 1.8 + 12 (it could reach 24)
     }
 
     function enforceGlobalNodeHalo(network, nodes, passes = 20) {
