@@ -1749,11 +1749,18 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       });
     window.VIS_NETWORK = network;
+    
+    const HALO_PRIORITY_BY_NODE = {
+      "Adrien Dauzats": 18,
+      "Valentín Carderera": 18,
+      "Federico de Madrazo": 22,
+      "Eugène Delacroix": 22
+    };
 
     const PRIORITY_SEPARATION_PAIRS = [
       ["Adrien Dauzats", "Valentín Carderera", 170],
-      ["Eugenio de Ochoa", "Sir Edward Burne-Jones Taylor", 165],
-      ["Arsène Houssaye", "Achille Devéria", 165]
+      ["Eugenio de Ochoa", "Baron Taylor", 165],
+      ["Arsène Houssaye", "Achille Devéria", 165],
     ];
 
     function getNodeHalo(node) {
