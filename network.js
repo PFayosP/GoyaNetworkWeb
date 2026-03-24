@@ -1838,9 +1838,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             const nodeA = nodes.get(a);
             const nodeB = nodes.get(b);
 
-            const rA = (nodeA?.size || 25) + ((nodeA?.font?.size || 16) * 1.8); //before: ((nodeA?.font?.size || 16) * 1.2);
-            const rB = (nodeB?.size || 25) + ((nodeB?.font?.size || 16) * 1.8); //before: ((nodeB?.font?.size || 16) * 1.2);
-            const minD = rA + rB + 24; //before: const minD = rA + rB + 12;
+            const baseA = (nodeA?.size || 25) + ((nodeA?.font?.size || 16) * 1.8);
+            const baseB = (nodeB?.size || 25) + ((nodeB?.font?.size || 16) * 1.8);
+
+            const extraA = HALO_PRIORITY_BY_NODE[nodeA?.id || ''] || 0;
+            const extraB = HALO_PRIORITY_BY_NODE[nodeB?.id || ''] || 0;
+
+            const minD = baseA + baseB + 24 + extraA + extraB;
 
             const dx = pB.x - pA.x;
             const dy = pB.y - pA.y;
