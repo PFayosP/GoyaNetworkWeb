@@ -1753,8 +1753,8 @@ document.addEventListener('DOMContentLoaded', async function () {
     const HALO_PRIORITY_BY_NODE = {
       "Francisco de Goya": 30,
       "Adrien Dauzats": 18,
-      "Valentín Carderera": 18,
-      "Federico de Madrazo": 24,
+      "Valentín Carderera": 25,
+      "Federico de Madrazo": 28,
       "Eugène Delacroix": 30,
       "Charles Baudelaire": 22,
       "Nadar": 22,
@@ -1763,7 +1763,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       "Mariano Salvador Maella": 18,
       "Eugenia de Montijo": 20,
       "Richard Ford": 18,
-      "Edgar Degas": 20
+      "Edgar Degas": 20,
+      "Théophile Gautier": 25,
+      "Achille Devéria": 18
     };
 
     const PRIORITY_SEPARATION_PAIRS = [
@@ -1772,7 +1774,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenio de Ochoa", "Baron Taylor", 150],
       ["Eugenio de Ochoa", "Valentín Carderera", 150],
       ["Arsène Houssaye", "Achille Devéria", 130],
-      ["Santiago Masarnau", "Vicente Masarnau", 120]
+      ["Santiago Masarnau", "Vicente Masarnau", 120],
+      ["Alfred de Musset", "Théophile Gautier", 120]
     ];
 
     function getNodeHalo(node) {
