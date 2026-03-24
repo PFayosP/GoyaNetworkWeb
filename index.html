@@ -480,6 +480,20 @@
     font-size: 0.95em;
   }
 
+  #newNodesToggle::after {
+    content: " ▾";
+    font-size: 0.9em;
+  }
+
+  #newNodesToggle.open::after {
+    content: " ▴";
+  }
+
+  #newNodesDropdown {
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
 </style>
 
   
@@ -668,9 +682,17 @@
       <p data-i18n="HELP_TEXT_1"></p>
       <p data-i18n="HELP_TEXT_2"></p>
 
-      <div id="newNodesSection" style="margin-top: 1rem;">
-        <div class="section-heading" data-i18n="NEW_NODES_TITLE"></div>
-        <div id="newNodesList" style="line-height:1.5;"></div>
+      <div id="newNodesSection" style="margin-top: 1rem; position: relative;">
+        <div id="newNodesToggle"
+            class="section-heading"
+            data-i18n="NEW_NODES_TITLE"
+            style="cursor:pointer; user-select:none; margin-bottom:0;">
+        </div>
+
+        <div id="newNodesDropdown"
+            style="display:none; margin-top:0.5rem; background:#1a1a1a; border:1px solid #444; border-radius:6px; padding:0.75rem;">
+          <div id="newNodesList" style="line-height:1.5;"></div>
+        </div>
       </div>
 
       <!-- NEW: Members list (A–Z by surname) -->

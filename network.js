@@ -1402,6 +1402,25 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     buildNewNodesList(data);
 
+    const newNodesToggle = document.getElementById('newNodesToggle');
+    const newNodesDropdown = document.getElementById('newNodesDropdown');
+
+    if (newNodesToggle && newNodesDropdown) {
+      newNodesToggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const isOpen = newNodesDropdown.style.display === 'block';
+        newNodesDropdown.style.display = isOpen ? 'none' : 'block';
+        newNodesToggle.classList.toggle('open', !isOpen);
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!document.getElementById('newNodesSection')?.contains(e.target)) {
+          newNodesDropdown.style.display = 'none';
+          newNodesToggle.classList.remove('open');
+        }
+      });
+    }
+
     // ---- MEMBERS LIST: manual overrides (edit these if needed) ----
     // 1) Para nombres completos donde quieras forzar el apellido clave (usa la grafía exacta)
 
