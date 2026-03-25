@@ -2882,6 +2882,11 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
     // 👇 PEGA LA NUEVA FUNCIÓN AQUÍ, DESPUÉS DE LA LLAVE DE CIERRE
     function normalizeForComparison(str) {
+      // Si str es undefined, null, o no es un string, devolver string vacío
+      if (!str || typeof str !== 'string') {
+        console.warn("normalizeForComparison recibió:", str);
+        return '';
+      }
       return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     }
 
@@ -2981,9 +2986,10 @@ document.addEventListener('DOMContentLoaded', async function () {
           
           if (node) {
             console.log("Encontrado nodo antiguo:", node.id);
+            __hashProcessed = true; // 👈 AÑADE ESTA LÍNEA
             setTimeout(() => {
               // Primero enfocar el nodo
-              window.VIS_NETWORK.focus(node.id, { animation: true, scale: 1.2 });
+              window.VIS_NETWORK.focus(node.id, { animation: true, scale: 1.0 }); // 👈 CAMBIA scale: 1.2 a scale: 1.0
               // Luego seleccionarlo
               window.VIS_NETWORK.selectNodes([node.id]);
               // Disparar el evento click
@@ -3028,8 +3034,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           
           if (node) {
             console.log("Nodo encontrado, seleccionando...");
+            __hashProcessed = true; // 👈 ESTA LÍNEA NUEVA AQUÍ
             setTimeout(() => {
-              window.VIS_NETWORK.focus(node.id, { animation: true, scale: 1.2 });
+              window.VIS_NETWORK.focus(node.id, { animation: true, scale: 1.0 }); // antes 1.2
               window.VIS_NETWORK.selectNodes([node.id]);
               window.VIS_NETWORK.body.emitter.emit('click', {
                 nodes: [node.id],
@@ -3060,6 +3067,13 @@ document.addEventListener('DOMContentLoaded', async function () {
           const left = unslugifyName(parts[0]);
           const right = unslugifyName(parts[1]);
           console.log("Buscando edge entre:", left, "y", right);
+          
+          // Verificar que left y right existen
+          if (!left || !right) {
+            console.error("Edge con nombre inválido:", {left, right});
+            resolve(false);
+            return;
+          }
           
           // Normalizar para comparar (sin acentos, minúsculas)
           const leftNorm = normalizeForComparison(left);
@@ -3099,6 +3113,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           if (matchingEdge) {
             console.log("Seleccionando edge:", matchingEdge.id);
+            __hashProcessed = true; // 👈 AÑADE ESTA LÍNEA
             setTimeout(() => {
               // Enfocar el centro del edge
               try {
