@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-03-24",
+  "last_update": "2026-03-25",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -9504,7 +9504,17 @@
       "connection_level": "direct",
       "relationship type": "amigos íntimos",
       "know each other since": "1833, durante el primer viaje de Federico a París (con Vicente Masarnau). Federico también conoce al Baron Taylor",
-      "portraits": "Madrazo retrata a Adrien Dauzats en 1837",
+      "portraits": [
+        {
+          "text": "1837 Madrazo retrata a Adrien Dauzats (Versailles)."
+        },
+        {
+          "text": "1839 Madrazo le retrata de nuevo (obra adquirida por el Estado español en marzo de 2026).",
+          "link": "https://x.com/Invertirenarte/status/2036482410057986053?s=20",
+          "url": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Madrazo_Dauzats_1839.jpg",
+          "caption": "Dauzats por Madrazo, 1839, óleo"
+        }
+      ],
       "correspondence": [
         "29 de septiembre de 1834, Dauzats a Madrazo: 'Je m'occupe d'une notice sur la vie et les ouvrages de Goya. C'est un hommage que nous voulons rendre à l'un des peintres les plus célèbres de l'Espagne' (Archivo Madrazo). Citado en Guinard 1967-B, p.323 (Guinard cree que Dauzats podría ser el autor del artículo sobre Goya de 1834 en <i>Le Magasin pittoresque</i>); Fayos Pérez 2024, p.50.",
         "1835-III-24, Madrazo a Dauzats (en español) (INHA). Dauzats se encuentra entonces en Valencia con el Baron Taylor. Madrazo menciona al Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau y Carlos Luis de Ribera (Fayos-Pérez 2026, de próxima publicación).",

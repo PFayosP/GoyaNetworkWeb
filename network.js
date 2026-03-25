@@ -1752,7 +1752,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     
     const HALO_PRIORITY_BY_NODE = {
       "Francisco de Goya": 30,
-      "Adrien Dauzats": 18,
+      "Adrien Dauzats": 28,
       "Valentín Carderera": 25,
       "Federico de Madrazo": 28,
       "Eugène Delacroix": 30,
@@ -1765,7 +1765,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       "Richard Ford": 18,
       "Edgar Degas": 20,
       "Théophile Gautier": 25,
-      "Achille Devéria": 18
+      "Achille Devéria": 18,
+      "Eugène Piot": 20,
+      "Eugenio Ochoa": 20,
+      "Carlos Luis de Ribera": 20
     };
 
     const PRIORITY_SEPARATION_PAIRS = [
