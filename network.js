@@ -2847,9 +2847,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     function makeNodeHash(nodeId) {
-      const node = nodes.get(nodeId);
-      const label = node?.label || nodeId;
-      return '#node/' + slugifyName(label);
+      return '#node/' + slugifyName(nodeId);
     }
 
     function makeEdgeHash(edgeId) {
@@ -2860,8 +2858,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       const toNode = nodes.get(edge.to);
       if (!fromNode || !toNode) return '';
 
-      const a = fromNode.label || fromNode.id;
-      const b = toNode.label || toNode.id;
+      const a = fromNode.id;
+      const b = toNode.id;
 
       const ordered = [a, b].sort((x, y) =>
         x.localeCompare(y, undefined, { sensitivity: 'base' })
@@ -2916,9 +2914,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         const value = rawHash.substring(slashIndex + 1);
 
         if (type === 'node') {
-          const decodedLabel = unslugifyName(value);
-          const idFromLabel = labelToId[decodedLabel];
-          const node = idFromLabel ? nodes.get(idFromLabel) : null;
+          const decodedId = unslugifyName(value);
+          const node = nodes.get(decodedId) || null;
 
           if (node) {
             setTimeout(() => {
@@ -2951,7 +2948,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             const toNode = nodes.get(edge.to);
             if (!fromNode || !toNode) return false;
 
-            const pair = [fromNode.label || fromNode.id, toNode.label || toNode.id]
+            const pair = [fromNode.id, toNode.id]
               .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
             return pair[0] === left && pair[1] === right;
