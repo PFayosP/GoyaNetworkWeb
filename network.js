@@ -991,6 +991,12 @@ document.addEventListener('DOMContentLoaded', async function () {
   
   applyUIStrings();
 
+  // ===== NUEVO: Verificar hash inmediatamente =====
+  if (window.location.hash && window.location.hash.length > 1) {
+    console.log("=== HASH DETECTADO AL INICIO ===");
+    console.log("Hash:", window.location.hash);
+  }
+
   if (CURRENT_LANG === 'es') {
         sortSelectOptionsAlphabetically('professionFilter');
       }
@@ -1750,6 +1756,25 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     window.VIS_NETWORK = network;
     
+    // ===== NUEVO: Forzar handleInitialHash cuando la red esté lista =====
+    function forceHandleHash() {
+      if (window.location.hash && window.location.hash.length > 1) {
+        console.log("=== FORZANDO handleInitialHash ===");
+        console.log("Hash:", window.location.hash);
+        
+        // Esperar un poco a que los nodos y edges estén listos
+        if (nodes && nodes.length > 0 && edges && edges.length > 0) {
+          handleInitialHash();
+        } else {
+          console.log("Nodos o edges no listos aún, reintentando...");
+          setTimeout(forceHandleHash, 500);
+        }
+      }
+    }
+    
+    // Ejecutar después de un breve retraso
+    setTimeout(forceHandleHash, 1000);
+
     const HALO_PRIORITY_BY_NODE = {
       "Francisco de Goya": 30,
       "Adrien Dauzats": 28,
@@ -3118,6 +3143,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         resolve(false);
       });
     }
+
+      // 👇 PEGA AQUÍ, DESPUÉS DE LA LLAVE DE CIERRE DE handleInitialHash
+      // Exponer handleInitialHash globalmente para debug
+      window.debugHandleHash = handleInitialHash;
 
       // Restaura el panel nodeInfo a su estado por defecto (texto + Members list)
       window.showDefaultNodeInfo = function () {
