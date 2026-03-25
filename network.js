@@ -1757,6 +1757,23 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     window.VIS_NETWORK = network;
 
+    // 👇 AGREGAR ESTE setTimeout INDEPENDIENTE como respaldo
+    setTimeout(function() {
+      if (window.location.hash && window.location.hash.length > 1 && !__hashProcessed) {
+        console.log("=== EJECUTANDO handleInitialHash POR RESPALDO ===");
+        if (nodes && nodes.length > 0 && edges && edges.length > 0) {
+          handleInitialHash();
+        } else {
+          console.log("Nodos o edges no listos aún, reintentando en 1 segundo...");
+          setTimeout(function() {
+            if (nodes && nodes.length > 0 && edges && edges.length > 0) {
+              handleInitialHash();
+            }
+          }, 1000);
+        }
+      }
+    }, 2000);
+
     const HALO_PRIORITY_BY_NODE = {
       "Francisco de Goya": 30,
       "Adrien Dauzats": 28,
