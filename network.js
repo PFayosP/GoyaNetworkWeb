@@ -2223,7 +2223,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         if (!node || node.clusterAnchor) return;
 
-        updateURL(node.id);  // This line should be here
+        updateNodeURL(node.id);
 
         clearHighlights();
         highlightNeighborhood(node.id);
@@ -2758,6 +2758,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
 
         document.getElementById("nodeInfo").innerHTML = html;
+        updateEdgeURL(selectedEdgeId);
         // recordar esta selección para refrescar en cambios de idioma
         window.__lastSelection = { type: 'edge', id: selectedEdgeId };
       }
@@ -2837,37 +2838,139 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
 
-    // Update URL when a node is clicked
-    function updateURL(nodeId) {
+    function slugifyName(name) {
+      return encodeURIComponent(String(name).replace(/ /g, '_'));
+    }
+
+    function unslugifyName(slug) {
+      return decodeURIComponent(String(slug)).replace(/_/g, ' ');
+    }
+
+    function makeNodeHash(nodeId) {
       const node = nodes.get(nodeId);
       const label = node?.label || nodeId;
-      const newUrl = window.location.pathname + '#' + label.replace(/ /g, '_');
+      return '#node/' + slugifyName(label);
+    }
+
+    function makeEdgeHash(edgeId) {
+      const edge = edges.get(edgeId);
+      if (!edge) return '';
+
+      const fromNode = nodes.get(edge.from);
+      const toNode = nodes.get(edge.to);
+      if (!fromNode || !toNode) return '';
+
+      const a = fromNode.label || fromNode.id;
+      const b = toNode.label || toNode.id;
+
+      const ordered = [a, b].sort((x, y) =>
+        x.localeCompare(y, undefined, { sensitivity: 'base' })
+      );
+
+      return '#edge/' + slugifyName(ordered[0]) + '--' + slugifyName(ordered[1]);
+    }
+
+    function updateNodeURL(nodeId) {
+      const newUrl = window.location.pathname + makeNodeHash(nodeId);
+      window.history.pushState({}, '', newUrl);
+    }
+
+    function updateEdgeURL(edgeId) {
+      const hash = makeEdgeHash(edgeId);
+      if (!hash) return;
+      const newUrl = window.location.pathname + hash;
       window.history.pushState({}, '', newUrl);
     }
 
     // Handle initial URL hash
     function handleInitialHash() {
       return new Promise((resolve) => {
-        const hash = window.location.hash.substring(1);
-        if (hash) {
-          const decodedHash = decodeURIComponent(hash).replace(/_/g, ' ');
+        const rawHash = window.location.hash.substring(1);
+
+        if (!rawHash) {
+          resolve(false);
+          return;
+        }
+
+        // Compatibilidad con hashes antiguos de nodo: #Adrien_Dauzats
+        if (!rawHash.includes('/')) {
+          const decodedHash = decodeURIComponent(rawHash).replace(/_/g, ' ');
           const idFromLabel = labelToId[decodedHash];
           const node = idFromLabel ? nodes.get(idFromLabel) : null;
 
           if (node) {
-
-            // Wait for network to stabilize
             setTimeout(() => {
               network.selectNodes([node.id]);
-              network.emit("click", { nodes: [node.id] });
+              network.emit("click", { nodes: [node.id], edges: [] });
               resolve(true);
-            }, 300); // Changed from 1000 to 300
-          } else {
-            resolve(false);
+            }, 300);
+            return;
           }
-        } else {
+
           resolve(false);
+          return;
         }
+
+        const slashIndex = rawHash.indexOf('/');
+        const type = rawHash.substring(0, slashIndex);
+        const value = rawHash.substring(slashIndex + 1);
+
+        if (type === 'node') {
+          const decodedLabel = unslugifyName(value);
+          const idFromLabel = labelToId[decodedLabel];
+          const node = idFromLabel ? nodes.get(idFromLabel) : null;
+
+          if (node) {
+            setTimeout(() => {
+              network.selectNodes([node.id]);
+              network.emit("click", { nodes: [node.id], edges: [] });
+              resolve(true);
+            }, 300);
+            return;
+          }
+
+          resolve(false);
+          return;
+        }
+
+        if (type === 'edge') {
+          const parts = value.split('--');
+          if (parts.length !== 2) {
+            resolve(false);
+            return;
+          }
+
+          const left = unslugifyName(parts[0]);
+          const right = unslugifyName(parts[1]);
+
+          const matchingEdge = edges.get().find(edge => {
+            if (edge._isClusterEdge) return false;
+            if (edge.hidden) return false;
+
+            const fromNode = nodes.get(edge.from);
+            const toNode = nodes.get(edge.to);
+            if (!fromNode || !toNode) return false;
+
+            const pair = [fromNode.label || fromNode.id, toNode.label || toNode.id]
+              .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+
+            return pair[0] === left && pair[1] === right;
+          });
+
+          if (matchingEdge) {
+            setTimeout(() => {
+              network.selectEdges([matchingEdge.id]);
+              network.emit("click", { nodes: [], edges: [matchingEdge.id] });
+              resolve(true);
+            }, 300);
+            return;
+          }
+
+          resolve(false);
+          return;
+        }
+
+        resolve(false);
       });
     }
 
