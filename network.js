@@ -2858,23 +2858,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       return '#node/' + slugifyName(nodeId);
     }
 
-    function makeEdgeHash(edgeId) {
-      const edge = edges.get(edgeId);
-      if (!edge) return '';
-
-      const fromNode = nodes.get(edge.from);
-      const toNode = nodes.get(edge.to);
-      if (!fromNode || !toNode) return '';
-
-      const a = fromNode.id;
-      const b = toNode.id;
-
-      const ordered = [a, b].sort((x, y) =>
-        x.localeCompare(y, undefined, { sensitivity: 'base' })
-      );
-
-      return '#edge/' + slugifyName(ordered[0]) + '--' + slugifyName(ordered[1]);
-    }
 
     function updateNodeURL(nodeId) {
       const newUrl = window.location.pathname + makeNodeHash(nodeId);
@@ -2888,23 +2871,46 @@ document.addEventListener('DOMContentLoaded', async function () {
       window.history.pushState({}, '', newUrl);
     }
 
+    function makeEdgeHash(edgeId) {
+      const edge = edges.get(edgeId);
+      if (!edge) return '';
+
+      const fromNode = nodes.get(edge.from);
+      const toNode = nodes.get(edge.to);
+      if (!fromNode || !toNode) return '';
+
+      const a = fromNode.id;
+      const b = toNode.id;
+
+      // Ordenar para que el hash sea consistente
+      const ordered = [a, b].sort((x, y) =>
+        x.localeCompare(y, undefined, { sensitivity: 'base' })
+      );
+
+      return '#edge/' + slugifyName(ordered[0]) + '--' + slugifyName(ordered[1]);
+    }
+
     // Handle initial URL hash
     function handleInitialHash() {
       return new Promise((resolve) => {
         const rawHash = window.location.hash.substring(1);
+        console.log("Hash detectado:", rawHash); // Para debug
 
         if (!rawHash) {
+          console.log("No hay hash, mostrando red normal");
           resolve(false);
           return;
         }
 
-        // Compatibilidad con hashes antiguos de nodo: #Adrien_Dauzats
+        // ===== NODO: formato antiguo o nuevo =====
         if (!rawHash.includes('/')) {
+          // Formato antiguo: #Adrien_Dauzats
           const decodedHash = decodeURIComponent(rawHash).replace(/_/g, ' ');
           const idFromLabel = labelToId[decodedHash];
           const node = idFromLabel ? nodes.get(idFromLabel) : null;
 
           if (node) {
+            console.log("Encontrado nodo antiguo:", node.id);
             setTimeout(() => {
               network.setSelection({ nodes: [node.id] }, { unselectAll: true });
               network.body.emitter.emit('click', {
@@ -2924,15 +2930,21 @@ document.addEventListener('DOMContentLoaded', async function () {
           return;
         }
 
+        // ===== FORMATO NUEVO: tipo/valor =====
         const slashIndex = rawHash.indexOf('/');
         const type = rawHash.substring(0, slashIndex);
         const value = rawHash.substring(slashIndex + 1);
+        
+        console.log("Tipo:", type, "Valor:", value);
 
+        // ===== PROCESAR NODO =====
         if (type === 'node') {
           const decodedId = unslugifyName(value);
+          console.log("Buscando nodo:", decodedId);
           const node = nodes.get(decodedId) || null;
 
           if (node) {
+            console.log("Nodo encontrado, seleccionando...");
             setTimeout(() => {
               network.setSelection({ nodes: [node.id] }, { unselectAll: true });
               network.body.emitter.emit('click', {
@@ -2946,56 +2958,105 @@ document.addEventListener('DOMContentLoaded', async function () {
               resolve(true);
             }, 300);
             return;
+          } else {
+            console.log("Nodo NO encontrado:", decodedId);
+            resolve(false);
+            return;
           }
-
-          resolve(false);
-          return;
         }
 
+        // ===== PROCESAR EDGE =====
         if (type === 'edge') {
           const parts = value.split('--');
+          console.log("Partes del edge:", parts);
+          
           if (parts.length !== 2) {
+            console.log("Formato de edge inválido (no tiene --)");
             resolve(false);
             return;
           }
 
           const left = unslugifyName(parts[0]);
           const right = unslugifyName(parts[1]);
+          console.log("Buscando edge entre:", left, "y", right);
 
-          const matchingEdge = edges.get().find(edge => {
-            if (edge._isClusterEdge) return false;
-            if (edge.hidden) return false;
-
+          // Buscar el edge correcto
+          let matchingEdge = null;
+          const allEdges = edges.get();
+          
+          for (let i = 0; i < allEdges.length; i++) {
+            const edge = allEdges[i];
+            
+            // Saltar edges invisibles de clustering
+            if (edge._isClusterEdge) continue;
+            if (edge.hidden) continue;
+            
             const fromNode = nodes.get(edge.from);
             const toNode = nodes.get(edge.to);
-            if (!fromNode || !toNode) return false;
-
-            const pair = [fromNode.id, toNode.id]
-              .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
-
-            return pair[0] === left && pair[1] === right;
-          });
-
-          if (matchingEdge) {
-            setTimeout(() => {
-              network.setSelection({ edges: [matchingEdge.id] }, { unselectAll: true });
-              network.body.emitter.emit('click', {
-                nodes: [],
-                edges: [matchingEdge.id],
-                pointer: {
-                  DOM: { x: 0, y: 0 },
-                  canvas: { x: 0, y: 0 }
-                }
-              });
-              resolve(true);
-            }, 300);
-            return;
+            
+            if (!fromNode || !toNode) continue;
+            
+            // Ordenar los nombres para comparar (no importa el orden)
+            const pair = [fromNode.id, toNode.id].sort((a, b) => 
+              a.localeCompare(b, undefined, { sensitivity: 'base' })
+            );
+            
+            console.log("Comparando:", pair[0], "con", left, "y", pair[1], "con", right);
+            
+            if (pair[0] === left && pair[1] === right) {
+              matchingEdge = edge;
+              console.log("¡EDGE ENCONTRADO!", edge.id);
+              break;
+            }
           }
 
-          resolve(false);
-          return;
+          if (matchingEdge) {
+            console.log("Seleccionando edge:", matchingEdge.id);
+            setTimeout(() => {
+              // Primero selecciona el edge
+              network.setSelection({ edges: [matchingEdge.id] }, { unselectAll: true });
+              
+              // Pequeño retraso para asegurar que la selección se aplicó
+              setTimeout(() => {
+                // Emite el evento click
+                network.body.emitter.emit('click', {
+                  nodes: [],
+                  edges: [matchingEdge.id],
+                  pointer: {
+                    DOM: { x: 0, y: 0 },
+                    canvas: { x: 0, y: 0 }
+                  }
+                });
+                
+                // También enfoca la cámara en el edge (opcional)
+                try {
+                  const fromPos = network.getPosition(matchingEdge.from);
+                  const toPos = network.getPosition(matchingEdge.to);
+                  if (fromPos && toPos) {
+                    const centerX = (fromPos.x + toPos.x) / 2;
+                    const centerY = (fromPos.y + toPos.y) / 2;
+                    network.moveTo({
+                      position: { x: centerX, y: centerY },
+                      scale: network.getScale(),
+                      animation: { duration: 500 }
+                    });
+                  }
+                } catch(e) {
+                  console.log("Error al mover cámara:", e);
+                }
+              }, 100);
+              
+              resolve(true);
+            }, 500);
+            return;
+          } else {
+            console.log("Edge NO encontrado entre", left, "y", right);
+            resolve(false);
+            return;
+          }
         }
 
+        console.log("Tipo no reconocido:", type);
         resolve(false);
       });
     }
