@@ -1756,6 +1756,22 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     window.VIS_NETWORK = network;
     
+    // ===== NUEVO: Forzar handleInitialHash cuando la red esté lista =====
+    function forceHandleHash() {
+      if (window.location.hash && window.location.hash.length > 1) {
+        console.log("=== FORZANDO handleInitialHash ===");
+        console.log("Hash:", window.location.hash);
+        
+        // Esperar un poco a que los nodos y edges estén listos
+        if (nodes && nodes.length > 0 && edges && edges.length > 0) {
+          handleInitialHash();
+        } else {
+          console.log("Nodos o edges no listos aún, reintentando...");
+          setTimeout(forceHandleHash, 500);
+        }
+      }
+    }
+    
     // Ejecutar después de un breve retraso
     setTimeout(forceHandleHash, 1000);
 
@@ -2911,9 +2927,12 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     // Handle initial URL hash
-    function handleInitialHash() {
+    function handleInitialHash(retryCount = 0) {
+      const MAX_RETRIES = 5;
+      
       return new Promise((resolve) => {
         const rawHash = window.location.hash.substring(1);
+        console.log("=== HANDLE INITIAL HASH (intento " + (retryCount + 1) + "/" + MAX_RETRIES + ") ===");
         console.log("Hash detectado:", rawHash);
 
         if (!rawHash) {
@@ -2922,34 +2941,74 @@ document.addEventListener('DOMContentLoaded', async function () {
           return;
         }
 
+        // Verificar si la red está lista
+        const isNetworkReady = () => {
+          return window.VIS_NETWORK && 
+                nodes && 
+                edges && 
+                nodes.length > 0 && 
+                edges.length > 0;
+        };
+
+        // Si la red no está lista y aún tenemos reintentos, esperar y reintentar
+        if (!isNetworkReady() && retryCount < MAX_RETRIES) {
+          console.log("Red no lista aún, reintentando en 500ms...");
+          setTimeout(() => {
+            handleInitialHash(retryCount + 1).then(resolve);
+          }, 500);
+          return;
+        }
+
+        if (!isNetworkReady()) {
+          console.error("No se pudo cargar la red después de " + MAX_RETRIES + " intentos");
+          resolve(false);
+          return;
+        }
+
+        console.log("Red lista, procesando hash...");
+        
         // ===== NODO: formato antiguo o nuevo =====
         if (!rawHash.includes('/')) {
           // Formato antiguo: #Adrien_Dauzats
           const decodedHash = decodeURIComponent(rawHash).replace(/_/g, ' ');
-          const idFromLabel = labelToId[decodedHash];
-          const node = idFromLabel ? nodes.get(idFromLabel) : null;
-
+          console.log("Buscando nodo antiguo:", decodedHash);
+          
+          // Buscar por id o label
+          let node = null;
+          const allNodes = nodes.get();
+          for (let i = 0; i < allNodes.length; i++) {
+            const n = allNodes[i];
+            if (n.id === decodedHash || n.label === decodedHash) {
+              node = n;
+              break;
+            }
+          }
+          
           if (node) {
             console.log("Encontrado nodo antiguo:", node.id);
+            __hashProcessed = true; // 👈 AÑADE ESTA LÍNEA
             setTimeout(() => {
-              network.setSelection({ nodes: [node.id] }, { unselectAll: true });
-              network.body.emitter.emit('click', {
+              // Primero enfocar el nodo
+              window.VIS_NETWORK.focus(node.id, { animation: true, scale: 1.0 }); // 👈 CAMBIA scale: 1.2 a scale: 1.0
+              // Luego seleccionarlo
+              window.VIS_NETWORK.selectNodes([node.id]);
+              // Disparar el evento click
+              window.VIS_NETWORK.body.emitter.emit('click', {
                 nodes: [node.id],
                 edges: [],
-                pointer: {
-                  DOM: { x: 0, y: 0 },
-                  canvas: { x: 0, y: 0 }
-                }
+                pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
               });
               resolve(true);
             }, 300);
             return;
           }
-
+          
+          console.log("Nodo NO encontrado:", decodedHash);
           resolve(false);
           return;
         }
 
+        // ===== FORMATO NUEVO: tipo/valor =====
         const slashIndex = rawHash.indexOf('/');
         const type = rawHash.substring(0, slashIndex);
         const value = rawHash.substring(slashIndex + 1);
@@ -2960,21 +3019,29 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (type === 'node') {
           const decodedId = unslugifyName(value);
           console.log("Buscando nodo:", decodedId);
-          const node = nodes.get(decodedId) || null;
-
+          
+          const decodedNorm = normalizeForComparison(decodedId);
+          
+          let node = null;
+          const allNodes = nodes.get();
+          for (let i = 0; i < allNodes.length; i++) {
+            const n = allNodes[i];
+            if (normalizeForComparison(n.id) === decodedNorm) {
+              node = n;
+              break;
+            }
+          }
+          
           if (node) {
             console.log("Nodo encontrado, seleccionando...");
+            __hashProcessed = true; // 👈 ESTA LÍNEA NUEVA AQUÍ
             setTimeout(() => {
-              // 👇 SOLO CAMBIO: scale: 1.0 en lugar de 1.2
-              network.focus(node.id, { animation: true, scale: 1.0 });
-              network.selectNodes([node.id]);
-              network.body.emitter.emit('click', {
+              window.VIS_NETWORK.focus(node.id, { animation: true, scale: 1.0 }); // antes 1.2
+              window.VIS_NETWORK.selectNodes([node.id]);
+              window.VIS_NETWORK.body.emitter.emit('click', {
                 nodes: [node.id],
                 edges: [],
-                pointer: {
-                  DOM: { x: 0, y: 0 },
-                  canvas: { x: 0, y: 0 }
-                }
+                pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
               });
               resolve(true);
             }, 300);
@@ -3000,6 +3067,17 @@ document.addEventListener('DOMContentLoaded', async function () {
           const left = unslugifyName(parts[0]);
           const right = unslugifyName(parts[1]);
           console.log("Buscando edge entre:", left, "y", right);
+          
+          // Verificar que left y right existen
+          if (!left || !right) {
+            console.error("Edge con nombre inválido:", {left, right});
+            resolve(false);
+            return;
+          }
+          
+          // Normalizar para comparar (sin acentos, minúsculas)
+          const leftNorm = normalizeForComparison(left);
+          const rightNorm = normalizeForComparison(right);
 
           // Buscar el edge correcto
           let matchingEdge = null;
@@ -3008,6 +3086,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           for (let i = 0; i < allEdges.length; i++) {
             const edge = allEdges[i];
             
+            // Saltar edges invisibles de clustering
             if (edge._isClusterEdge) continue;
             if (edge.hidden) continue;
             
@@ -3016,11 +3095,16 @@ document.addEventListener('DOMContentLoaded', async function () {
             
             if (!fromNode || !toNode) continue;
             
-            const pair = [fromNode.id, toNode.id].sort((a, b) => 
-              a.localeCompare(b, undefined, { sensitivity: 'base' })
-            );
+            // Normalizar los nombres de los nodos para comparar
+            const fromNorm = normalizeForComparison(fromNode.id);
+            const toNorm = normalizeForComparison(toNode.id);
             
-            if (pair[0] === left && pair[1] === right) {
+            // Ordenar para comparar (no importa el orden)
+            const pairNorm = [fromNorm, toNorm].sort();
+            
+            console.log("Comparando normalizado:", pairNorm[0], "con", leftNorm, "y", pairNorm[1], "con", rightNorm);
+            
+            if (pairNorm[0] === leftNorm && pairNorm[1] === rightNorm) {
               matchingEdge = edge;
               console.log("¡EDGE ENCONTRADO!", edge.id);
               break;
@@ -3029,18 +3113,37 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           if (matchingEdge) {
             console.log("Seleccionando edge:", matchingEdge.id);
+            __hashProcessed = true; // 👈 AÑADE ESTA LÍNEA
             setTimeout(() => {
-              network.selectEdges([matchingEdge.id]);
+              // Enfocar el centro del edge
+              try {
+                const fromPos = window.VIS_NETWORK.getPosition(matchingEdge.from);
+                const toPos = window.VIS_NETWORK.getPosition(matchingEdge.to);
+                if (fromPos && toPos) {
+                  const centerX = (fromPos.x + toPos.x) / 2;
+                  const centerY = (fromPos.y + toPos.y) / 2;
+                  window.VIS_NETWORK.moveTo({
+                    position: { x: centerX, y: centerY },
+                    scale: window.VIS_NETWORK.getScale(),
+                    animation: { duration: 500 }
+                  });
+                }
+              } catch(e) {
+                console.log("Error al mover cámara:", e);
+              }
+              
+              // Seleccionar el edge
+              window.VIS_NETWORK.selectEdges([matchingEdge.id]);
+              
+              // Disparar el evento click
               setTimeout(() => {
-                network.body.emitter.emit('click', {
+                window.VIS_NETWORK.body.emitter.emit('click', {
                   nodes: [],
                   edges: [matchingEdge.id],
-                  pointer: {
-                    DOM: { x: 0, y: 0 },
-                    canvas: { x: 0, y: 0 }
-                  }
+                  pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
                 });
               }, 100);
+              
               resolve(true);
             }, 500);
             return;
@@ -3180,6 +3283,17 @@ document.addEventListener('DOMContentLoaded', async function () {
   network.on("dragEnd", () => {
     network.setOptions({ physics: { enabled: false } });
   });*/
+
+    // FORZAR handleInitialHash cuando todo esté cargado
+    window.addEventListener('load', function() {
+      console.log("=== EVENTO LOAD DISPARADO ===");
+      setTimeout(function() {
+        if (window.location.hash && window.location.hash.length > 1) {
+          console.log("Forzando handleInitialHash desde evento load");
+          handleInitialHash();
+        }
+      }, 2000);
+    });
     
   } catch (err) {
     console.error("Error cargando o renderizando la red:", err);
