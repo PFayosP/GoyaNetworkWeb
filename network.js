@@ -1756,9 +1756,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       });
     window.VIS_NETWORK = network;
-    
-    // Ejecutar después de un breve retraso
-    setTimeout(forceHandleHash, 1000);
 
     const HALO_PRIORITY_BY_NODE = {
       "Francisco de Goya": 30,
