@@ -2120,7 +2120,15 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       network.redraw();
     }
-  }, 150);
+
+      setTimeout(() => {
+        handleInitialHash();
+        buildMembersList(data);
+        buildNewNodesList(data);
+        __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
+      }, 100);
+  
+    }, 150);
   });
 
     function highlightNeighborhood(nodeId) {
@@ -2970,28 +2978,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         resolve(false);
       });
     }
-
-      // Después de crear el network, usa el hook de estabilización:
-      network.once('stabilizationIterationsDone', () => {
-        document.getElementById('loadingMessage').style.display = 'none';
-
-        const doLater = (fn) =>
-          (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 800 }) : setTimeout(fn, 200));
-
-        // 1) Hash inicial (rápido)
-        setTimeout(() => handleInitialHash(), 300);
-
-        // 2) Members list (medio)
-        doLater(() => buildMembersList(data));
-
-        // 3) New in (medio)
-        doLater(() => buildNewNodesList(data));
-
-        // 4) Cargar imágenes (lo más pesado) + snapshot del panel por defecto
-        doLater(() => {
-          __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-        });
-      });
 
       // Restaura el panel nodeInfo a su estado por defecto (texto + Members list)
       window.showDefaultNodeInfo = function () {
