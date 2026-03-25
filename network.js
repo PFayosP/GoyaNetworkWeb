@@ -2926,17 +2926,23 @@ document.addEventListener('DOMContentLoaded', async function () {
       return '#edge/' + slugifyName(ordered[0]) + '--' + slugifyName(ordered[1]);
     }
 
+    let __hashProcessed = false;
     // Handle initial URL hash
     function handleInitialHash(retryCount = 0) {
       const MAX_RETRIES = 5;
       
       return new Promise((resolve) => {
         const rawHash = window.location.hash.substring(1);
+          if (__hashProcessed) {
+            resolve(false);
+            return;
+          }
         console.log("=== HANDLE INITIAL HASH (intento " + (retryCount + 1) + "/" + MAX_RETRIES + ") ===");
         console.log("Hash detectado:", rawHash);
 
         if (!rawHash) {
           console.log("No hay hash, mostrando red normal");
+          __hashProcessed = true;
           resolve(false);
           return;
         }
@@ -2989,7 +2995,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             __hashProcessed = true; // 👈 AÑADE ESTA LÍNEA
             setTimeout(() => {
               // Primero enfocar el nodo
-              window.VIS_NETWORK.focus(node.id, { animation: true, scale: 1.0 }); // 👈 CAMBIA scale: 1.2 a scale: 1.0
+              const pos = window.VIS_NETWORK.getPosition(node.id);
+              window.VIS_NETWORK.moveTo({
+                position: pos,
+                scale: window.VIS_NETWORK.getScale(),
+                animation: { duration: 500 }
+              });
               // Luego seleccionarlo
               window.VIS_NETWORK.selectNodes([node.id]);
               // Disparar el evento click
@@ -3036,7 +3047,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             console.log("Nodo encontrado, seleccionando...");
             __hashProcessed = true; // 👈 ESTA LÍNEA NUEVA AQUÍ
             setTimeout(() => {
-              window.VIS_NETWORK.focus(node.id, { animation: true, scale: 1.0 }); // antes 1.2
+            const pos = window.VIS_NETWORK.getPosition(node.id);
+            window.VIS_NETWORK.moveTo({
+              position: pos,
+              scale: window.VIS_NETWORK.getScale(),
+              animation: { duration: 500 }
+            });
+            
               window.VIS_NETWORK.selectNodes([node.id]);
               window.VIS_NETWORK.body.emitter.emit('click', {
                 nodes: [node.id],
@@ -3283,17 +3300,6 @@ document.addEventListener('DOMContentLoaded', async function () {
   network.on("dragEnd", () => {
     network.setOptions({ physics: { enabled: false } });
   });*/
-
-    // FORZAR handleInitialHash cuando todo esté cargado
-    window.addEventListener('load', function() {
-      console.log("=== EVENTO LOAD DISPARADO ===");
-      setTimeout(function() {
-        if (window.location.hash && window.location.hash.length > 1) {
-          console.log("Forzando handleInitialHash desde evento load");
-          handleInitialHash();
-        }
-      }, 2000);
-    });
     
   } catch (err) {
     console.error("Error cargando o renderizando la red:", err);
