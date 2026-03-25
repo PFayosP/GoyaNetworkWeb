@@ -2855,6 +2855,10 @@ document.addEventListener('DOMContentLoaded', async function () {
     function unslugifyName(slug) {
       return decodeURIComponent(String(slug)).replace(/_/g, ' ');
     }
+    // 👇 PEGA LA NUEVA FUNCIÓN AQUÍ, DESPUÉS DE LA LLAVE DE CIERRE
+    function normalizeForComparison(str) {
+      return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    }
 
     function makeNodeHash(nodeId) {
       return '#node/' + slugifyName(nodeId);
@@ -2985,11 +2989,13 @@ document.addEventListener('DOMContentLoaded', async function () {
           const decodedId = unslugifyName(value);
           console.log("Buscando nodo:", decodedId);
           
+          const decodedNorm = normalizeForComparison(decodedId);
+          
           let node = null;
           const allNodes = nodes.get();
           for (let i = 0; i < allNodes.length; i++) {
             const n = allNodes[i];
-            if (n.id === decodedId) {
+            if (normalizeForComparison(n.id) === decodedNorm) {
               node = n;
               break;
             }
@@ -3029,6 +3035,10 @@ document.addEventListener('DOMContentLoaded', async function () {
           const left = unslugifyName(parts[0]);
           const right = unslugifyName(parts[1]);
           console.log("Buscando edge entre:", left, "y", right);
+          
+          // Normalizar para comparar (sin acentos, minúsculas)
+          const leftNorm = normalizeForComparison(left);
+          const rightNorm = normalizeForComparison(right);
 
           // Buscar el edge correcto
           let matchingEdge = null;
@@ -3046,14 +3056,16 @@ document.addEventListener('DOMContentLoaded', async function () {
             
             if (!fromNode || !toNode) continue;
             
-            // Ordenar los nombres para comparar
-            const pair = [fromNode.id, toNode.id].sort((a, b) => 
-              a.localeCompare(b, undefined, { sensitivity: 'base' })
-            );
+            // Normalizar los nombres de los nodos para comparar
+            const fromNorm = normalizeForComparison(fromNode.id);
+            const toNorm = normalizeForComparison(toNode.id);
             
-            console.log("Comparando:", pair[0], "con", left, "y", pair[1], "con", right);
+            // Ordenar para comparar (no importa el orden)
+            const pairNorm = [fromNorm, toNorm].sort();
             
-            if (pair[0] === left && pair[1] === right) {
+            console.log("Comparando normalizado:", pairNorm[0], "con", leftNorm, "y", pairNorm[1], "con", rightNorm);
+            
+            if (pairNorm[0] === leftNorm && pairNorm[1] === rightNorm) {
               matchingEdge = edge;
               console.log("¡EDGE ENCONTRADO!", edge.id);
               break;
