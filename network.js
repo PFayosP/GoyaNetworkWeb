@@ -536,6 +536,7 @@
   };
 
 let nodes, edges; // 👈 Hacemos estas variables globales
+let __hashProcessed = false; // 👈 NUEVO: para evitar procesar el hash múltiples veces
 
 function autoLinkNames(text, nodesMap) {
   if (!text || typeof text !== "string") return text;
@@ -1756,22 +1757,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     window.VIS_NETWORK = network;
     
-    // ===== NUEVO: Forzar handleInitialHash cuando la red esté lista =====
-    function forceHandleHash() {
-      if (window.location.hash && window.location.hash.length > 1) {
-        console.log("=== FORZANDO handleInitialHash ===");
-        console.log("Hash:", window.location.hash);
-        
-        // Esperar un poco a que los nodos y edges estén listos
-        if (nodes && nodes.length > 0 && edges && edges.length > 0) {
-          handleInitialHash();
-        } else {
-          console.log("Nodos o edges no listos aún, reintentando...");
-          setTimeout(forceHandleHash, 500);
-        }
-      }
-    }
-    
     // Ejecutar después de un breve retraso
     setTimeout(forceHandleHash, 1000);
 
@@ -2928,6 +2913,12 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // Handle initial URL hash
     function handleInitialHash(retryCount = 0) {
+      // 👇 NUEVO: evitar ejecución múltiple
+      if (__hashProcessed) {
+        console.log("Hash ya fue procesado, ignorando llamada");
+        return Promise.resolve(false);
+      }
+
       const MAX_RETRIES = 5;
       
       return new Promise((resolve) => {
@@ -3283,17 +3274,6 @@ document.addEventListener('DOMContentLoaded', async function () {
   network.on("dragEnd", () => {
     network.setOptions({ physics: { enabled: false } });
   });*/
-
-    // FORZAR handleInitialHash cuando todo esté cargado
-    window.addEventListener('load', function() {
-      console.log("=== EVENTO LOAD DISPARADO ===");
-      setTimeout(function() {
-        if (window.location.hash && window.location.hash.length > 1) {
-          console.log("Forzando handleInitialHash desde evento load");
-          handleInitialHash();
-        }
-      }, 2000);
-    });
     
   } catch (err) {
     console.error("Error cargando o renderizando la red:", err);
