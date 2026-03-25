@@ -3239,6 +3239,17 @@ document.addEventListener('DOMContentLoaded', async function () {
   network.on("dragEnd", () => {
     network.setOptions({ physics: { enabled: false } });
   });*/
+
+    // FORZAR handleInitialHash cuando todo esté cargado
+    window.addEventListener('load', function() {
+      console.log("=== EVENTO LOAD DISPARADO ===");
+      setTimeout(function() {
+        if (window.location.hash && window.location.hash.length > 1) {
+          console.log("Forzando handleInitialHash desde evento load");
+          handleInitialHash();
+        }
+      }, 2000);
+    });
     
   } catch (err) {
     console.error("Error cargando o renderizando la red:", err);
