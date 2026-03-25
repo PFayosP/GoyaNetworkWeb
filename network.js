@@ -2979,7 +2979,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 800 }) : setTimeout(fn, 200));
 
         // 1) Hash inicial (rápido)
-        handleInitialHash();
+        setTimeout(() => handleInitialHash(), 300);
 
         // 2) Members list (medio)
         doLater(() => buildMembersList(data));
