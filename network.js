@@ -2906,8 +2906,15 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           if (node) {
             setTimeout(() => {
-              network.selectNodes([node.id]);
-              network.emit("click", { nodes: [node.id], edges: [] });
+              network.setSelection({ nodes: [node.id] }, { unselectAll: true });
+              network.body.emitter.emit('click', {
+                nodes: [node.id],
+                edges: [],
+                pointer: {
+                  DOM: { x: 0, y: 0 },
+                  canvas: { x: 0, y: 0 }
+                }
+              });
               resolve(true);
             }, 300);
             return;
@@ -2927,8 +2934,15 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           if (node) {
             setTimeout(() => {
-              network.selectNodes([node.id]);
-              network.emit("click", { nodes: [node.id], edges: [] });
+              network.setSelection({ nodes: [node.id] }, { unselectAll: true });
+              network.body.emitter.emit('click', {
+                nodes: [node.id],
+                edges: [],
+                pointer: {
+                  DOM: { x: 0, y: 0 },
+                  canvas: { x: 0, y: 0 }
+                }
+              });
               resolve(true);
             }, 300);
             return;
@@ -2964,8 +2978,15 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           if (matchingEdge) {
             setTimeout(() => {
-              network.selectEdges([matchingEdge.id]);
-              network.emit("click", { nodes: [], edges: [matchingEdge.id] });
+              network.setSelection({ edges: [matchingEdge.id] }, { unselectAll: true });
+              network.body.emitter.emit('click', {
+                nodes: [],
+                edges: [matchingEdge.id],
+                pointer: {
+                  DOM: { x: 0, y: 0 },
+                  canvas: { x: 0, y: 0 }
+                }
+              });
               resolve(true);
             }, 300);
             return;
