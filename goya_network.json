@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-03-25",
+  "last_update": "2026-03-26",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -450,7 +450,7 @@
       "curiosities": "there is a Fondation Taylor, still running, created in 1844.",
       "correspondence": "Schopp 1993.",
       "bibliography": "Lanzarote Guiral 2016; Guinard 1967-A",
-      "websites": "[Fondation Taylor](https://www.taylor.fr/)",
+      "websites": "[Prado's entry](https://www.museodelprado.es/aprende/enciclopedia/voz/taylor-baron-isidore-justin/69966171-fe75-4587-876a-fe102ace6034), by Hilary Macartney; [Fondation Taylor](https://www.taylor.fr/)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Taylor.jpg",
       "image source": "Madrazo portrait, 1833, Versailles"
     },
@@ -505,7 +505,7 @@
         "INHA: <i>Carnet de voyage en Espagne d'Adrien Dauzats: premier cahier, 1836-1837</i>, [INHA NUM MS 152 (1)](https://bibliotheque-numerique.inha.fr/collection/item/67877-carnet-de-voyage-en-espagne-d-adrien-dauzats-premier-cahier-1836-1837), <i>Deuxième cahier, 1837</i>, [INHA NUM MS 152 (2)](https://bibliotheque-numerique.inha.fr/collection/item/67886-carnet-de-voyage-en-espagne-d-adrien-dauzats-deuxieme-cahier-1837?offset=7), and <i>Troisième cahier, 1837</i>, [NUM MS 152 (3)](https://bibliotheque-numerique.inha.fr/collection/item/67885-carnet-de-voyage-en-espagne-d-adrien-dauzats-troisieme-cahier-1837?offset=1)."
       ],
       "bibliography": "Tinterow 2003; Schopp 1993; Ghislaine Plessier, <i>Adrien Dauzats ou la Tentation de l'Orient</i>, exh. cat., Bordeaux, 1990; <i>Adrien Dauzats et les Voyages pittoresques et romantiques dans l'ancienne France du baron Taylor</i>, Fondation Taylor, 1990; Guinard 1967-B; Henri Jouin 1897; Philippe Burty 1869, catalogue of the Dauzats sale",
-      "websites": "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)",
+      "websites": "[Prado's entry](https://www.museodelprado.es/aprende/enciclopedia/voz/dauzats-adrien/1ad5a97c-e2f4-4b7b-8a70-48c438efd2d9) by Jeannine Baticle; [Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q970806",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500027072",
@@ -11331,7 +11331,7 @@
       "curiosities": "Delacroix named Dauzats the executor of his will (Mainer and Enguita 1999, p.128)",
       "collaborations": "Delacroix asked Dauzats and Philippe Burty to catalogue his drawings and albums (which included Delacroix's copies after Goya's <i>Caprichos</i>)",
       "artworks bought/sold": "Dauzats owned Delacroix's watercolour <i>La Muse inspirant Hésiode</i>, mentioned in the 1930 Delacroix exh. cat. as 'Legs d'Eug. Delacroix à M. Dauzats' (Huyghe 1930, no.392, pp.185-86), as well as <i>Étude d'intérieur marocain</i> 'Vente Delacroix 1864, Vente Dauzats 1869, Vente Chocquet 1899, Donation Moreau-Nélation' (no.405, p.200).",
-      "bibliography": "Huyghe 1930",
+      "bibliography": "Mainer and Enguita 1999; Huyghe 1930",
       "websites": "[Marques des collections](https://www.marquesdecollections.fr/FtDetail/be9750d0-4dc3-4641-860c-7ae82e4aa5b0)"
     },
     {
