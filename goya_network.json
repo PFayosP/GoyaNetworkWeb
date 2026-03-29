@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-03-26",
+  "last_update": "2026-03-29",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -5758,6 +5758,49 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Rittner_AI_Gemini.jpg",
       "image source": "AI generated (Gemini) because there is no known portrait",
       "added": "2026-01-15"
+    },
+    {
+      "id": "Gregorio Cruzada Villaamil",
+      "label": "C. Villaamil",
+      "full name": "Joseph-Heinrich Rittner",
+      "also known as": "Gregorio Cruzada Villamil",
+      "pseudonyms": "El difunto pintor Orbaneja",
+      "life dates": "1832-1884", 
+      "nationality": "Spanish",
+      "born in": "Alicante",
+      "dies in": "Madrid",
+      "profession": "historian, art critic, journalist, politician",
+      "political views": "liberal",
+      "works as": [
+        "Historian: Palomino, Velázquez, Rubens, Goya. Chief of the Comisión de Inventarios. Director general de Estadística y de Correos y Telégrafos (1875-81). He restored ancient Spanish music manuscripts such as the <i>Cancionero de Palacio</i> at the Royal Palace Library (1870, printed in 1890). Deputy Director of the National Museum of Painting and Sculpture (Museo de la Trinidad) (1862–64), and later Director (1864–70): updated the 1854 catalog.",
+        "Art critic: supports the careers of painters such as Antonio Gisbert.",
+        "Member of the Regional Parliament (Diputado): Province of Alicante (1871-76)."
+      ],
+      "writes in": "<i>El Arte en España</i> (1862-70), <i>El Averiguador</i> (1867), <i>La Revista Ibérica</i>",
+      "editor of": "<i>La Razón</i> (1860-61)",
+      "member of": "Junta de Iconografía Nacional; RABASF (miembro correspondiente); Sociedad de Bibliófilos Españoles",
+      "influenced by": "Juan Agustín Ceán Bermúdez",
+      "literary salon or tertulia": "C/ Lope de Vega",
+      "author of": [
+        "1865 <i>Catálogo provisional, historial y razonado del Museo Nacional de Pinturas</i> (Museo de la Trinidad).",
+        "1868 'La Casa del Sordo' (artículo sobre las Pinturas negras), <i>El Arte en España</i>, T.7, pp.265-267. [Biblioteca del Prado](https://bibliotecadigital.museodelprado.es/pradobib/es/bib/17003.do?queryId=12737&position=3)",
+        "1870 <i>Los tapices de Goya</i>.",
+        "1874 <i>Rubens, diplomático español</i>. Reeditado 1883",
+        "1883 <i>Rubens, diplomático español</i>.",
+        "1885 <i>Anales de la vida y de las obras de Diego de Silva Velázquez</i>.",
+        "Editions: <i>Arte de la Pintura</i> de Francisco Pacheco; <i>Diálogos de la pintura, su defensa, origen, essentia, definición, modos y differencias</i> de Vicente Carducho."
+      ],
+      "link to Goya's work": [
+        "1863 writes about the Quinta del Sordo (García Melero 2002, p.151).",
+        "1868 artículo sobre las Pinturas negras en <i>El Arte en España</i>: encarga a Eduardo Gimeno las ilustraciones en aguafuerte, quien antes de fallecer llega a realizar <i>Saturno</i>, <i>La lectura</i> y <i<El Santo Oficio</i>.",
+        "1870 he discovers the tapestry cartoons in the basement of the Royal Palace in Madrid and catalogs them. He arranges for them to be added to the Prado's collections. He retrieves archival documents for his research."
+      ],
+      "portrayed by": "anonymous, photograph, before 1884, Museo Lázaro Galdiano",
+      "bibliography": "García Melero 2002; Amelia López-Yarto & Isabel Mateo Gómez, 'Gestación del catálogo del Museo Nacional de Pintura en el siglo XIX', Actas de las jornadas Historiografía del arte español en los siglos XIX y XX, 1995, pp.273-82; Pérez Sánchez, 'Introducción', <i>Museo del Prado. Inventario general de pinturas II. El Museo de la Trinidad</i>, 1991; Gaya Nuño, <i>Historia de la crítica de arte en España</i>, 1975; Gaya Nuño, 'El Museo Nacional de la Trinidad. Historia y catálogo de una pinacoteca desaparecida', <i>Boletín de la Sociedad Española de Excursiones</i>, lv, 1947, pp.19-78.",
+      "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/cruzada-villaamil-gregorio/ba283994-7dba-4cfa-a28c-f0dad5855ad9), Javier Portús; [Prado](https://www.museodelprado.es/museo/publicacion/goya-en-la-biblioteca/a29ac2c3-5ef6-e0fe-990c-7ed6aa621b5b), 'Goya en la Biblioteca'.",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Cruzada_Villaamil.jpg",
+      "image source": "photograph, 1880s, Museo Lázaro Galdiano",
+      "added": "2026-03-29"
     }
   ],
   "edges": [
@@ -14377,6 +14420,43 @@
       "copies after Goya": "at least 42 (see Fayos Pérez 2024, Appendix III, Catalogue of Eugène Delacroix's Works after Goya's <i>Caprichos</i>, c.1819-1827)",
       "artworks influenced by Goya": "among others, the cover of <i>Faust</i> (1828), based on <i>Capricho</i> 66",
       "bibliography": "Fayos Pérez 2024; Fayos Pérez 2019."
+    },
+    {
+      "from": "Gregorio Cruzada Villaamil",
+      "to": "Francisco de Goya",
+      "connection_level": "secondary",
+      "relationship type": "Cruzada Villamil studies Goya's work",
+      "link to Goya's work": [
+        "1863 he writes about the tapestry cartoons and the Quinta del Sordo (García Melero 2002, p.151).",
+        "1868 'La Casa del Sordo' (artículo sobre las Pinturas negras), <i>El Arte en España</i>, T.7, pp.265-267. [Biblioteca del Prado](https://bibliotecadigital.museodelprado.es/pradobib/es/bib/17003.do?queryId=12737&position=3). Cruzada Villaamil commissioned Eduardo Gimeno to create the etchings; before his death, he managed to complete <i>Saturn</i>, <i>Reading</i>, and <i<The Holy Office</i>.",
+        "1870 he discovers the tapestry cartoons in the basement of the Royal Palace in Madrid and catalogs them. He secures their inclusion in the Prado’s collections. He retrieves archival documents for his research. He publishes <i>Goya's Tapestries</i> (1870)."
+      ],
+      "bibliography": "García Melero 2002",
+      "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/cruzada-villaamil-gregorio/ba283994-7dba-4cfa-a28c-f0dad5855ad9), by Javier Portús; [Prado](https://www.museodelprado.es/museo/publicacion/goya-en-la-biblioteca/a29ac2c3-5ef6-e0fe-990c-7ed6aa621b5b), 'Goya en la Biblioteca'."
+    },
+    {
+      "from": "Gregorio Cruzada Villaamil",
+      "to": "Juan Agustín Ceán Bermúdez",
+      "connection_level": "secondary",
+      "relationship type": "Cruzada Villamil was influenced by Ceán Bermúdez's work in historiography"
+    },
+    {
+      "from": "Gregorio Cruzada Villaamil",
+      "to": "Pedro de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "colleagues",
+      "they share": [
+        "They belonged to the Junta de Iconografía Nacional.",
+        "They both knew the Prado collections very well, alongside Luis Eusebi."
+      ]
+    },
+    {
+      "from": "Gregorio Cruzada Villaamil",
+      "to": "Valentín Carderera",
+      "connection_level": "direct",
+      "relationship type": "colleagues",
+      "they share": "they belonged to the Junta de Iconografía Nacional",
+      "bibliography": "Lanzarote Guiral 2016; Xavier de Salas, 'Sobre la bibliografía de Goya (la polémica Carderera-Cruzada Villaamil)', <i>Archivo Español de Arte</i>, vol.36, no.141, pp.47-64."
     }
   ]
 }
