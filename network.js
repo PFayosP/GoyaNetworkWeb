@@ -1755,25 +1755,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       });
     window.VIS_NETWORK = network;
-    
-    // ===== NUEVO: Forzar handleInitialHash cuando la red esté lista =====
-    function forceHandleHash() {
-      if (window.location.hash && window.location.hash.length > 1) {
-        console.log("=== FORZANDO handleInitialHash ===");
-        console.log("Hash:", window.location.hash);
-        
-        // Esperar un poco a que los nodos y edges estén listos
-        if (nodes && nodes.length > 0 && edges && edges.length > 0) {
-          handleInitialHash();
-        } else {
-          console.log("Nodos o edges no listos aún, reintentando...");
-          setTimeout(forceHandleHash, 500);
-        }
-      }
-    }
-    
-    // Ejecutar después de un breve retraso
-    setTimeout(forceHandleHash, 1000);
 
     const HALO_PRIORITY_BY_NODE = {
       "Francisco de Goya": 30,
@@ -3053,7 +3034,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               scale: window.VIS_NETWORK.getScale(),
               animation: { duration: 500 }
             });
-            
+
               window.VIS_NETWORK.selectNodes([node.id]);
               window.VIS_NETWORK.body.emitter.emit('click', {
                 nodes: [node.id],
