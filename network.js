@@ -1028,6 +1028,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (!response.ok) throw new Error('Error cargando datos');
         const data = await response.json();
         window.__GN_DATA = data;
+
+        buildMembersList(data);
+        buildNewNodesList(data);
         
         // Start image preloading
         // const imagePreload = preloadImages(data.nodes);
@@ -1045,25 +1048,56 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const nodesMap = {};
         const labelToId = {};
-        // Ajustes de nodos
+        // Cluster color palette
+        const CLUSTER_COLORS = [
+          '#e57373', // red
+          '#64b5f6', // blue
+          '#81c784', // green
+          '#ffd54f', // yellow
+          '#ba68c8', // purple
+          '#4db6ac', // teal
+          '#ffb74d', // orange
+          '#a1887f', // brown
+          '#90a4ae', // gray-blue
+          '#f06292', // pink
+        ];
+
+        // Map clusterId to color
+        const clusterColorMap = {};
+        let clusterColorIdx = 0;
+        Object.keys(RADIAL_CLUSTERS).forEach(cid => {
+          clusterColorMap[cid] = CLUSTER_COLORS[clusterColorIdx % CLUSTER_COLORS.length];
+          clusterColorIdx++;
+        });
+
+        // Reverse map: nodeId -> clusterId (first match)
+        const nodeClusterMap = {};
+        Object.entries(RADIAL_CLUSTERS).forEach(([cid, cfg]) => {
+          if (cfg.center) nodeClusterMap[cfg.center] = cid;
+          (cfg.members || []).forEach(id => { nodeClusterMap[id] = cid; });
+        });
+
+        // Ajustes de nodos con cluster color
         nodes = new vis.DataSet(data.nodes.map(node => {
           labelToId[node.label] = node.id;
           const degree = edgeCount[node.id] || 1;
+          const clusterId = nodeClusterMap[node.id];
+          const clusterColor = clusterId ? clusterColorMap[clusterId] : undefined;
           const config = {
             ...node,
-            size: Math.min(13 + degree * 0.72, 38),  // ↑ MÁS DIFERENCIACIÓN (1.2 vs 0.65). Before: Math.min(15 + degree * 1.2, 50)
-            mass: 1 + degree * 0.025,   // ← antes 0.05
+            size: Math.min(13 + degree * 0.72, 38),
+            mass: 1 + degree * 0.025,
             font: {
-              size: Math.min(11 + degree * 0.42, 18), // before: Math.min(11 + degree * 0.6, 24),
+              size: Math.min(11 + degree * 0.42, 18),
               color: '#ffffff',
               strokeWidth: 3,
-              strokeColor: '#111111', 
+              strokeColor: '#111111',
               face: 'EB Garamond, serif',
               align: 'center',
               bold: true,
               vadjust: -10
             },
-            color: { border: '#2B7CE9' },
+            color: clusterColor ? { background: clusterColor, border: '#2B7CE9' } : { border: '#2B7CE9' },
             borderWidth: 2,
             shape: node.image ? 'circularImage' : 'dot',
             labelHighlightBold: false,
@@ -1718,16 +1752,16 @@ document.addEventListener('DOMContentLoaded', async function () {
       },
 
       physics: {
-        enabled: true,
+        enabled: true, 
         solver: 'repulsion',
-          repulsion: {
-            nodeDistance: 450,         // ↑ AUMENTADO de 350 a 450 (más separación)
-            centralGravity: 0.025,     // ↓ DISMINUIDO de 0.03 a 0.025 (menos centro apelotonado)
-            springLength: 150,         // ↑ AUMENTADO de 120 a 150 (resortes más largos)
-            springConstant: 0.015,     // ↓ DISMINUIDO de 0.02 a 0.015 (resortes más suaves)
-            damping: 0.5               // ← MANTENIDO
-          }
-        },
+        repulsion: {
+          nodeDistance: 600,         // ↑ Much higher for more cluster separation
+          centralGravity: 0.018,     // ↓ Slightly less gravity
+          springLength: 210,         // ↑ Longer springs for more separation
+          springConstant: 0.012,     // ↓ Softer springs
+          damping: 0.52              // Slightly more damping
+        }
+      },
 
         // 🔥 AÑADE ESTA NUEVA OPCIÓN (ANTI-OVERLAP INTEGRADO):
         layout: {
@@ -2061,9 +2095,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.center || !cfg.members || !cfg.members.length) return;
 
+        // Tighter cluster radius for more visible grouping
         const baseRadius = Math.max(
-          cfg.radius || 150,
-          120 + (cfg.members?.length || 0) * 8
+          (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
+          70 + (cfg.members?.length || 0) * 6
         );
 
         placeFamilyAroundCenter(
@@ -2131,8 +2166,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       setTimeout(() => {
         console.log("=== LLAMANDO A handleInitialHash() ===");
         handleInitialHash();
-        buildMembersList(data);
-        buildNewNodesList(data);
         __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
       }, 1500); // Aumentado a 1500ms
   
@@ -3166,15 +3199,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         const el = document.getElementById('nodeInfo');
         if (!el) return;
 
-        // Restaura el HTML inicial guardado
         if (__defaultNodeInfoHTML) {
           el.innerHTML = __defaultNodeInfoHTML;
         }
 
-        // Por si el snapshot no incluyera la lista (edge case), reconstruimos
-        if (!document.getElementById('membersList')) {
-          buildMembersList(data);
-        }
+        buildMembersList(data);
+        buildNewNodesList(data);
       };
 
     // Búsqueda funcional
