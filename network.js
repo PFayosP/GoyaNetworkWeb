@@ -1059,6 +1059,112 @@ document.addEventListener('DOMContentLoaded', async function () {
           '#f06292', // pink
         ];
 
+        const RADIAL_CLUSTERS = {
+          "MADRAZO_FAMILY": {
+            center: "José de Madrazo",
+            members: [
+              "Federico de Madrazo",
+              "Pedro de Madrazo",
+              "Luis de Madrazo",
+              "Raimundo de Madrazo",
+              "Cecilia de Madrazo",
+              "Román Garreta",
+              "Mariano Fortuny y Madrazo",
+              "Mariano Fortuny y Marsal",
+              "Luisa Garreta",
+              "Juan de Madrazo"
+            ],
+            radius: 165, //before: 220
+            startAngle: -Math.PI / 2
+          },
+
+          "HUGO_CENACLE": {
+            center: "Victor Hugo",
+            members: [
+              "Théophile Gautier",
+              "Alfred de Musset",
+              "George Sand",
+              "Alexandre Dumas père",
+              "Charles Nodier",
+              "Louis Boulanger",
+              "Charles-Augustin Sainte-Beuve",
+              "Antoine Fontaney"
+            ],
+            radius: 190, // before: 160
+            startAngle: -Math.PI / 2
+          },
+
+          "GOYA_FAMILY": {
+            center: "Francisco de Goya",
+            members: [
+              "Javier Goya",
+              "Mariano Goya",
+              "Gumersinda Goicoechea",
+              "Josefa Bayeu",
+              "Francisco Bayeu"
+            ],
+            radius: 145, // before: 180
+            startAngle: -Math.PI / 2,
+          },
+
+          "OSUNA_CORE": {
+            center: "XII Countess-Duchess of Benavente and Duchess of Osuna",
+            members: [
+              "IX Duke of Osuna",
+              "X Duke of Osuna",
+              "VIII Duchess of Abrantes",
+              "X Marchioness of Santa Cruz"
+            ],
+            radius: 135,
+            startAngle: -Math.PI / 2
+          },
+
+          "OSUNA_CORE": {
+            center: "XII Countess-Duchess of Benavente and Duchess of Osuna",
+            members: [
+              "IX Duke of Osuna",
+              "X Duke of Osuna",
+              "VIII Duchess of Abrantes",
+              "X Marchioness of Santa Cruz"
+            ],
+            radius: 135,
+            startAngle: -Math.PI / 2
+          },
+
+          "MONTIJO_CORE": {
+            center: "Eugenio Eulalio Palafox, VII Count of Montijo",
+            members: [
+              "María Francisca de Sales Portocarrero, VI Countess of Montijo",
+              "Cipriano Portocarrero, VIII Count of Montijo",
+              "María Manuela Kirkpatrick",
+              "Eugenia de Montijo"
+            ],
+            radius: 135,
+            startAngle: -Math.PI / 2
+          },
+
+          "CARLOS_IV_CORE": {
+            center: "Carlos IV",
+            members: [
+              "María Luisa de Parma",
+              "Fernando VII",
+              "Infanta Luisa Fernanda de Borbón"
+            ],
+            radius: 140,
+            startAngle: -Math.PI / 2
+          },
+
+          "DON_LUIS_BRANCH": {
+            center: "Luis de Borbón",
+            members: [
+              "María Teresa de Vallabriga",
+              "XV Countess of Chinchón"
+            ],
+            radius: 120,
+            startAngle: -Math.PI / 2
+          }
+        };
+
         // Map clusterId to color
         const clusterColorMap = {};
         let clusterColorIdx = 0;
@@ -1184,112 +1290,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // ===================== MINI-FAMILIAS (anchors invisibles) =====================
     // NOTA: esto NO toca tus edges reales. Añade nodos/edges "fantasma" para compactar grupos.
-
-    const RADIAL_CLUSTERS = {
-      "MADRAZO_FAMILY": {
-        center: "José de Madrazo",
-        members: [
-          "Federico de Madrazo",
-          "Pedro de Madrazo",
-          "Luis de Madrazo",
-          "Raimundo de Madrazo",
-          "Cecilia de Madrazo",
-          "Román Garreta",
-          "Mariano Fortuny y Madrazo",
-          "Mariano Fortuny y Marsal",
-          "Luisa Garreta",
-          "Juan de Madrazo"
-        ],
-        radius: 165, //before: 220
-        startAngle: -Math.PI / 2
-      },
-
-      "HUGO_CENACLE": {
-        center: "Victor Hugo",
-        members: [
-          "Théophile Gautier",
-          "Alfred de Musset",
-          "George Sand",
-          "Alexandre Dumas père",
-          "Charles Nodier",
-          "Louis Boulanger",
-          "Charles-Augustin Sainte-Beuve",
-          "Antoine Fontaney"
-        ],
-        radius: 190, // before: 160
-        startAngle: -Math.PI / 2
-      },
-
-      "GOYA_FAMILY": {
-        center: "Francisco de Goya",
-        members: [
-          "Javier Goya",
-          "Mariano Goya",
-          "Gumersinda Goicoechea",
-          "Josefa Bayeu",
-          "Francisco Bayeu"
-        ],
-        radius: 145, // before: 180
-        startAngle: -Math.PI / 2,
-      },
-
-      "OSUNA_CORE": {
-        center: "XII Countess-Duchess of Benavente and Duchess of Osuna",
-        members: [
-          "IX Duke of Osuna",
-          "X Duke of Osuna",
-          "VIII Duchess of Abrantes",
-          "X Marchioness of Santa Cruz"
-        ],
-        radius: 135,
-        startAngle: -Math.PI / 2
-      },
-
-      "OSUNA_CORE": {
-        center: "XII Countess-Duchess of Benavente and Duchess of Osuna",
-        members: [
-          "IX Duke of Osuna",
-          "X Duke of Osuna",
-          "VIII Duchess of Abrantes",
-          "X Marchioness of Santa Cruz"
-        ],
-        radius: 135,
-        startAngle: -Math.PI / 2
-      },
-
-      "MONTIJO_CORE": {
-        center: "Eugenio Eulalio Palafox, VII Count of Montijo",
-        members: [
-          "María Francisca de Sales Portocarrero, VI Countess of Montijo",
-          "Cipriano Portocarrero, VIII Count of Montijo",
-          "María Manuela Kirkpatrick",
-          "Eugenia de Montijo"
-        ],
-        radius: 135,
-        startAngle: -Math.PI / 2
-      },
-
-      "CARLOS_IV_CORE": {
-        center: "Carlos IV",
-        members: [
-          "María Luisa de Parma",
-          "Fernando VII",
-          "Infanta Luisa Fernanda de Borbón"
-        ],
-        radius: 140,
-        startAngle: -Math.PI / 2
-      },
-
-      "DON_LUIS_BRANCH": {
-        center: "Luis de Borbón",
-        members: [
-          "María Teresa de Vallabriga",
-          "XV Countess of Chinchón"
-        ],
-        radius: 120,
-        startAngle: -Math.PI / 2
-      }
-    };
 
     window.__clusterOf = {}; // nodeId -> clusterId
 
