@@ -1028,9 +1028,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (!response.ok) throw new Error('Error cargando datos');
         const data = await response.json();
         window.__GN_DATA = data;
-
-        buildMembersList(data);
-        buildNewNodesList(data);
         
         // Start image preloading
         // const imagePreload = preloadImages(data.nodes);
@@ -1637,6 +1634,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     window.buildMembersList = buildMembersList;
+    buildMembersList(data);
 
     let lastHighlightedNode = null;
     let lastHighlightedNodes = [];
