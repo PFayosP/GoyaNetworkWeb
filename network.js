@@ -3209,24 +3209,54 @@ document.addEventListener('DOMContentLoaded', async function () {
         const el = document.getElementById('nodeInfo');
         if (!el) return;
 
-        // restaurar HTML base del panel inicial
-        if (__defaultNodeInfoHTML) {
-          el.innerHTML = __defaultNodeInfoHTML;
-        }
+        // Reconstruir SIEMPRE el panel inicial real.
+        // No depender de __defaultNodeInfoHTML.
+        el.innerHTML = `
+          <p data-i18n="HELP_TEXT_1">${t('HELP_TEXT_1')}</p>
+          <p data-i18n="HELP_TEXT_2">${t('HELP_TEXT_2')}</p>
 
-        // reconstruir siempre los bloques dinámicos
+          <div id="newNodesSection" style="margin-top: 1rem; position: relative;">
+            <div id="newNodesToggle"
+                class="section-heading"
+                data-i18n="NEW_NODES_TITLE"
+                style="cursor:pointer; user-select:none; margin-bottom:0;">
+              ${t('NEW_NODES_TITLE')}
+            </div>
+
+            <div id="newNodesDropdown"
+                style="display:none; margin-top:0.5rem; background:#1a1a1a; border:1px solid #444; border-radius:6px; padding:0.75rem;">
+              <div id="newNodesList" style="line-height:1.5;"></div>
+            </div>
+          </div>
+
+          <div id="membersSection" style="margin-top: 1rem;">
+            <div class="section-heading">${t('MEMBERS_TITLE')}</div>
+            <div id="membersList"></div>
+          </div>
+        `;
+
         buildMembersList(data);
         buildNewNodesList(data);
 
-        // limpiar estado de selección
+        // Reenganchar el desplegable de New members
+        const newNodesToggle = document.getElementById('newNodesToggle');
+        const newNodesDropdown = document.getElementById('newNodesDropdown');
+
+        if (newNodesToggle && newNodesDropdown) {
+          newNodesToggle.onclick = function (e) {
+            e.stopPropagation();
+            const isOpen = newNodesDropdown.style.display === 'block';
+            newNodesDropdown.style.display = isOpen ? 'none' : 'block';
+            newNodesToggle.classList.toggle('open', !isOpen);
+          };
+        }
+
         window.__lastSelection = null;
 
-        // deseleccionar en la red por seguridad
         if (window.VIS_NETWORK) {
           window.VIS_NETWORK.unselectAll();
         }
 
-        // re-aplicar textos i18n por si hiciera falta
         if (typeof applyUIStrings === 'function') {
           applyUIStrings();
         }
