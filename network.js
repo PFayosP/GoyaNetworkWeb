@@ -2162,10 +2162,15 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // Esperar un poco más para asegurar que la red está completamente renderizada
       setTimeout(() => {
+        console.log("=== GUARDANDO PANEL DEFAULT ===");
+
+        if (!__defaultNodeInfoHTML) {
+          __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
+        }
+
         console.log("=== LLAMANDO A handleInitialHash() ===");
         handleInitialHash();
-        __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-      }, 1500); // Aumentado a 1500ms
+      }, 1500);
   
     }, 150);
   });
@@ -2835,12 +2840,19 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       window.VIS_NETWORK.moveTo({
         position: pos,
-        scale,                         // ← conserva el zoom actual
+        scale,
         animation: { duration: 500 }
       });
 
-      nodes.update({ id: nodeId, color: { border: 'red' }, borderWidth: 4 });
-      lastHighlightedNode = nodeId;
+      window.VIS_NETWORK.selectNodes([nodeId]);
+
+      setTimeout(() => {
+        window.VIS_NETWORK.body.emitter.emit('click', {
+          nodes: [nodeId],
+          edges: [],
+          pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
+        });
+      }, 50);
     };
 
     function showShareModal(label = '') {
@@ -3197,12 +3209,27 @@ document.addEventListener('DOMContentLoaded', async function () {
         const el = document.getElementById('nodeInfo');
         if (!el) return;
 
+        // restaurar HTML base del panel inicial
         if (__defaultNodeInfoHTML) {
           el.innerHTML = __defaultNodeInfoHTML;
         }
 
+        // reconstruir siempre los bloques dinámicos
         buildMembersList(data);
         buildNewNodesList(data);
+
+        // limpiar estado de selección
+        window.__lastSelection = null;
+
+        // deseleccionar en la red por seguridad
+        if (window.VIS_NETWORK) {
+          window.VIS_NETWORK.unselectAll();
+        }
+
+        // re-aplicar textos i18n por si hiciera falta
+        if (typeof applyUIStrings === 'function') {
+          applyUIStrings();
+        }
       };
 
     // Búsqueda funcional
@@ -3309,6 +3336,19 @@ document.addEventListener('DOMContentLoaded', async function () {
   network.on("dragEnd", () => {
     network.setOptions({ physics: { enabled: false } });
   });*/
+
+  window.returnToNetworkHome = function () {
+    clearHighlights();
+    window.__lastSelection = null;
+
+    if (window.VIS_NETWORK) {
+      window.VIS_NETWORK.unselectAll();
+    }
+
+    if (typeof window.showDefaultNodeInfo === 'function') {
+      window.showDefaultNodeInfo();
+    }
+  };
     
   } catch (err) {
     console.error("Error cargando o renderizando la red:", err);
