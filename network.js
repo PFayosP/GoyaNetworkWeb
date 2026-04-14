@@ -1197,7 +1197,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "VILLAFRANCA_CLUSTER": {
-            center: "María Tomasa Palafox, Marchioness of Villafranca",
+            // center: "María Tomasa Palafox, Marchioness of Villafranca",
             members: [
               "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
               "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
@@ -1211,7 +1211,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "ALBA_CLUSTER": {
-            center: "María Teresa de Silva, XIII Duchess of Alba",
+            // center: "María Teresa de Silva, XIII Duchess of Alba",
             members: [
               "José Álvarez de Toledo, Duke of Alba"
             ],
@@ -2247,12 +2247,27 @@ document.addEventListener('DOMContentLoaded', async function () {
       const pos = network.getPositions(allIds);
 
       Object.values(clusters).forEach(cfg => {
-        if (!cfg.center || !cfg.members || !cfg.members.length) return;
+        if (!cfg.members || !cfg.members.length) return;
 
-        const centerPos = pos[cfg.center];
+        let centerPos = null;
+        if (cfg.center && nodes.get(cfg.center)) {
+          centerPos = pos[cfg.center];
+        } else {
+          // For clusters without center, use centroid of members
+          const validMembers = cfg.members.filter(id => nodes.get(id));
+          if (validMembers.length > 0) {
+            let cx = 0, cy = 0;
+            validMembers.forEach(id => {
+              cx += pos[id].x;
+              cy += pos[id].y;
+            });
+            centerPos = { x: cx / validMembers.length, y: cy / validMembers.length };
+          }
+        }
+
         if (!centerPos) return;
 
-        const clusterIds = new Set([cfg.center, ...cfg.members]);
+        const clusterIds = new Set([cfg.center, ...cfg.members].filter(id => id && nodes.get(id)));
 
         const baseRadius = cfg.radius || 150;
         const halo = baseRadius + 45; 
