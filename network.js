@@ -1133,7 +1133,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "GOYA_FAMILY": {
-            // center: "Francisco de Goya",
+            // center: none - circular arrangement without center
             members: [
               "Francisco de Goya",
               "Javier Goya",
@@ -1163,7 +1163,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "MONTIJO_CORE": {
-            // center: "Eugenio Eulalio Palafox, VII Count of Montijo",
+            // center: none - circular arrangement without center
             members: [
               "María Francisca de Sales Portocarrero, VI Countess of Montijo",
               "Cipriano Portocarrero, VIII Count of Montijo",
@@ -1172,14 +1172,14 @@ document.addEventListener('DOMContentLoaded', async function () {
               "María Gabriela de Palafox, Marchioness of Lazán",
               "María Tomasa Palafox, Marchioness of Villafranca"
             ],
-            radius: 135,
+            radius: 145,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo"
           },
 
           "BOURBON_CORE": {
-            // center: "Carlos IV",
+            // center: none - circular arrangement without center
             members: [
               "Carlos III",
               "Carlos IV",
@@ -1192,7 +1192,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Isabel II",
               "María Cristina de Borbón-Dos Sicilias"
             ],
-            radius: 150,
+            radius: 160,
             startAngle: -Math.PI / 2,
             title: "Bourbon cluster",
             titleEs: "Clúster Borbón"
@@ -1225,7 +1225,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "ILUSTRADOS_CLUSTER": {
-            // center: "Leandro Fernández de Moratín",
+            // center: none - circular arrangement without center
             members: [
               "Francisco de Goya",
               "Gaspar Melchor de Jovellanos",
@@ -1238,7 +1238,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Sebastián Martínez y Pérez",
               "Martín Zapater"
             ],
-            radius: 130,
+            radius: 155,
             startAngle: -Math.PI / 2,
             title: "Ilustrados cluster",
             titleEs: "Clúster Ilustrados"
@@ -2121,12 +2121,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
       ["Manuel Godoy", "Francisco de Goya", 140],
-      ["Francisco de Goya", "Carlos IV", 160],
-      ["Gaspar Melchor de Jovellanos", "Carlos IV", 160],
-      ["Count of Floridablanca", "Carlos IV", 160],
-      ["Juan Meléndez Valdés", "Carlos IV", 160],
-      ["Martín Zapater", "Carlos IV", 160],
-      ["Leandro Fernández de Moratín", "Carlos IV", 160]
+      ["Francisco de Goya", "Carlos IV", 180],
+      ["Gaspar Melchor de Jovellanos", "Carlos IV", 180],
+      ["Count of Floridablanca", "Carlos IV", 180],
+      ["Juan Meléndez Valdés", "Carlos IV", 180],
+      ["Martín Zapater", "Carlos IV", 180],
+      ["Leandro Fernández de Moratín", "Carlos IV", 180],
+      ["Gaspar Melchor de Jovellanos", "Eugenia de Montijo", 150],
+      ["Francisco de Goya", "Eugenia de Montijo", 150],
+      ["Count of Floridablanca", "María Manuela Kirkpatrick", 150]
     ];
 
     function getNodeHalo(node) {
