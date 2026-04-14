@@ -2218,6 +2218,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       const validMembers = memberIds.filter(id => nodes.get(id));
       if (validMembers.length < 2) return;
 
+      console.log('Arranging in circle:', validMembers.length, 'members, radius:', radius);
+
       // Calculate centroid
       const pos = network.getPositions(validMembers);
       let cx = 0, cy = 0;
@@ -2227,6 +2229,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
       cx /= validMembers.length;
       cy /= validMembers.length;
+
+      console.log('Centroid:', cx, cy);
 
       // Arrange evenly in circle
       const angleStep = (2 * Math.PI) / validMembers.length;
@@ -2379,6 +2383,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (!cfg.members || !cfg.members.length) return;
 
         if (cfg.center && nodes.get(cfg.center)) {
+          console.log('Placing around center for cluster:', cfg.center);
           // Tighter cluster radius for more visible grouping
           const baseRadius = Math.max(
             (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
@@ -2394,6 +2399,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             cfg.startAngle ?? (-Math.PI / 2)
           );
         } else {
+          console.log('Arranging in circle for cluster without center:', cfg.center || 'no center');
           // Arrange in circle for clusters without center
           const baseRadius = Math.max(
             (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
