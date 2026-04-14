@@ -2023,7 +2023,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Alfred de Musset", "Théophile Gautier", 120],
       ["Josefa Bayeu", "Gumersinda Goicoechea", 120],
       ["Cecilia de Madrazo", "Román Garreta", 120],
-      ["Josefa Bayeu", "Francisco de Goya", 120]
+      ["Josefa Bayeu", "Francisco de Goya", 120],
+      ["María Antonia Gonzaga, marquesa de Villafranca (viuda)", "Infanta Luisa Fernanda de Borbón", 120],
+      ["María Luisa de Parma", "Carlos III", 120],
+      ["XV condesa de Chinchón", "María Teresa de Vallabriga", 120]
     ];
 
     function getNodeHalo(node) {
@@ -2785,7 +2788,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             if (String(otherId).startsWith('ANCHOR__')) return;
             const otherNode = nodes.get(otherId);
             if (otherNode) {
-              connections.push({ id: otherId, name: otherNode.id });
+              connections.push({ id: otherId, name: otherNode.id || otherId || 'Unknown' });
             }
           }
         });
@@ -2794,7 +2797,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         html += `<p><strong>${t('Connections')}:</strong> ${degreeCalc}</p><ul>`;
 
         connections
-          .sort((a, b) => a.name.localeCompare(b.name))
+          .sort((a, b) => (a.name || '').localeCompare(b.name || ''))
           .forEach(conn => {
             html += `<li><a href="#" style="color:#66ccff" onclick="focusNode('${conn.id}')">${conn.name}</a></li>`;
           });
