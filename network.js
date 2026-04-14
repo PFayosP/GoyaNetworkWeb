@@ -2121,15 +2121,18 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
       ["Manuel Godoy", "Francisco de Goya", 140],
-      ["Francisco de Goya", "Carlos IV", 180],
-      ["Gaspar Melchor de Jovellanos", "Carlos IV", 180],
-      ["Count of Floridablanca", "Carlos IV", 180],
-      ["Juan Meléndez Valdés", "Carlos IV", 180],
-      ["Martín Zapater", "Carlos IV", 180],
-      ["Leandro Fernández de Moratín", "Carlos IV", 180],
-      ["Gaspar Melchor de Jovellanos", "Eugenia de Montijo", 150],
-      ["Francisco de Goya", "Eugenia de Montijo", 150],
-      ["Count of Floridablanca", "María Manuela Kirkpatrick", 150]
+      // CLUSTER SEPARATIONS - Keep them very far apart
+      ["Francisco de Goya", "Carlos IV", 220],
+      ["Gaspar Melchor de Jovellanos", "Carlos IV", 220],
+      ["Count of Floridablanca", "Carlos IV", 220],
+      ["Juan Meléndez Valdés", "Carlos IV", 220],
+      ["Martín Zapater", "Carlos IV", 220],
+      ["Gaspar Melchor de Jovellanos", "Eugenia de Montijo", 200],
+      ["Francisco de Goya", "Eugenia de Montijo", 200],
+      ["Count of Floridablanca", "María Manuela Kirkpatrick", 200],
+      ["Francisco de Goya", "María Manuela Kirkpatrick", 200],
+      ["Gaspar Melchor de Jovellanos", "María Cristina de Borbón-Dos Sicilias", 200],
+      ["Count of Floridablanca", "María Cristina de Borbón-Dos Sicilias", 200]
     ];
 
     function getNodeHalo(node) {
@@ -2468,8 +2471,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         };
       });
 
-      // 3) corrige solapes provocados por la recolocación
-      nudgeOverlaps(network, nodes, window.__clusterOf, 15);
+      // 3) corrige solapes provocados por la recolocación - HEAVY PASSES
+      nudgeOverlaps(network, nodes, window.__clusterOf, 50);
 
       // 4) vuelve a imponer la geometría radial
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
@@ -2497,8 +2500,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       // 5) AHORA termina aquí: no vuelvas a empujar
       pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 70);
 
-      // último paso: fijar definitivamente
-      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
+      // FINAL enforcement of circles - HEAVY PASSES
+      nudgeOverlaps(network, nodes, window.__clusterOf, 50);
         if (!cfg.members?.length) return;
 
         // Calculate centroid
@@ -2521,7 +2524,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
 
       // Reposition multi-cluster nodes to average position across their clusters
+      // EXCEPTION: Goya stays in ILUSTRADOS, don't average him
       Object.keys(nodeClusterMap).forEach(nodeId => {
+        if (nodeId === "Francisco de Goya") return; // Keep Goya in Ilustrados only
+        
         const clusters = nodeClusterMap[nodeId];
         if (clusters.length > 1 && nodes.get(nodeId)) {
           let totalX = 0, totalY = 0;
