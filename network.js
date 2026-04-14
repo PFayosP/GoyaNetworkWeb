@@ -2502,26 +2502,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // FINAL enforcement of circles - HEAVY PASSES
       nudgeOverlaps(network, nodes, window.__clusterOf, 50);
-        if (!cfg.members?.length) return;
-
-        // Calculate centroid
-        let centroid;
-        if (cfg.center && nodes.get(cfg.center)) {
-          centroid = network.getPositions([cfg.center])[cfg.center];
-        } else {
-          const validMembers = cfg.members.filter(id => nodes.get(id));
-          if (validMembers.length === 0) return;
-          const pos = network.getPositions(validMembers);
-          let cx = 0, cy = 0;
-          validMembers.forEach(id => {
-            cx += pos[id].x;
-            cy += pos[id].y;
-          });
-          centroid = { x: cx / validMembers.length, y: cy / validMembers.length };
-        }
-
-        arrangeInCircle(network, nodes, cfg.members, centroid, cfg.radius || 150);
-      });
 
       // Reposition multi-cluster nodes to average position across their clusters
       // EXCEPTION: Goya stays in ILUSTRADOS, don't average him
