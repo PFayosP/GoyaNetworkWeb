@@ -410,14 +410,14 @@
     // Botones del menú superior
     const map = [
       ['.nav-buttons button[onclick*="network"]','BTN_NETWORK'],
-      ['.nav-buttons button[onclick*="about"]','BTN_ABOUT'],
-      ['.nav-buttons button[onclick*="people"]','BTN_PEOPLE'],
-      ['.nav-buttons button[onclick*="partners"]','BTN_PARTNERS'],
-      ['.nav-buttons button[onclick*="artworks"]','BTN_ARTWORKS'],
-      ['.nav-buttons button[onclick*="bibliography"]','BTN_BIB'],
-      ['.nav-buttons button[onclick*="news"]','BTN_NEWS'],
-      ['.nav-buttons button[onclick*="cite"]','BTN_CITE'],
-      ['.nav-buttons button[onclick*="contact"]','BTN_CONTACT'],
+      ['.menu-content button[onclick*="about"]','BTN_ABOUT'],
+      ['.menu-content button[onclick*="people"]','BTN_PEOPLE'],
+      ['.menu-content button[onclick*="partners"]','BTN_PARTNERS'],
+      ['.menu-content button[onclick*="artworks"]','BTN_ARTWORKS'],
+      ['.menu-content button[onclick*="bibliography"]','BTN_BIB'],
+      ['.menu-content button[onclick*="news"]','BTN_NEWS'],
+      ['.menu-content button[onclick*="cite"]','BTN_CITE'],
+      ['.menu-content button[onclick*="contact"]','BTN_CONTACT'],
       ['#searchInput::placeholder','SEARCH_PH'],
       ['.search-button','BTN_SEARCH'],
     ];
@@ -622,6 +622,34 @@ window.search = function() {
     alert('No matching nodes found');
   }
 };
+
+// ===============================
+// Dropdown Menu Handler
+// ===============================
+window.toggleMenuDropdown = function() {
+  const menuContent = document.getElementById('menuContent');
+  if (menuContent) {
+    menuContent.classList.toggle('show');
+  }
+};
+
+window.closeMenuDropdown = function() {
+  const menuContent = document.getElementById('menuContent');
+  if (menuContent) {
+    menuContent.classList.remove('show');
+  }
+};
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+  const menuDropdown = document.querySelector('.menu-dropdown');
+  if (menuDropdown && !menuDropdown.contains(event.target)) {
+    const menuContent = document.getElementById('menuContent');
+    if (menuContent) {
+      menuContent.classList.remove('show');
+    }
+  }
+});
 
 // ===============================
 // Filters: highlight + right panel
@@ -1172,7 +1200,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             center: "María Tomasa Palafox, Marchioness of Villafranca",
             members: [
               "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
-              "María Antonia Gonzaga, Marchioness of Villafranca (widow)"
+              "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
+              "José Álvarez de Toledo, Duke of Alba",
+              "María Teresa de Silva, XIII Duchess of Alba"
             ],
             radius: 120,
             startAngle: -Math.PI / 2,
@@ -1197,7 +1227,13 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Francisco de Goya",
               "Gaspar Melchor de Jovellanos",
               "Francisco Cabarrús",
-              "Juan Agustín Ceán Bermúdez"
+              "Juan Agustín Ceán Bermúdez",
+              "Count of Floridablanca",
+              "XI Count of Altamira",
+              "Juan Meléndez Valdés",
+              "Juan Antonio Llorente",
+              "Sebastián Martínez y Pérez",
+              "Martín Zapater"
             ],
             radius: 130,
             startAngle: -Math.PI / 2,
@@ -1438,7 +1474,9 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         "SPANISH ROMANTICS": ["José de Espronceda", "Mariano José Larra", "José Zorrilla"],
 
-        "MONTPENSIER-ORLEANS": ["Prince Antoine, Duke of Montpensier", "Louis Philippe I"],
+        "MONTPENSIER-INFANTA": ["Prince Antoine, Duke of Montpensier", "Infanta Luisa Fernanda de Borbón"],
+
+        "MONTPENSIER-LOUIS-PHILIPPE": ["Prince Antoine, Duke of Montpensier", "Louis Philippe I"]
 
       };
 
@@ -2016,6 +2054,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     const PRIORITY_SEPARATION_PAIRS = [
       ["Adrien Dauzats", "Valentín Carderera", 120],
       ["Adrien Dauzats", "Federico de Madrazo", 120],
+      ["Pedro de Madrazo", "Federico de Madrazo", 120],
       ["Eugenio de Ochoa", "Baron Taylor", 150],
       ["Eugenio de Ochoa", "Valentín Carderera", 150],
       ["Arsène Houssaye", "Achille Devéria", 130],
@@ -2024,9 +2063,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Josefa Bayeu", "Gumersinda Goicoechea", 120],
       ["Cecilia de Madrazo", "Román Garreta", 120],
       ["Josefa Bayeu", "Francisco de Goya", 120],
-      ["María Antonia Gonzaga, marquesa de Villafranca (viuda)", "Infanta Luisa Fernanda de Borbón", 120],
+      ["Francisco de Goya", "Mariano Goya", 120],
+      ["María Antonia Gonzaga, Marchioness of Villafranca (widow)", "Infanta Luisa Fernanda de Borbón", 120],
       ["María Luisa de Parma", "Carlos III", 120],
-      ["XV condesa de Chinchón", "María Teresa de Vallabriga", 120]
+      ["XV Countess of Chinchón", "María Teresa de Vallabriga", 120]
     ];
 
     function getNodeHalo(node) {

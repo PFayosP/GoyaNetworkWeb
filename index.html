@@ -164,6 +164,69 @@
       gap: 10px;
     }
 
+    /* Dropdown menu styles */
+    .menu-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .menu-toggle {
+      padding: 6px 12px;
+      border: 1px solid #555;
+      background-color: #1a1a1a;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      min-width: 100px;
+    }
+
+    .menu-toggle:hover {
+      background-color: #2a2a2a;
+    }
+
+    .menu-content {
+      display: none;
+      position: absolute;
+      background-color: #1a1a1a;
+      border: 1px solid #555;
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      z-index: 1000;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-content.show {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-content button {
+      display: block;
+      width: 100%;
+      padding: 12px 16px;
+      border: none;
+      background-color: #1a1a1a;
+      color: white;
+      font-size: 14px;
+      text-align: left;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+
+    .menu-content button:hover {
+      background-color: #2a2a2a;
+    }
+
+    .menu-content button:first-child {
+      border-radius: 0;
+    }
+
+    .menu-content button:last-child {
+      border-radius: 0 0 4px 4px;
+    }
+
     /* Optional: If the search bar is still misaligned, adjust its margin */
     #search {
       margin: 0;
@@ -557,14 +620,19 @@
   <div class="top-bar">
     <div class="nav-buttons">
       <button onclick="showSection('network'); returnToNetworkHome();">Network</button>
-      <button onclick="showSection('about')">About</button>
-      <button onclick="showSection('people')">People</button>
-      <button onclick="showSection('partners')">Partners</button>
-      <button onclick="showSection('artworks')">Artworks</button>
-      <button onclick="showSection('bibliography')">Bibliography</button>
-      <button onclick="showSection('news')">News</button>
-      <button onclick="showSection('cite')">How to cite</button>
-      <button onclick="showSection('contact')">Contact</button>
+      <div class="menu-dropdown">
+        <button class="menu-toggle" onclick="toggleMenuDropdown()">Menu ▼</button>
+        <div class="menu-content" id="menuContent">
+          <button onclick="showSection('about'); closeMenuDropdown();">About</button>
+          <button onclick="showSection('people'); closeMenuDropdown();">People</button>
+          <button onclick="showSection('partners'); closeMenuDropdown();">Partners</button>
+          <button onclick="showSection('artworks'); closeMenuDropdown();">Artworks</button>
+          <button onclick="showSection('bibliography'); closeMenuDropdown();">Bibliography</button>
+          <button onclick="showSection('news'); closeMenuDropdown();">News</button>
+          <button onclick="showSection('cite'); closeMenuDropdown();">How to cite</button>
+          <button onclick="showSection('contact'); closeMenuDropdown();">Contact</button>
+        </div>
+      </div>
     </div>
 
     <div class="controls">
