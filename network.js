@@ -2471,15 +2471,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
 
       // 3) EXTREME anti-overlap to separate clusters
-      // Disable physics during arrangement so nothing interferes
-      network.setOptions({ physics: { enabled: false } });
       nudgeOverlaps(network, nodes, window.__clusterOf, 150);
       nudgeOverlaps(network, nodes, window.__clusterOf, 120);
       nudgeOverlaps(network, nodes, window.__clusterOf, 100);
 
       // 4) vuelve a imponer la geometría radial
-      // Physics must stay OFF during this
-      network.setOptions({ physics: { enabled: false } });
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.members || !cfg.members.length) return;
 
@@ -2529,22 +2525,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       enforceGlobalNodeHalo(network, nodes, 12);
       enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 12);
 
-      // 10) LOCK ALL NODES in place - disable physics permanently
-      const allNodeIds = nodes.getIds();
-      const nodesToFix = [];
-      allNodeIds.forEach(id => {
-        const nodeData = nodes.get(id);
-        if (nodeData && !String(id).startsWith('ANCHOR__')) {
-          nodesToFix.push({
-            id: id,
-            x: nodeData.x || 0,
-            y: nodeData.y || 0,
-            fixed: { x: true, y: true }
-          });
-        }
-      });
-      nodes.update(nodesToFix);
-      network.setOptions({ physics: { enabled: false } });
       network.redraw();
     }
 
