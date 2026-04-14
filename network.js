@@ -1135,6 +1135,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "GOYA_FAMILY": {
             // center: "Francisco de Goya",
             members: [
+              "Francisco de Goya",
               "Javier Goya",
               "Mariano Goya",
               "Gumersinda Goicoechea",
@@ -2078,7 +2079,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["María Manuela Kirkpatrick", "1st Duke of Wellington", 120],
       ["Carlos III", "Carlos IV", 120],
       ["María Manuela Kirkpatrick", "Josefa Tudó", 120],
-      ["Frédéric Quilliet", "Juan Agustín Ceán Bermúdez", 120]
+      ["Frédéric Quilliet", "Juan Agustín Ceán Bermúdez", 120],
+      ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
+      ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
+      ["Manuel Godoy", "Francisco de Goya", 140]
     ];
 
     function getNodeHalo(node) {
@@ -2388,7 +2392,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       window.__didNudgeOnce = true;
 
       // 1) limpia solapes globales iniciales
-      nudgeOverlaps(network, nodes, window.__clusterOf, 12);
+      nudgeOverlaps(network, nodes, window.__clusterOf, 20);
 
       // 2) coloca clusters en radial
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
@@ -2420,7 +2424,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
 
       // 3) corrige solapes provocados por la recolocación
-      nudgeOverlaps(network, nodes, window.__clusterOf, 10);
+      nudgeOverlaps(network, nodes, window.__clusterOf, 15);
 
       // 4) vuelve a imponer la geometría radial
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
@@ -2466,7 +2470,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.35);
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.20);
 
-      nudgeOverlaps(network, nodes, window.__clusterOf, 6);
+      nudgeOverlaps(network, nodes, window.__clusterOf, 10);
 
       // halo global final
       enforceGlobalNodeHalo(network, nodes, 30);
