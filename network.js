@@ -1139,7 +1139,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "María Francisca de Sales Portocarrero, VI Countess of Montijo",
               "Cipriano Portocarrero, VIII Count of Montijo",
               "María Manuela Kirkpatrick",
-              "Eugenia de Montijo"
+              "Eugenia de Montijo",
+              "María Gabriela de Palafox, Marchioness of Lazán",
+              "María Tomasa Palafox, Marchioness of Villafranca"
             ],
             radius: 135,
             startAngle: -Math.PI / 2,
@@ -1150,6 +1152,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "BOURBON_CORE": {
             center: "Carlos IV",
             members: [
+              "Carlos III",
               "María Luisa de Parma",
               "Fernando VII",
               "Infanta Luisa Fernanda de Borbón",
@@ -1161,6 +1164,42 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Bourbon cluster",
             titleEs: "Clúster Borbón"
+          },
+
+          "VILLAFRANCA_CLUSTER": {
+            center: "María Tomasa Palafox, Marchioness of Villafranca",
+            members: [
+              "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
+              "María Antonia Gonzaga, Marchioness of Villafranca (widow)"
+            ],
+            radius: 120,
+            startAngle: -Math.PI / 2,
+            title: "Villafranca cluster",
+            titleEs: "Clúster Villafranca"
+          },
+
+          "ALBA_CLUSTER": {
+            center: "María Teresa de Silva, XIII Duchess of Alba",
+            members: [
+              "José Álvarez de Toledo, Duke of Alba"
+            ],
+            radius: 110,
+            startAngle: -Math.PI / 2,
+            title: "Alba cluster",
+            titleEs: "Clúster Alba"
+          },
+
+          "ILUSTRADOS_CLUSTER": {
+            center: "Leandro Fernández de Moratín",
+            members: [
+              "Francisco de Goya",
+              "Gaspar Melchor de Jovellanos",
+              "Francisco de Cabarrús"
+            ],
+            radius: 130,
+            startAngle: -Math.PI / 2,
+            title: "Ilustrados cluster",
+            titleEs: "Clúster Ilustrados"
           }
         };
 
@@ -1172,21 +1211,27 @@ document.addEventListener('DOMContentLoaded', async function () {
           clusterColorIdx++;
         });
 
-        // Reverse map: nodeId -> clusterId (first match)
+        // Reverse map: nodeId -> [clusterId1, clusterId2, ...]
         const nodeClusterMap = {};
         Object.entries(RADIAL_CLUSTERS).forEach(([cid, cfg]) => {
-          if (cfg.center) nodeClusterMap[cfg.center] = cid;
-          (cfg.members || []).forEach(id => { nodeClusterMap[id] = cid; });
+          if (cfg.center) {
+            if (!nodeClusterMap[cfg.center]) nodeClusterMap[cfg.center] = [];
+            nodeClusterMap[cfg.center].push(cid);
+          }
+          (cfg.members || []).forEach(id => {
+            if (!nodeClusterMap[id]) nodeClusterMap[id] = [];
+            nodeClusterMap[id].push(cid);
+          });
         });
 
         let clusterEdgeColoringEnabled = true;
 
-        const getClusterIdForNode = nodeId => nodeClusterMap[nodeId];
+        const getClusterIdForNode = nodeId => nodeClusterMap[nodeId] || [];
         const getClusterEdgeStatus = (fromId, toId) => {
-          const fromCluster = getClusterIdForNode(fromId);
-          const toCluster = getClusterIdForNode(toId);
-          if (!fromCluster || !toCluster) return 'unclassified';
-          return fromCluster === toCluster ? 'intra-cluster' : 'inter-cluster';
+          const fromClusters = getClusterIdForNode(fromId);
+          const toClusters = getClusterIdForNode(toId);
+          if (!fromClusters.length || !toClusters.length) return 'unclassified';
+          return fromClusters.some(c => toClusters.includes(c)) ? 'intra-cluster' : 'inter-cluster';
         };
 
         const hexToRgba = (hex, alpha) => {
@@ -1202,8 +1247,10 @@ document.addEventListener('DOMContentLoaded', async function () {
           const level = edge.connection_level || 'direct';
           const edgeStatus = getClusterEdgeStatus(edge.from, edge.to);
           if (clusterEdgeColoringEnabled && edgeStatus === 'intra-cluster') {
-            const clusterId = getClusterIdForNode(edge.from) || getClusterIdForNode(edge.to);
-            const clusterColor = clusterColorMap[clusterId] || '#646464';
+            const fromClusters = getClusterIdForNode(edge.from);
+            const toClusters = getClusterIdForNode(edge.to);
+            const commonCluster = fromClusters.find(c => toClusters.includes(c));
+            const clusterColor = clusterColorMap[commonCluster] || '#646464';
             return {
               color: hexToRgba(clusterColor, level === 'secondary' ? 0.45 : 0.8),
               width: level === 'secondary' ? 1.4 : 1.8
@@ -1278,7 +1325,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
 
           selectedClusterId = clusterId;
-          const members = new Set([cfg.center, ...(cfg.members || [])].filter(Boolean));
+          const members = new Set(Object.keys(nodeClusterMap).filter(id => nodeClusterMap[id].includes(clusterId)));
           const clusterColor = clusterColorMap[clusterId] || '#ffffff';
           const highlightColor = hexToRgba(clusterColor, 0.85);
 
@@ -1290,7 +1337,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           edges.update(edges.get().map(edge => {
             const edgeStatus = getClusterEdgeStatus(edge.from, edge.to);
-            if (edgeStatus === 'intra-cluster' && getClusterIdForNode(edge.from) === clusterId) {
+            if (edgeStatus === 'intra-cluster' && nodeClusterMap[edge.from].includes(clusterId) && nodeClusterMap[edge.to].includes(clusterId)) {
               return {
                 id: edge.id,
                 color: { color: highlightColor },
@@ -1332,8 +1379,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         nodes = new vis.DataSet(data.nodes.map(node => {
           labelToId[node.label] = node.id;
           const degree = edgeCount[node.id] || 1;
-          const clusterId = nodeClusterMap[node.id];
-          const clusterColor = clusterId ? clusterColorMap[clusterId] : undefined;
+          const clusterIds = nodeClusterMap[node.id];
+          const clusterColor = clusterIds && clusterIds.length > 0 ? clusterColorMap[clusterIds[0]] : undefined;
           const config = {
             ...node,
             size: Math.min(13 + degree * 0.72, 38),
@@ -1972,7 +2019,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Santiago Masarnau", "Vicente Masarnau", 120],
       ["Alfred de Musset", "Théophile Gautier", 120],
       ["Josefa Bayeu", "Gumersinda Goicoechea", 120],
-      ["Cecilia de Madrazo", "Román Garreta", 120]
+      ["Cecilia de Madrazo", "Román Garreta", 120],
+      ["Josefa Bayeu", "Francisco de Goya", 120]
     ];
 
     function getNodeHalo(node) {
