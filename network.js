@@ -2121,18 +2121,18 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
       ["Manuel Godoy", "Francisco de Goya", 140],
-      // CLUSTER SEPARATIONS - Keep them very far apart
-      ["Francisco de Goya", "Carlos IV", 220],
-      ["Gaspar Melchor de Jovellanos", "Carlos IV", 220],
-      ["Count of Floridablanca", "Carlos IV", 220],
-      ["Juan Meléndez Valdés", "Carlos IV", 220],
-      ["Martín Zapater", "Carlos IV", 220],
-      ["Gaspar Melchor de Jovellanos", "Eugenia de Montijo", 200],
-      ["Francisco de Goya", "Eugenia de Montijo", 200],
-      ["Count of Floridablanca", "María Manuela Kirkpatrick", 200],
-      ["Francisco de Goya", "María Manuela Kirkpatrick", 200],
-      ["Gaspar Melchor de Jovellanos", "María Cristina de Borbón-Dos Sicilias", 200],
-      ["Count of Floridablanca", "María Cristina de Borbón-Dos Sicilias", 200]
+      // CLUSTER SEPARATIONS - Reasonable now that anti-overlap is extreme
+      ["Francisco de Goya", "Carlos IV", 180],
+      ["Gaspar Melchor de Jovellanos", "Carlos IV", 180],
+      ["Count of Floridablanca", "Carlos IV", 180],
+      ["Juan Meléndez Valdés", "Carlos IV", 180],
+      ["Martín Zapater", "Carlos IV", 180],
+      ["Gaspar Melchor de Jovellanos", "Eugenia de Montijo", 160],
+      ["Francisco de Goya", "Eugenia de Montijo", 160],
+      ["Count of Floridablanca", "María Manuela Kirkpatrick", 160],
+      ["Francisco de Goya", "María Manuela Kirkpatrick", 160],
+      ["Gaspar Melchor de Jovellanos", "María Cristina de Borbón-Dos Sicilias", 160],
+      ["Count of Floridablanca", "María Cristina de Borbón-Dos Sicilias", 160]
     ];
 
     function getNodeHalo(node) {
@@ -2431,74 +2431,78 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (!window.__didNudgeOnce) {
       window.__didNudgeOnce = true;
 
-      // 1) FIRST: Space cluster centroids far apart
+      // 1) limpia solapes globales iniciales
+      nudgeOverlaps(network, nodes, window.__clusterOf, 20);
+
       const clusterInfo = {};
-      const clusterCentroids = {};
-      
-      // Position 6 clusters in a rough circle/grid to keep them separate
-      const clusterArray = Object.entries(RADIAL_CLUSTERS);
-      const clusterPositions = [
-        { x: -800, y: -400 },  // MADRAZO_FAMILY (top-left)
-        { x: 800, y: -400 },   // HUGO_CENACLE (top-right)
-        { x: -900, y: 400 },   // OSUNA_CORE (bottom-left)
-        { x: -300, y: 800 },   // MONTIJO_CORE (bottom-center-left)
-        { x: 500, y: 900 },    // BOURBON_CORE (bottom-center-right) 
-        { x: -100, y: 0 },     // GOYA_FAMILY (center)
-        { x: 600, y: 200 },    // VILLAFRANCA (right)
-        { x: -500, y: -100 },  // ALBA (left-center)
-        { x: 0, y: -800 }      // ILUSTRADOS_CLUSTER (top-center) - KEEP AWAY from Bourbons
-      ];
 
-      // Assign fixed centroids to clusters
-      clusterArray.forEach(([ cid, cfg ], idx) => {
-        if (!cfg.members || !cfg.members.length) return;
-        const pos = clusterPositions[idx % clusterPositions.length];
-        clusterCentroids[cid] = { x: pos.x, y: pos.y };
-      });
-
-      // 2) Arrange each cluster in a circle around its fixed centroid
-      clusterArray.forEach(([ cid, cfg ]) => {
+      // 2) coloca clusters en radial - calculate centroids from member positions
+      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.members || !cfg.members.length) return;
 
-        const centroid = clusterCentroids[cid];
-        const validMembers = cfg.members.filter(id => nodes.get(id));
+        // Calculate centroid from member positions (keeps clusters together)
+        let centroid;
+        if (cfg.center && nodes.get(cfg.center)) {
+          centroid = network.getPositions([cfg.center])[cfg.center];
+        } else {
+          const validMembers = cfg.members.filter(id => nodes.get(id));
+          if (validMembers.length === 0) return;
+          const pos = network.getPositions(validMembers);
+          let cx = 0, cy = 0;
+          validMembers.forEach(id => {
+            cx += pos[id].x;
+            cy += pos[id].y;
+          });
+          centroid = { x: cx / validMembers.length, y: cy / validMembers.length };
+        }
+
+        // Arrange in circle around centroid
         const baseRadius = Math.max(
           (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
           70 + (cfg.members?.length || 0) * 6
         );
-        
-        // Arrange members in circle
-        const angleStep = (2 * Math.PI) / validMembers.length;
-        validMembers.forEach((id, index) => {
-          const angle = index * angleStep;
-          const x = centroid.x + Math.cos(angle) * baseRadius;
-          const y = centroid.y + Math.sin(angle) * baseRadius;
-          network.moveNode(id, x, y);
-        });
+        arrangeInCircle(network, nodes, cfg.members, centroid, baseRadius);
 
-        clusterInfo[cid] = {
+        // Store info
+        clusterInfo[Object.keys(RADIAL_CLUSTERS).find(key => RADIAL_CLUSTERS[key] === cfg)] = {
           centroid,
           radius: baseRadius,
           members: cfg.members
         };
       });
 
-      // 3) Strong anti-overlap to enforce circles
-      nudgeOverlaps(network, nodes, window.__clusterOf, 50);
-      nudgeOverlaps(network, nodes, window.__clusterOf, 40);
-      nudgeOverlaps(network, nodes, window.__clusterOf, 30);
+      // 3) EXTREME anti-overlap to separate clusters
+      nudgeOverlaps(network, nodes, window.__clusterOf, 100);
+      nudgeOverlaps(network, nodes, window.__clusterOf, 80);
+      nudgeOverlaps(network, nodes, window.__clusterOf, 60);
 
-      // 4) Re-enforce circles using fixed centroids (don't recalculate!)
-      Object.entries(clusterInfo).forEach(([cid, info]) => {
-        const cfg = RADIAL_CLUSTERS[cid];
-        if (!cfg?.members?.length) return;
-        arrangeInCircle(network, nodes, cfg.members, info.centroid, info.radius);
+      // 4) vuelve a imponer la geometría radial
+      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
+        if (!cfg.members || !cfg.members.length) return;
+
+        // Calculate centroid
+        let centroid;
+        if (cfg.center && nodes.get(cfg.center)) {
+          centroid = network.getPositions([cfg.center])[cfg.center];
+        } else {
+          const validMembers = cfg.members.filter(id => nodes.get(id));
+          if (validMembers.length === 0) return;
+          const pos = network.getPositions(validMembers);
+          let cx = 0, cy = 0;
+          validMembers.forEach(id => {
+            cx += pos[id].x;
+            cy += pos[id].y;
+          });
+          centroid = { x: cx / validMembers.length, y: cy / validMembers.length };
+        }
+
+        arrangeInCircle(network, nodes, cfg.members, centroid, cfg.radius || 150);
       });
 
-      // 5) Push outsiders away
+      // 5) AHORA termina aquí: no vuelvas a empujar
       pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 70);
 
-      // 6) Final heavy passes to enforce cluster integrity
+      // FINAL enforcement of circles - HEAVY PASSES
       nudgeOverlaps(network, nodes, window.__clusterOf, 50);
       nudgeOverlaps(network, nodes, window.__clusterOf, 30);
 
