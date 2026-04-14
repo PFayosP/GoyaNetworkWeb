@@ -1081,16 +1081,15 @@ document.addEventListener('DOMContentLoaded', async function () {
         const labelToId = {};
         // Cluster color palette
         const CLUSTER_COLORS = [
-          '#e57373', // red
-          '#64b5f6', // blue
-          '#81c784', // green
-          '#ffd54f', // yellow
-          '#ba68c8', // purple
-          '#4db6ac', // teal
-          '#ffb74d', // orange
-          '#a1887f', // brown
-          '#90a4ae', // gray-blue
-          '#f06292', // pink
+          '#e57373', // red - MADRAZO
+          '#64b5f6', // blue - HUGO
+          '#81c784', // green - GOYA_FAMILY
+          '#ffd54f', // yellow - OSUNA
+          '#ba68c8', // purple - MONTIJO
+          '#4db6ac', // teal - BOURBON
+          '#ffb74d', // orange - VILLAFRANCA
+          '#a1887f', // brown - ALBA
+          '#ff5722', // deep orange - ILUSTRADOS (more visible than gray-blue)
         ];
 
         const RADIAL_CLUSTERS = {
@@ -2121,18 +2120,18 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
       ["Manuel Godoy", "Francisco de Goya", 140],
-      // CLUSTER SEPARATIONS - Reasonable now that anti-overlap is extreme
-      ["Francisco de Goya", "Carlos IV", 180],
-      ["Gaspar Melchor de Jovellanos", "Carlos IV", 180],
-      ["Count of Floridablanca", "Carlos IV", 180],
-      ["Juan Meléndez Valdés", "Carlos IV", 180],
-      ["Martín Zapater", "Carlos IV", 180],
-      ["Gaspar Melchor de Jovellanos", "Eugenia de Montijo", 160],
-      ["Francisco de Goya", "Eugenia de Montijo", 160],
-      ["Count of Floridablanca", "María Manuela Kirkpatrick", 160],
-      ["Francisco de Goya", "María Manuela Kirkpatrick", 160],
-      ["Gaspar Melchor de Jovellanos", "María Cristina de Borbón-Dos Sicilias", 160],
-      ["Count of Floridablanca", "María Cristina de Borbón-Dos Sicilias", 160]
+      // CLUSTER SEPARATIONS - EXTREME to force separation
+      ["Francisco de Goya", "Carlos IV", 250],
+      ["Gaspar Melchor de Jovellanos", "Carlos IV", 250],
+      ["Count of Floridablanca", "Carlos IV", 250],
+      ["Juan Meléndez Valdés", "Carlos IV", 250],
+      ["Martín Zapater", "Carlos IV", 250],
+      ["Gaspar Melchor de Jovellanos", "Eugenia de Montijo", 220],
+      ["Francisco de Goya", "Eugenia de Montijo", 220],
+      ["Count of Floridablanca", "María Manuela Kirkpatrick", 220],
+      ["Francisco de Goya", "María Manuela Kirkpatrick", 220],
+      ["Gaspar Melchor de Jovellanos", "María Cristina de Borbón-Dos Sicilias", 220],
+      ["Count of Floridablanca", "María Cristina de Borbón-Dos Sicilias", 220]
     ];
 
     function getNodeHalo(node) {
@@ -2472,9 +2471,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
 
       // 3) EXTREME anti-overlap to separate clusters
+      nudgeOverlaps(network, nodes, window.__clusterOf, 150);
+      nudgeOverlaps(network, nodes, window.__clusterOf, 120);
       nudgeOverlaps(network, nodes, window.__clusterOf, 100);
-      nudgeOverlaps(network, nodes, window.__clusterOf, 80);
-      nudgeOverlaps(network, nodes, window.__clusterOf, 60);
 
       // 4) vuelve a imponer la geometría radial
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
@@ -2505,6 +2504,14 @@ document.addEventListener('DOMContentLoaded', async function () {
       // FINAL enforcement of circles - HEAVY PASSES
       nudgeOverlaps(network, nodes, window.__clusterOf, 50);
       nudgeOverlaps(network, nodes, window.__clusterOf, 30);
+
+      // Reposition multi-cluster nodes DISABLED - just use cluster arrangements
+      // Object.keys(nodeClusterMap).forEach(nodeId => {
+      //   const clusters = nodeClusterMap[nodeId];
+      //   if (clusters.length > 1 && nodes.get(nodeId)) {
+      //     // Skip averaging - let cluster arrangement handle positioning
+      //   }
+      // });
 
       // 7) Tighten proximity groups for relationships
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.35);
