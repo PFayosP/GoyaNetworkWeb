@@ -2053,6 +2053,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     const PRIORITY_SEPARATION_PAIRS = [
       ["Adrien Dauzats", "Valentín Carderera", 120],
+      ["Federico de Madrazo", "Valentín Carderera", 120],
       ["Adrien Dauzats", "Federico de Madrazo", 120],
       ["Pedro de Madrazo", "Federico de Madrazo", 120],
       ["Eugenio de Ochoa", "Baron Taylor", 150],
@@ -2066,7 +2067,13 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Francisco de Goya", "Mariano Goya", 120],
       ["María Antonia Gonzaga, Marchioness of Villafranca (widow)", "Infanta Luisa Fernanda de Borbón", 120],
       ["María Luisa de Parma", "Carlos III", 120],
-      ["XV Countess of Chinchón", "María Teresa de Vallabriga", 120]
+      ["XV Countess of Chinchón", "María Teresa de Vallabriga", 120],
+      ["María Cristina de Borbón-Dos Sicilias", "Manuel Godoy", 120],
+      ["Eugenia de Montijo", "Manuel Godoy", 120],
+      ["Carlos III", "Josefa Tudó", 120],
+      ["Carlos III", "María Manuela Kirkpatrick", 120],
+      ["María Manuela Kirkpatrick", "Josefa Tudó", 120],
+      ["Frédéric Quilliet", "Juan Agustín Ceán Bermúdez", 120]
     ];
 
     function getNodeHalo(node) {
