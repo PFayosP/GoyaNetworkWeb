@@ -2069,9 +2069,13 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["María Luisa de Parma", "Carlos III", 120],
       ["XV Countess of Chinchón", "María Teresa de Vallabriga", 120],
       ["María Cristina de Borbón-Dos Sicilias", "Manuel Godoy", 120],
+      ["María Cristina de Borbón-Dos Sicilias", "Eugenia de Montijo", 120],
       ["Eugenia de Montijo", "Manuel Godoy", 120],
+      ["Manuel Godoy", "Isabel II", 120],
       ["Carlos III", "Josefa Tudó", 120],
       ["Carlos III", "María Manuela Kirkpatrick", 120],
+      ["María Manuela Kirkpatrick", "1st Duke of Wellington", 120],
+      ["Carlos III", "Carlos IV", 120],
       ["María Manuela Kirkpatrick", "Josefa Tudó", 120],
       ["Frédéric Quilliet", "Juan Agustín Ceán Bermúdez", 120]
     ];
@@ -2207,6 +2211,30 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         network.moveNode(id, x, y);
         currentAngle += angleSpan;
+      });
+    }
+
+    function arrangeInCircle(network, nodes, memberIds, radius = 140) {
+      const validMembers = memberIds.filter(id => nodes.get(id));
+      if (validMembers.length < 2) return;
+
+      // Calculate centroid
+      const pos = network.getPositions(validMembers);
+      let cx = 0, cy = 0;
+      validMembers.forEach(id => {
+        cx += pos[id].x;
+        cy += pos[id].y;
+      });
+      cx /= validMembers.length;
+      cy /= validMembers.length;
+
+      // Arrange evenly in circle
+      const angleStep = (2 * Math.PI) / validMembers.length;
+      validMembers.forEach((id, index) => {
+        const angle = index * angleStep;
+        const x = cx + Math.cos(angle) * radius;
+        const y = cy + Math.sin(angle) * radius;
+        network.moveNode(id, x, y);
       });
     }
 
@@ -2348,22 +2376,31 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // 2) coloca clusters en radial
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
-        if (!cfg.center || !cfg.members || !cfg.members.length) return;
+        if (!cfg.members || !cfg.members.length) return;
 
-        // Tighter cluster radius for more visible grouping
-        const baseRadius = Math.max(
-          (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
-          70 + (cfg.members?.length || 0) * 6
-        );
+        if (cfg.center && nodes.get(cfg.center)) {
+          // Tighter cluster radius for more visible grouping
+          const baseRadius = Math.max(
+            (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
+            70 + (cfg.members?.length || 0) * 6
+          );
 
-        placeFamilyAroundCenter(
-          network,
-          nodes,
-          cfg.center,
-          cfg.members,
-          baseRadius,
-          cfg.startAngle ?? (-Math.PI / 2)
-        );
+          placeFamilyAroundCenter(
+            network,
+            nodes,
+            cfg.center,
+            cfg.members,
+            baseRadius,
+            cfg.startAngle ?? (-Math.PI / 2)
+          );
+        } else {
+          // Arrange in circle for clusters without center
+          const baseRadius = Math.max(
+            (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
+            70 + (cfg.members?.length || 0) * 6
+          );
+          arrangeInCircle(network, nodes, cfg.members, baseRadius);
+        }
       });
 
       // 3) corrige solapes provocados por la recolocación
@@ -2371,16 +2408,20 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // 4) vuelve a imponer la geometría radial
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
-        if (!cfg.center || !cfg.members || !cfg.members.length) return;
+        if (!cfg.members || !cfg.members.length) return;
 
-        placeFamilyAroundCenter(
-          network,
-          nodes,
-          cfg.center,
-          cfg.members,
-          cfg.radius || 150,
-          cfg.startAngle ?? (-Math.PI / 2)
-        );
+        if (cfg.center && nodes.get(cfg.center)) {
+          placeFamilyAroundCenter(
+            network,
+            nodes,
+            cfg.center,
+            cfg.members,
+            cfg.radius || 150,
+            cfg.startAngle ?? (-Math.PI / 2)
+          );
+        } else {
+          arrangeInCircle(network, nodes, cfg.members, cfg.radius || 150);
+        }
       });
 
       // 5) AHORA termina aquí: no vuelvas a empujar
@@ -2388,18 +2429,22 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // último paso: fijar definitivamente
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
-        if (!cfg.center || !cfg.members?.length) return;
+        if (!cfg.members?.length) return;
 
-        const baseRadius = cfg.radius || 150;
+        if (cfg.center && nodes.get(cfg.center)) {
+          const baseRadius = cfg.radius || 150;
 
-        placeFamilyAroundCenter(
-          network,
-          nodes,
-          cfg.center,
-          cfg.members,
-          baseRadius,
-          cfg.startAngle ?? (-Math.PI / 2)
-        );
+          placeFamilyAroundCenter(
+            network,
+            nodes,
+            cfg.center,
+            cfg.members,
+            baseRadius,
+            cfg.startAngle ?? (-Math.PI / 2)
+          );
+        } else {
+          arrangeInCircle(network, nodes, cfg.members, cfg.radius || 150);
+        }
       });
 
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.35);
