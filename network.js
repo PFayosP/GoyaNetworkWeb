@@ -1158,7 +1158,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Infanta Luisa Fernanda de Borbón",
               "Luis de Borbón",
               "María Teresa de Vallabriga",
-              "XV Countess of Chinchón"
+              "XV Countess of Chinchón",
+              "Isabel II",
+              "María Cristina de Borbón-Dos Sicilias"
             ],
             radius: 150,
             startAngle: -Math.PI / 2,
@@ -1194,7 +1196,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             members: [
               "Francisco de Goya",
               "Gaspar Melchor de Jovellanos",
-              "Francisco de Cabarrús"
+              "Francisco Cabarrús",
+              "Juan Agustín Ceán Bermúdez"
             ],
             radius: 130,
             startAngle: -Math.PI / 2,
