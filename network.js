@@ -1180,6 +1180,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           (cfg.members || []).forEach(id => { nodeClusterMap[id] = cid; });
         });
 
+        let clusterEdgeColoringEnabled = true;
+
         const getClusterIdForNode = nodeId => nodeClusterMap[nodeId];
         const getClusterEdgeStatus = (fromId, toId) => {
           const fromCluster = getClusterIdForNode(fromId);
@@ -1197,17 +1199,37 @@ document.addEventListener('DOMContentLoaded', async function () {
           return `rgba(${parseInt(match[1], 16)}, ${parseInt(match[2], 16)}, ${parseInt(match[3], 16)}, ${alpha})`;
         };
 
-        const getEdgeColor = (edge, level, edgeStatus) => {
-          const isSecondary = level === 'secondary';
-          if (edgeStatus === 'intra-cluster') {
+        const getEdgeStyle = (edge) => {
+          const level = edge.connection_level || 'direct';
+          const edgeStatus = getClusterEdgeStatus(edge.from, edge.to);
+          if (clusterEdgeColoringEnabled && edgeStatus === 'intra-cluster') {
             const clusterId = getClusterIdForNode(edge.from) || getClusterIdForNode(edge.to);
             const clusterColor = clusterColorMap[clusterId] || '#646464';
             return {
-              color: hexToRgba(clusterColor, isSecondary ? 0.45 : 0.8)
+              color: hexToRgba(clusterColor, level === 'secondary' ? 0.45 : 0.8),
+              width: level === 'secondary' ? 1.4 : 1.8
             };
           }
-          const baseGray = isSecondary ? 'rgba(150,150,150,0.15)' : 'rgba(200,200,200,0.25)';
-          return { color: baseGray };
+          return {
+            color: level === 'secondary' ? 'rgba(150,150,150,0.15)' : 'rgba(200,200,200,0.25)',
+            width: level === 'secondary' ? 1.2 : 1.5
+          };
+        };
+
+        window.toggleClusterEdgeColoring = function () {
+          clusterEdgeColoringEnabled = !clusterEdgeColoringEnabled;
+          const button = document.getElementById('clusterToggleButton');
+          if (button) {
+            button.textContent = clusterEdgeColoringEnabled ? 'Cluster edges: On' : 'Cluster edges: Off';
+          }
+          edges.update(edges.get().map(edge => {
+            const style = getEdgeStyle(edge);
+            return {
+              id: edge.id,
+              color: { color: style.color },
+              width: style.width
+            };
+          }));
         };
 
         // Ajustes de nodos con cluster color
@@ -1291,15 +1313,14 @@ document.addEventListener('DOMContentLoaded', async function () {
           ? edge.label  // aparecerá al pasar el ratón
           : edge.title;
 
-      const edgeColor = getEdgeColor(edge, level, edgeStatus);
-      const width = edgeStatus === 'intra-cluster' ? (level === 'secondary' ? 1.4 : 1.8) : (level === 'secondary' ? 1.2 : 1.5);
+      const style = getEdgeStyle(edge);
 
       return {
         ...edge,
         label,
         title,
-        color: edgeColor,
-        width
+        color: { color: style.color },
+        width: style.width
       };
     }));
 
@@ -1749,11 +1770,14 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (nodeUpdates.length > 0) nodes.update(nodeUpdates);
     
       // Batch update edges
-      const edgeUpdates = edges.get().map(edge => ({
-        id: edge.id,
-        color: { color: edge.connection_level === "secondary" ? "rgba(255,215,0,0.25)" : "rgba(200,200,200,0.15)" },
-        width: 1.5
-      }));
+      const edgeUpdates = edges.get().map(edge => {
+        const style = getEdgeStyle(edge);
+        return {
+          id: edge.id,
+          color: { color: style.color },
+          width: style.width
+        };
+      });
       edges.update(edgeUpdates);
       
       // 🔁 Reset de estados
@@ -1850,7 +1874,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenio de Ochoa", "Valentín Carderera", 150],
       ["Arsène Houssaye", "Achille Devéria", 130],
       ["Santiago Masarnau", "Vicente Masarnau", 120],
-      ["Alfred de Musset", "Théophile Gautier", 120]
+      ["Alfred de Musset", "Théophile Gautier", 120],
+      ["Josefa Bayeu", "Gumersinda Goicoechea", 120],
+      ["Cecilia de Madrazo", "Román Garreta", 120]
     ];
 
     function getNodeHalo(node) {
