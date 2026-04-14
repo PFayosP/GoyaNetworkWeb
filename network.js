@@ -12,6 +12,9 @@
       NEW_NODES_TITLE: "New members",
       MEMBERS_TITLE:"All members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
       BTN_SEARCH: "Search",
+      BTN_CLUSTER_TOGGLE_ON: "Cluster edges: On",
+      BTN_CLUSTER_TOGGLE_OFF: "Cluster edges: Off",
+      SELECT_CLUSTER_OPTION: "Select cluster...",
       
       CONTRIBUTIONS_TITLE: "Contributions", 
       CONTRIBUTIONS_TEXT: `
@@ -207,6 +210,9 @@
       NEW_NODES_TITLE: "Nuevos miembros",
       MEMBERS_TITLE:"Todos los miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
       BTN_SEARCH: "Buscar",
+      BTN_CLUSTER_TOGGLE_ON: "Clúster: activado",
+      BTN_CLUSTER_TOGGLE_OFF: "Clúster: desactivado",
+      SELECT_CLUSTER_OPTION: "Selecciona clúster...",
       
       CONTRIBUTIONS_TITLE: "Contribuciones", 
       CONTRIBUTIONS_TEXT: `
@@ -1075,7 +1081,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Juan de Madrazo"
             ],
             radius: 165, //before: 220
-            startAngle: -Math.PI / 2
+            startAngle: -Math.PI / 2,
+            title: "Madrazo family",
+            titleEs: "Familia Madrazo"
           },
 
           "HUGO_CENACLE": {
@@ -1091,7 +1099,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Antoine Fontaney"
             ],
             radius: 190, // before: 160
-            startAngle: -Math.PI / 2
+            startAngle: -Math.PI / 2,
+            title: "Hugo cenacle",
+            titleEs: "Clúster Hugo"
           },
 
           "GOYA_FAMILY": {
@@ -1105,6 +1115,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 145, // before: 180
             startAngle: -Math.PI / 2,
+            title: "Goya family",
+            titleEs: "Familia Goya"
           },
 
           "OSUNA_CORE": {
@@ -1116,19 +1128,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "X Marchioness of Santa Cruz"
             ],
             radius: 135,
-            startAngle: -Math.PI / 2
-          },
-
-          "OSUNA_CORE": {
-            center: "XII Countess-Duchess of Benavente and Duchess of Osuna",
-            members: [
-              "IX Duke of Osuna",
-              "X Duke of Osuna",
-              "VIII Duchess of Abrantes",
-              "X Marchioness of Santa Cruz"
-            ],
-            radius: 135,
-            startAngle: -Math.PI / 2
+            startAngle: -Math.PI / 2,
+            title: "Osuna core",
+            titleEs: "Núcleo Osuna"
           },
 
           "MONTIJO_CORE": {
@@ -1140,28 +1142,25 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Eugenia de Montijo"
             ],
             radius: 135,
-            startAngle: -Math.PI / 2
+            startAngle: -Math.PI / 2,
+            title: "Montijo core",
+            titleEs: "Núcleo Montijo"
           },
 
-          "CARLOS_IV_CORE": {
+          "BOURBON_CORE": {
             center: "Carlos IV",
             members: [
               "María Luisa de Parma",
               "Fernando VII",
-              "Infanta Luisa Fernanda de Borbón"
-            ],
-            radius: 140,
-            startAngle: -Math.PI / 2
-          },
-
-          "DON_LUIS_BRANCH": {
-            center: "Luis de Borbón",
-            members: [
+              "Infanta Luisa Fernanda de Borbón",
+              "Luis de Borbón",
               "María Teresa de Vallabriga",
               "XV Countess of Chinchón"
             ],
-            radius: 120,
-            startAngle: -Math.PI / 2
+            radius: 150,
+            startAngle: -Math.PI / 2,
+            title: "Bourbon cluster",
+            titleEs: "Clúster Borbón"
           }
         };
 
@@ -1220,7 +1219,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           clusterEdgeColoringEnabled = !clusterEdgeColoringEnabled;
           const button = document.getElementById('clusterToggleButton');
           if (button) {
-            button.textContent = clusterEdgeColoringEnabled ? 'Cluster edges: On' : 'Cluster edges: Off';
+            button.textContent = clusterEdgeColoringEnabled ? t('BTN_CLUSTER_TOGGLE_ON') : t('BTN_CLUSTER_TOGGLE_OFF');
           }
           edges.update(edges.get().map(edge => {
             const style = getEdgeStyle(edge);
@@ -1231,6 +1230,103 @@ document.addEventListener('DOMContentLoaded', async function () {
             };
           }));
         };
+
+        let selectedClusterId = null;
+
+        const getClusterDisplayName = clusterId => {
+          const cfg = RADIAL_CLUSTERS[clusterId];
+          if (!cfg) return clusterId || '';
+          return (CURRENT_LANG === 'es' ? cfg.titleEs : cfg.title) || clusterId;
+        };
+
+        const updateClusterInfoBadge = () => {
+          const badge = document.getElementById('clusterInfoBadge');
+          if (!badge) return;
+          badge.textContent = selectedClusterId ? getClusterDisplayName(selectedClusterId) : '';
+        };
+
+        window.clearClusterSelection = function () {
+          selectedClusterId = null;
+          const option = document.getElementById('clusterSelect');
+          if (option) option.value = '';
+          nodes.update(nodes.get().map(node => ({
+            id: node.id,
+            opacity: 1,
+            borderWidth: 2
+          })));
+          edges.update(edges.get().map(edge => {
+            const style = getEdgeStyle(edge);
+            return {
+              id: edge.id,
+              color: { color: style.color },
+              width: style.width
+            };
+          }));
+          updateClusterInfoBadge();
+        };
+
+        window.selectCluster = function (clusterId) {
+          if (!clusterId) {
+            window.clearClusterSelection();
+            return;
+          }
+
+          const cfg = RADIAL_CLUSTERS[clusterId];
+          if (!cfg) {
+            window.clearClusterSelection();
+            return;
+          }
+
+          selectedClusterId = clusterId;
+          const members = new Set([cfg.center, ...(cfg.members || [])].filter(Boolean));
+          const clusterColor = clusterColorMap[clusterId] || '#ffffff';
+          const highlightColor = hexToRgba(clusterColor, 0.85);
+
+          nodes.update(nodes.get().map(node => ({
+            id: node.id,
+            opacity: members.has(node.id) ? 1 : 0.25,
+            borderWidth: members.has(node.id) ? 4 : 1
+          })));
+
+          edges.update(edges.get().map(edge => {
+            const edgeStatus = getClusterEdgeStatus(edge.from, edge.to);
+            if (edgeStatus === 'intra-cluster' && getClusterIdForNode(edge.from) === clusterId) {
+              return {
+                id: edge.id,
+                color: { color: highlightColor },
+                width: 2.4
+              };
+            }
+            return {
+              id: edge.id,
+              color: { color: 'rgba(200,200,200,0.08)' },
+              width: 1
+            };
+          }));
+          updateClusterInfoBadge();
+        };
+
+        const clusterSelect = document.getElementById('clusterSelect');
+        if (clusterSelect) {
+          clusterSelect.innerHTML = `<option value="">${t('SELECT_CLUSTER_OPTION')}</option>` +
+            Object.entries(RADIAL_CLUSTERS).map(([cid, cfg]) => {
+              const name = getClusterDisplayName(cid);
+              return `<option value="${cid}">${name}</option>`;
+            }).join('');
+          clusterSelect.addEventListener('change', (e) => {
+            window.selectCluster(e.target.value);
+          });
+        }
+
+        const initClusterControls = () => {
+          const button = document.getElementById('clusterToggleButton');
+          if (button) {
+            button.textContent = clusterEdgeColoringEnabled ? t('BTN_CLUSTER_TOGGLE_ON') : t('BTN_CLUSTER_TOGGLE_OFF');
+          }
+          updateClusterInfoBadge();
+        };
+
+        initClusterControls();
 
         // Ajustes de nodos con cluster color
         nodes = new vis.DataSet(data.nodes.map(node => {

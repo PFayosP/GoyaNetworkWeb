@@ -571,6 +571,10 @@
       <input type="text" id="searchInput" placeholder="Search..." class="search-bar">
       <button onclick="search()" class="search-button">Search</button>
       <button id="clusterToggleButton" onclick="toggleClusterEdgeColoring()" class="search-button">Cluster edges: On</button>
+      <select id="clusterSelect" onchange="selectCluster(this.value)" class="search-bar" style="max-width:220px; margin-left:0.5rem;">
+        <option value="">Select cluster...</option>
+      </select>
+      <span id="clusterInfoBadge" style="margin-left:0.75rem; font-size:0.9rem; color:#ffffff;"></span>
       <select id="professionFilter" onchange="filterGraph()">
         <option value="">All professions</option>
         <option value="Actor">Actor</option>
