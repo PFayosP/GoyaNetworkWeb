@@ -1490,6 +1490,12 @@ document.addEventListener('DOMContentLoaded', async function () {
           "María Cristina de Borbón-Dos Sicilias"
         ],
 
+        "ARIST_PULL": [
+          "XII Countess-Duchess of Benavente and Duchess of Osuna",
+          "María Tomasa Palafox, Marchioness of Villafranca",
+          "Carlos IV"
+        ],
+
         "GONCOURT": ["Edmond de Goncourt", "Jules de Goncourt"],
 
         "VIARDOT": ["Pauline Viardot-García", "Louis Viardot"],
@@ -2115,9 +2121,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
       ["Manuel Godoy", "Francisco de Goya", 140],
-      ["Francisco de Goya", "Carlos IV", 140],
-      ["Gaspar Melchor de Jovellanos", "Carlos IV", 140],
-      ["Count of Floridablanca", "Carlos IV", 140]
+      ["Francisco de Goya", "Carlos IV", 160],
+      ["Gaspar Melchor de Jovellanos", "Carlos IV", 160],
+      ["Count of Floridablanca", "Carlos IV", 160],
+      ["Juan Meléndez Valdés", "Carlos IV", 160],
+      ["Martín Zapater", "Carlos IV", 160],
+      ["Leandro Fernández de Moratín", "Carlos IV", 160]
     ];
 
     function getNodeHalo(node) {
