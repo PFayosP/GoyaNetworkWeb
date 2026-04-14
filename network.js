@@ -2431,117 +2431,87 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (!window.__didNudgeOnce) {
       window.__didNudgeOnce = true;
 
-      // 1) limpia solapes globales iniciales
-      nudgeOverlaps(network, nodes, window.__clusterOf, 20);
-
+      // 1) FIRST: Space cluster centroids far apart
       const clusterInfo = {};
+      const clusterCentroids = {};
+      
+      // Position 6 clusters in a rough circle/grid to keep them separate
+      const clusterArray = Object.entries(RADIAL_CLUSTERS);
+      const clusterPositions = [
+        { x: -800, y: -400 },  // MADRAZO_FAMILY (top-left)
+        { x: 800, y: -400 },   // HUGO_CENACLE (top-right)
+        { x: -900, y: 400 },   // OSUNA_CORE (bottom-left)
+        { x: -300, y: 800 },   // MONTIJO_CORE (bottom-center-left)
+        { x: 500, y: 900 },    // BOURBON_CORE (bottom-center-right) 
+        { x: -100, y: 0 },     // GOYA_FAMILY (center)
+        { x: 600, y: 200 },    // VILLAFRANCA (right)
+        { x: -500, y: -100 },  // ALBA (left-center)
+        { x: 0, y: -800 }      // ILUSTRADOS_CLUSTER (top-center) - KEEP AWAY from Bourbons
+      ];
 
-      // 2) coloca clusters en radial
-      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
+      // Assign fixed centroids to clusters
+      clusterArray.forEach(([ cid, cfg ], idx) => {
+        if (!cfg.members || !cfg.members.length) return;
+        const pos = clusterPositions[idx % clusterPositions.length];
+        clusterCentroids[cid] = { x: pos.x, y: pos.y };
+      });
+
+      // 2) Arrange each cluster in a circle around its fixed centroid
+      clusterArray.forEach(([ cid, cfg ]) => {
         if (!cfg.members || !cfg.members.length) return;
 
-        // Calculate centroid
-        let centroid;
-        if (cfg.center && nodes.get(cfg.center)) {
-          centroid = network.getPositions([cfg.center])[cfg.center];
-        } else {
-          const validMembers = cfg.members.filter(id => nodes.get(id));
-          if (validMembers.length === 0) return;
-          const pos = network.getPositions(validMembers);
-          let cx = 0, cy = 0;
-          validMembers.forEach(id => {
-            cx += pos[id].x;
-            cy += pos[id].y;
-          });
-          centroid = { x: cx / validMembers.length, y: cy / validMembers.length };
-        }
-
-        // Arrange in circle around centroid
+        const centroid = clusterCentroids[cid];
+        const validMembers = cfg.members.filter(id => nodes.get(id));
         const baseRadius = Math.max(
           (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
           70 + (cfg.members?.length || 0) * 6
         );
-        arrangeInCircle(network, nodes, cfg.members, centroid, baseRadius);
+        
+        // Arrange members in circle
+        const angleStep = (2 * Math.PI) / validMembers.length;
+        validMembers.forEach((id, index) => {
+          const angle = index * angleStep;
+          const x = centroid.x + Math.cos(angle) * baseRadius;
+          const y = centroid.y + Math.sin(angle) * baseRadius;
+          network.moveNode(id, x, y);
+        });
 
-        // Store info
-        clusterInfo[Object.keys(RADIAL_CLUSTERS).find(key => RADIAL_CLUSTERS[key] === cfg)] = {
+        clusterInfo[cid] = {
           centroid,
           radius: baseRadius,
           members: cfg.members
         };
       });
 
-      // 3) corrige solapes provocados por la recolocación - HEAVY PASSES
+      // 3) Strong anti-overlap to enforce circles
       nudgeOverlaps(network, nodes, window.__clusterOf, 50);
+      nudgeOverlaps(network, nodes, window.__clusterOf, 40);
+      nudgeOverlaps(network, nodes, window.__clusterOf, 30);
 
-      // 4) vuelve a imponer la geometría radial
-      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
-        if (!cfg.members || !cfg.members.length) return;
-
-        // Calculate centroid
-        let centroid;
-        if (cfg.center && nodes.get(cfg.center)) {
-          centroid = network.getPositions([cfg.center])[cfg.center];
-        } else {
-          const validMembers = cfg.members.filter(id => nodes.get(id));
-          if (validMembers.length === 0) return;
-          const pos = network.getPositions(validMembers);
-          let cx = 0, cy = 0;
-          validMembers.forEach(id => {
-            cx += pos[id].x;
-            cy += pos[id].y;
-          });
-          centroid = { x: cx / validMembers.length, y: cy / validMembers.length };
-        }
-
-        arrangeInCircle(network, nodes, cfg.members, centroid, cfg.radius || 150);
+      // 4) Re-enforce circles using fixed centroids (don't recalculate!)
+      Object.entries(clusterInfo).forEach(([cid, info]) => {
+        const cfg = RADIAL_CLUSTERS[cid];
+        if (!cfg?.members?.length) return;
+        arrangeInCircle(network, nodes, cfg.members, info.centroid, info.radius);
       });
 
-      // 5) AHORA termina aquí: no vuelvas a empujar
+      // 5) Push outsiders away
       pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 70);
 
-      // FINAL enforcement of circles - HEAVY PASSES
+      // 6) Final heavy passes to enforce cluster integrity
       nudgeOverlaps(network, nodes, window.__clusterOf, 50);
+      nudgeOverlaps(network, nodes, window.__clusterOf, 30);
 
-      // Reposition multi-cluster nodes to average position across their clusters
-      // EXCEPTION: Goya stays in ILUSTRADOS, don't average him
-      Object.keys(nodeClusterMap).forEach(nodeId => {
-        if (nodeId === "Francisco de Goya") return; // Keep Goya in Ilustrados only
-        
-        const clusters = nodeClusterMap[nodeId];
-        if (clusters.length > 1 && nodes.get(nodeId)) {
-          let totalX = 0, totalY = 0;
-          let count = 0;
-          clusters.forEach(clusterId => {
-            const info = clusterInfo[clusterId];
-            if (info) {
-              const index = info.members.indexOf(nodeId);
-              if (index >= 0) {
-                const angle = (index * 2 * Math.PI) / info.members.length;
-                const x = info.centroid.x + Math.cos(angle) * info.radius;
-                const y = info.centroid.y + Math.sin(angle) * info.radius;
-                totalX += x;
-                totalY += y;
-                count++;
-              }
-            }
-          });
-          if (count > 0) {
-            network.moveNode(nodeId, totalX / count, totalY / count);
-          }
-        }
-      });
-
+      // 7) Tighten proximity groups for relationships
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.35);
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.20);
 
-      nudgeOverlaps(network, nodes, window.__clusterOf, 10);
+      // 8) Final overlap cleanup
+      nudgeOverlaps(network, nodes, window.__clusterOf, 20);
 
-      // halo global final
+      // 9) Global halos and priority separations
       enforceGlobalNodeHalo(network, nodes, 30);
       enforceGlobalNodeHalo(network, nodes, 12);
-
-      // separación quirúrgica de pares conflictivos
       enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 12);
 
       network.redraw();
