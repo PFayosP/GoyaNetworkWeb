@@ -1182,6 +1182,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             // center: "Carlos IV",
             members: [
               "Carlos III",
+              "Carlos IV",
               "María Luisa de Parma",
               "Fernando VII",
               "Infanta Luisa Fernanda de Borbón",
@@ -1459,6 +1460,35 @@ document.addEventListener('DOMContentLoaded', async function () {
         "WEISS": ["Rosario Weiss Zorrilla", "Leocadia Zorrilla y Galarza"],
 
         "SUREDAS": ["Bartolomé Sureda", "Alejandro Sureda"],
+
+        "OSUNA_ARIST": [
+          "XII Countess-Duchess of Benavente and Duchess of Osuna",
+          "IX Duke of Osuna",
+          "X Duke of Osuna",
+          "VIII Duchess of Abrantes",
+          "X Marchioness of Santa Cruz"
+        ],
+
+        "VILLAFRANCA_ARIST": [
+          "María Tomasa Palafox, Marchioness of Villafranca",
+          "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
+          "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
+          "José Álvarez de Toledo, Duke of Alba",
+          "María Teresa de Silva, XIII Duchess of Alba"
+        ],
+
+        "BOURBON_ARIST": [
+          "Carlos IV",
+          "Carlos III",
+          "María Luisa de Parma",
+          "Fernando VII",
+          "Infanta Luisa Fernanda de Borbón",
+          "Luis de Borbón",
+          "María Teresa de Vallabriga",
+          "XV Countess of Chinchón",
+          "Isabel II",
+          "María Cristina de Borbón-Dos Sicilias"
+        ],
 
         "GONCOURT": ["Edmond de Goncourt", "Jules de Goncourt"],
 
@@ -2084,7 +2114,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Frédéric Quilliet", "Juan Agustín Ceán Bermúdez", 120],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
-      ["Manuel Godoy", "Francisco de Goya", 140]
+      ["Manuel Godoy", "Francisco de Goya", 140],
+      ["Francisco de Goya", "Carlos IV", 140],
+      ["Gaspar Melchor de Jovellanos", "Carlos IV", 140],
+      ["Count of Floridablanca", "Carlos IV", 140]
     ];
 
     function getNodeHalo(node) {
