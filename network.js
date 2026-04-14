@@ -2075,7 +2075,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenia de Montijo", "Manuel Godoy", 120],
       ["Manuel Godoy", "Isabel II", 120],
       ["Carlos III", "Josefa Tudó", 120],
+      ["Carlos III", "Agustín Esteve", 120],
       ["Carlos III", "María Manuela Kirkpatrick", 120],
+      ["Count of Floridablanca", "Juan Agustín Ceán Bermúdez", 120],
       ["María Manuela Kirkpatrick", "1st Duke of Wellington", 120],
       ["Carlos III", "Carlos IV", 120],
       ["María Manuela Kirkpatrick", "Josefa Tudó", 120],
@@ -2219,26 +2221,16 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-    function arrangeInCircle(network, nodes, memberIds, radius = 140) {
+    function arrangeInCircle(network, nodes, memberIds, centroid, radius = 140) {
       const validMembers = memberIds.filter(id => nodes.get(id));
       if (validMembers.length < 2) return;
 
-      // Calculate centroid
-      const pos = network.getPositions(validMembers);
-      let cx = 0, cy = 0;
-      validMembers.forEach(id => {
-        cx += pos[id].x;
-        cy += pos[id].y;
-      });
-      cx /= validMembers.length;
-      cy /= validMembers.length;
-
-      // Arrange evenly in circle
+      // Arrange evenly in circle around given centroid
       const angleStep = (2 * Math.PI) / validMembers.length;
       validMembers.forEach((id, index) => {
         const angle = index * angleStep;
-        const x = cx + Math.cos(angle) * radius;
-        const y = cy + Math.sin(angle) * radius;
+        const x = centroid.x + Math.cos(angle) * radius;
+        const y = centroid.y + Math.sin(angle) * radius;
         network.moveNode(id, x, y);
       });
     }
@@ -2271,7 +2263,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const clusterIds = new Set([cfg.center, ...cfg.members].filter(id => id && nodes.get(id)));
 
         const baseRadius = cfg.radius || 150;
-        const halo = baseRadius + 45; 
+        const halo = baseRadius + 80; 
 
         allIds.forEach(id => {
           if (clusterIds.has(id)) return;
@@ -2284,7 +2276,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const d = Math.hypot(dx, dy) || 1;
 
           if (d < halo) {
-            const push = (halo - d) * 0.8;
+            const push = (halo - d) * 1.2;
             const ux = dx / d;
             const uy = dy / d;
             network.moveNode(id, p.x + ux * push, p.y + uy * push);
@@ -2394,33 +2386,41 @@ document.addEventListener('DOMContentLoaded', async function () {
       // 1) limpia solapes globales iniciales
       nudgeOverlaps(network, nodes, window.__clusterOf, 20);
 
+      const clusterInfo = {};
+
       // 2) coloca clusters en radial
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.members || !cfg.members.length) return;
 
+        // Calculate centroid
+        let centroid;
         if (cfg.center && nodes.get(cfg.center)) {
-          // Tighter cluster radius for more visible grouping
-          const baseRadius = Math.max(
-            (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
-            70 + (cfg.members?.length || 0) * 6
-          );
-
-          placeFamilyAroundCenter(
-            network,
-            nodes,
-            cfg.center,
-            cfg.members,
-            baseRadius,
-            cfg.startAngle ?? (-Math.PI / 2)
-          );
+          centroid = network.getPositions([cfg.center])[cfg.center];
         } else {
-          // Arrange in circle for clusters without center
-          const baseRadius = Math.max(
-            (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
-            70 + (cfg.members?.length || 0) * 6
-          );
-          arrangeInCircle(network, nodes, cfg.members, baseRadius);
+          const validMembers = cfg.members.filter(id => nodes.get(id));
+          if (validMembers.length === 0) return;
+          const pos = network.getPositions(validMembers);
+          let cx = 0, cy = 0;
+          validMembers.forEach(id => {
+            cx += pos[id].x;
+            cy += pos[id].y;
+          });
+          centroid = { x: cx / validMembers.length, y: cy / validMembers.length };
         }
+
+        // Arrange in circle around centroid
+        const baseRadius = Math.max(
+          (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
+          70 + (cfg.members?.length || 0) * 6
+        );
+        arrangeInCircle(network, nodes, cfg.members, centroid, baseRadius);
+
+        // Store info
+        clusterInfo[Object.keys(RADIAL_CLUSTERS).find(key => RADIAL_CLUSTERS[key] === cfg)] = {
+          centroid,
+          radius: baseRadius,
+          members: cfg.members
+        };
       });
 
       // 3) corrige solapes provocados por la recolocación
@@ -2430,18 +2430,23 @@ document.addEventListener('DOMContentLoaded', async function () {
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.members || !cfg.members.length) return;
 
+        // Calculate centroid
+        let centroid;
         if (cfg.center && nodes.get(cfg.center)) {
-          placeFamilyAroundCenter(
-            network,
-            nodes,
-            cfg.center,
-            cfg.members,
-            cfg.radius || 150,
-            cfg.startAngle ?? (-Math.PI / 2)
-          );
+          centroid = network.getPositions([cfg.center])[cfg.center];
         } else {
-          arrangeInCircle(network, nodes, cfg.members, cfg.radius || 150);
+          const validMembers = cfg.members.filter(id => nodes.get(id));
+          if (validMembers.length === 0) return;
+          const pos = network.getPositions(validMembers);
+          let cx = 0, cy = 0;
+          validMembers.forEach(id => {
+            cx += pos[id].x;
+            cy += pos[id].y;
+          });
+          centroid = { x: cx / validMembers.length, y: cy / validMembers.length };
         }
+
+        arrangeInCircle(network, nodes, cfg.members, centroid, cfg.radius || 150);
       });
 
       // 5) AHORA termina aquí: no vuelvas a empujar
@@ -2451,19 +2456,48 @@ document.addEventListener('DOMContentLoaded', async function () {
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.members?.length) return;
 
+        // Calculate centroid
+        let centroid;
         if (cfg.center && nodes.get(cfg.center)) {
-          const baseRadius = cfg.radius || 150;
-
-          placeFamilyAroundCenter(
-            network,
-            nodes,
-            cfg.center,
-            cfg.members,
-            baseRadius,
-            cfg.startAngle ?? (-Math.PI / 2)
-          );
+          centroid = network.getPositions([cfg.center])[cfg.center];
         } else {
-          arrangeInCircle(network, nodes, cfg.members, cfg.radius || 150);
+          const validMembers = cfg.members.filter(id => nodes.get(id));
+          if (validMembers.length === 0) return;
+          const pos = network.getPositions(validMembers);
+          let cx = 0, cy = 0;
+          validMembers.forEach(id => {
+            cx += pos[id].x;
+            cy += pos[id].y;
+          });
+          centroid = { x: cx / validMembers.length, y: cy / validMembers.length };
+        }
+
+        arrangeInCircle(network, nodes, cfg.members, centroid, cfg.radius || 150);
+      });
+
+      // Reposition multi-cluster nodes to average position across their clusters
+      Object.keys(nodeClusterMap).forEach(nodeId => {
+        const clusters = nodeClusterMap[nodeId];
+        if (clusters.length > 1 && nodes.get(nodeId)) {
+          let totalX = 0, totalY = 0;
+          let count = 0;
+          clusters.forEach(clusterId => {
+            const info = clusterInfo[clusterId];
+            if (info) {
+              const index = info.members.indexOf(nodeId);
+              if (index >= 0) {
+                const angle = (index * 2 * Math.PI) / info.members.length;
+                const x = info.centroid.x + Math.cos(angle) * info.radius;
+                const y = info.centroid.y + Math.sin(angle) * info.radius;
+                totalX += x;
+                totalY += y;
+                count++;
+              }
+            }
+          });
+          if (count > 0) {
+            network.moveNode(nodeId, totalX / count, totalY / count);
+          }
         }
       });
 
