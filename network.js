@@ -1133,7 +1133,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "GOYA_FAMILY": {
-            center: "Francisco de Goya",
+            // center: "Francisco de Goya",
             members: [
               "Javier Goya",
               "Mariano Goya",
@@ -1162,7 +1162,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "MONTIJO_CORE": {
-            center: "Eugenio Eulalio Palafox, VII Count of Montijo",
+            // center: "Eugenio Eulalio Palafox, VII Count of Montijo",
             members: [
               "María Francisca de Sales Portocarrero, VI Countess of Montijo",
               "Cipriano Portocarrero, VIII Count of Montijo",
@@ -1178,7 +1178,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "BOURBON_CORE": {
-            center: "Carlos IV",
+            // center: "Carlos IV",
             members: [
               "Carlos III",
               "María Luisa de Parma",
@@ -1213,7 +1213,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           "ALBA_CLUSTER": {
             // center: "María Teresa de Silva, XIII Duchess of Alba",
             members: [
-              "José Álvarez de Toledo, Duke of Alba"
+              "José Álvarez de Toledo, Duke of Alba",
+              "María Teresa de Silva, XIII Duchess of Alba"
             ],
             radius: 110,
             startAngle: -Math.PI / 2,
@@ -1222,7 +1223,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "ILUSTRADOS_CLUSTER": {
-            center: "Leandro Fernández de Moratín",
+            // center: "Leandro Fernández de Moratín",
             members: [
               "Francisco de Goya",
               "Gaspar Melchor de Jovellanos",
@@ -2218,8 +2219,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       const validMembers = memberIds.filter(id => nodes.get(id));
       if (validMembers.length < 2) return;
 
-      console.log('Arranging in circle:', validMembers.length, 'members, radius:', radius);
-
       // Calculate centroid
       const pos = network.getPositions(validMembers);
       let cx = 0, cy = 0;
@@ -2229,8 +2228,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
       cx /= validMembers.length;
       cy /= validMembers.length;
-
-      console.log('Centroid:', cx, cy);
 
       // Arrange evenly in circle
       const angleStep = (2 * Math.PI) / validMembers.length;
@@ -2398,7 +2395,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (!cfg.members || !cfg.members.length) return;
 
         if (cfg.center && nodes.get(cfg.center)) {
-          console.log('Placing around center for cluster:', cfg.center);
           // Tighter cluster radius for more visible grouping
           const baseRadius = Math.max(
             (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
@@ -2414,7 +2410,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             cfg.startAngle ?? (-Math.PI / 2)
           );
         } else {
-          console.log('Arranging in circle for cluster without center:', cfg.center || 'no center');
           // Arrange in circle for clusters without center
           const baseRadius = Math.max(
             (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
