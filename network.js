@@ -1180,6 +1180,36 @@ document.addEventListener('DOMContentLoaded', async function () {
           (cfg.members || []).forEach(id => { nodeClusterMap[id] = cid; });
         });
 
+        const getClusterIdForNode = nodeId => nodeClusterMap[nodeId];
+        const getClusterEdgeStatus = (fromId, toId) => {
+          const fromCluster = getClusterIdForNode(fromId);
+          const toCluster = getClusterIdForNode(toId);
+          if (!fromCluster || !toCluster) return 'unclassified';
+          return fromCluster === toCluster ? 'intra-cluster' : 'inter-cluster';
+        };
+
+        const hexToRgba = (hex, alpha) => {
+          if (!hex) return `rgba(100,100,100,${alpha})`;
+          const shorthand = /^#([a-f\d])([a-f\d])([a-f\d])$/i;
+          const fullHex = hex.replace(shorthand, (m, r, g, b) => `${r}${r}${g}${g}${b}${b}`);
+          const match = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(fullHex);
+          if (!match) return `rgba(100,100,100,${alpha})`;
+          return `rgba(${parseInt(match[1], 16)}, ${parseInt(match[2], 16)}, ${parseInt(match[3], 16)}, ${alpha})`;
+        };
+
+        const getEdgeColor = (edge, level, edgeStatus) => {
+          const isSecondary = level === 'secondary';
+          if (edgeStatus === 'intra-cluster') {
+            const clusterId = getClusterIdForNode(edge.from) || getClusterIdForNode(edge.to);
+            const clusterColor = clusterColorMap[clusterId] || '#646464';
+            return {
+              color: hexToRgba(clusterColor, isSecondary ? 0.45 : 0.8)
+            };
+          }
+          const baseGray = isSecondary ? 'rgba(150,150,150,0.15)' : 'rgba(200,200,200,0.25)';
+          return { color: baseGray };
+        };
+
         // Ajustes de nodos con cluster color
         nodes = new vis.DataSet(data.nodes.map(node => {
           labelToId[node.label] = node.id;
@@ -1247,6 +1277,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Edges más transparentes (general)
     edges = new vis.DataSet(data.edges.map(edge => {
       const level = edge.connection_level || "direct";
+      const edgeStatus = getClusterEdgeStatus(edge.from, edge.to);
 
       // Muestra etiqueta solo si es "direct" o "secondary".
       // Si termina en "?" (p. ej. "direct?") NO la pintamos y la ponemos como tooltip.
@@ -1260,12 +1291,15 @@ document.addEventListener('DOMContentLoaded', async function () {
           ? edge.label  // aparecerá al pasar el ratón
           : edge.title;
 
+      const edgeColor = getEdgeColor(edge, level, edgeStatus);
+      const width = edgeStatus === 'intra-cluster' ? (level === 'secondary' ? 1.4 : 1.8) : (level === 'secondary' ? 1.2 : 1.5);
+
       return {
         ...edge,
         label,
         title,
-        color: { color: level === "secondary" ? "rgba(255,215,0,0.4)" : "rgba(200,200,200,0.25)" },
-        width: 1.5
+        color: edgeColor,
+        width
       };
     }));
 
