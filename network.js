@@ -1081,15 +1081,16 @@ document.addEventListener('DOMContentLoaded', async function () {
         const labelToId = {};
         // Cluster color palette
         const CLUSTER_COLORS = [
-          '#e57373', // red - MADRAZO
-          '#64b5f6', // blue - HUGO
-          '#81c784', // green - GOYA_FAMILY
-          '#ffd54f', // yellow - OSUNA
-          '#ba68c8', // purple - MONTIJO
-          '#4db6ac', // teal - BOURBON
-          '#ffb74d', // orange - VILLAFRANCA
-          '#a1887f', // brown - ALBA
-          '#ff5722', // deep orange - ILUSTRADOS (more visible than gray-blue)
+          '#e57373', // red
+          '#64b5f6', // blue
+          '#81c784', // green
+          '#ffd54f', // yellow
+          '#ba68c8', // purple
+          '#4db6ac', // teal
+          '#ffb74d', // orange
+          '#a1887f', // brown
+          '#90a4ae', // gray-blue
+          '#f06292', // pink
         ];
 
         const RADIAL_CLUSTERS = {
@@ -1132,7 +1133,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "GOYA_FAMILY": {
-            // center: none - circular arrangement without center
+            // center: "Francisco de Goya",
             members: [
               "Francisco de Goya",
               "Javier Goya",
@@ -1162,7 +1163,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "MONTIJO_CORE": {
-            // center: none - circular arrangement without center
+            // center: "Eugenio Eulalio Palafox, VII Count of Montijo",
             members: [
               "María Francisca de Sales Portocarrero, VI Countess of Montijo",
               "Cipriano Portocarrero, VIII Count of Montijo",
@@ -1171,17 +1172,16 @@ document.addEventListener('DOMContentLoaded', async function () {
               "María Gabriela de Palafox, Marchioness of Lazán",
               "María Tomasa Palafox, Marchioness of Villafranca"
             ],
-            radius: 145,
+            radius: 135,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo"
           },
 
           "BOURBON_CORE": {
-            // center: none - circular arrangement without center
+            // center: "Carlos IV",
             members: [
               "Carlos III",
-              "Carlos IV",
               "María Luisa de Parma",
               "Fernando VII",
               "Infanta Luisa Fernanda de Borbón",
@@ -1191,7 +1191,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Isabel II",
               "María Cristina de Borbón-Dos Sicilias"
             ],
-            radius: 160,
+            radius: 150,
             startAngle: -Math.PI / 2,
             title: "Bourbon cluster",
             titleEs: "Clúster Borbón"
@@ -1224,7 +1224,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "ILUSTRADOS_CLUSTER": {
-            // center: none - circular arrangement without center
+            // center: "Leandro Fernández de Moratín",
             members: [
               "Francisco de Goya",
               "Gaspar Melchor de Jovellanos",
@@ -1237,7 +1237,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Sebastián Martínez y Pérez",
               "Martín Zapater"
             ],
-            radius: 155,
+            radius: 130,
             startAngle: -Math.PI / 2,
             title: "Ilustrados cluster",
             titleEs: "Clúster Ilustrados"
@@ -1459,41 +1459,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         "WEISS": ["Rosario Weiss Zorrilla", "Leocadia Zorrilla y Galarza"],
 
         "SUREDAS": ["Bartolomé Sureda", "Alejandro Sureda"],
-
-        "OSUNA_ARIST": [
-          "XII Countess-Duchess of Benavente and Duchess of Osuna",
-          "IX Duke of Osuna",
-          "X Duke of Osuna",
-          "VIII Duchess of Abrantes",
-          "X Marchioness of Santa Cruz"
-        ],
-
-        "VILLAFRANCA_ARIST": [
-          "María Tomasa Palafox, Marchioness of Villafranca",
-          "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
-          "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
-          "José Álvarez de Toledo, Duke of Alba",
-          "María Teresa de Silva, XIII Duchess of Alba"
-        ],
-
-        "BOURBON_ARIST": [
-          "Carlos IV",
-          "Carlos III",
-          "María Luisa de Parma",
-          "Fernando VII",
-          "Infanta Luisa Fernanda de Borbón",
-          "Luis de Borbón",
-          "María Teresa de Vallabriga",
-          "XV Countess of Chinchón",
-          "Isabel II",
-          "María Cristina de Borbón-Dos Sicilias"
-        ],
-
-        "ARIST_PULL": [
-          "XII Countess-Duchess of Benavente and Duchess of Osuna",
-          "María Tomasa Palafox, Marchioness of Villafranca",
-          "Carlos IV"
-        ],
 
         "GONCOURT": ["Edmond de Goncourt", "Jules de Goncourt"],
 
@@ -2110,28 +2075,14 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenia de Montijo", "Manuel Godoy", 120],
       ["Manuel Godoy", "Isabel II", 120],
       ["Carlos III", "Josefa Tudó", 120],
-      ["Carlos III", "Agustín Esteve", 120],
       ["Carlos III", "María Manuela Kirkpatrick", 120],
-      ["Count of Floridablanca", "Juan Agustín Ceán Bermúdez", 120],
       ["María Manuela Kirkpatrick", "1st Duke of Wellington", 120],
       ["Carlos III", "Carlos IV", 120],
       ["María Manuela Kirkpatrick", "Josefa Tudó", 120],
       ["Frédéric Quilliet", "Juan Agustín Ceán Bermúdez", 120],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
-      ["Manuel Godoy", "Francisco de Goya", 140],
-      // CLUSTER SEPARATIONS - EXTREME to force separation
-      ["Francisco de Goya", "Carlos IV", 250],
-      ["Gaspar Melchor de Jovellanos", "Carlos IV", 250],
-      ["Count of Floridablanca", "Carlos IV", 250],
-      ["Juan Meléndez Valdés", "Carlos IV", 250],
-      ["Martín Zapater", "Carlos IV", 250],
-      ["Gaspar Melchor de Jovellanos", "Eugenia de Montijo", 220],
-      ["Francisco de Goya", "Eugenia de Montijo", 220],
-      ["Count of Floridablanca", "María Manuela Kirkpatrick", 220],
-      ["Francisco de Goya", "María Manuela Kirkpatrick", 220],
-      ["Gaspar Melchor de Jovellanos", "María Cristina de Borbón-Dos Sicilias", 220],
-      ["Count of Floridablanca", "María Cristina de Borbón-Dos Sicilias", 220]
+      ["Manuel Godoy", "Francisco de Goya", 140]
     ];
 
     function getNodeHalo(node) {
@@ -2268,16 +2219,26 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-    function arrangeInCircle(network, nodes, memberIds, centroid, radius = 140) {
+    function arrangeInCircle(network, nodes, memberIds, radius = 140) {
       const validMembers = memberIds.filter(id => nodes.get(id));
       if (validMembers.length < 2) return;
 
-      // Arrange evenly in circle around given centroid
+      // Calculate centroid
+      const pos = network.getPositions(validMembers);
+      let cx = 0, cy = 0;
+      validMembers.forEach(id => {
+        cx += pos[id].x;
+        cy += pos[id].y;
+      });
+      cx /= validMembers.length;
+      cy /= validMembers.length;
+
+      // Arrange evenly in circle
       const angleStep = (2 * Math.PI) / validMembers.length;
       validMembers.forEach((id, index) => {
         const angle = index * angleStep;
-        const x = centroid.x + Math.cos(angle) * radius;
-        const y = centroid.y + Math.sin(angle) * radius;
+        const x = cx + Math.cos(angle) * radius;
+        const y = cy + Math.sin(angle) * radius;
         network.moveNode(id, x, y);
       });
     }
@@ -2310,7 +2271,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const clusterIds = new Set([cfg.center, ...cfg.members].filter(id => id && nodes.get(id)));
 
         const baseRadius = cfg.radius || 150;
-        const halo = baseRadius + 80; 
+        const halo = baseRadius + 45; 
 
         allIds.forEach(id => {
           if (clusterIds.has(id)) return;
@@ -2323,7 +2284,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           const d = Math.hypot(dx, dy) || 1;
 
           if (d < halo) {
-            const push = (halo - d) * 1.2;
+            const push = (halo - d) * 0.8;
             const ux = dx / d;
             const uy = dy / d;
             network.moveNode(id, p.x + ux * push, p.y + uy * push);
@@ -2433,96 +2394,89 @@ document.addEventListener('DOMContentLoaded', async function () {
       // 1) limpia solapes globales iniciales
       nudgeOverlaps(network, nodes, window.__clusterOf, 20);
 
-      const clusterInfo = {};
-
-      // 2) coloca clusters en radial - calculate centroids from member positions
+      // 2) coloca clusters en radial
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.members || !cfg.members.length) return;
 
-        // Calculate centroid from member positions (keeps clusters together)
-        let centroid;
         if (cfg.center && nodes.get(cfg.center)) {
-          centroid = network.getPositions([cfg.center])[cfg.center];
+          // Tighter cluster radius for more visible grouping
+          const baseRadius = Math.max(
+            (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
+            70 + (cfg.members?.length || 0) * 6
+          );
+
+          placeFamilyAroundCenter(
+            network,
+            nodes,
+            cfg.center,
+            cfg.members,
+            baseRadius,
+            cfg.startAngle ?? (-Math.PI / 2)
+          );
         } else {
-          const validMembers = cfg.members.filter(id => nodes.get(id));
-          if (validMembers.length === 0) return;
-          const pos = network.getPositions(validMembers);
-          let cx = 0, cy = 0;
-          validMembers.forEach(id => {
-            cx += pos[id].x;
-            cy += pos[id].y;
-          });
-          centroid = { x: cx / validMembers.length, y: cy / validMembers.length };
+          // Arrange in circle for clusters without center
+          const baseRadius = Math.max(
+            (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
+            70 + (cfg.members?.length || 0) * 6
+          );
+          arrangeInCircle(network, nodes, cfg.members, baseRadius);
         }
-
-        // Arrange in circle around centroid
-        const baseRadius = Math.max(
-          (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
-          70 + (cfg.members?.length || 0) * 6
-        );
-        arrangeInCircle(network, nodes, cfg.members, centroid, baseRadius);
-
-        // Store info
-        clusterInfo[Object.keys(RADIAL_CLUSTERS).find(key => RADIAL_CLUSTERS[key] === cfg)] = {
-          centroid,
-          radius: baseRadius,
-          members: cfg.members
-        };
       });
 
-      // 3) EXTREME anti-overlap to separate clusters
-      nudgeOverlaps(network, nodes, window.__clusterOf, 150);
-      nudgeOverlaps(network, nodes, window.__clusterOf, 120);
-      nudgeOverlaps(network, nodes, window.__clusterOf, 100);
+      // 3) corrige solapes provocados por la recolocación
+      nudgeOverlaps(network, nodes, window.__clusterOf, 15);
 
       // 4) vuelve a imponer la geometría radial
       Object.values(RADIAL_CLUSTERS).forEach(cfg => {
         if (!cfg.members || !cfg.members.length) return;
 
-        // Calculate centroid
-        let centroid;
         if (cfg.center && nodes.get(cfg.center)) {
-          centroid = network.getPositions([cfg.center])[cfg.center];
+          placeFamilyAroundCenter(
+            network,
+            nodes,
+            cfg.center,
+            cfg.members,
+            cfg.radius || 150,
+            cfg.startAngle ?? (-Math.PI / 2)
+          );
         } else {
-          const validMembers = cfg.members.filter(id => nodes.get(id));
-          if (validMembers.length === 0) return;
-          const pos = network.getPositions(validMembers);
-          let cx = 0, cy = 0;
-          validMembers.forEach(id => {
-            cx += pos[id].x;
-            cy += pos[id].y;
-          });
-          centroid = { x: cx / validMembers.length, y: cy / validMembers.length };
+          arrangeInCircle(network, nodes, cfg.members, cfg.radius || 150);
         }
-
-        arrangeInCircle(network, nodes, cfg.members, centroid, cfg.radius || 150);
       });
 
       // 5) AHORA termina aquí: no vuelvas a empujar
       pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 70);
 
-      // FINAL enforcement of circles - HEAVY PASSES
-      nudgeOverlaps(network, nodes, window.__clusterOf, 50);
-      nudgeOverlaps(network, nodes, window.__clusterOf, 30);
+      // último paso: fijar definitivamente
+      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
+        if (!cfg.members?.length) return;
 
-      // Reposition multi-cluster nodes DISABLED - just use cluster arrangements
-      // Object.keys(nodeClusterMap).forEach(nodeId => {
-      //   const clusters = nodeClusterMap[nodeId];
-      //   if (clusters.length > 1 && nodes.get(nodeId)) {
-      //     // Skip averaging - let cluster arrangement handle positioning
-      //   }
-      // });
+        if (cfg.center && nodes.get(cfg.center)) {
+          const baseRadius = cfg.radius || 150;
 
-      // 7) Tighten proximity groups for relationships
+          placeFamilyAroundCenter(
+            network,
+            nodes,
+            cfg.center,
+            cfg.members,
+            baseRadius,
+            cfg.startAngle ?? (-Math.PI / 2)
+          );
+        } else {
+          arrangeInCircle(network, nodes, cfg.members, cfg.radius || 150);
+        }
+      });
+
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.35);
       tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.20);
 
-      // 8) Final overlap cleanup
-      nudgeOverlaps(network, nodes, window.__clusterOf, 20);
+      nudgeOverlaps(network, nodes, window.__clusterOf, 10);
 
-      // 9) Global halos and priority separations
+      // halo global final
       enforceGlobalNodeHalo(network, nodes, 30);
       enforceGlobalNodeHalo(network, nodes, 12);
+
+      // separación quirúrgica de pares conflictivos
       enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 12);
 
       network.redraw();
