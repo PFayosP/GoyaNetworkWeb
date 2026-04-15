@@ -1133,7 +1133,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "ILUSTRADOS_CLUSTER": {
-            // center: none - circular arrangement without center
             members: [
               "Francisco de Goya",
               "Juan Agustín Ceán Bermúdez",
@@ -1143,14 +1142,17 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Leandro Fernández de Moratín",
               "Francisco Cabarrús"
             ],
-            radius: 160,
+            radius: 178,
+            padding: 120,
             startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Francisco de Goya": Math.PI / 4
+            },
             title: "Ilustrados cluster",
             titleEs: "Clúster Ilustrados"
           },
 
           "GOYA_FAMILY": {
-            // center: none - circular arrangement without center
             members: [
               "Francisco de Goya",
               "Javier Goya",
@@ -1159,8 +1161,12 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Josefa Bayeu",
               "Francisco Bayeu"
             ],
-            radius: 145, // before: 180
+            radius: 150,
+            padding: 105,
             startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Francisco de Goya": -3 * Math.PI / 4
+            },
             title: "Goya family",
             titleEs: "Familia Goya"
           },
@@ -1197,7 +1203,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "BOURBON_CORE": {
-            // center: "Carlos IV",
             members: [
               "Carlos III",
               "Carlos IV",
@@ -1210,7 +1215,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Isabel II",
               "María Cristina de Borbón-Dos Sicilias"
             ],
-            radius: 150,
+            radius: 172,
+            padding: 120,
             startAngle: -Math.PI / 2,
             title: "Bourbon cluster",
             titleEs: "Clúster Borbón"
@@ -2218,11 +2224,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-    function arrangeInCircle(network, nodes, memberIds, radius = 140) {
+    function arrangeInCircle(network, nodes, memberIds, radius = 140, startAngle = -Math.PI / 2, sharedBoundaryNodes = {}) {
       const validMembers = memberIds.filter(id => nodes.get(id));
       if (validMembers.length < 2) return;
 
-      // Calculate centroid
       const pos = network.getPositions(validMembers);
       let cx = 0, cy = 0;
       validMembers.forEach(id => {
@@ -2232,64 +2237,196 @@ document.addEventListener('DOMContentLoaded', async function () {
       cx /= validMembers.length;
       cy /= validMembers.length;
 
-      // Arrange evenly in circle
-      const angleStep = (2 * Math.PI) / validMembers.length;
-      validMembers.forEach((id, index) => {
-        const angle = index * angleStep;
+      const total = validMembers.length;
+      const slotAngles = Array.from({ length: total }, (_, i) => startAngle + (i * 2 * Math.PI / total));
+
+      const normalizeAngle = a => {
+        let x = a % (2 * Math.PI);
+        if (x < 0) x += 2 * Math.PI;
+        return x;
+      };
+
+      const usedSlots = new Set();
+      const slotByNode = new Map();
+
+      // 1) reservar slots para nodos compartidos, colocándolos en el borde deseado
+      Object.entries(sharedBoundaryNodes).forEach(([nodeId, desiredAngle]) => {
+        if (!validMembers.includes(nodeId)) return;
+
+        const target = normalizeAngle(desiredAngle);
+        let bestIdx = -1;
+        let bestDiff = Infinity;
+
+        slotAngles.forEach((angle, idx) => {
+          if (usedSlots.has(idx)) return;
+
+          const diffRaw = Math.abs(normalizeAngle(angle) - target);
+          const diff = Math.min(diffRaw, 2 * Math.PI - diffRaw);
+
+          if (diff < bestDiff) {
+            bestDiff = diff;
+            bestIdx = idx;
+          }
+        });
+
+        if (bestIdx !== -1) {
+          usedSlots.add(bestIdx);
+          slotByNode.set(nodeId, slotAngles[bestIdx]);
+        }
+      });
+
+      // 2) asignar el resto de nodos a slots libres
+      const remainingNodes = validMembers.filter(id => !slotByNode.has(id));
+      const freeSlots = slotAngles.filter((_, idx) => !usedSlots.has(idx));
+
+      remainingNodes.forEach((id, i) => {
+        slotByNode.set(id, freeSlots[i]);
+      });
+
+      // 3) mover nodos
+      validMembers.forEach(id => {
+        const angle = slotByNode.get(id);
         const x = cx + Math.cos(angle) * radius;
         const y = cy + Math.sin(angle) * radius;
         network.moveNode(id, x, y);
       });
     }
 
-    function pushOutsidersFromClusters(network, nodes, clusters, padding = 70) {
+    function getClusterNodeIds(cfg, nodes) {
+      return [...new Set(
+        [
+          ...(cfg.center && nodes.get(cfg.center) ? [cfg.center] : []),
+          ...((cfg.members || []).filter(id => nodes.get(id)))
+        ]
+      )];
+    }
+
+    function getClusterCenterPos(network, nodes, cfg) {
+      const ids = getClusterNodeIds(cfg, nodes);
+      if (!ids.length) return null;
+
+      if (cfg.center && nodes.get(cfg.center)) {
+        return network.getPositions([cfg.center])[cfg.center];
+      }
+
+      const pos = network.getPositions(ids);
+      let cx = 0, cy = 0;
+      ids.forEach(id => {
+        cx += pos[id].x;
+        cy += pos[id].y;
+      });
+
+      return {
+        x: cx / ids.length,
+        y: cy / ids.length
+      };
+    }
+
+    function pushOutsidersFromClusters(network, nodes, clusters, defaultPadding = 70) {
       const allIds = nodes.getIds().filter(id => !String(id).startsWith('ANCHOR__'));
       const pos = network.getPositions(allIds);
 
-      Object.values(clusters).forEach(cfg => {
-        if (!cfg.members || !cfg.members.length) return;
-
-        let centerPos = null;
-        if (cfg.center && nodes.get(cfg.center)) {
-          centerPos = pos[cfg.center];
-        } else {
-          // For clusters without center, use centroid of members
-          const validMembers = cfg.members.filter(id => nodes.get(id));
-          if (validMembers.length > 0) {
-            let cx = 0, cy = 0;
-            validMembers.forEach(id => {
-              cx += pos[id].x;
-              cy += pos[id].y;
-            });
-            centerPos = { x: cx / validMembers.length, y: cy / validMembers.length };
-          }
-        }
-
+      Object.entries(clusters).forEach(([clusterId, cfg]) => {
+        const centerPos = getClusterCenterPos(network, nodes, cfg);
         if (!centerPos) return;
 
-        const clusterIds = new Set([cfg.center, ...cfg.members].filter(id => id && nodes.get(id)));
-
+        const clusterIds = new Set(getClusterNodeIds(cfg, nodes));
         const baseRadius = cfg.radius || 150;
-        const halo = baseRadius + 45; 
+        const padding = cfg.padding ?? defaultPadding;
+        const halo = baseRadius + padding;
 
         allIds.forEach(id => {
           if (clusterIds.has(id)) return;
 
+          // no expulsar un nodo compartido que pertenece a este clúster
+          const belongsHere = Array.isArray(nodeClusterMap[id]) && nodeClusterMap[id].includes(clusterId);
+          if (belongsHere) return;
+
           const p = pos[id];
           if (!p) return;
+
+          const outsider = nodes.get(id);
+          const outsiderHalo = Math.max(18, (getNodeHalo(outsider) || 18) * 0.35);
 
           const dx = p.x - centerPos.x;
           const dy = p.y - centerPos.y;
           const d = Math.hypot(dx, dy) || 1;
 
-          if (d < halo) {
-            const push = (halo - d) * 0.8;
+          const minD = halo + outsiderHalo;
+
+          if (d < minD) {
+            const push = minD - d;
             const ux = dx / d;
             const uy = dy / d;
             network.moveNode(id, p.x + ux * push, p.y + uy * push);
           }
         });
       });
+    }
+
+    function separateClusters(network, nodes, clusters, passes = 16, baseGap = 110, sharedGap = 36) {
+      const entries = Object.entries(clusters);
+
+      for (let pass = 0; pass < passes; pass++) {
+        let movedAny = false;
+
+        for (let i = 0; i < entries.length; i++) {
+          for (let j = i + 1; j < entries.length; j++) {
+            const [clusterAId, cfgA] = entries[i];
+            const [clusterBId, cfgB] = entries[j];
+
+            const idsA = getClusterNodeIds(cfgA, nodes);
+            const idsB = getClusterNodeIds(cfgB, nodes);
+            if (!idsA.length || !idsB.length) continue;
+
+            const shared = idsA.filter(id => idsB.includes(id));
+
+            const centerA = getClusterCenterPos(network, nodes, cfgA);
+            const centerB = getClusterCenterPos(network, nodes, cfgB);
+            if (!centerA || !centerB) continue;
+
+            let dx = centerB.x - centerA.x;
+            let dy = centerB.y - centerA.y;
+            let d = Math.hypot(dx, dy);
+
+            if (d < 0.001) {
+              dx = 1;
+              dy = 0;
+              d = 1;
+            }
+
+            const radiusA = (cfgA.radius || 150) + (cfgA.padding || 0);
+            const radiusB = (cfgB.radius || 150) + (cfgB.padding || 0);
+            const minD = radiusA + radiusB + (shared.length ? sharedGap : baseGap);
+
+            if (d < minD) {
+              const overlap = minD - d;
+              const ux = dx / d;
+              const uy = dy / d;
+
+              const movableA = idsA.filter(id => !shared.includes(id));
+              const movableB = idsB.filter(id => !shared.includes(id));
+
+              const posA = network.getPositions(movableA);
+              const posB = network.getPositions(movableB);
+
+              movableA.forEach(id => {
+                const p = posA[id];
+                network.moveNode(id, p.x - ux * overlap / 2, p.y - uy * overlap / 2);
+              });
+
+              movableB.forEach(id => {
+                const p = posB[id];
+                network.moveNode(id, p.x + ux * overlap / 2, p.y + uy * overlap / 2);
+              });
+
+              movedAny = true;
+            }
+          }
+        }
+
+        if (!movedAny) break;
+      }
     }
 
     function tightenProximityGroups(network, nodes, groups, strength = 0.18) {
@@ -2386,113 +2523,90 @@ document.addEventListener('DOMContentLoaded', async function () {
     network.setOptions({ physics: { enabled: false } });
 
     // 3) Empujón anti-overlap cuando ya están puestas las imágenes
-   setTimeout(() => {
-    if (!window.__didNudgeOnce) {
-      window.__didNudgeOnce = true;
+    setTimeout(() => {
+      if (!window.__didNudgeOnce) {
+        window.__didNudgeOnce = true;
 
-      // 1) limpia solapes globales iniciales
-      nudgeOverlaps(network, nodes, window.__clusterOf, 20);
+        // 1) pequeña limpieza inicial antes de fijar geometrías
+        nudgeOverlaps(network, nodes, window.__clusterOf, 8);
 
-      // 2) coloca clusters en radial
-      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
-        if (!cfg.members || !cfg.members.length) return;
+        // 2) imponer la geometría exacta de cada clúster
+        Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
+          if (!cfg.members || !cfg.members.length) return;
 
-        if (cfg.center && nodes.get(cfg.center)) {
-          // Tighter cluster radius for more visible grouping
-          const baseRadius = Math.max(
-            (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
-            70 + (cfg.members?.length || 0) * 6
-          );
+          if (cfg.center && nodes.get(cfg.center)) {
+            placeFamilyAroundCenter(
+              network,
+              nodes,
+              cfg.center,
+              cfg.members,
+              cfg.radius || 150,
+              cfg.startAngle ?? (-Math.PI / 2)
+            );
+          } else {
+            arrangeInCircle(
+              network,
+              nodes,
+              cfg.members,
+              cfg.radius || 150,
+              cfg.startAngle ?? (-Math.PI / 2),
+              cfg.sharedBoundaryNodes || {}
+            );
+          }
+        });
 
-          placeFamilyAroundCenter(
-            network,
-            nodes,
-            cfg.center,
-            cfg.members,
-            baseRadius,
-            cfg.startAngle ?? (-Math.PI / 2)
-          );
-        } else {
-          // Arrange in circle for clusters without center
-          const baseRadius = Math.max(
-            (cfg.radius ? Math.max(70, Math.round(cfg.radius * 0.65)) : 90),
-            70 + (cfg.members?.length || 0) * 6
-          );
-          arrangeInCircle(network, nodes, cfg.members, baseRadius);
-        }
-      });
+        // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 36);
 
-      // 3) corrige solapes provocados por la recolocación
-      nudgeOverlaps(network, nodes, window.__clusterOf, 15);
+        // 4) expulsar nodos externos fuera del halo de cada clúster
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 85);
 
-      // 4) vuelve a imponer la geometría radial
-      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
-        if (!cfg.members || !cfg.members.length) return;
+        // 5) volver a imponer círculos/órbitas después de las expulsiones
+        Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
+          if (!cfg.members || !cfg.members.length) return;
 
-        if (cfg.center && nodes.get(cfg.center)) {
-          placeFamilyAroundCenter(
-            network,
-            nodes,
-            cfg.center,
-            cfg.members,
-            cfg.radius || 150,
-            cfg.startAngle ?? (-Math.PI / 2)
-          );
-        } else {
-          arrangeInCircle(network, nodes, cfg.members, cfg.radius || 150);
-        }
-      });
+          if (cfg.center && nodes.get(cfg.center)) {
+            placeFamilyAroundCenter(
+              network,
+              nodes,
+              cfg.center,
+              cfg.members,
+              cfg.radius || 150,
+              cfg.startAngle ?? (-Math.PI / 2)
+            );
+          } else {
+            arrangeInCircle(
+              network,
+              nodes,
+              cfg.members,
+              cfg.radius || 150,
+              cfg.startAngle ?? (-Math.PI / 2),
+              cfg.sharedBoundaryNodes || {}
+            );
+          }
+        });
 
-      // 5) AHORA termina aquí: no vuelvas a empujar
-      pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 70);
+        // 6) segunda pasada, más suave, para fijar separación final
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 36);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 85);
 
-      // último paso: fijar definitivamente
-      Object.values(RADIAL_CLUSTERS).forEach(cfg => {
-        if (!cfg.members?.length) return;
+        // 7) separación quirúrgica solo para pares concretos
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 8);
 
-        if (cfg.center && nodes.get(cfg.center)) {
-          const baseRadius = cfg.radius || 150;
+        network.redraw();
 
-          placeFamilyAroundCenter(
-            network,
-            nodes,
-            cfg.center,
-            cfg.members,
-            baseRadius,
-            cfg.startAngle ?? (-Math.PI / 2)
-          );
-        } else {
-          arrangeInCircle(network, nodes, cfg.members, cfg.radius || 150);
-        }
-      });
+        // Esperar un poco más para asegurar que la red está completamente renderizada
+        setTimeout(() => {
+          console.log("=== GUARDANDO PANEL DEFAULT ===");
 
-      tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.35);
-      tightenProximityGroups(network, nodes, PROXIMITY_GROUPS, 0.20);
+          if (!__defaultNodeInfoHTML) {
+            __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
+          }
 
-      nudgeOverlaps(network, nodes, window.__clusterOf, 10);
-
-      // halo global final
-      enforceGlobalNodeHalo(network, nodes, 30);
-      enforceGlobalNodeHalo(network, nodes, 12);
-
-      // separación quirúrgica de pares conflictivos
-      enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 12);
-
-      network.redraw();
-    }
-
-      // Esperar un poco más para asegurar que la red está completamente renderizada
-      setTimeout(() => {
-        console.log("=== GUARDANDO PANEL DEFAULT ===");
-
-        if (!__defaultNodeInfoHTML) {
-          __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-        }
-
-        console.log("=== LLAMANDO A handleInitialHash() ===");
-        handleInitialHash();
-      }, 1500);
-  
+          console.log("=== LLAMANDO A handleInitialHash() ===");
+          handleInitialHash();
+        }, 1500);
+      }
     }, 150);
   });
 
