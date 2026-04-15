@@ -1161,8 +1161,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Josefa Bayeu",
               "Francisco Bayeu"
             ],
-            radius: 142,
-            padding: 92,
+            radius: 134,
+            padding: 86,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2
@@ -2307,7 +2307,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       sharedNodeId,
       radius = 140,
       sharedAngle = -Math.PI / 2,
-      startAngle = -Math.PI / 2
+      startSweepAngle = -Math.PI / 2,
+      sweepSize = Math.PI * 1.55
     ) {
       const validMembers = memberIds.filter(id => nodes.get(id));
       if (validMembers.length < 2) return;
@@ -2320,53 +2321,73 @@ document.addEventListener('DOMContentLoaded', async function () {
       const cx = sharedPos.x - Math.cos(sharedAngle) * radius;
       const cy = sharedPos.y - Math.sin(sharedAngle) * radius;
 
-      const total = validMembers.length;
-      const slotAngles = Array.from(
-        { length: total },
-        (_, i) => startAngle + (i * 2 * Math.PI / total)
+      // El shared node NO cuenta como slot normal
+      const otherMembers = validMembers.filter(id => id !== sharedNodeId);
+      const count = otherMembers.length;
+      if (!count) return;
+
+      // Coloca el nodo compartido exactamente donde debe ir
+      network.moveNode(
+        sharedNodeId,
+        cx + Math.cos(sharedAngle) * radius,
+        cy + Math.sin(sharedAngle) * radius
       );
 
-      const normalizeAngle = a => {
-        let x = a % (2 * Math.PI);
-        if (x < 0) x += 2 * Math.PI;
-        return x;
-      };
+      // Reparte el resto en un arco amplio, dejando libre la zona del shared node
+      const step = count === 1 ? 0 : sweepSize / (count - 1);
 
-      const usedSlots = new Set();
-      const slotByNode = new Map();
-
-      // Reservar para el nodo compartido el ángulo exacto
-      let bestIdx = -1;
-      let bestDiff = Infinity;
-      const target = normalizeAngle(sharedAngle);
-
-      slotAngles.forEach((angle, idx) => {
-        const diffRaw = Math.abs(normalizeAngle(angle) - target);
-        const diff = Math.min(diffRaw, 2 * Math.PI - diffRaw);
-        if (diff < bestDiff) {
-          bestDiff = diff;
-          bestIdx = idx;
-        }
-      });
-
-      if (bestIdx !== -1) {
-        usedSlots.add(bestIdx);
-        slotByNode.set(sharedNodeId, slotAngles[bestIdx]);
-      }
-
-      const remainingNodes = validMembers.filter(id => id !== sharedNodeId);
-      const freeSlots = slotAngles.filter((_, idx) => !usedSlots.has(idx));
-
-      remainingNodes.forEach((id, i) => {
-        slotByNode.set(id, freeSlots[i]);
-      });
-
-      validMembers.forEach(id => {
-        const angle = slotByNode.get(id);
+      otherMembers.forEach((id, i) => {
+        const angle = startSweepAngle + step * i;
         const x = cx + Math.cos(angle) * radius;
         const y = cy + Math.sin(angle) * radius;
         network.moveNode(id, x, y);
       });
+    }
+
+    function placeVillafrancaAlbaClusters(network) {
+      const dukeId = "José Álvarez de Toledo, Duke of Alba";
+      const duchessId = "María Teresa de Silva, XIII Duchess of Alba";
+      const marquisId = "Francisco Álvarez de Toledo, XII Marquis of Villafranca";
+      const widowId = "María Antonia Gonzaga, Marchioness of Villafranca (widow)";
+
+      const dukePos = network.getPositions([dukeId])[dukeId];
+      const duchessPos = network.getPositions([duchessId])[duchessId];
+      if (!dukePos || !duchessPos) return;
+
+      // Eje Alba actual
+      let dx = duchessPos.x - dukePos.x;
+      let dy = duchessPos.y - dukePos.y;
+      let d = Math.hypot(dx, dy);
+
+      if (d < 0.001) {
+        dx = 0;
+        dy = 1;
+        d = 1;
+      }
+
+      const ux = dx / d;
+      const uy = dy / d;
+
+      // Vector perpendicular para abrir el círculo de Villafranca
+      const px = -uy;
+      const py = ux;
+
+      // Punto medio entre los dos Alba
+      const mx = (dukePos.x + duchessPos.x) / 2;
+      const my = (dukePos.y + duchessPos.y) / 2;
+
+      // Abrir el clúster hacia "afuera"
+      const spread = 92;
+      const lift = 72;
+
+      const marquisX = mx + px * spread - ux * lift;
+      const marquisY = my + py * spread - uy * lift;
+
+      const widowX = mx + px * spread + ux * lift;
+      const widowY = my + py * spread + uy * lift;
+
+      if (nodes.get(marquisId)) network.moveNode(marquisId, marquisX, marquisY);
+      if (nodes.get(widowId)) network.moveNode(widowId, widowX, widowY);
     }
 
     function getClusterNodeIds(cfg, nodes) {
@@ -2631,9 +2652,14 @@ document.addEventListener('DOMContentLoaded', async function () {
               cfg.members,
               "Francisco de Goya",
               cfg.radius || 150,
-              -Math.PI / 2,
-              -Math.PI / 2
+              -Math.PI / 2,     // Goya abajo, en el borde
+              -Math.PI * 0.15,  // inicio del arco de los demás
+              Math.PI * 1.3     // amplitud del arco
             );
+            return;
+          }
+
+          if (clusterId === "VILLAFRANCA_CLUSTER" || clusterId === "ALBA_CLUSTER") {
             return;
           }
 
@@ -2657,6 +2683,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
+        placeVillafrancaAlbaClusters(network);
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
         separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 20);
@@ -2681,6 +2708,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
+          if (clusterId === "VILLAFRANCA_CLUSTER" || clusterId === "ALBA_CLUSTER") {
+            return;
+          }
+
           if (clusterId === "GOYA_FAMILY") {
             arrangeAroundSharedNode(
               network,
@@ -2688,8 +2719,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               cfg.members,
               "Francisco de Goya",
               cfg.radius || 150,
-              -Math.PI / 2,
-              -Math.PI / 2
+              -Math.PI / 2,     // Goya abajo, en el borde
+              -Math.PI * 0.15,  // inicio del arco de los demás
+              Math.PI * 1.3     // amplitud del arco
             );
             return;
           }
@@ -2714,6 +2746,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
+        placeVillafrancaAlbaClusters(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
         separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 20);
