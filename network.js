@@ -1139,7 +1139,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Juan Agustín Ceán Bermúdez",
               "XI Count of Altamira",
               "Gaspar Melchor de Jovellanos",
-              "Count of Floridablanca"
+              "Count of Floridablanca",
+              "Leandro Fernández de Moratín",
+              "Francisco Cabarrús"
             ],
             radius: 160,
             startAngle: -Math.PI / 2,
@@ -1181,6 +1183,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             // center: "Eugenio Eulalio Palafox, VII Count of Montijo",
             members: [
               "María Francisca de Sales Portocarrero, VI Countess of Montijo",
+              "Eugenio Eulalio Palafox, VII Count of Montijo",
               "Cipriano Portocarrero, VIII Count of Montijo",
               "María Manuela Kirkpatrick",
               "Eugenia de Montijo",
@@ -1197,6 +1200,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             // center: "Carlos IV",
             members: [
               "Carlos III",
+              "Carlos IV",
               "María Luisa de Parma",
               "Fernando VII",
               "Infanta Luisa Fernanda de Borbón",
