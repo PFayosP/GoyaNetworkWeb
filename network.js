@@ -1161,8 +1161,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Josefa Bayeu",
               "Francisco Bayeu"
             ],
-            radius: 134,
-            padding: 86,
+            radius: 118, // before: 134
+            padding: 80, // before: 86
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2
@@ -1229,8 +1229,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "José Álvarez de Toledo, Duke of Alba",
               "María Teresa de Silva, XIII Duchess of Alba"
             ],
-            radius: 102,
-            padding: 72,
+            radius: 84, // before: 102
+            padding: 52, // before: 72
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "José Álvarez de Toledo, Duke of Alba": Math.PI / 2,
@@ -1245,8 +1245,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "José Álvarez de Toledo, Duke of Alba",
               "María Teresa de Silva, XIII Duchess of Alba"
             ],
-            radius: 82,
-            padding: 50,
+            radius: 52, // before: 82
+            padding: 34, // before: 50
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "José Álvarez de Toledo, Duke of Alba": 0,
@@ -2095,7 +2095,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Frédéric Quilliet", "Juan Agustín Ceán Bermúdez", 120],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
-      ["Manuel Godoy", "Francisco de Goya", 140]
+      ["Manuel Godoy", "Francisco de Goya", 140],
+      ["Jenaro Pérez Villaamil", "Francisco de Goya", 120]
     ];
 
     function getNodeHalo(node) {
@@ -2354,40 +2355,37 @@ document.addEventListener('DOMContentLoaded', async function () {
       const duchessPos = network.getPositions([duchessId])[duchessId];
       if (!dukePos || !duchessPos) return;
 
-      // Eje Alba actual
-      let dx = duchessPos.x - dukePos.x;
-      let dy = duchessPos.y - dukePos.y;
-      let d = Math.hypot(dx, dy);
+      // Recolocar primero el micro-clúster Alba como pareja compacta vertical
+      const albaCx = (dukePos.x + duchessPos.x) / 2;
+      const albaCy = (dukePos.y + duchessPos.y) / 2;
+      const albaHalfGap = 44;
 
-      if (d < 0.001) {
-        dx = 0;
-        dy = 1;
-        d = 1;
+      const newDukeX = albaCx;
+      const newDukeY = albaCy + albaHalfGap;
+      const newDuchessX = albaCx;
+      const newDuchessY = albaCy - albaHalfGap;
+
+      network.moveNode(dukeId, newDukeX, newDukeY);
+      network.moveNode(duchessId, newDuchessX, newDuchessY);
+
+      // Ahora construir Villafranca como rombo/círculo compacto alrededor de Alba
+      const villCx = albaCx + 78;
+      const villCy = albaCy;
+
+      const rx = 72;
+      const ry = 72;
+
+      if (nodes.get(marquisId)) {
+        network.moveNode(marquisId, villCx, villCy + ry);
       }
 
-      const ux = dx / d;
-      const uy = dy / d;
+      if (nodes.get(widowId)) {
+        network.moveNode(widowId, villCx, villCy - ry);
+      }
 
-      // Vector perpendicular para abrir el círculo de Villafranca
-      const px = -uy;
-      const py = ux;
-
-      // Punto medio entre los dos Alba
-      const mx = (dukePos.x + duchessPos.x) / 2;
-      const my = (dukePos.y + duchessPos.y) / 2;
-
-      // Abrir el clúster hacia "afuera"
-      const spread = 92;
-      const lift = 72;
-
-      const marquisX = mx + px * spread - ux * lift;
-      const marquisY = my + py * spread - uy * lift;
-
-      const widowX = mx + px * spread + ux * lift;
-      const widowY = my + py * spread + uy * lift;
-
-      if (nodes.get(marquisId)) network.moveNode(marquisId, marquisX, marquisY);
-      if (nodes.get(widowId)) network.moveNode(widowId, widowX, widowY);
+      // Los Alba quedan como lado izquierdo del rombo compartido
+      network.moveNode(dukeId, villCx - rx, villCy + 28);
+      network.moveNode(duchessId, villCx - rx, villCy - 28);
     }
 
     function getClusterNodeIds(cfg, nodes) {
@@ -2651,10 +2649,10 @@ document.addEventListener('DOMContentLoaded', async function () {
               nodes,
               cfg.members,
               "Francisco de Goya",
-              cfg.radius || 150,
-              -Math.PI / 2,     // Goya abajo, en el borde
-              -Math.PI * 0.15,  // inicio del arco de los demás
-              Math.PI * 1.3     // amplitud del arco
+              118,
+              -Math.PI / 2,
+              -Math.PI * 0.02,
+              Math.PI * 1.04
             );
             return;
           }
@@ -2718,10 +2716,10 @@ document.addEventListener('DOMContentLoaded', async function () {
               nodes,
               cfg.members,
               "Francisco de Goya",
-              cfg.radius || 150,
-              -Math.PI / 2,     // Goya abajo, en el borde
-              -Math.PI * 0.15,  // inicio del arco de los demás
-              Math.PI * 1.3     // amplitud del arco
+              118,
+              -Math.PI / 2,
+              -Math.PI * 0.02,
+              Math.PI * 1.04
             );
             return;
           }
