@@ -1140,7 +1140,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Gaspar Melchor de Jovellanos",
               "Count of Floridablanca",
               "Leandro Fernández de Moratín",
-              "Francisco Cabarrús"
+              "Francisco Cabarrús",
+              "Juan Meléndez Valdés",
+              "Juan Antonio Llorente"
             ],
             radius: 166,
             padding: 92,
@@ -1227,14 +1229,15 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
               "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
               "José Álvarez de Toledo, Duke of Alba",
-              "María Teresa de Silva, XIII Duchess of Alba"
+              "María Teresa de Silva, XIII Duchess of Alba",
             ],
-            radius: 84, // before: 102
-            padding: 52, // before: 72
+            radius: 96, // before: 102, 84
+            padding: 58, // before: 72, 52
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "José Álvarez de Toledo, Duke of Alba": Math.PI / 2,
-              "María Teresa de Silva, XIII Duchess of Alba": Math.PI
+              "José Álvarez de Toledo, Duke of Alba": Math.PI,
+              "María Teresa de Silva, XIII Duchess of Alba": 1.35 * Math.PI,
+              "María Tomasa Palafox, Marchioness of Villafranca": 0
             },
             title: "Villafranca cluster",
             titleEs: "Clúster Villafranca"
@@ -2350,42 +2353,59 @@ document.addEventListener('DOMContentLoaded', async function () {
       const duchessId = "María Teresa de Silva, XIII Duchess of Alba";
       const marquisId = "Francisco Álvarez de Toledo, XII Marquis of Villafranca";
       const widowId = "María Antonia Gonzaga, Marchioness of Villafranca (widow)";
+      const mariaTomasaId = "María Tomasa Palafox, Marchioness of Villafranca";
 
       const dukePos = network.getPositions([dukeId])[dukeId];
       const duchessPos = network.getPositions([duchessId])[duchessId];
       if (!dukePos || !duchessPos) return;
 
-      // Recolocar primero el micro-clúster Alba como pareja compacta vertical
+      // Centro de referencia del subgrupo Alba
       const albaCx = (dukePos.x + duchessPos.x) / 2;
       const albaCy = (dukePos.y + duchessPos.y) / 2;
-      const albaHalfGap = 44;
 
-      const newDukeX = albaCx;
-      const newDukeY = albaCy + albaHalfGap;
-      const newDuchessX = albaCx;
-      const newDuchessY = albaCy - albaHalfGap;
+      // Compactar primero el par Alba en vertical
+      const albaHalfGap = 46;
+      const dukeX = albaCx;
+      const dukeY = albaCy + albaHalfGap;
+      const duchessX = albaCx;
+      const duchessY = albaCy - albaHalfGap;
 
-      network.moveNode(dukeId, newDukeX, newDukeY);
-      network.moveNode(duchessId, newDuchessX, newDuchessY);
+      network.moveNode(dukeId, dukeX, dukeY);
+      network.moveNode(duchessId, duchessX, duchessY);
 
-      // Ahora construir Villafranca como rombo/círculo compacto alrededor de Alba
-      const villCx = albaCx + 78;
-      const villCy = albaCy;
+      // Construir Villafranca como pentágono compacto compartiendo el lado izquierdo con Alba
+      const cx = albaCx + 92;
+      const cy = albaCy;
+      const r = 84;
 
-      const rx = 72;
-      const ry = 72;
+      // Alba = borde izquierdo compartido
+      network.moveNode(dukeId,     cx + Math.cos(Math.PI * 0.95) * r, cy + Math.sin(Math.PI * 0.95) * r);
+      network.moveNode(duchessId,  cx + Math.cos(Math.PI * 1.18) * r, cy + Math.sin(Math.PI * 1.18) * r);
+
+      // Villafranca propio
+      if (nodes.get(widowId)) {
+        network.moveNode(
+          widowId,
+          cx + Math.cos(Math.PI * 1.55) * r,
+          cy + Math.sin(Math.PI * 1.55) * r
+        );
+      }
 
       if (nodes.get(marquisId)) {
-        network.moveNode(marquisId, villCx, villCy + ry);
+        network.moveNode(
+          marquisId,
+          cx + Math.cos(Math.PI * 0.20) * r,
+          cy + Math.sin(Math.PI * 0.20) * r
+        );
       }
 
-      if (nodes.get(widowId)) {
-        network.moveNode(widowId, villCx, villCy - ry);
+      if (nodes.get(mariaTomasaId)) {
+        network.moveNode(
+          mariaTomasaId,
+          cx + Math.cos(Math.PI * 1.92) * r,
+          cy + Math.sin(Math.PI * 1.92) * r
+        );
       }
-
-      // Los Alba quedan como lado izquierdo del rombo compartido
-      network.moveNode(dukeId, villCx - rx, villCy + 28);
-      network.moveNode(duchessId, villCx - rx, villCy - 28);
     }
 
     function getClusterNodeIds(cfg, nodes) {
