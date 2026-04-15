@@ -1142,11 +1142,11 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Leandro Fernández de Moratín",
               "Francisco Cabarrús"
             ],
-            radius: 178,
-            padding: 120,
+            radius: 166,
+            padding: 92,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "Francisco de Goya": Math.PI / 4
+              "Francisco de Goya": Math.PI / 2
             },
             title: "Ilustrados cluster",
             titleEs: "Clúster Ilustrados"
@@ -1161,11 +1161,11 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Josefa Bayeu",
               "Francisco Bayeu"
             ],
-            radius: 150,
-            padding: 105,
+            radius: 142,
+            padding: 92,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "Francisco de Goya": -3 * Math.PI / 4
+              "Francisco de Goya": -Math.PI / 2
             },
             title: "Goya family",
             titleEs: "Familia Goya"
@@ -1223,30 +1223,38 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "VILLAFRANCA_CLUSTER": {
-            // center: "María Tomasa Palafox, Marchioness of Villafranca",
             members: [
               "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
               "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
               "José Álvarez de Toledo, Duke of Alba",
               "María Teresa de Silva, XIII Duchess of Alba"
             ],
-            radius: 120,
+            radius: 102,
+            padding: 72,
             startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "José Álvarez de Toledo, Duke of Alba": Math.PI / 2,
+              "María Teresa de Silva, XIII Duchess of Alba": Math.PI
+            },
             title: "Villafranca cluster",
             titleEs: "Clúster Villafranca"
           },
 
           "ALBA_CLUSTER": {
-            // center: "María Teresa de Silva, XIII Duchess of Alba",
             members: [
               "José Álvarez de Toledo, Duke of Alba",
               "María Teresa de Silva, XIII Duchess of Alba"
             ],
-            radius: 110,
+            radius: 82,
+            padding: 50,
             startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "José Álvarez de Toledo, Duke of Alba": 0,
+              "María Teresa de Silva, XIII Duchess of Alba": Math.PI / 2
+            },
             title: "Alba cluster",
             titleEs: "Clúster Alba"
-          }
+          },
         };
 
         // Map clusterId to color
@@ -2556,7 +2564,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 36);
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 20);
 
         // 4) expulsar nodos externos fuera del halo de cada clúster
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 85);
@@ -2587,7 +2595,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
 
         // 6) segunda pasada, más suave, para fijar separación final
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 36);
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 20);
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 85);
 
         // 7) separación quirúrgica solo para pares concretos
