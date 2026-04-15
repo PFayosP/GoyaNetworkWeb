@@ -1132,8 +1132,23 @@ document.addEventListener('DOMContentLoaded', async function () {
             titleEs: "Clúster Hugo"
           },
 
+          "ILUSTRADOS_CLUSTER": {
+            // center: none - circular arrangement without center
+            members: [
+              "Francisco de Goya",
+              "Juan Agustín Ceán Bermúdez",
+              "XI Count of Altamira",
+              "Gaspar Melchor de Jovellanos",
+              "Count of Floridablanca"
+            ],
+            radius: 160,
+            startAngle: -Math.PI / 2,
+            title: "Ilustrados cluster",
+            titleEs: "Clúster Ilustrados"
+          },
+
           "GOYA_FAMILY": {
-            // center: "Francisco de Goya",
+            // center: none - circular arrangement without center
             members: [
               "Francisco de Goya",
               "Javier Goya",
@@ -1221,26 +1236,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Alba cluster",
             titleEs: "Clúster Alba"
-          },
-
-          "ILUSTRADOS_CLUSTER": {
-            // center: "Leandro Fernández de Moratín",
-            members: [
-              "Francisco de Goya",
-              "Gaspar Melchor de Jovellanos",
-              "Francisco Cabarrús",
-              "Juan Agustín Ceán Bermúdez",
-              "Count of Floridablanca",
-              "XI Count of Altamira",
-              "Juan Meléndez Valdés",
-              "Juan Antonio Llorente",
-              "Sebastián Martínez y Pérez",
-              "Martín Zapater"
-            ],
-            radius: 130,
-            startAngle: -Math.PI / 2,
-            title: "Ilustrados cluster",
-            titleEs: "Clúster Ilustrados"
           }
         };
 
