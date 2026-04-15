@@ -2300,6 +2300,75 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
+    function arrangeAroundSharedNode(
+      network,
+      nodes,
+      memberIds,
+      sharedNodeId,
+      radius = 140,
+      sharedAngle = -Math.PI / 2,
+      startAngle = -Math.PI / 2
+    ) {
+      const validMembers = memberIds.filter(id => nodes.get(id));
+      if (validMembers.length < 2) return;
+      if (!validMembers.includes(sharedNodeId)) return;
+
+      const sharedPos = network.getPositions([sharedNodeId])[sharedNodeId];
+      if (!sharedPos) return;
+
+      // Centro del círculo deducido desde la posición fija del nodo compartido
+      const cx = sharedPos.x - Math.cos(sharedAngle) * radius;
+      const cy = sharedPos.y - Math.sin(sharedAngle) * radius;
+
+      const total = validMembers.length;
+      const slotAngles = Array.from(
+        { length: total },
+        (_, i) => startAngle + (i * 2 * Math.PI / total)
+      );
+
+      const normalizeAngle = a => {
+        let x = a % (2 * Math.PI);
+        if (x < 0) x += 2 * Math.PI;
+        return x;
+      };
+
+      const usedSlots = new Set();
+      const slotByNode = new Map();
+
+      // Reservar para el nodo compartido el ángulo exacto
+      let bestIdx = -1;
+      let bestDiff = Infinity;
+      const target = normalizeAngle(sharedAngle);
+
+      slotAngles.forEach((angle, idx) => {
+        const diffRaw = Math.abs(normalizeAngle(angle) - target);
+        const diff = Math.min(diffRaw, 2 * Math.PI - diffRaw);
+        if (diff < bestDiff) {
+          bestDiff = diff;
+          bestIdx = idx;
+        }
+      });
+
+      if (bestIdx !== -1) {
+        usedSlots.add(bestIdx);
+        slotByNode.set(sharedNodeId, slotAngles[bestIdx]);
+      }
+
+      const remainingNodes = validMembers.filter(id => id !== sharedNodeId);
+      const freeSlots = slotAngles.filter((_, idx) => !usedSlots.has(idx));
+
+      remainingNodes.forEach((id, i) => {
+        slotByNode.set(id, freeSlots[i]);
+      });
+
+      validMembers.forEach(id => {
+        const angle = slotByNode.get(id);
+        const x = cx + Math.cos(angle) * radius;
+        const y = cy + Math.sin(angle) * radius;
+        network.moveNode(id, x, y);
+      });
+    }
+
     function getClusterNodeIds(cfg, nodes) {
       return [...new Set(
         [
@@ -2542,6 +2611,32 @@ document.addEventListener('DOMContentLoaded', async function () {
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
           if (!cfg.members || !cfg.members.length) return;
 
+          if (clusterId === "ILUSTRADOS_CLUSTER") {
+            arrangeAroundSharedNode(
+              network,
+              nodes,
+              cfg.members,
+              "Francisco de Goya",
+              cfg.radius || 150,
+              Math.PI / 2,
+              -Math.PI / 2
+            );
+            return;
+          }
+
+          if (clusterId === "GOYA_FAMILY") {
+            arrangeAroundSharedNode(
+              network,
+              nodes,
+              cfg.members,
+              "Francisco de Goya",
+              cfg.radius || 150,
+              -Math.PI / 2,
+              -Math.PI / 2
+            );
+            return;
+          }
+
           if (cfg.center && nodes.get(cfg.center)) {
             placeFamilyAroundCenter(
               network,
@@ -2572,6 +2667,32 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 5) volver a imponer círculos/órbitas después de las expulsiones
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
           if (!cfg.members || !cfg.members.length) return;
+
+          if (clusterId === "ILUSTRADOS_CLUSTER") {
+            arrangeAroundSharedNode(
+              network,
+              nodes,
+              cfg.members,
+              "Francisco de Goya",
+              cfg.radius || 150,
+              Math.PI / 2,
+              -Math.PI / 2
+            );
+            return;
+          }
+
+          if (clusterId === "GOYA_FAMILY") {
+            arrangeAroundSharedNode(
+              network,
+              nodes,
+              cfg.members,
+              "Francisco de Goya",
+              cfg.radius || 150,
+              -Math.PI / 2,
+              -Math.PI / 2
+            );
+            return;
+          }
 
           if (cfg.center && nodes.get(cfg.center)) {
             placeFamilyAroundCenter(
