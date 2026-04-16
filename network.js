@@ -1198,7 +1198,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "María Gabriela de Palafox, Marchioness of Lazán",
               "María Tomasa Palafox, Marchioness of Villafranca"
             ],
-            radius: 135,
+            radius: 148,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo"
@@ -2079,7 +2079,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
       ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
       ["Manuel Godoy", "Francisco de Goya", 140],
-      ["Jenaro Pérez Villaamil", "Francisco de Goya", 120]
+      ["Jenaro Pérez Villaamil", "Francisco de Goya", 120],
+      ["Joseph I", "María Gabriela de Palafox, Marchioness of Lazán", 170],
+      ["José Álvarez de Toledo, Duke of Alba", "Francisco Álvarez de Toledo, XII Marquis of Villafranca", 140],
     ];
 
     function getNodeHalo(node) {
@@ -2343,20 +2345,18 @@ document.addEventListener('DOMContentLoaded', async function () {
       const cy = mariaTomasaPos.y;
 
       // Lado izquierdo compartido Alba
-      network.moveNode(dukeId,    cx - 62, cy + 24);
-      network.moveNode(duchessId, cx - 62, cy - 24);
+      network.moveNode(dukeId,    cx - 74, cy + 28);
+      network.moveNode(duchessId, cx - 74, cy - 28);
 
-      // Parte superior e inferior del micro-clúster
       if (nodes.get(widowId)) {
-        network.moveNode(widowId, cx - 6, cy - 68);
+        network.moveNode(widowId, cx - 8, cy - 76);
       }
 
       if (nodes.get(marquisId)) {
-        network.moveNode(marquisId, cx - 2, cy + 56);
+        network.moveNode(marquisId, cx + 14, cy + 68);
       }
 
-      // Nodo puente con Montijo: borde derecho
-      network.moveNode(mariaTomasaId, cx + 72, cy);
+      network.moveNode(mariaTomasaId, cx + 82, cy);
     }
 
     function getClusterNodeIds(cfg, nodes) {
@@ -2726,7 +2726,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // 8) reimponer Villafranca-Alba y expulsar externos una última vez
         placeVillafrancaAlbaClusters(network);
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 130);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 150);
 
         network.redraw();
 
