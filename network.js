@@ -1108,7 +1108,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Luisa Garreta",
               "Juan de Madrazo"
             ],
-            radius: 178, //before: 165
+            radius: 220,
             startAngle: -Math.PI / 2,
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
@@ -1249,7 +1249,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Vicente Masarnau",
               "Carlos Luis de Ribera"
             ],
-            radius: 110,
+            radius: 130,
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Madrazo-Carderera group",
@@ -2559,18 +2559,18 @@ document.addEventListener('DOMContentLoaded', async function () {
         // MADRAZO-CARDERERA GROUP
         // Arriba-derecha de Federico, no encima del círculo familiar.
         // =========================================================
-        const mcRadius = 82;
+        const mcRadius = 112;
         const mcCenter = {
-          x: federicoPos.x + 150,
-          y: federicoPos.y - 54
+          x: federicoPos.x + 180,
+          y: federicoPos.y - 60
         };
 
         const mcAngles = {
-          "Valentín Carderera":    Math.PI * 0.92,
-          "Eugenio Ochoa":         Math.PI * 0.66,
-          "Santiago Masarnau":     Math.PI * 1.16,
-          "Vicente Masarnau":      Math.PI * 1.42,
-          "Carlos Luis de Ribera": Math.PI * 0.20
+          "Carlos Luis de Ribera": Math.PI * 0.05,
+          "Valentín Carderera":    Math.PI * 0.85,
+          "Eugenio Ochoa":         Math.PI * 1.85,
+          "Santiago Masarnau":     Math.PI * 2.85,
+          "Vicente Masarnau":      Math.PI * 3.85
         };
 
         [
