@@ -1303,6 +1303,12 @@ document.addEventListener('DOMContentLoaded', async function () {
           clusterColorIdx++;
         });
 
+        // Overrides manuales para evitar colores demasiado parecidos
+        clusterColorMap["GOYA_FAMILY"] = "#d4b000";        // mostaza
+        clusterColorMap["COURT_PAINTERS"] = "#ff7043";     // naranja rojizo
+        clusterColorMap["MADRAZO_CARDERERA_GROUP"] = "#90caf9"; // azul claro
+        clusterColorMap["MADRAZO_FAMILY"] = "#e57373";     // rojo rosado
+
         // Reverse map: nodeId -> [clusterId1, clusterId2, ...]
         const nodeClusterMap = {};
         Object.entries(RADIAL_CLUSTERS).forEach(([cid, cfg]) => {
@@ -2517,29 +2523,28 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (!goyaPos) return;
 
       // =========================================================
-      // 1) ANCLA EXPLÍCITAMENTE A FEDERICO CERCA DE GOYA
-      // Esta era la pieza que faltaba.
+      // 1) Federico: cerca de Goya, pero no pegado.
       // =========================================================
-      const federicoX = goyaPos.x + 190;
-      const federicoY = goyaPos.y + 165;
+      const federicoX = goyaPos.x + 230;
+      const federicoY = goyaPos.y + 185;
       network.moveNode(federicoId, federicoX, federicoY);
 
       const federicoPos = { x: federicoX, y: federicoY };
 
       // =========================================================
       // 2) GOYA FAMILY
-      // Arco abajo-izda de Goya. Separado de Court Painters.
+      // Claramente abajo-izquierda de Goya.
       // =========================================================
-      const gfRadius = 118;
-      const gfCx = goyaPos.x - 64;
-      const gfCy = goyaPos.y + 112;
+      const gfRadius = 126;
+      const gfCx = goyaPos.x - 108;
+      const gfCy = goyaPos.y + 150;
 
       const gfAngles = {
-        "Francisco Bayeu":       Math.PI * 1.34,
-        "Josefa Bayeu":          Math.PI * 1.02,
-        "Javier Goya":           Math.PI * 0.72,
-        "Mariano Goya":          Math.PI * 0.48,
-        "Gumersinda Goicoechea": Math.PI * 0.16
+        "Francisco Bayeu":       Math.PI * 1.36,
+        "Josefa Bayeu":          Math.PI * 1.04,
+        "Javier Goya":           Math.PI * 0.76,
+        "Mariano Goya":          Math.PI * 0.50,
+        "Gumersinda Goicoechea": Math.PI * 0.18
       };
 
       Object.entries(gfAngles).forEach(([id, angle]) => {
@@ -2553,21 +2558,20 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // =========================================================
       // 3) COURT PAINTERS
-      // Círculo fijo respecto a Goya, abajo-dcha.
-      // NO depende ya de la distancia a Federico.
+      // Claramente abajo-derecha de Goya, separado de Goya family.
       // =========================================================
-      const cpRadius = 126;
-      const cpCx = goyaPos.x + 88;
-      const cpCy = goyaPos.y + 122;
+      const cpRadius = 122;
+      const cpCx = goyaPos.x + 128;
+      const cpCy = goyaPos.y + 162;
 
       const cpAngles = {
-        "Mariano Salvador Maella": Math.PI * 1.06,
-        "Giambattista Tiepolo":    Math.PI * 0.84,
-        "Giandomenico Tiepolo":    Math.PI * 0.62,
-        "Vicente López":           Math.PI * 0.34,
-        "Anton Raphael Mengs":     Math.PI * 0.10,
-        "Agustín Esteve":          Math.PI * 1.62,
-        "Rafael Esteve":           Math.PI * 1.36
+        "Mariano Salvador Maella": Math.PI * 1.08,
+        "Giambattista Tiepolo":    Math.PI * 0.86,
+        "Giandomenico Tiepolo":    Math.PI * 0.64,
+        "Vicente López":           Math.PI * 0.38,
+        "Anton Raphael Mengs":     Math.PI * 0.12,
+        "Agustín Esteve":          Math.PI * 1.68,
+        "Rafael Esteve":           Math.PI * 1.42
       };
 
       Object.entries(cpAngles).forEach(([id, angle]) => {
@@ -2581,19 +2585,19 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // =========================================================
       // 4) MADRAZO-CARDERERA GROUP
-      // Círculo REAL con Federico en el borde izquierdo-inferior.
+      // Arriba-derecha de Federico. Grupo legible, no metido entre Goya y Madrazo.
       // =========================================================
-      const mcRadius = 132;
-      const mcSharedAngle = Math.PI * 1.66; // Federico queda abajo-izda del círculo
+      const mcRadius = 120;
+      const mcSharedAngle = Math.PI * 1.72; // Federico queda abajo-izda del círculo
       const mcCx = federicoPos.x - Math.cos(mcSharedAngle) * mcRadius;
-      const mcCy = federicoPos.y - Math.sin(mcSharedAngle) * mcRadius;
+      const mcCy = federicoPos.y - Math.sin(mcSharedAngle) * mcRadius - 34;
 
       const mcAngles = {
-        "Valentín Carderera":    Math.PI * 1.08,
-        "Santiago Masarnau":     Math.PI * 0.86,
-        "Vicente Masarnau":      Math.PI * 0.56,
-        "Carlos Luis de Ribera": Math.PI * 0.18,
-        "Eugenio Ochoa":         Math.PI * 1.58
+        "Valentín Carderera":    Math.PI * 1.02,
+        "Santiago Masarnau":     Math.PI * 0.80,
+        "Vicente Masarnau":      Math.PI * 0.52,
+        "Carlos Luis de Ribera": Math.PI * 0.16,
+        "Eugenio Ochoa":         Math.PI * 1.48
       };
 
       Object.entries(mcAngles).forEach(([id, angle]) => {
@@ -2607,25 +2611,24 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // =========================================================
       // 5) MADRAZO FAMILY
-      // Círculo REAL con Federico en el borde superior-izquierdo.
-      // Más grande para evitar apelotonamiento.
+      // Debajo-derecha de Federico, con más radio para evitar apelotonamiento.
       // =========================================================
-      const mfRadius = 168;
-      const mfSharedAngle = Math.PI * 1.32; // Federico arriba-izda
-      const mfCx = federicoPos.x - Math.cos(mfSharedAngle) * mfRadius;
-      const mfCy = federicoPos.y - Math.sin(mfSharedAngle) * mfRadius;
+      const mfRadius = 188;
+      const mfSharedAngle = Math.PI * 1.34; // Federico queda arriba-izda
+      const mfCx = federicoPos.x - Math.cos(mfSharedAngle) * mfRadius + 18;
+      const mfCy = federicoPos.y - Math.sin(mfSharedAngle) * mfRadius + 38;
 
       const mfAngles = {
-        "José de Madrazo":               Math.PI * 1.92,
-        "Pedro de Madrazo":              Math.PI * 0.02,
+        "José de Madrazo":               Math.PI * 1.94,
+        "Pedro de Madrazo":              Math.PI * 0.04,
         "Luis de Madrazo":               Math.PI * 0.30,
-        "Raimundo de Madrazo":           Math.PI * 0.62,
-        "Cecilia de Madrazo":            Math.PI * 0.94,
-        "Román Garreta":                 Math.PI * 1.22,
-        "Mariano Fortuny y Madrazo":     Math.PI * 1.46,
-        "Mariano Fortuny y Marsal":      Math.PI * 1.72,
-        "Luisa Garreta":                 Math.PI * 2.08,
-        "Juan de Madrazo":               Math.PI * 2.36
+        "Raimundo de Madrazo":           Math.PI * 0.60,
+        "Cecilia de Madrazo":            Math.PI * 0.92,
+        "Román Garreta":                 Math.PI * 1.18,
+        "Mariano Fortuny y Madrazo":     Math.PI * 1.42,
+        "Mariano Fortuny y Marsal":      Math.PI * 1.66,
+        "Luisa Garreta":                 Math.PI * 1.98,
+        "Juan de Madrazo":               Math.PI * 2.28
       };
 
       Object.entries(mfAngles).forEach(([id, angle]) => {
@@ -2639,7 +2642,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       // =========================================================
       // 6) PRINT SPECIALISTS
-      // Se mantiene aparte, pero no pegado al bloque.
+      // Se queda aparte.
       // =========================================================
       const piotId = "Eugène Piot";
       if (nodes.get(piotId)) {
@@ -2688,15 +2691,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       const infantaPos = network.getPositions([infantaId])[infantaId];
       if (!infantaPos) return;
 
-      // Louis Philippe: claramente arriba-dcha de la Infanta
-      network.moveNode(louisId, infantaPos.x + 122, infantaPos.y - 76);
+      network.moveNode(louisId, infantaPos.x + 168, infantaPos.y + 8);
+      network.moveNode(montpensierId, infantaPos.x + 176, infantaPos.y + 102);
 
-      // Montpensier: claramente abajo-dcha de la Infanta
-      network.moveNode(montpensierId, infantaPos.x + 132, infantaPos.y + 62);
-
-      // Romana: más abajo, fuera del triángulo visual
       if (nodes.get(romanaId)) {
-        network.moveNode(romanaId, infantaPos.x + 138, infantaPos.y + 168);
+        network.moveNode(romanaId, infantaPos.x + 184, infantaPos.y + 214);
       }
     }
       
