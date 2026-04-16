@@ -3093,10 +3093,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
-        placeVillafrancaAlbaClusters(network);
-        placeGoyaMadrazoCore(network);
-        placeBourbonBridge(network);
-        placeEstevesPair(network);
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
         separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 132, 42); // before: 20, 110, 12
@@ -3150,10 +3146,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
-        placeVillafrancaAlbaClusters(network);
-        placeGoyaMadrazoCore(network);
-        placeBourbonBridge(network);
-        placeEstevesPair(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
         separateClusters(network, nodes, RADIAL_CLUSTERS, 6, 132, 42); // before: 10, 110, 12
