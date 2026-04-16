@@ -1235,24 +1235,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             radius: 88,
             padding: 96,
             startAngle: -Math.PI / 2,
-            title: "Villafranca cluster",
-            titleEs: "Clúster Villafranca"
-          },
-
-          "ALBA_CLUSTER": {
-            members: [
-              "José Álvarez de Toledo, Duke of Alba",
-              "María Teresa de Silva, XIII Duchess of Alba"
-            ],
-            radius: 52, // before: 82
-            padding: 34, // before: 50
-            startAngle: -Math.PI / 2,
-            sharedBoundaryNodes: {
-              "José Álvarez de Toledo, Duke of Alba": 0,
-              "María Teresa de Silva, XIII Duchess of Alba": Math.PI / 2
-            },
-            title: "Alba cluster",
-            titleEs: "Clúster Alba"
+            title: "Villafranca-Alba cluster",
+            titleEs: "Clúster Villafranca-Alba"
           },
         };
 
@@ -2351,35 +2335,28 @@ document.addEventListener('DOMContentLoaded', async function () {
       const widowId = "María Antonia Gonzaga, Marchioness of Villafranca (widow)";
       const mariaTomasaId = "María Tomasa Palafox, Marchioness of Villafranca";
 
-      const dukePos = network.getPositions([dukeId])[dukeId];
-      const duchessPos = network.getPositions([duchessId])[duchessId];
-      if (!dukePos || !duchessPos) return;
+      const mariaTomasaPos = network.getPositions([mariaTomasaId])[mariaTomasaId];
+      if (!mariaTomasaPos) return;
 
-      // Punto medio Alba
-      const albaCx = (dukePos.x + duchessPos.x) / 2;
-      const albaCy = (dukePos.y + duchessPos.y) / 2;
+      // Usar María Tomasa como punto de anclaje hacia Montijo
+      const cx = mariaTomasaPos.x - 78;
+      const cy = mariaTomasaPos.y;
 
-      // Colocar el conjunto MÁS CERCA de Alba y menos hacia Joseph I
-      const cx = albaCx + 36;
-      const cy = albaCy - 6;
+      // Lado izquierdo compartido Alba
+      network.moveNode(dukeId,    cx - 62, cy + 24);
+      network.moveNode(duchessId, cx - 62, cy - 24);
 
-      // Lado compartido Alba (compacto, vertical)
-      network.moveNode(dukeId,    cx - 74, cy + 24);
-      network.moveNode(duchessId, cx - 74, cy - 24);
-
-      // Cuerpo Villafranca compacto
+      // Parte superior e inferior del micro-clúster
       if (nodes.get(widowId)) {
-        network.moveNode(widowId, cx - 6, cy - 72);
+        network.moveNode(widowId, cx - 6, cy - 68);
       }
 
       if (nodes.get(marquisId)) {
-        network.moveNode(marquisId, cx + 6, cy + 58);
+        network.moveNode(marquisId, cx - 2, cy + 56);
       }
 
-      // Nodo compartido con Montijo: borde derecho del clúster
-      if (nodes.get(mariaTomasaId)) {
-        network.moveNode(mariaTomasaId, cx + 82, cy - 2);
-      }
+      // Nodo puente con Montijo: borde derecho
+      network.moveNode(mariaTomasaId, cx + 72, cy);
     }
 
     function getClusterNodeIds(cfg, nodes) {
@@ -2651,7 +2628,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
-          if (clusterId === "VILLAFRANCA_CLUSTER" || clusterId === "ALBA_CLUSTER") {
+          if (clusterId === "VILLAFRANCA_CLUSTER") {
             return;
           }
 
@@ -2678,7 +2655,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeVillafrancaAlbaClusters(network);
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 20);
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 12); // before: 20, 110, 20
 
         // 4) expulsar nodos externos fuera del halo de cada clúster
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 85);
@@ -2700,7 +2677,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
-          if (clusterId === "VILLAFRANCA_CLUSTER" || clusterId === "ALBA_CLUSTER") {
+          if (clusterId === "VILLAFRANCA_CLUSTER") {
             return;
           }
 
@@ -2741,7 +2718,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeVillafrancaAlbaClusters(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 20);
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 12);
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 110);
 
         // 7) separación quirúrgica solo para pares concretos
