@@ -1108,7 +1108,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Luisa Garreta",
               "Juan de Madrazo"
             ],
-            radius: 178, //before: 165
+            radius: 198, //before: 178
             startAngle: -Math.PI / 2,
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
@@ -1165,8 +1165,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Josefa Bayeu",
               "Francisco Bayeu"
             ],
-            radius: 118, // before: 134
-            padding: 80, // before: 86
+            radius: 128, // before: 118
+            padding: 92, // before: 80
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2
@@ -1218,8 +1218,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Agustín Esteve",
               "Federico de Madrazo"
             ],
-            radius: 132,
-            padding: 92,
+            radius: 148, // before: 132
+            padding: 112, // before: 112
             startAngle: -Math.PI / 2,
             title: "Court painters",
             titleEs: "Pintores de Corte"
@@ -1249,8 +1249,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Vicente Masarnau",
               "Carlos Luis de Ribera"
             ],
-            radius: 110,
-            padding: 84,
+            radius: 126, // before: 110
+            padding: 104, // before: 84
             startAngle: -Math.PI / 2,
             title: "Madrazo-Carderera group",
             titleEs: "Grupo Madrazo-Carderera"
@@ -3004,7 +3004,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 12); // before: 20, 110, 20
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 132, 42); // before: 20, 110, 12
 
         // 4) expulsar nodos externos fuera del halo de cada clúster
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 85);
@@ -3061,7 +3061,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 12);
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 6, 132, 42); // before: 10, 110, 12
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 110);
 
         // 7) separación quirúrgica solo para pares concretos
@@ -3073,15 +3073,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeBourbonBridge(network);
         placeEstevesPair(network);
 
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 165);
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 28);
-
-        placeVillafrancaAlbaClusters(network);
-        placeGoyaMadrazoCore(network);
-        placeBourbonBridge(network);
-        placeEstevesPair(network);
-
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 20);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 135);
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 12);
 
         placeVillafrancaAlbaClusters(network);
         placeGoyaMadrazoCore(network);
