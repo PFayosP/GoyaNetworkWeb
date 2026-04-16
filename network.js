@@ -1557,7 +1557,9 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         "DELACROIX-VILLOT": ["Eugène Delacroix", "Frédéric Villot"],
 
-        "GOUPIL-RITTNER": ["Heinrich Rittner", "Adolphe Goupil"]
+        "GOUPIL-RITTNER": ["Heinrich Rittner", "Adolphe Goupil"],
+
+        "ESTEVES": ["Agustín Esteve", "Rafael Esteve"]
       };
 
     // Edges más transparentes (general)
@@ -1613,7 +1615,11 @@ document.addEventListener('DOMContentLoaded', async function () {
           } else if (groupName === "FEDERICO-CARDERERA_BRIDGE") {
             hiddenLength = 34;
             hiddenCount = 3;
+          } else if (groupName === "ESTEVES") {
+            hiddenLength = 20;
+            hiddenCount = 6;
           }
+          
 
           for (let k = 0; k < hiddenCount; k++) {
             edges.add({
@@ -2206,6 +2212,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Carlos Luis de Ribera", "Mariano Salvador Maella", 130],
       ["Paul Mantz", "Théophile Gautier", 120],
       ["Philippe Burty", "Baron Taylor", 120],
+      ["Valentín Carderera", "Agustín Esteve", 120],
+      ["Valentín Carderera", "Anton Raphael Mengs", 120],
+      ["Louis Philippe I", "Javier Goya", 140],
+      ["Prince Antoine, Duke of Montpensier", "Mariano Goya", 140],
+      ["Rafael Esteve", "XV Countess of Chinchón", 150],
     ];
 
     function getNodeHalo(node) {
@@ -2501,85 +2512,81 @@ document.addEventListener('DOMContentLoaded', async function () {
           if (!goyaPos || !federicoPos) return;
 
           // =========================================================
-          // 1) COURT PAINTERS
-          // NO mover a Goya. Solo ordenar a los demás alrededor de Goya.
-          // Lo colocamos abajo-dcha / abajo para no tocar Goya family ni Ilustrados.
+          // COURT PAINTERS
+          // Compacto, justo debajo / derecha de Goya, pero sin tocar a Goya ni a Federico
           // =========================================================
-          const courtMembers = [
+          const courtRadius = 104;
+          const courtCenter = {
+            x: goyaPos.x + 26,
+            y: goyaPos.y + 96
+          };
+
+          const courtAngles = {
+            "Francisco Bayeu":         Math.PI * 1.28,
+            "Mariano Salvador Maella": Math.PI * 0.98,
+            "Giambattista Tiepolo":    Math.PI * 0.78,
+            "Giandomenico Tiepolo":    Math.PI * 0.58,
+            "Vicente López":           Math.PI * 0.30,
+            "Anton Raphael Mengs":     Math.PI * 0.08,
+            "Agustín Esteve":          Math.PI * 1.72
+          };
+
+          [
             "Francisco Bayeu",
             "Mariano Salvador Maella",
             "Giambattista Tiepolo",
             "Giandomenico Tiepolo",
             "Vicente López",
             "Anton Raphael Mengs",
-            "Agustín Esteve",
-            "Federico de Madrazo"
-          ].filter(id => nodes.get(id));
-
-          const courtRadius = 138;
-          const courtSharedAngle = Math.PI * 1.92; // Goya queda arriba-izda del círculo
-          const courtCx = goyaPos.x - Math.cos(courtSharedAngle) * courtRadius;
-          const courtCy = goyaPos.y - Math.sin(courtSharedAngle) * courtRadius;
-
-          const courtAngles = {
-            "Francisco Bayeu":      Math.PI * 1.52,
-            "Mariano Salvador Maella": Math.PI * 1.22,
-            "Giambattista Tiepolo": Math.PI * 0.98,
-            "Giandomenico Tiepolo": Math.PI * 0.72,
-            "Vicente López":        Math.PI * 0.42,
-            "Anton Raphael Mengs":  Math.PI * 0.14,
-            "Agustín Esteve":       Math.PI * 0.02,
-            "Federico de Madrazo":  Math.PI * 1.72
-          };
-
-          courtMembers.forEach(id => {
+            "Agustín Esteve"
+          ].forEach(id => {
+            if (!nodes.get(id)) return;
             const angle = courtAngles[id];
-            if (angle === undefined) return;
             network.moveNode(
               id,
-              courtCx + Math.cos(angle) * courtRadius,
-              courtCy + Math.sin(angle) * courtRadius
+              courtCenter.x + Math.cos(angle) * courtRadius,
+              courtCenter.y + Math.sin(angle) * courtRadius
             );
           });
 
+          // Federico: muy cerca de Court Painters, pero sin moverlo
           // =========================================================
-          // 2) MADRAZO-CARDERERA GROUP
-          // NO mover a Federico. Solo ordenar a los demás alrededor de Federico.
+          // MADRAZO-CARDERERA GROUP
+          // A la izquierda y un poco abajo de Federico, sin montarse sobre Court Painters
           // =========================================================
-          const mcMembers = [
+          const mcRadius = 96;
+          const mcCenter = {
+            x: federicoPos.x - 96,
+            y: federicoPos.y + 102
+          };
+
+          const mcAngles = {
+            "Valentín Carderera":    Math.PI * 0.10,
+            "Eugenio Ochoa":         Math.PI * 0.48,
+            "Santiago Masarnau":     Math.PI * 0.92,
+            "Vicente Masarnau":      Math.PI * 1.22,
+            "Carlos Luis de Ribera": Math.PI * 1.58
+          };
+
+          [
             "Valentín Carderera",
             "Eugenio Ochoa",
             "Santiago Masarnau",
             "Vicente Masarnau",
             "Carlos Luis de Ribera"
-          ].filter(id => nodes.get(id));
-
-          const mcRadius = 112;
-          const mcSharedAngle = Math.PI * 1.84; // Federico queda arriba-dcha del círculo
-          const mcCx = federicoPos.x - Math.cos(mcSharedAngle) * mcRadius;
-          const mcCy = federicoPos.y - Math.sin(mcSharedAngle) * mcRadius;
-
-          const mcAngles = {
-            "Valentín Carderera":   Math.PI * 0.10,
-            "Eugenio Ochoa":        Math.PI * 0.46,
-            "Santiago Masarnau":    Math.PI * 0.92,
-            "Vicente Masarnau":     Math.PI * 1.22,
-            "Carlos Luis de Ribera":Math.PI * 1.52
-          };
-
-          mcMembers.forEach(id => {
+          ].forEach(id => {
+            if (!nodes.get(id)) return;
             const angle = mcAngles[id];
-            if (angle === undefined) return;
             network.moveNode(
               id,
-              mcCx + Math.cos(angle) * mcRadius,
-              mcCy + Math.sin(angle) * mcRadius
+              mcCenter.x + Math.cos(angle) * mcRadius,
+              mcCenter.y + Math.sin(angle) * mcRadius
             );
           });
 
           // =========================================================
-          // 3) PRINT SPECIALISTS
-          // Aquí sí puede anclarse en Piot sin problema.
+          // PRINT SPECIALISTS
+          // Sin tocar: sigue anclado en Piot
           // =========================================================
           const piotId = "Eugène Piot";
           if (nodes.get(piotId)) {
@@ -2592,28 +2599,123 @@ document.addEventListener('DOMContentLoaded', async function () {
                 "Paul Mantz"
               ].filter(id => nodes.get(id));
 
-              const psRadius = 92;
-              const psSharedAngle = Math.PI * 1.72; // Piot queda arriba-izda
-              const psCx = piotPos.x - Math.cos(psSharedAngle) * psRadius;
-              const psCy = piotPos.y - Math.sin(psSharedAngle) * psRadius;
+              const psRadius = 88;
+              const psCenter = {
+                x: piotPos.x + 34,
+                y: piotPos.y + 72
+              };
 
               const psAngles = [
-                Math.PI * 1.18,
-                Math.PI * 0.78,
+                Math.PI * 1.14,
+                Math.PI * 0.76,
                 Math.PI * 0.38,
-                Math.PI * 0.02
+                Math.PI * 0.04
               ];
 
               psMembers.forEach((id, i) => {
                 const angle = psAngles[i];
                 network.moveNode(
                   id,
-                  psCx + Math.cos(angle) * psRadius,
-                  psCy + Math.sin(angle) * psRadius
+                  psCenter.x + Math.cos(angle) * psRadius,
+                  psCenter.y + Math.sin(angle) * psRadius
                 );
               });
             }
           }
+        }
+
+        function placeMadrazoFamilyCluster(network) {
+          const federicoId = "Federico de Madrazo";
+          if (!nodes.get(federicoId)) return;
+
+          const federicoPos = network.getPositions([federicoId])[federicoId];
+          if (!federicoPos) return;
+
+          const radius = 142;
+          const sharedAngle = Math.PI * 1.34; // Federico queda arriba-izda del círculo
+          const cx = federicoPos.x - Math.cos(sharedAngle) * radius;
+          const cy = federicoPos.y - Math.sin(sharedAngle) * radius;
+
+          const ordered = [
+            federicoId,
+            "José de Madrazo",
+            "Pedro de Madrazo",
+            "Luis de Madrazo",
+            "Raimundo de Madrazo",
+            "Cecilia de Madrazo",
+            "Román Garreta",
+            "Mariano Fortuny y Madrazo",
+            "Mariano Fortuny y Marsal",
+            "Luisa Garreta",
+            "Juan de Madrazo"
+          ].filter(id => nodes.get(id));
+
+          const total = ordered.length;
+          ordered.forEach((id, i) => {
+            if (id === federicoId) return; // Federico se queda donde está
+            const angle = sharedAngle + i * (2 * Math.PI / total);
+            network.moveNode(
+              id,
+              cx + Math.cos(angle) * radius,
+              cy + Math.sin(angle) * radius
+            );
+          });
+        }
+    
+        function placeGoyaFamilyCluster(network) {
+          const goyaId = "Francisco de Goya";
+          if (!nodes.get(goyaId)) return;
+
+          const goyaPos = network.getPositions([goyaId])[goyaId];
+          if (!goyaPos) return;
+
+          const radius = 110;
+          const sharedAngle = Math.PI * 1.78; // Goya queda arriba-izda del círculo
+          const cx = goyaPos.x - Math.cos(sharedAngle) * radius;
+          const cy = goyaPos.y - Math.sin(sharedAngle) * radius;
+
+          const angleByNode = {
+            "Francisco Bayeu":       Math.PI * 1.36,
+            "Josefa Bayeu":          Math.PI * 1.02,
+            "Javier Goya":           Math.PI * 0.70,
+            "Mariano Goya":          Math.PI * 0.38,
+            "Gumersinda Goicoechea": Math.PI * 0.08
+          };
+
+          Object.entries(angleByNode).forEach(([id, angle]) => {
+            if (!nodes.get(id)) return;
+            network.moveNode(
+              id,
+              cx + Math.cos(angle) * radius,
+              cy + Math.sin(angle) * radius
+            );
+          });
+        }
+    
+        function placeMontpensierBridge(network) {
+          const infantaId = "Infanta Luisa Fernanda de Borbón";
+          const louisId = "Louis Philippe I";
+          const montpensierId = "Prince Antoine, Duke of Montpensier";
+
+          if (!nodes.get(infantaId) || !nodes.get(louisId) || !nodes.get(montpensierId)) return;
+
+          const infantaPos = network.getPositions([infantaId])[infantaId];
+          if (!infantaPos) return;
+
+          network.moveNode(louisId, infantaPos.x + 88, infantaPos.y - 34);
+          network.moveNode(montpensierId, infantaPos.x + 92, infantaPos.y + 40);
+        }
+      
+        function placeEstevesPair(network) {
+          const agustinId = "Agustín Esteve";
+          const rafaelId = "Rafael Esteve";
+
+          if (!nodes.get(agustinId) || !nodes.get(rafaelId)) return;
+
+          const agustinPos = network.getPositions([agustinId])[agustinId];
+          if (!agustinPos) return;
+
+          network.moveNode(rafaelId, agustinPos.x - 54, agustinPos.y + 36);
         }
 
     function getClusterNodeIds(cfg, nodes) {
@@ -2871,28 +2973,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
-          if (clusterId === "GOYA_FAMILY") {
-            arrangeAroundSharedNode(
-              network,
-              nodes,
-              cfg.members,
-              "Francisco de Goya",
-              118,
-              -Math.PI / 2,
-              -Math.PI * 0.02,
-              Math.PI * 1.04
-            );
-            return;
-          }
-
-          if (clusterId === "COURT_PAINTERS" ||
+          if (clusterId === "GOYA_FAMILY" ||
+              clusterId === "MADRAZO_FAMILY" ||
+              clusterId === "COURT_PAINTERS" ||
               clusterId === "MADRAZO_CARDERERA_GROUP" ||
               clusterId === "PRINT_SPECIALISTS" ||
               clusterId === "VILLAFRANCA_CLUSTER") {
-            return;
-          }
-
-          if (clusterId === "VILLAFRANCA_CLUSTER") {
             return;
           }
 
@@ -2918,6 +3004,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
         placeVillafrancaAlbaClusters(network);
         placeFedericoSatelliteClusters(network);
+        placeMadrazoFamilyCluster(network);
+        placeGoyaFamilyCluster(network);
+        placeMontpensierBridge(network);
+        placeEstevesPair(network);
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
         separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 12); // before: 20, 110, 20
@@ -2942,24 +3032,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
-          if (clusterId === "COURT_PAINTERS" ||
+          if (clusterId === "GOYA_FAMILY" ||
+              clusterId === "MADRAZO_FAMILY" ||
+              clusterId === "COURT_PAINTERS" ||
               clusterId === "MADRAZO_CARDERERA_GROUP" ||
               clusterId === "PRINT_SPECIALISTS" ||
               clusterId === "VILLAFRANCA_CLUSTER") {
-            return;
-          }
-
-          if (clusterId === "GOYA_FAMILY") {
-            arrangeAroundSharedNode(
-              network,
-              nodes,
-              cfg.members,
-              "Francisco de Goya",
-              118,
-              -Math.PI / 2,
-              -Math.PI * 0.02,
-              Math.PI * 1.04
-            );
             return;
           }
 
@@ -2985,6 +3063,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
         placeVillafrancaAlbaClusters(network);
         placeFedericoSatelliteClusters(network);
+        placeMadrazoFamilyCluster(network);
+        placeGoyaFamilyCluster(network);
+        placeMontpensierBridge(network);
+        placeEstevesPair(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
         separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 12);
@@ -2993,13 +3075,23 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 7) separación quirúrgica solo para pares concretos
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 8);
 
-        // 8) reimponer Villafranca-Alba y expulsar externos una última vez
+        // 8) reimponer placements manuales después de expulsiones / separaciones
         placeVillafrancaAlbaClusters(network);
         placeFedericoSatelliteClusters(network);
+        placeMadrazoFamilyCluster(network);
+        placeGoyaFamilyCluster(network);
+        placeMontpensierBridge(network);
+        placeEstevesPair(network);
+
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 150);
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 12);
+
         placeVillafrancaAlbaClusters(network);
         placeFedericoSatelliteClusters(network);
+        placeMadrazoFamilyCluster(network);
+        placeGoyaFamilyCluster(network);
+        placeMontpensierBridge(network);
+        placeEstevesPair(network);
 
         network.redraw();
 
