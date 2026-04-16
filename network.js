@@ -2632,31 +2632,38 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (!federicoPos) return;
 
         // Círculo claramente por debajo de Federico
-        const radius = 118;
-        const cx = federicoPos.x + 10;
-        const cy = federicoPos.y + 170;
+        const radius = 200;
+        const cx = federicoPos.x + 20;
+        const cy = federicoPos.y + 200;
 
-        const angleByNode = {
-          "José de Madrazo":               Math.PI * 0.02,
-          "Pedro de Madrazo":              Math.PI * 1.78,
-          "Luis de Madrazo":               Math.PI * 0.40,
-          "Raimundo de Madrazo":           Math.PI * 0.78,
-          "Cecilia de Madrazo":            Math.PI * 1.14,
-          "Román Garreta":                 Math.PI * 1.46,
-          "Mariano Fortuny y Madrazo":     Math.PI * 1.74,
-          "Mariano Fortuny y Marsal":      Math.PI * 2.04,
-          "Luisa Garreta":                 Math.PI * 2.34,
-          "Juan de Madrazo":               Math.PI * 1.96
-        };
+        const memberIds = [
+          "Federico de Madrazo",
+          "Pedro de Madrazo",
+          "Luis de Madrazo",
+          "Raimundo de Madrazo",
+          "Cecilia de Madrazo",
+          "Román Garreta",
+          "Mariano Fortuny y Madrazo",
+          "Mariano Fortuny y Marsal",
+          "Luisa Garreta",
+          "Juan de Madrazo"
+        ];
 
-        Object.entries(angleByNode).forEach(([id, angle]) => {
-          if (!nodes.get(id)) return;
+        const validMembers = memberIds.filter(id => nodes.get(id));
+        const step = (2 * Math.PI) / validMembers.length;
+
+        validMembers.forEach((id, i) => {
+          const angle = -Math.PI / 2 + i * step;
           network.moveNode(
             id,
             cx + Math.cos(angle) * radius,
             cy + Math.sin(angle) * radius
           );
         });
+
+        if (nodes.get("José de Madrazo")) {
+          network.moveNode("José de Madrazo", cx, cy);
+        }
       }
     
         function placeGoyaFamilyCluster(network) {
