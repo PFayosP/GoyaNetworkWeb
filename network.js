@@ -1204,6 +1204,27 @@ document.addEventListener('DOMContentLoaded', async function () {
             titleEs: "Núcleo Montijo"
           },
 
+          "COURT_PAINTERS": {
+            members: [
+              "Francisco de Goya",
+              "Mariano Salvador Maella",
+              "Giambattista Tiepolo",
+              "Giovanni Domenico Tiepolo",
+              "Lorenzo Tiepolo",
+              "Vicente López Portaña",
+              "Anton Raphael Mengs",
+              "Agustín Esteve"
+            ],
+            radius: 150,
+            padding: 86,
+            startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Francisco de Goya": Math.PI * 0.88
+            },
+            title: "Court painters",
+            titleEs: "Pintores de Corte"
+          },
+
           "BOURBON_CORE": {
             members: [
               "Carlos III",
@@ -1220,6 +1241,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             radius: 172,
             padding: 120,
             startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "XV Countess of Chinchón": -Math.PI * 0.15
+            },
             title: "Bourbon cluster",
             titleEs: "Clúster Borbón"
           },
@@ -1232,8 +1256,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "José Álvarez de Toledo, Duke of Alba",
               "María Teresa de Silva, XIII Duchess of Alba"
             ],
-            radius: 88,
-            padding: 96,
+            radius: 78,
+            padding: 84,
             startAngle: -Math.PI / 2,
             title: "Villafranca-Alba cluster",
             titleEs: "Clúster Villafranca-Alba"
@@ -1392,11 +1416,19 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const clusterSelect = document.getElementById('clusterSelect');
         if (clusterSelect) {
+          const sortedClusterEntries = Object.entries(RADIAL_CLUSTERS)
+            .sort((a, b) => {
+              const nameA = getClusterDisplayName(a[0]);
+              const nameB = getClusterDisplayName(b[0]);
+              return nameA.localeCompare(nameB, undefined, { sensitivity: 'base' });
+            });
+
           clusterSelect.innerHTML = `<option value="">${t('SELECT_CLUSTER_OPTION')}</option>` +
-            Object.entries(RADIAL_CLUSTERS).map(([cid, cfg]) => {
+            sortedClusterEntries.map(([cid]) => {
               const name = getClusterDisplayName(cid);
               return `<option value="${cid}">${name}</option>`;
             }).join('');
+
           clusterSelect.addEventListener('change', (e) => {
             window.selectCluster(e.target.value);
           });
@@ -1470,6 +1502,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         "GODOY-TUDÓ": ["Josefa Tudó", "Manuel Godoy"],
 
+        "GODOY-CHINCHON": ["Manuel Godoy", "XV Countess of Chinchón"],
+
         "SPANISH ROMANTICS": ["José de Espronceda", "Mariano José Larra", "José Zorrilla"],
 
         "MONTPENSIER-INFANTA": ["Prince Antoine, Duke of Montpensier", "Infanta Luisa Fernanda de Borbón"],
@@ -1506,20 +1540,36 @@ document.addEventListener('DOMContentLoaded', async function () {
       };
     }));
 
-    Object.values(PROXIMITY_GROUPS).forEach(group => {
+    Object.entries(PROXIMITY_GROUPS).forEach(([groupName, group]) => {
       for (let i = 0; i < group.length; i++) {
         for (let j = i + 1; j < group.length; j++) {
           const from = group[i];
           const to = group[j];
           if (!nodes.get(from) || !nodes.get(to)) continue;
 
-          edges.add({
-            from,
-            to,
-            hidden: true,
-            physics: true,
-            length: 45
-          });
+          let hiddenLength = 45;
+          let hiddenCount = 1;
+
+          if (groupName === "GODOY-TUDÓ") {
+            hiddenLength = 28;
+            hiddenCount = 4;
+          } else if (groupName === "GODOY-CHINCHON") {
+            hiddenLength = 34;
+            hiddenCount = 3;
+          } else if (groupName === "TIEPOLOS") {
+            hiddenLength = 34;
+            hiddenCount = 2;
+          }
+
+          for (let k = 0; k < hiddenCount; k++) {
+            edges.add({
+              from,
+              to,
+              hidden: true,
+              physics: true,
+              length: hiddenLength
+            });
+          }
         }
       }
     });
@@ -2071,6 +2121,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Eugenia de Montijo", "Manuel Godoy", 120],
       ["Manuel Godoy", "Isabel II", 120],
       ["Carlos III", "Josefa Tudó", 120],
+      ["Josefa Tudó", "1st Duke of Wellington", 145],
       ["Carlos III", "María Manuela Kirkpatrick", 120],
       ["María Manuela Kirkpatrick", "1st Duke of Wellington", 120],
       ["Carlos III", "Carlos IV", 120],
@@ -2082,6 +2133,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Jenaro Pérez Villaamil", "Francisco de Goya", 120],
       ["Joseph I", "María Gabriela de Palafox, Marchioness of Lazán", 170],
       ["José Álvarez de Toledo, Duke of Alba", "Francisco Álvarez de Toledo, XII Marquis of Villafranca", 140],
+      ["Gregorio Cruzada Villaamil", "Santiago Masarnau", 140],
+      ["Joseph I", "María Gabriela de Palafox, Marchioness of Lazán", 180],
+      ["Joseph I", "María Tomasa Palafox, Marchioness of Villafranca", 160],
+      ["José Álvarez de Toledo, Duke of Alba", "Francisco Álvarez de Toledo, XII Marquis of Villafranca", 150],
+      ["Francisco de Goya", "Mariano Salvador Maella", 120],
+      ["Francisco de Goya", "Vicente López Portaña", 120],
+      ["Francisco de Goya", "Anton Raphael Mengs", 135],
+      ["Mariano Salvador Maella", "Carlos IV", 135],
+      ["Agustín Esteve", "XV Countess of Chinchón", 120],
     ];
 
     function getNodeHalo(node) {
@@ -2337,26 +2397,38 @@ document.addEventListener('DOMContentLoaded', async function () {
       const widowId = "María Antonia Gonzaga, Marchioness of Villafranca (widow)";
       const mariaTomasaId = "María Tomasa Palafox, Marchioness of Villafranca";
 
+      if (
+        !nodes.get(dukeId) ||
+        !nodes.get(duchessId) ||
+        !nodes.get(marquisId) ||
+        !nodes.get(widowId) ||
+        !nodes.get(mariaTomasaId)
+      ) return;
+
       const mariaTomasaPos = network.getPositions([mariaTomasaId])[mariaTomasaId];
       if (!mariaTomasaPos) return;
 
-      // Usar María Tomasa como punto de anclaje hacia Montijo
-      const cx = mariaTomasaPos.x - 78;
-      const cy = mariaTomasaPos.y;
+      // María Tomasa = nodo compartido con Montijo, en el borde derecho
+      const radius = 78;
+      const sharedAngle = 0;
+      const cx = mariaTomasaPos.x - Math.cos(sharedAngle) * radius;
+      const cy = mariaTomasaPos.y - Math.sin(sharedAngle) * radius;
 
-      // Lado izquierdo compartido Alba
-      network.moveNode(dukeId,    cx - 74, cy + 28);
-      network.moveNode(duchessId, cx - 74, cy - 28);
+      const fixedAngles = {
+        [mariaTomasaId]: 0,                 // derecha, hacia Montijo
+        [widowId]: -Math.PI / 2,            // arriba
+        [duchessId]: Math.PI * 0.82,        // arriba-izquierda
+        [dukeId]: Math.PI * 1.10,           // abajo-izquierda
+        [marquisId]: Math.PI / 2            // abajo
+      };
 
-      if (nodes.get(widowId)) {
-        network.moveNode(widowId, cx - 8, cy - 76);
-      }
-
-      if (nodes.get(marquisId)) {
-        network.moveNode(marquisId, cx + 14, cy + 68);
-      }
-
-      network.moveNode(mariaTomasaId, cx + 82, cy);
+      Object.entries(fixedAngles).forEach(([id, angle]) => {
+        network.moveNode(
+          id,
+          cx + Math.cos(angle) * radius,
+          cy + Math.sin(angle) * radius
+        );
+      });
     }
 
     function getClusterNodeIds(cfg, nodes) {
@@ -2628,6 +2700,20 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
+          if (clusterId === "COURT_PAINTERS") {
+            arrangeAroundSharedNode(
+              network,
+              nodes,
+              cfg.members,
+              "Francisco de Goya",
+              150,
+              Math.PI * 0.88,
+              -Math.PI * 0.82,
+              Math.PI * 1.55
+            );
+            return;
+          }
+
           if (clusterId === "VILLAFRANCA_CLUSTER") {
             return;
           }
@@ -2673,6 +2759,20 @@ document.addEventListener('DOMContentLoaded', async function () {
               cfg.radius || 150,
               Math.PI / 2,
               -Math.PI / 2
+            );
+            return;
+          }
+
+          if (clusterId === "COURT_PAINTERS") {
+            arrangeAroundSharedNode(
+              network,
+              nodes,
+              cfg.members,
+              "Francisco de Goya",
+              150,
+              Math.PI * 0.88,
+              -Math.PI * 0.82,
+              Math.PI * 1.55
             );
             return;
           }
@@ -2727,6 +2827,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 8) reimponer Villafranca-Alba y expulsar externos una última vez
         placeVillafrancaAlbaClusters(network);
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 150);
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 12);
 
         network.redraw();
 
