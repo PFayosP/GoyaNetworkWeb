@@ -1142,7 +1142,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Leandro Fernández de Moratín",
               "Francisco Cabarrús",
               "Juan Meléndez Valdés",
-              "Juan Antonio Llorente"
+              "Juan Antonio Llorente",
+              "Joaquín María Ferrer",
+              "Bernardo de Iriarte"
             ],
             radius: 166,
             padding: 92,
@@ -1207,22 +1209,51 @@ document.addEventListener('DOMContentLoaded', async function () {
           "COURT_PAINTERS": {
             members: [
               "Francisco de Goya",
+              "Francisco Bayeu",
               "Mariano Salvador Maella",
               "Giambattista Tiepolo",
-              "Giovanni Domenico Tiepolo",
-              "Lorenzo Tiepolo",
-              "Vicente López Portaña",
+              "Giandomenico Tiepolo",
+              "Vicente López",
               "Anton Raphael Mengs",
-              "Agustín Esteve"
+              "Agustín Esteve",
+              "Federico de Madrazo"
             ],
-            radius: 150,
-            padding: 86,
+            radius: 132,
+            padding: 92,
             startAngle: -Math.PI / 2,
-            sharedBoundaryNodes: {
-              "Francisco de Goya": Math.PI * 0.88
-            },
             title: "Court painters",
             titleEs: "Pintores de Corte"
+          },
+
+          "PRINT_SPECIALISTS": {
+            members: [
+              "Eugène Piot",
+              "Philippe Burty",
+              "Paul Lefort",
+              "Charles Blanc",
+              "Paul Mantz"
+            ],
+            radius: 92,
+            padding: 74,
+            startAngle: -Math.PI / 2,
+            title: "Print specialists",
+            titleEs: "Especialistas en estampa"
+          },
+
+          "MADRAZO_CARDERERA_GROUP": {
+            members: [
+              "Federico de Madrazo",
+              "Valentín Carderera",
+              "Eugenio Ochoa",
+              "Santiago Masarnau",
+              "Vicente Masarnau",
+              "Carlos Luis de Ribera"
+            ],
+            radius: 110,
+            padding: 84,
+            startAngle: -Math.PI / 2,
+            title: "Madrazo-Carderera group",
+            titleEs: "Grupo Madrazo-Carderera"
           },
 
           "BOURBON_CORE": {
@@ -1242,7 +1273,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 120,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "XV Countess of Chinchón": -Math.PI * 0.15
+              "XV Countess of Chinchón": 0
             },
             title: "Bourbon cluster",
             titleEs: "Clúster Borbón"
@@ -1476,7 +1507,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }));
 
       const PROXIMITY_GROUPS = {
-        "TIEPOLOS": ["Giambattista Tiepolo", "Giovanni Domenico Tiepolo", "Lorenzo Tiepolo"],
+        "TIEPOLOS": ["Giambattista Tiepolo", "Giandomenico Tiepolo"],
 
         "LACOUR": ["Pierre Lacour père", "Pierre Lacour fils"],
 
@@ -1506,10 +1537,23 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         "SPANISH ROMANTICS": ["José de Espronceda", "Mariano José Larra", "José Zorrilla"],
 
-        "MONTPENSIER-INFANTA": ["Prince Antoine, Duke of Montpensier", "Infanta Luisa Fernanda de Borbón"],
+        "MONTPENSIER_TRIANGLE": [
+          "Prince Antoine, Duke of Montpensier",
+          "Louis Philippe I",
+          "Infanta Luisa Fernanda de Borbón"
+        ],
 
-        "MONTPENSIER-LOUIS-PHILIPPE": ["Prince Antoine, Duke of Montpensier", "Louis Philippe I"]
+        "INGRES-DAVID-GROS-DELAROCHE": ["Jean-Auguste-Dominique Ingres", "Jacques-Louis David", "Antoine-Jean Gros", "Paul Delaroche"], 
 
+        "TAYLOR-GROUP": ["Baron Taylor", "Adrien Dauzats", "Pharamond Blanchard"],
+
+        "GAUTIER-PIOT": ["Théophile Gautier", "Eugène Piot"],
+
+        "FEDERICO-CARDERERA_BRIDGE": [
+          "Federico de Madrazo",
+          "Valentín Carderera",
+          "Eugenio de Ochoa"
+        ],
       };
 
     // Edges más transparentes (general)
@@ -1551,14 +1595,20 @@ document.addEventListener('DOMContentLoaded', async function () {
           let hiddenCount = 1;
 
           if (groupName === "GODOY-TUDÓ") {
-            hiddenLength = 28;
-            hiddenCount = 4;
+            hiddenLength = 24;
+            hiddenCount = 5;
           } else if (groupName === "GODOY-CHINCHON") {
-            hiddenLength = 34;
-            hiddenCount = 3;
+            hiddenLength = 22;
+            hiddenCount = 5;
           } else if (groupName === "TIEPOLOS") {
             hiddenLength = 34;
             hiddenCount = 2;
+          } else if (groupName === "MONTPENSIER_TRIANGLE") {
+            hiddenLength = 26;
+            hiddenCount = 5;
+          } else if (groupName === "FEDERICO-CARDERERA_BRIDGE") {
+            hiddenLength = 34;
+            hiddenCount = 3;
           }
 
           for (let k = 0; k < hiddenCount; k++) {
@@ -1785,7 +1835,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       'Jenaro Pérez Villaamil': 'perez',
       'Antonio Remón Zarco del Valle y Huet': 'remon',
       'María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin': 'merlin',
-      'Ramón de Mesonero Romanos': 'mesonero'
+      'Ramón de Mesonero Romanos': 'mesonero',
+      'Gregorio Cruzada Villaamil': 'cruzada'
     });
 
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
@@ -2104,8 +2155,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Federico de Madrazo", "Valentín Carderera", 120],
       ["Adrien Dauzats", "Federico de Madrazo", 120],
       ["Pedro de Madrazo", "Federico de Madrazo", 120],
-      ["Eugenio de Ochoa", "Baron Taylor", 150],
-      ["Eugenio de Ochoa", "Valentín Carderera", 150],
+      ["Eugenio Ochoa", "Baron Taylor", 150],
+      ["Eugenio Ochoa", "Valentín Carderera", 150],
       ["Arsène Houssaye", "Achille Devéria", 130],
       ["Santiago Masarnau", "Vicente Masarnau", 120],
       ["Alfred de Musset", "Théophile Gautier", 120],
@@ -2138,10 +2189,20 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Joseph I", "María Tomasa Palafox, Marchioness of Villafranca", 160],
       ["José Álvarez de Toledo, Duke of Alba", "Francisco Álvarez de Toledo, XII Marquis of Villafranca", 150],
       ["Francisco de Goya", "Mariano Salvador Maella", 120],
-      ["Francisco de Goya", "Vicente López Portaña", 120],
+      ["Francisco de Goya", "Vicente López", 120],
       ["Francisco de Goya", "Anton Raphael Mengs", 135],
       ["Mariano Salvador Maella", "Carlos IV", 135],
       ["Agustín Esteve", "XV Countess of Chinchón", 120],
+      ["Rafael Esteve", "Manuel Godoy", 135],
+      ["Rafael Esteve", "XV Countess of Chinchón", 135],
+      ["Prince Antoine, Duke of Montpensier", "Eugenia de Montijo", 145],
+      ["Prince Antoine, Duke of Montpensier", "Isabel II", 145],
+      ["Louis Philippe I", "Infanta Luisa Fernanda de Borbón", 120],
+      ["Valentín Carderera", "Federico de Madrazo", 135],
+      ["Valentín Carderera", "Francisco de Goya", 145],
+      ["Carlos Luis de Ribera", "Mariano Salvador Maella", 130],
+      ["Paul Mantz", "Théophile Gautier", 120],
+      ["Philippe Burty", "Baron Taylor", 120],
     ];
 
     function getNodeHalo(node) {
@@ -2390,46 +2451,142 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-    function placeVillafrancaAlbaClusters(network) {
-      const dukeId = "José Álvarez de Toledo, Duke of Alba";
-      const duchessId = "María Teresa de Silva, XIII Duchess of Alba";
-      const marquisId = "Francisco Álvarez de Toledo, XII Marquis of Villafranca";
-      const widowId = "María Antonia Gonzaga, Marchioness of Villafranca (widow)";
-      const mariaTomasaId = "María Tomasa Palafox, Marchioness of Villafranca";
+        function placeVillafrancaAlbaClusters(network) {
+          const dukeId = "José Álvarez de Toledo, Duke of Alba";
+          const duchessId = "María Teresa de Silva, XIII Duchess of Alba";
+          const marquisId = "Francisco Álvarez de Toledo, XII Marquis of Villafranca";
+          const widowId = "María Antonia Gonzaga, Marchioness of Villafranca (widow)";
+          const mariaTomasaId = "María Tomasa Palafox, Marchioness of Villafranca";
 
-      if (
-        !nodes.get(dukeId) ||
-        !nodes.get(duchessId) ||
-        !nodes.get(marquisId) ||
-        !nodes.get(widowId) ||
-        !nodes.get(mariaTomasaId)
-      ) return;
+          const ids = [dukeId, duchessId, marquisId, widowId, mariaTomasaId];
+          if (ids.some(id => !nodes.get(id))) return;
 
-      const mariaTomasaPos = network.getPositions([mariaTomasaId])[mariaTomasaId];
-      if (!mariaTomasaPos) return;
+          const sharedPos = network.getPositions([mariaTomasaId])[mariaTomasaId];
+          if (!sharedPos) return;
 
-      // María Tomasa = nodo compartido con Montijo, en el borde derecho
-      const radius = 78;
-      const sharedAngle = 0;
-      const cx = mariaTomasaPos.x - Math.cos(sharedAngle) * radius;
-      const cy = mariaTomasaPos.y - Math.sin(sharedAngle) * radius;
+          const radius = 82;
+          const sharedAngle = 0; // María Tomasa mira hacia Montijo, borde derecho
+          const cx = sharedPos.x - Math.cos(sharedAngle) * radius;
+          const cy = sharedPos.y - Math.sin(sharedAngle) * radius;
 
-      const fixedAngles = {
-        [mariaTomasaId]: 0,                 // derecha, hacia Montijo
-        [widowId]: -Math.PI / 2,            // arriba
-        [duchessId]: Math.PI * 0.82,        // arriba-izquierda
-        [dukeId]: Math.PI * 1.10,           // abajo-izquierda
-        [marquisId]: Math.PI / 2            // abajo
-      };
+          const ordered = [
+            mariaTomasaId,  // 0º derecha
+            widowId,        // 72º arriba-dcha
+            dukeId,         // 144º arriba-izda
+            duchessId,      // 216º abajo-izda
+            marquisId       // 288º abajo-dcha
+          ];
 
-      Object.entries(fixedAngles).forEach(([id, angle]) => {
-        network.moveNode(
-          id,
-          cx + Math.cos(angle) * radius,
-          cy + Math.sin(angle) * radius
-        );
-      });
-    }
+          ordered.forEach((id, i) => {
+            const angle = i * (2 * Math.PI / ordered.length);
+            network.moveNode(
+              id,
+              cx + Math.cos(angle) * radius,
+              cy + Math.sin(angle) * radius
+            );
+          });
+        }
+
+        function placeFedericoSatelliteClusters(network) {
+          const federicoId = "Federico de Madrazo";
+          if (!nodes.get(federicoId)) return;
+
+          const federicoPos = network.getPositions([federicoId])[federicoId];
+          if (!federicoPos) return;
+
+          // ===== COURT PAINTERS: a la derecha de Federico =====
+          const courtMembers = [
+            "Francisco de Goya",
+            "Francisco Bayeu",
+            "Mariano Salvador Maella",
+            "Giambattista Tiepolo",
+            "Giandomenico Tiepolo",
+            "Vicente López",
+            "Anton Raphael Mengs",
+            "Agustín Esteve",
+            federicoId
+          ].filter(id => nodes.get(id));
+
+          const courtRadius = 132;
+          const courtCenter = { x: federicoPos.x + 165, y: federicoPos.y + 12 };
+          const courtAngles = {
+            [federicoId]: Math.PI,              // Federico en el borde izquierdo del clúster
+            "Francisco de Goya": Math.PI * 1.72,
+            "Francisco Bayeu": Math.PI * 1.42,
+            "Mariano Salvador Maella": Math.PI * 1.12,
+            "Giambattista Tiepolo": Math.PI * 0.82,
+            "Giandomenico Tiepolo": Math.PI * 0.56,
+            "Vicente López": Math.PI * 0.26,
+            "Anton Raphael Mengs": Math.PI * 1.92,
+            "Agustín Esteve": Math.PI * 0.02
+          };
+
+          courtMembers.forEach(id => {
+            const angle = courtAngles[id];
+            if (angle === undefined) return;
+            network.moveNode(
+              id,
+              courtCenter.x + Math.cos(angle) * courtRadius,
+              courtCenter.y + Math.sin(angle) * courtRadius
+            );
+          });
+
+          // ===== MADRAZO-CARDERERA: debajo-izquierda de Federico =====
+          const mcMembers = [
+            federicoId,
+            "Valentín Carderera",
+            "Eugenio Ochoa",
+            "Santiago Masarnau",
+            "Vicente Masarnau",
+            "Carlos Luis de Ribera"
+          ].filter(id => nodes.get(id));
+
+          const mcRadius = 108;
+          const mcCenter = { x: federicoPos.x - 138, y: federicoPos.y + 128 };
+          const mcAngles = {
+            [federicoId]: Math.PI * 1.86,       // Federico en borde superior-dcha
+            "Valentín Carderera": Math.PI * 0.08,
+            "Eugenio Ochoa": Math.PI * 0.44,
+            "Santiago Masarnau": Math.PI * 0.92,
+            "Vicente Masarnau": Math.PI * 1.28,
+            "Carlos Luis de Ribera": Math.PI * 1.60
+          };
+
+          mcMembers.forEach(id => {
+            const angle = mcAngles[id];
+            if (angle === undefined) return;
+            network.moveNode(
+              id,
+              mcCenter.x + Math.cos(angle) * mcRadius,
+              mcCenter.y + Math.sin(angle) * mcRadius
+            );
+          });
+
+          // ===== PRINT SPECIALISTS: cerca de Gautier/Piot, compacto =====
+          const piotId = "Eugène Piot";
+          if (nodes.get(piotId)) {
+            const piotPos = network.getPositions([piotId])[piotId];
+            const psMembers = [
+              "Eugène Piot",
+              "Philippe Burty",
+              "Paul Lefort",
+              "Charles Blanc",
+              "Paul Mantz"
+            ].filter(id => nodes.get(id));
+
+            const psRadius = 92;
+            const psCenter = { x: piotPos.x + 40, y: piotPos.y + 82 };
+
+            psMembers.forEach((id, i) => {
+              const angle = -Math.PI / 2 + i * (2 * Math.PI / psMembers.length);
+              network.moveNode(
+                id,
+                psCenter.x + Math.cos(angle) * psRadius,
+                psCenter.y + Math.sin(angle) * psRadius
+              );
+            });
+          }
+        }
 
     function getClusterNodeIds(cfg, nodes) {
       return [...new Set(
@@ -2700,17 +2857,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
-          if (clusterId === "COURT_PAINTERS") {
-            arrangeAroundSharedNode(
-              network,
-              nodes,
-              cfg.members,
-              "Francisco de Goya",
-              150,
-              Math.PI * 0.88,
-              -Math.PI * 0.82,
-              Math.PI * 1.55
-            );
+          if (clusterId === "COURT_PAINTERS" ||
+              clusterId === "MADRAZO_CARDERERA_GROUP" ||
+              clusterId === "PRINT_SPECIALISTS" ||
+              clusterId === "VILLAFRANCA_CLUSTER") {
             return;
           }
 
@@ -2739,6 +2889,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
         });
         placeVillafrancaAlbaClusters(network);
+        placeFedericoSatelliteClusters(network);
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
         separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 12); // before: 20, 110, 20
@@ -2763,17 +2914,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
-          if (clusterId === "COURT_PAINTERS") {
-            arrangeAroundSharedNode(
-              network,
-              nodes,
-              cfg.members,
-              "Francisco de Goya",
-              150,
-              Math.PI * 0.88,
-              -Math.PI * 0.82,
-              Math.PI * 1.55
-            );
+          if (clusterId === "COURT_PAINTERS" ||
+              clusterId === "MADRAZO_CARDERERA_GROUP" ||
+              clusterId === "PRINT_SPECIALISTS" ||
+              clusterId === "VILLAFRANCA_CLUSTER") {
             return;
           }
 
@@ -2816,6 +2960,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
         });
         placeVillafrancaAlbaClusters(network);
+        placeFedericoSatelliteClusters(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
         separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 12);
@@ -2826,8 +2971,11 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // 8) reimponer Villafranca-Alba y expulsar externos una última vez
         placeVillafrancaAlbaClusters(network);
+        placeFedericoSatelliteClusters(network);
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 150);
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 12);
+        placeVillafrancaAlbaClusters(network);
+        placeFedericoSatelliteClusters(network);
 
         network.redraw();
 
