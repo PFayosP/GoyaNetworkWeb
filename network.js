@@ -2717,103 +2717,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           network.moveNode(rafaelId, agustinPos.x - 54, agustinPos.y + 36);
         }
 
-        function placeGoyaCoreClusters(network) {
-          const goyaId = "Francisco de Goya";
-          const federicoId = "Federico de Madrazo";
-          const carlosIVId = "Carlos IV";
-
-          if (!nodes.get(goyaId) || !nodes.get(federicoId) || !nodes.get(carlosIVId)) return;
-
-          const goyaPos = network.getPositions([goyaId])[goyaId];
-          if (!goyaPos) return;
-
-          // 1) Federico: cerca de Goya, abajo-dcha
-          network.moveNode(federicoId, goyaPos.x + 128, goyaPos.y + 118);
-
-          // 2) José de Madrazo: cerca de Federico, no a media red
-          if (nodes.get("José de Madrazo")) {
-            network.moveNode("José de Madrazo", goyaPos.x + 176, goyaPos.y + 62);
-          }
-
-          // 3) Carlos IV / Bourbon: cerca de Court Painters, arriba-izda del bloque
-          const carlosIVPos = network.getPositions([carlosIVId])[carlosIVId];
-          if (carlosIVPos) {
-            // no movemos Carlos IV directamente, pero usamos su posición como referencia de coherencia
-          }
-        }
-
-        function placeIlustradosCluster(network) {
-          const goyaId = "Francisco de Goya";
-          if (!nodes.get(goyaId)) return;
-
-          const goyaPos = network.getPositions([goyaId])[goyaId];
-          if (!goyaPos) return;
-
-          const radius = 154;
-          const cx = goyaPos.x + 22;
-          const cy = goyaPos.y - 126;
-
-          const angleByNode = {
-            "Juan Agustín Ceán Bermúdez":  Math.PI * 1.52,
-            "XI Count of Altamira":        Math.PI * 1.26,
-            "Gaspar Melchor de Jovellanos":Math.PI * 1.00,
-            "Count of Floridablanca":      Math.PI * 0.76,
-            "Leandro Fernández de Moratín":Math.PI * 0.56,
-            "Francisco Cabarrús":          Math.PI * 0.34,
-            "Juan Meléndez Valdés":        Math.PI * 0.12,
-            "Juan Antonio Llorente":       Math.PI * 1.78,
-            "Joaquín María Ferrer":        Math.PI * 1.92,
-            "Bernardo de Iriarte":         Math.PI * 0.92
-          };
-
-          Object.entries(angleByNode).forEach(([id, angle]) => {
-            if (!nodes.get(id)) return;
-            network.moveNode(
-              id,
-              cx + Math.cos(angle) * radius,
-              cy + Math.sin(angle) * radius
-            );
-          });
-        }
-
-        function placeBourbonNearCore(network) {
-          const goyaId = "Francisco de Goya";
-          if (!nodes.get(goyaId)) return;
-
-          const goyaPos = network.getPositions([goyaId])[goyaId];
-          if (!goyaPos) return;
-
-          const angleByNode = {
-            "Carlos III":                         { x: goyaPos.x - 210, y: goyaPos.y - 78 },
-            "Carlos IV":                          { x: goyaPos.x - 128, y: goyaPos.y - 28 },
-            "María Luisa de Parma":               { x: goyaPos.x - 122, y: goyaPos.y + 46 },
-            "Fernando VII":                       { x: goyaPos.x - 208, y: goyaPos.y + 112 },
-            "Infanta Luisa Fernanda de Borbón":   { x: goyaPos.x - 250, y: goyaPos.y + 144 },
-            "Luis de Borbón":                     { x: goyaPos.x - 282, y: goyaPos.y + 120 },
-            "María Teresa de Vallabriga":         { x: goyaPos.x - 282, y: goyaPos.y + 20 },
-            "XV Countess of Chinchón":            { x: goyaPos.x - 170, y: goyaPos.y + 18 },
-            "Isabel II":                          { x: goyaPos.x - 312, y: goyaPos.y + 58 },
-            "María Cristina de Borbón-Dos Sicilias": { x: goyaPos.x - 324, y: goyaPos.y - 8 }
-          };
-
-          Object.entries(angleByNode).forEach(([id, p]) => {
-            if (!nodes.get(id)) return;
-            network.moveNode(id, p.x, p.y);
-          });
-        }
-
-        function placeMartinezRosaAwayFromGoya(network) {
-          const goyaId = "Francisco de Goya";
-          const rosaId = "Francisco Martínez de la Rosa";
-
-          if (!nodes.get(goyaId) || !nodes.get(rosaId)) return;
-
-          const goyaPos = network.getPositions([goyaId])[goyaId];
-          if (!goyaPos) return;
-
-          network.moveNode(rosaId, goyaPos.x + 164, goyaPos.y - 42);
-        }
-
     function getClusterNodeIds(cfg, nodes) {
       return [...new Set(
         [
@@ -2886,7 +2789,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-      function separateClusters(network, nodes, clusters, passes = 10, baseGap = 72, sharedGap = 8) {
+      function separateClusters(network, nodes, clusters, passes = 16, baseGap = 110, sharedGap = 36) {
       const entries = Object.entries(clusters);
 
       for (let pass = 0; pass < passes; pass++) {
@@ -3098,19 +3001,15 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
-        placeGoyaCoreClusters(network);
-        placeBourbonNearCore(network);
-        placeIlustradosCluster(network);
         placeVillafrancaAlbaClusters(network);
         placeFedericoSatelliteClusters(network);
         placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
-        placeMartinezRosaAwayFromGoya(network);
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 8, 72, 8); // before: 20, 110, 20
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 12); // before: 20, 110, 20
 
         // 4) expulsar nodos externos fuera del halo de cada clúster
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 85);
@@ -3161,49 +3060,37 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
-        placeGoyaCoreClusters(network);
-        placeBourbonNearCore(network);
-        placeIlustradosCluster(network);
         placeVillafrancaAlbaClusters(network);
         placeFedericoSatelliteClusters(network);
         placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
-        placeMartinezRosaAwayFromGoya(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 4, 72, 8);
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 12);
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 110);
 
         // 7) separación quirúrgica solo para pares concretos
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 8);
 
         // 8) reimponer placements manuales después de expulsiones / separaciones
-        placeGoyaCoreClusters(network);
-        placeBourbonNearCore(network);
-        placeIlustradosCluster(network);
         placeVillafrancaAlbaClusters(network);
         placeFedericoSatelliteClusters(network);
         placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
-        placeMartinezRosaAwayFromGoya(network);
 
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 130);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 150);
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 12);
 
-        placeGoyaCoreClusters(network);
-        placeBourbonNearCore(network);
-        placeIlustradosCluster(network);
         placeVillafrancaAlbaClusters(network);
         placeFedericoSatelliteClusters(network);
         placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
-        placeMartinezRosaAwayFromGoya(network);
 
         network.redraw();
 
