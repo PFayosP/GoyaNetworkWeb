@@ -2221,6 +2221,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Valentín Carderera", "Pedro de Madrazo", 120],
       ["Francisco Bayeu", "Valentín Carderera", 120],
       ["Francisco Bayeu", "Federico de Madrazo", 120],
+      ["José de Madrazo", "Valentín Carderera", 145],
+      ["Pedro de Madrazo", "Valentín Carderera", 140],
+      ["José de Madrazo", "Eugenio Ochoa", 135],
+      ["Pedro de Madrazo", "Eugenio Ochoa", 130],
     ];
 
     function getNodeHalo(node) {
@@ -2517,22 +2521,23 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           // =========================================================
           // COURT PAINTERS
-          // Lo colocamos ENTRE Goya y Federico, no colgando solo de Goya.
+          // Entre Goya y Federico, pero un poco más pegado a Goya
+          // para que no arrastre todo hacia la derecha.
           // =========================================================
-          const courtRadius = 96;
+          const courtRadius = 94;
           const courtCenter = {
-            x: (goyaPos.x + federicoPos.x) / 2 + 8,
-            y: (goyaPos.y + federicoPos.y) / 2 + 36
+            x: goyaPos.x + (federicoPos.x - goyaPos.x) * 0.42,
+            y: goyaPos.y + (federicoPos.y - goyaPos.y) * 0.34
           };
 
           const courtAngles = {
-            "Francisco Bayeu":         Math.PI * 1.34,
-            "Mariano Salvador Maella": Math.PI * 1.02,
+            "Francisco Bayeu":         Math.PI * 1.28,
+            "Mariano Salvador Maella": Math.PI * 1.00,
             "Giambattista Tiepolo":    Math.PI * 0.78,
             "Giandomenico Tiepolo":    Math.PI * 0.58,
             "Vicente López":           Math.PI * 0.30,
             "Anton Raphael Mengs":     Math.PI * 0.08,
-            "Agustín Esteve":          Math.PI * 1.72
+            "Agustín Esteve":          Math.PI * 1.68
           };
 
           [
@@ -2555,20 +2560,21 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           // =========================================================
           // MADRAZO-CARDERERA GROUP
-          // Justo a la izquierda y ligeramente abajo de Federico.
+          // A la DERECHA de Federico, no encima del círculo familiar.
+          // Federico actúa como nexo por el borde izquierdo del grupo.
           // =========================================================
-          const mcRadius = 92;
+          const mcRadius = 84;
           const mcCenter = {
-            x: federicoPos.x - 86,
-            y: federicoPos.y + 78
+            x: federicoPos.x + 138,
+            y: federicoPos.y + 8
           };
 
           const mcAngles = {
-            "Valentín Carderera":    Math.PI * 0.18,
-            "Eugenio Ochoa":         Math.PI * 0.52,
-            "Santiago Masarnau":     Math.PI * 0.92,
-            "Vicente Masarnau":      Math.PI * 1.24,
-            "Carlos Luis de Ribera": Math.PI * 1.56
+            "Valentín Carderera":    Math.PI * 1.02, // el más cercano a Federico
+            "Eugenio Ochoa":         Math.PI * 0.76,
+            "Santiago Masarnau":     Math.PI * 1.34,
+            "Vicente Masarnau":      Math.PI * 1.62,
+            "Carlos Luis de Ribera": Math.PI * 0.18
           };
 
           [
@@ -2589,7 +2595,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           // =========================================================
           // PRINT SPECIALISTS
-          // Igual que antes
+          // Igual que antes.
           // =========================================================
           const piotId = "Eugène Piot";
           if (nodes.get(piotId)) {
@@ -2634,22 +2640,23 @@ document.addEventListener('DOMContentLoaded', async function () {
           const federicoPos = network.getPositions([federicoId])[federicoId];
           if (!federicoPos) return;
 
-          const radius = 128;
-          const sharedAngle = Math.PI * 1.58; // Federico queda arriba-izda
-          const cx = federicoPos.x - Math.cos(sharedAngle) * radius;
-          const cy = federicoPos.y - Math.sin(sharedAngle) * radius;
+          // Centro del círculo familiar:
+          // claramente DEBAJO de Federico, con una leve deriva a la derecha.
+          const radius = 120;
+          const cx = federicoPos.x + 18;
+          const cy = federicoPos.y + 142;
 
           const angleByNode = {
-            "José de Madrazo":               Math.PI * 1.90,
-            "Pedro de Madrazo":              Math.PI * 0.02,
-            "Luis de Madrazo":               Math.PI * 0.28,
-            "Raimundo de Madrazo":           Math.PI * 0.56,
-            "Cecilia de Madrazo":            Math.PI * 0.80,
-            "Román Garreta":                 Math.PI * 1.02,
-            "Mariano Fortuny y Madrazo":     Math.PI * 1.18,
-            "Mariano Fortuny y Marsal":      Math.PI * 1.34,
-            "Luisa Garreta":                 Math.PI * 1.48,
-            "Juan de Madrazo":               Math.PI * 1.72
+            "José de Madrazo":               Math.PI * 0.05,
+            "Pedro de Madrazo":              Math.PI * 1.80,
+            "Luis de Madrazo":               Math.PI * 0.48,
+            "Raimundo de Madrazo":           Math.PI * 0.92,
+            "Cecilia de Madrazo":            Math.PI * 1.28,
+            "Román Garreta":                 Math.PI * 1.62,
+            "Mariano Fortuny y Madrazo":     Math.PI * 1.92,
+            "Mariano Fortuny y Marsal":      Math.PI * 2.20,
+            "Luisa Garreta":                 Math.PI * 2.52,
+            "Juan de Madrazo":               Math.PI * 1.96
           };
 
           Object.entries(angleByNode).forEach(([id, angle]) => {
