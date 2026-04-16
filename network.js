@@ -1108,7 +1108,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Luisa Garreta",
               "Juan de Madrazo"
             ],
-            radius: 220,
+            radius: 260,
             startAngle: -Math.PI / 2,
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
@@ -1249,7 +1249,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Vicente Masarnau",
               "Carlos Luis de Ribera"
             ],
-            radius: 130,
+            radius: 150,
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Madrazo-Carderera group",
@@ -2559,29 +2559,24 @@ document.addEventListener('DOMContentLoaded', async function () {
         // MADRAZO-CARDERERA GROUP
         // Arriba-derecha de Federico, no encima del círculo familiar.
         // =========================================================
-        const mcRadius = 112;
+        const mcRadius = 150;
         const mcCenter = {
-          x: federicoPos.x + 180,
-          y: federicoPos.y - 60
+          x: federicoPos.x + 200,
+          y: federicoPos.y - 70
         };
 
-        const mcAngles = {
-          "Carlos Luis de Ribera": Math.PI * 0.05,
-          "Valentín Carderera":    Math.PI * 0.85,
-          "Eugenio Ochoa":         Math.PI * 1.85,
-          "Santiago Masarnau":     Math.PI * 2.85,
-          "Vicente Masarnau":      Math.PI * 3.85
-        };
-
-        [
+        const mcMembers = [
           "Valentín Carderera",
           "Eugenio Ochoa",
           "Santiago Masarnau",
           "Vicente Masarnau",
           "Carlos Luis de Ribera"
-        ].forEach(id => {
+        ];
+
+        const mcStep = (2 * Math.PI) / mcMembers.length;
+        mcMembers.forEach((id, i) => {
           if (!nodes.get(id)) return;
-          const angle = mcAngles[id];
+          const angle = -Math.PI / 2 + i * mcStep;
           network.moveNode(
             id,
             mcCenter.x + Math.cos(angle) * mcRadius,
