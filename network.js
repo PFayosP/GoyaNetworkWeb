@@ -1573,7 +1573,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       let edgeLength = 210; // default
       if (edge.strength) {
         const strength = Math.max(1, Math.min(5, edge.strength)); // clamp 1-5
-        edgeLength = 100 + (strength - 1) * 62.5; // 1→100, 5→350
+        edgeLength = 70 + (strength - 1) * 70; // before: 100, 62.5
       }
 
       const processedEdge = {
@@ -2067,7 +2067,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true, 
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 600,         // ↑ Much higher for more cluster separation
+          nodeDistance: 430,         // before: 600
           centralGravity: 0.018,     // ↓ Slightly less gravity
           springLength: 210,         // ↑ Longer springs for more separation
           springConstant: 0.012,     // ↓ Softer springs
