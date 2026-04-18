@@ -1117,14 +1117,18 @@ document.addEventListener('DOMContentLoaded', async function () {
           "HUGO_CENACLE": {
             center: "Victor Hugo",
             members: [
-              "Théophile Gautier",
-              "Alfred de Musset",
-              "George Sand",
-              "Alexandre Dumas père",
-              "Charles Nodier",
+              "Honoré de Balzac",
               "Louis Boulanger",
+              "Eugène Delacroix",
+              "Achille Devéria",
+              "Alexandre Dumas père",
+              "Antoine Fontaney",
+              "Théophile Gautier",
+              "Prosper Mérimée",
+              "Alfred de Musset",
+              "Charles Nodier",
               "Charles-Augustin Sainte-Beuve",
-              "Antoine Fontaney"
+              "George Sand"
             ],
             radius: 190, // before: 160
             startAngle: -Math.PI / 2,
@@ -1292,6 +1296,33 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Villafranca-Alba cluster",
             titleEs: "Clúster Villafranca-Alba"
+          },
+
+          "TAYLOR_CLUSTER": {
+            members: [
+              "Baron Taylor",
+              "Adrien Dauzats",
+              "Pharamond Blanchard"
+            ],
+            radius: 78,
+            padding: 84,
+            startAngle: -Math.PI / 2,
+            title: "Taylor cluster",
+            titleEs: "Clúster Taylor"
+          },
+
+          "DAVID_CLUSTER": {
+            members: [
+              "Jacques-Louis David",
+              "Jean-Auguste-Dominique Ingres",
+              "Antoine-Jean Gros",
+              "Paul Delaroche"
+            ],
+            radius: 78,
+            padding: 84,
+            startAngle: -Math.PI / 2,
+            title: "David cluster",
+            titleEs: "Clúster David"
           },
         };
 
@@ -1543,23 +1574,15 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Infanta Luisa Fernanda de Borbón"
         ],
 
-        "INGRES-DAVID-GROS-DELAROCHE": ["Jean-Auguste-Dominique Ingres", "Jacques-Louis David", "Antoine-Jean Gros", "Paul Delaroche"], 
-
-        "TAYLOR-GROUP": ["Baron Taylor", "Adrien Dauzats", "Pharamond Blanchard"],
-
         "GAUTIER-PIOT": ["Théophile Gautier", "Eugène Piot"],
-
-        "FEDERICO-CARDERERA_BRIDGE": [
-          "Federico de Madrazo",
-          "Valentín Carderera",
-          "Eugenio de Ochoa"
-        ],
 
         "DELACROIX-VILLOT": ["Eugène Delacroix", "Frédéric Villot"],
 
         "GOUPIL-RITTNER": ["Heinrich Rittner", "Adolphe Goupil"],
 
-        "ESTEVES": ["Agustín Esteve", "Rafael Esteve"]
+        "ESTEVES": ["Agustín Esteve", "Rafael Esteve"],
+
+        "DAUMIER-RICOURT": ["Achille Ricourt", "Honoré Daumier"]
       };
 
     // Edges más transparentes (general)
@@ -2213,6 +2236,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Valentín Carderera", "Anton Raphael Mengs", 120],
       ["Louis Philippe I", "Javier Goya", 140],
       ["Louis Philippe I", "Fernando VII", 150],
+      ["Prince Antoine, Duke of Montpensier", "Fernando VII", 150],
       ["Prince Antoine, Duke of Montpensier", "Mariano Goya", 140],
       ["Rafael Esteve", "XV Countess of Chinchón", 150],
       ["Francisco Martínez de la Rosa", "Francisco de Goya", 170],
@@ -2224,7 +2248,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Pedro de Madrazo", "Eugenio Ochoa", 160],
       ["José de Madrazo", "Carlos Luis de Ribera", 150],
       ["Pedro de Madrazo", "Carlos Luis de Ribera", 145],
-      ["Pedro de Madrazo", "Vicente Masarnau", 150] 
+      ["Pedro de Madrazo", "Vicente Masarnau", 150],
+      ["Paul Delaroche", "Jacques-Louis David", 130]
     ];
 
     function getNodeHalo(node) {

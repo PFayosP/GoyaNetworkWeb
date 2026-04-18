@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-04-16",
+  "last_update": "2026-04-18",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -5492,6 +5492,9 @@
       "influenced by": "Leandro Fernández de Moratín; Bartolomé José Gallardo; Sebastián de Miñano",
       "writes in": "<i>Cartas Españolas</i>; <i>Semanario pintoresco español</i>; <i>Diario de Madrid</i>",
       "military activity": "during the Trienio Liberal (1820-23) he enlisted as <i>miliciano nacional</i>",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/30024-ramon-de-mesonero-romanos"
+      },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Mesonero_Romanos.jpg",
       "image source": "Víctor Manzano y Mejorada, oil painting, 1850",
       "added": "2025-11-30"
