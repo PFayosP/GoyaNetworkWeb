@@ -1351,6 +1351,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           clusterColorIdx++;
         });
 
+        clusterColorMap["GOYA_FAMILY"] = "#64b5f6";      // azul
+        clusterColorMap["COURT_PAINTERS"] = "#ffb74d";   // naranja
+
         // Reverse map: nodeId -> [clusterId1, clusterId2, ...]
         const nodeClusterMap = {};
         Object.entries(RADIAL_CLUSTERS).forEach(([cid, cfg]) => {
@@ -2083,7 +2086,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true, 
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 430,         // before: 600
+          nodeDistance: 500,         // before: 430
           centralGravity: 0.018,     // ↓ Slightly less gravity
           springLength: 210,         // ↑ Longer springs for more separation
           springConstant: 0.012,     // ↓ Softer springs
@@ -2995,7 +2998,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         window.__didNudgeOnce = true;
 
         // 1) pequeña limpieza inicial antes de fijar geometrías
-        nudgeOverlaps(network, nodes, window.__clusterOf, 8);
+        nudgeOverlaps(network, nodes, window.__clusterOf, 12); // before: 8
 
         // 2) imponer la geometría exacta de cada clúster
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
@@ -3134,8 +3137,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeMontpensierBridge(network);
         placeEstevesPair(network);
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 10);
-        enforceStrongEdgePairs(network, nodes, edges, 12);
-        
+        // enforceStrongEdgePairs(network, nodes, edges, 12);
+
         network.redraw();
 
         // Esperar un poco más para asegurar que la red está completamente renderizada
@@ -3242,6 +3245,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     network.on("click", function (params) {
       
+      // --- CLICK EN FONDO: limpiar selección de cluster ---
+      if (params.nodes.length === 0 && params.edges.length === 0) {
+        if (selectedClusterId) {
+          window.clearClusterSelection();
+        }
+      }
+
       // Cerrar "New in" solo cuando se hace clic en nodos o edges
       if ((params.nodes.length > 0 || params.edges.length > 0) && typeof showNewInPanel === 'function') {
         showNewInPanel(false);
