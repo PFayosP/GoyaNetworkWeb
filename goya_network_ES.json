@@ -7570,13 +7570,15 @@
       "to": "Vicente López",
       "connection_level": "direct",
       "portraits": "López retrató a Goya en 1826, [Prado P000864](https://www.museodelprado.es/coleccion/obra-de-arte/el-pintor-francisco-de-goya/d24dba94-d730-44c5-8b46-1f1732d2b571)",
-      "curiosities": "El retrato de Goya realizado por López (1826) sirvió de modelo para la estatuilla de los premios de cine españoles (<i>Premios Goya</i>)."
+      "curiosities": "El retrato de Goya realizado por López (1826) sirvió de modelo para la estatuilla de los premios de cine españoles (<i>Premios Goya</i>).",
+      "strength": 3
     },
     {
       "from": "José de Madrazo",
       "to": "Vicente López",
       "connection_level": "direct",
-      "relationship type": "compañeros; rivales"
+      "relationship type": "compañeros; rivales",
+      "strength": 2
     },
     {
       "from": "Federico de Madrazo",
@@ -13385,7 +13387,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo",
       "know each other since": "al menos desde 1812",
-      "portraits": "retrato ecuestre, 1812, Apsley House; retrato de busto, 1812, Londres, National Gallery (dibujo preparatorio: British Museum)"
+      "portraits": "retrato ecuestre, 1812, Apsley House; retrato de busto, 1812, Londres, National Gallery (dibujo preparatorio: British Museum)",
+      "strength": 3
     },
     {
       "from": "XII Countess-Duchess of Benavente and Duchess of Osuna",

@@ -2214,6 +2214,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Paul Delaroche", "Jacques-Louis David", 130],
       ["Virginie Ancelot", "Adélaïde de Montgolfier", 150],
       ["Honoré Daumier", "George Sand", 130],
+      ["Honoré Daumier", "Eugène Piot", 130],
+      ["George Sand", "Léon Auguste Asselineau", 130],
       ["Gregorio Cruzada Villaamil", "Jean Laurent", 130],
       ["Rosa Bonheur", "Stendhal", 130],
       ["Léon Auguste Asselineau", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 150],
