@@ -10428,7 +10428,8 @@
       "from": "Léon Auguste Asselineau",
       "to": "Charles Asselineau",
       "connection_level": "direct",
-      "relationship type": "parientes; primos"
+      "relationship type": "parientes; primos",
+      "strength": 1
     },
     {
       "from": "Léon Auguste Asselineau",
@@ -13070,7 +13071,8 @@
       "relationship type": "amigos íntimos",
       "correspondence": "sí. Por ejemplo, el 22 de octubre de 1838 describió el último concierto que Chopin dio en París antes de partir hacia Mallorca, en el castillo de Custine (véase Custine-Chopin's edge)",
       "bibliography": "Bénichou 2004, p.9",
-      "websites": "[Publicación en Facebook](https://www.facebook.com/JackGibbonsPiano/posts/astolphe-de-custine-was-a-huge-supporter-of-chopin-and-one-of-the-very-first-to-/10157874644944384/) de Jack Gibbons, 26 de julio de 2019"
+      "websites": "[Publicación en Facebook](https://www.facebook.com/JackGibbonsPiano/posts/astolphe-de-custine-was-a-huge-supporter-of-chopin-and-one-of-the-very-first-to-/10157874644944384/) de Jack Gibbons, 26 de julio de 2019",
+      "strength": 1
     },
     {
       "from": "Marquis de Custine",

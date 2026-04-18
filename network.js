@@ -2212,6 +2212,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Virginie Ancelot", "Adélaïde de Montgolfier", 150],
       ["Honoré Daumier", "George Sand", 130],
       ["Gregorio Cruzada Villaamil", "Jean Laurent", 130]
+      ["Rosa Bonheur", "Stendhal", 130],
+      ["Léon Auguste Asselineau", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 150],
+      ["Frédéric Quilliet", "Josefa Bayeu", 150]
+      // supercali overlap
     ];
 
     function getNodeHalo(node) {
