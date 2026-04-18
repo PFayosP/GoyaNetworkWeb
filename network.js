@@ -601,26 +601,31 @@ function isImageUrl(u) {
 }
 
 // Add these two functions at the top of network.js
-window.search = function() {
-  const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
-  if (!searchInput) return;
+window.search = function(nodeId) {
+  if (!nodeId || !window.VIS_NETWORK || !nodes.get(nodeId)) return;
 
-  // Find matching nodes
-  const matchingNodes = nodes.get().filter(node => 
-    node.id.toLowerCase().includes(searchInput) || 
-    (node.label && node.label.toLowerCase().includes(searchInput))
-  );
+  clearHighlights();
+  window.VIS_NETWORK.stopSimulation?.();
 
-  if (matchingNodes.length > 0) {
-    // Focus on first match
-    window.VIS_NETWORK.focus(matchingNodes[0].id, { animation: true });
-    // Select the node
-    window.VIS_NETWORK.selectNodes([matchingNodes[0].id]);
-    // Show node info
-    window.VIS_NETWORK.emit('click', { nodes: [matchingNodes[0].id] });
-  } else {
-    alert('No matching nodes found');
-  }
+  const pos = window.VIS_NETWORK.getPosition(nodeId);
+  if (!pos) return;
+
+  window.VIS_NETWORK.unselectAll();
+
+  window.VIS_NETWORK.moveTo({
+    position: pos,
+    scale: window.VIS_NETWORK.getScale(),
+    animation: { duration: 500 }
+  });
+
+  setTimeout(() => {
+    window.VIS_NETWORK.selectNodes([nodeId]);
+    window.VIS_NETWORK.body.emitter.emit('click', {
+      nodes: [nodeId],
+      edges: [],
+      pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
+    });
+  }, 550);
 };
 
 // ===============================
@@ -2239,7 +2244,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Ernest Meissonier", "Arsène Houssaye", 130],
       ["José Zorrilla", "Mariano José Larra", 100],
       ["Célestin Nanteuil", "Léon Auguste Asselineau", 130],
-      ["Nadar", "Philippe Burty", 130]
+      ["Nadar", "Philippe Burty", 130],
+      ["Auguste Dutuit", "Eugène Dutuit", 100]
       // supercali overlap
     ];
 
@@ -2652,7 +2658,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Círculo claramente por debajo de Federico
         const radius = 200;
         const cx = federicoPos.x + 20;
-        const cy = federicoPos.y + 200;
+        const cy = federicoPos.y + 120; // before: 200
 
         const memberIds = [
           "Federico de Madrazo",
@@ -4370,15 +4376,16 @@ document.addEventListener('DOMContentLoaded', async function () {
       
       // 6. Mostrar resultado o alerta
       if (found) {
-        focusNode(found.id);
+        window.search(found.id);
       } else {
         alert("No match found.");
       }
     });
 
     // Add Enter key support
-    searchInput.addEventListener('keypress', (e) => {
+    searchInput.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
+        e.preventDefault();
         searchButton.click();
       }
     });
