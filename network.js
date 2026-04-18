@@ -2257,7 +2257,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Carlos Luis de Ribera", "Federico de Madrazo", 120],
       ["Juliette Récamier", "Ferdinand Guillemardet", 130],
       ["Marceline Desbordes-Valmore", "Tony Johannot", 130],
-      ["Mariano Fortuny y Marsal", "Antonio de Brugada", 130]
+      ["Mariano Fortuny y Marsal", "Antonio de Brugada", 130],
+      ["Ramón de Mesonero Romanos", "Francisco Martínez de la Rosa", 130],
+      ["Charles Asselineau", "Achille Ricourt", 130]
       // supercali overlap
     ];
 
@@ -2597,8 +2599,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         // =========================================================
         const mcRadius = 150;
         const mcCenter = {
-          x: federicoPos.x + 255, // before: + 200
-          y: federicoPos.y + 125 // before: -70
+          x: federicoPos.x + 300, // before: + 250
+          y: federicoPos.y - 150 // before: + 125
         };
 
         const mcMembers = [
