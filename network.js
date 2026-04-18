@@ -1127,8 +1127,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Prosper Mérimée",
               "Alfred de Musset",
               "Charles Nodier",
-              "Charles-Augustin Sainte-Beuve",
-              "George Sand"
+              "Charles-Augustin Sainte-Beuve"
             ],
             radius: 190, // before: 160
             startAngle: -Math.PI / 2,
@@ -1138,17 +1137,19 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           "ILUSTRADOS_CLUSTER": {
             members: [
-              "Francisco de Goya",
-              "Juan Agustín Ceán Bermúdez",
               "XI Count of Altamira",
-              "Gaspar Melchor de Jovellanos",
-              "Count of Floridablanca",
-              "Leandro Fernández de Moratín",
               "Francisco Cabarrús",
-              "Juan Meléndez Valdés",
-              "Juan Antonio Llorente",
+              "Juan Agustín Ceán Bermúdez",
+              "Leandro Fernández de Moratín",
               "Joaquín María Ferrer",
-              "Bernardo de Iriarte"
+              "Count of Floridablanca",
+              "Francisco de Goya",
+              "Bernardo de Iriarte",
+              "Juan Antonio Llorente",
+              "Sebastián Martínez y Pérez",
+              "Gaspar Melchor de Jovellanos",
+              "Juan Meléndez Valdés",
+              "Martín Zapater"
             ],
             radius: 166,
             padding: 92,
@@ -2199,6 +2200,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Francisco de Goya", "Mariano Goya", 120],
       ["María Antonia Gonzaga, Marchioness of Villafranca (widow)", "Infanta Luisa Fernanda de Borbón", 120],
       ["María Luisa de Parma", "Carlos III", 120],
+      ["María Luisa de Parma", "Louis Philippe I", 150],
       ["XV Countess of Chinchón", "María Teresa de Vallabriga", 120],
       ["María Cristina de Borbón-Dos Sicilias", "Manuel Godoy", 120],
       ["María Cristina de Borbón-Dos Sicilias", "Eugenia de Montijo", 120],
@@ -2249,7 +2251,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["José de Madrazo", "Carlos Luis de Ribera", 150],
       ["Pedro de Madrazo", "Carlos Luis de Ribera", 145],
       ["Pedro de Madrazo", "Vicente Masarnau", 150],
-      ["Paul Delaroche", "Jacques-Louis David", 130]
+      ["Paul Delaroche", "Jacques-Louis David", 130],
+      ["Virginie Ancelot", "Adélaïde de Montgolfier", 150]
     ];
 
     function getNodeHalo(node) {
