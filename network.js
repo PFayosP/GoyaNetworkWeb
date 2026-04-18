@@ -1325,6 +1325,22 @@ document.addEventListener('DOMContentLoaded', async function () {
             title: "David cluster",
             titleEs: "Clúster David"
           },
+
+          "IMPRESSIONIST_CLUSTER": {
+            members: [
+              "Félix Bracquemond",
+              "Edgas Degas",
+              "Henri Fantin-Latour",
+              "Édouard Manet",
+              "Berthe Morisot",
+              "Auguste Renoir"
+            ],
+            radius: 78,
+            padding: 84,
+            startAngle: -Math.PI / 2,
+            title: "Impressionist cluster",
+            titleEs: "Clúster Impresionista"
+          }
         };
 
         // Map clusterId to color
