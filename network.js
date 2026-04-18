@@ -604,7 +604,10 @@ function isImageUrl(u) {
 window.search = function(nodeId) {
   if (!nodeId || !window.VIS_NETWORK || !nodes.get(nodeId)) return;
 
-  clearHighlights();
+  if (typeof window.__GN_clearHighlights === 'function') {
+    window.__GN_clearHighlights();
+  }
+  
   window.VIS_NETWORK.stopSimulation?.();
 
   const pos = window.VIS_NETWORK.getPosition(nodeId);
@@ -2245,7 +2248,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["José Zorrilla", "Mariano José Larra", 100],
       ["Célestin Nanteuil", "Léon Auguste Asselineau", 130],
       ["Nadar", "Philippe Burty", 130],
-      ["Auguste Dutuit", "Eugène Dutuit", 100]
+      ["Auguste Dutuit", "Eugène Dutuit", 100],
+      ["Frédéric Quilliet", "1st Duke of Wellington", 130],
+      ["Alphonse de Lamartine", "Marceline Desbordes-Valmore", 130],
+      ["Adolphe Goupil", "José de Salamanca y Mayol (I Marqués de Salamanca)", 130]
       // supercali overlap
     ];
 
@@ -2658,7 +2664,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Círculo claramente por debajo de Federico
         const radius = 200;
         const cx = federicoPos.x + 20;
-        const cy = federicoPos.y + 120; // before: 200
+        const cy = federicoPos.y + 40; // before: 120
 
         const memberIds = [
           "Federico de Madrazo",
@@ -2946,15 +2952,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
 
-    function enforceStrongEdgePairs(network, nodes, edges, nodeClusterMap, passes = 4) {
+    function enforceStrongEdgePairs(network, nodes, edges, nodeClusterMap, passes = 8) { // before: 4
       const strongPairs = edges.get()
         .filter(edge =>
           !edge._isClusterEdge &&
           (edge.strength === 1 || edge.strength === 2)
         )
         .map(edge => {
-          const targetD = edge.strength === 1 ? 150 : 185;
-          const pullFactor = edge.strength === 1 ? 0.16 : 0.09;
+          const targetD = edge.strength === 1 ? 120 : 155; // before: 1 ? 150 : 185
+          const pullFactor = edge.strength === 1 ? 0.22 : 0.13; // before: 1 ? 0.16 : 0.09
           return [edge.from, edge.to, targetD, pullFactor];
         });
 
