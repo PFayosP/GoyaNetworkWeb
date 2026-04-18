@@ -2262,6 +2262,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Valentín Carderera", "Anton Raphael Mengs", 120],
       ["Louis Philippe I", "Javier Goya", 140],
       ["Louis Philippe I", "Fernando VII", 150],
+      ["Prince Antoine, Duke of Montpensier", "Louis Philippe I", 150],
       ["Prince Antoine, Duke of Montpensier", "Fernando VII", 150],
       ["Prince Antoine, Duke of Montpensier", "Mariano Goya", 140],
       ["Rafael Esteve", "XV Countess of Chinchón", 150],
@@ -2273,10 +2274,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["José de Madrazo", "Eugenio Ochoa", 160],
       ["Pedro de Madrazo", "Eugenio Ochoa", 160],
       ["José de Madrazo", "Carlos Luis de Ribera", 150],
+      ["Charles Asselineau", "Théophile Thoré", 130],
       ["Pedro de Madrazo", "Carlos Luis de Ribera", 145],
       ["Pedro de Madrazo", "Vicente Masarnau", 150],
       ["Paul Delaroche", "Jacques-Louis David", 130],
-      ["Virginie Ancelot", "Adélaïde de Montgolfier", 150]
+      ["Virginie Ancelot", "Adélaïde de Montgolfier", 150],
+      ["Honoré Daumier", "George Sand", 130]
     ];
 
     function getNodeHalo(node) {
