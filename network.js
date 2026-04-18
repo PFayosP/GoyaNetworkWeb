@@ -1643,29 +1643,53 @@ document.addEventListener('DOMContentLoaded', async function () {
           const to = group[j];
           if (!nodes.get(from) || !nodes.get(to)) continue;
 
-          let hiddenLength = 45;
-          let hiddenCount = 1;
+          // Check if there's a real edge with a strength value
+          let strengthFromEdge = null;
+          const allEdges = edges.get();
+          for (const edge of allEdges) {
+            if ((edge.from === from && edge.to === to) || (edge.from === to && edge.to === from)) {
+              if (edge.strength) {
+                strengthFromEdge = edge.strength;
+              }
+              break;
+            }
+          }
 
+          let hiddenLength = 45;
+          // If strength exists, override with strength-based calculation
+          if (strengthFromEdge) {
+            hiddenLength = 350 - (strengthFromEdge - 1) * 62.5; // same formula as main edges
+          } else {
+            // Fall back to hard-coded defaults for groups without strength
+            if (groupName === "GODOY-TUDÓ") {
+              hiddenLength = 24;
+            } else if (groupName === "GODOY-CHINCHON") {
+              hiddenLength = 22;
+            } else if (groupName === "TIEPOLOS") {
+              hiddenLength = 34;
+            } else if (groupName === "MONTPENSIER_TRIANGLE") {
+              hiddenLength = 26;
+            } else if (groupName === "FEDERICO-CARDERERA_BRIDGE") {
+              hiddenLength = 34;
+            } else if (groupName === "ESTEVES") {
+              hiddenLength = 20;
+            }
+          }
+
+          let hiddenCount = 1;
           if (groupName === "GODOY-TUDÓ") {
-            hiddenLength = 24;
             hiddenCount = 5;
           } else if (groupName === "GODOY-CHINCHON") {
-            hiddenLength = 22;
             hiddenCount = 5;
           } else if (groupName === "TIEPOLOS") {
-            hiddenLength = 34;
             hiddenCount = 2;
           } else if (groupName === "MONTPENSIER_TRIANGLE") {
-            hiddenLength = 26;
             hiddenCount = 5;
           } else if (groupName === "FEDERICO-CARDERERA_BRIDGE") {
-            hiddenLength = 34;
             hiddenCount = 3;
           } else if (groupName === "ESTEVES") {
-            hiddenLength = 20;
             hiddenCount = 6;
           }
-          
 
           for (let k = 0; k < hiddenCount; k++) {
             edges.add({
