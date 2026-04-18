@@ -1549,54 +1549,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           return config;
         }));
 
-      const PROXIMITY_GROUPS = {
-        "TIEPOLOS": ["Giambattista Tiepolo", "Giandomenico Tiepolo"],
-
-        "LACOUR": ["Pierre Lacour père", "Pierre Lacour fils"],
-
-        "DUTUIT": ["Auguste Dutuit", "Eugène Dutuit"],
-
-        "MASARNAU": ["Santiago Masarnau", "Vicente Masarnau"],
-
-        "WEISS": ["Rosario Weiss Zorrilla", "Leocadia Zorrilla y Galarza"],
-
-        "SUREDAS": ["Bartolomé Sureda", "Alejandro Sureda"],
-
-        "GONCOURT": ["Edmond de Goncourt", "Jules de Goncourt"],
-
-        "VIARDOT": ["Pauline Viardot-García", "Louis Viardot"],
-
-        "NODIER": ["Marie Nodier", "Charles Nodier"],
-
-        "GUYE": ["Nicolas Philippe Guye", "Victor Guye"],
-
-        "GAY-GIRARDIN": ["Delphine de Girardin", "Sophie Gay"],
-
-        "GUILLEMARDETS": ["Félix Guillemardet", "Ferdinand Guillemardet"],
-
-        "GODOY-TUDÓ": ["Josefa Tudó", "Manuel Godoy"],
-
-        "GODOY-CHINCHON": ["Manuel Godoy", "XV Countess of Chinchón"],
-
-        "SPANISH ROMANTICS": ["José de Espronceda", "Mariano José Larra", "José Zorrilla"],
-
-        "MONTPENSIER_TRIANGLE": [
-          "Prince Antoine, Duke of Montpensier",
-          "Louis Philippe I",
-          "Infanta Luisa Fernanda de Borbón"
-        ],
-
-        "GAUTIER-PIOT": ["Théophile Gautier", "Eugène Piot"],
-
-        "DELACROIX-VILLOT": ["Eugène Delacroix", "Frédéric Villot"],
-
-        "GOUPIL-RITTNER": ["Heinrich Rittner", "Adolphe Goupil"],
-
-        "ESTEVES": ["Agustín Esteve", "Rafael Esteve"],
-
-        "DAUMIER-RICOURT": ["Achille Ricourt", "Honoré Daumier"]
-      };
-
     // Edges más transparentes (general)
     edges = new vis.DataSet(data.edges.map(edge => {
       const level = edge.connection_level || "direct";
@@ -1617,11 +1569,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       const style = getEdgeStyle(edge);
       
       // Calculate springLength based on strength (1-5 scale)
-      // Strength 5 = 100 (very close), Strength 1 = 350 (far apart)
+      // Strength 1 = 100 (very close), Strength 5 = 350 (far apart)
       let springLength = 210; // default
       if (edge.strength) {
         const strength = Math.max(1, Math.min(5, edge.strength)); // clamp 1-5
-        springLength = 350 - (strength - 1) * 62.5; // 5→100, 1→350
+        springLength = 100 + (strength - 1) * 62.5; // 1→100, 5→350
       }
 
       return {
@@ -1635,74 +1587,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         springConstant: edge.strength ? 0.02 : 0.012  // stronger edges have stiffer springs
       };
     }));
-
-    Object.entries(PROXIMITY_GROUPS).forEach(([groupName, group]) => {
-      for (let i = 0; i < group.length; i++) {
-        for (let j = i + 1; j < group.length; j++) {
-          const from = group[i];
-          const to = group[j];
-          if (!nodes.get(from) || !nodes.get(to)) continue;
-
-          // Check if there's a real edge with a strength value
-          let strengthFromEdge = null;
-          const allEdges = edges.get();
-          for (const edge of allEdges) {
-            if ((edge.from === from && edge.to === to) || (edge.from === to && edge.to === from)) {
-              if (edge.strength) {
-                strengthFromEdge = edge.strength;
-              }
-              break;
-            }
-          }
-
-          let hiddenLength = 45;
-          // If strength exists, override with strength-based calculation
-          if (strengthFromEdge) {
-            hiddenLength = 350 - (strengthFromEdge - 1) * 62.5; // same formula as main edges
-          } else {
-            // Fall back to hard-coded defaults for groups without strength
-            if (groupName === "GODOY-TUDÓ") {
-              hiddenLength = 24;
-            } else if (groupName === "GODOY-CHINCHON") {
-              hiddenLength = 22;
-            } else if (groupName === "TIEPOLOS") {
-              hiddenLength = 34;
-            } else if (groupName === "MONTPENSIER_TRIANGLE") {
-              hiddenLength = 26;
-            } else if (groupName === "FEDERICO-CARDERERA_BRIDGE") {
-              hiddenLength = 34;
-            } else if (groupName === "ESTEVES") {
-              hiddenLength = 20;
-            }
-          }
-
-          let hiddenCount = 1;
-          if (groupName === "GODOY-TUDÓ") {
-            hiddenCount = 5;
-          } else if (groupName === "GODOY-CHINCHON") {
-            hiddenCount = 5;
-          } else if (groupName === "TIEPOLOS") {
-            hiddenCount = 2;
-          } else if (groupName === "MONTPENSIER_TRIANGLE") {
-            hiddenCount = 5;
-          } else if (groupName === "FEDERICO-CARDERERA_BRIDGE") {
-            hiddenCount = 3;
-          } else if (groupName === "ESTEVES") {
-            hiddenCount = 6;
-          }
-
-          for (let k = 0; k < hiddenCount; k++) {
-            edges.add({
-              from,
-              to,
-              hidden: true,
-              physics: true,
-              length: hiddenLength
-            });
-          }
-        }
-      }
-    });
     window.edges = edges;
 
     // ===================== MINI-FAMILIAS (anchors invisibles) =====================

@@ -6653,7 +6653,8 @@
       "from": "Giambattista Tiepolo",
       "to": "Giandomenico Tiepolo",
       "connection_level": "direct",
-      "relationship type": "relatives; father-son"
+      "relationship type": "relatives; father-son",
+      "strength": 1
     },
     {
       "from": "Carlos III",
@@ -6868,7 +6869,8 @@
       "connection_level": "direct",
       "relationship type": "relatives: brothers",
       "shared": "they both enlisted in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1836",
-      "collaborations": "they found the Colegio de Massarnau in 1841 in Madrid."
+      "collaborations": "they found the Colegio de Massarnau in 1841 in Madrid.",
+      "strength": 1
     },
     {
       "from": "Francisco de Goya",
@@ -7281,7 +7283,8 @@
       "from": "Bartolomé Sureda",
       "to": "Alejandro Sureda",
       "connection_level": "direct",
-      "relationship type": "relatives; father-son"
+      "relationship type": "relatives; father-son",
+      "strength": 1
     },
     {
       "from": "Alejandro Sureda",
@@ -7899,7 +7902,8 @@
       "from": "Edmond de Goncourt",
       "to": "Jules de Goncourt",
       "connection_level": "direct",
-      "relationship type": "relatives; brothers"
+      "relationship type": "relatives; brothers",
+      "strength": 1
     },
     {
       "from": "Jules de Goncourt",
@@ -8512,14 +8516,16 @@
       "from": "Prince Antoine, Duke of Montpensier",
       "to": "Louis Philippe I",
       "connection_level": "direct",
-      "relationship type": "relatives: father-son"
+      "relationship type": "relatives: father-son",
+      "strength": 1
     },
     {
       "from": "Prince Antoine, Duke of Montpensier",
       "to": "Infanta Luisa Fernanda de Borbón",
       "connection_level": "direct",
       "relationship type": "spouses; husband-wife (1846)",
-      "children": "10"
+      "children": "10",
+      "strength": 1
     },
     {
       "from": "Prince Antoine, Duke of Montpensier",
@@ -9245,7 +9251,8 @@
       "from": "Pauline Viardot-García",
       "to": "Louis Viardot",
       "connection_level": "direct",
-      "relationship type": "spouses; husband-wife"
+      "relationship type": "spouses; husband-wife",
+      "strength": 1
     },
     {
       "from": "Pauline Viardot-García",
@@ -11615,7 +11622,8 @@
       "from": "Ferdinand Guillemardet",
       "to": "Félix Guillemardet",
       "connection_level": "direct",
-      "relationship type": "relatives; father-son"
+      "relationship type": "relatives; father-son",
+      "strength": 1
     },
     {
       "from": "Eugène Delacroix",
@@ -13069,7 +13077,8 @@
       "from": "Sophie Gay",
       "to": "Delphine de Girardin",
       "connection_level": "direct",
-      "relationship type": "relatives; mother-daughter"
+      "relationship type": "relatives; mother-daughter",
+      "strength": 1
     },
     {
       "from": "Victor Hugo",
@@ -13295,7 +13304,8 @@
       "from": "Nicolas Philippe Guye",
       "to": "Victor Guye",
       "connection_level": "direct",
-      "relationship type": "relatives; father-son"
+      "relationship type": "relatives; father-son",
+      "strength": 1
     },
     {
       "from": "Román Garreta",
@@ -14330,7 +14340,8 @@
       "from": "Charles Nodier",
       "to": "Marie Nodier",
       "connection_level": "direct",
-      "relationship type": "relatives; father-daughter"
+      "relationship type": "relatives; father-daughter",
+      "strength": 1
     },
     {
       "from": "J. J. Grandville",
