@@ -13298,7 +13298,8 @@
       "from": "Pierre Lacour",
       "to": "Pierre Lacour fils",
       "connection_level": "direct",
-      "relationship type": "parientes; padre-hijo"
+      "relationship type": "parientes; padre-hijo",
+      "strength": 1
     },
     {
       "from": "George Sand",
