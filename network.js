@@ -2211,10 +2211,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Paul Delaroche", "Jacques-Louis David", 130],
       ["Virginie Ancelot", "Adélaïde de Montgolfier", 150],
       ["Honoré Daumier", "George Sand", 130],
-      ["Gregorio Cruzada Villaamil", "Jean Laurent", 130]
+      ["Gregorio Cruzada Villaamil", "Jean Laurent", 130],
       ["Rosa Bonheur", "Stendhal", 130],
       ["Léon Auguste Asselineau", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 150],
-      ["Frédéric Quilliet", "Josefa Bayeu", 150]
+      ["Frédéric Quilliet", "Josefa Bayeu", 150],
+      ["Virginie Ancelot", "Marcel Briguiboul", 150],
+      ["Ernest Meissonier", "Arsène Houssaye", 130]
       // supercali overlap
     ];
 
