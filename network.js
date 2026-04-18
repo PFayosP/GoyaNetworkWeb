@@ -1340,6 +1340,19 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Impressionist cluster",
             titleEs: "Clúster Impresionista"
+          },
+
+          "SPANISH_ROMANTICS_CLUSTER": {
+            members: [
+              "José de Espronceda",
+              "Mariano José Larra",
+              "José Zorrilla"
+            ],
+            radius: 78,
+            padding: 84,
+            startAngle: -Math.PI / 2,
+            title: "Spanish Romantics",
+            titleEs: "Románticos españoles"
           }
         };
 
@@ -2214,14 +2227,19 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Paul Delaroche", "Jacques-Louis David", 130],
       ["Virginie Ancelot", "Adélaïde de Montgolfier", 150],
       ["Honoré Daumier", "George Sand", 130],
+      ["George Sand", "Stendhal", 130],
       ["Honoré Daumier", "Eugène Piot", 130],
+      ["Honoré Daumier", "Charles Baudelaire", 130],
       ["George Sand", "Léon Auguste Asselineau", 130],
       ["Gregorio Cruzada Villaamil", "Jean Laurent", 130],
       ["Rosa Bonheur", "Stendhal", 130],
       ["Léon Auguste Asselineau", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 150],
       ["Frédéric Quilliet", "Josefa Bayeu", 150],
       ["Virginie Ancelot", "Marcel Briguiboul", 150],
-      ["Ernest Meissonier", "Arsène Houssaye", 130]
+      ["Ernest Meissonier", "Arsène Houssaye", 130],
+      ["José Zorrilla", "Mariano José Larra", 100],
+      ["Célestin Nanteuil", "Léon Auguste Asselineau", 130],
+      ["Nadar", "Philippe Burty", 130]
       // supercali overlap
     ];
 
