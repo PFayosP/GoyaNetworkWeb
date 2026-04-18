@@ -2922,15 +2922,28 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
 
-    function enforceStrongEdgePairs(network, nodes, edges, passes = 10) {
+    function enforceStrongEdgePairs(network, nodes, edges, nodeClusterMap, passes = 6) {
       const strongPairs = edges.get()
-        .filter(edge => edge.strength === 1 && !edge._isClusterEdge)
-        .map(edge => [edge.from, edge.to, 95]); // distancia objetivo para nivel 1
+        .filter(edge =>
+          !edge._isClusterEdge &&
+          (edge.strength === 1 || edge.strength === 2)
+        )
+        .filter(edge => {
+          const fromClusters = nodeClusterMap[edge.from] || [];
+          const toClusters = nodeClusterMap[edge.to] || [];
+          const sharesCluster = fromClusters.some(c => toClusters.includes(c));
+          return !sharesCluster; // no tocar pares dentro del mismo cluster radial
+        })
+        .map(edge => {
+          const targetD = edge.strength === 1 ? 150 : 185;
+          const pullFactor = edge.strength === 1 ? 0.18 : 0.10;
+          return [edge.from, edge.to, targetD, pullFactor];
+        });
 
       for (let p = 0; p < passes; p++) {
         let movedAny = false;
 
-        strongPairs.forEach(([aId, bId, targetD]) => {
+        strongPairs.forEach(([aId, bId, targetD, pullFactor]) => {
           if (!nodes.get(aId) || !nodes.get(bId)) return;
 
           const pos = network.getPositions([aId, bId]);
@@ -2948,9 +2961,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             d = 1;
           }
 
-          // Solo acercar si están DEMASIADO lejos
+          // solo acercar si están claramente demasiado lejos
           if (d > targetD) {
-            const pull = (d - targetD) / 2;
+            const excess = d - targetD;
+            const pull = excess * pullFactor;
             const ux = dx / d;
             const uy = dy / d;
 
@@ -3139,7 +3153,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeMontpensierBridge(network);
         placeEstevesPair(network);
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 10);
-        // enforceStrongEdgePairs(network, nodes, edges, 12);
+        enforceStrongEdgePairs(network, nodes, edges, nodeClusterMap, 4);
 
         network.redraw();
 
