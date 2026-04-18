@@ -2917,6 +2917,49 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
 
+    function enforceStrongEdgePairs(network, nodes, edges, passes = 10) {
+      const strongPairs = edges.get()
+        .filter(edge => edge.strength === 1 && !edge._isClusterEdge)
+        .map(edge => [edge.from, edge.to, 95]); // distancia objetivo para nivel 1
+
+      for (let p = 0; p < passes; p++) {
+        let movedAny = false;
+
+        strongPairs.forEach(([aId, bId, targetD]) => {
+          if (!nodes.get(aId) || !nodes.get(bId)) return;
+
+          const pos = network.getPositions([aId, bId]);
+          const pA = pos[aId];
+          const pB = pos[bId];
+          if (!pA || !pB) return;
+
+          let dx = pB.x - pA.x;
+          let dy = pB.y - pA.y;
+          let d = Math.hypot(dx, dy);
+
+          if (d < 0.001) {
+            dx = 1;
+            dy = 0;
+            d = 1;
+          }
+
+          // Solo acercar si están DEMASIADO lejos
+          if (d > targetD) {
+            const pull = (d - targetD) / 2;
+            const ux = dx / d;
+            const uy = dy / d;
+
+            network.moveNode(aId, pA.x + ux * pull, pA.y + uy * pull);
+            network.moveNode(bId, pB.x - ux * pull, pB.y - uy * pull);
+
+            movedAny = true;
+          }
+        });
+
+        if (!movedAny) break;
+      }
+    }
+
     // ——— Loading progress (vis-network physics) ———
     const loadingEl = document.getElementById('loadingMessage');
     const loadingPct = document.getElementById('loadingProgress');
@@ -3091,7 +3134,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeMontpensierBridge(network);
         placeEstevesPair(network);
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 10);
-
+        enforceStrongEdgePairs(network, nodes, edges, 12);
+        
         network.redraw();
 
         // Esperar un poco más para asegurar que la red está completamente renderizada
