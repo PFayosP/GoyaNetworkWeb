@@ -2180,6 +2180,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["María Antonia Gonzaga, Marchioness of Villafranca (widow)", "Infanta Luisa Fernanda de Borbón", 120],
       ["María Luisa de Parma", "Carlos III", 120],
       ["María Luisa de Parma", "Louis Philippe I", 150],
+      ["María Luisa de Parma", "Fernando VII", 120],
       ["XV Countess of Chinchón", "María Teresa de Vallabriga", 120],
       ["María Cristina de Borbón-Dos Sicilias", "Manuel Godoy", 120],
       ["María Cristina de Borbón-Dos Sicilias", "Eugenia de Montijo", 120],
@@ -2242,6 +2243,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Gregorio Cruzada Villaamil", "Jean Laurent", 130],
       ["Rosa Bonheur", "Stendhal", 130],
       ["Léon Auguste Asselineau", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 150],
+      ["Rosa Bonheur", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 150],
       ["Frédéric Quilliet", "Josefa Bayeu", 150],
       ["Virginie Ancelot", "Marcel Briguiboul", 150],
       ["Ernest Meissonier", "Arsène Houssaye", 130],
@@ -2251,7 +2253,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Auguste Dutuit", "Eugène Dutuit", 100],
       ["Frédéric Quilliet", "1st Duke of Wellington", 130],
       ["Alphonse de Lamartine", "Marceline Desbordes-Valmore", 130],
-      ["Adolphe Goupil", "José de Salamanca y Mayol (I Marqués de Salamanca)", 130]
+      ["Adolphe Goupil", "José de Salamanca y Mayol (I Marqués de Salamanca)", 130],
+      ["Carlos Luis de Ribera", "Federico de Madrazo", 120],
+      ["Juliette Récamier", "Ferdinand Guillemardet", 130],
+      ["Marceline Desbordes-Valmore", "Tony Johannot", 130],
+      ["Mariano Fortuny y Marsal", "Antonio de Brugada", 130]
       // supercali overlap
     ];
 
@@ -2591,8 +2597,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         // =========================================================
         const mcRadius = 150;
         const mcCenter = {
-          x: federicoPos.x + 200,
-          y: federicoPos.y - 70
+          x: federicoPos.x + 255, // before: + 200
+          y: federicoPos.y + 125 // before: -70
         };
 
         const mcMembers = [
@@ -2749,6 +2755,42 @@ document.addEventListener('DOMContentLoaded', async function () {
           if (!agustinPos) return;
 
           network.moveNode(rafaelId, agustinPos.x - 54, agustinPos.y + 36);
+        }
+
+        function placeBourbonCluster(network) {
+          const chinchonId = "XV Countess of Chinchón";
+          if (!nodes.get(chinchonId)) return;
+
+          const chinchonPos = network.getPositions([chinchonId])[chinchonId];
+          if (!chinchonPos) return;
+
+          const radius = 172;
+
+          // mover todo el círculo un poco a la derecha
+          const cx = chinchonPos.x - radius + 90;
+          const cy = chinchonPos.y;
+
+          const ordered = [
+            "XV Countess of Chinchón",
+            "Carlos III",
+            "Carlos IV",
+            "María Luisa de Parma",
+            "Fernando VII",
+            "Infanta Luisa Fernanda de Borbón",
+            "Luis de Borbón",
+            "María Teresa de Vallabriga",
+            "Isabel II",
+            "María Cristina de Borbón-Dos Sicilias"
+          ].filter(id => nodes.get(id));
+
+          ordered.forEach((id, i) => {
+            const angle = i * (2 * Math.PI / ordered.length);
+            network.moveNode(
+              id,
+              cx + Math.cos(angle) * radius,
+              cy + Math.sin(angle) * radius
+            );
+          });
         }
 
     function getClusterNodeIds(cfg, nodes) {
@@ -3109,6 +3151,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeFedericoSatelliteClusters(network);
         placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
+        placeBourbonCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
 
@@ -3168,6 +3211,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeFedericoSatelliteClusters(network);
         placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
+        placeBourbonCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
 
@@ -3183,6 +3227,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeFedericoSatelliteClusters(network);
         placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
+        placeBourbonCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
 
@@ -3193,6 +3238,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeFedericoSatelliteClusters(network);
         placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
+        placeBourbonCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 10);
