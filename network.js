@@ -1576,7 +1576,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         edgeLength = 100 + (strength - 1) * 62.5; // 1→100, 5→350
       }
 
-      return {
+      const processedEdge = {
         ...edge,
         label,
         title,
@@ -1585,8 +1585,16 @@ document.addEventListener('DOMContentLoaded', async function () {
         physics: true,           // ensure physics is enabled
         length: edgeLength        // vis.js uses 'length' property for edge spring length
       };
+
+      // Debug: log edges with strength values
+      if (edge.strength) {
+        console.log(`Edge ${edge.from}-${edge.to}: strength=${edge.strength}, length=${edgeLength}px`);
+      }
+
+      return processedEdge;
     }));
     window.edges = edges;
+    console.log(`Loaded ${edges.length} edges. ${data.edges.filter(e => e.strength).length} have strength values.`);
 
     // ===================== MINI-FAMILIAS (anchors invisibles) =====================
     // NOTA: esto NO toca tus edges reales. Añade nodos/edges "fantasma" para compactar grupos.
@@ -2186,7 +2194,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Pedro de Madrazo", "Vicente Masarnau", 150],
       ["Paul Delaroche", "Jacques-Louis David", 130],
       ["Virginie Ancelot", "Adélaïde de Montgolfier", 150],
-      ["Honoré Daumier", "George Sand", 130]
+      ["Honoré Daumier", "George Sand", 130],
+      ["Gregorio Cruzada Villaamil", "Jean Laurent", 130]
     ];
 
     function getNodeHalo(node) {
@@ -3582,6 +3591,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const edgeFields = [
           { key: "connection_level", label: "Type of connection" },
+          { key: "strength", label: "Connection Strength" },
           { key: "relationship type", label: "Type of relationship" },
           { key: "know each other since", label: "Know each other since" },
           { key: "correspondence", label: "Correspondence" },
