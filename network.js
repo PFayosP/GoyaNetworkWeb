@@ -1370,19 +1370,30 @@ document.addEventListener('DOMContentLoaded', async function () {
         const getEdgeStyle = (edge) => {
           const level = edge.connection_level || 'direct';
           const edgeStatus = getClusterEdgeStatus(edge.from, edge.to);
+          
+          // Calculate width based on strength (1-5 scale)
+          // If no strength specified, use default based on level
+          let strengthWidth = 1;
+          if (edge.strength) {
+            // Map strength 1-5 to width 1.5-4.5 (more dramatic variation)
+            strengthWidth = 1.5 + (edge.strength - 1) * 0.75;
+          }
+          
           if (clusterEdgeColoringEnabled && edgeStatus === 'intra-cluster') {
             const fromClusters = getClusterIdForNode(edge.from);
             const toClusters = getClusterIdForNode(edge.to);
             const commonCluster = fromClusters.find(c => toClusters.includes(c));
             const clusterColor = clusterColorMap[commonCluster] || '#646464';
+            const baseWidth = level === 'secondary' ? 1.4 : 1.8;
             return {
               color: hexToRgba(clusterColor, level === 'secondary' ? 0.45 : 0.8),
-              width: level === 'secondary' ? 1.4 : 1.8
+              width: edge.strength ? strengthWidth : baseWidth
             };
           }
+          const baseWidth = level === 'secondary' ? 1.2 : 1.5;
           return {
             color: level === 'secondary' ? 'rgba(150,150,150,0.15)' : 'rgba(200,200,200,0.25)',
-            width: level === 'secondary' ? 1.2 : 1.5
+            width: edge.strength ? strengthWidth : baseWidth
           };
         };
 
@@ -1604,13 +1615,24 @@ document.addEventListener('DOMContentLoaded', async function () {
           : edge.title;
 
       const style = getEdgeStyle(edge);
+      
+      // Calculate springLength based on strength (1-5 scale)
+      // Strength 5 = 100 (very close), Strength 1 = 350 (far apart)
+      let springLength = 210; // default
+      if (edge.strength) {
+        const strength = Math.max(1, Math.min(5, edge.strength)); // clamp 1-5
+        springLength = 350 - (strength - 1) * 62.5; // 5→100, 1→350
+      }
 
       return {
         ...edge,
         label,
         title,
         color: { color: style.color },
-        width: style.width
+        width: style.width,
+        physics: true,           // ensure physics is enabled
+        springLength: springLength,
+        springConstant: edge.strength ? 0.02 : 0.012  // stronger edges have stiffer springs
       };
     }));
 
@@ -2123,6 +2145,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         hoverWidth: 3,     // facilita el clic al pasar el ratón
         smooth: { type: 'continuous' } // ← más rápido y visualmente igual en tu caso (antes: dynamic)
       },
+      // Process edge strength to adjust width
+      // (actual processing happens in edges.map() after loading JSON)
 
       physics: {
         enabled: true, 
