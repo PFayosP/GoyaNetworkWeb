@@ -1568,12 +1568,12 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       const style = getEdgeStyle(edge);
       
-      // Calculate springLength based on strength (1-5 scale)
+      // Calculate spring length based on strength (1-5 scale)
       // Strength 1 = 100 (very close), Strength 5 = 350 (far apart)
-      let springLength = 210; // default
+      let edgeLength = 210; // default
       if (edge.strength) {
         const strength = Math.max(1, Math.min(5, edge.strength)); // clamp 1-5
-        springLength = 100 + (strength - 1) * 62.5; // 1→100, 5→350
+        edgeLength = 100 + (strength - 1) * 62.5; // 1→100, 5→350
       }
 
       return {
@@ -1583,8 +1583,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         color: { color: style.color },
         width: style.width,
         physics: true,           // ensure physics is enabled
-        springLength: springLength,
-        springConstant: edge.strength ? 0.02 : 0.012  // stronger edges have stiffer springs
+        length: edgeLength        // vis.js uses 'length' property for edge spring length
       };
     }));
     window.edges = edges;
