@@ -2521,10 +2521,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         // COURT PAINTERS
         // Entre Goya y Federico, pero algo más pegado a Goya.
         // =========================================================
-        const courtRadius = 94;
+        const courtRadius = 90; // before: 94
         const courtCenter = {
-          x: goyaPos.x + (federicoPos.x - goyaPos.x) * 0.40,
-          y: goyaPos.y + (federicoPos.y - goyaPos.y) * 0.30
+          x: goyaPos.x + (federicoPos.x - goyaPos.x) * 0.52, // before: 0.40
+          y: goyaPos.y + (federicoPos.y - goyaPos.y) * 0.38 // before: 0.30
         };
 
         const courtAngles = {
@@ -2922,21 +2922,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
 
-    function enforceStrongEdgePairs(network, nodes, edges, nodeClusterMap, passes = 6) {
+    function enforceStrongEdgePairs(network, nodes, edges, nodeClusterMap, passes = 4) {
       const strongPairs = edges.get()
         .filter(edge =>
           !edge._isClusterEdge &&
           (edge.strength === 1 || edge.strength === 2)
         )
-        .filter(edge => {
-          const fromClusters = nodeClusterMap[edge.from] || [];
-          const toClusters = nodeClusterMap[edge.to] || [];
-          const sharesCluster = fromClusters.some(c => toClusters.includes(c));
-          return !sharesCluster; // no tocar pares dentro del mismo cluster radial
-        })
         .map(edge => {
           const targetD = edge.strength === 1 ? 150 : 185;
-          const pullFactor = edge.strength === 1 ? 0.18 : 0.10;
+          const pullFactor = edge.strength === 1 ? 0.16 : 0.09;
           return [edge.from, edge.to, targetD, pullFactor];
         });
 
@@ -2945,6 +2939,22 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         strongPairs.forEach(([aId, bId, targetD, pullFactor]) => {
           if (!nodes.get(aId) || !nodes.get(bId)) return;
+
+          const aClusters = nodeClusterMap[aId] || [];
+          const bClusters = nodeClusterMap[bId] || [];
+
+          const aInCluster = aClusters.length > 0;
+          const bInCluster = bClusters.length > 0;
+
+          // 1) mismo cluster: no tocar
+          const sharesCluster = aClusters.some(c => bClusters.includes(c));
+          if (sharesCluster) return;
+
+          // 2) dos clusters distintos: no tocar aquí
+          if (aInCluster && bInCluster) return;
+
+          // 3) solo actuar si exactamente uno está en cluster y el otro no
+          if (!(aInCluster ^ bInCluster)) return;
 
           const pos = network.getPositions([aId, bId]);
           const pA = pos[aId];
@@ -2961,16 +2971,19 @@ document.addEventListener('DOMContentLoaded', async function () {
             d = 1;
           }
 
-          // solo acercar si están claramente demasiado lejos
-          if (d > targetD) {
-            const excess = d - targetD;
-            const pull = excess * pullFactor;
-            const ux = dx / d;
-            const uy = dy / d;
+          if (d <= targetD) return;
 
-            network.moveNode(aId, pA.x + ux * pull, pA.y + uy * pull);
+          const excess = d - targetD;
+          const pull = excess * pullFactor;
+          const ux = dx / d;
+          const uy = dy / d;
+
+          // mover SOLO el nodo que está fuera del cluster
+          if (aInCluster && !bInCluster) {
             network.moveNode(bId, pB.x - ux * pull, pB.y - uy * pull);
-
+            movedAny = true;
+          } else if (!aInCluster && bInCluster) {
+            network.moveNode(aId, pA.x + ux * pull, pA.y + uy * pull);
             movedAny = true;
           }
         });
