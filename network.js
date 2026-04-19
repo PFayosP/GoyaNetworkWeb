@@ -1230,7 +1230,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Vicente López",
               "Anton Raphael Mengs",
               "Agustín Esteve",
-              "Federico de Madrazo"
+              "Federico de Madrazo",
+              "José de Madrazo"
             ],
             radius: 160, // increased from 132 for wider circle
             padding: 92,
@@ -1257,11 +1258,12 @@ document.addEventListener('DOMContentLoaded', async function () {
           "MADRAZO_CARDERERA_GROUP": {
             members: [
               "Federico de Madrazo",
+              "Pedro de Madrazo",
               "Valentín Carderera",
               "Eugenio Ochoa",
               "Santiago Masarnau",
               "Vicente Masarnau",
-              "Carlos Luis de Ribera"
+              "Carlos Luis de Ribiera"
             ],
             radius: 150,
             padding: 84,
@@ -1622,8 +1624,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           edgeLength = 280; // force inter-cluster edges to stay apart
         } else {
           // Intra-cluster edges: apply strength normally to pull related nodes together
-          // Make strength-1 edges very tight (35px) for very close relationships
-          edgeLength = 35 + (strength - 1) * 70; // strength 1-5 = 35-315px range
+          // Make strength-1 edges extremely tight (20px) for very close relationships
+          edgeLength = 20 + (strength - 1) * 70; // strength 1-5 = 20-300px range
         }
       }
 
@@ -2175,6 +2177,12 @@ document.addEventListener('DOMContentLoaded', async function () {
     };
 
     const PRIORITY_SEPARATION_PAIRS = [
+      // Very close relationships - extremely tight spacing
+      ["Rosario Weiss Zorrilla", "Leocadia Weiss", 30],       // mother-daughter, very close
+      ["Auguste Dutuit", "Eugène Dutuit", 30],                // brothers, very close
+      ["Martín Zapater", "Francisco de Goya", 40],            // best friend and possible lover
+      
+      // Rest of relationships with normal spacing
       ["Adrien Dauzats", "Valentín Carderera", 120],
       ["Federico de Madrazo", "Valentín Carderera", 150],
       ["Adrien Dauzats", "Federico de Madrazo", 120],
