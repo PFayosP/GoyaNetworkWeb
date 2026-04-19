@@ -617,7 +617,7 @@ window.search = function(nodeId) {
 
   window.VIS_NETWORK.moveTo({
     position: pos,
-    scale: window.VIS_NETWORK.getScale(),
+    scale: 1.8,
     animation: { duration: 500 }
   });
 
@@ -1529,6 +1529,30 @@ document.addEventListener('DOMContentLoaded', async function () {
             };
           }));
           updateClusterInfoBadge();
+          
+          // Focus and zoom on cluster
+          const memberArray = Array.from(members);
+          if (memberArray.length > 0 && window.VIS_NETWORK) {
+            try {
+              const memberIds = memberArray.slice(0, Math.min(10, memberArray.length));
+              const pos = window.VIS_NETWORK.getPositions(memberIds);
+              let cx = 0, cy = 0;
+              memberIds.forEach(id => {
+                cx += pos[id].x;
+                cy += pos[id].y;
+              });
+              cx /= memberIds.length;
+              cy /= memberIds.length;
+              
+              window.VIS_NETWORK.moveTo({
+                position: { x: cx, y: cy },
+                scale: 1.5,
+                animation: { duration: 700 }
+              });
+            } catch (e) {
+              console.warn('Error focusing on cluster:', e);
+            }
+          }
         };
 
         const clusterSelect = document.getElementById('clusterSelect');
@@ -2178,7 +2202,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     const PRIORITY_SEPARATION_PAIRS = [
       // Very close relationships - extremely tight spacing
-      ["Rosario Weiss Zorrilla", "Leocadia Weiss", 30],       // mother-daughter, very close
+      ["Rosario Weiss Zorrilla", "Leocadia Zorrilla y Galarza", 30],       // mother-daughter, very close
       ["Auguste Dutuit", "Eugène Dutuit", 30],                // brothers, very close
       ["Martín Zapater", "Francisco de Goya", 40],            // best friend and possible lover
       
@@ -2286,10 +2310,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Luis de Madrazo", "Vicente MAsarnau", 130],
       ["Pierre Lacour", "Pierre Lacour fils", 100],
       ["Asensio Julià", "Gumersinda Goicoechea", 130],
-      ["Carlos III", "Manuel Godoy", 130], 
+      ["Carlos III", "Manuel Godoy", 170], 
       ["Pedro de Madrazo", "William Stirling-Maxwell", 130],
       ["Philippe Burty", "Pierre Lacour", 130],
-      ["Philippe Burty", "Pierre Lacour fils", 130]
+      ["Philippe Burty", "Pierre Lacour fils", 130],
+      ["Frédéric Villot", "Philippe Burty", 130],
+      ["Arsène Houssaye", "Nadar", 130],
+      ["Marie Nodier", "Marceline Desbordes-Valmore", 130],
+      ["Leandro Fernández de Mortaín", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 130],
+      ["Marquis of La Romana", "II Duke of San Carlos", 130]
       // supercali overlap
     ];
 
@@ -2693,8 +2722,52 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
 
       function placeMadrazoFamilyCluster(network) {
-        // Madrazo family arrangement is now handled by arrangeInCircle via RADIAL_CLUSTERS
-        // No special placement needed - Federico and José are now members with specific boundary angles
+        // Position Madrazo family more centrally (instead of bottom)
+        const federicoId = "Federico de Madrazo";
+        if (!nodes.get(federicoId)) return;
+        
+        const federicoPos = network.getPositions([federicoId])[federicoId];
+        if (!federicoPos) return;
+        
+        // Move Madrazo family cluster center upward and slightly to the right
+        // Current estimate for better centrality based on network physics
+        const mcMembers = [
+          "Federico de Madrazo",
+          "José de Madrazo",
+          "Pedro de Madrazo",
+          "Luis de Madrazo",
+          "Raimundo de Madrazo",
+          "Cecilia de Madrazo",
+          "Román Garreta",
+          "Mariano Fortuny y Madrazo",
+          "Mariano Fortuny y Marsal",
+          "Luisa Garreta",
+          "Juan de Madrazo"
+        ].filter(id => nodes.get(id));
+        
+        if (mcMembers.length === 0) return;
+        
+        // Calculate current center
+        const positions = network.getPositions(mcMembers);
+        let cx = 0, cy = 0;
+        mcMembers.forEach(id => {
+          cx += positions[id].x;
+          cy += positions[id].y;
+        });
+        cx /= mcMembers.length;
+        cy /= mcMembers.length;
+        
+        // Target: move toward center of canvas and slightly upward
+        const targetCx = -80;
+        const targetCy = -120;
+        const dx = targetCx - cx;
+        const dy = targetCy - cy;
+        
+        // Move all members by the offset
+        mcMembers.forEach(id => {
+          const pos = positions[id];
+          network.moveNode(id, pos.x + dx * 0.3, pos.y + dy * 0.3);
+        });
       }
     
         function placeGoyaFamilyCluster(network) {
