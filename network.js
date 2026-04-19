@@ -1163,7 +1163,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 92,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "Francisco de Goya": Math.PI / 2
+              "Francisco de Goya": Math.PI / 2,
+              "Martín Zapater": Math.PI * 1.5  // bottom of circle, pointing toward Goya (best friend)
             },
             title: "Ilustrados cluster",
             titleEs: "Clúster Ilustrados"
@@ -1621,8 +1622,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           edgeLength = 280; // force inter-cluster edges to stay apart
         } else {
           // Intra-cluster edges: apply strength normally to pull related nodes together
-          // Make strength-1 edges much tighter (50px instead of 70px) for closeness
-          edgeLength = 50 + (strength - 1) * 70; // strength 1-5 = 50-330px range
+          // Make strength-1 edges very tight (35px) for very close relationships
+          edgeLength = 35 + (strength - 1) * 70; // strength 1-5 = 35-315px range
         }
       }
 
@@ -2260,6 +2261,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["José Zorrilla", "Mariano José Larra", 100],
       ["Célestin Nanteuil", "Léon Auguste Asselineau", 130],
       ["Nadar", "Philippe Burty", 130],
+      ["Nadar", "Honoré Daumier", 130],
       ["Auguste Dutuit", "Eugène Dutuit", 100],
       ["Frédéric Quilliet", "1st Duke of Wellington", 130],
       ["Alphonse de Lamartine", "Marceline Desbordes-Valmore", 130],
@@ -2276,7 +2278,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Luis de Madrazo", "Vicente MAsarnau", 130],
       ["Pierre Lacour", "Pierre Lacour fils", 100],
       ["Asensio Julià", "Gumersinda Goicoechea", 130],
-      ["Carlos III", "Manuel Godoy", 130]
+      ["Carlos III", "Manuel Godoy", 130], 
+      ["Pedro de Madrazo", "William Stirling-Maxwell", 130],
+      ["Philippe Burty", "Pierre Lacour", 130],
+      ["Philippe Burty", "Pierre Lacour fils", 130]
       // supercali overlap
     ];
 
