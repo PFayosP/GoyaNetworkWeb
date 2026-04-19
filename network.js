@@ -1229,8 +1229,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Vicente López",
               "Anton Raphael Mengs",
               "Agustín Esteve",
-              "Federico de Madrazo",
-              "José de Madrazo"
+              "Federico de Madrazo"
             ],
             radius: 160, // increased from 132 for wider circle
             padding: 92,
@@ -2613,18 +2612,15 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // =========================================================
         // MADRAZO-CARDERERA GROUP
-        // Arriba-derecha de Federico, pero con Federico en el borde del círculo
-        // para mantenerlo cerca de sus otros clusters (Madrazo family, Court Painters).
+        // Arriba-derecha de Federico, no encima del círculo familiar.
         // =========================================================
         const mcRadius = 160;
         const mcCenter = {
-          x: federicoPos.x + 280, // positioned relative to Federico
-          y: federicoPos.y - 140
+          x: federicoPos.x + 300,
+          y: federicoPos.y - 150
         };
 
-        // All members including Federico, arranged in a circle
         const mcMembers = [
-          "Federico de Madrazo",    // will be placed on the border, not at center
           "Valentín Carderera",
           "Eugenio Ochoa",
           "Santiago Masarnau",
@@ -2632,7 +2628,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Carlos Luis de Ribera"
         ];
 
-        // Place all members in a circle (Federico on the border, not at center)
         const mcStep = (2 * Math.PI) / mcMembers.length;
         mcMembers.forEach((id, i) => {
           if (!nodes.get(id)) return;
