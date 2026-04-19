@@ -1103,9 +1103,9 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const RADIAL_CLUSTERS = {
           "MADRAZO_FAMILY": {
-            center: "José de Madrazo",
             members: [
               "Federico de Madrazo",
+              "José de Madrazo",
               "Pedro de Madrazo",
               "Luis de Madrazo",
               "Raimundo de Madrazo",
@@ -1118,6 +1118,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 260,
             startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Federico de Madrazo": Math.PI * 0.22,   // upper-right pointing to Court Painters and Madrazo-Carderera
+              "José de Madrazo": Math.PI * 0.58        // upper-right pointing to Court Painters
+            },
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
           },
@@ -1229,7 +1233,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Vicente López",
               "Anton Raphael Mengs",
               "Agustín Esteve",
-              "Federico de Madrazo"
+              "Federico de Madrazo",
+              "José de Madrazo"
             ],
             radius: 160, // increased from 132 for wider circle
             padding: 92,
@@ -2680,45 +2685,40 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
 
       function placeMadrazoFamilyCluster(network) {
-        const federicoId = "Federico de Madrazo";
-        if (!nodes.get(federicoId)) return;
+        const goyaId = "Francisco de Goya";
+        if (!nodes.get(goyaId)) return;
 
-        const federicoPos = network.getPositions([federicoId])[federicoId];
-        if (!federicoPos) return;
+        const goyaPos = network.getPositions([goyaId])[goyaId];
+        if (!goyaPos) return;
 
-        // Círculo claramente por debajo de Federico
-        const radius = 200;
-        const cx = federicoPos.x + 20;
-        const cy = federicoPos.y + 40; // before: 120
+        // Madrazo family circle positioned below and slightly right of Goya
+        const radius = 260;
+        const cx = goyaPos.x + 80;
+        const cy = goyaPos.y + 180;
 
-        const memberIds = [
-          "Federico de Madrazo",
-          "Pedro de Madrazo",
-          "Luis de Madrazo",
-          "Raimundo de Madrazo",
-          "Cecilia de Madrazo",
-          "Román Garreta",
-          "Mariano Fortuny y Madrazo",
-          "Mariano Fortuny y Marsal",
-          "Luisa Garreta",
-          "Juan de Madrazo"
-        ];
+        // Define all members including Federico and José with specific angles
+        const memberAngles = {
+          "Federico de Madrazo":       Math.PI * 0.22,   // upper-right border (pointing to other clusters)
+          "José de Madrazo":           Math.PI * 0.58,   // upper border (pointing to Court Painters)
+          "Pedro de Madrazo":          Math.PI * 1.10,
+          "Luis de Madrazo":           Math.PI * 1.40,
+          "Raimundo de Madrazo":       Math.PI * 1.70,
+          "Cecilia de Madrazo":        Math.PI * 0.90,
+          "Román Garreta":             Math.PI * 1.50,
+          "Mariano Fortuny y Madrazo": Math.PI * 1.20,
+          "Mariano Fortuny y Marsal":  Math.PI * 0.80,
+          "Luisa Garreta":             Math.PI * 1.60,
+          "Juan de Madrazo":           Math.PI * 1.30
+        };
 
-        const validMembers = memberIds.filter(id => nodes.get(id));
-        const step = (2 * Math.PI) / validMembers.length;
-
-        validMembers.forEach((id, i) => {
-          const angle = -Math.PI / 2 + i * step;
+        Object.entries(memberAngles).forEach(([id, angle]) => {
+          if (!nodes.get(id)) return;
           network.moveNode(
             id,
             cx + Math.cos(angle) * radius,
             cy + Math.sin(angle) * radius
           );
         });
-
-        if (nodes.get("José de Madrazo")) {
-          network.moveNode("José de Madrazo", cx, cy);
-        }
       }
     
         function placeGoyaFamilyCluster(network) {
