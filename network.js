@@ -3175,11 +3175,27 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
 
           if (clusterId === "GOYA_FAMILY" ||
-              clusterId === "MADRAZO_FAMILY" ||
               clusterId === "COURT_PAINTERS" ||
+              clusterId === "PRINT_SPECIALISTS") {
+            return;
+          }
+          
+          // All other skipped clusters: ensure they're arranged as circles
+          if (clusterId === "MADRAZO_FAMILY" ||
               clusterId === "MADRAZO_CARDERERA_GROUP" ||
-              clusterId === "PRINT_SPECIALISTS" ||
-              clusterId === "VILLAFRANCA_CLUSTER") {
+              clusterId === "VILLAFRANCA_CLUSTER" ||
+              clusterId === "MONTIJO_CORE" ||
+              clusterId === "OSUNA_CORE" ||
+              clusterId === "HUGO_CENACLE" ||
+              clusterId === "BOURBON_CORE") {
+            arrangeInCircle(
+              network,
+              nodes,
+              cfg.members,
+              cfg.radius || 150,
+              cfg.startAngle ?? (-Math.PI / 2),
+              cfg.sharedBoundaryNodes || {}
+            );
             return;
           }
 
@@ -3288,11 +3304,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 8, 140, 12);
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 140, 12);
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120);
 
-        // 7) separación quirúrgica solo para pares concretos (MOST AGGRESSIVE: 20 passes)
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 20);
+        // 7) separación quirúrgica solo para pares concretos (MOST AGGRESSIVE: 30 passes)
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 30);
 
         // 8) reimponer placements manuales después de expulsiones
         placeVillafrancaAlbaClusters(network);
@@ -3304,7 +3320,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
 
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 140);
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 8);
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 15);
 
         placeVillafrancaAlbaClusters(network);
         placeFedericoSatelliteClusters(network);
