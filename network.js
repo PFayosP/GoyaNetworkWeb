@@ -1286,8 +1286,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Isabel II",
               "María Cristina de Borbón-Dos Sicilias"
             ],
-            radius: 172,
-            padding: 120,
+            radius: 125,
+            padding: 100,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "XV Countess of Chinchón": 0
@@ -3318,7 +3318,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 140, 12);
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 120, 12);
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120);
 
         // 7) separación quirúrgica solo para pares concretos (AGGRESSIVE: 30 passes)
