@@ -2326,8 +2326,21 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Frédéric Villot", "Philippe Burty", 130],
       ["Arsène Houssaye", "Nadar", 130],
       ["Marie Nodier", "Marceline Desbordes-Valmore", 130],
+      ["Marie Nodier", "Tony Johannot", 130],
       ["Leandro Fernández de Mortaín", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 130],
-      ["Marquis of La Romana", "II Duke of San Carlos", 130]
+      ["Marquis of La Romana", "II Duke of San Carlos", 130],
+      ["Adolphe Goupil", "Pedro de Madrazo", 130],
+      ["Pedro de Madrazo", "José de Madrazo", 100],
+      ["Antoine-Jean Gros", "Eugenio Ochoa", 130],
+      ["Carlos Luis de Ribera", "Adrien Dauzats", 130],
+      ["Pierre Lacour fils", "Valentín Carderera", 130],
+      ["Pascual de Gayangos y Arce", "Pharamond Blanchard", 130],
+      ["Achille Ricourt", "Célestin Nanteuil", 130],
+      ["Delphine de Girardin", "Alphonse de Lamartine", 130],
+      ["Jenaro Pérez Villaamil", "Francisco Martínez de la Rosa", 130],
+      ["Rafael Esteve", "Francisco Bayeu", 130],
+      ["Francisco Bayeu", "Mariano Salvador Maella", 130],
+      ["Manuel Godoy", "Eugenia de Montijo", 130]
       // supercali overlap
     ];
 
