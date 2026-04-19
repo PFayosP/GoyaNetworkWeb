@@ -3212,10 +3212,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 16, 140, 12);
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 140, 12);
 
         // 4) expulsar nodos externos fuera del halo de cada clúster
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 100);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 110);
 
         // 5) volver a imponer círculos/órbitas después de las expulsiones
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
@@ -3236,18 +3236,23 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           if (clusterId === "GOYA_FAMILY" ||
               clusterId === "COURT_PAINTERS" ||
-              clusterId === "MADRAZO_CARDERERA_GROUP" ||
-              clusterId === "PRINT_SPECIALISTS" ||
-              clusterId === "VILLAFRANCA_CLUSTER") {
+              clusterId === "PRINT_SPECIALISTS") {
             return;
           }
 
-          if (clusterId === "MADRAZO_FAMILY") {
+          // All other clusters: arrange in circle
+          if (clusterId === "MADRAZO_FAMILY" ||
+              clusterId === "MADRAZO_CARDERERA_GROUP" ||
+              clusterId === "MONTIJO_CORE" ||
+              clusterId === "OSUNA_CORE" ||
+              clusterId === "HUGO_CENACLE" ||
+              clusterId === "BOURBON_CORE" ||
+              clusterId === "VILLAFRANCA_CLUSTER") {
             arrangeInCircle(
               network,
               nodes,
               cfg.members,
-              cfg.radius || 260,
+              cfg.radius || 150,
               cfg.startAngle ?? (-Math.PI / 2),
               cfg.sharedBoundaryNodes || {}
             );
