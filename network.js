@@ -1117,7 +1117,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Luisa Garreta",
               "Juan de Madrazo"
             ],
-            radius: 260,
+            radius: 160,
             startAngle: -Math.PI / 2,
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
@@ -1138,7 +1138,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Charles Nodier",
               "Charles-Augustin Sainte-Beuve"
             ],
-            radius: 190, // before: 160
+            radius: 140, // before: 160
             startAngle: -Math.PI / 2,
             title: "Hugo cenacle",
             titleEs: "Clúster Hugo"
@@ -1215,7 +1215,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "María Gabriela de Palafox, Marchioness of Lazán",
               "María Tomasa Palafox, Marchioness of Villafranca"
             ],
-            radius: 148,
+            radius: 120,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo"
@@ -1266,7 +1266,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Vicente Masarnau",
               "Carlos Luis de Ribiera"
             ],
-            radius: 150,
+            radius: 120,
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Madrazo-Carderera group",
