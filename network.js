@@ -615,9 +615,10 @@ window.search = function(nodeId) {
 
   window.VIS_NETWORK.unselectAll();
 
+  // Use moveTo with moderate zoom (show neighboring context)
   window.VIS_NETWORK.moveTo({
     position: pos,
-    scale: 1.8,
+    scale: window.VIS_NETWORK.getScale() * 1.2,
     animation: { duration: 500 }
   });
 
@@ -1530,23 +1531,25 @@ document.addEventListener('DOMContentLoaded', async function () {
           }));
           updateClusterInfoBadge();
           
-          // Focus and zoom on cluster
+          // Focus and zoom on cluster with proper bounds fitting
           const memberArray = Array.from(members);
           if (memberArray.length > 0 && window.VIS_NETWORK) {
             try {
-              const memberIds = memberArray.slice(0, Math.min(10, memberArray.length));
-              const pos = window.VIS_NETWORK.getPositions(memberIds);
-              let cx = 0, cy = 0;
-              memberIds.forEach(id => {
-                cx += pos[id].x;
-                cy += pos[id].y;
+              const pos = window.VIS_NETWORK.getPositions(memberArray);
+              let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+              memberArray.forEach(id => {
+                minX = Math.min(minX, pos[id].x);
+                maxX = Math.max(maxX, pos[id].x);
+                minY = Math.min(minY, pos[id].y);
+                maxY = Math.max(maxY, pos[id].y);
               });
-              cx /= memberIds.length;
-              cy /= memberIds.length;
               
-              window.VIS_NETWORK.moveTo({
-                position: { x: cx, y: cy },
-                scale: 1.5,
+              const width = maxX - minX;
+              const height = maxY - minY;
+              const padding = Math.max(width, height) * 0.3;
+              
+              window.VIS_NETWORK.fit({
+                nodes: memberArray,
                 animation: { duration: 700 }
               });
             } catch (e) {
@@ -2294,7 +2297,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Célestin Nanteuil", "Léon Auguste Asselineau", 130],
       ["Nadar", "Philippe Burty", 130],
       ["Nadar", "Honoré Daumier", 130],
-      ["Auguste Dutuit", "Eugène Dutuit", 100],
       ["Frédéric Quilliet", "1st Duke of Wellington", 130],
       ["Alphonse de Lamartine", "Marceline Desbordes-Valmore", 130],
       ["Adolphe Goupil", "José de Salamanca y Mayol (I Marqués de Salamanca)", 130],
@@ -2722,52 +2724,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
 
       function placeMadrazoFamilyCluster(network) {
-        // Position Madrazo family more centrally (instead of bottom)
-        const federicoId = "Federico de Madrazo";
-        if (!nodes.get(federicoId)) return;
-        
-        const federicoPos = network.getPositions([federicoId])[federicoId];
-        if (!federicoPos) return;
-        
-        // Move Madrazo family cluster center upward and slightly to the right
-        // Current estimate for better centrality based on network physics
-        const mcMembers = [
-          "Federico de Madrazo",
-          "José de Madrazo",
-          "Pedro de Madrazo",
-          "Luis de Madrazo",
-          "Raimundo de Madrazo",
-          "Cecilia de Madrazo",
-          "Román Garreta",
-          "Mariano Fortuny y Madrazo",
-          "Mariano Fortuny y Marsal",
-          "Luisa Garreta",
-          "Juan de Madrazo"
-        ].filter(id => nodes.get(id));
-        
-        if (mcMembers.length === 0) return;
-        
-        // Calculate current center
-        const positions = network.getPositions(mcMembers);
-        let cx = 0, cy = 0;
-        mcMembers.forEach(id => {
-          cx += positions[id].x;
-          cy += positions[id].y;
-        });
-        cx /= mcMembers.length;
-        cy /= mcMembers.length;
-        
-        // Target: move toward center of canvas and slightly upward
-        const targetCx = -80;
-        const targetCy = -120;
-        const dx = targetCx - cx;
-        const dy = targetCy - cy;
-        
-        // Move all members by the offset
-        mcMembers.forEach(id => {
-          const pos = positions[id];
-          network.moveNode(id, pos.x + dx * 0.3, pos.y + dy * 0.3);
-        });
+        // Madrazo family arrangement is handled by RADIAL_CLUSTERS arrangeInCircle
+        // No aggressive repositioning needed - let physics and circle arrangement handle it
       }
     
         function placeGoyaFamilyCluster(network) {
@@ -3045,7 +3003,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             d = 1;
           }
 
+          // BOTH push apart if too close AND pull together if too far
           if (d < minD) {
+            // Too close: push apart
             const overlap = minD - d;
             const ux = dx / d;
             const uy = dy / d;
@@ -3053,6 +3013,17 @@ document.addEventListener('DOMContentLoaded', async function () {
 
             network.moveNode(aId, pA.x - ux * shift, pA.y - uy * shift);
             network.moveNode(bId, pB.x + ux * shift, pB.y + uy * shift);
+
+            movedAny = true;
+          } else if (d > minD * 3) {
+            // Too far apart (more than 3x the target): gently pull together
+            const excess = d - minD;
+            const ux = dx / d;
+            const uy = dy / d;
+            const pullForce = Math.min(excess * 0.08, minD * 0.5); // smooth pull
+
+            network.moveNode(aId, pA.x + ux * pullForce, pA.y + uy * pullForce);
+            network.moveNode(bId, pB.x - ux * pullForce, pB.y - uy * pullForce);
 
             movedAny = true;
           }
