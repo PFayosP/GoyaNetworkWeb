@@ -2237,7 +2237,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["XV Countess of Chinchón", "María Teresa de Vallabriga", 120],
       ["María Cristina de Borbón-Dos Sicilias", "Manuel Godoy", 120],
       ["María Cristina de Borbón-Dos Sicilias", "Eugenia de Montijo", 120],
-      ["Eugenia de Montijo", "Manuel Godoy", 120],
       ["Manuel Godoy", "Isabel II", 120],
       ["Carlos III", "Josefa Tudó", 120],
       ["Josefa Tudó", "1st Duke of Wellington", 145],
@@ -2340,7 +2339,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Jenaro Pérez Villaamil", "Francisco Martínez de la Rosa", 130],
       ["Rafael Esteve", "Francisco Bayeu", 130],
       ["Francisco Bayeu", "Mariano Salvador Maella", 130],
-      ["Manuel Godoy", "Eugenia de Montijo", 130]
+      ["Manuel Godoy", "Eugenia de Montijo", 130],
+      ["Eugenio Ochoa", "Jean-Auguste-Dominique Ingres", 130],
+      ["Charles Yriarte", "Frédéric Villot", 130], 
+      ["Théophile Thoré", "Nadar", 130],
+      ["Nadar", "Baron Taylor", 130],
+      ["Louis Viardot", "Théophile Gautier", 130]
       // supercali overlap
     ];
 
