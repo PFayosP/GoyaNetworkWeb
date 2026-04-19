@@ -2272,6 +2272,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Louis Philippe I", "Infanta Luisa Fernanda de Borbón", 120],
       ["Valentín Carderera", "Francisco de Goya", 145],
       ["Carlos Luis de Ribera", "Mariano Salvador Maella", 130],
+      ["Agustín Esteve", "Mariano Salvador Maella", 130],
+      ["Francisco Bayeu", "Vicente López", 130],
       ["Paul Mantz", "Théophile Gautier", 120],
       ["Philippe Burty", "Baron Taylor", 120],
       ["Valentín Carderera", "Agustín Esteve", 120],
@@ -2306,6 +2308,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Rosa Bonheur", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 150],
       ["Frédéric Quilliet", "Josefa Bayeu", 150],
       ["Virginie Ancelot", "Marcel Briguiboul", 150],
+      ["Virginie Ancelot", "Alphonse de Lamartine", 130],
       ["Ernest Meissonier", "Arsène Houssaye", 130],
       ["José Zorrilla", "Mariano José Larra", 100],
       ["Célestin Nanteuil", "Léon Auguste Asselineau", 130],
@@ -2352,7 +2355,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Charles Yriarte", "Frédéric Villot", 130], 
       ["Théophile Thoré", "Nadar", 130],
       ["Nadar", "Baron Taylor", 130],
-      ["Louis Viardot", "Théophile Gautier", 130]
+      ["Louis Viardot", "Théophile Gautier", 130],
+      ["Giambattista Tiepolo", "Giandomenico Tiepolo", 130],
+      ["J. J. Grandville", "Eugène Delacroix", 130]
       // supercali overlap
     ];
 
@@ -3199,8 +3204,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
-          if (clusterId === "GOYA_FAMILY" ||
-              clusterId === "COURT_PAINTERS" ||
+          if (clusterId === "COURT_PAINTERS" ||
               clusterId === "PRINT_SPECIALISTS") {
             return;
           }
@@ -3212,7 +3216,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               clusterId === "MONTIJO_CORE" ||
               clusterId === "OSUNA_CORE" ||
               clusterId === "HUGO_CENACLE" ||
-              clusterId === "BOURBON_CORE") {
+              clusterId === "BOURBON_CORE" ||
+              clusterId === "GOYA_FAMILY") {
             arrangeInCircle(
               network,
               nodes,
@@ -3246,70 +3251,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
         // REMOVED: placeVillafrancaAlbaClusters, placeMadrazoFamilyCluster, placeBourbonCluster
         // These were overwriting arrangeInCircle() work. Keep only specialized placements.
-        // SIMPLIFIED ORCHESTRATION: Focus on clean circles + Rosario-Leocadia proximity
-        
-        // 1) Arrange all clusters in circles first
-        Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
-          if (!cfg.members || !cfg.members.length) return;
-
-          if (clusterId === "ILUSTRADOS_CLUSTER") {
-            arrangeAroundSharedNode(
-              network,
-              nodes,
-              cfg.members,
-              "Francisco de Goya",
-              cfg.radius || 150,
-              Math.PI / 2,
-              -Math.PI / 2
-            );
-            return;
-          }
-
-          if (clusterId === "GOYA_FAMILY" ||
-              clusterId === "COURT_PAINTERS" ||
-              clusterId === "PRINT_SPECIALISTS") {
-            return;
-          }
-
-          // All other clusters: arrange in circle
-          if (clusterId === "MADRAZO_FAMILY" ||
-              clusterId === "MADRAZO_CARDERERA_GROUP" ||
-              clusterId === "MONTIJO_CORE" ||
-              clusterId === "OSUNA_CORE" ||
-              clusterId === "HUGO_CENACLE" ||
-              clusterId === "BOURBON_CORE" ||
-              clusterId === "VILLAFRANCA_CLUSTER") {
-            arrangeInCircle(
-              network,
-              nodes,
-              cfg.members,
-              cfg.radius || 150,
-              cfg.startAngle ?? (-Math.PI / 2),
-              cfg.sharedBoundaryNodes || {}
-            );
-            return;
-          }
-
-          if (cfg.center && nodes.get(cfg.center)) {
-            placeFamilyAroundCenter(
-              network,
-              nodes,
-              cfg.center,
-              cfg.members,
-              cfg.radius || 150,
-              cfg.startAngle ?? (-Math.PI / 2)
-            );
-          } else {
-            arrangeInCircle(
-              network,
-              nodes,
-              cfg.members,
-              cfg.radius || 150,
-              cfg.startAngle ?? (-Math.PI / 2),
-              cfg.sharedBoundaryNodes || {}
-            );
-          }
-        });
 
         // 2) Only specialized placement functions (non-destructive)
         placeFedericoSatelliteClusters(network);
@@ -3333,20 +3274,20 @@ document.addEventListener('DOMContentLoaded', async function () {
           
           // Skip special arrangements
           if (clusterId === "ILUSTRADOS_CLUSTER" ||
-              clusterId === "GOYA_FAMILY" ||
               clusterId === "COURT_PAINTERS" ||
               clusterId === "PRINT_SPECIALISTS") {
             return;
           }
           
-          // Final circle restoration
+          // Final circle restoration (all circular clusters including GOYA_FAMILY)
           if (clusterId === "MADRAZO_FAMILY" ||
               clusterId === "MADRAZO_CARDERERA_GROUP" ||
               clusterId === "MONTIJO_CORE" ||
               clusterId === "OSUNA_CORE" ||
               clusterId === "HUGO_CENACLE" ||
               clusterId === "BOURBON_CORE" ||
-              clusterId === "VILLAFRANCA_CLUSTER") {
+              clusterId === "VILLAFRANCA_CLUSTER" ||
+              clusterId === "GOYA_FAMILY") {
             arrangeInCircle(
               network,
               nodes,
