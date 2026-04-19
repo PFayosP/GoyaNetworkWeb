@@ -1178,7 +1178,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Josefa Bayeu",
               "Francisco Bayeu"
             ],
-            radius: 118, // before: 134
+            radius: 130, // increased from 118 for less overlap
             padding: 80, // before: 86
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
@@ -1231,7 +1231,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Agustín Esteve",
               "Federico de Madrazo"
             ],
-            radius: 132,
+            radius: 160, // increased from 132 for wider circle
             padding: 92,
             startAngle: -Math.PI / 2,
             title: "Court painters",
@@ -1621,7 +1621,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           edgeLength = 280; // force inter-cluster edges to stay apart
         } else {
           // Intra-cluster edges: apply strength normally to pull related nodes together
-          edgeLength = 70 + (strength - 1) * 70; // before: 100, 62.5
+          // Make strength-1 edges much tighter (50px instead of 70px) for closeness
+          edgeLength = 50 + (strength - 1) * 70; // strength 1-5 = 50-330px range
         }
       }
 
@@ -2270,7 +2271,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Ramón de Mesonero Romanos", "Francisco Martínez de la Rosa", 130],
       ["Charles Asselineau", "Achille Ricourt", 130],
       ["Zacharie Astruc", "Frédéric Villot", 130],
-      ["Tony Johannot", "Delphine de Girardin", 130]
+      ["Tony Johannot", "Delphine de Girardin", 130],
+      ["Alejandro Sureda", "Eugène Dutuit", 130],
+      ["Luis de Madrazo", "Vicente MAsarnau", 130],
+      ["Pierre Lacour", "Pierre Lacour fils", 100],
+      ["Asensio Julià", "Gumersinda Goicoechea", 130],
+      ["Carlos III", "Manuel Godoy", 130]
       // supercali overlap
     ];
 
@@ -2570,7 +2576,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // COURT PAINTERS
         // Entre Goya y Federico, pero algo más pegado a Goya.
         // =========================================================
-        const courtRadius = 90; // before: 94
+        const courtRadius = 120; // increased from 90 for wider circle without overlaps
         const courtCenter = {
           x: goyaPos.x + (federicoPos.x - goyaPos.x) * 0.52, // before: 0.40
           y: goyaPos.y + (federicoPos.y - goyaPos.y) * 0.38 // before: 0.30
@@ -2608,13 +2614,14 @@ document.addEventListener('DOMContentLoaded', async function () {
         // MADRAZO-CARDERERA GROUP
         // Arriba-derecha de Federico, no encima del círculo familiar.
         // =========================================================
-        const mcRadius = 150;
+        const mcRadius = 160; // increased from 150 for clearer circular arrangement
         const mcCenter = {
           x: federicoPos.x + 300, // before: + 250
           y: federicoPos.y - 150 // before: + 125
         };
 
         const mcMembers = [
+          "Federico de Madrazo",    // include Federico at center anchor position
           "Valentín Carderera",
           "Eugenio Ochoa",
           "Santiago Masarnau",
@@ -2622,8 +2629,15 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Carlos Luis de Ribera"
         ];
 
-        const mcStep = (2 * Math.PI) / mcMembers.length;
-        mcMembers.forEach((id, i) => {
+        // Place Federico at the center of the group
+        if (nodes.get("Federico de Madrazo")) {
+          network.moveNode("Federico de Madrazo", mcCenter.x, mcCenter.y);
+        }
+
+        // Place other members in a circle around Federico
+        const otherMembers = mcMembers.slice(1);
+        const mcStep = (2 * Math.PI) / otherMembers.length;
+        otherMembers.forEach((id, i) => {
           if (!nodes.get(id)) return;
           const angle = -Math.PI / 2 + i * mcStep;
           network.moveNode(
