@@ -1531,26 +1531,25 @@ document.addEventListener('DOMContentLoaded', async function () {
           }));
           updateClusterInfoBadge();
           
-          // Focus and zoom on cluster with proper bounds fitting
+          // Focus and zoom on cluster with simple fixed zoom (no glitches)
           const memberArray = Array.from(members);
           if (memberArray.length > 0 && window.VIS_NETWORK) {
             try {
               const pos = window.VIS_NETWORK.getPositions(memberArray);
-              let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+              // Calculate cluster center
+              let cx = 0, cy = 0;
               memberArray.forEach(id => {
-                minX = Math.min(minX, pos[id].x);
-                maxX = Math.max(maxX, pos[id].x);
-                minY = Math.min(minY, pos[id].y);
-                maxY = Math.max(maxY, pos[id].y);
+                cx += pos[id].x;
+                cy += pos[id].y;
               });
+              cx /= memberArray.length;
+              cy /= memberArray.length;
               
-              const width = maxX - minX;
-              const height = maxY - minY;
-              const padding = Math.max(width, height) * 0.3;
-              
-              window.VIS_NETWORK.fit({
-                nodes: memberArray,
-                animation: { duration: 700 }
+              // Use fixed 1.2x zoom instead of fit() to avoid glitching
+              window.VIS_NETWORK.moveTo({
+                position: { x: cx, y: cy },
+                scale: 1.2,
+                animation: { duration: 500 }
               });
             } catch (e) {
               console.warn('Error focusing on cluster:', e);
