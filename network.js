@@ -1229,7 +1229,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Vicente López",
               "Anton Raphael Mengs",
               "Agustín Esteve",
-              "Federico de Madrazo"
+              "Federico de Madrazo",
+              "José de Madrazo"
             ],
             radius: 160, // increased from 132 for wider circle
             padding: 92,
@@ -2612,16 +2613,18 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // =========================================================
         // MADRAZO-CARDERERA GROUP
-        // Arriba-derecha de Federico, no encima del círculo familiar.
+        // Arriba-derecha de Federico, pero con Federico en el borde del círculo
+        // para mantenerlo cerca de sus otros clusters (Madrazo family, Court Painters).
         // =========================================================
-        const mcRadius = 160; // increased from 150 for clearer circular arrangement
+        const mcRadius = 160;
         const mcCenter = {
-          x: federicoPos.x + 300, // before: + 250
-          y: federicoPos.y - 150 // before: + 125
+          x: federicoPos.x + 280, // positioned relative to Federico
+          y: federicoPos.y - 140
         };
 
+        // All members including Federico, arranged in a circle
         const mcMembers = [
-          "Federico de Madrazo",    // include Federico at center anchor position
+          "Federico de Madrazo",    // will be placed on the border, not at center
           "Valentín Carderera",
           "Eugenio Ochoa",
           "Santiago Masarnau",
@@ -2629,15 +2632,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           "Carlos Luis de Ribera"
         ];
 
-        // Place Federico at the center of the group
-        if (nodes.get("Federico de Madrazo")) {
-          network.moveNode("Federico de Madrazo", mcCenter.x, mcCenter.y);
-        }
-
-        // Place other members in a circle around Federico
-        const otherMembers = mcMembers.slice(1);
-        const mcStep = (2 * Math.PI) / otherMembers.length;
-        otherMembers.forEach((id, i) => {
+        // Place all members in a circle (Federico on the border, not at center)
+        const mcStep = (2 * Math.PI) / mcMembers.length;
+        mcMembers.forEach((id, i) => {
           if (!nodes.get(id)) return;
           const angle = -Math.PI / 2 + i * mcStep;
           network.moveNode(
