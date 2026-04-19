@@ -1117,7 +1117,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Luisa Garreta",
               "Juan de Madrazo"
             ],
-            radius: 160,
+            radius: 200,
             startAngle: -Math.PI / 2,
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
@@ -1138,7 +1138,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Charles Nodier",
               "Charles-Augustin Sainte-Beuve"
             ],
-            radius: 140, // before: 160
+            radius: 170, // before: 160
             startAngle: -Math.PI / 2,
             title: "Hugo cenacle",
             titleEs: "Clúster Hugo"
@@ -1215,7 +1215,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "María Gabriela de Palafox, Marchioness of Lazán",
               "María Tomasa Palafox, Marchioness of Villafranca"
             ],
-            radius: 120,
+            radius: 135,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo"
@@ -1266,7 +1266,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Vicente Masarnau",
               "Carlos Luis de Ribiera"
             ],
-            radius: 120,
+            radius: 135,
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Madrazo-Carderera group",
@@ -1286,8 +1286,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Isabel II",
               "María Cristina de Borbón-Dos Sicilias"
             ],
-            radius: 125,
-            padding: 100,
+            radius: 150,
+            padding: 120,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "XV Countess of Chinchón": 0
@@ -1531,25 +1531,34 @@ document.addEventListener('DOMContentLoaded', async function () {
           }));
           updateClusterInfoBadge();
           
-          // Focus and zoom on cluster with simple fixed zoom (no glitches)
+          // Focus on cluster without glitching
           const memberArray = Array.from(members);
           if (memberArray.length > 0 && window.VIS_NETWORK) {
             try {
               const pos = window.VIS_NETWORK.getPositions(memberArray);
-              // Calculate cluster center
-              let cx = 0, cy = 0;
+              // Calculate cluster center and bounds
+              let cx = 0, cy = 0, minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
               memberArray.forEach(id => {
                 cx += pos[id].x;
                 cy += pos[id].y;
+                minX = Math.min(minX, pos[id].x);
+                maxX = Math.max(maxX, pos[id].x);
+                minY = Math.min(minY, pos[id].y);
+                maxY = Math.max(maxY, pos[id].y);
               });
               cx /= memberArray.length;
               cy /= memberArray.length;
               
-              // Use fixed 1.2x zoom instead of fit() to avoid glitching
+              // Calculate appropriate scale based on cluster size
+              const width = maxX - minX || 100;
+              const height = maxY - minY || 100;
+              const maxDim = Math.max(width, height);
+              const scale = Math.min(1.5, 800 / (maxDim + 200)); // Fit with padding, max 1.5x zoom
+              
+              // Move immediately without animation to avoid glitching
               window.VIS_NETWORK.moveTo({
                 position: { x: cx, y: cy },
-                scale: 1.2,
-                animation: { duration: 500 }
+                scale: scale
               });
             } catch (e) {
               console.warn('Error focusing on cluster:', e);
@@ -3237,18 +3246,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
         // REMOVED: placeVillafrancaAlbaClusters, placeMadrazoFamilyCluster, placeBourbonCluster
         // These were overwriting arrangeInCircle() work. Keep only specialized placements.
-        placeFedericoSatelliteClusters(network);
-        placeGoyaFamilyCluster(network);
-        placeMontpensierBridge(network);
-        placeEstevesPair(network);
-
-        // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 140, 12);
-
-        // 4) expulsar nodos externos fuera del halo de cada clúster
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 110);
-
-        // 5) volver a imponer círculos/órbitas después de las expulsiones
+        // SIMPLIFIED ORCHESTRATION: Focus on clean circles + Rosario-Leocadia proximity
+        
+        // 1) Arrange all clusters in circles first
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
           if (!cfg.members || !cfg.members.length) return;
 
@@ -3310,26 +3310,28 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
-        // REMOVED: placeVillafrancaAlbaClusters, placeMadrazoFamilyCluster, placeBourbonCluster
-        // These were overwriting arrangeInCircle() work. Keep only specialized placements.
+
+        // 2) Only specialized placement functions (non-destructive)
         placeFedericoSatelliteClusters(network);
         placeGoyaFamilyCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
 
-        // 6) segunda pasada, más suave, para fijar separación final
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 120, 12);
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120);
+        // 3) Gentle cluster separation - minimal to avoid deforming circles
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 5, 110, 8);
+        
+        // 4) Only enforce critical pairs (Rosario-Leocadia, Dutuit brothers, etc.)
+        // Use MINIMAL passes to preserve circle geometry
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 5);
 
-        // 7) separación quirúrgica solo para pares concretos (AGGRESSIVE: 30 passes)
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 30);
+        // 5) Minimal push-out
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 80);
 
-        // 8) RE-LOCK CIRCLES: After separation/enforcement, restore circular arrangement
-        // This counteracts deformation from separateClusters and enforcePriorityPairSeparation
+        // 6) FINAL LOCK: Restore circles and fix any deformation from above
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
           if (!cfg.members || !cfg.members.length) return;
           
-          // Skip special clusters that have custom arrangements
+          // Skip special arrangements
           if (clusterId === "ILUSTRADOS_CLUSTER" ||
               clusterId === "GOYA_FAMILY" ||
               clusterId === "COURT_PAINTERS" ||
@@ -3337,7 +3339,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
           
-          // Re-lock circles for clusters prone to deformation
+          // Final circle restoration
           if (clusterId === "MADRAZO_FAMILY" ||
               clusterId === "MADRAZO_CARDERERA_GROUP" ||
               clusterId === "MONTIJO_CORE" ||
@@ -3355,21 +3357,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
-
-        // 9) Only reimponer specialized placements (not destructive circle-breaking ones)
-        placeFedericoSatelliteClusters(network);
-        placeGoyaFamilyCluster(network);
-        placeMontpensierBridge(network);
-        placeEstevesPair(network);
-
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 140);
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 15);
-
-        // Final specialized placements only
-        placeFedericoSatelliteClusters(network);
-        placeGoyaFamilyCluster(network);
-        placeMontpensierBridge(network);
-        placeEstevesPair(network);
 
         network.redraw();
 
