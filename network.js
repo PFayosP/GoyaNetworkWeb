@@ -2180,6 +2180,13 @@ document.addEventListener('DOMContentLoaded', async function () {
           filter: 'physics'
         }
       });
+    // Add canvas click handler to deselect cluster when clicking background
+    network.on('click', function(params) {
+      if (params.nodes.length === 0 && params.edges.length === 0 && selectedClusterId) {
+        window.clearClusterSelection();
+      }
+    });
+
     window.VIS_NETWORK = network;
 
     const HALO_PRIORITY_BY_NODE = {
@@ -2724,8 +2731,18 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
 
       function placeMadrazoFamilyCluster(network) {
-        // Madrazo family arrangement is handled by RADIAL_CLUSTERS arrangeInCircle
-        // No aggressive repositioning needed - let physics and circle arrangement handle it
+        // Properly arrange Madrazo family in a circle
+        const cfg = RADIAL_CLUSTERS["MADRAZO_FAMILY"];
+        if (!cfg || !cfg.members) return;
+        
+        arrangeInCircle(
+          network,
+          nodes,
+          cfg.members,
+          cfg.radius || 260,
+          cfg.startAngle ?? (-Math.PI / 2),
+          cfg.sharedBoundaryNodes || {}
+        );
       }
     
         function placeGoyaFamilyCluster(network) {
@@ -3195,10 +3212,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 30, 140, 12); // increased passes from 20→30, baseGap 110→140
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 16, 140, 12);
 
         // 4) expulsar nodos externos fuera del halo de cada clúster
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120); // increased from 85 to 120
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 100);
 
         // 5) volver a imponer círculos/órbitas después de las expulsiones
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
@@ -3218,11 +3235,22 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
 
           if (clusterId === "GOYA_FAMILY" ||
-              clusterId === "MADRAZO_FAMILY" ||
               clusterId === "COURT_PAINTERS" ||
               clusterId === "MADRAZO_CARDERERA_GROUP" ||
               clusterId === "PRINT_SPECIALISTS" ||
               clusterId === "VILLAFRANCA_CLUSTER") {
+            return;
+          }
+
+          if (clusterId === "MADRAZO_FAMILY") {
+            arrangeInCircle(
+              network,
+              nodes,
+              cfg.members,
+              cfg.radius || 260,
+              cfg.startAngle ?? (-Math.PI / 2),
+              cfg.sharedBoundaryNodes || {}
+            );
             return;
           }
 
@@ -3255,24 +3283,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 15, 140, 12); // increased passes from 10→15, baseGap 110→140
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 150); // increased from 110 to 150
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 8, 140, 12);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120);
 
-        // 7) separación quirúrgica solo para pares concretos
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 8);
-
-        // 8) reimponer placements manuales después de expulsiones / separaciones
-        placeVillafrancaAlbaClusters(network);
-        placeFedericoSatelliteClusters(network);
-        placeMadrazoFamilyCluster(network);
-        placeGoyaFamilyCluster(network);
-        placeBourbonCluster(network);
-        placeMontpensierBridge(network);
-        placeEstevesPair(network);
-
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 180); // increased from 150 to 180 for stronger boundary enforcement
+        // 7) separación quirúrgica solo para pares concretos (MOST AGGRESSIVE: 20 passes)
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 20);
 
+        // 8) reimponer placements manuales después de expulsiones
         placeVillafrancaAlbaClusters(network);
         placeFedericoSatelliteClusters(network);
         placeMadrazoFamilyCluster(network);
@@ -3280,8 +3297,19 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeBourbonCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 10);
-        enforceStrongEdgePairs(network, nodes, edges, nodeClusterMap, 4);
+
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 140);
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 8);
+
+        placeVillafrancaAlbaClusters(network);
+        placeFedericoSatelliteClusters(network);
+        placeMadrazoFamilyCluster(network);
+        placeGoyaFamilyCluster(network);
+        placeBourbonCluster(network);
+        placeMontpensierBridge(network);
+        placeEstevesPair(network);
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 4);
+        enforceStrongEdgePairs(network, nodes, edges, nodeClusterMap, 3);
 
         network.redraw();
 
