@@ -3324,7 +3324,39 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 7) separación quirúrgica solo para pares concretos (AGGRESSIVE: 30 passes)
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 30);
 
-        // 8) Only reimponer specialized placements (not destructive circle-breaking ones)
+        // 8) RE-LOCK CIRCLES: After separation/enforcement, restore circular arrangement
+        // This counteracts deformation from separateClusters and enforcePriorityPairSeparation
+        Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
+          if (!cfg.members || !cfg.members.length) return;
+          
+          // Skip special clusters that have custom arrangements
+          if (clusterId === "ILUSTRADOS_CLUSTER" ||
+              clusterId === "GOYA_FAMILY" ||
+              clusterId === "COURT_PAINTERS" ||
+              clusterId === "PRINT_SPECIALISTS") {
+            return;
+          }
+          
+          // Re-lock circles for clusters prone to deformation
+          if (clusterId === "MADRAZO_FAMILY" ||
+              clusterId === "MADRAZO_CARDERERA_GROUP" ||
+              clusterId === "MONTIJO_CORE" ||
+              clusterId === "OSUNA_CORE" ||
+              clusterId === "HUGO_CENACLE" ||
+              clusterId === "BOURBON_CORE" ||
+              clusterId === "VILLAFRANCA_CLUSTER") {
+            arrangeInCircle(
+              network,
+              nodes,
+              cfg.members,
+              cfg.radius || 150,
+              cfg.startAngle ?? (-Math.PI / 2),
+              cfg.sharedBoundaryNodes || {}
+            );
+          }
+        });
+
+        // 9) Only reimponer specialized placements (not destructive circle-breaking ones)
         placeFedericoSatelliteClusters(network);
         placeGoyaFamilyCluster(network);
         placeMontpensierBridge(network);
