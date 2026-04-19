@@ -1609,11 +1609,20 @@ document.addEventListener('DOMContentLoaded', async function () {
       const style = getEdgeStyle(edge);
       
       // Calculate spring length based on strength (1-5 scale)
-      // Strength 1 = 100 (very close), Strength 5 = 350 (far apart)
+      // For INTRA-CLUSTER edges: strength pulls nodes together normally
+      // For INTER-CLUSTER edges: use longer base length to prevent cross-cluster intrusion
       let edgeLength = 210; // default
       if (edge.strength) {
         const strength = Math.max(1, Math.min(5, edge.strength)); // clamp 1-5
-        edgeLength = 70 + (strength - 1) * 70; // before: 100, 62.5
+        
+        if (edgeStatus === 'inter-cluster') {
+          // Inter-cluster edges: keep clusters separated by using longer base length
+          // Ignore strength for inter-cluster edges to preserve cluster boundaries
+          edgeLength = 280; // force inter-cluster edges to stay apart
+        } else {
+          // Intra-cluster edges: apply strength normally to pull related nodes together
+          edgeLength = 70 + (strength - 1) * 70; // before: 100, 62.5
+        }
       }
 
       const processedEdge = {
@@ -2107,7 +2116,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         enabled: true, 
         solver: 'repulsion',
         repulsion: {
-          nodeDistance: 500,         // before: 430
+          nodeDistance: 600,         // increased from 500 for stronger node separation and collision prevention
           centralGravity: 0.018,     // ↓ Slightly less gravity
           springLength: 210,         // ↑ Longer springs for more separation
           springConstant: 0.012,     // ↓ Softer springs
@@ -3103,7 +3112,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         window.__didNudgeOnce = true;
 
         // 1) pequeña limpieza inicial antes de fijar geometrías
-        nudgeOverlaps(network, nodes, window.__clusterOf, 12); // before: 8
+        nudgeOverlaps(network, nodes, window.__clusterOf, 20); // increased from 12 for more aggressive overlap prevention
 
         // 2) imponer la geometría exacta de cada clúster
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
@@ -3160,10 +3169,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
 
         // 3) separar clústeres entre sí, permitiendo cercanía si comparten nodos
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 20, 110, 12); // before: 20, 110, 20
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 30, 140, 12); // increased passes from 20→30, baseGap 110→140
 
         // 4) expulsar nodos externos fuera del halo de cada clúster
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 85);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120); // increased from 85 to 120
 
         // 5) volver a imponer círculos/órbitas después de las expulsiones
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
@@ -3220,8 +3229,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
 
         // 6) segunda pasada, más suave, para fijar separación final
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 110, 12);
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 110);
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 15, 140, 12); // increased passes from 10→15, baseGap 110→140
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 150); // increased from 110 to 150
 
         // 7) separación quirúrgica solo para pares concretos
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 8);
@@ -3235,7 +3244,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeMontpensierBridge(network);
         placeEstevesPair(network);
 
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 150);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 180); // increased from 150 to 180 for stronger boundary enforcement
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 20);
 
         placeVillafrancaAlbaClusters(network);
