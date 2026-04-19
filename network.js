@@ -2259,7 +2259,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Marceline Desbordes-Valmore", "Tony Johannot", 130],
       ["Mariano Fortuny y Marsal", "Antonio de Brugada", 130],
       ["Ramón de Mesonero Romanos", "Francisco Martínez de la Rosa", 130],
-      ["Charles Asselineau", "Achille Ricourt", 130]
+      ["Charles Asselineau", "Achille Ricourt", 130],
+      ["Zacharie Astruc", "Frédéric Villot", 130],
+      ["Tony Johannot", "Delphine de Girardin", 130]
       // supercali overlap
     ];
 

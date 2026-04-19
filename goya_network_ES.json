@@ -5845,7 +5845,8 @@
       "to": "Mariano Goya",
       "connection_level": "direct",
       "relationship type": "parientes; abuelo-nieto",
-      "portraits": "hacia 1810, óleo, retrato de cuerpo entero (colección privada); hacia 1813-15, óleo, busto con sombrero de copa (Museo Goya, Colección Ibercaja: depósito); 1827, óleo, busto (Meadows Museum, Texas, 67.03)"
+      "portraits": "hacia 1810, óleo, retrato de cuerpo entero (colección privada); hacia 1813-15, óleo, busto con sombrero de copa (Museo Goya, Colección Ibercaja: depósito); 1827, óleo, busto (Meadows Museum, Texas, 67.03)",
+      "strength": 1
     },
     {
       "from": "Francisco de Goya",
@@ -5853,13 +5854,15 @@
       "connection_level": "direct",
       "relationship type": "familiares; padre-hijo",
       "correspondence": "Correspondencia. 1824-XII-24: Goya se pregunta por qué Javier no responde a sus cartas; menciona a Galos (Canellas no.271, p.388); 1828-I-17: menciona a Galos, Mugurio y Esteve (no.277, p.392); 1828-III-12: menciona a Mariano y Galos (no.279, p.393); 1828-III-26 (no.280, p.394)",
-      "portraits": "1805, colección privada, Casa Torres, dibujo (GW.843); 1805, Museo de Zaragoza, miniatura (GW.844); 1805-06, colección privada, París, retrato completo (GW.852); 1810-15, posiblemente Javier Goya, MFA de Boston (GW.837); 1824, colección privada, dibujo (GW.1636)"
+      "portraits": "1805, colección privada, Casa Torres, dibujo (GW.843); 1805, Museo de Zaragoza, miniatura (GW.844); 1805-06, colección privada, París, retrato completo (GW.852); 1810-15, posiblemente Javier Goya, MFA de Boston (GW.837); 1824, colección privada, dibujo (GW.1636)",
+      "strength": 1
     },
     {
       "from": "Vicente López",
       "to": "Javier Goya",
       "connection_level": "direct",
-      "relationship type": "profesional. En 1831, López realizó una valoración de las pinturas de Goya heredadas por Javier Goya"
+      "relationship type": "profesional. En 1831, López realizó una valoración de las pinturas de Goya heredadas por Javier Goya",
+      "strength": 3
     },
     {
       "from": "Adrien Dauzats",
@@ -5870,7 +5873,8 @@
         "1834 Dauzats fue probablemente el autor del artículo sobre Goya publicado en <i>Magasin pittoresque</i>: 1834-IX-29, Dauzats a Federico de Madrazo: 'Je m'occupe d'une notice sur la vie et les ouvrages de Goya. C'est un hommage que nous voulons rendre à l'un des peintres les plus célèbres de l'Espagne' (Archivo Madrazo) (véase Guinard 1967-B, p.323; Fayos Pérez 2024, p.50). En ella se mencionan los comentarios del Prado (las explicaciones manuscritas de Goya sobre los Caprichos), que por entonces estaban en posesión de Javier Goya.",
         "1835-IV-1, Federico de Madrazo a Dauzats (en francés) (INHA): Dauzats había solicitado una nota sobre Goya, que Madrazo está esperando pedir a Javier Goya cuando regrese a Madrid (Fayos-Pérez 2026, de próxima publicación)"
       ],
-      "bibliography": "Fayos Pérez 2024; Guinard 1967-B"
+      "bibliography": "Fayos Pérez 2024; Guinard 1967-B",
+      "strength": 2
     },
     {
       "from": "Francisco de Goya",
@@ -5888,7 +5892,8 @@
       "to": "Gumersinda Goicoechea",
       "connection_level": "direct",
       "relationship type": "familiares; suegro, nuera",
-      "portraits": "1805, Museo de Zaragoza, miniatura (GW.845); 1805, dibujo, perdido (GW.841); 1805-06, colección privada, París, retrato completo (GW.851)"
+      "portraits": "1805, Museo de Zaragoza, miniatura (GW.845); 1805, dibujo, perdido (GW.841); 1805-06, colección privada, París, retrato completo (GW.851)",
+      "strength": 2
     },
     {
       "from": "Jules Jacquemart",
@@ -5900,27 +5905,31 @@
       "from": "Francisco de Goya",
       "to": "Francisco Bayeu",
       "connection_level": "direct",
-      "relationship type": "parientes; cuñados"
+      "relationship type": "parientes; cuñados",
+      "strength": 1
     },
     {
       "from": "Mariano Salvador Maella",
       "to": "Carlos III",
       "connection_level": "direct",
       "relationship type": "mecenazgo; empleador-empleado",
-      "portraits": "1783, Banco de España; 1783-84, Palacio Real"
+      "portraits": "1783, Banco de España; 1783-84, Palacio Real",
+      "strength": 2
     },
     {
       "from": "Mariano Salvador Maella",
       "to": "Carlos IV",
       "connection_level": "direct",
-      "relationship type": "mecenazgo; empleador-empleado"
+      "relationship type": "mecenazgo; empleador-empleado",
+      "strength": 2
     },
     {
       "from": "Mariano Salvador Maella",
       "to": "Joseph Bonaparte",
       "connection_level": "direct",
       "relationship type": "mecenazgo; empleador-empleado",
-      "collaborations": "Frédéric Quilliet inició un inventario de las colecciones reales españolas en 1810, una selección de las cuales se reuniría en el Museo Josefino y otras en el Museo Napoleón de París. Maella colaboró en dos de estos inventarios: uno firmado el 25 de octubre de 1810, junto con Goya y Napoli (AGP, Gobierno Intruso, caja 29, exp. no.31) (véase Antigüedad del Castillo-Olivares 1987, pp.298-301); y otro en noviembre de 1810, también con Goya y Napoli (AHN, Consejos, leg. 17.787)"
+      "collaborations": "Frédéric Quilliet inició un inventario de las colecciones reales españolas en 1810, una selección de las cuales se reuniría en el Museo Josefino y otras en el Museo Napoleón de París. Maella colaboró en dos de estos inventarios: uno firmado el 25 de octubre de 1810, junto con Goya y Napoli (AGP, Gobierno Intruso, caja 29, exp. no.31) (véase Antigüedad del Castillo-Olivares 1987, pp.298-301); y otro en noviembre de 1810, también con Goya y Napoli (AHN, Consejos, leg. 17.787)",
+      "strength": 3
     },
     {
       "from": "Frédéric Quilliet",
@@ -5934,7 +5943,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo; empleador-empleado",
       "collaborations": "'Conservateur de tableaux'. Quilliet comenzó un inventario de las colecciones reales españolas en 1810, una selección de las cuales se reuniría en el Museo Josefino y otras en el Museo Napoleón de París. Inventarios: uno del 25 de octubre de 1810, firmado por Mariano Salvador Maella, Francisco de Goya y Napoli (AGP, Gobierno Intruso, caja 29, exp. no.31) (véase Antigüedad del Castillo-Olivares 1987, pp.298-301); y otro en noviembre de 1810, firmado por Mariano Salvador Maella, Francisco de Goya y Napoli (AHN, Consejos, leg. 17.787)",
-      "bibliography": "Mano 2008; Sancho 2001; Antigüedad del Castillo-Olivares 1987"
+      "bibliography": "Mano 2008; Sancho 2001; Antigüedad del Castillo-Olivares 1987",
+      "strength": 2
     },
     {
       "from": "Frédéric Quilliet",
@@ -5950,7 +5960,8 @@
       "connection_level": "direct",
       "relationship type": "compañeros",
       "collaborations": "Quilliet inició un inventario de las colecciones reales españolas en 1810, una selección de las cuales se reuniría en el Museo Josefino y otras en el Museo Napoleón de París. Inventarios: uno el 25 de octubre de 1810, firmado por Mariano Salvador Maella, Goya y Napoli (AGP, Gobierno Intruso, caja 29, exp. no.31) (véase Antigüedad del Castillo-Olivares 1987, pp.298-301); y otro en noviembre de 1810, firmado por Mariano Salvador Maella, Goya y Napoli (AHN, Consejos, leg. 17.787)",
-      "bibliography": "Mano 2008; Sancho 2001; Antigüedad del Castillo-Olivares 1987"
+      "bibliography": "Mano 2008; Sancho 2001; Antigüedad del Castillo-Olivares 1987",
+      "strength": 3
     },
     {
       "from": "Frédéric Quilliet",
@@ -5973,7 +5984,8 @@
       "to": "Isidoro Máiquez",
       "connection_level": "direct",
       "relationship type": "conocidos; protegido",
-      "interactions": "Máiquez fue exiliado en Francia en 1808 tras participar en el Levantamiento del 2 de mayo (¿París?), pero luego fue indultado por Joseph Bonaparte y se le concedió una pensión de 24 000 reales (Gómez García 1998, p.505)"
+      "interactions": "Máiquez fue exiliado en Francia en 1808 tras participar en el Levantamiento del 2 de mayo (¿París?), pero luego fue indultado por Joseph Bonaparte y se le concedió una pensión de 24 000 reales (Gómez García 1998, p.505)",
+      "strength": 3
     },
     {
       "from": "Manuel Godoy",
@@ -5988,7 +6000,8 @@
       "connection_level": "direct",
       "relationship type": "conocidos; retratista-modelo",
       "know each other since": "al menos desde 1807",
-      "portraits": "retrato de Máiquez, 1807, Prado"
+      "portraits": "retrato de Máiquez, 1807, Prado",
+      "strength": 3
     },
     {
       "from": "Rafael Esteve",
@@ -6008,7 +6021,8 @@
       "collaborations": [
         "Rafael Esteve realizó reproducciones de los reyes españoles a partir de los dibujos de su tío Agustín Esteve basados en Goya (1799).",
         "c. 1803 Dibujo de Miguel Cayetano Soler de R. Esteve basado en Goya (obra perdida), [Prado D009422](https://www.museodelprado.es/coleccion/obra-de-arte/miguel-cayetano-soler/da362b32-7f28-41cf-8191-b67fcf328d2a)."
-      ]
+      ],
+      "strength": 3
     },
     {
       "from": "Rafael Esteve",
@@ -6022,7 +6036,8 @@
       "to": "Carlos IV",
       "connection_level": "direct",
       "relationship type": "empleador-empleado (Real Calcografía); engraver de cámara honorario",
-      "portraits": "grabado (¿hacia 1799?)"
+      "portraits": "grabado (¿hacia 1799?)",
+      "strength": 3
     },
     {
       "from": "Rafael Esteve",
@@ -6032,7 +6047,8 @@
       "portraits": [
         "Dibujos (Prado): 3 dibujos con aguada y lápiz, 1808-09.",
         "Grabados (Prado): aguafuerte y buril, 1819 (retrato con María Josefa Amalia)"
-      ]
+      ],
+      "strength": 3
     },
     {
       "from": "Rafael Esteve",
@@ -6102,7 +6118,8 @@
       "connection_level": "¿secundario?",
       "relationship type": "mecenazgo; coleccionista",
       "collector of Goya's works": "El retrato de Julià realizado por Goya en 1798 (Thyssen) fue mencionado por Charles Yriarte en 1867 como parte de la Galerie espagnole de Louis Philippe I. Sin embargo, J. Wilson-Bareau y G. Maurer afirman que el cuadro fue catalogado en 1846 en la colección de María Cristina de Borbón-Dos Sicilias (Palacio de Vista Alegre, Madrid), y que pudo haber pertenecido a su autor hasta su muerte en 1832. La pintura pasó entonces a formar parte de la colección de la infanta Luisa Fernanda de Borbón y el príncipe Antoine, duque de Montpensier (Palacio de San Telmo, Sevilla). Posteriormente, la obra se puso a la venta tres veces en París: dos en Durand-Ruel y otra en Arthur Sachs; luego fue adquirida por los Thyssen en 1971 (página web de los Thyssen).",
-      "websites": "[Thyssen, perfil de Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)"
+      "websites": "[Thyssen, perfil de Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)",
+      "strength": 3
     },
     {
       "from": "Infanta Luisa Fernanda de Borbón",
@@ -6110,7 +6127,8 @@
       "connection_level": "¿secundario?",
       "relationship type": "mecenazgo; coleccionista",
       "collector of Goya's works": "El retrato de Julià realizado por Goya en 1798 (Thyssen) fue mencionado por Charles Yriarte en 1867 como parte de la Galerie espagnole de Louis Philippe I. Sin embargo, J. Wilson-Bareau y G. Maurer afirman que el cuadro fue catalogado en 1846 en la colección de María Cristina de Borbón-Dos Sicilias (Palacio de Vista Alegre, Madrid), y que pudo haber pertenecido a su autor hasta su muerte en 1832. La pintura pasó entonces a formar parte de la colección de la infanta Luisa Fernanda de Borbón y el príncipe Antonio, duque de Montpensier (Palacio de San Telmo, Sevilla). Posteriormente, la obra se puso a la venta tres veces en París: dos en Durand-Ruel y otra en Arthur Sachs; luego fue adquirida por los Thyssen en 1971 (página web de los Thyssen).",
-      "websites": "[Thyssen, perfil de Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)"
+      "websites": "[Thyssen, perfil de Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)",
+      "strength": 3
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
@@ -6118,7 +6136,8 @@
       "connection_level": "¿secundario?",
       "relationship type": "mecenazgo; coleccionista",
       "collector of Goya's works": "El retrato de Julià pintado por Goya en 1798 (Thyssen) fue mencionado por Charles Yriarte en 1867 como parte de la Galerie espagnole de Louis Philippe I. Sin embargo, J. Wilson-Bareau y G. Maurer afirman que el cuadro e e fue catalogado en 1846 en la colección de María Cristina de Borbón-Dos Sicilias (Palacio de Vista Alegre, Madrid), y que pudo haber pertenecido a su autor hasta su muerte en 1832. La pintura pasó entonces a formar parte de la colección de la infanta Luisa Fernanda de Borbón y el príncipe Antoine, duque de Montpensier (Palacio de San Telmo, Sevilla). Posteriormente, la obra se puso a la venta tres veces en París: dos en Durand-Ruel y otra en Arthur Sachs; luego fue adquirida por los Thyssen en 1971 (página web de los Thyssen).",
-      "websites": "[Thyssen, perfil de Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)"
+      "websites": "[Thyssen, perfil de Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)",
+      "strength": 3
     },
     {
       "from": "Francisco de Goya",
@@ -6149,7 +6168,8 @@
       "from": "Mariano Salvador Maella",
       "to": "Vicente López",
       "connection_level": "direct",
-      "relationship type": "compañeros; maestro-alumno (Maella es sustituido por López con la Restauración de Fernando VII)"
+      "relationship type": "compañeros; maestro-alumno (Maella es sustituido por López con la Restauración de Fernando VII)",
+      "strength": 1
     },
     {
       "from": "Mariano Salvador Maella",
@@ -6161,7 +6181,8 @@
       "from": "Valentín Carderera",
       "to": "Mariano Salvador Maella",
       "connection_level": "direct",
-      "relationship type": "maestro-alumno"
+      "relationship type": "maestro-alumno",
+      "strength": 1
     },
     {
       "from": "Leandro Fernández de Moratín",
@@ -6400,7 +6421,8 @@
       "correspondence": "1842, 28 de abril: 'Vino Huber. Volví de Dauzats [Adrien Dauzats] y escribí a Prescott y Gayangos' (LG 2016, p.124). Muchas otras menciones a cartas enviadas o recibidas por Gayangos en 1842, 1843, 1855, etc.",
       "portraits": "Carderera realiza el retrato de Gayangos en 1841 (Londres)",
       "they share": "se alistaron en los granaderos de la Milicia Nacional de Madrid (6.º Batallón) en 1835, junto a Federico de Madrazo, Pedro de Madrazo, Santiago Masarnau y Vicente Masarnau",
-      "bibliography": "Lanzarote Guiral 2016"
+      "bibliography": "Lanzarote Guiral 2016",
+      "strength": 1
     },
     {
       "from": "Federico de Madrazo",
@@ -6666,7 +6688,8 @@
       "from": "Mariano Salvador Maella",
       "to": "Agustín Esteve",
       "connection_level": "direct",
-      "relationship type": "maestro-alumno"
+      "relationship type": "maestro-alumno",
+      "strength": 1
     },
     {
       "from": "Francisco de Goya",
@@ -6695,7 +6718,8 @@
       "from": "Carlos III",
       "to": "Giandomenico Tiepolo",
       "connection_level": "direct",
-      "relationship type": "mecenazgo; empleador-empleado"
+      "relationship type": "mecenazgo; empleador-empleado",
+      "strength": 3
     },
     {
       "from": "Francisco de Goya",
@@ -6716,7 +6740,8 @@
       "from": "Giambattista Tiepolo",
       "to": "Carlos III",
       "connection_level": "direct",
-      "relationship type": "mecenazgo; empleador-empleado"
+      "relationship type": "mecenazgo; empleador-empleado",
+      "strength": 3
     },
     {
       "from": "Giambattista Tiepolo",
@@ -6742,21 +6767,24 @@
       "to": "Anton Raphael Mengs",
       "connection_level": "direct",
       "relationship type": "mecenazgo; empleador-empleado",
-      "portraits": "1767, Prado"
+      "portraits": "1767, Prado",
+      "strength": 3
     },
     {
       "from": "Carlos IV",
       "to": "Anton Raphael Mengs",
       "connection_level": "direct",
       "relationship type": "mecenazgo; empleador-empleado",
-      "portraits": "c. 1765, Prado"
+      "portraits": "c. 1765, Prado",
+      "strength": 3
     },
     {
       "from": "María Luisa de Parma",
       "to": "Anton Raphael Mengs",
       "connection_level": "direct",
       "relationship type": "mecenazgo; empleador-empleado",
-      "portraits": "c. 1765, Prado"
+      "portraits": "c. 1765, Prado",
+      "strength": 3
     },
     {
       "from": "Josefa Bayeu",
@@ -6767,7 +6795,8 @@
     {
       "from": "Javier Goya",
       "to": "Francisco Bayeu",
-      "relationship type": "parientes; tío-sobrino"
+      "relationship type": "parientes; tío-sobrino",
+      "strength": 2
     },
     {
       "from": "Javier Goya",
@@ -6775,7 +6804,8 @@
       "connection_level": "direct",
       "relationship type": "cónyuges; marido y mujer",
       "casados en": "1805",
-      "children": "Mariano Goya"
+      "children": "Mariano Goya",
+      "strength": 1
     },
     {
       "from": "Josefa Bayeu",
@@ -6787,7 +6817,8 @@
       "from": "Mariano Goya",
       "to": "Gumersinda Goicoechea",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hijo"
+      "relationship type": "familiares; madre-hijo",
+      "strength": 1
     },
     {
       "from": "Francisco de Goya",
@@ -6911,9 +6942,10 @@
       "from": "Francisco de Goya",
       "to": "Ferdinand Guillemardet",
       "connection_level": "direct",
-      "relationship type": "mecenazgo",
+      "relationship type": "mecenazgo; retratista-modelo",
       "know each other since": "al menos desde 1798",
-      "portraits": "1798 [Louvre, MI 697](https://collections.louvre.fr/ark:/53355/cl010059836)"
+      "portraits": "1798 [Louvre, MI 697](https://collections.louvre.fr/ark:/53355/cl010059836)",
+      "strength": 2
     },
     {
       "from": "Francisco de Goya",
@@ -6922,7 +6954,8 @@
       "relationship type": "mecenazgo",
       "know each other since": "al menos desde 1810",
       "vínculo con Goya": "mecenas, coleccionista, intérprete y difusor de su obra (véase el nodo de Llorente)",
-      "portraits": "1810-11 [Museo de Arte de São Paulo MASP.00176](https://masp.org.br/en/collections/works/portrait-of-don-juan-antonio-llorente)"
+      "portraits": "1810-11 [Museo de Arte de São Paulo MASP.00176](https://masp.org.br/en/collections/works/portrait-of-don-juan-antonio-llorente)",
+      "strength": 2
     },
     {
       "from": "Gaspar Melchor de Jovellanos",
@@ -6967,20 +7000,23 @@
       "to": "Leandro Fernández de Moratín",
       "connection_level": "direct",
       "relationship type": "conocidos; mecenazgo",
-      "employment/patronage": "Floridablanca le concedió una pensión de trescientos ducados del arzobispado de Burgos"
+      "employment/patronage": "Floridablanca le concedió una pensión de trescientos ducados del arzobispado de Burgos",
+      "strength": 3
     },
     {
       "from": "Count of Floridablanca",
       "to": "IV Marchioness of Pontejos",
       "connection_level": "direct",
-      "relationship type": "parientes; cuñado, cuñada"
+      "relationship type": "parientes; cuñado, cuñada",
+      "strength": 2
     },
     {
       "from": "II Duke of San Carlos",
       "to": "Francisco de Goya",
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
-      "portraits": "1815, óleo, Museo de Zaragoza"
+      "portraits": "1815, óleo, Museo de Zaragoza",
+      "strength": 3
     },
     {
       "from": "II Duke of San Carlos",
@@ -7025,7 +7061,8 @@
       "to": "IV Marchioness of Pontejos",
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
-      "portraits": "c. 1786, óleo, NGA"
+      "portraits": "c. 1786, óleo, NGA",
+      "strength": 3
     },
     {
       "from": "XV Countess of Chinchón",
@@ -7064,7 +7101,8 @@
       "know each other since": "al menos desde 1810",
       "portraits": "c. 1810-15; c.1812, <i>Josefa Tudó con sus hijos Manuel y Luis Godoy, en un jardín</i>, Prado; 1813, RABASF",
       "websites": "[Prado](https://www.museodelprado.es/coleccion/obra-de-arte/josefa-tudo-con-sus-hijos-manuel-y-luis-godoy-en/19ba4e46-4509-4ae0-80d8-894541c9a8e4)",
-      "podcasts": "<i>Arte compacto</i>, [27 de abril de 2025](https://www.youtube.com/shorts/2HRbEYmYGWY), 'José de Madrazo', con Carlos G. Navarro"
+      "podcasts": "<i>Arte compacto</i>, [27 de abril de 2025](https://www.youtube.com/shorts/2HRbEYmYGWY), 'José de Madrazo', con Carlos G. Navarro",
+      "strength": 3
     },
     {
       "from": "Josefa Tudó",
@@ -7114,14 +7152,16 @@
       "connection_level": "direct",
       "relationship type": "conocidos; colegas",
       "mentions": "cuando Romana murió, Wellington dijo: 'su pérdida es la mayor que la causa podría sufrir' (Longford 1969, p.309)",
-      "bibliography": "David G. Chandler, <i>Las campañas de Napoleón</i>, 1995; Elizabeth Longford, <i>Wellington: Los años de la espada</i>, 1969"
+      "bibliography": "David G. Chandler, <i>Las campañas de Napoleón</i>, 1995; Elizabeth Longford, <i>Wellington: Los años de la espada</i>, 1969",
+      "strength": 3
     },
     {
       "from": "Marquis of La Romana",
       "to": "Francisco de Goya",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "artworks bought/sold": "9 pinturas conservadas de un total de 11: <i>La visita del fraile</i> (1808-10), <i>Interior de una prisión</i> (1808-12), <i>Interior de una prisión</i> (1793), <i>Bandidos fusilando a sus prisioneros</i> (1808-12), <i>Bandido desnudando a una mujer</i> (1798-1800), <i>Bandido apuñalando a una mujer</i> (1798-1800), <i>Hospital de la peste</i> (1808-10), <i>Fusilamiento en un campamento militar</i> (1808-10), <i>Cueva gitana</i> (1808-10)."
+      "artworks bought/sold": "9 pinturas conservadas de un total de 11: <i>La visita del fraile</i> (1808-10), <i>Interior de una prisión</i> (1808-12), <i>Interior de una prisión</i> (1793), <i>Bandidos fusilando a sus prisioneros</i> (1808-12), <i>Bandido desnudando a una mujer</i> (1798-1800), <i>Bandido apuñalando a una mujer</i> (1798-1800), <i>Hospital de la peste</i> (1808-10), <i>Fusilamiento en un campamento militar</i> (1808-10), <i>Cueva gitana</i> (1808-10).",
+      "strength": 3
     },
     {
       "from": "Marquis of La Romana",
@@ -7163,21 +7203,24 @@
       "from": "XV Countess of Chinchón",
       "to": "María Teresa de Vallabriga",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hija"
+      "relationship type": "familiares; madre-hija",
+      "strength": 1
     },
     {
       "from": "Francisco de Goya",
       "to": "María Teresa de Vallabriga",
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
-      "portraits": "varios retratos en 1783"
+      "portraits": "varios retratos en 1783",
+      "strength": 3
     },
     {
       "from": "Francisco de Goya",
       "to": "Luis de Borbón",
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
-      "portraits": "1783 retratos individuales; 1784 retratos grupales (<i>La familia del infante Don Luis de Borbón</i>)"
+      "portraits": "1783 retratos individuales; 1784 retratos grupales (<i>La familia del infante Don Luis de Borbón</i>)",
+      "strength": 3
     },
     {
       "from": "Carlos III",
@@ -7185,20 +7228,23 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo",
       "portraits": "Carlos III comiendo ante su corte (c. 1775, Prado)",
-      "interactions": "entre 1775 y 1778, Carlos III destierra a Paret a Puerto Rico (acusado de actuar como proxeneta de Luis de Borbón)"
+      "interactions": "entre 1775 y 1778, Carlos III destierra a Paret a Puerto Rico (acusado de actuar como proxeneta de Luis de Borbón)",
+      "strength": 3
     },
     {
       "from": "Carlos IV",
       "to": "Luis Paret",
       "connection_level": "direct",
-      "relationship type": "mecenazgo"
+      "relationship type": "mecenazgo",
+      "strength": 3
     },
     {
       "from": "Count of Floridablanca",
       "to": "Luis Paret",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "interactions": "Floridablanca concede a Paret licencia real para continuar su trabajo en Viana (Navarra) en 1786"
+      "interactions": "Floridablanca concede a Paret licencia real para continuar su trabajo en Viana (Navarra) en 1786",
+      "strength": 3
     },
     {
       "from": "Luis de Borbón",
@@ -7212,32 +7258,37 @@
       "to": "Luis Paret",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "mecenazgo": "<i>Jura de Fernando VII como príncipe de Asturias</i> (1791, Prado)"
+      "mecenazgo": "<i>Jura de Fernando VII como príncipe de Asturias</i> (1791, Prado)",
+      "strength": 3
     },
     {
       "from": "Anton Raphael Mengs",
       "to": "Luis de Borbón",
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
-      "portraits": "1767, Museo de San Diego"
+      "portraits": "1767, Museo de San Diego",
+      "strength": 3
     },
     {
       "from": "Manuel Godoy",
       "to": "Luis de Borbón",
       "connection_level": "direct",
-      "relationship type": "parientes; suegro, yerno"
+      "relationship type": "parientes; suegro, yerno",
+      "strength": 2
     },
     {
       "from": "Manuel Godoy",
       "to": "María Teresa de Vallabriga",
       "connection_level": "direct",
-      "relationship type": "familiares; suegra, yerno"
+      "relationship type": "familiares; suegra, yerno",
+      "strength": 2
     },
     {
       "from": "Luis de Borbón",
       "to": "María Teresa de Vallabriga",
       "connection_level": "direct",
-      "relationship type": "cónyuges; marido y mujer"
+      "relationship type": "cónyuges; marido y mujer",
+      "strength": 1
     },
     {
       "from": "Carlos III",
@@ -7249,7 +7300,8 @@
       "from": "Carlos IV",
       "to": "Luis de Borbón",
       "connection_level": "direct",
-      "relationship type": "parientes; tío-sobrino"
+      "relationship type": "parientes; tío-sobrino",
+      "strength": 1
     },
     {
       "from": "María Luisa de Parma",
@@ -7261,7 +7313,8 @@
       "from": "Fernando VII",
       "to": "Luis de Borbón",
       "connection_level": "direct",
-      "relationship type": "parientes; tío abuelo, sobrino nieto"
+      "relationship type": "parientes; tío abuelo, sobrino nieto",
+      "strength": 2
     },
     {
       "from": "XV Countess of Chinchón",
@@ -7273,7 +7326,8 @@
       "from": "XV Countess of Chinchón",
       "to": "Carlos III",
       "connection_level": "direct",
-      "relationship type": "familiares; tío-sobrina"
+      "relationship type": "familiares; tío-sobrina",
+      "strength": 2
     },
     {
       "from": "XV Countess of Chinchón",
@@ -7285,7 +7339,8 @@
       "from": "XV Countess of Chinchón",
       "to": "María Luisa de Parma",
       "connection_level": "direct",
-      "relationship type": "parientes; primos hermanos"
+      "relationship type": "parientes; primos hermanos",
+      "strength": 2
     },
     {
       "from": "XV Countess of Chinchón",
@@ -7298,21 +7353,24 @@
       "from": "XV Countess of Chinchón",
       "to": "Manuel Godoy",
       "connection_level": "direct",
-      "relationship type": "cónyuges; marido y mujer (1797-1828)"
+      "relationship type": "cónyuges; marido y mujer (1797-1828)",
+      "strength": 1
     },
     {
       "from": "XV Countess of Chinchón",
       "to": "Francisco de Goya",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "1783, Washington, [National Gallery of Art, 1970.17.123](https://www.nga.gov/artworks/52267-maria-teresa-de-borbon-y-vallabriga-later-condesa-de-chinchon); 1784, en <i>Retrato del Infante Don Luis</i>, [Fondazione Magnani-Rocca(https://www.magnanirocca.it/en/the-family-of-the-infante-don-luis-by-goya/); 1800, [Prado P007695](https://www.museodelprado.es/coleccion/obra-de-arte/maria-teresa-de-vallabriga/a402fbb2-0198-49c0-901f-c7a4f2530abd)"
+      "portraits": "1783, Washington, [National Gallery of Art, 1970.17.123](https://www.nga.gov/artworks/52267-maria-teresa-de-borbon-y-vallabriga-later-condesa-de-chinchon); 1784, en <i>Retrato del Infante Don Luis</i>, [Fondazione Magnani-Rocca(https://www.magnanirocca.it/en/the-family-of-the-infante-don-luis-by-goya/); 1800, [Prado P007695](https://www.museodelprado.es/coleccion/obra-de-arte/maria-teresa-de-vallabriga/a402fbb2-0198-49c0-901f-c7a4f2530abd)",
+      "strength": 3
     },
     {
       "from": "Bartolomé Sureda",
       "to": "Francisco de Goya",
       "connection_level": "direct",
       "relationship type": "mecenazgo; colegas",
-      "portraits": "1803-04, Washington, [National Gallery of Art, 1941.10.1](https://www.nga.gov/artworks/985-bartolome-sureda-y-miserol)"
+      "portraits": "1803-04, Washington, [National Gallery of Art, 1941.10.1](https://www.nga.gov/artworks/985-bartolome-sureda-y-miserol)",
+      "strength": 2
     },
     {
       "from": "Bartolomé Sureda",
@@ -7379,47 +7437,54 @@
       "connection_level": "direct",
       "relationship type": "conocidos; mecenazgo",
       "they met": "Godoy asistió al estreno de El sí de las niñas, el 24 de enero de 1806 en el Coliseo de la Cruz",
-      "employment/patronage": "Godoy ayudó a Moratín a estrenar sus comedias y aumentó sus ingresos con otros cargos eclesiásticos honoríficos: 3000 ducados de una parroquia en Montoro y 600 de la mitra de Oviedo. Entre 1792 y 1797, Godoy financió la gira europea de Moratín por Inglaterra, Bélgica, Alemania, Suiza e Italia"
+      "employment/patronage": "Godoy ayudó a Moratín a estrenar sus comedias y aumentó sus ingresos con otros cargos eclesiásticos honoríficos: 3000 ducados de una parroquia en Montoro y 600 de la mitra de Oviedo. Entre 1792 y 1797, Godoy financió la gira europea de Moratín por Inglaterra, Bélgica, Alemania, Suiza e Italia",
+      "strength": 3
     },
     {
       "from": "Manuel Godoy",
       "to": "Francisco Cabarrús",
       "connection_level": "direct",
-      "relationship type": "conocidos; patrocinio; empleador-empleado (Godoy nombró a Cabarrús embajador en Francia)"
+      "relationship type": "conocidos; patrocinio; empleador-empleado (Godoy nombró a Cabarrús embajador en Francia)",
+      "strength": 3
     },
     {
       "from": "Manuel Godoy",
       "to": "Juan Meléndez Valdés",
       "connection_level": "direct",
-      "relationship type": "conocidos; patrocinio"
+      "relationship type": "conocidos; patrocinio",
+      "strength": 3
     },
     {
       "from": "Manuel Godoy",
       "to": "Agustín Esteve",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "1800, Instituto de Arte de Chicago"
+      "portraits": "1800, Instituto de Arte de Chicago",
+      "strength": 3
     },
     {
       "from": "Fernando VII",
       "to": "Agustín Esteve",
       "connection_level": "direct",
       "relationship type": "patronage; business partners",
-      "artworks bought/sold": "Fernando VII compró la <i>Trinidad</i> de Ribera a Esteve en 1820; la primera obra expresamente adquirida para el Museo del Prado (fundado en 1819)"
+      "artworks bought/sold": "Fernando VII compró la <i>Trinidad</i> de Ribera a Esteve en 1820; la primera obra expresamente adquirida para el Museo del Prado (fundado en 1819)",
+      "strength": 3
     },
     {
       "from": "Manuel Godoy",
       "to": "José de Madrazo",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "c. 1816, RABASF. Madrazo también retrata a la segunda esposa de Godoy, Pepita Tudó: c.1812 (<i>Josefa Tudó, I Condesa de Castillo Fiel, con sus hijos Manuel y Luis Godoy, junto a un busto de Manuel Godoy</i>, Prado) y c.1813 (RABASF)"
+      "portraits": "c. 1816, RABASF. Madrazo también retrata a la segunda esposa de Godoy, Pepita Tudó: c.1812 (<i>Josefa Tudó, I Condesa de Castillo Fiel, con sus hijos Manuel y Luis Godoy, junto a un busto de Manuel Godoy</i>, Prado) y c.1813 (RABASF)",
+      "strength": 3
     },
     {
       "from": "Manuel Godoy",
       "to": "Francisco Bayeu",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "1792, RABASF"
+      "portraits": "1792, RABASF",
+      "strength": 3
     },
     {
       "from": "Francisco de Goya",
@@ -7438,7 +7503,8 @@
         "Carta de Leocadia Zorrilla y Galarza a Leandro Fernández de Moratín, 28 de abril de 1828: 'Molina y Brugada le vieron morir y yo estuve en el cuarto hasta dos minutos antes' (Canellas López 1981, no.181, p.512)",
         "Carta de Gustave Labat a la Academia de Burdeos, 1888: 'La viuda de Brugada le ha afirmado que a Goya se le enterró envuelto en su capa —de la que se han encontrado trozos— y con la gorra de visera de la que no ha aparecido ningún vestigio' (Canellas López 1981, no.193, p.521)."
       ],
-      "bibliography": "Junquera, 'Los Goya: de la Quinta a Burdeos y vuelta', <i>Archivo Español de Arte</i> 76 (304), 2003, pp.353-70; Arias 1989; J. Fauque y R. Villanueva Etcheverría, Goya y Burdeos (1824-1828), 1982, pp.198-200; Canellas 1981; Canellas López 1981; X. de Salas, 'Sobre Antonio de Brugada y un posible retrato de Goya', <i>Goya</i>, 148-150, 1979, pp.216-220"
+      "bibliography": "Junquera, 'Los Goya: de la Quinta a Burdeos y vuelta', <i>Archivo Español de Arte</i> 76 (304), 2003, pp.353-70; Arias 1989; J. Fauque y R. Villanueva Etcheverría, Goya y Burdeos (1824-1828), 1982, pp.198-200; Canellas 1981; Canellas López 1981; X. de Salas, 'Sobre Antonio de Brugada y un posible retrato de Goya', <i>Goya</i>, 148-150, 1979, pp.216-220",
+      "strength": 1
     },
     {
       "from": "Leocadia Zorrilla y Galarza",
@@ -7477,7 +7543,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
       "correspondence": "28 de noviembre de 1824: Goya le habla a Ferrer sobre Rosario Weiss Zorrilla, elogiando sus habilidades artísticas y pidiéndole que la acoja en París para que aprenda pintura. Ferrer no responde",
-      "portraits": "1824, óleo, [colección privada](https://es.m.wikipedia.org/wiki/Archivo:Joaqu%C3%ADn_Mar%C3%ADa_Ferrer_por_Francisco_de_Goya.jpg)"
+      "portraits": "1824, óleo, [colección privada](https://es.m.wikipedia.org/wiki/Archivo:Joaqu%C3%ADn_Mar%C3%ADa_Ferrer_por_Francisco_de_Goya.jpg)",
+      "strength": 2
     },
     {
       "from": "Isabel II",
@@ -7528,7 +7595,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo; colegas",
       "collaborations": "Gaulon edita la serie litográfica de Goya <i>Los toros de Burdeos</i> (1825)",
-      "portraits": "1824-25, [litografía](https://artsandculture.google.com/asset/the-printer-gaulon-goya-y-lucientes-francisco-de/EAGPfbiHV7U66Q?hl=es)"
+      "portraits": "1824-25, [litografía](https://artsandculture.google.com/asset/the-printer-gaulon-goya-y-lucientes-francisco-de/EAGPfbiHV7U66Q?hl=es)",
+      "strength": 2
     },
     {
       "from": "Francisco de Goya",
@@ -7541,14 +7609,16 @@
       "to": "Nicolas Philippe Guye",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "1810, [Museo de Bellas Artes de Virginia, 71.26](https://vmfa.museum/piction/6027262-8091582/)"
+      "portraits": "1810, [Museo de Bellas Artes de Virginia, 71.26](https://vmfa.museum/piction/6027262-8091582/)",
+      "strength": 3
     },
     {
       "from": "Francisco de Goya",
       "to": "Victor Guye",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "1810, [Washington, National Gallery of Art, 1956.11.1](https://www.nga.gov/artworks/43625-victor-guye)"
+      "portraits": "1810, [Washington, National Gallery of Art, 1956.11.1](https://www.nga.gov/artworks/43625-victor-guye)",
+      "strength": 3
     },
     {
       "from": "Francisco de Goya",
@@ -7600,7 +7670,8 @@
       "to": "Leocadia Zorrilla y Galarza",
       "connection_level": "direct",
       "relationship type": "empleador/empleado; ama de llaves",
-      "portraits": "desconocido (con identidad confirmada)"
+      "portraits": "desconocido (con identidad confirmada)",
+      "strength": 3
     },
     {
       "from": "Francisco de Goya",
@@ -7613,14 +7684,16 @@
       "from": "Francisco de Goya",
       "to": "Josefa Bayeu",
       "connection_level": "direct",
-      "relationship type": "cónyuges; marido y mujer"
+      "relationship type": "cónyuges; marido y mujer",
+      "strength": 1
     },
     {
       "from": "Francisco de Goya",
       "to": "Sebastián Martínez y Pérez",
       "connection_level": "direct",
       "relationship type": "amigos",
-      "portraits": "1792, Nueva York, [Museo Metropolitano, 06.289](https://www.metmuseum.org/art/collection/search/436541)"
+      "portraits": "1792, Nueva York, [Museo Metropolitano, 06.289](https://www.metmuseum.org/art/collection/search/436541)",
+      "strength": 2
     },
     {
       "from": "Francisco Martínez de la Rosa",
@@ -7672,7 +7745,8 @@
       "connection_level": "direct",
       "relationship type": "conocidos; mecenazgo",
       "artworks bought/sold": "Baron Taylor adquiere varias pinturas suyas para la colección del rey Louis Philippe I",
-      "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/perez-villaamil-y-duguet-genaro/630f8e4b-2e3e-49a0-b54b-fa79a8948b6f)"
+      "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/perez-villaamil-y-duguet-genaro/630f8e4b-2e3e-49a0-b54b-fa79a8948b6f)",
+      "strength": 3
     },
     {
       "from": "Jenaro Pérez Villaamil",
@@ -7740,14 +7814,16 @@
       "to": "María Cristina de Borbón-Dos Sicilias",
       "connection_level": "direct",
       "relationship type": "empleador-empleado",
-      "empleo/patrocinio": "Martínez de la Rosa es elegido para formar gobierno en 1834-35"
+      "empleo/patrocinio": "Martínez de la Rosa es elegido para formar gobierno en 1834-35",
+      "strength": 3
     },
     {
       "from": "Francisco Martínez de la Rosa",
       "to": "Isabel II",
       "connection_level": "direct",
       "relationship type": "empleador-empleado",
-      "employment/patronage": "Martínez de la Rosa es elegido para formar gobierno en 1834-35 durante la regencia de Isabel II"
+      "employment/patronage": "Martínez de la Rosa es elegido para formar gobierno en 1834-35 durante la regencia de Isabel II",
+      "strength": 3
     },
     {
       "from": "Francisco Martínez de la Rosa",
@@ -7781,13 +7857,15 @@
       "to": "Juan Antonio Melón",
       "connection_level": "direct",
       "relationship type": "amigos",
-      "portraits": "litografía, [BNE](https://bdh.bne.es/bnesearch/Search.do;jsessionid=06DC3C7DC06D3E8701A596FB1F840B51?numfields=1&field1=materia&showYearItems=&field1val=%22Litograf%C3%ADas%22&advanced=true&field1Op=AND&exact=on&textH=&completeText=&text=&language=es&autor=Gilliang&pageSize=30)"
+      "portraits": "litografía, [BNE](https://bdh.bne.es/bnesearch/Search.do;jsessionid=06DC3C7DC06D3E8701A596FB1F840B51?numfields=1&field1=materia&showYearItems=&field1val=%22Litograf%C3%ADas%22&advanced=true&field1Op=AND&exact=on&textH=&completeText=&text=&language=es&autor=Gilliang&pageSize=30)",
+      "strength": 2
     },
     {
       "from": "Javier Goya",
       "to": "Mariano Goya",
       "connection_level": "direct",
-      "relationship type": "familiares; padre-hijo"
+      "relationship type": "familiares; padre-hijo",
+      "strength": 1
     },
     {
       "from": "Javier Goya",
@@ -8152,7 +8230,8 @@
       "from": "Javier Goya",
       "to": "Josefa Bayeu",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hijo"
+      "relationship type": "familiares; madre-hijo",
+      "strength": 1
     },
     {
       "from": "Mariano Goya",
@@ -8183,7 +8262,8 @@
       "connection_level": "direct",
       "relationship type": "cónyuges; marido-mujer",
       "casados en": "1834",
-      "children": "Luisa Madrazo, Raimundo de Madrazo, Cecilia de Madrazo, Ricardo Madrazo"
+      "children": "Luisa Madrazo, Raimundo de Madrazo, Cecilia de Madrazo, Ricardo Madrazo",
+      "strength": 1
     },
     {
       "from": "Luisa Garreta",
@@ -8197,7 +8277,8 @@
       "connection_level": "direct",
       "relationship type": "maestro-alumno",
       "interactions": "Madrazo pasa dos meses en su estudio en 1854 para estudiar dibujo",
-      "websites": "[Museo de Bilbao](https://bilbaomuseoa.eus/explora/artista/raimundo-de-madrazo/7f610858-52c3-4522-8096-29aab2a13d60)"
+      "websites": "[Museo de Bilbao](https://bilbaomuseoa.eus/explora/artista/raimundo-de-madrazo/7f610858-52c3-4522-8096-29aab2a13d60)",
+      "strength": 1
     },
     {
       "from": "Ernest Meissonier",
@@ -8235,7 +8316,8 @@
       "from": "Mariano Goya",
       "to": "Josefa Bayeu",
       "connection_level": "direct",
-      "relationship type": "familiares; abuela-nieto"
+      "relationship type": "familiares; abuela-nieto",
+      "strength": 1
     },
     {
       "from": "Martín Zapater",
@@ -8256,7 +8338,8 @@
       "to": "Juan Agustín Ceán Bermúdez",
       "connection_level": "direct",
       "relationship type": "conocidos; maestro-alumno",
-      "interactions": "Ceán Bermúdez realizó una breve estancia en el taller de Mengs en Madrid (lo que le permitió estudiar en la RABASF)"
+      "interactions": "Ceán Bermúdez realizó una breve estancia en el taller de Mengs en Madrid (lo que le permitió estudiar en la RABASF)",
+      "strength": 1
     },
     {
       "from": "José de Madrazo",
@@ -8312,7 +8395,8 @@
         "Federico de Madrazo por José de Madrazo, 1833, [Sociedad Hispánica A278](https://hispanicsociety.emuseum.com/objects/2787/federico-de-madrazo-y-kuntz;jsessionid=482AACCDA830CE79328BDC311E568EA1?ctx=9989e28b-9cb7-45f4-864f-25fd40bdcf0c&idx=7).",
         "José de Madrazo, de Federico de Madrazo, c.1832, perdido en un incendio en 1935"
       ],
-      "bibliography": "Díez (ed.), <i>Federico de Madrazo. Epistolario</i>, vol.1, 1994, Museo del Prado"
+      "bibliography": "Díez (ed.), <i>Federico de Madrazo. Epistolario</i>, vol.1, 1994, Museo del Prado",
+      "strength": 1
     },
     {
       "from": "Federico de Madrazo",
@@ -8359,7 +8443,8 @@
       "know each other since": "hacia 1839, cuando Mérimée se convirtió en su profesor de francés",
       "correspondence": "Lettres à Madame de Montijo. Menciones a Goya: 1843-III-25, 1847-X-22 (Canavaggio 2016, p.340; véase el nodo de Mérimée)",
       "collaborations": "Eugenia le contó a Mérimée la historia de amor entre un torero y una vendedora de cigarros, que le inspiraría para escribir su famosa novela corta <i>Carmen</i>",
-      "bibliography": "Canavaggio 2016"
+      "bibliography": "Canavaggio 2016",
+      "strength": 1
     },
     {
       "from": "Stendhal",
@@ -8389,7 +8474,8 @@
       "to": "Stendhal",
       "connection_level": "direct",
       "relationship type": "amigos; maestro-alumno",
-      "know each other since": "hacia 1839, cuando Stendhal se convirtió en su profesor de Historia"
+      "know each other since": "hacia 1839, cuando Stendhal se convirtió en su profesor de Historia",
+      "strength": 1
     },
     {
       "from": "María Manuela Kirkpatrick",
@@ -8403,7 +8489,8 @@
       "to": "Federico de Madrazo",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "¿Década de 1830?, óleo, Palacio de las Dueñas"
+      "portraits": "¿Década de 1830?, óleo, Palacio de las Dueñas",
+      "strength": 3
     },
     {
       "from": "María Manuela Kirkpatrick",
@@ -8418,73 +8505,85 @@
       "from": "María Manuela Kirkpatrick",
       "to": "Eugenia de Montijo",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hija"
+      "relationship type": "familiares; madre-hija",
+      "strength": 1
     },
     {
       "from": "María Manuela Kirkpatrick",
       "to": "Cipriano Portocarrero, VIII Count of Montijo",
       "connection_level": "direct",
-      "relationship type": "cónyuges; marido-mujer"
+      "relationship type": "cónyuges; marido-mujer",
+      "strength": 1
     },
     {
       "from": "María Manuela Kirkpatrick",
       "to": "María Francisca de Sales Portocarrero, VI Countess of Montijo",
       "connection_level": "direct",
-      "relationship type": "familiares; suegra, nuera"
+      "relationship type": "familiares; suegra, nuera",
+      "strength": 2
     },
     {
       "from": "María Manuela Kirkpatrick",
       "to": "María Gabriela de Palafox, Marchioness of Lazán",
       "connection_level": "direct",
-      "relationship type": "parientes; cuñadas"
+      "relationship type": "parientes; cuñadas",
+      "strength": 2
     },
     {
       "from": "María Manuela Kirkpatrick",
       "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
-      "relationship type": "parientes; cuñadas"
+      "relationship type": "parientes; cuñadas",
+      "strength": 2
     },
     {
       "from": "María Manuela Kirkpatrick",
       "to": "Eugenio Eulalio Palafox, VII Count of Montijo",
       "connection_level": "direct",
-      "relationship type": "parientes; cuñado, cuñada"
+      "relationship type": "parientes; cuñado, cuñada",
+      "strength": 2
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "Isabel II",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hija"
+      "relationship type": "familiares; madre-hija",
+      "strength": 1
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "Prince Antoine, Duke of Montpensier",
       "connection_level": "direct",
-      "relationship type": "familiares; suegra, yerno"
+      "relationship type": "familiares; suegra, yerno",
+      "strength": 2
     },
     {
       "from": "Carlos IV",
       "to": "Infanta Luisa Fernanda de Borbón",
       "connection_level": "direct",
-      "relationship type": "parientes; abuelo-nieta"
+      "relationship type": "parientes; abuelo-nieta",
+      "strength": 2
     },
     {
       "from": "María Luisa de Parma",
       "to": "Infanta Luisa Fernanda de Borbón",
       "connection_level": "direct",
-      "relationship type": "familiares; abuela-nieta"
+      "relationship type": "familiares; abuela-nieta",
+      "strength": 2
     },
     {
       "from": "Fernando VII",
       "to": "Infanta Luisa Fernanda de Borbón",
       "connection_level": "direct",
-      "relationship type": "parientes; padre-hija"
+      "relationship type": "parientes; padre-hija",
+      "strength": 1
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "Infanta Luisa Fernanda de Borbón",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hija"
+      "relationship type": "familiares; madre-hija",
+      "strength": 1
     },
     {
       "from": "Isabel II",
@@ -8492,13 +8591,15 @@
       "connection_level": "direct",
       "relationship type": "parientes; hermanos, hermanas",
       "link to Goya's work": "<i>Retrato de Asensio Julià</i> (c. 1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); posteriormente perteneció a su hermana Isabel II (Tinterow 2003, p.408); Montpensier lo poseía en 1858. Colgado en el Palacio de Vista Alegre en Madrid, luego en el Palacio de San Telmo (Sevilla), junto a las <i>Majas</i> (mencionado por Charles Yriarte en 1869, 16 de octubre; Fayos Pérez 2024, Apéndice II).",
-      "bibliography": "Fayos Pérez 2024; Tinterow 2003"
+      "bibliography": "Fayos Pérez 2024; Tinterow 2003",
+      "strength": 1
     },
     {
       "from": "Louis Philippe I",
       "to": "Infanta Luisa Fernanda de Borbón",
       "connection_level": "direct",
-      "relationship type": "parientes; suegro, nuera"
+      "relationship type": "parientes; suegro, nuera",
+      "strength": 2
     },
     {
       "from": "Federico de Madrazo",
@@ -8506,7 +8607,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
       "know each other since": "al menos desde 1847",
-      "portraits": "1847, óleo, Museo del Romanticismo; 1851, óleo, Palacio Real de Madrid"
+      "portraits": "1847, óleo, Museo del Romanticismo; 1851, óleo, Palacio Real de Madrid",
+      "strength": 3
     },
     {
       "from": "Vicente López",
@@ -8514,7 +8616,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
       "know each other since": "al menos desde 1842",
-      "portraits": "1842, óleo"
+      "portraits": "1842, óleo",
+      "strength": 3
     },
     {
       "from": "Jean Laurent",
@@ -8528,26 +8631,30 @@
       "from": "Fernando VII",
       "to": "Prince Antoine, Duke of Montpensier",
       "connection_level": "direct",
-      "relationship type": "parientes; suegro, yerno"
+      "relationship type": "parientes; suegro, yerno",
+      "strength": 2
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "Louis Philippe I",
       "connection_level": "direct",
-      "relationship type": "parientes: <i>consuegros</i>; Louis Philippe I era el suegro de la hija de María Cristina, la infanta Luisa Fernanda de Borbón"
+      "relationship type": "parientes: <i>consuegros</i>; Louis Philippe I era el suegro de la hija de María Cristina, la infanta Luisa Fernanda de Borbón",
+      "strength": 2
     },
     {
       "from": "Fernando VII",
       "to": "Louis Philippe I",
       "connection_level": "direct",
-      "relationship type": "parientes: <i>consuegros</i>; Louis Philippe I era el suegro de la hija de Fernando VII, la infanta Luisa Fernanda de Borbón"
+      "relationship type": "parientes: <i>consuegros</i>; Louis Philippe I era el suegro de la hija de Fernando VII, la infanta Luisa Fernanda de Borbón",
+      "strength": 2
     },
     {
       "from": "Prince Antoine, Duke of Montpensier",
       "to": "Federico de Madrazo",
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
-      "portraits": "1851, óleo, Palacio Real de Madrid"
+      "portraits": "1851, óleo, Palacio Real de Madrid",
+      "strength": 3
     },
     {
       "from": "Prince Antoine, Duke of Montpensier",
@@ -8569,26 +8676,30 @@
       "to": "Isabel II",
       "connection_level": "direct",
       "relationship type": "parientes; cuñado, cuñada",
-      "link to Goya's work": "<i>Retrato de Asensio Julià</i> (c. 1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); posteriormente perteneció a su cuñada Isabel II (Tinterow 2003, p.408); Montpensier lo poseía en 1858. Colgado en el Palacio de Vista Alegre en Madrid, luego en el Palacio de San Telmo (Sevilla), junto a las <i>Majas</i> (mencionado por Charles Yriarte en 1869, 16 de octubre; Fayos Pérez 2024, Apéndice II)"
+      "link to Goya's work": "<i>Retrato de Asensio Julià</i> (c. 1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); posteriormente perteneció a su cuñada Isabel II (Tinterow 2003, p.408); Montpensier lo poseía en 1858. Colgado en el Palacio de Vista Alegre en Madrid, luego en el Palacio de San Telmo (Sevilla), junto a las <i>Majas</i> (mencionado por Charles Yriarte en 1869, 16 de octubre; Fayos Pérez 2024, Apéndice II)",
+      "strength": 2
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "Carlos IV",
       "connection_level": "¿secundario?",
-      "relationship type": "parientes: suegro, nuera"
+      "relationship type": "parientes: suegro, nuera",
+      "strength": 2
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "María Luisa de Parma",
       "connection_level": "¿secundario?",
-      "relationship type": "familiares: suegra, nuera"
+      "relationship type": "familiares: suegra, nuera",
+      "strength": 2
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "Fernando VII",
       "connection_level": "direct",
       "relationship type": "cónyuges: marido-mujer (1829); parientes: tío-sobrina",
-      "children": "Isabel II e Infanta María Luisa"
+      "children": "Isabel II e Infanta María Luisa",
+      "strength": 1
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
@@ -8649,14 +8760,16 @@
       "to": "Isabel II",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "c.1860"
+      "portraits": "c.1860",
+      "strength": 3
     },
     {
       "from": "Jean Laurent",
       "to": "María Manuela Kirkpatrick",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "1879"
+      "portraits": "1879",
+      "strength": 3
     },
     {
       "from": "Jean Laurent",
@@ -8694,14 +8807,16 @@
       "connection_level": "direct",
       "relationship type": "maestro-alumno",
       "know each other since": "hacia 1860",
-      "correspondence": "parte de la colección documental recientemente adquirida por el Museo de Bilbao (anteriormente en París)"
+      "correspondence": "parte de la colección documental recientemente adquirida por el Museo de Bilbao (anteriormente en París)",
+      "strength": 1
     },
     {
       "from": "Federico de Madrazo",
       "to": "Eduardo Zamacois",
       "connection_level": "direct",
       "relationship type": "maestro-alumno",
-      "know each other since": "1856"
+      "know each other since": "1856",
+      "strength": 1
     },
     {
       "from": "Mariano Fortuny y Marsal",
@@ -8720,32 +8835,37 @@
       "to": "Mariano Fortuny y Madrazo",
       "connection_level": "direct",
       "relationship type": "parientes: tío-sobrino",
-      "influencia": "Raimundo influyó en su sobrino"
+      "influencia": "Raimundo influyó en su sobrino",
+      "strength": 1
     },
     {
       "from": "Mariano Fortuny y Marsal",
       "to": "Mariano Fortuny y Madrazo",
       "connection_level": "direct",
       "relationship type": "parientes: padre-hijo",
-      "art collection": "Mariano Fortuny y Madrazo tenía obras de su padre en su colección, como  <i>Desnudo masculino de pie de frente, con la mano izquierda apoyada en un bloque de piedra</i>, c.1861, Prado D006227"
+      "art collection": "Mariano Fortuny y Madrazo tenía obras de su padre en su colección, como  <i>Desnudo masculino de pie de frente, con la mano izquierda apoyada en un bloque de piedra</i>, c.1861, Prado D006227",
+      "strength": 1
     },
     {
       "from": "Cecilia de Madrazo",
       "to": "Mariano Fortuny y Madrazo",
       "connection_level": "direct",
-      "relationship type": "familiares: madre-hijo"
+      "relationship type": "familiares: madre-hijo",
+      "strength": 1
     },
     {
       "from": "Federico de Madrazo",
       "to": "Mariano Fortuny y Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes: abuelo-nieto"
+      "relationship type": "parientes: abuelo-nieto",
+      "strength": 1
     },
     {
       "from": "José de Madrazo",
       "to": "Mariano Fortuny y Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes: bisabuelo, bisnieto"
+      "relationship type": "parientes: bisabuelo, bisnieto",
+      "strength": 2
     },
     {
       "from": "Raimundo de Madrazo",
@@ -9046,7 +9166,8 @@
       "enemistades": "Morisot decide unirse a la nueva asociación de artistas (<i>Société anonyme des artistes peintres, sculptueurs et graveurs</i>) en 1873 y dejar de enviar obras de arte al Salón, mientras que Manet permanece en los canales oficiales.",
       "mentions": "en consonancia con la misoginia de la época, Manet le dijo a Henri Fantin-Latour: 'Je suis de votre avis, les demoiselles Morisot sont charmantes, c'est fâcheux qu'elles ne soient pas des hommes. Cependant, elles pourraient, comme femmes, servir la cause de la peinture en épousant chacune un académicien et en mettant la discorde dans le camp de ces gâteux' (Moreau-Nélaton 1926, vol.2, t.I, p.103).",
       "portraits": "Morisot posó para <i>Le balcon</i> (1869) de Manet; <i>Berthe Morisot con un ramo de violetas</i> (1872, Orsay); <i>Berthe Morisot au soulier rose</i> (1872, Museo de Hiroshima)",
-      "bibliography": "Wolohojian y Dunn 2023; Moreau-Nélaton 1926, Manet raconté par lui-même"
+      "bibliography": "Wolohojian y Dunn 2023; Moreau-Nélaton 1926, Manet raconté par lui-même",
+      "strength": 1
     },
     {
       "from": "Berthe Morisot",
@@ -9317,7 +9438,8 @@
       "to": "George Sand",
       "connection_level": "direct",
       "relationship type": "amigas íntimas",
-      "portraits": "George Sand hizo un dibujo de Pauline en 1840-45"
+      "portraits": "George Sand hizo un dibujo de Pauline en 1840-45",
+      "strength": 1
     },
     {
       "from": "Pauline Viardot-García",
@@ -9512,7 +9634,8 @@
       "relationship type": "amigos; colegas; empleador-empleado",
       "know each other since": "al menos desde 1830",
       "portraits": "escultura caricaturesca de Philipon por Daumier, 1832-35 (<i>Célébrités du Juste milieu</i>)",
-      "collaborations": "trabajo en <i>La Caricature</i> (1830-39), <i>Le Charivari</i> (1832-37)"
+      "collaborations": "trabajo en <i>La Caricature</i> (1830-39), <i>Le Charivari</i> (1832-37)",
+      "strength": 1
     },
     {
       "from": "Charles Philipon",
@@ -9520,7 +9643,8 @@
       "connection_level": "direct",
       "relationship type": "amigos; colegas; empleador-empleado",
       "know each other since": "al menos desde 1827",
-      "collaborations": "trabajo en <i>La Silhouette</i> (1829), <i>La Caricature</i> (1830-39), <i>Le Charivari</i> (1832-37). Maurice Alhoy, Louis Huart y Charles Philipon, <i>Musée pour rire, dessins par tous les caricaturistes de Paris</i> (1839)."
+      "collaborations": "trabajo en <i>La Silhouette</i> (1829), <i>La Caricature</i> (1830-39), <i>Le Charivari</i> (1832-37). Maurice Alhoy, Louis Huart y Charles Philipon, <i>Musée pour rire, dessins par tous les caricaturistes de Paris</i> (1839).",
+      "strength": 2
     },
     {
       "from": "Ernest Meissonier",
@@ -9594,7 +9718,7 @@
         "1837, 10 nov, carta de Federico de Madrazo a José de Madrazo: 'Antes de ayer fuimos Dauzats y yo a casa de Rittner para hablarle sobre el negocio de las estampas [...] Nos dijo además que su compañero Mr. Goupil [Adolphe Goupil] se halla en este momento en Londres, que le espera de un día para otro y que en cuanto venga pasará con él a casa de Dauzats para ver la obra completa; prefiere ver la obra completa para formar un juicio más exacto (Dauzats dijo ayer delante de mí a Mr. Taylor que le mandara a su casa los tres tomos)' (Díez 1994, no.16, p.46)."
       ],
       "bibliography": "Fayos Pérez 2026 (de próxima publicación); Fayos Pérez 2024; Díez 1994; Guinard 1967-A; Guinard 1967-B",
-      "strength": 2
+      "strength": 1
     },
     {
       "from": "Federico de Madrazo",
@@ -9614,7 +9738,8 @@
       "to": "Cecilia de Madrazo",
       "connection_level": "direct",
       "relationship type": "cónyuges; marido y mujer",
-      "children": "Mariano Fortuny y Madrazo; María Luisa Fortuny y Madrazo"
+      "children": "Mariano Fortuny y Madrazo; María Luisa Fortuny y Madrazo",
+      "strength": 1
     },
     {
       "from": "Mariano Fortuny y Marsal",
@@ -9622,61 +9747,71 @@
       "connection_level": "direct",
       "relationship type": "parientes: cuñados; colegas; amigos",
       "collaborations": "viajan a Sevilla y Madrid en 1868",
-      "they share": "Adolphe Goupil fue su mecenas"
+      "they share": "Adolphe Goupil fue su mecenas",
+      "strength": 1
     },
     {
       "from": "Federico de Madrazo",
       "to": "Cecilia de Madrazo",
       "connection_level": "direct",
-      "relationship type": "familiares; padre-hija"
+      "relationship type": "familiares; padre-hija",
+      "strength": 1
     },
     {
       "from": "Luis de Madrazo",
       "to": "Cecilia de Madrazo",
       "connection_level": "direct",
-      "relationship type": "familiares; tío-sobrina"
+      "relationship type": "familiares; tío-sobrina",
+      "strength": 2
     },
     {
       "from": "Juan de Madrazo",
       "to": "Cecilia de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; tío-sobrina"
+      "relationship type": "parientes; tío-sobrina",
+      "strength": 2
     },
     {
       "from": "Pedro de Madrazo",
       "to": "Cecilia de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; tío-sobrina"
+      "relationship type": "parientes; tío-sobrina",
+      "strength": 2
     },
     {
       "from": "Luisa Garreta",
       "to": "Cecilia de Madrazo",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hija"
+      "relationship type": "familiares; madre-hija",
+      "strength": 1
     },
     {
       "from": "Román Garreta",
       "to": "Cecilia de Madrazo",
       "connection_level": "direct",
-      "relationship type": "familiares; tío-sobrina"
+      "relationship type": "familiares; tío-sobrina",
+      "strength": 2
     },
     {
       "from": "Luisa Garreta",
       "to": "Mariano Fortuny y Marsal",
       "connection_level": "direct",
-      "relationship type": "familiares; suegra, yerno"
+      "relationship type": "familiares; suegra, yerno",
+      "strength": 2
     },
     {
       "from": "Luisa Garreta",
       "to": "José de Madrazo",
       "connection_level": "direct",
-      "relationship type": "familiares; suegro, nuera"
+      "relationship type": "familiares; suegro, nuera",
+      "strength": 2
     },
     {
       "from": "Mariano Fortuny y Marsal",
       "to": "Federico de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; suegro, yerno"
+      "relationship type": "parientes; suegro, yerno",
+      "strength": 2
     },
     {
       "from": "Federico de Madrazo",
@@ -9688,7 +9823,8 @@
       "from": "Federico de Madrazo",
       "to": "Román Garreta",
       "connection_level": "direct",
-      "relationship type": "parientes; cuñados"
+      "relationship type": "parientes; cuñados",
+      "strength": 2
     },
     {
       "from": "Federico de Madrazo",
@@ -9700,13 +9836,15 @@
         "hacia 1835-1836 se alistaron como voluntarios en los <i>granaderos</i> de la Milicia Nacional de Madrid (6.º Batallón), junto a Santiago Masarnau, Vicente Masarnau, Pascual de Gayangos y Arce y Valentín Carderera.",
         "En 1837 viajaron juntos a París. Parten en agosto de 1837"
       ],
-      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/27500-pedro-de-madrazo-y-kuntz); [Colección Madrazo](https://ceres.mcu.es/pages/ResultSearch?txtSimpleSearch=Pedro%20de%20Madrazo&simpleSearch=0&hipertextSearch=1&search=simpleSelection&MuseumsSearch=CSGMM%7C&MuseumsRolSearch=1&listaMuseos=[Colecci%F3n%20Madrazo.%20Comunidad%20de%20Madrid])"
+      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/27500-pedro-de-madrazo-y-kuntz); [Colección Madrazo](https://ceres.mcu.es/pages/ResultSearch?txtSimpleSearch=Pedro%20de%20Madrazo&simpleSearch=0&hipertextSearch=1&search=simpleSelection&MuseumsSearch=CSGMM%7C&MuseumsRolSearch=1&listaMuseos=[Colecci%F3n%20Madrazo.%20Comunidad%20de%20Madrid])",
+      "strength": 1
     },
     {
       "from": "Federico de Madrazo",
       "to": "Luis de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; hermanos"
+      "relationship type": "parientes; hermanos",
+      "strength": 1
     },
     {
       "from": "Federico de Madrazo",
@@ -9720,19 +9858,22 @@
       "from": "Federico de Madrazo",
       "to": "Raimundo de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; padre-hijo"
+      "relationship type": "parientes; padre-hijo",
+      "strength": 1
     },
     {
       "from": "Cecilia de Madrazo",
       "to": "Raimundo de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; hermanos; hermana-hermano"
+      "relationship type": "parientes; hermanos; hermana-hermano",
+      "strength": 1
     },
     {
       "from": "Cecilia de Madrazo",
       "to": "José de Madrazo",
       "connection_level": "direct",
-      "relationship type": "familiares; abuelo-nieta"
+      "relationship type": "familiares; abuelo-nieta",
+      "strength": 2
     },
     {
       "from": "Federico de Madrazo",
@@ -9791,19 +9932,22 @@
       "connection_level": "direct",
       "employment/patronage": "El Baron Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo",
       "link to Goya's work": "en una carta de Federico de Madrazo a José de Madrazo del 27 de octubre de 1837, escribe que al rey no le gustaban los cuadros de Goya traídos por Taylor: 'Parece que al Rey le gustan mucho los cuadros que ha traído el Sr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver cómo se colocan' (Díez 1994, p.40).",
-      "bibliography": "Díez 1994"
+      "bibliography": "Díez 1994",
+      "strength": 2
     },
     {
       "from": "Adrien Dauzats",
       "to": "Louis Philippe I",
       "connection_level": "direct",
-      "employment/patronage": "El Baron Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo"
+      "employment/patronage": "El Baron Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo",
+      "strength": 2
     },
     {
       "from": "Pharamond Blanchard",
       "to": "Louis Philippe I",
       "connection_level": "direct",
-      "employment/patronage": "El Baron Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo"
+      "employment/patronage": "El Baron Taylor se encargó de la adquisición de pinturas entre 1835 y 1837 para la Galerie espagnole (1838-1848), con la colaboración de Adrien Dauzats, Pharamond Blanchard y, en parte, a través de Javier Goya y Federico de Madrazo",
+      "strength": 2
     },
     {
       "from": "Valentín Carderera",
@@ -9811,7 +9955,8 @@
       "connection_level": "direct",
       "relationship type": "negocios/comercio de arte; mecenazgo",
       "link to Goya's work": "Louis Philippe I adquirió un retrato de Zurbarán (dibujo) de Goya a través de Carderera en 1841 (Fayos Pérez 2024, p.45)",
-      "bibliography": "Fayos Pérez 2024"
+      "bibliography": "Fayos Pérez 2024",
+      "strength": 3
     },
     {
       "from": "Federico de Madrazo",
@@ -9823,7 +9968,8 @@
         "En una carta de Federico de Madrazo a José de Madrazo del 27 de octubre de 1837, escribe que al rey no le gustaban los cuadros de Goya traídos por Taylor: 'Parece que al Rey le gustan mucho los cuadros que ha traído el Sr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver cómo se colocan' (Díez 1994, p.40)"
       ],
       "patronage": "En 1838, Louis Philippe I encargó a Madrazo el cuadro Godofredo de Bouillon para Versalles",
-      "bibliography": "Fayos Pérez 2024; Díez 1994"
+      "bibliography": "Fayos Pérez 2024; Díez 1994",
+      "strength": 3
     },
     {
       "from": "Federico de Madrazo",
@@ -9839,7 +9985,8 @@
         }
       ],
       "exhibitions": "2015-16 Prado, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i> (cur. Javier Barón)",
-      "conferences/seminars": "Javier Barón, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i>, 2015, Prado, [YouTube](https://www.youtube.com/watch?v=JY0qD-vB3hw)"
+      "conferences/seminars": "Javier Barón, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i>, 2015, Prado, [YouTube](https://www.youtube.com/watch?v=JY0qD-vB3hw)",
+      "strength": 2
     },
     {
       "from": "Federico de Madrazo",
@@ -9912,13 +10059,15 @@
       "from": "Adolphe Goupil",
       "to": "Eduardo Zamacois",
       "connection_level": "direct",
-      "relationship type": "mecenazgo"
+      "relationship type": "mecenazgo",
+      "strength": 2
     },
     {
       "from": "Adolphe Goupil",
       "to": "Raimundo de Madrazo",
       "connection_level": "direct",
-      "relationship type": "mecenazgo"
+      "relationship type": "mecenazgo",
+      "strength": 2
     },
     {
       "from": "Adolphe Goupil",
@@ -9929,7 +10078,8 @@
         "Fortuny firma un contrato de exclusividad con Goupil en 1866.",
         "Goupil & Cie., Œuvres de Fortuny reproduites en photographie, París, 1875"
       ],
-      "obras compradas/vendidas": "Goupil compra <i>La Vicaría</i> de Fortuny por 70 000 francos y la revende por 250 000"
+      "obras compradas/vendidas": "Goupil compra <i>La Vicaría</i> de Fortuny por 70 000 francos y la revende por 250 000",
+      "strength": 2
     },
     {
       "from": "Charles Yriarte",
@@ -9974,7 +10124,8 @@
       "relationship type": "conocidos, mecenazgo, colegas",
       "artworks bought/sold": "desde 1846, Goupil no solo es editor, sino que también compra pinturas originales de artistas vivos como Paul Delaroche, Jean-Léon Gérôme y Horace Vernet, las reproduce en grabados y luego revende los originales (Lanzarote Guiral 2016, p.LXXVI)",
       "collaborations": "Goupil editó Œuvre de Paul Delaroche, con una fotografía de Robert Jefferson Bingham y un texto de Henri Delaborde (1858)",
-      "bibliography": "Lanzarote Guiral 2016"
+      "bibliography": "Lanzarote Guiral 2016",
+      "strength": 2
     },
     {
       "from": "Achille Devéria",
@@ -10010,7 +10161,8 @@
       "know each other since": "1836",
       "influencia": "<i>Familia de Don Gregorio López de Mollinedo</i> (1854, colección privada): La influencia de Delaroche se aprecia en las impresionantes cualidades táctiles, la perfección del dibujo, la fusión de luz y color lograda con pinceladas milimétricas de incalculable valor y la concepción cuasi fotográfica del conjunto (Wikipedia).",
       "websites": "[Wikipedia](https://es.wikipedia.org/wiki/Carlos_Luis_de_Ribera_y_Fieve)",
-      "added": "2025-09-06"
+      "added": "2025-09-06",
+      "strength": 1
     },
     {
       "from": "Carlos Luis de Ribera",
@@ -10081,7 +10233,8 @@
       "know each other since": "al menos desde 1846",
       "employment/patronage": "Ribera fue pintor de cámara honorario desde 1846",
       "portraits": "1835",
-      "added": "2025-09-06"
+      "added": "2025-09-06",
+      "strength": 3
     },
     {
       "from": "María Luisa de Parma",
@@ -10403,7 +10556,8 @@
       "portraits": "Baudelaire hace un retrato literario de Asselineau en 1850",
       "collaborations": "Asselineau escribe la primera biografía de Baudelaire: Charles Baudelaire, sa vie et son œuvre (1869), y realiza una edición póstuma de Le Spleen de Paris en 1869 con Théodore de Banville",
       "websites": "[Baudelaire.litteratura](http://baudelaire.litteratura.com/charlesasselineau.php)",
-      "bibliography": "Jacques Crépet y Claude Pichois, Baudelaire et Asselineau, textes recueillis et commentés, Nizet, 1953"
+      "bibliography": "Jacques Crépet y Claude Pichois, Baudelaire et Asselineau, textes recueillis et commentés, Nizet, 1953",
+      "strength": 1
     },
     {
       "from": "Jenaro Pérez Villaamil",
@@ -10424,7 +10578,8 @@
       "to": "Isabel II",
       "connection_level": "direct",
       "relationship type": "conocidos; empleador-empleado",
-      "employment/patronage": "Pérez Villaamil fue nombrado pintor de cámara honorario de Isabel II en 1840"
+      "employment/patronage": "Pérez Villaamil fue nombrado pintor de cámara honorario de Isabel II en 1840",
+      "strength": 3
     },
     {
       "from": "Léon Auguste Asselineau",
@@ -10550,10 +10705,12 @@
       "from": "Valentín Carderera",
       "to": "Gustave Brunet",
       "connection_level": "direct",
+      "relationship type": "conocidos",
       "know each other since": "al menos desde 1842",
       "mentions": "Brunet menciona a Carderera en su libro sobre Goya de 1865: su colección de grabados y dibujos de Goya y sus artículos en la Gazette des Beaux-arts (pp.8, 9, 13-15, 20-25, 27, 28, 30, 62, 63)",
       "compartido": "correspondencia. 1863-XI-5 (archivo Carderera): menciona los Caprichos, la Tauromaquia, las Scènes d'invasion (Desastres de la guerra) y los Sueños o Proverbios (Disparates) de Goya (Fayos Pérez 2020, pp.1052-53, 1055)",
-      "bibliography": "Fayos Pérez 2020; Brunet 1865"
+      "bibliography": "Fayos Pérez 2020; Brunet 1865",
+      "strength": 3
     },
     {
       "from": "Antonio Remón Zarco del Valle y Huet",
@@ -10776,7 +10933,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
       "know each other since": "1783",
-      "portraits": "1783, Prado (P003255)"
+      "portraits": "1783, Prado (P003255)",
+      "strength": 3
     },
     {
       "from": "Gaspar Melchor de Jovellanos",
@@ -10790,7 +10948,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
       "know each other since": "al menos desde 1798",
-      "portraits": "1798, Prado"
+      "portraits": "1798, Prado",
+      "strength": 2
     },
     {
       "from": "XI Count of Altamira",
@@ -10816,7 +10975,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
       "know each other since": "al menos desde 1788",
-      "portraits": "1788, Banco de España"
+      "portraits": "1788, Banco de España",
+      "strength": 3
     },
     {
       "from": "Bernardo de Iriarte",
@@ -10830,7 +10990,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
       "know each other since": "al menos desde 1787",
-      "portraits": "1787, Banco de España"
+      "portraits": "1787, Banco de España",
+      "strength": 3
     },
     {
       "from": "Bernardo de Iriarte",
@@ -11127,7 +11288,8 @@
         "1861 VII 19, 29, 31, VIII 7, 19, 20, 21, IX 21; en Amberes"
       ],
       "artworks bought/sold": "1839: Taylor ofrece a Carderera un acuerdo para comprar sus dibujos y textos (Adrien Dauzats como intermediario)",
-      "bibliography": "Lanzarote Guiral 2016, p.573"
+      "bibliography": "Lanzarote Guiral 2016, p.573",
+      "strength": 2
     },
     {
       "from": "Valentín Carderera",
@@ -11137,7 +11299,8 @@
       "know each other since": "al menos desde 1835",
       "they met": "coincidieron en París (Ochoa vivió allí entre 1837 y 1843)",
       "collaborations": "Carderera publicó su primer artículo sobre Goya en 1835 en <i>El Artista</i>, fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa.",
-      "bibliography": "Lanzarote Guiral 2016, p.563"
+      "bibliography": "Lanzarote Guiral 2016, p.563",
+      "strength": 2
     },
     {
       "from": "Valentín Carderera",
@@ -11237,31 +11400,36 @@
       "from": "José de Madrazo",
       "to": "Pedro de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; padre-hijo"
+      "relationship type": "parientes; padre-hijo",
+      "strength": 1
     },
     {
       "from": "José de Madrazo",
       "to": "Luis de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; padre-hijo"
+      "relationship type": "parientes; padre-hijo",
+      "strength": 1
     },
     {
       "from": "José de Madrazo",
       "to": "Raimundo de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; abuelo-nieto"
+      "relationship type": "parientes; abuelo-nieto",
+      "strength": 2
     },
     {
       "from": "José de Madrazo",
       "to": "Román Garreta",
       "connection_level": "direct",
-      "relationship type": "parientes; suegro, yerno"
+      "relationship type": "parientes; suegro, yerno",
+      "strength": 2
     },
     {
       "from": "José de Madrazo",
       "to": "Eugenio Ochoa",
       "connection_level": "direct",
-      "relationship type": "¿conocidos? ¿amigos?"
+      "relationship type": "¿conocidos? ¿amigos?",
+      "strength": 2
     },
     {
       "from": "José de Madrazo",
@@ -11273,7 +11441,8 @@
       "from": "José de Madrazo",
       "to": "Jacques-Louis David",
       "connection_level": "direct",
-      "relationship type": "maestro-alumno"
+      "relationship type": "maestro-alumno",
+      "strength": 1
     },
     {
       "from": "Baron Taylor",
@@ -11292,7 +11461,8 @@
         "1842-II-27, Taylor a Dauzats (Londres): 'Je vous avais bien dit que Carderera deviendrait fou, quand il s'agirait des prix. Proposez lui 20 frs. par dessin et 5 francs pour chaque explication. Nosotros aceptaremos la suma que me parezca conveniente' (BnF MS NA FR 23192, f.176; citado en Luxenberg 2008, p.195, nota p.162; Lanzarote Guiral 2016, p.XXXI)"
       ],
       "bibliography": "Lanzarote Guiral 2016; Luxenberg 2008; Guinard 1967-A; Guinard 1967-B",
-      "websites": "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)"
+      "websites": "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)",
+      "strength": 1
     },
     {
       "from": "Baron Taylor",
@@ -11341,7 +11511,8 @@
       "to": "Jean-Auguste-Dominique Ingres",
       "connection_level": "direct",
       "relationship type": "profesional; maestro-alumno",
-      "know each other since": "hacia 1827"
+      "know each other since": "hacia 1827",
+      "strength": 1
     },
     {
       "from": "Célestin Nanteuil",
@@ -11478,7 +11649,8 @@
       "to": "Pierre Lacour",
       "connection_level": "direct",
       "relationship type": "maestro-alumno? ¿Era Pierre Lacour hijo? (Pierre Lacour padre fallece en 1814). 'Dauzats, tras una breve estancia en la escuela de Angers, asistió a la Escuela de Dibujo de Burdeos, dirigida por un anciano artista, superviviente del siglo XVIII, el excelente y poco conocido Lacour' (Burty 1869, p.IV).",
-      "bibliography": "Philippe Burty, catálogo de la venta de Dauzats, 1869"
+      "bibliography": "Philippe Burty, catálogo de la venta de Dauzats, 1869",
+      "strength": 2
     },
     {
       "from": "Adrien Dauzats",
@@ -11486,7 +11658,8 @@
       "connection_level": "direct",
       "relationship type": "maestro-alumno?",
       "they met": "en 1824 en Burdeos",
-      "bibliography": "Philippe Burty, catálogo de la venta Dauzats, 1869"
+      "bibliography": "Philippe Burty, catálogo de la venta Dauzats, 1869",
+      "strength": 2
     },
     {
       "from": "Adrien Dauzats",
@@ -11653,7 +11826,8 @@
       "from": "Ferdinand Guillemardet",
       "to": "Eugène Delacroix",
       "connection_level": "direct",
-      "relationship type": "conocidos; padre de amigos. Delacroix descubre a Goya a través de él (una serie de los Caprichos y dos retratos)"
+      "relationship type": "conocidos; padre de amigos. Delacroix descubre a Goya a través de él (una serie de los Caprichos y dos retratos)",
+      "strength": 2
     },
     {
       "from": "Ferdinand Guillemardet",
@@ -11666,7 +11840,8 @@
       "from": "Eugène Delacroix",
       "to": "Félix Guillemardet",
       "connection_level": "direct",
-      "relationship type": "amigos íntimos"
+      "relationship type": "amigos íntimos",
+      "strength": 1
     },
     {
       "from": "Eugène Delacroix",
@@ -11705,7 +11880,8 @@
         "En 1855, Charles Baudelaire menciona en un artículo en <i>Le Pays</i> sobre la Exposición Universal el juicio de Hugo sobre las mujeres representadas por Delacroix (Baudelaire-Pichois 1976, p.593). Para Hugo, Delacroix 'a toutes [les qualités] moins une ; il lui manque ce qu'ont toujours cherché et trouvé les artistes suprêmes, peintres ou poètes - la beauté'. También se queja de la falta de mujeres verdaderamente bellas, excepto los ángeles de <i>Christ au Jardin des Oliviers</i> y una de las mujeres de <i>Scènes des massacres de Scio</i>. Según Hugo, los personajes femeninos de Delacroix se caracterizan por una 'laideur exquise', como en <i>Femmes d'Alger</i> (Escholier 1931, p.321)."
       ],
       "correspondence": "desde 1828 (Burty 1880, t.I, p.130, 134)",
-      "bibliography": "Hovasse 2001; Baudelaire-Pichois 1976; Gandon 1966, p.173-75; Escholier, <i>Victor Hugo raconté par ceux qui l'ont vu</i>, 1931; Burty 1880, t.I; 'Poésies, par M. Victor Hugo', <i>Le Globe</i>, 4 de noviembre de 1826, p.186"
+      "bibliography": "Hovasse 2001; Baudelaire-Pichois 1976; Gandon 1966, p.173-75; Escholier, <i>Victor Hugo raconté par ceux qui l'ont vu</i>, 1931; Burty 1880, t.I; 'Poésies, par M. Victor Hugo', <i>Le Globe</i>, 4 de noviembre de 1826, p.186",
+      "strength": 2
     },
     {
       "from": "Eugène Delacroix",
@@ -11714,28 +11890,32 @@
       "relationship type": "amigos íntimos",
       "know each other since": "al menos desde 1834",
       "correspondence": "1846-X-11 (MD 2012-13)",
-      "portraits": "1834, Musée Delacroix (MD 2016-1); 1838, Copenhague"
+      "portraits": "1834, Musée Delacroix (MD 2016-1); 1838, Copenhague",
+      "strength": 1
     },
     {
       "from": "Hortense Allart",
       "to": "George Sand",
       "connection_level": "direct",
-      "relationship type": "amigos; ¿amantes?",
+      "relationship type": "amigas; ¿amantes?",
       "correspondence": "Cartas a George Sand",
       "collaborations": "Les enchantements de Prudence, Avec George Sand (1873)",
-      "mentions": "Allart consideraba a Sand 'una de las glorias de su sexo' (James Knowles, 1911, <i>The Nineteenth Century and After</i>, ed. de dominio público, p.1067)"
+      "mentions": "Allart consideraba a Sand 'una de las glorias de su sexo' (James Knowles, 1911, <i>The Nineteenth Century and After</i>, ed. de dominio público, p.1067)",
+      "strength": 1
     },
     {
       "from": "Hortense Allart",
       "to": "Sophie Gay",
       "connection_level": "direct",
-      "relationship type": "familiares; tía-sobrina"
+      "relationship type": "familiares; tía-sobrina",
+      "strength": 1
     },
     {
       "from": "Hortense Allart",
       "to": "Delphine de Girardin",
       "connection_level": "direct",
-      "relationship type": "parientes; primos"
+      "relationship type": "parientes; primas",
+      "strength": 1
     },
     {
       "from": "Hortense Allart",
@@ -11755,20 +11935,21 @@
       "from": "Amable Tastu",
       "to": "Delphine de Girardin",
       "connection_level": "direct",
-      "relationship type": "¿amigos? ¿mentor-protegida?; Challamel dice sobre Delphine de Girardin: 'les gens de tous les partis célébraient-ils la 'muse', qui grandissait à côté de Mme Amable Tastu' (1855, p.192)",
+      "relationship type": "¿amigas? ¿mentora-protegida?",
+      "mentions": "Challamel dice sobre Delphine de Girardin: 'les gens de tous les partis célébraient-ils la 'muse', qui grandissait à côté de Mme Amable Tastu' (1855, p.192)",
       "bibliography": "Challamel 1885"
     },
     {
       "from": "Virginie Ancelot",
       "to": "Delphine de Girardin",
       "connection_level": "direct",
-      "relationship type": "conocidos. Delphine de Girardin asistió al salón de Ancelot"
+      "relationship type": "conocidas. Delphine de Girardin asistió al salón de Ancelot"
     },
     {
       "from": "Virginie Ancelot",
       "to": "Sophie Gay",
       "connection_level": "direct",
-      "relationship type": "conocidos. Sophie Gay asistió al salón de Ancelot"
+      "relationship type": "conocidas. Sophie Gay asistió al salón de Ancelot"
     },
     {
       "from": "Virginie Ancelot",
@@ -11786,7 +11967,7 @@
       "from": "Virginie Ancelot",
       "to": "Juliette Récamier",
       "connection_level": "direct",
-      "relationship type": "conocidos. Récamier asistía al salón de Ancelot"
+      "relationship type": "conocidas. Récamier asistía al salón de Ancelot"
     },
     {
       "from": "Virginie Ancelot",
@@ -11829,12 +12010,12 @@
       "from": "Amable Tastu",
       "to": "Marceline Desbordes-Valmore",
       "connection_level": "direct",
-      "relationship type": "conocidos"
+      "relationship type": "conocidas"
     },
     {
       "from": "Francisco de Goya",
       "to": "Marceline Desbordes-Valmore",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "portraits": "Goya supuestamente realizó un retrato de Desbordes-Valmore en Burdeos hacia 1825 (colección privada)",
       "bibliography": "Philippe Gambette, 'Sur les traces d'un portrait de Marceline Desbordes-Valmore par Goya', en Aimée Boutin y Catherine Witt (eds.), [<i>Marceline Desbordes-Valmore traductrice et traduite</i>](https://www.societedesetudesmarcelinedesbordesvalmore.fr/?event=parution-des-cahiers-jecris-pourtant-n-6), Cahiers <i>J'écris pourtant</i> (Société des études Marceline Desbordes-Valmore), no.6, 2025; Michel Suffran, Un camino hacia ti: Encuentro entre Goya y Marceline Desbordes-Valmore (1823-1827), 2013"
@@ -12214,7 +12395,8 @@
       "collaborations": [
         "Devéria realiza 10 copias litográficas basadas en los Caprichos de Goya para la obra de Charles Motte Caricaturas españolas, Ni plus ni moins, par Goya (1825)",
         "Devéria realiza la portada de la obra de Motte <i>Fausto</i> de Goethe, ilustrada por Delacroix (1827-28)"
-      ]
+      ],
+      "strength": 1
     },
     {
       "from": "Eugène Delacroix",
@@ -12224,7 +12406,8 @@
       "collaborations": [
         "Motte edita los grabados satíricos de Delacroix en <i>Le Miroir</i> a principios de la década de 1820: 'Le Déménagement de la Censure' (1822), 'Les écrevisses à Longchamps' (1822), etc.",
         "Motte edita <i>Fausto</i> de Goethe (1827-28), ilustrado por Delacroix. La obra de Delacroix 'Le vol de Méphistophélès' se inspira en los <i>Caprichos</i> 66 de Goya, 'Allá va eso'."
-      ]
+      ],
+      "strength": 2
     },
     {
       "from": "Louis Boulanger",
@@ -12457,7 +12640,8 @@
         "Balzac dedicó a Hugo <i>Les illustrations perdues</i> (de 1843).",
         "Hugo escribió <i>La Mort de Balzac</i>, recogida en <i>Actes et paroles</i> 2007, pp.124-130)."
       ],
-      "bibliography": "Anne-Marie Baron (dir.), 'Balzac, Hugo, Dumas, les chefs de file des Romantiques', <i>Le Courrier Balzacien</i>, no.69, 2025; Pierrot & Yon 2011; Pierrot, 'Balzac et Hugo d'après leur correspondance0, RHLF, oct.-dic. 1953, pp.467-483-"
+      "bibliography": "Anne-Marie Baron (dir.), 'Balzac, Hugo, Dumas, les chefs de file des Romantiques', <i>Le Courrier Balzacien</i>, no.69, 2025; Pierrot & Yon 2011; Pierrot, 'Balzac et Hugo d'après leur correspondance0, RHLF, oct.-dic. 1953, pp.467-483-",
+      "strength": 2
     },
     {
       "from": "Victor Hugo",
@@ -12471,7 +12655,8 @@
         "Dibujo de Frédéric Lix (c. 1893), Hugo a punto de exiliarse en 1852, despidiéndose de Dumas y otros amigos y seguidores",
         "Josef Danhauser, Liszt am Klavier, 1840, óleo, retrato colectivo con George Sand, Dumas, Hugo, Marie d'Agoult, Liszt, Paganini y Rossini (con el busto de Beethoven y el retrato de Byron), Alte Nationalgalerie, F.V.42"
       ],
-      "bibliography": "Anne-Marie Baron (dir.), 'Balzac, Hugo, Dumas, les chefs de file des Romantiques', <i>Le Courrier Balzacien</i>, no.69, 2025; Schopp 2015"
+      "bibliography": "Anne-Marie Baron (dir.), 'Balzac, Hugo, Dumas, les chefs de file des Romantiques', <i>Le Courrier Balzacien</i>, no.69, 2025; Schopp 2015",
+      "strength": 1
     },
     {
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
@@ -12482,7 +12667,7 @@
       "websites": [
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf)."
       ],
-      "bibliography": "Ulrike Schmieder, 'La condesa de Merlin una aristocrática intelectual entre Francia y Cuba', in <i>Sin fronteras: encuentros de mujeres y hombres entre Amèrica Latina y Europa (siglos XIX-XX)</i>, 2008, pp.165-186; Romero Tobar 1997; Leathers 1931, pp.83-84"
+      "bibliography": "Ulrike Schmieder, 'La condesa de Merlin una aristocrática intelectual entre Francia y Cuba', in <i>Sin fronteras: encuentros de mujeres y hombres entre América Latina y Europa (siglos XIX-XX)</i>, 2008, pp.165-186; Romero Tobar 1997; Leathers 1931, pp.83-84"
     },
     {
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
@@ -12495,7 +12680,7 @@
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf).",
         "[Wikipedia](https://es.wikipedia.org/wiki/Mar%C3%ADa_de_las_Mercedes_Santa_Cruz_y_Montalvo#cite_note-:1-3)"
       ],
-      "bibliography": "Ulrike Schmieder, 'La condesa de Merlin una aristocrática intelectual entre Francia y Cuba', in <i>Sin fronteras: encuentros de mujeres y hombres entre Amèrica Latina y Europa (siglos XIX-XX)</i>, 2008, pp.165-186; George Sand, 'Souvenirs de Madame Merlin', <i>George Sand: Œuvres Complètes</i>, XXX, Questions d'art et de littérature, 1836 [1980], pp.53-60"
+      "bibliography": "Ulrike Schmieder, 'La condesa de Merlin una aristocrática intelectual entre Francia y Cuba', in <i>Sin fronteras: encuentros de mujeres y hombres entre América Latina y Europa (siglos XIX-XX)</i>, 2008, pp.165-186; George Sand, 'Souvenirs de Madame Merlin', <i>George Sand: Œuvres Complètes</i>, XXX, Questions d'art et de littérature, 1836 [1980], pp.53-60"
     },
     {
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
@@ -12624,7 +12809,8 @@
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf)."
       ],
       "mentions": "'Tout à coup on annonça Goya ; une exclamation partit de notre table. Ce peintre spirituel joignait à son beau talent l'agrément de faire d'excellentes caricatures, et souvent notre table était le théâtre sur lequel s'exerçait sa malice. Ma mère profitait de ses visites pour lui soumettre nos essais, et, ce jour, nous l'attendions avec impatience pour lui montrer deux dessins que nous venions de finir; l'un était une tête de sainte Thérèse, et l'autre une Madeleine. Une de nos amies s'avisa de les confondre, pour qu'il y eût de l'impartialité dans le jugement ; nous applaudîmes à cette idée, et, après les premiers complimens, nos ouvrages furent étalés sur la table. Goya, prévenu en secret par mon amie Nievès, les examina et ne se prononça point à haute voix; il nous fit des observations en particulier, et laissa venir les curieux' (De repente anunciaron a Goya; se oyó una exclamación en nuestra mesa. Este pintor ingenioso combinaba su gran talento con el gusto por hacer excelentes caricaturas, y a menudo nuestra mesa era el escenario en el que ejercía su malicia. Mi madre aprovechaba sus visitas para mostrarle nuestros bocetos y, ese día, lo esperábamos con impaciencia para enseñarle dos dibujos que acabábamos de terminar; uno era una cabeza de Santa Teresa y el otro, una Magdalena. Una de nuestras amigas tuvo la idea de mezclarlos para que el juicio fuera imparcial; aplaudimos la idea y, tras los primeros elogios, colocamos nuestras obras sobre la mesa. Goya, advertido en secreto por mi amiga Nieves, las examinó y no se pronunció en voz alta; nos hizo observaciones en particular y dejó que vinieran los curiosos) (Merlin 1836, p.183-185).",
-      "bibliography": "Ulrike Schmieder, 'La condesa de Merlin una aristocrática intelectual entre Francia y Cuba', in <i>Sin fronteras: encuentros de mujeres y hombres entre Amèrica Latina y Europa (siglos XIX-XX)</i>, 2008, pp.165-186; Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin, une femme du monde', <i>Revista hispano cubana</i>, no.13, 2002, pp.83-96; Madame Merlin, <i>Souvenirs et mémoires de madame la comtesse Merlin, publiés par elle-même v. 1</i>, [HathiTrust](https://babel.hathitrust.org/cgi/pt?id=nyp.33433075890651&seq=197&q1=Goya)"
+      "bibliography": "Ulrike Schmieder, 'La condesa de Merlin una aristocrática intelectual entre Francia y Cuba', in <i>Sin fronteras: encuentros de mujeres y hombres entre Amèrica Latina y Europa (siglos XIX-XX)</i>, 2008, pp.165-186; Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin, une femme du monde', <i>Revista hispano cubana</i>, no.13, 2002, pp.83-96; Madame Merlin, <i>Souvenirs et mémoires de madame la comtesse Merlin, publiés par elle-même v. 1</i>, [HathiTrust](https://babel.hathitrust.org/cgi/pt?id=nyp.33433075890651&seq=197&q1=Goya)",
+      "strength": 2
     },
     {
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
@@ -13008,7 +13194,8 @@
       "from": "Honoré de Balzac",
       "to": "Madame Ewelina Hanska",
       "connection_level": "direct",
-      "relationship type": "amantes; mecenazgo"
+      "relationship type": "amantes; mecenazgo",
+      "strength": 1
     },
     {
       "from": "Honoré de Balzac",
@@ -13296,7 +13483,8 @@
       "from": "Adélaïde de Montgolfier",
       "to": "Louise Swanton Belloc",
       "connection_level": "direct",
-      "relationship type": "amigos íntimos; colegas"
+      "relationship type": "amigas íntimos; colegas",
+      "strength": 1
     },
     {
       "from": "Pierre Lacour",
@@ -13329,7 +13517,8 @@
       "from": "George Sand",
       "to": "Prosper Mérimée",
       "connection_level": "direct",
-      "relationship type": "amantes"
+      "relationship type": "amantes",
+      "strength": 1
     },
     {
       "from": "Philippe Burty",
@@ -13350,19 +13539,22 @@
       "from": "Román Garreta",
       "to": "Raimundo de Madrazo",
       "connection_level": "direct",
-      "relationship type": "familiares; tío-sobrino"
+      "relationship type": "familiares; tío-sobrino",
+      "strength": 2
     },
     {
       "from": "Leocadia Zorrilla y Galarza",
       "to": "Rosario Weiss Zorrilla",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hija"
+      "relationship type": "familiares; madre-hija",
+      "strength": 1
     },
     {
       "from": "Rosario Weiss Zorrilla",
       "to": "Pierre Lacour fils",
       "connection_level": "direct",
-      "relationship type": "maestro-alumno"
+      "relationship type": "maestro-alumno",
+      "strength": 2
     },
     {
       "from": "Juliette Récamier",
@@ -13398,49 +13590,57 @@
       "know each other since": "1785",
       "encargos": "retratos individuales y familiares; dos series de pinturas, incluida una de escenas de brujería (<i>Composiciones de asuntos de Brujas</i>). Véase <i>El aquelarre</i> (1798, Museo Lázaro Galdiano) y <i>Vuelo de brujas</i> (c. 1798, Prado)",
       "patronage": "fue una de las primeras personas en adquirir series de los Caprichos (las series de Osuna probablemente fueron anteriores a las letras)",
-      "portraits": "hacia 1785 (Fundación Bartolomé March, Palma de Mallorca); retrato familiar, 1788, Prado"
+      "portraits": "hacia 1785 (Fundación Bartolomé March, Palma de Mallorca); retrato familiar, 1788, Prado",
+      "strength": 2
     },
     {
       "from": "IX Duke of Osuna",
       "to": "X Duke of Osuna",
       "connection_level": "direct",
-      "relationship type": "parientes; padre-hijo"
+      "relationship type": "parientes; padre-hijo",
+      "strength": 1
     },
     {
       "from": "XII Countess-Duchess of Benavente and Duchess of Osuna",
       "to": "X Duke of Osuna",
       "connection_level": "direct",
-      "relationship type": "parientes; madre-hijo"
+      "relationship type": "parientes; madre-hijo",
+      "strength": 1
     },
     {
       "from": "XII Countess-Duchess of Benavente and Duchess of Osuna",
       "to": "IX Duke of Osuna",
       "connection_level": "direct",
-      "relationship type": "Cónyuges: marido-mujer. Familiares: primos hermanos"
+      "relationship type": "Cónyuges: marido-mujer. Familiares: primos hermanos",
+      "strength": 1
     },
     {
       "from": "XII Countess-Duchess of Benavente and Duchess of Osuna",
       "to": "X Marchioness of Santa Cruz",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hija"
+      "relationship type": "familiares; madre-hija",
+      "strength": 1
     },
     {
       "from": "XII Countess-Duchess of Benavente and Duchess of Osuna",
       "to": "VIII Duchess of Abrantes",
       "connection_level": "direct",
-      "relationship type": "parientes; madre-hija"
+      "relationship type": "parientes; madre-hija",
+      "strength": 1
     },
     {
       "from": "IX Duke of Osuna",
       "to": "VIII Duchess of Abrantes",
       "connection_level": "direct",
-      "relationship type": "parientes; padre-hija"
+      "relationship type": "parientes; padre-hija",
+      "strength": 1
     },
     {
       "from": "IX Duke of Osuna",
       "to": "X Marchioness of Santa Cruz",
       "connection_level": "direct",
-      "relationship type": "familiares; padre-hija"
+      "relationship type": "familiares; padre-hija",
+      "strength": 1
     },
     {
       "from": "Isabel II",
@@ -13452,19 +13652,22 @@
       "from": "VIII Duchess of Abrantes",
       "to": "X Marchioness of Santa Cruz",
       "connection_level": "direct",
-      "relationship type": "parientes; hermanas"
+      "relationship type": "parientes; hermanas",
+      "strength": 1
     },
     {
       "from": "VIII Duchess of Abrantes",
       "to": "X Duke of Osuna",
       "connection_level": "direct",
-      "relationship type": "parientes; hermano-hermana"
+      "relationship type": "parientes; hermano-hermana",
+      "strength": 1
     },
     {
       "from": "X Marchioness of Santa Cruz",
       "to": "X Duke of Osuna",
       "connection_level": "direct",
-      "relationship type": "parientes; hermano-hermana"
+      "relationship type": "parientes; hermano-hermana",
+      "strength": 1
     },
     {
       "from": "X Marchioness of Santa Cruz",
@@ -13472,7 +13675,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo",
       "know each other since": "al menos desde 1786-87",
-      "portraits": "retrato familiar (1786-87, Prado) y retrato individual (1805, Prado)"
+      "portraits": "retrato familiar (1786-87, Prado) y retrato individual (1805, Prado)",
+      "strength": 2
     },
     {
       "from": "VIII Duchess of Abrantes",
@@ -13480,7 +13684,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo",
       "know each other since": "al menos desde 1816",
-      "portraits": "retrato individual (1816, Prado)"
+      "portraits": "retrato individual (1816, Prado)",
+      "strength": 3
     },
     {
       "from": "X Duke of Osuna",
@@ -13489,7 +13694,8 @@
       "relationship type": "mecenazgo",
       "encargos": "retrato individual",
       "know each other since": "al menos desde 1816",
-      "portraits": "1816, Musée Bonnat-Helleu"
+      "portraits": "1816, Musée Bonnat-Helleu",
+      "strength": 3
     },
     {
       "from": "IX Duke of Osuna",
@@ -13498,19 +13704,22 @@
       "relationship type": "mecenazgo",
       "encargos": "retratos individuales y familiares",
       "know each other since": "1785",
-      "portraits": "1785, colección privada; 1788, retrato familiar, Prado; c.1798, Colección Frick, Nueva York"
+      "portraits": "1785, colección privada; 1788, retrato familiar, Prado; c.1798, Colección Frick, Nueva York",
+      "strength": 2
     },
     {
       "from": "Carlos III",
       "to": "Carlos IV",
       "connection_level": "direct",
-      "relationship type": "parientes; padre-hijo"
+      "relationship type": "parientes; padre-hijo",
+      "strength": 1
     },
     {
       "from": "Carlos III",
       "to": "María Luisa de Parma",
       "connection_level": "direct",
-      "relationship type": "parientes; suegro, nuera"
+      "relationship type": "parientes; suegro, nuera",
+      "strength": 2
     },
     {
       "from": "Carlos III",
@@ -13559,7 +13768,8 @@
       "to": "Carlos IV",
       "connection_level": "direct",
       "relationship type": "Cónyuges: marido-mujer. Familiares: primos",
-      "children": "de 24 embarazos, nacieron 14 hijos, de los cuales sobrevivieron 7, entre ellos Carlota Joaquina, María Amalia, María Luisa Josefina, Carlos María Isidro (fundador del carlismo), María Isabel, Francisco de Paula Antonio (duque de Cádiz) y Fernando (futuro Fernando VII)"
+      "children": "de 24 embarazos, nacieron 14 hijos, de los cuales sobrevivieron 7, entre ellos Carlota Joaquina, María Amalia, María Luisa Josefina, Carlos María Isidro (fundador del carlismo), María Isabel, Francisco de Paula Antonio (duque de Cádiz) y Fernando (futuro Fernando VII)",
+      "strength": 1
     },
     {
       "from": "José de Madrazo",
@@ -13575,21 +13785,24 @@
       "to": "Carlos IV",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "1790-91, RABASF"
+      "portraits": "1790-91, RABASF",
+      "strength": 2
     },
     {
       "from": "Vicente López",
       "to": "Carlos IV",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "Carlos IV y su familia homenajeados por la Universidad de Valencia, 1802, Prado"
+      "portraits": "Carlos IV y su familia homenajeados por la Universidad de Valencia, 1802, Prado",
+      "strength": 3
     },
     {
       "from": "Vicente López",
       "to": "María Luisa de Parma",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "Carlos IV y su familia homenajeados por la Universidad de Valencia, 1802, Prado"
+      "portraits": "Carlos IV y su familia homenajeados por la Universidad de Valencia, 1802, Prado",
+      "strength": 3
     },
     {
       "from": "Manuel Godoy",
@@ -13623,7 +13836,8 @@
       "relationship type": "mecenazgo",
       "encargos": "portraits",
       "know each other since": "al menos desde 1786",
-      "portraits": "Carlos III en traje de corte, c.1780, Banco de España; Carlos III cazador, c.1786, Museo del Prado y Fundación BBVA"
+      "portraits": "Carlos III en traje de corte, c.1780, Banco de España; Carlos III cazador, c.1786, Museo del Prado y Fundación BBVA",
+      "strength": 2
     },
     {
       "from": "Manuel Godoy",
@@ -13660,19 +13874,22 @@
       "from": "Carlos IV",
       "to": "Isabel II",
       "connection_level": "secondary",
-      "relationship type": "parientes; abuelo-nieta"
+      "relationship type": "parientes; abuelo-nieta",
+      "strength": 2
     },
     {
       "from": "María Luisa de Parma",
       "to": "Isabel II",
       "connection_level": "direct",
-      "relationship type": "familiares; abuela-nieta"
+      "relationship type": "familiares; abuela-nieta",
+      "strength": 2
     },
     {
       "from": "Carlos III",
       "to": "Isabel II",
       "connection_level": "direct",
-      "relationship type": "parientes; bisabuelo, bisnieta"
+      "relationship type": "parientes; bisabuelo, bisnieta",
+      "strength": 2
     },
     {
       "from": "Eugenia de Montijo",
@@ -13731,31 +13948,36 @@
       "relationship type": "mecenazgo; empleador-empleado",
       "collaborations": "Frédéric Quilliet comenzó un inventario de las colecciones reales españolas en 1810, una selección de las cuales se reuniría en el Museo Josefino y otras en el Museo Napoleón de París. Goya colaboró en dos de estos inventarios: uno firmado el 25 de octubre de 1810, junto con Mariano Salvador Maella y Napoli (AGP, Gobierno Intruso, caja 29, exp. no.31) (véase Antigüedad del Castillo-Olivares 1987, pp.298-301); y otro en noviembre de 1810, también con Mariano Salvador Maella y Napoli (AHN, Consejos, leg. 17.787). La lista definitiva se redactó en abril de 1813 (AASF 1-34/5) (véase Antigüedad del Castillo-Olivares 1999, pp.204-306)",
       "portraits": "no hay retratos terminados o conocidos de Joseph Bonaparte realizados por Goya, pero se especula sobre un par de retratos inacabados que posteriormente fueron modificados por motivos políticos. En 2011, el Rijksmuseum publicó un estudio en el que afirmaba que el análisis con rayos X había revelado que el Retrato de Ramón Satué, de 1823, tenía un retrato subyacente de Joseph Bonaparte. Véase [The Guardian](https://www.theguardian.com/artanddesign/2011/sep/20/xrays-uncover-painting-goya-masterpiece). El retrato ecuestre del duque de Wellington (1812) de Goya, que se encuentra en Apsley House, también fue examinado con rayos X y apareció otro dibujo subyacente; algunos estudiosos argumentaron que podría ser el retrato de Joseph Bonaparte (véase Braham 1966)",
-      "bibliography": "Antigüedad del Castillo-Olivares 1987; Antigüedad del Castillo-Olivares 1999; Allan Braham, 'Goya's Equestrian Portrait of the Duke of Wellington', <i>The Burlington Magazine</i>, vol.108, no.765, diciembre de 1966, pp.618-621, [JSTOR](https://www.jstor.org/stable/875108)"
+      "bibliography": "Antigüedad del Castillo-Olivares 1987; Antigüedad del Castillo-Olivares 1999; Allan Braham, 'Goya's Equestrian Portrait of the Duke of Wellington', <i>The Burlington Magazine</i>, vol.108, no.765, diciembre de 1966, pp.618-621, [JSTOR](https://www.jstor.org/stable/875108)",
+      "strength": 3
     },
     {
       "from": "Joseph Bonaparte",
       "to": "Juan Antonio Llorente",
       "connection_level": "direct",
-      "relationship type": "mecenazgo; empleador-empleado"
+      "relationship type": "mecenazgo; empleador-empleado",
+      "strength": 3
     },
     {
       "from": "Joseph Bonaparte",
       "to": "Francisco Cabarrús",
       "connection_level": "direct",
-      "relationship type": "mecenazgo; empleador-empleado"
+      "relationship type": "mecenazgo; empleador-empleado",
+      "strength": 3
     },
     {
       "from": "Joseph Bonaparte",
       "to": "Leandro Fernández de Moratín",
       "connection_level": "direct",
-      "relationship type": "mecenazgo; empleador-empleado"
+      "relationship type": "mecenazgo; empleador-empleado",
+      "strength": 3
     },
     {
       "from": "Joseph Bonaparte",
       "to": "Juan Meléndez Valdés",
       "connection_level": "direct",
-      "relationship type": "mecenazgo; empleador-empleado"
+      "relationship type": "mecenazgo; empleador-empleado",
+      "strength": 3
     },
     {
       "from": "Joseph Bonaparte",
@@ -13782,7 +14004,8 @@
       "relationship type": "mecenazgo",
       "encargos": "portraits",
       "know each other since": "al menos desde 1800",
-      "portraits": "1800, Nueva York, Museo Metropolitano; 1800, <i>La familia de Carlos IV</i>; 1814, Museo de Arte Moderno y Contemporáneo de Santander y Cantabria; <i>Fernando VII con manto real</i>, 1814-15, [Prado P000735](https://www.museodelprado.es/coleccion/obra-de-arte/fernando-vii-con-manto-real/1b46165d-1ef7-4399-8282-7056bb901ad9); Fernando VII en un campamento militar, después de 1815, [Prado P000724](https://www.museodelprado.es/coleccion/obra-de-arte/fernando-vii-en-un-campamento/eb432c33-5391-4e84-b55f-14281c36d416?searchMeta=p000724)"
+      "portraits": "1800, Nueva York, Museo Metropolitano; 1800, <i>La familia de Carlos IV</i>; 1814, Museo de Arte Moderno y Contemporáneo de Santander y Cantabria; <i>Fernando VII con manto real</i>, 1814-15, [Prado P000735](https://www.museodelprado.es/coleccion/obra-de-arte/fernando-vii-con-manto-real/1b46165d-1ef7-4399-8282-7056bb901ad9); Fernando VII en un campamento militar, después de 1815, [Prado P000724](https://www.museodelprado.es/coleccion/obra-de-arte/fernando-vii-en-un-campamento/eb432c33-5391-4e84-b55f-14281c36d416?searchMeta=p000724)",
+      "strength": 2
     },
     {
       "from": "Fernando VII",
@@ -13798,25 +14021,29 @@
       "relationship type": "mecenazgo",
       "encargos": "portraits",
       "know each other since": "al menos desde 1814",
-      "portraits": "c. 1814-15, Prado; 1828, Banco de España; 1831, Palacio de España, Roma"
+      "portraits": "c. 1814-15, Prado; 1828, Banco de España; 1831, Palacio de España, Roma",
+      "strength": 2
     },
     {
       "from": "Carlos IV",
       "to": "Fernando VII",
       "connection_level": "direct",
-      "relationship type": "parientes: padre-hijo"
+      "relationship type": "parientes: padre-hijo",
+      "strength": 1
     },
     {
       "from": "Carlos III",
       "to": "Fernando VII",
       "connection_level": "direct",
-      "relationship type": "familiares: abuelo-nieto"
+      "relationship type": "familiares: abuelo-nieto",
+      "strength": 2
     },
     {
       "from": "María Luisa de Parma",
       "to": "Fernando VII",
       "connection_level": "direct",
-      "relationship type": "familiares: madre-hijo"
+      "relationship type": "familiares: madre-hijo",
+      "strength": 1
     },
     {
       "from": "Carlos IV",
@@ -13837,7 +14064,8 @@
       "relationship type": "mecenazgo",
       "encargos": "portraits",
       "know each other since": "al menos desde 1789",
-      "portraits": "1789, Prado; 1799, retrato ecuestre, Prado; <i>La familia de Carlos IV</i>, 1800, Prado"
+      "portraits": "1789, Prado; 1799, retrato ecuestre, Prado; <i>La familia de Carlos IV</i>, 1800, Prado",
+      "strength": 2
     },
     {
       "from": "María Teresa de Silva, XIII Duchess of Alba",
@@ -13846,21 +14074,24 @@
       "relationship type": "mecenazgo",
       "encargos": "portraits",
       "know each other since": "al menos desde 1795",
-      "portraits": "1795, Madrid, [Palacio de Liria, Fundación Casa de Alba](https://www.palaciodeliria.com/galeria/dona-maria-del-pilar-teresa-cayetana-de-silva-alvarez-de-toledo-xiii-duquesa-de-alba); 1797, Nueva York, Hispanic Society of America [https://hispanicsociety.org/exhibition/current-exhibitions-works-on-loan/treasures-on-the-terrace_highlights-from-the-hispanic-society-museum-and-library/duchess-of-alba/]"
+      "portraits": "1795, Madrid, [Palacio de Liria, Fundación Casa de Alba](https://www.palaciodeliria.com/galeria/dona-maria-del-pilar-teresa-cayetana-de-silva-alvarez-de-toledo-xiii-duquesa-de-alba); 1797, Nueva York, Hispanic Society of America [https://hispanicsociety.org/exhibition/current-exhibitions-works-on-loan/treasures-on-the-terrace_highlights-from-the-hispanic-society-museum-and-library/duchess-of-alba/]",
+      "strength": 2
     },
     {
       "from": "María Teresa de Silva, XIII Duchess of Alba",
       "to": "Manuel Godoy",
       "connection_level": "direct",
       "relationship type": "conocidos; ¿amantes?",
-      "exchanges": "tras la muerte de la duquesa en 1802, su extraordinaria colección de arte pasó a manos de Godoy, incluyendo la <i>Venus del espejo</i> de Velázquez (conocida como la Venus de Rokeby) y <i>La educación de Cupido</i> de Correggio, ambas conservadas actualmente en la National Gallery (Londres)"
+      "exchanges": "tras la muerte de la duquesa en 1802, su extraordinaria colección de arte pasó a manos de Godoy, incluyendo la <i>Venus del espejo</i> de Velázquez (conocida como la Venus de Rokeby) y <i>La educación de Cupido</i> de Correggio, ambas conservadas actualmente en la National Gallery (Londres)",
+      "strength": 1
     },
     {
       "from": "María Teresa de Silva, XIII Duchess of Alba",
       "to": "José Álvarez de Toledo, Duke of Alba",
       "connection_level": "direct",
       "relationship type": "Cónyuges: marido-mujer. Familiares: primos",
-      "children": "ninguno"
+      "children": "ninguno",
+      "strength": 1
     },
     {
       "from": "Francisco de Goya",
@@ -13868,13 +14099,15 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo",
       "encargos": "retrato",
-      "portraits": "1795 [Prado P002449](https://www.museodelprado.es/coleccion/obra-de-arte/jose-alvarez-de-toledo-xi-marques-de-villafranca/7ee3e5f0-69b9-40c8-8e08-2144766b2eaa); 1795 Instituto de Arte de Chicago"
+      "portraits": "1795 [Prado P002449](https://www.museodelprado.es/coleccion/obra-de-arte/jose-alvarez-de-toledo-xi-marques-de-villafranca/7ee3e5f0-69b9-40c8-8e08-2144766b2eaa); 1795 Instituto de Arte de Chicago",
+      "strength": 3
     },
     {
       "from": "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
       "to": "José Álvarez de Toledo, Duke of Alba",
       "connection_level": "direct",
-      "relationship type": "familiares: madre-hijo"
+      "relationship type": "familiares: madre-hijo",
+      "strength": 1
     },
     {
       "from": "Manuel Godoy",
@@ -13886,7 +14119,8 @@
       "from": "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
       "to": "María Teresa de Silva, XIII Duchess of Alba",
       "connection_level": "direct",
-      "relationship type": "familiares: suegra, nuera"
+      "relationship type": "familiares: suegra, nuera",
+      "strength": 2
     },
     {
       "from": "Francisco de Goya",
@@ -13894,7 +14128,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo",
       "encargos": "retrato",
-      "portraits": "1795 [Prado P002447](https://www.museodelprado.es/coleccion/obra-de-arte/maria-antonia-gonzaga-marquesa-viuda-de/5264367e-1c43-4a1e-a519-ce2182968ccb)"
+      "portraits": "1795 [Prado P002447](https://www.museodelprado.es/coleccion/obra-de-arte/maria-antonia-gonzaga-marquesa-viuda-de/5264367e-1c43-4a1e-a519-ce2182968ccb)",
+      "strength": 3
     },
     {
       "from": "Francisco de Goya",
@@ -13902,7 +14137,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo",
       "encargos": "retrato",
-      "portraits": "1804 [Prado P002448](https://www.museodelprado.es/coleccion/obra-de-arte/la-xii-marquesa-de-villafranca-pintando-a-su/1fff2174-3bfc-4d3e-b190-ff7cd09187d6)"
+      "portraits": "1804 [Prado P002448](https://www.museodelprado.es/coleccion/obra-de-arte/la-xii-marquesa-de-villafranca-pintando-a-su/1fff2174-3bfc-4d3e-b190-ff7cd09187d6)",
+      "strength": 3
     },
     {
       "from": "Francisco de Goya",
@@ -13910,7 +14146,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo",
       "encargos": "retrato",
-      "portraits": "c. 1804, Colección Frick"
+      "portraits": "c. 1804, Colección Frick",
+      "strength": 3
     },
     {
       "from": "Manuel Godoy",
@@ -13928,25 +14165,29 @@
       "from": "María Gabriela de Palafox, Marchioness of Lazán",
       "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
-      "relationship type": "parientes; hermanas"
+      "relationship type": "parientes; hermanas",
+      "strength": 1
     },
     {
       "from": "María Tomasa Palafox, Marchioness of Villafranca",
       "to": "Eugenio Eulalio Palafox, VII Count of Montijo",
       "connection_level": "direct",
-      "relationship type": "parientes; hermano-hermana"
+      "relationship type": "parientes; hermano-hermana",
+      "strength": 1
     },
     {
       "from": "Eugenio Eulalio Palafox, VII Count of Montijo",
       "to": "María Francisca de Sales Portocarrero, VI Countess of Montijo",
       "connection_level": "direct",
-      "relationship type": "parientes; madre-hijo"
+      "relationship type": "parientes; madre-hijo",
+      "strength": 1
     },
     {
       "from": "Eugenia de Montijo",
       "to": "María Francisca de Sales Portocarrero, VI Countess of Montijo",
       "connection_level": "direct",
-      "relationship type": "familiares; abuela-nieta"
+      "relationship type": "familiares; abuela-nieta",
+      "strength": 2
     },
     {
       "from": "Count of Floridablanca",
@@ -13960,50 +14201,58 @@
       "from": "Eugenia de Montijo",
       "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
-      "relationship type": "familiares; tía-sobrina"
+      "relationship type": "familiares; tía-sobrina",
+      "strength": 2
     },
     {
       "from": "Eugenia de Montijo",
       "to": "María Gabriela de Palafox, Marchioness of Lazán",
       "connection_level": "direct",
-      "relationship type": "familiares; tía-sobrina"
+      "relationship type": "familiares; tía-sobrina",
+      "strength": 2
     },
     {
       "from": "Eugenia de Montijo",
       "to": "Eugenio Eulalio Palafox, VII Count of Montijo",
       "connection_level": "direct",
-      "relationship type": "parientes; tío-sobrina"
+      "relationship type": "parientes; tío-sobrina",
+      "strength": 2
     },
     {
       "from": "Cipriano Portocarrero, VIII Count of Montijo",
       "to": "María Francisca de Sales Portocarrero, VI Countess of Montijo",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hijo"
+      "relationship type": "familiares; madre-hijo",
+      "strength": 1
     },
     {
       "from": "Cipriano Portocarrero, VIII Count of Montijo",
       "to": "Eugenio Eulalio Palafox, VII Count of Montijo",
       "connection_level": "direct",
-      "relationship type": "parientes; hermanos"
+      "relationship type": "parientes; hermanos",
+      "strength": 1
     },
     {
       "from": "Cipriano Portocarrero, VIII Count of Montijo",
       "to": "María Gabriela de Palafox, Marchioness of Lazán",
       "connection_level": "direct",
-      "relationship type": "parientes; hermano-hermana"
+      "relationship type": "parientes; hermano-hermana",
+      "strength": 1
     },
     {
       "from": "Cipriano Portocarrero, VIII Count of Montijo",
       "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
-      "relationship type": "parientes; hermano-hermana"
+      "relationship type": "parientes; hermano-hermana",
+      "strength": 1
     },
     {
       "from": "Cipriano Portocarrero, VIII Count of Montijo",
       "to": "Vicente López",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "hacia 1820, óleo"
+      "portraits": "hacia 1820, óleo",
+      "strength": 3
     },
     {
       "from": "Cipriano Portocarrero, VIII Count of Montijo",
@@ -14023,19 +14272,22 @@
       "from": "Cipriano Portocarrero, VIII Count of Montijo",
       "to": "Eugenia de Montijo",
       "connection_level": "direct",
-      "relationship type": "parientes; padre-hija"
+      "relationship type": "parientes; padre-hija",
+      "strength": 1
     },
     {
       "from": "María Gabriela de Palafox, Marchioness of Lazán",
       "to": "Eugenio Eulalio Palafox, VII Count of Montijo",
       "connection_level": "direct",
-      "relationship type": "parientes; hermano-hermana"
+      "relationship type": "parientes; hermano-hermana",
+      "strength": 1
     },
     {
       "from": "María Gabriela de Palafox, Marchioness of Lazán",
       "to": "María Francisca de Sales Portocarrero, VI Countess of Montijo",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hija"
+      "relationship type": "familiares; madre-hija",
+      "strength": 1
     },
     {
       "from": "María Gabriela de Palafox, Marchioness of Lazán",
@@ -14047,7 +14299,8 @@
           "url": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Goya_Lazan.jpg",
           "leyenda": "c. 1790, coll. Hidalgo de Rivas, Málaga (robado); 1800-04, [Palacio de Liria](https://es.wikipedia.org/wiki/La_marquesa_de_Laz%C3%A1n#/media/Archivo:Marquesa_de_lazan_-Liria.jpg) (Fundación Casa de Alba) (imagen abajo)"
         }
-      ]
+      ],
+      "strength": 3
     },
     {
       "from": "María Gabriela de Palafox, Marchioness of Lazán",
@@ -14061,51 +14314,59 @@
       "from": "José Álvarez de Toledo, Duke of Alba",
       "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
-      "relationship type": "parientes; cuñado, cuñada"
+      "relationship type": "parientes; cuñado, cuñada",
+      "strength": 2
     },
     {
       "from": "María Francisca de Sales Portocarrero, VI Countess of Montijo",
       "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hija"
+      "relationship type": "familiares; madre-hija",
+      "strength": 1
     },
     {
       "from": "María Francisca de Sales Portocarrero, VI Countess of Montijo",
       "to": "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
       "connection_level": "direct",
-      "relationship type": "familiares; suegra, yerno"
+      "relationship type": "familiares; suegra, yerno",
+      "strength": 2
     },
     {
       "from": "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
       "to": "María Tomasa Palafox, Marchioness of Villafranca",
       "connection_level": "direct",
       "relationship type": "cónyuges; marido-mujer",
-      "children": "9"
+      "children": "9",
+      "strength": 1
     },
     {
       "from": "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
       "to": "Francisco de Goya",
       "connection_level": "direct",
       "relationship type": "mecenazgo",
-      "portraits": "El retrato de Villafranca aparece en el retrato de María Tomasa Palafox, Marchioness of Villafranca pintado por Goya, como si lo pintara la propia marquesa (1804, Prado)"
+      "portraits": "El retrato de Villafranca aparece en el retrato de María Tomasa Palafox, Marchioness of Villafranca pintado por Goya, como si lo pintara la propia marquesa (1804, Prado)",
+      "strength": 3
     },
     {
       "from": "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
       "to": "José Álvarez de Toledo, Duke of Alba",
       "connection_level": "direct",
-      "relationship type": "parientes; hermanos"
+      "relationship type": "parientes; hermanos",
+      "strength": 1
     },
     {
       "from": "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
       "to": "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
       "connection_level": "direct",
-      "relationship type": "familiares; madre-hijo"
+      "relationship type": "familiares; madre-hijo",
+      "strength": 1
     },
     {
       "from": "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
       "to": "María Teresa de Silva, XIII Duchess of Alba",
       "connection_level": "direct",
-      "relationship type": "parientes; cuñado, cuñada"
+      "relationship type": "parientes; cuñado, cuñada",
+      "strength": 2
     },
     {
       "from": "Francisco Álvarez de Toledo, XII Marquis of Villafranca",
@@ -14129,7 +14390,8 @@
       "from": "María Tomasa Palafox, Marchioness of Villafranca",
       "to": "María Antonia Gonzaga, Marchioness of Villafranca (widow)",
       "connection_level": "direct",
-      "relationship type": "familiares; suegra, nuera"
+      "relationship type": "familiares; suegra, nuera",
+      "strength": 2
     },
     {
       "from": "IX Duke of Osuna",
@@ -14138,20 +14400,23 @@
       "relationship type": "mecenazgo",
       "encargos": "retrato",
       "know each other since": "al menos desde 1785",
-      "portraits": "1785, Museo Lázaro Galdiano (Madrid)"
+      "portraits": "1785, Museo Lázaro Galdiano (Madrid)",
+      "strength": 3
     },
     {
       "from": "Francisco Bayeu",
       "to": "Agustín Esteve",
       "connection_level": "direct",
-      "relationship type": "maestro-alumno"
+      "relationship type": "maestro-alumno",
+      "strength": 1
     },
     {
       "from": "Francisco Cabarrús",
       "to": "Agustín Esteve",
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
-      "portraits": "Retrato de Cabarrús por Esteve, c.1808, [Wikimedia](https://commons.wikimedia.org/wiki/File:Retrato_del_I_Conde_de_Cabarrus.jpg)"
+      "portraits": "Retrato de Cabarrús por Esteve, c.1808, [Wikimedia](https://commons.wikimedia.org/wiki/File:Retrato_del_I_Conde_de_Cabarrus.jpg)",
+      "strength": 2
     },
     {
       "from": "Juliette Récamier",
@@ -14159,7 +14424,8 @@
       "connection_level": "direct",
       "relationship type": "mecenazgo; retratista-modelo",
       "know each other since": "al menos desde 1800",
-      "portraits": "1800, Louvre"
+      "portraits": "1800, Louvre",
+      "strength": 2
     },
     {
       "from": "Théophile Thoré",
@@ -14228,55 +14494,64 @@
       "to": "Luis de Madrazo",
       "connection_level": "direct",
       "relationship type": "parientes; hermanos",
-      "portraits": "Luis de Madrazo pintó el retrato de Pedro en 1885 (colección Madrazo)"
+      "portraits": "Luis de Madrazo pintó el retrato de Pedro en 1885 (colección Madrazo)",
+      "strength": 1
     },
     {
       "from": "Pedro de Madrazo",
       "to": "Raimundo de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; tío-sobrino"
+      "relationship type": "parientes; tío-sobrino",
+      "strength": 1
     },
     {
       "from": "Juan de Madrazo",
       "to": "Pedro de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; hermanos"
+      "relationship type": "parientes; hermanos",
+      "strength": 1
     },
     {
       "from": "Juan de Madrazo",
       "to": "Federico de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; hermanos"
+      "relationship type": "parientes; hermanos",
+      "strength": 1
     },
     {
       "from": "Juan de Madrazo",
       "to": "Luis de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; hermanos"
+      "relationship type": "parientes; hermanos",
+      "strength": 1
     },
     {
       "from": "Juan de Madrazo",
       "to": "Raimundo de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; tío-sobrino"
+      "relationship type": "parientes; tío-sobrino",
+      "strength": 1
     },
     {
       "from": "Juan de Madrazo",
       "to": "José de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; padre-hijo"
+      "relationship type": "parientes; padre-hijo",
+      "strength": 1
     },
     {
       "from": "Luis de Madrazo",
       "to": "Raimundo de Madrazo",
       "connection_level": "direct",
-      "relationship type": "parientes; tío-sobrino"
+      "relationship type": "parientes; tío-sobrino",
+      "strength": 1
     },
     {
       "from": "Jean-Auguste-Dominique Ingres",
       "to": "Jacques-Louis David",
       "connection_level": "direct",
-      "relationship type": "maestro-alumno"
+      "relationship type": "maestro-alumno",
+      "strength": 1
     },
     {
       "from": "Théophile Gautier",
@@ -14354,13 +14629,15 @@
       "from": "Antoine-Jean Gros",
       "to": "Paul Delaroche",
       "connection_level": "direct",
-      "relationship type": "maestro-alumno"
+      "relationship type": "maestro-alumno",
+      "strength": 1
     },
     {
       "from": "Antoine-Jean Gros",
       "to": "Jacques-Louis David",
       "connection_level": "direct",
-      "relationship type": "maestro-alumno"
+      "relationship type": "maestro-alumno",
+      "strength": 1
     },
     {
       "from": "Victor Hugo",
