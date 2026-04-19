@@ -3219,11 +3219,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
-        placeVillafrancaAlbaClusters(network);
+        // REMOVED: placeVillafrancaAlbaClusters, placeMadrazoFamilyCluster, placeBourbonCluster
+        // These were overwriting arrangeInCircle() work. Keep only specialized placements.
         placeFedericoSatelliteClusters(network);
-        placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
-        placeBourbonCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
 
@@ -3295,11 +3294,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
-        placeVillafrancaAlbaClusters(network);
+        // REMOVED: placeVillafrancaAlbaClusters, placeMadrazoFamilyCluster, placeBourbonCluster
+        // These were overwriting arrangeInCircle() work. Keep only specialized placements.
         placeFedericoSatelliteClusters(network);
-        placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
-        placeBourbonCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
 
@@ -3307,30 +3305,23 @@ document.addEventListener('DOMContentLoaded', async function () {
         separateClusters(network, nodes, RADIAL_CLUSTERS, 10, 140, 12);
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120);
 
-        // 7) separación quirúrgica solo para pares concretos (MOST AGGRESSIVE: 30 passes)
+        // 7) separación quirúrgica solo para pares concretos (AGGRESSIVE: 30 passes)
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 30);
 
-        // 8) reimponer placements manuales después de expulsiones
-        placeVillafrancaAlbaClusters(network);
+        // 8) Only reimponer specialized placements (not destructive circle-breaking ones)
         placeFedericoSatelliteClusters(network);
-        placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
-        placeBourbonCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
 
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 140);
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 15);
 
-        placeVillafrancaAlbaClusters(network);
+        // Final specialized placements only
         placeFedericoSatelliteClusters(network);
-        placeMadrazoFamilyCluster(network);
         placeGoyaFamilyCluster(network);
-        placeBourbonCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 4);
-        enforceStrongEdgePairs(network, nodes, edges, nodeClusterMap, 3);
 
         network.redraw();
 
