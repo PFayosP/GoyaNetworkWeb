@@ -1118,10 +1118,10 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Juan de Madrazo"
             ],
             radius: 200,
-            padding: 120,
+            padding: 150,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "José de Madrazo": Math.PI  // left (west) side, shared with Court Painters
+              "José de Madrazo": Math.PI * 0.75  // north-west, closer to Court Painters
             },
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
@@ -1142,7 +1142,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Charles Nodier",
               "Charles-Augustin Sainte-Beuve"
             ],
-            radius: 170, // before: 160
+            radius: 200,
+            padding: 90,
             startAngle: -Math.PI / 2,
             title: "Hugo cenacle",
             titleEs: "Clúster Hugo"
@@ -1169,8 +1170,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             centerYOffset: 180,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "Francisco de Goya": Math.PI / 2,
-              "Martín Zapater": Math.PI * 1.5  // bottom of circle, pointing toward Goya (best friend)
+              "Martín Zapater": Math.PI / 2,  // bottom of circle (towards Goya)
+              "Francisco de Goya": Math.PI * 1.5  // top of circle
             },
             title: "Ilustrados cluster",
             titleEs: "Clúster Ilustrados"
@@ -1185,8 +1186,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Josefa Bayeu",
               "Francisco Bayeu"
             ],
-            radius: 130, // increased from 118 for less overlap
-            padding: 80, // before: 86
+            radius: 90,
+            padding: 70,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2
@@ -1210,7 +1211,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           },
 
           "MONTIJO_CORE": {
-            // center: "Eugenio Eulalio Palafox, VII Count of Montijo",
+            center: "Eugenio Eulalio Palafox, VII Count of Montijo",
             members: [
               "María Francisca de Sales Portocarrero, VI Countess of Montijo",
               "Eugenio Eulalio Palafox, VII Count of Montijo",
@@ -1220,7 +1221,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "María Gabriela de Palafox, Marchioness of Lazán",
               "María Tomasa Palafox, Marchioness of Villafranca"
             ],
-            radius: 135,
+            radius: 140,
+            padding: 100,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo"
@@ -2827,16 +2829,16 @@ document.addEventListener('DOMContentLoaded', async function () {
           const goyaPos = network.getPositions([goyaId])[goyaId];
           if (!goyaPos) return;
 
-          const radius = 102;
-          const cx = goyaPos.x - 36;
-          const cy = goyaPos.y + 92;
+          const radius = 70;
+          const cx = goyaPos.x;
+          const cy = goyaPos.y - 20;  // Slightly above, not too far below
 
           const angleByNode = {
-            "Francisco Bayeu":       Math.PI * 1.30,
-            "Josefa Bayeu":          Math.PI * 0.98,
-            "Javier Goya":           Math.PI * 0.72,
-            "Mariano Goya":          Math.PI * 0.44,
-            "Gumersinda Goicoechea": Math.PI * 0.10
+            "Francisco Bayeu":       Math.PI * 1.35,
+            "Josefa Bayeu":          Math.PI * 1.05,
+            "Javier Goya":           Math.PI * 0.75,
+            "Mariano Goya":          Math.PI * 0.45,
+            "Gumersinda Goicoechea": Math.PI * 0.15
           };
 
           Object.entries(angleByNode).forEach(([id, angle]) => {
@@ -2891,6 +2893,24 @@ document.addEventListener('DOMContentLoaded', async function () {
             // Position student to the right of master
             network.moveNode(studentId, masterPos.x + distance, masterPos.y);
           });
+        }
+
+        function placeCloseRelativesToGoya(network) {
+          // Rosario and Leocadia are level 1-2 with Goya, keep them very close
+          const goyaId = "Francisco de Goya";
+          if (!nodes.get(goyaId)) return;
+
+          const goyaPos = network.getPositions([goyaId])[goyaId];
+          if (!goyaPos) return;
+
+          // Position Rosario and Leocadia above and to the right (accessible from Goya's perspective)
+          if (nodes.get("Rosario Weiss Zorrilla")) {
+            network.moveNode("Rosario Weiss Zorrilla", goyaPos.x - 100, goyaPos.y - 150);
+          }
+
+          if (nodes.get("Leocadia Zorrilla y Galarza")) {
+            network.moveNode("Leocadia Zorrilla y Galarza", goyaPos.x - 100, goyaPos.y - 100);
+          }
         }
 
         function placeBourbonCluster(network) {
@@ -3321,6 +3341,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeMontpensierBridge(network);
         placeEstevesPair(network);
         placeCloseMasterStudentPairs(network);
+        placeCloseRelativesToGoya(network);
 
         // 3) Gentle cluster separation - minimal to avoid deforming circles
         separateClusters(network, nodes, RADIAL_CLUSTERS, 5, 110, 8);
@@ -3366,6 +3387,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Apply Ilustrados offset AFTER final lock to preserve positioning
         placeIlustradosCluster(network);
         placeCloseMasterStudentPairs(network);
+        placeCloseRelativesToGoya(network);
 
         network.redraw();
 
