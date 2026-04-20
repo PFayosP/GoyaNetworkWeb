@@ -2875,6 +2875,24 @@ document.addEventListener('DOMContentLoaded', async function () {
           network.moveNode(rafaelId, agustinPos.x - 54, agustinPos.y + 36);
         }
 
+        function placeCloseMasterStudentPairs(network) {
+          // Keep key master-student pairs close together despite cluster boundaries
+          const masterStudentPairs = [
+            ["Ernest Meissonier", "Eduardo Zamacois", 90],
+            // Add more as needed
+          ];
+
+          masterStudentPairs.forEach(([masterId, studentId, distance]) => {
+            if (!nodes.get(masterId) || !nodes.get(studentId)) return;
+
+            const masterPos = network.getPositions([masterId])[masterId];
+            if (!masterPos) return;
+
+            // Position student to the right of master
+            network.moveNode(studentId, masterPos.x + distance, masterPos.y);
+          });
+        }
+
         function placeBourbonCluster(network) {
           const chinchonId = "XV Countess of Chinchón";
           if (!nodes.get(chinchonId)) return;
@@ -3302,6 +3320,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeGoyaFamilyCluster(network);
         placeMontpensierBridge(network);
         placeEstevesPair(network);
+        placeCloseMasterStudentPairs(network);
 
         // 3) Gentle cluster separation - minimal to avoid deforming circles
         separateClusters(network, nodes, RADIAL_CLUSTERS, 5, 110, 8);
@@ -3346,6 +3365,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // Apply Ilustrados offset AFTER final lock to preserve positioning
         placeIlustradosCluster(network);
+        placeCloseMasterStudentPairs(network);
 
         network.redraw();
 
