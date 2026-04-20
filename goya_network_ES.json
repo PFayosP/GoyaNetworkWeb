@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-04-18",
+  "last_update": "2026-04-20",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -6319,7 +6319,8 @@
       "link to Goya's work": [
         "Durante este viaje, Stirling tomó notas sobre Santa Justa y Santa Rufina, de Goya, que Ford había atacado como una 'abominación al estilo de David', afirmando además que las modelos para las vírgenes mártires eran rameras. Stirling no estaba de acuerdo con la valoración de Ford, pero, cuando se publicaron sus Annals en 1848, se había acercado mucho más a la opinión de Ford (véase Macartney 2007)"
       ],
-      "bibliography": "Hilary Macartney, 'Stirling, Ford y la recepción de Goya en el siglo XIX', <i>Hispanic Research Journal</i>, vol.8, no.5, 2007, pp.425-444"
+      "bibliography": "Hilary Macartney, 'Stirling, Ford y la recepción de Goya en el siglo XIX', <i>Hispanic Research Journal</i>, vol.8, no.5, 2007, pp.425-444",
+      "strength": 1
     },
     {
       "from": "Richard Ford",
@@ -6329,7 +6330,8 @@
       "know each other since": "la década de 1830",
       "correspondence": "Richard Hitchcock (ed.), <i>Richard Ford: Cartas a Gayangos</i>, Universidad de Exeter, 1974.",
       "exchanges": "Gayangos proporcionó a Ford las publicaciones más recientes sobre la cultura española",
-      "bibliography": "Lanzarote Guiral 2016; Hitchcock 1974"
+      "bibliography": "Lanzarote Guiral 2016; Hitchcock 1974",
+      "strength": 2
     },
     {
       "from": "Richard Ford",
@@ -6339,7 +6341,8 @@
       "know each other since": "al menos desde 1845",
       "interactions": "1845, 13, 15 y 20 de julio (Lanzarote Guiral 2016)",
       "collaborations": "Carderera colaboró con Ford en su <i>A Handbook for travellers in Spain</i> (1845)",
-      "bibliography": "Lanzarote Guiral 2016"
+      "bibliography": "Lanzarote Guiral 2016",
+      "strength": 3
     },
     {
       "from": "Richard Ford",
@@ -6351,7 +6354,8 @@
         "En el prólogo de 1850 del catálogo del Museo Real, Madrazo criticó a Ford por mentir ('diluvio de mentiras') sobre las restauraciones: 'no se ha restaurado un solo cuadro de escuela española, según consta de los registros que escrupulosamente se llevan en la secretaría'. Ford parece haber mencionado pinturas que habían sido restauradas antes de que Madrazo fuera director; estas afirmaciones fueron aceptadas y repetidas por otros autores, como William Stirling-Maxwell"
       ],
       "websites": "[Prado, perfil de Ford por Hilary Macartney](https://www.museodelprado.es/aprende/enciclopedia/voz/ford-richard/d3ecbc54-83c9-495c-95be-e4c92d06c7f0)",
-      "bibliography": "José Alberich, 'Richard Ford o el hispanista hispanófobo', <i>Archivo Hispalense</i>, CLXXVIII, 1975, pp.103-131; Thomas Bean, 'Richard Ford as Picture Collector and Patron in Spain', <i>The Burlington Magazine</i>, febrero de 1995, pp.96-107; John R. Gretton, 'Richard Ford and the Handbook for Spain', <i>Antiquarian Book Monthly</i>, mayo de 1995, pp.20-24; Brinsley Ford, <i>Richard Ford en Sevilla</i>, Madrid, Instituto Diego Velázquez, CSIC, 1963; <i>Richard Ford in Spain</i>, cat. exp., Londres, Wildenstein, 1974; Pedro de Madrazo, 'Prólogo', Catálogo de los cuadros del Real Museo de pintura y escultura de s.m. [1843], 1850; Louis Viardot, Les Musées d'Espagne, d'Angleterre et de Belgique, 1843."
+      "bibliography": "José Alberich, 'Richard Ford o el hispanista hispanófobo', <i>Archivo Hispalense</i>, CLXXVIII, 1975, pp.103-131; Thomas Bean, 'Richard Ford as Picture Collector and Patron in Spain', <i>The Burlington Magazine</i>, febrero de 1995, pp.96-107; John R. Gretton, 'Richard Ford and the Handbook for Spain', <i>Antiquarian Book Monthly</i>, mayo de 1995, pp.20-24; Brinsley Ford, <i>Richard Ford en Sevilla</i>, Madrid, Instituto Diego Velázquez, CSIC, 1963; <i>Richard Ford in Spain</i>, cat. exp., Londres, Wildenstein, 1974; Pedro de Madrazo, 'Prólogo', Catálogo de los cuadros del Real Museo de pintura y escultura de s.m. [1843], 1850; Louis Viardot, Les Musées d'Espagne, d'Angleterre et de Belgique, 1843.",
+      "strength": 3
     },
     {
       "from": "Jenaro Pérez Villaamil",
@@ -6464,7 +6468,8 @@
       "know each other since": "al menos 1855",
       "mentions": "1855, 25 sept: carta [¿inédita?] de Stirling a Valentín Carderera. Menciona a Gayangos dos veces. 'I hope you have received or will soon receive the copy of my Velazquez about which should much like to have some talk with you' (archivo Carderera).",
       "link to Goya's work": "desde 1856, Stirling poseía un conjunto de pruebas de trabajo de los Caprichos antes de las cartas que pertenecieron a Gayangos (Boston MoFA 2002.497)",
-      "archives": "Archivo privado de la familia Carderera"
+      "archives": "Archivo privado de la familia Carderera",
+      "strength": 2
     },
     {
       "from": "Valentín Carderera",
@@ -6491,7 +6496,8 @@
         "Carderera recibe una carta de Stirling el 22 de noviembre de 1855; el 19 de julio y el 2 de diciembre de 1856 (LG 2016, pp.311, 332, 370)"
       ],
       "archives": "archivo privado de la familia Carderera",
-      "bibliography": "Lanzarote Guiral 2016; Glendinning 2010"
+      "bibliography": "Lanzarote Guiral 2016; Glendinning 2010",
+      "strength": 2
     },
     {
       "from": "Valentín Carderera",
