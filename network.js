@@ -1119,6 +1119,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 200,
             padding: 150,
+            centerYOffset: -300,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "José de Madrazo": Math.PI * 1.25  // north-west, next to Federico
@@ -1186,8 +1187,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Josefa Bayeu",
               "Francisco Bayeu"
             ],
-            radius: 90,
-            padding: 70,
+            radius: 85,
+            padding: 65,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2
@@ -1275,6 +1276,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 135,
             padding: 84,
+            centerYOffset: -280,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Federico de Madrazo": Math.PI / 2,
@@ -2257,6 +2259,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["María Cristina de Borbón-Dos Sicilias", "Eugenia de Montijo", 120],
       ["Manuel Godoy", "Isabel II", 120],
       ["Carlos III", "Josefa Tudó", 120],
+      ["Manuel Godoy", "Josefa Tudó", 130],
+      ["Mnauel Godoy", "Louis Philippe I"],
       ["Frédéric Quilliet", "Josefa Tudó", 120],
       ["Josefa Tudó", "1st Duke of Wellington", 145],
       ["Carlos III", "María Manuela Kirkpatrick", 120],
@@ -2371,6 +2375,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Théophile Thoré", "Nadar", 130],
       ["Nadar", "Baron Taylor", 130],
       ["Louis Viardot", "Théophile Gautier", 130],
+      ["Louis Viardot", "Nadar", 130],
       ["Giambattista Tiepolo", "Giandomenico Tiepolo", 130],
       ["J. J. Grandville", "Eugène Delacroix", 130],
       ["George Sand", "Célestin Nanteuil", 130],
@@ -2381,7 +2386,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Zacharie Astruc", "Edgar Degas", 130],
       ["Gregorio Cruzada Villaamil", "Pierre Lacour", 130],
       ["Vicente López", "Anton Raphael Mengs", 130],
-      ["Mariano Goya", "Richard Ford", 130]
+      ["Mariano Goya", "Richard Ford", 130],
+      ["Honoré de Balzac", "J. J. Grandville", 130],
+      ["J. J. Grandville", "Charles Motte", 130]
       // supercali overlap
     ];
 
@@ -2825,32 +2832,73 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
         function placeGoyaFamilyCluster(network) {
-          const goyaId = "Francisco de Goya";
-          if (!nodes.get(goyaId)) return;
+          const cfg = RADIAL_CLUSTERS["GOYA_FAMILY"];
+          if (!cfg || !cfg.members) return;
 
-          const goyaPos = network.getPositions([goyaId])[goyaId];
-          if (!goyaPos) return;
+          // Arrange in circle first
+          arrangeInCircle(
+            network,
+            nodes,
+            cfg.members,
+            cfg.radius || 85,
+            cfg.startAngle ?? (-Math.PI / 2),
+            cfg.sharedBoundaryNodes || {}
+          );
 
-          const radius = 70;
-          const cx = goyaPos.x;
-          const cy = goyaPos.y - 20;  // Slightly above, not too far below
+          // Apply vertical offset if specified
+          if (cfg.centerYOffset) {
+            const memberIds = cfg.members.filter(id => nodes.get(id));
+            const pos = network.getPositions(memberIds);
+            memberIds.forEach(id => {
+              const p = pos[id];
+              network.moveNode(id, p.x, p.y + cfg.centerYOffset);
+            });
+          }
+        }
 
-          const angleByNode = {
-            "Francisco Bayeu":       Math.PI * 1.35,
-            "Josefa Bayeu":          Math.PI * 1.05,
-            "Javier Goya":           Math.PI * 0.75,
-            "Mariano Goya":          Math.PI * 0.45,
-            "Gumersinda Goicoechea": Math.PI * 0.15
-          };
+        function placeGodoyPositioning(network) {
+          // Position Godoy between his two wives: Chinchón (1st wife) and Tudó (2nd wife)
+          const godoyId = "Manuel Godoy";
+          const chinchonId = "María del Pilar Teresa Cayetana de Silva, Countess of Chinchón";
+          const tudoId = "Eustaquio Pérez de Tudó";
 
-          Object.entries(angleByNode).forEach(([id, angle]) => {
-            if (!nodes.get(id)) return;
-            network.moveNode(
-              id,
-              cx + Math.cos(angle) * radius,
-              cy + Math.sin(angle) * radius
-            );
-          });
+          const ids = [godoyId, chinchonId, tudoId].filter(id => nodes.get(id));
+          if (ids.length < 3 || !nodes.get(godoyId) || !nodes.get(chinchonId) || !nodes.get(tudoId)) return;
+
+          const pos = network.getPositions(ids);
+          const chinchonPos = pos[chinchonId];
+          const tudoPos = pos[tudoId];
+
+          if (!chinchonPos || !tudoPos) return;
+
+          // Place Godoy between them (average position, slightly offset)
+          const godoyX = (chinchonPos.x + tudoPos.x) / 2 + 15;
+          const godoyY = (chinchonPos.y + tudoPos.y) / 2 - 20;
+          network.moveNode(godoyId, godoyX, godoyY);
+        }
+
+        function placeMonacoGroup(network) {
+          // Position Louis-Philippe next to Montpensier, and Montpensier next to Infanta María Luisa
+          const louisId = "Louis Philippe I";
+          const montpensierId = "Prince Antoine, Duke of Montpensier";
+          const infantaId = "Infanta Luisa Fernanda de Borbón";
+
+          const ids = [louisId, montpensierId, infantaId].filter(id => nodes.get(id));
+          if (ids.length < 3 || !nodes.get(infantaId)) return;
+
+          const pos = network.getPositions(ids);
+          const infantaPos = pos[infantaId];
+
+          if (!infantaPos) return;
+
+          // Position Montpensier to the left of Infanta (below)
+          network.moveNode(montpensierId, infantaPos.x - 70, infantaPos.y + 40);
+
+          // Position Louis-Philippe to the left of Montpensier
+          const montpensierNewPos = network.getPositions([montpensierId])[montpensierId];
+          if (montpensierNewPos) {
+            network.moveNode(louisId, montpensierNewPos.x - 70, montpensierNewPos.y - 35);
+          }
         }
     
         function placeMontpensierBridge(network) {
@@ -3364,7 +3412,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 2) Only specialized placement functions (non-destructive)
         placeFedericoSatelliteClusters(network);
         placeGoyaFamilyCluster(network);
-        placeMontpensierBridge(network);
+        placeMonacoGroup(network);
+        placeGodoyPositioning(network);
         placeEstevesPair(network);
         placeCloseMasterStudentPairs(network);
 
