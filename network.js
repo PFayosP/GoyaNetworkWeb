@@ -1269,6 +1269,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             radius: 135,
             padding: 84,
             startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Federico de Madrazo": Math.PI / 2,
+              "Pedro de Madrazo": Math.PI / 2
+            },
             title: "Madrazo-Carderera group",
             titleEs: "Grupo Madrazo-Carderera"
           },
