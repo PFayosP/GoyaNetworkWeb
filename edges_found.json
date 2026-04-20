@@ -1,0 +1,608 @@
+{
+  "total_found": 25,
+  "total_searched": 35,
+  "found_edges": {
+    "3": {
+      "requested": [
+        "Francisco de Goya",
+        "Martín Zapater"
+      ],
+      "found_as": [
+        "Francisco de Goya",
+        "Martín Zapater"
+      ],
+      "edge": {
+        "from": "Francisco de Goya",
+        "to": "Martín Zapater",
+        "connection_level": "direct",
+        "relationship type": "best friends",
+        "know each other since": "1765",
+        "correspondence": "1765-1803. First letter: 1st letter in Diplomatario (Canellas López): 1774? (no.4); 6 Sept 1775 (no.7); 22 Jan 1777 (no.11); March 1777 (no.13); 16 April 1777 (no.14); 16 April 1777 (no.15); 21 Jan 1778 (no.17); 31 Jan 1778 (no.19); 7 Oct 1778 (no.21); Dec 1778 (no.23); 9 Jan 1779 (no.25); 25 Feb 1780 (no.29); 10 May 1780 (no.31); 17 May 1780 (no.32); 24 May 1780 (no.33); [21] July 1780 (no.34); 9 Aug 1780 (no.35); 16 Aug 1780 (no.36); 23 Aug 1780 (no.37); 23 Aug 1780 (no.37); ... (Bib: Cartas a Martín Zapater, ed. Águeda and Salas, 2003)",
+        "they met": "in Zaragoza",
+        "portraits": "Goya portrayed Zapater in c.1780 (private collection), 1790 (Museo de Arte de Ponce, Puerto Rico) and 1797 (Museo de Bellas Artes de Bilbao)"
+      }
+    },
+    "33": {
+      "requested": [
+        "Agustín Esteve",
+        "Rafael Esteve"
+      ],
+      "found_as": [
+        "Rafael Esteve",
+        "Agustín Esteve"
+      ],
+      "edge": {
+        "from": "Rafael Esteve",
+        "to": "Agustín Esteve",
+        "connection_level": "direct",
+        "relationship type": "relatives: uncle-nephew",
+        "collaborations": "Rafael Esteve made reproductive prints of Spanish kings after his uncle Agustín Esteve's drawings after Goya (1799)"
+      }
+    },
+    "5": {
+      "requested": [
+        "Asensio Julià",
+        "Francisco de Goya"
+      ],
+      "found_as": [
+        "Francisco de Goya",
+        "Asensio Julià"
+      ],
+      "edge": {
+        "from": "Francisco de Goya",
+        "to": "Asensio Julià",
+        "connection_level": "direct",
+        "relationship type": "colleagues; friends; master-student; portraitist-sitter",
+        "know each other since": "at least 1789",
+        "introductions": "they were introduced by Mariano Salvador Maella",
+        "portraits": "Goya portrayed Julià in c.1798 [Thyssen 166 (1971.1)] and 1814 (Clark)",
+        "link to Goya's work": "Goya's 1798 portrait of Julià (Thyssen) was mentioned by Charles Yriarte in 1867 as part of Louis-Philippe I's Galerie espagnole. However, J. Wilson-Bareau and G. Maurer affirm the painting was catalogued by 1846 in the collection of María Cristina de Borbón-Dos Sicilias (Vista Alegre Palace, Madrid), and that it may have belonged to its author until his death in 1832. The painting then became part of the collection of Infanta Luisa Fernanda de Borbón and Prince Antoine, Duke of Montpensier (San Telmo Palace, Sevilla). Afterwards, the artwork was for sale 3 times in Paris: 2 at Durand-Ruel, and then at Arthur Sachs; then acquired by the Thyssen in 1971 (Thyssen website).",
+        "mentions": "Goya's letter to Martín Zapater, 5 Aug 1789: 'Aquí se me ha presentado hoy Asensio, que pretende aprobarse por esta Academia de Ma(es)tro de Obras, el que me ha traído su carta de recomendación'; although this could be as well the architect Joaquín Asensio Martínez (Ansón Navarro 1995, pp.274-75).",
+        "copies after Goya": "Julià made copies after Goya's sketch for the frescoes of San Antonio de la Florida (1798), the <i>Portrait of Francisco Bayeu</i> (1804), and the self-portrait with Dr Arrieta (1822) (RAH)",
+        "collaborations": [
+          "Julià assisted Goya in the frescoes of San Antonio de la Florida (1798).",
+          "Julià signed a medalion to decorate Tadeo Bravo de Rivero's house as 'bajo la dirección del célebre D. Francisco Goya' (Blanco Mozo 2013, p.358; Ansón Navarro 2013, p.219)."
+        ],
+        "websites": "[Thyssen, profile by Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)",
+        "bibliography": "Blanco Mozo 2013; Ansón Navarro 2013; Ansón Navarro 1995"
+      }
+    },
+    "17": {
+      "requested": [
+        "Manuel Godoy",
+        "Josefa Tudó"
+      ],
+      "found_as": [
+        "Josefa Tudó",
+        "Manuel Godoy"
+      ],
+      "edge": {
+        "from": "Josefa Tudó",
+        "to": "Manuel Godoy",
+        "connection_level": "direct",
+        "know each other since": "at least 1797",
+        "relationship type": "lovers (c.1797); spouses: husband-wife (1829)",
+        "children": "Manuel Luis de Godoy y Tudó; Luis Carlos de Godoy y Tudó"
+      }
+    },
+    "19": {
+      "requested": [
+        "Francisco de Goya",
+        "Manuel Godoy"
+      ],
+      "found_as": [
+        "Francisco de Goya",
+        "Manuel Godoy"
+      ],
+      "edge": {
+        "from": "Francisco de Goya",
+        "to": "Manuel Godoy",
+        "connection_level": "direct",
+        "relationship type": "patronage",
+        "commissions": "a portrait (1801) and the two 'Majas': the [<i>Maja desnuda</i> (1795-1800)](https://www.museodelprado.es/coleccion/obra-de-arte/la-maja-desnuda/65953b93-323e-48fe-98cb-9d4b15852b18) and the [<i>Maja vestida</i> (1800-07)](https://www.museodelprado.es/coleccion/obra-de-arte/la-maja-vestida/a3121efc-6924-454c-8a9f-e4320f26d3d0), now at the Prado. Goya was probably accused to the Inquisition because of the <i>Naked Maja</i>. There has been much speculation about the identity of the model of the 'Majas', mostly as part of the alleged (and spurious) love affair of the painter with the Duchess of Alba; others pointed towards Godoy's lover and second wife, Pepita Tudó. The 'Majas', however, are most likely an idealisation created by the artist",
+        "mentions": "Godoy mentions Goya three times in his <i>Memorias</i>, including a mention of the Caprichos (see Godoy's node)",
+        "portraits": "1801, [RABASF 0670](https://www.academiacolecciones.com/pinturas/inventario.php?id=0670)"
+      }
+    },
+    "22": {
+      "requested": [
+        "Javier Goya",
+        "Federico de Madrazo"
+      ],
+      "found_as": [
+        "Javier Goya",
+        "Federico de Madrazo"
+      ],
+      "edge": {
+        "from": "Javier Goya",
+        "to": "Federico de Madrazo",
+        "connection_level": "direct",
+        "relationship type": "friends; business partners?"
+      }
+    },
+    "21": {
+      "requested": [
+        "Javier Goya",
+        "Baron Taylor"
+      ],
+      "found_as": [
+        "Javier Goya",
+        "Baron Taylor"
+      ],
+      "edge": {
+        "from": "Javier Goya",
+        "to": "Baron Taylor",
+        "connection_level": "direct",
+        "relationship type": "business partners (sold a group of paintings attributed to Francisco de Goya in 1837 for the Galerie espagnole)"
+      }
+    },
+    "23": {
+      "requested": [
+        "Valentín Carderera",
+        "Javier Goya"
+      ],
+      "found_as": [
+        "Javier Goya",
+        "Valentín Carderera"
+      ],
+      "edge": {
+        "from": "Javier Goya",
+        "to": "Valentín Carderera",
+        "connection_level": "direct",
+        "relationship type": "acquaintances; business partners?"
+      }
+    },
+    "10": {
+      "requested": [
+        "Federico de Madrazo",
+        "Eugenio Ochoa"
+      ],
+      "found_as": [
+        "Federico de Madrazo",
+        "Eugenio Ochoa"
+      ],
+      "edge": {
+        "from": "Federico de Madrazo",
+        "to": "Eugenio Ochoa",
+        "connection_level": "direct",
+        "relationship type": "close friends",
+        "collaborations": "the found the journal <i>El Artista</i> in 1835 in Madrid with Pedro de Madrazo (after visiting <i>L'Artiste</i> in Paris in 1833).",
+        "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming)."
+      }
+    },
+    "9": {
+      "requested": [
+        "Federico de Madrazo",
+        "Adrien Dauzats"
+      ],
+      "found_as": [
+        "Federico de Madrazo",
+        "Adrien Dauzats"
+      ],
+      "edge": {
+        "from": "Federico de Madrazo",
+        "to": "Adrien Dauzats",
+        "connection_level": "direct",
+        "relationship type": "close friends",
+        "know each other since": "1833, during Federico's 1st trip to Paris (with Vicente Masarnau). Federico also meets Baron Taylor.",
+        "portraits": [
+          "1837 Madrazo portrays Dauzats (Versailles).",
+          {
+            "caption": "1839 Madrazo portrays him again (painting acquired by the Spanish state to Subastas Segre in March 2026). [News](https://x.com/Invertirenarte/status/2036482410057986053?s=20)",
+            "url": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Madrazo_Dauzats_1839.jpg"
+          }
+        ],
+        "correspondence": [
+          "1834-IX-29, Dauzats to Madrazo: 'Je m'occupe d'une notice sur la vie et les ouvrages de Goya. C'est un hommage que nous voulons rendre à l'un des peintres les plus célèbres de l'Espagne' (Archivo Madrazo). Quoted in Guinard 1967-B, p.323 (Guinard thinks Dauzats could be the author of the article on Goya in 1834 in <i>Le Magasin pittoresque</i>); Fayos Pérez 2024, p.50.",
+          "1835-III-24, Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
+          "1835-IV-1, Madrazo to Dauzats (in French) (INHA): Dauzats had asked for a notice about Goya, which Madrazo is waiting to ask for to Javier Goya when he is back in Madrid. Madrazo says he gave Pharamond Blanchard two lithographies for him from <i>El Artista</i>. Mention of Eugenio Ochoa and Alejandro Sureda. His brother (Pedro de Madrazo?) sends regards. He also sends regards to Baron Taylor (Fayos-Pérez 2026, upcoming).",
+          "1837-I-24, Madrazo to Dauzats (INHA). He says that Pharamond Blanchard told him that Baron Taylor was coming back soon (to Paris). Mentions Eugenio Ochoa and Carlos Luis de Ribera.",
+          "1837-VI-17, Dauzats to Madrazo (Archivo Madrazo) (Guinard 1967-B, p.269).",
+          "1838-III-12, Madrazo to Dauzats (INHA): Madrazo asks Dauzats for drawing tools.",
+          "1838?-V-7, Madrazo to Dauzats (INHA): mentions Eugenio Ochoa, Pedro de Madrazo, Valentín Carderera, Luisa and Carlota.",
+          "1838-VI-11, Madrazo to Dauzats (INHA): mention of a suit of armour and a mannequin for a painting.",
+          "1839-VI-25, Madrazo to Dauzats (INHA): mention of a visit to the Louvre."
+        ],
+        "interactions": [
+          "1837, 13 Oct: as soon as he arrives in Paris, Madrazo goes see Santiago Masarnau, Adrien Dauzats and Baron Taylor (Díez 1994, p.32).",
+          "1837, 18 Oct: on 17 Oct Madrazo goes to Dauzats to the Louvre. They see paintings by Gros, Letiers, Guérin, Géricault (<i>Méduse</i>) (Díez 1994, p.34)."
+        ],
+        "mentions": [
+          "Entre muchos ejemplos:",
+          "1837, 4 Nov, letter from Federico de Madrazo to José de Madrazo: 'La carta que venía dentro de la mía para Mr. Dauzats se la di ayer. Hará como cosa de 6 días hablé con Dauzats sobre el asunto de las estampas y me dijo que me acompañaría con mucho gusto uno de estos días a casa de Rittner que es bastante amigo suyo, por lo tanto creo que en mi carta siguiente podré decir a V. algo sobre el particular. No crea V. que me olvido de esto. Estoy segurísimo que Dauzats me ayudará en esto como en todas las cosas, pues además de ser sumamente formal es muy buen amigo y tanto más habiéndole yo hablado sobre este particular con bastante empeño' (Díez 1994, no.15, p.45).",
+          "1837, 10 Nov, letter from Federico de Madrazo to José de Madrazo: 'Antes de ayer fuimos Dauzats y yo a casa de Rittner para hablarle sobre el negocio de las estampas [...] Nos dijo además que su compañero Mr. Goupil [Adolphe Goupil] se halla en este momento en Londres, que le espera de un día para otro y que en cuanto venga pasará con él a casa de Dauzats para ver la obra completa; prefiere ver la obra completa para formar un juicio más exacto (Dauzats dijo ayer delante de mí a Mr. Taylor que le mandara a su casa los tres tomos)' (Díez 1994, no.16, p.46)."
+        ],
+        "bibliography": "Fayos Pérez 2026 (upcoming); Fayos Pérez 2024; Díez 1994; Guinard 1967-A; Guinard 1967-B."
+      }
+    },
+    "12": {
+      "requested": [
+        "Édouard Manet",
+        "Edgar Degas"
+      ],
+      "found_as": [
+        "Edgar Degas",
+        "Édouard Manet"
+      ],
+      "edge": {
+        "from": "Edgar Degas",
+        "to": "Édouard Manet",
+        "connection_level": "direct",
+        "relationship type": "colleagues, friends, rivals",
+        "know each other since": "c.1864, at the Louvre",
+        "they met": "Degas allegedly met Manet for the first time c.1864 when they were both copying (in etching) Velázquez's <i>Infanta Margarita</i> at the Louvre (Wolohojian & Dunn 2023, p.277; Gordon and Forge 1988, p.23)",
+        "portraits": [
+          "Manet by Degas: several prints and drawings c.1868-69, including <i>Édouard Manet, Seated, Holding His Hat</i> (c.1868) (and 1868 print); <i>Édouard Manet, Bust-Length Portrait</i> (c.1868, Met 49.127.7) [Met](https://www.metmuseum.org/art/collection/search/358782); <i>Édouard Manet at the Races</i> (c.1868-69). (Wolohojian & Dunn 2023, p.277)",
+          "Degar by Manet: he depicts him in the corner of <i>The Races in the Bois de Boulogne</i> (1872)."
+        ],
+        "feuds": "among other conflicts, Degas painted <i>Monsieur et Madame Édouard Manet</i> (1869) and Manet disliked how his wife was depicted, so he cut out her face. This enraged Degas, who complained to Ambroise Vollard about it, and returned to Manet a painting by him that he owned. A few months later they 'patched things up', as expressed by Berthe Morisot's mother (Wolohojian & Dunn 2023, p.279).",
+        "correspondence": [
+          "1868, 29 July, Manet to Degas: he invites Degas to join him in a trip to England. He also asks him to persuade Henri Fantin-Latour to join. Sends regards to Duranty, Fantin-Latour and Émile Zola. Degas would not join.",
+          "1869, 27 May: Manet writes to Degas asking about his father's gatherings."
+        ],
+        "mentions": [
+          "1868, 10 Aug, letter from Manet to Henri Fantin-Latour: 'De Gas was really silly not to have come with me [to the trip to England]'.",
+          "1868, 26 Aug, letter from Manet to Henri Fantin-Latour: 'I envy your being able to discuss with that famous aesthetician Degas the question of whether or not it is advisable to put art within reach of the lower classes, by turning out pictures for sixpence apiece'. And 'Tell Degas it's about time he wrote to me, I gather form Duranty he's becoming a painter of high life; why not? It's too bad he didn't come to London, those well-trained horses would have inspired a few pictures' (Wolohojian & Dunn 2023, p.279).",
+          "1871, 5 June, Mme Morisot to Berthe: '[Your brother] as met two Communards, at this moment when they are all being shot... Manet and Degas! Even at this stage they are condemning the drastic measures used to repress them. I think they are insane, don't you?' (Wolohojian & Dunn 2023, p.281; Rouart 1959, p.73).",
+          "1872, 19 Nov, letter from Degas to Tissot: 'I haven't yet written to Manet and of course he hasn't sent me a note either'.",
+          "1872, 5 Dec, letter from Degas to Henri Rouart: 'Manet would see here more beautiful things than I have. But he wouldn't do any more than I have. We only give love and art to what we are used to. The new captivates and bores in turn' (Wolohojian & Dunn 2023, p.281; Reff 2020, letter 31, vol.1, p.172, vol.3, p.27).",
+          "1874, March, letter to Bracquemond (about the organisation of the 1st exhibition of the Société Anonyme des Artistes): 'Because of Fantin's influence and some self-induced panic, Manet still refuses to join us; but nothing seems to be definitive on this matter yet' (Wolohojian & Dunn 2023, p.282; Reff 2020, letter 41, vol.1, p.189, vol.3, p.33).",
+          "1874 letter from Degas to Tissot: 'There needs to be a realist Salon. Manet doesn't understand that. I believe him to be definitely more vain than intelligent' (Manet continues to exhibit at the official Salon despite multiple rejections) (Reff 2020, letter 40, vol.1, p.129, vol.3, p.32).",
+          "1875 at the inauguration of the Paris Opéra, Manet declares 'Why, it is Degas who should have painted the foyer of the Opéra' (Proust 1913, p.96).",
+          "1876 Georges Rivière: 'There were often many of us at the Nouvelles-Athènes, Manet, smiling, elegant, looking very young (...); Degas, with the profile of a bourgeois..., arrived well-equipped with cruel comments about his contemporaries' (Wolohojian & Dunn 2023, p.283; Rivière 1921, p.26).",
+          "1876 both artists are praised in Mallarmé's <i>The Impressionists and Édouard Manet</i>.",
+          "1880 Manet's exhibition at Galerie La Vie Moderne: Degas states 'he is better known than Garibaldi' ('Chronique: Exposition d'œuvres nouvelles de M. Édouard Manet', <i>Le Temps</i>, 10 April 1880, p.2).",
+          "1882 Degas to Henri Rouart: 'Manet stupid and shrewd, a blank playing card, Spanish trompe l'œil, painter' (Reff 2020, letter 170, vol.1, p.301, vol.3, p.68).",
+          "1883 at Manet's funeral, Degas states: 'He was greater than we thought'.",
+          "1885 Berthe Morisot on her notebook: 'Degas said that the study of nature was unimportant, painting being an art of <i>convention</i>...; that Edouard himself, although he boasted about slavishly copying nature, was the most mannered painter in the world, never making a brushstroke without thinking of the (old) masters' (Patry 2019, p.256).",
+          "1888 Degas hands Édouard Manet's <i>Pear</i> next to Jean-Auguste-Dominique Ingres's <i>Jupiter</i> in his collection. He says to George Moore: 'I put it there, for a pear painted like that would overthrow any god' (Moore 1911, vol.3, p.149).",
+          "1895 Berthe Morisot on the eve of her death, to her daughter Julie Manet: 'Tell M. Degas that if he founds a museum he should select a Manet' (Rouart 1959, p.212).",
+          "1897 Degas reacted to Proust's book on Manet: 'That Manet! As soon as I did dancers, he did them... he always imitated. (...) He could never do anything except imitate' (Halévy 1960, pp.104-5, 110-11).",
+          "1904 Valéry says that Degas remembers Manet 'with a mixture of admiration, amotion, and real nastiness. A mixture so deep and natural, so true in its ocloring pleases me' (Reff 2020, letter 170, note 9, vol.1, p.301)."
+        ],
+        "interactions": [
+          "'Manet and Degas belonged to the same interconnected circles of friends. They attend the soirées hosted by the Morisots and by Alfred Stevens and his wife; Degas takes part in Manet's mother's Thursday salons; and Manet is a regular at Degas's father's gatherings' (Wolohojian & Dunn 2023, p.280).",
+          "1869, July-Aug: Degas visits Manet in Boulogne-sur-Mer.",
+          "1870 they are drafted during the Franco-Prussian war (National Guard). They are both under the orders of Ernest Meissonier, and they join the artillery. They have a conflict about the defence strategy of Paris. 'Degas and I are in the artillery, volunteer gunners' (Wolohojian & Dunn 2023, p.281; Rodary 2014, p.70).",
+          "1871, 30 Sept: Degas visits Manet's atelier.",
+          "1880 they attend Edmond Duranty's funeral.",
+          "1880 they attend Alphonse Maureau's funeral."
+        ],
+        "exhibitions": "<i>Manet/Degas</i>, 2023, Metropolitan: [artworks](https://www.metmuseum.org/exhibitions/manet-degas/exhibition-objects)",
+        "collection": "Degas acquired 3 artworks by Édouard Manet in 1884, as well as <i>Woman with a Cigarette</i> (c.1878-80) in 1896.",
+        "bibliography": "Fayos Pérez 2024; Wolohojian & Dunn 2023; Reff 2020, <i>The Letters of Edgar Degas</i>; Patry 2019, <i>Berthe Morisot</i>; Rodary 2014, <i>Correspondance du Siège de Paris</i>; Gordon and Forge 1988; Rouart 1959, <i>The Correspondence of Berthe Morisot</i>; Rivière 1921, <i>Renoir et ses amis</i>; A. Proust 1913, <i>Edouard Manet. Souvenirs</i>; Moore 1911, <i>Hail and Farewell!</i>; Halévy 1960, <i>Degas parle</i>.",
+        "last_modified": "2025-08-19"
+      }
+    },
+    "11": {
+      "requested": [
+        "Federico de Madrazo",
+        "Valentín Carderera"
+      ],
+      "found_as": [
+        "Federico de Madrazo",
+        "Valentín Carderera"
+      ],
+      "edge": {
+        "from": "Federico de Madrazo",
+        "to": "Valentín Carderera",
+        "connection_level": "direct",
+        "relationship type": "friends",
+        "know each other since": "at least 1835",
+        "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Pascual de Gayangos y Arce, Vicente Masarnau and Santiago Masarnau",
+        "collaborations": "Carderera published his first article on Goya in 1835 in <i>El Artista</i>, founded by Federico de Madrazo, Pedro de Madrazo and Eugenio Ochoa.",
+        "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
+        "they met": [
+          "On many occasions. Some of them are:",
+          "1855 (Paris): 5, 9, 16, 19, 21 and 29 September, 11, 17, 19 October, 11 and 27 November.",
+          "1856, 3 Aug (Paris): 'Después de ir de Ottoz con López a hacer el encargo de Federico de Madrazo' (LG 2016, p.337).",
+          "1861 they both participate in the Artistic Conference (Congreso Artístico) in Amberes.",
+          "19 Aug 1861 (Paris), with Baron Taylor and Eugenio Ochoa"
+        ],
+        "correspondence": [
+          "1837-XII-3, Paris, Madrazo to Carderera: Adrien Dauzats recommends Carderera, via Federico de Madrazo, to go to Paris ('de pensar venirse a Francia debe indudablemente  ser a París'.",
+          "1845-X-15, Carderera to Madrazo: expresses his dislike for some plates in Jenaro Pérez Villaamil's <i>España monumental</i>; he describes the commission from María Cristina de Borbón-Dos Sicilias and her husband at Malmaison, Paris. AMNP (AP Madrazo 6/62)."
+        ],
+        "bibliography": "Lanzarote Guiral 2016, pp.XXIII, 558; Díez 1994, no.528, pp.988-89."
+      }
+    },
+    "35": {
+      "requested": [
+        "José de Madrazo",
+        "Baron Taylor"
+      ],
+      "found_as": [
+        "José de Madrazo",
+        "Baron Taylor"
+      ],
+      "edge": {
+        "from": "José de Madrazo",
+        "to": "Baron Taylor",
+        "connection_level": "direct",
+        "relationship type": "acquaintances; patronage",
+        "know each other since": "at least 1833 (via Blanchard, in Madrid)",
+        "collaborations": "during his mission to acquire artworks for the Galerie espagnole in 1835-36, Taylor y assisted by Dauzats and Blanchard, and also by the Madrazo family and Carderera",
+        "correspondence": "2 Oct 1837: Carderera offers Taylor to sell 2 Morales paintings, via Madrazo (Lanzarote Guiral 2016, p.XXIII; Porée 1907, p.296)",
+        "portraits": "1833 (Madrazo portrays Taylor)"
+      }
+    },
+    "1": {
+      "requested": [
+        "Eugène Delacroix",
+        "Frédéric Villot"
+      ],
+      "found_as": [
+        "Eugène Delacroix",
+        "Frédéric Villot"
+      ],
+      "edge": {
+        "from": "Eugène Delacroix",
+        "to": "Frédéric Villot",
+        "connection_level": "direct",
+        "relationship type": "close friends",
+        "correspondence": "since 1830 (Burty 1880, t.1, pp.149, 166, 169, 178, 188, 191, 198, 202, 204, 213, 228, 234, 236, 243, 246, 292, 307, 321, 322)"
+      }
+    },
+    "4": {
+      "requested": [
+        "Auguste Dutuit",
+        "Eugène Dutuit"
+      ],
+      "found_as": [
+        "Eugène Dutuit",
+        "Auguste Dutuit"
+      ],
+      "edge": {
+        "from": "Eugène Dutuit",
+        "to": "Auguste Dutuit",
+        "connection_level": "direct",
+        "relationship type": "siblings; brothers"
+      }
+    },
+    "25": {
+      "requested": [
+        "Théophile Gautier",
+        "Victor Hugo"
+      ],
+      "found_as": [
+        "Victor Hugo",
+        "Théophile Gautier"
+      ],
+      "edge": {
+        "from": "Victor Hugo",
+        "to": "Théophile Gautier",
+        "relationship type": "friends",
+        "know each other since": "1829, 27 June, via Gérard de Nerval (Lacoste-Veysseyre 2014, p.347)",
+        "they shared": "Gautier was part of Hugo's 'Cénacle'",
+        "correspondence": [
+          "1830, March, letter from Hugo to Gautier: 'Je profite d'un moment de loisir pour vous envoyer les quatre vers et je vous serre la main. Accuerdete [sic] usted de los amigos de la Plaza National' (Lacoste-Veysseyre 1985, p.27; Daubray 1947, p.251).",
+          "1870?, 20 Dec, letter from Gautier to Hugo.",
+          "1876, 4 Oct, letter from Gautier to Hugo. Maison Victor Hugo a4354, [Paris Musées](https://www.parismuseescollections.paris.fr/fr/maison-de-victor-hugo/oeuvres/lettre-de-gautier-a-victor-hugo#infos-principales)"
+        ],
+        "mentions": [
+          "1835, 15 Dec: Hugo praises <i>Mademoiselle de Maupin</i> in the journal <i>Vert-Vert</i>. [Text](www.theophilegautier.fr/wp-content/uploads/2010/06/Victor-Hugo.pdf)",
+          "1872, 24 June, letter from Hugo to Jules Simon (Ministre de l'Instruction publique): 'Théophile Gautier est un des hommes qui honorent notre pays et notre temps ; il est au premier rang comme poète, comme critique, comme écrivain. Sa renommée fait partie de la gloire française. Eh bien, à cette heure, Théophile Gautier lutte à la fois contre la maladie et contre la détresse. (…) Je vous demande, au nom de l'honneur littéraire de notre pays, de lui venir en aide avec cette promptitude qui double le bien qu'on fait, et d'attribuer à Théophile Gautier la plus forte indemnité annuelle dont vous puissiez disposer'."
+        ],
+        "bibliography": "'Gautier/Hugo: Mémoire(s) du romantisme', <i>Bulletin de la Société Théophile Gautier</i>, no.45, 2023; Lacoste-Veysseyre 2014; <i>Dessins de Victor Hugo gravés par Paul Chenay</i>, text by Théophile Gautier, Paris, L'Archange Minotaure, 2002; Lacoste-Veysseyre, <i>Correspondance générale</i>, t.12, 2000; Théophile Gautier, <i>Victor Hugo</i>, selection of texts, F. Court-Pérez ed., 2000; 'Dossier Hugo-Gautier & Autour du <i>Capitaine Fracasse</i>', <i>Bulletin de la Société Théophile Gautier</i>, no.9, 1987; Lacoste-Veysseyre, <i>Correspondance générale</i>, t.1, 1985; Ulrich Guttinguer, <i>Correspondance générale</i>, tome 1; Cécile Daubray, <i>Victor Hugo et ses correspondants</i>, 1947; <i>Victor Hugo par Théophile Gautier</i>, Paris, E. Fasquelle, 1902, [Gallica](http://gallica.bnf.fr/ark:/12148/bpt6k200915d.r=.langFR); .",
+        "websites": "Gautier-Hugo, [theophilegautier.fr](https://www.theophilegautier.fr/victor-hugo/)"
+      }
+    },
+    "24": {
+      "requested": [
+        "Théophile Gautier",
+        "Eugène Piot"
+      ],
+      "found_as": [
+        "Théophile Gautier",
+        "Eugène Piot"
+      ],
+      "edge": {
+        "from": "Théophile Gautier",
+        "to": "Eugène Piot",
+        "connection_level": "direct",
+        "relationship type": "friends",
+        "know each other since": "c.1835",
+        "shared": [
+          "1835 they shared a flat at the Impasse du Doyenné, being neighbours of Gérard de Nerval, Arsène Houssaye and Camille Rogier (<i>Donateurs du Louvre. Eugène Piot</i>, 1908, p.7).",
+          "1840 trip to Spain (started 5 May). By the end of it, Gautier had contracted a considerable debt with Piot (8000 FF). c.1840 pen drawing of Piot by Gautier with his handwritten inscription: 'Le jeune Piot [las] d'être Don Juan Piot de [Marana] imite celui que la pudeur m'empeche de nommer les aigles viennent manger sur son chapeau; à [l'ingrat] du grand homme, il pale d'un [brusque] [a/en] [Saccadó] a grand il se lave la figure l'univers doit faire [filiace]' and 'une aigle d'or [planait] sur sa tête sacrée!' (Bonnaffé 1890, p.47) ."
+        ],
+        "portraits": [
+          {
+            "url": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Gautier_Piot.jpg",
+            "caption": "Gautier, pen drawing, c.1840, 'Portrait d'Eugène Piot'"
+          }
+        ],
+        "collaborations": [
+          "1842 Goya's catalogue raissonné",
+          "Gautier collaborates in Piot's <i>Cabinet de l'amateur</i> (founded in 1842)."
+        ],
+        "mentions": "Gautier dedicates to Piot <i>Voyage en Espagne</i> (1843)",
+        "correspondence": "1842 [Aug?] Gautier asks Piot to borrow his 'Toromaquia' (Tauromaquia): 'Prête-moi la Toromaquia pour un instant, après je t'appartiens' (Lacoste-Veysseyre 1985, p.331).",
+        "bibliography": "Beurdeley, <i>Trois siècles de ventes publiques</i>, 1988; Lacoste-Veysseyre 1985; <i>Donateurs du Louvre. Eugène Piot</i>, 1908; Bonnaffé 1890"
+      }
+    },
+    "14": {
+      "requested": [
+        "Alfred de Musset",
+        "George Sand"
+      ],
+      "found_as": [
+        "George Sand",
+        "Alfred de Musset"
+      ],
+      "edge": {
+        "from": "George Sand",
+        "to": "Alfred de Musset",
+        "connection_level": "direct",
+        "relationship type": "lovers (1833-1835)"
+      }
+    },
+    "15": {
+      "requested": [
+        "Frédéric Chopin",
+        "George Sand"
+      ],
+      "found_as": [
+        "George Sand",
+        "Frédéric Chopin"
+      ],
+      "edge": {
+        "from": "George Sand",
+        "to": "Frédéric Chopin",
+        "connection_level": "direct",
+        "relationship type": "lovers (c.1838)"
+      }
+    },
+    "31": {
+      "requested": [
+        "José de Madrazo",
+        "Carlos IV"
+      ],
+      "found_as": [
+        "José de Madrazo",
+        "Carlos IV"
+      ],
+      "edge": {
+        "from": "José de Madrazo",
+        "to": "Carlos IV",
+        "connection_level": "direct",
+        "relationship type": "patronage",
+        "portraits": "1825, Palacio Real de Aranjuez",
+        "collaborations": "Madrazo worked on the inventory of Carlos IV's collection in Rome, returned to Madrid in 1819"
+      }
+    },
+    "30": {
+      "requested": [
+        "Federico de Madrazo",
+        "Isabel II"
+      ],
+      "found_as": [
+        "Federico de Madrazo",
+        "Isabel II"
+      ],
+      "edge": {
+        "from": "Federico de Madrazo",
+        "to": "Isabel II",
+        "connection_level": "direct",
+        "relationship type": "employer-employee. Pintor de Cámara",
+        "portraits": "1844, RABASF; 1848, Prado; 1849, Museo del Romanticismo; c.1850, Banco de España; 1852, <i>Isabel II con la infanta Isabel</i>, Cuartel General del Ejército, Palacio de Buenavista, Madrid; 1862, UCM"
+      }
+    },
+    "32": {
+      "requested": [
+        "José de Madrazo",
+        "Fernando VII"
+      ],
+      "found_as": [
+        "Fernando VII",
+        "José de Madrazo"
+      ],
+      "edge": {
+        "from": "Fernando VII",
+        "to": "José de Madrazo",
+        "connection_level": "direct",
+        "relationship type": "patronage"
+      }
+    },
+    "20": {
+      "requested": [
+        "Francisco de Goya",
+        "Carlos IV"
+      ],
+      "found_as": [
+        "Carlos IV",
+        "Francisco de Goya"
+      ],
+      "edge": {
+        "from": "Carlos IV",
+        "to": "Francisco de Goya",
+        "connection_level": "direct",
+        "relationship type": "patronage",
+        "commissions": "portraits",
+        "know each other since": "at least 1789",
+        "portraits": "1789, Prado; 1800, <i>La familia de Carlos IV</i>, 1800, Prado",
+        "exchanges": "in 1803 Goya gave the plates of the <i>Caprichos</i> and 240 sets to Carlos IV (Real Calcografía) in exchange for a pension of 12,000 reales for his son Javier (Harris 1964, vol.I, p.10). See the letter from Goya to Cayetano Soler from 7 July 1803 (Canellas López 1981)",
+        "bibliography": "Canellas López 1981; Harris 1964"
+      }
+    },
+    "13": {
+      "requested": [
+        "Honoré Daumier",
+        "Achille Ricourt"
+      ],
+      "found_as": [
+        "Achille Ricourt",
+        "Honoré Daumier"
+      ],
+      "edge": {
+        "from": "Achille Ricourt",
+        "to": "Honoré Daumier",
+        "connection_level": "direct",
+        "relationship type": "professional contact",
+        "know each other since": "at least 1837"
+      }
+    },
+    "2": {
+      "requested": [
+        "Honoré Daumier",
+        "J. J. Grandville"
+      ],
+      "found_as": [
+        "Honoré Daumier",
+        "J. J. Grandville"
+      ],
+      "edge": {
+        "from": "Honoré Daumier",
+        "to": "J. J. Grandville",
+        "connection_level": "direct",
+        "relationship type": "colleagues",
+        "collaborations": [
+          "They both worked at <i>La Caricature</i>.",
+          "They both collaborated in Balzac's <i>La Chronique de Paris</i> (c.1836), in <i>Les Français peints par eux-mêmes</i> (1840), and Louis Huart's <i>Museum parisien, histoire physiologique, pittoresque, philosophique et grotesque de toutes les bêtes curieuses de Paris et de la banlieue [...]</i> (1841) (with Gavarni, Traviès), among others."
+        ]
+      }
+    }
+  },
+  "missing": [
+    [
+      "Leocadia Weiss",
+      "Rosario Weiss"
+    ],
+    [
+      "Manuel Brugada",
+      "Francisco de Goya"
+    ],
+    [
+      "Rosario Weiss",
+      "Francisco de Goya"
+    ],
+    [
+      "Honoré de Balzac",
+      "Countess Hanka"
+    ],
+    [
+      "Manuel Godoy",
+      "María Cristina de Borbón"
+    ],
+    [
+      "Eugène Piot",
+      "Etienne-François Thoré"
+    ],
+    [
+      "Théophile Gautier",
+      "Etienne-François Thoré"
+    ],
+    [
+      "Valentín Carderera",
+      "Marie-Denise Jacquemart"
+    ],
+    [
+      "Valentín Carderera",
+      "José de Salamanca y Mayol"
+    ],
+    [
+      "José de Madrazo",
+      "Caroline Blanchard"
+    ]
+  ]
+}

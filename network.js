@@ -1118,7 +1118,11 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Juan de Madrazo"
             ],
             radius: 200,
+            padding: 120,
             startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "José de Madrazo": Math.PI  // left (west) side, shared with Court Painters
+            },
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
           },
@@ -1162,6 +1166,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 166,
             padding: 92,
+            centerYOffset: 180,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": Math.PI / 2,
@@ -2251,6 +2256,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["María Cristina de Borbón-Dos Sicilias", "Eugenia de Montijo", 120],
       ["Manuel Godoy", "Isabel II", 120],
       ["Carlos III", "Josefa Tudó", 120],
+      ["Frédéric Quilliet", "Josefa Tudó", 120],
       ["Josefa Tudó", "1st Duke of Wellington", 145],
       ["Carlos III", "María Manuela Kirkpatrick", 120],
       ["María Manuela Kirkpatrick", "1st Duke of Wellington", 120],
@@ -2272,6 +2278,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Agustín Esteve", "XV Countess of Chinchón", 120],
       ["Rafael Esteve", "Manuel Godoy", 135],
       ["Prince Antoine, Duke of Montpensier", "Eugenia de Montijo", 145],
+      ["Prince Antoine, Duke of Montpensier", "Manuel Godoy", 145],
       ["Prince Antoine, Duke of Montpensier", "Isabel II", 145],
       ["Louis Philippe I", "Infanta Luisa Fernanda de Borbón", 120],
       ["Valentín Carderera", "Francisco de Goya", 145],
@@ -2314,6 +2321,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Virginie Ancelot", "Marcel Briguiboul", 150],
       ["Virginie Ancelot", "Alphonse de Lamartine", 130],
       ["Ernest Meissonier", "Arsène Houssaye", 130],
+      ["Ernest Meissonier", "Paul Mantz", 130],
       ["José Zorrilla", "Mariano José Larra", 100],
       ["Célestin Nanteuil", "Léon Auguste Asselineau", 130],
       ["Nadar", "Philippe Burty", 130],
@@ -2325,6 +2333,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Juliette Récamier", "Ferdinand Guillemardet", 130],
       ["Marceline Desbordes-Valmore", "Tony Johannot", 130],
       ["Mariano Fortuny y Marsal", "Antonio de Brugada", 130],
+      ["Jean Laurent", "Antonio de Brugada", 130],
       ["Ramón de Mesonero Romanos", "Francisco Martínez de la Rosa", 130],
       ["Charles Asselineau", "Achille Ricourt", 130],
       ["Zacharie Astruc", "Frédéric Villot", 130],
@@ -2345,6 +2354,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Marquis of La Romana", "II Duke of San Carlos", 130],
       ["Adolphe Goupil", "Pedro de Madrazo", 130],
       ["Pedro de Madrazo", "José de Madrazo", 100],
+      ["Federico de Madrazo", "José de Madrazo", 100],
       ["Antoine-Jean Gros", "Eugenio Ochoa", 130],
       ["Carlos Luis de Ribera", "Adrien Dauzats", 130],
       ["Pierre Lacour fils", "Valentín Carderera", 130],
@@ -2363,7 +2373,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Giambattista Tiepolo", "Giandomenico Tiepolo", 130],
       ["J. J. Grandville", "Eugène Delacroix", 130],
       ["George Sand", "Célestin Nanteuil", 130],
-      ["Alexandre Dumas père", "Charles Baudelaire", 130]
+      ["Alexandre Dumas père", "Charles Baudelaire", 130],
+      ["Louis Daguerre", "Philippe Burty", 130],
+      ["Louis Daguerre", "Carlos Luis de Ribera", 130],
+      ["Carlos Luis de Ribera", "Philippe Burty", 130],
+      ["Zacharie Astruc", "Edgar Degas", 130]
       // supercali overlap
     ];
 
@@ -2781,6 +2795,31 @@ document.addEventListener('DOMContentLoaded', async function () {
         );
       }
     
+        function placeIlustradosCluster(network) {
+          const cfg = RADIAL_CLUSTERS["ILUSTRADOS_CLUSTER"];
+          if (!cfg || !cfg.members) return;
+
+          // Arrange in circle first
+          arrangeInCircle(
+            network,
+            nodes,
+            cfg.members,
+            cfg.radius || 150,
+            cfg.startAngle ?? (-Math.PI / 2),
+            cfg.sharedBoundaryNodes || {}
+          );
+
+          // Apply vertical offset if specified
+          if (cfg.centerYOffset) {
+            const memberIds = cfg.members.filter(id => nodes.get(id));
+            const pos = network.getPositions(memberIds);
+            memberIds.forEach(id => {
+              const p = pos[id];
+              network.moveNode(id, p.x, p.y + cfg.centerYOffset);
+            });
+          }
+        }
+
         function placeGoyaFamilyCluster(network) {
           const goyaId = "Francisco de Goya";
           if (!nodes.get(goyaId)) return;
@@ -3304,6 +3343,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
+
+        // Apply Ilustrados offset AFTER final lock to preserve positioning
+        placeIlustradosCluster(network);
 
         network.redraw();
 
