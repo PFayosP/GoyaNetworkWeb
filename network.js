@@ -1121,14 +1121,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 150,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "José de Madrazo": Math.PI * 0.75  // north-west, closer to Court Painters
+              "José de Madrazo": Math.PI * 1.25  // north-west, next to Federico
             },
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
           },
 
           "HUGO_CENACLE": {
-            center: "Victor Hugo",
             members: [
               "Honoré de Balzac",
               "Louis Boulanger",
@@ -1142,6 +1141,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Charles Nodier",
               "Charles-Augustin Sainte-Beuve"
             ],
+            center: "Victor Hugo",
             radius: 200,
             padding: 90,
             startAngle: -Math.PI / 2,
@@ -1170,8 +1170,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             centerYOffset: 180,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "Martín Zapater": Math.PI / 2,  // bottom of circle (towards Goya)
-              "Francisco de Goya": Math.PI * 1.5  // top of circle
+              "Francisco de Goya": Math.PI / 2,     // south of cluster
+              "Martín Zapater": Math.PI / 2.2     // also south, close to Goya
             },
             title: "Ilustrados cluster",
             titleEs: "Clúster Ilustrados"
@@ -1256,8 +1256,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Charles Blanc",
               "Paul Mantz"
             ],
-            radius: 92,
-            padding: 74,
+            radius: 100,
+            padding: 80,
             startAngle: -Math.PI / 2,
             title: "Print specialists",
             titleEs: "Especialistas en estampa"
@@ -1658,16 +1658,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       const style = getEdgeStyle(edge);
       
       // Calculate spring length based on strength (1-5 scale)
-      // For INTRA-CLUSTER edges: strength pulls nodes together normally
-      // For INTER-CLUSTER edges: use longer base length to prevent cross-cluster intrusion
+      // Respect strength for BOTH intra and inter-cluster edges
       let edgeLength = 210; // default
       if (edge.strength) {
         const strength = Math.max(1, Math.min(5, edge.strength)); // clamp 1-5
         
         if (edgeStatus === 'inter-cluster') {
-          // Inter-cluster edges: keep clusters separated by using longer base length
-          // Ignore strength for inter-cluster edges to preserve cluster boundaries
-          edgeLength = 280; // force inter-cluster edges to stay apart
+          // Inter-cluster edges: use longer base length but STILL apply strength
+          // Level-1 strength = tighter pull even across clusters (important for key relationships)
+          edgeLength = 120 + (strength - 1) * 50; // strength 1-5 = 120-320px range (base 200 for inter-cluster)
         } else {
           // Intra-cluster edges: apply strength normally to pull related nodes together
           // Make strength-1 edges extremely tight (20px) for very close relationships
@@ -2379,7 +2378,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Louis Daguerre", "Philippe Burty", 130],
       ["Louis Daguerre", "Carlos Luis de Ribera", 130],
       ["Carlos Luis de Ribera", "Philippe Burty", 130],
-      ["Zacharie Astruc", "Edgar Degas", 130]
+      ["Zacharie Astruc", "Edgar Degas", 130],
+      ["Gregorio Cruzada Villaamil", "Pierre Lacour", 130],
+      ["Vicente López", "Anton Raphael Mengs", 130],
+      ["Mariano Goya", "Richard Ford", 130]
       // supercali overlap
     ];
 
@@ -3365,8 +3367,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeMontpensierBridge(network);
         placeEstevesPair(network);
         placeCloseMasterStudentPairs(network);
-        placeCloseRelativesToGoya(network);
-        placeGeorgeSandConnections(network);
 
         // 3) Gentle cluster separation - minimal to avoid deforming circles
         separateClusters(network, nodes, RADIAL_CLUSTERS, 5, 110, 8);
@@ -3412,8 +3412,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Apply Ilustrados offset AFTER final lock to preserve positioning
         placeIlustradosCluster(network);
         placeCloseMasterStudentPairs(network);
-        placeCloseRelativesToGoya(network);
-        placeGeorgeSandConnections(network);
 
         network.redraw();
 
