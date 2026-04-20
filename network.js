@@ -2361,7 +2361,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Nadar", "Baron Taylor", 130],
       ["Louis Viardot", "Théophile Gautier", 130],
       ["Giambattista Tiepolo", "Giandomenico Tiepolo", 130],
-      ["J. J. Grandville", "Eugène Delacroix", 130]
+      ["J. J. Grandville", "Eugène Delacroix", 130],
+      ["George Sand", "Célestin Nanteuil", 130],
+      ["Alexandre Dumas père", "Charles Baudelaire", 130]
       // supercali overlap
     ];
 
