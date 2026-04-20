@@ -2913,6 +2913,30 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
         }
 
+        function placeGeorgeSandConnections(network) {
+          // George Sand's level-1 connections should be close to her despite cluster boundaries
+          const georgeSandId = "George Sand";
+          if (!nodes.get(georgeSandId)) return;
+
+          const georgeSandPos = network.getPositions([georgeSandId])[georgeSandId];
+          if (!georgeSandPos) return;
+
+          // Level-1 connections to keep close
+          const connections = [
+            { id: "Eugène Delacroix", distance: 110, angle: -Math.PI / 4 },      // NW
+            { id: "Frédéric Chopin", distance: 95, angle: -Math.PI / 3 },       // upper left
+            { id: "Alfred de Musset", distance: 100, angle: -Math.PI * 0.6 },   // left
+            { id: "Prosper Mérimée", distance: 110, angle: -Math.PI * 0.7 }     // lower left
+          ];
+
+          connections.forEach(conn => {
+            if (!nodes.get(conn.id)) return;
+            const x = georgeSandPos.x + Math.cos(conn.angle) * conn.distance;
+            const y = georgeSandPos.y + Math.sin(conn.angle) * conn.distance;
+            network.moveNode(conn.id, x, y);
+          });
+        }
+
         function placeBourbonCluster(network) {
           const chinchonId = "XV Countess of Chinchón";
           if (!nodes.get(chinchonId)) return;
@@ -3342,6 +3366,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeEstevesPair(network);
         placeCloseMasterStudentPairs(network);
         placeCloseRelativesToGoya(network);
+        placeGeorgeSandConnections(network);
 
         // 3) Gentle cluster separation - minimal to avoid deforming circles
         separateClusters(network, nodes, RADIAL_CLUSTERS, 5, 110, 8);
@@ -3388,6 +3413,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeIlustradosCluster(network);
         placeCloseMasterStudentPairs(network);
         placeCloseRelativesToGoya(network);
+        placeGeorgeSandConnections(network);
 
         network.redraw();
 
