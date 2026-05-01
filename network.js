@@ -8,6 +8,8 @@
     en: {
       BTN_NETWORK:"Network", BTN_ABOUT:"About", BTN_PEOPLE:"People", BTN_PARTNERS:"Partners",
       BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWS:"News", BTN_CONTACT:"Contact",
+      FUNDING_PARTNERS: "Funding Partners",
+      ACADEMIC_PARTNERS: "Academic Partners",
       SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
       NEW_NODES_TITLE: "New members",
       MEMBERS_TITLE:"All members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
@@ -158,7 +160,8 @@
 
       <p><strong>Origin:</strong> This is a research-based digital project developed by Paula Fayos-Pérez as part of her postdoctoral work on Goya's social and professional networks. It is a continuation of the research done during her PhD (University of Cambridge, 2018) <a href="https://www.repository.cam.ac.uk/items/8d9751ce-aca1-4d35-9436-0820ecbc98d4" target="_blank">(repository)</a>, which was later transformed into a book: <a href="https://www.ceeh.es/en/publicacion/goyas-caprichos-in-nineteenth-century-france-politics-of-the-grotesque/" target="_blank"><em>Goya’s Caprichos in Nineteenth-Century France. Politics of the Grotesque</em></a> (CEEH, 2024).</p>
 
-      <p><strong>Funding:</strong> Work produced with the support of a 2024 Leonardo Grant (<a href="https://www.redleonardo.es/beneficiario/paula-fayos-perez/" target="_blank">Beca Leonardo</a>) for Scientific Research and Cultural Creation, <a href="https://www.fbbva.es/" target="_blank">BBVA Foundation,</a> and a research grant from <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Gerda Henkel Stiftung (Gerda Henkel Foundation).</a> The Foundations take no responsibility for the opinions, statements and contents of this project, which are entirely the responsibility of its authors.</p>
+      <p><strong>Funding:</strong> Work produced with the support of a 2024 Leonardo Grant (<a href="https://www.redleonardo.es/beneficiario/paula-fayos-perez/" target="_blank">Beca Leonardo</a>) for Scientific Research and Cultural Creation, <a href="https://www.fbbva.es/" target="_blank">BBVA Foundation,</a> and a research grant from <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Gerda Henkel Stiftung (Gerda Henkel Foundation).</a></p>
+      <p><a href="https://www.fbbva.es/" target="_blank">BBVA Foundation</a> takes no responsibility for the opinions, statements and contents of this project, which are entirely the responsibility of its authors. <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Gerda Henkel Stiftung</a> takes no responsibility for the opinions, statements and contents of this project, which are entirely the responsibility of its authors.</p>
 
       <p><strong>User guide:</strong> There is data contained in each node (individual) and edge (connection between two individuals). On the nodes, users can see biographic information as well as artistic/literary production, art collection and link to Goya's work. On the edges, one can see the relationship type, correspondence, collaborations, and others. Edges in grey/silver colour are direct connections (friends, colleagues, relatives, acquaintances, etc.), while edges in golden colour are secondary connections (e.g. artists and writers who copied or wrote about Goya but never met him in person). The size of the nodes is proportional to the number of edges (connections) they hold.</p>
 
@@ -204,8 +207,10 @@
       `,
     },
     es: {
-      BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Socios",
+      BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Colaboradores",
       BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWS:"Noticias", BTN_CONTACT:"Contacto",
+      FUNDING_PARTNERS: "Entidades financiadoras",
+      ACADEMIC_PARTNERS: "Colaboradores académicos",
       SEARCH_PH:"Buscar…", FILTER_PROF_ALL:"Todas las profesiones", FILTER_NAT_ALL:"Todas las nacionalidades",
       NEW_NODES_TITLE: "Nuevos miembros",
       MEMBERS_TITLE:"Todos los miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
@@ -357,7 +362,8 @@
 
       <p><strong>Origen:</strong> Se trata de un proyecto digital basado en investigación, desarrollado por Paula Fayos-Pérez en el marco de su trabajo postdoctoral sobre las redes sociales y profesionales de Goya. Constituye una continuación de la investigación realizada durante su doctorado (Universidad de Cambridge, 2018) <a href="https://www.repository.cam.ac.uk/items/8d9751ce-aca1-4d35-9436-0820ecbc98d4" target="_blank">(repositorio)</a>, que posteriormente se transformó en un libro: <a href="https://www.ceeh.es/en/publicacion/goyas-caprichos-in-nineteenth-century-france-politics-of-the-grotesque/" target="_blank"><em>Goya’s Caprichos in Nineteenth-Century France. Politics of the Grotesque</em></a> (CEEH, 2024).</p>
 
-      <p><strong>Financiación:</strong> Trabajo realizado con el apoyo de una Beca Leonardo 2024 (<a href="https://www.redleonardo.es/beneficiario/paula-fayos-perez/" target="_blank">Beca Leonardo</a>) para Investigación Científica y Creación Cultural, <a href="https://www.fbbva.es/" target="_blank">Fundación BBVA,</a> y de una beca de investigación de la <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Gerda Henkel Stiftung (Fundación Gerda Henkel).</a> Las Fundaciones no asumen responsabilidad alguna por las opiniones, afirmaciones y contenidos de este proyecto, que son enteramente responsabilidad de sus autores.</p>
+      <p><strong>Financiación:</strong> Trabajo realizado con el apoyo de una Beca Leonardo 2024 (<a href="https://www.redleonardo.es/beneficiario/paula-fayos-perez/" target="_blank">Beca Leonardo</a>) para Investigación Científica y Creación Cultural, <a href="https://www.fbbva.es/" target="_blank">Fundación BBVA,</a> y de una beca de investigación de la <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Gerda Henkel Stiftung (Fundación Gerda Henkel).</a></p>
+      <p>La <a href="https://www.fbbva.es/" target="_blank">Fundación BBVA</a> no asume responsabilidad alguna por las opiniones, afirmaciones y contenidos de este proyecto, que son enteramente responsabilidad de sus autores. La <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Gerda Henkel Stiftung</a> no asume responsabilidad alguna por las opiniones, afirmaciones y contenidos de este proyecto, que son enteramente responsabilidad de sus autores.</p>
 
       <p><strong>Guía de uso:</strong> Cada nodo (individuo) y cada arista/conexión (vínculo entre dos individuos) contiene datos. En los nodos, los usuarios pueden consultar información biográfica, así como producción artística/literaria, coleccionismo y enlaces a la obra de Goya. En las conexiones se muestra el tipo de relación, correspondencia, colaboraciones y otros datos. Las conexiones en color gris/plateado son conexiones directas (amistades, colegas, familiares, conocidos, etc.), mientras que las conexiones en color dorado son conexiones secundarias (por ejemplo, artistas y escritores que copiaron o escribieron sobre Goya pero no llegaron a conocerlo en persona). El tamaño de los nodos es proporcional al número de conexiones (aristas) que tienen.</p>
 
