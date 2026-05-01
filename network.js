@@ -24,6 +24,8 @@
       <p>Contributions and suggestions are welcome and encouraged, and contributors will be credited if requested.</p>
       `,
       
+      PARTNERS_TITLE: "Partners",
+      
       RIGHTS_LABEL: "Rights:",
       NOTARIAL_PROTECTION: "Protected by notarial deed (Madrid, 2025)",
       ACCESS_FORM: "Access form",
@@ -224,6 +226,8 @@
       <p>La Red Goya se concibe como una base de datos colaborativa y abierta.</p>
       <p>Las contribuciones y sugerencias son bienvenidas, y los colaboradores serán acreditados si así lo desean.</p>
       `,
+      
+      PARTNERS_TITLE: "Colaboradores",
 
       NOTARIAL_PROTECTION: "Protegido por acta notarial (Madrid, 2025)",
       ACCESS_FORM: "Formulario de acceso",
