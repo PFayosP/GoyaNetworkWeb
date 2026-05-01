@@ -3007,19 +3007,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
         function placeBourbonCluster(network) {
-          const chinchonId = "XV Countess of Chinchón";
-          if (!nodes.get(chinchonId)) return;
-
-          const chinchonPos = network.getPositions([chinchonId])[chinchonId];
-          if (!chinchonPos) return;
-
-          const radius = 172;
-
-          // mover todo el círculo un poco a la derecha
-          const cx = chinchonPos.x - radius + 90;
-          const cy = chinchonPos.y;
-
-          const ordered = [
+          const members = [
             "XV Countess of Chinchón",
             "Carlos III",
             "Carlos IV",
@@ -3032,13 +3020,47 @@ document.addEventListener('DOMContentLoaded', async function () {
             "María Cristina de Borbón-Dos Sicilias"
           ].filter(id => nodes.get(id));
 
-          ordered.forEach((id, i) => {
-            const angle = i * (2 * Math.PI / ordered.length);
+          if (!members.length) return;
+
+          const godoyId = "Manuel Godoy";
+          const radius = 172;
+
+          // Calculate circle center (average position of all members)
+          const pos = network.getPositions(members);
+          let cx = 0, cy = 0;
+          members.forEach(id => {
+            cx += pos[id].x;
+            cy += pos[id].y;
+          });
+          cx /= members.length;
+          cy /= members.length;
+
+          // Get Godoy's position to find angle for Chinchón placement
+          let godoyAngle = 0; // default: east
+          if (nodes.get(godoyId)) {
+            const godoyPos = network.getPositions([godoyId])[godoyId];
+            godoyAngle = Math.atan2(godoyPos.y - cy, godoyPos.x - cx);
+          }
+
+          // Place Chinchón on border facing Godoy
+          network.moveNode(
+            "XV Countess of Chinchón",
+            cx + Math.cos(godoyAngle) * radius,
+            cy + Math.sin(godoyAngle) * radius
+          );
+
+          // Place remaining members around circle
+          const otherMembers = members.filter(id => id !== "XV Countess of Chinchón");
+          let angleStep = (2 * Math.PI) / members.length;
+          let currentAngle = godoyAngle + angleStep; // start after Chinchón
+
+          otherMembers.forEach(id => {
             network.moveNode(
               id,
-              cx + Math.cos(angle) * radius,
-              cy + Math.sin(angle) * radius
+              cx + Math.cos(currentAngle) * radius,
+              cy + Math.sin(currentAngle) * radius
             );
+            currentAngle += angleStep;
           });
         }
 
@@ -3425,8 +3447,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             );
           }
         });
-        // REMOVED: placeVillafrancaAlbaClusters, placeMadrazoFamilyCluster, placeBourbonCluster
-        // These were overwriting arrangeInCircle() work. Keep only specialized placements.
 
         // 2) Only specialized placement functions (non-destructive)
         placeFedericoSatelliteClusters(network);
@@ -3434,6 +3454,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeMonacoGroup(network);
         placeGodoyPositioning(network);
         placeEstevesPair(network);
+        placeBourbonCluster(network);  // Re-enable to fix overlapping Bourbons
         placeCloseMasterStudentPairs(network);
 
         // 3) Gentle cluster separation - minimal to avoid deforming circles
