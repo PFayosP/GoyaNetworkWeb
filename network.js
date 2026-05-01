@@ -3448,33 +3448,20 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
         });
 
-        // 2) Gentle cluster separation - minimal to avoid deforming circles
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 5, 110, 8);
-        
-        // 3) Minimal push-out
+        // 2) Minimal push-out only (skip separateClusters which deforms circles too much)
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 80);
 
-        // 4) FINAL LOCK: Restore circles and fix any deformation from above
+        // 3) Restore circles ONLY for clusters without specialized functions
+        // (clusters WITH specialized functions will override this anyway)
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
           if (!cfg.members || !cfg.members.length) return;
           
-          // Skip special arrangements that have their own placement functions
-          if (clusterId === "ILUSTRADOS_CLUSTER" ||
-              clusterId === "COURT_PAINTERS" ||
-              clusterId === "PRINT_SPECIALISTS" ||
-              clusterId === "BOURBON_CORE") {
-            return;
-          }
-          
-          // Final circle restoration (all circular clusters including GOYA_FAMILY)
-          if (clusterId === "MADRAZO_FAMILY" ||
-              clusterId === "MADRAZO_CARDERERA_GROUP" ||
-              clusterId === "MONTIJO_CORE" ||
+          // Only apply generic circle for clusters that don't have specialized placement
+          if (clusterId === "MONTIJO_CORE" ||
               clusterId === "OSUNA_CORE" ||
               clusterId === "HUGO_CENACLE" ||
-              clusterId === "BOURBON_CORE" ||
               clusterId === "VILLAFRANCA_CLUSTER" ||
-              clusterId === "GOYA_FAMILY") {
+              clusterId === "TAYLOR_CLUSTER") {
             arrangeInCircle(
               network,
               nodes,
@@ -3486,7 +3473,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
         });
 
-        // 5) SPECIALIZED PLACEMENTS (final control): Run AFTER generic lock so they override
+        // 4) SPECIALIZED PLACEMENTS (override generic arrangement with fine-tuned positioning)
         placeFedericoSatelliteClusters(network);
         placeGoyaFamilyCluster(network);
         placeMonacoGroup(network);
@@ -3496,7 +3483,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeCloseMasterStudentPairs(network);
         placeIlustradosCluster(network);
 
-        // 6) FINAL PRIORITY ENFORCEMENT: Ensure all critical pairs are properly separated
+        // 5) FINAL PRIORITY ENFORCEMENT: Ensure all critical pairs are properly separated
         // Run this LAST so nothing else can undo it - use higher passes for full convergence
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 15);
 
