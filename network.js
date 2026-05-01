@@ -3448,29 +3448,21 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
         });
 
-        // 2) Only specialized placement functions (non-destructive)
-        placeFedericoSatelliteClusters(network);
-        placeGoyaFamilyCluster(network);
-        placeMonacoGroup(network);
-        placeGodoyPositioning(network);
-        placeEstevesPair(network);
-        placeBourbonCluster(network);  // Re-enable to fix overlapping Bourbons
-        placeCloseMasterStudentPairs(network);
-
-        // 3) Gentle cluster separation - minimal to avoid deforming circles
+        // 2) Gentle cluster separation - minimal to avoid deforming circles
         separateClusters(network, nodes, RADIAL_CLUSTERS, 5, 110, 8);
         
-        // 4) Minimal push-out
+        // 3) Minimal push-out
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 80);
 
-        // 6) FINAL LOCK: Restore circles and fix any deformation from above
+        // 4) FINAL LOCK: Restore circles and fix any deformation from above
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
           if (!cfg.members || !cfg.members.length) return;
           
-          // Skip special arrangements
+          // Skip special arrangements that have their own placement functions
           if (clusterId === "ILUSTRADOS_CLUSTER" ||
               clusterId === "COURT_PAINTERS" ||
-              clusterId === "PRINT_SPECIALISTS") {
+              clusterId === "PRINT_SPECIALISTS" ||
+              clusterId === "BOURBON_CORE") {
             return;
           }
           
@@ -3494,11 +3486,17 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
         });
 
-        // Apply Ilustrados offset AFTER final lock to preserve positioning
-        placeIlustradosCluster(network);
+        // 5) SPECIALIZED PLACEMENTS (final control): Run AFTER generic lock so they override
+        placeFedericoSatelliteClusters(network);
+        placeGoyaFamilyCluster(network);
+        placeMonacoGroup(network);
+        placeGodoyPositioning(network);
+        placeEstevesPair(network);
+        placeBourbonCluster(network);
         placeCloseMasterStudentPairs(network);
+        placeIlustradosCluster(network);
 
-        // 7) FINAL PRIORITY ENFORCEMENT: Ensure all critical pairs are properly separated
+        // 6) FINAL PRIORITY ENFORCEMENT: Ensure all critical pairs are properly separated
         // Run this LAST so nothing else can undo it - use higher passes for full convergence
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 15);
 
