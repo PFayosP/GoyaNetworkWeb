@@ -2287,6 +2287,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Manuel Godoy", "Francisco de Goya", 140],
       ["Jenaro Pérez Villaamil", "Francisco de Goya", 120],
       ["Gregorio Cruzada Villaamil", "Santiago Masarnau", 140],
+      ["Gregorio Cruzada Villaamil", "Giandomenico Tiepolo", 140],
+      ["Pedro de Madrazo", "Santiago Masarnau", 130],
       ["Joseph I", "María Gabriela de Palafox, Marchioness of Lazán", 180],
       ["Joseph I", "María Tomasa Palafox, Marchioness of Villafranca", 160],
       ["José Álvarez de Toledo, Duke of Alba", "Francisco Álvarez de Toledo, XII Marquis of Villafranca", 150],
@@ -2361,6 +2363,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Luis de Madrazo", "Vicente MAsarnau", 130],
       ["Pierre Lacour", "Pierre Lacour fils", 100],
       ["Asensio Julià", "Gumersinda Goicoechea", 130],
+      ["Asensio Julià", "Francisco de Goya", 130],
       ["Carlos III", "Manuel Godoy", 170], 
       ["Pedro de Madrazo", "William Stirling-Maxwell", 130],
       ["Philippe Burty", "Pierre Lacour", 130],
@@ -2396,13 +2399,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Alexandre Dumas père", "Charles Baudelaire", 130],
       ["Louis Daguerre", "Philippe Burty", 130],
       ["Louis Daguerre", "Carlos Luis de Ribera", 130],
+      ["Louis Daguerre", "Adrien Dauzats", 130],
       ["Carlos Luis de Ribera", "Philippe Burty", 130],
       ["Zacharie Astruc", "Edgar Degas", 130],
       ["Gregorio Cruzada Villaamil", "Pierre Lacour", 130],
       ["Vicente López", "Anton Raphael Mengs", 130],
       ["Mariano Goya", "Richard Ford", 130],
       ["Honoré de Balzac", "J. J. Grandville", 130],
-      ["J. J. Grandville", "Charles Motte", 130]
+      ["J. J. Grandville", "Charles Motte", 130],
+      ["María Francisca de Sales Portocarrero, VI Countess of Montijo", "Prince Antoine, Duke of Montpensier", 130]
       // supercali overlap
     ];
 
