@@ -3433,7 +3433,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // 4) FINAL PRIORITY ENFORCEMENT: Ensure all critical pairs are properly separated
         // Run this LAST so nothing else can undo it - use higher passes for full convergence
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 15);
+        // TEMPORARILY DISABLED TO TEST IF CIRCLES APPEAR
+        // enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 15);
 
         network.redraw();
 
