@@ -3008,7 +3008,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         function placeBourbonCluster(network) {
           const members = [
-            "XV Countess of Chinchón",
             "Carlos III",
             "Carlos IV",
             "María Luisa de Parma",
@@ -3020,41 +3019,42 @@ document.addEventListener('DOMContentLoaded', async function () {
             "María Cristina de Borbón-Dos Sicilias"
           ].filter(id => nodes.get(id));
 
-          if (!members.length) return;
+          const chinchonId = "XV Countess of Chinchón";
+          if (!nodes.get(chinchonId) || !members.length) return;
 
           const godoyId = "Manuel Godoy";
-          const radius = 172;
+          const radius = 150;
 
-          // Calculate circle center (average position of all members)
-          const pos = network.getPositions(members);
+          // Calculate circle center from OTHER members (not Chinchón)
+          const memberPos = network.getPositions(members);
           let cx = 0, cy = 0;
           members.forEach(id => {
-            cx += pos[id].x;
-            cy += pos[id].y;
+            cx += memberPos[id].x;
+            cy += memberPos[id].y;
           });
           cx /= members.length;
           cy /= members.length;
 
-          // Get Godoy's position to find angle for Chinchón placement
-          let godoyAngle = 0; // default: east
+          // Get Godoy's angle from this center
+          let godoyAngle = 0;
           if (nodes.get(godoyId)) {
             const godoyPos = network.getPositions([godoyId])[godoyId];
             godoyAngle = Math.atan2(godoyPos.y - cy, godoyPos.x - cx);
           }
 
-          // Place Chinchón on border facing Godoy
+          // Place Chinchón OUTSIDE the circle on the Godoy-facing side
+          const chinchonRadius = radius + 80; // extend beyond circle toward Godoy
           network.moveNode(
-            "XV Countess of Chinchón",
-            cx + Math.cos(godoyAngle) * radius,
-            cy + Math.sin(godoyAngle) * radius
+            chinchonId,
+            cx + Math.cos(godoyAngle) * chinchonRadius,
+            cy + Math.sin(godoyAngle) * chinchonRadius
           );
 
-          // Place remaining members around circle
-          const otherMembers = members.filter(id => id !== "XV Countess of Chinchón");
-          let angleStep = (2 * Math.PI) / members.length;
-          let currentAngle = godoyAngle + angleStep; // start after Chinchón
+          // Arrange other members evenly around the core circle
+          const angleStep = (2 * Math.PI) / members.length;
+          let currentAngle = -Math.PI / 2; // start at top
 
-          otherMembers.forEach(id => {
+          members.forEach(id => {
             network.moveNode(
               id,
               cx + Math.cos(currentAngle) * radius,
