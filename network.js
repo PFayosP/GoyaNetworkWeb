@@ -3434,11 +3434,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 3) Gentle cluster separation - minimal to avoid deforming circles
         separateClusters(network, nodes, RADIAL_CLUSTERS, 5, 110, 8);
         
-        // 4) Only enforce critical pairs (Rosario-Leocadia, Dutuit brothers, etc.)
-        // Use MINIMAL passes to preserve circle geometry
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 5);
-
-        // 5) Minimal push-out
+        // 4) Minimal push-out
         pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 80);
 
         // 6) FINAL LOCK: Restore circles and fix any deformation from above
@@ -3475,6 +3471,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Apply Ilustrados offset AFTER final lock to preserve positioning
         placeIlustradosCluster(network);
         placeCloseMasterStudentPairs(network);
+
+        // 7) FINAL PRIORITY ENFORCEMENT: Ensure all critical pairs are properly separated
+        // Run this LAST so nothing else can undo it - use higher passes for full convergence
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 15);
 
         network.redraw();
 
