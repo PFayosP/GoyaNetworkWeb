@@ -2366,6 +2366,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Asensio Julià", "Francisco de Goya", 130],
       ["Carlos III", "Manuel Godoy", 170], 
       ["Pedro de Madrazo", "William Stirling-Maxwell", 130],
+      ["Valentín Carderera", "William Stirling-Maxwell", 130],
       ["Philippe Burty", "Pierre Lacour", 130],
       ["Philippe Burty", "Pierre Lacour fils", 130],
       ["Frédéric Villot", "Philippe Burty", 130],
@@ -2381,12 +2382,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Carlos Luis de Ribera", "Adrien Dauzats", 130],
       ["Pierre Lacour fils", "Valentín Carderera", 130],
       ["Pascual de Gayangos y Arce", "Pharamond Blanchard", 130],
+      ["Pascual de Gayangos y Arce", "Vicente López", 130],
       ["Achille Ricourt", "Célestin Nanteuil", 130],
       ["Delphine de Girardin", "Alphonse de Lamartine", 130],
       ["Jenaro Pérez Villaamil", "Francisco Martínez de la Rosa", 130],
       ["Rafael Esteve", "Francisco Bayeu", 130],
       ["Francisco Bayeu", "Mariano Salvador Maella", 130],
       ["Manuel Godoy", "Eugenia de Montijo", 130],
+      ["Manuel Godoy", "Joaquín María Ferrer", 130],
+      ["II Duke of San Carlos", "Manuel Godoy", 130],
       ["Eugenio Ochoa", "Jean-Auguste-Dominique Ingres", 130],
       ["Charles Yriarte", "Frédéric Villot", 130], 
       ["Théophile Thoré", "Nadar", 130],
@@ -2407,6 +2411,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Mariano Goya", "Richard Ford", 130],
       ["Honoré de Balzac", "J. J. Grandville", 130],
       ["J. J. Grandville", "Charles Motte", 130],
+      ["Achille Devéria", "Charles Motte", 130],
       ["María Francisca de Sales Portocarrero, VI Countess of Montijo", "Prince Antoine, Duke of Montpensier", 130]
       // supercali overlap
     ];
