@@ -3435,8 +3435,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           );
         });
 
-        // 5) FINAL PRIORITY ENFORCEMENT: Disable for now - re-enable only after circles are stable
-        // enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 3);
+        // 5) FINAL PRIORITY ENFORCEMENT: Minimal passes to fix proximity pairs without destroying circles
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 2);
 
         network.redraw();
 
