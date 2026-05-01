@@ -2876,9 +2876,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
         function placeGodoyPositioning(network) {
-          // Position Godoy between his two wives: Chinchón (1st wife) and Tudó (2nd wife)
+          // Godoy VERY CLOSE to Chinchón (1st wife, Bourbon cluster edge)
+          // Tudó next to Godoy (2nd wife, secondary position)
           const godoyId = "Manuel Godoy";
-          const chinchonId = "María del Pilar Teresa Cayetana de Silva, Countess of Chinchón";
+          const chinchonId = "XV Countess of Chinchón";
           const tudoId = "Eustaquio Pérez de Tudó";
 
           const ids = [godoyId, chinchonId, tudoId].filter(id => nodes.get(id));
@@ -2888,21 +2889,28 @@ document.addEventListener('DOMContentLoaded', async function () {
           const chinchonPos = pos[chinchonId];
           const tudoPos = pos[tudoId];
 
-          if (!chinchonPos || !tudoPos) return;
+          if (!chinchonPos) return;
 
-          // Place Godoy between them (average position, slightly offset)
-          const godoyX = (chinchonPos.x + tudoPos.x) / 2 + 15;
-          const godoyY = (chinchonPos.y + tudoPos.y) / 2 - 20;
+          // Place Godoy right next to Chinchón, slightly outside/offset
+          // Small offset so he's clearly visible near her, not overlapped
+          const godoyX = chinchonPos.x + 35;
+          const godoyY = chinchonPos.y - 30;
           network.moveNode(godoyId, godoyX, godoyY);
+
+          // Place Tudó next to Godoy (further away from Bourbon cluster)
+          const godoyNewPos = network.getPositions([godoyId])[godoyId];
+          if (godoyNewPos) {
+            network.moveNode(tudoId, godoyNewPos.x + 40, godoyNewPos.y + 35);
+          }
         }
 
         function placeMonacoGroup(network) {
-          // Position Louis-Philippe next to Montpensier, and Montpensier next to Infanta María Luisa
-          const louisId = "Louis Philippe I";
-          const montpensierId = "Prince Antoine, Duke of Montpensier";
+          // Position Montpensier and Louis-Philippe outside Infanta María Luisa's region
           const infantaId = "Infanta Luisa Fernanda de Borbón";
+          const montpensierId = "Prince Antoine, Duke of Montpensier";
+          const louisId = "Louis Philippe I";
 
-          const ids = [louisId, montpensierId, infantaId].filter(id => nodes.get(id));
+          const ids = [infantaId, montpensierId, louisId].filter(id => nodes.get(id));
           if (ids.length < 3 || !nodes.get(infantaId)) return;
 
           const pos = network.getPositions(ids);
@@ -2910,13 +2918,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           if (!infantaPos) return;
 
-          // Position Montpensier to the left of Infanta (below)
-          network.moveNode(montpensierId, infantaPos.x - 70, infantaPos.y + 40);
+          // Position Montpensier close to Infanta but OUTSIDE any cluster boundary
+          network.moveNode(montpensierId, infantaPos.x + 80, infantaPos.y + 60);
 
-          // Position Louis-Philippe to the left of Montpensier
+          // Position Louis-Philippe next to Montpensier (further out)
           const montpensierNewPos = network.getPositions([montpensierId])[montpensierId];
           if (montpensierNewPos) {
-            network.moveNode(louisId, montpensierNewPos.x - 70, montpensierNewPos.y - 35);
+            network.moveNode(louisId, montpensierNewPos.x + 70, montpensierNewPos.y - 40);
           }
         }
     
@@ -3397,7 +3405,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // 3) PUSH CLUSTERS APART (create space between cluster centers)
         separateClusters(network, nodes, RADIAL_CLUSTERS, 8, 200, 10);
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 100);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 150);  // Increased padding to keep nodes OUT
 
         // 4) RESTORE ALL CLUSTERS TO PERFECT CIRCLES (lock in circles with spacing)
         // This runs after spacing is created, so circles will be properly separated
@@ -3418,13 +3426,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
-          // Skip clusters handled by specialized functions
-          if (clusterId === "COURT_PAINTERS" ||
-              clusterId === "PRINT_SPECIALISTS") {
+          // Skip only Print Specialists (it's handled specially)
+          if (clusterId === "PRINT_SPECIALISTS") {
             return;
           }
           
-          // Restore all other clusters as perfect circles
+          // Restore all other clusters as perfect circles (including COURT_PAINTERS)
           arrangeInCircle(
             network,
             nodes,
@@ -3435,10 +3442,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           );
         });
 
-        // 5) FINAL PRIORITY ENFORCEMENT: Ensure all critical pairs are properly separated
-        // Run this LAST so nothing else can undo it - use higher passes for full convergence
-        // TEMPORARILY DISABLED TO TEST IF CIRCLES APPEAR
-        // enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 15);
+        // 5) FINAL PRIORITY ENFORCEMENT: Low passes to preserve circles while fixing proximity pairs
+        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 3);
 
         network.redraw();
 
