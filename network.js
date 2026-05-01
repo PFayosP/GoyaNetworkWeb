@@ -3382,13 +3382,17 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (!window.__didNudgeOnce) {
         window.__didNudgeOnce = true;
 
-        // 1) pequeña limpieza inicial antes de fijar geometrías
-        nudgeOverlaps(network, nodes, window.__clusterOf, 20); // increased from 12 for more aggressive overlap prevention
+        // 1) Small initial nudge to prevent overlaps
+        nudgeOverlaps(network, nodes, window.__clusterOf, 20);
 
-        // 2) imponer la geometría exacta de cada clúster
+        // 2) Minimal push-out to keep clusters roughly contained
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 80);
+
+        // 3) RESTORE ALL CLUSTERS TO PERFECT CIRCLES (final stable state before specialized functions)
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
           if (!cfg.members || !cfg.members.length) return;
 
+          // Special handling for Ilustrados
           if (clusterId === "ILUSTRADOS_CLUSTER") {
             arrangeAroundSharedNode(
               network,
@@ -3402,78 +3406,24 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           }
 
+          // Skip clusters handled by specialized functions
           if (clusterId === "COURT_PAINTERS" ||
               clusterId === "PRINT_SPECIALISTS") {
             return;
           }
           
-          // All other skipped clusters: ensure they're arranged as circles
-          if (clusterId === "MADRAZO_FAMILY" ||
-              clusterId === "MADRAZO_CARDERERA_GROUP" ||
-              clusterId === "VILLAFRANCA_CLUSTER" ||
-              clusterId === "MONTIJO_CORE" ||
-              clusterId === "OSUNA_CORE" ||
-              clusterId === "HUGO_CENACLE" ||
-              clusterId === "BOURBON_CORE" ||
-              clusterId === "GOYA_FAMILY") {
-            arrangeInCircle(
-              network,
-              nodes,
-              cfg.members,
-              cfg.radius || 150,
-              cfg.startAngle ?? (-Math.PI / 2),
-              cfg.sharedBoundaryNodes || {}
-            );
-            return;
-          }
-
-          if (cfg.center && nodes.get(cfg.center)) {
-            placeFamilyAroundCenter(
-              network,
-              nodes,
-              cfg.center,
-              cfg.members,
-              cfg.radius || 150,
-              cfg.startAngle ?? (-Math.PI / 2)
-            );
-          } else {
-            arrangeInCircle(
-              network,
-              nodes,
-              cfg.members,
-              cfg.radius || 150,
-              cfg.startAngle ?? (-Math.PI / 2),
-              cfg.sharedBoundaryNodes || {}
-            );
-          }
+          // Restore all other clusters as perfect circles
+          arrangeInCircle(
+            network,
+            nodes,
+            cfg.members,
+            cfg.radius || 150,
+            cfg.startAngle ?? (-Math.PI / 2),
+            cfg.sharedBoundaryNodes || {}
+          );
         });
 
-        // 2) Minimal push-out only (skip separateClusters which deforms circles too much)
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 80);
-
-        // 3) Restore circles ONLY for clusters without specialized functions
-        // (clusters WITH specialized functions will override this anyway)
-        Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
-          if (!cfg.members || !cfg.members.length) return;
-          
-          // Only apply generic circle for clusters that don't have specialized placement
-          if (clusterId === "MONTIJO_CORE" ||
-              clusterId === "OSUNA_CORE" ||
-              clusterId === "HUGO_CENACLE" ||
-              clusterId === "VILLAFRANCA_CLUSTER" ||
-              clusterId === "TAYLOR_CLUSTER") {
-            arrangeInCircle(
-              network,
-              nodes,
-              cfg.members,
-              cfg.radius || 150,
-              cfg.startAngle ?? (-Math.PI / 2),
-              cfg.sharedBoundaryNodes || {}
-            );
-          }
-        });
-
-        // 4) SPECIALIZED PLACEMENTS (override generic arrangement with fine-tuned positioning)
+        // 4) SPECIALIZED PLACEMENTS (override with fine-tuned positioning)
         placeFedericoSatelliteClusters(network);
         placeGoyaFamilyCluster(network);
         placeMonacoGroup(network);
