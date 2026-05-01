@@ -3385,10 +3385,18 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 1) Small initial nudge to prevent overlaps
         nudgeOverlaps(network, nodes, window.__clusterOf, 20);
 
-        // 2) Minimal push-out to keep clusters roughly contained
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 80);
+        // 2) SPECIALIZED PLACEMENTS (handle clusters with custom logic)
+        placeFedericoSatelliteClusters(network);
+        placeGoyaFamilyCluster(network);
+        placeMonacoGroup(network);
+        placeGodoyPositioning(network);
+        placeEstevesPair(network);
+        placeBourbonCluster(network);
+        placeCloseMasterStudentPairs(network);
+        placeIlustradosCluster(network);
 
-        // 3) RESTORE ALL CLUSTERS TO PERFECT CIRCLES (final stable state before specialized functions)
+        // 3) RESTORE ALL CLUSTERS TO PERFECT CIRCLES (second-to-last operation)
+        // This runs after everything else so circles won't be deformed
         Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
           if (!cfg.members || !cfg.members.length) return;
 
@@ -3423,17 +3431,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           );
         });
 
-        // 4) SPECIALIZED PLACEMENTS (override with fine-tuned positioning)
-        placeFedericoSatelliteClusters(network);
-        placeGoyaFamilyCluster(network);
-        placeMonacoGroup(network);
-        placeGodoyPositioning(network);
-        placeEstevesPair(network);
-        placeBourbonCluster(network);
-        placeCloseMasterStudentPairs(network);
-        placeIlustradosCluster(network);
-
-        // 5) FINAL PRIORITY ENFORCEMENT: Ensure all critical pairs are properly separated
+        // 4) FINAL PRIORITY ENFORCEMENT: Ensure all critical pairs are properly separated
         // Run this LAST so nothing else can undo it - use higher passes for full convergence
         enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 15);
 
