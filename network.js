@@ -1133,7 +1133,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 200,
             padding: 150,
-            centerYOffset: -300,
+            centerYOffset: -150,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "José de Madrazo": Math.PI * 1.25  // north-west, next to Federico
@@ -2884,7 +2884,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           // Position Godoy between his two wives: Chinchón (1st wife) and Tudó (2nd wife)
           const godoyId = "Manuel Godoy";
           const chinchonId = "XV Countess of Chinchón";
-          const tudoId = "Eustaquio Pérez de Tudó";
+          const tudoId = "Josefa Tudó";
 
           const ids = [godoyId, chinchonId, tudoId].filter(id => nodes.get(id));
           if (ids.length < 3 || !nodes.get(godoyId) || !nodes.get(chinchonId) || !nodes.get(tudoId)) return;
@@ -3424,8 +3424,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
 
           // Skip clusters handled by specialized functions
-          if (clusterId === "COURT_PAINTERS" ||
-              clusterId === "PRINT_SPECIALISTS") {
+          if (clusterId === "PRINT_SPECIALISTS") {
             return;
           }
           
@@ -3438,6 +3437,16 @@ document.addEventListener('DOMContentLoaded', async function () {
             cfg.startAngle ?? (-Math.PI / 2),
             cfg.sharedBoundaryNodes || {}
           );
+          
+          // Apply vertical offset if specified (for moved clusters like COURT_PAINTERS, etc.)
+          if (cfg.centerYOffset) {
+            const memberIds = cfg.members.filter(id => nodes.get(id));
+            const pos = network.getPositions(memberIds);
+            memberIds.forEach(id => {
+              const p = pos[id];
+              network.moveNode(id, p.x, p.y + cfg.centerYOffset);
+            });
+          }
         });
 
         // 5) FINAL PRIORITY ENFORCEMENT: Disabled to preserve clean circles
