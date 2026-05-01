@@ -3395,9 +3395,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         placeCloseMasterStudentPairs(network);
         placeIlustradosCluster(network);
 
-        // 3) PUSH CLUSTERS APART (create space between cluster centers)
-        separateClusters(network, nodes, RADIAL_CLUSTERS, 8, 200, 10);
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 100);
+        // 3) PUSH CLUSTERS APART (create maximum space between cluster centers)
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 12, 250, 12);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120);
 
         // 4) RESTORE ALL CLUSTERS TO PERFECT CIRCLES (lock in circles with spacing)
         // This runs after spacing is created, so circles will be properly separated
@@ -3435,8 +3435,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           );
         });
 
-        // 5) FINAL PRIORITY ENFORCEMENT: Minimal passes to fix proximity pairs without destroying circles
-        enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 2);
+        // 5) FINAL PRIORITY ENFORCEMENT: Disabled to preserve clean circles
+        // enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 2);
 
         network.redraw();
 
