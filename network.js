@@ -2233,11 +2233,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       });
     // ===== MULTI-SELECT AND CLUSTER DRAGGING =====
-    let selectedNodeIds = new Set(); // Track currently selected nodes
-    let draggedNodeIds = new Set(); // Track nodes being dragged
-    let lastDragPos = { x: 0, y: 0 }; // Track drag delta
-
-    // ===== MULTI-SELECT AND CLUSTER DRAGGING =====
     let selectedNodeIds = new Set(); // Track currently selected nodes for multi-select
     let draggedNodeIds = new Set(); // Track nodes being dragged
     let lastDragPos = { x: 0, y: 0 }; // Track drag delta
