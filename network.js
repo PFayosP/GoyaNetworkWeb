@@ -2235,6 +2235,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     // ===== MULTI-SELECT AND CLUSTER DRAGGING =====
     let draggedNodeIds = new Set(); // Track nodes being dragged
     let lastDragPos = { x: 0, y: 0 }; // Track drag delta
+    let selectedClusterMembers = new Set(); // Track members of selected cluster for dragging
 
     // Clear cluster selection when clicking empty space
     network.on('click', function(params) {
@@ -2248,8 +2249,15 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Handle dragging multiple selected nodes together
     network.on('dragStart', function(params) {
       const selectedNodes = network.getSelectedNodes();
-      if (selectedNodes.length > 0) {
+      
+      // Priority: drag selected cluster if one is selected, otherwise drag multi-selected nodes
+      if (selectedClusterId && selectedClusterMembers.size > 0) {
+        draggedNodeIds = new Set(selectedClusterMembers);
+      } else if (selectedNodes.length > 0) {
         draggedNodeIds = new Set(selectedNodes);
+      }
+      
+      if (draggedNodeIds.size > 0) {
         lastDragPos = { x: params.pointer.canvas.x, y: params.pointer.canvas.y };
       }
     });
@@ -2277,7 +2285,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       draggedNodeIds.clear();
     });
 
-    // Override cluster selection to enable dragging
+    // Override cluster selection - VISUAL ONLY, no node selection
     const originalSelectCluster = window.selectCluster;
     window.selectCluster = function(clusterId) {
       if (!clusterId) {
@@ -2290,10 +2298,12 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       selectedClusterId = clusterId;
       const members = new Set(Object.keys(nodeClusterMap).filter(id => nodeClusterMap[id].includes(clusterId)));
+      selectedClusterMembers = new Set(members); // Store for dragging
+      
       const clusterColor = clusterColorMap[clusterId] || '#ffffff';
       const highlightColor = hexToRgba(clusterColor, 0.85);
 
-      // Update visual highlighting
+      // Update visual highlighting ONLY - do NOT call network.selectNodes()
       nodes.update(nodes.get().map(node => ({
         id: node.id,
         opacity: members.has(node.id) ? 1 : 0.25,
@@ -2308,9 +2318,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           width: edgeInCluster ? 2 : 1
         };
       }));
-
-      // Select cluster members so they can be dragged
-      network.selectNodes(Array.from(members));
 
       updateClusterInfoBadge();
 
@@ -2334,6 +2341,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Update clearClusterSelection
     const originalClearCluster = window.clearClusterSelection;
     window.clearClusterSelection = function() {
+      selectedClusterMembers.clear();
       network.unselectAll();
       originalClearCluster();
     };
