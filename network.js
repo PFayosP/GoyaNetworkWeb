@@ -1047,6 +1047,9 @@ document.addEventListener('DOMContentLoaded', async function () {
   
   applyUIStrings();
 
+  // Initialize nodePositions at the very start
+  let nodePositions = JSON.parse(localStorage.getItem('nodePositions') || '{}');
+
   // ===== NUEVO: Verificar hash inmediatamente =====
   if (window.location.hash && window.location.hash.length > 1) {
     console.log("=== HASH DETECTADO AL INICIO ===");
@@ -2261,7 +2264,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     // ===== CLUSTER POSITION PERSISTENCE =====
-    let nodePositions = JSON.parse(localStorage.getItem('nodePositions') || '{}');
     let dragTimeout;
 
     // Only save positions when dragging ends IN ADMIN MODE
