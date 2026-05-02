@@ -2254,8 +2254,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         console.log('Downloaded positions_config.json');
       });
     } else {
-      // Disable dragging for regular users
-      network.setOptions({ interaction: { dragNodes: false, dragView: false } });
+      // Disable node dragging but allow view panning for regular users
+      network.setOptions({ interaction: { dragNodes: false, dragView: true } });
     }
 
     // ===== CLUSTER POSITION PERSISTENCE =====
