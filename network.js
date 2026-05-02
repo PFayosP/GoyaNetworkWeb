@@ -2226,6 +2226,41 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     window.VIS_NETWORK = network;
 
+    // ===== ADMIN MODE =====
+    const urlParams = new URLSearchParams(window.location.search);
+    const isAdminMode = urlParams.get('admin') === 'true';
+    console.log('Admin Mode:', isAdminMode ? 'ENABLED' : 'DISABLED');
+
+    // Show/hide admin controls
+    if (isAdminMode) {
+      const adminPanel = document.createElement('div');
+      adminPanel.style.cssText = `
+        position: fixed; top: 10px; right: 10px; background: rgba(255, 0, 0, 0.9);
+        color: white; padding: 10px 15px; border-radius: 5px; font-size: 12px; z-index: 9999;
+        font-family: monospace;
+      `;
+      adminPanel.innerHTML = '🔓 ADMIN MODE ACTIVE<br><button id="downloadLayoutBtn" style="margin-top: 5px; padding: 5px 10px; cursor: pointer;">Download Layout</button>';
+      document.body.appendChild(adminPanel);
+
+      document.getElementById('downloadLayoutBtn').addEventListener('click', function() {
+        const positions = network.getPositions(nodes.getIds());
+        const dataStr = JSON.stringify(positions, null, 2);
+        const dataBlob = new Blob([dataStr], { type: 'application/json' });
+        const url = URL.createObjectURL(dataBlob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'positions_config.json';
+        link.click();
+        console.log('Downloaded positions_config.json');
+      });
+    } else {
+      // Lock dragging in normal mode
+      network.setOptions({ physics: { enabled: false, barnesHut: { enabled: false } } });
+      network.on('dragStart', function(params) {
+        return false; // Block dragging
+      });
+    }
+
     // ===== CLUSTER POSITION PERSISTENCE =====
     let nodePositions = JSON.parse(localStorage.getItem('nodePositions') || '{}');
     let dragTimeout;
@@ -2259,6 +2294,19 @@ document.addEventListener('DOMContentLoaded', async function () {
         console.log('Restored ALL positions for', savedNodeIds.length, 'nodes');
       }
     };
+
+    // Load positions from positions_config.json if available (all users)
+    if (!isAdminMode) {
+      fetch('positions_config.json')
+        .then(response => response.json())
+        .then(data => {
+          nodePositions = data;
+          console.log('Loaded positions from positions_config.json');
+        })
+        .catch(err => {
+          console.log('positions_config.json not found, using defaults:', err);
+        });
+    }
 
     // Add reset function
     window.resetNodePositions = function() {
