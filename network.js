@@ -1535,6 +1535,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           const clusterColor = clusterColorMap[clusterId] || '#ffffff';
           const highlightColor = hexToRgba(clusterColor, 0.85);
 
+          // Actually select the nodes in vis.js so they can be dragged together
+          network.selectNodes(Array.from(members));
+
           nodes.update(nodes.get().map(node => ({
             id: node.id,
             opacity: members.has(node.id) ? 1 : 0.25,
