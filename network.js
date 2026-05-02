@@ -13,7 +13,7 @@
       GERDA_HENKEL_NAME: "Gerda Henkel Foundation",
       SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
       NEW_NODES_TITLE: "New members",
-      MEMBERS_TITLE:"All members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
+      MEMBERS_TITLE:"All members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain. Use Cmd+Click to select multiple nodes and drag them together.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
       BTN_SEARCH: "Search",
       BTN_CLUSTER_TOGGLE_ON: "Cluster edges: On",
       BTN_CLUSTER_TOGGLE_OFF: "Cluster edges: Off",
@@ -218,7 +218,7 @@
       GERDA_HENKEL_NAME: "Fundación Gerda Henkel",
       SEARCH_PH:"Buscar…", FILTER_PROF_ALL:"Todas las profesiones", FILTER_NAT_ALL:"Todas las nacionalidades",
       NEW_NODES_TITLE: "Nuevos miembros",
-      MEMBERS_TITLE:"Todos los miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
+      MEMBERS_TITLE:"Todos los miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen. Usa Cmd+Clic para seleccionar múltiples nodos y arrastrarlos juntos.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
       BTN_SEARCH: "Buscar",
       BTN_CLUSTER_TOGGLE_ON: "Clúster: activado",
       BTN_CLUSTER_TOGGLE_OFF: "Clúster: desactivado",
@@ -1183,7 +1183,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 200,
             padding: 92,
-            centerYOffset: 180,
+            centerYOffset: 120,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2,
@@ -1204,7 +1204,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 85,
             padding: 65,
-            centerYOffset: 140,
+            centerYOffset: 75,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2
@@ -1324,7 +1324,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 180,
             padding: 120,
-            centerXOffset: 180,
+            centerXOffset: 50,
             centerYOffset: -100,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
@@ -2237,60 +2237,64 @@ document.addEventListener('DOMContentLoaded', async function () {
     let draggedNodeIds = new Set(); // Track nodes being dragged
     let lastDragPos = { x: 0, y: 0 }; // Track drag delta
 
-    // Add canvas click handler to deselect cluster when clicking background
+    // Handle clicks for multi-select and dragging
     network.on('click', function(params) {
-      if (params.nodes.length === 0 && params.edges.length === 0) {
-        if (selectedClusterId) {
+      if (params.nodes.length > 0) {
+        // Clicked a node
+        const clickedNodeId = params.nodes[0];
+        
+        if (params.event && (params.event.ctrlKey || params.event.metaKey)) {
+          // Cmd/Ctrl+click: toggle node in selection
+          if (selectedNodeIds.has(clickedNodeId)) {
+            selectedNodeIds.delete(clickedNodeId);
+          } else {
+            selectedNodeIds.add(clickedNodeId);
+          }
+        } else {
+          // Regular click: replace selection with this node
+          selectedNodeIds = new Set([clickedNodeId]);
+        }
+        
+        // Update network selection to match our tracking
+        network.selectNodes(Array.from(selectedNodeIds));
+        
+        // Update visual appearance (borders)
+        const allNodeIds = nodes.getIds();
+        nodes.update(allNodeIds.map(id => ({
+          id: id,
+          borderWidth: selectedNodeIds.has(id) ? 4 : 2
+        })));
+      } else if (params.nodes.length === 0 && params.edges.length === 0) {
+        // Clicked empty space
+        if (selectedClusterId && !(params.event && (params.event.ctrlKey || params.event.metaKey))) {
           window.clearClusterSelection();
         }
-        // Clear multi-selection if clicking empty space (unless holding Ctrl)
-        if (!params.event.ctrlKey && !params.event.metaKey) {
+        // Clear multi-selection if clicking empty space (unless holding Cmd/Ctrl)
+        if (!(params.event && (params.event.ctrlKey || params.event.metaKey))) {
           selectedNodeIds.clear();
           network.unselectAll();
         }
       }
     });
 
-    // Track selection changes
-    network.on('select', function(params) {
-      if (params.event && (params.event.ctrlKey || params.event.metaKey)) {
-        // Ctrl/Cmd+click: toggle individual nodes
-        params.nodes.forEach(nodeId => {
-          if (selectedNodeIds.has(nodeId)) {
-            selectedNodeIds.delete(nodeId);
-          } else {
-            selectedNodeIds.add(nodeId);
-          }
-        });
-      } else {
-        // Regular click: replace selection
-        selectedNodeIds = new Set(params.nodes);
-      }
-      
-      // Update node borders to show selection
-      const allNodeIds = nodes.getIds();
-      nodes.update(allNodeIds.map(id => ({
-        id: id,
-        borderWidth: selectedNodeIds.has(id) ? 4 : 2
-      })));
-    });
-
-    // Handle dragging multiple selected nodes
+    // Handle dragging multiple selected nodes together
     network.on('dragStart', function(params) {
-      draggedNodeIds = new Set(selectedNodeIds);
-      lastDragPos = { x: params.pointer.canvas.x, y: params.pointer.canvas.y };
+      if (selectedNodeIds.size > 0) {
+        draggedNodeIds = new Set(selectedNodeIds);
+        lastDragPos = { x: params.pointer.canvas.x, y: params.pointer.canvas.y };
+      }
     });
 
     network.on('dragging', function(params) {
-      if (draggedNodeIds.size > 1 || (draggedNodeIds.size === 1 && selectedNodeIds.size > 1)) {
-        // Calculate delta movement
+      if (draggedNodeIds.size > 0) {
+        // Calculate delta movement from last position
         const currentPos = params.pointer.canvas;
         const deltaX = currentPos.x - lastDragPos.x;
         const deltaY = currentPos.y - lastDragPos.y;
 
-        // Move all selected nodes by the same delta
-        const positions = network.getPositions(Array.from(selectedNodeIds));
-        selectedNodeIds.forEach(nodeId => {
+        // Move all dragged nodes by the same delta
+        const positions = network.getPositions(Array.from(draggedNodeIds));
+        draggedNodeIds.forEach(nodeId => {
           if (positions[nodeId]) {
             network.moveNode(nodeId, positions[nodeId].x + deltaX, positions[nodeId].y + deltaY);
           }
