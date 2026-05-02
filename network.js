@@ -2233,30 +2233,14 @@ document.addEventListener('DOMContentLoaded', async function () {
           filter: 'physics'
         }
       });
-    // ===== MULTI-SELECT AND CLUSTER DRAGGING =====
-    let draggedNodeIds = new Set(); // Track nodes being dragged
-    let lastDragPos = { x: 0, y: 0 }; // Track drag delta
-    let selectedClusterMembers = new Set(); // Track members of selected cluster for dragging
+    // ===== CLUSTER DRAGGING SUPPORT =====
+    let draggedNodeIds = new Set();
+    let lastDragPos = { x: 0, y: 0 };
 
-    // Clear cluster selection when clicking empty space
-    network.on('click', function(params) {
-      if (params.nodes.length === 0 && params.edges.length === 0) {
-        if (selectedClusterId) {
-          window.clearClusterSelection();
-        }
-      }
-    });
-
-    // Handle dragging multiple selected nodes together
+    // Handle dragging - works for both multi-selected nodes and selected clusters
     network.on('dragStart', function(params) {
       const selectedNodes = network.getSelectedNodes();
-      
-      // Priority: drag selected cluster if one is selected, otherwise drag multi-selected nodes
-      if (selectedClusterId && selectedClusterMembers.size > 0) {
-        draggedNodeIds = new Set(selectedClusterMembers);
-      } else if (selectedNodes.length > 0) {
-        draggedNodeIds = new Set(selectedNodes);
-      }
+      draggedNodeIds = new Set(selectedNodes);
       
       if (draggedNodeIds.size > 0) {
         lastDragPos = { x: params.pointer.canvas.x, y: params.pointer.canvas.y };
@@ -2265,12 +2249,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     network.on('dragging', function(params) {
       if (draggedNodeIds.size > 0) {
-        // Calculate delta movement
         const currentPos = params.pointer.canvas;
         const deltaX = currentPos.x - lastDragPos.x;
         const deltaY = currentPos.y - lastDragPos.y;
 
-        // Move all dragged nodes by the same delta
         const positions = network.getPositions(Array.from(draggedNodeIds));
         draggedNodeIds.forEach(nodeId => {
           if (positions[nodeId]) {
@@ -2284,11 +2266,9 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     network.on('dragEnd', function() {
       draggedNodeIds.clear();
-      // Reset position tracking after drag ends
-      lastDragPos = { x: 0, y: 0 };
     });
 
-    // Override cluster selection - VISUAL ONLY, no node selection
+    // Override cluster selection
     const originalSelectCluster = window.selectCluster;
     window.selectCluster = function(clusterId) {
       if (!clusterId) {
@@ -2299,18 +2279,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       const cfg = RADIAL_CLUSTERS[clusterId];
       if (!cfg) return;
 
-      // Clear previous selection first
       draggedNodeIds.clear();
-      lastDragPos = { x: 0, y: 0 };
 
       selectedClusterId = clusterId;
       const members = new Set(Object.keys(nodeClusterMap).filter(id => nodeClusterMap[id].includes(clusterId)));
-      selectedClusterMembers = new Set(members); // Store for dragging
       
       const clusterColor = clusterColorMap[clusterId] || '#ffffff';
       const highlightColor = hexToRgba(clusterColor, 0.85);
 
-      // Update visual highlighting ONLY - do NOT call network.selectNodes()
+      // Update visual highlighting and select the nodes so they can be dragged
       nodes.update(nodes.get().map(node => ({
         id: node.id,
         opacity: members.has(node.id) ? 1 : 0.25,
@@ -2325,6 +2302,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           width: edgeInCluster ? 2 : 1
         };
       }));
+
+      // Select the cluster members in vis.js so they appear selected and can be dragged
+      network.selectNodes(Array.from(members));
 
       updateClusterInfoBadge();
 
@@ -2349,8 +2329,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     const originalClearCluster = window.clearClusterSelection;
     window.clearClusterSelection = function() {
       draggedNodeIds.clear();
-      lastDragPos = { x: 0, y: 0 };
-      selectedClusterMembers.clear();
       
       // Reset all nodes to normal appearance
       nodes.update(nodes.get().map(node => ({
@@ -2358,7 +2336,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         opacity: 1,
         borderWidth: 2
       })));
-      
+
       // Reset all edges to default style
       edges.update(edges.get().map(edge => {
         const style = getEdgeStyle(edge);
