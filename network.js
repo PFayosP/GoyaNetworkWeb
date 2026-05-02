@@ -1133,10 +1133,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 200,
             padding: 150,
-            centerYOffset: -150,
+            centerXOffset: -200,
+            centerYOffset: 20,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "José de Madrazo": Math.PI * 1.25  // north-west, next to Federico
+              "Federico de Madrazo": Math.PI * 1.25
             },
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
@@ -1203,6 +1204,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 85,
             padding: 65,
+            centerYOffset: 150,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2
@@ -1238,6 +1240,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 140,
             padding: 100,
+            centerXOffset: 200,
+            centerYOffset: 100,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo"
@@ -1256,9 +1260,14 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Federico de Madrazo",
               "José de Madrazo"
             ],
-            radius: 160, // increased from 132 for wider circle
+            radius: 160,
             padding: 92,
+            centerYOffset: -160,
             startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Francisco de Goya": Math.PI / 2,
+              "Federico de Madrazo": Math.PI * 0.75
+            },
             title: "Court painters",
             titleEs: "Pintores de Corte"
           },
@@ -1290,11 +1299,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 135,
             padding: 84,
-            centerYOffset: -280,
+            centerXOffset: -280,
+            centerYOffset: -300,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "Federico de Madrazo": Math.PI / 2,
-              "Pedro de Madrazo": Math.PI / 2
+              "Federico de Madrazo": Math.PI / 4
             },
             title: "Madrazo-Carderera group",
             titleEs: "Grupo Madrazo-Carderera"
@@ -1315,6 +1324,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 150,
             padding: 120,
+            centerXOffset: 250,
+            centerYOffset: -100,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "XV Countess of Chinchón": 0
@@ -1333,6 +1344,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 78,
             padding: 84,
+            centerXOffset: 300,
+            centerYOffset: 50,
             startAngle: -Math.PI / 2,
             title: "Villafranca-Alba cluster",
             titleEs: "Clúster Villafranca-Alba"
@@ -1346,7 +1359,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 78,
             padding: 84,
+            centerXOffset: -200,
+            centerYOffset: -80,
             startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Adrien Dauzats": Math.PI * 0.75
+            },
             title: "Taylor cluster",
             titleEs: "Clúster Taylor"
           },
@@ -2412,7 +2430,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Honoré de Balzac", "J. J. Grandville", 130],
       ["J. J. Grandville", "Charles Motte", 130],
       ["Achille Devéria", "Charles Motte", 130],
-      ["María Francisca de Sales Portocarrero, VI Countess of Montijo", "Prince Antoine, Duke of Montpensier", 130]
+      ["María Francisca de Sales Portocarrero, VI Countess of Montijo", "Prince Antoine, Duke of Montpensier", 130],
+      ["Count of Floridablanca", "II Duke of San Carlos", 130]
       // supercali overlap
     ];
 
@@ -2844,13 +2863,15 @@ document.addEventListener('DOMContentLoaded', async function () {
             cfg.sharedBoundaryNodes || {}
           );
 
-          // Apply vertical offset if specified
-          if (cfg.centerYOffset) {
+          // Apply offsets if specified
+          const offsetX = cfg.centerXOffset || 0;
+          const offsetY = cfg.centerYOffset || 0;
+          if (offsetX !== 0 || offsetY !== 0) {
             const memberIds = cfg.members.filter(id => nodes.get(id));
             const pos = network.getPositions(memberIds);
             memberIds.forEach(id => {
               const p = pos[id];
-              network.moveNode(id, p.x, p.y + cfg.centerYOffset);
+              network.moveNode(id, p.x + offsetX, p.y + offsetY);
             });
           }
         }
@@ -2869,13 +2890,15 @@ document.addEventListener('DOMContentLoaded', async function () {
             cfg.sharedBoundaryNodes || {}
           );
 
-          // Apply vertical offset if specified
-          if (cfg.centerYOffset) {
+          // Apply offsets if specified
+          const offsetX = cfg.centerXOffset || 0;
+          const offsetY = cfg.centerYOffset || 0;
+          if (offsetX !== 0 || offsetY !== 0) {
             const memberIds = cfg.members.filter(id => nodes.get(id));
             const pos = network.getPositions(memberIds);
             memberIds.forEach(id => {
               const p = pos[id];
-              network.moveNode(id, p.x, p.y + cfg.centerYOffset);
+              network.moveNode(id, p.x + offsetX, p.y + offsetY);
             });
           }
         }
@@ -3151,6 +3174,11 @@ document.addEventListener('DOMContentLoaded', async function () {
           for (let j = i + 1; j < entries.length; j++) {
             const [clusterAId, cfgA] = entries[i];
             const [clusterBId, cfgB] = entries[j];
+
+            // Skip separation for central clusters (those with explicit positioning offsets)
+            const isCentralA = cfgA.centerXOffset !== undefined || cfgA.centerYOffset !== undefined;
+            const isCentralB = cfgB.centerXOffset !== undefined || cfgB.centerYOffset !== undefined;
+            if (isCentralA || isCentralB) continue;
 
             const idsA = getClusterNodeIds(cfgA, nodes);
             const idsB = getClusterNodeIds(cfgB, nodes);
@@ -3438,13 +3466,15 @@ document.addEventListener('DOMContentLoaded', async function () {
             cfg.sharedBoundaryNodes || {}
           );
           
-          // Apply vertical offset if specified (for moved clusters like COURT_PAINTERS, etc.)
-          if (cfg.centerYOffset) {
+          // Apply offsets if specified (both X and Y for central positioning)
+          const offsetX = cfg.centerXOffset || 0;
+          const offsetY = cfg.centerYOffset || 0;
+          if (offsetX !== 0 || offsetY !== 0) {
             const memberIds = cfg.members.filter(id => nodes.get(id));
             const pos = network.getPositions(memberIds);
             memberIds.forEach(id => {
               const p = pos[id];
-              network.moveNode(id, p.x, p.y + cfg.centerYOffset);
+              network.moveNode(id, p.x + offsetX, p.y + offsetY);
             });
           }
         });
