@@ -2254,32 +2254,31 @@ document.addEventListener('DOMContentLoaded', async function () {
         console.log('Downloaded positions_config.json');
       });
     } else {
-      // Lock dragging in normal mode
-      network.setOptions({ physics: { enabled: false, barnesHut: { enabled: false } } });
-      network.on('dragStart', function(params) {
-        return false; // Block dragging
-      });
+      // Disable dragging for regular users
+      network.setOptions({ interaction: { dragNodes: false, dragView: false } });
     }
 
     // ===== CLUSTER POSITION PERSISTENCE =====
     let nodePositions = JSON.parse(localStorage.getItem('nodePositions') || '{}');
     let dragTimeout;
 
-    // Save ALL node positions whenever dragging ends
-    network.on('dragEnd', function(params) {
-      clearTimeout(dragTimeout);
-      dragTimeout = setTimeout(() => {
-        const allNodeIds = nodes.getIds();
-        const positions = network.getPositions(allNodeIds);
-        allNodeIds.forEach(nodeId => {
-          if (positions[nodeId]) {
-            nodePositions[nodeId] = { x: positions[nodeId].x, y: positions[nodeId].y };
-          }
-        });
-        localStorage.setItem('nodePositions', JSON.stringify(nodePositions));
-        console.log('Saved ALL', allNodeIds.length, 'node positions');
-      }, 500);
-    });
+    // Only save positions when dragging ends IN ADMIN MODE
+    if (isAdminMode) {
+      network.on('dragEnd', function(params) {
+        clearTimeout(dragTimeout);
+        dragTimeout = setTimeout(() => {
+          const allNodeIds = nodes.getIds();
+          const positions = network.getPositions(allNodeIds);
+          allNodeIds.forEach(nodeId => {
+            if (positions[nodeId]) {
+              nodePositions[nodeId] = { x: positions[nodeId].x, y: positions[nodeId].y };
+            }
+          });
+          localStorage.setItem('nodePositions', JSON.stringify(nodePositions));
+          console.log('Saved ALL', allNodeIds.length, 'node positions');
+        }, 500);
+      });
+    }
 
     // Apply saved node positions on load - DEFINED AS GLOBAL
     window.applySavedNodePositions = function() {
