@@ -1133,8 +1133,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 200,
             padding: 150,
-            centerXOffset: -280,
-            centerYOffset: 60,
+            centerXOffset: -140,
+            centerYOffset: 50,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Federico de Madrazo": Math.PI * 1.25
@@ -1183,7 +1183,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 200,
             padding: 92,
-            centerYOffset: 250,
+            centerYOffset: 180,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2,
@@ -1204,7 +1204,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 85,
             padding: 65,
-            centerYOffset: 200,
+            centerYOffset: 140,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2
@@ -1240,8 +1240,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 140,
             padding: 100,
-            centerXOffset: 280,
-            centerYOffset: 150,
+            centerXOffset: 160,
+            centerYOffset: 110,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo"
@@ -1262,7 +1262,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 160,
             padding: 92,
-            centerYOffset: -200,
+            centerYOffset: -140,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": Math.PI / 2,
@@ -1299,8 +1299,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 135,
             padding: 84,
-            centerXOffset: -350,
-            centerYOffset: -350,
+            centerXOffset: -160,
+            centerYOffset: -140,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Federico de Madrazo": Math.PI / 4
@@ -1324,8 +1324,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 180,
             padding: 120,
-            centerXOffset: 320,
-            centerYOffset: -150,
+            centerXOffset: 180,
+            centerYOffset: -100,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "XV Countess of Chinchón": 0
@@ -1344,8 +1344,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 78,
             padding: 84,
-            centerXOffset: 380,
-            centerYOffset: 100,
+            centerXOffset: 190,
+            centerYOffset: 80,
             startAngle: -Math.PI / 2,
             title: "Villafranca-Alba cluster",
             titleEs: "Clúster Villafranca-Alba"
@@ -1359,8 +1359,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 78,
             padding: 84,
-            centerXOffset: -280,
-            centerYOffset: -150,
+            centerXOffset: -130,
+            centerYOffset: -100,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Adrien Dauzats": Math.PI * 0.75
@@ -2232,12 +2232,140 @@ document.addEventListener('DOMContentLoaded', async function () {
           filter: 'physics'
         }
       });
+    // ===== MULTI-SELECT AND CLUSTER DRAGGING =====
+    let selectedNodeIds = new Set(); // Track currently selected nodes
+    let draggedNodeIds = new Set(); // Track nodes being dragged
+    let lastDragPos = { x: 0, y: 0 }; // Track drag delta
+
     // Add canvas click handler to deselect cluster when clicking background
     network.on('click', function(params) {
-      if (params.nodes.length === 0 && params.edges.length === 0 && selectedClusterId) {
-        window.clearClusterSelection();
+      if (params.nodes.length === 0 && params.edges.length === 0) {
+        if (selectedClusterId) {
+          window.clearClusterSelection();
+        }
+        // Clear multi-selection if clicking empty space (unless holding Ctrl)
+        if (!params.event.ctrlKey && !params.event.metaKey) {
+          selectedNodeIds.clear();
+          network.unselectAll();
+        }
       }
     });
+
+    // Track selection changes
+    network.on('select', function(params) {
+      if (params.event && (params.event.ctrlKey || params.event.metaKey)) {
+        // Ctrl/Cmd+click: toggle individual nodes
+        params.nodes.forEach(nodeId => {
+          if (selectedNodeIds.has(nodeId)) {
+            selectedNodeIds.delete(nodeId);
+          } else {
+            selectedNodeIds.add(nodeId);
+          }
+        });
+      } else {
+        // Regular click: replace selection
+        selectedNodeIds = new Set(params.nodes);
+      }
+      
+      // Update node borders to show selection
+      const allNodeIds = nodes.getIds();
+      nodes.update(allNodeIds.map(id => ({
+        id: id,
+        borderWidth: selectedNodeIds.has(id) ? 4 : 2
+      })));
+    });
+
+    // Handle dragging multiple selected nodes
+    network.on('dragStart', function(params) {
+      draggedNodeIds = new Set(selectedNodeIds);
+      lastDragPos = { x: params.pointer.canvas.x, y: params.pointer.canvas.y };
+    });
+
+    network.on('dragging', function(params) {
+      if (draggedNodeIds.size > 1 || (draggedNodeIds.size === 1 && selectedNodeIds.size > 1)) {
+        // Calculate delta movement
+        const currentPos = params.pointer.canvas;
+        const deltaX = currentPos.x - lastDragPos.x;
+        const deltaY = currentPos.y - lastDragPos.y;
+
+        // Move all selected nodes by the same delta
+        const positions = network.getPositions(Array.from(selectedNodeIds));
+        selectedNodeIds.forEach(nodeId => {
+          if (positions[nodeId]) {
+            network.moveNode(nodeId, positions[nodeId].x + deltaX, positions[nodeId].y + deltaY);
+          }
+        });
+
+        lastDragPos = { x: currentPos.x, y: currentPos.y };
+      }
+    });
+
+    network.on('dragEnd', function() {
+      draggedNodeIds.clear();
+    });
+
+    // Add cluster selection to actually SELECT nodes (not just highlight)
+    const originalSelectCluster = window.selectCluster;
+    window.selectCluster = function(clusterId) {
+      if (!clusterId) {
+        window.clearClusterSelection();
+        return;
+      }
+
+      const cfg = RADIAL_CLUSTERS[clusterId];
+      if (!cfg) return;
+
+      selectedClusterId = clusterId;
+      const members = new Set(Object.keys(nodeClusterMap).filter(id => nodeClusterMap[id].includes(clusterId)));
+      const clusterColor = clusterColorMap[clusterId] || '#ffffff';
+      const highlightColor = hexToRgba(clusterColor, 0.85);
+
+      // Update visual highlighting
+      nodes.update(nodes.get().map(node => ({
+        id: node.id,
+        opacity: members.has(node.id) ? 1 : 0.25,
+        borderWidth: members.has(node.id) ? 4 : 1
+      })));
+
+      edges.update(edges.get().map(edge => {
+        const edgeInCluster = members.has(edge.from) && members.has(edge.to);
+        return {
+          id: edge.id,
+          color: edgeInCluster ? highlightColor : 'rgba(100,100,100,0.05)',
+          width: edgeInCluster ? 2 : 1
+        };
+      }));
+
+      // Also select the nodes so they can be dragged together
+      selectedNodeIds = new Set(Array.from(members));
+      network.selectNodes(Array.from(selectedNodeIds));
+
+      updateClusterInfoBadge();
+
+      // Focus on cluster
+      const memberArray = Array.from(members);
+      if (memberArray.length > 0 && window.VIS_NETWORK) {
+        const memberPositions = network.getPositions(memberArray);
+        const xs = Object.values(memberPositions).map(p => p.x);
+        const ys = Object.values(memberPositions).map(p => p.y);
+        const cx = (Math.max(...xs) + Math.min(...xs)) / 2;
+        const cy = (Math.max(...ys) + Math.min(...ys)) / 2;
+        const scale = Math.max(
+          (Math.max(...xs) - Math.min(...xs)) / window.innerWidth * 1.5,
+          (Math.max(...ys) - Math.min(...ys)) / window.innerHeight * 1.5,
+          0.4
+        );
+        network.moveTo({ position: { x: cx, y: cy }, scale: Math.min(scale, 2) });
+      }
+    };
+
+    // Update clearClusterSelection to also clear multi-select
+    const originalClearCluster = window.clearClusterSelection;
+    window.clearClusterSelection = function() {
+      selectedNodeIds.clear();
+      network.unselectAll();
+      originalClearCluster();
+    };
 
     window.VIS_NETWORK = network;
 
