@@ -2228,38 +2228,46 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // ===== CLUSTER POSITION PERSISTENCE =====
     let nodePositions = JSON.parse(localStorage.getItem('nodePositions') || '{}');
+    let dragTimeout;
 
-    // Save ALL node positions when dragging ends
+    // Save ALL node positions whenever dragging ends
     network.on('dragEnd', function(params) {
-      if (params.nodes && params.nodes.length > 0) {
-        const positions = network.getPositions(params.nodes);
-        params.nodes.forEach(nodeId => {
+      clearTimeout(dragTimeout);
+      dragTimeout = setTimeout(() => {
+        const allNodeIds = nodes.getIds();
+        const positions = network.getPositions(allNodeIds);
+        allNodeIds.forEach(nodeId => {
           if (positions[nodeId]) {
             nodePositions[nodeId] = { x: positions[nodeId].x, y: positions[nodeId].y };
           }
         });
         localStorage.setItem('nodePositions', JSON.stringify(nodePositions));
-        console.log('Saved positions for nodes:', params.nodes);
-      }
+        console.log('Saved ALL', allNodeIds.length, 'node positions');
+      }, 500);
     });
 
     // Apply saved node positions on load
     const applySavedNodePositions = () => {
       if (Object.keys(nodePositions).length > 0) {
-        Object.entries(nodePositions).forEach(([nodeId, pos]) => {
-          network.moveNode(nodeId, pos.x, pos.y);
+        const savedNodeIds = Object.keys(nodePositions);
+        const positions = network.getPositions(savedNodeIds);
+        savedNodeIds.forEach(nodeId => {
+          if (nodePositions[nodeId]) {
+            network.moveNode(nodeId, nodePositions[nodeId].x, nodePositions[nodeId].y);
+          }
         });
-        console.log('Restored positions for', Object.keys(nodePositions).length, 'nodes');
+        console.log('Restored ALL positions for', savedNodeIds.length, 'nodes');
       }
     };
 
-    // Apply saved positions - use longer delay to ensure stabilization
-    setTimeout(applySavedNodePositions, 1500);
+    // Apply saved positions after layout stabilizes
+    setTimeout(applySavedNodePositions, 2000);
 
     // Add reset function
     window.resetNodePositions = function() {
       localStorage.removeItem('nodePositions');
       nodePositions = {};
+      console.log('Reset all node positions');
       location.reload();
     };
 
