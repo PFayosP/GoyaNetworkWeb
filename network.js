@@ -2219,6 +2219,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 🔥 Y ESTA OPCIÓN CRUCIAL:
         interaction: {
           dragNodes: true,
+          multiSelect: true,        // ✅ ENABLE MULTI-SELECT for Cmd+Click
           hideEdgesOnDrag: false,
           hideNodesOnDrag: false,
           zoomView: true,          // ✅ permite hacer zoom
@@ -2283,6 +2284,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     network.on('dragEnd', function() {
       draggedNodeIds.clear();
+      // Reset position tracking after drag ends
+      lastDragPos = { x: 0, y: 0 };
     });
 
     // Override cluster selection - VISUAL ONLY, no node selection
@@ -2295,6 +2298,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       const cfg = RADIAL_CLUSTERS[clusterId];
       if (!cfg) return;
+
+      // Clear previous selection first
+      draggedNodeIds.clear();
+      lastDragPos = { x: 0, y: 0 };
 
       selectedClusterId = clusterId;
       const members = new Set(Object.keys(nodeClusterMap).filter(id => nodeClusterMap[id].includes(clusterId)));
@@ -2338,10 +2345,30 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     };
 
-    // Update clearClusterSelection
+    // Update clearClusterSelection - reset all visual states
     const originalClearCluster = window.clearClusterSelection;
     window.clearClusterSelection = function() {
+      draggedNodeIds.clear();
+      lastDragPos = { x: 0, y: 0 };
       selectedClusterMembers.clear();
+      
+      // Reset all nodes to normal appearance
+      nodes.update(nodes.get().map(node => ({
+        id: node.id,
+        opacity: 1,
+        borderWidth: 2
+      })));
+      
+      // Reset all edges to default style
+      edges.update(edges.get().map(edge => {
+        const style = getEdgeStyle(edge);
+        return {
+          id: edge.id,
+          color: style.color,
+          width: style.width
+        };
+      }));
+      
       network.unselectAll();
       originalClearCluster();
     };
