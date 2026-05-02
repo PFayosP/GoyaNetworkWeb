@@ -1502,7 +1502,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }));
         };
 
-        let selectedClusterId = null;
+        let selectedClusterId = window._selectedClusterId || null;
 
         const getClusterDisplayName = clusterId => {
           const cfg = RADIAL_CLUSTERS[clusterId];
@@ -1518,6 +1518,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         window.clearClusterSelection = function () {
           selectedClusterId = null;
+          window._selectedClusterId = null;
           const option = document.getElementById('clusterSelect');
           if (option) option.value = '';
           nodes.update(nodes.get().map(node => ({
@@ -1549,6 +1550,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
 
           selectedClusterId = clusterId;
+          window._selectedClusterId = clusterId;
           const members = new Set(Object.keys(nodeClusterMap).filter(id => nodeClusterMap[id].includes(clusterId)));
           const clusterColor = clusterColorMap[clusterId] || '#ffffff';
           const highlightColor = hexToRgba(clusterColor, 0.85);
@@ -2232,17 +2234,11 @@ document.addEventListener('DOMContentLoaded', async function () {
           filter: 'physics'
         }
       });
-    // ===== MULTI-SELECT AND CLUSTER DRAGGING =====
+    // ===== MULTI-SELECT =====
     let selectedNodeIds = new Set(); // Track multi-select nodes only
-    let selectedClusterMembers = new Set(); // Track cluster selection separately
-    let draggedNodeIds = new Set(); // Track nodes being dragged
-    let lastDragPos = { x: 0, y: 0 };
 
     // Handle clicks for multi-select
     network.on('click', function(params) {
-      // Only handle multi-select if no cluster is selected
-      if (selectedClusterId) return;
-      
       if (params.nodes.length > 0) {
         // Clicked a node
         const clickedNodeId = params.nodes[0];
@@ -2267,104 +2263,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         network.unselectAll();
       }
     });
-
-    // Handle dragging
-    network.on('dragStart', function(params) {
-      // Drag cluster members if cluster selected
-      if (selectedClusterMembers.size > 0) {
-        draggedNodeIds = new Set(selectedClusterMembers);
-      }
-      // Otherwise drag multi-selected nodes
-      else if (selectedNodeIds.size > 0) {
-        draggedNodeIds = new Set(selectedNodeIds);
-      }
-      
-      if (draggedNodeIds.size > 0) {
-        lastDragPos = { x: params.pointer.canvas.x, y: params.pointer.canvas.y };
-      }
-    });
-
-    network.on('dragging', function(params) {
-      if (draggedNodeIds.size > 0) {
-        const currentPos = params.pointer.canvas;
-        const deltaX = currentPos.x - lastDragPos.x;
-        const deltaY = currentPos.y - lastDragPos.y;
-
-        const positions = network.getPositions(Array.from(draggedNodeIds));
-        draggedNodeIds.forEach(nodeId => {
-          if (positions[nodeId]) {
-            network.moveNode(nodeId, positions[nodeId].x + deltaX, positions[nodeId].y + deltaY);
-          }
-        });
-
-        lastDragPos = { x: currentPos.x, y: currentPos.y };
-      }
-    });
-
-    network.on('dragEnd', function() {
-      draggedNodeIds.clear();
-    });
-
-    // Cluster selection - keep separate from multi-select
-    const originalSelectCluster = window.selectCluster;
-    window.selectCluster = function(clusterId) {
-      if (!clusterId) {
-        window.clearClusterSelection();
-        return;
-      }
-
-      const cfg = RADIAL_CLUSTERS[clusterId];
-      if (!cfg) return;
-
-      selectedClusterId = clusterId;
-      const members = new Set(Object.keys(nodeClusterMap).filter(id => nodeClusterMap[id].includes(clusterId)));
-      selectedClusterMembers = new Set(members); // Store separately
-      const clusterColor = clusterColorMap[clusterId] || '#ffffff';
-      const highlightColor = hexToRgba(clusterColor, 0.85);
-
-      // Update visual highlighting
-      nodes.update(nodes.get().map(node => ({
-        id: node.id,
-        opacity: members.has(node.id) ? 1 : 0.25,
-        borderWidth: members.has(node.id) ? 4 : 1
-      })));
-
-      edges.update(edges.get().map(edge => {
-        const edgeInCluster = members.has(edge.from) && members.has(edge.to);
-        return {
-          id: edge.id,
-          color: edgeInCluster ? highlightColor : 'rgba(100,100,100,0.05)',
-          width: edgeInCluster ? 2 : 1
-        };
-      }));
-
-      updateClusterInfoBadge();
-
-      // Focus on cluster
-      const memberArray = Array.from(members);
-      if (memberArray.length > 0 && window.VIS_NETWORK) {
-        const memberPositions = network.getPositions(memberArray);
-        const xs = Object.values(memberPositions).map(p => p.x);
-        const ys = Object.values(memberPositions).map(p => p.y);
-        const cx = (Math.max(...xs) + Math.min(...xs)) / 2;
-        const cy = (Math.max(...ys) + Math.min(...ys)) / 2;
-        const scale = Math.max(
-          (Math.max(...xs) - Math.min(...xs)) / window.innerWidth * 1.5,
-          (Math.max(...ys) - Math.min(...ys)) / window.innerHeight * 1.5,
-          0.4
-        );
-        network.moveTo({ position: { x: cx, y: cy }, scale: Math.min(scale, 2) });
-      }
-    };
-
-    // Clear cluster selection
-    const originalClearCluster = window.clearClusterSelection;
-    window.clearClusterSelection = function() {
-      selectedClusterMembers.clear();
-      selectedNodeIds.clear();
-      network.unselectAll();
-      originalClearCluster();
-    };
 
     window.VIS_NETWORK = network;
 
