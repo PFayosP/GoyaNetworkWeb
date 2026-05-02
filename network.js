@@ -1133,8 +1133,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 200,
             padding: 150,
-            centerXOffset: -200,
-            centerYOffset: 20,
+            centerXOffset: -280,
+            centerYOffset: 60,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Federico de Madrazo": Math.PI * 1.25
@@ -1181,13 +1181,13 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Juan Meléndez Valdés",
               "Martín Zapater"
             ],
-            radius: 166,
+            radius: 200,
             padding: 92,
-            centerYOffset: 180,
+            centerYOffset: 250,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "Francisco de Goya": Math.PI / 2,     // south of cluster
-              "Martín Zapater": Math.PI / 2.2     // also south, close to Goya
+              "Francisco de Goya": -Math.PI / 2,
+              "Martín Zapater": -Math.PI / 2.2
             },
             title: "Ilustrados cluster",
             titleEs: "Clúster Ilustrados"
@@ -1204,7 +1204,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 85,
             padding: 65,
-            centerYOffset: 150,
+            centerYOffset: 200,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2
@@ -1240,8 +1240,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 140,
             padding: 100,
-            centerXOffset: 200,
-            centerYOffset: 100,
+            centerXOffset: 280,
+            centerYOffset: 150,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo"
@@ -1262,7 +1262,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 160,
             padding: 92,
-            centerYOffset: -160,
+            centerYOffset: -200,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": Math.PI / 2,
@@ -1299,8 +1299,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 135,
             padding: 84,
-            centerXOffset: -280,
-            centerYOffset: -300,
+            centerXOffset: -350,
+            centerYOffset: -350,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Federico de Madrazo": Math.PI / 4
@@ -1322,10 +1322,10 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Isabel II",
               "María Cristina de Borbón-Dos Sicilias"
             ],
-            radius: 150,
+            radius: 180,
             padding: 120,
-            centerXOffset: 250,
-            centerYOffset: -100,
+            centerXOffset: 320,
+            centerYOffset: -150,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "XV Countess of Chinchón": 0
@@ -1344,8 +1344,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 78,
             padding: 84,
-            centerXOffset: 300,
-            centerYOffset: 50,
+            centerXOffset: 380,
+            centerYOffset: 100,
             startAngle: -Math.PI / 2,
             title: "Villafranca-Alba cluster",
             titleEs: "Clúster Villafranca-Alba"
@@ -1359,8 +1359,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 78,
             padding: 84,
-            centerXOffset: -200,
-            centerYOffset: -80,
+            centerXOffset: -280,
+            centerYOffset: -150,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Adrien Dauzats": Math.PI * 0.75
@@ -2385,6 +2385,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Carlos III", "Manuel Godoy", 170], 
       ["Pedro de Madrazo", "William Stirling-Maxwell", 130],
       ["Valentín Carderera", "William Stirling-Maxwell", 130],
+      ["Eugène Piot", "William Stirling-Maxwell", 130],
+      ["Philippe Burty", "William Stirling-Maxwell", 130],
       ["Philippe Burty", "Pierre Lacour", 130],
       ["Philippe Burty", "Pierre Lacour fils", 130],
       ["Frédéric Villot", "Philippe Burty", 130],
@@ -3419,14 +3421,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         nudgeOverlaps(network, nodes, window.__clusterOf, 20);
 
         // 2) SPECIALIZED PLACEMENTS (handle clusters with custom logic)
-        placeFedericoSatelliteClusters(network);
+        // Disabled: placeFedericoSatelliteClusters - using explicit centerXOffset/centerYOffset instead
+        // Disabled: placeBourbonCluster - using explicit centerXOffset/centerYOffset instead
         placeGoyaFamilyCluster(network);
         placeMonacoGroup(network);
         placeGodoyPositioning(network);
         placeEstevesPair(network);
-        placeBourbonCluster(network);
         placeCloseMasterStudentPairs(network);
-        placeIlustradosCluster(network);
 
         // 3) PUSH CLUSTERS APART (create maximum space between cluster centers)
         separateClusters(network, nodes, RADIAL_CLUSTERS, 12, 250, 12);
