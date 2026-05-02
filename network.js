@@ -2246,8 +2246,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       }, 500);
     });
 
-    // Apply saved node positions on load
-    const applySavedNodePositions = () => {
+    // Apply saved node positions on load - DEFINED AS GLOBAL
+    window.applySavedNodePositions = function() {
       if (Object.keys(nodePositions).length > 0) {
         const savedNodeIds = Object.keys(nodePositions);
         const positions = network.getPositions(savedNodeIds);
@@ -2259,9 +2259,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         console.log('Restored ALL positions for', savedNodeIds.length, 'nodes');
       }
     };
-
-    // Apply saved positions after layout stabilizes
-    setTimeout(applySavedNodePositions, 2000);
 
     // Add reset function
     window.resetNodePositions = function() {
@@ -3429,6 +3426,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // 2) Apaga física para fijar posiciones
     network.setOptions({ physics: { enabled: false } });
+
+    // 3) Check if we have saved node positions - if so, apply them and skip all positioning
+    if (Object.keys(nodePositions).length > 0) {
+      console.log('Applying saved node positions, skipping cluster positioning');
+      applySavedNodePositions();
+      return; // EXIT - don't run any of the positioning code below
+    }
 
     // 3) Empujón anti-overlap cuando ya están puestas las imágenes
     setTimeout(() => {
