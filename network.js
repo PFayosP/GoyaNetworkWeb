@@ -3557,7 +3557,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         }, 1500);
       }
     }, 100);
-    }
 
     function highlightNeighborhood(nodeId) {
       // 1) Obtener edges conectados
