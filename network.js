@@ -1371,7 +1371,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           "IMPRESSIONIST_CLUSTER": {
             members: [
               "Félix Bracquemond",
-              "Edgas Degas",
+              "Edgar Degas",
               "Henri Fantin-Latour",
               "Édouard Manet",
               "Berthe Morisot",
