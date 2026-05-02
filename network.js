@@ -1085,8 +1085,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         const data = await response.json();
         window.__GN_DATA = data;
         
-        // Start image preloading
-        // const imagePreload = preloadImages(data.nodes);
+        // Start image preloading in background (non-blocking)
+        preloadImages(data.nodes).catch(err => console.warn('Image preload warning:', err));
 
         // Existing setup code
         const nodeInfo = document.getElementById('nodeInfo');
@@ -1674,43 +1674,19 @@ document.addEventListener('DOMContentLoaded', async function () {
           : edge.title;
 
       const style = getEdgeStyle(edge);
-      
-      // Calculate spring length based on strength (1-5 scale)
-      // Respect strength for BOTH intra and inter-cluster edges
-      let edgeLength = 210; // default
-      if (edge.strength) {
-        const strength = Math.max(1, Math.min(5, edge.strength)); // clamp 1-5
-        
-        if (edgeStatus === 'inter-cluster') {
-          // Inter-cluster edges: use longer base length but STILL apply strength
-          // Level-1 strength = tighter pull even across clusters (important for key relationships)
-          edgeLength = 120 + (strength - 1) * 50; // strength 1-5 = 120-320px range (base 200 for inter-cluster)
-        } else {
-          // Intra-cluster edges: apply strength normally to pull related nodes together
-          // Make strength-1 edges extremely tight (20px) for very close relationships
-          edgeLength = 20 + (strength - 1) * 70; // strength 1-5 = 20-300px range
-        }
-      }
 
       const processedEdge = {
         ...edge,
         label,
         title,
         color: { color: style.color },
-        width: style.width,
-        physics: true,           // ensure physics is enabled
-        length: edgeLength        // vis.js uses 'length' property for edge spring length
+        width: style.width
       };
-
-      // Debug: log edges with strength values
-      if (edge.strength) {
-        console.log(`Edge ${edge.from}-${edge.to}: strength=${edge.strength}, length=${edgeLength}px`);
-      }
 
       return processedEdge;
     }));
     window.edges = edges;
-    console.log(`Loaded ${edges.length} edges. ${data.edges.filter(e => e.strength).length} have strength values.`);
+    // Physics disabled - strength values no longer used
 
     // ===================== MINI-FAMILIAS (anchors invisibles) =====================
     // NOTA: esto NO toca tus edges reales. Añade nodos/edges "fantasma" para compactar grupos.
@@ -2180,15 +2156,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       // (actual processing happens in edges.map() after loading JSON)
 
       physics: {
-        enabled: true, 
-        solver: 'repulsion',
-        repulsion: {
-          nodeDistance: 600,         // increased from 500 for stronger node separation and collision prevention
-          centralGravity: 0.018,     // ↓ Slightly less gravity
-          springLength: 210,         // ↑ Longer springs for more separation
-          springConstant: 0.012,     // ↓ Softer springs
-          damping: 0.52              // Slightly more damping
-        }
+        enabled: false              // Physics disabled - positions are now fixed from positions_config.json
       },
 
         // 🔥 AÑADE ESTA NUEVA OPCIÓN (ANTI-OVERLAP INTEGRADO):
@@ -2222,6 +2190,41 @@ document.addEventListener('DOMContentLoaded', async function () {
         window.clearClusterSelection();
       }
     });
+
+    // Since physics is disabled from start, initialize immediately
+    document.getElementById('loadingMessage').style.display = 'none';
+    loadFullImages();
+    
+    // Apply saved positions if available, otherwise run cluster positioning
+    if (Object.keys(nodePositions).length > 0) {
+      console.log('Applying saved node positions, skipping cluster positioning');
+      applySavedNodePositions();
+    } else {
+      // First load: run cluster positioning (this was previously in stabilizationIterationsDone)
+      setTimeout(() => {
+        if (!window.__didNudgeOnce) {
+          window.__didNudgeOnce = true;
+
+          // 1) Small initial nudge to prevent overlaps
+          nudgeOverlaps(network, nodes, window.__clusterOf, 20);
+
+          // 2) PUSH CLUSTERS APART
+          separateClusters(network, nodes, RADIAL_CLUSTERS, 12, 250, 12);
+          pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120);
+
+          // 3) RESTORE ALL CLUSTERS TO PERFECT CIRCLES
+          Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
+            if (!cfg.members || !cfg.members.length) return;
+            if (clusterId === "ILUSTRADOS_CLUSTER") {
+              arrangeAroundSharedNode(network, nodes, cfg.members, "Francisco de Goya", cfg.radius || 150, Math.PI / 2, -Math.PI / 2);
+              return;
+            }
+            if (clusterId === "PRINT_SPECIALISTS") return;
+            arrangeInRadialCircle(network, nodes, cfg, cfg.members);
+          });
+        }
+      }, 100);
+    }
 
     window.VIS_NETWORK = network;
 
@@ -3465,20 +3468,9 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
     
   network.once("stabilizationIterationsDone", function () {
-    document.getElementById('loadingMessage').style.display = 'none';
-
-    // 1) Carga imágenes
-    loadFullImages();
-
-    // 2) Apaga física para fijar posiciones
-    network.setOptions({ physics: { enabled: false } });
-
-    // 3) Check if we have saved node positions - if so, apply them and skip all positioning
-    if (Object.keys(nodePositions).length > 0) {
-      console.log('Applying saved node positions, skipping cluster positioning');
-      applySavedNodePositions();
-      return; // EXIT - don't run any of the positioning code below
-    }
+    // This event no longer fires since physics is disabled from start
+    // Keeping this for backward compatibility, but all initialization now happens immediately after network creation
+  });
 
     // 3) Empujón anti-overlap cuando ya están puestas las imágenes
     setTimeout(() => {
