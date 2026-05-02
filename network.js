@@ -1626,6 +1626,66 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         initClusterControls();
 
+        // ===== CLUSTER POSITION PERSISTENCE =====
+        let clusterPositions = JSON.parse(localStorage.getItem('clusterPositions') || '{}');
+
+        // Save cluster positions to localStorage when dragging ends
+        network.on('dragEnd', function(params) {
+          if (selectedClusterId && params.nodes && params.nodes.length > 0) {
+            const members = Array.from(Object.keys(nodeClusterMap).filter(id => nodeClusterMap[id].includes(selectedClusterId)));
+            if (members.length > 0) {
+              const positions = network.getPositions(members);
+              let cx = 0, cy = 0;
+              members.forEach(id => {
+                cx += positions[id].x;
+                cy += positions[id].y;
+              });
+              cx /= members.length;
+              cy /= members.length;
+              
+              clusterPositions[selectedClusterId] = { x: cx, y: cy };
+              localStorage.setItem('clusterPositions', JSON.stringify(clusterPositions));
+            }
+          }
+        });
+
+        // Apply saved cluster positions on load
+        const applySavedClusterPositions = () => {
+          Object.entries(clusterPositions).forEach(([clusterId, savedPos]) => {
+            const members = Object.keys(nodeClusterMap).filter(id => nodeClusterMap[id].includes(clusterId));
+            if (members.length > 0) {
+              const positions = network.getPositions(members);
+              let cx = 0, cy = 0;
+              members.forEach(id => {
+                cx += positions[id].x;
+                cy += positions[id].y;
+              });
+              cx /= members.length;
+              cy /= members.length;
+              
+              const deltaX = savedPos.x - cx;
+              const deltaY = savedPos.y - cy;
+              
+              members.forEach(nodeId => {
+                if (positions[nodeId]) {
+                  network.setSelection({ nodes: members, edges: [] });
+                  network.moveNode(nodeId, positions[nodeId].x + deltaX, positions[nodeId].y + deltaY);
+                }
+              });
+            }
+          });
+        };
+
+        // Apply saved positions after a short delay to ensure layout is complete
+        setTimeout(applySavedClusterPositions, 500);
+
+        // Add reset function
+        window.resetClusterPositions = function() {
+          localStorage.removeItem('clusterPositions');
+          clusterPositions = {};
+          location.reload();
+        };
+
         // Ajustes de nodos con cluster color
         nodes = new vis.DataSet(data.nodes.map(node => {
           labelToId[node.label] = node.id;
