@@ -629,11 +629,14 @@ window.search = function(nodeId) {
 
   window.VIS_NETWORK.unselectAll();
 
-  // Use moveTo with moderate zoom (show neighboring context)
+  // Use moveTo with moderate zoom (show neighboring context) - smooth 800ms animation
   window.VIS_NETWORK.moveTo({
     position: pos,
     scale: window.VIS_NETWORK.getScale() * 1.2,
-    animation: { duration: 500 }
+    animation: { 
+      duration: 800,
+      easingFunction: 'easeInOutQuad'
+    }
   });
 
   setTimeout(() => {
@@ -1585,10 +1588,14 @@ document.addEventListener('DOMContentLoaded', async function () {
               const maxDim = Math.max(width, height);
               const scale = Math.min(1.5, 800 / (maxDim + 200)); // Fit with padding, max 1.5x zoom
               
-              // Move immediately without animation to avoid glitching
+              // Smooth animated zoom to cluster (800ms)
               window.VIS_NETWORK.moveTo({
                 position: { x: cx, y: cy },
-                scale: scale
+                scale: scale,
+                animation: {
+                  duration: 800,
+                  easingFunction: 'easeInOutQuad'
+                }
               });
             } catch (e) {
               console.warn('Error focusing on cluster:', e);
@@ -4242,7 +4249,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       window.VIS_NETWORK.moveTo({
         position: pos,
         scale,
-        animation: { duration: 500 }
+        animation: { 
+          duration: 800,
+          easingFunction: 'easeInOutQuad'
+        }
       });
 
       window.VIS_NETWORK.selectNodes([nodeId]);
