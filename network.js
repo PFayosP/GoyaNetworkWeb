@@ -2233,56 +2233,23 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
       });
     // ===== MULTI-SELECT AND CLUSTER DRAGGING =====
-    let selectedNodeIds = new Set(); // Track currently selected nodes for multi-select
     let draggedNodeIds = new Set(); // Track nodes being dragged
     let lastDragPos = { x: 0, y: 0 }; // Track drag delta
-    let isMultiSelectMode = false; // Are we in multi-select mode or cluster mode?
 
-    // Handle node selection with multi-select support
-    network.on('select', function(params) {
-      // Only handle multi-select when Cmd/Ctrl is held
-      if (params.event && (params.event.ctrlKey || params.event.metaKey)) {
-        // Cmd/Ctrl+click: accumulate selection
-        isMultiSelectMode = true;
-        params.nodes.forEach(nodeId => {
-          if (selectedNodeIds.has(nodeId)) {
-            selectedNodeIds.delete(nodeId);
-          } else {
-            selectedNodeIds.add(nodeId);
-          }
-        });
-        // Update visual
-        const allNodeIds = nodes.getIds();
-        nodes.update(allNodeIds.map(id => ({
-          id: id,
-          borderWidth: selectedNodeIds.has(id) ? 4 : 2
-        })));
-      } else if (params.nodes.length === 0 && params.edges.length === 0) {
-        // Clicked empty space: clear multi-select only if not holding Cmd
-        if (!isMultiSelectMode) {
-          selectedNodeIds.clear();
-        }
-      }
-    });
-
-    // Clear multi-select when clicking empty space
+    // Clear cluster selection when clicking empty space
     network.on('click', function(params) {
       if (params.nodes.length === 0 && params.edges.length === 0) {
-        // Clicked empty space: clear selections
         if (selectedClusterId) {
           window.clearClusterSelection();
         }
-        if (!params.event || (!params.event.ctrlKey && !params.event.metaKey)) {
-          selectedNodeIds.clear();
-          isMultiSelectMode = false;
-        }
       }
     });
 
-    // Handle dragging multiple selected nodes
+    // Handle dragging multiple selected nodes together
     network.on('dragStart', function(params) {
-      if (selectedNodeIds.size > 0 || selectedClusterId) {
-        draggedNodeIds = new Set(selectedNodeIds);
+      const selectedNodes = network.getSelectedNodes();
+      if (selectedNodes.length > 0) {
+        draggedNodeIds = new Set(selectedNodes);
         lastDragPos = { x: params.pointer.canvas.x, y: params.pointer.canvas.y };
       }
     });
@@ -2310,13 +2277,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       draggedNodeIds.clear();
     });
 
-    // Override cluster selection to enable dragging and clear multi-select
+    // Override cluster selection to enable dragging
     const originalSelectCluster = window.selectCluster;
     window.selectCluster = function(clusterId) {
-      // Clear multi-select when selecting a cluster
-      selectedNodeIds.clear();
-      isMultiSelectMode = false;
-      
       if (!clusterId) {
         window.clearClusterSelection();
         return;
@@ -2346,9 +2309,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         };
       }));
 
-      // Set selectedNodeIds to cluster members so they can be dragged
-      selectedNodeIds = new Set(Array.from(members));
-      network.selectNodes(Array.from(selectedNodeIds));
+      // Select cluster members so they can be dragged
+      network.selectNodes(Array.from(members));
 
       updateClusterInfoBadge();
 
@@ -2369,11 +2331,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     };
 
-    // Update clearClusterSelection to also clear multi-select
+    // Update clearClusterSelection
     const originalClearCluster = window.clearClusterSelection;
     window.clearClusterSelection = function() {
-      selectedNodeIds.clear();
-      isMultiSelectMode = false;
       network.unselectAll();
       originalClearCluster();
     };
