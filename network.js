@@ -13,7 +13,7 @@
       GERDA_HENKEL_NAME: "Gerda Henkel Foundation",
       SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
       NEW_NODES_TITLE: "New members",
-      MEMBERS_TITLE:"All members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain. Use Cmd+Click to select multiple nodes and drag them together.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
+      MEMBERS_TITLE:"All members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
       BTN_SEARCH: "Search",
       BTN_CLUSTER_TOGGLE_ON: "Cluster edges: On",
       BTN_CLUSTER_TOGGLE_OFF: "Cluster edges: Off",
@@ -218,7 +218,7 @@
       GERDA_HENKEL_NAME: "Fundación Gerda Henkel",
       SEARCH_PH:"Buscar…", FILTER_PROF_ALL:"Todas las profesiones", FILTER_NAT_ALL:"Todas las nacionalidades",
       NEW_NODES_TITLE: "Nuevos miembros",
-      MEMBERS_TITLE:"Todos los miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen. Usa Cmd+Clic para seleccionar múltiples nodos y arrastrarlos juntos.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
+      MEMBERS_TITLE:"Todos los miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
       BTN_SEARCH: "Buscar",
       BTN_CLUSTER_TOGGLE_ON: "Clúster: activado",
       BTN_CLUSTER_TOGGLE_OFF: "Clúster: desactivado",
@@ -1133,11 +1133,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 200,
             padding: 150,
-            centerXOffset: -140,
-            centerYOffset: 50,
+            centerYOffset: -150,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "Federico de Madrazo": Math.PI * 1.25
+              "José de Madrazo": Math.PI * 1.25  // north-west, next to Federico
             },
             title: "Madrazo family",
             titleEs: "Familia Madrazo"
@@ -1181,13 +1180,13 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Juan Meléndez Valdés",
               "Martín Zapater"
             ],
-            radius: 200,
+            radius: 166,
             padding: 92,
-            centerYOffset: 120,
+            centerYOffset: 180,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "Francisco de Goya": -Math.PI / 2,
-              "Martín Zapater": -Math.PI / 2.2
+              "Francisco de Goya": Math.PI / 2,     // south of cluster
+              "Martín Zapater": Math.PI / 2.2     // also south, close to Goya
             },
             title: "Ilustrados cluster",
             titleEs: "Clúster Ilustrados"
@@ -1204,7 +1203,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 85,
             padding: 65,
-            centerYOffset: 75,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "Francisco de Goya": -Math.PI / 2
@@ -1240,8 +1238,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 140,
             padding: 100,
-            centerXOffset: 160,
-            centerYOffset: 110,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo"
@@ -1260,14 +1256,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Federico de Madrazo",
               "José de Madrazo"
             ],
-            radius: 160,
+            radius: 160, // increased from 132 for wider circle
             padding: 92,
-            centerYOffset: -140,
             startAngle: -Math.PI / 2,
-            sharedBoundaryNodes: {
-              "Francisco de Goya": Math.PI / 2,
-              "Federico de Madrazo": Math.PI * 0.75
-            },
             title: "Court painters",
             titleEs: "Pintores de Corte"
           },
@@ -1299,11 +1290,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 135,
             padding: 84,
-            centerXOffset: -160,
-            centerYOffset: -140,
+            centerYOffset: -280,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
-              "Federico de Madrazo": Math.PI / 4
+              "Federico de Madrazo": Math.PI / 2,
+              "Pedro de Madrazo": Math.PI / 2
             },
             title: "Madrazo-Carderera group",
             titleEs: "Grupo Madrazo-Carderera"
@@ -1322,10 +1313,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Isabel II",
               "María Cristina de Borbón-Dos Sicilias"
             ],
-            radius: 180,
+            radius: 150,
             padding: 120,
-            centerXOffset: 50,
-            centerYOffset: -100,
             startAngle: -Math.PI / 2,
             sharedBoundaryNodes: {
               "XV Countess of Chinchón": 0
@@ -1344,8 +1333,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 78,
             padding: 84,
-            centerXOffset: 190,
-            centerYOffset: 80,
             startAngle: -Math.PI / 2,
             title: "Villafranca-Alba cluster",
             titleEs: "Clúster Villafranca-Alba"
@@ -1359,12 +1346,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             ],
             radius: 78,
             padding: 84,
-            centerXOffset: -130,
-            centerYOffset: -100,
             startAngle: -Math.PI / 2,
-            sharedBoundaryNodes: {
-              "Adrien Dauzats": Math.PI * 0.75
-            },
             title: "Taylor cluster",
             titleEs: "Clúster Taylor"
           },
@@ -1502,7 +1484,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }));
         };
 
-        let selectedClusterId = window._selectedClusterId || null;
+        let selectedClusterId = null;
 
         const getClusterDisplayName = clusterId => {
           const cfg = RADIAL_CLUSTERS[clusterId];
@@ -1518,7 +1500,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         window.clearClusterSelection = function () {
           selectedClusterId = null;
-          window._selectedClusterId = null;
           const option = document.getElementById('clusterSelect');
           if (option) option.value = '';
           nodes.update(nodes.get().map(node => ({
@@ -1550,7 +1531,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
 
           selectedClusterId = clusterId;
-          window._selectedClusterId = clusterId;
           const members = new Set(Object.keys(nodeClusterMap).filter(id => nodeClusterMap[id].includes(clusterId)));
           const clusterColor = clusterColorMap[clusterId] || '#ffffff';
           const highlightColor = hexToRgba(clusterColor, 0.85);
@@ -2234,33 +2214,10 @@ document.addEventListener('DOMContentLoaded', async function () {
           filter: 'physics'
         }
       });
-    // ===== MULTI-SELECT =====
-    let selectedNodeIds = new Set(); // Track multi-select nodes only
-
-    // Handle clicks for multi-select
+    // Add canvas click handler to deselect cluster when clicking background
     network.on('click', function(params) {
-      if (params.nodes.length > 0) {
-        // Clicked a node
-        const clickedNodeId = params.nodes[0];
-        
-        if (params.event && (params.event.ctrlKey || params.event.metaKey)) {
-          // Cmd/Ctrl+click: toggle node in selection
-          if (selectedNodeIds.has(clickedNodeId)) {
-            selectedNodeIds.delete(clickedNodeId);
-          } else {
-            selectedNodeIds.add(clickedNodeId);
-          }
-        } else {
-          // Regular click: replace selection with this node
-          selectedNodeIds = new Set([clickedNodeId]);
-        }
-        
-        // Update network selection to match our tracking
-        network.selectNodes(Array.from(selectedNodeIds));
-      } else if (params.nodes.length === 0 && params.edges.length === 0) {
-        // Clicked empty space: clear multi-selection
-        selectedNodeIds.clear();
-        network.unselectAll();
+      if (params.nodes.length === 0 && params.edges.length === 0 && selectedClusterId) {
+        window.clearClusterSelection();
       }
     });
 
@@ -2410,8 +2367,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Carlos III", "Manuel Godoy", 170], 
       ["Pedro de Madrazo", "William Stirling-Maxwell", 130],
       ["Valentín Carderera", "William Stirling-Maxwell", 130],
-      ["Eugène Piot", "William Stirling-Maxwell", 130],
-      ["Philippe Burty", "William Stirling-Maxwell", 130],
       ["Philippe Burty", "Pierre Lacour", 130],
       ["Philippe Burty", "Pierre Lacour fils", 130],
       ["Frédéric Villot", "Philippe Burty", 130],
@@ -2457,8 +2412,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Honoré de Balzac", "J. J. Grandville", 130],
       ["J. J. Grandville", "Charles Motte", 130],
       ["Achille Devéria", "Charles Motte", 130],
-      ["María Francisca de Sales Portocarrero, VI Countess of Montijo", "Prince Antoine, Duke of Montpensier", 130],
-      ["Count of Floridablanca", "II Duke of San Carlos", 130]
+      ["María Francisca de Sales Portocarrero, VI Countess of Montijo", "Prince Antoine, Duke of Montpensier", 130]
       // supercali overlap
     ];
 
@@ -2890,15 +2844,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             cfg.sharedBoundaryNodes || {}
           );
 
-          // Apply offsets if specified
-          const offsetX = cfg.centerXOffset || 0;
-          const offsetY = cfg.centerYOffset || 0;
-          if (offsetX !== 0 || offsetY !== 0) {
+          // Apply vertical offset if specified
+          if (cfg.centerYOffset) {
             const memberIds = cfg.members.filter(id => nodes.get(id));
             const pos = network.getPositions(memberIds);
             memberIds.forEach(id => {
               const p = pos[id];
-              network.moveNode(id, p.x + offsetX, p.y + offsetY);
+              network.moveNode(id, p.x, p.y + cfg.centerYOffset);
             });
           }
         }
@@ -2917,15 +2869,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             cfg.sharedBoundaryNodes || {}
           );
 
-          // Apply offsets if specified
-          const offsetX = cfg.centerXOffset || 0;
-          const offsetY = cfg.centerYOffset || 0;
-          if (offsetX !== 0 || offsetY !== 0) {
+          // Apply vertical offset if specified
+          if (cfg.centerYOffset) {
             const memberIds = cfg.members.filter(id => nodes.get(id));
             const pos = network.getPositions(memberIds);
             memberIds.forEach(id => {
               const p = pos[id];
-              network.moveNode(id, p.x + offsetX, p.y + offsetY);
+              network.moveNode(id, p.x, p.y + cfg.centerYOffset);
             });
           }
         }
@@ -3149,14 +3099,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       };
     }
 
-    function pushOutsidersFromClusters(network, nodes, clusters, defaultPadding = 70, excludeClusterIds = new Set()) {
+    function pushOutsidersFromClusters(network, nodes, clusters, defaultPadding = 70) {
       const allIds = nodes.getIds().filter(id => !String(id).startsWith('ANCHOR__'));
       const pos = network.getPositions(allIds);
 
       Object.entries(clusters).forEach(([clusterId, cfg]) => {
-        // Skip central clusters
-        if (excludeClusterIds.has(clusterId)) return;
-        
         const centerPos = getClusterCenterPos(network, nodes, cfg);
         if (!centerPos) return;
 
@@ -3204,11 +3151,6 @@ document.addEventListener('DOMContentLoaded', async function () {
           for (let j = i + 1; j < entries.length; j++) {
             const [clusterAId, cfgA] = entries[i];
             const [clusterBId, cfgB] = entries[j];
-
-            // Skip separation for central clusters (those with explicit positioning offsets)
-            const isCentralA = cfgA.centerXOffset !== undefined || cfgA.centerYOffset !== undefined;
-            const isCentralB = cfgB.centerXOffset !== undefined || cfgB.centerYOffset !== undefined;
-            if (isCentralA || isCentralB) continue;
 
             const idsA = getClusterNodeIds(cfgA, nodes);
             const idsB = getClusterNodeIds(cfgB, nodes);
@@ -3445,66 +3387,48 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (!window.__didNudgeOnce) {
         window.__didNudgeOnce = true;
 
-        // Helper function to identify central clusters
-        const isCentralCluster = (clusterId) => {
-          const cfg = RADIAL_CLUSTERS[clusterId];
-          return cfg && (cfg.centerXOffset !== undefined || cfg.centerYOffset !== undefined);
-        };
-
-        // Get all central and non-central cluster IDs
-        const centralClusterIds = new Set(Object.keys(RADIAL_CLUSTERS).filter(isCentralCluster));
-        const nonCentralClusterIds = new Set(Object.keys(RADIAL_CLUSTERS).filter(cid => !isCentralCluster(cid)));
-
-        // 1) Small initial nudge ONLY on non-central nodes
-        const nonCentralNodeIds = Array.from(nonCentralClusterIds).flatMap(cid => RADIAL_CLUSTERS[cid].members || []);
-        const nodesToNudge = new Set(nonCentralNodeIds);
-        nudgeOverlaps(network, nodes, id => nodesToNudge.has(id) ? 'non-central' : undefined, 20);
+        // 1) Small initial nudge to prevent overlaps
+        nudgeOverlaps(network, nodes, window.__clusterOf, 20);
 
         // 2) SPECIALIZED PLACEMENTS (handle clusters with custom logic)
+        placeFedericoSatelliteClusters(network);
         placeGoyaFamilyCluster(network);
         placeMonacoGroup(network);
         placeGodoyPositioning(network);
         placeEstevesPair(network);
+        placeBourbonCluster(network);
         placeCloseMasterStudentPairs(network);
+        placeIlustradosCluster(network);
 
-        // 3) PUSH CLUSTERS APART - SKIP ALL CENTRAL CLUSTERS
-        const entries = Object.entries(RADIAL_CLUSTERS);
-        for (let pass = 0; pass < 12; pass++) {
-          for (let i = 0; i < entries.length; i++) {
-            for (let j = i + 1; j < entries.length; j++) {
-              const [cidA] = entries[i];
-              const [cidB] = entries[j];
-              // Skip if either is central
-              if (centralClusterIds.has(cidA) || centralClusterIds.has(cidB)) continue;
-              
-              // Run separation logic here (simplified)
-            }
+        // 3) PUSH CLUSTERS APART (create maximum space between cluster centers)
+        separateClusters(network, nodes, RADIAL_CLUSTERS, 12, 250, 12);
+        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120);
+
+        // 4) RESTORE ALL CLUSTERS TO PERFECT CIRCLES (lock in circles with spacing)
+        // This runs after spacing is created, so circles will be properly separated
+        Object.entries(RADIAL_CLUSTERS).forEach(([clusterId, cfg]) => {
+          if (!cfg.members || !cfg.members.length) return;
+
+          // Special handling for Ilustrados
+          if (clusterId === "ILUSTRADOS_CLUSTER") {
+            arrangeAroundSharedNode(
+              network,
+              nodes,
+              cfg.members,
+              "Francisco de Goya",
+              cfg.radius || 150,
+              Math.PI / 2,
+              -Math.PI / 2
+            );
+            return;
           }
-        }
-        pushOutsidersFromClusters(network, nodes, RADIAL_CLUSTERS, 120, centralClusterIds);
 
-        // 4) RESTORE ALL CLUSTERS TO PERFECT CIRCLES
-        // First: NON-CENTRAL clusters
-        nonCentralClusterIds.forEach(clusterId => {
-          const cfg = RADIAL_CLUSTERS[clusterId];
-          if (!cfg || !cfg.members || !cfg.members.length) return;
-
-          arrangeInCircle(
-            network,
-            nodes,
-            cfg.members,
-            cfg.radius || 150,
-            cfg.startAngle ?? (-Math.PI / 2),
-            cfg.sharedBoundaryNodes || {}
-          );
-        });
-
-        // Second: CENTRAL CLUSTERS with offsets (after non-central are fixed)
-        centralClusterIds.forEach(clusterId => {
-          const cfg = RADIAL_CLUSTERS[clusterId];
-          if (!cfg || !cfg.members || !cfg.members.length) return;
-
-          // Arrange in circle centered at (0,0) first
+          // Skip clusters handled by specialized functions
+          if (clusterId === "PRINT_SPECIALISTS") {
+            return;
+          }
+          
+          // Restore all other clusters as perfect circles
           arrangeInCircle(
             network,
             nodes,
@@ -3514,24 +3438,16 @@ document.addEventListener('DOMContentLoaded', async function () {
             cfg.sharedBoundaryNodes || {}
           );
           
-          // Then apply offsets
-          const offsetX = cfg.centerXOffset || 0;
-          const offsetY = cfg.centerYOffset || 0;
-          if (offsetX !== 0 || offsetY !== 0) {
+          // Apply vertical offset if specified (for moved clusters like COURT_PAINTERS, etc.)
+          if (cfg.centerYOffset) {
             const memberIds = cfg.members.filter(id => nodes.get(id));
             const pos = network.getPositions(memberIds);
             memberIds.forEach(id => {
               const p = pos[id];
-              network.moveNode(id, p.x + offsetX, p.y + offsetY);
+              network.moveNode(id, p.x, p.y + cfg.centerYOffset);
             });
           }
         });
-
-        // 5) LOCK GOYA AT CENTER
-        const goyaId = "Francisco de Goya";
-        if (nodes.get(goyaId)) {
-          network.moveNode(goyaId, 0, 0);
-        }
 
         // 5) FINAL PRIORITY ENFORCEMENT: Disabled to preserve clean circles
         // enforcePriorityPairSeparation(network, nodes, PRIORITY_SEPARATION_PAIRS, 2);
