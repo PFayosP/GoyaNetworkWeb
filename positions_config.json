@@ -1,1 +1,814 @@
-{}
+{
+  "Francisco de Goya": {
+    "x": -212,
+    "y": 13
+  },
+  "Javier Goya": {
+    "x": -452,
+    "y": 77
+  },
+  "Mariano Goya": {
+    "x": -397,
+    "y": 169
+  },
+  "Marquis of La Romana": {
+    "x": -1037,
+    "y": -213
+  },
+  "Martín Zapater": {
+    "x": -306,
+    "y": -42
+  },
+  "Gumersinda Goicoechea": {
+    "x": -358,
+    "y": 74
+  },
+  "Francisco Bayeu": {
+    "x": -298,
+    "y": 133
+  },
+  "Anton Raphael Mengs": {
+    "x": -196,
+    "y": 168
+  },
+  "Mariano Salvador Maella": {
+    "x": -122,
+    "y": 299
+  },
+  "Frédéric Quilliet": {
+    "x": -876,
+    "y": -282
+  },
+  "Giambattista Tiepolo": {
+    "x": -251,
+    "y": 218
+  },
+  "Giandomenico Tiepolo": {
+    "x": -205,
+    "y": 274
+  },
+  "Federico de Madrazo": {
+    "x": 121,
+    "y": 330
+  },
+  "Valentín Carderera": {
+    "x": 238,
+    "y": 229
+  },
+  "José de Madrazo": {
+    "x": 10,
+    "y": 371
+  },
+  "Baron Taylor": {
+    "x": 317,
+    "y": -45
+  },
+  "Adrien Dauzats": {
+    "x": 268,
+    "y": 77
+  },
+  "Pharamond Blanchard": {
+    "x": 392,
+    "y": 125
+  },
+  "Eugenio Ochoa": {
+    "x": 124,
+    "y": 167
+  },
+  "Santiago Masarnau": {
+    "x": -390,
+    "y": 547
+  },
+  "Vicente Masarnau": {
+    "x": -82,
+    "y": 690
+  },
+  "Prosper Mérimée": {
+    "x": 187,
+    "y": -99
+  },
+  "Louis Philippe I": {
+    "x": -762,
+    "y": 540
+  },
+  "Infanta Luisa Fernanda de Borbón": {
+    "x": -763,
+    "y": 365
+  },
+  "Prince Antoine, Duke of Montpensier": {
+    "x": -760,
+    "y": 445
+  },
+  "Eugenia de Montijo": {
+    "x": -1260,
+    "y": 185
+  },
+  "María Manuela Kirkpatrick": {
+    "x": -1387,
+    "y": 257
+  },
+  "Nadar": {
+    "x": 749,
+    "y": -492
+  },
+  "Jean Laurent": {
+    "x": -480,
+    "y": 641
+  },
+  "Rosa Bonheur": {
+    "x": 549,
+    "y": -92
+  },
+  "Marcello (Adèle d'Affry)": {
+    "x": 1105,
+    "y": 427
+  },
+  "Bernardo de Iriarte": {
+    "x": -345,
+    "y": -329
+  },
+  "Ferdinand Guillemardet": {
+    "x": -288,
+    "y": -820
+  },
+  "Eugène Delacroix": {
+    "x": 392,
+    "y": -303
+  },
+  "Félix Guillemardet": {
+    "x": -225,
+    "y": -1153
+  },
+  "Juan Antonio Llorente": {
+    "x": -624,
+    "y": -123
+  },
+  "Antonio de Brugada": {
+    "x": -536,
+    "y": 765
+  },
+  "Juan Agustín Ceán Bermúdez": {
+    "x": -424,
+    "y": -104
+  },
+  "Joaquín María Ferrer": {
+    "x": -160,
+    "y": -181
+  },
+  "IV Marchioness of Pontejos": {
+    "x": -1497,
+    "y": -54
+  },
+  "II Duke of San Carlos": {
+    "x": -949,
+    "y": -152
+  },
+  "Agustín Esteve": {
+    "x": -76,
+    "y": 110
+  },
+  "Leandro Fernández de Moratín": {
+    "x": -230,
+    "y": -256
+  },
+  "Manuel Godoy": {
+    "x": -639,
+    "y": 61
+  },
+  "Josefa Tudó": {
+    "x": -563,
+    "y": 77
+  },
+  "XV Countess of Chinchón": {
+    "x": -702,
+    "y": 110
+  },
+  "María Teresa de Vallabriga": {
+    "x": -999,
+    "y": 306
+  },
+  "Luis de Borbón": {
+    "x": -1002,
+    "y": 223
+  },
+  "Luis Paret": {
+    "x": -1471,
+    "y": 98
+  },
+  "Cyprien Gaulon": {
+    "x": -362,
+    "y": 382
+  },
+  "Bartolomé Sureda": {
+    "x": -375,
+    "y": 1250
+  },
+  "Alejandro Sureda": {
+    "x": -197,
+    "y": 715
+  },
+  "Laurent Matheron": {
+    "x": 1291,
+    "y": 406
+  },
+  "Alejandro Aguado": {
+    "x": -512,
+    "y": -708
+  },
+  "Frédéric Villot": {
+    "x": 730,
+    "y": 339
+  },
+  "Achille Devéria": {
+    "x": 603,
+    "y": -273
+  },
+  "Charles Motte": {
+    "x": 709,
+    "y": -833
+  },
+  "Célestin Nanteuil": {
+    "x": 130,
+    "y": -450
+  },
+  "Louis Boulanger": {
+    "x": 708,
+    "y": -591
+  },
+  "Antoine Fontaney": {
+    "x": 617,
+    "y": -660
+  },
+  "Victor Hugo": {
+    "x": 492,
+    "y": -417
+  },
+  "Théophile Gautier": {
+    "x": 511,
+    "y": -250
+  },
+  "Carlos Luis de Ribera": {
+    "x": -206,
+    "y": 491
+  },
+  "José de Espronceda": {
+    "x": 5,
+    "y": -345
+  },
+  "Arsène Houssaye": {
+    "x": 714,
+    "y": -137
+  },
+  "Mariano José Larra": {
+    "x": 114,
+    "y": -334
+  },
+  "José Zorrilla": {
+    "x": 35,
+    "y": -269
+  },
+  "Stéphane Mallarmé": {
+    "x": 1162,
+    "y": -499
+  },
+  "Honoré de Balzac": {
+    "x": 356,
+    "y": -621
+  },
+  "Gustave Doré": {
+    "x": 919,
+    "y": -198
+  },
+  "Francisco Martínez de la Rosa": {
+    "x": -84,
+    "y": -302
+  },
+  "Alexandre Dumas père": {
+    "x": 298,
+    "y": -410
+  },
+  "Tony Johannot": {
+    "x": 514,
+    "y": -887
+  },
+  "Charles Nodier": {
+    "x": 512,
+    "y": -629
+  },
+  "Marquis de Custine": {
+    "x": 125,
+    "y": -879
+  },
+  "Adélaïde de Montgolfier": {
+    "x": 1168,
+    "y": -724
+  },
+  "Delphine de Girardin": {
+    "x": 393,
+    "y": -799
+  },
+  "Marceline Desbordes-Valmore": {
+    "x": 577,
+    "y": -755
+  },
+  "Hortense Allart": {
+    "x": 293,
+    "y": -1329
+  },
+  "Amable Tastu": {
+    "x": 605,
+    "y": -1264
+  },
+  "Virginie Ancelot": {
+    "x": 91,
+    "y": -854
+  },
+  "Marie Nodier": {
+    "x": 717,
+    "y": -1152
+  },
+  "Pierre Lacour": {
+    "x": -313,
+    "y": 1063
+  },
+  "George Sand": {
+    "x": 264,
+    "y": -535
+  },
+  "Alfred de Musset": {
+    "x": 406,
+    "y": -702
+  },
+  "Philippe Burty": {
+    "x": 774,
+    "y": 173
+  },
+  "Félix Bracquemond": {
+    "x": 1137,
+    "y": -180
+  },
+  "Paul Mantz": {
+    "x": 684,
+    "y": 263
+  },
+  "Charles Blanc": {
+    "x": 841,
+    "y": 389
+  },
+  "Nicolas Philippe Guye": {
+    "x": -488,
+    "y": -955
+  },
+  "Victor Guye": {
+    "x": -454,
+    "y": -927
+  },
+  "Dominique Vivant Denon": {
+    "x": -337,
+    "y": 1449
+  },
+  "Eugène Piot": {
+    "x": 665,
+    "y": 374
+  },
+  "Vicente López": {
+    "x": -112,
+    "y": 201
+  },
+  "Paul Lefort": {
+    "x": 897,
+    "y": 239
+  },
+  "Gustave Brunet": {
+    "x": 1115,
+    "y": 131
+  },
+  "Román Garreta": {
+    "x": 152,
+    "y": 737
+  },
+  "Luisa Garreta": {
+    "x": -103,
+    "y": 574
+  },
+  "Leocadia Zorrilla y Galarza": {
+    "x": -513,
+    "y": 354
+  },
+  "Rosario Weiss Zorrilla": {
+    "x": -473,
+    "y": 269
+  },
+  "Josefa Bayeu": {
+    "x": -491,
+    "y": 153
+  },
+  "Sebastián Martínez y Pérez": {
+    "x": -491,
+    "y": -25
+  },
+  "[J./L.] Carresse": {
+    "x": 314,
+    "y": 1392
+  },
+  "Charles Yriarte": {
+    "x": 819,
+    "y": -24
+  },
+  "Pierre Lacour fils": {
+    "x": -432,
+    "y": 1034
+  },
+  "José de Salamanca y Mayol (I Marqués de Salamanca)": {
+    "x": 903,
+    "y": 571
+  },
+  "Louise Bertin": {
+    "x": 339,
+    "y": -1527
+  },
+  "Sophie Gay": {
+    "x": 70,
+    "y": -1204
+  },
+  "Charles Baudelaire": {
+    "x": 693,
+    "y": -378
+  },
+  "Charles Asselineau": {
+    "x": 203,
+    "y": -272
+  },
+  "Léon Auguste Asselineau": {
+    "x": -60,
+    "y": -509
+  },
+  "Jenaro Pérez Villaamil": {
+    "x": -283,
+    "y": -184
+  },
+  "Henri Regnault": {
+    "x": 763,
+    "y": 433
+  },
+  "Marcel Briguiboul": {
+    "x": 388,
+    "y": -1165
+  },
+  "Édouard Manet": {
+    "x": 1104,
+    "y": -366
+  },
+  "Edgar Degas": {
+    "x": 1071,
+    "y": -260
+  },
+  "Berthe Morisot": {
+    "x": 1355,
+    "y": -257
+  },
+  "Émile Zola": {
+    "x": 1405,
+    "y": -311
+  },
+  "Henri Fantin-Latour": {
+    "x": 1255,
+    "y": -375
+  },
+  "Zacharie Astruc": {
+    "x": 936,
+    "y": -317
+  },
+  "Auguste Renoir": {
+    "x": 1209,
+    "y": -248
+  },
+  "Alphonse de Lamartine": {
+    "x": 285,
+    "y": -705
+  },
+  "Juliette Récamier": {
+    "x": -97,
+    "y": -1026
+  },
+  "Théophile Thoré": {
+    "x": 688,
+    "y": 178
+  },
+  "Stendhal": {
+    "x": 26,
+    "y": -587
+  },
+  "Charles-Augustin Sainte-Beuve": {
+    "x": 610,
+    "y": -561
+  },
+  "Gustave Flaubert": {
+    "x": 918,
+    "y": -651
+  },
+  "Madame Ewelina Hanska": {
+    "x": -13,
+    "y": -1442
+  },
+  "Fortunée Hamelin": {
+    "x": 68,
+    "y": -1448
+  },
+  "Louise Swanton Belloc": {
+    "x": 822,
+    "y": -1095
+  },
+  "Madame de Staël": {
+    "x": -472,
+    "y": -1170
+  },
+  "William Stirling-Maxwell": {
+    "x": 495,
+    "y": 565
+  },
+  "Laureano Potenciano": {
+    "x": 992,
+    "y": 945
+  },
+  "Richard Ford": {
+    "x": -101,
+    "y": 487
+  },
+  "Pascual de Gayangos y Arce": {
+    "x": -43,
+    "y": 292
+  },
+  "1st Duke of Wellington": {
+    "x": -1211,
+    "y": -849
+  },
+  "IX Duke of Osuna": {
+    "x": -1360,
+    "y": -229
+  },
+  "XII Countess-Duchess of Benavente and Duchess of Osuna": {
+    "x": -1395,
+    "y": -140
+  },
+  "VIII Duchess of Abrantes": {
+    "x": -1274,
+    "y": -243
+  },
+  "X Marchioness of Santa Cruz": {
+    "x": -1220,
+    "y": -159
+  },
+  "X Duke of Osuna": {
+    "x": -1300,
+    "y": -107
+  },
+  "Pedro de Madrazo": {
+    "x": 251,
+    "y": 373
+  },
+  "Carlos III": {
+    "x": -916,
+    "y": 111
+  },
+  "Carlos IV": {
+    "x": -793,
+    "y": 99
+  },
+  "María Luisa de Parma": {
+    "x": -908,
+    "y": 334
+  },
+  "Fernando VII": {
+    "x": -657,
+    "y": 272
+  },
+  "Isabel II": {
+    "x": -819,
+    "y": 267
+  },
+  "María Cristina de Borbón-Dos Sicilias": {
+    "x": -659,
+    "y": 177
+  },
+  "Joseph Bonaparte": {
+    "x": -785,
+    "y": -302
+  },
+  "María Teresa de Silva, XIII Duchess of Alba": {
+    "x": -1080,
+    "y": -60
+  },
+  "José Álvarez de Toledo, Duke of Alba": {
+    "x": -1207,
+    "y": 89
+  },
+  "María Antonia Gonzaga, Marchioness of Villafranca (widow)": {
+    "x": -1190,
+    "y": -15
+  },
+  "Francisco Álvarez de Toledo, XII Marquis of Villafranca": {
+    "x": -1052,
+    "y": 44
+  },
+  "María Tomasa Palafox, Marchioness of Villafranca": {
+    "x": -1112,
+    "y": 113
+  },
+  "María Gabriela de Palafox, Marchioness of Lazán": {
+    "x": -1179,
+    "y": 260
+  },
+  "Eugenio Eulalio Palafox, VII Count of Montijo": {
+    "x": -1195,
+    "y": 368
+  },
+  "Cipriano Portocarrero, VIII Count of Montijo": {
+    "x": -1383,
+    "y": 380
+  },
+  "María Francisca de Sales Portocarrero, VI Countess of Montijo": {
+    "x": -1286,
+    "y": 439
+  },
+  "Juan de Madrazo": {
+    "x": -87,
+    "y": 462
+  },
+  "Luis de Madrazo": {
+    "x": 277,
+    "y": 462
+  },
+  "Raimundo de Madrazo": {
+    "x": 293,
+    "y": 574
+  },
+  "Cecilia de Madrazo": {
+    "x": 246,
+    "y": 676
+  },
+  "Mariano Fortuny y Marsal": {
+    "x": -56,
+    "y": 676
+  },
+  "Mariano Fortuny y Madrazo": {
+    "x": 39,
+    "y": 737
+  },
+  "Louis Viardot": {
+    "x": 437,
+    "y": -183
+  },
+  "Pauline Viardot-García": {
+    "x": 159,
+    "y": -679
+  },
+  "Auguste Dutuit": {
+    "x": 141,
+    "y": 1399
+  },
+  "Ernest Meissonier": {
+    "x": 683,
+    "y": 3
+  },
+  "Eduardo Zamacois": {
+    "x": 937,
+    "y": 779
+  },
+  "Eugène Dutuit": {
+    "x": -203,
+    "y": 913
+  },
+  "Jacques Galos": {
+    "x": -532,
+    "y": 428
+  },
+  "XI Count of Altamira": {
+    "x": -443,
+    "y": -369
+  },
+  "Gaspar Melchor de Jovellanos": {
+    "x": -625,
+    "y": -216
+  },
+  "Count of Floridablanca": {
+    "x": -585,
+    "y": -57
+  },
+  "Francisco Cabarrús": {
+    "x": -530,
+    "y": -319
+  },
+  "Juan Meléndez Valdés": {
+    "x": -238,
+    "y": -125
+  },
+  "Jean-Auguste-Dominique Ingres": {
+    "x": 503,
+    "y": 256
+  },
+  "Achille Ricourt": {
+    "x": 323,
+    "y": -215
+  },
+  "Honoré Daumier": {
+    "x": 574,
+    "y": -452
+  },
+  "Charles Philipon": {
+    "x": 988,
+    "y": -789
+  },
+  "J. J. Grandville": {
+    "x": 505,
+    "y": -715
+  },
+  "Champfleury": {
+    "x": 919,
+    "y": -420
+  },
+  "Juan Antonio Melón": {
+    "x": -288,
+    "y": -373
+  },
+  "Antoine-Jean Gros": {
+    "x": 546,
+    "y": 363
+  },
+  "Paul Delaroche": {
+    "x": 584,
+    "y": 258
+  },
+  "Frédéric Chopin": {
+    "x": -27,
+    "y": -857
+  },
+  "Jacques-Louis David": {
+    "x": 447,
+    "y": 332
+  },
+  "Alphonse Hirsch": {
+    "x": 1373,
+    "y": -24
+  },
+  "Jules Jacquemart": {
+    "x": 1013,
+    "y": -46
+  },
+  "Edmond de Goncourt": {
+    "x": 1199,
+    "y": -105
+  },
+  "Jules de Goncourt": {
+    "x": 1488,
+    "y": 98
+  },
+  "Rodolphe Töpffer": {
+    "x": 1091,
+    "y": -1137
+  },
+  "Louis Daguerre": {
+    "x": 98,
+    "y": -120
+  },
+  "Ramón de Mesonero Romanos": {
+    "x": -46,
+    "y": -162
+  },
+  "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin": {
+    "x": -290,
+    "y": -581
+  },
+  "Asensio Julià": {
+    "x": -715,
+    "y": -30
+  },
+  "Rafael Esteve": {
+    "x": -823,
+    "y": -125
+  },
+  "Isidoro Máiquez": {
+    "x": -1278,
+    "y": -363
+  },
+  "Charles Davillier": {
+    "x": 1106,
+    "y": 668
+  },
+  "Antonio Remón Zarco del Valle y Huet": {
+    "x": 623,
+    "y": 529
+  },
+  "Adolphe Goupil": {
+    "x": 695,
+    "y": 757
+  },
+  "Heinrich Rittner": {
+    "x": 622,
+    "y": 914
+  },
+  "Gregorio Cruzada Villaamil": {
+    "x": -245,
+    "y": 771
+  }
+}
