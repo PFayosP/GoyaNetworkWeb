@@ -1286,7 +1286,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Eugenio Ochoa",
               "Santiago Masarnau",
               "Vicente Masarnau",
-              "Carlos Luis de Ribiera"
+              "Carlos Luis de Ribera"
             ],
             radius: 135,
             padding: 84,
