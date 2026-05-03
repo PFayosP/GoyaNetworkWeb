@@ -637,7 +637,7 @@ window.search = function(nodeId) {
 
   setTimeout(() => {
     window.VIS_NETWORK.selectNodes([nodeId]);
-    window.VIS_NETWORK.emit('click', {
+    window.VIS_NETWORK.body.emitter.emit('click', {
       nodes: [nodeId],
       edges: [],
       pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
@@ -1699,13 +1699,19 @@ document.addEventListener('DOMContentLoaded', async function () {
         title,
         color: { color: style.color },
         width: style.width,
-        physics: false,
+        physics: true,           // ensure physics is enabled
         length: edgeLength        // vis.js uses 'length' property for edge spring length
       };
+
+      // Debug: log edges with strength values
+      if (edge.strength) {
+        console.log(`Edge ${edge.from}-${edge.to}: strength=${edge.strength}, length=${edgeLength}px`);
+      }
 
       return processedEdge;
     }));
     window.edges = edges;
+    console.log(`Loaded ${edges.length} edges. ${data.edges.filter(e => e.strength).length} have strength values.`);
 
     // ===================== MINI-FAMILIAS (anchors invisibles) =====================
     // NOTA: esto NO toca tus edges reales. Añade nodos/edges "fantasma" para compactar grupos.
@@ -1750,7 +1756,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           size: 1,
           mass: 0.01,
           clusterAnchor: true,
-          physics: false,
+          physics: true,
           color: { border: "rgba(0,0,0,0)", background: "rgba(0,0,0,0)" },
           hidden: true,
           selectable: false
@@ -1766,7 +1772,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               id: `AEDGE__${clusterId}__${memberId}__${k}`,
               from: anchorId,
               to: memberId,
-              physics: false,
+              physics: true,
               smooth: false,
               _isClusterEdge: true,
               length: L,
@@ -2175,7 +2181,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       // (actual processing happens in edges.map() after loading JSON)
 
       physics: {
-        enabled: false
+        enabled: true, 
+        solver: 'repulsion',
+        repulsion: {
+          nodeDistance: 600,         // increased from 500 for stronger node separation and collision prevention
+          centralGravity: 0.018,     // ↓ Slightly less gravity
+          springLength: 210,         // ↑ Longer springs for more separation
+          springConstant: 0.012,     // ↓ Softer springs
+          damping: 0.52              // Slightly more damping
+        }
       },
 
         // 🔥 AÑADE ESTA NUEVA OPCIÓN (ANTI-OVERLAP INTEGRADO):
@@ -2322,7 +2336,177 @@ document.addEventListener('DOMContentLoaded', async function () {
       "Carlos Luis de Ribera": 20
     };
 
-    // NOTE: PRIORITY_SEPARATION_PAIRS array has been removed as positioning is now controlled via positions_config.json
+    const PRIORITY_SEPARATION_PAIRS = [
+      // Very close relationships - extremely tight spacing
+      ["Rosario Weiss Zorrilla", "Leocadia Zorrilla y Galarza", 30],       // mother-daughter, very close
+      ["Auguste Dutuit", "Eugène Dutuit", 30],                // brothers, very close
+      ["Martín Zapater", "Francisco de Goya", 40],            // best friend and possible lover
+      
+      // Rest of relationships with normal spacing
+      ["Adrien Dauzats", "Valentín Carderera", 120],
+      ["Federico de Madrazo", "Valentín Carderera", 150],
+      ["Adrien Dauzats", "Federico de Madrazo", 120],
+      ["Pedro de Madrazo", "Federico de Madrazo", 120],
+      ["Eugenio Ochoa", "Baron Taylor", 150],
+      ["Eugenio Ochoa", "Valentín Carderera", 150],
+      ["Arsène Houssaye", "Achille Devéria", 130],
+      ["Santiago Masarnau", "Vicente Masarnau", 120],
+      ["Alfred de Musset", "Théophile Gautier", 120],
+      ["Josefa Bayeu", "Gumersinda Goicoechea", 120],
+      ["Cecilia de Madrazo", "Román Garreta", 120],
+      ["Josefa Bayeu", "Francisco de Goya", 120],
+      ["Francisco de Goya", "Mariano Goya", 120],
+      ["María Antonia Gonzaga, Marchioness of Villafranca (widow)", "Infanta Luisa Fernanda de Borbón", 120],
+      ["María Luisa de Parma", "Carlos III", 120],
+      ["María Luisa de Parma", "Louis Philippe I", 150],
+      ["María Luisa de Parma", "Fernando VII", 120],
+      ["XV Countess of Chinchón", "María Teresa de Vallabriga", 120],
+      ["María Cristina de Borbón-Dos Sicilias", "Manuel Godoy", 120],
+      ["María Cristina de Borbón-Dos Sicilias", "Eugenia de Montijo", 120],
+      ["Manuel Godoy", "Isabel II", 120],
+      ["Carlos III", "Josefa Tudó", 120],
+      ["Manuel Godoy", "Josefa Tudó", 130],
+      ["Mnauel Godoy", "Louis Philippe I"],
+      ["Frédéric Quilliet", "Josefa Tudó", 120],
+      ["Josefa Tudó", "1st Duke of Wellington", 145],
+      ["Carlos III", "María Manuela Kirkpatrick", 120],
+      ["María Manuela Kirkpatrick", "1st Duke of Wellington", 120],
+      ["Carlos III", "Carlos IV", 120],
+      ["María Manuela Kirkpatrick", "Josefa Tudó", 120],
+      ["Frédéric Quilliet", "Juan Agustín Ceán Bermúdez", 120],
+      ["Eugenio Eulalio Palafox, VII Count of Montijo", "Manuel Godoy", 140],
+      ["Eugenio Eulalio Palafox, VII Count of Montijo", "Francisco de Goya", 140],
+      ["Manuel Godoy", "Francisco de Goya", 140],
+      ["Jenaro Pérez Villaamil", "Francisco de Goya", 120],
+      ["Gregorio Cruzada Villaamil", "Santiago Masarnau", 140],
+      ["Gregorio Cruzada Villaamil", "Giandomenico Tiepolo", 140],
+      ["Pedro de Madrazo", "Santiago Masarnau", 130],
+      ["Joseph I", "María Gabriela de Palafox, Marchioness of Lazán", 180],
+      ["Joseph I", "María Tomasa Palafox, Marchioness of Villafranca", 160],
+      ["José Álvarez de Toledo, Duke of Alba", "Francisco Álvarez de Toledo, XII Marquis of Villafranca", 150],
+      ["Francisco de Goya", "Mariano Salvador Maella", 120],
+      ["Francisco de Goya", "Vicente López", 120],
+      ["Francisco de Goya", "Anton Raphael Mengs", 135],
+      ["Mariano Salvador Maella", "Carlos IV", 135],
+      ["Agustín Esteve", "XV Countess of Chinchón", 120],
+      ["Rafael Esteve", "Manuel Godoy", 135],
+      ["Prince Antoine, Duke of Montpensier", "Eugenia de Montijo", 145],
+      ["Prince Antoine, Duke of Montpensier", "Manuel Godoy", 145],
+      ["Prince Antoine, Duke of Montpensier", "Isabel II", 145],
+      ["Louis Philippe I", "Infanta Luisa Fernanda de Borbón", 120],
+      ["Valentín Carderera", "Francisco de Goya", 145],
+      ["Carlos Luis de Ribera", "Mariano Salvador Maella", 130],
+      ["Agustín Esteve", "Mariano Salvador Maella", 130],
+      ["Francisco Bayeu", "Vicente López", 130],
+      ["Paul Mantz", "Théophile Gautier", 120],
+      ["Philippe Burty", "Baron Taylor", 120],
+      ["Valentín Carderera", "Agustín Esteve", 120],
+      ["Valentín Carderera", "Anton Raphael Mengs", 120],
+      ["Louis Philippe I", "Javier Goya", 140],
+      ["Louis Philippe I", "Fernando VII", 150],
+      ["Prince Antoine, Duke of Montpensier", "Louis Philippe I", 150],
+      ["Prince Antoine, Duke of Montpensier", "Fernando VII", 150],
+      ["Prince Antoine, Duke of Montpensier", "Mariano Goya", 140],
+      ["Rafael Esteve", "XV Countess of Chinchón", 150],
+      ["Francisco Martínez de la Rosa", "Francisco de Goya", 170],
+      ["Francisco Bayeu", "Valentín Carderera", 120],
+      ["Francisco Bayeu", "Federico de Madrazo", 120],
+      ["José de Madrazo", "Valentín Carderera", 190],
+      ["Pedro de Madrazo", "Valentín Carderera", 175],
+      ["José de Madrazo", "Eugenio Ochoa", 160],
+      ["Pedro de Madrazo", "Eugenio Ochoa", 160],
+      ["José de Madrazo", "Carlos Luis de Ribera", 150],
+      ["Charles Asselineau", "Théophile Thoré", 130],
+      ["Pedro de Madrazo", "Carlos Luis de Ribera", 145],
+      ["Pedro de Madrazo", "Vicente Masarnau", 150],
+      ["Paul Delaroche", "Jacques-Louis David", 130],
+      ["Virginie Ancelot", "Adélaïde de Montgolfier", 150],
+      ["Honoré Daumier", "George Sand", 130],
+      ["George Sand", "Stendhal", 130],
+      ["Honoré Daumier", "Eugène Piot", 130],
+      ["Honoré Daumier", "Charles Baudelaire", 130],
+      ["George Sand", "Léon Auguste Asselineau", 130],
+      ["Gregorio Cruzada Villaamil", "Jean Laurent", 130],
+      ["Rosa Bonheur", "Stendhal", 130],
+      ["Léon Auguste Asselineau", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 150],
+      ["Rosa Bonheur", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 150],
+      ["Frédéric Quilliet", "Josefa Bayeu", 150],
+      ["Virginie Ancelot", "Marcel Briguiboul", 150],
+      ["Virginie Ancelot", "Alphonse de Lamartine", 130],
+      ["Ernest Meissonier", "Arsène Houssaye", 130],
+      ["Ernest Meissonier", "Paul Mantz", 130],
+      ["José Zorrilla", "Mariano José Larra", 100],
+      ["Célestin Nanteuil", "Léon Auguste Asselineau", 130],
+      ["Nadar", "Philippe Burty", 130],
+      ["Nadar", "Honoré Daumier", 130],
+      ["Frédéric Quilliet", "1st Duke of Wellington", 130],
+      ["Alphonse de Lamartine", "Marceline Desbordes-Valmore", 130],
+      ["Adolphe Goupil", "José de Salamanca y Mayol (I Marqués de Salamanca)", 130],
+      ["Carlos Luis de Ribera", "Federico de Madrazo", 120],
+      ["Juliette Récamier", "Ferdinand Guillemardet", 130],
+      ["Marceline Desbordes-Valmore", "Tony Johannot", 130],
+      ["Mariano Fortuny y Marsal", "Antonio de Brugada", 130],
+      ["Jean Laurent", "Antonio de Brugada", 130],
+      ["Ramón de Mesonero Romanos", "Francisco Martínez de la Rosa", 130],
+      ["Charles Asselineau", "Achille Ricourt", 130],
+      ["Zacharie Astruc", "Frédéric Villot", 130],
+      ["Tony Johannot", "Delphine de Girardin", 130],
+      ["Alejandro Sureda", "Eugène Dutuit", 130],
+      ["Luis de Madrazo", "Vicente MAsarnau", 130],
+      ["Pierre Lacour", "Pierre Lacour fils", 100],
+      ["Asensio Julià", "Gumersinda Goicoechea", 130],
+      ["Asensio Julià", "Francisco de Goya", 130],
+      ["Carlos III", "Manuel Godoy", 170], 
+      ["Pedro de Madrazo", "William Stirling-Maxwell", 130],
+      ["Valentín Carderera", "William Stirling-Maxwell", 130],
+      ["Philippe Burty", "Pierre Lacour", 130],
+      ["Philippe Burty", "Pierre Lacour fils", 130],
+      ["Frédéric Villot", "Philippe Burty", 130],
+      ["Arsène Houssaye", "Nadar", 130],
+      ["Marie Nodier", "Marceline Desbordes-Valmore", 130],
+      ["Marie Nodier", "Tony Johannot", 130],
+      ["Leandro Fernández de Mortaín", "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin", 130],
+      ["Marquis of La Romana", "II Duke of San Carlos", 130],
+      ["Adolphe Goupil", "Pedro de Madrazo", 130],
+      ["Pedro de Madrazo", "José de Madrazo", 100],
+      ["Federico de Madrazo", "José de Madrazo", 100],
+      ["Antoine-Jean Gros", "Eugenio Ochoa", 130],
+      ["Carlos Luis de Ribera", "Adrien Dauzats", 130],
+      ["Pierre Lacour fils", "Valentín Carderera", 130],
+      ["Pascual de Gayangos y Arce", "Pharamond Blanchard", 130],
+      ["Pascual de Gayangos y Arce", "Vicente López", 130],
+      ["Achille Ricourt", "Célestin Nanteuil", 130],
+      ["Delphine de Girardin", "Alphonse de Lamartine", 130],
+      ["Jenaro Pérez Villaamil", "Francisco Martínez de la Rosa", 130],
+      ["Rafael Esteve", "Francisco Bayeu", 130],
+      ["Francisco Bayeu", "Mariano Salvador Maella", 130],
+      ["Manuel Godoy", "Eugenia de Montijo", 130],
+      ["Manuel Godoy", "Joaquín María Ferrer", 130],
+      ["II Duke of San Carlos", "Manuel Godoy", 130],
+      ["Eugenio Ochoa", "Jean-Auguste-Dominique Ingres", 130],
+      ["Charles Yriarte", "Frédéric Villot", 130], 
+      ["Théophile Thoré", "Nadar", 130],
+      ["Nadar", "Baron Taylor", 130],
+      ["Louis Viardot", "Théophile Gautier", 130],
+      ["Louis Viardot", "Nadar", 130],
+      ["Giambattista Tiepolo", "Giandomenico Tiepolo", 130],
+      ["J. J. Grandville", "Eugène Delacroix", 130],
+      ["George Sand", "Célestin Nanteuil", 130],
+      ["Alexandre Dumas père", "Charles Baudelaire", 130],
+      ["Louis Daguerre", "Philippe Burty", 130],
+      ["Louis Daguerre", "Carlos Luis de Ribera", 130],
+      ["Louis Daguerre", "Adrien Dauzats", 130],
+      ["Carlos Luis de Ribera", "Philippe Burty", 130],
+      ["Zacharie Astruc", "Edgar Degas", 130],
+      ["Gregorio Cruzada Villaamil", "Pierre Lacour", 130],
+      ["Vicente López", "Anton Raphael Mengs", 130],
+      ["Mariano Goya", "Richard Ford", 130],
+      ["Honoré de Balzac", "J. J. Grandville", 130],
+      ["J. J. Grandville", "Charles Motte", 130],
+      ["Achille Devéria", "Charles Motte", 130],
+      ["María Francisca de Sales Portocarrero, VI Countess of Montijo", "Prince Antoine, Duke of Montpensier", 130]
+      // supercali overlap
+    ];
 
     function getNodeHalo(node) {
       const size = node?.size || 25;
@@ -3298,8 +3482,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     // 3) Empujón anti-overlap cuando ya están puestas las imágenes
-    // NOTE: This code is disabled because node positions are now controlled via positions_config.json
-    /*
     setTimeout(() => {
       if (!window.__didNudgeOnce) {
         window.__didNudgeOnce = true;
@@ -3380,21 +3562,10 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
 
           console.log("=== LLAMANDO A handleInitialHash() ===");
-          handleInitialHash().catch(err => console.error("Error en handleInitialHash:", err));
+          handleInitialHash();
         }, 1500);
       }
     }, 150);
-    */
-    
-    // Call handleInitialHash even when saved positions are used
-    setTimeout(() => {
-      console.log("=== GUARDANDO PANEL DEFAULT ===");
-      if (!__defaultNodeInfoHTML) {
-        __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-      }
-      console.log("=== LLAMANDO A handleInitialHash() ===");
-      handleInitialHash().catch(err => console.error("Error en handleInitialHash:", err));
-    }, 1500);
   });
 
     function highlightNeighborhood(nodeId) {
@@ -4076,7 +4247,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       window.VIS_NETWORK.selectNodes([nodeId]);
 
       setTimeout(() => {
-        window.VIS_NETWORK.emit('click', {
+        window.VIS_NETWORK.body.emitter.emit('click', {
           nodes: [nodeId],
           edges: [],
           pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
@@ -4205,8 +4376,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           return window.VIS_NETWORK && 
                 nodes && 
                 edges && 
-                nodes.get().length > 0 && 
-                edges.get().length > 0;
+                nodes.length > 0 && 
+                edges.length > 0;
         };
 
         // Si la red no está lista y aún tenemos reintentos, esperar y reintentar
@@ -4257,7 +4428,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               // Luego seleccionarlo
               window.VIS_NETWORK.selectNodes([node.id]);
               // Disparar el evento click
-              window.VIS_NETWORK.emit('click', {
+              window.VIS_NETWORK.body.emitter.emit('click', {
                 nodes: [node.id],
                 edges: [],
                 pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
@@ -4308,7 +4479,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             });
 
               window.VIS_NETWORK.selectNodes([node.id]);
-              window.VIS_NETWORK.emit('click', {
+              window.VIS_NETWORK.body.emitter.emit('click', {
                 nodes: [node.id],
                 edges: [],
                 pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
@@ -4407,7 +4578,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               
               // Disparar el evento click
               setTimeout(() => {
-                window.VIS_NETWORK.emit('click', {
+                window.VIS_NETWORK.body.emitter.emit('click', {
                   nodes: [],
                   edges: [matchingEdge.id],
                   pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
