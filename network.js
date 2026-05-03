@@ -3177,13 +3177,16 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
 
           console.log("=== LLAMANDO A handleInitialHash() ===");
-          handleInitialHash();
+          handleInitialHash()
+            .then(result => console.log("✅ handleInitialHash completed:", result))
+            .catch(err => console.error("❌ handleInitialHash error:", err));
 
           // Listen for hash changes (when user clicks links with hash URLs)
           window.addEventListener('hashchange', () => {
             console.log("🔄 Hash cambió, nuevo hash:", window.location.hash);
             __hashProcessed = false;
-            handleInitialHash();
+            // Don't return the promise - just call the function
+            handleInitialHash().catch(err => console.error("Error in hashchange:", err));
           });
         }, 1500);
       }
@@ -3993,11 +3996,9 @@ document.addEventListener('DOMContentLoaded', async function () {
           resolve(false);
           return;
         }
-        console.log("=== HANDLE INITIAL HASH (intento " + (retryCount + 1) + "/" + MAX_RETRIES + ") ===");
-        console.log("Hash detectado:", rawHash);
-
+        
         if (!rawHash) {
-          console.log("No hay hash, mostrando red normal");
+          console.log("⚠️ No hash in URL");
           __hashProcessed = true;
           resolve(false);
           return;
@@ -4010,15 +4011,16 @@ document.addEventListener('DOMContentLoaded', async function () {
           const edgesOk = !!edges;
           const nodesCount = nodes ? nodes.get().length : 0;
           const edgesCount = edges ? edges.get().length : 0;
+          const ready = networkOk && nodesOk && edgesOk && nodesCount > 0 && edgesCount > 0;
           
-          console.log("🔧 Network check:", {networkOk, nodesOk, edgesOk, nodesCount, edgesCount});
+          console.log("🔧 Network check:", {networkOk, nodesOk, edgesOk, nodesCount, edgesCount, ready});
           
-          return networkOk && nodesOk && edgesOk && nodesCount > 0 && edgesCount > 0;
+          return ready;
         };
 
         // Si la red no está lista y aún tenemos reintentos, esperar y reintentar
         if (!isNetworkReady() && retryCount < MAX_RETRIES) {
-          console.log("Red no lista aún, reintentando en 500ms...");
+          console.log("⏳ Network not ready yet (attempt " + (retryCount+1) + "/" + MAX_RETRIES + "), retrying in 500ms...");
           setTimeout(() => {
             handleInitialHash(retryCount + 1).then(resolve);
           }, 500);
@@ -4026,12 +4028,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
         if (!isNetworkReady()) {
-          console.error("No se pudo cargar la red después de " + MAX_RETRIES + " intentos");
+          console.error("❌ Network failed to load after " + MAX_RETRIES + " retries");
+          __hashProcessed = true;
           resolve(false);
           return;
         }
 
-        console.log("✅ Red lista, procesando hash...");
+        console.log("✅ Network ready, processing hash...");
         
         // ===== NODO: formato antiguo o nuevo =====
         if (!rawHash.includes('/')) {
@@ -4075,6 +4078,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
           
           console.log("Nodo NO encontrado:", decodedHash);
+          __hashProcessed = true;
           resolve(false);
           return;
         }
@@ -4136,6 +4140,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           } else {
             console.log("❌ Nodo NO encontrado:", decodedId);
+            __hashProcessed = true;
             resolve(false);
             return;
           }
@@ -4237,12 +4242,14 @@ document.addEventListener('DOMContentLoaded', async function () {
             return;
           } else {
             console.log("❌ Edge NO encontrado entre", left, "y", right);
+            __hashProcessed = true;
             resolve(false);
             return;
           }
         }
 
         console.log("❌ Tipo no reconocido:", type);
+        __hashProcessed = true;
         resolve(false);
       });
     }
