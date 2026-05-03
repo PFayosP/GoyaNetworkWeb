@@ -4376,8 +4376,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           return window.VIS_NETWORK && 
                 nodes && 
                 edges && 
-                nodes.length > 0 && 
-                edges.length > 0;
+                nodes.get().length > 0 && 
+                edges.get().length > 0;
         };
 
         // Si la red no está lista y aún tenemos reintentos, esperar y reintentar
