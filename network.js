@@ -1046,6 +1046,53 @@ window.filterGraph = function() {
 // ===== HASH NAVIGATION SETUP =====
 let __hashProcessed = false;
 
+// ===== GLOBAL HELPER FUNCTIONS FOR HASH NAVIGATION =====
+function slugifyName(name) {
+  return String(name)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Remove accents
+    .replace(/ /g, '_')               // Replace spaces with underscores
+    .toLowerCase();                   // Make lowercase
+}
+
+function unslugifyName(slug) {
+  return String(slug).replace(/_/g, ' ');
+}
+
+function normalizeForComparison(str) {
+  if (!str || typeof str !== 'string') {
+    return '';
+  }
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
+function makeNodeHash(nodeId) {
+  return '#node/' + slugifyName(nodeId);
+}
+
+function makeEdgeHash(edgeId) {
+  if (typeof edges === 'undefined' || !edges) return '';
+  const edge = edges.get(edgeId);
+  if (!edge) return '';
+
+  if (typeof nodes === 'undefined' || !nodes) return '';
+  const fromNode = nodes.get(edge.from);
+  const toNode = nodes.get(edge.to);
+  if (!fromNode || !toNode) return '';
+
+  const a = fromNode.id;
+  const b = toNode.id;
+
+  // Ordenar para que el hash sea consistente
+  const ordered = [a, b].sort((x, y) =>
+    x.localeCompare(y, undefined, { sensitivity: 'base' })
+  );
+
+  return '#edge/' + slugifyName(ordered[0]) + '--' + slugifyName(ordered[1]);
+}
+
+// ===== END GLOBAL HELPERS =====
+
 // Simple hash navigation - no promises to avoid Chrome extension errors
 function handleInitialHash(retryCount = 0) {
   const MAX_RETRIES = 5;
@@ -4049,48 +4096,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
 
-    // Convert name to clean URL format: remove accents, replace spaces with underscores
-    function slugifyName(name) {
-      return String(name)
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '') // Remove accents
-        .replace(/ /g, '_')               // Replace spaces with underscores
-        .toLowerCase();                   // Make lowercase
-    }
-
-    // Convert URL slug back to display name (find the actual node by matching normalized names)
-    function unslugifyName(slug) {
-      // Just replace underscores back to spaces - we'll match against normalized names
-      return String(slug).replace(/_/g, ' ');
-    }
-
-    function normalizeForComparison(str) {
-      // If str is undefined, null, or not a string, return empty string
-      if (!str || typeof str !== 'string') {
-        console.warn("normalizeForComparison recibió:", str);
-        return '';
-      }
-      return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-    }
-
-    function makeNodeHash(nodeId) {
-      return '#node/' + slugifyName(nodeId);
-    }
-
-
     function updateNodeURL(nodeId) {
       const newUrl = window.location.pathname + makeNodeHash(nodeId);
       window.history.pushState({}, '', newUrl);
     }
 
     function updateEdgeURL(edgeId) {
-      const hash = makeEdgeHash(edgeId);
-      if (!hash) return;
-      const newUrl = window.location.pathname + hash;
-      window.history.pushState({}, '', newUrl);
-    }
-
-    function makeEdgeHash(edgeId) {
       const edge = edges.get(edgeId);
       if (!edge) return '';
 
@@ -4106,7 +4117,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         x.localeCompare(y, undefined, { sensitivity: 'base' })
       );
 
-      return '#edge/' + slugifyName(ordered[0]) + '--' + slugifyName(ordered[1]);
+      const hash = '#edge/' + slugifyName(ordered[0]) + '--' + slugifyName(ordered[1]);
+      const newUrl = window.location.pathname + hash;
+      window.history.pushState({}, '', newUrl);
+    }
     }
 
 
