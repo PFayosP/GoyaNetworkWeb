@@ -4121,8 +4121,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       const newUrl = window.location.pathname + hash;
       window.history.pushState({}, '', newUrl);
     }
-    }
-
 
 
       // Restaura el panel nodeInfo a su estado por defecto (texto + Members list)
