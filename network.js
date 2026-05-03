@@ -3181,7 +3181,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           // Listen for hash changes (when user clicks links with hash URLs)
           window.addEventListener('hashchange', () => {
-            console.log("Hash cambió, procesando nuevo hash...");
+            console.log("🔄 Hash cambió, nuevo hash:", window.location.hash);
             __hashProcessed = false;
             handleInitialHash();
           });
@@ -3986,10 +3986,13 @@ document.addEventListener('DOMContentLoaded', async function () {
       
       return new Promise((resolve) => {
         const rawHash = window.location.hash.substring(1);
-          if (__hashProcessed) {
-            resolve(false);
-            return;
-          }
+        console.log("📍 handleInitialHash called, attempt", retryCount + 1, "rawHash:", rawHash);
+        
+        if (__hashProcessed) {
+          console.log("⚠️ Hash already processed, returning");
+          resolve(false);
+          return;
+        }
         console.log("=== HANDLE INITIAL HASH (intento " + (retryCount + 1) + "/" + MAX_RETRIES + ") ===");
         console.log("Hash detectado:", rawHash);
 
@@ -4002,11 +4005,15 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // Verificar si la red está lista
         const isNetworkReady = () => {
-          return window.VIS_NETWORK && 
-                nodes && 
-                edges && 
-                nodes.get().length > 0 && 
-                edges.get().length > 0;
+          const networkOk = !!window.VIS_NETWORK;
+          const nodesOk = !!nodes;
+          const edgesOk = !!edges;
+          const nodesCount = nodes ? nodes.get().length : 0;
+          const edgesCount = edges ? edges.get().length : 0;
+          
+          console.log("🔧 Network check:", {networkOk, nodesOk, edgesOk, nodesCount, edgesCount});
+          
+          return networkOk && nodesOk && edgesOk && nodesCount > 0 && edgesCount > 0;
         };
 
         // Si la red no está lista y aún tenemos reintentos, esperar y reintentar
@@ -4024,7 +4031,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           return;
         }
 
-        console.log("Red lista, procesando hash...");
+        console.log("✅ Red lista, procesando hash...");
         
         // ===== NODO: formato antiguo o nuevo =====
         if (!rawHash.includes('/')) {
