@@ -3184,6 +3184,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
           console.log("=== LLAMANDO A handleInitialHash() ===");
           handleInitialHash();
+
+          // Listen for hash changes (when user clicks links with hash URLs)
+          window.addEventListener('hashchange', () => {
+            console.log("Hash cambió, procesando nuevo hash...");
+            __hashProcessed = false;
+            handleInitialHash();
+          });
         }, 1500);
       }
     }, 150);
@@ -3918,16 +3925,23 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
 
+    // Convert name to clean URL format: remove accents, replace spaces with underscores
     function slugifyName(name) {
-      return encodeURIComponent(String(name).replace(/ /g, '_'));
+      return String(name)
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '') // Remove accents
+        .replace(/ /g, '_')               // Replace spaces with underscores
+        .toLowerCase();                   // Make lowercase
     }
 
+    // Convert URL slug back to display name (find the actual node by matching normalized names)
     function unslugifyName(slug) {
-      return decodeURIComponent(String(slug)).replace(/_/g, ' ');
+      // Just replace underscores back to spaces - we'll match against normalized names
+      return String(slug).replace(/_/g, ' ');
     }
-    // 👇 PEGA LA NUEVA FUNCIÓN AQUÍ, DESPUÉS DE LA LLAVE DE CIERRE
+
     function normalizeForComparison(str) {
-      // Si str es undefined, null, o no es un string, devolver string vacío
+      // If str is undefined, null, or not a string, return empty string
       if (!str || typeof str !== 'string') {
         console.warn("normalizeForComparison recibió:", str);
         return '';
