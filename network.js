@@ -637,7 +637,7 @@ window.search = function(nodeId) {
 
   setTimeout(() => {
     window.VIS_NETWORK.selectNodes([nodeId]);
-    window.VIS_NETWORK.body.emitter.emit('click', {
+    window.VIS_NETWORK.emit('click', {
       nodes: [nodeId],
       edges: [],
       pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
@@ -4247,7 +4247,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       window.VIS_NETWORK.selectNodes([nodeId]);
 
       setTimeout(() => {
-        window.VIS_NETWORK.body.emitter.emit('click', {
+        window.VIS_NETWORK.emit('click', {
           nodes: [nodeId],
           edges: [],
           pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
@@ -4428,7 +4428,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               // Luego seleccionarlo
               window.VIS_NETWORK.selectNodes([node.id]);
               // Disparar el evento click
-              window.VIS_NETWORK.body.emitter.emit('click', {
+              window.VIS_NETWORK.emit('click', {
                 nodes: [node.id],
                 edges: [],
                 pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
@@ -4479,7 +4479,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             });
 
               window.VIS_NETWORK.selectNodes([node.id]);
-              window.VIS_NETWORK.body.emitter.emit('click', {
+              window.VIS_NETWORK.emit('click', {
                 nodes: [node.id],
                 edges: [],
                 pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
@@ -4578,7 +4578,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               
               // Disparar el evento click
               setTimeout(() => {
-                window.VIS_NETWORK.body.emitter.emit('click', {
+                window.VIS_NETWORK.emit('click', {
                   nodes: [],
                   edges: [matchingEdge.id],
                   pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
