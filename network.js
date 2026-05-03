@@ -1699,19 +1699,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         title,
         color: { color: style.color },
         width: style.width,
-        physics: true,           // ensure physics is enabled
+        physics: false,
         length: edgeLength        // vis.js uses 'length' property for edge spring length
       };
-
-      // Debug: log edges with strength values
-      if (edge.strength) {
-        console.log(`Edge ${edge.from}-${edge.to}: strength=${edge.strength}, length=${edgeLength}px`);
-      }
 
       return processedEdge;
     }));
     window.edges = edges;
-    console.log(`Loaded ${edges.length} edges. ${data.edges.filter(e => e.strength).length} have strength values.`);
 
     // ===================== MINI-FAMILIAS (anchors invisibles) =====================
     // NOTA: esto NO toca tus edges reales. Añade nodos/edges "fantasma" para compactar grupos.
@@ -1756,7 +1750,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           size: 1,
           mass: 0.01,
           clusterAnchor: true,
-          physics: true,
+          physics: false,
           color: { border: "rgba(0,0,0,0)", background: "rgba(0,0,0,0)" },
           hidden: true,
           selectable: false
@@ -1772,7 +1766,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               id: `AEDGE__${clusterId}__${memberId}__${k}`,
               from: anchorId,
               to: memberId,
-              physics: true,
+              physics: false,
               smooth: false,
               _isClusterEdge: true,
               length: L,
@@ -2181,15 +2175,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       // (actual processing happens in edges.map() after loading JSON)
 
       physics: {
-        enabled: true, 
-        solver: 'repulsion',
-        repulsion: {
-          nodeDistance: 600,         // increased from 500 for stronger node separation and collision prevention
-          centralGravity: 0.018,     // ↓ Slightly less gravity
-          springLength: 210,         // ↑ Longer springs for more separation
-          springConstant: 0.012,     // ↓ Softer springs
-          damping: 0.52              // Slightly more damping
-        }
+        enabled: false
       },
 
         // 🔥 AÑADE ESTA NUEVA OPCIÓN (ANTI-OVERLAP INTEGRADO):
@@ -3482,6 +3468,8 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     // 3) Empujón anti-overlap cuando ya están puestas las imágenes
+    // NOTE: This code is disabled because node positions are now controlled via positions_config.json
+    /*
     setTimeout(() => {
       if (!window.__didNudgeOnce) {
         window.__didNudgeOnce = true;
@@ -3566,6 +3554,17 @@ document.addEventListener('DOMContentLoaded', async function () {
         }, 1500);
       }
     }, 150);
+    */
+    
+    // Call handleInitialHash even when saved positions are used
+    setTimeout(() => {
+      console.log("=== GUARDANDO PANEL DEFAULT ===");
+      if (!__defaultNodeInfoHTML) {
+        __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
+      }
+      console.log("=== LLAMANDO A handleInitialHash() ===");
+      handleInitialHash().catch(err => console.error("Error en handleInitialHash:", err));
+    }, 1500);
   });
 
     function highlightNeighborhood(nodeId) {
