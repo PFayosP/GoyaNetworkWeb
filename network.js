@@ -1304,6 +1304,7 @@ function handleInitialHash(retryCount = 0) {
 }
 
 document.addEventListener('DOMContentLoaded', async function () {
+  console.log("✅ DOMContentLoaded fired! handleInitialHash exists?", typeof handleInitialHash);
   
   applyUIStrings();
 
@@ -3437,16 +3438,18 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
 
           console.log("=== LLAMANDO A handleInitialHash() ===");
-          handleInitialHash()
-            .then(result => console.log("✅ handleInitialHash completed:", result))
-            .catch(err => console.error("❌ handleInitialHash error:", err));
+          console.log(">>> About to call handleInitialHash, function exists?", !!handleInitialHash);
+          if (typeof handleInitialHash === 'function') {
+            handleInitialHash();
+          } else {
+            console.error(">>> ERROR: handleInitialHash is not a function!", typeof handleInitialHash);
+          }
 
           // Listen for hash changes (when user clicks links with hash URLs)
           window.addEventListener('hashchange', () => {
             console.log("🔄 Hash cambió, nuevo hash:", window.location.hash);
             __hashProcessed = false;
-            // Don't return the promise - just call the function
-            handleInitialHash().catch(err => console.error("Error in hashchange:", err));
+            handleInitialHash();
           });
         }, 1500);
       }
