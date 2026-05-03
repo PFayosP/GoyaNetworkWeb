@@ -1097,10 +1097,8 @@ function makeEdgeHash(edgeId) {
 function handleInitialHash(retryCount = 0) {
   const MAX_RETRIES = 5;
   const rawHash = window.location.hash.substring(1);
-  console.log(`📍 handleInitialHash called - rawHash: "${rawHash}", __hashProcessed: ${__hashProcessed}, retryCount: ${retryCount}`);
   
   if (__hashProcessed || !rawHash) {
-    console.log(`  ⚠️ Early return: __hashProcessed=${__hashProcessed}, rawHash="${rawHash}"`);
     return;
   }
   
@@ -1110,8 +1108,6 @@ function handleInitialHash(retryCount = 0) {
   const nodesCount = nodes ? nodes.get().length : 0;
   const edgesCount = edges ? edges.get().length : 0;
   const ready = networkOk && nodesOk && edgesOk && nodesCount > 0 && edgesCount > 0;
-  
-  console.log(`  Status: network=${networkOk}, nodes=${nodesOk}(${nodesCount}), edges=${edgesOk}(${edgesCount}) → ready=${ready}`);
   
   if (!ready && retryCount < MAX_RETRIES) {
     console.log(`🔄 Hash navigation retry ${retryCount + 1}/${MAX_RETRIES} - networkOk: ${networkOk}, nodesOk: ${nodesOk} (${nodesCount}), edgesOk: ${edgesOk} (${edgesCount})`);
@@ -1125,15 +1121,12 @@ function handleInitialHash(retryCount = 0) {
   }
 
   __hashProcessed = true;
-  console.log("🎯 Hash navigation READY - raw hash:", rawHash);
   
   // Old format: #Node_Name
   if (!rawHash.includes('/')) {
     const decodedHash = decodeURIComponent(rawHash).replace(/_/g, ' ');
     let node = nodes.get().find(n => n.id === decodedHash || n.label === decodedHash);
-    console.log(`  [Legacy] Searching for: "${decodedHash}" → Found:`, !!node);
     if (node) {
-      console.log(`  ✅ Selecting node: ${node.id}`);
       setTimeout(() => {
         const pos = window.VIS_NETWORK.getPosition(node.id);
         window.VIS_NETWORK.moveTo({position: pos, scale: window.VIS_NETWORK.getScale(), animation: {duration: 500}});
@@ -1151,22 +1144,9 @@ function handleInitialHash(retryCount = 0) {
   if (type === 'node') {
     const decodedId = unslugifyName(value);
     const decodedNorm = normalizeForComparison(decodedId);
-    console.log(`  [Node] Slug: "${value}" → Decoded: "${decodedId}" → Normalized: "${decodedNorm}"`);
-    let node = nodes.get().find(n => {
-      const nNorm = normalizeForComparison(n.id);
-      if (nNorm === decodedNorm) {
-        console.log(`    ✓ MATCH: "${n.id}"`);
-        return true;
-      }
-      return false;
-    });
+    let node = nodes.get().find(n => normalizeForComparison(n.id) === decodedNorm);
     
-    if (!node) {
-      console.log(`  ⚠️ No node found with normalized name "${decodedNorm}"`);
-      // Show available nodes for debugging
-      console.log("  Available nodes (first 5):", nodes.get().slice(0, 5).map(n => ({id: n.id, norm: normalizeForComparison(n.id)})));
-    } else {
-      console.log(`  ✅ Selecting node: ${node.id}`);
+    if (node) {
       setTimeout(() => {
         const pos = window.VIS_NETWORK.getPosition(node.id);
         window.VIS_NETWORK.moveTo({position: pos, scale: window.VIS_NETWORK.getScale(), animation: {duration: 500}});
@@ -1186,7 +1166,6 @@ function handleInitialHash(retryCount = 0) {
     const leftNorm = normalizeForComparison(left);
     const rightNorm = normalizeForComparison(right);
 
-    console.log(`  [Edge] Searching: "${left}" ↔ "${right}"`);
     let matchingEdge = edges.get().find(edge => {
       if (edge._isClusterEdge || edge.hidden) return false;
       const fromNode = nodes.get(edge.from);
@@ -1197,7 +1176,6 @@ function handleInitialHash(retryCount = 0) {
     });
 
     if (matchingEdge) {
-      console.log(`  ✅ Selecting edge: ${matchingEdge.from} → ${matchingEdge.to}`);
       setTimeout(() => {
         const fromPos = window.VIS_NETWORK.getPosition(matchingEdge.from);
         const toPos = window.VIS_NETWORK.getPosition(matchingEdge.to);
@@ -1209,22 +1187,12 @@ function handleInitialHash(retryCount = 0) {
         window.VIS_NETWORK.selectEdges([matchingEdge.id]);
         window.VIS_NETWORK.emit('click', {nodes: [], edges: [matchingEdge.id], pointer: {DOM: {x: 0, y: 0}, canvas: {x: 0, y: 0}}});
       }, 100);
-    } else {
-      console.log(`  ⚠️ No edge found`);
     }
   }
 }
 
 document.addEventListener('DOMContentLoaded', async function () {
-  console.log("✅ DOMContentLoaded fired! handleInitialHash exists?", typeof handleInitialHash);
-  
   applyUIStrings();
-
-  // ===== NUEVO: Verificar hash inmediatamente =====
-  if (window.location.hash && window.location.hash.length > 1) {
-    console.log("=== HASH DETECTADO AL INICIO ===");
-    console.log("Hash:", window.location.hash);
-  }
 
   if (CURRENT_LANG === 'es') {
         sortSelectOptionsAlphabetically('professionFilter');
@@ -3344,23 +3312,16 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // ===== ALWAYS CALL handleInitialHash after network is ready (with or without saved positions) =====
     setTimeout(() => {
-      console.log("=== GUARDANDO PANEL DEFAULT ===");
-
       if (!__defaultNodeInfoHTML) {
         __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
       }
 
-      console.log("=== LLAMANDO A handleInitialHash() ===");
-      console.log(">>> About to call handleInitialHash, function exists?", !!handleInitialHash);
       if (typeof handleInitialHash === 'function') {
         handleInitialHash();
-      } else {
-        console.error(">>> ERROR: handleInitialHash is not a function!", typeof handleInitialHash);
       }
 
       // Listen for hash changes (when user clicks links with hash URLs)
       window.addEventListener('hashchange', () => {
-        console.log("🔄 Hash cambió, nuevo hash:", window.location.hash);
         __hashProcessed = false;
         handleInitialHash();
       });
