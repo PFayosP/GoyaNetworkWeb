@@ -1043,6 +1043,266 @@ window.filterGraph = function() {
   __gnRenderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds: matchingIds, totalCount });
 };
 
+// ===== HASH NAVIGATION SETUP =====
+let __hashProcessed = false;
+
+// Handle initial URL hash - defined here so it's available before DOMContentLoaded
+function handleInitialHash(retryCount = 0) {
+  const MAX_RETRIES = 5;
+  
+  return new Promise((resolve) => {
+    const rawHash = window.location.hash.substring(1);
+    console.log("📍 handleInitialHash called, attempt", retryCount + 1, "rawHash:", rawHash);
+    
+    if (__hashProcessed) {
+      console.log("⚠️ Hash already processed, returning");
+      resolve(false);
+      return;
+    }
+    
+    if (!rawHash) {
+      console.log("⚠️ No hash in URL");
+      __hashProcessed = true;
+      resolve(false);
+      return;
+    }
+
+    // Verificar si la red está lista
+    const isNetworkReady = () => {
+      const networkOk = !!window.VIS_NETWORK;
+      const nodesOk = !!nodes;
+      const edgesOk = !!edges;
+      const nodesCount = nodes ? nodes.get().length : 0;
+      const edgesCount = edges ? edges.get().length : 0;
+      const ready = networkOk && nodesOk && edgesOk && nodesCount > 0 && edgesCount > 0;
+      
+      console.log("🔧 Network check:", {networkOk, nodesOk, edgesOk, nodesCount, edgesCount, ready});
+      
+      return ready;
+    };
+
+    // Si la red no está lista y aún tenemos reintentos, esperar y reintentar
+    if (!isNetworkReady() && retryCount < MAX_RETRIES) {
+      console.log("⏳ Network not ready yet (attempt " + (retryCount+1) + "/" + MAX_RETRIES + "), retrying in 500ms...");
+      setTimeout(() => {
+        handleInitialHash(retryCount + 1).then(resolve);
+      }, 500);
+      return;
+    }
+
+    if (!isNetworkReady()) {
+      console.error("❌ Network failed to load after " + MAX_RETRIES + " retries");
+      __hashProcessed = true;
+      resolve(false);
+      return;
+    }
+
+    console.log("✅ Network ready, processing hash...");
+    
+    // ===== NODO: formato antiguo o nuevo =====
+    if (!rawHash.includes('/')) {
+      // Formato antiguo: #Adrien_Dauzats
+      const decodedHash = decodeURIComponent(rawHash).replace(/_/g, ' ');
+      console.log("Buscando nodo antiguo:", decodedHash);
+      
+      // Buscar por id o label
+      let node = null;
+      const allNodes = nodes.get();
+      for (let i = 0; i < allNodes.length; i++) {
+        const n = allNodes[i];
+        if (n.id === decodedHash || n.label === decodedHash) {
+          node = n;
+          break;
+        }
+      }
+      
+      if (node) {
+        console.log("Encontrado nodo antiguo:", node.id);
+        __hashProcessed = true;
+        setTimeout(() => {
+          const pos = window.VIS_NETWORK.getPosition(node.id);
+          window.VIS_NETWORK.moveTo({
+            position: pos,
+            scale: window.VIS_NETWORK.getScale(),
+            animation: { duration: 500 }
+          });
+          window.VIS_NETWORK.selectNodes([node.id]);
+          window.VIS_NETWORK.emit('click', {
+            nodes: [node.id],
+            edges: [],
+            pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
+          });
+          resolve(true);
+        }, 300);
+        return;
+      }
+      
+      console.log("Nodo NO encontrado:", decodedHash);
+      __hashProcessed = true;
+      resolve(false);
+      return;
+    }
+
+    // ===== FORMATO NUEVO: tipo/valor =====
+    const slashIndex = rawHash.indexOf('/');
+    const type = rawHash.substring(0, slashIndex);
+    const value = rawHash.substring(slashIndex + 1);
+    
+    console.log("Tipo:", type, "Valor:", value);
+
+    // ===== PROCESAR NODO =====
+    if (type === 'node') {
+      const decodedId = unslugifyName(value);
+      console.log("🔍 Buscando nodo con URL:", value, "-> decodedId:", decodedId);
+      
+      const decodedNorm = normalizeForComparison(decodedId);
+      console.log("🔍 Normalized search string:", decodedNorm);
+      
+      let node = null;
+      const allNodes = nodes.get();
+      console.log("🔍 Total nodes en red:", allNodes.length);
+      
+      for (let i = 0; i < Math.min(3, allNodes.length); i++) {
+        const n = allNodes[i];
+        console.log(`  Sample node ${i}: "${n.id}" -> normalized: "${normalizeForComparison(n.id)}"`);
+      }
+      
+      for (let i = 0; i < allNodes.length; i++) {
+        const n = allNodes[i];
+        const nNorm = normalizeForComparison(n.id);
+        if (nNorm === decodedNorm) {
+          node = n;
+          console.log("✅ Nodo encontrado:", n.id);
+          break;
+        }
+      }
+      
+      if (node) {
+        console.log("Nodo encontrado, seleccionando...");
+        __hashProcessed = true;
+        setTimeout(() => {
+          const pos = window.VIS_NETWORK.getPosition(node.id);
+          window.VIS_NETWORK.moveTo({
+            position: pos,
+            scale: window.VIS_NETWORK.getScale(),
+            animation: { duration: 500 }
+          });
+          window.VIS_NETWORK.selectNodes([node.id]);
+          window.VIS_NETWORK.emit('click', {
+            nodes: [node.id],
+            edges: [],
+            pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
+          });
+          resolve(true);
+        }, 300);
+        return;
+      } else {
+        console.log("❌ Nodo NO encontrado:", decodedId);
+        __hashProcessed = true;
+        resolve(false);
+        return;
+      }
+    }
+
+    // ===== PROCESAR EDGE =====
+    if (type === 'edge') {
+      const parts = value.split('--');
+      console.log("🔍 URL edge parts:", parts);
+      
+      if (parts.length !== 2) {
+        console.log("❌ Formato de edge inválido (no tiene --)");
+        resolve(false);
+        return;
+      }
+
+      const left = unslugifyName(parts[0]);
+      const right = unslugifyName(parts[1]);
+      console.log("🔍 Unslugified names:", left, "y", right);
+      
+      if (!left || !right) {
+        console.error("❌ Edge con nombre inválido:", {left, right});
+        resolve(false);
+        return;
+      }
+      
+      const leftNorm = normalizeForComparison(left);
+      const rightNorm = normalizeForComparison(right);
+      console.log("🔍 Normalized names:", leftNorm, "y", rightNorm);
+
+      let matchingEdge = null;
+      const allEdges = edges.get();
+      console.log("🔍 Total edges en red:", allEdges.length);
+      
+      for (let i = 0; i < allEdges.length; i++) {
+        const edge = allEdges[i];
+        
+        if (edge._isClusterEdge) continue;
+        if (edge.hidden) continue;
+        
+        const fromNode = nodes.get(edge.from);
+        const toNode = nodes.get(edge.to);
+        
+        if (!fromNode || !toNode) continue;
+        
+        const fromNorm = normalizeForComparison(fromNode.id);
+        const toNorm = normalizeForComparison(toNode.id);
+        
+        const pairNorm = [fromNorm, toNorm].sort();
+        
+        if (pairNorm[0] === leftNorm && pairNorm[1] === rightNorm) {
+          matchingEdge = edge;
+          console.log("✅ EDGE ENCONTRADO!", edge.id);
+          break;
+        }
+      }
+
+      if (matchingEdge) {
+        console.log("✅ Seleccionando edge:", matchingEdge.id);
+        __hashProcessed = true;
+        setTimeout(() => {
+          try {
+            const fromPos = window.VIS_NETWORK.getPosition(matchingEdge.from);
+            const toPos = window.VIS_NETWORK.getPosition(matchingEdge.to);
+            if (fromPos && toPos) {
+              const centerX = (fromPos.x + toPos.x) / 2;
+              const centerY = (fromPos.y + toPos.y) / 2;
+              window.VIS_NETWORK.moveTo({
+                position: { x: centerX, y: centerY },
+                scale: window.VIS_NETWORK.getScale(),
+                animation: { duration: 500 }
+              });
+            }
+          } catch(e) {
+            console.log("Error al mover cámara:", e);
+          }
+          
+          window.VIS_NETWORK.selectEdges([matchingEdge.id]);
+          
+          setTimeout(() => {
+            window.VIS_NETWORK.emit('click', {
+              nodes: [],
+              edges: [matchingEdge.id],
+              pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
+            });
+          }, 100);
+          
+          resolve(true);
+        }, 500);
+        return;
+      } else {
+        console.log("❌ Edge NO encontrado entre", left, "y", right);
+        __hashProcessed = true;
+        resolve(false);
+        return;
+      }
+    }
+
+    console.log("❌ Tipo no reconocido:", type);
+    __hashProcessed = true;
+    resolve(false);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', async function () {
   
   applyUIStrings();
@@ -3982,281 +4242,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       return '#edge/' + slugifyName(ordered[0]) + '--' + slugifyName(ordered[1]);
     }
 
-    let __hashProcessed = false;
-    // Handle initial URL hash
-    function handleInitialHash(retryCount = 0) {
-      const MAX_RETRIES = 5;
-      
-      return new Promise((resolve) => {
-        const rawHash = window.location.hash.substring(1);
-        console.log("📍 handleInitialHash called, attempt", retryCount + 1, "rawHash:", rawHash);
-        
-        if (__hashProcessed) {
-          console.log("⚠️ Hash already processed, returning");
-          resolve(false);
-          return;
-        }
-        
-        if (!rawHash) {
-          console.log("⚠️ No hash in URL");
-          __hashProcessed = true;
-          resolve(false);
-          return;
-        }
 
-        // Verificar si la red está lista
-        const isNetworkReady = () => {
-          const networkOk = !!window.VIS_NETWORK;
-          const nodesOk = !!nodes;
-          const edgesOk = !!edges;
-          const nodesCount = nodes ? nodes.get().length : 0;
-          const edgesCount = edges ? edges.get().length : 0;
-          const ready = networkOk && nodesOk && edgesOk && nodesCount > 0 && edgesCount > 0;
-          
-          console.log("🔧 Network check:", {networkOk, nodesOk, edgesOk, nodesCount, edgesCount, ready});
-          
-          return ready;
-        };
-
-        // Si la red no está lista y aún tenemos reintentos, esperar y reintentar
-        if (!isNetworkReady() && retryCount < MAX_RETRIES) {
-          console.log("⏳ Network not ready yet (attempt " + (retryCount+1) + "/" + MAX_RETRIES + "), retrying in 500ms...");
-          setTimeout(() => {
-            handleInitialHash(retryCount + 1).then(resolve);
-          }, 500);
-          return;
-        }
-
-        if (!isNetworkReady()) {
-          console.error("❌ Network failed to load after " + MAX_RETRIES + " retries");
-          __hashProcessed = true;
-          resolve(false);
-          return;
-        }
-
-        console.log("✅ Network ready, processing hash...");
-        
-        // ===== NODO: formato antiguo o nuevo =====
-        if (!rawHash.includes('/')) {
-          // Formato antiguo: #Adrien_Dauzats
-          const decodedHash = decodeURIComponent(rawHash).replace(/_/g, ' ');
-          console.log("Buscando nodo antiguo:", decodedHash);
-          
-          // Buscar por id o label
-          let node = null;
-          const allNodes = nodes.get();
-          for (let i = 0; i < allNodes.length; i++) {
-            const n = allNodes[i];
-            if (n.id === decodedHash || n.label === decodedHash) {
-              node = n;
-              break;
-            }
-          }
-          
-          if (node) {
-            console.log("Encontrado nodo antiguo:", node.id);
-            __hashProcessed = true; // 👈 AÑADE ESTA LÍNEA
-            setTimeout(() => {
-              // Primero enfocar el nodo
-              const pos = window.VIS_NETWORK.getPosition(node.id);
-              window.VIS_NETWORK.moveTo({
-                position: pos,
-                scale: window.VIS_NETWORK.getScale(),
-                animation: { duration: 500 }
-              });
-              // Luego seleccionarlo
-              window.VIS_NETWORK.selectNodes([node.id]);
-              // Disparar el evento click
-              window.VIS_NETWORK.emit('click', {
-                nodes: [node.id],
-                edges: [],
-                pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
-              });
-              resolve(true);
-            }, 300);
-            return;
-          }
-          
-          console.log("Nodo NO encontrado:", decodedHash);
-          __hashProcessed = true;
-          resolve(false);
-          return;
-        }
-
-        // ===== FORMATO NUEVO: tipo/valor =====
-        const slashIndex = rawHash.indexOf('/');
-        const type = rawHash.substring(0, slashIndex);
-        const value = rawHash.substring(slashIndex + 1);
-        
-        console.log("Tipo:", type, "Valor:", value);
-
-        // ===== PROCESAR NODO =====
-        if (type === 'node') {
-          const decodedId = unslugifyName(value);
-          console.log("🔍 Buscando nodo con URL:", value, "-> decodedId:", decodedId);
-          
-          const decodedNorm = normalizeForComparison(decodedId);
-          console.log("🔍 Normalized search string:", decodedNorm);
-          
-          let node = null;
-          const allNodes = nodes.get();
-          console.log("🔍 Total nodes en red:", allNodes.length);
-          
-          // Show first few nodes for debugging
-          for (let i = 0; i < Math.min(3, allNodes.length); i++) {
-            const n = allNodes[i];
-            console.log(`  Sample node ${i}: "${n.id}" -> normalized: "${normalizeForComparison(n.id)}"`);
-          }
-          
-          for (let i = 0; i < allNodes.length; i++) {
-            const n = allNodes[i];
-            const nNorm = normalizeForComparison(n.id);
-            if (nNorm === decodedNorm) {
-              node = n;
-              console.log("✅ Nodo encontrado:", n.id);
-              break;
-            }
-          }
-          
-          if (node) {
-            console.log("Nodo encontrado, seleccionando...");
-            __hashProcessed = true;
-            setTimeout(() => {
-            const pos = window.VIS_NETWORK.getPosition(node.id);
-            window.VIS_NETWORK.moveTo({
-              position: pos,
-              scale: window.VIS_NETWORK.getScale(),
-              animation: { duration: 500 }
-            });
-
-              window.VIS_NETWORK.selectNodes([node.id]);
-              window.VIS_NETWORK.emit('click', {
-                nodes: [node.id],
-                edges: [],
-                pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
-              });
-              resolve(true);
-            }, 300);
-            return;
-          } else {
-            console.log("❌ Nodo NO encontrado:", decodedId);
-            __hashProcessed = true;
-            resolve(false);
-            return;
-          }
-        }
-
-        // ===== PROCESAR EDGE =====
-        if (type === 'edge') {
-          const parts = value.split('--');
-          console.log("🔍 URL edge parts:", parts);
-          
-          if (parts.length !== 2) {
-            console.log("❌ Formato de edge inválido (no tiene --)");
-            resolve(false);
-            return;
-          }
-
-          const left = unslugifyName(parts[0]);
-          const right = unslugifyName(parts[1]);
-          console.log("🔍 Unslugified names:", left, "y", right);
-          
-          // Verificar que left y right existen
-          if (!left || !right) {
-            console.error("❌ Edge con nombre inválido:", {left, right});
-            resolve(false);
-            return;
-          }
-          
-          // Normalizar para comparar (sin acentos, minúsculas)
-          const leftNorm = normalizeForComparison(left);
-          const rightNorm = normalizeForComparison(right);
-          console.log("🔍 Normalized names:", leftNorm, "y", rightNorm);
-
-          // Buscar el edge correcto
-          let matchingEdge = null;
-          const allEdges = edges.get();
-          console.log("🔍 Total edges en red:", allEdges.length);
-          
-          for (let i = 0; i < allEdges.length; i++) {
-            const edge = allEdges[i];
-            
-            // Saltar edges invisibles de clustering
-            if (edge._isClusterEdge) continue;
-            if (edge.hidden) continue;
-            
-            const fromNode = nodes.get(edge.from);
-            const toNode = nodes.get(edge.to);
-            
-            if (!fromNode || !toNode) continue;
-            
-            // Normalizar los nombres de los nodos para comparar
-            const fromNorm = normalizeForComparison(fromNode.id);
-            const toNorm = normalizeForComparison(toNode.id);
-            
-            // Ordenar para comparar (no importa el orden)
-            const pairNorm = [fromNorm, toNorm].sort();
-            
-            if (pairNorm[0] === leftNorm && pairNorm[1] === rightNorm) {
-              matchingEdge = edge;
-              console.log("✅ EDGE ENCONTRADO!", edge.id);
-              break;
-            }
-          }
-
-          if (matchingEdge) {
-            console.log("✅ Seleccionando edge:", matchingEdge.id);
-            __hashProcessed = true;
-            setTimeout(() => {
-              // Enfocar el centro del edge
-              try {
-                const fromPos = window.VIS_NETWORK.getPosition(matchingEdge.from);
-                const toPos = window.VIS_NETWORK.getPosition(matchingEdge.to);
-                if (fromPos && toPos) {
-                  const centerX = (fromPos.x + toPos.x) / 2;
-                  const centerY = (fromPos.y + toPos.y) / 2;
-                  window.VIS_NETWORK.moveTo({
-                    position: { x: centerX, y: centerY },
-                    scale: window.VIS_NETWORK.getScale(),
-                    animation: { duration: 500 }
-                  });
-                }
-              } catch(e) {
-                console.log("Error al mover cámara:", e);
-              }
-              
-              // Seleccionar el edge
-              window.VIS_NETWORK.selectEdges([matchingEdge.id]);
-              
-              // Disparar el evento click
-              setTimeout(() => {
-                window.VIS_NETWORK.emit('click', {
-                  nodes: [],
-                  edges: [matchingEdge.id],
-                  pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
-                });
-              }, 100);
-              
-              resolve(true);
-            }, 500);
-            return;
-          } else {
-            console.log("❌ Edge NO encontrado entre", left, "y", right);
-            __hashProcessed = true;
-            resolve(false);
-            return;
-          }
-        }
-
-        console.log("❌ Tipo no reconocido:", type);
-        __hashProcessed = true;
-        resolve(false);
-      });
-    }
-
-      // 👇 PEGA AQUÍ, DESPUÉS DE LA LLAVE DE CIERRE DE handleInitialHash
-      // Exponer handleInitialHash globalmente para debug
-      window.debugHandleHash = handleInitialHash;
 
       // Restaura el panel nodeInfo a su estado por defecto (texto + Members list)
       window.showDefaultNodeInfo = function () {
