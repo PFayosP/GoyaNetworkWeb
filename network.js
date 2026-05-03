@@ -1061,21 +1061,26 @@ function handleInitialHash(retryCount = 0) {
   const ready = networkOk && nodesOk && edgesOk && nodesCount > 0 && edgesCount > 0;
   
   if (!ready && retryCount < MAX_RETRIES) {
+    console.log(`🔄 Hash navigation retry ${retryCount + 1}/${MAX_RETRIES} - networkOk: ${networkOk}, nodesOk: ${nodesOk} (${nodesCount}), edgesOk: ${edgesOk} (${edgesCount})`);
     setTimeout(() => handleInitialHash(retryCount + 1), 500);
     return;
   }
   if (!ready) {
+    console.error("❌ Hash navigation FAILED - network not ready after retries");
     __hashProcessed = true;
     return;
   }
 
   __hashProcessed = true;
+  console.log("🎯 Hash navigation READY - raw hash:", rawHash);
   
   // Old format: #Node_Name
   if (!rawHash.includes('/')) {
     const decodedHash = decodeURIComponent(rawHash).replace(/_/g, ' ');
     let node = nodes.get().find(n => n.id === decodedHash || n.label === decodedHash);
+    console.log(`  [Legacy] Searching for: "${decodedHash}" → Found:`, !!node);
     if (node) {
+      console.log(`  ✅ Selecting node: ${node.id}`);
       setTimeout(() => {
         const pos = window.VIS_NETWORK.getPosition(node.id);
         window.VIS_NETWORK.moveTo({position: pos, scale: window.VIS_NETWORK.getScale(), animation: {duration: 500}});
@@ -1093,9 +1098,22 @@ function handleInitialHash(retryCount = 0) {
   if (type === 'node') {
     const decodedId = unslugifyName(value);
     const decodedNorm = normalizeForComparison(decodedId);
-    let node = nodes.get().find(n => normalizeForComparison(n.id) === decodedNorm);
+    console.log(`  [Node] Slug: "${value}" → Decoded: "${decodedId}" → Normalized: "${decodedNorm}"`);
+    let node = nodes.get().find(n => {
+      const nNorm = normalizeForComparison(n.id);
+      if (nNorm === decodedNorm) {
+        console.log(`    ✓ MATCH: "${n.id}"`);
+        return true;
+      }
+      return false;
+    });
     
-    if (node) {
+    if (!node) {
+      console.log(`  ⚠️ No node found with normalized name "${decodedNorm}"`);
+      // Show available nodes for debugging
+      console.log("  Available nodes (first 5):", nodes.get().slice(0, 5).map(n => ({id: n.id, norm: normalizeForComparison(n.id)})));
+    } else {
+      console.log(`  ✅ Selecting node: ${node.id}`);
       setTimeout(() => {
         const pos = window.VIS_NETWORK.getPosition(node.id);
         window.VIS_NETWORK.moveTo({position: pos, scale: window.VIS_NETWORK.getScale(), animation: {duration: 500}});
@@ -1115,6 +1133,7 @@ function handleInitialHash(retryCount = 0) {
     const leftNorm = normalizeForComparison(left);
     const rightNorm = normalizeForComparison(right);
 
+    console.log(`  [Edge] Searching: "${left}" ↔ "${right}"`);
     let matchingEdge = edges.get().find(edge => {
       if (edge._isClusterEdge || edge.hidden) return false;
       const fromNode = nodes.get(edge.from);
@@ -1125,6 +1144,7 @@ function handleInitialHash(retryCount = 0) {
     });
 
     if (matchingEdge) {
+      console.log(`  ✅ Selecting edge: ${matchingEdge.from} → ${matchingEdge.to}`);
       setTimeout(() => {
         const fromPos = window.VIS_NETWORK.getPosition(matchingEdge.from);
         const toPos = window.VIS_NETWORK.getPosition(matchingEdge.to);
@@ -1136,6 +1156,8 @@ function handleInitialHash(retryCount = 0) {
         window.VIS_NETWORK.selectEdges([matchingEdge.id]);
         window.VIS_NETWORK.emit('click', {nodes: [], edges: [matchingEdge.id], pointer: {DOM: {x: 0, y: 0}, canvas: {x: 0, y: 0}}});
       }, 100);
+    } else {
+      console.log(`  ⚠️ No edge found`);
     }
   }
 }
