@@ -3562,7 +3562,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           }
 
           console.log("=== LLAMANDO A handleInitialHash() ===");
-          handleInitialHash();
+          handleInitialHash().catch(err => console.error("Error en handleInitialHash:", err));
         }, 1500);
       }
     }, 150);
