@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-01",
+  "last_update": "2026-05-03",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -5802,6 +5802,34 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Cruzada_Villaamil.jpg",
       "image source": "photograph, 1880s, Museo Lázaro Galdiano",
       "added": "2026-03-29"
+    },
+    {
+      "id": "Juan Fernández de Rojas",
+      "label": "Fdez de Rojas",
+      "also known as": "Fray Juan Fernández de Rojas",
+      "pseudonyms": "Liseno; Licenciado Francisco Agustín Florencio; Cornelio Suárez de Molina",
+      "life dates": "1752-1819",
+      "nationality": "Spanish",
+      "born in": "Colmenar de Oreja, Madrid",
+      "dies in": "Madrid",
+      "profession": "writer, historian, friar (Augustinian), theologian, humanist, professor, satirist",
+      "member of": "Salamantine literary school of the 18th century; Enlightened thinkers",
+      "studies in": "Universidad de Salamanca (from 1772)",
+      "masters": "fray Diego Tadeo González; José Cadalso",
+      "works as": "professor of Philosophy at the Toledo convent; professor of Theology at Alcalá; Definer of the Province of Castilla; General Procurator of the Provinces of the Indies",
+      "political views": "liberal",
+      "parents": "Francisco Fernández de Rojas and Plácida Mateo Agustín",
+      "author of": "<i>Crotalogía o ciencia de las castañuelas</i> (1792); <i>El pájaro en la liga</i> (1798)",
+      "portraits": "Francisco de Goya: oil painting, 1815-16, Real Academia de Historia, [RAH](https://es.wikipedia.org/wiki/Juan_Fernández_de_Rojas#/media/Archivo:Fray_Juan_Fernández_de_Rojas_por_Goya.jpg); drawing, [1812?], Fernández de Rojas in his deathbed, [British Museum](https://www.britishmuseum.org/collection/object/P_1862-0712-185?selectedImageId=143813001)",
+      "authorities": {
+        "wikidata": "https://www.wikidata.org/wiki/Q11686452",
+        "rah": "https://historia-hispanica.rah.es/biografias/16634-juan-fernandez-de-rojas"
+      },
+      "bibliography": "María Rosario Barabino Maciá, <i>Fray Juan Fernández de Rojas: su obra y su significación en el s. XVIII</i>, 2015.",
+      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/16634-juan-fernandez-de-rojas), by Mariano Boyano Revilla",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Fernandez_Rojas.jpg",
+      "image source": "Goya, portrait, 1815-16, RAH",
+      "added": "2026-05-03"
     }
   ],
   "edges": [
@@ -14782,6 +14810,41 @@
       "relationship type": "colleagues",
       "they share": "they belonged to the Junta de Iconografía Nacional",
       "bibliography": "Lanzarote Guiral 2016; Xavier de Salas, 'Sobre la bibliografía de Goya (la polémica Carderera-Cruzada Villaamil)', <i>Archivo Español de Arte</i>, vol.36, no.141, pp.47-64."
+    },
+    {
+      "from": "Gaspar Melchor de Jovellanos",
+      "to": "Juan Fernández de Rojas",
+      "connection_level": "direct",
+      "relationship type": "friends; colleagues",
+      "they share": "they belong to the same group of enlightened poets"
+    },
+    {
+      "from": "Juan Fernández de Rojas",
+      "to": "Juan Meléndez Valdés",
+      "connection_level": "direct",
+      "relationship type": "friends; colleagues",
+      "they share": "they belong to the same group of enlightened poets"
+    },
+    {
+      "from": "Juan Fernández de Rojas",
+      "to": "Fernando VII",
+      "connection_level": "direct",
+      "relationship type": "employer-employee"
+    },
+    {
+      "from": "Juan Fernández de Rojas",
+      "to": "Carlos IV",
+      "connection_level": "direct",
+      "relationship type": "employer-employee"
+    },
+    {
+      "from": "Juan Fernández de Rojas",
+      "to": "Francisco de Goya",
+      "connection_level": "direct",
+      "relationship type": "friends; portrait artist-model",
+      "portraits": "oil painting, 1815-16, Real Academia de Historia, [RAH](https://es.wikipedia.org/wiki/Juan_Fernández_de_Rojas#/media/Archivo:Fray_Juan_Fernández_de_Rojas_por_Goya.jpg); drawing, [1812?], Fernández de Rojas in his deathbed, [British Museum](https://www.britishmuseum.org/collection/object/P_1862-0712-185?selectedImageId=143813001)",
+      "mentions": "'The portrait of fray Juan Fernández de Rojas is perhaps, of all those painted by Goya, the most delicate. The one that best reflects the intelligence and goodness of the character, also polymath, as author of works on philosophy, theology, literary criticism and poetry, friend of Jovellanos and Meléndez Valdés and also friend, and even adviser, of Goya, with whom he coincided in the rejection of false humanists and presumptuous ignoramuses' (Gonzalo Anes, 1999).",
+      "bibliography": "Gonzalo Anes, 'More on the Cabinet of Antiquities', <i>ABC</i>, 20 June 1999."
     }
   ]
 }

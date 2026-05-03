@@ -1177,7 +1177,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Sebastián Martínez y Pérez",
               "Gaspar Melchor de Jovellanos",
               "Juan Meléndez Valdés",
-              "Martín Zapater"
+              "Martín Zapater",
+              "Juan Fernández de Rojas"
             ],
             radius: 166,
             padding: 92,
