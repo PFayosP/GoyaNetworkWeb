@@ -2322,38 +2322,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       "Carlos Luis de Ribera": 20
     };
 
-    const PRIORITY_SEPARATION_PAIRS = [
-      // Very close relationships - extremely tight spacing
-      ["Rosario Weiss Zorrilla", "Leocadia Zorrilla y Galarza", 30],       // mother-daughter, very close
-      ["Auguste Dutuit", "Eugène Dutuit", 30],                // brothers, very close
-      ["Martín Zapater", "Francisco de Goya", 40],            // best friend and possible lover
-      
-      // Rest of relationships with normal spacing
-      ["Adrien Dauzats", "Valentín Carderera", 120],
-      ["Federico de Madrazo", "Valentín Carderera", 150],
-      ["Adrien Dauzats", "Federico de Madrazo", 120],
-      ["Pedro de Madrazo", "Federico de Madrazo", 120],
-      ["Eugenio Ochoa", "Baron Taylor", 150],
-      ["Eugenio Ochoa", "Valentín Carderera", 150],
-      ["Arsène Houssaye", "Achille Devéria", 130],
-      ["Santiago Masarnau", "Vicente Masarnau", 120],
-      ["Alfred de Musset", "Théophile Gautier", 120],
-      ["Josefa Bayeu", "Gumersinda Goicoechea", 120],
-      ["Cecilia de Madrazo", "Román Garreta", 120],
-      ["Josefa Bayeu", "Francisco de Goya", 120],
-      ["Francisco de Goya", "Mariano Goya", 120],
-      ["María Antonia Gonzaga, Marchioness of Villafranca (widow)", "Infanta Luisa Fernanda de Borbón", 120],
-      ["María Luisa de Parma", "Carlos III", 120],
-      ["María Luisa de Parma", "Louis Philippe I", 150],
-      ["María Luisa de Parma", "Fernando VII", 120],
-      ["XV Countess of Chinchón", "María Teresa de Vallabriga", 120],
-      ["María Cristina de Borbón-Dos Sicilias", "Manuel Godoy", 120],
-      ["María Cristina de Borbón-Dos Sicilias", "Eugenia de Montijo", 120],
-      ["Manuel Godoy", "Isabel II", 120],
-      ["Carlos III", "Josefa Tudó", 120],
-      ["Manuel Godoy", "Josefa Tudó", 130],
-      ["Mnauel Godoy", "Louis Philippe I"],
-      ["Frédéric Quilliet", "Josefa Tudó", 120],
+    // NOTE: PRIORITY_SEPARATION_PAIRS array has been removed as positioning is now controlled via positions_config.json
       ["Josefa Tudó", "1st Duke of Wellington", 145],
       ["Carlos III", "María Manuela Kirkpatrick", 120],
       ["María Manuela Kirkpatrick", "1st Duke of Wellington", 120],
@@ -2438,7 +2407,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Zacharie Astruc", "Frédéric Villot", 130],
       ["Tony Johannot", "Delphine de Girardin", 130],
       ["Alejandro Sureda", "Eugène Dutuit", 130],
-      ["Luis de Madrazo", "Vicente MAsarnau", 130],
+      ["Luis de Madrazo", "Vicente Masarnau", 130],
       ["Pierre Lacour", "Pierre Lacour fils", 100],
       ["Asensio Julià", "Gumersinda Goicoechea", 130],
       ["Asensio Julià", "Francisco de Goya", 130],
@@ -2490,9 +2459,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ["Honoré de Balzac", "J. J. Grandville", 130],
       ["J. J. Grandville", "Charles Motte", 130],
       ["Achille Devéria", "Charles Motte", 130],
-      ["María Francisca de Sales Portocarrero, VI Countess of Montijo", "Prince Antoine, Duke of Montpensier", 130]
-      // supercali overlap
-    ];
+    // NOTE: PRIORITY_SEPARATION_PAIRS array has been removed as positioning is now controlled via positions_config.json
 
     function getNodeHalo(node) {
       const size = node?.size || 25;
