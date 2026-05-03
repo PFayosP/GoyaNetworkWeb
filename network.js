@@ -1050,8 +1050,12 @@ let __hashProcessed = false;
 function handleInitialHash(retryCount = 0) {
   const MAX_RETRIES = 5;
   const rawHash = window.location.hash.substring(1);
+  console.log(`📍 handleInitialHash called - rawHash: "${rawHash}", __hashProcessed: ${__hashProcessed}, retryCount: ${retryCount}`);
   
-  if (__hashProcessed || !rawHash) return;
+  if (__hashProcessed || !rawHash) {
+    console.log(`  ⚠️ Early return: __hashProcessed=${__hashProcessed}, rawHash="${rawHash}"`);
+    return;
+  }
   
   const networkOk = !!window.VIS_NETWORK;
   const nodesOk = !!nodes;
@@ -1059,6 +1063,8 @@ function handleInitialHash(retryCount = 0) {
   const nodesCount = nodes ? nodes.get().length : 0;
   const edgesCount = edges ? edges.get().length : 0;
   const ready = networkOk && nodesOk && edgesOk && nodesCount > 0 && edgesCount > 0;
+  
+  console.log(`  Status: network=${networkOk}, nodes=${nodesOk}(${nodesCount}), edges=${edgesOk}(${edgesCount}) → ready=${ready}`);
   
   if (!ready && retryCount < MAX_RETRIES) {
     console.log(`🔄 Hash navigation retry ${retryCount + 1}/${MAX_RETRIES} - networkOk: ${networkOk}, nodesOk: ${nodesOk} (${nodesCount}), edgesOk: ${edgesOk} (${edgesCount})`);
