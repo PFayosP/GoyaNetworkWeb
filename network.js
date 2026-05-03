@@ -1703,15 +1703,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         length: edgeLength        // vis.js uses 'length' property for edge spring length
       };
 
-      // Debug: log edges with strength values
-      if (edge.strength) {
-        console.log(`Edge ${edge.from}-${edge.to}: strength=${edge.strength}, length=${edgeLength}px`);
-      }
-
       return processedEdge;
     }));
     window.edges = edges;
-    console.log(`Loaded ${edges.length} edges. ${data.edges.filter(e => e.strength).length} have strength values.`);
 
     // ===================== MINI-FAMILIAS (anchors invisibles) =====================
     // NOTA: esto NO toca tus edges reales. Añade nodos/edges "fantasma" para compactar grupos.
@@ -4088,23 +4082,34 @@ document.addEventListener('DOMContentLoaded', async function () {
         // ===== PROCESAR NODO =====
         if (type === 'node') {
           const decodedId = unslugifyName(value);
-          console.log("Buscando nodo:", decodedId);
+          console.log("🔍 Buscando nodo con URL:", value, "-> decodedId:", decodedId);
           
           const decodedNorm = normalizeForComparison(decodedId);
+          console.log("🔍 Normalized search string:", decodedNorm);
           
           let node = null;
           const allNodes = nodes.get();
+          console.log("🔍 Total nodes en red:", allNodes.length);
+          
+          // Show first few nodes for debugging
+          for (let i = 0; i < Math.min(3, allNodes.length); i++) {
+            const n = allNodes[i];
+            console.log(`  Sample node ${i}: "${n.id}" -> normalized: "${normalizeForComparison(n.id)}"`);
+          }
+          
           for (let i = 0; i < allNodes.length; i++) {
             const n = allNodes[i];
-            if (normalizeForComparison(n.id) === decodedNorm) {
+            const nNorm = normalizeForComparison(n.id);
+            if (nNorm === decodedNorm) {
               node = n;
+              console.log("✅ Nodo encontrado:", n.id);
               break;
             }
           }
           
           if (node) {
             console.log("Nodo encontrado, seleccionando...");
-            __hashProcessed = true; // 👈 ESTA LÍNEA NUEVA AQUÍ
+            __hashProcessed = true;
             setTimeout(() => {
             const pos = window.VIS_NETWORK.getPosition(node.id);
             window.VIS_NETWORK.moveTo({
@@ -4123,7 +4128,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             }, 300);
             return;
           } else {
-            console.log("Nodo NO encontrado:", decodedId);
+            console.log("❌ Nodo NO encontrado:", decodedId);
             resolve(false);
             return;
           }
@@ -4132,21 +4137,21 @@ document.addEventListener('DOMContentLoaded', async function () {
         // ===== PROCESAR EDGE =====
         if (type === 'edge') {
           const parts = value.split('--');
-          console.log("Partes del edge:", parts);
+          console.log("🔍 URL edge parts:", parts);
           
           if (parts.length !== 2) {
-            console.log("Formato de edge inválido (no tiene --)");
+            console.log("❌ Formato de edge inválido (no tiene --)");
             resolve(false);
             return;
           }
 
           const left = unslugifyName(parts[0]);
           const right = unslugifyName(parts[1]);
-          console.log("Buscando edge entre:", left, "y", right);
+          console.log("🔍 Unslugified names:", left, "y", right);
           
           // Verificar que left y right existen
           if (!left || !right) {
-            console.error("Edge con nombre inválido:", {left, right});
+            console.error("❌ Edge con nombre inválido:", {left, right});
             resolve(false);
             return;
           }
@@ -4154,10 +4159,12 @@ document.addEventListener('DOMContentLoaded', async function () {
           // Normalizar para comparar (sin acentos, minúsculas)
           const leftNorm = normalizeForComparison(left);
           const rightNorm = normalizeForComparison(right);
+          console.log("🔍 Normalized names:", leftNorm, "y", rightNorm);
 
           // Buscar el edge correcto
           let matchingEdge = null;
           const allEdges = edges.get();
+          console.log("🔍 Total edges en red:", allEdges.length);
           
           for (let i = 0; i < allEdges.length; i++) {
             const edge = allEdges[i];
@@ -4178,18 +4185,16 @@ document.addEventListener('DOMContentLoaded', async function () {
             // Ordenar para comparar (no importa el orden)
             const pairNorm = [fromNorm, toNorm].sort();
             
-            console.log("Comparando normalizado:", pairNorm[0], "con", leftNorm, "y", pairNorm[1], "con", rightNorm);
-            
             if (pairNorm[0] === leftNorm && pairNorm[1] === rightNorm) {
               matchingEdge = edge;
-              console.log("¡EDGE ENCONTRADO!", edge.id);
+              console.log("✅ EDGE ENCONTRADO!", edge.id);
               break;
             }
           }
 
           if (matchingEdge) {
-            console.log("Seleccionando edge:", matchingEdge.id);
-            __hashProcessed = true; // 👈 AÑADE ESTA LÍNEA
+            console.log("✅ Seleccionando edge:", matchingEdge.id);
+            __hashProcessed = true;
             setTimeout(() => {
               // Enfocar el centro del edge
               try {
@@ -4224,13 +4229,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             }, 500);
             return;
           } else {
-            console.log("Edge NO encontrado entre", left, "y", right);
+            console.log("❌ Edge NO encontrado entre", left, "y", right);
             resolve(false);
             return;
           }
         }
 
-        console.log("Tipo no reconocido:", type);
+        console.log("❌ Tipo no reconocido:", type);
         resolve(false);
       });
     }
