@@ -3280,45 +3280,44 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (Object.keys(nodePositions).length > 0) {
       console.log('Applying saved node positions, skipping cluster positioning');
       applySavedNodePositions();
-      return; // EXIT - don't run any of the positioning code below
+    } else {
+      // 3) Empujón anti-overlap cuando ya están puestas las imágenes
+      setTimeout(() => {
+        if (!window.__didNudgeOnce) {
+          window.__didNudgeOnce = true;
+
+          // 1) Small initial nudge to prevent overlaps
+          nudgeOverlaps(network, nodes, window.__clusterOf, 20);
+
+
+          network.redraw();
+        }
+      }, 150);
     }
 
-    // 3) Empujón anti-overlap cuando ya están puestas las imágenes
+    // ===== ALWAYS CALL handleInitialHash after network is ready (with or without saved positions) =====
     setTimeout(() => {
-      if (!window.__didNudgeOnce) {
-        window.__didNudgeOnce = true;
+      console.log("=== GUARDANDO PANEL DEFAULT ===");
 
-        // 1) Small initial nudge to prevent overlaps
-        nudgeOverlaps(network, nodes, window.__clusterOf, 20);
-
-
-        network.redraw();
-
-        // Esperar un poco más para asegurar que la red está completamente renderizada
-        setTimeout(() => {
-          console.log("=== GUARDANDO PANEL DEFAULT ===");
-
-          if (!__defaultNodeInfoHTML) {
-            __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-          }
-
-          console.log("=== LLAMANDO A handleInitialHash() ===");
-          console.log(">>> About to call handleInitialHash, function exists?", !!handleInitialHash);
-          if (typeof handleInitialHash === 'function') {
-            handleInitialHash();
-          } else {
-            console.error(">>> ERROR: handleInitialHash is not a function!", typeof handleInitialHash);
-          }
-
-          // Listen for hash changes (when user clicks links with hash URLs)
-          window.addEventListener('hashchange', () => {
-            console.log("🔄 Hash cambió, nuevo hash:", window.location.hash);
-            __hashProcessed = false;
-            handleInitialHash();
-          });
-        }, 1500);
+      if (!__defaultNodeInfoHTML) {
+        __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
       }
-    }, 150);
+
+      console.log("=== LLAMANDO A handleInitialHash() ===");
+      console.log(">>> About to call handleInitialHash, function exists?", !!handleInitialHash);
+      if (typeof handleInitialHash === 'function') {
+        handleInitialHash();
+      } else {
+        console.error(">>> ERROR: handleInitialHash is not a function!", typeof handleInitialHash);
+      }
+
+      // Listen for hash changes (when user clicks links with hash URLs)
+      window.addEventListener('hashchange', () => {
+        console.log("🔄 Hash cambió, nuevo hash:", window.location.hash);
+        __hashProcessed = false;
+        handleInitialHash();
+      });
+    }, 1500);
   });
 
     function highlightNeighborhood(nodeId) {
