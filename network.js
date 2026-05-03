@@ -3126,30 +3126,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
 
-    function tightenProximityGroups(network, nodes, groups, strength = 0.18) {
-      Object.values(groups).forEach(group => {
-        const valid = group.filter(id => nodes.get(id));
-        if (valid.length < 2) return;
-
-        // centroide actual del grupo
-        const pos = network.getPositions(valid);
-        let cx = 0, cy = 0;
-        valid.forEach(id => {
-          cx += pos[id].x;
-          cy += pos[id].y;
-        });
-        cx /= valid.length;
-        cy /= valid.length;
-
-        // acerca cada nodo un poco al centroide, sin imponer círculo
-        valid.forEach(id => {
-          const p = pos[id];
-          const nx = p.x + (cx - p.x) * strength;
-          const ny = p.y + (cy - p.y) * strength;
-          network.moveNode(id, nx, ny);
-        });
-      });
-    }
 
     // ——— Loading progress (vis-network physics) ———
     const loadingEl = document.getElementById('loadingMessage');
