@@ -892,7 +892,19 @@ function __gnMatchesNationality(nodeNat, selectedNat) {
 
   const natTokens = __gnTokenizeList(nodeNat);
   // normalmente nationality es un único valor; pero lo tratamos igual
-  return natTokens.some(tok => candidates.has(tok));
+  
+  // Check for exact token match first
+  if (natTokens.some(tok => candidates.has(tok))) return true;
+  
+  // Also check for word-level matches within tokens (for cases like "French (with Irish ancestry)")
+  const natFolded = __gnFold(nodeNat);
+  for (const candidate of candidates) {
+    // Use word boundary regex to find the candidate word within the nationality string
+    const regex = new RegExp(`\\b${candidate}\\b`);
+    if (regex.test(natFolded)) return true;
+  }
+  
+  return false;
 }
 
 function __gnRenderFilterPanel({ professionFilter, nationalityFilter, matchingNodeIds, totalCount }) {
