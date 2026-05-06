@@ -184,6 +184,9 @@
       NEWS_BODY: `
       <ul style="padding-left:1.2rem; line-height:1.7;">
         <li>
+          <strong>May 2026.</strong> The research project developping the Goya Network has now received funding from the <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Gerda Henkel foundation (Germany)</a>.
+        </li>
+        <li>
           <strong>March 2026.</strong> The Goya Network continues to expand with new members and partnerships. New partnership: <a href="https://crimic-sorbonne.fr/" target="_blank">CRIMIC (Sorbonne Université)</a>.
         </li>
         <li>
@@ -404,6 +407,9 @@
     NEWS_TITLE: "Noticias",
     NEWS_BODY: `
     <ul style="padding-left:1.2rem; line-height:1.7;">
+      <li>
+        <strong>Mayo de 2026.</strong> El proyecto de investigación que desarrolla la Goya Network ha recibido financiación de la <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Fundación Gerda Henkel (Alemania)</a>.
+      </li>
       <li>
         <strong>Marzo de 2026.</strong> La Goya Network sigue ampliándose con nuevos miembros y colaboraciones. Nueva colaboración: <a href="https://crimic-sorbonne.fr/" target="_blank">CRIMIC (Sorbonne Université)</a>.
       </li>
