@@ -2336,22 +2336,21 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       physics: {
         enabled: true, 
-        solver: 'barnesHut',
-        barnesHut: {
-          gravitationalConstant: -150,
-          centralGravity: 0.005,
-          springLength: 200,
-          springConstant: 0.08,
-          damping: 0.9,             // Fast settling
-          avoidOverlap: 0.5
+        solver: 'repulsion',
+        repulsion: {
+          nodeDistance: 600,         // increased from 500 for stronger node separation and collision prevention
+          centralGravity: 0.018,     // ↓ Slightly less gravity
+          springLength: 210,         // ↑ Longer springs for more separation
+          springConstant: 0.012,     // ↓ Softer springs
+          damping: 0.9               // ↑ Fast settling (increased from 0.52)
         },
         stabilization: {
-          iterations: 200,
+          iterations: 200,           // Limit iterations for faster settling
           fit: true
         },
-        maxVelocity: 50,
-        timeStep: 0.35,
-        adaptiveTimestep: true
+        maxVelocity: 50,            // Limit velocity to prevent wild oscillations
+        timeStep: 0.35,             // Faster time stepping
+        adaptiveTimestep: true      // Adaptive timestep for stable convergence
       },
 
         // 🔥 AÑADE ESTA NUEVA OPCIÓN (ANTI-OVERLAP INTEGRADO):
