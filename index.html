@@ -568,12 +568,17 @@
   .custom-nav-buttons {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     z-index: 100;
     font-family: Arial, sans-serif;
+  }
+
+  .custom-nav-buttons.zoom {
+    left: auto;
+    right: 20px;
   }
 
   .nav-button-row {
@@ -1292,12 +1297,8 @@ function showSection(section) {
   </div>
 </div>
 
-<!-- Custom Navigation Buttons with Orange Arrows -->
-<div class="custom-nav-buttons" id="customNavButtons" style="display:none;">
-  <div class="nav-button-row">
-    <button class="custom-nav-btn" id="navZoomIn" title="Zoom In">+</button>
-    <button class="custom-nav-btn" id="navZoomOut" title="Zoom Out">−</button>
-  </div>
+<!-- Custom Navigation Buttons with Orange Arrows (Pan Controls - Bottom Left) -->
+<div class="custom-nav-buttons" id="customPanButtons" style="display:none;">
   <div class="nav-button-row">
     <button class="custom-nav-btn" id="navUp" title="Pan Up">↑</button>
   </div>
@@ -1308,12 +1309,23 @@ function showSection(section) {
   </div>
 </div>
 
+<!-- Custom Zoom Buttons (Bottom Right) -->
+<div class="custom-nav-buttons zoom" id="customZoomButtons" style="display:none;">
+  <div class="nav-button-row">
+    <button class="custom-nav-btn" id="navZoomIn" title="Zoom In">+</button>
+  </div>
+  <div class="nav-button-row">
+    <button class="custom-nav-btn" id="navZoomOut" title="Zoom Out">−</button>
+  </div>
+</div>
+
 <script>
   // Initialize custom navigation buttons when network is ready
   window.addEventListener('load', () => {
     setTimeout(() => {
       if (window.VIS_NETWORK) {
-        document.getElementById('customNavButtons').style.display = 'flex';
+        document.getElementById('customPanButtons').style.display = 'flex';
+        document.getElementById('customZoomButtons').style.display = 'flex';
         initializeNavButtons();
       }
     }, 500);
