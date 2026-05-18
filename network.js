@@ -3319,19 +3319,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (Object.keys(nodePositions).length > 0) {
       console.log('Applying saved node positions, skipping cluster positioning');
       applySavedNodePositions();
-      network.redraw();  // Force redraw to ensure positions are rendered
+      network.redraw();  // Force immediate redraw
       
-      // Trigger hash navigation after positions are rendered
-      requestAnimationFrame(() => {
-        setTimeout(() => {
-          if (!__defaultNodeInfoHTML) {
-            __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-          }
-          if (typeof handleInitialHash === 'function' && !__hashProcessed) {
-            handleInitialHash();
-          }
-        }, 50);  // Small delay to ensure render is complete
-      });
+      // Trigger hash navigation almost immediately after positions are applied
+      setTimeout(() => {
+        if (!__defaultNodeInfoHTML) {
+          __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
+        }
+        if (typeof handleInitialHash === 'function' && !__hashProcessed) {
+          console.log('🎯 Triggering hash navigation');
+          handleInitialHash();
+        }
+      }, 100);  // Very short delay to ensure positions are in place
     } else {
       // 3) Empujón anti-overlap cuando ya están puestas las imágenes
       setTimeout(() => {

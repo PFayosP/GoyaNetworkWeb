@@ -857,6 +857,31 @@
   <!-- 🔧 Layout principal con grafo y panel de info -->
   <div class="layout-container visible" id="layout">
     <div id="network"></div>
+    
+    <!-- Navigation buttons (pre-rendered in HTML for instant appearance) -->
+    <div class="custom-nav-buttons" id="customPanButtons">
+      <div class="nav-button-row">
+        <button class="custom-nav-btn" id="navUp" title="Pan Up">↑</button>
+      </div>
+      <div class="nav-button-row">
+        <button class="custom-nav-btn" id="navLeft" title="Pan Left">←</button>
+        <button class="custom-nav-btn" id="navDown" title="Pan Down">↓</button>
+        <button class="custom-nav-btn" id="navRight" title="Pan Right">→</button>
+      </div>
+    </div>
+    
+    <div class="custom-nav-buttons zoom" id="customZoomButtons">
+      <div class="nav-button-row">
+        <button class="custom-nav-btn" id="navZoomIn" title="Zoom In">+</button>
+      </div>
+      <div class="nav-button-row">
+        <button class="custom-nav-btn" id="navZoomOut" title="Zoom Out">−</button>
+      </div>
+      <div class="nav-button-row">
+        <button class="custom-nav-btn" id="navFitAll" title="Fit All Nodes">⊙</button>
+      </div>
+    </div>
+    
     <div id="nodeInfo">
       <p data-i18n="HELP_TEXT_1"></p>
       <p data-i18n="HELP_TEXT_2"></p>
@@ -1301,129 +1326,62 @@ function showSection(section) {
 </div>
 
 <script>
-  // Create and inject custom navigation buttons after network loads
-  function createNavButtons() {
-    const networkContainer = document.getElementById('network');
-    if (!networkContainer) return;
-
-    // Create pan buttons container (bottom left)
-    const panButtons = document.createElement('div');
-    panButtons.className = 'custom-nav-buttons';
-    panButtons.id = 'customPanButtons';
-    panButtons.innerHTML = `
-      <div class="nav-button-row">
-        <button class="custom-nav-btn" id="navUp" title="Pan Up">↑</button>
-      </div>
-      <div class="nav-button-row">
-        <button class="custom-nav-btn" id="navLeft" title="Pan Left">←</button>
-        <button class="custom-nav-btn" id="navDown" title="Pan Down">↓</button>
-        <button class="custom-nav-btn" id="navRight" title="Pan Right">→</button>
-      </div>
-    `;
-
-    // Create zoom buttons container (bottom right)
-    const zoomButtons = document.createElement('div');
-    zoomButtons.className = 'custom-nav-buttons zoom';
-    zoomButtons.id = 'customZoomButtons';
-    zoomButtons.innerHTML = `
-      <div class="nav-button-row">
-        <button class="custom-nav-btn" id="navZoomIn" title="Zoom In">+</button>
-      </div>
-      <div class="nav-button-row">
-        <button class="custom-nav-btn" id="navZoomOut" title="Zoom Out">−</button>
-      </div>
-      <div class="nav-button-row">
-        <button class="custom-nav-btn" id="navFitAll" title="Fit All Nodes">⊙</button>
-      </div>
-    `;
-
-    // Append to network container
-    networkContainer.appendChild(panButtons);
-    networkContainer.appendChild(zoomButtons);
-
-    // Initialize button handlers
-    initializeNavButtons();
-  }
-
-  // Initialize button click handlers
+  // Initialize button event handlers (buttons are pre-rendered in HTML)
   function initializeNavButtons() {
     const network = window.VIS_NETWORK;
-    if (!network) {
-      console.log('Network not ready yet');
-      return;
-    }
+    if (!network) return false;
 
-    const panAmount = 100;
-    const zoomAmount = 1.2;
-
-    const navUp = document.getElementById('navUp');
-    const navDown = document.getElementById('navDown');
-    const navLeft = document.getElementById('navLeft');
-    const navRight = document.getElementById('navRight');
-    const navZoomIn = document.getElementById('navZoomIn');
-    const navZoomOut = document.getElementById('navZoomOut');
-    const navFitAll = document.getElementById('navFitAll');
-
-    if (!navUp) {
-      console.log('Buttons not found, creating them now');
-      createNavButtons();
-      return;
-    }
-
-    navUp.addEventListener('click', () => {
+    // Pan buttons
+    document.getElementById('navUp')?.addEventListener('click', () => {
       const pos = network.getViewPosition();
-      network.moveTo({ position: { x: pos.x, y: pos.y - panAmount }, animation: { duration: 300 } });
+      network.moveTo({position: {x: pos.x, y: pos.y - 100}, animation: {duration: 300}});
     });
-
-    navDown.addEventListener('click', () => {
+    
+    document.getElementById('navDown')?.addEventListener('click', () => {
       const pos = network.getViewPosition();
-      network.moveTo({ position: { x: pos.x, y: pos.y + panAmount }, animation: { duration: 300 } });
+      network.moveTo({position: {x: pos.x, y: pos.y + 100}, animation: {duration: 300}});
     });
-
-    navLeft.addEventListener('click', () => {
+    
+    document.getElementById('navLeft')?.addEventListener('click', () => {
       const pos = network.getViewPosition();
-      network.moveTo({ position: { x: pos.x - panAmount, y: pos.y }, animation: { duration: 300 } });
+      network.moveTo({position: {x: pos.x - 100, y: pos.y}, animation: {duration: 300}});
     });
-
-    navRight.addEventListener('click', () => {
+    
+    document.getElementById('navRight')?.addEventListener('click', () => {
       const pos = network.getViewPosition();
-      network.moveTo({ position: { x: pos.x + panAmount, y: pos.y }, animation: { duration: 300 } });
+      network.moveTo({position: {x: pos.x + 100, y: pos.y}, animation: {duration: 300}});
     });
 
-    navZoomIn.addEventListener('click', () => {
-      const scale = network.getScale();
-      network.moveTo({ scale: scale * zoomAmount, animation: { duration: 300 } });
+    // Zoom buttons
+    document.getElementById('navZoomIn')?.addEventListener('click', () => {
+      network.moveTo({scale: network.getScale() * 1.2, animation: {duration: 300}});
     });
-
-    navZoomOut.addEventListener('click', () => {
-      const scale = network.getScale();
-      network.moveTo({ scale: scale / zoomAmount, animation: { duration: 300 } });
+    
+    document.getElementById('navZoomOut')?.addEventListener('click', () => {
+      network.moveTo({scale: network.getScale() / 1.2, animation: {duration: 300}});
     });
-
-    navFitAll.addEventListener('click', () => {
-      network.fit({ animation: { duration: 500 } });
+    
+    document.getElementById('navFitAll')?.addEventListener('click', () => {
+      network.fit({animation: {duration: 500}});
     });
 
     console.log('Navigation buttons initialized');
+    return true;
   }
 
-  // Wait for network to be ready, then create buttons
+  // Wait for network and initialize buttons
   window.addEventListener('load', () => {
     const checkNetwork = setInterval(() => {
-      if (window.VIS_NETWORK) {
+      if (window.VIS_NETWORK && initializeNavButtons()) {
         clearInterval(checkNetwork);
-        console.log('Network found, creating buttons');
-        createNavButtons();
+        console.log('Buttons ready');
       }
-    }, 50);  // Check every 50ms instead of 100ms for faster detection
+    }, 50);
 
-    // Fallback with shorter delay
+    // Fallback
     setTimeout(() => {
-      if (window.VIS_NETWORK && !document.getElementById('navUp')) {
-        console.log('Fallback: creating buttons');
-        createNavButtons();
-      }
-    }, 500);  // Reduced from 2000ms to 500ms
+      if (window.VIS_NETWORK) initializeNavButtons();
+    }, 500);
   });
 </script>
   
