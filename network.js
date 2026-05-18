@@ -3327,16 +3327,16 @@ document.addEventListener('DOMContentLoaded', async function () {
       applySavedNodePositions();
       network.redraw();  // Force immediate redraw
       
-      // Trigger hash navigation almost immediately after positions are applied
+      // Trigger hash navigation after a small delay to ensure render
       setTimeout(() => {
         if (!__defaultNodeInfoHTML) {
           __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
         }
         if (typeof handleInitialHash === 'function' && !__hashProcessed) {
-          console.log('🎯 Triggering hash navigation');
+          console.log('🎯 Triggering hash navigation after render');
           handleInitialHash();
         }
-      }, 100);  // Very short delay to ensure positions are in place
+      }, 200);  // Increased from 100ms to allow rendering
     } else {
       // 3) Empujón anti-overlap cuando ya están puestas las imágenes
       setTimeout(() => {
