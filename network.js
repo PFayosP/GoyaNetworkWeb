@@ -2361,7 +2361,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           hideNodesOnDrag: false,
           zoomView: true,          // ✅ permite hacer zoom
           dragView: true,          // ✅ permite mover la vista (pan)
-          navigationButtons: true  // opcional: añade iconos de zoom y movimiento
+          navigationButtons: false  // Disable built-in buttons, we'll create custom ones
         },
         
         // 🔥 Y ESTA MÁS:
