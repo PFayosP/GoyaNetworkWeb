@@ -2462,17 +2462,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         .then(data => {
           nodePositions = data;
           console.log('Loaded positions from positions_config.json');
-          // Trigger hash navigation immediately after positions load for fast node URL access
-          if (typeof handleInitialHash === 'function' && !__hashProcessed) {
-            handleInitialHash();
-          }
         })
         .catch(err => {
           console.log('positions_config.json not found, using defaults:', err);
-          // Still try hash navigation if positions load fails
-          if (typeof handleInitialHash === 'function' && !__hashProcessed) {
-            handleInitialHash();
-          }
         });
     }
 
@@ -3329,6 +3321,14 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (Object.keys(nodePositions).length > 0) {
       console.log('Applying saved node positions, skipping cluster positioning');
       applySavedNodePositions();
+      
+      // Trigger hash navigation immediately after positions are applied (for fast node URL access)
+      if (!__defaultNodeInfoHTML) {
+        __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
+      }
+      if (typeof handleInitialHash === 'function' && !__hashProcessed) {
+        handleInitialHash();
+      }
     } else {
       // 3) Empujón anti-overlap cuando ya están puestas las imágenes
       setTimeout(() => {
@@ -3342,25 +3342,23 @@ document.addEventListener('DOMContentLoaded', async function () {
           network.redraw();
         }
       }, 150);
+      
+      // For cases without saved positions, call hash navigation after a short delay
+      setTimeout(() => {
+        if (!__defaultNodeInfoHTML) {
+          __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
+        }
+        if (typeof handleInitialHash === 'function' && !__hashProcessed) {
+          handleInitialHash();
+        }
+      }, 200);
     }
 
-    // ===== ALWAYS CALL handleInitialHash after network is ready (with or without saved positions) =====
-    setTimeout(() => {
-      if (!__defaultNodeInfoHTML) {
-        __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-      }
-
-      // Only call if not already triggered by position loading
-      if (typeof handleInitialHash === 'function' && !__hashProcessed) {
-        handleInitialHash();
-      }
-
-      // Listen for hash changes (when user clicks links with hash URLs)
-      window.addEventListener('hashchange', () => {
-        __hashProcessed = false;
-        handleInitialHash();
-      });
-    }, 300);  // Shorter timeout as fallback; positions loading triggers it earlier if available
+    // Listen for hash changes (when user clicks links with hash URLs)
+    window.addEventListener('hashchange', () => {
+      __hashProcessed = false;
+      handleInitialHash();
+    });
     
     // Safety fallback: ensure physics is disabled after max time
     setTimeout(() => {
