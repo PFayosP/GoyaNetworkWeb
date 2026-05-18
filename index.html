@@ -564,6 +564,45 @@
     overflow-y: auto;
   }
 
+  /* ===== Vis.js Navigation Buttons Styling ===== */
+  /* Enhanced visibility with blue color and higher contrast */
+  .vis-navigation {
+    width: 100px;
+    height: 100px;
+  }
+
+  .vis-button {
+    background-color: #2B7CE9;
+    border: 2px solid #1a4d99;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vis-button:hover {
+    background-color: #3d8de9;
+    border-color: #0d2d79;
+    transform: scale(1.1);
+  }
+
+  .vis-button:active {
+    background-color: #1e5bb8;
+    border-color: #0d1a4d;
+  }
+
+  /* Increase SVG size for better visibility */
+  .vis-button svg {
+    width: 24px;
+    height: 24px;
+  }
+
 </style>
 
   
