@@ -597,13 +597,11 @@
     border-color: #0d1a4d;
   }
 
-  /* Increase SVG size for better visibility */
+  /* Make arrow icons bright orange - keep blue background */
   .vis-button svg {
-    width: 24px;
-    height: 24px;
+    filter: hue-rotate(-110deg) saturate(2) brightness(1.1) !important;
   }
 
-  /* Make arrow icons bright orange - keep blue background */
   .vis-button svg path {
     stroke: #FF6B35 !important;
     fill: #FF6B35 !important;
