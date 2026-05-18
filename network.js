@@ -2348,9 +2348,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           iterations: 200,           // Limit iterations for faster settling
           fit: true
         },
-        maxVelocity: 50,            // Limit velocity to prevent wild oscillations
-        timeStep: 0.35,             // Faster time stepping
-        adaptiveTimestep: true      // Adaptive timestep for stable convergence
+        maxVelocity: 50             // Limit velocity to prevent wild oscillations
       },
 
         // 🔥 AÑADE ESTA NUEVA OPCIÓN (ANTI-OVERLAP INTEGRADO):
@@ -3321,15 +3319,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (Object.keys(nodePositions).length > 0) {
       console.log('Applying saved node positions, skipping cluster positioning');
       applySavedNodePositions();
+      network.redraw();  // Force redraw to ensure positions are rendered
       
-      // Trigger hash navigation after positions are applied AND network has rendered (for fast node URL access)
+      // Trigger hash navigation after positions are rendered
       requestAnimationFrame(() => {
-        if (!__defaultNodeInfoHTML) {
-          __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-        }
-        if (typeof handleInitialHash === 'function' && !__hashProcessed) {
-          handleInitialHash();
-        }
+        setTimeout(() => {
+          if (!__defaultNodeInfoHTML) {
+            __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
+          }
+          if (typeof handleInitialHash === 'function' && !__hashProcessed) {
+            handleInitialHash();
+          }
+        }, 50);  // Small delay to ensure render is complete
       });
     } else {
       // 3) Empujón anti-overlap cuando ya están puestas las imágenes
