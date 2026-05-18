@@ -1113,7 +1113,8 @@ function makeEdgeHash(edgeId) {
 
 // Simple hash navigation - no promises to avoid Chrome extension errors
 function handleInitialHash(retryCount = 0) {
-  const MAX_RETRIES = 5;
+  const MAX_RETRIES = 15;
+  const RETRY_INTERVAL = 200;  // Fast retry (200ms instead of 500ms)
   const rawHash = window.location.hash.substring(1);
   
   if (__hashProcessed || !rawHash) {
@@ -1129,7 +1130,7 @@ function handleInitialHash(retryCount = 0) {
   
   if (!ready && retryCount < MAX_RETRIES) {
     console.log(`🔄 Hash navigation retry ${retryCount + 1}/${MAX_RETRIES} - networkOk: ${networkOk}, nodesOk: ${nodesOk} (${nodesCount}), edgesOk: ${edgesOk} (${edgesCount})`);
-    setTimeout(() => handleInitialHash(retryCount + 1), 500);
+    setTimeout(() => handleInitialHash(retryCount + 1), RETRY_INTERVAL);
     return;
   }
   if (!ready) {
@@ -1150,7 +1151,7 @@ function handleInitialHash(retryCount = 0) {
         window.VIS_NETWORK.moveTo({position: pos, scale: window.VIS_NETWORK.getScale(), animation: {duration: 500}});
         window.VIS_NETWORK.selectNodes([node.id]);
         window.VIS_NETWORK.emit('click', {nodes: [node.id], edges: [], pointer: {DOM: {x: 0, y: 0}, canvas: {x: 0, y: 0}}});
-      }, 100);
+      }, 50);
     }
     return;
   }
@@ -1170,7 +1171,7 @@ function handleInitialHash(retryCount = 0) {
         window.VIS_NETWORK.moveTo({position: pos, scale: window.VIS_NETWORK.getScale(), animation: {duration: 500}});
         window.VIS_NETWORK.selectNodes([node.id]);
         window.VIS_NETWORK.emit('click', {nodes: [node.id], edges: [], pointer: {DOM: {x: 0, y: 0}, canvas: {x: 0, y: 0}}});
-      }, 100);
+      }, 50);
     }
     return;
   }
@@ -1204,7 +1205,7 @@ function handleInitialHash(retryCount = 0) {
         }
         window.VIS_NETWORK.selectEdges([matchingEdge.id]);
         window.VIS_NETWORK.emit('click', {nodes: [], edges: [matchingEdge.id], pointer: {DOM: {x: 0, y: 0}, canvas: {x: 0, y: 0}}});
-      }, 100);
+      }, 50);
     }
   }
 }
@@ -2335,14 +2336,22 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       physics: {
         enabled: true, 
-        solver: 'repulsion',
-        repulsion: {
-          nodeDistance: 600,         // increased from 500 for stronger node separation and collision prevention
-          centralGravity: 0.018,     // ↓ Slightly less gravity
-          springLength: 210,         // ↑ Longer springs for more separation
-          springConstant: 0.012,     // ↓ Softer springs
-          damping: 0.52              // Slightly more damping
-        }
+        solver: 'barnesHut',
+        barnesHut: {
+          gravitationalConstant: -150,
+          centralGravity: 0.005,
+          springLength: 200,
+          springConstant: 0.08,
+          damping: 0.9,             // Fast settling
+          avoidOverlap: 0.5
+        },
+        stabilization: {
+          iterations: 200,
+          fit: true
+        },
+        maxVelocity: 50,
+        timeStep: 0.35,
+        adaptiveTimestep: true
       },
 
         // 🔥 AÑADE ESTA NUEVA OPCIÓN (ANTI-OVERLAP INTEGRADO):
@@ -3343,7 +3352,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         __hashProcessed = false;
         handleInitialHash();
       });
-    }, 1500);
+    }, 800);  // Reduced from 1500ms - with faster physics settling, hash can be handled earlier
+    
+    // Safety fallback: ensure physics is disabled after max time
+    setTimeout(() => {
+      network.setOptions({ physics: { enabled: false } });
+      console.log('⏱ Force disabled physics after timeout');
+    }, 3000);  // Force disable after 3 seconds if stabilization hasn't happened yet
   });
 
     function highlightNeighborhood(nodeId) {
