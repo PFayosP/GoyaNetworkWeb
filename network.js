@@ -2389,6 +2389,16 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     window.VIS_NETWORK = network;
 
+    // Move navigation buttons inside network container so they appear within the network area
+    const panButtons = document.getElementById('customPanButtons');
+    const zoomButtons = document.getElementById('customZoomButtons');
+    if (panButtons && panButtons.parentElement.id !== 'network') {
+      container.appendChild(panButtons);
+    }
+    if (zoomButtons && zoomButtons.parentElement.id !== 'network') {
+      container.appendChild(zoomButtons);
+    }
+
     // ===== ADMIN MODE =====
     const urlParams = new URLSearchParams(window.location.search);
     const isAdminMode = urlParams.get('admin') === 'true';
