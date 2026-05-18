@@ -2462,9 +2462,17 @@ document.addEventListener('DOMContentLoaded', async function () {
         .then(data => {
           nodePositions = data;
           console.log('Loaded positions from positions_config.json');
+          // Trigger hash navigation immediately after positions load for fast node URL access
+          if (typeof handleInitialHash === 'function' && !__hashProcessed) {
+            handleInitialHash();
+          }
         })
         .catch(err => {
           console.log('positions_config.json not found, using defaults:', err);
+          // Still try hash navigation if positions load fails
+          if (typeof handleInitialHash === 'function' && !__hashProcessed) {
+            handleInitialHash();
+          }
         });
     }
 
@@ -3342,7 +3350,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
       }
 
-      if (typeof handleInitialHash === 'function') {
+      // Only call if not already triggered by position loading
+      if (typeof handleInitialHash === 'function' && !__hashProcessed) {
         handleInitialHash();
       }
 
@@ -3351,7 +3360,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         __hashProcessed = false;
         handleInitialHash();
       });
-    }, 800);  // Reduced from 1500ms - with faster physics settling, hash can be handled earlier
+    }, 300);  // Shorter timeout as fallback; positions loading triggers it earlier if available
     
     // Safety fallback: ensure physics is disabled after max time
     setTimeout(() => {
