@@ -3322,13 +3322,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       console.log('Applying saved node positions, skipping cluster positioning');
       applySavedNodePositions();
       
-      // Trigger hash navigation immediately after positions are applied (for fast node URL access)
-      if (!__defaultNodeInfoHTML) {
-        __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
-      }
-      if (typeof handleInitialHash === 'function' && !__hashProcessed) {
-        handleInitialHash();
-      }
+      // Trigger hash navigation after positions are applied AND network has rendered (for fast node URL access)
+      requestAnimationFrame(() => {
+        if (!__defaultNodeInfoHTML) {
+          __defaultNodeInfoHTML = document.getElementById('nodeInfo').innerHTML;
+        }
+        if (typeof handleInitialHash === 'function' && !__hashProcessed) {
+          handleInitialHash();
+        }
+      });
     } else {
       // 3) Empujón anti-overlap cuando ya están puestas las imágenes
       setTimeout(() => {

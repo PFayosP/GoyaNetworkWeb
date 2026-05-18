@@ -1415,14 +1415,15 @@ function showSection(section) {
         console.log('Network found, creating buttons');
         createNavButtons();
       }
-    }, 100);
+    }, 50);  // Check every 50ms instead of 100ms for faster detection
 
-    // Also try after a delay
+    // Fallback with shorter delay
     setTimeout(() => {
       if (window.VIS_NETWORK && !document.getElementById('navUp')) {
+        console.log('Fallback: creating buttons');
         createNavButtons();
       }
-    }, 2000);
+    }, 500);  // Reduced from 2000ms to 500ms
   });
 </script>
   
