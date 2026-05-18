@@ -605,11 +605,13 @@
   .vis-button svg path {
     stroke: #FF6B35 !important;
     fill: #FF6B35 !important;
+    paint-order: stroke !important;
   }
 
   .vis-button svg polygon {
     stroke: #FF6B35 !important;
     fill: #FF6B35 !important;
+    paint-order: stroke !important;
   }
 
   .vis-button svg line {
@@ -619,6 +621,15 @@
   .vis-button svg polyline {
     stroke: #FF6B35 !important;
     fill: #FF6B35 !important;
+  }
+
+  /* Override any inline styles on SVG elements */
+  .vis-button svg [fill="#4CAF50"],
+  .vis-button svg [stroke="#4CAF50"],
+  .vis-button svg [fill="rgb(76, 175, 80)"],
+  .vis-button svg [stroke="rgb(76, 175, 80)"] {
+    fill: #FF6B35 !important;
+    stroke: #FF6B35 !important;
   }
 
 </style>
@@ -658,65 +669,85 @@
 
   <!-- Script to change nav button arrow colors to orange -->
   <script>
+    // Inject a style tag with aggressive rules
+    const style = document.createElement('style');
+    style.textContent = `
+      .vis-button svg * {
+        fill: #FF6B35 !important;
+        stroke: #FF6B35 !important;
+      }
+      .vis-button svg circle {
+        fill: url(#grad1) !important;
+        stroke: #1a4d99 !important;
+      }
+      @keyframes changeColor {
+        0% { fill: #4CAF50; stroke: #4CAF50; }
+        100% { fill: #FF6B35; stroke: #FF6B35; }
+      }
+      .vis-button svg path, 
+      .vis-button svg line, 
+      .vis-button svg polygon,
+      .vis-button svg polyline {
+        animation: changeColor 0.5s forwards;
+        fill: #FF6B35 !important;
+        stroke: #FF6B35 !important;
+      }
+    `;
+    document.head.appendChild(style);
+
     function changeNavButtonColors() {
-      // Find all SVG elements in the navigation buttons
-      const svgs = document.querySelectorAll('.vis-button svg');
-      
-      svgs.forEach(svg => {
-        // Get the SVG HTML
-        let svgHTML = svg.outerHTML;
-        
-        // Replace common green colors with orange
-        svgHTML = svgHTML.replace(/#4CAF50/gi, '#FF6B35');
-        svgHTML = svgHTML.replace(/#66bb6a/gi, '#FF6B35');
-        svgHTML = svgHTML.replace(/#81c784/gi, '#FF6B35');
-        svgHTML = svgHTML.replace(/rgb\(76,\s*175,\s*80\)/gi, '#FF6B35');
-        svgHTML = svgHTML.replace(/rgba\(76,\s*175,\s*80/gi, 'rgb(255, 107, 53');
-        
-        // Replace the SVG
-        const newSvg = document.createElement('div');
-        newSvg.innerHTML = svgHTML;
-        svg.parentNode.replaceChild(newSvg.firstChild, svg);
-      });
-      
-      // Also force change any remaining elements by directly modifying attributes
       document.querySelectorAll('.vis-button svg *').forEach(el => {
         const fill = el.getAttribute('fill');
         const stroke = el.getAttribute('stroke');
-        const style = el.getAttribute('style');
         
-        if (fill && fill.toLowerCase().includes('4caf50')) {
+        // Skip circle elements (backgrounds)
+        if (el.tagName === 'circle') return;
+        
+        // Change green to orange
+        if (fill === '#4CAF50' || fill === 'rgb(76, 175, 80)') {
           el.setAttribute('fill', '#FF6B35');
+          el.style.fill = '#FF6B35';
         }
-        if (stroke && stroke.toLowerCase().includes('4caf50')) {
+        if (stroke === '#4CAF50' || stroke === 'rgb(76, 175, 80)') {
           el.setAttribute('stroke', '#FF6B35');
+          el.style.stroke = '#FF6B35';
         }
         
-        if (style) {
-          let newStyle = style.replace(/#4CAF50/gi, '#FF6B35')
-                              .replace(/#66bb6a/gi, '#FF6B35')
-                              .replace(/rgb\(76,\s*175,\s*80\)/gi, '#FF6B35');
-          if (newStyle !== style) {
-            el.setAttribute('style', newStyle);
-          }
+        // Also update any style attribute
+        if (el.getAttribute('style')) {
+          let styleStr = el.getAttribute('style');
+          styleStr = styleStr.replace(/#4CAF50/g, '#FF6B35');
+          styleStr = styleStr.replace(/rgb\(76,\s*175,\s*80\)/g, '#FF6B35');
+          el.setAttribute('style', styleStr);
         }
       });
     }
     
-    // Use MutationObserver to watch for new button creation and update them
-    const observer = new MutationObserver(() => {
-      changeNavButtonColors();
-    });
-    
     document.addEventListener('DOMContentLoaded', () => {
-      setTimeout(changeNavButtonColors, 500);
-      setTimeout(changeNavButtonColors, 1000);
-      setTimeout(changeNavButtonColors, 2000);
+      // Run multiple times with delays
+      for (let i = 0; i < 10; i++) {
+        setTimeout(changeNavButtonColors, 300 * (i + 1));
+      }
       
-      // Watch for changes in the network container
+      // Watch for any new SVG elements
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.addedNodes.length) {
+            changeNavButtonColors();
+          }
+        });
+      });
+      
       const networkContainer = document.getElementById('network');
       if (networkContainer) {
         observer.observe(networkContainer, { childList: true, subtree: true });
+      }
+    });
+    
+    // Also run on window load
+    window.addEventListener('load', () => {
+      for (let i = 0; i < 5; i++) {
+        setTimeout(changeNavButtonColors, 100 * (i + 1));
       }
     });
   </script>
