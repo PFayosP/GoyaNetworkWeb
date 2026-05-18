@@ -564,6 +564,53 @@
     overflow-y: auto;
   }
 
+  /* ===== Custom Navigation Buttons (Orange Arrows) ===== */
+  .custom-nav-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 100;
+    font-family: Arial, sans-serif;
+  }
+
+  .nav-button-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .custom-nav-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #1a4d99;
+    border-radius: 4px;
+    background-color: #2B7CE9;
+    color: #FF6B35;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+
+  .custom-nav-btn:hover {
+    background-color: #3d8de9;
+    border-color: #0d2d79;
+    transform: scale(1.1);
+  }
+
+  .custom-nav-btn:active {
+    background-color: #1e5bb8;
+    border-color: #0d1a4d;
+    transform: scale(0.95);
+  }
+
   /* ===== Vis.js Navigation Buttons Styling ===== */
   /* Enhanced visibility with blue color and higher contrast */
   .vis-navigation {
@@ -665,91 +712,6 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-NYR5EFSWLL');
-  </script>
-
-  <!-- Script to change nav button arrow colors to orange -->
-  <script>
-    // Inject a style tag with aggressive rules
-    const style = document.createElement('style');
-    style.textContent = `
-      .vis-button svg * {
-        fill: #FF6B35 !important;
-        stroke: #FF6B35 !important;
-      }
-      .vis-button svg circle {
-        fill: url(#grad1) !important;
-        stroke: #1a4d99 !important;
-      }
-      @keyframes changeColor {
-        0% { fill: #4CAF50; stroke: #4CAF50; }
-        100% { fill: #FF6B35; stroke: #FF6B35; }
-      }
-      .vis-button svg path, 
-      .vis-button svg line, 
-      .vis-button svg polygon,
-      .vis-button svg polyline {
-        animation: changeColor 0.5s forwards;
-        fill: #FF6B35 !important;
-        stroke: #FF6B35 !important;
-      }
-    `;
-    document.head.appendChild(style);
-
-    function changeNavButtonColors() {
-      document.querySelectorAll('.vis-button svg *').forEach(el => {
-        const fill = el.getAttribute('fill');
-        const stroke = el.getAttribute('stroke');
-        
-        // Skip circle elements (backgrounds)
-        if (el.tagName === 'circle') return;
-        
-        // Change green to orange
-        if (fill === '#4CAF50' || fill === 'rgb(76, 175, 80)') {
-          el.setAttribute('fill', '#FF6B35');
-          el.style.fill = '#FF6B35';
-        }
-        if (stroke === '#4CAF50' || stroke === 'rgb(76, 175, 80)') {
-          el.setAttribute('stroke', '#FF6B35');
-          el.style.stroke = '#FF6B35';
-        }
-        
-        // Also update any style attribute
-        if (el.getAttribute('style')) {
-          let styleStr = el.getAttribute('style');
-          styleStr = styleStr.replace(/#4CAF50/g, '#FF6B35');
-          styleStr = styleStr.replace(/rgb\(76,\s*175,\s*80\)/g, '#FF6B35');
-          el.setAttribute('style', styleStr);
-        }
-      });
-    }
-    
-    document.addEventListener('DOMContentLoaded', () => {
-      // Run multiple times with delays
-      for (let i = 0; i < 10; i++) {
-        setTimeout(changeNavButtonColors, 300 * (i + 1));
-      }
-      
-      // Watch for any new SVG elements
-      const observer = new MutationObserver((mutations) => {
-        mutations.forEach((mutation) => {
-          if (mutation.addedNodes.length) {
-            changeNavButtonColors();
-          }
-        });
-      });
-      
-      const networkContainer = document.getElementById('network');
-      if (networkContainer) {
-        observer.observe(networkContainer, { childList: true, subtree: true });
-      }
-    });
-    
-    // Also run on window load
-    window.addEventListener('load', () => {
-      for (let i = 0; i < 5; i++) {
-        setTimeout(changeNavButtonColors, 100 * (i + 1));
-      }
-    });
   </script>
   
 </head>
@@ -1329,6 +1291,72 @@ function showSection(section) {
     <button onclick="document.getElementById('shareModal').style.display='none'" style="padding:0.5rem 1rem; background:#444; color:white; border:none; border-radius:4px;">Close</button>
   </div>
 </div>
+
+<!-- Custom Navigation Buttons with Orange Arrows -->
+<div class="custom-nav-buttons" id="customNavButtons" style="display:none;">
+  <div class="nav-button-row">
+    <button class="custom-nav-btn" id="navZoomIn" title="Zoom In">+</button>
+    <button class="custom-nav-btn" id="navZoomOut" title="Zoom Out">−</button>
+  </div>
+  <div class="nav-button-row">
+    <button class="custom-nav-btn" id="navUp" title="Pan Up">↑</button>
+  </div>
+  <div class="nav-button-row">
+    <button class="custom-nav-btn" id="navLeft" title="Pan Left">←</button>
+    <button class="custom-nav-btn" id="navDown" title="Pan Down">↓</button>
+    <button class="custom-nav-btn" id="navRight" title="Pan Right">→</button>
+  </div>
+</div>
+
+<script>
+  // Initialize custom navigation buttons when network is ready
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      if (window.VIS_NETWORK) {
+        document.getElementById('customNavButtons').style.display = 'flex';
+        initializeNavButtons();
+      }
+    }, 500);
+  });
+
+  function initializeNavButtons() {
+    const network = window.VIS_NETWORK;
+    if (!network) return;
+
+    const panAmount = 100;
+    const zoomAmount = 1.2;
+
+    document.getElementById('navUp').addEventListener('click', () => {
+      const pos = network.getViewPosition();
+      network.moveTo({ position: { x: pos.x, y: pos.y - panAmount }, animation: { duration: 300 } });
+    });
+
+    document.getElementById('navDown').addEventListener('click', () => {
+      const pos = network.getViewPosition();
+      network.moveTo({ position: { x: pos.x, y: pos.y + panAmount }, animation: { duration: 300 } });
+    });
+
+    document.getElementById('navLeft').addEventListener('click', () => {
+      const pos = network.getViewPosition();
+      network.moveTo({ position: { x: pos.x - panAmount, y: pos.y }, animation: { duration: 300 } });
+    });
+
+    document.getElementById('navRight').addEventListener('click', () => {
+      const pos = network.getViewPosition();
+      network.moveTo({ position: { x: pos.x + panAmount, y: pos.y }, animation: { duration: 300 } });
+    });
+
+    document.getElementById('navZoomIn').addEventListener('click', () => {
+      const scale = network.getScale();
+      network.moveTo({ scale: scale * zoomAmount, animation: { duration: 300 } });
+    });
+
+    document.getElementById('navZoomOut').addEventListener('click', () => {
+      const scale = network.getScale();
+      network.moveTo({ scale: scale / zoomAmount, animation: { duration: 300 } });
+    });
+  }
+</script>
   
 </body>
 </html>
