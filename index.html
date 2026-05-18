@@ -661,34 +661,65 @@
   <!-- Script to change nav button arrow colors to orange -->
   <script>
     function changeNavButtonColors() {
-      const buttons = document.querySelectorAll('.vis-button svg');
-      buttons.forEach(svg => {
-        // Find all path, polygon, line, and polyline elements (arrows) and make them orange
-        const paths = svg.querySelectorAll('path');
-        paths.forEach(el => {
-          if (!el.closest('circle')) {  // Don't modify paths inside circles (backgrounds)
-            el.setAttribute('stroke', '#FF6B35');
-            el.setAttribute('fill', '#FF6B35');
-            el.style.stroke = '#FF6B35';
-            el.style.fill = '#FF6B35';
-          }
-        });
+      // Find all SVG elements in the navigation buttons
+      const svgs = document.querySelectorAll('.vis-button svg');
+      
+      svgs.forEach(svg => {
+        // Get the SVG HTML
+        let svgHTML = svg.outerHTML;
         
-        const lines = svg.querySelectorAll('line, polyline, polygon');
-        lines.forEach(el => {
-          el.setAttribute('stroke', '#FF6B35');
+        // Replace common green colors with orange
+        svgHTML = svgHTML.replace(/#4CAF50/gi, '#FF6B35');
+        svgHTML = svgHTML.replace(/#66bb6a/gi, '#FF6B35');
+        svgHTML = svgHTML.replace(/#81c784/gi, '#FF6B35');
+        svgHTML = svgHTML.replace(/rgb\(76,\s*175,\s*80\)/gi, '#FF6B35');
+        svgHTML = svgHTML.replace(/rgba\(76,\s*175,\s*80/gi, 'rgb(255, 107, 53');
+        
+        // Replace the SVG
+        const newSvg = document.createElement('div');
+        newSvg.innerHTML = svgHTML;
+        svg.parentNode.replaceChild(newSvg.firstChild, svg);
+      });
+      
+      // Also force change any remaining elements by directly modifying attributes
+      document.querySelectorAll('.vis-button svg *').forEach(el => {
+        const fill = el.getAttribute('fill');
+        const stroke = el.getAttribute('stroke');
+        const style = el.getAttribute('style');
+        
+        if (fill && fill.toLowerCase().includes('4caf50')) {
           el.setAttribute('fill', '#FF6B35');
-          el.style.stroke = '#FF6B35';
-          el.style.fill = '#FF6B35';
-        });
+        }
+        if (stroke && stroke.toLowerCase().includes('4caf50')) {
+          el.setAttribute('stroke', '#FF6B35');
+        }
+        
+        if (style) {
+          let newStyle = style.replace(/#4CAF50/gi, '#FF6B35')
+                              .replace(/#66bb6a/gi, '#FF6B35')
+                              .replace(/rgb\(76,\s*175,\s*80\)/gi, '#FF6B35');
+          if (newStyle !== style) {
+            el.setAttribute('style', newStyle);
+          }
+        }
       });
     }
     
-    // Run after network loads
+    // Use MutationObserver to watch for new button creation and update them
+    const observer = new MutationObserver(() => {
+      changeNavButtonColors();
+    });
+    
     document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(changeNavButtonColors, 500);
       setTimeout(changeNavButtonColors, 1000);
-      // Also run periodically in case buttons are recreated
-      setInterval(changeNavButtonColors, 2000);
+      setTimeout(changeNavButtonColors, 2000);
+      
+      // Watch for changes in the network container
+      const networkContainer = document.getElementById('network');
+      if (networkContainer) {
+        observer.observe(networkContainer, { childList: true, subtree: true });
+      }
     });
   </script>
   
