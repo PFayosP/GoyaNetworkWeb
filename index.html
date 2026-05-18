@@ -593,7 +593,7 @@
     width: 40px;
     height: 40px;
     border: 2px solid #1a4d99;
-    border-radius: 4px;
+    border-radius: 50%;
     background-color: #2B7CE9;
     color: #FF6B35;
     font-size: 24px;
@@ -1331,6 +1331,9 @@ function showSection(section) {
       <div class="nav-button-row">
         <button class="custom-nav-btn" id="navZoomOut" title="Zoom Out">−</button>
       </div>
+      <div class="nav-button-row">
+        <button class="custom-nav-btn" id="navFitAll" title="Fit All Nodes">⊙</button>
+      </div>
     `;
 
     // Append to network container
@@ -1358,6 +1361,7 @@ function showSection(section) {
     const navRight = document.getElementById('navRight');
     const navZoomIn = document.getElementById('navZoomIn');
     const navZoomOut = document.getElementById('navZoomOut');
+    const navFitAll = document.getElementById('navFitAll');
 
     if (!navUp) {
       console.log('Buttons not found, creating them now');
@@ -1393,6 +1397,10 @@ function showSection(section) {
     navZoomOut.addEventListener('click', () => {
       const scale = network.getScale();
       network.moveTo({ scale: scale / zoomAmount, animation: { duration: 300 } });
+    });
+
+    navFitAll.addEventListener('click', () => {
+      network.fit({ animation: { duration: 500 } });
     });
 
     console.log('Navigation buttons initialized');
