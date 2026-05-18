@@ -603,12 +603,7 @@
     height: 24px;
   }
 
-  /* Make arrow icons bright orange - target only arrow paths/lines, not circles */
-  .vis-button svg circle {
-    fill: #2B7CE9 !important;
-    stroke: #1a4d99 !important;
-  }
-
+  /* Make arrow icons bright orange - keep blue background */
   .vis-button svg path {
     stroke: #FF6B35 !important;
     fill: #FF6B35 !important;
@@ -623,14 +618,9 @@
     stroke: #FF6B35 !important;
   }
 
-  .vis-button svg * {
-    fill: #FF6B35 !important;
+  .vis-button svg polyline {
     stroke: #FF6B35 !important;
-  }
-
-  .vis-button svg circle {
-    fill: #2B7CE9 !important;
-    stroke: #1a4d99 !important;
+    fill: #FF6B35 !important;
   }
 
 </style>
