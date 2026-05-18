@@ -315,6 +315,7 @@
     flex: 1;
     height: 80vh;
     background: black;
+    position: relative;
   }
     
   #network.hidden {
@@ -566,7 +567,7 @@
 
   /* ===== Custom Navigation Buttons (Orange Arrows) ===== */
   .custom-nav-buttons {
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     left: 20px;
     display: flex;
@@ -574,6 +575,7 @@
     gap: 8px;
     z-index: 100;
     font-family: Arial, sans-serif;
+    pointer-events: auto;
   }
 
   .custom-nav-buttons.zoom {
@@ -853,7 +855,29 @@
   
   <!-- 🔧 Layout principal con grafo y panel de info -->
   <div class="layout-container visible" id="layout">
-    <div id="network"></div>
+    <div id="network">
+      <!-- Custom Navigation Buttons with Orange Arrows (Pan Controls - Bottom Left) -->
+      <div class="custom-nav-buttons" id="customPanButtons" style="display:none;">
+        <div class="nav-button-row">
+          <button class="custom-nav-btn" id="navUp" title="Pan Up">↑</button>
+        </div>
+        <div class="nav-button-row">
+          <button class="custom-nav-btn" id="navLeft" title="Pan Left">←</button>
+          <button class="custom-nav-btn" id="navDown" title="Pan Down">↓</button>
+          <button class="custom-nav-btn" id="navRight" title="Pan Right">→</button>
+        </div>
+      </div>
+
+      <!-- Custom Zoom Buttons (Bottom Right) -->
+      <div class="custom-nav-buttons zoom" id="customZoomButtons" style="display:none;">
+        <div class="nav-button-row">
+          <button class="custom-nav-btn" id="navZoomIn" title="Zoom In">+</button>
+        </div>
+        <div class="nav-button-row">
+          <button class="custom-nav-btn" id="navZoomOut" title="Zoom Out">−</button>
+        </div>
+      </div>
+    </div>
     <div id="nodeInfo">
       <p data-i18n="HELP_TEXT_1"></p>
       <p data-i18n="HELP_TEXT_2"></p>
@@ -1294,28 +1318,6 @@ function showSection(section) {
       <input type="text" id="shareUrl" style="width:100%; padding:0.5rem; background:#333; color:white; border:1px solid #555;" readonly>
     </div>
     <button onclick="document.getElementById('shareModal').style.display='none'" style="padding:0.5rem 1rem; background:#444; color:white; border:none; border-radius:4px;">Close</button>
-  </div>
-</div>
-
-<!-- Custom Navigation Buttons with Orange Arrows (Pan Controls - Bottom Left) -->
-<div class="custom-nav-buttons" id="customPanButtons" style="display:none;">
-  <div class="nav-button-row">
-    <button class="custom-nav-btn" id="navUp" title="Pan Up">↑</button>
-  </div>
-  <div class="nav-button-row">
-    <button class="custom-nav-btn" id="navLeft" title="Pan Left">←</button>
-    <button class="custom-nav-btn" id="navDown" title="Pan Down">↓</button>
-    <button class="custom-nav-btn" id="navRight" title="Pan Right">→</button>
-  </div>
-</div>
-
-<!-- Custom Zoom Buttons (Bottom Right) -->
-<div class="custom-nav-buttons zoom" id="customZoomButtons" style="display:none;">
-  <div class="nav-button-row">
-    <button class="custom-nav-btn" id="navZoomIn" title="Zoom In">+</button>
-  </div>
-  <div class="nav-button-row">
-    <button class="custom-nav-btn" id="navZoomOut" title="Zoom Out">−</button>
   </div>
 </div>
 
