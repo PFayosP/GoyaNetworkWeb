@@ -2319,7 +2319,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
     
     // Check if we have a specific node/edge hash URL - if so, disable physics for faster navigation
-    const hasSpecificHash = window.location.hash && (window.location.hash.includes('/node/') || window.location.hash.includes('/edge/'));
+    const hasSpecificHash = window.location.hash && (window.location.hash.includes('node/') || window.location.hash.includes('edge/'));
     const physicsEnabled = !hasSpecificHash;
     console.log(`Physics enabled: ${physicsEnabled} (Hash URL: ${window.location.hash})`);
     

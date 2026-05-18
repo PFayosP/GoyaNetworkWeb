@@ -262,6 +262,7 @@
       height: auto !important;
       max-height: none !important;
       overflow: visible !important;
+      position: relative;  /* Enable absolute positioning of buttons */
      }
       
     .layout-container.visible {
@@ -273,6 +274,7 @@
       height: 80vh; /* 🔥 esta es la clave */
       align-items: stretch !important;
       flex-wrap: nowrap;
+      position: relative;  /* Enable absolute positioning of buttons */
     }
   
     .layout-container.hidden {
@@ -567,12 +569,22 @@
 
   /* ===== Custom Navigation Buttons (Orange Arrows) ===== */
   .custom-nav-buttons {
+    position: absolute;
+    bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     z-index: 100;
     font-family: "EB Garamond", serif;
     pointer-events: auto;
+  }
+  
+  .custom-nav-buttons#customPanButtons {
+    left: 20px;
+  }
+
+  .custom-nav-buttons#customZoomButtons {
+    right: 1rem;  /* Account for layout padding */
   }
 
   .nav-button-row {
@@ -1318,36 +1330,10 @@ function showSection(section) {
 </div>
 
 <script>
-  // Initialize button event handlers and positioning
+  // Initialize button event handlers
   function initializeNavButtons() {
     const network = window.VIS_NETWORK;
     if (!network) return false;
-
-    // Position buttons relative to network bounds
-    function positionButtons() {
-      const networkEl = document.getElementById('network');
-      const panButtons = document.getElementById('customPanButtons');
-      const zoomButtons = document.getElementById('customZoomButtons');
-      
-      if (networkEl && panButtons && zoomButtons) {
-        const rect = networkEl.getBoundingClientRect();
-        const layout = document.getElementById('layout');
-        const layoutRect = layout.getBoundingClientRect();
-        
-        // Position relative to layout container
-        panButtons.style.position = 'fixed';
-        panButtons.style.bottom = (window.innerHeight - layoutRect.bottom + 20) + 'px';
-        panButtons.style.left = (layoutRect.left + 20) + 'px';
-        
-        zoomButtons.style.position = 'fixed';
-        zoomButtons.style.bottom = (window.innerHeight - layoutRect.bottom + 20) + 'px';
-        zoomButtons.style.right = (window.innerWidth - layoutRect.right + 20) + 'px';
-      }
-    }
-    
-    // Position on load and on window resize
-    positionButtons();
-    window.addEventListener('resize', positionButtons);
 
     // Pan buttons
     document.getElementById('navUp')?.addEventListener('click', () => {
