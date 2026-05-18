@@ -657,6 +657,40 @@
     gtag('js', new Date());
     gtag('config', 'G-NYR5EFSWLL');
   </script>
+
+  <!-- Script to change nav button arrow colors to orange -->
+  <script>
+    function changeNavButtonColors() {
+      const buttons = document.querySelectorAll('.vis-button svg');
+      buttons.forEach(svg => {
+        // Find all path, polygon, line, and polyline elements (arrows) and make them orange
+        const paths = svg.querySelectorAll('path');
+        paths.forEach(el => {
+          if (!el.closest('circle')) {  // Don't modify paths inside circles (backgrounds)
+            el.setAttribute('stroke', '#FF6B35');
+            el.setAttribute('fill', '#FF6B35');
+            el.style.stroke = '#FF6B35';
+            el.style.fill = '#FF6B35';
+          }
+        });
+        
+        const lines = svg.querySelectorAll('line, polyline, polygon');
+        lines.forEach(el => {
+          el.setAttribute('stroke', '#FF6B35');
+          el.setAttribute('fill', '#FF6B35');
+          el.style.stroke = '#FF6B35';
+          el.style.fill = '#FF6B35';
+        });
+      });
+    }
+    
+    // Run after network loads
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(changeNavButtonColors, 1000);
+      // Also run periodically in case buttons are recreated
+      setInterval(changeNavButtonColors, 2000);
+    });
+  </script>
   
 </head>
 <body>
