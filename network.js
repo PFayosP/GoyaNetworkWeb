@@ -2316,7 +2316,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (!container) {
       console.error("❌ No se encontró el contenedor #network.");
       return;
-}
+    }
+    
+    // Check if we have a specific node/edge hash URL - if so, disable physics for faster navigation
+    const hasSpecificHash = window.location.hash && (window.location.hash.includes('/node/') || window.location.hash.includes('/edge/'));
+    const physicsEnabled = !hasSpecificHash;
+    console.log(`Physics enabled: ${physicsEnabled} (Hash URL: ${window.location.hash})`);
+    
     const network = new vis.Network(container, { nodes, edges }, {
       nodes: { 
         borderWidth: 2,
@@ -2335,7 +2341,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       // (actual processing happens in edges.map() after loading JSON)
 
       physics: {
-        enabled: true, 
+        enabled: physicsEnabled, 
         solver: 'repulsion',
         repulsion: {
           nodeDistance: 600,         // increased from 500 for stronger node separation and collision prevention
