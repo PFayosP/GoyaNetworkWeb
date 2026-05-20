@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-03",
+  "last_update": "2026-05-20",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -5830,6 +5830,31 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Fernandez_Rojas.jpg",
       "image source": "Goya, portrait, 1815-16, RAH",
       "added": "2026-05-03"
+    },
+    {
+      "id": "Manuel García de la Prada",
+      "label": "García de la Prada",
+      "life dates": "1768-1839",
+      "nationality": "Spanish",
+      "born in": "Madrid",
+      "profession": "politician, businessman",
+      "political views": "liberal",
+      "considered as": "part of the group of the Spanish <i>ilustrados</i> (enlightened)",
+      "address": "Paris: boulevard des Italiens",
+      "in Paris": "1812-1818 (refugee); qualified by the French police as one of the greatest merchants of fabrics and silks (see RAH).",
+      "works as": "commissioner of the Navy and general director of the Royal Provisions (since 1800); representative of the National Bank of San Carlos at the Assembly of Bayonne (1808); councilman of the City Council for Joseph Bonaparte (1809); Corregidor of Madrid (1811-12); counselor of the Prefecture of Madrid.",
+      "member of": "Board of Directors of the National Bank of San Carlos; RABASF (1812)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/19451-manuel-garcia-de-la-prada"
+      },
+      "portrayed by": "Francisco de Goya, full-length portrait, oil, 1805-08, Des Moines Art Center; José de Madrazo, oil, 1827, RABASF",
+      "collector of Goya's works": "<i>Scene of Inquisition</i> [0673](https://www.academiacolecciones.com/pinturas/inventario.php?id=0673), <i>Disciplinants</i> [0674](https://www.academiacolecciones.com/pinturas/inventario.php?id=0674), <i>Lunatic Asylum</i> [0672](https://www.academiacolecciones.com/pinturas/inventario.php?id=0672), <i>Bullfight</i> [0675](https://www.academiacolecciones.com/pinturas/inventario.php?id=0675) and <i>Burial of the Sardine</i> [0676](https://www.academiacolecciones.com/pinturas/inventario.php?id=0676), all in the RABASF (donated after his death in 1839).",
+      "decorations/awards": "Knight of the Order of Charles III (1795); Knight of the French Legion of Honor (1816).",
+      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/19451-manuel-garcia-de-la-prada), by Juan López Tabar.",
+      "bibliography": "J. Cruz, <i>Gentlemen, bourgeois and revolutionaries: Political change and cultural persistence among the Spanish dominant groups (1750-1850)</i>, Cambridge University Press, 1996; V. de Cadenas y Vicent, <i>Extract of the files of the Order of Charles III</i>, t.V, Madrid, 1983; R. Andioc, <i>Epistolary of Leandro Fernández de Moratín</i>, 1973.",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Garcia_Prada.jpg",
+      "image source": "Goya, portrait, 1805-08, Des Moines Art Center",
+      "added": "2026-05-20"
     }
   ],
   "edges": [
@@ -6182,6 +6207,46 @@
       "to": "Ramón de Mesonero Romanos",
       "connection_level": "seconary?",
       "relationship type": "Mesonero admired Moratín's work"
+    },
+    {
+      "from": "Manuel García de la Prada",
+      "to": "Leandro Fernández de Moratín",
+      "connection_level": "direct",
+      "relationship type": "friends; collaborators; García de la Prada was Moratín's representative",
+      "collaborations": "García de la Prada translated <i>Causes of the crisis suffered by the Bank of France in the year 1805, sad effects that resulted from it and means to avoid them in the future</i>, which remained in manuscript when he had to leave for Bayonne in May 1808 (see RAH).",
+      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/19451-manuel-garcia-de-la-prada)"
+    },
+    {
+      "from": "Manuel García de la Prada",
+      "to": "Francisco de Goya",
+      "connection_level": "direct",
+      "relationship type": "friends; portraitist-sitter",
+      "portraits": [
+        {
+          "url": "https://es.wikipedia.org/wiki/Manuel_Garc%C3%ADa_de_la_Prada#/media/Archivo:Manuel_Garc%C3%ADa_de_la_Prada_por_Goya.jpg",
+          "caption": "1805-06, oil, full-length portrait, Des Moines Art Center"
+        }
+      ],
+      "collector of Goya's works": "<i>Scene of Inquisition</i> [0673](https://www.academiacolecciones.com/pinturas/inventario.php?id=0673), <i>Disciplinants</i> [0674](https://www.academiacolecciones.com/pinturas/inventario.php?id=0674), <i>Lunatic Asylum</i> [0672](https://www.academiacolecciones.com/pinturas/inventario.php?id=0672), <i>Bullfight</i> [0675](https://www.academiacolecciones.com/pinturas/inventario.php?id=0675) and <i>Burial of the Sardine</i> [0676](https://www.academiacolecciones.com/pinturas/inventario.php?id=0676), all in the RABASF (donated after his death in 1839)."
+    },
+    {
+      "from": "Manuel García de la Prada",
+      "to": "José de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "portraitist-sitter",
+      "portraits": "1827, oil, RABASF"
+    },
+    {
+      "from": "Manuel García de la Prada",
+      "to": "Carlos IV",
+      "connection_level": "direct",
+      "relationship type": "employer-employee"
+    },
+    {
+      "from": "Manuel García de la Prada",
+      "to": "Joseph Bonaparte",
+      "connection_level": "direct",
+      "relationship type": "employer-employee"
     },
     {
       "from": "Louis Daguerre",

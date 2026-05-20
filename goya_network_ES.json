@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-03",
+  "last_update": "2026-05-20",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -5865,6 +5865,31 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Fernandez_Rojas.jpg",
       "image source": "Goya, portrait, 1815-16, RAH",
       "added": "2026-05-03"
+    },
+    {
+      "id": "Manuel García de la Prada",
+      "label": "García Prada",
+      "life dates": "1768-1839",
+      "nationality": "Spanish",
+      "born in": "Madrid",
+      "profession": "politician, businessman",
+      "political views": "liberal",
+      "considered as": "parte del grupo de ilustrados españoles",
+      "address": "París: boulevard des Italiens",
+      "in Paris": "1812-1818 (refugiado); calificado por la policía francesa como uno de los más grandes mercaderes de tejidos y sedas (ver RAH).",
+      "works as": "comisario ordenador de la Armada y director general de las Reales Provisiones (desde 1800); representante del Banco Nacional de San Carlos en la Asamblea de Bayona (1808); regidor del Ayuntamiento para Joseph Bonaparte (1809); Corregidor de Madrid (1811-12); consejero de la Prefectura de Madrid.",
+      "member of": "Junta de Gobierno del Banco Nacional de San Carlos; RABASF (1812)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/19451-manuel-garcia-de-la-prada"
+      },
+      "portrayed by": "Francisco de Goya, retrato de cuerpo entero, óleo, 1805-08, Des Moines Art Center; José de Madrazo, óleo, 1827, RABASF",
+      "collector of Goya's works": "<i>Escena de Inquisición</i> [0673](https://www.academiacolecciones.com/pinturas/inventario.php?id=0673), <i>Disciplinantes</i> [0674](https://www.academiacolecciones.com/pinturas/inventario.php?id=0674), <i>Casa de locos</i> [0672](https://www.academiacolecciones.com/pinturas/inventario.php?id=0672), <i>Corrida de toros</i> [0675](https://www.academiacolecciones.com/pinturas/inventario.php?id=0675) y <i>Entierro de la sardina</i> [0676](https://www.academiacolecciones.com/pinturas/inventario.php?id=0676), todas ellas en la RABASF (donados tras su muerte en 1839).",
+      "decorations/awards": "Caballero de la Orden de Carlos III (1795); caballero de la Legión d eHonor francesa (1816).",
+      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/19451-manuel-garcia-de-la-prada), por Juan López Tabar.",
+      "bibliography": "J. Cruz, <i>Gentlemen, bourgeois and revolutionaires. Political change and cultural persistence among the Spanish dominant groups (1750-1850)</i>, Cambridge University Press, 1996; V. de Cadenas y Vicent, <i>Extracto de los expedientes de la Orden de Carlos III</i>, t.V, Madrid, 1983; R. Andioc, <i>Epistolario de Leandro Fernández de Moratín</i>, 1973.",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Garcia_Prada.jpg",
+      "image source": "Goya, portrait, 1805-08, Des Moines Art Center",
+      "added": "2026-05-20"
     }
   ],
   "edges": [
@@ -6217,6 +6242,46 @@
       "to": "Ramón de Mesonero Romanos",
       "connection_level": "¿secundario?",
       "relationship type": "Mesonero admiraba la obra de Moratín"
+    },
+    {
+      "from": "Manuel García de la Prada",
+      "to": "Leandro Fernández de Moratín",
+      "connection_level": "direct",
+      "relationship type": "amigos; colaboradores; García de la Prada era el apoderado de Moratín",
+      "collaborations": "García de la Prada tradujo <i>Causas de la crisis que sufrió el Banco de Francia en el año 1805, tristes efectos que de ella resultaron y medios para evitarlos en adelante</i>, que quedaron manuscritas al tener que salir en dirección a Bayona en mayo de 1808 (ver RAH).",
+      "websites": "[RAH](https://historia-hispanica.rah.es/biografias/19451-manuel-garcia-de-la-prada)"
+    },
+    {
+      "from": "Manuel García de la Prada",
+      "to": "Francisco de Goya",
+      "connection_level": "direct",
+      "relationship type": "amigos; retratista-modelo",
+      "portraits": [
+        {
+          "url": "https://es.wikipedia.org/wiki/Manuel_Garc%C3%ADa_de_la_Prada#/media/Archivo:Manuel_Garc%C3%ADa_de_la_Prada_por_Goya.jpg",
+          "caption": "1805-06, óleo, retrato de cuerpo entero, Des Moines Art Center"
+        }
+      ],
+      "collector of Goya's works": "<i>Escena de Inquisición</i> [0673](https://www.academiacolecciones.com/pinturas/inventario.php?id=0673), <i>Disciplinantes</i> [0674](https://www.academiacolecciones.com/pinturas/inventario.php?id=0674), <i>Casa de locos</i> [0672](https://www.academiacolecciones.com/pinturas/inventario.php?id=0672), <i>Corrida de toros</i> [0675](https://www.academiacolecciones.com/pinturas/inventario.php?id=0675) y <i>Entierro de la sardina</i> [0676](https://www.academiacolecciones.com/pinturas/inventario.php?id=0676), todas ellas en la RABASF (donados tras su muerte en 1839)." 
+    },
+    {
+      "from": "Manuel García de la Prada",
+      "to": "José de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "retratista-modelo",
+      "portraits": "1827, óleo, RABASF"
+    },
+    {
+      "from": "Manuel García de la Prada",
+      "to": "Carlos IV",
+      "connection_level": "direct",
+      "relationship type": "empleador-empleado"
+    },
+    {
+      "from": "Manuel García de la Prada",
+      "to": "Joseph Bonaparte",
+      "connection_level": "direct",
+      "relationship type": "empleador-empleado"
     },
     {
       "from": "Louis Daguerre",
