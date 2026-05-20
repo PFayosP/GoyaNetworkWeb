@@ -1338,7 +1338,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Gaspar Melchor de Jovellanos",
               "Juan Meléndez Valdés",
               "Martín Zapater",
-              "Juan Fernández de Rojas"
+              "Juan Fernández de Rojas",
+              "Manuel García de la Prada"
             ],
             radius: 166,
             padding: 92,
