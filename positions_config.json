@@ -4,24 +4,24 @@
     "y": 241
   },
   "Javier Goya": {
-    "x": -512,
-    "y": 190
+    "x": -498,
+    "y": 196
   },
   "Mariano Goya": {
-    "x": -357,
-    "y": 239
+    "x": -411,
+    "y": 169
   },
   "Marquis of La Romana": {
     "x": -770,
     "y": -336
   },
   "Martín Zapater": {
-    "x": -260,
-    "y": 131
+    "x": -245,
+    "y": 137
   },
   "Gumersinda Goicoechea": {
-    "x": -410,
-    "y": 153
+    "x": -487,
+    "y": 278
   },
   "Francisco Bayeu": {
     "x": -406,
@@ -124,8 +124,8 @@
     "y": 358
   },
   "Bernardo de Iriarte": {
-    "x": -283,
-    "y": -201
+    "x": -294,
+    "y": -165
   },
   "Ferdinand Guillemardet": {
     "x": 70,
@@ -168,8 +168,8 @@
     "y": 486
   },
   "Leandro Fernández de Moratín": {
-    "x": -249,
-    "y": 23
+    "x": -273,
+    "y": 61
   },
   "Manuel Godoy": {
     "x": -778,
@@ -205,7 +205,7 @@
   },
   "Alejandro Sureda": {
     "x": -209,
-    "y": 741
+    "y": 737
   },
   "Laurent Matheron": {
     "x": 1146,
@@ -252,16 +252,16 @@
     "y": 154
   },
   "José de Espronceda": {
-    "x": -121,
-    "y": -233
+    "x": -127,
+    "y": -239
   },
   "Arsène Houssaye": {
     "x": -83,
     "y": -816
   },
   "Mariano José Larra": {
-    "x": -24,
-    "y": -222
+    "x": -35,
+    "y": -231
   },
   "José Zorrilla": {
     "x": -91,
@@ -400,8 +400,8 @@
     "y": 140
   },
   "Josefa Bayeu": {
-    "x": -498,
-    "y": 288
+    "x": -352,
+    "y": 244
   },
   "Sebastián Martínez y Pérez": {
     "x": -428,
@@ -684,8 +684,8 @@
     "y": -63
   },
   "XI Count of Altamira": {
-    "x": -363,
-    "y": -188
+    "x": -373,
+    "y": -213
   },
   "Gaspar Melchor de Jovellanos": {
     "x": -572,
@@ -700,8 +700,8 @@
     "y": -245
   },
   "Juan Meléndez Valdés": {
-    "x": -240,
-    "y": -125
+    "x": -389,
+    "y": -123
   },
   "Jean-Auguste-Dominique Ingres": {
     "x": 443,
@@ -814,5 +814,9 @@
   "Juan Fernández de Rojas": {
     "x": -635,
     "y": -86
+  },
+  "Manuel García de la Prada": {
+    "x": -236,
+    "y": -57
   }
 }
