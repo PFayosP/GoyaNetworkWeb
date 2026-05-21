@@ -2079,7 +2079,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       'Antonio Remón Zarco del Valle y Huet': 'remon',
       'María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin': 'merlin',
       'Ramón de Mesonero Romanos': 'mesonero',
-      'Gregorio Cruzada Villaamil': 'cruzada'
+      'Gregorio Cruzada Villaamil': 'cruzada',
+      'Juan Fernández de Rojas': 'fernandez',
+      'Manuel García de la Prada': 'garcia'
     });
 
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
