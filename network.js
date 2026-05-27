@@ -3932,7 +3932,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           { key: "introductions", label: "Introductions" },
           { key: "feuds", label: "Feuds" },
           { key: "common friends", label: "Common friends" },
-          { key: "mentions", label: "Mentions" },
+          { key: "mentions", label: "mentions" },
           { key: "collaborations", label: "Collaborations" },
           { key: "curiosities", label: "Curiosities" },
           { key: "children", label: "Children" },
