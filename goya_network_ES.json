@@ -6191,7 +6191,7 @@
     {
       "from": "Frédéric Quilliet",
       "to": "Juan Agustín Ceán Bermúdez",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "conocido? Quilliet conocía muy bien el Diccionario (1800) de Ceán Bermúdez, que utilizó para localizar obras de arte en palacios y conventos. También utilizó el libro de Ceán para escribir su Dictionnaire des peintres espagnols (París, Fain, 1816)"
     },
     {
@@ -6232,7 +6232,7 @@
     {
       "from": "Rafael Esteve",
       "to": "Isidoro Máiquez",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "compañeros de trabajo; retratista-modelo (indirecto)",
       "portraits": "retrato de Máiquez, dibujo (c. 1807) y grabados (1810 y 1815) según Francisco de Goya (1807)"
     },
@@ -6284,7 +6284,7 @@
     {
       "from": "Rafael Esteve",
       "to": "María Luisa de Parma",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "retratista-modelo (¿indirecto?)",
       "portraits": "dibujo a la aguada y lápiz negro, 1806 (Prado)"
     },
@@ -6317,7 +6317,7 @@
     {
       "from": "Rafael Esteve",
       "to": "Marquis of La Romana",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "retratista-modelo (¿indirecto?)",
       "portraits": "Rafael Esteve (atribuido) según Vicente López, c.1815, dibujo, Prado [D009428](https://www.museodelprado.es/coleccion/obra-de-arte/pedro-caro-sureda-marques-de-la-romana/7ca2b030-2845-47f3-af59-48da40ef1f18)"
     },
@@ -6346,7 +6346,7 @@
     {
       "from": "1st Duke of Wellington",
       "to": "Asensio Julià",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "retratista-modelo (¿indirecto?)",
       "portraits": "<i>Allá va cuarta estocada Por el Hércules Britano Al Padre de la Torada</i>, c.1814, aguafuerte-aguatinta, [Prado G005850](https://www.museodelprado.es/coleccion/obra-de-arte/alla-va-cuarta-estocada-por-el-hercules-britano/1b6f4e09-9461-486b-8e1b-eed25ef93d96)",
       "bibliography": "Matilla, <i>Memoria de Actividades 2016</i>, Prado, 2017, pp.32-36",
@@ -6355,7 +6355,7 @@
     {
       "from": "Fernando VII",
       "to": "Asensio Julià",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "retratista-modelo (¿indirecto?)",
       "portraits": "dibujo que retrata a Fernando VII en la cuerda floja (a la venta en Subastas Alcalá, 4-5 de marzo de 2015, lote 564) (Matilla 2017)",
       "bibliography": "Matilla, Memoria de Actividades 2016, Prado, 2017, pp.32-36",
@@ -6372,7 +6372,7 @@
     {
       "from": "Prince Antoine, Duke of Montpensier",
       "to": "Asensio Julià",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "relationship type": "mecenazgo; coleccionista",
       "collector of Goya's works": "El retrato de Julià realizado por Goya en 1798 (Thyssen) fue mencionado por Charles Yriarte en 1867 como parte de la Galerie espagnole de Louis Philippe I. Sin embargo, J. Wilson-Bareau y G. Maurer afirman que el cuadro fue catalogado en 1846 en la colección de María Cristina de Borbón-Dos Sicilias (Palacio de Vista Alegre, Madrid), y que pudo haber pertenecido a su autor hasta su muerte en 1832. La pintura pasó entonces a formar parte de la colección de la infanta Luisa Fernanda de Borbón y el príncipe Antoine, duque de Montpensier (Palacio de San Telmo, Sevilla). Posteriormente, la obra se puso a la venta tres veces en París: dos en Durand-Ruel y otra en Arthur Sachs; luego fue adquirida por los Thyssen en 1971 (página web de los Thyssen).",
       "websites": "[Thyssen, perfil de Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)",
@@ -6381,7 +6381,7 @@
     {
       "from": "Infanta Luisa Fernanda de Borbón",
       "to": "Asensio Julià",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "relationship type": "mecenazgo; coleccionista",
       "collector of Goya's works": "El retrato de Julià realizado por Goya en 1798 (Thyssen) fue mencionado por Charles Yriarte en 1867 como parte de la Galerie espagnole de Louis Philippe I. Sin embargo, J. Wilson-Bareau y G. Maurer afirman que el cuadro fue catalogado en 1846 en la colección de María Cristina de Borbón-Dos Sicilias (Palacio de Vista Alegre, Madrid), y que pudo haber pertenecido a su autor hasta su muerte en 1832. La pintura pasó entonces a formar parte de la colección de la infanta Luisa Fernanda de Borbón y el príncipe Antonio, duque de Montpensier (Palacio de San Telmo, Sevilla). Posteriormente, la obra se puso a la venta tres veces en París: dos en Durand-Ruel y otra en Arthur Sachs; luego fue adquirida por los Thyssen en 1971 (página web de los Thyssen).",
       "websites": "[Thyssen, perfil de Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)",
@@ -6390,7 +6390,7 @@
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "Asensio Julià",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "relationship type": "mecenazgo; coleccionista",
       "collector of Goya's works": "El retrato de Julià pintado por Goya en 1798 (Thyssen) fue mencionado por Charles Yriarte en 1867 como parte de la Galerie espagnole de Louis Philippe I. Sin embargo, J. Wilson-Bareau y G. Maurer afirman que el cuadro e e fue catalogado en 1846 en la colección de María Cristina de Borbón-Dos Sicilias (Palacio de Vista Alegre, Madrid), y que pudo haber pertenecido a su autor hasta su muerte en 1832. La pintura pasó entonces a formar parte de la colección de la infanta Luisa Fernanda de Borbón y el príncipe Antoine, duque de Montpensier (Palacio de San Telmo, Sevilla). Posteriormente, la obra se puso a la venta tres veces en París: dos en Durand-Ruel y otra en Arthur Sachs; luego fue adquirida por los Thyssen en 1971 (página web de los Thyssen).",
       "websites": "[Thyssen, perfil de Mar Borobia](https://www.museothyssen.org/coleccion/artistas/goya-francisco/retrato-asensio-julia)",
@@ -6444,7 +6444,7 @@
     {
       "from": "Leandro Fernández de Moratín",
       "to": "Ramón de Mesonero Romanos",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "relationship type": "Mesonero admiraba la obra de Moratín"
     },
     {
@@ -6490,14 +6490,14 @@
     {
       "from": "Louis Daguerre",
       "to": "Ramón de Mesonero Romanos",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "interactions": "en 1837 Mesonero presentó a su público los métodos de Daguerre: el <i>pantógrafo</i>, el <i>diágrafo</i> y el <i>torno de retrato</i>, útiles para copiar <i>bajorrelieves</i> (Afinoguénova 2002, p.136).",
       "bibliography": "Afinoguénova 2002"
     },
     {
       "from": "George Sand",
       "to": "Ramón de Mesonero Romanos",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "mentions": "Mesonero mencionó a Sand (Romero Tobar 1997, p.225)",
       "bibliography": "Romero Tobar 1997"
     },
@@ -6525,21 +6525,21 @@
     {
       "from": "Victor Hugo",
       "to": "Ramón de Mesonero Romanos",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "mentions": "Mesonero menciona el poema de Hugo que conmemora la traducción de las cenizas de Napoleón (conocido como <i>Le retour des cendres</i>), un acontecimiento del que fue testigo (15 de octubre de 1840)",
       "bibliography": "Lanzarote Guiral 2016; Romero Tobar 1997"
     },
     {
       "from": "Théophile Gautier",
       "to": "Ramón de Mesonero Romanos",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "mentions": "Mesonero critica a Gautier por 'ofrecer una imagen del país llena de todo tipo de estereotipos románticos' (García Melero 2002, p.186)",
       "bibliography": "Lanzarote Guiral 2016; García Melero 2002; Romero Tobar 1997"
     },
     {
       "from": "Federico de Madrazo",
       "to": "Louis Daguerre",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "mentions": [
         "1839, 25 de enero, París (carta a José de Madrazo): Federico habla sobre el <i>Daguerretipe</i> y la reacción del público y de pintores como Paul Delaroche. También afirma que este nuevo invento supone el fin para los pintores paisajistas y de bodegones: '¡Qué cosas tan hermosas se pudieran hacer en Toledo, y en toda España!, si consigue Daguerre el sacar los colores, cosa en que se está ocupando hace mucho tiempo. Dígole a V. que los pintores de países y de género se pueden ir a cardar cebollinos' (<i>Epistolario</i>, 1994, no.71, p.188)."
@@ -6550,7 +6550,7 @@
     {
       "from": "Paul Delaroche",
       "to": "Louis Daguerre",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "mentions": "en una carta a José de Madrazo, Federico de Madrazo habla sobre el nuevo invento del <i>Daguerretipe</i>: 'Dice p.Delaroche que este descubrimiento es muy útil para los pintores para aprender bien a modelar los objetos y a dar a cada cosa su justo relieve y valor. Y lo más particular de este descubrimiento es el cómo se hace para que la luz no influya en él después de sacado de la cámara oscura' (<i>Epistolario</i>, 1994, no.71, p.188).",
       "bibliography": "<i>Federico de Madrazo. Epistolario</i>, vol.1, 1994"
     },
@@ -6580,19 +6580,19 @@
     {
       "from": "Laureano Potenciano",
       "to": "William Stirling-Maxwell",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "link to Goya's work": "Stirling poseía un conjunto póstumo de pruebas de trabajo de <i>Los desastres de la guerra</i> de Goya, que anteriormente pertenecía a Charles Blanc, impresas por Laureano Potenciano hacia 1862 (ahora en el Museo de Bellas Artes de Boston, 1973.732.2)"
     },
     {
       "from": "Laureano Potenciano",
       "to": "Charles Blanc",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "link to Goya's work": "William Stirling-Maxwell poseía un conjunto póstumo de pruebas de trabajo de <i>Los desastres de la guerra</i> de Goya, que anteriormente pertenecía a Charles Blanc, impresas por Laureano Potenciano hacia 1862 (ahora en el Museo de Bellas Artes de Boston, 1973.732.2)"
     },
     {
       "from": "Laureano Potenciano",
       "to": "Pharamond Blanchard",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "link to Goya's work": "Potenciano presentó en la Exposición General de Bellas Artes de 1858 una prueba de Blanchard basada en Ary Scheffer (<i>La Mignon</i>)"
     },
     {
@@ -6604,7 +6604,7 @@
     {
       "from": "Richard Ford",
       "to": "1st Duke of Wellington",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "Ford era un gran admirador de Wellington"
     },
     {
@@ -6863,13 +6863,13 @@
     {
       "from": "José Zorrilla",
       "to": "María Cristina de Borbón-Dos Sicilias",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "interactions": "antes de su muerte, María Cristina le ofreció una pensión"
     },
     {
       "from": "José Zorrilla",
       "to": "Eugenia de Montijo",
-      "connection_level": "¿secundaria?",
+      "connection_level": "secondary?",
       "mentions": "Zorrilla compuso <i>Serenata morisca</i> para Eugenia (c. 1853)"
     },
     {
@@ -6897,7 +6897,7 @@
     {
       "from": "José Zorrilla",
       "to": "Alphonse de Lamartine",
-      "connection_level": "¿secundaria?",
+      "connection_level": "secondary?",
       "relationship type": "influencia",
       "influencia": "El volumen de poemas de Zorrilla de 1837 se inspiró en Lamartine y Hugo"
     },
@@ -6980,7 +6980,7 @@
     {
       "from": "Mariano José Larra",
       "to": "Honoré de Balzac",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "mentions": [
         "Larra mencionó a Balzac tras su viaje a París, pero no hay pruebas de que se conocieran en persona (Romero Tobar 1997, pp.223-224).",
         "González Blanco 1909: 'La opinión dispuso que la novela fuese el género favorito, mimado del público —y en especial de las damas— durante todo el siglo pasado; y así se hizo. Las <i>fábulas amatorias</i>, como se dice en el <i>Index librorum prohibitorum</i>, al condenar las de Jorge Sand [George Sand], Eugenio Sue [Eugène Sue], Dumas [Alexandre Dumas père] y Balzac [Honoré de Balzac], todos en montón (2)'. (2): '[...] nada menos que Larra, habló alguna vez de la influencia nefasta de las obras de Eugenio Sue (?), Alfredo de Vigny (!!) [Alfred de Vigny] y Balzac, sin hacer distinciones' (p.9)."
@@ -7099,7 +7099,8 @@
       "from": "Javier Goya",
       "to": "Francisco Bayeu",
       "relationship type": "parientes; tío-sobrino",
-      "strength": 2
+      "strength": 2,
+      "connection_level": ""
     },
     {
       "from": "Javier Goya",
@@ -7140,7 +7141,7 @@
     {
       "from": "Valentín Carderera",
       "to": "J. J. Grandville",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿colegas?",
       "collaborations": "Ángel Fernández de los Ríos, <i>Itinerario descriptivo, pintoresco y monumental de Madrid a París</i>, 1845, con ilustraciones de Carderera [¿Valentín Carderera?], Ortego, Grandville [¿J. J. Grandville?], 2 vols.",
       "bibliography": "Romero Tobar 1997"
@@ -7419,7 +7420,7 @@
     {
       "from": "Francisco de Goya",
       "to": "Pedro de Madrazo",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "interactions": "Pedro de Madrazo creó el mito de que Josefa Tudó fue la modelo de las <i>Majas</i> desnudas y vestidas de Goya",
       "websites": "[Prado](https://www.museodelprado.es/coleccion/obra-de-arte/josefa-tudo-con-sus-hijos-manuel-y-luis-godoy-en/19ba4e46-4509-4ae0-80d8-894541c9a8e4)",
       "podcasts": "<i>Arte compacto</i> [27 de abril de 2025](https://www.youtube.com/shorts/2HRbEYmYGWY), 'José de Madrazo', con Carlos G. Navarro"
@@ -7469,7 +7470,7 @@
     {
       "from": "Marquis of La Romana",
       "to": "Vicente López",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "retratista-modelo",
       "portraits": "hacia 1815, Prado (pintado a partir de una efigie: Romana fallece en 1811)"
     },
@@ -7926,7 +7927,7 @@
     {
       "from": "Francisco de Goya",
       "to": "Dominique Vivant Denon",
-      "connection_level": "¿secundaria/directa?",
+      "connection_level": "secondary/direct?",
       "relationship type": "Vivant Denon adquirió un conjunto de los <i>Caprichos</i> en España hacia 1808"
     },
     {
@@ -8131,13 +8132,13 @@
     {
       "from": "Francisco Martínez de la Rosa",
       "to": "Leandro Fernández de Moratín",
-      "connection_level": "¿secundaria?",
+      "connection_level": "secondary?",
       "relationship type": "Martínez de la Rosa fue influenciado por los escritos de Moratín"
     },
     {
       "from": "Francisco Martínez de la Rosa",
       "to": "Juan Meléndez Valdés",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "Martínez de la Rosa fue influenciado por los escritos de Meléndez Valdés"
     },
     {
@@ -8180,7 +8181,7 @@
     {
       "from": "Francisco de Goya",
       "to": "Federico de Madrazo",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "Madrazo adquirió un importante conjunto de grabados y dibujos de Goya, probablemente a través de Carderera (véase el nodo de Madrazo)",
       "bibliography": "Martí 2007; Harris 1964"
     },
@@ -8227,7 +8228,7 @@
     {
       "from": "Charles Philipon",
       "to": "Champfleury",
-      "connection_level": "¿directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "mentions": "Champfleury dijo de Philipon: 'Dirigía los lápices de un numeroso grupo, atraía a los jóvenes, les infundía entusiasmo, daba ideas a quienes no las tenían'"
     },
@@ -8450,7 +8451,7 @@
     {
       "from": "Eugène Piot",
       "to": "Charles Baudelaire",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "¿conocidos?",
       "mentions": "La venta de Piot del 25 al 30 de abril de 1864 es mencionada por Baudelaire en <i>Figaro</i>, el 24 de abril de 1864, y luego en <i>Art romantique</i> (t.2). Philippe Burty también la mencionó en <i>La Presse</i> (28 de abril de 1864)"
     },
@@ -8465,7 +8466,7 @@
     {
       "from": "Eugène Piot",
       "to": "Philippe Burty",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "¿conocidos?",
       "mentions": "La venta de Piot del 25 al 30 de abril de 1864 es mencionada por Philippe Burty en <i>La Presse</i> (28 de abril de 1864) (<i>Donateurs du Louvre. Eugène Piot</i>, 1908, p.33)",
       "bibliography": "Donateurs du Louvre. Eugène Piot, 1908"
@@ -8551,7 +8552,8 @@
     {
       "from": "Mariano Goya",
       "to": "Román Garreta",
-      "label": ""
+      "label": "",
+      "connection_level": ""
     },
     {
       "from": "Luisa Garreta",
@@ -9020,14 +9022,14 @@
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "Carlos IV",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "parientes: suegro, nuera",
       "strength": 2
     },
     {
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "María Luisa de Parma",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "familiares: suegra, nuera",
       "strength": 2
     },
@@ -9317,7 +9319,7 @@
     {
       "from": "Zacharie Astruc",
       "to": "Théophile Gautier",
-      "connection_level": "secundario; ¿directo?",
+      "connection_level": "secondary; direct?",
       "influencia": "Astruc viajó a España llevando consigo la influencia de los escritos de Hugo y Gautier, que 'forjaron en su mente la imagen de una España de aires románticos' [...] 'esa visión fantaseada, entre pintoresca y romántica, nunca le abandonó' (Cantenot 2017, resumen).",
       "bibliography": "Mathilde Cantenot 2017, <i>Zacharie Astruc (1833-1907) et l'Espagne : à la rencontre d'un idéal, à l'épreuve du réel</i>, École du Louvre, tesis"
     },
@@ -9331,21 +9333,21 @@
     {
       "from": "Zacharie Astruc",
       "to": "Eugène Delacroix",
-      "connection_level": "¿directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "portraits": "La máscara facial de Delacroix es representada por Astruc en su escultura <i>Le Marchand de masques</i> (1883, Jardín de Luxemburgo), que también representa a Corot, Alexandre Dumas père, Berlioz, Carpeaux, Faure, Victor Hugo, Honoré de Balzac y Barbey d'Aurevilly"
     },
     {
       "from": "Zacharie Astruc",
       "to": "Alexandre Dumas père",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "portraits": "La máscara facial de Dumas es representada por Astruc en su escultura <i>Le Marchand de masques</i> (1883, Jardín de Luxemburgo), que también representa a Corot, Eugène Delacroix, Berlioz, Carpeaux, Faure, Victor Hugo, Honoré de Balzac y Barbey d'Aurevilly."
     },
     {
       "from": "Zacharie Astruc",
       "to": "Honoré de Balzac",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "portraits": "La máscara facial de Balzac es representada por Astruc en su escultura <i>Le Marchand de masques</i> (1883, Jardín de Luxemburgo), que también representa a Corot, Delacroix, Berlioz, Carpeaux, Faure, Victor Hugo, Dumas y Barbey d'Aurevilly"
     },
@@ -9475,7 +9477,7 @@
     {
       "from": "Henri Fantin-Latour",
       "to": "Eugène Delacroix",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "conocidos",
       "portraits": "Hommage à Delacroix (1864, Orsay), con el retrato de Delacroix y representando al propio Fantin-Latour, Édouard Manet, Louis Edmond Duranty, Champfleury, Charles Baudelaire, Louis Cordier, Alphonse Legros, James Whistler, Félix Bracquemond y Albert de Balleroy"
     },
@@ -9523,7 +9525,7 @@
     {
       "from": "Rosa Bonheur",
       "to": "Zacharie Astruc",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "mentions": "Astruc menciona favorablemente a Bonheur en su 'Décaméron féminin' (<i>L'Écho des Beaux-Arts</i>, 26 de junio de 1870, p.1): 'El ejemplo de Rosa Bonheur, cuya singular fortuna eclipsó incluso al genio —y debo decir también su talento, que los ingleses acabaron hundiendo—, contribuyó en gran medida a desarrollar en las mujeres el sentido y el gusto por la pintura. El Louvre se vio repentinamente invadido por nuestras hermanas"
     },
     {
@@ -9553,7 +9555,7 @@
     {
       "from": "Berthe Morisot",
       "to": "Paul Mantz",
-      "connection_level": "¿directo?",
+      "connection_level": "direct?",
       "relationship type": "conocidos",
       "mentions": [
         "Mantz comentó la obra de Morisot en el Salón de 1865 en la Gazette des Beaux-arts, considerando que tenía 'beaucoup de franchise et de sentiment dans la couleur et la lumière' (Monneret 1987, vol.2, t.1, p.595).",
@@ -9606,7 +9608,7 @@
     {
       "from": "Ernest Meissonier",
       "to": "Théophile Gautier",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "mentions": [
         "Gautier compara a Meissonier con los maestros flamencos del siglo XVII, como Gerard ter Borch, Gabriel Metsu, Pieter de Hooch y Vermeer.",
@@ -9618,7 +9620,7 @@
     {
       "from": "Ernest Meissonier",
       "to": "Charles Blanc",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "mentions": "Blanc dijo sobre Meissonier que 'peignait grandement en petit' (pintaba magníficamente en pequeño formato)",
       "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Ernest_Meissonier)"
@@ -9667,7 +9669,7 @@
     {
       "from": "Charles Nodier",
       "to": "Gustave Doré",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "influencia": "La obra de Doré <i>L'Histoire pittoresque, dramatique et caricaturale de la sainte Russie</i> (1854), considerada pionera del cómic, tiene la influencia de Rabelais, Sterne, Bürger, Töpffer, Cham y Nodier"
     },
     {
@@ -9848,7 +9850,7 @@
     {
       "from": "Zacharie Astruc",
       "to": "Champfleury",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "mentions": "Astruc escribió en 1868 un censo de coleccionistas de arte japoneses que incluía a Champfleury, junto con Stevens, Villot (Louvre), Favard, Legros, Chesneau, Solon, Félix Bracquemond, Henri Fantin-Latour, Philippe Burty, Jules de Goncourt, Edmond de Goncourt, Édouard Manet, Lambron y Claude Monet"
     },
     {
@@ -9909,13 +9911,13 @@
     {
       "from": "Charles-Augustin Sainte-Beuve",
       "to": "Champfleury",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "Sainte-Beuve escribió un artículo elogiando a Champfleury (2 de enero de 1863, <i>Le Constitutionnel</i>)"
     },
     {
       "from": "Honoré de Balzac",
       "to": "Champfleury",
-      "connection_level": "¿directo?",
+      "connection_level": "direct?",
       "relationship type": "Champfleury admira a Balzac",
       "collaborations": "Champfleury escribe <i>Documents pour servir à la biographie de Balzac</i> (1875) y <i>Balzac au collège</i> (1878)"
     },
@@ -9948,20 +9950,20 @@
     {
       "from": "Philippe Burty",
       "to": "Champfleury",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "compartido": "interés por el arte japonés. Zacharie Astruc escribió en 1868 un censo de coleccionistas de arte japonés que incluía a Champfleury y Burty, junto con Stevens, Villot (Louvre), Favard, Legros, Chesneau, Solon, Félix Bracquemond, Henri Fantin-Latour, Edmond y Jules de Goncourt, Édouard Manet, Lambron y Claude Monet"
     },
     {
       "from": "Émile Zola",
       "to": "Gustave Doré",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "mentions": "Artículo de Zola 'Cervantès et Gustave Doré, à propos de Don Quichotte illustré', <i>Journal populaire de Lille</i> (20 de diciembre de 1863): 'On appelle ça illustrer un ouvrage : moi, je prétends que c'est le refaire. Au lieu d'un chef-d'œuvre, l'esprit humain en compte deux. Es un mismo pensamiento traducido a dos idiomas'"
     },
     {
       "from": "Edmond de Goncourt",
       "to": "Gustave Doré",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "mentions": "Goncourt escribe en 1866: 'Jusqu'à son physique m'ennuie et m'est désagréable ; c'est un homme gras, frais, poupin, la face ronde, plate, une figure de lune, de lanterne magique; son teint d'enfant de chœur, sa mine sans âge, où le labeur effrayant de sa production n'a pas mis d'années, cet air d'enfant prodige — tout cela m'est d'un contact antipathique et finit par me mettre mal à l'aise'"
     },
@@ -10003,7 +10005,7 @@
     {
       "from": "Ernest Meissonier",
       "to": "Félix Bracquemond",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "collaborations": "Bracquemond realizó copias a partir de Meissonier"
     },
@@ -10216,7 +10218,7 @@
     {
       "from": "Federico de Madrazo",
       "to": "Eugène Delacroix",
-      "connection_level": "¿directo? y secundario",
+      "connection_level": "direct? and secondary",
       "relationship type": "conocidos"
     },
     {
@@ -10235,7 +10237,7 @@
     {
       "from": "Honoré Daumier",
       "to": "Louis Philippe I",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "relationship type": "caricaturista",
       "portraits": "1831 Caricatura de Daumier de Louis Philippe I como el monstruo rabelesiano Gargantúa sentado en una <i>chaise percée</i> mientras come las contribuciones de los civiles y defeca decoraciones y puestos de trabajo públicos. En 1832 fue detenido en la prisión de Sainte-Pélagie (París) por ello.",
       "bibliography": "Fayos Pérez 2024"
@@ -10243,7 +10245,7 @@
     {
       "from": "Honoré Daumier",
       "to": "Louis Philippe I",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "relationship type": "caricaturista",
       "portraits": "en 1831 fue perseguido por su famosa sátira <i>Poires</i>, en la que se burlaba de Louis Philippe I. Fue condenado por 'ultraje a la persona del rey', tuvo que pagar 2000 francos y pasar seis meses en la prisión de Sainte-Pélagie",
       "bibliography": "Fayos Pérez 2024"
@@ -10251,7 +10253,7 @@
     {
       "from": "Ernest Meissonier",
       "to": "Louis Philippe I",
-      "connection_level": "¿secundario?",
+      "connection_level": "seconary?",
       "relationship type": "caricaturista",
       "portraits": "el grabado <i>Un cauchemar</i> (Una pesadilla) (1834), que ridiculiza al rey Louis Philippe I, es anónimo, pero posiblemente fue realizado por Meissonier (Fayos Pérez 2024, pp.217-218)",
       "link to Goya's work": "Un cauchemar está claramente inspirada en el Capricho 43 de Goya, El sueño de la razón produce monstruos",
@@ -10422,13 +10424,13 @@
     {
       "from": "Charles Yriarte",
       "to": "Mariano Fortuny y Marsal",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "mentions": "Charles Yriarte, <i>Fortuny</i> (serie <i>Artistes célèbres</i>), 1889"
     },
     {
       "from": "Théophile Gautier",
       "to": "Mariano Fortuny y Marsal",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "mentions": "Gautier elogia la obra de Fortuny, lo que contribuyó a aumentar su fama. Por ejemplo, a Gautier le gustaron las obras de Fortuny expuestas por Adolphe Goupil (c. 1870). 'Fortuny', <i>Journal Officiel de l'Empire Français</i>, II, no.137, París, 19 de mayo de 1870",
       "websites": "[Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)"
     },
@@ -10723,7 +10725,7 @@
     {
       "from": "Edgar Degas",
       "to": "Eugène Delacroix",
-      "connection_level": "¿directo?",
+      "connection_level": "direct?",
       "relationship type": "Degas fue influenciado por Delacroix. Admiraba la obra de Delacroix en el Salón de 1859. También viajó a Tánger para seguir sus pasos.",
       "copias": [
         "En 1860, Degas realizó bocetos basados en obras de Delacroix, expuestos en la Association des Artistes (26 Bv des Italiens).",
@@ -10736,13 +10738,13 @@
     {
       "from": "Edgar Degas",
       "to": "Honoré Daumier",
-      "connection_level": "¿directo?",
+      "connection_level": "direct?",
       "relationship type": "Degas reunió 1800 litografías de Daumier en su colección"
     },
     {
       "from": "Edgar Degas",
       "to": "Francisco de Goya",
-      "connection_level": "secondary",
+      "connection_level": "seconary",
       "relationship type": "Degas admiraba a Goya y copió sus obras en la BnF",
       "link to Goya's work": "la colección de Degas incluía un dibujo de Delacroix basado en Goya (D21 y posiblemente D38 en Fayos Pérez 2024, pp.433 y 467)",
       "bibliography": "Fayos Pérez 2024; Dumas et al. 1997"
@@ -10866,7 +10868,7 @@
     {
       "from": "Henri Regnault",
       "to": "Philippe Burty",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "link to Goya's work": "en 1870-71, Gautier quiere ver el conjunto de pruebas de trabajo de Burty de <i>Los desastres de la guerra</i>, probablemente para escribir su necrológica sobre Regnault. Asselineau a Burty: 'Gautier tiene la urgente necesidad de volver a examinar Los desastres de la guerra (la invasión de Goya), cuyas planchas de cobre fueron traídas por Dauzats' (Fayos Pérez 2024, p.54; Delesalle 1983, p.104)",
       "bibliography": "Fayos Pérez 2024; Delesalle 1982"
     },
@@ -10994,7 +10996,7 @@
     {
       "from": "Valentín Carderera",
       "to": "Jules Jacquemart",
-      "connection_level": "¿directo?",
+      "connection_level": "direct?",
       "relationship type": "conocidos; colegas",
       "link to Goya's work": "para copiar el dibujo de Goya (<i>Scène espagnole</i>) para el artículo, Jacquemart debió haber visto esta obra de la colección de Carderera en París antes de 1863.",
       "collaborations": "en 1863, Jacquemart realizó una ilustración para el segundo artículo de Carderera en la <i>Gazette des beaux-arts</i>: <i>Scène espagnole</i> (Fayos Pérez 2024, fig. II.44); reimpresa el 1 de julio de 1870. Este grabado es o bien un pastiche basado en el Capricho 17, 'Bien tirada está', o bien un grabado basado en un dibujo perdido de la colección Carderera; lo menciona Gustave Brunet en su libro de 1865.",
@@ -11019,7 +11021,7 @@
     {
       "from": "William Stirling-Maxwell",
       "to": "Charles Blanc",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "link to Goya's work": "Stirling adquirió un conjunto de <i>Los desastres de la guerra</i> (Colnaghi o Christie's, abril de 1863, 20 libras) impreso hacia 1862, impreso por Laureano Potenciano (antes de su publicación: prueba de imprenta póstuma), anteriormente en la colección de Charles Blanc, ahora en el MoFA de Boston (1973.732.2)"
     },
     {
@@ -11114,13 +11116,13 @@
     {
       "from": "Adélaïde de Montgolfier",
       "to": "Gustave Brunet",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "mentions": "Brunet plagió el artículo de Montgolfier de 1831 sobre Goya en 1855 ('Bulletin bibliographique', <i>Revue Universelle des Arts</i>, vol.1, pp.384-86)"
     },
     {
       "from": "Théophile Gautier",
       "to": "Gustave Brunet",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "mentions": "Brunet reconoce el ensayo de Gautier sobre Goya (<i>L'Artiste</i>, 1845) en su artículo de 1855 ('Bulletin bibliographique', <i>Revue Universelle des Arts</i>, vol.1, pp.384-86)"
     },
     {
@@ -11153,7 +11155,7 @@
     {
       "from": "Victor Hugo",
       "to": "Paul Mantz",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "compañeros de trabajo; conocidos",
       "influencia": "En sus primeros años, Mantz se inspiró en los escritos de Hugo",
       "collaborations": "Mantz escribió en la revista de Hugo <i>L'Événement</i> a partir de 1848"
@@ -11161,7 +11163,7 @@
     {
       "from": "Eugène Delacroix",
       "to": "Paul Mantz",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "influencia": "Mantz fue un defensor de la obra de Delacroix en sus artículos periodísticos y ensayos. Mantz organizó una exposición sobre Delacroix en 1885"
     },
     {
@@ -11200,7 +11202,7 @@
     {
       "from": "Paul Lefort",
       "to": "Eugène Dutuit",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "Dutuit podría haber adquirido una primera edición de <i>Tauromaquia</i> en la subasta de Lefort (28-29 de enero de 1869, lote 411) (Fayos Pérez 2024)",
       "bibliography": "Fayos Pérez 2024"
     },
@@ -11558,7 +11560,7 @@
     {
       "from": "Eugène Piot",
       "to": "Charles Yriarte",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos?",
       "correspondence": "sí (según <i>Donateurs du Louvre. Eugène Piot</i>, 1908, p.14)",
       "bibliography": "Donateurs du Louvre. Eugène Piot, 1908; Charles Yriarte, Art et Curiosité. Un précurseur, suplemento literario de Le Figaro, 8 de febrero de 1890"
@@ -11566,14 +11568,14 @@
     {
       "from": "Charles Yriarte",
       "to": "Gustave Doré",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "mentions": "Yriarte escribe: 'Et ce démon qui s'appelle Goya, que j'aimais sans le connaître, seulement pour avoir vu ses Caprices [...]. Quel décor! G. Doré, j'ai pensé à vos contes drolatiques, à votre <i>Rabelais</i>, à votre <i>Juif errant</i>. J'ai pensé aussi à ces grands dessins fantastiques que Victor Hugo faisait avec la même plume qui lui servait à écrire <i>Notre-Dame de Paris</i>' (21 de abril de 1860, 'Correspondance particulière', <i>Le Monde Illustré</i>, pp.265-66; citado en Fayos Pérez 2024, Apéndice II, 1860)",
       "bibliography": "Fayos Pérez 2024"
     },
     {
       "from": "J. J. Grandville",
       "to": "Gustave Doré",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "bibliography": "Laurent Baridon, 'Grandville-Doré : une filiation paradoxale', <i>Nouvelles de l'estampe</i>, no.270, 2023, [enlace](https://journals.openedition.org/estampe/4563)"
     },
     {
@@ -11871,21 +11873,21 @@
     {
       "from": "Eugène Delacroix",
       "to": "Célestin Nanteuil",
-      "connection_level": "¿secundario y directo?",
+      "connection_level": "secondary and direct?",
       "relationship type": "conocidos",
       "collaborations": "Nanteuil realizó una litografía basada en la obra <i>Rabelais</i> (1836) de Delacroix"
     },
     {
       "from": "Honoré Daumier",
       "to": "Célestin Nanteuil",
-      "connection_level": "¿secundario y directo?",
+      "connection_level": "secondary and direct?",
       "relationship type": "conocidos",
       "collaborations": "Nanteuil hizo un anuncio para <i>Cent et un Robert-Macaire</i> (1839) de Daumier"
     },
     {
       "from": "Honoré de Balzac",
       "to": "Célestin Nanteuil",
-      "connection_level": "¿secundario y directo?",
+      "connection_level": "secondary and direct?",
       "relationship type": "conocidos",
       "collaborations": "Nanteuil contribuyó a las ilustraciones de la edición de Furne de la obra de Balzac (<i>La Comédie Humaine</i>, de 1841-42)"
     },
@@ -11901,7 +11903,8 @@
     {
       "from": "Baron Taylor",
       "to": "Louis Viardot",
-      "label": ""
+      "label": "",
+      "connection_level": ""
     },
     {
       "from": "Baron Taylor",
@@ -11941,7 +11944,8 @@
       "collaborations": "Delacroix pidió a Dauzats y Philippe Burty que catalogaran sus dibujos y álbumes (que incluían las copias de Delacroix de los Caprichos de Goya)",
       "artworks bought/sold": "Dauzats poseía la acuarela de Delacroix La Muse inspirant Hésiode, mencionada en el catálogo de la exposición de Delacroix de 1930 como 'Legs d'Eug. Delacroix à M. Dauzats' (Huyghe 1930, no.392, pp.185-86), así como <i>Étude d'intérieur marocain</i> 'Venta Delacroix 1864, Venta Dauzats 1869, Venta Chocquet 1899, Donación Moreau-Nélation' (no.405, p.200).",
       "bibliography": "Mainer y Enguita 1999; Huyghe 1930",
-      "websites": "[Marques des collections](https://www.marquesdecollections.fr/FtDetail/be9750d0-4dc3-4641-860c-7ae82e4aa5b0)"
+      "websites": "[Marques des collections](https://www.marquesdecollections.fr/FtDetail/be9750d0-4dc3-4641-860c-7ae82e4aa5b0)",
+      "connection_level": ""
     },
     {
       "from": "Adrien Dauzats",
@@ -12492,7 +12496,7 @@
     {
       "from": "Théophile Thoré",
       "to": "Édouard Manet",
-      "connection_level": "directo?; secundario",
+      "connection_level": "direct?; secondary",
       "relationship type": "¿conocidos?",
       "mentions": "La obra de Manet <i>L'Homme mort</i> (1864-65, Washington, National Gallery of Art) es duramente criticada por Théophile Thoré"
     },
@@ -12582,7 +12586,7 @@
     {
       "from": "Eugène Delacroix",
       "to": "Antoine-Jean Gros",
-      "connection_level": "¿directo? y secundario",
+      "connection_level": "direct? and secondary",
       "know each other since": "al menos desde 1824",
       "mentions": "Gros sobre <i>La masacre de Quíos</i> (1824): 'una masacre del arte'."
     },
@@ -12595,7 +12599,7 @@
     {
       "from": "Agustín Esteve",
       "to": "Eugène Piot",
-      "connection_level": "¿secundario?"
+      "connection_level": "secondary?"
     },
     {
       "from": "Eugène Dutuit",
@@ -12615,7 +12619,7 @@
     {
       "from": "Eugène Piot",
       "to": "Auguste Dutuit",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "vendedor/comprador",
       "artworks bought/sold": "Dutuit adquirió obras de arte de la venta de Piot en 1890 (AGORHA-INHA)",
       "websites": "[AGORHA, INHA](https://agorha.inha.fr/ark:/54721/091bcada-3bd2-4071-941a-190db4b8ab1d)"
@@ -12639,7 +12643,7 @@
     {
       "from": "Eugène Dutuit",
       "to": "Eugène Delacroix",
-      "connection_level": "¿secundario?",
+      "connection_level": "secondary?",
       "relationship type": "la colección Dutuit incluía obras de Delacroix, como <i>Combat du Giaour et du Pacha</i> (1835) (Petit Palais PDUT1162)"
     },
     {
@@ -12665,7 +12669,8 @@
     {
       "from": "Achille Devéria",
       "to": "Eugène Delacroix",
-      "collaborations": "Devéria realizó la portada de la edición ilustrada de Fausto, de Goethe, basada en la obra de Delacroix (Motte, 1828)"
+      "collaborations": "Devéria realizó la portada de la edición ilustrada de Fausto, de Goethe, basada en la obra de Delacroix (Motte, 1828)",
+      "connection_level": ""
     },
     {
       "from": "Achille Devéria",
@@ -12677,7 +12682,7 @@
     {
       "from": "Achille Devéria",
       "to": "Charles Baudelaire",
-      "connection_level": "¿secundaria?",
+      "connection_level": "secondary?",
       "portraits": "Baudelaire elogió la obra de Devéria presentada en el Salón de 1846: 'Voilà un beau nom, voilà un noble et vrai artiste à notre sens'",
       "bibliography": "Œuvres complètes de Charles Baudelaire, 1868, Lévy frères"
     },
@@ -12850,7 +12855,7 @@
     {
       "from": "Marceline Desbordes-Valmore",
       "to": "Charles-Augustin Sainte-Beuve",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "compañeros de trabajo; conocidos; Sainte-Beuve admiraba su escritura",
       "mentions": [
         "Sainte-Beuve escribió sobre ella: 'Elle a chanté comme l'oiseau chante'; define su poesía como 'si passionnée, si tendre, et véritablement unique en notre temps', Nota en Marceline Desbordes-Valmore, <i>Poésies</i>, París, Charpentier, 1842, p.I., [texto](https://www.societedesetudesmarcelinedesbordesvalmore.fr/wp-content/uploads/2020/07/Bulletin-SEMDV-01-2017-034-038.pdf).",
@@ -12966,7 +12971,8 @@
       ],
       "bibliography": "'Gautier/Hugo: Mémoire(s) du romantisme', <i>Bulletin de la Société Théophile Gautier</i>, no.45, 2023; Lacoste-Veysseyre 2014; <i>Dessins de Victor Hugo gravés par Paul Chenay</i>, texto de Théophile Gautier, París, L'Archange Minotaure, 2002; Lacoste-Veysseyre, <i>Correspondance générale</i>, t.12, 2000; Théophile Gautier, Victor Hugo, selección de textos, F. Court-Pérez ed., 2000; 'Dossier Hugo-Gautier & Autour du Capitaine Fracasse', <i>Bulletin de la Société Théophile Gautier</i>, no.9, 1987; Lacoste-Veysseyre, Correspondance générale, t.1, 1985; Ulrich Guttinguer, Correspondance générale, tomo 1; Cécile Daubray, Victor Hugo et ses correspondants, 1947; Victor Hugo par Théophile Gautier, París, E. Fasquelle, 1902, [Gallica](http://gallica.bnf.fr/ark:/12148/bpt6k200915d.r=.langFR); .",
       "websites": "Gautier-Hugo, [theophilegautier.fr](https://www.theophilegautier.fr/victor-hugo/)",
-      "strength": 1
+      "strength": 1,
+      "connection_level": ""
     },
     {
       "from": "Victor Hugo",
@@ -13226,7 +13232,7 @@
     {
       "from": "Victor Hugo",
       "to": "Victor Guye",
-      "connection_level": "directo / secundario",
+      "connection_level": "direct / secondary",
       "relationship type": "conocidos; ¿amigos?",
       "know each other since": "al menos desde 1811",
       "compartido": "Mismo seminario en Madrid en 1811 (Colegio de Nobles)"
@@ -13234,14 +13240,14 @@
     {
       "from": "Alfred de Musset",
       "to": "Charles Nodier",
-      "connection_level": "directo / secundario",
+      "connection_level": "direct / secondary",
       "relationship type": "conocidos. Musset fue influenciado por Nodier.",
       "bibliography": "Maynial 1943, p.78"
     },
     {
       "from": "Charles-Augustin Sainte-Beuve",
       "to": "Charles Nodier",
-      "connection_level": "directo / secundario",
+      "connection_level": "direct / secondary",
       "relationship type": "conocidos. Sainte-Beuve fue influenciado por Nodier.",
       "bibliography": "Maynial 1943, p.78"
     },
@@ -13329,7 +13335,8 @@
         "'Gautier/Balzac. Parcours croisés', <i>Bulletin de la Société Théophile Gautier</i> no.37, 2015: Patrick Berthier, 'La naissance de la collaboration avec Balzac' (pp.13-23); Véronique Bui, 'Balzac, Gautier et la Chine' (pp.23-41); Sylvie Thorel, 'Balzac et Gautier, fantastiqueurs' (pp.41-55); Giovanna Bellati, 'Théophile Gautier critique du théâtre de Balzac' (pp.55-69); Aude Déruelle, 'Le Balzac de Gautier' (pp.69-85); José-Luis Díaz, 'La modernité de Balzac selon Gautier' (pp.85-103); Marie-Hélène Girard, 'Gautier et la mort de Balzac' (pp.103-119); Candice Brunerie, 'Gautier à la Maison de Balzac' (pp.119-129).",
         "Pierrot & Yon 2011, vol.2; Lacoste-Veysseyre ed., Correspondance générale, 1985 t.1 y 1988 t.3."
       ],
-      "conferences/seminars": "2014 Société Théophile Gautier, Maison de Balzac: <i>Gautier/Balzac. Parcours croisés</i>"
+      "conferences/seminars": "2014 Société Théophile Gautier, Maison de Balzac: <i>Gautier/Balzac. Parcours croisés</i>",
+      "connection_level": ""
     },
     {
       "from": "Théophile Gautier",
@@ -13590,7 +13597,8 @@
       "to": "Louise Bertin",
       "relationship type": "conocidos",
       "interactions": "1843, 7 de marzo, carta de Custine a Varnhagen: 'Mlle Bertin me disait hier un mot que je veux vous citer: Mme Sand, disait-elle, 'n'a rien fait pour les femmes, au contraire; elle abdique leur vrai pouvoir, c'est Omphale <i>fumant</i> aux pieds d'Hercule, j'amais mieux le contraire' (Merzbach 1870, p.443).",
-      "bibliography": "H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870"
+      "bibliography": "H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870",
+      "connection_level": ""
     },
     {
       "from": "Marquis de Custine",
@@ -13599,14 +13607,16 @@
       "correspondence": "sí. Por ejemplo, el 22 de octubre de 1838 describió el último concierto que Chopin dio en París antes de partir hacia Mallorca, en el castillo de Custine (véase Custine-Chopin's edge)",
       "bibliography": "Bénichou 2004, p.9",
       "websites": "[Publicación en Facebook](https://www.facebook.com/JackGibbonsPiano/posts/astolphe-de-custine-was-a-huge-supporter-of-chopin-and-one-of-the-very-first-to-/10157874644944384/) de Jack Gibbons, 26 de julio de 2019",
-      "strength": 1
+      "strength": 1,
+      "connection_level": ""
     },
     {
       "from": "Marquis de Custine",
       "to": "Delphine de Girardin",
       "relationship type": "amigos",
       "mentions": "1842, 26 de diciembre, carta de Custine a Vernhagen: 'Mme Émile de Girardin ha escrito una tragedia sobre Judith: la ha leído todo París' (Merzbach 1870, p.439)",
-      "bibliography": "H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870"
+      "bibliography": "H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870",
+      "connection_level": ""
     },
     {
       "from": "Marquis de Custine",
@@ -13758,7 +13768,7 @@
     {
       "from": "Marquis de Custine",
       "to": "Alphonse de Lamartine",
-      "connection_level": "¿directa?",
+      "connection_level": "direct?",
       "relationship type": "¿conocidos? Custine admiraba mucho a Lamartine",
       "mentions": "¿1843, 5 de abril?, carta de Custine a Varnhagen: 'Voilà M. de Lamartine devenu l'espoir de la révolution. L'autre soir, j'ai rencontré chez lui tous les hommes de désordre et de bouleversement. On dit qu'il se promet de jouer le rôle de l'Espartero sous la régence qui nous menace. [...] On ne comprend rien à M. de Lamartine: il est plus vague que grand; c'était un admirable poëte élégiaque; il sera, je crois, un noble orateur; mais, comme chef de parti, je le trouve nul' (Merzbach 1870, p.453).",
       "bibliography": "H. Merzbach (ed.), Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense, 1870"
@@ -15029,14 +15039,14 @@
     {
       "from": "J. J. Grandville",
       "to": "Théophile Gautier",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "¿colegas?; ¿conocidos?",
       "collaborations": "ambos participaron en <i>La Chronique de Paris</i> (1836) de Balzac."
     },
     {
       "from": "J. J. Grandville",
       "to": "Victor Hugo",
-      "connection_level": "¿directo?",
+      "connection_level": "direct?",
       "relationship type": "¿colegas?; ¿conocidos?",
       "collaborations": "ambos participaron en <i>La Chronique de Paris</i> (1836) de Balzac."
     },
@@ -15073,7 +15083,7 @@
     {
       "from": "Honoré Daumier",
       "to": "Champfleury",
-      "connection_level": "directo?",
+      "connection_level": "direct?",
       "relationship type": "Champfleury escribió sobre Daumier",
       "link to Goya's work": "Champfleury (1865) comparó a Daumier y Goya, afirmando que compartían la 'misma llama interior, el mismo ardor político, la misma improvisación', ambos luchando apasionadamente contra la tradición, 'devorando todas (sus) reglas'. Champfleury incluso encontró ciertas 'analogías fisonómicas' en la forma en que representaban el labio superior, 'burgués a primera vista' y típico de los satíricos, como en el autorretrato de Goya en los Caprichos (Champfleury 1885, p.57; Fayos Pérez 2024, p.133)",
       "bibliography": "Fayos Pérez 2024; Champfleury 1885"
