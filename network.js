@@ -3771,8 +3771,37 @@ document.addEventListener('DOMContentLoaded', async function () {
           } else {
             let translatedValue = value;
 
-            // Solo para profession/nationality: traducir item por item si viene como "a, b, c"
-            if (typeof value === "string" && (field.key === "profession" || field.key === "nationality")) {
+            // Handle professions with sex-specific adaptation (pintor/a -> pintor for male, pintora for female)
+            if (typeof value === "string" && field.key === "profession") {
+              if (node.sex === "female") {
+                // For female: adapt /a endings - "pintor/a" becomes "pintora"
+                translatedValue = value
+                  .split(',')
+                  .map(v => {
+                    v = v.trim();
+                    v = v.replace(/(\w+)\/a\b/g, '$1a');
+                    return translateValue(v);
+                  })
+                  .join(', ');
+              } else if (node.sex === "male") {
+                // For male: remove /a - "pintor/a" becomes "pintor"
+                translatedValue = value
+                  .split(',')
+                  .map(v => {
+                    v = v.trim();
+                    v = v.replace(/\/a\b/g, '');
+                    return translateValue(v);
+                  })
+                  .join(', ');
+              } else {
+                // Default (sex unknown or not specified)
+                translatedValue = value
+                  .split(',')
+                  .map(v => translateValue(v.trim()))
+                  .join(', ');
+              }
+            } else if (typeof value === "string" && field.key === "nationality") {
+              // Nationality handling (unchanged)
               translatedValue = value
                 .split(',')
                 .map(v => translateValue(v.trim()))
