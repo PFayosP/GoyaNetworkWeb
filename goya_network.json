@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-20",
+  "last_update": "2026-05-28",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -10095,7 +10095,12 @@
       "to": "Federico de Madrazo",
       "connection_level": "direct",
       "relationship type": "relatives; father-in-law, son-in-law",
-      "strength": 2
+      "know each other since": "1860",
+      "collaborations": "in 1867, Federico holds a exhibition of Fortuny's work at his studio in Madrid",
+      "they share": "the literary figure of Faust and Fortuny's version in <i>Fantasía sobre Fausto</i> (1866) might have inspired his father-in-law Federico de Madrazo, who a few months later produced a painting with a similar theme, <i>El sueño de Antropos</i>.",
+      "portraits": "Federico de Madrazo, <i>Mariano Fortuny y Marsal</i>, 1867, MNAC",
+      "strength": 2,
+      "websites": "Prado, [entry for M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08) by María Teresa Martín Bourgon"
     },
     {
       "from": "Federico de Madrazo",
@@ -10363,7 +10368,8 @@
         "Goupil & Cie., <i>Œuvres de Fortuny reproduites en photographie</i>, Paris, 1875."
       ],
       "artworks bought/sold": "Goupil buys Fortuny's <i>La Vicaría</i> for 70,000 fr. and resells it for 250,000",
-      "strength": 2
+      "strength": 2,
+      "websites": "Prado, [entry for M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08) by María Teresa Martín Bourgon"
     },
     {
       "from": "Charles Yriarte",
@@ -10374,9 +10380,9 @@
     {
       "from": "Théophile Gautier",
       "to": "Mariano Fortuny y Marsal",
-      "connection_level": "secondary?",
+      "connection_level": "direct",
       "mentions": "Gautier praises Fortuny's work, which contributed to increase his fame. For instance, Gautier liked Fortuny's works exhibited by Adolphe Goupil (c.1870). 'Fortuny', <i>Journal Officiel de l'Empire Français</i>, II, no.137, Paris, 19 May 1870",
-      "websites": "[Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)"
+      "websites": "Prado, [entry for M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08) by María Teresa Martín Bourgon; [Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)"
     },
     {
       "from": "Adolphe Goupil",

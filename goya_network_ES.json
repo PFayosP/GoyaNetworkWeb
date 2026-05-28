@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-05-20",
+  "last_update": "2026-05-28",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -10180,9 +10180,12 @@
       "to": "Federico de Madrazo",
       "connection_level": "direct",
       "relationship type": "parientes; suegro-yerno",
-      "they share": "la figura literaria de Fausto y la versió de Fortuny en <i>Fantasía sobre Fausto</i> (1866) pudo inspirar a su suegro Federico de Madrazo, quien meses más tarde realizó una pintura de tema similar, <i>El sueño de Antropos</i>.",
+      "know each other since": "1860",
+      "collaborations": "en 1867 Federico orgaiza una exposición de la obra de Fortuny en su estudio en Madrid",
+      "they share": "la figura literaria de Fausto y la versión de Fortuny en <i>Fantasía sobre Fausto</i> (1866) pudo inspirar a su suegro Federico de Madrazo, quien meses más tarde realizó una pintura de tema similar, <i>El sueño de Antropos</i>.",
       "portraits": "Federico de Madrazo, <i>Mariano Fortuny y Marsal</i>, 1867, MNAC",
-      "strength": 2
+      "strength": 2,
+      "websites": "Prado, [entrada de M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08) por María Teresa Martín Bourgon"
     },
     {
       "from": "Federico de Madrazo",
@@ -10463,7 +10466,7 @@
       "connection_level": "directa",
       "they share": "antes de realizar su pintura <i>Fantasía sobre Fausto</i> (1866, Prado), Fortuny ya había representado a este personaje anteriormente, quizás inspirado por la novela <i>Le capitaine Fracasse</i> de Gautier, ilustrado por Gustave Doré (1863).",
       "mentions": "Gautier elogia la obra de Fortuny, lo que contribuyó a aumentar su fama. Por ejemplo, a Gautier le gustaron las obras de Fortuny expuestas por Adolphe Goupil (c. 1870). 'Fortuny', <i>Journal Officiel de l'Empire Français</i>, II, no.137, París, 19 de mayo de 1870.",
-      "websites": "[Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)"
+      "websites": "Prado, [entrada de M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08) por María Teresa Martín Bourgon; [Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)"
     },
     {
       "from": "Gustave Doré",
