@@ -4857,12 +4857,18 @@
         "Exhibition catalogues: Javier Barón, Madrid, <i>Fortuny (1838-1874)</i>, Prado, 2017; Javier Barón, <i>El legado Ramón de Errazu: Fortuny, Madrazo y Rico</i>, Prado, 2005; Castres 1974, <i>Mariano Fortuny et ses amis français</i>, Musée Goya; Beruete 1917; Charles Yriarte, <i>Fortuny</i> (serie Artistes célèbres), 1889; Charles Davillier, <i>Fortuny sa vie, son œuvre, sa correspondance</i>, 1875",
         "PhD thesis: Daniel S. Ralston, New York, University of Columbia (unpublished)."
       ],
-      "websites": "Prado, [entry of M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08); Prado, [Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); Orsay, [entry of M. Fortuny](https://www.musee-orsay.fr/en/ressources/artists-personalities-catalog/mariano-fortuny-y-marsal-12627); [Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)",
+      "websites": "Prado, [entry of M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08) by María Teresa Martín Bourgon; Prado, [Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); Orsay, [entry of M. Fortuny](https://www.musee-orsay.fr/en/ressources/artists-personalities-catalog/mariano-fortuny-y-marsal-12627); [Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)",
       "authorities": {
         "rah": "https://historia-hispanica.rah.es/biografias/17501-mariano-fortuny-marsal"
       },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Mariano_Fortuny_Marsal.jpg",
-      "image source": "portrait by Federico de Madrazo, 1867, MNAC"
+      "image source": "portrait by Federico de Madrazo, 1867, MNAC",
+      "exhibitions": "Paris 1870, Adolphe Goupil",
+      "friends": "Martín Rico, Jules Worms, Eduardo Zamacois, Raimundo de Madrazo, Ricardo de Madrazo",
+      "in Rome": "1857-60, 1873",
+      "influenced by": "pintores orientalistas como Eugène Delacroix y Eugène Fromentin; también Horace Vernet y Alexandre-Gabriel Decamps. Escritores como Goethe y Théophile Gautier. Compositores como Charles Gounod.",
+      "mecenas": "Adolphe Goupil (contrato de exclusividad desde 1866). En mayo de 1874, Fortuny regresó a París con la intención de romper su contrato con Goupil (¿lo hizo?). Goupil adquirió <i>La vicaría</i> (1870) 70.000 francos y lo revendió por 250.000 francos; no llegó a exponerlo por miedo a estropearlo.",
+      "sales": "Paris 1875 (póstuma): sus obras se venden a precios desorbitados"
     },
     {
       "id": "Mariano Fortuny y Madrazo",
@@ -4874,6 +4880,7 @@
       "nationality": "Spanish",
       "parents": "Cecilia de Madrazo and Mariano Fortuny y Marsal",
       "married to": "Henriette Negrin",
+      "curiosities": "at the Palazzo Pesaro Orfei or Palazzo Pesaro degli Orfei in Venice is the FortunyMuseum (since 1975), where the artist lived since 1902",
       "profession": "designer (fashion, textile, theatre), inventor, businessman, painter, photographer",
       "portrayed by": "unknown artist, c.1895, photograph; self-portrait, photography; self-portrait, 1947, oil painting, Prado P007438",
       "in Paris": "1874-1888",
@@ -7528,8 +7535,8 @@
       "to": "Luis Paret",
       "connection_level": "direct",
       "relationship type": "patronage",
-      "patronage": "<i>Jura de Fernando VII como príncipe de Asturias</i> (1791, Prado)",
-      "strength": 3
+      "strength": 3,
+      "employment/patronage": "<i>Jura de Fernando VII como príncipe de Asturias</i> (1791, Prado)"
     },
     {
       "from": "Anton Raphael Mengs",
@@ -10238,9 +10245,9 @@
         "Louis-Philippe commissioned Baron Taylor and Adrien Dauzats to acquire the paintings c.1835-37 for the Galerie espagnole (1838-48), partly via the Madrazo family",
         "In a letter from Federico de Madrazo to José de Madrazo on 27 Oct 1837, he writes that the King didn't like Goya's paintings brought by Taylor: 'Parece que al Rey le gustan mucho los cuadros que ha traido Mr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver como se colocan' (Díez 1994, p.40)"
       ],
-      "patronage": "1838 Louis-Philippe commissioned Madrazo with the painting <i>Godofredo de Bouillon</i> for Versailles",
       "bibliography": "Fayos Pérez 2024; Díez 1994",
-      "strength": 3
+      "strength": 3,
+      "employment/patronage": "1838 Louis-Philippe commissioned Madrazo with the painting <i>Godofredo de Bouillon</i> for Versailles"
     },
     {
       "from": "Federico de Madrazo",
@@ -13861,9 +13868,9 @@
       "relationship type": "patronage",
       "know each other since": "1785",
       "commissions": "individual and family portraits; two series of paintings, including one of witchcraft scenes (<i>Composiciones de asuntos de Brujas</i>). See <i>El aquelarre</i> (1798, Museo Lázaro Galdiano) and <i>Vuelo de brujas</i> (c.1798, Prado)",
-      "patronage": "she was one of the first people to ever acquire sets of the <i>Caprichos</i> (the Osuna sets were probably before letters)",
       "portraits": "c.1785 (Fundación Bartolomé March, Palma de Mallorca); family portrait, 1788, Prado",
-      "strength": 2
+      "strength": 2,
+      "employment/patronage": "she was one of the first people to ever acquire sets of the <i>Caprichos</i> (the Osuna sets were probably before letters)"
     },
     {
       "from": "IX Duke of Osuna",
@@ -15115,6 +15122,37 @@
       "portraits": "oil painting, 1815-16, Real Academia de Historia, [RAH](https://es.wikipedia.org/wiki/Juan_Fernández_de_Rojas#/media/Archivo:Fray_Juan_Fernández_de_Rojas_por_Goya.jpg); drawing, [1812?], Fernández de Rojas in his deathbed, [British Museum](https://www.britishmuseum.org/collection/object/P_1862-0712-185?selectedImageId=143813001)",
       "mentions": "'The portrait of fray Juan Fernández de Rojas is perhaps, of all those painted by Goya, the most delicate. The one that best reflects the intelligence and goodness of the character, also polymath, as author of works on philosophy, theology, literary criticism and poetry, friend of Jovellanos and Meléndez Valdés and also friend, and even adviser, of Goya, with whom he coincided in the rejection of false humanists and presumptuous ignoramuses' (Gonzalo Anes, 1999).",
       "bibliography": "Gonzalo Anes, 'More on the Cabinet of Antiquities', <i>ABC</i>, 20 June 1999."
+    },
+    {
+      "from": "Gustave Doré",
+      "to": "Mariano Fortuny y Marsal",
+      "connection_level": "secondary?",
+      "they shared": "Before making his painting <i>Fantasy on Faust</i> (1866, Prado), Fortuny had already represented similar Orientalist subjects and shared artistic interests with Doré",
+      "websites": [
+        "Wikipedia"
+      ]
+    },
+    {
+      "from": "Mariano Fortuny y Marsal",
+      "to": "Isabel II",
+      "connection_level": "direct",
+      "relationship type": "portraitist-sitter",
+      "know each other since": "1864",
+      "employment/patronage": "In 1864 Fortuny receives the commission to decorate one of the ceilings of the Duke of Montpensier's Parisian residence",
+      "websites": [
+        "Prado"
+      ]
+    },
+    {
+      "from": "Mariano Fortuny y Marsal",
+      "to": "María Cristina de Borbón-Dos Sicilias",
+      "connection_level": "direct",
+      "relationship type": "patronage; employer-employee; portraitist-sitter",
+      "know each other since": "1864",
+      "employment/patronage": "In 1864 Fortuny receives the commission to decorate one of the ceilings of the Duke of Montpensier's residence in Paris",
+      "websites": [
+        "Prado"
+      ]
     }
   ]
 }
