@@ -4836,7 +4836,7 @@
       ],
       "married to": "Cecilia de Madrazo (1867)",
       "profession": "painter, draughtsman, engraver",
-      "masters": "Claudio Lorenzale (from 1853)",
+      "masters": "Claudio Lorenzale (from 1853); Pablo Milá",
       "curiosities": [
         "Towards the end of his life, he showed signs of depression; commercial success had elevated him to an enviable social and economic position, but his clientele demanded a type of painting that prevented him from evolving (Wikipedia).",
         "His brother-in-law Ricardo de Madrazo took charge of his studio after his death, catalogued his works and organized the sale at Hôtel Drouot. He also painted the work <i>Mariano Fortuny's Studio</i>, MNAC.",
@@ -4847,34 +4847,33 @@
         "Drawing: <i>Young Nude with Spear</i>, 1860; <i>Standing male nude facing front, with left hand leaning on a stone block</i>, c.1861, Prado D006227; <i>Study of seated elderly man, front facing, with chin resting on hand</i>, 1864, Orsay RF 3887, Recto.",
         "Print: <i>Night Watch</i>, etching and aquatint, c.1863-65; <i>Idyll</i>, etching, 1865; <i>African Beach</i>, watercolor, c.1867; <i>Portici Landscape</i>, watercolor and gouache, 1874"
       ],
-      "patrons": "Adolphe Goupil (contract from 1866): in May 1874 he returned to Paris with the intention of breaking his contract with Goupil (did he?)",
+      "patrons": "Adolphe Goupil (exclusive contract from 1866): in May 1874 he returned to Paris with the intention of breaking his contract with Goupil (did he?). Goupil acquired <i>La vicaría</i> (1870) for 70.000 francs and resold it for 250.000 francs; he did not exhibit it for fear of damaging it.",
       "portrayed by": "self-portrait, c.1858, MNAC; self-portrait, 1863-73; Federico de Madrazo, 1867, MNAC; Charles Albert Bertall, photograph, <i>Mariano Fortuny Marsal and Cecilia de Madrazo</i>, c.1870, Prado HF04363; Francisco Domingo Marqués, c.1874-84, M. Bilbao 69/76",
       "link to Goya's work": [
-        "1872 Fortuny is mentioned as a great admirer of Goya and Meissonier (Fayos Pérez 2024, Appendix II).",
-        "Beruete (1917) discusses Fortuny's enthusiasm for Goya's art and his efforts to promote it to the art market through Goupil."
+        "1872 Fortuny is mentioned as a great admirer of Francisco de Goya and Ernest Meissonier (<i>Dictionnaire de la conversation et de la lecture</i>, París, ed. William Duckett, p.732) (Fayos Pérez 2024, Appendix II).",
+        "Beruete (1917, pp.85-86) writes: 'The enthusiasm that Fortuny felt for Goya's art endured, and years later, as a fashionable and famous painter in Paris, he was able to influence the <i>marchands</i>, advising them to buy and exhibit some of Goya's works. Goupil [Adolphe Goupil] bought a portrait, but kept it for many years without being able to sell it conveniently'. Is this the full-length portrait supposedly of Mariano Goya mentioned by Viñaza in 1887 as by Javier Goya? Or is it rather the full-length portrait of Javier Goya (c. 1805-06) that is now in a private collection in Paris?"
       ],
       "studies in": "Academy of Barcelona (La Llotja); Academia Gigi, Rome",
       "in Paris": "trip in 1868; settles in 1870; returns in 1874",
       "trips": "Rome, Morocco, Madrid, London, Naples, Portici",
       "lives in": "Reus, Paris, Granada (2 years), Seville, Rome",
+      "exhibitions": "Paris 1870, Adolphe Goupil",
+      "friends": "Martín Rico, Jules Worms, Eduardo Zamacois, Raimundo de Madrazo, Ricardo de Madrazo",
+      "in Rome": "1857-60, 1873",
+      "influenced by": "Orientalist painters such as Eugène Delacroix and Eugène Fromentin; also Horace Vernet and Alexandre-Gabriel Decamps. Writers such as Goethe and Théophile Gautier. Composers such as Charles Gounod.",
+      "sales": "Paris 1875 (posthumous): his works sold at exorbitant prices",
       "bibliography": [
         "Exhibition catalogues: Javier Barón, <i>Fortuny (1838-1874)</i>, Madrid, Prado, 2017; Javier Barón, <i>El legado Ramón de Errazu: Fortuny, Madrazo y Rico</i>, Prado, 2005; Castres 1974, <i>Mariano Fortuny et ses amis français</i>, Musée Goya.",
         "Other publications: Torres González, <i>Fortuny: A World in Miniature</i>, 2008; Vives, <i>Fortuny, Engraver: Critical Study and Reasoned Catalogue</i>, 1991; González López & Martí Ayxelà, <i>Mariano Fortuny Marsal</i>, 2 vols., 1989.",
         "Early publications: Beruete 1917; Charles Yriarte, <i>Fortuny</i> (series Artistes célèbres), 1889; Charles Davillier, <i>Fortuny his Life, his Work, his Correspondence</i>, 1875",
         "PhD thesis: Daniel S. Ralston, New York, University of Columbia (unpublished)."
       ],
-      "websites": "Prado, Madrazo-Fortuny Family; Orsay; Wikipedia",
+      "websites": "Prado, [entry on M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08) by María Teresa Martín Bourgon; Prado, [Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); Orsay, [entry on M. Fortuny](https://www.musee-orsay.fr/en/ressources/artists-personalities-catalog/mariano-fortuny-y-marsal-12627); [Colección BBVA](https://www.coleccionbbva.com/es/autor/fortuny-y-marsal-mariano/); [Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)",
       "authorities": {
         "rah": "https://historia-hispanica.rah.es/biografias/17501-mariano-fortuny-marsal"
       },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Mariano_Fortuny_Marsal.jpg",
-      "image source": "portrait by Federico de Madrazo, 1867, MNAC",
-      "exhibitions": "Paris 1870, Adolphe Goupil",
-      "friends": "Martín Rico, Jules Worms, Eduardo Zamacois, Raimundo de Madrazo, Ricardo de Madrazo",
-      "in Rome": "1857-60, 1873",
-      "influenced by": "Orientalist painters such as Eugène Delacroix and Eugène Fromentin; also Horace Vernet and Alexandre-Gabriel Decamps. Writers such as Goethe and Théophile Gautier. Composers such as Charles Gounod.",
-      "mecenas": "Adolphe Goupil (contrato de exclusividad desde 1866). En mayo de 1874, Fortuny regresó a París con la intención de romper su contrato con Goupil (¿lo hizo?). Goupil adquirió <i>La vicaría</i> (1870) 70.000 francos y lo revendió por 250.000 francos; no llegó a exponerlo por miedo a estropearlo.",
-      "sales": "Paris 1875 (póstuma): sus obras se venden a precios desorbitados"
+      "image source": "portrait by Federico de Madrazo, 1867, MNAC"
     },
     {
       "id": "Mariano Fortuny y Madrazo",
