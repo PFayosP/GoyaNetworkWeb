@@ -4868,7 +4868,7 @@
         "Exhibition catalogues: Javier Barón, <i>Fortuny (1838-1874)</i>, Madrid, Prado, 2017; Javier Barón, <i>El legado Ramón de Errazu: Fortuny, Madrazo y Rico</i>, Prado, 2005; Castres 1974, <i>Mariano Fortuny et ses amis français</i>, Musée Goya; Barcelona 1974, <i>Primer centenario de la muerte de Fortuny</i>, Patronato Nacional de Museos.",
         "Other publications: Torres González, <i>Fortuny: A World in Miniature</i>, 2008; Vives, <i>Fortuny, Engraver: Critical Study and Reasoned Catalogue</i>, 1991; González López & Martí Ayxelà, <i>Mariano Fortuny Marsal</i>, 2 vols., 1989; Fontbona, 'Del neoclassicisme a la restauració: 1808-1888', <i>Història de l'art català</i>, Edicions 62, 1983, t.VI; Ainaud de Lasarte, <i>Cent anys del pintor (1838-1874)</i>, 1980; Gállego, 'Fortuny en el Casón', <i>Goya</i>, no.103, 1971, pp.90-97; Gil Fillol, <i>Mariano Fortuny. Su vida, su obra, su arte</i>, 1952.",
         "Early publications: Beruete 1917; Charles Yriarte, <i>Fortuny</i> (series Artistes célèbres), 1889; Charles Davillier, <i>Fortuny his Life, his Work, his Correspondence</i>, 1875",
-        "PhD thesis: Daniel S. Ralston, New York, University of Columbia (unpublished)."
+        "PhD thesis: Daniel S. Ralston, New York, University of Columbia."
       ],
       "websites": "Prado, [entry on M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08) by María Teresa Martín Bourgon; Prado, [Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); Orsay, [entry on M. Fortuny](https://www.musee-orsay.fr/en/ressources/artists-personalities-catalog/mariano-fortuny-y-marsal-12627); [Colección BBVA](https://www.coleccionbbva.com/es/autor/fortuny-y-marsal-mariano/); [Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)",
       "authorities": {
@@ -6074,6 +6074,47 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Garcia_Prada.jpg",
       "image source": "Goya, portrait, 1805-08, Des Moines Art Center",
       "added": "2026-05-20"
+    },
+    {
+      "id": "Martín Rico",
+      "full name": "Martín Rico y Ortega",
+      "label": "Rico",
+      "life dates": "1833-1908",
+      "sex": "male",
+      "born in": "El Escorial, Madrid",
+      "died in": "Venice",
+      "nationality": "Spanish",
+      "profession": "painter",
+      "siblings": "Bernardo Rico (engraver)",
+      "influenced by": "Painters of the Barbizon School; Charles Daubigny; Ernest Meissonier; Camille Pissarro; William Turner; Ruisdael; Claude Lorrain; Mariano Fortuny y Marsal",
+      "studies in": "School of Fine Arts of San Fernando",
+      "masters": "Jenaro Pérez Villaamil; Fernando Ferrant; Vicente Camarón; Charles Daubigny (works in his studio from 1863)",
+      "patronage": "Adolphe Goupil",
+      "editor of": "<i>La Ilustración Española y Americana</i> (1895)",
+      "trips": "Paris, Switzerland, England, Italy, Toledo, Venice (1872: with Mariano Fortuny y Marsal)",
+      "lives in": "Madrid, Paris, Switzerland, Granada (with Mariano Fortuny y Marsal), Seville (1872-75), Venice (1900)",
+      "in Paris": "1859? Settles in 1862 as a pensioner; meets Raimundo de Madrazo. During the Franco-Prussian War (1870-71) travels to Madrid and Granada. Returns definitively in 1874 (interspersed with trips to Italy)",
+      "exhibitions": [
+        "1858-67 National Exhibitions of Fine Arts: third medal with <i>A Landscape</i> in 1860; second medal in 1864 and 1867.",
+        "1878 Universal Exposition of Paris: third medal.",
+        "1888 Universal Exposition of Paris: second medal.",
+        "Recent: 2012-13 Prado Museum, <i>The Landscape Painter Martín Rico (1833-1908)</i> (curated by Javier Barón); 2005 Prado, <i>The Ramón de Errazu Legacy: Rico, Fortuny and Madrazo</i>."
+      ],
+      "friends": "Mariano Fortuny y Marsal; Raimundo de Madrazo; Eduardo Rosales; Camille Pissarro",
+      "author of": [
+        "Painting: <i>Washerwomen of La Varenne</i>; <i>A Landscape, Outskirts of Azañón</i>, 1859, Prado; <i>Swiss Landscape</i>, 1862, Prado; <i>A Summer Day on the Seine</i>, 1870-75, Thyssen Málaga; <i>The Tower of the Ladies in the Alhambra of Granada</i>, 1871, Prado; <i>Mouth of the Bidasoa</i>, 1872, Prado; <i>The Riva degli Schiavoni in Venice</i>, 1873; <i>Door of a House in Toledo</i>, 1875-78, Prado; <i>Courtyard of the Palace of the Dukes of Venice</i>, 1883, Santander collection",
+        "Essays: <i>Memories of My Life</i>, 1907 (dedicated to his friend Aureliano de Beruete)"
+      ],
+      "awards/decorations": "Légion d'Honneur (1878); Commander of the Order of Isabella the Catholic",
+      "bibliography": [
+        "Exhibition catalogues: Javier Barón, <i>The Landscape Painter Martín Rico (1833-1908)</i>, Prado, 2012; <i>The Ramón de Errazu Legacy: Rico, Fortuny and Madrazo</i>, Prado, 2005, pp.89-93.",
+        "Other publications: Carlos G. Navarro, <i>The 19th Century at the Prado</i>, 2007, pp.485-86; E. Lafuente Ferrari, <i>Brief History of Spanish Painting</i>, II, pp.514-15, 1987.",
+        "Early publications: Gué Trapier, <i>Martín Rico y Ortega in the Collection of the Hispanic Society of America</i>, 1937; Beruete, 'Martín Rico', in <i>Cultura Española</i>, 1908."
+      ],
+      "websites": "Prado, [exhibition 2012-13](https://www.museodelprado.es/actualidad/exposicion/el-paisajista-martin-rico-1833-1908/8f77d6cb-a5c0-4ac6-8cfb-622d3b196f6b); [Prado: encyclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/rico-y-ortega-martin/274911df-f921-44de-b06f-81d98c001004); [Prado: collection](https://www.museodelprado.es/coleccion/artista/martin-rico-y-ortega/3c1e0479-1d45-44ee-b640-dbc4e3d69a14)",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Rico.jpg",
+      "image source": "self-portrait, 1908, Prado",
+      "added": "2026-05-30"
     }
   ],
   "edges": [
@@ -15166,6 +15207,43 @@
       "websites": [
         "Prado"
       ]
+    },
+    {
+      "from": "Martín Rico",
+      "to": "Raimundo de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "close friends",
+      "they share": "meet at the Liceo de Madrid and later in Paris",
+      "bibliography": "Javier Barón (ed.), <i>The Ramón de Errazu Legacy: Rico, Fortuny and Madrazo</i>, Prado, 2005",
+      "websites": "[Prado: encyclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/rico-y-ortega-martin/274911df-f921-44de-b06f-81d98c001004)"
+    },
+    {
+      "from": "Martín Rico",
+      "to": "Mariano Fortuny y Marsal",
+      "connection_level": "direct",
+      "relationship type": "close friends",
+      "they share": "meet at the Liceo de Madrid and later in Paris. They make frequent trips to Venice. Rico is also influenced by Fortuny's preciousness in his painting.",
+      "bibliography": "Javier Barón (ed.), <i>The Ramón de Errazu Legacy: Rico, Fortuny and Madrazo</i>, Prado, 2005",
+      "websites": "[Prado: encyclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/rico-y-ortega-martin/274911df-f921-44de-b06f-81d98c001004)"
+    },
+    {
+      "from": "Martín Rico",
+      "to": "Jenaro Pérez Villaamil",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; teacher-student (RABASF)"
+    },
+    {
+      "from": "Martín Rico",
+      "to": "Eduardo Zamacois",
+      "connection_level": "direct",
+      "relationship type": "friends",
+      "they share": "both meet in Paris"
+    },
+    {
+      "from": "Martín Rico",
+      "to": "Adolphe Goupil",
+      "connection_level": "direct",
+      "relationship type": "patronage; business partners"
     }
   ]
 }
