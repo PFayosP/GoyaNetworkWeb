@@ -60,16 +60,16 @@
     "y": 371
   },
   "Baron Taylor": {
-    "x": 553,
-    "y": 170
+    "x": 567,
+    "y": 132
   },
   "Adrien Dauzats": {
-    "x": 488,
-    "y": 268
+    "x": 482,
+    "y": 199
   },
   "Pharamond Blanchard": {
-    "x": 603,
-    "y": 281
+    "x": 591,
+    "y": 234
   },
   "Eugenio Ochoa": {
     "x": 255,
@@ -444,8 +444,8 @@
     "y": -752
   },
   "Jenaro Pérez Villaamil": {
-    "x": 570,
-    "y": 515
+    "x": 622,
+    "y": 488
   },
   "Henri Regnault": {
     "x": 1020,
@@ -524,20 +524,20 @@
     "y": -869
   },
   "William Stirling-Maxwell": {
-    "x": 530,
-    "y": 603
+    "x": 475,
+    "y": 538
   },
   "Laureano Potenciano": {
     "x": 857,
     "y": 575
   },
   "Richard Ford": {
-    "x": 439,
-    "y": 602
+    "x": 442,
+    "y": 485
   },
   "Pascual de Gayangos y Arce": {
-    "x": 453,
-    "y": 415
+    "x": 624,
+    "y": 364
   },
   "1st Duke of Wellington": {
     "x": -522,
@@ -772,8 +772,8 @@
     "y": 13
   },
   "Ramón de Mesonero Romanos": {
-    "x": 556,
-    "y": 429
+    "x": 533,
+    "y": 343
   },
   "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin": {
     "x": -251,
@@ -808,8 +808,8 @@
     "y": 709
   },
   "Gregorio Cruzada Villaamil": {
-    "x": 484,
-    "y": 514
+    "x": 559,
+    "y": 462
   },
   "Juan Fernández de Rojas": {
     "x": -635,
@@ -818,5 +818,9 @@
   "Manuel García de la Prada": {
     "x": -236,
     "y": -57
+  },
+  "Martín Rico": {
+    "x": 440,
+    "y": 673
   }
 }
