@@ -4873,7 +4873,7 @@
       ],
       "author of": [
         "Pintura: <i>Aparición de la Virgen de la Misericordia a Isabel Besora</i>, 1855, Museo del Romanticismo CE10168; <i>La Batalla de Wad-Rass (Episodio de la guerra de África)</i>, 1860-61, Prado; <i>Odalisca</i>, 1861, MNAC (otra versión en 1862); <i>La batalla de Tetuán</i> (1862-64, MNAC); <i>Viejo desnudo al sol</i> (1863, Prado); <i>El coleccionista de estampas</i>, 1863, Boston MoFA; <i>La libélula</i>, 1866, Museo BBAA Valencia; <i>Fantasía sobre Fausto</i>, 1866, Prado (inspired by Charles Gounod's opera <i>Faust</i>); <i>Corrida de toros. Picador herido</i>, c.1867, M. Carmen Thyssen Málaga; <i>La vicaría</i> (La boda española), 1870, MNAC; <i>La matanza de los Abencerrajes</i>, c.1870; <i>Herrero marroquí</i>, c.1870; <i>El vendedor de tapices</i>, 1870; <i>Desnudo en la playa de Portici</i>, 1874, Prado; <i>Los hijos del pintor en el salón japonés</i>, 1874, Prado.",
-        "Dibujo: <i>Joven desnudo con lanza</i>, 1860; <i>Desnudo masculino de pie de frente, con la mano izquierda apoyada en un bloque de piedra</i>, c.1861, Prado D006227; <i>Estudio de anciano sentado, de frente, con la barbilla apoyada en la mano</i>, 1864, Orsay RF 3887, Recto.",
+        "Dibujo: 1800 dibujos en el MNAC. <i>Joven desnudo con lanza</i>, 1860; <i>Desnudo masculino de pie de frente, con la mano izquierda apoyada en un bloque de piedra</i>, c.1861, Prado D006227; <i>Estudio de anciano sentado, de frente, con la barbilla apoyada en la mano</i>, 1864, Orsay RF 3887, Recto.",
         "Grabado: <i>Ronda de noche</i>, aguafuerte y aguatinta, c.1863-65; <i>Idilio</i>, aguafuerte, 1865; <i>Playa africana</i>, acuarela, c.1867; <i>Paisaje de Portici</i>, acuarela y gouache, 1874"
       ],
       "mecenas": "Adolphe Goupil (contrato de exclusividad desde 1866). En mayo de 1874, Fortuny regresó a París con la intención de romper su contrato con Goupil (¿lo hizo?). Goupil adquirió <i>La vicaría</i> (1870) por 70.000 francos y lo revendió por 250.000 francos; no llegó a exponerlo por miedo a estropearlo.",
@@ -4897,7 +4897,7 @@
         "Catálogos de exposición: Javier Barón, <i>Fortuny (1838-1874)</i>, Madrid, Prado, 2017; Javier Barón, <i>El legado Ramón de Errazu: Fortuny, Madrazo y Rico</i>, Prado, 2005; Castres 1974, <i>Mariano Fortuny et ses amis français</i>, Musée Goya; Barcelona 1974, <i>Primer centenario de la muerte de Fortuny</i>, Patronato Nacional de Museos.", 
         "Otras publicaciones: Torres González, <i>Fortuny: un mundo en miniatura</i>, 2008; Vives, <i>Fortuny, gravador: estudi crític i catàleg raonat</i>, 1991; González López & Martí Ayxelà, <i>Mariano Fortuny Marsal</i>, 2 vols., 1989; Fontbona, 'Del neoclassicisme a la restauració: 1808-1888', <i>Història de l'art català</i>, Edicions 62, 1983, t.VI; Ainaud de Lasarte, <i>Cent anys del pintor (1838-1874)</i>, 1980; Gállego, 'Fortuny en el Casón', <i>Goya</i>, no.103, 1971, pp.90-97; Gil Fillol, <i>Mariano Fortuny. Su vida, su obra, su arte</i>, 1952.",
         "Publicaciones tempranas: Beruete 1917; Charles Yriarte, <i>Fortuny</i> (serie Artistes célèbres), 1889; Charles Davillier, <i>Fortuny sa vie, son œuvre, sa correspondance</i>, 1875",
-        "Tesis doctorales: Daniel S. Ralston, Nueva York, University of Columbia (inédita)."
+        "Tesis doctorales: Daniel S. Ralston, Nueva York, University of Columbia."
       ],
       "websites": "Prado, [entrada de M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08) por María Teresa Martín Bourgon; Prado, [Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); Orsay, [entrada de M. Fortuny](https://www.musee-orsay.fr/en/ressources/artists-personalities-catalog/mariano-fortuny-y-marsal-12627); [Colección BBVA](https://www.coleccionbbva.com/es/autor/fortuny-y-marsal-mariano/); [Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny)",
       "authorities": {
@@ -6105,6 +6105,47 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Garcia_Prada.jpg",
       "image source": "Goya, portrait, 1805-08, Des Moines Art Center",
       "added": "2026-05-20"
+    },
+    {
+      "id": "Martín Rico",
+      "full name": "Martín Rico y Ortega",
+      "label": "Rico",
+      "life dates": "1833-1908",
+      "sex": "male",
+      "born in": "El Escorial, Madrid",
+      "died in": "Venecia",
+      "nationality": "Spanish",
+      "profession": "pintor",
+      "siblings": "Bernardo Rico (grabador)",
+      "influenced by": "pintores de la Escuela de Barbizón; Charles Daubigny; Ernest Meissonier; Camille Pissarro; William Turner; Ruysdael; Claude Lorrain; Mariano Fortuny y Marsals",
+      "studies in": "Escuela de Bellas Artes de San Fernando",
+      "masters": "Jenaro Pérez Villaamil; Fernando Ferrant; Vicente Camarón; Charles Daubigny (trabaja en su taller desde 1863)",
+      "patronage": "Adolphe Goupil",
+      "editor of": "<i>La Ilustración Española y Americana</i> (1895)",
+      "trips": "París, Suiza, Inglaterra, Italia, Toledo, Venecia (1872: con Mariao Fortuny y Marsals)",
+      "lives in": "Madrid, París, Suiza, Granada (con Mariano Fortuny y Marsals), Sevilla (1872-75), Venecia (1900)",
+      "in Paris": "1859? Se establece en 1862 como pensionado; coincide con Raimundo de Madrazo. Durante la guerra franco-prusiana (1870-71) va a Madrid y Granada. Regresa de forma definitiva en 1874 (intercalado con viajes a Italia)",
+      "exhibitions": [
+        "1858-67 Exposiciones Nacionales de Bellas Artes: tercera medalla con <i>Un país</i> en 1860; segunda medalla en 1864 y 1867.",
+        "1878 Exposición Universal de París: tercera medalla.",
+        "1888 Exposición Universal de París: segunda medalla.",
+        "Recientes: 2012-13 Museo del Prado, <i>El paisajista Martín Rico (1833-1908)</i> (comisariada por Javier Barón); 2005 Prado, <i>El Legado Ramón de Errazu, Rico, Fortuny y Madrazo</i>."
+      ],
+      "friends": "Mariano Fortuny y Marsals; Raimundo de Madrazo; Eduardo Rosales; Camille Pissarro",
+      "author of": [
+        "Painting: <i>Lavanderas de La Varenne</i>; <i>U país, cercanías de Azañón</i>, 1859, Prado; <i>Paisaje de Suiza/i>, 1862, Prado; <i>Un día de verano en el Sena</i>, 1870-75, Thyssen Málaga; <i>La Torre de las Damas en la Alhambra de Granada</i>, 1871, Prado; <i>Desembocadura del Bidasoa</i>, 1872, Prado; <i>La Riva degli Schiavoni en Venecia</i>, 1873; <i>Puerta de una casa en Toledo</i>, 1875-78, Prado; <i>Patio del palacio de los Dux de Venecia</i>, 1883, colección Santander",
+        "Essays: <i>Recuerdos de mi vida</i>, 1907 (dedicado a su amigo Aureliano de Beruete)"
+      ],
+      "awards/decorations": "Légion d'Honneur (1878); comendador de la orden de Isabel la Católica",
+      "bibliography": [
+        "Catálogos de exposición: Javier Barón, <i>El paisajista Martín Rico (1833-1908)</i>, Prado, 2012; <i>El Legado Ramón de Errazu, Rico, Fortuny y Madrazo</i>, Prado, 2005, pp.89-93.",
+        "Otras publicaciones: Carlos G. Navarro, <i>El siglo XIX en el Prado</i>, 2007, pp.485-86; E. Lafuente Ferrari, <i>Breve historia de la pintura española</i>, II, pp.514-15, 1987.",
+        "Publicaciones tempranas: Gué Trapier, <i>Martín Rico y Ortega in the Collection of the Hispanic Society of America</i>, 1937; Beruete, 'Martín Rico', en <i>Cultura Española</i>, 1908."
+      ],
+      "websites": "Prado, [exposición 2012-13](https://www.museodelprado.es/actualidad/exposicion/el-paisajista-martin-rico-1833-1908/8f77d6cb-a5c0-4ac6-8cfb-622d3b196f6b); [Prado: enciclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/rico-y-ortega-martin/274911df-f921-44de-b06f-81d98c001004); [Prado: colección](https://www.museodelprado.es/coleccion/artista/martin-rico-y-ortega/3c1e0479-1d45-44ee-b640-dbc4e3d69a14)",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Rico.jpg",
+      "image source": "autorretrato, 1908, Prado",
+      "added": "2026-05-30"
     }
   ],
   "edges": [
@@ -6673,6 +6714,43 @@
       "know each other since": "al menos desde 1841",
       "they share": "Valentín Carderera escribe el 10 de noviembre de 1841: 'Gayangos [...]. Me dijo que estaba encargado de hacer la apología de lo que publicaba Villaamil y que no quería' (Lanzarote Guiral 2016, p.XXXVII)",
       "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "from": "Martín Rico",
+      "to": "Raimundo de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "amigos cercanos",
+      "they share": "coinciden en el Liceo de Madrid y más tarde en París",
+      "bibliography": "Javier Barón (ed.), <i>El Legado Ramón de Errazu, Rico, Fortuny y Madrazo</i>, Prado, 2005",
+      "websites": "[Prado: enciclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/rico-y-ortega-martin/274911df-f921-44de-b06f-81d98c001004)"
+    },
+    {
+      "from": "Martín Rico",
+      "to": "Mariano Fortuny y Marsal",
+      "connection_level": "direct",
+      "relationship type": "amigos cercanos", 
+      "they share": "coinciden en el Liceo de Madrid y más tarde en París. Realizarán viajes frecuentes a Venecia. Rico estaría además influenciado por el preciosismo de Fortuny en su pintura.",
+      "bibliography": "Javier Barón (ed.), <i>El Legado Ramón de Errazu, Rico, Fortuny y Madrazo</i>, Prado, 2005",
+      "websites": "[Prado: enciclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/rico-y-ortega-martin/274911df-f921-44de-b06f-81d98c001004)"
+    },
+    {
+      "from": "Martín Rico",
+      "to": "Jenaro Pérez Villaamil",
+      "connection_level": "direct",
+      "relationship type": "conocidos; maestro-alumno (RABASF)"
+    },
+    {
+      "from": "Martín Rico",
+      "to": "Eduardo Zamacois",
+      "connection_level": "direct",
+      "relationship type": "amigos", 
+      "they share": "ambos coinciden en París"
+    },
+    {
+      "from": "Martín Rico",
+      "to": "Adolphe Goupil",
+      "connection_level": "direct",
+      "relationship type": "patronage; business partners"
     },
     {
       "from": "Valentín Carderera",
