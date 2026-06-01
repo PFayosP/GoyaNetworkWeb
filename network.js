@@ -345,7 +345,7 @@
 
       PEOPLE_TITLE: "Equipo",
       PEOPLE_BODY: `
-      <p><strong>Directora del proyecto:</strong> Paula Fayos-Pérez, PhD (Universidad de Cambridge, 2019). Investigadora postdoctoral en Historia del arte. Miembro asociado de ARCHE (Université de Strasbourg) y de SU+MA (Universidad Complutense de Madrid).</p>
+      <p><strong>Directora del proyecto:</strong> Paula Fayos Pérez, investigadora postdoctoral. Doctora en Historia del arte (Universidad de Cambridge, 2019). Miembro asociado de ARCHE (Université de Strasbourg) y de SU+MA (Universidad Complutense de Madrid).</p>
 
       <p><strong>Comité científico:</strong> El contenido de la Goya Network se revisa y debate periódicamente con los miembros de un comité científico integrado por consultores externos de reconocido prestigio académico, que aportan orientación y asesoramiento sobre aspectos específicos del proyecto.</p>
       <ul style="margin-top: 0.5rem; line-height: 1.6;">
