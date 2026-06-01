@@ -136,7 +136,7 @@
 
       PEOPLE_TITLE: "People",
       PEOPLE_BODY: `
-      <p><strong>Project Director:</strong> Paula Fayos-Pérez, PhD (University of Cambridge, 2019). Postdoctoral researcher in History of Art. Associate member of ARCHE (Université de Strasbourg) and SU+MA (Universidad Complutense de Madrid).</p>
+      <p><strong>Project Director:</strong> Paula Fayos-Pérez, postdoctoral researcher. PhD in History of Art (University of Cambridge, 2019). Associate member of ARCHE (Université de Strasbourg) and SU+MA (Universidad Complutense de Madrid).</p>
 
       <p><strong>Scientific Committee:</strong> The content of the Goya Network is periodically reviewed and discussed with the members of a scientific committee composed of external consultants renowned for their scholarly prestige, who provide guidance and advice on specific aspects of the project.</p>
       <ul style="margin-top: 0.5rem; line-height: 1.6;">
