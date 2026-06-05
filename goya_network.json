@@ -23,7 +23,7 @@
       "member of": "RABASF",
       "portrayed by": "Vicente López (1826, Prado); Francisco de Goya",
       "address": "C/ Desengaño, 1, Madrid (by 1784); Quinta del Sordo, Madrid (acquired in 1819)",
-      "bibliography": "Fayos Pérez 2024; Schwander 2021; Tomlinson 2020; Mena Marqués & Manuel Matilla, 2019; Mena Marqués & Manuel Matilla, 2018; Mena Marqués 2008; Schulz 2005; Wolf 1994; Bozal 1994; Tomlinson 1992; Carreta Parrondo & Vega 1991; Águeda & Salas 1982; López Canellas 1981; Glendinning 1977; Gassier 1973; Gassier & Wilson-Bareau 1971; Harris 1964",
+      "bibliography": "Fayos-Pérez 2024; Schwander 2021; Tomlinson 2020; Mena Marqués & Manuel Matilla, 2019; Mena Marqués & Manuel Matilla, 2018; Mena Marqués 2008; Schulz 2005; Wolf 1994; Bozal 1994; Tomlinson 1992; Carreta Parrondo & Vega 1991; Águeda & Salas 1982; López Canellas 1981; Glendinning 1977; Gassier 1973; Gassier & Wilson-Bareau 1971; Harris 1964",
       "websites": [
         "[Fundación Goya en Aragón](https://fundaciongoyaenaragon.es/)",
         "[Museo del Prado](https://www.museodelprado.es/coleccion/artista/goya-y-lucientes-francisco-de/39568a17-81b5-4d6f-84fa-12db60780812)",
@@ -291,7 +291,7 @@
       ],
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/GD_Tiepolo.jpg",
       "portrayed by": "Giambattista Tiepolo-Giandomenico Tiepolo (self-portrait), <i>Apotheosis Of The Prince Bishop</i> fresco, Wurzburg, 1750-53",
-      "bibliography": "Fayos Pérez 2024; Lanzarote Guiral 2016; McDonald 2012; Wilson Bareau 2016; Harris 1964, vol.I",
+      "bibliography": "Fayos-Pérez 2024; Lanzarote Guiral 2016; McDonald 2012; Wilson Bareau 2016; Harris 1964, vol.I",
       "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/tiepolo-giandomenico/1c2f6bf5-ebe2-4cb8-b79e-d898b6941831)",
       "image source": "self-portrait, 1750-53, Wurzburg"
     },
@@ -376,13 +376,13 @@
       "author of": "<i>Iconografía espan̂ola: Colección de retratos, estatuas, mausoleos y demás monumentos (...)</i>, in Spanish and French, 1855-1864",
       "mentions": "Viñaza 1887: pp.4, 5, 52, 69, 120, 128, 134, 139-142, 208, 213, 214, 239, 253, 259, 327, 400, 417, 428, 430, 432, 434, 435, 439, 447, 450, 456, 457",
       "mentions of Goya": [
-        "1835 <i>El Artista</i> 2, 'Biografía de D. Francisco Goya, pintor', 253-55: 'La nueva escuela romántica de los pintores franceses ha puesto en evidencia el mérito de nuestro artista, y en bastantes cuadros pequeños y en muchísimas litografías y aguas fuertes que adornan las ediciones de Victor Hugo y otros célebres contemporáneos, se ve el deseo de imitar a Goya, y se columbran los originales y románticos duendecitos esparcidos en sus ochenta caprichos' (p.255) (Fayos Pérez 2024, p.325). With a lithography by Federico de Madrazo (Vicente López's portrait of Goya).",
-        "1838-VII-15 <i>Semanario Pintoresco español</i> 120, 631-33: 'Los aficionados estrangeros tiempo ha las buscan [<i>Caprichos</i>] con mas pasion que los nuestros, y hoy vemos reproducidos y transformados sus duendecitos y alguaciles en los grabados y litografiados que nos vienen de allende sin pretensión de ocultar el plagio' (p.633) (Fayos Pérez 2024, p.328)",
-        "1860-VIII-15 <i>Gazette des Beaux-Arts</i> 7, 'François Goya: sa vie, ses dessins et ses eaux-fortes', 215-27, translated and annotated by Philippe Burty, with a preface by Charles Blanc and a print by Bracquemond. It includes a short biography of Goya and an account of his drawings. Carderera claims ownership of 2 sheets from Album A, 112 preparatory drawings of the <i>Caprichos</i>, 50 of <i>Tauromaquia</i> and 72 of <i>Disasters of War</i> (Fayos Pérez 2024, p.347). [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k2030710/f231.item#)",
-        "1863-VII-1 <i>Gazette des Beaux-Arts</i> 15, 'François Goya', 237-49. It focuses on the advertisement of the <i>Caprichos</i> in the <i>Diario de Madrid</i> (6 Feb 1799). It includes Jacquemart's 'Spanish scene', based on Goya. Also mentions the Prado commentaries. It quotes Théophile Gautier's essay on the <i>Disasters of War</i> (<i>Voyage en Espagne</i>, 1845, p.136). He mixes up the <i>Disparates</i> with the drawing series <i>Sueños</i> ('Les proverbes ou rêves', p.244) (Fayos Pérez 2024, p.350). [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k2030791/f257.item#)"
+        "1835 <i>El Artista</i> 2, 'Biografía de D. Francisco Goya, pintor', 253-55: 'La nueva escuela romántica de los pintores franceses ha puesto en evidencia el mérito de nuestro artista, y en bastantes cuadros pequeños y en muchísimas litografías y aguas fuertes que adornan las ediciones de Victor Hugo y otros célebres contemporáneos, se ve el deseo de imitar a Goya, y se columbran los originales y románticos duendecitos esparcidos en sus ochenta caprichos' (p.255) (Fayos-Pérez 2024, p.325). With a lithography by Federico de Madrazo (Vicente López's portrait of Goya).",
+        "1838-VII-15 <i>Semanario Pintoresco español</i> 120, 631-33: 'Los aficionados estrangeros tiempo ha las buscan [<i>Caprichos</i>] con mas pasion que los nuestros, y hoy vemos reproducidos y transformados sus duendecitos y alguaciles en los grabados y litografiados que nos vienen de allende sin pretensión de ocultar el plagio' (p.633) (Fayos-Pérez 2024, p.328)",
+        "1860-VIII-15 <i>Gazette des Beaux-Arts</i> 7, 'François Goya: sa vie, ses dessins et ses eaux-fortes', 215-27, translated and annotated by Philippe Burty, with a preface by Charles Blanc and a print by Bracquemond. It includes a short biography of Goya and an account of his drawings. Carderera claims ownership of 2 sheets from Album A, 112 preparatory drawings of the <i>Caprichos</i>, 50 of <i>Tauromaquia</i> and 72 of <i>Disasters of War</i> (Fayos-Pérez 2024, p.347). [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k2030710/f231.item#)",
+        "1863-VII-1 <i>Gazette des Beaux-Arts</i> 15, 'François Goya', 237-49. It focuses on the advertisement of the <i>Caprichos</i> in the <i>Diario de Madrid</i> (6 Feb 1799). It includes Jacquemart's 'Spanish scene', based on Goya. Also mentions the Prado commentaries. It quotes Théophile Gautier's essay on the <i>Disasters of War</i> (<i>Voyage en Espagne</i>, 1845, p.136). He mixes up the <i>Disparates</i> with the drawing series <i>Sueños</i> ('Les proverbes ou rêves', p.244) (Fayos-Pérez 2024, p.350). [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k2030791/f257.item#)"
       ],
       "collector of Goya's works": "Carderera gathered a large part of Goya's prints and drawings, acquired from Javier Goya and Mariano Goya, and Juan Agustín Ceán Bermúdez. He possessed at one time some 400 of Goya's drawings, 272 of which were acquired by the Prado in 1886, as well as the engraved work. His collection also included rare working proofs from the collection of Juan Agustín Ceán Bermúdez, now at the BNE (acquired from Carderera in 1867 and from his descendants), as well as the famous proofs from the Stirling-Maxwell collection, now at the Boston Museum (Harris 1964, vol.I, p.11)",
-      "bibliography": "Fayos Pérez 2024 and 2020; Lanzarote Guiral 2016; Harris 1964; Viñaza 1887",
+      "bibliography": "Fayos-Pérez 2024 and 2020; Lanzarote Guiral 2016; Harris 1964; Viñaza 1887",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q3574278",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500031098",
@@ -716,13 +716,13 @@
       "founder of": "Galerie espagnole at the Louvre (1838-48): a collection of Spanish paintings acquired by Baron Taylor and Adrien Dauzats in Spain c.1835-37 (in collaboration with Javier Goya, Federico de Madrazo, and Pharamond Blanchard)",
       "art collection": "when the Galerie espagnole closed in 1848 with the defeat of his government, Louis-Philippe took the paintings with him to England as part of his private collection (although the had been acquired with the public <i>liste civile</i>).",
       "collector of Goya's works": [
-        "Galerie espagnole (which he claimed as his personal collection): the original <i>Majas on a Balcony</i> (1808-12; private coll.), <i>Young women / The Letter</i> (1814-19; Lille), <i>The Forge</i> (c.1815-20; Frick), <i>Lazarillo de Tormes</i> (1808-12; private coll.), Asensio Julià (possibly c.1798, Thyssen 166 1971.1); the unlocated <i>A burial</i> and <i>Last prayer of a condemned man</i>; and according to Baron Taylor's catalogue, also <i>Old Women/Time</i> (Lille), a <i>Portrait of the Duchess of Alba</i> (Hispanic Society A102) and a <i>Portrait of Goya</i> (unknwon) (Fayos Pérez 2024, p.49; Baticle & Marinas 1981, nos.82-90).",
-        "A portrait of Zurbarán (drawing) by Goya, acquired via Valentín Carderera in 1841 (Fayos Pérez 2024, p.45)."
+        "Galerie espagnole (which he claimed as his personal collection): the original <i>Majas on a Balcony</i> (1808-12; private coll.), <i>Young women / The Letter</i> (1814-19; Lille), <i>The Forge</i> (c.1815-20; Frick), <i>Lazarillo de Tormes</i> (1808-12; private coll.), Asensio Julià (possibly c.1798, Thyssen 166 1971.1); the unlocated <i>A burial</i> and <i>Last prayer of a condemned man</i>; and according to Baron Taylor's catalogue, also <i>Old Women/Time</i> (Lille), a <i>Portrait of the Duchess of Alba</i> (Hispanic Society A102) and a <i>Portrait of Goya</i> (unknwon) (Fayos-Pérez 2024, p.49; Baticle & Marinas 1981, nos.82-90).",
+        "A portrait of Zurbarán (drawing) by Goya, acquired via Valentín Carderera in 1841 (Fayos-Pérez 2024, p.45)."
       ],
       "address": "Palais-Royal (1830-31); Palais des Tuileries (1831-48); Claremont House (1848-50)",
       "works as": "King of the French 1830-1848",
       "portrayed by": "Horace Vernet or Carle Vernet, oil painting, date unknown, Versailles MV 5217; Nicolas Jacques, 1827, ivory miniature, Louvre 27237; Honoré Daumier, 1831, caricature as Gargantua; Winterhalter, 1839, oil painting, Versailles; Winterhalter, 1841, oil painting, Louvre; Jean-Auguste-Dominique Ingres, c.1842, drawing for stained glass; Lerebours et Claudet, photograph, 1842; unknown, photograph, 1840s",
-      "bibliography": "Fayos Pérez 2024; Tinterow 2003; Baticle & Marinas 1981",
+      "bibliography": "Fayos-Pérez 2024; Tinterow 2003; Baticle & Marinas 1981",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Louis_Philippe.jpg",
       "image source": "Winterhalter 1839",
       "added": "2025-10-04"
@@ -743,11 +743,11 @@
       "decorations/awards": "Infanta de España; Duchess of Montpensier",
       "address": "Palacio Real de Madrid; Orléans-Borbón Palace (Sanlúcar de Barrameda); San Telmo Palace (Seville)",
       "collector of Goya's works": [
-        "The original <i>Majas at the balcony</i>: sold by Javier Goya for 400 reales, catalogues as X24 in the 1812 inventory (Wilson-Bareau 1996); after passing through the Galerie, Louis Philippe I claimed it as part of his private collection and sold it for £70 at Christie's London in 1853 (lot 352) to Colnaghi; then acquired by Prince Antoine, Duke of Montpensier (Seville, San Telmo Palace); subsequently by Durand Ruel in 1911; now in a private collection in Switzerland (Fayos Pérez 2024, pp.49, 73).",
-        "<i>Portrait of Asensio Julià</i> (c.1798): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II)."
+        "The original <i>Majas at the balcony</i>: sold by Javier Goya for 400 reales, catalogues as X24 in the 1812 inventory (Wilson-Bareau 1996); after passing through the Galerie, Louis Philippe I claimed it as part of his private collection and sold it for £70 at Christie's London in 1853 (lot 352) to Colnaghi; then acquired by Prince Antoine, Duke of Montpensier (Seville, San Telmo Palace); subsequently by Durand Ruel in 1911; now in a private collection in Switzerland (Fayos-Pérez 2024, pp.49, 73).",
+        "<i>Portrait of Asensio Julià</i> (c.1798): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos-Pérez 2024, Appendix II)."
       ],
       "portrayed by": "Vicente López, 1842, oil painting; Winterhalter, 1847, oil painting (with black mantilla); Federico de Madrazo, 1847, oil painting, Museo del Romanticismo; Federico de Madrazo, 1851, oil painting, Palacio Real de Madrid; Jean Laurent, c.1860, photograph, Museo del Romanticismo; Julio Donon, c.1870, lithograph; unknwon, photograph (c.1880s-90s)",
-      "bibliography": "Fayos Pérez 2024; Tinterow 2003; Wilson-Bareau 1996",
+      "bibliography": "Fayos-Pérez 2024; Tinterow 2003; Wilson-Bareau 1996",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Luisa_Fernanda.jpg",
       "image source": "photograph c.1880s-90s",
       "added": "2025-10-04"
@@ -768,12 +768,12 @@
       "in Spain": "1848-[1868]",
       "art collection": "he was an early collector of photography, including Spanish, French and British photographers",
       "collector of Goya's works": [
-        "The original <i>Majas at the balcony</i>: sold by Javier Goya for 400 reales, catalogues as X24 in the 1812 inventory (Wilson-Bareau 1996); after passing through the Galerie, Louis Philippe I claimed it as part of his private collection and sold it for £70 at Christie's London in 1853 (lot 352) to Colnaghi; then acquired by Prince Antoine, Duke of Montpensier (Seville, San Telmo Palace); subsequently by Durand Ruel in 1911; now in a private collection in Switzerland (Fayos Pérez 2024, pp.49, 73).",
-        "<i>Portrait of Asensio Julià</i> (c.1798): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II)."
+        "The original <i>Majas at the balcony</i>: sold by Javier Goya for 400 reales, catalogues as X24 in the 1812 inventory (Wilson-Bareau 1996); after passing through the Galerie, Louis Philippe I claimed it as part of his private collection and sold it for £70 at Christie's London in 1853 (lot 352) to Colnaghi; then acquired by Prince Antoine, Duke of Montpensier (Seville, San Telmo Palace); subsequently by Durand Ruel in 1911; now in a private collection in Switzerland (Fayos-Pérez 2024, pp.49, 73).",
+        "<i>Portrait of Asensio Julià</i> (c.1798): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos-Pérez 2024, Appendix II)."
       ],
       "address": "Château de Neuilly (Neuilly-sur-Seine); Orléans-Borbón Palace (Sanlúcar de Barrameda); San Telmo Palace (Seville)",
       "portrayed by": "Federico de Madrazo, 1851, oil painting; unknown, photograph, c.1860",
-      "bibliography": "Fayos Pérez 2024; Tinterow 2003; Wilson-Bareau 1996",
+      "bibliography": "Fayos-Pérez 2024; Tinterow 2003; Wilson-Bareau 1996",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Montpensier.jpg",
       "image source": "Madrazo portrait 1851",
       "added": "2025-10-04"
@@ -964,7 +964,7 @@
       "author of": [
         "Sculpture: <i>La Belle Hélène</i> (1860); <i>La Gorgone</i> (Salon 1865); <i>L'Imperatrice Eugénie</i> (1866); <i>Marie-Antoinette à Versailles</i> (1866); <i>Hécate</i> (Exposition universelle 1867, commissioned by Napoléon III); <i>La Bacchante fatiguée</i> (1869); <i>La Mauresque souriante</i> (1869); <i>La Pythie</i> (1870); <i>Portrait de madame de Tallenay</i> (1873); <i>La Baronne Keffenbrinck</i> (Salon 1876).",
         "Painting: <i>La Conjuration de Fiesque</i> (Salon 1874: rejected); <i>Portrait de Berthe Morisot</i> (1875).",
-        "Printmaking (since 1860): dark, grotesque etchings clearly inspired by Goya's prints, mainly the <i>Disasters of War</i> (see Fayos Pérez 2024, fig.II.68, Marcello, <i>Vision of human skulls</i>); she made 9 etchings and some lithographs inspired by Eugène Delacroix (1873).",
+        "Printmaking (since 1860): dark, grotesque etchings clearly inspired by Goya's prints, mainly the <i>Disasters of War</i> (see Fayos-Pérez 2024, fig.II.68, Marcello, <i>Vision of human skulls</i>); she made 9 etchings and some lithographs inspired by Eugène Delacroix (1873).",
         "Writing: <i>Mémoires</i>, unfinished"
       ],
       "masters": "Sculpture: Heinrich Max Imhof, Antoine-Louis Barye (Muséum national d'histoire naturally), Auguste Clésinger. Painting: Ernest Hébert (drawing, at the Villa Médicis), Mariano Fortuny y Marsal (at his workshop, she meets Eduardo Rosales), Léon Bonnat (from 1872); Marcellin Desboutin (printmaking).",
@@ -977,7 +977,7 @@
         "She was a great admirer of music, and met Charles Gounod and Franz Liszt.",
         "In her will, she donated her work to the city of Fribourg, under the condition of creating a museum."
       ],
-      "bibliography": "Fayos Pérez 2024; François Géal, 2017, 'Mérimée/Goya, chronique d'un désamour annoncé', <i>Cahiers Mérimée</i>, pp.55; Gianna A. Mina (dir.), <i>Marcello, Adèle d'Affry (1836-1879), duchesse de Castiglione Colonna</i>, catalogue d'exposition, Fribourg, Musée d'art et d'histoire, 2014; 1980 exhibition catalogue, Fribourg (<i>Dictionnaire de l'estampe 1830-1950</i>, 1985, p.213); Odette d'Alcantara, <i>Marcello : Adèle d'Affry, duchesse Castiglione-Colonna, 1836-1879, sa vie, son œuvre, sa pensée et ses amis</i>, Genève, Éditions générales, 1961",
+      "bibliography": "Fayos-Pérez 2024; François Géal, 2017, 'Mérimée/Goya, chronique d'un désamour annoncé', <i>Cahiers Mérimée</i>, pp.55; Gianna A. Mina (dir.), <i>Marcello, Adèle d'Affry (1836-1879), duchesse de Castiglione Colonna</i>, catalogue d'exposition, Fribourg, Musée d'art et d'histoire, 2014; 1980 exhibition catalogue, Fribourg (<i>Dictionnaire de l'estampe 1830-1950</i>, 1985, p.213); Odette d'Alcantara, <i>Marcello : Adèle d'Affry, duchesse Castiglione-Colonna, 1836-1879, sa vie, son œuvre, sa pensée et ses amis</i>, Genève, Éditions générales, 1961",
       "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Marcello_(artiste)#)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Marcello.jpg",
       "image source": "E.-T. Blanchard portrait, 1877"
@@ -1051,11 +1051,11 @@
       "curiosities": "he became interested in photography since 1851, and commissioned the photographer Eugène Durieu with a series of pictures of nude models (male and female).",
       "sales": "1864, 22-29 Feb (L.838a)",
       "exhibitions": [
-        "1930 Paris, Louvre: <i>Exposition Eugène Delacroix : peintures, aquarelles, pastels, dessins, gravures, documents</i>. It included some drawings after Goya's <i>Caprichos</i> (nos.746-750, 786) (see Fayos Pérez 2024, Appendix III: D3, D5, D7-10). [Paris Bibliothèques patrimoniales](https://bibliotheques-specialisees.paris.fr/ark:/73873/pf0000047979?posInSet=14&queryId=6b943859-d29e-4da6-ae1e-858ebfab4611)",
+        "1930 Paris, Louvre: <i>Exposition Eugène Delacroix : peintures, aquarelles, pastels, dessins, gravures, documents</i>. It included some drawings after Goya's <i>Caprichos</i> (nos.746-750, 786) (see Fayos-Pérez 2024, Appendix III: D3, D5, D7-10). [Paris Bibliothèques patrimoniales](https://bibliotheques-specialisees.paris.fr/ark:/73873/pf0000047979?posInSet=14&queryId=6b943859-d29e-4da6-ae1e-858ebfab4611)",
         "1963 Bordeaux: <i>Delacroix: ses maîtres, ses amis, ses élèves</i> (Gilberte Martin-Méry).",
         "Recent years: 2018 Paris (Louvre), Allard & Fabre."
       ],
-      "bibliography": "Fayos Pérez 2024; Sébastien Allard et al., 2018 exhibition catalogue, Louvre; Maurice Sérullaz, 1989, <i>Delacroix</i>",
+      "bibliography": "Fayos-Pérez 2024; Sébastien Allard et al., 2018 exhibition catalogue, Louvre; Maurice Sérullaz, 1989, <i>Delacroix</i>",
       "websites": "[Musée National Eugène Delacroix](https://www.musee-delacroix.fr/fr/)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q33477",
@@ -1083,7 +1083,7 @@
       "profession": "clergyman, scholar, politician",
       "considered as": "part of the group of Spanish 'afrancesados'",
       "collector of Goya's works": "his portrait (1810-11); a set of the <i>Caprichos</i> (probably bought c.1810 when sitting for his portrait).",
-      "disseminates Goya's works": "he brings his <i>Caprichos</i> set to France in 1813 during his exile, and wrote an interpretation of them in French (Boston MFA 1973.730), probably to be shared among French speakers (Fayos Pérez 2024, p.35). Since Goya himself was alive in 1813 and in possession of his original explanations of the <i>Caprichos</i> (known as the Prado commentaries), Llorente probably knew this text directly through him, perhaps during his portrait sittings (c.1810)",
+      "disseminates Goya's works": "he brings his <i>Caprichos</i> set to France in 1813 during his exile, and wrote an interpretation of them in French (Boston MFA 1973.730), probably to be shared among French speakers (Fayos-Pérez 2024, p.35). Since Goya himself was alive in 1813 and in possession of his original explanations of the <i>Caprichos</i> (known as the Prado commentaries), Llorente probably knew this text directly through him, perhaps during his portrait sittings (c.1810)",
       "works as": "Comisario General de Cruzada (1810-11); Comisario del Santo Oficio; Secretario supernumerario de la Inquisición de Corte; canon of Calahorra (1790); literary censor for the Consejo de Castilla; member of the Junta Nacional for Joseph Bonaparte, Consejero de Estado para Asuntos Eclesiásticos, and Caballero comendador de la Orden Real de España (1809)",
       "in France": "exiled from July 1813, first at Lectoure, then Bordeaux, then Paris (1814). In Paris, he publishes 'Histoire critique de l'Inquisition espagnole' (1817-18) in 4 volumes.",
       "in Spain": "back in 1820, after being expelled from France (during the Bourbon restoration) for being a liberal and a Carbonari",
@@ -1260,7 +1260,7 @@
       "member of": "RABASF (académico de mérito) (from 1800)",
       "decorations/awards": "first prize of painting at the RABASF (1778)",
       "art collection": "included Ribera's <i>Trinidad</i>, acquired by Fernando VII in 1820, the first artwork expressly purchased for the Prado Museum (founded in 1819)",
-      "bibliography": "Albarrán 2018; Albarrán (upcoming)",
+      "bibliography": "Albarrán 2018; Albarrán, upcoming publication",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Esteve.jpg",
       "image source": "self-portrait, c.1815, Museo Lázaro Galdiano"
     },
@@ -1613,9 +1613,9 @@
         "Illustrations: <i>Don Quixote</i> (1821); 10 lithographies after Goya's <i>Caprichos</i> (1825, Charles Motte); La Fontaine's <i>Œuvres complètes</i> (1826; preface by Balzac); Rousseau's <i>Œuvres complètes</i> (1826); Goethe's <i>Faust</i> (illustrated edition after Delacroix, Ch. Motte, 1828); Perrault's <i>Contes</i> (1828); Defoe's <i>Robinson Crusoë</i> (1836); <i>Photographie zoologique ou représentation des animaux rares des collections du Muséum d'Histoire Naturelle</i> (1853-55)",
         "Erotic prints"
       ],
-      "copies after Goya": "10 lithographies (in reverse) after the <i>Caprichos</i> (1825): <i>Carricatures [sic] espagnoles, Ni plus ni moins, par Goya</i>, edited by Charles Motte. They are not signed but most scholars agree on this attribution. After <i>Caprichos</i> 10, 14, 15, 18, 23, 32, 41, 43, 52, 55 (Fayos Pérez 2024, p.119; reproduced in Chazal 2008, pp. 302-5, nos.224-34)",
+      "copies after Goya": "10 lithographies (in reverse) after the <i>Caprichos</i> (1825): <i>Carricatures [sic] espagnoles, Ni plus ni moins, par Goya</i>, edited by Charles Motte. They are not signed but most scholars agree on this attribution. After <i>Caprichos</i> 10, 14, 15, 18, 23, 32, 41, 43, 52, 55 (Fayos-Pérez 2024, p.119; reproduced in Chazal 2008, pp. 302-5, nos.224-34)",
       "portrayed by": "self-portrait, c.1835, lithograph; Louis Boulanger, 1837, oil painting, Louvre",
-      "bibliography": "Fayos Pérez 2024; Chazal, <i>Goya graveur</i>, 2008",
+      "bibliography": "Fayos-Pérez 2024; Chazal, <i>Goya graveur</i>, 2008",
       "archives": "<i>Carricatures [sic] espagnoles [...]</i>, 1825: BnF Tf-65-Fol",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Deveria.jpg",
       "image source": "self-portrait, c.1835"
@@ -1755,7 +1755,7 @@
         "1830, 15 May: Hugo wrote <i>Buen viage! -GOYA-</i> on top of his poem no.28 from <i>Feuilles d'Automne</i>, which is a reference to <i>Capricho</i> 64, 'Buen viaje'; however, this reference was added in the edition published on 30 Nov 1831. He dedicated it 'À mes amis S.-B. et L.B', which probably are Charles-Augustin Sainte-Beuve and Louis Boulanger.",
         "1830, 1-26 Oct (Huard 1959, p.158): manuscript of <i>Notre Dame de Paris</i>: 'C'était un de ces spectres mi-partis d'ombre et de lumière, comme on en voit dans les rêves et dans l'œuvre extraordinaire de Goya, pâles, immobiles, sinistres, accroupis sur une tombe ou adossés à la grille d'un cachot' (1831, p.373). For Assante di Panzillo (2008, p.108), this description is evocative of <i>Capricho</i> 34, 'Les rinde el sueño'. Assante di Panzillo (2008, p.108) believes that this novel carries the indirect impact of Goya in the use of 'archetypes or <i>romantisme noir</i>'.",
         "1831, 8 sept: presentation of Antoine Fontaney's set of the <i>Caprichos</i> at the Arsenal, where Hugo might have seen it (Floorisone 1957; Huard 1959, p.158).",
-        "1839 in <i>Rayons et les ombres</i>, Hugo compared Goya's gnomes to Rembrandt's witches and Callot's <i>Temptation of Saint Anthony</i> (1635) (Fayos Pérez 2024, p.126; Assante di Panzillo 2008, p.107); Adhémar 1935, p.xxvii; Hugo-Hetzel 1857, p.297).",
+        "1839 in <i>Rayons et les ombres</i>, Hugo compared Goya's gnomes to Rembrandt's witches and Callot's <i>Temptation of Saint Anthony</i> (1635) (Fayos-Pérez 2024, p.126; Assante di Panzillo 2008, p.107); Adhémar 1935, p.xxvii; Hugo-Hetzel 1857, p.297).",
         "Some drawings by Hugo could be considered Goyaesque in an indirect way, such as <i>Ah ça! Décidément, que se passe-t-il après la mort?</i> (1869), showing a hybrid creature, half-donkey half-bird (BnF, NAF 13469, fol.33).",
         "Paul Guinard saw Hugo as Goya's 'spiritual heir' in his use of nightmarish visions and tragic imagery, as well as sensual and picaresque themes (Guinard 1957, p.102).",
         "Jean Adhémar wrote: 'He [Hugo] must have observed enthusiastically the witches and that writhe in a darkness penetrated by violent glimmers, because his vision is very close to that of Goya. These prints must have nurtured his imagination, providing him with an endlessly rich repertoire of figures and themes from which he could draw for years' (Adhémar 1935, p.xxvii)."
@@ -1764,7 +1764,7 @@
         "1830 his celebrated play <i>Hernani</i> (written at the time Hugo had discovered the <i>Caprichos</i>), was set in 16th-century Spain, with kings, bandits and knights as main characters.",
         "1869 Hugo writes the play <i>Torquemada</i>, published in 1882, inspired by the Dominican friar and grand inquisitor Tomás de Torquemada."
       ],
-      "bibliography": "Fayos Pérez 2024; Assante di Panzillo 2008; Wilfried Floeck, 'Victor Hugo et l'Espagne', <i>Francofonia</i>, no.13, 1987, pp.87-102; Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23; Georges Huard, 'Victor Hugo et Les Caprices de Goya', <i>Gazette Des Beaux-Arts</i>, Sept 1959, pp.158-59 (with Florisoone's answer); Guinard 1957; Jean Adhémar, 'Victor Hugo et Goya', <i>Bulletin de l'Institut de France en Espagne</i>, 1953, pp.162-63; Adhémar 1935; Hugo-Hetzel 1857.",
+      "bibliography": "Fayos-Pérez 2024; Assante di Panzillo 2008; Wilfried Floeck, 'Victor Hugo et l'Espagne', <i>Francofonia</i>, no.13, 1987, pp.87-102; Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23; Georges Huard, 'Victor Hugo et Les Caprices de Goya', <i>Gazette Des Beaux-Arts</i>, Sept 1959, pp.158-59 (with Florisoone's answer); Guinard 1957; Jean Adhémar, 'Victor Hugo et Goya', <i>Bulletin de l'Institut de France en Espagne</i>, 1953, pp.162-63; Adhémar 1935; Hugo-Hetzel 1857.",
       "websites": "[Wikipedia](https://en.wikipedia.org/wiki/Victor_Hugo)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q535",
@@ -1788,7 +1788,7 @@
       "address": "Hôtel de Fourcy (1828-1834); impasse du Doyenné (current Place du Carrousel), near Camille Rogier, Arsène Houssaye and Nerval. He shares an apartment with Eguène Piot",
       "partners/lovers": "Carlotta Grisi (dancer), who leads in Gautier's ballet <i>Giselle</i> (1842)",
       "author of": [
-        "Essays: <i>Les Jeunes-France</i> (1833); 1840 Spanish trip essays in <i>La Presse</i>, reedited as <i>Tra los montes</i> (1843) and as <i>Voyage en Espagne</i> (1845); <i>Caprices et zigzags</i> (1852): 'Un tour en Belgique et en Hollande', 'Pochades et paradoxes', 'Gastronomie britannique', 'En Chine', 'L'Inde', 'Voyage hors barrières', 'Chiens et rats', 'Paris futur', etc. 1843 August: Gautier, 'La Tauromachie', <i>Le Musée des familles</i>, pp. 341-48.13 Illustrated with seven drawings by Gautier (signed 'T. G.') engraved by 'A.B.L' (Andrew, Best and Leloir) (see Fayos Pérez 2024); <i>Histoire du romantisme</i> (1874). A volume of articles published as <i>Les Grotesques</i>. A biography of Honoré de Balzac. Art criticism: musicians (Berlioz, Gounod, Wagner) and painters (Delacroix, Manet, Gustave Doré, Théodore Chasséirau, Goya).",
+        "Essays: <i>Les Jeunes-France</i> (1833); 1840 Spanish trip essays in <i>La Presse</i>, reedited as <i>Tra los montes</i> (1843) and as <i>Voyage en Espagne</i> (1845); <i>Caprices et zigzags</i> (1852): 'Un tour en Belgique et en Hollande', 'Pochades et paradoxes', 'Gastronomie britannique', 'En Chine', 'L'Inde', 'Voyage hors barrières', 'Chiens et rats', 'Paris futur', etc. 1843 August: Gautier, 'La Tauromachie', <i>Le Musée des familles</i>, pp. 341-48.13 Illustrated with seven drawings by Gautier (signed 'T. G.') engraved by 'A.B.L' (Andrew, Best and Leloir) (see Fayos-Pérez 2024); <i>Histoire du romantisme</i> (1874). A volume of articles published as <i>Les Grotesques</i>. A biography of Honoré de Balzac. Art criticism: musicians (Berlioz, Gounod, Wagner) and painters (Delacroix, Manet, Gustave Doré, Théodore Chasséirau, Goya).",
         "Collective works: 1840 <i>Les Français peints par eux-mêmes</i>; 1845-46 <i>Le diable à Paris: Paris et les parisiens: mœurs et coutumes, caractères et portraits des habitants de Paris</i> (illustrated by Paul Gavarni), alongside Honoré de Balzac, Alfred de Musset and George Sand.",
         "Fiction: <i>La Cafetière</i> (1831); <i>Mademoiselle de Maupin</i> (1835); <i>Militona</i> (1847), set in Madrid; <i>Les deux étoiles</i> (184); <i>Roman de la momie</i> (1857); <i>Capitaine Fracasse</i> (1861-63)",
         "Poetry: <i>La Comédie de la Mort</i> (1838); <i>España</i> (1845); <i>Poésies complètes</i> (1845); <i>Émaux et Camées</i> (1852)",
@@ -1802,7 +1802,7 @@
         "1834 preface of <i>Mademoiselle de Maupin</i>: 'Quant au genre monstre, vous savez comme ils l'ont traité (...) Ni les grands traits à la Michel-Ange, ni les curiosités dignes de Callot, ni les effets d'ombre et de clair à la façon de Goya, rien n'a pu trouver grâce devant eux' (pp.34-35)",
         "1838-VII-5, Les Caprices de Goya; (<i>La Presse</i>): mentions Goya's Album B of drawings?",
         "1842 'Franco Goya y Lucientes', <i>Le Cabinet de l'Amateur</i>, pp.337-45: Gautier acknowledges here the <i>Disasters of War</i>, over 20 years before they were published by the RABASF (1863); he must have known them via Eugène Piot and Valentín Carderera. For this article, Gautier has Carderera's help (Lanzarote Guiral 2016, p.550)",
-        "1845 mentions <i>Disasters of War</i> (Voyage en Espagne, nouvelle édition révue, p.136) [quoted by Valentín Carderera in 1863] (Fayos Pérez 2024).",
+        "1845 mentions <i>Disasters of War</i> (Voyage en Espagne, nouvelle édition révue, p.136) [quoted by Valentín Carderera in 1863] (Fayos-Pérez 2024).",
         "1855 <i>Les Beaux-arts en Europe</i>: 'L'Espagne a oublié Velasquez, Ribera, Murillo, Zurbaran et même Goya; elle ne peint plus avec sa sombre palette d'autrefois des moines au froc brun [...] elle n'a plus cette ardeur farouche, cette passion catholique qui la caractérisaient [...]' (p.8)",
         "1874 <i>Histoire du romantisme</i>: 'Victor Hugo, s'il n'était pas poète, serait un peintre de premier ordre ; il excelle à mêler, dans des fantaisies sombres et farouches, les effets de clair-obscur de Goya à la terreur architecturale de Piranèse'; '[...] cette entente des terreurs nocturnes qu'on ne rencontre que dans les Caprices de Goya'; '[Louis Boulanger] Tantôt c'était Rubens, tantôt c'était Véronèse, et puis Titien ; d'autres fois, franchissant les monts, il allait à Velasquez et à Goya'."
       ],
@@ -1820,13 +1820,13 @@
       "participates in": "1830 The Battle of Hernani: around the homonymous play by Hugo.",
       "knows Goya's works": [
         "The <i>Caprichos</i>: in late 1830-late 1831 (Lipschutz 1972, p.118). Through Antoine Fontaney? (brought a <i>Caprichos</i> set in January 1831)",
-        "Goya's drawings by 1838 (see Fayos Pérez 2024)",
+        "Goya's drawings by 1838 (see Fayos-Pérez 2024)",
         "<i>Disasters of War</i>: at least since 1842 (<i>Cabinet de l'Amateur</i>, with Eugène Piot and Frédéric Villot). He regains interest in this series in 1871 when he writes a necrological piece on Regnault, and he borrows Burty's working-proof set (through Asselineau)"
       ],
       "collector of Goya's works": "<i>Bulls of Bordeaux</i>; <i>Tauromaquia</i> (lot 66, 24-25 Feb 1873 sale): sold Sotheby's Paris, 14 Dec 2022, lot 37 (showing Valentín Carderera's dedicatory to Gautier); <i>Tauromaquia</i> set given by Valentín Carderera on 13 Nov 1859 (Lanzarote Guiral 2016, p.431)",
       "portrayed by": "Auguste de Châtillon, 1839, Musée Carnavalet (oil painting); Bertall, 1850 (photograph); Amédée Bodin after Théodore Chassériau, 1850 (drawing); Nadar, photographs, 1850, 1854-55 (Getty), 1855, 1856; Albert-Ernest Carrier-Belleuse, 1862 (sculpture: bust); Hippolite Mailly, 1862 (caricature); André Gill, 1869, <i>L'éclipse</i> (caricature)",
       "bibliography": [
-        "'Gautier et l'illustration', <i>Bulletin de la Société Théophile Gautier</i>, no.46, 2024; Fayos Pérez 2024; Lanzarote Guiral 2016; Aurélia Cervoni, <i>Théophile Gautier devant la critique 1830-1872</i>, Études romantiques et dix-neuviémistes no.65, Classiques Garnier, 2016; Lacoste-Veysseyre 2014; Hovasse 2001; 'L'esprit de Th. Gautier: grotesque, humour, fantaisie & Th. Gautier hors de France', <i>Bulletin de la Société Théophile Gautier</i>, no.23, 2001; Moulinat 1995; Beurdeley 1988; Lacoste-Veysseyre 1982; Delesalle 1982; Charles Davillier 1872.",
+        "'Gautier et l'illustration', <i>Bulletin de la Société Théophile Gautier</i>, no.46, 2024; Fayos-Pérez 2024; Lanzarote Guiral 2016; Aurélia Cervoni, <i>Théophile Gautier devant la critique 1830-1872</i>, Études romantiques et dix-neuviémistes no.65, Classiques Garnier, 2016; Lacoste-Veysseyre 2014; Hovasse 2001; 'L'esprit de Th. Gautier: grotesque, humour, fantaisie & Th. Gautier hors de France', <i>Bulletin de la Société Théophile Gautier</i>, no.23, 2001; Moulinat 1995; Beurdeley 1988; Lacoste-Veysseyre 1982; Delesalle 1982; Charles Davillier 1872.",
         "'Gautier et l'Espagne & varia', <i>Bulletin de la Société Théophile Gautier</i>, no.22, 2000: Robert Baudry, 'Une Carmen, un Don Juan dans <i>Tra los montes</i> (pp.169-179); Patrick Berthier, 'Vers de feuilleton: vers de mirliton?' (pp.179-187); François Brunet, 'A propos d'un vers de <i>L'Escurial</i>' (pp.187-197); François Brunet, 'Gautier et la poésie populaire espagnole' (pp.197-209); François Brunet, 'Les vers espagnols du Carnet' (pp.209-221); Andrew Gann, 'La Fortune musicale d'España' (pp.221-225); Stéphane Escoubet, 'La mise en musique des poésies d'<i>España</i>: une Espagne de salon?' (pp.225-233); Anne-Marie Lefebvre, 'De la Vierge au Verseau: variations sur l'eau et le sang dans <i>España</i>' (pp.233-251); Françoise Court-Perez, 'La représentation de la mort dans <i>España</i>' (pp.251-266)."
       ],
       "websites": "[Société Théophile Gautier](theophilegautier.fr)",
@@ -2078,7 +2078,7 @@
         "I.6 <i>Scènes de la vie de campagne</i>: including <i>Le Médecin de campagne</i> (1833), <i>Le Lys dans la vallée</i> (1836) and <i>Le Curé de Village</i> (1839).",
         "II. <i>Études philosophiques</i>: including <i>El verdugo</i> (1830) (set in Spain during the Peninsular War), <i>Le Chef-d'œuvre inconnu</i> (1831), <i>La peau du chagrin</i> (1831) and <i>Sur Catherine de Médicis</i> (1842).",
         "III. Études analytiques: including <i>Physiologie du Mariage</i> (1829), <i>Petites misères de la vie conjugale</i> (1846) and <i>Pathologie de la vie sociale</i> (1839).",
-        "<i>Les Cent Contes drolatiques</i> (1832-37, reprinted 1855), based on Boccaccio's <i>The Decameron</i> and influenced by Rabelais. Illustrated by Gustave Doré, including some goyaesque images (Fayos Pérez 2024, pp.168-69, fig.II.46, II.48).",
+        "<i>Les Cent Contes drolatiques</i> (1832-37, reprinted 1855), based on Boccaccio's <i>The Decameron</i> and influenced by Rabelais. Illustrated by Gustave Doré, including some goyaesque images (Fayos-Pérez 2024, pp.168-69, fig.II.46, II.48).",
         "5 theatre plays: <i>L'École des ménages</i> (1839), <i>Vautrin</i> (1839), <i>Pierre Grassou</i> (1839), <i>Les Ressources de Quinola</i> (1842), <i>Paméla Giraud</i> (1842), <i>La Marâtre</i> (1848), <i>Mercadet ou le faiseur</i> (1848).",
         "Collective works: 1840 <i>Les français peints par eux-mêmes</i> (ed. Léon Curmer), alongside Théophile Gautier, Alexandre Dumas père, J. J. Grandville, Honoré Daumier and Paul Gavarni; 1842 J. J. Grandville's <i>Scènes de la vie privée et publique des animaux</i>, alongside Charles Nodier and George Sand; 1845-46 <i>Le diable à Paris: Paris et les parisiens: mœurs et coutumes, caractères et portraits des habitants de Paris</i> (illustrated by Paul Gavarni), alongside Théophile Gautier, Alfred de Musset and George Sand."
       ],
@@ -2095,13 +2095,13 @@
       "pseudonyms": "Horace de Saint-Aubin, Lord R'Hoone, Viellerglé, Saint Aubin",
       "portrayed by": "Achille Devéria (attributed), c.1825, wash drawing, [Maison de Balzac](https://www.parismuseescollections.paris.fr/fr/maison-de-balzac/oeuvres/portrait-de-balzac-17#infos-principales) BAL 780; Achille Devéria, c.1829, [drawing](https://fr.wikipedia.org/wiki/Honor%C3%A9_de_Balzac#/media/Fichier:Achille_Dev%C3%A9ria_-_Portrait_de_Balzac.jpg); Louis Boulanger, 1836, oil painting, [Louvre-Tours](https://commons.wikimedia.org/wiki/File:Balzac_(par_Boulanger).jpg); Louis-Auguste Bisson, 1842, daguerrotype; Nadar, drawing, 1850, [BnF](https://fr.wikipedia.org/wiki/Honor%C3%A9_de_Balzac#/media/Fichier:Dessin_de_Nadar_1850.jpg); Eugène Giraud, 1850, <i>Balzac in his death bed</i>, Besançon.",
       "partners/lovers": "Henirette de Maillé de La Tour-Landry; Laure de Berny (1823-1833); Olympe Pélissier; Maria du Fresnay (desde 1833); Caroline Marbouty (1833-1839)",
-      "mentions of Goya": "'[…] la tête de Singe de Goya' (<i>Les parents pauvres. Le Cousin Pons</i>, vol.3, 1847, p.18). It is uncertain which work Balzac is referring to (Fayos Pérez 2024, Appendix II).",
+      "mentions of Goya": "'[…] la tête de Singe de Goya' (<i>Les parents pauvres. Le Cousin Pons</i>, vol.3, 1847, p.18). It is uncertain which work Balzac is referring to (Fayos-Pérez 2024, Appendix II).",
       "interest in Spanish art": [
         "<i>El verdugo</i> (1830), from <i>La Comédie humaine</i> is set in Spain during the Peninsular War. It is dedicated to Francisco Martínez de la Rosa.",
         "<i>La peau du chagrin</i> (1831), from <i>La Comédie humaine</i> (1831-50), mentions Murillo and Velázquez."
       ],
       "decorations/awards": "Chevalier de la Légion d'Honneur (1845)",
-      "bibliography": "Anne-Marie Baron (dir.), 'Balzac, Hugo, Dumas, les chefs de file des Romantiques', <i>Le Courrier Balzacien</i>, no.69, 2025; Fayos Pérez 2024",
+      "bibliography": "Anne-Marie Baron (dir.), 'Balzac, Hugo, Dumas, les chefs de file des Romantiques', <i>Le Courrier Balzacien</i>, no.69, 2025; Fayos-Pérez 2024",
       "websites": "[Les Amis d'Honoré de Balzac](https://www.lesamisdebalzac.org/); [Wikipedia](https://fr.wikipedia.org/wiki/Honor%C3%A9_de_Balzac)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q9711",
@@ -2143,13 +2143,13 @@
         "Doré made several works on Spanish topics, including:",
         "<i>Les Mendiants de Burgos</i>, 1875, oil painting, private coll.",
         "1850s the print series <i>Tauromachie</i>: drawings started in 1854. Likely inspired by Goya, as well as by Théophile Gautier and Paul Dalloz. Published in Spain as <i>La Corrida de toros</i> (1860).",
-        "1860, 28 Jan, Charles Davillier writes 'La Mojiganga' (<i>Le Monde illustré</i>) in the form of a letter to Gustave Doré, where the author mentions Goya's <i>Tauromaquia</i> in his praise of Spain and its customs: 'Voilà, mon cher Doré, un petit échantillon des fêtes populaires de Madrid: —Diversion de Espana! comme disait le vieux Goya, le grand aficionado. Peut-être bientôt n'en restera-t-il plus que le souvenir; l'Espagne pittoresque s'en va de jour en jour [...] elle ne vivra plus que dans le charmant livre de Théophile Gautier' (Fayos Pérez 2024, p.169; Appendix II, 1860).",
-        "1862 illustrations for Léon Godard's <i>L'Espagne. Mœurs et paysages</i> (Fayos Pérez 2024, Appendix II).",
+        "1860, 28 Jan, Charles Davillier writes 'La Mojiganga' (<i>Le Monde illustré</i>) in the form of a letter to Gustave Doré, where the author mentions Goya's <i>Tauromaquia</i> in his praise of Spain and its customs: 'Voilà, mon cher Doré, un petit échantillon des fêtes populaires de Madrid: —Diversion de Espana! comme disait le vieux Goya, le grand aficionado. Peut-être bientôt n'en restera-t-il plus que le souvenir; l'Espagne pittoresque s'en va de jour en jour [...] elle ne vivra plus que dans le charmant livre de Théophile Gautier' (Fayos-Pérez 2024, p.169; Appendix II, 1860).",
+        "1862 illustrations for Léon Godard's <i>L'Espagne. Mœurs et paysages</i> (Fayos-Pérez 2024, Appendix II).",
         "1863 The illustrations for <i>Don Quixotte</i>.",
         "1874 Charles Davillier's <i>L'Espagne</i>."
       ],
       "link to Goya's work": [
-        "1855 in Honoré de Balzac's <i>Les cent contes drolatiques</i>, Doré included some goyaesque images, such as the image of a man being hung from a tree by a group of people (possibly influenced by the <i>Disasters of War</i>), or a priest with a diabolical woman and humanised little animals (Fayos Pérez 2024, pp.168-69, fig.II.46, II.48)",
+        "1855 in Honoré de Balzac's <i>Les cent contes drolatiques</i>, Doré included some goyaesque images, such as the image of a man being hung from a tree by a group of people (possibly influenced by the <i>Disasters of War</i>), or a priest with a diabolical woman and humanised little animals (Fayos-Pérez 2024, pp.168-69, fig.II.46, II.48)",
         "1874 in Charles Davillier's <i>L'Espagne</i> the illustration of 'Murderer execution in Barcelona' was clearly inspired by Goya's <i>El agarrotado</i> (c.1775; published 1868)."
       ],
       "knows Goya's works": "Doré knew Goya's <i>Tauromaquia</i> (1816), the single print <i>El agarrotado</i> (c.1775; published 1868), and the <i>Clothed Maja</i> (then at the RABASF). Possibly also <i>The Bulls of Bordeaux</i>, and the <i>Disasters of War</i> (1810-15; 1863).",
@@ -2167,7 +2167,7 @@
       ],
       "portrayed by": "Fairless & Beeforth, photograph (carte de visite), 1850; Nadar, photograph, 1856-58 and 1867; André Gill, caricature, 1868; Philippe-Auguste Cattelain, caricature, 1868; Frederick Waddy, portrait charge, 1873; Georges Lafosse, caricature, 1875; Carolus-Duran, oil painting, 1877; Nadar, <i>Gustave Doré sur son lit de mort</i>, photograph, 1883",
       "decorations/awards": "1879 Officier de la Légion d'honneur",
-      "bibliography": "Fayos Pérez 2024; Valérie Sueur-Hermal, 'Gustave Doré et la gravure sur bois de teinte0, <i>Nouvelles de l'Estampe</i>, no.270, 2023; Alix Paré & Valérie Sueur-Hermel, <i>Fantastique Gustave Doré</i>, 2021; Philippe Kaenel, <i>Gustave Doré (1832-1883). L'imaginaire au pouvoir</i>, 2014; Kaenel 2005; Auguste Lafront & Miguel Darrieumerlou, <i>La Tauromachie de Gustave Doré</i>, 1984.",
+      "bibliography": "Fayos-Pérez 2024; Valérie Sueur-Hermal, 'Gustave Doré et la gravure sur bois de teinte0, <i>Nouvelles de l'Estampe</i>, no.270, 2023; Alix Paré & Valérie Sueur-Hermel, <i>Fantastique Gustave Doré</i>, 2021; Philippe Kaenel, <i>Gustave Doré (1832-1883). L'imaginaire au pouvoir</i>, 2014; Kaenel 2005; Auguste Lafront & Miguel Darrieumerlou, <i>La Tauromachie de Gustave Doré</i>, 1984.",
       "websites": "[AGORHA, INHA](https://agorha.inha.fr/ark:/54721/165e8172-e68a-447c-9573-aadf629454da); BnF, [<i>Les travaux d'Hercule</i>](https://essentiels.bnf.fr/fr/album/23a88d48-ecdd-45c9-9b72-04ea13ddff69-travaux-hercule)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q6682",
@@ -2231,8 +2231,8 @@
       "mentions of Goya": [
         "1837-V-28 28 '[…] Goya, ce fantaisiaque [sic] élève de Tiepolo le Vénitien, avec lequel est mort la grande peinture espagnole, et qui dans ses compositions, dont la vérité a fait des satires, a tout attaqué: moines, nobles et rois' (p.2). About the Galerie espagnole: '[…] doté la France d'un trésor qui allait être perdu pour le monde, et rapporté pour 800,000 francs, quatre cents tableaux qui valent trois millions' (p. 2) 'Feuilleton: M. le Baron Taylor en Espagne', <i>La Presse</i>, pp.1-2 (digitised in Gallica; Fayos-Pérez 2024, Appendix II; Schopp 1993, p.202).",
         "1845-I-16 'C'était un spectacle à la fois lugubre et bizarre, que tous ces élégans [sic] seigneurs et toutes ces belles dames défilant comme une procession, peinte par Goya, au milieu de ces squelettes noircis et de ces gibets aux longs bras décharnés' ('Feuilleton: La Reine Margot, second volume', <i>La Presse</i>, pp.1-3) [digitised in Gallica]",
-        "1849-V-3 'On dirait une de ces gravures de Goya, où, dans la demi-teinte, des arracheurs de dents font la chasse aux pendus' ('Feuilleton: Les mille et un fantomes', <i>Le Constitutionnel</i>, p.1) [digitised in Gallica] (see Fayos Pérez 2024).",
-        "1851 Nov, letter from Dumas to Dauzats: 'Mon cher Dauzats. Prêtez donc pour un jour ou deux votre costume de la femme espagnole à l'Ambigu--Je voudrais le faire faire au théâtre. Vous savez c'est la grand-mère de d'Ossun d'après Goya'. Schopp identifies this work as María Josefa de la Soledad, Countess of Benavente, Duchess of Osuna, c. 1785, Palma de Mallorca, Fundación Bartolomé March. The author also considers that Dumas is referring to the play <i>Le Vampire</i> (1851) at the Ambigu-Comique theatre (Fayos Pérez 2024, Appendix II; Schopp 1993, p.169)."
+        "1849-V-3 'On dirait une de ces gravures de Goya, où, dans la demi-teinte, des arracheurs de dents font la chasse aux pendus' ('Feuilleton: Les mille et un fantomes', <i>Le Constitutionnel</i>, p.1) [digitised in Gallica] (see Fayos-Pérez 2024).",
+        "1851 Nov, letter from Dumas to Dauzats: 'Mon cher Dauzats. Prêtez donc pour un jour ou deux votre costume de la femme espagnole à l'Ambigu--Je voudrais le faire faire au théâtre. Vous savez c'est la grand-mère de d'Ossun d'après Goya'. Schopp identifies this work as María Josefa de la Soledad, Countess of Benavente, Duchess of Osuna, c. 1785, Palma de Mallorca, Fundación Bartolomé March. The author also considers that Dumas is referring to the play <i>Le Vampire</i> (1851) at the Ambigu-Comique theatre (Fayos-Pérez 2024, Appendix II; Schopp 1993, p.169)."
       ],
       "in Spain": "October 1846 to January 1847, accompanied by his son Alexandre and his collaborator Auguste Maquet. He writes <i>Impressions de voyage : de Paris à Cádiz</i> (1846), illustrated by Nanteuil. In the same trip he goes to Algeria",
       "portrayed by": "Joseph Guichard, 1828 (Louvre); Achille Devéria, c.1829; Achille Devéria, c.1832 (lithography published by Charles Motte); Josef Danhauser, <i>Liszt am Klavier</i>, 1840, oil painting, group portrait with George Sand, Hugo, Marie d'Agoult, Liszt, Paganini and Rossini (with Beethoven's bust and Byron's portrait), Alte Nationalgalerie, F.V.42; Cham, 1846 (caricature); Gouin, 1852 (photograph); Nadar, 1855 (photograph); William Henry Powell, 1855 (oil); Gustave Le Gray, c.1859 (photograph); Cham, 1860 (caricature); André Gill, 2 Dec 1866 (caricature); Alphonse Liébert, 1867 (photograph).",
@@ -2241,7 +2241,7 @@
         "<i>Correspondance générale</i>, t.I (2014), t.II (2016), t.III (2019), t.IV (2021), t.V (2021), t.VI (Jan 1850-Nov 1853) (2023), t.VII (2023), t.VIII (2024), t.IX (April 1857-Dec 1859) (2025), t.X (Jan 1860-Dec 1863) (2025), ed. Claude Schopp, Classiques Garnier, Le XIXe siècle no.25.",
         "Schopp 1993."
       ],
-      "bibliography": "Fayos Pérez 2024; Dumas-Schopp 2014; Schopp 1993",
+      "bibliography": "Fayos-Pérez 2024; Dumas-Schopp 2014; Schopp 1993",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q60780776",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500335873",
@@ -2264,12 +2264,12 @@
       "works in": "<i>La Silhouette</i> (1829-31), <i>Revue des deux Mondes</i>, <i>L'Artiste</i>, <i>L'Illustration</i>, <i>Le Magasin pittoresque</i>",
       "exhibitions": "Paris Salon: from 1831",
       "author of": [
-        "Journal illustration: one example is <i>Le rêve</i>, published in <i>La Silhouette</i> (1830, vol.1, 5e livraison, after p.32), inspired by Füssli's <i>Nightmare</i> (1791) (Fayos Pérez 2024, p.134).",
+        "Journal illustration: one example is <i>Le rêve</i>, published in <i>La Silhouette</i> (1830, vol.1, 5e livraison, after p.32), inspired by Füssli's <i>Nightmare</i> (1791) (Fayos-Pérez 2024, p.134).",
         "Literary illustration: Charles Nodier's <i>Smarra</i> (1821) and other stories, Victor Hugo's <i>Notre Dame de Paris</i> (1831), Molière (1835-36), Cervantes's <i>Don Quichotte</i> translated by Louis Viardot (1836-37), Jules Janin (1842), Honoré de Balzac (1842-52), Alfred de Musset's <i>Voyage où il vous plaira</i> (1843), Goethe's <i>Faust</i> (1847), Alphonse de Lamartine (1849-50), George Sand (1852-56), James Fenimore Cooper and Walter Scott, among others.",
         "Collective works: 1840 <i>Les Français peints par eux-mêmes</i>; 1843 <i>Voyage où il vous plaira</i> produced by Tony Johannot and Alfred de Musset (edited by Stahl, aka Pierre-Jules Hetzel)."
       ],
       "portrayed by": "Jean Gigoux, lithograph, <i>L'Artiste</i> (1830s?)",
-      "bibliography": "Fayos Pérez 2024",
+      "bibliography": "Fayos-Pérez 2024",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Johannot_Tony.jpg",
       "image source": "Gigoux lithograph (1830s?)",
       "added": "2025-09-10",
@@ -2331,12 +2331,12 @@
       "author of": "<i>Mémoires et voyages ou Lettres écrites à diverses époques pendant des courses en Suisse, en Calabre, en Angleterre et en Écosse</i>, 2 vols. (1830); <i>L'Espagne Sous Ferdinand VII</i> (1839); <i>La Russie en 1839</i> (1839)",
       "writes about Goya": [
         "Letter to Miss Bowles (13 April 1831): 'Un peintre espagnol moderne, Goya, mérite d'être cité, surtout pour ses portraits. En mourant il a emporté la gloire et le secret de l'école de son pays. Sa manière tenait à la fois de celle de Velasquez et de celle de Murillo'.",
-        "1838, 17 June, essay (signed as 'A. de C.'): Goya's <i>Caprichos</i>, <i>Disasters of War</i>, <i>Bulls of Bordeaux</i>, Familia Carlos IV, frescoes and Black paintings (Fayos Pérez 2025-2026, upcoming; Fayos Pérez 2024, Appendix II)."
+        "1838, 17 June, essay (signed as 'A. de C.'): Goya's <i>Caprichos</i>, <i>Disasters of War</i>, <i>Bulls of Bordeaux</i>, Familia Carlos IV, frescoes and Black paintings (Fayos-Pérez, upcoming publication; Fayos-Pérez 2024, Appendix II)."
       ],
       "interest in Spanish art": "'Le mouvement si animé de cette musique, comme celui du fandango espagnol, rend la gaieté à l'homme le plus mélancolique, et l'entraîne au plaisir malgré lui! [...] Elle était nouvelle pour moi, quoique j'eusse traversé l'Italie entière; et je croyais lire un chapitre de quelque vieux roman espagnol !' (<i>Mémoires et voyages ou Lettres écrites à diverses époques pendant des courses en Suisse, en Calabre, en Angleterre et en Écosse</i>, 1830, p.254).",
       "knows Goya's works": "by 1831",
       "friends": "Honoré de Balzac; Sophie Gay; George Sand; Frédéric Chopin; François-René de Chateaubriand; Édouard de La Grange",
-      "bibliography": "Fayos Pérez 2025-2026 (upcoming); Fayos Pérez 2024; H. Merzbach (ed.), <i> Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870",
+      "bibliography": "Fayos-Pérez, upcoming publication; Fayos-Pérez 2024; H. Merzbach (ed.), <i> Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870",
       "websites": "[ElisaRolle](http://www.elisarolle.com/queerplaces/a-b-ce/Astolphe%20de%20Custine.html)",
       "newspaper archive": "'A French Marquis' Adventures: Dandy Stuff for Biography', <i>Observer</i>, [22 Nov 1999](https://observer.com/1999/11/a-french-marquis-adventures-dandy-stuff-for-biography/)",
       "authorities": {
@@ -2620,9 +2620,9 @@
       ],
       "collection": "Charles Meryon, Goya, Théophile Chauvel, Michel Manzi, Félix Bracquemond, Eugène Delacroix, Decamps, Édouard Manet, Gericault, (school of) Rembrandt (drawing <i>Landscape with Two Mills</i>, Met 41.21.1), Millet, Jacquemart",
       "collector of Goya's works": [
-        "Burty acquired 11 sheets of drawings by Delacroix after Goya at the Delacroix sale in 1864: lot 640 'Études d'après Goya: onze feuilles de croquis' (Robaut 1885, p.476, no.1962). Those that have been located are catalogued in Fayos Pérez 2024, Appendix III",
+        "Burty acquired 11 sheets of drawings by Delacroix after Goya at the Delacroix sale in 1864: lot 640 'Études d'après Goya: onze feuilles de croquis' (Robaut 1885, p.476, no.1962). Those that have been located are catalogued in Fayos-Pérez 2024, Appendix III",
         "The Metropolitan Museum holds several prints by Goya that belonged to the Burty collection: from <i>Disparates</i>, 'Funereal Folly' (private printing c.1854) [31.79.2](https://www.metmuseum.org/art/collection/search/333961), 'Flying Folly' (private printing c.1854) [32.78.3](https://www.metmuseum.org/art/collection/search/333981), 'Dancing Giant' (private printing c.1854) [31.79.1](https://www.metmuseum.org/art/collection/search/397761), another 'Dancing Giant' (published 1854-63) [21.54.1](https://www.metmuseum.org/art/collection/search/333833), 'Folly of Fear' (published c.1848) [21.54.2](https://www.metmuseum.org/art/collection/search/333834); <i>A Maja standing against a dark background with figures</i>, 1859 [23.37.6](https://www.metmuseum.org/art/collection/search/333866), <i>The cloaked man</i> (1859) [23.37.5](https://www.metmuseum.org/art/collection/search/333865); <i>La Tauromaquia</i> (1816) [21.19.1-34](https://www.metmuseum.org/art/collection/search/333828); a former attribution to Goya, <i>Portrait of a Young Man</i> (c.1820) (British Museum; another impression at the Metropolitan, ex-Villot",
-        "The British Museum holds [29 prints and drawings](https://www.britishmuseum.org/collection/search?keyword=Goya&keyword=Burty) by or after Goya from the Burty collection (Burty sales II and III), including a drawing by Delacroix after Goya (see Fayos Pérez 2024, Appendix III, D34, p.464)"
+        "The British Museum holds [29 prints and drawings](https://www.britishmuseum.org/collection/search?keyword=Goya&keyword=Burty) by or after Goya from the Burty collection (Burty sales II and III), including a drawing by Delacroix after Goya (see Fayos-Pérez 2024, Appendix III, D34, p.464)"
       ],
       "curiosities": [
         "Burty coined the term 'japonisme' in 1872.",
@@ -2630,7 +2630,7 @@
       ],
       "decorations/awards": "medal of the Order of the Rising Sun (1884): a rare honor for a non-Japanese person (INHA)",
       "archives": "[INHA (archives 033)](https://calames.abes.fr/Pub/inha.aspx#details?id=FileId-2149)",
-      "bibliography": "Fayos Pérez 2024; p.Weisberg, <i>The Independent Critic: Philippe Burty and the Visual Arts of Mid-Nineteenth-Century France</i>, 1993; Delesalle 1983; p.Weisberg, <i>The Early Years of Philippe Burty: Art Critic, Amateur and Japoniste, 1855-1875</i>, 1967; Robaut 1885",
+      "bibliography": "Fayos-Pérez 2024; p.Weisberg, <i>The Independent Critic: Philippe Burty and the Visual Arts of Mid-Nineteenth-Century France</i>, 1993; Delesalle 1983; p.Weisberg, <i>The Early Years of Philippe Burty: Art Critic, Amateur and Japoniste, 1855-1875</i>, 1967; Robaut 1885",
       "websites": "[INHA](https://agorha.inha.fr/detail/427)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q3379474",
@@ -2674,7 +2674,7 @@
       "students": "Alexandre Jean-Baptiste Brun; Louis Busière; François Courboin; Léon Coutil; Édouard Dammouse; Lucien Dautrey; Fernand Desmoulin; Jeanne Sisley; Henri Jean Turlin",
       "decorations/awards": "Chevalier (1882) Officier de la Légion d'honneur (1889). Médaille d'honneur du Salon (1884)",
       "knows Goya's works": "drawing <i>Don Quijote</i> (F.54) by 1859, via Valentín Carderera",
-      "copies after Goya": "<i>Don Quixote</i> (F.54), 1860, for Valentín Carderera's article in <i>Gazette des Beaux-arts</i> (Fayos Pérez 2024, p.164, fig.II.42)",
+      "copies after Goya": "<i>Don Quixote</i> (F.54), 1860, for Valentín Carderera's article in <i>Gazette des Beaux-arts</i> (Fayos-Pérez 2024, p.164, fig.II.42)",
       "author of": [
         "Portraits: Paul Meurice, Charles Méryon (1853), Alphonse Legros (1861), Zacharie Astruc (c.1865), Édouard Manet (1864, pastel; 1867 etching), Edmond de Goncourt (1882); Woman's head (1897-99, <i>L'Estampe moderne</i>).",
         "After other artists: Jean-Louis-Ernest Meissonier, Gustave Moreau, Jean-Baptiste Camille Corot, Eugène Delacroix (<i>Les Natchez</i>, 1835, Met), Moreau (<i>Le roi David</i>, 1884: awarded at the Salon). Also after Titian and Diego Velázquez (<i>Infanta Margarita</i>, 1872)",
@@ -2735,7 +2735,7 @@
       "works as": "chief editor of the <i>Gazette des Beaux-arts</i>; director of Beaux-arts (1848-52, 1870-73).",
       "writes about Goya": "<i>Histoire des peintres de toutes les écoles. Tome 2. École espagnole</i> by Charles Blanc, W. Bürger (Thoré), Paul Mantz, Louis Viardot and Paul Lefort (Paris, Vve Jules Renouard), with illustrations by Bocourt. Goya is discussed on pp.1-12 (Lefort) and 17 (Blanc)",
       "collector of Goya's works": "he acquires several Goya artworks (probably prints and/or drawings) from Valentín Carderera (Paris, 1861). He also borrowed a 'small portrait of/by Goya' ('retratito de Goya') from Valentín Carderera, via Philippe Burty.",
-      "bibliography": "Fayos Pérez 2025-2026 (upcoming); Fayos Pérez 2024; Lanzarote Guiral 2016.",
+      "bibliography": "Fayos-Pérez, upcoming publication; Fayos-Pérez 2024; Lanzarote Guiral 2016.",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Blanc.jpg"
     },
     {
@@ -2803,7 +2803,7 @@
         "1864, 25-30 April (<i>Catalogue des objets d'art et d'antiquités des tableaux, dessins et médailles de XVe et XVI siècles de la collection de M. Eug. Piot</i>): mentioned by Charles Baudelaire in <i>Figaro</i>, 24 April 1864, then in <i>Art romantique</i> (t.2). Philippe Burty also mentioned it in <i>La Presse</i> (28 April 1864).",
         "1870",
         "1876",
-        "1885, 22 rare proofs of <i>Caprichos</i> with handwritten inscriptions, acquired by BnF (Fayos Pérez 2024, p.55); 1890 (posthumous)."
+        "1885, 22 rare proofs of <i>Caprichos</i> with handwritten inscriptions, acquired by BnF (Fayos-Pérez 2024, p.55); 1890 (posthumous)."
       ],
       "mentions of the Prado commentaries": "On his catalogue raisonné 1842 (Capricho 50): Valentín Carderera's diary (2 August 1861) shows he lent them to Piot, but he must have known them by 1842, having copied them in Madrid, or during one of Federico de Madrazo's trips to Paris?",
       "founder of": "<i>Le Cabinet de l'Amateur</i>, illustrated by artists such as Eugène Delacroix, Ernest Meissonnier, Théodore Chassériau, Louis Trimolet, Wattier.",
@@ -2983,20 +2983,20 @@
       "sex": "male",
       "nationality": "French",
       "profession": "engraver, lithographic draughtsman, art dealer",
-      "author of": "lithographs for works such as: <i>Encyclopédie d'architecture</i> (Balthazar Bance and Victor Caillat eds.), 13 vols., 1850-63; <i>Collection de douze écrans dessinés par François Boucher gravées à l'eau-forte par Carresse</i> (E. Chardon and M. Rapilly, eds.), Paris 1855-57; engravings after Jean-Antoine Watteau (<i>Le duo champêtre</i> and <i>La danse bachique</i>, published by Auguste Delatre in Paris in 1855-57); <i>Recueil d'Estampes relatives à l'Ornementation des Appartements aux XVIe, XVIIe et XVIIIe siècles, gravées en facsimile par M.M.R. Pfnor, Carresse et Riester [...]</i> (H. Destailleur ed.), Paris 1863-71; <i>Dictionnaire raisonné du mobilier français de l'époque carlovingienne à la renaissance</i> (Viollet-le-Duc ed.), 1872 Paris vol.1 (Fayos Pérez 2020, p.1051).",
+      "author of": "lithographs for works such as: <i>Encyclopédie d'architecture</i> (Balthazar Bance and Victor Caillat eds.), 13 vols., 1850-63; <i>Collection de douze écrans dessinés par François Boucher gravées à l'eau-forte par Carresse</i> (E. Chardon and M. Rapilly, eds.), Paris 1855-57; engravings after Jean-Antoine Watteau (<i>Le duo champêtre</i> and <i>La danse bachique</i>, published by Auguste Delatre in Paris in 1855-57); <i>Recueil d'Estampes relatives à l'Ornementation des Appartements aux XVIe, XVIIe et XVIIIe siècles, gravées en facsimile par M.M.R. Pfnor, Carresse et Riester [...]</i> (H. Destailleur ed.), Paris 1863-71; <i>Dictionnaire raisonné du mobilier français de l'époque carlovingienne à la renaissance</i> (Viollet-le-Duc ed.), 1872 Paris vol.1 (Fayos-Pérez 2020, p.1051).",
       "knows Goya's works": [
         "<i>Disparates</i> (from 1856).",
-        "<i>Toros</i> (probably <i>Bulls of Bordeaux</i> 1825) (mentioned in a 1857 letter to Valentín Carderera: see Carresse-Carderera edge) (Fayos Pérez 2020, pp.1051-53).",
+        "<i>Toros</i> (probably <i>Bulls of Bordeaux</i> 1825) (mentioned in a 1857 letter to Valentín Carderera: see Carresse-Carderera edge) (Fayos-Pérez 2020, pp.1051-53).",
         "Prints after Velázquez such as <i>Diego de Acedo, 'El Primo'</i> (1778) (ibid.)."
       ],
       "collector of Goya's works": [
-        "1855, 8 Nov: Valentín Carderera gives him 6 Goya prints. 'Vino el barbero, luego Carresse, a quien regalé seis estampas de Goya' (Fayos Pérez 2020, p.1051; Lanzarote Guiral 2016, p.305).",
+        "1855, 8 Nov: Valentín Carderera gives him 6 Goya prints. 'Vino el barbero, luego Carresse, a quien regalé seis estampas de Goya' (Fayos-Pérez 2020, p.1051; Lanzarote Guiral 2016, p.305).",
         "1855, 19 Dec: Valentín Carderera gives him four Goya [prints]. 'Después [vino a mi casa] Carresse. Dile cuatro goyas' (FP 2020, p.1051; LG 2016, p.322).",
         "1856, 27 July: Valentín Carderera shows him some more works by Goya. 'Volvimos a casa [con Carresse]. Vio mi cajeta, le enseñé lo de Goya' (FP 2020, p.1051; LG 2016, pp.334-35).",
         "1856, 15 Dec: Valentín Carderera gives him a set of the <i>Proverbios</i> (<i>Disparates</i>), which wouldn't be published until 1864. 'Después Carresse, a quien di las estampas de Goya de Los Proverbios' (FP 2020, p.1052; LG 2016, p.376).",
         "1859, 1 Sept: Valentín Carderera presents him with more prints by Goya, including one of 'the 'dwarf', probably after Velázquez (1778), <i>Diego de Acedo, 'El Primo'</i>. 'Regalé a Carresse varias estampitas y [1 de Jaca] de Goya y otra del Enano' (FP 2020, pp.1052-53; LG 2016, p.387)."
       ],
-      "bibliography": "Fayos Pérez 2020; Lanzarote Guiral 2016; B. Bouvier, <i>L'édition d'architecture à Paris au XIXe siècle: les maisons Bance et Morel et la presse architecturale</i>, 2004",
+      "bibliography": "Fayos-Pérez 2020; Lanzarote Guiral 2016; B. Bouvier, <i>L'édition d'architecture à Paris au XIXe siècle: les maisons Bance et Morel et la presse architecturale</i>, 2004",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Carresse_AI.jpg",
       "image source": "AI generated (DeepAI) because there is no known portrait",
       "last_modified": "2025-09-04"
@@ -3023,7 +3023,7 @@
       "pseudonyms": "Junior; Le Marquis de Villemer",
       "address": "Rue Cambon, Paris",
       "curiosities": "he enlisted in the Spanish army to work as a war reporter and witnessed the African War (1859-60)",
-      "bibliography": "Fayos Pérez 2024, Appendix II",
+      "bibliography": "Fayos-Pérez 2024, Appendix II",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Yriarte.jpg"
     },
     {
@@ -3132,7 +3132,7 @@
       "influenced by": "Edgar Allan Poe; Joseph de Maistre; Thomas de Quincey; Gustave Flaubert; Victor Hugo; Théophile Gautier",
       "writes about Goya": [
         "'Quelques caricaturistes étrangers. Hogarth, Cruikshank, Goya, Pinelli, Brueghel', <i>Le Présent</i>, vol.2, pp.185-94. This essay also appeared in <i>L'Artiste</i> (26 September 1858, 55-59), in <i>Curiosités Esthétiques</i> (1868) and in <i>Œuvres complètes</i> (1869). Transcribed in Fayos-Pérez 2024, Appendix II, p.344",
-        "'Quelques caricaturistes français', in <i>Curiosités Esthétiques</i> (1868): 'Goya, lui aussi, s'est attaqué à la gent monastique. Je présume qu'il n'aimait pas les moines, car il les a faits bien laids; mais qu'ils sont beaux dans leur laideur et triomphants dans leur crasse et leur crapule monacales! [...]' (Fayos Pérez 2024, p.342; Baudelaire - Le Dantec & Pichois 1961, p.997)."
+        "'Quelques caricaturistes français', in <i>Curiosités Esthétiques</i> (1868): 'Goya, lui aussi, s'est attaqué à la gent monastique. Je présume qu'il n'aimait pas les moines, car il les a faits bien laids; mais qu'ils sont beaux dans leur laideur et triomphants dans leur crasse et leur crapule monacales! [...]' (Fayos-Pérez 2024, p.342; Baudelaire - Le Dantec & Pichois 1961, p.997)."
       ],
       "mentions of Goya": "letter of 22 Feb 1864 (probably to Charles Yriarte), where he discusses a prospective publication and his previous writings on Goya, and mentions the publications on this artist by Théophile Gautier and Eugène Piot (letter sold in [Autographes des siècles](https://www.autographes-des-siecles.com/produit/charles-baudelaire-revient-a-ses-travaux-sur-francisco-de-goya/))",
       "writes in": "<i>Revue des Deux Mondes</i>; <i>Le Présent</i>",
@@ -3140,7 +3140,7 @@
         "He dedicated his <i>Fleurs du mal</i> (1857) to Théophile Gautier ('au poète impeccable'). However, when he was condemned for this work, Gautier remained silent and did not defend him publicly (<i>Les Fleurs du mal</i>, ed. Livre de poche, p.345). Baudelaire was helped, though, by Empress Eugenia de Montijo, to reduce the fee he was sentenced to pay.",
         "Claude Debussy composed <i>Cinq poèmes de Charles Baudelaire</i> for voice and piano (1887-1889)."
       ],
-      "bibliography": "Fayos Pérez 2024; Chagniot 2016; Jean-Clément Martin (ed.), <i>Dictionnaire de la Contre-Révolution</i>, 2011; Baudelaire, <i>Œuvres complètes</i>, Seuil, 1968; Baudelaire - Le Dantec & Pichois 1961",
+      "bibliography": "Fayos-Pérez 2024; Chagniot 2016; Jean-Clément Martin (ed.), <i>Dictionnaire de la Contre-Révolution</i>, 2011; Baudelaire, <i>Œuvres complètes</i>, Seuil, 1968; Baudelaire - Le Dantec & Pichois 1961",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q501",
         "bnf": "https://data.bnf.fr/11890582/charles_baudelaire/",
@@ -3327,7 +3327,7 @@
       "profession": "painter, engraver",
       "studies in": [
         "Lycée Jacques-Decour",
-        "1858, 25 Nov, he requests a <i>carte de travail</i> for the Bibliothèque Impériale (BnF), where many artists had copied Goya's </i>Caprichos</i> since the acquisition of the first set in 1827. By 1858 the Bibliothèque also had the other print series by Goya, acquired by Achille Devéria probably via Valentín Carderera (Fayos Pérez 2024, p...)."
+        "1858, 25 Nov, he requests a <i>carte de travail</i> for the Bibliothèque Impériale (BnF), where many artists had copied Goya's </i>Caprichos</i> since the acquisition of the first set in 1827. By 1858 the Bibliothèque also had the other print series by Goya, acquired by Achille Devéria probably via Valentín Carderera (Fayos-Pérez 2024, p...)."
       ],
       "curiosities": "Manet contracted syphilis",
       "military activity": "1870 Franco-Prussian war: Manet (38), alongside Edgar Degas (36), is drafted into the Garde Nationale Sédentaire. They are both under the orders of Ernest Meissonier. November: he joins the artillery, following Edgar Degas. They have a conflict about the defence strategy of Paris.",
@@ -3385,14 +3385,14 @@
       ],
       "mentions": "Edmond de Goncourt says about him that he was 'le distributeur de gloire aux génies de brasserie'.",
       "link to Goya's work": [
-        "1863 Philippe Burty wrote in the <i>Gazette des Beaux-arts</i> that Manet's print <i>Gitanos</i> (Gipsies) (1862) gave the impression of 'seeking out Goya, at least in its general appearance' (Fayos Pérez 2024, p.188).",
+        "1863 Philippe Burty wrote in the <i>Gazette des Beaux-arts</i> that Manet's print <i>Gitanos</i> (Gipsies) (1862) gave the impression of 'seeking out Goya, at least in its general appearance' (Fayos-Pérez 2024, p.188).",
         "1863 Manet produces the Goyaesque print <i>On the Prado II</i> (1863, etching and aquatint) (Tinterow 2003, p.393).",
-        "1863 Paul Mantz called Manet 'a Spaniard in Paris' linked by 'a mysterious kinship [...] to the Goya tradition' (Fayos Pérez 2024, p.188).",
+        "1863 Paul Mantz called Manet 'a Spaniard in Paris' linked by 'a mysterious kinship [...] to the Goya tradition' (Fayos-Pérez 2024, p.188).",
         "1865, 3 Sept, letter to Henri Fantin-Latour: '[...] Et Goya, le plus curieux après le maître, qu'il a trop imité dans le sens le plus servile d'imitation. Une grande verve cependant. Il y a de lui au musée deux beaux portraits équestres dans la manière de Vélasquez, bien inférieurs toutefois. Ce que j'ai vu de lui jusqu'ici ne m'a pas plu énormément; je dois en voir ces jours-ci une magnifique collection chez le duc d'Ossuna... Je vais demain faire une excursion à Tolède. Là je verrai Gréco et Goya très représentés, m'a-t-on dit' (Tinterow 2003, p.293).",
         "1865, 17 Sept, letter from Manet to Astruc, after his Spanish trip: 'Deux hommes seulement, après le Maître (Velázquez), m'ont séduit là-bas : Greco dont l'œuvre est bizarre, des portraits fort beaux cependant (je n'ai pas été content du tout de son Christ de Burgos) et Goya dont le chef-d'œuvre se trouve, selon moi, à l'Académie (<i>La Duchesse d'Albe</i>, quelle saisissante fantaisie)' (Tinterow 2003, p.393; Cabañas Bravo 2003, p.495). Here, Manet wrongly assumes the <i>Clothed Maja</i> is the Duchess of Alba, one of many fabricated stories in 19th-century France about Goya.",
         "1865, 13 Oct, letter from Manet to Théodore Duret: '[...] Ah mais j'espère bien que vos articles vont avoir une suite et que vous allez parler de l'Espagne au point de vue artistique et politique, Vélasquez, Goya, Greco à la rescousse !' (Tinterow 2003, p.393).",
         "1867 Manet's <i>L'Exécution de Maximilien</i> are inspired by Goya's <i>El 3 de mayo de 1808 en Madrid</i> (<i>Los fusilamientos</i>) (1814) (Wilson-Bareau 1992).",
-        "1868 Manet's etching <i>Fleur exotique</i>, made to illustrate Armand Renaud's <i>Sonnets et eaux-fortes</i> seems to be a combination of Goya's <i>Caprichos</i> no. 5 and 15, both in style and technique (Fayos Pérez 2024, p.189).",
+        "1868 Manet's etching <i>Fleur exotique</i>, made to illustrate Armand Renaud's <i>Sonnets et eaux-fortes</i> seems to be a combination of Goya's <i>Caprichos</i> no. 5 and 15, both in style and technique (Fayos-Pérez 2024, p.189).",
         "1868-69 Manet's <i>The Balcony</i> is also probably inspired by Goya and Murillo."
       ],
       "interest in Spanish art": [
@@ -3476,7 +3476,7 @@
         "He also collects works by El Greco.",
         "He produced the painting <i>Lorenzo Pagans and Auguste De Gas</i> (1871-72) and the sculpture <i>La Danse espagnole</i> (1885-1921, Ackland Art Museum, North Carolina)."
       ],
-      "link to Goya's work": "the Degas collection included a Delacroix drawing after Goya (D21 and possibly D38 in Fayos Pérez 2024, pp.433 and 467)",
+      "link to Goya's work": "the Degas collection included a Delacroix drawing after Goya (D21 and possibly D38 in Fayos-Pérez 2024, pp.433 and 467)",
       "curiosities": [
         "Degas allegedly met Manet for the first time in 1864 when they were both copying Velázquez's <i>Infanta Margarita</i> at the Louvre (Gordon and Forge 1988, p.23).",
         "There is a rose 'Edgar Degas' from 1994, an asteroid (6673) and a crater in Mercury named Degas."
@@ -3494,7 +3494,7 @@
         "1905 Durand-Ruel, Grafton Galleries, London: 35 works by Degas.",
         "Recent years: Retrospective exh., 1988, Grand Palais & Ottawa; <i>Degas, Sickert and Toulouse-Lautrec</i>, 2005-06, London (Tate Britain) and Paris; <i>Degas: Drawings and Sketchbooks</i>, 2010, Morgan Library; <i>Degas and the Nude</i> (2011, Boston); exh. for the centenary of Degas's death, Orsay, 2018; <i>Degas: A passion for perfection</i>, 2018, Cambridge, Fitzwilliam Museum; <i>Degas à l'Opéra</i>, 2019, Orsay / NGA Washington; <i>Manet/Degas</i>, 2023, Orsay/Metropolitan"
       ],
-      "bibliography": "Sueur-Hermel, 'Degas, amateur d'estampes', <i>L'amateur d'estampes</i>, 2025, pp.210-228; Fayos Pérez 2024; Wolohojian & Dunn 2023; Sueur-Hermel, 'Degas en noir et blanc, à la Bibliothèque nationale de France', <i>Nouvelles de l'estampe</i>, April 2023; Loyrette et al. (eds.), <i>Degas en noir et blanc : dessins, estampes, photographies</i>, 2023; Richard Kendall, 'Degas y el arte español', in <i>Del realismo al impresionismo</i>, 2014, pp.125-41; Dumas et al. 1997; Gordon and Forge, <i>Degas</i>, 1988; Werner, <i>Degas Pastels</i>, 1969.",
+      "bibliography": "Sueur-Hermel, 'Degas, amateur d'estampes', <i>L'amateur d'estampes</i>, 2025, pp.210-228; Fayos-Pérez 2024; Wolohojian & Dunn 2023; Sueur-Hermel, 'Degas en noir et blanc, à la Bibliothèque nationale de France', <i>Nouvelles de l'estampe</i>, April 2023; Loyrette et al. (eds.), <i>Degas en noir et blanc : dessins, estampes, photographies</i>, 2023; Richard Kendall, 'Degas y el arte español', in <i>Del realismo al impresionismo</i>, 2014, pp.125-41; Dumas et al. 1997; Gordon and Forge, <i>Degas</i>, 1988; Werner, <i>Degas Pastels</i>, 1969.",
       "websites": "[Impressionnismes.fr](https://impressionnismes.fr/personalite/edgar-degas/), profile by Catherine Méneux",
       "archives": "Musée des beaux-arts du Canada",
       "authorities": {
@@ -3814,7 +3814,7 @@
       "political views": "participated in the Revolution of 1830. Disappointed at Louis-Philippe's government; he promotes the 1848 Revolution; he runs for the Assemblée constituante in 1848, against Louis Bonaparte (future Napoleon III); on 15 May 1849, he encourages the popular movement to take the Assemblée and Hôtel de Ville, which leads to Thoré being condemned to death and he flees into exile in Brussels (where he takes the pseudonym William Bürger). In exile 1849-1860 (amnesty)",
       "mentions": "Émile de Girardin stated: 'Je ne connais guère en France que deux hommes qui soient restés incorruptibles : Proudhon et Thoré'",
       "pseudonyms": "William Bürger; Jacques Van Damme",
-      "bibliography": "Fayos Pérez 2024, Appendix II; Magali Charreire, 'Vermeer à l'Arsenal: la bibliothèque-musée de Paul Lacroix', <i>Littératures</i>, vol.75, 2016, pp.45-56; Frances Suzman Jowell, 'Thoré-Bürger's Art Collection: A Rather Unusual Gallery of Bric-à-Brac', <i>Simiolus: Netherlands Quarterly for the History of Art</i>, vol.30, no.1/2, 2003, pp.54-119",
+      "bibliography": "Fayos-Pérez 2024, Appendix II; Magali Charreire, 'Vermeer à l'Arsenal: la bibliothèque-musée de Paul Lacroix', <i>Littératures</i>, vol.75, 2016, pp.45-56; Frances Suzman Jowell, 'Thoré-Bürger's Art Collection: A Rather Unusual Gallery of Bric-à-Brac', <i>Simiolus: Netherlands Quarterly for the History of Art</i>, vol.30, no.1/2, 2003, pp.54-119",
       "portrayed by": "Nadar, 1865, caricature; Nadar, 1865, photograph; Léopold Flameng, 1870, lithography",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q933765",
@@ -4417,10 +4417,10 @@
       "children": "out of 12 pregnancies, 5 children survived: Infanta María Isabel, Alfonso XII, Infanta María del Pilar, Infanta María de la Paz, Infanta María Eulalia. Some of the children were allegedly born from extramarital relationships",
       "married to": "Francisco de Asís, Duke of Cádiz (1846)",
       "profession": "socialite, aristocrat, art patron",
-      "collector of Goya's works": "<i>Portrait of Asensio Julià</i> (c.1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); then belonged to Isabel II (Tinterow 2003, p.408); her brother-in-law, Prince Antoine, Duke of Montpensier, owned it by 1858: hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II).",
+      "collector of Goya's works": "<i>Portrait of Asensio Julià</i> (c.1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); then belonged to Isabel II (Tinterow 2003, p.408); her brother-in-law, Prince Antoine, Duke of Montpensier, owned it by 1858: hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos-Pérez 2024, Appendix II).",
       "portrayed by": "Carlos Luis de Ribera, <i>La reina niña Isabel II de España</i>, 1835, Museo del Romanticismo; Antonio María Esquivel, 1843, Museo de Bellas Artes de Sevilla; José Castelaro y Perea, 1844, <i>Isabel II jurando la Constitución de 1837</i>; Federico de Madrazo, 1844, RABASF; Jean Laurent, c.1860, photograph; L. Mouton, c.1868, photograph; Francisco Ortego, '¡A Francia!', caricature in <i>Gil Blas</i>, 4 Oct 1868; anonymous, c.1870, photograph (in exile in Paris); 1875, photograph (Queen Doña Isabel II of Spain with her three youngest daughters: Pilar, Paz and Eulalia); portrait of Isabel II and the King consort, photograph, before 1902",
       "curiosities": "an anonymous album of 107 drawings, <i>Los Borbones en pelota</i>, appeared showing sexually explicit images of the Queen with different men. Possible authors are the brothers Gustavo Adolfo and Valeriano Bécquer, or the draughtsman Francisco Ortego. It was in an unknown location until 1986 and is now held at the BNE. It was not officially published until 1991.",
-      "bibliography": "Fayos Pérez 2024; Tinterow 2003",
+      "bibliography": "Fayos-Pérez 2024; Tinterow 2003",
       "authorities": {
         "rah": "https://historia-hispanica.rah.es/biografias/24041-isabel-ii"
       },
@@ -4854,7 +4854,7 @@
       "portrayed by": "self-portrait, c.1858, MNAC; self-portrait, 1863-73; Federico de Madrazo, 1867, MNAC; Charles Albert Bertall, photograph, <i>Mariano Fortuny Marsal and Cecilia de Madrazo</i>, c.1870, Prado HF04363; Francisco Domingo Marqués, c.1874-84, M. Bilbao 69/76",
       "link to Goya's work": [
         "In 1860, Fortuny visits Madrid and frequents the Prado, where he becomes interested in the works of Velázquez and Goya. In 1867 he returns to the Prado to study the work of Ribera, Goya and Velázquez.",
-        "1872 Fortuny is mentioned as a great admirer of Francisco de Goya and Ernest Meissonier (<i>Dictionnaire de la conversation et de la lecture</i>, París, ed. William Duckett, p.732) (Fayos Pérez 2024, Appendix II).",
+        "1872 Fortuny is mentioned as a great admirer of Francisco de Goya and Ernest Meissonier (<i>Dictionnaire de la conversation et de la lecture</i>, París, ed. William Duckett, p.732) (Fayos-Pérez 2024, Appendix II).",
         "Beruete (1917, pp.85-86) writes: 'The enthusiasm that Fortuny felt for Goya's art endured, and years later, as a fashionable and famous painter in Paris, he was able to influence the <i>marchands</i>, advising them to buy and exhibit some of Goya's works. Goupil [Adolphe Goupil] bought a portrait, but kept it for many years without being able to sell it conveniently'. Is this the full-length portrait supposedly of Mariano Goya mentioned by Viñaza in 1887 as by Javier Goya? Or is it rather the full-length portrait of Javier Goya (c. 1805-06) that is now in a private collection in Paris?"
       ],
       "studies in": "Barcelona, School of Fine Arts / La Llotja (1853-57); Rome, Academia Giggi (aka 'Chigi')",
@@ -4874,7 +4874,10 @@
         "Early publications: Beruete 1917; Charles Yriarte, <i>Fortuny</i> (series Artistes célèbres), 1889; Charles Davillier, <i>Fortuny his Life, his Work, his Correspondence</i>, 1875",
         "PhD thesis: Daniel S. Ralston, New York, University of Columbia."
       ],
-      "conferences/seminars": "Course [<i>Fortuny (1838-1874)</i>](https://www.museodelprado.es/recurso/fortuny-1838-1874/0b9d3774-b923-4969-b749-543733c1906c), Museo del Prado, 2018, organised during the exhibition curated by Javier Barón. Among the conferences are Christine Peltre, [<i>Fortuny, el orientalismo y la pintura francesa</i>](https://www.youtube.com/watch?v=othU0DV_swQ&t=3s), and Carlos G. Navarro, [<i>Fortuny, coleccionista</i>](https://www.youtube.com/watch?v=OuyrXiLHyHs&list=PL8S8EUbs69xIlkX65FH8L4zDg-habTlAq&index=13); Javier Barón, ['El virtuosismo de la pintura en el paisaje y en el género: Martín Rico, M. Fortuny y R. de Madrazo'](https://www.museodelprado.es/actualidad/multimedia/el-virtuosismo-de-la-pintura-en-el-paisaje-y-en/23b10c9d-1530-4298-a306-c4674e7632d9), during the conference cycle <i>Del realismo al impresionismo. El arte en la segunda mitad del siglo XIX</i>, Museo del Prado, 2013-14.",
+      "conferences/seminars": [
+        "Course [<i>Fortuny (1838-1874)</i>](https://www.museodelprado.es/recurso/fortuny-1838-1874/0b9d3774-b923-4969-b749-543733c1906c), Museo del Prado, 2018, organised during the exhibition curated by Javier Barón. Among the conferences are Christine Peltre, [<i>Fortuny, el orientalismo y la pintura francesa</i>](https://www.youtube.com/watch?v=othU0DV_swQ&t=3s), and Carlos G. Navarro, [<i>Fortuny, coleccionista</i>](https://www.youtube.com/watch?v=OuyrXiLHyHs&list=PL8S8EUbs69xIlkX65FH8L4zDg-habTlAq&index=13).",
+        "Javier Barón, ['El virtuosismo de la pintura en el paisaje y en el género: Martín Rico, M. Fortuny y R. de Madrazo'](https://www.museodelprado.es/actualidad/multimedia/el-virtuosismo-de-la-pintura-en-el-paisaje-y-en/23b10c9d-1530-4298-a306-c4674e7632d9), during the conference cycle <i>Del realismo al impresionismo. El arte en la segunda mitad del siglo XIX</i>, Museo del Prado, 2013-14."
+      ],
       "websites": "Prado, [entry on M. Fortuny](https://www.museodelprado.es/en/the-collection/artist/fortuny-mariano/76284fa1-6a26-43e0-830f-e18fefb6ec08) by María Teresa Martín Bourgon; Prado, [Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); Orsay, [entry on M. Fortuny](https://www.musee-orsay.fr/en/ressources/artists-personalities-catalog/mariano-fortuny-y-marsal-12627); [Colección BBVA](https://www.coleccionbbva.com/es/autor/fortuny-y-marsal-mariano/); [Wikipedia](https://es.wikipedia.org/wiki/Mariano_Fortuny); [APintoresyEscultores](https://apintoresyescultores.es/tag/mariano-fortuny/)",
       "authorities": {
         "rah": "https://historia-hispanica.rah.es/biografias/17501-mariano-fortuny-marsal"
@@ -5001,12 +5004,12 @@
       "siblings": "Eugène and Héloïse",
       "profession": "collector, art historian",
       "art collection": "the brothers' collection was bequeathed to the City of Paris and is now the core of the (Petit Palais) [https://www.petitpalais.paris.fr/en/content/dutuit-bequest].",
-      "collector of Goya's works": "the Dutuit collection includes a trial-proof set of the <i>Caprichos</i> (Petit Palais LDUT182) (Fayos Pérez 2024, fig.I.14); the provenance is uncertain although the cover seems to read 'de Don Mariano Gil y Alcayde', a collector from Aragon (Los Llanos & Assante di Panzillo 2008, p.157). The binding is identical to the Ceán Bermúdez copy at the BM. It's possible that the purchase took place through Valentín Carderera since he was the foremost owner of Goya works dealing in Paris at that time, and the Dutuits didn't buy any artworks in Spain. Another possibility is that this was the <i>Caprichos</i> set from the Giandomenico Tiepolo collection (Fayos Pérez 2024). The <i>Caprichos</i> match Auguste's anticlerical taste, who was in contact with Piot, himself connected to Carderera.",
+      "collector of Goya's works": "the Dutuit collection includes a trial-proof set of the <i>Caprichos</i> (Petit Palais LDUT182) (Fayos-Pérez 2024, fig.I.14); the provenance is uncertain although the cover seems to read 'de Don Mariano Gil y Alcayde', a collector from Aragon (Los Llanos & Assante di Panzillo 2008, p.157). The binding is identical to the Ceán Bermúdez copy at the BM. It's possible that the purchase took place through Valentín Carderera since he was the foremost owner of Goya works dealing in Paris at that time, and the Dutuits didn't buy any artworks in Spain. Another possibility is that this was the <i>Caprichos</i> set from the Giandomenico Tiepolo collection (Fayos-Pérez 2024). The <i>Caprichos</i> match Auguste's anticlerical taste, who was in contact with Piot, himself connected to Carderera.",
       "sales": "1864; 1875",
       "lives in": "Rome",
       "trips": "among others, 1875 Rome, Naples, Venice",
       "portrayed by": "Pasquale Fosca, 1884, sculpture, Petit Palais (SDUT1339); unknown, 'Auguste Dutuit, French painter and collector, with his wife', photograph, <i>L'Illustrazione Italiana</i>, XXX, no.2, 11 Jan 1903 (Biblioteca Ambrosiana)",
-      "bibliography": "Joëlle Raineau-Lehuédé 2025; Fayos Pérez 2024; Griffits 2009; Los Llanos & Assante di Panzillo 2008; <i>Catalogue sommaire des collections Dutuit</i>, 1925; <i>Collection Auguste Dutuit: Bronzes Antiques</i>, 1897; <i>Collection Auguste Dutuit. Antiquitñes, Medailles et Monnaies, Objets Divers. Exposés Au Palais du Trocadero en 1878</i>, 1879",
+      "bibliography": "Joëlle Raineau-Lehuédé 2025; Fayos-Pérez 2024; Griffits 2009; Los Llanos & Assante di Panzillo 2008; <i>Catalogue sommaire des collections Dutuit</i>, 1925; <i>Collection Auguste Dutuit: Bronzes Antiques</i>, 1897; <i>Collection Auguste Dutuit. Antiquitñes, Medailles et Monnaies, Objets Divers. Exposés Au Palais du Trocadero en 1878</i>, 1879",
       "websites": "[Petit Palais](https://www.petitpalais.paris.fr/en/content/dutuit-bequest); [AGORHA-INHA](https://agorha.inha.fr/detail/631)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q15983921",
@@ -5032,14 +5035,14 @@
       "masters": "Léon Cogniet",
       "students": "Édouard Detaille, Alphonse Moutte, Daniel Ridgway Knight, Louis Monziès, Charles Meissonier, Lucien Gros, Eduardo Zamacois",
       "link to Goya's work": [
-        "The print <i>Un cauchemar</i> (A nightmare) (1834), ridiculing King Louis-Philippe, possibly made by Meissonier, is clearly inspired by Goya's <i>Capricho</i> 43, 'El sueño de la razón produce monstruos' (Fayos Pérez 2024, pp.217-218).",
-        "Meissonier was inscribed as a reader at the Cabinet de Estampes of the Bibliothèque Royale (future BnF), where many artists of his generation were examining and copying the set of Goya's <i>Caprichos</i> (Fayos Pérez 2024, p.133; Lethève 1968, p.109).",
-        "1879 22 March, F.B. writes in <i>L'Univers Illustré</i> ('Le Malandrin, aquarelle de Fortuny'): 'Tout le tempérament du fougueux coloriste se retrouve ici. C'est bien là l'œuvre de celui dont notre maître Théophile Gautier a pu dire que chacune de ses toile 'semblait une ébauche de Goya, reprise et retouchée par Meissonier'' (p.189) (Fayos Pérez 2024, Appendix II)."
+        "The print <i>Un cauchemar</i> (A nightmare) (1834), ridiculing King Louis-Philippe, possibly made by Meissonier, is clearly inspired by Goya's <i>Capricho</i> 43, 'El sueño de la razón produce monstruos' (Fayos-Pérez 2024, pp.217-218).",
+        "Meissonier was inscribed as a reader at the Cabinet de Estampes of the Bibliothèque Royale (future BnF), where many artists of his generation were examining and copying the set of Goya's <i>Caprichos</i> (Fayos-Pérez 2024, p.133; Lethève 1968, p.109).",
+        "1879 22 March, F.B. writes in <i>L'Univers Illustré</i> ('Le Malandrin, aquarelle de Fortuny'): 'Tout le tempérament du fougueux coloriste se retrouve ici. C'est bien là l'œuvre de celui dont notre maître Théophile Gautier a pu dire que chacune de ses toile 'semblait une ébauche de Goya, reprise et retouchée par Meissonier'' (p.189) (Fayos-Pérez 2024, Appendix II)."
       ],
       "decorations/awards": "Chevalier de la Légion d'honneur (1846); Officier de la Légion d'honneur (1856); Commandeur de la Légion d'honneur (1867); Grand officier de la Légion d'honneur (1880); Grand-croix de la Légion d'honneur (1889).",
       "author of": "<i>Partie de piquet</i> (1845, Cardiff); <i>La barricade, rue de la Mortellerie, juin 1848</i> (Souvenir de la guerre civile) (1850, Louvre); <i>Man Reading</i> (1851, Clark); <i>Polichinelle</i> (1860, Wallace); <i>La Campagne de France, 1814</i> (1864); <i>Cuirassier sabre au clair</i> (c.1872, sculpture, Chicago AI); <i>Étude de cheval</i> (c.1880, Musée Bonnat-Helleu); <i>Le Siège de Paris</i> (c.1884, Orsay RF 1249).",
       "portrayed by": "Robert Jefferson Bingham, photograph, 1865; self-portrait, c.1865, Orsay; self-portrait, painting, 1889, Orsay.",
-      "bibliography": "Fayos Pérez 2024; Lethève 1968",
+      "bibliography": "Fayos-Pérez 2024; Lethève 1968",
       "exhibitions": [
         "Salon: 1834 (<i>Un sujet</i>, aquarelle; <i>Bourgeois flamands</i>) until 1865 (<i>Portrait de M. Charles Meissonnier</i>; <i>Suites d'une querelle de jeu</i>.",
         "Exposition Universelle 1867: several artworks.",
@@ -5110,15 +5113,15 @@
         "The brothers' collection was bequeathed to the City of Paris and is now the core of the (Petit Palais) [https://www.petitpalais.paris.fr/en/content/dutuit-bequest]."
       ],
       "collector of Goya's works": [
-        "The Dutuit collection includes a trial-proof set of the <i>Caprichos</i> (LDUT182) (Fayos Pérez 2024, fig.I.14). The provenance is uncertain although the cover seems to read 'de Don Mariano Gil y Alcayde', a collector from Aragon (Los Llanos & Assante di Panzillo 2008, p.157). The binding is identical to the Ceán Bermúdez copy at the BM. It's possible that the purchase took place through Valentín Carderera since he was the foremost owner of Goya works dealing in Paris at that time, and the Dutuits didn't buy any artworks in Spain. Another possibility is that this was the <i>Caprichos</i> set from the Giandomenico Tiepolo collection (Fayos Pérez 2024).",
+        "The Dutuit collection includes a trial-proof set of the <i>Caprichos</i> (LDUT182) (Fayos-Pérez 2024, fig.I.14). The provenance is uncertain although the cover seems to read 'de Don Mariano Gil y Alcayde', a collector from Aragon (Los Llanos & Assante di Panzillo 2008, p.157). The binding is identical to the Ceán Bermúdez copy at the BM. It's possible that the purchase took place through Valentín Carderera since he was the foremost owner of Goya works dealing in Paris at that time, and the Dutuits didn't buy any artworks in Spain. Another possibility is that this was the <i>Caprichos</i> set from the Giandomenico Tiepolo collection (Fayos-Pérez 2024).",
         "Dutuit also acquired 9 state proofs of the <i>Tauromaquia</i> from the collection of Emile Galichon (Griffiths 2009, p.188), although they do not appear in either of the sale catalogues (1864 and 1875) (Los Llanos & Assante di Panzillo 2008, p.154).",
-        "Dutuit might also have acquired a 1st-edition <i>Tauromaquia</i> from the Lefort sale (28-29 Jan 1869, lot 411) (Fayos Pérez 2024)."
+        "Dutuit might also have acquired a 1st-edition <i>Tauromaquia</i> from the Lefort sale (28-29 Jan 1869, lot 411) (Fayos-Pérez 2024)."
       ],
       "sales": "1864; 1875",
       "member of": "Académie des sciences, belles-lettres et arts de Rouen (1846); Société des amis des arts de Rouen; Société française de gravure",
       "works as": "deputy mayor of Rouen 1846-1874",
       "author of": "<i>Manuel de l'amateur de d'estampes</i> (started in 1877; unfinished); <i>Œuvre complet de Rembrandt</i>",
-      "bibliography": "Joëlle Raineau-Lehuédé, 'La collection d'estampes d'Eugène Dutuit (1807-1886) : une visée pédagogique', <i>L'amateur d'estampes</i>, 2025, pp.266-285; Fayos Pérez 2024; Los Llanos & Assante di Panzillo 2008; Chazal 2008",
+      "bibliography": "Joëlle Raineau-Lehuédé, 'La collection d'estampes d'Eugène Dutuit (1807-1886) : une visée pédagogique', <i>L'amateur d'estampes</i>, 2025, pp.266-285; Fayos-Pérez 2024; Los Llanos & Assante di Panzillo 2008; Chazal 2008",
       "exhibitions": "Paris 2023, <i>Trésors en noir & blanc. Estampes du Petit Palais de Dürer à Toulouse-Lautrec</i>, Petit Palais",
       "websites": "(Petit Palais) [https://www.petitpalais.paris.fr/en/content/catalogues-des-collections-de-1897-1936]",
       "archives": "Rouen Bibliothèques",
@@ -5294,7 +5297,7 @@
       "portrayed by": "Federico de Madrazo, 1833, oil painting, [Hispanic Society A286](https://hispanicsociety.emuseum.com/objects/884/jean-auguste-dominique-ingres)",
       "masters": "Joseph Roques, Jean Suau, Jacques-Louis David (1796)",
       "exhibitions": [
-        "Recent years: 2015-16, Prado, <i>Ingres</i>; 2015-16 Prado, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i> (cur. Javier Barón)"
+        "Recent years: 2015-16 Prado, [<i>Ingres</i>](https://www.museodelprado.es/actualidad/exposicion/ingres/00e24782-cbd7-4f3e-af2b-46aa5a34d983), curated by Vincent Pomarède and Carlos G. Navarro; 2015-16 Prado, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i>, curated by Javier Barón."
       ],
       "students": "Amaury-Duval, Théodore Chassériau, Hippolyte Flandrin, Antoine Étex, Émile Hirsch, Romain Cazes, Louis Janmot, Alexandre Mauvernay, Charles Nègre, Clément Pruche, Henri Lehmann",
       "curiosities": "he was a violin player at the Orchestre de Toulouse",
@@ -5336,9 +5339,9 @@
       "pseudonyms": "Rogelin",
       "decorations/awards": "the Second Empire and the Third Republic intended to award him the Légion d'Honneur, but he declined as it was inconsistent with his political ideals and oeuvre.",
       "link to Goya's work": [
-        "Daumier's pl.9 from <i>Imagination</i>, 'Headache', 1833, is probably inspired by Cruikshank's <i>The head Ache</i> (1819), but also resembles Goya's <i>Capricho</i> 43, 'El sueño de la razón produce monstruos' (Fayos Pérez 2024, p.133)",
-        "Daumier's 'Que de fois... n'a-t-il pas arraché... Un perroquet humain' in <i>Némésis médicale illustrée</i> (vol.1, 1840), might have been inspired by Goya's <i>Capricho</i> 53, 'Qué pico de oro!' (Fayos Pérez, 2024, p.249-50).",
-        "Many anticlerical prints by Daumier might remind of Goya's. Examples are the depiction of Jesuits in <i>Basile a peur</i> (1872) and <i>En Espagne, charité chrétienne</i> (1872), which might remind of Goya's <i>A Scene from 'The Forcibly Bewitched'</i> (1798, NG), or the Inquisition scene in <i>Auto-da-fé au XIXe siècle</i> (1851) (Fayos Pérez 2024, pp.231-36)."
+        "Daumier's pl.9 from <i>Imagination</i>, 'Headache', 1833, is probably inspired by Cruikshank's <i>The head Ache</i> (1819), but also resembles Goya's <i>Capricho</i> 43, 'El sueño de la razón produce monstruos' (Fayos-Pérez 2024, p.133)",
+        "Daumier's 'Que de fois... n'a-t-il pas arraché... Un perroquet humain' in <i>Némésis médicale illustrée</i> (vol.1, 1840), might have been inspired by Goya's <i>Capricho</i> 53, 'Qué pico de oro!' (Fayos-Pérez, 2024, p.249-50).",
+        "Many anticlerical prints by Daumier might remind of Goya's. Examples are the depiction of Jesuits in <i>Basile a peur</i> (1872) and <i>En Espagne, charité chrétienne</i> (1872), which might remind of Goya's <i>A Scene from 'The Forcibly Bewitched'</i> (1798, NG), or the Inquisition scene in <i>Auto-da-fé au XIXe siècle</i> (1851) (Fayos-Pérez 2024, pp.231-36)."
       ],
       "portrayed by": "Victor Laisné, photograph, c.1850; Nadar, photograph, 1856-58 (BnF); self-portrait, bronze scultpure (Chicago); Albert-Ernest Carrier-Belleuse, bust, 1862 (Versailles)",
       "bibliography": "Fayos-Pérez 2024; Le Men 2008; Delteil 1904 [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k63555863)",
@@ -5396,7 +5399,7 @@
       "portrayed by": "Émile Lassalle, 1840",
       "archives": "Musée des beaux-arts de Nancy (1,432 drawings), Musée lorrain (58 drawings),  Bibliothèque publique de Nancy (522 drawings), Bibliothèque nationale de France (BnF) (15 drawings), Musée Carnavalet (50 drawings)",
       "conferences/seminars": "Frédéric Sardet, 'Les archives Rodolphe Töpffer : un patrimoine pour un musée de la bande dessinée ?', <i>Caricatures et cultures numériques</i>, Feb 2022, Université de Lausanne",
-      "bibliography": "Fayos Pérez 2024; Baridon 2022; Fayos Pérez 2019-B; Kaenel 2005; Renonciat 1985",
+      "bibliography": "Fayos-Pérez 2024; Baridon 2022; Fayos-Pérez 2019-B; Kaenel 2005; Renonciat 1985",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Grandville.jpg",
       "image source": "Lassalle 1840"
     },
@@ -5507,7 +5510,7 @@
       "works as": "stockbroker",
       "curiosities": "his brother-in-law was Leopold de Rothschild",
       "studies in": "École nationale supérieure des beaux-arts (ENSBA)",
-      "copies after Goya": "he presented a print after Goya at the 1869 Paris Salon, <i>L'amour et la mort</i>: an etching after <i>Capricho</i> 10, 'El amor y la muerte', published in the <i>Gazette des beaux-arts</i>, 1 July 1870 (Fayos Pérez 2024, p.185, fig.II.56).",
+      "copies after Goya": "he presented a print after Goya at the 1869 Paris Salon, <i>L'amour et la mort</i>: an etching after <i>Capricho</i> 10, 'El amor y la muerte', published in the <i>Gazette des beaux-arts</i>, 1 July 1870 (Fayos-Pérez 2024, p.185, fig.II.56).",
       "friends": "Édouart Manet, Edgas Degas, Giuseppe De Nittis, the Camondo family, Edmond de Goncourt, Charles Gounod, Jules Massenet",
       "exhibitions": "Paris Salon: 1869-1884. 1869: 3 prints after Goya, Bonvin and Ribot (published in the <i>Gazette des beaux-arts</i>); 1 drawing. 1876: painting <i>Premier Trouble</i> (edited by Goupil & Cie).",
       "member of": "Société du Jinglar (which included Zacharie Astruc, Philippe Burty, Jules Jacquemart, Henri Fantin-Latour, Félix Bracquemond and Marc-Louis Solon (director of the Sèvres factory)",
@@ -5522,7 +5525,7 @@
       "collector of Goya's works": "the <i>Caprichos</i>, 1st edition, £ 13 15s (1875 sale)",
       "sales": "1875, 29-30 July, London Sotheby (acquired by M. Carlin, L.563)",
       "portrayed by": "Edgar Degas, etching, 1875; Giuseppe De Nittis, etching, 1875",
-      "bibliography": "Fayos Pérez 2024",
+      "bibliography": "Fayos-Pérez 2024",
       "websites": "[Agorha, INHA](https://agorha.inha.fr/detail/516)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Hirsch.jpg",
       "image source": "Degas etching 1875",
@@ -5552,7 +5555,7 @@
       ],
       "works for": "the Metropolitan Museum of Art (prints of the exhibited paintings, including <i>Le Soldat et la fillette qui rit</i> by Vermeer), 1871; Joseph Florimond, Duke of Loubat (60 prints of medals), 1878.",
       "copies after Goya": [
-        "1863 <i>Scène espagnole</i>, published in the <i>Gazette des beaux-arts</i> to illustrate the 2nd article by Valentín Carderera about Goya (Fayos Pérez 2024, fig.II.44); re-printed 1 July 1870. This print is either a pastiche after <i>Capricho</i> 17, 'Bien tirada está<>/i>, or a print after a lost drawing from the Carderera collection; it is mentioned by Gustave Brunet in his 1865 book (p.14).",
+        "1863 <i>Scène espagnole</i>, published in the <i>Gazette des beaux-arts</i> to illustrate the 2nd article by Valentín Carderera about Goya (Fayos-Pérez 2024, fig.II.44); re-printed 1 July 1870. This print is either a pastiche after <i>Capricho</i> 17, 'Bien tirada está<>/i>, or a print after a lost drawing from the Carderera collection; it is mentioned by Gustave Brunet in his 1865 book (p.14).",
         "1873 print <i>Goya's daughter-in-law</i> (Gumersinda Goicoechea) British Museum [1982,U.1280](https://www.britishmuseum.org/collection/object/P_1982-U-1280). The original oil painting (c.1805) is in a private collection (Paris)."
       ],
       "art collection": "Japanese art; paintings (by Nittis, Vollon), Oriental bronzes, arms, Sèvres porcelain, ivory sculpture, mirrors, furniture, tapestries; prints.",
@@ -5562,7 +5565,7 @@
         "Collective works: <i>Histoire de la Bibliophilie</i> (1861-64); <i>L'Histoire artistique industrielle et commerciale de la porcelaine</i> (1862); <i>Gemmes et Joyaux de la Couronne</i> (1865); <i>L'Histoire de la céramique</i> (1873); <i>L'histoire du mobilier</i> (1876)."
       ],
       "portrayed by": "self-portrait, watercolor (Orsay RF 2393); Marcellin Desboutin, drypoint, 1876",
-      "bibliography": "Fayos Pérez 2020; Brunet 1865",
+      "bibliography": "Fayos-Pérez 2020; Brunet 1865",
       "websites": "[Agorha, INHA](https://agorha.inha.fr/ark:/54721/d6b76429-892e-4361-9800-5bbf93c4f107); [Orsay](https://www.musee-orsay.fr/fr/ressources/repertoire-artistes-personnalites/jules-jacquemart-15256)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Jacquemart.jpg",
       "image source": "self-portrait, watercolor",
@@ -5587,7 +5590,7 @@
       "knows Goya's works": "the brothers estudied the <i>Disasters of War</i> on 4 Jan 1863 at the BnF (Lethève 1968, p.108).",
       "writes about Goya": "About the <i>Disasters of War</i>: 'Avez-vous vu cette planche de Goya, terrible comme une épouvante rencontrée la nuit, par un clair de lune, au coin d'un bois: un homme empalé à une branche d'arbre, nu, saignant, les pieds contractés de souffrance, l'agonie de sa torture sur la face et dans le hérissement des cheveux, le bras coupé net, cassé comme un bras de statue ?... Et puis, tournez la feuille: des bouches qui crachent la vie, des mourants vomissant le sang sur des cadavres, l'Espagne mendiant, les pieds dans la voirie d'une ambulance… Le génie de l'horreur, c'est le génie de l'Espagne. Il y a de la torture, de l'inquisition presque, dans ces planches de son dernier grand peintre. Son eau-forte brûle l'ennemi pour la postérité, comme autrefois l'auto-da-fé brûlait l'hérétique pour l'enfer' (<i>Idées et sensations</i>, 1877, pp.185-86).",
       "author of": "<i>Journal. Mémoires de la vie littéraire</i> (from 1851); <i>Études d'art Le salon de 1852 : La peinture a l'exposition de 1855</i>; <i>Germinie Lacerteux</i> (novel 1865, theatre 1888), <i>Manette Salomon</i> (1867), <i>Madame Gervaisais</i> (1869), <i>Les Frères Zemganno</i> (novel 1879, theatre 1890).",
-      "bibliography": "Fayos Pérez 2024; Pierre Ménard 2020, <i>Les infréquentables frères Goncourt</i>; Barbara Giraud 2009, <i>L'Héroïne goncourtienne: entre hystérie et dissidence</i>; Lethève 1968.",
+      "bibliography": "Fayos-Pérez 2024; Pierre Ménard 2020, <i>Les infréquentables frères Goncourt</i>; Barbara Giraud 2009, <i>L'Héroïne goncourtienne: entre hystérie et dissidence</i>; Lethève 1968.",
       "websites": "[BNE](https://datos.bne.es/persona/XX1162461.html)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Goncourt_Edmond.jpg",
       "image source": "Nadar photograph, unknown date",
@@ -5612,7 +5615,7 @@
       "knows Goya's works": "the brothers estudied the <i>Disasters of War</i> on 4 Jan 1863 at the BnF (Lethève 1968, p.108).",
       "portrayed by": "Nadar, with his brother Jules de Goncourt; Ernst Friedrich von Liphart, drawing; Victor Collodion, caricature, 1868 (with his brother)",
       "author of": "<i>Journal. Mémoires de la vie littéraire</i> (from 1851); <i>Renée Mauperin</i> (1864); <i>Germinie Lacerteux</i> (1865).",
-      "bibliography": "Fayos Pérez 2024; Pierre Ménard 2020, <i>Les infréquentables frères Goncourt</i>; Barbara Giraud 2009, <i>L'Héroïne goncourtienne: entre hystérie et dissidence</i>; Lethève 1968.",
+      "bibliography": "Fayos-Pérez 2024; Pierre Ménard 2020, <i>Les infréquentables frères Goncourt</i>; Barbara Giraud 2009, <i>L'Héroïne goncourtienne: entre hystérie et dissidence</i>; Lethève 1968.",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Goncourt_Jules.jpg",
       "image source": "Nadar photograph c.1877",
       "added": "2025-08-27"
@@ -5648,9 +5651,9 @@
         "<i>Bande déssinée</i> (which he called <i>littérature en estampes</i>): <i>Histoire de Monsieur Crépin</i> (produced 1827; published 1837); <i>Les Amours de monsieur Vieux Bois</i> (1827; 1837); <i>Docteur Festus</i> (1829; 1840); <i>Monsieur Tritrac</i> (1830; 1937); <i>Histoire de monsieur Vertpré et de mademoiselle d'Espagnac</i> (1830-40 unfinished); <i>Monsieur Trictrac</i> (1830; 1837); <i>Histoire de Monsieur Cryptogame</i> (1830; 1846); <i>L'Histoire de Monsieur Jabot</i> (1831; 1833); <i>Monsieur Pencil</i> (1840); <i>Histoire d'Albert</i> (1844; 1845). His works are reedited in 1860 by Garnier Frères, with the help of Töpffer's son François."
       ],
       "interest in Spanish art": "letter from Töpffer to Sainte-Beuve (29 Dec 1840): 'Je n'ai pas lu beaucoup d'auterus, mais j'ai beaucoup lu les mêmes auteurs. Durant le collège, Florian, y compris son don Quichotte édulcoré' (Buyssens & Candaux 2011, p.850).",
-      "link to Goya's work": "an illustration in Töpffer's <i>Voyages et aventures du docteur Festus</i> (made in 1829, published 1840) reminds of Goya's <i>Capricho</i> 52, 'Lo que puede un sastre'. In turn, Töpffer's image might have inspired Daumier's 'The heroic courage of Don Carlos and Don Miguel' (Courage héroïque de Don Carlos et Don Miguel) (1834) (Fayos Pérez 2024, p.244, fig.III.41).",
+      "link to Goya's work": "an illustration in Töpffer's <i>Voyages et aventures du docteur Festus</i> (made in 1829, published 1840) reminds of Goya's <i>Capricho</i> 52, 'Lo que puede un sastre'. In turn, Töpffer's image might have inspired Daumier's 'The heroic courage of Don Carlos and Don Miguel' (Courage héroïque de Don Carlos et Don Miguel) (1834) (Fayos-Pérez 2024, p.244, fig.III.41).",
       "portrayed by": "self-portrait, drawing, c.1820 (Bib. Genève); Firmin Massot, oil painting, 1821, Musée d'art et d'histoire, Ville de Genève (MAH); Jean-Léonard Lugardon, oil painting, c.1840 (Bib. Genève); Charles Alphonse Schmid, lithograph (after Lugardon); self-portrait, 1840, drawing; Jean-Charles Töpffer, bronze bust, 1879, Geneva",
-      "bibliography": "Fayos Pérez 2024; Buyssens & Candaux, <i>Correspondance complète</i>, t.V (1840-1841), 2011; David Kunzle, <i>Father of the Comic Strip: Rodolphe Töpffer</i>, 2010; Kaenel 2005; Groensteen & Peeters, <i>L'invention de la bande dessinée</i>, 1994; Francis Lacassin, <i>Pour un neuvième art: la bande dessinée</i>, 1982",
+      "bibliography": "Fayos-Pérez 2024; Buyssens & Candaux, <i>Correspondance complète</i>, t.V (1840-1841), 2011; David Kunzle, <i>Father of the Comic Strip: Rodolphe Töpffer</i>, 2010; Kaenel 2005; Groensteen & Peeters, <i>L'invention de la bande dessinée</i>, 1994; Francis Lacassin, <i>Pour un neuvième art: la bande dessinée</i>, 1982",
       "websites": "[ToonsMag](https://www.toonsmag.com/rodolphe-topffer/); [Société d'études töpffériennes (Genève)](https://www.idref.fr/059762608); [lambiek.net](https://www.lambiek.net/artists/t/topffer.htm); [Wikipedia](https://fr.wikipedia.org/wiki/Rodolphe_T%C3%B6pffer)",
       "archives": "[Bibliothèque de Genève](https://www.bge-geneve.ch/iconographie/personne/rodolphe-topffer)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Topffer.jpg",
@@ -5872,7 +5875,7 @@
         "1860, 28 Jan, Davillier writes 'La Mojiganga' (<i>Le Monde illustré</i>): in the form of a letter to Gustave Doré. Mentions Goya's <i>Tauromaquia</i>.",
         "1861 <i>Histoire des Faïences hispano-moresques a reflés metalliques</i>.",
         "1862-1872 <i>Feuilletons</i> about his Spanish trip ('Voyage en Espagne') in <i>Le Tour du Monde. Nouveau Journal des voyages</i>, [Wikisource](https://fr.wikisource.org/wiki/Voyage_en_Espagne_(Dor%C3%A9_et_Davillier)/20).",
-        "1874 <i>L'Espagne</i>, illustrated by Gustave Doré, including <i>tauromachies</i> and some illustrations inspired by Goya, such as 'Murderer execution', after Goya's <i>Agarrotado</i> (see Fayos Pérez 2024, pp.169-170, fig. II.49-50).",
+        "1874 <i>L'Espagne</i>, illustrated by Gustave Doré, including <i>tauromachies</i> and some illustrations inspired by Goya, such as 'Murderer execution', after Goya's <i>Agarrotado</i> (see Fayos-Pérez 2024, pp.169-170, fig. II.49-50).",
         "1879 <i>Recherches sur l'orfèvrerie en Espagne au moyen âge et à la renaissance; documents inédits tirés des archives espagnoles</i>."
       ],
       "authorities": {
@@ -5884,10 +5887,10 @@
       "correspondence": "Pedro de Madrazo",
       "aristocratic titles": "Baron",
       "mentions of Goya": "in <i>L'Espagne</i>, he mentions Goya's <i>corrida de toros</i>, which he calls <i>El picador a caballo</i>, and which he judges as 'worthy of Velázquez' (Davillier, Prado profile).",
-      "knows Goya's works": "1860, 28 Jan, Davillier writes 'La Mojiganga' (<i>Le Monde illustré</i>) in the form of a letter to Doré, where the author mentions Goya's <i>Tauromaquia</i> in his praise of Spain and its customs: 'Voilà, mon cher Doré, un petit échantillon des fêtes populaires de Madrid: —Diversion de Espana! comme disait le vieux Goya, le grand aficionado. Peut-être bientôt n'en restera-t-il plus que le souvenir; l'Espagne pittoresque s'en va de jour en jour [...] elle ne vivra plus que dans le charmant livre de Théophile Gautier' (Fayos Pérez 2024, pp.169-70; Appendix II, 1860).",
+      "knows Goya's works": "1860, 28 Jan, Davillier writes 'La Mojiganga' (<i>Le Monde illustré</i>) in the form of a letter to Doré, where the author mentions Goya's <i>Tauromaquia</i> in his praise of Spain and its customs: 'Voilà, mon cher Doré, un petit échantillon des fêtes populaires de Madrid: —Diversion de Espana! comme disait le vieux Goya, le grand aficionado. Peut-être bientôt n'en restera-t-il plus que le souvenir; l'Espagne pittoresque s'en va de jour en jour [...] elle ne vivra plus que dans le charmant livre de Théophile Gautier' (Fayos-Pérez 2024, pp.169-70; Appendix II, 1860).",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Davillier.jpg",
       "image source": "Atelier Nadar, photograph",
-      "bibliography": "Fayos Pérez 2024; Véronique Gérard Powell, 'La sculpture polychrome espagnole dans la France du XIXe et début du XXe siècle : Amateurs et érudits', in <i>Les échanges artistiques entre la France et l'Espagne, XVe-fin XIXe siècles</i>, 2012, pp.223-233; Louis Courajod, <i>Le baron Charles Davillier et la collection léguée par lui au Musée du Louvre</i>, 1884.",
+      "bibliography": "Fayos-Pérez 2024; Véronique Gérard Powell, 'La sculpture polychrome espagnole dans la France du XIXe et début du XXe siècle : Amateurs et érudits', in <i>Les échanges artistiques entre la France et l'Espagne, XVe-fin XIXe siècles</i>, 2012, pp.223-233; Louis Courajod, <i>Le baron Charles Davillier et la collection léguée par lui au Musée du Louvre</i>, 1884.",
       "websites": "[Prado, profile by Pierre Géal](https://www.museodelprado.es/aprende/enciclopedia/voz/davillier-charles/7b6b7228-20a4-4dd9-b1a7-faa6c03377af)",
       "added": "2025-12-07"
     },
@@ -6156,10 +6159,10 @@
       "connection_level": "direct",
       "relationship type": "acquaintances; business partners?",
       "link to Goya's work": [
-        "1834 Dauzats was probably the author of the <i>Magasin pittoresque</i> article on Goya: 1834-IX-29, Dauzats to Federico de Madrazo: 'Je m'occupe d'une notice sur la vie et les ouvrages de Goya. C'est un hommage que nous voulons rendre à l'un des peintres les plus célèbres de l'Espagne' (Archivo Madrazo) (see Guinard 1967-B, p.323; Fayos Pérez 2024, p.50). It mentions the Prado commentaries (Goya's manuscript explanations of the <i>Caprichos</i>), which were by then in the possession of Javier Goya.",
-        "1835-IV-1, Federico de Madrazo to Dauzats (in French) (INHA): Dauzats had asked for a notice about Goya, which Madrazo is waiting to ask for to Javier Goya when he is back in Madrid (Fayos-Pérez 2026, upcoming)."
+        "1834 Dauzats was probably the author of the <i>Magasin pittoresque</i> article on Goya: 1834-IX-29, Dauzats to Federico de Madrazo: 'Je m'occupe d'une notice sur la vie et les ouvrages de Goya. C'est un hommage que nous voulons rendre à l'un des peintres les plus célèbres de l'Espagne' (Archivo Madrazo) (see Guinard 1967-B, p.323; Fayos-Pérez 2024, p.50). It mentions the Prado commentaries (Goya's manuscript explanations of the <i>Caprichos</i>), which were by then in the possession of Javier Goya.",
+        "1835-IV-1, Federico de Madrazo to Dauzats (in French) (INHA): Dauzats had asked for a notice about Goya, which Madrazo is waiting to ask for to Javier Goya when he is back in Madrid (Fayos-Pérez, upcoming publication)."
       ],
-      "bibliography": "Fayos Pérez 2024; Guinard 1967-B",
+      "bibliography": "Fayos-Pérez 2024; Guinard 1967-B",
       "strength": 2
     },
     {
@@ -7203,7 +7206,7 @@
       "connection_level": "direct",
       "relationship type": "friends",
       "collaborations": "Santiago collaborates as music critic in <i>El Artista</i>, a journal founded by Federico de Madrazo, Pedro de Madrazo and Eugenio Ochoa in 1835.",
-      "mentions": "1835-III-24, letter from Federico de Madrazo to Adrien Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Adrien Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez, upcoming publication).",
       "know each other since": "at least 1835"
     },
     {
@@ -7746,8 +7749,8 @@
       "connection_level": "direct",
       "relationship type": "acquaintances",
       "know each other since": "at least since 1857",
-      "mentions": "letter from Carresse to Valentín Carderera, 21 June 1857 (Paris): 'N'ayant pas votre adresse, je fais parvenir cette lettre à Sureda avec prière de vous l'envoyer' (Fayos Pérez 2020, p.1055).",
-      "bibliography": "Fayos Pérez 2020"
+      "mentions": "letter from Carresse to Valentín Carderera, 21 June 1857 (Paris): 'N'ayant pas votre adresse, je fais parvenir cette lettre à Sureda avec prière de vous l'envoyer' (Fayos-Pérez 2020, p.1055).",
+      "bibliography": "Fayos-Pérez 2020"
     },
     {
       "from": "Federico de Madrazo",
@@ -7892,7 +7895,7 @@
       "relationship type": "colleagues",
       "know each other since": "1775",
       "collaborations": "Esteve produced several copies after Goya's portraits, such as <i>Carlos IV en uniforme de coronel de la Guardia de Corps</i>, 1799-1800, [Prado P000727](https://www.museodelprado.es/coleccion/obra-de-arte/carlos-iv-en-uniforme-de-coronel-de-la-guardia-de/9a5baf9f-0dba-4ebf-a62c-9b116befea5d), and <i>La reina María Luisa con mantilla</i>, 1799-1800, [Prado P000728](https://www.museodelprado.es/coleccion/obra-de-arte/la-reina-maria-luisa-con-mantilla/1149fdbc-6ee9-4298-8de9-1ad9467dee98) (see Albarrán 2018 and upcoming)",
-      "bibliography": "Albarrán 2018; Albarrán (upcoming)"
+      "bibliography": "Albarrán 2018; Albarrán, upcoming publication"
     },
     {
       "from": "Francisco de Goya",
@@ -7965,8 +7968,8 @@
       "connection_level": "direct",
       "relationship type": "acquaintances",
       "they met": "in Bordeaux (1824-28) at Pierre Lacour's establishment",
-      "link to Goya's work": "in 1871, Gautier wants to see Burty's working-proof set of <i>Disasters of War</i>. Asselineau to Burty: 'Gautier has the pressing need to re-examine the <i>Disasters of War</i> (Goya's invasion) whose copper plates were brought back by Dauzats' (Fayos Pérez 2024, p.54; Delesalle 1983, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle 1983"
+      "link to Goya's work": "in 1871, Gautier wants to see Burty's working-proof set of <i>Disasters of War</i>. Asselineau to Burty: 'Gautier has the pressing need to re-examine the <i>Disasters of War</i> (Goya's invasion) whose copper plates were brought back by Dauzats' (Fayos-Pérez 2024, p.54; Delesalle 1983, p.104)",
+      "bibliography": "Fayos-Pérez 2024; Delesalle 1983"
     },
     {
       "from": "Francisco de Goya",
@@ -8287,8 +8290,8 @@
       "connection_level": "direct",
       "relationship type": "acquaintances? Töpffer knows about Daumier's work",
       "mentions": "1840, 29 Dec, letter from Töpffer to Charles-Augustin Sainte-Beuve: 'Il est certain que le genre est susceptible de donner des livres, des drames, des poèmes tout comme un autre, à quelques égards mieux qu'un autre, et je regrette que vos habiles et féconds artistes, Gavarni par exemple, et Daumier, ne l'aient pas tenté. Ils font des suites, c'est-à-dire des faces différentes d'une même idée ; ce sont des choses mises bout à bout, non des choses liées par une pensée'.",
-      "link to Goya's work": "an illustration in Töpffer's <i>Voyages et aventures du docteur Festus</i> (made in 1829, published 1840) reminds of Goya's <i>Capricho</i> 52, 'Lo que puede un sastre'. In turn, Töpffer's image might have inspired Daumier's 'The heroic courage of Don Carlos and Don Miguel' (Courage héroïque de Don Carlos et Don Miguel) (1834) (Fayos Pérez 2024, p.244, fig.III.41).",
-      "bibliography": "Fayos Pérez 2024"
+      "link to Goya's work": "an illustration in Töpffer's <i>Voyages et aventures du docteur Festus</i> (made in 1829, published 1840) reminds of Goya's <i>Capricho</i> 52, 'Lo que puede un sastre'. In turn, Töpffer's image might have inspired Daumier's 'The heroic courage of Don Carlos and Don Miguel' (Courage héroïque de Don Carlos et Don Miguel) (1834) (Fayos-Pérez 2024, p.244, fig.III.41).",
+      "bibliography": "Fayos-Pérez 2024"
     },
     {
       "from": "J. J. Grandville",
@@ -8738,7 +8741,7 @@
       "connection_level": "direct",
       "relationship type": "close friends",
       "collaborations": "the found the journal <i>El Artista</i> in 1835 in Madrid with Pedro de Madrazo (after visiting <i>L'Artiste</i> in Paris in 1833).",
-      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez, upcoming publication).",
       "strength": 1
     },
     {
@@ -8924,8 +8927,8 @@
       "to": "Infanta Luisa Fernanda de Borbón",
       "connection_level": "direct",
       "relationship type": "relatives; siblings, sisters",
-      "link to Goya's work": "<i>Portrait of Asensio Julià</i> (c.1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); then belonged to her sister Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II).",
-      "bibliography": "Fayos Pérez 2024; Tinterow 2003",
+      "link to Goya's work": "<i>Portrait of Asensio Julià</i> (c.1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); then belonged to her sister Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos-Pérez 2024, Appendix II).",
+      "bibliography": "Fayos-Pérez 2024; Tinterow 2003",
       "strength": 1
     },
     {
@@ -9010,7 +9013,7 @@
       "to": "Isabel II",
       "connection_level": "direct",
       "relationship type": "relatives; brother-in-law, sister-in-law",
-      "link to Goya's work": "<i>Portrait of Asensio Julià</i> (c.1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos Pérez 2024, Appendix II).",
+      "link to Goya's work": "<i>Portrait of Asensio Julià</i> (c.1798; Thyssen 166 1971.1): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos-Pérez 2024, Appendix II).",
       "strength": 2
     },
     {
@@ -9125,8 +9128,8 @@
       "to": "Prosper Mérimée",
       "connection_level": "direct",
       "relationship type": "friends; correspondents",
-      "correspondence": "1869-V-16 letter: Mérimée expresses his distaste for Goya's prints. He states that he 'will never forgive her' for liking Goya's work, including the Disasters of War (see Fayos Pérez 2024, fig.II.68, Marcello, <i>Vision of human skulls</i>, probably inspired after Goya's plate 69 'Nothing. The event will tell' and 80 'Will she live again?' from the <i>Disasters of War</i>)",
-      "bibliography": "Fayos Pérez 2024; Griener & Guerdat 2015, p.366"
+      "correspondence": "1869-V-16 letter: Mérimée expresses his distaste for Goya's prints. He states that he 'will never forgive her' for liking Goya's work, including the Disasters of War (see Fayos-Pérez 2024, fig.II.68, Marcello, <i>Vision of human skulls</i>, probably inspired after Goya's plate 69 'Nothing. The event will tell' and 80 'Will she live again?' from the <i>Disasters of War</i>)",
+      "bibliography": "Fayos-Pérez 2024; Griener & Guerdat 2015, p.366"
     },
     {
       "from": "Marcello (Adèle d'Affry)",
@@ -9287,7 +9290,7 @@
         "1868, 2 letters from Manet to Astruc. Exhibition <i>Manet and Astruc</i>, 2021: MS420(25)13."
       ],
       "exhibitions": "Bremen 2021, <i>Manet and Astruc: Friendship and Inspiration</i>, [Bremen Kunsthalle](https://www.kunsthalle-bremen.de/en/view/exhibitions/exb-page/manet-and-astruc), curated by Dorothee Hansen.",
-      "bibliography": "Fayos Pérez 2024; Wolohojian & Dunn 2023; Hansen 2021, <i>Manet and Astruc. Friendship and Inspiration</i>; Gudrun Maurer 2021, 'Manet and Astruc. In the Footsteps of Velázquez, El Greco and Goya', in Hansen 2021; Tinterow 2003; Cabañas Bravo 2003; Sharon Flescher, 'Manet's Portrait of Zacharie Astruc: A Study of a Friendship and New Light on a Problematic Painting', <i>Arts MAgazine</i> 52, June 1978, pp.98-105.",
+      "bibliography": "Fayos-Pérez 2024; Wolohojian & Dunn 2023; Hansen 2021, <i>Manet and Astruc. Friendship and Inspiration</i>; Gudrun Maurer 2021, 'Manet and Astruc. In the Footsteps of Velázquez, El Greco and Goya', in Hansen 2021; Tinterow 2003; Cabañas Bravo 2003; Sharon Flescher, 'Manet's Portrait of Zacharie Astruc: A Study of a Friendship and New Light on a Problematic Painting', <i>Arts MAgazine</i> 52, June 1978, pp.98-105.",
       "websites": "[AGORHA](https://agorha.inha.fr/detail/569); presentation of Manet's 1866 portrait of Astruc, by Dorothee Hansen, Bremen Kunsthalle 2021, [YouTube](https://www.youtube.com/watch?v=TTTWBRnnKKE&t=184s)"
     },
     {
@@ -9391,7 +9394,7 @@
       "relationship type": "friends?",
       "know each other since": "at least 1867",
       "they shared": "the interest in Japanese art and belonging to the Société du Jinglar (from 1867)",
-      "collection": "Burty's collection  included Hirsch's <i>L'amour et la mort</i> (1868), after Goya's <i>Capricho</i> 10, 'El amor y la muerte', British Museum [1876,0510.371](https://www.britishmuseum.org/collection/object/P_1876-0510-371); from the Burty sale, April-May 1876, lot 716 (Fayos Pérez 2024, p.185, fig.II.56; Chazal 2008, no.239, p.308)."
+      "collection": "Burty's collection  included Hirsch's <i>L'amour et la mort</i> (1868), after Goya's <i>Capricho</i> 10, 'El amor y la muerte', British Museum [1876,0510.371](https://www.britishmuseum.org/collection/object/P_1876-0510-371); from the Burty sale, April-May 1876, lot 716 (Fayos-Pérez 2024, p.185, fig.II.56; Chazal 2008, no.239, p.308)."
     },
     {
       "from": "Alphonse Hirsch",
@@ -9439,7 +9442,7 @@
         "Manet is included in the group portrait in Fantin-Latour's <i>Hommage à Delacroix</i> (1864, Orsay), alongside Louis Edmond Duranty, Fantin-Latour, Champfleury, Charles Baudelaire, Louis Cordier, Alphonse Legros, James Whistler, Félix Bracquemond, and Albert de Balleroy.",
         "Manet is included in the group portrait in Fantin-Latour's <i>Un atelier aux Batignolles</i> (1870, Orsay), alongisde Zacharie Astruc, Otto Scholderer, Pierre-Auguste Renoir, Émile Zola, Edmond Maître, Frédéric Bazille and Claude Monet."
       ],
-      "bibliography": "Fayos Pérez 2024; Wolohojian & Dunn 2023; Wilson Bareau 1991"
+      "bibliography": "Fayos-Pérez 2024; Wolohojian & Dunn 2023; Wilson Bareau 1991"
     },
     {
       "from": "Henri Fantin-Latour",
@@ -9606,9 +9609,9 @@
       "relationship type": "acquaintances?",
       "mentions": [
         "Gautier compares Meissonier with the 17th-century Flemish masters like Gerard ter Borch, Gabriel Metsu, Pieter de Hooch and Vermeer.",
-        "1879 22 March, F.B. writes in <i>L'Univers Illustré</i> ('Le Malandrin, aquarelle de Fortuny'): 'Tout le tempérament du fougueux coloriste se retrouve ici. C'est bien là l'œuvre de celui dont notre maître Théophile Gautier a pu dire que chacune de ses toile 'semblait une ébauche de Goya, reprise et retouchée par Meissonier'' (p.189) (Fayos Pérez 2024, Appendix II)."
+        "1879 22 March, F.B. writes in <i>L'Univers Illustré</i> ('Le Malandrin, aquarelle de Fortuny'): 'Tout le tempérament du fougueux coloriste se retrouve ici. C'est bien là l'œuvre de celui dont notre maître Théophile Gautier a pu dire que chacune de ses toile 'semblait une ébauche de Goya, reprise et retouchée par Meissonier'' (p.189) (Fayos-Pérez 2024, Appendix II)."
       ],
-      "bibliography": "Fayos Pérez 2024",
+      "bibliography": "Fayos-Pérez 2024",
       "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Ernest_Meissonier)"
     },
     {
@@ -9674,10 +9677,10 @@
       "know each other since": "at least 1860",
       "they share": "1862 trip to Spain",
       "collaborations": [
-        "1860, 28 Jan, Davillier writes 'La Mojiganga' (<i>Le Monde illustré</i>) in the form of a letter to Doré, where the author mentions Goya's <i>Tauromaquia</i> in his praise of Spain and its customs: 'Voilà, mon cher Doré, un petit échantillon des fêtes populaires de Madrid: —Diversion de Espana! comme disait le vieux Goya, le grand aficionado. Peut-être bientôt n'en restera-t-il plus que le souvenir; l'Espagne pittoresque s'en va de jour en jour [...] elle ne vivra plus que dans le charmant livre de Théophile Gautier' (Fayos Pérez 2024, pp.169-70; Appendix II, 1860).",
-        "1874 Davillier's <i>L'Espagne</i>, illustrated by Doré, including <i>tauromachies</i> and some illustrations inspired by Goya, such as 'Murderer execution', after Goya's <i>Agarrotado</i> (see Fayos Pérez 2024, pp.169-170, fig. II.49-50)."
+        "1860, 28 Jan, Davillier writes 'La Mojiganga' (<i>Le Monde illustré</i>) in the form of a letter to Doré, where the author mentions Goya's <i>Tauromaquia</i> in his praise of Spain and its customs: 'Voilà, mon cher Doré, un petit échantillon des fêtes populaires de Madrid: —Diversion de Espana! comme disait le vieux Goya, le grand aficionado. Peut-être bientôt n'en restera-t-il plus que le souvenir; l'Espagne pittoresque s'en va de jour en jour [...] elle ne vivra plus que dans le charmant livre de Théophile Gautier' (Fayos-Pérez 2024, pp.169-70; Appendix II, 1860).",
+        "1874 Davillier's <i>L'Espagne</i>, illustrated by Doré, including <i>tauromachies</i> and some illustrations inspired by Goya, such as 'Murderer execution', after Goya's <i>Agarrotado</i> (see Fayos-Pérez 2024, pp.169-170, fig. II.49-50)."
       ],
-      "bibliography": "Fayos Pérez 2024"
+      "bibliography": "Fayos-Pérez 2024"
     },
     {
       "from": "Charles Davillier",
@@ -9718,8 +9721,8 @@
       "to": "Gustave Doré",
       "connection_level": "direct",
       "relationship type": "colleagues",
-      "collaborations": "Doré illustrated Balzac's <i>Les Cent Contes drolatiques</i> (1832-37, reprinted 1855), including some goyaesque images (Fayos Pérez 2024, pp.168-69, fig.II.46, II.48)",
-      "bibliography": "Fayos Pérez 2024"
+      "collaborations": "Doré illustrated Balzac's <i>Les Cent Contes drolatiques</i> (1832-37, reprinted 1855), including some goyaesque images (Fayos-Pérez 2024, pp.168-69, fig.II.46, II.48)",
+      "bibliography": "Fayos-Pérez 2024"
     },
     {
       "from": "Félix Bracquemond",
@@ -10032,9 +10035,9 @@
         }
       ],
       "correspondence": [
-        "1834-IX-29, Dauzats to Madrazo: 'Je m'occupe d'une notice sur la vie et les ouvrages de Goya. C'est un hommage que nous voulons rendre à l'un des peintres les plus célèbres de l'Espagne' (Archivo Madrazo). Quoted in Guinard 1967-B, p.323 (Guinard thinks Dauzats could be the author of the article on Goya in 1834 in <i>Le Magasin pittoresque</i>); Fayos Pérez 2024, p.50.",
-        "1835-III-24, Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
-        "1835-IV-1, Madrazo to Dauzats (in French) (INHA): Dauzats had asked for a notice about Goya, which Madrazo is waiting to ask for to Javier Goya when he is back in Madrid. Madrazo says he gave Pharamond Blanchard two lithographies for him from <i>El Artista</i>. Mention of Eugenio Ochoa and Alejandro Sureda. His brother (Pedro de Madrazo?) sends regards. He also sends regards to Baron Taylor (Fayos-Pérez 2026, upcoming).",
+        "1834-IX-29, Dauzats to Madrazo: 'Je m'occupe d'une notice sur la vie et les ouvrages de Goya. C'est un hommage que nous voulons rendre à l'un des peintres les plus célèbres de l'Espagne' (Archivo Madrazo). Quoted in Guinard 1967-B, p.323 (Guinard thinks Dauzats could be the author of the article on Goya in 1834 in <i>Le Magasin pittoresque</i>); Fayos-Pérez 2024, p.50.",
+        "1835-III-24, Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez, upcoming publication).",
+        "1835-IV-1, Madrazo to Dauzats (in French) (INHA): Dauzats had asked for a notice about Goya, which Madrazo is waiting to ask for to Javier Goya when he is back in Madrid. Madrazo says he gave Pharamond Blanchard two lithographies for him from <i>El Artista</i>. Mention of Eugenio Ochoa and Alejandro Sureda. His brother (Pedro de Madrazo?) sends regards. He also sends regards to Baron Taylor (Fayos-Pérez, upcoming publication).",
         "1837-I-24, Madrazo to Dauzats (INHA). He says that Pharamond Blanchard told him that Baron Taylor was coming back soon (to Paris). Mentions Eugenio Ochoa and Carlos Luis de Ribera.",
         "1837-VI-17, Dauzats to Madrazo (Archivo Madrazo) (Guinard 1967-B, p.269).",
         "1838-III-12, Madrazo to Dauzats (INHA): Madrazo asks Dauzats for drawing tools.",
@@ -10051,7 +10054,7 @@
         "1837, 4 Nov, letter from Federico de Madrazo to José de Madrazo: 'La carta que venía dentro de la mía para Mr. Dauzats se la di ayer. Hará como cosa de 6 días hablé con Dauzats sobre el asunto de las estampas y me dijo que me acompañaría con mucho gusto uno de estos días a casa de Rittner que es bastante amigo suyo, por lo tanto creo que en mi carta siguiente podré decir a V. algo sobre el particular. No crea V. que me olvido de esto. Estoy segurísimo que Dauzats me ayudará en esto como en todas las cosas, pues además de ser sumamente formal es muy buen amigo y tanto más habiéndole yo hablado sobre este particular con bastante empeño' (Díez 1994, no.15, p.45).",
         "1837, 10 Nov, letter from Federico de Madrazo to José de Madrazo: 'Antes de ayer fuimos Dauzats y yo a casa de Rittner para hablarle sobre el negocio de las estampas [...] Nos dijo además que su compañero Mr. Goupil [Adolphe Goupil] se halla en este momento en Londres, que le espera de un día para otro y que en cuanto venga pasará con él a casa de Dauzats para ver la obra completa; prefiere ver la obra completa para formar un juicio más exacto (Dauzats dijo ayer delante de mí a Mr. Taylor que le mandara a su casa los tres tomos)' (Díez 1994, no.16, p.46)."
       ],
-      "bibliography": "Fayos Pérez 2026 (upcoming); Fayos Pérez 2024; Díez 1994; Guinard 1967-A; Guinard 1967-B.",
+      "bibliography": "Fayos-Pérez, upcoming publication; Fayos-Pérez 2024; Díez 1994; Guinard 1967-A; Guinard 1967-B.",
       "strength": 1
     },
     {
@@ -10241,7 +10244,7 @@
       "connection_level": "seconary?",
       "relationship type": "caricaturist",
       "portraits": "1831 Daumier's caricature of Louis-Philippe as the Rabelesian monster Gargantua sitting in a <i>chaise percée</i> while eating the civilians' contributions and defecating decorations and public jobs. In 1832 he was detained in the prison of Sainte-Pélagie (Paris) for it.",
-      "bibliography": "Fayos Pérez 2024"
+      "bibliography": "Fayos-Pérez 2024"
     },
     {
       "from": "Honoré Daumier",
@@ -10249,16 +10252,16 @@
       "connection_level": "seconary?",
       "relationship type": "caricaturist",
       "portraits": "in 1831 he was persecuted for his famous <i>Poires</i> lampooning Louis-Philippe. He was condemned for 'outrages à la personne du roi', having to pay 2,000 fr. and spending 6 months at the Sainte-Pélagie prison",
-      "bibliography": "Fayos Pérez 2024"
+      "bibliography": "Fayos-Pérez 2024"
     },
     {
       "from": "Ernest Meissonier",
       "to": "Louis Philippe I",
       "connection_level": "seconary?",
       "relationship type": "caricaturist",
-      "portraits": "the print <i>Un cauchemar</i> (A nightmare) (1834), ridiculing King Louis-Philippe, is anonymous but possibly made by Meissonier (Fayos Pérez 2024, pp.217-218)",
+      "portraits": "the print <i>Un cauchemar</i> (A nightmare) (1834), ridiculing King Louis-Philippe, is anonymous but possibly made by Meissonier (Fayos-Pérez 2024, pp.217-218)",
       "link to Goya's work": "<i>Un cauchemar</i> is clearly inspired by Goya's <i>Capricho</i> 43, 'El sueño de la razón produce monstruos'",
-      "bibliography": "Baridon c.2026 (upcoming); Fayos Pérez 2024"
+      "bibliography": "Baridon, upcoming publication; Fayos-Pérez 2024"
     },
     {
       "from": "Ernest Meissonier",
@@ -10295,8 +10298,8 @@
       "to": "Louis Philippe I",
       "connection_level": "direct",
       "relationship type": "bussiness/art dealing; patronage",
-      "link to Goya's work": "Louis-Philippe acquired a portrait of Zurbarán (drawing) by Goya via Carderera in 1841 (Fayos Pérez 2024, p.45)",
-      "bibliography": "Fayos Pérez 2024",
+      "link to Goya's work": "Louis-Philippe acquired a portrait of Zurbarán (drawing) by Goya via Carderera in 1841 (Fayos-Pérez 2024, p.45)",
+      "bibliography": "Fayos-Pérez 2024",
       "strength": 3
     },
     {
@@ -10308,7 +10311,7 @@
         "Louis-Philippe commissioned Baron Taylor and Adrien Dauzats to acquire the paintings c.1835-37 for the Galerie espagnole (1838-48), partly via the Madrazo family",
         "In a letter from Federico de Madrazo to José de Madrazo on 27 Oct 1837, he writes that the King didn't like Goya's paintings brought by Taylor: 'Parece que al Rey le gustan mucho los cuadros que ha traido Mr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver como se colocan' (Díez 1994, p.40)"
       ],
-      "bibliography": "Fayos Pérez 2024; Díez 1994",
+      "bibliography": "Fayos-Pérez 2024; Díez 1994",
       "strength": 3,
       "employment/patronage": "1838 Louis-Philippe commissioned Madrazo with the painting <i>Godofredo de Bouillon</i> for Versailles"
     },
@@ -10523,7 +10526,7 @@
       "relationship type": "acquaintances; friends?",
       "know each other since": "c. 1835",
       "mentions": [
-        "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
+        "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez, upcoming publication).",
         "1837-VI-28, letter from Federico de Madrazo to Valentín Carderera, repeating what Dauzats said about Ribera: 'que Ribera trabaja mucho, que ha dejado un poco su timidez y que si tardo un poco en ir a París no le reconoceré, y además dice que me parecerá un hombre natural y que su padre bramaría si viese la influencia que ha ejercido París en él'."
       ],
       "added": "2025-09-06"
@@ -10533,8 +10536,8 @@
       "to": "Adrien Dauzats",
       "connection_level": "direct",
       "relationship type": "acquaintances",
-      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming)",
-      "bibliography": "Fayos Pérez 2026 (próxima upcoming)"
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez, upcoming publication)",
+      "bibliography": "Fayos-Pérez, upcoming publication"
     },
     {
       "from": "Federico de Madrazo",
@@ -10603,24 +10606,24 @@
       "interactions": [
         "1841, May 4, 7 (with Blanchard and Taylor), 9 (Dauzats saw his drawings), Dec 2, 15 (Carderera gives him the drawing he asked for), 16, 30 (Paris): they meet (LG 2016, pp.10, 11, 12, 87, 92).",
         "1842, 27 Jan (Paris): Carderera goes to Dauzats's and leaves a letter for him (Lanzarote Guiral 2016, p.100).",
-        "1856, 1 Oct (Paris): Carderera shows Dauzats his own drawings and also Goya's. Dauzats copies or traces some of them (Fayos Pérez 2024, p.51; LG 2016, p.352).",
-        "1859, 12 Nov (Paris): Carderera takes single sheets from the <i>Caprichos</i> and gives some of them to Dauzats: 'Tomé los caprichos sueltos de Goya y al bajar venían por el cajón para Moorel. Dile propina [...] Fui de Dauzats, donde estuve un buen rato. Le regalé las estampas de Goya (29). Parece quedó contento y quería pagármelas' (Fayos Pérez 2024, p.51; Lanzarote Guiral 2016, p.430)."
+        "1856, 1 Oct (Paris): Carderera shows Dauzats his own drawings and also Goya's. Dauzats copies or traces some of them (Fayos-Pérez 2024, p.51; LG 2016, p.352).",
+        "1859, 12 Nov (Paris): Carderera takes single sheets from the <i>Caprichos</i> and gives some of them to Dauzats: 'Tomé los caprichos sueltos de Goya y al bajar venían por el cajón para Moorel. Dile propina [...] Fui de Dauzats, donde estuve un buen rato. Le regalé las estampas de Goya (29). Parece quedó contento y quería pagármelas' (Fayos-Pérez 2024, p.51; Lanzarote Guiral 2016, p.430)."
       ],
-      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming)",
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Baron Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez, upcoming publication)",
       "correspondence": [
         "At least from 1842: Carderera receives a letter from Dauzats 17 March 1842 in Paris (LG 2016, p.115).",
-        "BNE (MSS/23291/39). Pending publication (Fayos Pérez 2025-2026).",
+        "BNE (MSS/23291/39). Pending publication (Fayos-Pérez 2025-2026).",
         "Archivo familiar Carderera: at least two letters. No apparent mentions of Goya."
       ],
       "archives": "BNE; Archivo familiar Carderera (Madrid).",
-      "bibliography": "Fayos Pérez 2026 (upcoming); Fayos Pérez 2024; Lanzarote Guiral 2016"
+      "bibliography": "Fayos-Pérez, upcoming publication; Fayos-Pérez 2024; Lanzarote Guiral 2016"
     },
     {
       "from": "Valentín Carderera",
       "to": "Prosper Mérimée",
       "connection_level": "direct",
       "know each other since": "at least 1841",
-      "correspondence": "1856-VII-8 (Carderera archive): Mérimée answers he doesn't own a set of Goya's 'Toros' and he could buy a set if not too expensive; that he doesn't know the 'Proverbios' (<i>Disparates</i>) nor the 'suppressed Caprichos' (Fayos Pérez 2020; Fayos Pérez 2024 p.65)",
+      "correspondence": "1856-VII-8 (Carderera archive): Mérimée answers he doesn't own a set of Goya's 'Toros' and he could buy a set if not too expensive; that he doesn't know the 'Proverbios' (<i>Disparates</i>) nor the 'suppressed Caprichos' (Fayos-Pérez 2020; Fayos-Pérez 2024 p.65)",
       "relationship type": "acquaintances; correspondent; art dealing?"
     },
     {
@@ -10648,7 +10651,7 @@
       "mentions": "1859, 12 Nov, Carderera writes in his diary: 'Entré a un librero. Compré el libro de T. Gautier intitulado <i>Constantinopla</i> por 17 sous' (LG 2016, p.430)",
       "they met": "Paris, 1859-XI-13: 'Fuime al quai Voltaire, redacción del Monitor (sic) [<i>Le Moniteur universel</i>] y pude entrar en el gabinete de Théophile Gautier, que estuvo amable. Vio la serie de toros, que le regalé y después mis entregas [...]' (Lanzarote Guiral 2016, p.431)",
       "artworks bought/sold/given": "on 1859-XI-13, Carderera showed Gautier Goya's <i>Tauromaquia</i> and then gave it to him. This is most likely the <i>Tauromaquia</i> set that was sold in Sotheby's Paris, 14 Dec 2022 (Library of Jorge Ortiz Linares), lot 37, for 132,300€. [Sotheby's](https://www.sothebys.com/en/buy/auction/2022/de-la-precieuse-bibliotheque-jorge-ortiz-linares/madrid-1816-33-eaux-fortes-envoi-de-valentin?locale=en). [YouTube video](https://www.youtube.com/watch?v=6A2iC0fEZxs) of Jean-Baptiste de Proyart discussing the <i>Tauromaquia</i> set (min 2:10)",
-      "bibliography": "Fayos Pérez 2020; Lanzarote Guiral 2016"
+      "bibliography": "Fayos-Pérez 2020; Lanzarote Guiral 2016"
     },
     {
       "from": "Valentín Carderera",
@@ -10667,7 +10670,7 @@
       ],
       "correspondence": "at least 3 letters from Burty to Carderera: 26 Sept 1860, 11 Jan 1861, and another without date, likely after Jan 1861 (see Cano Díaz 2022; Salas 1961).",
       "archives": "BNE (MSS/23291/19)",
-      "bibliography": "Fayos Pérez 2026 (upcoming); Fayos Pérez 2024; Cano Díaz 2022; Lanzarote Guiral 2016; Salas 1964"
+      "bibliography": "Fayos-Pérez, upcoming publication; Fayos-Pérez 2024; Cano Díaz 2022; Lanzarote Guiral 2016; Salas 1964"
     },
     {
       "from": "Eugène Delacroix",
@@ -10701,8 +10704,8 @@
       "collaborations": "Manet made <i>Fleur exotique</i> (1868), a print inspired by Goya, for a sonnet by Armand Renaud, published by Burty, [Metropolitan 64.649.1](https://www.metmuseum.org/art/collection/search/337433)]",
       "collection": "the Metropolitan Museum holds several prints by Manet from the Burty collection, such as <i>Dead Christ with Angels</i> (1866-67) [70.588](https://www.metmuseum.org/art/collection/search/844693), <i>The Infanta Margarita, after Velázquez</i> (1861-62) [NMG 310/1924](https://www.metmuseum.org/art/collection/search/851751), <i>Charles Baudelaire, Full Face, after Nadar, III</i> (1869) [NMG 313/1924](https://www.metmuseum.org/art/collection/search/857998), <i>Plainte Moresque (Moorish Lament)</i> (1866), <i>Monsieur Manet (The Artist's Father) I</i> (1860), <i>Hat and Guitar, Frontispiece for an Edition of Fourteen Etchings</i> (1862-63). A substantial part of Burty's collection of Manet's prints was acquired by Edgar Degas (with the help of Michel Manzi)",
       "interactions": "1880 Burty had Japanese artist Watanabe Seitei working at his place, where he was observed by Degas and Manet.",
-      "mentions": "Burty wrote in the <i>Gazette des Beaux-arts</i> that Manet's print <i>Gitanos</i> (Gipsies) (1862) gave the impression of 'seeking out Goya, at least in its general appearance' (1863) (Fayos Pérez 2024, p.188).",
-      "bibliography": "Fayos Pérez 2024"
+      "mentions": "Burty wrote in the <i>Gazette des Beaux-arts</i> that Manet's print <i>Gitanos</i> (Gipsies) (1862) gave the impression of 'seeking out Goya, at least in its general appearance' (1863) (Fayos-Pérez 2024, p.188).",
+      "bibliography": "Fayos-Pérez 2024"
     },
     {
       "from": "Edgar Degas",
@@ -10749,8 +10752,8 @@
       "to": "Francisco de Goya",
       "connection_level": "seconary",
       "relationship type": "Degas admired Goya and copied his works at the BnF",
-      "link to Goya's work": "the Degas collection included a Delacroix drawing after Goya (D21 and possibly D38 in Fayos Pérez 2024, pp.433 and 467)",
-      "bibliography": "Fayos Pérez 2024; Dumas et al. 1997"
+      "link to Goya's work": "the Degas collection included a Delacroix drawing after Goya (D21 and possibly D38 in Fayos-Pérez 2024, pp.433 and 467)",
+      "bibliography": "Fayos-Pérez 2024; Dumas et al. 1997"
     },
     {
       "from": "Edgar Degas",
@@ -10798,7 +10801,7 @@
       ],
       "exhibitions": "<i>Manet/Degas</i>, 2023, Metropolitan: [artworks](https://www.metmuseum.org/exhibitions/manet-degas/exhibition-objects)",
       "collection": "Degas acquired 3 artworks by Édouard Manet in 1884, as well as <i>Woman with a Cigarette</i> (c.1878-80) in 1896.",
-      "bibliography": "Fayos Pérez 2024; Wolohojian & Dunn 2023; Reff 2020, <i>The Letters of Edgar Degas</i>; Patry 2019, <i>Berthe Morisot</i>; Rodary 2014, <i>Correspondance du Siège de Paris</i>; Gordon and Forge 1988; Rouart 1959, <i>The Correspondence of Berthe Morisot</i>; Rivière 1921, <i>Renoir et ses amis</i>; A. Proust 1913, <i>Edouard Manet. Souvenirs</i>; Moore 1911, <i>Hail and Farewell!</i>; Halévy 1960, <i>Degas parle</i>.",
+      "bibliography": "Fayos-Pérez 2024; Wolohojian & Dunn 2023; Reff 2020, <i>The Letters of Edgar Degas</i>; Patry 2019, <i>Berthe Morisot</i>; Rodary 2014, <i>Correspondance du Siège de Paris</i>; Gordon and Forge 1988; Rouart 1959, <i>The Correspondence of Berthe Morisot</i>; Rivière 1921, <i>Renoir et ses amis</i>; A. Proust 1913, <i>Edouard Manet. Souvenirs</i>; Moore 1911, <i>Hail and Farewell!</i>; Halévy 1960, <i>Degas parle</i>.",
       "last_modified": "2025-08-19",
       "strength": 2
     },
@@ -10863,17 +10866,17 @@
       "relationship type": "acquaintances",
       "mentions": "at the Salon of 1870, Gautier praises Regnault's <i>Juan Prim. 8 octobre 1868</i> (1869, Orsay) and <i>Salomé</i> (1870, Metropolitan): '<i>Prim</i> c'est toute l'Espagne, <i>Salomé</i> c'est tout l'Orient'",
       "link to Goya's work": [
-        "In 1870-71, Gautier wants to see Philippe Burty's working-proof set of <i>Disasters of War</i>, probably to write his necrological piece on Regnault. Asselineau to Burty: 'Gautier has the pressing need to re-examine the <i>Disasters of War</i> (Goya's invasion) whose copper plates were brought back by Dauzats [Adrien Dauzats]' (Fayos Pérez 2024, p.54; Delesalle 1983, p.104).",
-        "2 February 1871, 'Henri Regnault', <i>Journal Officiel de la République Française</i>, 33, pp.65-66: Gautier tells about a meeting with Regnault where they talked about Goya and they looked at Burty's working-proof set of <i>Disasters of War</i>. Gautier's piece becomes focused on describing different plates from the series. 'La conversation s'engagea. On parla de l'Espagne et du Maroc. […] Après divers détours, la conversation en vint sur Goya. Nous avions précisément à la maison un superbe exemplaire des <i>Estragos y desastres de la guerra</i>, que nous avait prêté Ph. Burty, qui possède toutes les belles choses dans le meilleur état' (Fayos Pérez 2024, Appendix III, p.371). Gautier's piece on Regnault was then included in <i>Tableaux de siège. Paris, 1870-1871</i>, 1871."
+        "In 1870-71, Gautier wants to see Philippe Burty's working-proof set of <i>Disasters of War</i>, probably to write his necrological piece on Regnault. Asselineau to Burty: 'Gautier has the pressing need to re-examine the <i>Disasters of War</i> (Goya's invasion) whose copper plates were brought back by Dauzats [Adrien Dauzats]' (Fayos-Pérez 2024, p.54; Delesalle 1983, p.104).",
+        "2 February 1871, 'Henri Regnault', <i>Journal Officiel de la République Française</i>, 33, pp.65-66: Gautier tells about a meeting with Regnault where they talked about Goya and they looked at Burty's working-proof set of <i>Disasters of War</i>. Gautier's piece becomes focused on describing different plates from the series. 'La conversation s'engagea. On parla de l'Espagne et du Maroc. […] Après divers détours, la conversation en vint sur Goya. Nous avions précisément à la maison un superbe exemplaire des <i>Estragos y desastres de la guerra</i>, que nous avait prêté Ph. Burty, qui possède toutes les belles choses dans le meilleur état' (Fayos-Pérez 2024, Appendix III, p.371). Gautier's piece on Regnault was then included in <i>Tableaux de siège. Paris, 1870-1871</i>, 1871."
       ],
-      "bibliography": "Fayos Pérez 2024; Delesalle 1982"
+      "bibliography": "Fayos-Pérez 2024; Delesalle 1982"
     },
     {
       "from": "Henri Regnault",
       "to": "Philippe Burty",
       "connection_level": "secondary?",
-      "link to Goya's work": "in 1870-71, Gautier wants to see Burty's working-proof set of <i>Disasters of War</i>, probably to write his necrological piece on Regnault. Asselineau to Burty: 'Gautier has the pressing need to re-examine the <i>Disasters of War</i> (Goya's invasion) whose copper plates were brought back by Dauzats' (Fayos Pérez 2024, p.54; Delesalle 1983, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle 1982"
+      "link to Goya's work": "in 1870-71, Gautier wants to see Burty's working-proof set of <i>Disasters of War</i>, probably to write his necrological piece on Regnault. Asselineau to Burty: 'Gautier has the pressing need to re-examine the <i>Disasters of War</i> (Goya's invasion) whose copper plates were brought back by Dauzats' (Fayos-Pérez 2024, p.54; Delesalle 1983, p.104)",
+      "bibliography": "Fayos-Pérez 2024; Delesalle 1982"
     },
     {
       "from": "Henri Regnault",
@@ -10886,8 +10889,8 @@
       "from": "Henri Regnault",
       "to": "Francisco de Goya",
       "connection_level": "secondary",
-      "link to Goya's work": "2 February 1871, 'Henri Regnault', <i>Journal Officiel de la République Française</i>, 33, pp.65-66: Théophile Gautier tells about a meeting with Regnault where they talked about Goya and they looked at Burty's working-proof set of <i>Disasters of War</i>. Gautier's piece becomes focused on describing different plates from the series. 'La conversation s'engagea. On parla de l'Espagne et du Maroc. […] Après divers détours, la conversation en vint sur Goya. Nous avions précisément à la maison un superbe exemplaire des Estragos y desastres de la guerra, que nous avait prêté Ph. Burty, qui possède toutes les belles choses 'dans le meilleur état' (Fayos Pérez 2024, Appendix III, p.371)",
-      "bibliography": "Fayos Pérez 2024; Delesalle 1982"
+      "link to Goya's work": "2 February 1871, 'Henri Regnault', <i>Journal Officiel de la République Française</i>, 33, pp.65-66: Théophile Gautier tells about a meeting with Regnault where they talked about Goya and they looked at Burty's working-proof set of <i>Disasters of War</i>. Gautier's piece becomes focused on describing different plates from the series. 'La conversation s'engagea. On parla de l'Espagne et du Maroc. […] Après divers détours, la conversation en vint sur Goya. Nous avions précisément à la maison un superbe exemplaire des Estragos y desastres de la guerra, que nous avait prêté Ph. Burty, qui possède toutes les belles choses 'dans le meilleur état' (Fayos-Pérez 2024, Appendix III, p.371)",
+      "bibliography": "Fayos-Pérez 2024; Delesalle 1982"
     },
     {
       "from": "Charles Baudelaire",
@@ -10953,31 +10956,31 @@
       "to": "Charles Asselineau",
       "connection_level": "direct",
       "relationship type": "acquaintances; friends?",
-      "correspondence": "Asselineau to Philippe Burty: 'Mon cher Burty, Gautier [Théophile Gautier] a l'impérieux besoin de revoir les <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) dont les cuivres ont été rapportés par Dauzats [Adrien Dauzats]. Sous quelle forme pourriez-vous les lui communiquer pendant quelques heures ? Votre Charles Asselineau. À jeudi, Gautier demeure 12 rue de Beaune' [Sept 1870-March 1871]. Théophile Gautier probably wanted to look at the <i>Disasters of War</i> in order to write his nechrological piece on Henri Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104).",
-      "bibliography": "Fayos Pérez 2024; Delesalle 1982 & 1983"
+      "correspondence": "Asselineau to Philippe Burty: 'Mon cher Burty, Gautier [Théophile Gautier] a l'impérieux besoin de revoir les <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) dont les cuivres ont été rapportés par Dauzats [Adrien Dauzats]. Sous quelle forme pourriez-vous les lui communiquer pendant quelques heures ? Votre Charles Asselineau. À jeudi, Gautier demeure 12 rue de Beaune' [Sept 1870-March 1871]. Théophile Gautier probably wanted to look at the <i>Disasters of War</i> in order to write his nechrological piece on Henri Regnault (Fayos-Pérez 2024, p.54; Delesalle 1982, p.104).",
+      "bibliography": "Fayos-Pérez 2024; Delesalle 1982 & 1983"
     },
     {
       "from": "Adrien Dauzats",
       "to": "Charles Asselineau",
       "connection_level": "secondary?",
       "relationship type": "acquaintances?",
-      "link to Goya's work": "Asselineau to Philippe Burty: 'Mon cher Burty, Gautier [Théophile Gautier] a l'impérieux besoin de revoir les <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) dont les cuivres ont été rapportés par Dauzats. Sous quelle forme pourriez-vous les lui communiquer pendant quelques heures ? Votre Charles Asselineau. À jeudi, Gautier demeure 12 rue de Beaune' [Sept 1870-March 1871]. Théophile Gautier probably wanted to look at the <i>Disasters of War</i> in order to write his nechrological piece on Henri Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle 1982 & 1983"
+      "link to Goya's work": "Asselineau to Philippe Burty: 'Mon cher Burty, Gautier [Théophile Gautier] a l'impérieux besoin de revoir les <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) dont les cuivres ont été rapportés par Dauzats. Sous quelle forme pourriez-vous les lui communiquer pendant quelques heures ? Votre Charles Asselineau. À jeudi, Gautier demeure 12 rue de Beaune' [Sept 1870-March 1871]. Théophile Gautier probably wanted to look at the <i>Disasters of War</i> in order to write his nechrological piece on Henri Regnault (Fayos-Pérez 2024, p.54; Delesalle 1982, p.104)",
+      "bibliography": "Fayos-Pérez 2024; Delesalle 1982 & 1983"
     },
     {
       "from": "Théophile Gautier",
       "to": "Charles Asselineau",
       "connection_level": "direct",
       "relationship type": "acquaintances; friends?",
-      "link to Goya's work": "Asselineau to Philippe Burty: 'Mon cher Burty, Gautier [Théophile Gautier] a l'impérieux besoin de revoir les <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) dont les cuivres ont été rapportés par Dauzats [Adrien Dauzats]. Sous quelle forme pourriez-vous les lui communiquer pendant quelques heures ? Votre Charles Asselineau. À jeudi, Gautier demeure 12 rue de Beaune' [Sept 1870-March 1871]. Théophile Gautier probably wanted to look at the <i>Disasters of War</i> in order to write his nechrological piece on Henri Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle 1982 & 1983"
+      "link to Goya's work": "Asselineau to Philippe Burty: 'Mon cher Burty, Gautier [Théophile Gautier] a l'impérieux besoin de revoir les <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) dont les cuivres ont été rapportés par Dauzats [Adrien Dauzats]. Sous quelle forme pourriez-vous les lui communiquer pendant quelques heures ? Votre Charles Asselineau. À jeudi, Gautier demeure 12 rue de Beaune' [Sept 1870-March 1871]. Théophile Gautier probably wanted to look at the <i>Disasters of War</i> in order to write his nechrological piece on Henri Regnault (Fayos-Pérez 2024, p.54; Delesalle 1982, p.104)",
+      "bibliography": "Fayos-Pérez 2024; Delesalle 1982 & 1983"
     },
     {
       "from": "Francisco de Goya",
       "to": "Charles Asselineau",
       "connection_level": "secondary",
-      "link to Goya's work": "Asselineau to Philippe Burty: 'Mon cher Burty, Gautier [Théophile Gautier] a l'impérieux besoin de revoir les <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) dont les cuivres ont été rapportés par Dauzats [Adrien Dauzats]. Sous quelle forme pourriez-vous les lui communiquer pendant quelques heures ? Votre Charles Asselineau. À jeudi, Gautier demeure 12 rue de Beaune' [Sept 1870-March 1871]. Théophile Gautier probably wanted to look at the <i>Disasters of War</i> in order to write his nechrological piece on Henri Regnault (Fayos Pérez 2024, p.54; Delesalle 1982, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle 1982 & 1983"
+      "link to Goya's work": "Asselineau to Philippe Burty: 'Mon cher Burty, Gautier [Théophile Gautier] a l'impérieux besoin de revoir les <i>Malheurs de la guerre</i> (<i>l'invansion</i> de Goya) dont les cuivres ont été rapportés par Dauzats [Adrien Dauzats]. Sous quelle forme pourriez-vous les lui communiquer pendant quelques heures ? Votre Charles Asselineau. À jeudi, Gautier demeure 12 rue de Beaune' [Sept 1870-March 1871]. Théophile Gautier probably wanted to look at the <i>Disasters of War</i> in order to write his nechrological piece on Henri Regnault (Fayos-Pérez 2024, p.54; Delesalle 1982, p.104)",
+      "bibliography": "Fayos-Pérez 2024; Delesalle 1982 & 1983"
     },
     {
       "from": "Philippe Burty",
@@ -10993,8 +10996,8 @@
       "relationship type": "colleagues",
       "they met": "on 12 November 1859, Carderera shows Bracquemond some Goya drawings: 'I ran into the engraver who etched my drawing of Don Quixote. I showed him the rest' (Lanzarote Guiral 2016, p.430)",
       "link to Goya's work": "in order to copy Goya's drawing (<i>Don Quixote</i>) for the article, Bracquemond must have seen this work from Carderera's collection in Paris prior to 1860.",
-      "collaborations": "Bracquemond made a print after Goya to illustrate Carderera's first article in the <i>Gazette des Beaux-arts</i> in 1860: <i>Don Quixote</i> after drawing F.54 (Fayos Pérez 2024, pp. 43, 164, fig.II.42)",
-      "bibliography": "Fayos Pérez 2024; Lanzarote Guiral 2016"
+      "collaborations": "Bracquemond made a print after Goya to illustrate Carderera's first article in the <i>Gazette des Beaux-arts</i> in 1860: <i>Don Quixote</i> after drawing F.54 (Fayos-Pérez 2024, pp. 43, 164, fig.II.42)",
+      "bibliography": "Fayos-Pérez 2024; Lanzarote Guiral 2016"
     },
     {
       "from": "Valentín Carderera",
@@ -11002,8 +11005,8 @@
       "connection_level": "direct?",
       "relationship type": "acquaintances; colleagues",
       "link to Goya's work": "in order to copy Goya's drawing (<i>Scène espagnole</i>) for the article, Jacquemart must have seen this work from Carderera's collection in Paris prior to 1863.",
-      "collaborations": "in 1863, Jacquemart made an illustration for Carderera's 2nd article in the <i>Gazette des beaux-arts</i>: <i>Scène espagnole</i> (Fayos Pérez 2024, fig.II.44); re-printed 1 July 1870. This print is either a pastiche after <i>Capricho</i> 17, 'Bien tirada está<>/i>, or a print after a lost drawing from the Carderera collection; it is mentioned by Gustave Brunet in his 1865 book.",
-      "bibliography": "Fayos Pérez 2024; Lanzarote Guiral 2016"
+      "collaborations": "in 1863, Jacquemart made an illustration for Carderera's 2nd article in the <i>Gazette des beaux-arts</i>: <i>Scène espagnole</i> (Fayos-Pérez 2024, fig.II.44); re-printed 1 July 1870. This print is either a pastiche after <i>Capricho</i> 17, 'Bien tirada está<>/i>, or a print after a lost drawing from the Carderera collection; it is mentioned by Gustave Brunet in his 1865 book.",
+      "bibliography": "Fayos-Pérez 2024; Lanzarote Guiral 2016"
     },
     {
       "from": "Philippe Burty",
@@ -11018,8 +11021,8 @@
       "to": "Félix Bracquemond",
       "connection_level": "secondary",
       "relationship type": "influence",
-      "copies": "Bracquemond made a print after Goya to illustrate Valentín Carderera's first article in the <i>Gazette des Beaux-arts</i> in 1860: <i>Don Quixote</i> after drawing F.54. He knew Goya's drawing via Carderera (Fayos Pérez 2024, p.164, fig.II.41)",
-      "bibliography": "Fayos Pérez 2024; Lanzarote Guiral 2016"
+      "copies": "Bracquemond made a print after Goya to illustrate Valentín Carderera's first article in the <i>Gazette des Beaux-arts</i> in 1860: <i>Don Quixote</i> after drawing F.54. He knew Goya's drawing via Carderera (Fayos-Pérez 2024, p.164, fig.II.41)",
+      "bibliography": "Fayos-Pérez 2024; Lanzarote Guiral 2016"
     },
     {
       "from": "William Stirling-Maxwell",
@@ -11042,7 +11045,7 @@
         "1861, 9 Oct (Paris): Carderera takes a 'package of Goyas for Charles Blanc' to the <i>Gazette</i>'s offices ('omé paquete de goyas para Charles Blanc, que entregué en el <i>bureau</i> de la Gaceta') (LG 2016, p.513)"
       ],
       "link to Goya's work": "Carderera gives/sells Goya prints to Blanc (Paris, 1861).",
-      "bibliography": "Fayos Pérez 2025-2026 (upcoming); Fayos Pérez 2024; Lanzarote Guiral 2016"
+      "bibliography": "Fayos-Pérez, upcoming publication; Fayos-Pérez 2024; Lanzarote Guiral 2016"
     },
     {
       "from": "Valentín Carderera",
@@ -11051,8 +11054,8 @@
       "relationship type": "acquaintances",
       "know each other since": "at least 1842",
       "mentions": "Brunet mentions Carderera in his 1865 Goya book: his Goya collection of prints and drawings and his articles in the <i>Gazette des Beaux-arts</i> (pp.8, 9, 13-15, 20-25, 27, 28, 30, 62, 63).",
-      "shared": "correspondence. 1863-XI-5 (Carderera archive): mentions Goya's <i>Caprichos</i>, <i>Tauromaquia</i>, 'Scènes d'invasion' (<i>Disasters of War</i>) and 'Sueños o Proverbios' (<i>Disparates</i>) (Fayos Pérez 2020, pp.1052-53, 1055)",
-      "bibliography": "Fayos Pérez 2020; Brunet 1865",
+      "shared": "correspondence. 1863-XI-5 (Carderera archive): mentions Goya's <i>Caprichos</i>, <i>Tauromaquia</i>, 'Scènes d'invasion' (<i>Disasters of War</i>) and 'Sueños o Proverbios' (<i>Disparates</i>) (Fayos-Pérez 2020, pp.1052-53, 1055)",
+      "bibliography": "Fayos-Pérez 2020; Brunet 1865",
       "strength": 3
     },
     {
@@ -11206,8 +11209,8 @@
       "from": "Paul Lefort",
       "to": "Eugène Dutuit",
       "connection_level": "secondary?",
-      "relationship type": "Dutuit might have acquired a 1st-edition <i>Tauromaquia</i> from the Lefort sale (28-29 Jan 1869, lot 411) (Fayos Pérez 2024)",
-      "bibliography": "Fayos Pérez 2024"
+      "relationship type": "Dutuit might have acquired a 1st-edition <i>Tauromaquia</i> from the Lefort sale (28-29 Jan 1869, lot 411) (Fayos-Pérez 2024)",
+      "bibliography": "Fayos-Pérez 2024"
     },
     {
       "from": "Charles Blanc",
@@ -11228,7 +11231,7 @@
       "collaborations": "in the <i>Gazette des Beaux-arts</i> (see Correspondence 1866-69, BNE)",
       "correspondence": "at least 1866-1869",
       "archives": "BNE, MSS/23291/74: 9 letters from Lefort and a sketch from Carderera referring to their collaboration in the <i>Gazette des Beaux-arts</i>. See Cano Díaz 2022, p.260",
-      "bibliography": "Fayos Pérez c.2026 (upcoming); Cano Díaz 2022"
+      "bibliography": "Fayos-Pérez, upcoming publication; Cano Díaz 2022"
     },
     {
       "from": "Valentín Carderera",
@@ -11240,7 +11243,7 @@
       "they met": "22 Nov 1842 (diary): Carderera reviews with Piot his notes on Goya (Lanzarote Guiral 2016, p.167); 24 Sept 1855: Carderera visits Piot's house (ibid. p.565); 13 July 1861 Carderera shows Piot his drawings and Goyas'; 2 Aug 1861 Carderera gives Piot the copies explanation of Goya (Prado commentaries) (ibid. p.454, 462; they also meet other times 1861: pp.453, 459, 464)",
       "collaborations": "Carderera helped Piot with his Goya catalogue raisonné (1842), as well as Gautier. Piot most likely discovered Goya's <i>Disasters of War</i> around that time through Carderera",
       "mentions": "Piot mentions Carderera and Agustín Ceán Bermúdez in his catalogue raisonné 1842 (p.346)",
-      "bibliography": "Fayos Pérez 2024; Lanzarote Guiral 2016; Bonnaffé 1890"
+      "bibliography": "Fayos-Pérez 2024; Lanzarote Guiral 2016; Bonnaffé 1890"
     },
     {
       "from": "Valentín Carderera",
@@ -11538,8 +11541,8 @@
       "relationship type": "colleagues; friends; business partners (print dealers)",
       "know each other since": "at least 1855",
       "interactions": "c.1855-59 they met sometimes on a daily basis (in Paris), often to work together. Carderera gave more works by Goya to Carresse than to anybody else (as mentioned in his diary). In Carresse's 1857 letter, Carderera wrote in the heading that he gave Carresse 'objects' in return for him looking for a good lithographer for the <i>Iconografía Española</i> (1855-64). These 'objects' were probably prints and drawings by Carderera himself as well as by Goya.",
-      "correspondence": "1857, 21 June (Carderera archive): Carresse thanks Carderera for the Goya prints he has sent him and mentions a forthcoming exchange of Goya's <i>Toros</i> (<i>Bulls of Bordeaux</i> 1825, or <i>Tauromaquia</i> 1816), which he would have to show to potential buyers (<i>les faire voir</i> and establish a price, so Carresse was acting as Carderera's dealer or intermediary, selling and exchanging works from his collection in Paris and helping him to find buyers (Fayos Pérez 2020, pp.1051-53).",
-      "bibliography": "Fayos Pérez 2024; Fayos Pérez 2020; Lanzarote Guiral 2016"
+      "correspondence": "1857, 21 June (Carderera archive): Carresse thanks Carderera for the Goya prints he has sent him and mentions a forthcoming exchange of Goya's <i>Toros</i> (<i>Bulls of Bordeaux</i> 1825, or <i>Tauromaquia</i> 1816), which he would have to show to potential buyers (<i>les faire voir</i> and establish a price, so Carresse was acting as Carderera's dealer or intermediary, selling and exchanging works from his collection in Paris and helping him to find buyers (Fayos-Pérez 2020, pp.1051-53).",
+      "bibliography": "Fayos-Pérez 2024; Fayos-Pérez 2020; Lanzarote Guiral 2016"
     },
     {
       "from": "Valentín Carderera",
@@ -11572,8 +11575,8 @@
       "from": "Charles Yriarte",
       "to": "Gustave Doré",
       "connection_level": "secondary?",
-      "mentions": "Yriarte writes: 'Et ce démon qui s'appelle Goya, que j'aimais sans le connaître, seulement pour avoir vu ses Caprices [...]. Quel décor! G. Doré, j'ai pensé à vos contes drolatiques, à votre <i>Rabelais</i>, à votre <i>Juif errant</i>. J'ai pensé aussi à ces grands dessins fantastiques que Victor Hugo faisait avec la même plume qui lui servait à écrire <i>Notre-Dame de Paris</i>' (21 April 1860, 'Correspondance particulière', <i>Le Monde Illustré</i>, pp.265-66; quoted in Fayos Pérez 2024, Appendix II, 1860).",
-      "bibliography": "Fayos Pérez 2024"
+      "mentions": "Yriarte writes: 'Et ce démon qui s'appelle Goya, que j'aimais sans le connaître, seulement pour avoir vu ses Caprices [...]. Quel décor! G. Doré, j'ai pensé à vos contes drolatiques, à votre <i>Rabelais</i>, à votre <i>Juif errant</i>. J'ai pensé aussi à ces grands dessins fantastiques que Victor Hugo faisait avec la même plume qui lui servait à écrire <i>Notre-Dame de Paris</i>' (21 April 1860, 'Correspondance particulière', <i>Le Monde Illustré</i>, pp.265-66; quoted in Fayos-Pérez 2024, Appendix II, 1860).",
+      "bibliography": "Fayos-Pérez 2024"
     },
     {
       "from": "J. J. Grandville",
@@ -11585,12 +11588,12 @@
       "from": "Théophile Gautier",
       "to": "Charles Yriarte",
       "connection_level": "secondary",
-      "mentions": "Gautier writes a review of Yriarte's 1867 book on Goya: 'Goya, par Charles Yriarte', <i>Le Monde Illustré</i>, 27 April 1867, pp.261-62 (see Fayos Pérez 2024, Appendix II)",
+      "mentions": "Gautier writes a review of Yriarte's 1867 book on Goya: 'Goya, par Charles Yriarte', <i>Le Monde Illustré</i>, 27 April 1867, pp.261-62 (see Fayos-Pérez 2024, Appendix II)",
       "correspondence": [
         "1864, 15 June: 'Mon bon ami, La Reine vient de me nommer par décret du 13 juin <i>Commandeur avec plaque de l'ordre Royal d'Isabelle la Catholique</i>. Je ne sais vos usages. Insère-t-on cela ? Si cela se peut, faites, et merci. [...]' (Lacoste-Veysseyre 1993, t.8, p.317)",
         ""
       ],
-      "bibliography": "Fayos Pérez 2024; Lacoste-Veysseyre, <i>Correspondance générale</i>, t.8, 1993"
+      "bibliography": "Fayos-Pérez 2024; Lacoste-Veysseyre, <i>Correspondance générale</i>, t.8, 1993"
     },
     {
       "from": "Édouard Manet",
@@ -11604,7 +11607,7 @@
       "to": "Charles Yriarte",
       "connection_level": "secondary",
       "mentions": "Yriarte writes a review of Brunet's 1865 book on Goya. He is disappointed at the fact that Brunet only wrote about Goya's prints",
-      "bibliography": "Fayos Pérez 2024, Appendix II"
+      "bibliography": "Fayos-Pérez 2024, Appendix II"
     },
     {
       "from": "Édouard Manet",
@@ -11660,7 +11663,7 @@
       "know each other since": "at least 1835",
       "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Pedro de Madrazo, Pascual de Gayangos y Arce, Vicente Masarnau and Santiago Masarnau",
       "collaborations": "Carderera published his first article on Goya in 1835 in <i>El Artista</i>, founded by Federico de Madrazo, Pedro de Madrazo and Eugenio Ochoa.",
-      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez, upcoming publication).",
       "they met": [
         "On many occasions. Some of them are:",
         "1855 (Paris): 5, 9, 16, 19, 21 and 29 September, 11, 17, 19 October, 11 and 27 November.",
@@ -11710,7 +11713,7 @@
       "to": "Francisco de Goya",
       "connection_level": "secondary",
       "relationship type": "writes bout Goya; collector of his prints and drawings; acts as intermediary to buy/sell his works; disseminates Goya's prints and drawings in France from the 1830s",
-      "bibliography": "Fayos Pérez 2020; Lanzarote Guiral 2016."
+      "bibliography": "Fayos-Pérez 2020; Lanzarote Guiral 2016."
     },
     {
       "from": "José de Madrazo",
@@ -11984,8 +11987,8 @@
       "know each other since": "at least 1837?",
       "correspondence": "1847 Delacroix to Gautier: mention of 'eight small Goyas' of bullfighting at Mauroner's gallery on 35 rue Laffitte. Adrien Dauzats mentions a Spanish painter and restorer called Bueno, who had brought the alleged Goyas from Madrid",
       "mentions": "24 Sept 1837, Gautier mentions Dauzats and Taylor in an article about the Galerie espagnole (<i>La Presse</i>, pp.1-2)",
-      "link to Goya's work": "in 1871, Gautier wants to see Burty's working-proof set of <i>Disasters of War</i> (Gautier knew this series at least since 1842). Asselineau to Burty: 'Gautier has the pressing need to re-examine the <i>Disasters of War</i> (Goya's invasion) whose copper plates were brought back by Dauzats' (Fayos Pérez 2024, p.54; Delesalle 1983, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle 1983"
+      "link to Goya's work": "in 1871, Gautier wants to see Burty's working-proof set of <i>Disasters of War</i> (Gautier knew this series at least since 1842). Asselineau to Burty: 'Gautier has the pressing need to re-examine the <i>Disasters of War</i> (Goya's invasion) whose copper plates were brought back by Dauzats' (Fayos-Pérez 2024, p.54; Delesalle 1983, p.104)",
+      "bibliography": "Fayos-Pérez 2024; Delesalle 1983"
     },
     {
       "from": "Adrien Dauzats",
@@ -12010,7 +12013,7 @@
       "connection_level": "direct",
       "relationship type": "friends",
       "know each other since": "at least 1835",
-      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez 2026, upcoming).",
+      "mentions": "1835-III-24, letter from Federico de Madrazo to Dauzats (in Spanish) (INHA). Dauzats is then in Valencia with Baron Taylor. Madrazo mentions Taylor, Valentín Carderera, Eugenio Ochoa, Santiago Masarnau and Carlos Luis de Ribera (Fayos-Pérez, upcoming publication).",
       "curiosities": "Dauzats introduces Ochoa to Victor Hugo in 1837 (Ochoa 1861, p.199; Romero Tobar 1997, p.222).",
       "bibliography": "Romero Tobar 1997; Ochoa 1861"
     },
@@ -12056,7 +12059,7 @@
       "interactions": "1830 they travel together to Egypt and the Middle East",
       "correspondence": [
         "Long correspondence from 1834 to 1851",
-        "1851 Nov, letter from Dumas to Dauzats: 'Mon cher Dauzats. Prêtez donc pour un jour ou deux votre costume de la femme espagnole à l'Ambigu—Je voudrais le faire faire au théâtre. Vous savez c'est la grand-mère de d'Ossun d'après Goya' (Fayos Pérez 2024, Appendix II; Schopp 1993, p.169: Schopp identifies this work as María Josefa de la Soledad, Countess of Benavente, Duchess of Osuna, c.1785)."
+        "1851 Nov, letter from Dumas to Dauzats: 'Mon cher Dauzats. Prêtez donc pour un jour ou deux votre costume de la femme espagnole à l'Ambigu—Je voudrais le faire faire au théâtre. Vous savez c'est la grand-mère de d'Ossun d'après Goya' (Fayos-Pérez 2024, Appendix II; Schopp 1993, p.169: Schopp identifies this work as María Josefa de la Soledad, Countess of Benavente, Duchess of Osuna, c.1785)."
       ],
       "mentions": "Dumas quotes Dauzats several times in his novels (<i>Le comte de Monte-Cristo</i>; <i>Le capitaine Pamphile</i>)",
       "collaborations": "they co-author <i>Quinze jours au Sinaï</i> (1838)",
@@ -12512,8 +12515,8 @@
       "to": "Charles Baudelaire",
       "connection_level": "direct",
       "relationship type": "friends?, correspondents",
-      "correspondence": "May? 1864, Baudelaire to Thoré: 'M. Manet, que l'on croit fou et enragé, est simplement un homme très loyal, très simple, faisant tout ce qu'il peut pour être raisonnable, mais malheureusement marqué de romantisme depuis sa naissance. Le mot pastiche n'est pas juste. M. Manet n'a jamais vu de Goya; M. Manet n'a jamais vu de Gréco; M. Manet n'a jamais vu la galerie Pourtalès. Cela vous paraît incroyable, mais cela est vrai. Moi-même, j'ai admiré, avec stupéfaction, ces mystérieuses coïncidences. […] On lui a tant parlé de ses pastiches de Goya que, maintenant, il cherche à voir des Goya. Il est vrai qu'il a vu des Velasquez, je ne sais où' (see Baudelaire 1906, pp.361-62; Fayos Pérez 2024)",
-      "bibliography": "Fayos Pérez 2024, Appendix II; Baudelaire 1906"
+      "correspondence": "May? 1864, Baudelaire to Thoré: 'M. Manet, que l'on croit fou et enragé, est simplement un homme très loyal, très simple, faisant tout ce qu'il peut pour être raisonnable, mais malheureusement marqué de romantisme depuis sa naissance. Le mot pastiche n'est pas juste. M. Manet n'a jamais vu de Goya; M. Manet n'a jamais vu de Gréco; M. Manet n'a jamais vu la galerie Pourtalès. Cela vous paraît incroyable, mais cela est vrai. Moi-même, j'ai admiré, avec stupéfaction, ces mystérieuses coïncidences. […] On lui a tant parlé de ses pastiches de Goya que, maintenant, il cherche à voir des Goya. Il est vrai qu'il a vu des Velasquez, je ne sais où' (see Baudelaire 1906, pp.361-62; Fayos-Pérez 2024)",
+      "bibliography": "Fayos-Pérez 2024, Appendix II; Baudelaire 1906"
     },
     {
       "from": "Théophile Gautier",
@@ -12629,17 +12632,17 @@
       "from": "Eugène Dutuit",
       "to": "Giandomenico Tiepolo",
       "connection_level": "secondary",
-      "relationship type": "Dutuit acquired a print by Goya after Velázquez (<i>Las Meninas</i>) in the Tiepolo sale (Paris, 10-12 Nov 1845) (Fayos Pérez 2024)",
-      "bibliography": "Fayos Pérez 2024"
+      "relationship type": "Dutuit acquired a print by Goya after Velázquez (<i>Las Meninas</i>) in the Tiepolo sale (Paris, 10-12 Nov 1845) (Fayos-Pérez 2024)",
+      "bibliography": "Fayos-Pérez 2024"
     },
     {
       "from": "Eugène Dutuit",
       "to": "Eugène Piot",
       "connection_level": "direct",
       "relationship type": "acquaintances; colleagues?",
-      "link to Goya's work": "Dutuit acquired Goya's print after Velázquez (<i>Las Meninas</i>) because he had read about it in Piot's 1842 catalogue raisonné (Fayos Pérez 2024; Los Llanos & Assante di Panzillo 2008, p.152)",
+      "link to Goya's work": "Dutuit acquired Goya's print after Velázquez (<i>Las Meninas</i>) because he had read about it in Piot's 1842 catalogue raisonné (Fayos-Pérez 2024; Los Llanos & Assante di Panzillo 2008, p.152)",
       "correspondence": "23 and 24-X-1885 Dutuit to Piot (Snr-1 Piot) (Raineau-Lehuédé 2025)",
-      "bibliography": "Raineau-Lehuédé 2025; Fayos Pérez 2024; Los Llanos & Assante di Panzillo 2008"
+      "bibliography": "Raineau-Lehuédé 2025; Fayos-Pérez 2024; Los Llanos & Assante di Panzillo 2008"
     },
     {
       "from": "Eugène Dutuit",
@@ -12774,10 +12777,10 @@
       "correspondence": "1835-V-11 Boulanger to Hugo (Maison Victor Hugo)",
       "collaborations": "Boulanger illustrates <i>Les orientales</i> (1829): 'Les Fantômes'",
       "mentions": "in poem no.28 from <i>Feuilles d'Automne</i> (1830) mentioning Goya (<i>Buen viage! -GOYA-</i>), Hugo wrote the dedication 'À mes amis S.-B. et L.B', which probably are Charles-Augustin Sainte-Beuve and Louis Boulanger.",
-      "link to Goya's work": "Hugo might have discovered the <i>Caprichos</i> via Boulanger c.1828-1829 (Fayos Pérez 2024, p.126).",
+      "link to Goya's work": "Hugo might have discovered the <i>Caprichos</i> via Boulanger c.1828-1829 (Fayos-Pérez 2024, p.126).",
       "they shared": "Boulanger was part of Hugo's <i>Cénacle</i>",
       "portraits": "Boulanger made at least 2 portraits of Hugo: 1837, drawing (Paris, Bibliothèque polonaise), and 1839, oil painting (Paris, Maison Victor Hugo). Boulanger also portrayed <i>Léopoldine Hugo à l'âge de 4 ans</i> (1827, Saint-Pierre-Port, Hauteville House), <i>Madame Hugo</i> (1837, Maison Victor Hugo), <i>Léopoldine Hugo à 13 ans</i> (1837, Villequier, Musée Victor Hugo).",
-      "bibliography": "Fayos Pérez 2024; Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23"
+      "bibliography": "Fayos-Pérez 2024; Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23"
     },
     {
       "from": "Charles-Augustin Sainte-Beuve",
@@ -12905,7 +12908,7 @@
       "connection_level": "direct",
       "relationship type": "acquaintances",
       "know each other since": "at least 1831",
-      "link to Goya's work": "Upon his return from Spain in January 1831, Fontaney shows his <i>Caprichos</i> set in the Arsenal (Nodier's salon), 8 Sept 1831, to artists such as Gautier (Fayos Pérez 2024, p.41)"
+      "link to Goya's work": "Upon his return from Spain in January 1831, Fontaney shows his <i>Caprichos</i> set in the Arsenal (Nodier's salon), 8 Sept 1831, to artists such as Gautier (Fayos-Pérez 2024, p.41)"
     },
     {
       "from": "Antoine Fontaney",
@@ -13377,8 +13380,8 @@
       "to": "Philippe Burty",
       "connection_level": "direct",
       "relationship type": "acquaintances",
-      "link to Goya's work": "by 1871: Gautier saw Burty's working proofs of <i>Disasters of War</i>. Asselineau to Burty: 'Gautier has the pressing need to re-examine the Disasters of War (Goya's invasion) whose copper plates were brought back by Dauzats' (Fayos Pérez 2024, p.54; Delesalle 1983, p.104)",
-      "bibliography": "Fayos Pérez 2024; Delesalle 1983"
+      "link to Goya's work": "by 1871: Gautier saw Burty's working proofs of <i>Disasters of War</i>. Asselineau to Burty: 'Gautier has the pressing need to re-examine the Disasters of War (Goya's invasion) whose copper plates were brought back by Dauzats' (Fayos-Pérez 2024, p.54; Delesalle 1983, p.104)",
+      "bibliography": "Fayos-Pérez 2024; Delesalle 1983"
     },
     {
       "from": "Théophile Gautier",
@@ -13438,9 +13441,9 @@
         "1843, 7 March, letter of Custine to Varnhagen: 'Nos grands esprits sont sur le chemin de la folie: Balzac est fou de la richesse qu'il n'a pas [...]]' (Merzbach 1870, p.445).",
         "1843, 7 Aug, letter of Custine to Varnhagen: 'Vilà Balzac appelé pour me réfuter. Ceci est le commencement d'une guerra; mais je ne compte pas la soutenir: il était dans mon caractère de jeter le premier cri; que d'autres viennent après pour continuer l'attaque: je me contente de les avoir avertis' (Merzbach 1870, p.469)."
       ],
-      "link to Goya's work": "letter from Aug-Sept 1838: Balzac mentions to Custine a 'disparate féminin, qui est masculin' (reference to Goya's <i>Disparates</i>) (Fayos Pérez 2025-2026, upcoming)",
+      "link to Goya's work": "letter from Aug-Sept 1838: Balzac mentions to Custine a 'disparate féminin, qui est masculin' (reference to Goya's <i>Disparates</i>) (Fayos-Pérez, upcoming publication)",
       "websites": "[Wikipedia](https://nl.wikipedia.org/wiki/Astolphe_de_Custine)",
-      "bibliography": "Fayos Pérez 2025-2026 (upcoming); Pierrot & Yon 2011, vol.2; Pierrot & Yon 2006, vol.1; H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870"
+      "bibliography": "Fayos-Pérez, upcoming publication; Pierrot & Yon 2011, vol.2; Pierrot & Yon 2006, vol.1; H. Merzbach (ed.), <i>Lettres du marquis A. de Custine à Varnhagen d'Ense et Rahel Varnhagen d'Ense</i>, 1870"
     },
     {
       "from": "Honoré de Balzac",
@@ -14651,7 +14654,7 @@
       "connection_level": "secondary",
       "relationship type": "Mérimée copied Goya's portrait of the Marchioness of Lazán",
       "mentions": "1847-X-22 letter from Mérimée to Eugenia de Montijo: 'Était-ce le mari de cette belle femme en robe de satin peinte par Goya, dont le portrait est dans votre salon attenant à ma chambre ?' (i.e. Portrait of the Marchioness of Lazán, Palacio de Liria, Madrid) (Canavaggio 2016, p.340)",
-      "bibliography": "Fayos Pérez 2024; Canavaggio 2016"
+      "bibliography": "Fayos-Pérez 2024; Canavaggio 2016"
     },
     {
       "from": "José Álvarez de Toledo, Duke of Alba",
@@ -15007,7 +15010,7 @@
       "from": "J. J. Grandville",
       "to": "Francisco de Goya",
       "connection_level": "secondary",
-      "relationship type": "influenced by Goya (see Fayos Pérez 2024)"
+      "relationship type": "influenced by Goya (see Fayos-Pérez 2024)"
     },
     {
       "from": "J. J. Grandville",
@@ -15072,16 +15075,16 @@
       "to": "Francisco de Goya",
       "connection_level": "secondary",
       "relationship type": "influenced by Goya (see Daumier's node)",
-      "mentions": "Champfleury (1865) compared both artists, stating they shared the 'same interior flame, same political ardour, same improvisation', both passionately fighting against tradition, 'devouring all (its) rules'. Champfleury even found certain 'physiognomic analogies' in the way they depicted the upper lip, 'bourgeois on first sight' and typical of satirists, as in Goya's self-portrait in the <i>Caprichos</i> (Champfleury 1885, p.57; Fayos Pérez 2024, p.133).",
-      "bibliography": "Fayos Pérez 2024; Champfleury 1885"
+      "mentions": "Champfleury (1865) compared both artists, stating they shared the 'same interior flame, same political ardour, same improvisation', both passionately fighting against tradition, 'devouring all (its) rules'. Champfleury even found certain 'physiognomic analogies' in the way they depicted the upper lip, 'bourgeois on first sight' and typical of satirists, as in Goya's self-portrait in the <i>Caprichos</i> (Champfleury 1885, p.57; Fayos-Pérez 2024, p.133).",
+      "bibliography": "Fayos-Pérez 2024; Champfleury 1885"
     },
     {
       "from": "Honoré Daumier",
       "to": "Champfleury",
       "connection_level": "direct?",
       "relationship type": "Champfleury wrote about Daumier",
-      "link to Goya's work": "Champfleury (1865) compared Daumier and Goya, stating they shared the 'same interior flame, same political ardour, same improvisation', both passionately fighting against tradition, 'devouring all (its) rules'. Champfleury even found certain 'physiognomic analogies' in the way they depicted the upper lip, 'bourgeois on first sight' and typical of satirists, as in Goya's self-portrait in the <i>Caprichos</i> (Champfleury 1885, p.57; Fayos Pérez 2024, p.133).",
-      "bibliography": "Fayos Pérez 2024; Champfleury 1885"
+      "link to Goya's work": "Champfleury (1865) compared Daumier and Goya, stating they shared the 'same interior flame, same political ardour, same improvisation', both passionately fighting against tradition, 'devouring all (its) rules'. Champfleury even found certain 'physiognomic analogies' in the way they depicted the upper lip, 'bourgeois on first sight' and typical of satirists, as in Goya's self-portrait in the <i>Caprichos</i> (Champfleury 1885, p.57; Fayos-Pérez 2024, p.133).",
+      "bibliography": "Fayos-Pérez 2024; Champfleury 1885"
     },
     {
       "from": "Victor Hugo",
@@ -15095,7 +15098,7 @@
         "In <i>Rayons et les ombres</i> (1839), Hugo compared Goya's gnomes to Rembrandt's witches and Callot's <i>Temptation of Saint Anthony</i> (1635)."
       ],
       "bibliography": [
-        "Fayos Pérez 2024, p.246.",
+        "Fayos-Pérez 2024, p.246.",
         "Assante di Panzillo 2008, p.107 (Goya's mention in <i>Rayons et les ombres</i>).",
         "Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23",
         "Jean Adhémar & Jacques Lethève, 1958, vol. 10, p.527: they highlight 'his taste for violent contrasts of shadow and light'.",
@@ -15111,9 +15114,9 @@
       "connection_level": "secondary",
       "relationship type": "influenced by Goya, from c.1819",
       "discovers Goya's works": "during his childhood, through Ferdinand Guillemardet (father of his close friends Louis and Félix), who brings to France Goya's portrait (1798) and a set of the <i>Caprichos</i> from Spain c.1800",
-      "copies after Goya": "at least 42 (see Fayos Pérez 2024, Appendix III, Catalogue of Eugène Delacroix's Works after Goya's <i>Caprichos</i>, c.1819-1827)",
+      "copies after Goya": "at least 42 (see Fayos-Pérez 2024, Appendix III, Catalogue of Eugène Delacroix's Works after Goya's <i>Caprichos</i>, c.1819-1827)",
       "artworks influenced by Goya": "among others, the cover of <i>Faust</i> (1828), based on <i>Capricho</i> 66",
-      "bibliography": "Fayos Pérez 2024; Fayos Pérez 2019."
+      "bibliography": "Fayos-Pérez 2024; Fayos-Pérez 2019."
     },
     {
       "from": "Gregorio Cruzada Villaamil",
