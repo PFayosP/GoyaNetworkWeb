@@ -6126,6 +6126,37 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Rico.jpg",
       "image source": "self-portrait, 1908, Prado",
       "added": "2026-05-30"
+    },
+    {
+      "id": "Francisco Lameyer",
+      "full name": "Francisco Lameyer y Berenguer",
+      "label": "Lameyer",
+      "life dates": "1825-1877",
+      "sex": "male",
+      "born in": "El Puerto de Santa María, Cádiz",
+      "died in": "Madrid",
+      "nationality": "Spanish",
+      "profession": "painter; engraver; illustrator",
+      "studies in": "RABASF (from 1841)",
+      "military activity": "officer in the Navy (1843-48); 1849 Italy (Papal States); Philippines (after 1852 until 1860)",
+      "works for": "<i>El Semanario Pintoresco</i>; <i>El Siglo Pintoresco</i>",
+      "participates in": "<i>Los españoles pintados por sí mismos</i> (1843-44).",
+      "friends": "Leonardo Alenza; Federico de Madrazo; Raimundo de Madrazo; Mariano Fortuny y Marsal",
+      "influenced by": [
+      "Francisco de Goya: 'a fervent admirer of Goya' and 'a great painter in the Goyaesque style'; echoes of Goya and Rembrandt in the etching (Prado; Arias Anglés 1988). 'He dabbled somewhat in portraiture and, it is said, produced remarkable copies of Goya of exceptional quality. Goya was his obsession [...]. His drawings and etchings, in which Goya and Rembrandt leave their mark, complete the portrait of an artist of exceptional quality,' 'Goyaesque picturesque style—Alenza, Lameyer, Lucas' (Lafuente Ferrari 1987, pp.454, 482).",
+      "Eugène Delacroix: 'He was also drawn to the influence of Delacroix's Orientalist paintings, whose work he must have been familiar with' (Prado; Arias Anglés 1988). <i>Assault on a Jewish Quarter</i> (c. 1865, Prado) is directly influenced by Delacroix, whose work he may have seen in Paris: 'The exuberance of the color and its exalted style, extremely loose and undone with long, thick, undulating brushstrokes, with tangled lines to heighten the confusion of the figures' frenzied movement, and the use of black to highlight their outlines, as well as the extreme melodramatic theatricality of the gestures, succeed in conveying all the disarray of such a violent scene, illuminated with sharp contrasts to further accentuate its dramatic intensity' (<i>19th-Century Spanish Painting</i>, 1992, p.98); there is a clear influence of <i>The Death of Sardanapalus</i> (1827) and <i>A Jewish Wedding in Morocco</i> (1839). 'In his work there are notable echoes of Delacroix's art, as evidenced by the magnificent painting of fiery execution [...] on a Moroccan theme [...] He also painted a large history painting: The Battle of Uclés under Alfonso VI, and a Boat of Charon, also heavily influenced by Delacroix', 'Delacroix had only a few Spanish echoes [...] in the work of Lameyer' (Lafuente Ferrari 1987, pp.454, 468)."
+      ],
+      "in Paris": "frequent trips. In 1852 he meets Federico de Madrazo",
+      "in France": "Paris 1852; Paris and Bordeaux (shortly before his death)",
+      "trips": "China; Japan; Egypt; Palestine; Morocco (1863): with Mariano Fortuny y Marsal",
+      "author of": "<i>Mendigo de Tánger</i>, <i>Mujeres judías de Tánger</i>, <i>Asalto a un barrio judío</i> (c.1865, Prado), <i>Interior con moros</i> (c.1870, Prado), <i>María Belé Berenguer y Rodríguez</i> (c.1870, Prado), <i>Escena en el desierto</i>, <i>Caravana en el desierto</i>",
+      "works as": "illustrator (Serafín Estébanez Calderón, <i>Escenas andaluzas</i>)",
+      "portraits": "Raimundo de Madrazo, oil on canvas, 1866",
+      "websites": "Prado, [authors](https://www.museodelprado.es/coleccion/artista/francisco-lameyer-y-berenguer/ffc19479-853b-416c-b2d2-548acbbde03a); Prado, [encyclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/lameyer-y-berenguer-francisco/345d3891-c175-480c-b0b2-12017321eabb)",
+      "bibliography": "<i>Pintura española del siglo XIX. Del neoclasicismo al modernismo: obras maestras del Museo del Prado y colecciones españolas</i>, 1992; E. Arias Anglés, <i>Pintura Orientalista Española: 1830-1930</i>, 1988; Lafuente Ferrari 1987; Manuel Ossorio y Bernard, <i>Galería biográfica de artistas españoles del siglo XIX [1883-1884]</i>, 1975, p.362; R. Santos Torroella, <i>Alenza, Lucas, Lameyer</i>, 1971; Félix Boix, <i>Francisco Lameyer. Pintor, dibujante y grabador. 1825-1877: apuntes biográficos y notas acerca de su obra</i>, 1919",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Lameyer.jpg",
+      "image source": "portrait by Raimundo de Madrazo, 1866",
+      "added": "2026-06-06"
     }
   ],
   "edges": [
@@ -6696,6 +6727,45 @@
       "bibliography": "Lanzarote Guiral 2016"
     },
     {
+      "from": "Francisco Lameyer",
+      "to": "Mariano Fortuny y Marsal",
+      "connection_level": "direct",
+      "relationship type": "friends",
+      "they share": "travel together to Morocco in 1863"
+    },
+    {
+      "from": "Francisco Lameyer",
+      "to": "Raimundo de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "friends; portraitist-sitter",
+      "portraits": "portrait of Lameyer, oil on canvas, 1866"
+    },
+    {
+      "from": "Francisco Lameyer",
+      "to": "Federico de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "friends",
+      "they share": "meet in 1852 in Paris"
+    },
+    {
+      "from": "Francisco Lameyer",
+      "to": "Francisco de Goya",
+      "connection_level": "secondary",
+      "relationship type": "artistic influence",
+      "they share": "'a fervent admirer of Goya' and 'a great painter in the Goyaesque style'; echoes of Goya and Rembrandt in the etching (Prado; Arias Anglés 1988). 'He dabbled somewhat in portraiture and, it is said, produced remarkable copies of Goya of exceptional quality. Goya was his obsession [...]. His drawings and etchings, in which Goya and Rembrandt leave their mark, complete the portrait of an artist of exceptional quality,' 'Goyaesque picturesque style—Alenza, Lameyer, Lucas' (Lafuente Ferrari 1987, pp.454, 482).",
+      "websites": "Prado, [autores](https://www.museodelprado.es/coleccion/artista/francisco-lameyer-y-berenguer/ffc19479-853b-416c-b2d2-548acbbde03a); Prado, [enciclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/lameyer-y-berenguer-francisco/345d3891-c175-480c-b0b2-12017321eabb)",
+      "bibliography": "E. Arias Anglés, <i>Pintura Orientalista Española: 1830-1930</i>, 1988; Lafuente Ferrari 1987."
+    },
+    {
+      "from": "Francisco Lameyer",
+      "to": "Eugène Delacroix",
+      "connection_level": "secondary; direct?",
+      "relationship type": "artistic influence",
+      "they share": "'He was also drawn to the influence of Delacroix's Orientalist paintings, whose work he must have been familiar with' (Prado; Arias Anglés 1988). <i>Assault on a Jewish Quarter</i> (c. 1865, Prado) is directly influenced by Delacroix, whose work he may have seen in Paris: 'The exuberance of the color and its exalted style, extremely loose and undone with long, thick, undulating brushstrokes, with tangled lines to heighten the confusion of the figures' frenzied movement, and the use of black to highlight their outlines, as well as the extreme melodramatic theatricality of the gestures, succeed in conveying all the disarray of such a violent scene, illuminated with sharp contrasts to further accentuate its dramatic intensity' (<i>19th-Century Spanish Painting</i>, 1992, p.98); there is a clear influence of <i>The Death of Sardanapalus</i> (1827) and <i>A Jewish Wedding in Morocco</i> (1839). 'In his work there are notable echoes of Delacroix's art, as evidenced by the magnificent painting of fiery execution [...] on a Moroccan theme [...] He also painted a large history painting: The Battle of Uclés under Alfonso VI, and a Boat of Charon, also heavily influenced by Delacroix', 'Delacroix had only a few Spanish echoes [...] in the work of Lameyer' (Lafuente Ferrari 1987, pp.454, 468).",
+      "websites": "Prado, [autores](https://www.museodelprado.es/coleccion/artista/francisco-lameyer-y-berenguer/ffc19479-853b-416c-b2d2-548acbbde03a); Prado, [enciclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/lameyer-y-berenguer-francisco/345d3891-c175-480c-b0b2-12017321eabb)",
+      "bibliography": "E. Arias Anglés, <i>Pintura Orientalista Española: 1830-1930</i>, 1988; Lafuente Ferrari 1987"
+    },
+    {
       "from": "Valentín Carderera",
       "to": "X Duke of Osuna",
       "connection_level": "direct",
@@ -7227,6 +7297,14 @@
       "shared": "enlisted as voluntaries in the <i>granaderos</i> of the Milicia Nacional de Madrid (6th Batallion) in 1835, alongside Federico de Madrazo, Vicente Masarnau, Pascual de Gayangos y Arce and Valentín Carderera",
       "mentions": "Pedro de Madrazo, 'Galería de ingenios contemporáneos. Don Santiago de Masarnau', <i>El artista</i>, III, 1836.",
       "collaborations": "<i>Oraciones puestas en música por varios compositores alemanes y versificadas en español por Santiago de Masarnau y Pedro de Madrazo</i>, Madrid, 1849"
+    },
+    {
+      "from": "Eugène Delacroix",
+      "to": "Carlos Luis de Ribera",
+      "connection_level": "direct?",
+      "relationship type": "master-student?",
+      "they share": "according to González López (1994, p.54), Ribera was Delacroix's pupil, in addition to being a pupil of his father and of Paul Delaroche.",
+      "bibliography": "González López, <i>Federico de Madrazo (1815-1894)</i>, Museo Romántico, 1994"
     },
     {
       "from": "Pedro de Madrazo",
@@ -10223,7 +10301,9 @@
       "from": "Federico de Madrazo",
       "to": "Eugène Delacroix",
       "connection_level": "direct? and secondary",
-      "relationship type": "acquaintances"
+      "relationship type": "acquaintances?; artistic influence",
+      "they share": "according to Javier Barón, the influence of Delacroix, particularly from <i>The Entry of the Crusaders into Constantinople</i> (1838-40, Louvre), can be seen in Madrazo's work, such as in <i>Head of Don Pelayo<//i>, acquired for the Museo del Romanticismo in 2025.",
+      "bibliography": "Lafuente Ferrari 1987; González López 1981"
     },
     {
       "from": "Federico de Madrazo",

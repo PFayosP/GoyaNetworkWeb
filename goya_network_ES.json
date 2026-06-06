@@ -1876,7 +1876,7 @@
         "Últimos años: 1955 Museo del Romanticismo, Madrid"
       ],
       "friends": "artistas y escritores que frecuentaban el café El Parnasillo a principios de la década de 1830",
-      "masters": "Juan Antonio de Ribera (padre); Paul Delaroche (desde 1836)",
+      "masters": "Juan Antonio de Ribera (padre); Paul Delaroche (desde 1836); Eugène Delacroix (González López 1994, p.52, nota 99)",
       "influenced by": "Jean-Auguste-Dominique Ingres; Paul Delaroche",
       "in Paris": "1836-1845, alumno de Paul Delaroche",
       "works as": [
@@ -1894,7 +1894,7 @@
       "escribe sobre Goya": "menciona el retrato de <i>La Tirana</i> en <i>Cuadros selectos de la Real Academia de Nobles Artes de San Fernando</i> III, 1872. Afirma que 'Si hubiera Goya nacido en época más floreciente del arte, no hubiese sido tan original, porque entonces se hubiera formado con ESCUELA; mientras que en sus días tuvo que mantener continua lucha con lo existente' (mencionado en Pedro de Madrazo 1880, p.56).",
       "sales": "Hôtel Drouot París, 1910, venta del taller de Ribera",
       "portrayed by": "Federico de Madrazo, óleo, 1838, Prado",
-      "bibliography": "Pilar Miguel Egea, Carlos Luis de Ribera. Pintor romántico madrileño, Fundación Vega-Inclán, 1983; Pedro de Madrazo 1880 'D. Francisco Goya y Lucientes', <i>Almanaque de la Ilustración VII</i>, pp.54-56.",
+      "bibliography": "González López, <i>Federico de Madrazo (1815-1894)</i>, Museo Romántico, 1994; Pilar Miguel Egea, Carlos Luis de Ribera. Pintor romántico madrileño, Fundación Vega-Inclán, 1983; Pedro de Madrazo 1880 'D. Francisco Goya y Lucientes', <i>Almanaque de la Ilustración VII</i>, pp.54-56.",
       "websites": "[Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/ribera-y-fieve-carlos-luis-de/87e76f5c-a7e6-4b47-99b6-0af56c0d73ea)",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Ribera.jpg",
       "image source": "Retrato de Madrazo, 1838",
@@ -6157,6 +6157,37 @@
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Rico.jpg",
       "image source": "autorretrato, 1908, Prado",
       "added": "2026-05-30"
+    },
+    {
+      "id": "Francisco Lameyer",
+      "full name": "Francisco Lameyer y Berenguer",
+      "label": "Lameyer",
+      "life dates": "1825-1877",
+      "sex": "male",
+      "born in": "El Puerto de Santa María, Cádiz",
+      "died in": "Madrid",
+      "nationality": "Spanish",
+      "profession": "pintor; grabador; ilustrador",
+      "studies in": "RABASF (desde 1841)",
+      "military activity": "oficial de la Armada (1843-48); 1849 Italia (Estados Pontificios); Filipinas (después de 1852 hasta 1860)",
+      "works for": "<i>El Semanario Pintoresco</i>; <i>El Siglo Pintoresco</i>",
+      "participates in": "<i>Los españoles pintados por sí mismos</i> (1843-44).",
+      "friends": "Leonardo Alenza; Federico de Madrazo; Raimundo de Madrazo; Mariano Fortuny y Marsal",
+      "influenced by": [
+      "Francisco de Goya: 'ferviente admirador de Goya' y 'gran pintor goyesco'; ecos de Goya y Rembrandt en el aguafuerte (Prado; Arias Anglés 1988). 'Cultivó algo el retrato y ejecutó, según dicen, sorprendentes copias de Goya de calidad excepcional. Goya fue su obsesión [...]. Sus dibujos y aguafuertes, en los que Goya y Rembrandt dejan sentir su garra, completan la silueta de un artista de calidad excepcional', 'el pintoresquismo goyesco--Alenza, Lameyer, Lucas' (Lafuente Ferrari 1987, pp.454, 482).",
+      "Eugène Delacroix: 'dejándose además seducir por el influjo de la pintura orientalista de Delacroix, cuya obra debió conocer' (Prado; Arias Anglés 1988). <i>Asalto a un barrio judío</i> (c.1865, Prado) está directamente influenciado por Delacroix, cuya obra pudo ver en París: 'La exuberancia del colorido y su exaltada factura, extremadamente suelta y deshecha a base de pinceladas largas, gruesas y ondulantes, de trazo enmarañado para aumentar el confusionismo del movimiento desaforado de las figuras, y la utilización del negro para remarcar sus perfiles, así como la extremada teatralidad melodramática de las gesticulaciones logran transmitir todo el desconcierto de tan violenta escena, iluminada con bruscos contrastes para acentuar aún más su intensidad dramática' (<i>Pitura española del siglo XIX</i>, 1992, p.98); se ve una influencia clara de <i>La muerte de Sardanápalo</i> (1827) y <i>Boda judía en Marruecos</i> (1839). 'En su obra hay ecos otables del arte de Delacroix, de lo que hay prueba e el magnífico cuadro de fogosa ejecución [...] de asunto marroquí [...] Pintó también u gran cuadro de historia: La batalla de Uclés bajo Alfonso VI, y una Barca de Caronte, también muy influida por Delacroix', 'Delacroix solo tuvo algún eco español [...] en la obra de Lameyer' (Lafuente Ferrari 1987, pp.454, 468)."
+      ],
+      "in Paris": "viajes frecuentes. En 1852 se encuentra con Federico de Madrazo",
+      "in France": "París 1852; París y Burdeos (poco antes de morir)",
+      "trips": "China; Japón; Egipto; Palestina; Marruecos (1863): con Mariano Fortuny y Marsal",
+      "author of": "<i>Mendigo de Tánger</i>, <i>Mujeres judías de Tánger</i>, <i>Asalto a un barrio judío</i> (c.1865, Prado), <i>Interior con moros</i> (c.1870, Prado), <i>María Belé Berenguer y Rodríguez</i> (c.1870, Prado), <i>Escena en el desierto</i>, <i>Caravana en el desierto</i>",
+      "works as": "ilustrador (Serafín Estébanez Calderón, <i>Escenas andaluzas</i>)",
+      "portraits": "Raimundo de Madrazo, óleo sobre lienzo, 1866",
+      "websites": "Prado, [autores](https://www.museodelprado.es/coleccion/artista/francisco-lameyer-y-berenguer/ffc19479-853b-416c-b2d2-548acbbde03a); Prado, [enciclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/lameyer-y-berenguer-francisco/345d3891-c175-480c-b0b2-12017321eabb)",
+      "bibliography": "<i>Pintura española del siglo XIX. Del neoclasicismo al modernismo: obras maestras del Museo del Prado y colecciones españolas</i>, 1992; E. Arias Anglés, <i>Pintura Orientalista Española: 1830-1930</i>, 1988; Lafuente Ferrari 1987; Manuel Ossorio y Bernard, <i>Galería biográfica de artistas españoles del siglo XIX [1883-1884]</i>, 1975, p.362; R. Santos Torroella, <i>Alenza, Lucas, Lameyer</i>, 1971; Félix Boix, <i>Francisco Lameyer. Pintor, dibujante y grabador. 1825-1877: apuntes biográficos y notas acerca de su obra</i>, 1919",
+      "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Lameyer.jpg",
+      "image source": "retrato de Raimundo de Madrazo, 1866",
+      "added": "2026-06-06"
     }
   ],
   "edges": [
@@ -6725,6 +6756,45 @@
       "know each other since": "al menos desde 1841",
       "they share": "Valentín Carderera escribe el 10 de noviembre de 1841: 'Gayangos [...]. Me dijo que estaba encargado de hacer la apología de lo que publicaba Villaamil y que no quería' (Lanzarote Guiral 2016, p.XXXVII)",
       "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "from": "Francisco Lameyer",
+      "to": "Mariano Fortuny y Marsal",
+      "connection_level": "direct",
+      "relationship type": "amigos",
+      "they share": "viajan juntos a Marruecos en 1863"
+    },
+    {
+      "from": "Francisco Lameyer",
+      "to": "Raimundo de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "amigos; retratista-modelo",
+      "portraits": "retrato de Lameyer, óleo sobre lienzo, 1866"
+    },
+    {
+      "from": "Francisco Lameyer",
+      "to": "Federico de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "amigos",
+      "they share": "se encuentran en 1852 en París"
+    },
+    {
+      "from": "Francisco Lameyer",
+      "to": "Francisco de Goya",
+      "connection_level": "secondary",
+      "relationship type": "influencia artística",
+      "they share": "'ferviente admirador de Goya' y 'gran pintor goyesco'; ecos de Goya y Rembrandt en el aguafuerte (Prado; Arias Anglés 1988). 'Cultivó algo el retrato y ejecutó, según dicen, sorprendentes copias de Goya de calidad excepcional. Goya fue su obsesión [...] Sus dibujos y aguafuertes, en los que Goya y Rembrandt dejan sentir su garra, completan la silueta de un artista de calidad excepcional', 'el pintoresquismo goyesco--Alenza, Lameyer, Lucas' (Lafuente Ferrari 1987, pp.454, 482).",
+      "websites": "Prado, [autores](https://www.museodelprado.es/coleccion/artista/francisco-lameyer-y-berenguer/ffc19479-853b-416c-b2d2-548acbbde03a); Prado, [enciclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/lameyer-y-berenguer-francisco/345d3891-c175-480c-b0b2-12017321eabb)",
+      "bibliography": "E. Arias Anglés, <i>Pintura Orientalista Española: 1830-1930</i>, 1988; Lafuente Ferrari 1987."
+    },
+    {
+      "from": "Francisco Lameyer",
+      "to": "Eugène Delacroix",
+      "connection_level": "secondary; direct?",
+      "relationship type": "influencia artística",
+      "they share": "'dejándose además seducir por el influjo de la pintura orientalista de Delacroix, cuya obra debió conocer' (Prado; Arias Anglés 1988). <i>Asalto a un barrio judío</i> (c.1865, Prado) está directamente influenciado por Delacroix, cuya obra pudo ver en París: 'La exuberancia del colorido y su exaltada factura, extremadamente suelta y deshecha a base de pinceladas largas, gruesas y ondulantes, de trazo enmarañado para aumentar el confusionismo del movimiento desaforado de las figuras, y la utilización del negro para remarcar sus perfiles, así como la extremada teatralidad melodramática de las gesticulaciones logran transmitir todo el desconcierto de tan violenta escena, iluminada con bruscos contrastes para acentuar aún más su intensidad dramática' (<i>Pitura española del siglo XIX</i>, 1992, p.98); se ve una influencia clara de <i>La muerte de Sardanápalo</i> (1827) y <i>Boda judía en Marruecos</i> (1839). 'En su obra hay ecos otables del arte de Delacroix, de lo que hay prueba e el magnífico cuadro de fogosa ejecución [...] de asunto marroquí [...] Pintó también u gran cuadro de historia: La batalla de Uclés bajo Alfonso VI, y una Barca de Caronte, también muy influida por Delacroix', 'Delacroix solo tuvo algún eco español [...] en la obra de Lameyer' (Lafuente Ferrari 1987, pp.454, 468).",
+      "websites": "Prado, [autores](https://www.museodelprado.es/coleccion/artista/francisco-lameyer-y-berenguer/ffc19479-853b-416c-b2d2-548acbbde03a); Prado, [enciclopedia](https://www.museodelprado.es/aprende/enciclopedia/voz/lameyer-y-berenguer-francisco/345d3891-c175-480c-b0b2-12017321eabb)",
+      "bibliography": "E. Arias Anglés, <i>Pintura Orientalista Española: 1830-1930</i>, 1988; Lafuente Ferrari 1987"
     },
     {
       "from": "Martín Rico",
@@ -7297,6 +7367,14 @@
       "shared": "se alistaron como voluntarios en los granaderos de la Milicia Nacional de Madrid (6.º Batallón) en 1835, junto con Federico de Madrazo, Vicente Masarnau, Pascual de Gayangos y Arce y Valentín Carderera",
       "mentions": "Pedro de Madrazo, 'Galería de ingenios contemporáneos. Don Santiago de Masarnau', <i>El artista</i>, III, 1836.",
       "collaborations": "'Oraciones puestas en música por varios compositores alemanes y versificadas en español por Santiago de Masarnau y Pedro de Madrazo', Madrid, 1849."
+    },
+    {
+      "from": "Eugène Delacroix",
+      "to": "Carlos Luis de Ribera",
+      "connection_level": "direct?",
+      "relationship type": "maestro-alumno?",
+      "they share": "según González López (1994, p.54), Ribera fue discípulo de Delacroix, además de serlo de su padre y de Paul Delaroche.",
+      "bibliography": "González López, <i>Federico de Madrazo (1815-1894)</i>, Museo Romántico, 1994"
     },
     {
       "from": "Pedro de Madrazo",
@@ -10346,7 +10424,9 @@
       "from": "Federico de Madrazo",
       "to": "Eugène Delacroix",
       "connection_level": "direct? and secondary",
-      "relationship type": "conocidos"
+      "relationship type": "conocidos?; influencia artística",
+      "they share": "según Javier Barón, la influecia de Delacroix, en particular de <i>La etrada de los cruzados en Constantinopla</i> (1838-40, Louvre), puede notarse en la obra de Madrazo, como por ejemplo en <i>Cabeza de Don Pelayo<//i>, adquirida para el Museo del Romanticismo en 2025.",
+      "bibliography": "Lafuente Ferrari 1987; González López 1981"
     },
     {
       "from": "Federico de Madrazo",
@@ -10448,7 +10528,7 @@
       "portraits": [
         {
           "url": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Madrazo_Ingres.jpg",
-          "caption": "Ingres por Madrazo, 1833, óleo, [Sociedad Hispánica A286](https://hispanicsociety.emuseum.com/objects/884/jean-auguste-dominique-ingres) (imagen abajo)"
+          "caption": "Ingres por Madrazo, 1833, óleo, [Hispanic Society A286](https://hispanicsociety.emuseum.com/objects/884/jean-auguste-dominique-ingres) (imagen abajo)"
         }
       ],
       "exhibitions": "2015-16 Prado, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i> (cur. Javier Barón)",
