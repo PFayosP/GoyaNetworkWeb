@@ -561,6 +561,7 @@
       "nationality": "Spanish",
       "married to": "Carlota Madrazo (1835)",
       "profession": "writer, editor, politician",
+      "masters": "Antoine-Jean Gros (según García Jáñez 2010, n.p.)",
       "in Paris": [
         "1828-1834 en la École d'Arts et d'Offices. Conoce a Leandro Fernández de Moratín y Manuel Godoy.",
         "1837-1844: trabaja para los editores Baudry & Rosa. Entra en contacto con el círculo de políticos que rodea a la reina María Cristina de Borbón-Dos Sicilias, exiliada. En 1837, a través de Adrien Dauzats, asiste al salón de Víctor Hugo, donde conoce a muchas personas, como Louis Boulanger, George Sand, Théophile Gautier, Arsène Houssaye, Charles Nodier y Franz Liszt (Ochoa 1861, pp.199-207).",
@@ -581,7 +582,7 @@
       "works in": "Gaceta de Madrid (1835)",
       "works for": "Baudry & Rosa, París 1837: volúmenes de literatura española y traducciones; <i>Colección de los mejores autores españoles</i>; <i>Catálogo razonado de los manuscritos españoles existentes en la Biblioteca Real de París</i> (París, 1844)",
       "works as": "editor; bibliotecario (bibliotecario segundo de la Biblioteca Nacional); político (jefe político de Huesca; diputado); administrador de la Imprenta Nacional; director general de Instrucción Pública",
-      "bibliography": "Raquel Sánchez, 'Busto de Eugenio Ochoa por Ponciano Ponzano (Pieza del trimestre julio-septiembre 2018)', Ministerio de Cultura; Romero Tobar 1997; Ochoa 1861",
+      "bibliography": "Raquel Sánchez, 'Busto de Eugenio Ochoa por Ponciano Ponzano (Pieza del trimestre julio-septiembre 2018)', Ministerio de Cultura; García Jáñez, 'El fantasma del suicidio en el relato <i>Stephen</i> de Eugenio Ochoa y en las litografías de Federico Madrazo', en <i>Nuevos caminos del hispanismo</i>, 2010; Romero Tobar 1997; Ochoa 1861",
       "member of": "Real Academia Española: miembro honorario, luego miembro titular en 1847 (para la letra 'H')",
       "authorities": {
         "rah": "https://historia-hispanica.rah.es/biografias/32527-eugenio-de-ochoa-y-montel"
@@ -5481,8 +5482,10 @@
       "nationality": "French",
       "profession": "painter",
       "masters": "Jacques-Louis David",
-      "students": "Charles-Philippe Larivière, Paul Huet, Louis Léopold Robert",
+      "students": "Charles-Philippe Larivière, Paul Huet, Louis Léopold Robert; Eugenio Ochoa? (García Jáñez 2010, n.p.)",
+      "author of": "<i>Hercule écrasant Diomède</i> (1835): esta obra, neoclásica, fue rechazada al estar ya triunfando el romaticismo, lo que provocó que Gros se suicidara (García Jáñez 2010, n.p.).",
       "portrayed by": "François Gérard (c. 1790)",
+      "bibliography": "García Jáñez, 'El fantasma del suicidio en el relato <i>Stephen</i> de Eugenio Ochoa y en las litografías de Federico Madrazo', en <i>Nuevos caminos del hispanismo</i>, 2010",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Gros.jpg"
     },
     {
@@ -10425,8 +10428,11 @@
       "to": "Eugène Delacroix",
       "connection_level": "direct? and secondary",
       "relationship type": "conocidos?; influencia artística",
-      "they share": "según Javier Barón, la influecia de Delacroix, en particular de <i>La etrada de los cruzados en Constantinopla</i> (1838-40, Louvre), puede notarse en la obra de Madrazo, como por ejemplo en <i>Cabeza de Don Pelayo<//i>, adquirida para el Museo del Romanticismo en 2025.",
-      "bibliography": "Lafuente Ferrari 1987; González López 1981"
+      "they share": [
+        "Según Javier Barón, la influecia de Delacroix, en particular de <i>La etrada de los cruzados en Constantinopla</i> (1838-40, Louvre), puede notarse en la obra de Madrazo, como por ejemplo en <i>Cabeza de Don Pelayo<//i>, adquirida para el Museo del Romanticismo en 2025.",
+        "'Gracias a los estudios que realizó e París se relacionó con dos pintores que influyeron en su trayectoria romántica, Delacroix [Eugène Delacroix] y Ingres [Jean-Auguste-Dominique Ingres]' (García Jáñez 2010, n.p.)."
+      ],
+      "bibliography": "García Jáñez 2010; Lafuente Ferrari 1987; González López 1981"
     },
     {
       "from": "Federico de Madrazo",
@@ -10558,6 +10564,13 @@
       "to": "Antoine-Jean Gros",
       "connection_level": "direct",
       "relationship type": "conocidos"
+    },
+    {
+      "from": "Eugenio Ochoa",
+      "to": "Antoine-Jean Gros",
+      "connection_level": "direct",
+      "relationship type": "master-student? (García Jáñez 2010, n.p.)",
+      "bibliography": "García Jáñez, 'El fantasma del suicidio en el relato <i>Stephen</i> de Eugenio Ochoa y en las litografías de Federico Madrazo', en <i>Nuevos caminos del hispanismo</i>, 2010"
     },
     {
       "from": "Adolphe Goupil",
