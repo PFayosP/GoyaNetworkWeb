@@ -317,8 +317,12 @@
       ],
       "address": "1833 París: Hôtel Bourbonne-Les-Bains (muy cerca de Adrien Dauzat); 30 rue de la Tour de Auvergne (taller) (hacia 1839)",
       "military activity": "se alistó como voluntario en los granaderos de la Milicia Nacional de Madrid (6.º Batallón) en 1835, junto a Pedro de Madrazo, Santiago Masarnau, Vicente Masarnau, Pascual de Gayangos y Arce y Valentín Carderera",
-      "author of": "Ilustraciones en <i>El Artista</i>; <i>Godofredo de Bouillon proclamado rey de Jerusalén</i> (1838, Galerie Batailles, Palacio de Versalles); <i>Isabel II de España</i> (1850); Doña Amalia de Llano y Dotres, condesa de Vilches (1853); Carolina Coronado (c. 1855); Eduardo Rosales (1867); El pintor Perugino Sensi (1873, Prado); Retrato de Alfonso XII (1874, Banco de España).",
-      "editor of": "El Artista",
+      "author of": [
+        "Ilustración: en <i>El Artista</i>, <i>No me olvides</i> (1837), <i>El Panorama</i> (1838) <i>El Semanario Pintoresco Español</i> (1843), <i>El Renacimiento</i> (1847).",
+        "Pitura de Historia: <i>Godofredo de Bouillon proclamado rey de Jerusalén</i> (1838, Galerie Batailles, Palais Versailles); <i>Isabel II de España</i> (1850).",
+        "Retrato: <i>Doña Amalia de Llano y Dotres, Condesa de Vilches</i> (1853); <i>Carolina Coronado</i> (c.1855); <i>Eduardo Rosales</i> (1867); <i>El pintor Perugino Sensi</i> (1873, Prado); <i>Portrait of Alfonso XII</i> (1874, Banco de España)."
+      ],
+      "editor of": "<i>El Artista</i>",
       "portrayed by": "Leopoldo Sánchez del Bierzo, óleo, 1857, Museo de BBAA de Asturias; M. Huerta, fotografía (Prado HF0857); Raimundo de Madrazo, 1875, Museo de Bellas Artes de Bilbao; anónimo, fotografía, 1890 (publicada), <i>La Ilustración Artística</i>; anónimo, fotografía, c.1885-1894 (Prado HF0634)",
       "works as": "Director de la RABASF en 1866; pintor de cámara de Isabel II; director del Museo del Prado entre 1860 y 1868 y entre 1881 y 1894; senador",
       "member of": "RABASF: miembro a los 16 años",
@@ -7898,7 +7902,7 @@
       "from": "[J./L.] Carresse",
       "to": "Alejandro Sureda",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "know each other since": "al menos desde 1857",
       "mentions": "carta de Carresse a Valentín Carderera, 21 junio 1857 (París): 'N'ayant pas votre adresse, je fais parvenir cette lettre à Sureda avec prière de vous l'envoyer' (Fayos Pérez 2020, p.1055).",
       "bibliography": "Fayos Pérez 2020"
@@ -10426,11 +10430,12 @@
     {
       "from": "Federico de Madrazo",
       "to": "Eugène Delacroix",
-      "connection_level": "direct? and secondary",
-      "relationship type": "conocidos?; influencia artística",
+      "connection_level": "¿directa? y secundaria",
+      "relationship type": "¿conocidos?; influencia artística",
       "they share": [
         "Según Javier Barón, la influecia de Delacroix, en particular de <i>La etrada de los cruzados en Constantinopla</i> (1838-40, Louvre), puede notarse en la obra de Madrazo, como por ejemplo en <i>Cabeza de Don Pelayo<//i>, adquirida para el Museo del Romanticismo en 2025.",
-        "'Gracias a los estudios que realizó e París se relacionó con dos pintores que influyeron en su trayectoria romántica, Delacroix [Eugène Delacroix] y Ingres [Jean-Auguste-Dominique Ingres]' (García Jáñez 2010, n.p.)."
+        "'Gracias a los estudios que realizó e París se relacionó con dos pintores que influyeron en su trayectoria romántica, Delacroix [Eugène Delacroix] y Ingres [Jean-Auguste-Dominique Ingres]' (García Jáñez 2010, n.p.).",
+        "La Galería [Tánsito Liminal](https://www.instagram.com/p/DTQ6ekzgpXa/?img_index=1) ha comparado la versión de <i>La muerte de Viriato</i> (1831) y un estudio para <i>Alegoría de la apertura de las Cortes</i> de Federico de Madrazo con <i>La muerte de Sardanápalo</i> de Delacroix. 'En La muerte de Viriato (1831), Madrazo organiza la escena en torno a un cuerpo central abatido,rodeado de figuras en actitudes dramáticas, con un uso de diagonales, escorzos y gestualidad exaltada. Esto remite directamente a la lógica compositiva de Delacroix, ya que en <i>La muerte de Sardanápalo</i> construye la escena como un teatro del desastre, con cuerpos en tensión, acumulación de figuras y dramatismo corporal. Sin embargo, en el tratamiento del cuerpo en Delacroix existe mucho más violencia emocional explícita, cuerpos retorcidos y gestos extremos, mientras Madrazo contiene mucho más el pathos y expone menos violencia física. Por otro lado, el estudio para la <i>Alegoría de la apertura de las Cortes</i> evidencia una apropiación directa de la gramática visual del romanticismo francés, particularmente de Eugène Delacroix. La composición dinámica, la centralidad de la figura alegórica en movimiento y la concepción de la política como escena épica remiten a modelos como <i>La Libertad guiando al pueblo</i>. Sin embargo, Madrazo somete este imaginario a un proceso de depuración formal y simbólica, transformando la épica revolucionaria en una alegoría institucional compatible con el liberalismo moderado español. Este desplazamiento revela a un Madrazo tempranamente permeable al romanticismo, antes de su consolidación como retratista académico'."
       ],
       "bibliography": "García Jáñez 2010; Lafuente Ferrari 1987; González López 1981"
     },
@@ -10569,7 +10574,7 @@
       "from": "Eugenio Ochoa",
       "to": "Antoine-Jean Gros",
       "connection_level": "direct",
-      "relationship type": "master-student? (García Jáñez 2010, n.p.)",
+      "relationship type": "¿maestro-alumno? (García Jáñez 2010, n.p.)",
       "bibliography": "García Jáñez, 'El fantasma del suicidio en el relato <i>Stephen</i> de Eugenio Ochoa y en las litografías de Federico Madrazo', en <i>Nuevos caminos del hispanismo</i>, 2010"
     },
     {
@@ -10586,7 +10591,7 @@
       "from": "Valentín Carderera",
       "to": "Heinrich Rittner",
       "connection_level": "direct",
-      "relationship type": "acquaintances, business partners",
+      "relationship type": "conocidos, business partners",
       "know each other since": "al menos 1842",
       "interactions": [
         "1842, 7 febrero: 'Entré a casa de Rittner y Goupil' (LG 2016, p.103)."
@@ -10597,7 +10602,7 @@
       "from": "Federico de Madrazo",
       "to": "Heinrich Rittner",
       "connection_level": "direct",
-      "relationship type": "acquaintances, business partners",
+      "relationship type": "conocidos, business partners",
       "know each other since": "al menos 1837",
       "interactions": [
         "1837, 10 nov: carta de Federico de Madrazo a José de Madrazo. 'Antes de ayer fuimos Dauzats [Adrien Dauzats] y yo a casa de Rittner [Heinrich Rittner] para hablarle sobre el negocio de las estampas [...]. Nos dijo además que su compañero Mr. Goupil se halla en este momento en Londres' (Díez 1994, no.16, p.46)."
@@ -10608,7 +10613,7 @@
       "from": "Adrien Dauzats",
       "to": "Heinrich Rittner",
       "connection_level": "direct",
-      "relationship type": "acquaintances, business partners",
+      "relationship type": "conocidos, business partners",
       "know each other since": "al menos 1837",
       "interactions": [
         "1837, 10 nov: carta de Federico de Madrazo a José de Madrazo. 'Antes de ayer fuimos Dauzats [Adrien Dauzats] y yo a casa de Rittner [Heinrich Rittner] para hablarle sobre el negocio de las estampas [...]. Nos dijo además que su compañero Mr. Goupil se halla en este momento en Londres' (Díez 1994, no.16, p.46)."
@@ -10678,7 +10683,7 @@
       "from": "Adolphe Goupil",
       "to": "Federico de Madrazo",
       "connection_level": "direct",
-      "relationship type": "acquaintances, business partners",
+      "relationship type": "conocidos, business partners",
       "mentions": [
         "1837, 10 Nov: carta de Federico de Madrazo a José de Madrazo. 'Antes de ayer fuimos Dauzats [Adrien Dauzats] y yo a casa de Rittner [Heinrich Rittner] para hablarle sobre el negocio de las estampas [...]. Nos dijo además que su compañero Mr. Goupil se halla en este momento en Londres' (Díez 1994, no.16, p.46)."
       ],
@@ -13233,7 +13238,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Francisco Martínez de la Rosa",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "interactions": "Cuando Mme Merlin se traslada a París en 1813, su salón alcanza un gran éxito y acoge a muchos emigrantes españoles, entre ellos Francisco Martínez de la Rosa y Salustiano Olázaga, así como a figuras artísticas Frenchs clave como George Sand, Honoré de Balzac, Victor Hugo, Alphonse de Lamartine, Alfred de Musset, Sophie Gay, la condesa de Bassanville, Chateaubriand, Juliette Récamier y músicos como Frédéric Chopin, Gioachino Rossini, Gaetano Donizetti y Hector Berlioz (Schmieder 2008, p.166; Prieto in nobles.unican).",
       "websites": [
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf)."
@@ -13244,7 +13249,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "George Sand",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "interactions": "Cuando Mme Merlin se traslada a París en 1813, su salón alcanza un gran éxito y acoge a muchos emigrantes españoles, entre ellos Francisco Martínez de la Rosa y Salustiano Olázaga, así como a figuras artísticas Frenchs clave como George Sand, Honoré de Balzac, Victor Hugo, Alphonse de Lamartine, Alfred de Musset, Sophie Gay, la condesa de Bassanville, Chateaubriand, Juliette Récamier y músicos como Frédéric Chopin, Gioachino Rossini, Gaetano Donizetti y Hector Berlioz (Schmieder 2008, p.166; Prieto in nobles.unican).",
       "correspondence": "for instance, Mme Merlin sent Sand a letter from Cuba c.1840 discussing the position of women in Cuban society and the education of children (Schmieder 2008, p.179).",
       "websites": [
@@ -13257,7 +13262,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Honoré de Balzac",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "interactions": "Cuando Mme Merlin se traslada a París en 1813, su salón alcanza un gran éxito y acoge a muchos emigrantes españoles, entre ellos Francisco Martínez de la Rosa y Salustiano Olázaga, así como a figuras artísticas Frenchs clave como George Sand, Honoré de Balzac, Victor Hugo, Alphonse de Lamartine, Alfred de Musset, Sophie Gay, la condesa de Bassanville, Chateaubriand, Juliette Récamier y músicos como Frédéric Chopin, Gioachino Rossini, Gaetano Donizetti y Hector Berlioz (Schmieder 2008, p.166; Prieto in nobles.unican).",
       "mentions": "Balzac said about her, 'elle avait une teint blanc et chaude comme celui des crèoles, un visage plein de details spirituels' (Prieto in nobles.unican; source?).",
       "websites": [
@@ -13269,7 +13274,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Juliette Récamier",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "mentions": "in a letter to Mme Récamier, Chateaubriand called Mme Merlin 'the most beautiful of women' (Prieto Benavent 2002, p.85).",
       "interactions": "Cuando Mme Merlin se traslada a París en 1813, su salón alcanza un gran éxito y acoge a muchos emigrantes españoles, entre ellos Francisco Martínez de la Rosa y Salustiano Olázaga, así como a figuras artísticas Frenchs clave como George Sand, Honoré de Balzac, Victor Hugo, Alphonse de Lamartine, Alfred de Musset, Sophie Gay, la condesa de Bassanville, Chateaubriand, Juliette Récamier y músicos como Frédéric Chopin, Gioachino Rossini, Gaetano Donizetti y Hector Berlioz (Schmieder 2008, p.166; Prieto in nobles.unican).",
       "websites": [
@@ -13281,7 +13286,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Frédéric Chopin",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "interactions": "Cuando Mme Merlin se traslada a París en 1813, su salón alcanza un gran éxito y acoge a muchos emigrantes españoles, entre ellos Francisco Martínez de la Rosa y Salustiano Olázaga, así como a figuras artísticas Frenchs clave como George Sand, Honoré de Balzac, Victor Hugo, Alphonse de Lamartine, Alfred de Musset, Sophie Gay, la condesa de Bassanville, Chateaubriand, Juliette Récamier y músicos como Frédéric Chopin, Gioachino Rossini, Gaetano Donizetti y Hector Berlioz (Schmieder 2008, p.166; Prieto in nobles.unican).",
       "websites": [
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf)."
@@ -13292,7 +13297,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Victor Hugo",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "interactions": "Cuando Mme Merlin se traslada a París en 1813, su salón alcanza un gran éxito y acoge a muchos emigrantes españoles, entre ellos Francisco Martínez de la Rosa y Salustiano Olázaga, así como a figuras artísticas Frenchs clave como George Sand, Honoré de Balzac, Victor Hugo, Alphonse de Lamartine, Alfred de Musset, Sophie Gay, la condesa de Bassanville, Chateaubriand, Juliette Récamier y músicos como Frédéric Chopin, Gioachino Rossini, Gaetano Donizetti y Hector Berlioz (Schmieder 2008, p.166; Prieto in nobles.unican).",
       "websites": [
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf)."
@@ -13303,7 +13308,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Alphonse de Lamartine",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "interactions": "Cuando Mme Merlin se traslada a París en 1813, su salón alcanza un gran éxito y acoge a muchos emigrantes españoles, entre ellos Francisco Martínez de la Rosa y Salustiano Olázaga, así como a figuras artísticas Frenchs clave como George Sand, Honoré de Balzac, Victor Hugo, Alphonse de Lamartine, Alfred de Musset, Sophie Gay, la condesa de Bassanville, Chateaubriand, Juliette Récamier y músicos como Frédéric Chopin, Gioachino Rossini, Gaetano Donizetti y Hector Berlioz (Schmieder 2008, p.166; Prieto in nobles.unican).",
       "websites": [
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf)."
@@ -13314,7 +13319,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Alfred de Musset",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "interactions": "Cuando Mme Merlin se traslada a París en 1813, su salón alcanza un gran éxito y acoge a muchos emigrantes españoles, entre ellos Francisco Martínez de la Rosa y Salustiano Olázaga, así como a figuras artísticas Frenchs clave como George Sand, Honoré de Balzac, Victor Hugo, Alphonse de Lamartine, Alfred de Musset, Sophie Gay, la condesa de Bassanville, Chateaubriand, Juliette Récamier y músicos como Frédéric Chopin, Gioachino Rossini, Gaetano Donizetti y Hector Berlioz (Schmieder 2008, p.166; Prieto in nobles.unican).",
       "websites": [
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf)."
@@ -13325,7 +13330,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Sophie Gay",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "interactions": "Cuando Mme Merlin se traslada a París en 1813, su salón alcanza un gran éxito y acoge a muchos emigrantes españoles, entre ellos Francisco Martínez de la Rosa y Salustiano Olázaga, así como a figuras artísticas Frenchs clave como George Sand, Honoré de Balzac, Victor Hugo, Alphonse de Lamartine, Alfred de Musset, Sophie Gay, la condesa de Bassanville, Chateaubriand, Juliette Récamier y músicos como Frédéric Chopin, Gioachino Rossini, Gaetano Donizetti y Hector Berlioz (Schmieder 2008, p.166; Prieto in nobles.unican).",
       "websites": [
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf)."
@@ -13336,7 +13341,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Louis Philippe I",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "interactions": "Louis Philippe la otorgó la Légion d'honneur",
       "websites": [
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf)."
@@ -13365,7 +13370,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Carlos IV",
       "connection_level": "direct?",
-      "relationship type": "acquaintances?",
+      "relationship type": "conocidos?",
       "know each other since": "c.1802",
       "interactions": "Mme Merlin se trasladó a Madrid en 1802 con su familia, que mantenía buenas relaciones con la corte de Carlos IV a través de su tío Gonzalo O'Farril y Herrera, político español, militar (general O'Farrill) y aFrenchdo."
     },
@@ -13373,9 +13378,9 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Francisco de Goya",
       "connection_level": "direct",
-      "relationship type": "acquaintances; master-student?",
+      "relationship type": "conocidos; ¿maestro-alumna?",
       "know each other since": "c.1802",
-      "shared": "Durante su estancia en Madrid a partir de 1802, el salón aFrenchdo de la madre de Mme Merlin tuvo mucho éxito y contó con la presencia de Leandro Fernández de Moratín, José Quintana y Francisco de Goya, quien se convirtió en su profesor de dibujo (Prieto Benavent 2002, p.85; Schmieder 2008, p.166)",
+      "shared": "Durante su estancia en Madrid a partir de 1802, el salón afrancesado de la madre de Mme Merlin tuvo mucho éxito y contó con la presencia de Leandro Fernández de Moratín, José Quintana y Francisco de Goya, quien se convirtió en su profesor de dibujo (Prieto Benavent 2002, p.85; Schmieder 2008, p.166)",
       "websites": [
         "José Luis Prieto Benavnet, 'Mercedes de Santa Cruz y Montalvo, Condesa de Merlin (1789-1852)', [nobles.unican](https://nobles.unican.es/index.php-option=com_phocadownload&view=category&download=63-condesa-de-merlin-1789-1852-mercedes-de-santa-cruz-y-montalvo-por-jose-luis-prieto-benavent&id=8-biografias&Itemid=525.pdf)."
       ],
@@ -13387,7 +13392,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "Leandro Fernández de Moratín",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
+      "relationship type": "conocidos",
       "know each other since": "c.1802",
       "shared": "Durante su estancia en Madrid a partir de 1802, el salón aFrenchdo de la madre de Mme Merlin tuvo mucho éxito y rivalizó en calidad con los de María Teresa de Silva, XIII Duchess of Alba y XII Countess-Duchess of Benavente and Duchess of Osuna (Prieto Benavent 2002, p.85)",
       "websites": [
@@ -13399,7 +13404,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "XII Countess-Duchess of Benavente and Duchess of Osuna",
       "connection_level": "direct?",
-      "relationship type": "acquaintances?",
+      "relationship type": "conocidos?",
       "know each other since": "c.1802",
       "shared": "Durante su estancia en Madrid a partir de 1802, el salón aFrenchdo de la madre de Mme Merlin tuvo mucho éxito y rivalizó en calidad con los de María Teresa de Silva, XIII Duchess of Alba y XII Countess-Duchess of Benavente and Duchess of Osuna (Prieto Benavent 2002, p.85)",
       "websites": [
@@ -13411,7 +13416,7 @@
       "from": "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin",
       "to": "María Teresa de Silva, XIII Duchess of Alba",
       "connection_level": "direct?",
-      "relationship type": "acquaintances?",
+      "relationship type": "conocidos?",
       "know each other since": "c.1802",
       "shared": "Durante su estancia en Madrid a partir de 1802, el salón aFrenchdo de la madre de Mme Merlin tuvo mucho éxito y rivalizó en calidad con los de María Teresa de Silva, XIII Duchess of Alba y XII Countess-Duchess of Benavente and Duchess of Osuna (Prieto Benavent 2002, p.85)",
       "websites": [
