@@ -10433,11 +10433,12 @@
       "connection_level": "¿directa? y secundaria",
       "relationship type": "¿conocidos?; influencia artística",
       "they share": [
-        "Según Javier Barón, la influecia de Delacroix, en particular de <i>La etrada de los cruzados en Constantinopla</i> (1838-40, Louvre), puede notarse en la obra de Madrazo, como por ejemplo en <i>Cabeza de Don Pelayo<//i>, adquirida para el Museo del Romanticismo en 2025.",
-        "'Gracias a los estudios que realizó e París se relacionó con dos pintores que influyeron en su trayectoria romántica, Delacroix [Eugène Delacroix] y Ingres [Jean-Auguste-Dominique Ingres]' (García Jáñez 2010, n.p.).",
+        "Según Javier Barón, la influecia de Delacroix, en particular de <i>La entrada de los cruzados en Constantinopla</i> (1838-40, Louvre), puede notarse en la obra de Madrazo, como por ejemplo en <i>Cabeza de Don Pelayo<//i>, adquirida para el Museo del Romanticismo en 2025.",
+        "Curiosamete, según Frank Trapp (1970, p.188), <i>La entrada de los cruzados en Constantinopla</i> de Delacroix podría haberse inspirado en la litografía de Federico de Madrazo de <i>La toma de Granada por los Reyes Católicos</i> de 1831 realizado para el frontispicio de un poem de Leandro Fernández de Moratín. Trapp también señala que Moratín estaba en París en 1838 y que conocía a algunos de los amigos de Delacroix, basándose en la publicación de Michel Florisoone (1957) (que es bastante especulativa).",
+        "'Gracias a los estudios que realizó en París se relacionó con dos pintores que influyeron en su trayectoria romántica, Delacroix [Eugène Delacroix] y Ingres [Jean-Auguste-Dominique Ingres]' (García Jáñez 2010, n.p.).",
         "La Galería [Tánsito Liminal](https://www.instagram.com/p/DTQ6ekzgpXa/?img_index=1) ha comparado la versión de <i>La muerte de Viriato</i> (1831) y un estudio para <i>Alegoría de la apertura de las Cortes</i> de Federico de Madrazo con <i>La muerte de Sardanápalo</i> de Delacroix. 'En La muerte de Viriato (1831), Madrazo organiza la escena en torno a un cuerpo central abatido,rodeado de figuras en actitudes dramáticas, con un uso de diagonales, escorzos y gestualidad exaltada. Esto remite directamente a la lógica compositiva de Delacroix, ya que en <i>La muerte de Sardanápalo</i> construye la escena como un teatro del desastre, con cuerpos en tensión, acumulación de figuras y dramatismo corporal. Sin embargo, en el tratamiento del cuerpo en Delacroix existe mucho más violencia emocional explícita, cuerpos retorcidos y gestos extremos, mientras Madrazo contiene mucho más el pathos y expone menos violencia física. Por otro lado, el estudio para la <i>Alegoría de la apertura de las Cortes</i> evidencia una apropiación directa de la gramática visual del romanticismo francés, particularmente de Eugène Delacroix. La composición dinámica, la centralidad de la figura alegórica en movimiento y la concepción de la política como escena épica remiten a modelos como <i>La Libertad guiando al pueblo</i>. Sin embargo, Madrazo somete este imaginario a un proceso de depuración formal y simbólica, transformando la épica revolucionaria en una alegoría institucional compatible con el liberalismo moderado español. Este desplazamiento revela a un Madrazo tempranamente permeable al romanticismo, antes de su consolidación como retratista académico'."
       ],
-      "bibliography": "García Jáñez 2010; Lafuente Ferrari 1987; González López 1981"
+      "bibliography": "García Jáñez 2010; Lafuente Ferrari 1987; González López 1981; Frank Trapp, <i>The Attainment of Delacroix</i>, 1970; Michel Florisoone, 'Moratin, inspireur de Géricault et Delacroix', <i>Burlington Magazine</i> 99, Sept 1957, pp.303-11."
     },
     {
       "from": "Federico de Madrazo",
@@ -12312,6 +12313,22 @@
       "connection_level": "direct",
       "relationship type": "conocidos",
       "know each other since": "al menos desde 1824-1834 en París"
+    },
+    {
+      "from": "Eugène Delacroix",
+      "to": "Leandro Fernández de Moratín",
+      "connection_level": "¿directa?",
+      "relationship type": "¿conocidos?",
+      "know each other since": "según Frank Trapp, Moratín estaba en París en 1838 y conocía a algunos de los amigos de Delacroix; supuestamente toma esta información de Michel Florisoone (1957), pero Moratín murió en 1828 (en París), y Florisoone no afirma esto. En cualquier caso, las fuentes de Florisoone deberían verificarse, ya que esta publicación es bastante especulativa.",
+      "bibliography": "Frank Trapp, <i>The Attainment of Delacroix</i>, 1970; Michel Florisoone, 'Moratin, inspireur de Géricault et Delacroix', <i>Burlington Magazine</i> 99, Sept 1957, pp.303-11"
+    },
+    {
+      "from": "Federico de Madrazo",
+      "to": "Leandro Fernández de Moratín",
+      "connection_level": "¿directa?",
+      "relationship type": "¿colegas?",
+      "know each other since": "Según Franck Trapp, Federico realizó la litografía <i>La toma de Granada por los Reyes Católicos</i> de 1831 para el frontispicio de un poema de Moratín. Moratín murió en París en 1828 pero se publicaron varias obras suyas de forma póstuma. Según Trapp, esta litografía de Madrazo pudo haber inspirado a Eugène Delacroix para su <i>Entrada de los Cruzados en Constantinopla</i> (1838-40). Esta obra, de la que hay una impresión en la [BNE INVENT/27235](https://datos.bne.es/edicion/binp0000201088.html), fue producida en el Real Establecimiento Litográfico de Madrid (fundado por el padre de Federico, José de Madrazo).",
+      "bibliography": "Frank Trapp, <i>The Attainment of Delacroix</i>, 1970; Michel Florisoone, 'Moratin, inspireur de Géricault et Delacroix', <i>Burlington Magazine</i> 99, Sept 1957, pp.303-11."
     },
     {
       "from": "Eugenio Ochoa",

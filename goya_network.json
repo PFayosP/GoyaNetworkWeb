@@ -10310,10 +10310,11 @@
       "relationship type": "acquaintances?; artistic influence",
       "they share": [
         "According to Javier Barón, the influence of Delacroix, particularly from <i>The Entry of the Crusaders into Constantinople</i> (1838-40, Louvre), can be seen in Madrazo's work, such as in <i>Head of Don Pelayo<//i>, acquired for the Museo del Romanticismo in 2025.",
+        "Interestingly, according to Frank Trapp (1970, p. 188), <i>Delacroix's </i>The Entry of the Crusaders into Constantinople</i> may have been inspired by Federico de Madrazo's 1831 lithograph of <i>The Conquest of Granada by the Catholic Monarchs</i>, created for the frontispiece of a poem by Leandro Fernández de Moratín. Trapp also notes that Moratín was in Paris in 1838 and knew some of Delacroix's friends, based on Michel Florisoone's publication (which is quite speculative).",
         "'Thanks to his studies in Paris, he became acquainted with two painters who influenced his Romantic career: Delacroix [Eugène Delacroix] and Ingres [Jean-Auguste-Dominique Ingres]' (García Jáñez 2010, n.p.).",
         "The [Tánsito Liminal](https://www.instagram.com/p/DTQ6ekzgpXa/?img_index=1) Gallery has compared the version of <i>The Death of Viriato</i> (1831) and a study for <i>Allegory of the Opening of the Cortes</i> by Federico de Madrazo with <i>The Death of Sardanapalus</i> by Delacroix. 'In <i>The Death of Viriato</i> (1831), Madrazo organizes the scene around a central, fallen body, surrounded by figures in dramatic poses, using diagonals, foreshortening, and exaggerated gestures. This refers directly to Delacroix's compositional logic, since in <i>The Death of Sardanapalus</i> he constructs the scene as a theater of disaster, with bodies in tension, an accumulation of figures, and physical drama. However, Delacroix's treatment of the human form contains far more explicit emotional violence, with contorted bodies and extreme gestures, whereas Madrazo restrains the pathos much more and depicts less physical violence. On the other hand, the study for <i>Allegory of the Opening of the Cortes</i> reveals a direct appropriation of the visual grammar of French Romanticism, particularly that of Eugène Delacroix. The dynamic composition, the centrality of the allegorical figure in motion, and the conception of politics as an epic scene all refer to models such as <i>Liberty Leading the People</i>. However, Madrazo subjects this imagery to a process of formal and symbolic refinement, transforming the revolutionary epic into an institutional allegory compatible with moderate Spanish liberalism. This shift reveals a Madrazo who was early on receptive to Romanticism, prior to his establishment as an academic portraitist'."
       ],
-      "bibliography": "García Jáñez 2010; Lafuente Ferrari 1987; González López 1981"
+      "bibliography": "García Jáñez 2010; Lafuente Ferrari 1987; González López 1981; Frank Trapp, <i>The Attainment of Delacroix</i>, 1970; Michel Florisoone, 'Moratin, inspireur de Géricault et Delacroix', <i>Burlington Magazine</i> 99, Sept 1957, pp.303-11."
     },
     {
       "from": "Federico de Madrazo",
@@ -12181,6 +12182,22 @@
       "connection_level": "direct",
       "relationship type": "acquaintances",
       "know each other since": "at least in 1824-1834 in Paris"
+    },
+    {
+      "from": "Eugène Delacroix",
+      "to": "Leandro Fernández de Moratín",
+      "connection_level": "direct?",
+      "relationship type": "acquaintances?",
+      "know each other since": "According to Frank Trapp, Moratín was in Paris in 1838 and knew some of Delacroix's friends; he apparently draws this information from Michel Florisoone (1957), but Moratín died in 1828 (in Paris), and Florisoone does not state this. In any case, Florisoone's sources should be verified, as this publication is quite speculative.",
+      "bibliography": "Frank Trapp, <i>The Attainment of Delacroix</i>, 1970; Michel Florisoone, 'Moratin, inspireur de Géricault et Delacroix', <i>Burlington Magazine</i> 99, Sept 1957, pp.303-11"
+    },
+    {
+      "from": "Federico de Madrazo",
+      "to": "Leandro Fernández de Moratín",
+      "connection_level": "direct?",
+      "relationship type": "colleagues?",
+      "know each other since": "According to Franck Trapp, Federico created the 1831 lithograph <i>The Capture of Granada by the Catholic Monarchs</i> for the frontispiece of a poem by Moratín. Moratín died in Paris in 1828, but several of his works were published posthumously. According to Trapp, this lithograph by Madrazo may have inspired Eugène Delacroix for his <i>The Entry of the Crusaders into Constantinople</i> (1838-40). This work, of which there is a print in the [BNE INVENT/27235](https://datos.bne.es/edicion/binp0000201088.html), was produced at the Royal Lithographic Establishment in Madrid (founded by Federico's father, José de Madrazo).",
+      "bibliography": "Frank Trapp, <i>The Attainment of Delacroix</i>, 1970; Michel Florisoone, 'Moratin, inspireur de Géricault et Delacroix', <i>Burlington Magazine</i> 99, Sept 1957, pp.303-11."
     },
     {
       "from": "Eugenio Ochoa",
