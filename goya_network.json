@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-06",
+  "last_update": "2026-06-09",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -12188,7 +12188,7 @@
       "to": "Leandro Fernández de Moratín",
       "connection_level": "direct?",
       "relationship type": "acquaintances?",
-      "know each other since": "According to Frank Trapp, Moratín was in Paris in 1838 and knew some of Delacroix's friends; he apparently draws this information from Michel Florisoone (1957), but Moratín died in 1828 (in Paris), and Florisoone does not state this. In any case, Florisoone's sources should be verified, as this publication is quite speculative.",
+      "they share": "According to Frank Trapp, Moratín was in Paris in 1838 and knew some of Delacroix's friends; he apparently draws this information from Michel Florisoone (1957), but Moratín died in 1828 (in Paris), and Florisoone does not state this. In any case, Florisoone's sources should be verified, as this publication is quite speculative.",
       "bibliography": "Frank Trapp, <i>The Attainment of Delacroix</i>, 1970; Michel Florisoone, 'Moratin, inspireur de Géricault et Delacroix', <i>Burlington Magazine</i> 99, Sept 1957, pp.303-11"
     },
     {

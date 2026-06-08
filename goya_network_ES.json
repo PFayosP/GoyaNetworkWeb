@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-06",
+  "last_update": "2026-06-09",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -318,7 +318,7 @@
       "address": "1833 París: Hôtel Bourbonne-Les-Bains (muy cerca de Adrien Dauzat); 30 rue de la Tour de Auvergne (taller) (hacia 1839)",
       "military activity": "se alistó como voluntario en los granaderos de la Milicia Nacional de Madrid (6.º Batallón) en 1835, junto a Pedro de Madrazo, Santiago Masarnau, Vicente Masarnau, Pascual de Gayangos y Arce y Valentín Carderera",
       "author of": [
-        "Ilustración: en <i>El Artista</i>, <i>No me olvides</i> (1837), <i>El Panorama</i> (1838) <i>El Semanario Pintoresco Español</i> (1843), <i>El Renacimiento</i> (1847). Un ejemplo de ilustración literaria es la litografía <i>La toma de Granada</i> (1831), cuya copia se conserva en la [BNE](https://bnedigital.bne.es/bd/card?oid=0000151060&site=bdh); véase el edge/conexión entre Federico de Madrazo y Leandro Fernández de Moratín.",
+        "Ilustración: en <i>El Artista</i>, <i>No me olvides</i> (1837), <i>El Panorama</i> (1838) <i>El Semanario Pintoresco Español</i> (1843), <i>El Renacimiento</i> (1847). Un ejemplo de ilustración literaria es la litografía <i>La toma de Granada</i> (1831), con una impresión conservada en la [BNE](https://bnedigital.bne.es/bd/card?oid=0000151060&site=bdh); véase el edge/conexión entre Federico de Madrazo y Leandro Fernández de Moratín.",
         "Pitura de Historia: <i>Godofredo de Bouillon proclamado rey de Jerusalén</i> (1838, Galerie Batailles, Palais Versailles); <i>Isabel II de España</i> (1850).",
         "Retrato: <i>Doña Amalia de Llano y Dotres, Condesa de Vilches</i> (1853); <i>Carolina Coronado</i> (c.1855); <i>Eduardo Rosales</i> (1867); <i>El pintor Perugino Sensi</i> (1873, Prado); <i>Portrait of Alfonso XII</i> (1874, Banco de España)."
       ],
@@ -12319,7 +12319,7 @@
       "to": "Leandro Fernández de Moratín",
       "connection_level": "¿directa?",
       "relationship type": "¿conocidos?",
-      "know each other since": "según Frank Trapp, Moratín estaba en París en 1838 y conocía a algunos de los amigos de Delacroix; supuestamente toma esta información de Michel Florisoone (1957), pero Moratín murió en 1828 (en París), y Florisoone no afirma esto. En cualquier caso, las fuentes de Florisoone deberían verificarse, ya que esta publicación es bastante especulativa.",
+      "they share": "según Frank Trapp, Moratín estaba en París en 1838 y conocía a algunos de los amigos de Delacroix; supuestamente toma esta información de Michel Florisoone (1957), pero Moratín murió en 1828 (en París), y Florisoone no afirma esto. En cualquier caso, las fuentes de Florisoone deberían verificarse, ya que esta publicación es bastante especulativa.",
       "bibliography": "Frank Trapp, <i>The Attainment of Delacroix</i>, 1970; Michel Florisoone, 'Moratin, inspireur de Géricault et Delacroix', <i>Burlington Magazine</i> 99, Sept 1957, pp.303-11"
     },
     {
