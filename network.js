@@ -1238,6 +1238,9 @@ document.addEventListener('DOMContentLoaded', async function () {
                 });
             return Promise.all(promises);
         };
+
+        // 🔥 DECLARAR nodePositions ANTES de usarlo
+        let nodePositions = JSON.parse(localStorage.getItem('nodePositions') || '{}');
     
         // Load the network data
         // ✅ NUEVO CÓDIGO (carga ambos archivos)
@@ -2455,7 +2458,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     // ===== CLUSTER POSITION PERSISTENCE =====
-    let nodePositions = JSON.parse(localStorage.getItem('nodePositions') || '{}');
     let dragTimeout;
 
     // Only save positions when dragging ends IN ADMIN MODE
