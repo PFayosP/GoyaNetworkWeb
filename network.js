@@ -1240,10 +1240,24 @@ document.addEventListener('DOMContentLoaded', async function () {
         };
     
         // Load the network data
-        const response = await fetch(getDataFileForLang(CURRENT_LANG));
-        if (!response.ok) throw new Error('Error cargando datos');
-        const data = await response.json();
+        // ✅ NUEVO CÓDIGO (carga ambos archivos)
+        const [networkResponse, positionsResponse] = await Promise.all([
+          fetch(getDataFileForLang(CURRENT_LANG)),
+          fetch('positions_config.json')
+        ]);
+        
+        if (!networkResponse.ok) throw new Error('Error cargando datos de red');
+        const data = await networkResponse.json();
         window.__GN_DATA = data;
+        
+        // Cargar posiciones (si existe)
+        if (positionsResponse.ok) {
+          const positionsData = await positionsResponse.json();
+          nodePositions = positionsData;
+          console.log('✅ Posiciones cargadas desde positions_config.json');
+        } else {
+          console.warn('⚠️ positions_config.json no encontrado, usando posiciones por defecto');
+        }
         
         // Start image preloading
         // const imagePreload = preloadImages(data.nodes);
@@ -1788,13 +1802,19 @@ document.addEventListener('DOMContentLoaded', async function () {
         initClusterControls();
 
         // Ajustes de nodos con cluster color
+        // ✅ NUEVO CÓDIGO (aplica posiciones)
         nodes = new vis.DataSet(data.nodes.map(node => {
-          labelToId[node.label] = node.id;
           const degree = edgeCount[node.id] || 1;
           const clusterIds = nodeClusterMap[node.id];
           const clusterColor = clusterIds && clusterIds.length > 0 ? clusterColorMap[clusterIds[0]] : undefined;
+          
+          // 🔥 APLICAR POSICIONES DESDE positions_config.json
+          const pos = nodePositions[node.id] || { x: undefined, y: undefined };
+          
           const config = {
             ...node,
+            x: pos.x,  // <-- AÑADIR ESTO
+            y: pos.y,  // <-- AÑADIR ESTO
             size: Math.min(13 + degree * 0.72, 38),
             mass: 1 + degree * 0.025,
             font: {
@@ -2470,18 +2490,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     };
 
-    // Load positions from positions_config.json if available (all users)
-    if (!isAdminMode) {
-      fetch('positions_config.json')
-        .then(response => response.json())
-        .then(data => {
-          nodePositions = data;
-          console.log('Loaded positions from positions_config.json');
-        })
-        .catch(err => {
-          console.log('positions_config.json not found, using defaults:', err);
-        });
-    }
 
     // Add reset function
     window.resetNodePositions = function() {
