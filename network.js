@@ -1611,11 +1611,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Impressionist cluster",
             titleEs: "Clúster Impresionista",
-            origin: "",
-            originEs: "",
+            origin: "French artistic movement originating in the 1860s, dedicated to capturing the ephemeral light of a specific instant and its effect on colors and forms. Each artist expressed their own subjective vision, resulting in diverse and highly individual styles rather than a unified aesthetic. The movement was formally introduced through the first independent exhibition held in Paris in 1874.",
+            originEs: "Movimiento artístico francés que se originó en la década de 1860, dedicado a capturar la luz efímera de un instante específico y su efecto en los colores y las formas. Cada artista expresó su propia visión subjetiva, resultando en estilos diversos e individuales más que en una estética unificada. El movimiento fue presentado formalmente a través de la primera exposición independiente celebrada en París en 1874.",
             bibliography: [],
             websites: [
-              "[Networks of Impressionism](https://www.navigating.art/articles-from-navigatingart/networks-of-impressionism): an upcoming collaborative digital endeavor from the Museum Barberini (Postdam, Germany), the Wildenstein Plattner Institute and Navigating.art."
+              "[Networks of Impressionism](https://www.navigating.art/articles-from-navigatingart/networks-of-impressionism): An upcoming collaborative digital endeavor from the Museum Barberini (Postdam, Germany), the Wildenstein Plattner Institute and Navigating.art."
             ]
           },
 
