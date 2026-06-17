@@ -1881,23 +1881,33 @@ document.addEventListener('DOMContentLoaded', async function () {
               html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Sitios web' : 'Websites'}</div>`;
               html += `<ul style="margin:0 0 1rem 0; padding-left:1.2rem; line-height:1.8;">`;
               cfg.websites.forEach(site => {
-                let label, url;
+                let label, url, description = '';
                 if (typeof site === 'string') {
-                  // Parse markdown link format: [label](url)
-                  const match = site.match(/\[(.*?)\]\((.*?)\)/);
+                  // Parse markdown link format: [label](url) optionally followed by description
+                  const match = site.match(/\[(.*?)\]\((.*?)\)(.*)/);
                   if (match) {
                     label = match[1];
                     url = match[2];
+                    description = match[3].trim();
+                    // Remove leading colon if present
+                    if (description.startsWith(':')) {
+                      description = description.substring(1).trim();
+                    }
                   } else {
                     label = site;
                     url = site;
                   }
                 } else {
-                  // Object format: {label, url}
+                  // Object format: {label, url, description}
                   label = site.label;
                   url = site.url;
+                  description = site.description || '';
                 }
-                html += `<li><a href="${url}" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">${label}</a></li>`;
+                html += `<li><a href="${url}" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">${label}</a>`;
+                if (description) {
+                  html += `<br><span style="color:#999; font-size:0.9rem; margin-left:1rem; display:block; margin-top:0.2rem;">${description}</span>`;
+                }
+                html += `</li>`;
               });
               html += `</ul>`;
             }
