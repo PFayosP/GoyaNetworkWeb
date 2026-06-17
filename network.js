@@ -1315,7 +1315,12 @@ document.addEventListener('DOMContentLoaded', async function () {
               "José de Madrazo": Math.PI * 1.25  // north-west, next to Federico
             },
             title: "Madrazo family",
-            titleEs: "Familia Madrazo"
+            titleEs: "Familia Madrazo",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
+            // Format: websites: ["[Label Name](https://url.com)", "[Another](https://url2.com)"]
           },
 
           "HUGO_CENACLE": {
@@ -1337,7 +1342,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 90,
             startAngle: -Math.PI / 2,
             title: "Hugo cenacle",
-            titleEs: "Clúster Hugo"
+            titleEs: "Clúster Hugo",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
+            // Format: websites: ["[Label Name](https://url.com)", "[Another](https://url2.com)"]
           },
 
           "ILUSTRADOS_CLUSTER": {
@@ -1367,7 +1377,11 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Martín Zapater": Math.PI / 2.2     // also south, close to Goya
             },
             title: "Ilustrados cluster",
-            titleEs: "Clúster Ilustrados"
+            titleEs: "Clúster Ilustrados",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
           "GOYA_FAMILY": {
@@ -1386,7 +1400,11 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Francisco de Goya": -Math.PI / 2
             },
             title: "Goya family",
-            titleEs: "Familia Goya"
+            titleEs: "Familia Goya",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
           "OSUNA_CORE": {
@@ -1400,7 +1418,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             radius: 135,
             startAngle: -Math.PI / 2,
             title: "Osuna core",
-            titleEs: "Núcleo Osuna"
+            titleEs: "Núcleo Osuna",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
           "MONTIJO_CORE": {
@@ -1418,7 +1440,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 100,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
-            titleEs: "Núcleo Montijo"
+            titleEs: "Núcleo Montijo",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
           "COURT_PAINTERS": {
@@ -1438,7 +1464,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 92,
             startAngle: -Math.PI / 2,
             title: "Court painters",
-            titleEs: "Pintores de Corte"
+            titleEs: "Pintores de Corte",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
           "PRINT_SPECIALISTS": {
@@ -1453,7 +1483,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 80,
             startAngle: -Math.PI / 2,
             title: "Print specialists",
-            titleEs: "Especialistas en estampa"
+            titleEs: "Especialistas en estampa",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
           "MADRAZO_CARDERERA_GROUP": {
@@ -1475,7 +1509,11 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Pedro de Madrazo": Math.PI / 2
             },
             title: "Madrazo-Carderera group",
-            titleEs: "Grupo Madrazo-Carderera"
+            titleEs: "Grupo Madrazo-Carderera",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
           "BOURBON_CORE": {
@@ -1498,7 +1536,11 @@ document.addEventListener('DOMContentLoaded', async function () {
               "XV Countess of Chinchón": 0
             },
             title: "Bourbon cluster",
-            titleEs: "Clúster Borbón"
+            titleEs: "Clúster Borbón",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
          "VILLAFRANCA_CLUSTER": {
@@ -1513,7 +1555,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Villafranca-Alba cluster",
-            titleEs: "Clúster Villafranca-Alba"
+            titleEs: "Clúster Villafranca-Alba",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
           "TAYLOR_CLUSTER": {
@@ -1526,7 +1572,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Taylor cluster",
-            titleEs: "Clúster Taylor"
+            titleEs: "Clúster Taylor",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
           "DAVID_CLUSTER": {
@@ -1540,7 +1590,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "David cluster",
-            titleEs: "Clúster David"
+            titleEs: "Clúster David",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           },
 
           "IMPRESSIONIST_CLUSTER": {
@@ -1556,7 +1610,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Impressionist cluster",
-            titleEs: "Clúster Impresionista"
+            titleEs: "Clúster Impresionista",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: [
+              "[Networks of Impressionism](https://www.navigating.art/articles-from-navigatingart/networks-of-impressionism): an upcoming collaborative digital endeavor from the Museum Barberini (Postdam, Germany), the Wildenstein Plattner Institute and Navigating.art."
+            ]
           },
 
           "SPANISH_ROMANTICS_CLUSTER": {
@@ -1569,7 +1629,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Spanish Romantics",
-            titleEs: "Románticos españoles"
+            titleEs: "Románticos españoles",
+            origin: "",
+            originEs: "",
+            bibliography: [],
+            websites: []
           }
         };
 
@@ -1694,6 +1758,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             };
           }));
           updateClusterInfoBadge();
+          if (typeof window.showDefaultNodeInfo === 'function') {
+            window.showDefaultNodeInfo();
+          }
         };
 
         window.selectCluster = function (clusterId) {
@@ -1738,7 +1805,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             };
           }));
           updateClusterInfoBadge();
-          
+
           // Focus on cluster without glitching
           const memberArray = Array.from(members);
           if (memberArray.length > 0 && window.VIS_NETWORK) {
@@ -1756,13 +1823,13 @@ document.addEventListener('DOMContentLoaded', async function () {
               });
               cx /= memberArray.length;
               cy /= memberArray.length;
-              
+
               // Calculate appropriate scale based on cluster size
               const width = maxX - minX || 100;
               const height = maxY - minY || 100;
               const maxDim = Math.max(width, height);
               const scale = Math.min(1.5, 800 / (maxDim + 200)); // Fit with padding, max 1.5x zoom
-              
+
               // Move immediately without animation to avoid glitching
               window.VIS_NETWORK.moveTo({
                 position: { x: cx, y: cy },
@@ -1771,6 +1838,72 @@ document.addEventListener('DOMContentLoaded', async function () {
             } catch (e) {
               console.warn('Error focusing on cluster:', e);
             }
+          }
+
+          // Render cluster info in the right panel
+          const nodeInfoEl = document.getElementById('nodeInfo');
+          if (nodeInfoEl) {
+            const clusterTitle = getClusterDisplayName(clusterId);
+            const sortedMembers = Array.from(members).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+            const isEs = CURRENT_LANG === 'es';
+
+            let html = `<div class="cluster-info-panel">`;
+            html += `<h3 style="margin:0 0 1rem 0; font-size:1.1rem; color:#fff; border-bottom:1px solid #444; padding-bottom:0.5rem;">${clusterTitle}</h3>`;
+
+            // Members section
+            html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Miembros' : 'Members'}</div>`;
+            html += `<ul style="margin:0 0 1rem 0; padding-left:1.2rem; line-height:1.8;">`;
+            sortedMembers.forEach(id => {
+              const safeId = id.replace(/'/g, "\\'");
+              html += `<li><a href="#" style="color:#66ccff;" onclick="focusNode('${safeId}'); return false;">${id}</a></li>`;
+            });
+            html += `</ul>`;
+
+            // Origin section
+            const originText = isEs ? (cfg.originEs || cfg.origin) : cfg.origin;
+            if (originText) {
+              html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Origen' : 'Origin'}</div>`;
+              html += `<p style="margin:0 0 1rem 0; color:#ccc; line-height:1.5;">${originText}</p>`;
+            }
+
+            // Bibliography section
+            if (cfg.bibliography && cfg.bibliography.length > 0) {
+              html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Bibliografía' : 'Bibliography'}</div>`;
+              html += `<ul style="margin:0 0 1rem 0; padding-left:1.2rem; line-height:1.8; color:#ccc;">`;
+              cfg.bibliography.forEach(entry => {
+                html += `<li>${entry}</li>`;
+              });
+              html += `</ul>`;
+            }
+
+            // Websites section
+            if (cfg.websites && cfg.websites.length > 0) {
+              html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Sitios web' : 'Websites'}</div>`;
+              html += `<ul style="margin:0 0 1rem 0; padding-left:1.2rem; line-height:1.8;">`;
+              cfg.websites.forEach(site => {
+                let label, url;
+                if (typeof site === 'string') {
+                  // Parse markdown link format: [label](url)
+                  const match = site.match(/\[(.*?)\]\((.*?)\)/);
+                  if (match) {
+                    label = match[1];
+                    url = match[2];
+                  } else {
+                    label = site;
+                    url = site;
+                  }
+                } else {
+                  // Object format: {label, url}
+                  label = site.label;
+                  url = site.url;
+                }
+                html += `<li><a href="${url}" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">${label}</a></li>`;
+              });
+              html += `</ul>`;
+            }
+
+            html += `</div>`;
+            nodeInfoEl.innerHTML = html;
           }
         };
 
