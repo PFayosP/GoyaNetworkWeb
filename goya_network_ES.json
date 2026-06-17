@@ -3560,7 +3560,11 @@
       ],
       "influenced by": "Édouard Manet; Stéphane Mallarmé; Corot",
       "friends": "Édouard Manet; Émile Zola; Stéphane Mallarmé; Camille Pissarro; Claude Monet; Auguste Renoir",
-      "author of": "416 óleos, 191 pasteles, 240 acuarelas, 8 grabados, 2 esculturas y entre 200 y 300 dibujos. <i>Edma Morisot lisant</i> (1867, Cleveland); <i>Jeune femme à sa fenêtre (Madame Pontillon)</i> (retrato de Edma Morisot) (1869); La lecture o Madame Morisot et sa fille, Madame Pontillon (1869-70, NGA); Intérieur (1871); Femme et enfant au balcon (su hermana y su sobrina) (1872); <i>Le Berceau</i> (1872); <i>Chasse aux papillons</i> (1874, Orsay); <i>Femme à sa toilette</i> (1875); <i>Eugène Manet à l'île de Wight</i> (1875, Museo Marmottan-Monet); <i>Femme en noir (Avant le théâtre)</i> (1875, Tokio); <i>La Psyché</i> (1876, Thyssen); <i>Le Port de Nice</i> (1881, Dallas); <i>Bords de Seine</i> (1883, Oslo); <i>Dans la salle à manger</i> (1886, NGA); <i>Paule Gobillard</i> (1886, Marmottan); escultura en bronce de la cabeza de Julie Manet (c. 1886); <i>Enfants à la vasque</i> (1886, Marmottan); <i>Le Flageolet</i> (1890); <i>Bergère nue couchée</i> (1891); <i>Julie et son lévrier</i> (1893); <i>Julie rêveuse</i> (1894)",
+      "author of": [
+        "416 óleos, 191 pasteles, 240 acuarelas, 8 grabados, 2 esculturas y entre 200 y 300 dibujos.",
+        "i>Edma Morisot lisant</i> (1867, Cleveland); <i>Jeune femme à sa fenêtre (Madame Pontillon)</i> (retrato de Edma Morisot) (1869); La lecture o Madame Morisot et sa fille, Madame Pontillon (1869-70, NGA); Intérieur (1871); Femme et enfant au balcon (su hermana y su sobrina) (1872); <i>Le Berceau</i> (1872); <i>Chasse aux papillons</i> (1874, Orsay); <i>Femme à sa toilette</i> (1875); <i>Eugène Manet à l'île de Wight</i> (1875, Museo Marmottan-Monet); <i>Femme en noir (Avant le théâtre)</i> (1875, Tokio); <i>La Psyché</i> (1876, Thyssen); <i>Le Port de Nice</i> (1881, Dallas); <i>Bords de Seine</i> (1883, Oslo); <i>Dans la salle à manger</i> (1886, NGA); <i>Paule Gobillard</i> (1886, Marmottan); escultura en bronce de la cabeza de Julie Manet (c. 1886); <i>Enfants à la vasque</i> (1886, Marmottan); <i>Le Flageolet</i> (1890); <i>Bergère nue couchée</i> (1891); <i>Julie et son lévrier</i> (1893); <i>Julie rêveuse</i> (1894)",
+        "Colecciones: [Barberini Museum](https://sammlung.museum-barberini.de/en/?a[]=morisot-berthe)."
+      ],
       "patronage": "Paul Durand-Ruel: en 1872 adquirió obras de Morisot a través de Manet; hacia 1875, Femme à sa toilette fue vendida a Hoschedé a través de Durand-Ruel",
       "exhibitions": [
         "Salón de París: <i>Souvenir des bords de l'Oise</i> y <i>Un vieux chemin à Auvers</i> (Salón de 1864); <i>Vue de Paris prise des hauteurs du Trocadéro</i> (Salón de 1867, Museo de Santa Bárbara); <i>Vue de la rivière de Pont-Aven à Rozbras</i> (Salón de 1868): rechazada por la crítica, excepto por Zola; <i>Joven mujer en su ventana ( )</i> (retrato de Edma Morisot) y <i>La lectura</i> o <i> Morisot y su hija, Madame Pontillon</i> (Salón de 1870); rechazo de <i>Intérieur</i> (Salón de 1872) (lo que enfureció a Puvis de Chavannes); <i>Le Berceau</i> (Salón de 1872); <i>Blanche</i> (Blanche Pontillon) (1873)",
@@ -3752,9 +3756,9 @@
       ],
       "students": "Jeanne Baudot",
       "influenced by": [
-        "Francés: Fragonard; Boucher; Édouard Manet (c. 1871); Eugène Delacroix (principios de la década de 1870); Jean-Auguste-Dominique Ingres; Courbet; Claude Monet",
-        "españoles: Velázquez: Renoir consideraba que en la Infanta Margarita de Velázquez (1653, Louvre), sus cintas reconciliaban 'todo el arte de la pintura' (tout l'art de la peinture est là) (Tinterow 2003, p.457; citado de García Felguera 1991, p.143)",
-        "Italiano: Rafael"
+        "Franceses: Fragonard; Boucher; Édouard Manet (c. 1871); Eugène Delacroix (principios de la década de 1870); Jean-Auguste-Dominique Ingres; Courbet; Claude Monet",
+        "Españoles: Velázquez: Renoir consideraba que en la Infanta Margarita de Velázquez (1653, Louvre), sus cintas reconciliaban 'todo el arte de la pintura' (tout l'art de la peinture est là) (Tinterow 2003, p.457; citado de García Felguera 1991, p.143)",
+        "Italianos: Rafael"
       ],
       "interest in Spanish art": "Renoir consideraba que en la Infanta Margarita de Velázquez (1653, Louvre), sus cintas reconciliaban 'todo el arte de la pintura' (<i>tout l'art de la peinture est là</i>) (Tinterow 2003, p.457; citado de García Felguera 1991, p.143)",
       "address": "talleres: rue Notre-Dame-des-Champs; rue Saint-Georges (desde 1873)",
