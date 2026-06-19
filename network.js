@@ -1955,8 +1955,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             // Origin section
             const originText = isEs ? (cfg.originEs || cfg.origin) : cfg.origin;
             if (originText) {
+              const linkedOriginText = autoLinkNames(originText, nodesMap);
               html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Contexto' : 'Context'}</div>`;
-              html += `<p style="margin:0 0 1rem 0; color:#ccc; line-height:1.5;">${originText}</p>`;
+              html += `<p style="margin:0 0 1rem 0; color:#ccc; line-height:1.5;">${linkedOriginText}</p>`;
             }
 
             // Bibliography section
