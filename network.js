@@ -1360,6 +1360,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Claude Schopp (ed.), <em>Une amitié capitale: Correspondance Victor Hugo - Alexandre Dumas</em>, 2015.",
               "Claude Schopp (ed.), <em>Frères d'armes de la révolution romantique. Lettres d'Alexandre Dumas au Baron Taylor et à Adrien Dauzats</em>, Cahiers Alexandre Dumas, 1993, no. 20 (reedited in 2023).",
               "Robert Avrett, 'Ochoa's Translation of Hugo's Hernani: A Study in Racial Psychologies' <em>The Modern Language Journal</em>, Vol. 38 no. 7, Nov 1954, pp.362-65.",
+              "Ilse Hempel Lipschutz, <em>Spanish Painting and the French Romantics</em>, Harvard University Press, 1972.",
               "Mª Rosario Ozaeta, 'Eugenio de Ochoa, Traductor de Hugo', in <em>Neoclásicos y románticos ante la traducción</em>, edited by Francisco Lafarga et al, Universidad de Murcia, 2002, pp.419-36.",
               "Roberto Dengler Gassin, 'Algunas consideraciones a propósito de Hernani, drama de Victor Hugo (1830), versión castellana de Eugenio de Ochoa (1836)', in ed. Donaire & Lafarga, <em>Traducción y adaptación cultural: España-Francia</em>, 1991, pp.337-345."
             ],
@@ -1535,6 +1536,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             origin: "A group of Spanish artists, writers, and intellectuals of the same generation, linked by long-standing friendships formed in youth and sustained through shared artistic and cultural interests. Including members of the Madrazo family, they maintained close connections with Parisian cultural circles, where several of them lived and engaged with French Romanticism. They also played an important role in the dissemination and critical reception of Francisco de Goya's work in both Spain and France.",
             originEs: "Un grupo de artistas, escritores e intelectuales españoles de la misma generación, unidos por amistades de larga duración formadas en la juventud y mantenidas a través de intereses artísticos y culturales compartidos. Incluye miembros de la familia Madrazo y mantiene vínculos estrechos con los círculos culturales parisinos, donde varios de ellos residieron y entraron en contacto con el Romanticismo francés. También desempeñaron un papel importante en la difusión y recepción crítica de la obra de Francisco de Goya tanto en España como en Francia.",
             bibliography: [
+              "Amaya Alzaga, 'Federico de Madrazo en París (1837-1839): su mirada sobre la pintura francesa de su tiempo y viceversa', in <em>Federico de Madrazo y Carlos Luis de Ribera. Pintores Del Romanticismo Español</em>, 2018, pp.8-28.",
               "Robert Avrett, 'Ochoa's Translation of Hugo's Hernani: A Study in Racial Psychologies' <em>The Modern Language Journal</em>, Vol. 38 no. 7, Nov 1954, pp.362-65.",
               "Paula Fayos Pérez, 'Valentín Carderera and the Dissemination of Goya's Graphic Work in France', <em>The Burlington Magazine</em>, vol. 162, no. 1413, 2020, pp. 1048-55.",
               "José María Lanzarote Guiral, <em>Diarios de viaje de Valentín Carderera por Europa (1841-1861). París, Londres, Bélgica y Alemania</em>, 2016.",
@@ -1607,6 +1609,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             bibliography: [
               "Claude Schopp (ed.), <em>Frères d'armes de la révolution romantique. Lettres d'Alexandre Dumas au Baron Taylor et à Adrien Dauzats</em>, Cahiers Alexandre Dumas, 1993, no. 20 (reedited in 2023).",
               "Paul Guinard, <em>Dauzats et Blanchard: Peintres de l'Espagne Romantique</em>, 1967.",
+              "Ilse Hempel Lipschutz, <em>Spanish Painting and the French Romantics</em>, Harvard University Press, 1972.",
               "Alisa Luxenberg, <em>The Galerie Espagnole and the Museo Nacional, 1835-1853: Saving Spanish Art, or the Politics of Patrimony</em>, 2008.",
               "Gary Tinterow et al. <em>Manet/Velázquez: The French Taste for Spanish Painting</em>, New York, Metropolitan Museum of Art, 2003."
             ],
@@ -1953,6 +1956,16 @@ document.addEventListener('DOMContentLoaded', async function () {
                   html += `<br><span style="color:#999; font-size:0.9rem; margin-left:1rem; display:block; margin-top:0.2rem;">${description}</span>`;
                 }
                 html += `</li>`;
+              });
+              html += `</ul>`;
+            }
+
+            // Conferences section
+            if (cfg.conferences && cfg.conferences.length > 0) {
+              html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Conferencias' : 'Conferences'}</div>`;
+              html += `<ul style="margin:0 0 1rem 0; padding-left:1.2rem; line-height:1.8; color:#ccc;">`;
+              cfg.conferences.forEach(entry => {
+                html += `<li>${entry}</li>`;
               });
               html += `</ul>`;
             }
