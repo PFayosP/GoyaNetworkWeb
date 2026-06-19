@@ -1955,7 +1955,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             // Origin section
             const originText = isEs ? (cfg.originEs || cfg.origin) : cfg.origin;
             if (originText) {
-              html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Origen' : 'Origin'}</div>`;
+              html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Contexto' : 'Context'}</div>`;
               html += `<p style="margin:0 0 1rem 0; color:#ccc; line-height:1.5;">${originText}</p>`;
             }
 
