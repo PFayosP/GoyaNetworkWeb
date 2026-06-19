@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-17",
+  "last_update": "2026-06-19",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -1911,6 +1911,7 @@
       "political views": "liberal",
       "portrayed by": "Antonio María Esquivel, oil painting, 1842, Prado",
       "bibliography": "Lanzarote Guiral 2016",
+      "websites": "[Atenas. Diario de a bordo](https://atenas-diariodeabordo.blogspot.com/2017/11/romanticismo-y-romanticos-iv-espronceda.html), Romanticismo y Románticos IV. Espronceda.]",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q209077",
         "rah": "https://historia-hispanica.rah.es/biografias/14588-jose-de-espronceda-y-delgado"
@@ -1980,6 +1981,7 @@
       "curiosities": "his son Luis Mariano became a famous librettist of <i>zarzuelas</i>; his daughter Adela was allegedly the lover of King Amadeo de Saboya; her daughter Baldomera was a banker and was condemned to a prison sentence because of a pyramid scheme",
       "portrayed by": "José Gutiérrez de la Vega, c.1835, oil painting, Museo del Romanticismo (Madrid)",
       "bibliography": "A. Pérez (ed.), <i>Fígaro. Colección de artículos dramáticos, literarios, políticos y de costumbres</i>, RAE, 2016; Álvarez Barrientos. J., Ferri Coll, J. M. y Rubio Cremades, E. (eds.), <i>Larra en el mundo. La misión de un escritor moderno</i>, Univ. Alicante, 2011; <i>Larra: Fígaro de vuelta, 1809-2009</i>, catalogue and conference papers (2 vols.), BNE, 2009; Torres González 2009; M. J. de Larra, <i>Larra. Biografía de un hombre desesperado</i>, 2009; Luxenberg 2008; Romero Tobar 1997; J. L. Varela, <i>Larra y España</i>, 1983; S. Kirkpatrick, <i>Larra, el laberinto inextricable de un romántico liberal</i>, 1977; Guinard 1967-A; González-Blanco, <i>Historia de la novela en España: desde el Romanticismo a nuestros días</i>, 1909; Mesonero Romanos, <i>Memorias de un setentón, natural y vecino de Madrid</i>, 1880",
+      "websites": "[Biblioteca Cervantes Virtual](https://www.cervantesvirtual.com/portales/mariano_jose_de_larra/)",
       "conferences/seminars": "Madrid BNE 2009, <i>Fígaro de vuelta</i>; Fundación Juan March, Madrid, 2005, <i>Originalidad literaria de Mariano José de Larra</i>, Domingo Ródenas de Moya, [link](https://www.march.es/es/madrid/conferencia/mariano-jose-larra-su-vida-su-obra-su-tiempo-ii-originalidad-literaria-mariano)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q298773",
@@ -7159,8 +7161,14 @@
       "from": "Mariano José Larra",
       "to": "José de Espronceda",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
-      "they shared": "similar social and professional circles. They were both key figures of the Spanish Romantic movement in literature. They both attended the tertulia <i>El Parnasillo</i>",
+      "relationship type": "close friends",
+      "know each other since": "probably the 1820s",
+      "they shared": [
+        "Similar social and professional circles. They were both key figures of the Spanish Romantic movement in literature.",
+        "They both attended the tertulia <i>El Parnasillo</i>.",
+        "They both attended the Colegio de San Mateo in Madrid.",
+        "They founded the group <i>Partida del Trueno</i>, a group of young liberals who practiced nocturnal mischief."
+      ],
       "mentions": "Espronceda gave a speech at Larra's funeral in 1837, published in <i>El Español</i> (27 Feb 1837)"
     },
     {
