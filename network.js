@@ -1362,7 +1362,11 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Robert Avrett, 'Ochoa's Translation of Hugo's Hernani: A Study in Racial Psychologies' <em>The Modern Language Journal</em>, Vol. 38 no. 7, Nov 1954, pp.362-65.",
               "Ilse Hempel Lipschutz, <em>Spanish Painting and the French Romantics</em>, Harvard University Press, 1972.",
               "Mª Rosario Ozaeta, 'Eugenio de Ochoa, Traductor de Hugo', in <em>Neoclásicos y románticos ante la traducción</em>, edited by Francisco Lafarga et al, Universidad de Murcia, 2002, pp.419-36.",
-              "Roberto Dengler Gassin, 'Algunas consideraciones a propósito de Hernani, drama de Victor Hugo (1830), versión castellana de Eugenio de Ochoa (1836)', in ed. Donaire & Lafarga, <em>Traducción y adaptación cultural: España-Francia</em>, 1991, pp.337-345."
+              "Roberto Dengler Gassin, 'Algunas consideraciones a propósito de Hernani, drama de Victor Hugo (1830), versión castellana de Eugenio de Ochoa (1836)', in ed. Donaire & Lafarga, <em>Traducción y adaptación cultural: España-Francia</em>, 1991, pp.337-345.",
+              "Anne Martin-Fugier, <i>Les Romantiques: 1820-1848</i>, 1998.",
+              "René Bray, <i>Chronologie du romantisme (1804-1830)</i>, t.33, coll. Bibliothèque de la Revue des cours et conférences, VII, 1932.",
+              "Charles Marc Des Granges, <i>Le Romantisme et la critique : la presse littéraire sous la restauration, 1815-1830</i>, 1907.",
+              "Edmond Biré, <i>Victor Hugo avant 1830</i>, 1902."
             ],
             websites: []
             // Format: websites: ["[Label Name](https://url.com)", "[Another](https://url2.com)"]
@@ -1399,7 +1403,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             origin: "A heterogeneous intellectual and political network associated with the Spanish Enlightenment (Ilustración), united by reformist ideals and a shared commitment to cultural, administrative, and social modernization. Comprising statesmen, writers, clerics, bankers, and artists, the group contributed to debates on progress and institutional reform in late eighteenth- and early nineteenth-century Spain, often operating within overlapping courtly, academic, and economic spheres. Many members maintained close personal and professional relationships with Francisco de Goya, who portrayed several of them in portraiture, reflecting both patterns of patronage and a degree of intellectual affinity.",
             originEs: "Un entramado intelectual y político heterogéneo vinculado a la Ilustración española, unido por ideales reformistas y por un compromiso compartido con la modernización cultural, administrativa y social. Integrado por estadistas, escritores, clérigos, banqueros y artistas, el grupo participó en los debates sobre el progreso y la reforma institucional en la España de finales del siglo XVIII y comienzos del XIX, operando frecuentemente en espacios cortesanos, académicos y económicos interconectados. Muchos de sus miembros mantuvieron relaciones estrechas personales y profesionales con Francisco de Goya, quien retrató a varios de ellos, reflejando tanto dinámicas de mecenazgo como un grado de afinidad intelectual.",
             bibliography: [
-              "Janis Tomlinson, <em>Goya in the Twilight of Enlightenment</em>, 1992."
+              "Janis Tomlinson, <em>Goya in the Twilight of Enlightenment</em>, 1992.",
+              "Manuela B. Mena Marqués, Gudrun Maurer (coord.), Virginia Albarrán Martín, <i>Goya y la corte ilustrada</i>, 2017.",
+              "Manuela B. Mena Marqués, 'Jovellanos pintado por Goya', <i>Boletín jovellanista</i>, no.17, 2017, pp.135-47."
             ],
             websites: []
           },
@@ -1441,7 +1447,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             titleEs: "Núcleo Osuna",
             origin: "A leading Spanish aristocratic circle of the late eighteenth and early nineteenth centuries, centered on the House of Osuna and its allied networks. One of the most important patrons and collectors of Francisco de Goya, the group supported a wide range of his production, from decorative commissions to more experimental and critical imagery, including witchcraft scenes and the Caprichos series. Their cultural profile combined Enlightenment-inflected interests with strong engagement in artistic patronage, and included salonnières who facilitated intellectual and social exchange within elite Madrid circles.",
             originEs: "Un influyente círculo de la aristocracia española de finales del siglo XVIII y comienzos del XIX, centrado en la casa de Osuna y sus redes aliadas. Uno de los principales mecenas y coleccionistas de Francisco de Goya, el grupo impulsó un amplio espectro de su producción, desde encargos decorativos hasta imágenes más experimentales y críticas, incluyendo escenas de brujería y la serie de los Caprichos. Su perfil cultural combinaba intereses de raíz ilustrada con un fuerte compromiso con el mecenazgo artístico, e incluía salonnières que facilitaron el intercambio intelectual y social en los círculos de élite madrileños.",
-            bibliography: [],
+            bibliography: [
+              "Manuela B. Mena Marqués, 'Dos adquisiciones de Goya en el Museo del Prado: <i>Vuelo de brujas</i> (1999) y <i>La marquesa de Santa Cruz</i> (1986), in <i>Los tesoros ocultos del Museo del Prado</i>, 2017, pp.277-305.",
+              "Manuela B. Mena Marqués, Gudrun Maurer (coord.), Virginia Albarrán Martín, <i>Goya y la corte ilustrada</i>, 2017."
+              ],
             websites: [],
             conferences: [
               "Manuela Mena, [Vuelo de brujas y La Marquesa de Santa Cruz. Francisco de Goya](https://fundacionbarrie.org/conferencia-manuela-mena), 2016."
@@ -1465,7 +1474,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             title: "Montijo core",
             titleEs: "Núcleo Montijo",
             origin: "A dynastic and social network of Spanish nobility centered on the Montijo and allied Palafox–Villafranca families, operating across Spain and France in the late eighteenth and nineteenth centuries. United through marriage alliances, courtly mobility, and shared cultural interests, they played a role in the patronage and circulation of Francisco de Goya’s work. Several members functioned as salonnières and cultural intermediaries in transnational elite circles, particularly in Paris, where intellectual and literary exchanges included figures such as Prosper Mérimée. The group’s later consolidation of influence at the French imperial court further extended its cultural and political reach.",
-            originEs: "Un entramado dinástico y social de la nobleza española centrado en las casas de Montijo y las familias aliadas Palafox–Villafranca, activo entre finales del siglo XVIII y el XIX entre España y Francia. Unidos por alianzas matrimoniales, movilidad cortesana e intereses culturales compartidos, participaron en el patronazgo y circulación de la obra de Francisco de Goya. Varios de sus miembros actuaron como salonnières e intermediarios culturales en círculos de élite transnacionales, especialmente en París, donde mantuvieron contactos con figuras literarias e intelectuales como Prosper Mérimée. La posterior proyección de la familia en la corte imperial francesa amplió su influencia cultural y política.",
+            originEs: "Un entramado dinástico y social de la nobleza española centrado en las casas de Montijo y las familias aliadas Palafox-Villafranca, activo entre finales del siglo XVIII y el XIX entre España y Francia. Unidos por alianzas matrimoniales, movilidad cortesana e intereses culturales compartidos, participaron en el patronazgo y circulación de la obra de Francisco de Goya. Varios de sus miembros actuaron como salonnières e intermediarios culturales en círculos de élite transnacionales, especialmente en París, donde mantuvieron contactos con figuras literarias e intelectuales como Prosper Mérimée. La posterior proyección de la familia en la corte imperial francesa amplió su influencia cultural y política.",
             bibliography: [],
             websites: []
           },
@@ -1490,8 +1499,25 @@ document.addEventListener('DOMContentLoaded', async function () {
             titleEs: "Pintores de Corte",
             origin: "A heterogeneous group of painters who served the Spanish royal court across the late eighteenth and early nineteenth centuries. Despite differing stylistic orientations and artistic backgrounds, they were connected through their roles as court painters, resulting in professional proximity, occasional collaboration, and shifting degrees of personal and artistic affinity. Within this network, family ties and generational succession also played a role in shaping interactions, while stylistic contrasts—from late Baroque tradition to Neoclassicism and Romanticism—coexisted within the same institutional framework.",
             originEs: "Un grupo heterogéneo de pintores al servicio de la corte española a finales del siglo XVIII y comienzos del XIX. A pesar de sus diferentes estilos, orígenes y posiciones estéticas, estuvieron vinculados por su condición de pintores de cámara, lo que generó proximidad profesional, colaboración ocasional y distintos grados de afinidad personal y artística. Dentro de esta red, los lazos familiares y la sucesión generacional también influyeron en las relaciones, mientras coexistían orientaciones estilísticas contrastadas —desde la tradición tardobarroca hasta el neoclasicismo y el romanticismo— dentro del mismo marco institucional.",
-            bibliography: [],
-            websites: []
+            bibliography: [
+              "Ester Alba Pagán, 'Imagen y poder. La pintura valenciana en la época de Fernando VII (1814-1833)de la alegoría a la pintura conmemorativa', <i>Arte, poder y sociedad en la España de los siglos XV a XX</i>, 2008, pp.337-54.",
+              "Virginia Albarrán Martín, 'Pintura de tema religioso de Agustín Esteve', in Alejandro Cañestro Donoso, ed. <em>Scripta artium in honorem prof. José Manuel Cruz Valdovinos</em>, 1, Madrid, pp. 297-318.",
+              "Virginia Albarrán Martín, 'De Goyas que son Esteves', in <em>Goya: Collecting the Grotesque</em>, upcoming.",
+              "Manuela B. Mena Marqués, Gudrun Maurer (coord.), Virginia Albarrán Martín, <i>Goya y la corte ilustrada</i>, 2017.",
+              "Jesusa Vega, 'Fernando VII: resistencia y deseo', <i>Journal of Spanish Cultural Studies</i>, 2013, vol.14, no.4, pp.348-99."
+            ],
+            websites: [
+              "[Colección de Carlos III: José Manuel de la Mano, Museo del Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/coleccion-de-carlos-iii/4d51e705-b17d-4836-8745-54569c9e7b30).",
+              "[Descubrir el Arte: El poderoso legado de Carlos III](https://www.descubrirelarte.es/2016/12/30/el-poderoso-legado-de-carlos-iii.html).",
+              "[Colección de Carlos IV: Luis Miguel Enciso Recio, Museo del Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/coleccion-de-carlos-iv/f1094cbd-7bfb-4b99-97fa-04769b0a3954).",
+              "[Más de Arte: Carlos IV, mecenas y coleccionista](https://masdearte.com/carlos-iv-mecenas-y-coleccionista/).",
+              "[Carlos IV, por José de Madrazo](https://www.galeriadelascoleccionesreales.es/obra-de-arte/carlos-iv/726318d0-2f71-4c14-9394-681e52e2a480), Galería de las Colecciones Reales.",
+              "[Colección de Fernando VII: Ángel Aterido, Museo del Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/coleccion-de-fernando-vii/1fd09a07-e3e0-4bca-945f-1506b871fc2b)."
+            ],
+            conferences: [
+              "[<i>El arte en tiempo de Carlos III, IV Jornadas de Arte</i>](https://dialnet.unirioja.es/servlet/libro?codigo=509232), 1989.",
+              "[<i>Carlos IV y las artes. El rey coleccionista</i>](https://www.patrimonionacional.es/sites/default/files/carlos_iv_y_las_artes.pdf), Universidad Complutense / Patrimonio Nacional, 2019."
+            ]
           },
 
           "PRINT_SPECIALISTS": {
@@ -1570,7 +1596,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             titleEs: "Clúster Borbón",
             origin: "A core group of Spanish Bourbon royalty spanning the late eighteenth and nineteenth centuries. Centered on the royal family of Carlos III and his descendants, this network includes successive monarchs and consorts who shaped court politics, patronage systems, and the commissioning and circulation of Francisco de Goya's work within royal and dynastic contexts.",
             originEs: "Un núcleo de la realeza borbónica española que abarca finales del siglo XVIII y el siglo XIX. Centrado en la familia de Carlos III y sus descendientes, este grupo incluye a monarcas y consortes sucesivos que configuraron la política de corte, los sistemas de patronazgo y el encargo y circulación de la obra de Francisco de Goya en contextos dinásticos y cortesanos.",
-            bibliography: [],
+            bibliography: [
+              "Manuela B. Mena Marqués, <i>Teresa de Vallabriga, infanta de España: Francisco de Goya y la familia Borbón-Vallabriga</i>, Magdalena Lasala (coord.), 2018.",
+              "Manuela B. Mena Marqués, 'El Retrato de Don Luis María de Borbón y Vallabriga niño, estudiando geografía', <i>Luis María de Borbón. Francisco de Goya</i>, 2007, pp.22-42."
+            ],
             websites: []
           },
 
@@ -1589,7 +1618,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             titleEs: "Clúster Villafranca-Alba",
             origin: "A group of Spanish aristocrats connected through the House of Villafranca and the House of Alba. Linked by family ties, marriage alliances, and noble inheritance, they formed part of one of the most influential aristocratic networks in Spain during the late eighteenth and early nineteenth centuries, and were significant patrons and collectors of Francisco de Goya.",
             originEs: "Un grupo de aristócratas españoles vinculados a las casas de Villafranca y Alba. Unidos por lazos familiares, alianzas matrimoniales y herencias nobiliarias, formaron parte de una de las redes aristocráticas más influyentes de España a finales del siglo XVIII y comienzos del XIX, y fueron importantes mecenas y coleccionistas de Francisco de Goya.",
-            bibliography: [],
+            bibliography: [
+              "Manuela B. Mena Marqués & Gudrun Maurer, <i>La duquesa de Alba, musa de Goya: el mito y la historia</i>, 2006."
+            ],
             websites: []
           },
 
