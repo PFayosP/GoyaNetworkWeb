@@ -1316,9 +1316,20 @@ document.addEventListener('DOMContentLoaded', async function () {
             },
             title: "Madrazo family",
             titleEs: "Familia Madrazo",
-            origin: "",
-            originEs: "",
-            bibliography: [],
+            origin: "A prominent Spanish artistic dynasty deeply embedded in the institutional structure of nineteenth-century art production and curation. Beginning with José de Madrazo, the family maintained a sustained presence as court painters and museum administrators —mainly at the royal collections and future Prado Museum—, closely connected to the Spanish monarchy across the reigns of Carlos IV, Fernando VII, and Isabel II. Their activity extended beyond Spain through strong professional and social ties in France and Italy, where they participated in collecting networks and transnational art markets. The family also played a significant role in the reception and circulation of Francisco de Goya's work: José de Madrazo was his court colleague, while later generations—particularly Federico de Madrazo—actively collected his works and facilitated their acquisition and sale in France in collaboration with figures such as Baron Taylor. The network includes both biological and marital relations, incorporating artists such as Mariano Fortuny.",
+            originEs: "Una destacada dinastía artística española profundamente integrada en la estructura institucional de la producción y gestión del arte en el siglo XIX. Desde José de Madrazo, la familia mantuvo una presencia continuada como pintores de corte y responsables de instituciones museísticas —sobre todo las colecciones reales y el Museo del Prado—, estrechamente vinculados a la monarquía española durante los reinados de Carlos IV, Fernando VII e Isabel II. Su actividad se extendió más allá de España a través de fuertes vínculos profesionales y sociales en Francia e Italia, donde participaron en redes de coleccionismo y en el mercado artístico transnacional. La familia desempeñó también un papel relevante en la recepción y circulación de la obra de Francisco de Goya: José de Madrazo fue su colega en la corte, mientras que generaciones posteriores —en particular Federico de Madrazo— coleccionaron su obra y facilitaron su compra y venta en Francia en colaboración con figuras como el barón Taylor. El grupo incluye tanto relaciones biológicas como matrimoniales, incorporando artistas como Mariano Fortuny.",
+            bibliography: [
+              "Amaya Alzaga, <em>Raimundo de Madrazo y Garreta (1841-1920)</em>, PhD thesis, UNED, 2012",
+              "Amaya Alzaga, 'Federico de Madrazo en París (1837-1839): su mirada sobre la pintura francesa de su tiempo y viceversa', in <em>Federico de Madrazo y Carlos Luis de Ribera. Pintores Del Romanticismo Español</em>, 2018, pp.8-28.",
+              "José Luis Díez, <em>Federico de Madrazo: epistolario, vol. 1</em>, 1994.",
+              "Ainhoa Gilarranz Ibáñez, 'No Solo Es Arte: Las Redes de Federico de Madrazo Durante Su Pensionado En París y Roma (1837-1842)'', <em>Bulletin Hispanique</em>, no. 122-1, June 2020, pp. 277-92.",
+              "Carlos González López, <em>Federico de Madrazo y Küntz</em>, 1981.",
+              "Carlos González López, 'Federico de Madrazo en el París de 1833', <em>Archivo Español de Arte</em>, 1994, vol. 67, no. 267, pp.211-24.",
+              "Carlos González Navarro, <em>José de Madrazo (1781-1859), Dibujante</em>, PhD thesis, Madrid, Universidad Complutense de Madrid, 2023.",
+              "Monte Martí, <em>El mundo de los Madrazo: colección de la Comunidad de Madrid</em>, 2007.",
+              "Pedro J. Martínez Plaza, <em>Epistolario del Archivo de Madrazo del Museo del Prado. Cartas de Mariano Fortuny, Cecilia, Ricardo, Raimundo e Isabel de Madrazo</em>, 2017.",
+              "Raquel Sánchez, 'José de Madrazo y los deberes del padre perfecto', in <em>Hijos del Siglo</em>, 2024."
+            ],
             websites: []
             // Format: websites: ["[Label Name](https://url.com)", "[Another](https://url2.com)"]
           },
@@ -1343,9 +1354,15 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Hugo cenacle",
             titleEs: "Clúster Hugo",
-            origin: "",
-            originEs: "",
-            bibliography: [],
+            origin: "A literary and artistic circle formed around Victor Hugo in the late 1820s, often associated with the emergence of French Romanticism. Composed primarily of young writers, poets, and playwrights, alongside painters and draftsmen, the group developed in opposition to established academic and classical norms, advocating new artistic and literary forms aligned with contemporary political liberalism and the cultural ideal of modernity. Many members were also active collectors and critics. Within their broader Romantic interests, they showed an early and sustained engagement with Francisco de Goya—particularly his <i>Caprichos</i>—becoming among the first French intellectuals to systematically interpret and circulate his imagery, well before its reception in Spain, and contributing to his later critical canonization.",
+            originEs: "Un círculo literario y artístico formado en torno a Victor Hugo a finales de la década de 1820, asociado a la emergencia del Romanticismo francés. Integrado principalmente por jóvenes escritores, poetas y dramaturgos, junto a pintores y dibujantes, el grupo se configuró en oposición a las normas académicas y clásicas establecidas, defendiendo nuevas formas artísticas y literarias vinculadas al liberalismo político contemporáneo y a un ideal cultural de modernidad. Muchos de sus miembros fueron también coleccionistas y críticos. Dentro de sus intereses románticos más amplios, mostraron una temprana y sostenida atención a Francisco de Goya —en particular los <i>Caprichos</i>—, convirtiéndose en algunos de los primeros intelectuales franceses en interpretar y difundir sistemáticamente su imaginería, mucho antes de su recepción en España, contribuyendo a su posterior canonización crítica.",
+            bibliography: [
+              "Claude Schopp (ed.), <em>Une amitié capitale: Correspondance Victor Hugo - Alexandre Dumas</em>, 2015.",
+              "Claude Schopp (ed.), <em>Frères d'armes de la révolution romantique. Lettres d'Alexandre Dumas au Baron Taylor et à Adrien Dauzats</em>, Cahiers Alexandre Dumas, 1993, no. 20 (reedited in 2023).",
+              "Robert Avrett, 'Ochoa's Translation of Hugo's Hernani: A Study in Racial Psychologies' <em>The Modern Language Journal</em>, Vol. 38 no. 7, Nov 1954, pp.362-65.",
+              "Mª Rosario Ozaeta, 'Eugenio de Ochoa, Traductor de Hugo', in <em>Neoclásicos y románticos ante la traducción</em>, edited by Francisco Lafarga et al, Universidad de Murcia, 2002, pp.419-36.",
+              "Roberto Dengler Gassin, 'Algunas consideraciones a propósito de Hernani, drama de Victor Hugo (1830), versión castellana de Eugenio de Ochoa (1836)', in ed. Donaire & Lafarga, <em>Traducción y adaptación cultural: España-Francia</em>, 1991, pp.337-345."
+            ],
             websites: []
             // Format: websites: ["[Label Name](https://url.com)", "[Another](https://url2.com)"]
           },
@@ -1378,9 +1395,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             },
             title: "Ilustrados cluster",
             titleEs: "Clúster Ilustrados",
-            origin: "",
-            originEs: "",
-            bibliography: [],
+            origin: "A heterogeneous intellectual and political network associated with the Spanish Enlightenment (Ilustración), united by reformist ideals and a shared commitment to cultural, administrative, and social modernization. Comprising statesmen, writers, clerics, bankers, and artists, the group contributed to debates on progress and institutional reform in late eighteenth- and early nineteenth-century Spain, often operating within overlapping courtly, academic, and economic spheres. Many members maintained close personal and professional relationships with Francisco de Goya, who portrayed several of them in portraiture, reflecting both patterns of patronage and a degree of intellectual affinity.",
+            originEs: "Un entramado intelectual y político heterogéneo vinculado a la Ilustración española, unido por ideales reformistas y por un compromiso compartido con la modernización cultural, administrativa y social. Integrado por estadistas, escritores, clérigos, banqueros y artistas, el grupo participó en los debates sobre el progreso y la reforma institucional en la España de finales del siglo XVIII y comienzos del XIX, operando frecuentemente en espacios cortesanos, académicos y económicos interconectados. Muchos de sus miembros mantuvieron relaciones estrechas personales y profesionales con Francisco de Goya, quien retrató a varios de ellos, reflejando tanto dinámicas de mecenazgo como un grado de afinidad intelectual.",
+            bibliography: [
+              "Janis Tomlinson, <em>Goya in the Twilight of Enlightenment</em>, 1992."
+            ],
             websites: []
           },
 
@@ -1401,8 +1420,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             },
             title: "Goya family",
             titleEs: "Familia Goya",
-            origin: "",
-            originEs: "",
+            origin: "A family network of Francisco de Goya, encompassing his biological relatives and close in-laws. Originating in Aragón and later established in Madrid, the group reflects the painter’s early social and professional environment as well as the domestic ties that connected him to the Bayeu family, particularly through marriage alliances and artistic apprenticeship networks.",
+            originEs: "Un entramado familiar en torno a Francisco de Goya, que incluye tanto sus parientes biológicos como sus allegados políticos. De origen aragonés y posteriormente establecido en Madrid, el grupo refleja el entorno social y profesional temprano del pintor, así como los vínculos domésticos que lo conectaron con la familia Bayeu, especialmente a través de alianzas matrimoniales y redes de formación artística.",
             bibliography: [],
             websites: []
           },
@@ -1419,10 +1438,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Osuna core",
             titleEs: "Núcleo Osuna",
-            origin: "",
-            originEs: "",
+            origin: "A leading Spanish aristocratic circle of the late eighteenth and early nineteenth centuries, centered on the House of Osuna and its allied networks. One of the most important patrons and collectors of Francisco de Goya, the group supported a wide range of his production, from decorative commissions to more experimental and critical imagery, including witchcraft scenes and the Caprichos series. Their cultural profile combined Enlightenment-inflected interests with strong engagement in artistic patronage, and included salonnières who facilitated intellectual and social exchange within elite Madrid circles.",
+            originEs: "Un influyente círculo de la aristocracia española de finales del siglo XVIII y comienzos del XIX, centrado en la casa de Osuna y sus redes aliadas. Uno de los principales mecenas y coleccionistas de Francisco de Goya, el grupo impulsó un amplio espectro de su producción, desde encargos decorativos hasta imágenes más experimentales y críticas, incluyendo escenas de brujería y la serie de los Caprichos. Su perfil cultural combinaba intereses de raíz ilustrada con un fuerte compromiso con el mecenazgo artístico, e incluía salonnières que facilitaron el intercambio intelectual y social en los círculos de élite madrileños.",
             bibliography: [],
-            websites: []
+            websites: [],
+            conferences: [
+              "Manuela Mena, [Vuelo de brujas y La Marquesa de Santa Cruz. Francisco de Goya](https://fundacionbarrie.org/conferencia-manuela-mena), 2016."
+            ]
           },
 
           "MONTIJO_CORE": {
@@ -1441,8 +1463,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Montijo core",
             titleEs: "Núcleo Montijo",
-            origin: "",
-            originEs: "",
+            origin: "A dynastic and social network of Spanish nobility centered on the Montijo and allied Palafox–Villafranca families, operating across Spain and France in the late eighteenth and nineteenth centuries. United through marriage alliances, courtly mobility, and shared cultural interests, they played a role in the patronage and circulation of Francisco de Goya’s work. Several members functioned as salonnières and cultural intermediaries in transnational elite circles, particularly in Paris, where intellectual and literary exchanges included figures such as Prosper Mérimée. The group’s later consolidation of influence at the French imperial court further extended its cultural and political reach.",
+            originEs: "Un entramado dinástico y social de la nobleza española centrado en las casas de Montijo y las familias aliadas Palafox–Villafranca, activo entre finales del siglo XVIII y el XIX entre España y Francia. Unidos por alianzas matrimoniales, movilidad cortesana e intereses culturales compartidos, participaron en el patronazgo y circulación de la obra de Francisco de Goya. Varios de sus miembros actuaron como salonnières e intermediarios culturales en círculos de élite transnacionales, especialmente en París, donde mantuvieron contactos con figuras literarias e intelectuales como Prosper Mérimée. La posterior proyección de la familia en la corte imperial francesa amplió su influencia cultural y política.",
             bibliography: [],
             websites: []
           },
@@ -1465,8 +1487,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Court painters",
             titleEs: "Pintores de Corte",
-            origin: "",
-            originEs: "",
+            origin: "A heterogeneous group of painters who served the Spanish royal court across the late eighteenth and early nineteenth centuries. Despite differing stylistic orientations and artistic backgrounds, they were connected through their roles as court painters, resulting in professional proximity, occasional collaboration, and shifting degrees of personal and artistic affinity. Within this network, family ties and generational succession also played a role in shaping interactions, while stylistic contrasts—from late Baroque tradition to Neoclassicism and Romanticism—coexisted within the same institutional framework.",
+            originEs: "Un grupo heterogéneo de pintores al servicio de la corte española a finales del siglo XVIII y comienzos del XIX. A pesar de sus diferentes estilos, orígenes y posiciones estéticas, estuvieron vinculados por su condición de pintores de cámara, lo que generó proximidad profesional, colaboración ocasional y distintos grados de afinidad personal y artística. Dentro de esta red, los lazos familiares y la sucesión generacional también influyeron en las relaciones, mientras coexistían orientaciones estilísticas contrastadas —desde la tradición tardobarroca hasta el neoclasicismo y el romanticismo— dentro del mismo marco institucional.",
             bibliography: [],
             websites: []
           },
@@ -1484,8 +1506,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Print specialists",
             titleEs: "Especialistas en estampa",
-            origin: "",
-            originEs: "",
+            origin: "A group of French printmakers, editors, critics, and collectors who played a decisive role in the nineteenth-century reception of Francisco de Goya. Active from the 1830s onwards, they were among the earliest scholarly interpreters of his graphic work, combining connoisseurship, collecting practices, and art criticism. Their writings and collections contributed to the first systematic studies and cataloguing efforts devoted to Goya's oeuvre.",
+            originEs: "Un grupo de grabadores, editores, críticos y coleccionistas franceses que desempeñaron un papel decisivo en la recepción de Francisco de Goya en el siglo XIX. Activos desde la década de 1830, fueron algunos de los primeros intérpretes eruditos de su obra gráfica, combinando el conocimiento experto, el coleccionismo y la crítica de arte. Sus escritos y colecciones contribuyeron a los primeros intentos sistemáticos de estudio y catalogación de la obra de Goya.",
             bibliography: [],
             websites: []
           },
@@ -1510,9 +1532,16 @@ document.addEventListener('DOMContentLoaded', async function () {
             },
             title: "Madrazo-Carderera group",
             titleEs: "Grupo Madrazo-Carderera",
-            origin: "",
-            originEs: "",
-            bibliography: [],
+            origin: "A group of Spanish artists, writers, and intellectuals of the same generation, linked by long-standing friendships formed in youth and sustained through shared artistic and cultural interests. Including members of the Madrazo family, they maintained close connections with Parisian cultural circles, where several of them lived and engaged with French Romanticism. They also played an important role in the dissemination and critical reception of Francisco de Goya's work in both Spain and France.",
+            originEs: "Un grupo de artistas, escritores e intelectuales españoles de la misma generación, unidos por amistades de larga duración formadas en la juventud y mantenidas a través de intereses artísticos y culturales compartidos. Incluye miembros de la familia Madrazo y mantiene vínculos estrechos con los círculos culturales parisinos, donde varios de ellos residieron y entraron en contacto con el Romanticismo francés. También desempeñaron un papel importante en la difusión y recepción crítica de la obra de Francisco de Goya tanto en España como en Francia.",
+            bibliography: [
+              "Robert Avrett, 'Ochoa's Translation of Hugo's Hernani: A Study in Racial Psychologies' <em>The Modern Language Journal</em>, Vol. 38 no. 7, Nov 1954, pp.362-65.",
+              "Paula Fayos Pérez, 'Valentín Carderera and the Dissemination of Goya's Graphic Work in France', <em>The Burlington Magazine</em>, vol. 162, no. 1413, 2020, pp. 1048-55.",
+              "José María Lanzarote Guiral, <em>Diarios de viaje de Valentín Carderera por Europa (1841-1861). París, Londres, Bélgica y Alemania</em>, 2016.",
+              "Eugenio de Ochoa, <em>Paris, Londres y Madrid, Paris</em>, Dramard Baudry, 1861.",
+              "Mª Rosario Ozaeta, 'Eugenio de Ochoa, Traductor de Hugo', in <em>Neoclásicos y románticos ante la traducción</em>, edited by Francisco Lafarga et al, Universidad de Murcia, 2002, pp.419-36.",
+              "Roberto Dengler Gassin, 'Algunas consideraciones a propósito de Hernani, drama de Victor Hugo (1830), versión castellana de Eugenio de Ochoa (1836)', in ed. Donaire & Lafarga, <em>Traducción y adaptación cultural: España-Francia</em>, 1991, pp.337-345."
+            ],
             websites: []
           },
 
@@ -1537,8 +1566,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             },
             title: "Bourbon cluster",
             titleEs: "Clúster Borbón",
-            origin: "",
-            originEs: "",
+            origin: "A core group of Spanish Bourbon royalty spanning the late eighteenth and nineteenth centuries. Centered on the royal family of Carlos III and his descendants, this network includes successive monarchs and consorts who shaped court politics, patronage systems, and the commissioning and circulation of Francisco de Goya's work within royal and dynastic contexts.",
+            originEs: "Un núcleo de la realeza borbónica española que abarca finales del siglo XVIII y el siglo XIX. Centrado en la familia de Carlos III y sus descendientes, este grupo incluye a monarcas y consortes sucesivos que configuraron la política de corte, los sistemas de patronazgo y el encargo y circulación de la obra de Francisco de Goya en contextos dinásticos y cortesanos.",
             bibliography: [],
             websites: []
           },
@@ -1556,8 +1585,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Villafranca-Alba cluster",
             titleEs: "Clúster Villafranca-Alba",
-            origin: "",
-            originEs: "",
+            origin: "A group of Spanish aristocrats connected through the House of Villafranca and the House of Alba. Linked by family ties, marriage alliances, and noble inheritance, they formed part of one of the most influential aristocratic networks in Spain during the late eighteenth and early nineteenth centuries, and were significant patrons and collectors of Francisco de Goya.",
+            originEs: "Un grupo de aristócratas españoles vinculados a las casas de Villafranca y Alba. Unidos por lazos familiares, alianzas matrimoniales y herencias nobiliarias, formaron parte de una de las redes aristocráticas más influyentes de España a finales del siglo XVIII y comienzos del XIX, y fueron importantes mecenas y coleccionistas de Francisco de Goya.",
             bibliography: [],
             websites: []
           },
@@ -1573,9 +1602,14 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Taylor cluster",
             titleEs: "Clúster Taylor",
-            origin: "",
-            originEs: "",
-            bibliography: [],
+            origin: "A group of artists and cultural intermediaries closely associated with the French discovery of Spain during the nineteenth century. Through their travels, artistic collaborations, and collecting activities, they helped shape French perceptions of Spanish culture and played a significant role in the acquisition of Spanish artworks for Louis-Philippe's Galerie espagnole, maintaining connections with figures such as Javier Goya and the Madrazo family.",
+            originEs: "Un grupo de artistas, viajeros e intermediarios culturales que contribuyeron al creciente interés francés por España durante el siglo XIX. Estrechamente implicados en la formación de la Galerie espagnole de Luis Felipe, promovieron el arte y la cultura españoles a través de los viajes, el coleccionismo y el intercambio artístico, al tiempo que mantuvieron importantes vínculos con Javier Goya y la familia Madrazo.",
+            bibliography: [
+              "Claude Schopp (ed.), <em>Frères d'armes de la révolution romantique. Lettres d'Alexandre Dumas au Baron Taylor et à Adrien Dauzats</em>, Cahiers Alexandre Dumas, 1993, no. 20 (reedited in 2023).",
+              "Paul Guinard, <em>Dauzats et Blanchard: Peintres de l'Espagne Romantique</em>, 1967.",
+              "Alisa Luxenberg, <em>The Galerie Espagnole and the Museo Nacional, 1835-1853: Saving Spanish Art, or the Politics of Patrimony</em>, 2008.",
+              "Gary Tinterow et al. <em>Manet/Velázquez: The French Taste for Spanish Painting</em>, New York, Metropolitan Museum of Art, 2003."
+            ],
             websites: []
           },
 
@@ -1591,8 +1625,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "David cluster",
             titleEs: "Clúster David",
-            origin: "",
-            originEs: "",
+            origin: "A group of painters linked to the artistic legacy of Jacques-Louis David, whose influence extended from Neoclassicism to the broader academic tradition of the nineteenth century. Through their historical paintings, classical ideals, and teaching networks, they played a central role in shaping European academic art.",
+            originEs: "Un grupo de pintores vinculados al legado artístico de Jacques-Louis David, cuya influencia se extendió desde el Neoclasicismo hasta la tradición académica más amplia del siglo XIX. A través de sus pinturas de historia, ideales clásicos y redes de enseñanza, desempeñaron un papel central en la configuración del arte académico europeo.",
             bibliography: [],
             websites: []
           },
@@ -1613,7 +1647,15 @@ document.addEventListener('DOMContentLoaded', async function () {
             titleEs: "Clúster Impresionista",
             origin: "French artistic movement originating in the 1860s, dedicated to capturing the ephemeral light of a specific instant and its effect on colors and forms. Each artist expressed their own subjective vision, resulting in diverse and highly individual styles rather than a unified aesthetic. The movement was formally introduced through the first independent exhibition held in Paris in 1874.",
             originEs: "Movimiento artístico francés que se originó en la década de 1860, dedicado a capturar la luz efímera de un instante específico y su efecto en los colores y las formas. Cada artista expresó su propia visión subjetiva, resultando en estilos diversos e individuales más que en una estética unificada. El movimiento fue presentado formalmente a través de la primera exposición independiente celebrada en París en 1874.",
-            bibliography: [],
+            bibliography: [
+              "Françoise Cachin, Charles S. Moffett & Juliet Wilson-Bareau, <em>Manet: 1832-1883</em>, Paris, Réunion des Musées Nationaux, 1983.",
+              "Dorothee Hansen, <em>Manet and Astruc. Friendship and Inspiration</em>, CEEH, 2021.",
+              "Sophie Monneret, <em>L'Impressionnisme et son époque</em>, vol.2, t.1, Paris, Robert Laffont, 1987.",
+              "Adolphe Tabarant, <em>Manet et ses œuvres</em>, Paris, Gallimard, 1947 (1st ed. 1897).",
+              "Gary Tinterow et al. <em>Manet/Velázquez: The French Taste for Spanish Painting</em>, New York, Metropolitan Museum of Art, 2003.",
+              "Juliet Wilson-Bareau, <em>Manet: The Execution of Maximilian: Painting, Politics and Censorship</em>, Princeton (New Jersey), Princeton University Press, 1992.",
+              "Stephan Wolohojian and Ashley Dunn, <em>Manet/Degas</em>, The Metropolitan Museum of Art, 2023."
+            ],
             websites: [
               "[Networks of Impressionism](https://www.navigating.art/articles-from-navigatingart/networks-of-impressionism): An upcoming collaborative digital endeavor from the Museum Barberini (Postdam, Germany), the Wildenstein Plattner Institute and Navigating.art."
             ]
@@ -1630,9 +1672,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             startAngle: -Math.PI / 2,
             title: "Spanish Romantics",
             titleEs: "Románticos españoles",
-            origin: "",
-            originEs: "",
-            bibliography: [],
+            origin: "A group of young Spanish writers who shared a common aesthetic and political mindset, representing key figures in Spain's Romantic movement of the 19th century. United by their commitment to expressive, emotional literature and liberal ideals.",
+            originEs: "Un grupo de jóvenes escritores españoles que compartían una sensibilidad estética y una postura política común, figuras clave del movimiento romántico español del siglo XIX. Unidos por su compromiso con la literatura expresiva y emocional, así como con ideales liberales.",
+            bibliography: [
+              "Donald E. Schurlknight, <i>Spanish Romanticism in Context: Of Subversion, Contradiction and Politics: Espronceda, Larra, Rivas, Zorrilla</i>, 1998.",
+              "Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203."
+            ],
             websites: []
           }
         };
