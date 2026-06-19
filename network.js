@@ -1368,7 +1368,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Charles Marc Des Granges, <i>Le Romantisme et la critique : la presse littéraire sous la restauration, 1815-1830</i>, 1907.",
               "Edmond Biré, <i>Victor Hugo avant 1830</i>, 1902."
             ],
-            websites: []
+            websites: [
+              "[Atenas. Diario de a bordo](https://atenas-diariodeabordo.blogspot.com/search/label/Romanticismo%20y%20Rom%C3%A1nticos%20%E2%80%93III%20a%E2%80%93%20V%C3%8DCTOR%20HUGO.%20La%20vida): Romanticismo y Románticos -III a- Víctor Hugo. La vida.",
+            ]
             // Format: websites: ["[Label Name](https://url.com)", "[Another](https://url2.com)"]
           },
 
@@ -1403,11 +1405,23 @@ document.addEventListener('DOMContentLoaded', async function () {
             origin: "A heterogeneous intellectual and political network associated with the Spanish Enlightenment (Ilustración), united by reformist ideals and a shared commitment to cultural, administrative, and social modernization. Comprising statesmen, writers, clerics, bankers, and artists, the group contributed to debates on progress and institutional reform in late eighteenth- and early nineteenth-century Spain, often operating within overlapping courtly, academic, and economic spheres. Many members maintained close personal and professional relationships with Francisco de Goya, who portrayed several of them in portraiture, reflecting both patterns of patronage and a degree of intellectual affinity.",
             originEs: "Un entramado intelectual y político heterogéneo vinculado a la Ilustración española, unido por ideales reformistas y por un compromiso compartido con la modernización cultural, administrativa y social. Integrado por estadistas, escritores, clérigos, banqueros y artistas, el grupo participó en los debates sobre el progreso y la reforma institucional en la España de finales del siglo XVIII y comienzos del XIX, operando frecuentemente en espacios cortesanos, académicos y económicos interconectados. Muchos de sus miembros mantuvieron relaciones estrechas personales y profesionales con Francisco de Goya, quien retrató a varios de ellos, reflejando tanto dinámicas de mecenazgo como un grado de afinidad intelectual.",
             bibliography: [
-              "Janis Tomlinson, <em>Goya in the Twilight of Enlightenment</em>, 1992.",
+              "Mercedes Águeda Villar & Xavier de Salas (eds.), <i>Francisco de Goya: cartas a Martín Zapater</i>, 1982.",
+              "Ángel Canellas López, <i>Diplomatario. Francisco de Goya</i>, 1981.",
+              "Jacqueline Hara, <i>Francisco de Goya (1746-1828). Letters of Love and Friendship in Translation</i>, 1997.",
+              "Enrique Lafuente Ferrari, 'Las cartas de Goya a Zapater y los epistolarios españoles', <i>Homenaje a la memoria de don Antonio Rodríguez Moñino, 1910-1970</i>, 1975, pp. 285-328.",
+              "Luis Martín-Estudillo, <i>Goya o el misterio de la lectura</i>, 2023.",
               "Manuela B. Mena Marqués, Gudrun Maurer (coord.), Virginia Albarrán Martín, <i>Goya y la corte ilustrada</i>, 2017.",
-              "Manuela B. Mena Marqués, 'Jovellanos pintado por Goya', <i>Boletín jovellanista</i>, no.17, 2017, pp.135-47."
+              "Manuela B. Mena Marqués, 'Jovellanos pintado por Goya', <i>Boletín jovellanista</i>, no.17, 2017, pp.135-47.",
+              "José Luis Morales y Marín, <i>Francisco Bayeu. Vida y obra</i>, 1995.",
+              "Natacha Seseña, <i>Goya y las mujeres</i>, 2004.",
+              "Janis Tomlinson, <em>Goya in the Twilight of Enlightenment</em>, 1992."
             ],
-            websites: []
+            websites: [
+              "[Cartas de Goya a Martín Zapater](https://www.museodelprado.es/aprende/enciclopedia/voz/cartas-de-goya-a-martin-zapater/2ab3aedb-07a9-4031-b6e0-64d9806ac8b5), Mercedes Águeda Villar, Museo del Prado."
+            ],
+            conferences: [
+              "Manuela B. Mena Marqués, [Goya y sus amigos](https://www.museodelprado.es/actualidad/multimedia/goya-y-sus-amigos-por-manuela-mena/2bcc3d56-1056-43cb-80d2-ccb552b54541), Cátedra 2013."
+            ]
           },
 
           "GOYA_FAMILY": {
