@@ -2011,7 +2011,13 @@ document.addEventListener('DOMContentLoaded', async function () {
               html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Conferencias' : 'Conferences'}</div>`;
               html += `<ul style="margin:0 0 1rem 0; padding-left:1.2rem; line-height:1.8; color:#ccc;">`;
               cfg.conferences.forEach(entry => {
-                html += `<li>${entry}</li>`;
+                // Parse URLs in parentheses or markdown format
+                let linkedEntry = entry
+                  // Convert URLs in parentheses (https://...) to links
+                  .replace(/\((https?:\/\/[^\s)]+)\)/g, '(<a href="$1" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">$1</a>)')
+                  // Also handle markdown links [label](url)
+                  .replace(/\[(.*?)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">$1</a>');
+                html += `<li>${linkedEntry}</li>`;
               });
               html += `</ul>`;
             }
