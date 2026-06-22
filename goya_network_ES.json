@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-19",
+  "last_update": "2026-06-22",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -6282,7 +6282,7 @@
       "from": "Francisco de Goya",
       "to": "Francisco Bayeu",
       "connection_level": "direct",
-      "relationship type": "parientes; cuñados",
+      "relationship type": "colegas; parientes: cuñados",
       "strength": 1
     },
     {
