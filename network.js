@@ -801,6 +801,10 @@ const __GN_PROF_SYNONYMS = {
 // Clave de orden por apellido (versión “global” equivalente a la lógica de Members list)
 function __gnSurnameKeyForSort(name) {
   if (!name) return '';
+  const exactName = String(name).trim();
+  const forced = SURNAME_FORCE_BY_FULLNAME[name] || SURNAME_FORCE_BY_FULLNAME[exactName];
+  if (forced) return __gnFold(forced);
+
   let base = String(name)
     .replace(/\(.*?\)/g, '')
     .split(',')[0]
