@@ -2339,7 +2339,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       'Carlos IV': 'carlos',
       'Fernando VII': 'fernando',
       'Louis Philippe I': 'louis',
-      'Dominique Vivant Denon': 'vivant',
       'María Tomasa Palafox, Marchioness of Villafranca': 'villafranca',
       'María Gabriela de Palafox, Marchioness of Lazán': 'lazan',
       'Eugenio Eulalio Palafox, VII Count of Montijo': 'montijo',
@@ -2354,7 +2353,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       'Ramón de Mesonero Romanos': 'mesonero',
       'Gregorio Cruzada Villaamil': 'cruzada',
       'Juan Fernández de Rojas': 'fernandez',
-      'Manuel García de la Prada': 'garcia'
+      'Manuel García de la Prada': 'garcia',
+      'Dominique Vivant Denon': 'vivant',
+      'Pierre Lacour fils': 'lacour',
+      'Madame Ewelina Hanska': 'hanska'
     });
 
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
@@ -2373,7 +2375,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       const fold = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
       // 0) Override por nombre completo (y por base limpia)
-      const override = SURNAME_FORCE_BY_FULLNAME[name] || SURNAME_FORCE_BY_FULLNAME[base];
+      const exactName = String(name).trim();
+      const override = SURNAME_FORCE_BY_FULLNAME[name] || SURNAME_FORCE_BY_FULLNAME[exactName] || SURNAME_FORCE_BY_FULLNAME[base];
       if (override) {
         return fold(override);
       }
