@@ -802,7 +802,9 @@ const __GN_PROF_SYNONYMS = {
 function __gnSurnameKeyForSort(name) {
   if (!name) return '';
   const exactName = String(name).trim();
-  const forced = SURNAME_FORCE_BY_FULLNAME[name] || SURNAME_FORCE_BY_FULLNAME[exactName];
+  const forceMap = window.__GN_SURNAME_FORCE_BY_FULLNAME ||
+    ((typeof SURNAME_FORCE_BY_FULLNAME !== 'undefined') ? SURNAME_FORCE_BY_FULLNAME : null);
+  const forced = forceMap ? (forceMap[name] || forceMap[exactName]) : null;
   if (forced) return __gnFold(forced);
 
   let base = String(name)
@@ -2362,6 +2364,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       'Pierre Lacour fils': 'lacour',
       'Madame Ewelina Hanska': 'hanska'
     });
+
+    window.__GN_SURNAME_FORCE_BY_FULLNAME = SURNAME_FORCE_BY_FULLNAME;
 
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
     function surnameKey(name) {
