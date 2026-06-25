@@ -13,7 +13,7 @@
       GERDA_HENKEL_NAME: "Gerda Henkel Foundation",
       SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
       NEW_NODES_TITLE: "New members",
-      MEMBERS_TITLE:"All members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
+      MEMBERS_TITLE:"All members (A-Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
       BTN_SEARCH: "Search",
       BTN_CLUSTER_TOGGLE_ON: "Cluster edges: On",
       BTN_CLUSTER_TOGGLE_OFF: "Cluster edges: Off",
@@ -47,7 +47,7 @@
       ARTWORKS_BODY: `
       <p>
       <strong>The issue of attribution in Goya:</strong><br>
-      When studying Goya, it is important to bear in mind that, due to the enormous demand for his work since the artist's death (which far exceeds the supply of authentic pieces), countless copies, imitations and pastiches have been produced, particularly in 19th-century Spain and France. Many of these continue to be exhibited as genuine 'Goyas' (more euphemistically, 'attributed to Goya', or even 'Goya's workshop') in museums around the world, driven by economic interests and social status. And new 'Goyas' appear every year in art galleries, dealers, and private collections.
+      When studying Goya, it is important to bear in mind that, due to the enormous demand for his work since the artist's death (which far exceeds the supply of authentic pieces), countless copies, imitations and pastiches have been produced, particularly in 19th-century Spain and France. Many of these continue to be exhibited as genuine 'goyas' (more euphemistically, 'attributed to Goya', or even 'Goya's workshop') in museums around the world, driven by economic interests and social status. New 'goyas' appear every year in art galleries, dealers, and private collections.
       </p>
 
       <p>
@@ -93,7 +93,7 @@
         <li>Musée des Beaux-Arts de Strasbourg: <a href="https://musees-strasbourg.skin-web.org/document/portrait-de-don-bernardo-iriarte/5ee338d7461cda28a3ab1e90?q=Goya&pos=14&pgn=0" target="_blank"><em>Portrait de Don Bernardo de Iriarte</em></a>, as well as prints (after Velázquez, <em>Caprichos</em>, <em>Disparates</em>, isolated prints like <em>El agarrotado</em>).</li>
         <li><a href="https://www.musee-agen.fr/recherche?q=Goya&tx_indexedsearch%5Bsubmit_button%5D=OK" target="_blank"><strong>Musée des Beaux-Arts d'Agen</strong></a>: some paintings attributed to Goya, such as a self-portrait and <em>Le Ballon</em>.</li>
         <li><a href="https://mbh.bayonne.fr/" target="_blank"><strong>Musée Bonnat-Helleu</strong></a> (Bayonne): works such as the drawing <em>Dos mujeres abrazándose</em> and portrait of Goya with glasses (attributed).</li>
-        <li>PRIVATE COLLECTIONS: Unknown Paris collection (the twin portraits of Javier Goya and Gumersinda Goicoechea).</li><br>
+        <li>PRIVATE COLLECTIONS: Paris collection (the twin portraits of Javier Goya and Gumersinda Goicoechea).</li><br>
 
         USA<br>
         <li><a href="https://collections.mfa.org/search/Objects/*/Goya/images?page=1" target="_blank"><strong>Boston Museum of Fine Arts</strong></a> (MoFA): paintings (<a href="https://www.metmuseum.org/art/collection/search?q=Goya&sortBy=Relevance&searchField=ArtistCulture" target="_blank"><em>Portrait of a Young Man in Brown, possibly Javier Goya</em></a>, 48.558), <a href="https://collections.mfa.org/collections/315210/dpdprints-by-goya/objects" target="_blank">prints</a> and <a href="https://collections.mfa.org/collections/315215/dpddrawings-by-goya;jsessionid=7527C5D8C33C9415AF5A65EC964E77C1/objects" target="_blank">drawings</a>.</li>
