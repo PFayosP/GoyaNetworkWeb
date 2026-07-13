@@ -184,6 +184,12 @@
       NEWS_BODY: `
       <ul style="padding-left:1.2rem; line-height:1.7;">
         <li>
+          <strong>July 2026.</strong> The journal <em>Leonardo</em> (MIT Press) has published an article on the Goya Network, authored by Paula Fayos Pérez & Anita Verő. <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">Read more</a>.
+        </li>
+        <li>
+          <strong>July 2026.</strong> The Goya Network has been presented at the <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">Instituto Cervantes London</a>, in an event chaired by Manuela B. Mena Marqués.
+        </li>
+        <li>
           <strong>May 2026.</strong> The research project developping the Goya Network has now received funding from the <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Gerda Henkel foundation (Germany)</a>.
         </li>
         <li>
@@ -407,6 +413,12 @@
     NEWS_TITLE: "Noticias",
     NEWS_BODY: `
     <ul style="padding-left:1.2rem; line-height:1.7;">
+      <li>
+          <strong>Julio 2026.</strong> La revista <em>Leonardo</em> (MIT Press) ha publicado un artículo sobre la Goya Network, escrito por Paula Fayos Pérez & Anita Verő. <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">Leer más</a>.
+        </li>
+        <li>
+          <strong>Julio 2026.</strong> La Goya Network ha sido presentada en el <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">Instituto Cervantes de Londres</a>, en un evento presidido por Manuela B. Mena Marqués.
+        </li>
       <li>
         <strong>Mayo de 2026.</strong> El proyecto de investigación que desarrolla la Goya Network ha recibido financiación de la <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Fundación Gerda Henkel (Alemania)</a>.
       </li>
