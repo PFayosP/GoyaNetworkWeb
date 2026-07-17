@@ -7,13 +7,13 @@
   const I18N = {
     en: {
       BTN_NETWORK:"Network", BTN_ABOUT:"About", BTN_PEOPLE:"People", BTN_PARTNERS:"Partners",
-      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWS:"News", BTN_CONTACT:"Contact",
+      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWS:"News", BTN_RELEVANT_LINKS:"Relevant links", BTN_CONTACT:"Contact",
       FUNDING_PARTNERS: "Funding Partners",
       ACADEMIC_PARTNERS: "Academic Partners",
       GERDA_HENKEL_NAME: "Gerda Henkel Foundation",
       SEARCH_PH:"Search...", FILTER_PROF_ALL:"All professions", FILTER_NAT_ALL:"All nationalities",
       NEW_NODES_TITLE: "New members",
-      MEMBERS_TITLE:"All members (A–Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
+      MEMBERS_TITLE:"All members (A-Z by surname)", LOADING:"Loading network…", LAST_UPDATE:"Last update", HELP_TEXT_1: "Click a node (an individual) or edge (a connection between two individuals) to view the data they contain.", HELP_TEXT_2: "(It might take a few seconds for the website to show the network)", SITE_TITLE: "Goya Network", SITE_SUBTITLE: "Mapping Goya's Impact in 19th-Century France and Spain", 
       BTN_SEARCH: "Search",
       BTN_CLUSTER_TOGGLE_ON: "Cluster edges: On",
       BTN_CLUSTER_TOGGLE_OFF: "Cluster edges: Off",
@@ -47,7 +47,7 @@
       ARTWORKS_BODY: `
       <p>
       <strong>The issue of attribution in Goya:</strong><br>
-      When studying Goya, it is important to bear in mind that, due to the enormous demand for his work since the artist's death (which far exceeds the supply of authentic pieces), countless copies, imitations and pastiches have been produced, particularly in 19th-century Spain and France. Many of these continue to be exhibited as genuine 'Goyas' (more euphemistically, 'attributed to Goya', or even 'Goya's workshop') in museums around the world, driven by economic interests and social status. And new 'Goyas' appear every year in art galleries, dealers, and private collections.
+      When studying Goya, it is important to bear in mind that, due to the enormous demand for his work since the artist's death (which far exceeds the supply of authentic pieces), countless copies, imitations and pastiches have been produced, particularly in 19th-century Spain and France. Many of these continue to be exhibited as genuine 'goyas' (more euphemistically, 'attributed to Goya', or even 'Goya's workshop') in museums around the world, driven by economic interests and social status. New 'goyas' appear every year in art galleries, dealers, and private collections.
       </p>
 
       <p>
@@ -93,7 +93,7 @@
         <li>Musée des Beaux-Arts de Strasbourg: <a href="https://musees-strasbourg.skin-web.org/document/portrait-de-don-bernardo-iriarte/5ee338d7461cda28a3ab1e90?q=Goya&pos=14&pgn=0" target="_blank"><em>Portrait de Don Bernardo de Iriarte</em></a>, as well as prints (after Velázquez, <em>Caprichos</em>, <em>Disparates</em>, isolated prints like <em>El agarrotado</em>).</li>
         <li><a href="https://www.musee-agen.fr/recherche?q=Goya&tx_indexedsearch%5Bsubmit_button%5D=OK" target="_blank"><strong>Musée des Beaux-Arts d'Agen</strong></a>: some paintings attributed to Goya, such as a self-portrait and <em>Le Ballon</em>.</li>
         <li><a href="https://mbh.bayonne.fr/" target="_blank"><strong>Musée Bonnat-Helleu</strong></a> (Bayonne): works such as the drawing <em>Dos mujeres abrazándose</em> and portrait of Goya with glasses (attributed).</li>
-        <li>PRIVATE COLLECTIONS: Unknown Paris collection (the twin portraits of Javier Goya and Gumersinda Goicoechea).</li><br>
+        <li>PRIVATE COLLECTIONS: Paris collection (the twin portraits of Javier Goya and Gumersinda Goicoechea).</li><br>
 
         USA<br>
         <li><a href="https://collections.mfa.org/search/Objects/*/Goya/images?page=1" target="_blank"><strong>Boston Museum of Fine Arts</strong></a> (MoFA): paintings (<a href="https://www.metmuseum.org/art/collection/search?q=Goya&sortBy=Relevance&searchField=ArtistCulture" target="_blank"><em>Portrait of a Young Man in Brown, possibly Javier Goya</em></a>, 48.558), <a href="https://collections.mfa.org/collections/315210/dpdprints-by-goya/objects" target="_blank">prints</a> and <a href="https://collections.mfa.org/collections/315215/dpddrawings-by-goya;jsessionid=7527C5D8C33C9415AF5A65EC964E77C1/objects" target="_blank">drawings</a>.</li>
@@ -157,11 +157,11 @@
       ABOUT_TITLE: "About the Goya Network",
       ABOUT_BODY: `
 
-      <p><strong>Introduction:</strong> Throughout the 18th and 19th centuries, networks of artists, writers, collectors and intellectuals were crucial for artistic production, as well as for the dissemination and understanding of historical figures. Mapping these connections allows us to better understand the dynamics of sociability and the circulation of ideas. In recent years, projects in the Digital Humanities have demonstrated the potential of network analysis to illuminate historical artistic milieus, such as the <a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank">Thorvaldsen Letter Archive</a>, <a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank">Mapping the Republic of Letters</a> (University of Stanford), <a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank">Early Modern Letters Online (EMLO)</a> (University of Oxford), <a href="https://mappingrome.com/" target="_blank">Mapping Rome</a>, and <a href="https://womensbios.lib.virginia.edu/index.html" target="_blank">Collective Biographies of Women</a> (Alison Booth, University of Virginia).</p> 
+      <p><strong>Introduction:</strong> Throughout the 18th and 19th centuries, networks of artists, writers, collectors and intellectuals were crucial for artistic production, as well as for the dissemination and understanding of historical figures. Mapping these connections allows us to better understand the dynamics of sociability and the circulation of ideas. In recent years, network analysis has become an important tool in Digital Humanities for illuminating historical artistic milieus (see the <a href="#" onclick="showSection('relevant-links'); return false;">Relevant links</a> section for examples of similar projects).</p> 
 
-      <p><em>The Goya Network</em> builds on these methods, offering an interactive database that maps the social and professional relationships surrounding the Spanish artist Francisco de Goya, focusing on his connections with artists, critics, and collectors in 19th-century Spain and France. Unlike traditional studies of his work, this project emphasizes the relational context that shaped Goya’s legacy, offering a novel tool for the study of historical artists' social networks. As a 'living' database, it facilitates cross-disciplinary collaboration and serves as both a research tool and a public resource, providing insight into the scope of Goya’s influence and the reception of his work.</p>
+      <p><em>The Goya Network</em> builds on these methods, offering an interactive database that maps the social and professional relationships surrounding the Spanish artist Francisco de Goya, focusing on his connections with artists, critics, and collectors in 19th-century Spain and France. Unlike traditional studies of his work, this project emphasizes the relational context that shaped Goya's legacy, offering a novel tool for the study of historical artists' social networks. As a 'living' database, it facilitates cross-disciplinary collaboration and serves as both a research tool and a public resource, providing insight into the scope of Goya's influence and the reception of his work.</p>
 
-      <p><strong>Origin:</strong> This is a research-based digital project developed by Paula Fayos-Pérez as part of her postdoctoral work on Goya's social and professional networks. It is a continuation of the research done during her PhD (University of Cambridge, 2018) <a href="https://www.repository.cam.ac.uk/items/8d9751ce-aca1-4d35-9436-0820ecbc98d4" target="_blank">(repository)</a>, which was later transformed into a book: <a href="https://www.ceeh.es/en/publicacion/goyas-caprichos-in-nineteenth-century-france-politics-of-the-grotesque/" target="_blank"><em>Goya’s Caprichos in Nineteenth-Century France. Politics of the Grotesque</em></a> (CEEH, 2024).</p>
+      <p><strong>Origin:</strong> This is a research-based digital project developed by Paula Fayos-Pérez as part of her postdoctoral work on Goya's social and professional networks. It is a continuation of the research done during her PhD (University of Cambridge, 2018) <a href="https://www.repository.cam.ac.uk/items/8d9751ce-aca1-4d35-9436-0820ecbc98d4" target="_blank">(repository)</a>, which was later transformed into a book: <a href="https://www.ceeh.es/en/publicacion/goyas-caprichos-in-nineteenth-century-france-politics-of-the-grotesque/" target="_blank"><em>Goya's Caprichos in Nineteenth-Century France. Politics of the Grotesque</em></a> (CEEH, 2024).</p>
 
       <p><strong>Funding:</strong> This project was initiated with the support of a 2024 Leonardo Grant (<a href="https://www.redleonardo.es/beneficiario/paula-fayos-perez/" target="_blank">Beca Leonardo</a>) for Scientific Research and Cultural Creation, funded by <a href="https://www.fbbva.es/" target="_blank">BBVA Foundation.</a> BBVA Foundation takes no responsibility for the opinions, statements and contents of this project, which are entirely the responsibility of its authors.</p>
 
@@ -184,6 +184,12 @@
       NEWS_BODY: `
       <ul style="padding-left:1.2rem; line-height:1.7;">
         <li>
+          <strong>July 2026.</strong> The journal <em>Leonardo</em> (MIT Press) has published an article on the Goya Network, authored by Paula Fayos Pérez & Anita Verő. <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">Read more</a>.
+        </li>
+        <li>
+          <strong>July 2026.</strong> The Goya Network has been presented at the <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">Instituto Cervantes London</a>, in an event chaired by Manuela B. Mena Marqués.
+        </li>
+        <li>
           <strong>May 2026.</strong> The research project developping the Goya Network has now received funding from the <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Gerda Henkel foundation (Germany)</a>.
         </li>
         <li>
@@ -195,6 +201,36 @@
         <li>
           <strong>Forthcoming.</strong> Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain”, to be published in <a href="https://leonardo.info/leonardo/" target="_blank"><em>Leonardo</em></a> (MIT Press).
         </li>
+      </ul>
+      `,
+
+      RELEVANT_LINKS_TITLE: "Relevant links",
+      RELEVANT_LINKS_BODY: `
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Digital Humanities (DH) Projects</h3>
+      <ul style="padding-left:1.2rem; line-height:1.6;">
+        <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Mapping the correspondence and social networks of the neoclassical sculptor Bertel Thorvaldsen.</li>
+        <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (University of Stanford) – An interactive visualization of intellectual networks in early modern Europe.</li>
+        <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (University of Oxford) – A catalog and analysis of correspondence from the early modern period.</li>
+        <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualizing social, economic, and cultural networks in ancient Rome.</li>
+        <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – A collaborative platform connecting Van Gogh's works, letters, and cultural impact across institutions worldwide.</li>
+        <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, University of Virginia) – Aggregating biographical data on women across multiple disciplines and time periods.</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Academic Societies & Study Groups</h3>
+      <ul style="padding-left:1.2rem; line-height:1.6;">
+        <li><a href="https://www.delacroixsociety.org/" target="_blank"><strong>Eugène Delacroix Society</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy.</li>
+        <li><a href="https://cahiers-merimee.com/" target="_blank"><strong>Cahiers Mérimée</strong></a> – An academic journal and resource center for Prosper Mérimée scholarship.</li>
+        <li><a href="https://www.desbordes-valmore.org/" target="_blank"><strong>Marceline Desbordes-Valmore Society</strong></a> – Promoting the study of the 19th-century French poet and novelist.</li>
+        <li><a href="https://www.societe-theophile-gautier.org/" target="_blank"><strong>Théophile Gautier Society</strong></a> – An association dedicated to the life, work, and literary legacy of Théophile Gautier.</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">General Databases & Resources</h3>
+      <ul style="padding-left:1.2rem; line-height:1.6;">
+        <li><a href="https://www.realacademia.es/" target="_blank"><strong>Real Academia de la Historia (RAH)</strong></a> (Spain) – Spain's Royal Academy of History, with extensive archival resources.</li>
+        <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Includes the Getty Museum, Getty Research Institute, and extensive art historical databases.</li>
+        <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – France's National Library with digitized collections including letters, manuscripts, and prints.</li>
+        <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Spain's National Library with extensive digital resources.</li>
+        <li><a href="https://www.wikidata.org/" target="_blank"><strong>Wikidata</strong></a> – A free, collaborative database of structured data about people, places, and concepts.</li>
       </ul>
       `,
 
@@ -215,13 +251,13 @@
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Colaboradores",
-      BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWS:"Noticias", BTN_CONTACT:"Contacto",
+      BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWS:"Noticias", BTN_RELEVANT_LINKS:"Enlaces relevantes", BTN_CONTACT:"Contacto",
       FUNDING_PARTNERS: "Entidades financiadoras",
       ACADEMIC_PARTNERS: "Colaboradores académicos",
       GERDA_HENKEL_NAME: "Fundación Gerda Henkel",
       SEARCH_PH:"Buscar…", FILTER_PROF_ALL:"Todas las profesiones", FILTER_NAT_ALL:"Todas las nacionalidades",
       NEW_NODES_TITLE: "Nuevos miembros",
-      MEMBERS_TITLE:"Todos los miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
+      MEMBERS_TITLE:"Todos los miembros (A-Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
       BTN_SEARCH: "Buscar",
       BTN_CLUSTER_TOGGLE_ON: "Clúster: activado",
       BTN_CLUSTER_TOGGLE_OFF: "Clúster: desactivado",
@@ -366,7 +402,7 @@
       ABOUT_TITLE: "Acerca de la Goya Network / Red Goya",
       ABOUT_BODY: `
 
-      <p><strong>Introducción:</strong> A lo largo de los siglos XVIII y XIX, las redes de artistas, escritores, coleccionistas e intelectuales fueron cruciales tanto para la producción artística como para la difusión y comprensión de figuras históricas. Cartografiar estas conexiones permite entender mejor las dinámicas de sociabilidad y la circulación de ideas. En los últimos años, diversos proyectos en Humanidades Digitales han demostrado el potencial del análisis de redes para iluminar contextos artísticos históricos, como el <a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank">Thorvaldsen Letter Archive</a>, <a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank">Mapping the Republic of Letters</a> (Universidad de Stanford), <a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank">Early Modern Letters Online (EMLO)</a> (Universidad de Oxford), <a href="https://mappingrome.com/" target="_blank">Mapping Rome</a> y <a href="https://womensbios.lib.virginia.edu/index.html" target="_blank">Collective Biographies of Women</a> (Alison Booth, University of Virginia).</p> 
+      <p><strong>Introducción:</strong> A lo largo de los siglos XVIII y XIX, las redes de artistas, escritores, coleccionistas e intelectuales fueron cruciales tanto para la producción artística como para la difusión y comprensión de figuras históricas. Cartografiar estas conexiones permite entender mejor las dinámicas de sociabilidad y la circulación de ideas. En los últimos años, el análisis de redes se ha convertido en una herramienta importante en Humanidades Digitales para iluminar contextos artísticos históricos (véase la sección <a href="#" onclick="showSection('relevant-links'); return false;">Enlaces relevantes</a> para ejemplos de proyectos similares).</p> 
 
       <p><em>The Goya Network</em> se apoya en estos métodos y ofrece una base de datos interactiva que cartografía las relaciones sociales y profesionales en torno al artista español Francisco de Goya, con especial atención a sus conexiones con artistas, críticos y coleccionistas en la España y la Francia del siglo XIX. A diferencia de los estudios tradicionales centrados en su obra, este proyecto pone el énfasis en el contexto relacional que configuró el legado de Goya, y ofrece una herramienta novedosa para el estudio de las redes sociales de artistas históricos. Como base de datos «viva», facilita la colaboración interdisciplinar y funciona tanto como herramienta de investigación como recurso público, proporcionando una visión del alcance de la influencia de Goya y de la recepción de su obra.</p>
 
@@ -408,6 +444,12 @@
     NEWS_BODY: `
     <ul style="padding-left:1.2rem; line-height:1.7;">
       <li>
+          <strong>Julio 2026.</strong> La revista <em>Leonardo</em> (MIT Press) ha publicado un artículo sobre la Goya Network, escrito por Paula Fayos Pérez & Anita Verő. <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">Leer más</a>.
+        </li>
+        <li>
+          <strong>Julio 2026.</strong> La Goya Network ha sido presentada en el <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">Instituto Cervantes de Londres</a>, en un evento presidido por Manuela B. Mena Marqués.
+        </li>
+      <li>
         <strong>Mayo de 2026.</strong> El proyecto de investigación que desarrolla la Goya Network ha recibido financiación de la <a href="https://www.gerda-henkel-stiftung.de/" target="_blank">Fundación Gerda Henkel (Alemania)</a>.
       </li>
       <li>
@@ -421,6 +463,38 @@
       </li>
     </ul>
     `,
+
+    RELEVANT_LINKS_TITLE: "Enlaces relevantes",
+    RELEVANT_LINKS_BODY: `
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Proyectos de Humanidades Digitales</h3>
+    <ul style="padding-left:1.2rem; line-height:1.6;">
+      <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Cartografía de la correspondencia y redes sociales del escultor neoclásico Bertel Thorvaldsen.</li>
+      <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (Universidad de Stanford) – Una visualización interactiva de redes intelectuales en la Europa moderna temprana.</li>
+      <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (Universidad de Oxford) – Un catálogo y análisis de la correspondencia del período moderno temprano.</li>
+      <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualización de redes sociales, económicas y culturales en la antigüedad romana.</li>
+      <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – Una plataforma colaborativa que conecta las obras de Van Gogh, sus cartas e impacto cultural en instituciones de todo el mundo.</li>
+      <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, Universidad de Virginia) – Agregación de datos biográficos sobre mujeres en múltiples disciplinas y períodos.</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Sociedades Académicas y Grupos de Estudio</h3>
+    <ul style="padding-left:1.2rem; line-height:1.6;">
+      <li><a href="https://www.delacroixsociety.org/" target="_blank"><strong>Eugène Delacroix Society</strong></a> – Dedicada al estudio y promoción de la obra y legado de Eugène Delacroix.</li>
+      <li><a href="https://cahiers-merimee.com/" target="_blank"><strong>Cahiers Mérimée</strong></a> – Una revista académica y centro de recursos para los estudios sobre Prosper Mérimée.</li>
+      <li><a href="https://www.desbordes-valmore.org/" target="_blank"><strong>Sociedad Marceline Desbordes-Valmore</strong></a> – Promueve el estudio de la poeta y novelista francesa del siglo XIX.</li>
+      <li><a href="https://www.societe-theophile-gautier.org/" target="_blank"><strong>Sociedad Théophile Gautier</strong></a> – Una asociación dedicada a la vida, obra y legado literario de Théophile Gautier.</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Bases de Datos y Recursos Generales</h3>
+    <ul style="padding-left:1.2rem; line-height:1.6;">
+      <li><a href="https://www.realacademia.es/" target="_blank"><strong>Real Academia de la Historia (RAH)</strong></a> (España) – Academia Real de Historia de España, con extensos recursos archivísticos.</li>
+      <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Incluye el Museo Getty, Getty Research Institute y extensas bases de datos de historia del arte.</li>
+      <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – Biblioteca Nacional de Francia con colecciones digitalizadas incluyendo cartas, manuscritos e impresiones.</li>
+      <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Biblioteca Nacional de España con extensos recursos digitales.</li>
+      <li><a href="https://www.wikidata.org/" target="_blank"><strong>Wikidata</strong></a> – Una base de datos libre y colaborativa de datos estructurados sobre personas, lugares y conceptos.</li>
+    </ul>
+    `,
+
+    CONTACT_TITLE: "Contacto",
     },
   };
 
@@ -436,6 +510,7 @@
       ['.menu-content button[onclick*="artworks"]','BTN_ARTWORKS'],
       ['.menu-content button[onclick*="bibliography"]','BTN_BIB'],
       ['.menu-content button[onclick*="news"]','BTN_NEWS'],
+      ['.menu-content button[onclick*="relevant-links"]','BTN_RELEVANT_LINKS'],
       ['.menu-content button[onclick*="cite"]','BTN_CITE'],
       ['.menu-content button[onclick*="contact"]','BTN_CONTACT'],
       ['#searchInput::placeholder','SEARCH_PH'],
@@ -801,6 +876,12 @@ const __GN_PROF_SYNONYMS = {
 // Clave de orden por apellido (versión “global” equivalente a la lógica de Members list)
 function __gnSurnameKeyForSort(name) {
   if (!name) return '';
+  const exactName = String(name).trim();
+  const forceMap = window.__GN_SURNAME_FORCE_BY_FULLNAME ||
+    ((typeof SURNAME_FORCE_BY_FULLNAME !== 'undefined') ? SURNAME_FORCE_BY_FULLNAME : null);
+  const forced = forceMap ? (forceMap[name] || forceMap[exactName]) : null;
+  if (forced) return __gnFold(forced);
+
   let base = String(name)
     .replace(/\(.*?\)/g, '')
     .split(',')[0]
@@ -1238,12 +1319,29 @@ document.addEventListener('DOMContentLoaded', async function () {
                 });
             return Promise.all(promises);
         };
+
+        // 🔥 DECLARAR nodePositions ANTES de usarlo
+        let nodePositions = JSON.parse(localStorage.getItem('nodePositions') || '{}');
     
         // Load the network data
-        const response = await fetch(getDataFileForLang(CURRENT_LANG));
-        if (!response.ok) throw new Error('Error cargando datos');
-        const data = await response.json();
+        // ✅ NUEVO CÓDIGO (carga ambos archivos)
+        const [networkResponse, positionsResponse] = await Promise.all([
+          fetch(getDataFileForLang(CURRENT_LANG)),
+          fetch('positions_config.json')
+        ]);
+        
+        if (!networkResponse.ok) throw new Error('Error cargando datos de red');
+        const data = await networkResponse.json();
         window.__GN_DATA = data;
+        
+        // Cargar posiciones (si existe)
+        if (positionsResponse.ok) {
+          const positionsData = await positionsResponse.json();
+          nodePositions = positionsData;
+          console.log('✅ Posiciones cargadas desde positions_config.json');
+        } else {
+          console.warn('⚠️ positions_config.json no encontrado, usando posiciones por defecto');
+        }
         
         // Start image preloading
         // const imagePreload = preloadImages(data.nodes);
@@ -1298,7 +1396,23 @@ document.addEventListener('DOMContentLoaded', async function () {
               "José de Madrazo": Math.PI * 1.25  // north-west, next to Federico
             },
             title: "Madrazo family",
-            titleEs: "Familia Madrazo"
+            titleEs: "Familia Madrazo",
+            origin: "A prominent Spanish artistic dynasty deeply embedded in the institutional structure of nineteenth-century art production and curation. Beginning with José de Madrazo, the family maintained a sustained presence as court painters and museum administrators —mainly at the royal collections and future Prado Museum—, closely connected to the Spanish monarchy across the reigns of Carlos IV, Fernando VII, and Isabel II. Their activity extended beyond Spain through strong professional and social ties in France and Italy, where they participated in collecting networks and transnational art markets. The family also played a significant role in the reception and circulation of Francisco de Goya's work: José de Madrazo was his court colleague, while later generations—particularly Federico de Madrazo—actively collected his works and facilitated their acquisition and sale in France in collaboration with figures such as Baron Taylor. The network includes both biological and marital relations, incorporating artists such as Mariano Fortuny y Marsal.",
+            originEs: "Una destacada dinastía artística española profundamente integrada en la estructura institucional de la producción y gestión del arte en el siglo XIX. Desde José de Madrazo, la familia mantuvo una presencia continuada como pintores de corte y responsables de instituciones museísticas —sobre todo las colecciones reales y el Museo del Prado—, estrechamente vinculados a la monarquía española durante los reinados de Carlos IV, Fernando VII e Isabel II. Su actividad se extendió más allá de España a través de fuertes vínculos profesionales y sociales en Francia e Italia, donde participaron en redes de coleccionismo y en el mercado artístico transnacional. La familia desempeñó también un papel relevante en la recepción y circulación de la obra de Francisco de Goya: José de Madrazo fue su colega en la corte, mientras que generaciones posteriores —en particular Federico de Madrazo— coleccionaron su obra y facilitaron su compra y venta en Francia en colaboración con figuras como el Baron Taylor. El grupo incluye tanto relaciones biológicas como matrimoniales, incorporando artistas como Mariano Fortuny y Marsal.",
+            bibliography: [
+              "Amaya Alzaga, <em>Raimundo de Madrazo y Garreta (1841-1920)</em>, PhD thesis, UNED, 2012",
+              "Amaya Alzaga, 'Federico de Madrazo en París (1837-1839): su mirada sobre la pintura francesa de su tiempo y viceversa', in <em>Federico de Madrazo y Carlos Luis de Ribera. Pintores Del Romanticismo Español</em>, 2018, pp.8-28.",
+              "José Luis Díez, <em>Federico de Madrazo: epistolario, vol. 1</em>, 1994.",
+              "Ainhoa Gilarranz Ibáñez, 'No Solo Es Arte: Las Redes de Federico de Madrazo Durante Su Pensionado En París y Roma (1837-1842)'', <em>Bulletin Hispanique</em>, no. 122-1, June 2020, pp. 277-92.",
+              "Carlos González López, <em>Federico de Madrazo y Küntz</em>, 1981.",
+              "Carlos González López, 'Federico de Madrazo en el París de 1833', <em>Archivo Español de Arte</em>, 1994, vol. 67, no. 267, pp.211-24.",
+              "Carlos González Navarro, <em>José de Madrazo (1781-1859), Dibujante</em>, PhD thesis, Madrid, Universidad Complutense de Madrid, 2023.",
+              "Monte Martí, <em>El mundo de los Madrazo: colección de la Comunidad de Madrid</em>, 2007.",
+              "Pedro J. Martínez Plaza, <em>Epistolario del Archivo de Madrazo del Museo del Prado. Cartas de Mariano Fortuny, Cecilia, Ricardo, Raimundo e Isabel de Madrazo</em>, 2017.",
+              "Raquel Sánchez, 'José de Madrazo y los deberes del padre perfecto', in <em>Hijos del Siglo</em>, 2024."
+            ],
+            websites: []
+            // Format: websites: ["[Label Name](https://url.com)", "[Another](https://url2.com)"]
           },
 
           "HUGO_CENACLE": {
@@ -1320,7 +1434,25 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 90,
             startAngle: -Math.PI / 2,
             title: "Hugo cenacle",
-            titleEs: "Clúster Hugo"
+            titleEs: "Clúster Hugo",
+            origin: "A literary and artistic circle formed around Victor Hugo in the late 1820s, often associated with the emergence of French Romanticism. Composed primarily of young writers, poets, and playwrights, alongside painters and draftsmen, the group developed in opposition to established academic and classical norms, advocating new artistic and literary forms aligned with contemporary political liberalism and the cultural ideal of modernity. Many members were also active collectors and critics. Within their broader Romantic interests, they showed an early and sustained engagement with Francisco de Goya—particularly his <i>Caprichos</i>—becoming among the first French intellectuals to systematically interpret and circulate his imagery, well before its reception in Spain, and contributing to his later critical canonization.",
+            originEs: "Un círculo literario y artístico formado en torno a Victor Hugo a finales de la década de 1820, asociado a la emergencia del Romanticismo francés. Integrado principalmente por jóvenes escritores, poetas y dramaturgos, junto a pintores y dibujantes, el grupo se configuró en oposición a las normas académicas y clásicas establecidas, defendiendo nuevas formas artísticas y literarias vinculadas al liberalismo político contemporáneo y a un ideal cultural de modernidad. Muchos de sus miembros fueron también coleccionistas y críticos. Dentro de sus intereses románticos más amplios, mostraron una temprana y sostenida atención a Francisco de Goya —en particular los <i>Caprichos</i>—, convirtiéndose en algunos de los primeros intelectuales franceses en interpretar y difundir sistemáticamente su imaginería, mucho antes de su recepción en España, contribuyendo a su posterior canonización crítica.",
+            bibliography: [
+              "Claude Schopp (ed.), <em>Une amitié capitale: Correspondance Victor Hugo - Alexandre Dumas</em>, 2015.",
+              "Claude Schopp (ed.), <em>Frères d'armes de la révolution romantique. Lettres d'Alexandre Dumas au Baron Taylor et à Adrien Dauzats</em>, Cahiers Alexandre Dumas, 1993, no. 20 (reedited in 2023).",
+              "Robert Avrett, 'Ochoa's Translation of Hugo's Hernani: A Study in Racial Psychologies' <em>The Modern Language Journal</em>, Vol. 38 no. 7, Nov 1954, pp.362-65.",
+              "Ilse Hempel Lipschutz, <em>Spanish Painting and the French Romantics</em>, Harvard University Press, 1972.",
+              "Mª Rosario Ozaeta, 'Eugenio de Ochoa, Traductor de Hugo', in <em>Neoclásicos y románticos ante la traducción</em>, edited by Francisco Lafarga et al, Universidad de Murcia, 2002, pp.419-36.",
+              "Roberto Dengler Gassin, 'Algunas consideraciones a propósito de Hernani, drama de Victor Hugo (1830), versión castellana de Eugenio de Ochoa (1836)', in ed. Donaire & Lafarga, <em>Traducción y adaptación cultural: España-Francia</em>, 1991, pp.337-345.",
+              "Anne Martin-Fugier, <i>Les Romantiques: 1820-1848</i>, 1998.",
+              "René Bray, <i>Chronologie du romantisme (1804-1830)</i>, t.33, coll. Bibliothèque de la Revue des cours et conférences, VII, 1932.",
+              "Charles Marc Des Granges, <i>Le Romantisme et la critique : la presse littéraire sous la restauration, 1815-1830</i>, 1907.",
+              "Edmond Biré, <i>Victor Hugo avant 1830</i>, 1902."
+            ],
+            websites: [
+              "[Atenas. Diario de a bordo](https://atenas-diariodeabordo.blogspot.com/search/label/Romanticismo%20y%20Rom%C3%A1nticos%20%E2%80%93III%20a%E2%80%93%20V%C3%8DCTOR%20HUGO.%20La%20vida): Romanticismo y Románticos -III a- Víctor Hugo. La vida.",
+            ]
+            // Format: websites: ["[Label Name](https://url.com)", "[Another](https://url2.com)"]
           },
 
           "ILUSTRADOS_CLUSTER": {
@@ -1350,7 +1482,27 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Martín Zapater": Math.PI / 2.2     // also south, close to Goya
             },
             title: "Ilustrados cluster",
-            titleEs: "Clúster Ilustrados"
+            titleEs: "Clúster Ilustrados",
+            origin: "A heterogeneous intellectual and political network associated with the Spanish Enlightenment (<i>Ilustración</i>), united by reformist ideals and a shared commitment to cultural, administrative, and social modernization. Comprising statesmen, writers, clerics, bankers, and artists, the group contributed to debates on progress and institutional reform in late eighteenth- and early nineteenth-century Spain, often operating within overlapping courtly, academic, and economic spheres. Many members maintained close personal and professional relationships with Francisco de Goya, who portrayed several of them in portraiture, reflecting both patterns of patronage and a degree of intellectual affinity.",
+            originEs: "Un entramado intelectual y político heterogéneo vinculado a la Ilustración española, unido por ideales reformistas y por un compromiso compartido con la modernización cultural, administrativa y social. Integrado por estadistas, escritores, clérigos, banqueros y artistas, el grupo participó en los debates sobre el progreso y la reforma institucional en la España de finales del siglo XVIII y comienzos del XIX, operando frecuentemente en espacios cortesanos, académicos y económicos interconectados. Muchos de sus miembros mantuvieron relaciones estrechas personales y profesionales con Francisco de Goya, quien retrató a varios de ellos, reflejando tanto dinámicas de mecenazgo como un grado de afinidad intelectual.",
+            bibliography: [
+              "Mercedes Águeda Villar & Xavier de Salas (eds.), <i>Francisco de Goya: cartas a Martín Zapater</i>, 1982.",
+              "Ángel Canellas López, <i>Diplomatario. Francisco de Goya</i>, 1981.",
+              "Jacqueline Hara, <i>Francisco de Goya (1746-1828). Letters of Love and Friendship in Translation</i>, 1997.",
+              "Enrique Lafuente Ferrari, 'Las cartas de Goya a Zapater y los epistolarios españoles', <i>Homenaje a la memoria de don Antonio Rodríguez Moñino, 1910-1970</i>, 1975, pp. 285-328.",
+              "Luis Martín-Estudillo, <i>Goya o el misterio de la lectura</i>, 2023.",
+              "Manuela B. Mena Marqués, Gudrun Maurer (coord.), Virginia Albarrán Martín, <i>Goya y la corte ilustrada</i>, 2017.",
+              "Manuela B. Mena Marqués, 'Jovellanos pintado por Goya', <i>Boletín jovellanista</i>, no.17, 2017, pp.135-47.",
+              "José Luis Morales y Marín, <i>Francisco Bayeu. Vida y obra</i>, 1995.",
+              "Natacha Seseña, <i>Goya y las mujeres</i>, 2004.",
+              "Janis Tomlinson, <em>Goya in the Twilight of Enlightenment</em>, 1992."
+            ],
+            websites: [
+              "[Cartas de Goya a Martín Zapater](https://www.museodelprado.es/aprende/enciclopedia/voz/cartas-de-goya-a-martin-zapater/2ab3aedb-07a9-4031-b6e0-64d9806ac8b5), Mercedes Águeda Villar, Museo del Prado."
+            ],
+            conferences: [
+              "Manuela B. Mena Marqués, [Goya y sus amigos](https://www.museodelprado.es/actualidad/multimedia/goya-y-sus-amigos-por-manuela-mena/2bcc3d56-1056-43cb-80d2-ccb552b54541), Cátedra 2013."
+            ]
           },
 
           "GOYA_FAMILY": {
@@ -1369,7 +1521,11 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Francisco de Goya": -Math.PI / 2
             },
             title: "Goya family",
-            titleEs: "Familia Goya"
+            titleEs: "Familia Goya",
+            origin: "A family network of Francisco de Goya, encompassing his biological relatives and close in-laws. Originating in Aragón and later established in Madrid, the group reflects the painter’s early social and professional environment as well as the domestic ties that connected him to the Bayeu family, particularly through marriage alliances and artistic apprenticeship networks.",
+            originEs: "Un entramado familiar en torno a Francisco de Goya, que incluye tanto sus parientes biológicos como sus allegados políticos. De origen aragonés y posteriormente establecido en Madrid, el grupo refleja el entorno social y profesional temprano del pintor, así como los vínculos domésticos que lo conectaron con la familia Bayeu, especialmente a través de alianzas matrimoniales y redes de formación artística.",
+            bibliography: [],
+            websites: []
           },
 
           "OSUNA_CORE": {
@@ -1383,7 +1539,17 @@ document.addEventListener('DOMContentLoaded', async function () {
             radius: 135,
             startAngle: -Math.PI / 2,
             title: "Osuna core",
-            titleEs: "Núcleo Osuna"
+            titleEs: "Núcleo Osuna",
+            origin: "A leading Spanish aristocratic circle of the late eighteenth and early nineteenth centuries, centered on the House of Osuna and its allied networks. One of the most important patrons and collectors of Francisco de Goya, the group supported a wide range of his production, from decorative commissions to more experimental and critical imagery, including witchcraft scenes and the Caprichos series. Their cultural profile combined Enlightenment-inflected interests with strong engagement in artistic patronage, and included salonnières who facilitated intellectual and social exchange within elite Madrid circles.",
+            originEs: "Un influyente círculo de la aristocracia española de finales del siglo XVIII y comienzos del XIX, centrado en la casa de Osuna y sus redes aliadas. Uno de los principales mecenas y coleccionistas de Francisco de Goya, el grupo impulsó un amplio espectro de su producción, desde encargos decorativos hasta imágenes más experimentales y críticas, incluyendo escenas de brujería y la serie de los Caprichos. Su perfil cultural combinaba intereses de raíz ilustrada con un fuerte compromiso con el mecenazgo artístico, e incluía salonnières que facilitaron el intercambio intelectual y social en los círculos de élite madrileños.",
+            bibliography: [
+              "Manuela B. Mena Marqués, 'Dos adquisiciones de Goya en el Museo del Prado: <i>Vuelo de brujas</i> (1999) y <i>La marquesa de Santa Cruz</i> (1986), in <i>Los tesoros ocultos del Museo del Prado</i>, 2017, pp.277-305.",
+              "Manuela B. Mena Marqués, Gudrun Maurer (coord.), Virginia Albarrán Martín, <i>Goya y la corte ilustrada</i>, 2017."
+              ],
+            websites: [],
+            conferences: [
+              "Manuela Mena, [Vuelo de brujas y La Marquesa de Santa Cruz. Francisco de Goya](https://fundacionbarrie.org/conferencia-manuela-mena), 2016."
+            ]
           },
 
           "MONTIJO_CORE": {
@@ -1401,7 +1567,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 100,
             startAngle: -Math.PI / 2,
             title: "Montijo core",
-            titleEs: "Núcleo Montijo"
+            titleEs: "Núcleo Montijo",
+            origin: "A dynastic and social network of Spanish nobility centered on the Montijo and allied Palafox–Villafranca families, operating across Spain and France in the late eighteenth and nineteenth centuries. United through marriage alliances, courtly mobility, and shared cultural interests, they played a role in the patronage and circulation of Francisco de Goya’s work. Several members functioned as salonnières and cultural intermediaries in transnational elite circles, particularly in Paris, where intellectual and literary exchanges included figures such as Prosper Mérimée. The group’s later consolidation of influence at the French imperial court further extended its cultural and political reach.",
+            originEs: "Un entramado dinástico y social de la nobleza española centrado en las casas de Montijo y las familias aliadas Palafox-Villafranca, activo entre finales del siglo XVIII y el XIX entre España y Francia. Unidos por alianzas matrimoniales, movilidad cortesana e intereses culturales compartidos, participaron en el patronazgo y circulación de la obra de Francisco de Goya. Varios de sus miembros actuaron como salonnières e intermediarios culturales en círculos de élite transnacionales, especialmente en París, donde mantuvieron contactos con figuras literarias e intelectuales como Prosper Mérimée. La posterior proyección de la familia en la corte imperial francesa amplió su influencia cultural y política.",
+            bibliography: [],
+            websites: []
           },
 
           "COURT_PAINTERS": {
@@ -1421,7 +1591,28 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 92,
             startAngle: -Math.PI / 2,
             title: "Court painters",
-            titleEs: "Pintores de Corte"
+            titleEs: "Pintores de Corte",
+            origin: "A heterogeneous group of painters who served the Spanish royal court across the late eighteenth and early nineteenth centuries. Despite differing stylistic orientations and artistic backgrounds, they were connected through their roles as court painters, resulting in professional proximity, occasional collaboration, and shifting degrees of personal and artistic affinity. Within this network, family ties and generational succession also played a role in shaping interactions, while stylistic contrasts—from late Baroque tradition to Neoclassicism and Romanticism—coexisted within the same institutional framework.",
+            originEs: "Un grupo heterogéneo de pintores al servicio de la corte española a finales del siglo XVIII y comienzos del XIX. A pesar de sus diferentes estilos, orígenes y posiciones estéticas, estuvieron vinculados por su condición de pintores de cámara, lo que generó proximidad profesional, colaboración ocasional y distintos grados de afinidad personal y artística. Dentro de esta red, los lazos familiares y la sucesión generacional también influyeron en las relaciones, mientras coexistían orientaciones estilísticas contrastadas —desde la tradición tardobarroca hasta el neoclasicismo y el romanticismo— dentro del mismo marco institucional.",
+            bibliography: [
+              "Ester Alba Pagán, 'Imagen y poder. La pintura valenciana en la época de Fernando VII (1814-1833)de la alegoría a la pintura conmemorativa', <i>Arte, poder y sociedad en la España de los siglos XV a XX</i>, 2008, pp.337-54.",
+              "Virginia Albarrán Martín, 'Pintura de tema religioso de Agustín Esteve', in Alejandro Cañestro Donoso, ed. <em>Scripta artium in honorem prof. José Manuel Cruz Valdovinos</em>, 1, Madrid, pp. 297-318.",
+              "Virginia Albarrán Martín, 'De Goyas que son Esteves', in <em>Goya: Collecting the Grotesque</em>, upcoming.",
+              "Manuela B. Mena Marqués, Gudrun Maurer (coord.), Virginia Albarrán Martín, <i>Goya y la corte ilustrada</i>, 2017.",
+              "Jesusa Vega, 'Fernando VII: resistencia y deseo', <i>Journal of Spanish Cultural Studies</i>, 2013, vol.14, no.4, pp.348-99."
+            ],
+            websites: [
+              "[Colección de Carlos III: José Manuel de la Mano, Museo del Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/coleccion-de-carlos-iii/4d51e705-b17d-4836-8745-54569c9e7b30).",
+              "[Descubrir el Arte: El poderoso legado de Carlos III](https://www.descubrirelarte.es/2016/12/30/el-poderoso-legado-de-carlos-iii.html).",
+              "[Colección de Carlos IV: Luis Miguel Enciso Recio, Museo del Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/coleccion-de-carlos-iv/f1094cbd-7bfb-4b99-97fa-04769b0a3954).",
+              "[Más de Arte: Carlos IV, mecenas y coleccionista](https://masdearte.com/carlos-iv-mecenas-y-coleccionista/).",
+              "[Carlos IV, por José de Madrazo](https://www.galeriadelascoleccionesreales.es/obra-de-arte/carlos-iv/726318d0-2f71-4c14-9394-681e52e2a480), Galería de las Colecciones Reales.",
+              "[Colección de Fernando VII: Ángel Aterido, Museo del Prado](https://www.museodelprado.es/aprende/enciclopedia/voz/coleccion-de-fernando-vii/1fd09a07-e3e0-4bca-945f-1506b871fc2b)."
+            ],
+            conferences: [
+              "[<i>El arte en tiempo de Carlos III, IV Jornadas de Arte</i>](https://dialnet.unirioja.es/servlet/libro?codigo=509232), 1989.",
+              "[<i>Carlos IV y las artes. El rey coleccionista</i>](https://www.patrimonionacional.es/sites/default/files/carlos_iv_y_las_artes.pdf), Universidad Complutense / Patrimonio Nacional, 2019."
+            ]
           },
 
           "PRINT_SPECIALISTS": {
@@ -1436,7 +1627,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 80,
             startAngle: -Math.PI / 2,
             title: "Print specialists",
-            titleEs: "Especialistas en estampa"
+            titleEs: "Especialistas en estampa",
+            origin: "A group of French printmakers, editors, critics, and collectors who played a decisive role in the nineteenth-century reception of Francisco de Goya. Active from the 1830s onwards, they were among the earliest scholarly interpreters of his graphic work, combining connoisseurship, collecting practices, and art criticism. Their writings and collections contributed to the first systematic studies and cataloguing efforts devoted to Goya's oeuvre.",
+            originEs: "Un grupo de grabadores, editores, críticos y coleccionistas franceses que desempeñaron un papel decisivo en la recepción de Francisco de Goya en el siglo XIX. Activos desde la década de 1830, fueron algunos de los primeros intérpretes eruditos de su obra gráfica, combinando el conocimiento experto, el coleccionismo y la crítica de arte. Sus escritos y colecciones contribuyeron a los primeros intentos sistemáticos de estudio y catalogación de la obra de Goya.",
+            bibliography: [],
+            websites: []
           },
 
           "MADRAZO_CARDERERA_GROUP": {
@@ -1458,7 +1653,19 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Pedro de Madrazo": Math.PI / 2
             },
             title: "Madrazo-Carderera group",
-            titleEs: "Grupo Madrazo-Carderera"
+            titleEs: "Grupo Madrazo-Carderera",
+            origin: "A group of Spanish artists, writers, and intellectuals of the same generation, linked by long-standing friendships formed in youth and sustained through shared artistic and cultural interests. Including members of the Madrazo family, they maintained close connections with Parisian cultural circles, where several of them lived and engaged with French Romanticism. They also played an important role in the dissemination and critical reception of Francisco de Goya's work in both Spain and France.",
+            originEs: "Un grupo de artistas, escritores e intelectuales españoles de la misma generación, unidos por amistades de larga duración formadas en la juventud y mantenidas a través de intereses artísticos y culturales compartidos. Incluye miembros de la familia Madrazo y mantiene vínculos estrechos con los círculos culturales parisinos, donde varios de ellos residieron y entraron en contacto con el Romanticismo francés. También desempeñaron un papel importante en la difusión y recepción crítica de la obra de Francisco de Goya tanto en España como en Francia.",
+            bibliography: [
+              "Amaya Alzaga, 'Federico de Madrazo en París (1837-1839): su mirada sobre la pintura francesa de su tiempo y viceversa', in <em>Federico de Madrazo y Carlos Luis de Ribera. Pintores Del Romanticismo Español</em>, 2018, pp.8-28.",
+              "Robert Avrett, 'Ochoa's Translation of Hugo's Hernani: A Study in Racial Psychologies' <em>The Modern Language Journal</em>, Vol. 38 no. 7, Nov 1954, pp.362-65.",
+              "Paula Fayos Pérez, 'Valentín Carderera and the Dissemination of Goya's Graphic Work in France', <em>The Burlington Magazine</em>, vol. 162, no. 1413, 2020, pp. 1048-55.",
+              "José María Lanzarote Guiral, <em>Diarios de viaje de Valentín Carderera por Europa (1841-1861). París, Londres, Bélgica y Alemania</em>, 2016.",
+              "Eugenio de Ochoa, <em>Paris, Londres y Madrid, Paris</em>, Dramard Baudry, 1861.",
+              "Mª Rosario Ozaeta, 'Eugenio de Ochoa, Traductor de Hugo', in <em>Neoclásicos y románticos ante la traducción</em>, edited by Francisco Lafarga et al, Universidad de Murcia, 2002, pp.419-36.",
+              "Roberto Dengler Gassin, 'Algunas consideraciones a propósito de Hernani, drama de Victor Hugo (1830), versión castellana de Eugenio de Ochoa (1836)', in ed. Donaire & Lafarga, <em>Traducción y adaptación cultural: España-Francia</em>, 1991, pp.337-345."
+            ],
+            websites: []
           },
 
           "BOURBON_CORE": {
@@ -1481,7 +1688,14 @@ document.addEventListener('DOMContentLoaded', async function () {
               "XV Countess of Chinchón": 0
             },
             title: "Bourbon cluster",
-            titleEs: "Clúster Borbón"
+            titleEs: "Clúster Borbón",
+            origin: "A core group of Spanish Bourbon royalty spanning the late eighteenth and nineteenth centuries. Centered on the royal family of Carlos III and his descendants, this network includes successive monarchs and consorts who shaped court politics, patronage systems, and the commissioning and circulation of Francisco de Goya's work within royal and dynastic contexts.",
+            originEs: "Un núcleo de la realeza borbónica española que abarca finales del siglo XVIII y el siglo XIX. Centrado en la familia de Carlos III y sus descendientes, este grupo incluye a monarcas y consortes sucesivos que configuraron la política de corte, los sistemas de patronazgo y el encargo y circulación de la obra de Francisco de Goya en contextos dinásticos y cortesanos.",
+            bibliography: [
+              "Manuela B. Mena Marqués, <i>Teresa de Vallabriga, infanta de España: Francisco de Goya y la familia Borbón-Vallabriga</i>, Magdalena Lasala (coord.), 2018.",
+              "Manuela B. Mena Marqués, 'El Retrato de Don Luis María de Borbón y Vallabriga niño, estudiando geografía', <i>Luis María de Borbón. Francisco de Goya</i>, 2007, pp.22-42."
+            ],
+            websites: []
           },
 
          "VILLAFRANCA_CLUSTER": {
@@ -1496,7 +1710,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Villafranca-Alba cluster",
-            titleEs: "Clúster Villafranca-Alba"
+            titleEs: "Clúster Villafranca-Alba",
+            origin: "A group of Spanish aristocrats connected through the House of Villafranca and the House of Alba. Linked by family ties, marriage alliances, and noble inheritance, they formed part of one of the most influential aristocratic networks in Spain during the late eighteenth and early nineteenth centuries, and were significant patrons and collectors of Francisco de Goya.",
+            originEs: "Un grupo de aristócratas españoles vinculados a las casas de Villafranca y Alba. Unidos por lazos familiares, alianzas matrimoniales y herencias nobiliarias, formaron parte de una de las redes aristocráticas más influyentes de España a finales del siglo XVIII y comienzos del XIX, y fueron importantes mecenas y coleccionistas de Francisco de Goya.",
+            bibliography: [
+              "Manuela B. Mena Marqués & Gudrun Maurer, <i>La duquesa de Alba, musa de Goya: el mito y la historia</i>, 2006."
+            ],
+            websites: []
           },
 
           "TAYLOR_CLUSTER": {
@@ -1509,7 +1729,17 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Taylor cluster",
-            titleEs: "Clúster Taylor"
+            titleEs: "Clúster Taylor",
+            origin: "A group of artists and cultural intermediaries closely associated with the French discovery of Spain during the nineteenth century. Through their travels, artistic collaborations, and collecting activities, they helped shape French perceptions of Spanish culture and played a significant role in the acquisition of Spanish artworks for Louis Philippe I's Galerie espagnole, maintaining connections with figures such as Javier Goya and the Madrazo family.",
+            originEs: "Un grupo de artistas, viajeros e intermediarios culturales que contribuyeron al creciente interés francés por España durante el siglo XIX. Estrechamente implicados en la formación de la Galerie espagnole de Louis Philippe I, promovieron el arte y la cultura españoles a través de los viajes, el coleccionismo y el intercambio artístico, al tiempo que mantuvieron importantes vínculos con Javier Goya y la familia Madrazo.",
+            bibliography: [
+              "Claude Schopp (ed.), <em>Frères d'armes de la révolution romantique. Lettres d'Alexandre Dumas au Baron Taylor et à Adrien Dauzats</em>, Cahiers Alexandre Dumas, 1993, no. 20 (reedited in 2023).",
+              "Paul Guinard, <em>Dauzats et Blanchard: Peintres de l'Espagne Romantique</em>, 1967.",
+              "Ilse Hempel Lipschutz, <em>Spanish Painting and the French Romantics</em>, Harvard University Press, 1972.",
+              "Alisa Luxenberg, <em>The Galerie Espagnole and the Museo Nacional, 1835-1853: Saving Spanish Art, or the Politics of Patrimony</em>, 2008.",
+              "Gary Tinterow et al. <em>Manet/Velázquez: The French Taste for Spanish Painting</em>, New York, Metropolitan Museum of Art, 2003."
+            ],
+            websites: []
           },
 
           "DAVID_CLUSTER": {
@@ -1523,7 +1753,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "David cluster",
-            titleEs: "Clúster David"
+            titleEs: "Clúster David",
+            origin: "A group of painters linked to the artistic legacy of Jacques-Louis David, whose influence extended from Neoclassicism to the broader academic tradition of the nineteenth century. Through their historical paintings, classical ideals, and teaching networks, they played a central role in shaping European academic art.",
+            originEs: "Un grupo de pintores vinculados al legado artístico de Jacques-Louis David, cuya influencia se extendió desde el Neoclasicismo hasta la tradición académica más amplia del siglo XIX. A través de sus pinturas de historia, ideales clásicos y redes de enseñanza, desempeñaron un papel central en la configuración del arte académico europeo.",
+            bibliography: [],
+            websites: []
           },
 
           "IMPRESSIONIST_CLUSTER": {
@@ -1539,7 +1773,21 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Impressionist cluster",
-            titleEs: "Clúster Impresionista"
+            titleEs: "Clúster Impresionista",
+            origin: "French artistic movement originating in the 1860s, dedicated to capturing the ephemeral light of a specific instant and its effect on colors and forms. Each artist expressed their own subjective vision, resulting in diverse and highly individual styles rather than a unified aesthetic. The movement was formally introduced through the first independent exhibition held in Paris in 1874.",
+            originEs: "Movimiento artístico francés que se originó en la década de 1860, dedicado a capturar la luz efímera de un instante específico y su efecto en los colores y las formas. Cada artista expresó su propia visión subjetiva, resultando en estilos diversos e individuales más que en una estética unificada. El movimiento fue presentado formalmente a través de la primera exposición independiente celebrada en París en 1874.",
+            bibliography: [
+              "Françoise Cachin, Charles S. Moffett & Juliet Wilson-Bareau, <em>Manet: 1832-1883</em>, Paris, Réunion des Musées Nationaux, 1983.",
+              "Dorothee Hansen, <em>Manet and Astruc. Friendship and Inspiration</em>, CEEH, 2021.",
+              "Sophie Monneret, <em>L'Impressionnisme et son époque</em>, vol.2, t.1, Paris, Robert Laffont, 1987.",
+              "Adolphe Tabarant, <em>Manet et ses œuvres</em>, Paris, Gallimard, 1947 (1st ed. 1897).",
+              "Gary Tinterow et al. <em>Manet/Velázquez: The French Taste for Spanish Painting</em>, New York, Metropolitan Museum of Art, 2003.",
+              "Juliet Wilson-Bareau, <em>Manet: The Execution of Maximilian: Painting, Politics and Censorship</em>, Princeton (New Jersey), Princeton University Press, 1992.",
+              "Stephan Wolohojian and Ashley Dunn, <em>Manet/Degas</em>, The Metropolitan Museum of Art, 2023."
+            ],
+            websites: [
+              "[Networks of Impressionism](https://www.navigating.art/articles-from-navigatingart/networks-of-impressionism): An upcoming collaborative digital endeavor from the Museum Barberini (Postdam, Germany), the Wildenstein Plattner Institute and Navigating.art."
+            ]
           },
 
           "SPANISH_ROMANTICS_CLUSTER": {
@@ -1552,7 +1800,14 @@ document.addEventListener('DOMContentLoaded', async function () {
             padding: 84,
             startAngle: -Math.PI / 2,
             title: "Spanish Romantics",
-            titleEs: "Románticos españoles"
+            titleEs: "Románticos españoles",
+            origin: "A group of young Spanish writers who shared a common aesthetic and political mindset, representing key figures in Spain's Romantic movement of the 19th century. United by their commitment to expressive, emotional literature and liberal ideals.",
+            originEs: "Un grupo de jóvenes escritores españoles que compartían una sensibilidad estética y una postura política común, figuras clave del movimiento romántico español del siglo XIX. Unidos por su compromiso con la literatura expresiva y emocional, así como con ideales liberales.",
+            bibliography: [
+              "Donald E. Schurlknight, <i>Spanish Romanticism in Context: Of Subversion, Contradiction and Politics: Espronceda, Larra, Rivas, Zorrilla</i>, 1998.",
+              "Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203."
+            ],
+            websites: []
           }
         };
 
@@ -1677,6 +1932,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             };
           }));
           updateClusterInfoBadge();
+          if (typeof window.showDefaultNodeInfo === 'function') {
+            window.showDefaultNodeInfo();
+          }
         };
 
         window.selectCluster = function (clusterId) {
@@ -1721,7 +1979,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             };
           }));
           updateClusterInfoBadge();
-          
+
           // Focus on cluster without glitching
           const memberArray = Array.from(members);
           if (memberArray.length > 0 && window.VIS_NETWORK) {
@@ -1739,13 +1997,13 @@ document.addEventListener('DOMContentLoaded', async function () {
               });
               cx /= memberArray.length;
               cy /= memberArray.length;
-              
+
               // Calculate appropriate scale based on cluster size
               const width = maxX - minX || 100;
               const height = maxY - minY || 100;
               const maxDim = Math.max(width, height);
               const scale = Math.min(1.5, 800 / (maxDim + 200)); // Fit with padding, max 1.5x zoom
-              
+
               // Move immediately without animation to avoid glitching
               window.VIS_NETWORK.moveTo({
                 position: { x: cx, y: cy },
@@ -1754,6 +2012,96 @@ document.addEventListener('DOMContentLoaded', async function () {
             } catch (e) {
               console.warn('Error focusing on cluster:', e);
             }
+          }
+
+          // Render cluster info in the right panel
+          const nodeInfoEl = document.getElementById('nodeInfo');
+          if (nodeInfoEl) {
+            const clusterTitle = getClusterDisplayName(clusterId);
+            const sortedMembers = Array.from(members).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+            const isEs = CURRENT_LANG === 'es';
+
+            let html = `<div class="cluster-info-panel">`;
+            html += `<h3 style="margin:0 0 1rem 0; font-size:1.1rem; color:#fff; border-bottom:1px solid #444; padding-bottom:0.5rem;">${clusterTitle}</h3>`;
+
+            // Members section
+            html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Miembros' : 'Members'}</div>`;
+            html += `<ul style="margin:0 0 1rem 0; padding-left:1.2rem; line-height:1.8;">`;
+            sortedMembers.forEach(id => {
+              const safeId = id.replace(/'/g, "\\'");
+              html += `<li><a href="#" style="color:#66ccff;" onclick="focusNode('${safeId}'); return false;">${id}</a></li>`;
+            });
+            html += `</ul>`;
+
+            // Origin section
+            const originText = isEs ? (cfg.originEs || cfg.origin) : cfg.origin;
+            if (originText) {
+              const linkedOriginText = autoLinkNames(originText, nodesMap);
+              html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Contexto' : 'Context'}</div>`;
+              html += `<p style="margin:0 0 1rem 0; color:#ccc; line-height:1.5;">${linkedOriginText}</p>`;
+            }
+
+            // Bibliography section
+            if (cfg.bibliography && cfg.bibliography.length > 0) {
+              html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Bibliografía' : 'Bibliography'}</div>`;
+              html += `<ul style="margin:0 0 1rem 0; padding-left:1.2rem; line-height:1.8; color:#ccc;">`;
+              cfg.bibliography.forEach(entry => {
+                html += `<li>${entry}</li>`;
+              });
+              html += `</ul>`;
+            }
+
+            // Websites section
+            if (cfg.websites && cfg.websites.length > 0) {
+              html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Sitios web' : 'Websites'}</div>`;
+              html += `<ul style="margin:0 0 1rem 0; padding-left:1.2rem; line-height:1.8;">`;
+              cfg.websites.forEach(site => {
+                let label, url, description = '';
+                if (typeof site === 'string') {
+                  // Parse markdown link format: [label](url) optionally followed by description
+                  const match = site.match(/\[(.*?)\]\((.*?)\)(.*)/);
+                  if (match) {
+                    label = match[1];
+                    url = match[2];
+                    description = match[3].trim();
+                    // Remove leading colon if present
+                    if (description.startsWith(':')) {
+                      description = description.substring(1).trim();
+                    }
+                  } else {
+                    label = site;
+                    url = site;
+                  }
+                } else {
+                  // Object format: {label, url, description}
+                  label = site.label;
+                  url = site.url;
+                  description = site.description || '';
+                }
+                html += `<li><a href="${url}" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">${label}</a>`;
+                if (description) {
+                  html += `<br><span style="color:#999; font-size:0.9rem; margin-left:1rem; display:block; margin-top:0.2rem;">${description}</span>`;
+                }
+                html += `</li>`;
+              });
+              html += `</ul>`;
+            }
+
+            // Conferences section
+            if (cfg.conferences && cfg.conferences.length > 0) {
+              html += `<div class="section-heading" style="margin-bottom:0.4rem;">${isEs ? 'Conferencias' : 'Conferences'}</div>`;
+              html += `<ul style="margin:0 0 1rem 0; padding-left:1.2rem; line-height:1.8; color:#ccc;">`;
+              cfg.conferences.forEach(entry => {
+                // Parse markdown links [label](url) - only show label without brackets, hide URL
+                let linkedEntry = entry
+                  .replace(/\[(.*?)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:#66ccff;">$1</a>');
+                html += `<li>${linkedEntry}</li>`;
+              });
+              html += `</ul>`;
+            }
+
+            html += `</div>`;
+            nodeInfoEl.innerHTML = html;
           }
         };
 
@@ -1788,13 +2136,19 @@ document.addEventListener('DOMContentLoaded', async function () {
         initClusterControls();
 
         // Ajustes de nodos con cluster color
+        // ✅ NUEVO CÓDIGO (aplica posiciones)
         nodes = new vis.DataSet(data.nodes.map(node => {
-          labelToId[node.label] = node.id;
           const degree = edgeCount[node.id] || 1;
           const clusterIds = nodeClusterMap[node.id];
           const clusterColor = clusterIds && clusterIds.length > 0 ? clusterColorMap[clusterIds[0]] : undefined;
+          
+          // 🔥 APLICAR POSICIONES DESDE positions_config.json
+          const pos = nodePositions[node.id] || { x: undefined, y: undefined };
+          
           const config = {
             ...node,
+            x: pos.x,  // <-- AÑADIR ESTO
+            y: pos.y,  // <-- AÑADIR ESTO
             size: Math.min(13 + degree * 0.72, 38),
             mass: 1 + degree * 0.025,
             font: {
@@ -2066,7 +2420,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       'Carlos IV': 'carlos',
       'Fernando VII': 'fernando',
       'Louis Philippe I': 'louis',
-      'Dominique Vivant Denon': 'vivant',
       'María Tomasa Palafox, Marchioness of Villafranca': 'villafranca',
       'María Gabriela de Palafox, Marchioness of Lazán': 'lazan',
       'Eugenio Eulalio Palafox, VII Count of Montijo': 'montijo',
@@ -2081,8 +2434,13 @@ document.addEventListener('DOMContentLoaded', async function () {
       'Ramón de Mesonero Romanos': 'mesonero',
       'Gregorio Cruzada Villaamil': 'cruzada',
       'Juan Fernández de Rojas': 'fernandez',
-      'Manuel García de la Prada': 'garcia'
+      'Manuel García de la Prada': 'garcia',
+      'Dominique Vivant Denon': 'vivant',
+      'Pierre Lacour fils': 'lacour',
+      'Madame Ewelina Hanska': 'hanska'
     });
+
+    window.__GN_SURNAME_FORCE_BY_FULLNAME = SURNAME_FORCE_BY_FULLNAME;
 
     /* ---- MEMBERS LIST: alphabetical index of nodes (A–Z by surname) ---- */
     function surnameKey(name) {
@@ -2100,7 +2458,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       const fold = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
       // 0) Override por nombre completo (y por base limpia)
-      const override = SURNAME_FORCE_BY_FULLNAME[name] || SURNAME_FORCE_BY_FULLNAME[base];
+      const exactName = String(name).trim();
+      const override = SURNAME_FORCE_BY_FULLNAME[name] || SURNAME_FORCE_BY_FULLNAME[exactName] || SURNAME_FORCE_BY_FULLNAME[base];
       if (override) {
         return fold(override);
       }
@@ -2435,7 +2794,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     // ===== CLUSTER POSITION PERSISTENCE =====
-    let nodePositions = JSON.parse(localStorage.getItem('nodePositions') || '{}');
     let dragTimeout;
 
     // Only save positions when dragging ends IN ADMIN MODE
@@ -2470,18 +2828,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     };
 
-    // Load positions from positions_config.json if available (all users)
-    if (!isAdminMode) {
-      fetch('positions_config.json')
-        .then(response => response.json())
-        .then(data => {
-          nodePositions = data;
-          console.log('Loaded positions from positions_config.json');
-        })
-        .catch(err => {
-          console.log('positions_config.json not found, using defaults:', err);
-        });
-    }
 
     // Add reset function
     window.resetNodePositions = function() {
