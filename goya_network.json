@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-09",
+  "last_update": "2026-06-22",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -875,7 +875,7 @@
         "He is a pioneer in aerial photography, with the views of Petit Bicêtre in 1858.",
         "His adventures as aeronaut inspired Jules Verne's <i>Cinq semaines en ballon</i> (1862), as well as some characters in <i>De la Terre à la Lune</i> (1865) and <i>Autour de la Lune</i> (1869), where Michel Ardan is an anagram of Nadar.",
         "He goes broke during the Paris Commune in 1871.",
-        "His workshop at 35 Boulevard des Capucines holds the <i>première exposition des peintres impressionnistesa</i> in 1874.",
+        "His workshop at 35 Boulevard des Capucines holds the <i>première exposition des peintres impressionnistes</i> in 1874.",
         "He produced the first photographic <i>reportage</i>, illustrating his son's interview to the chemist Eugène Chevreul in <i>Le Journal illustré</i> (1886)."
       ],
       "author of": [
@@ -883,10 +883,10 @@
         "Photography: André Barret, <i>Nadar. 50 photographies de ses illustres contemporains</i>, éd. Julliard, 1994; Barret, <i>Nadar</i>"
       ],
       "member of": [
-        "<i>Cénacle des Batignolles</i> (from 1863), from which emerges the Impressionist movement",
-        "Société d'encouragement de la locomotion aérienne au moyen du plus lourd que l'air"
+        "<i>Cénacle des Batignolles</i> (from 1863), from which emerges the Impressionist movement.",
+        "Société d'encouragement de la locomotion aérienne au moyen du plus lourd que l'air."
       ],
-      "mentions of Goya": "in the <i>Revue comique à l'usage des gens sérieux</i> (May-Dec 1849)'(…) je me trouvai tout d'un coup installé à une table de marbre, en face d'un monsieur barbu qui ressemblait à un ermite décroché d'un cadre de Goya. Il fumait gravement dans une énorme pipe en bois sculpté, dont le fourneau représentait à s'y méprendre la tête de M. Dupin' (p.73)",
+      "mentions of Goya": "1849 May-Dec, <i>Revue comique à l'usage des gens sérieux</i>: '(…) je me trouvai tout d'un coup installé à une table de marbre, en face d'un monsieur barbu qui ressemblait à un ermite décroché d'un cadre de Goya. Il fumait gravement dans une énorme pipe en bois sculpté, dont le fourneau représentait à s'y méprendre la tête de M. Dupin' (p.73).",
       "link to Goya's work": "in the <i>Revue comique à l'usage des gens sérieux</i> (May-Dec 1849), Nadar made several Goyaesque illustrations, such as those in pp.74-75 [archive.org](https://archive.org/details/revuecomiquelu00pari/page/74/), 83, 104, 105, 117.",
       "bibliography": "Nadar, <i>Correspondance, 1820-1851</i>, tome 1, ed. André Rouillé, 1998; <i>Revue comique à l'usage des gens sérieux</i> (May-Dec 1849)",
       "archives": "Bibliothèque historique de la ville de Paris and Musée Carnavalet (related to aerial photography)",
@@ -1911,6 +1911,7 @@
       "political views": "liberal",
       "portrayed by": "Antonio María Esquivel, oil painting, 1842, Prado",
       "bibliography": "Lanzarote Guiral 2016",
+      "websites": "[Atenas. Diario de a bordo](https://atenas-diariodeabordo.blogspot.com/2017/11/romanticismo-y-romanticos-iv-espronceda.html), Romanticismo y Románticos IV. Espronceda.]",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q209077",
         "rah": "https://historia-hispanica.rah.es/biografias/14588-jose-de-espronceda-y-delgado"
@@ -1980,6 +1981,7 @@
       "curiosities": "his son Luis Mariano became a famous librettist of <i>zarzuelas</i>; his daughter Adela was allegedly the lover of King Amadeo de Saboya; her daughter Baldomera was a banker and was condemned to a prison sentence because of a pyramid scheme",
       "portrayed by": "José Gutiérrez de la Vega, c.1835, oil painting, Museo del Romanticismo (Madrid)",
       "bibliography": "A. Pérez (ed.), <i>Fígaro. Colección de artículos dramáticos, literarios, políticos y de costumbres</i>, RAE, 2016; Álvarez Barrientos. J., Ferri Coll, J. M. y Rubio Cremades, E. (eds.), <i>Larra en el mundo. La misión de un escritor moderno</i>, Univ. Alicante, 2011; <i>Larra: Fígaro de vuelta, 1809-2009</i>, catalogue and conference papers (2 vols.), BNE, 2009; Torres González 2009; M. J. de Larra, <i>Larra. Biografía de un hombre desesperado</i>, 2009; Luxenberg 2008; Romero Tobar 1997; J. L. Varela, <i>Larra y España</i>, 1983; S. Kirkpatrick, <i>Larra, el laberinto inextricable de un romántico liberal</i>, 1977; Guinard 1967-A; González-Blanco, <i>Historia de la novela en España: desde el Romanticismo a nuestros días</i>, 1909; Mesonero Romanos, <i>Memorias de un setentón, natural y vecino de Madrid</i>, 1880",
+      "websites": "[Biblioteca Cervantes Virtual](https://www.cervantesvirtual.com/portales/mariano_jose_de_larra/)",
       "conferences/seminars": "Madrid BNE 2009, <i>Fígaro de vuelta</i>; Fundación Juan March, Madrid, 2005, <i>Originalidad literaria de Mariano José de Larra</i>, Domingo Ródenas de Moya, [link](https://www.march.es/es/madrid/conferencia/mariano-jose-larra-su-vida-su-obra-su-tiempo-ii-originalidad-literaria-mariano)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q298773",
@@ -3544,7 +3546,11 @@
       ],
       "influenced by": "Édouard Manet; Stéphane Mallarmé; Corot",
       "friends": "Édouard Manet; Émile Zola; Stéphane Mallarmé; Camille Pissarro; Claude Monet; Auguste Renoir",
-      "author of": "416 oil paintings, 191 pastels, 240 watercolours, 8 engravings, 2 sculptures and 200 à 300 drawings. <i>Edma Morisot lisant</i> (1867, Clevelant); <i>Jeune femme à sa fenêtre (Madame Pontillon)</i> (portrait of Edma Morisot) (1869); <i>La lecture</i> or <i>Madame Morisot et sa fille, Madame Pontillon</i> (1869-70, NGA); <i>Intérieur</i> (1871); <i>Femme et enfant au balcon</i> (her sister and niece) (1872); <i>Le Berceau</i> (1872); <i>Chasse aux papillons</i> (1874, Orsay); <i>Femme à sa toilette</i> (1875); <i>Eugène Manet à l'île de Wight</i> (1875 Musée Marmottan-Monet); <i>Femme en noir (Avant le théâtre)</i> (1875, Tokyo); <i>La Psyché</i> (1876, Thyssen); <i>Le Port de Nice</i> (1881, Dallas); <i>Bords de Seine</i> (1883, Oslo); <i>Dans la salle à manger</i> (1886, NGA); <i>Paule Gobillard</i> (1886, Marmottan); bronze sculpture of Julie Manet's head (c.1886); <i>Enfants à la vasque</i> (1886, Marmottan); <i>Le Flageolet</i> (1890); <i>Bergère nue couchée</i> (1891); <i>Julie et son lévrier</i> (1893); <i>Julie rêveuse</i> (1894)",
+      "author of": [
+        "416 oil paintings, 191 pastels, 240 watercolours, 8 engravings, 2 sculptures and 200 à 300 drawings.",
+        "<i>Edma Morisot lisant</i> (1867, Clevelant); <i>Jeune femme à sa fenêtre (Madame Pontillon)</i> (portrait of Edma Morisot) (1869); <i>La lecture</i> or <i>Madame Morisot et sa fille, Madame Pontillon</i> (1869-70, NGA); <i>Intérieur</i> (1871); <i>Femme et enfant au balcon</i> (her sister and niece) (1872); <i>Le Berceau</i> (1872); <i>Chasse aux papillons</i> (1874, Orsay); <i>Femme à sa toilette</i> (1875); <i>Eugène Manet à l'île de Wight</i> (1875 Musée Marmottan-Monet); <i>Femme en noir (Avant le théâtre)</i> (1875, Tokyo); <i>La Psyché</i> (1876, Thyssen); <i>Le Port de Nice</i> (1881, Dallas); <i>Bords de Seine</i> (1883, Oslo); <i>Dans la salle à manger</i> (1886, NGA); <i>Paule Gobillard</i> (1886, Marmottan); bronze sculpture of Julie Manet's head (c.1886); <i>Enfants à la vasque</i> (1886, Marmottan); <i>Le Flageolet</i> (1890); <i>Bergère nue couchée</i> (1891); <i>Julie et son lévrier</i> (1893); <i>Julie rêveuse</i> (1894)",
+        "Collections: [Barberini Museum](https://sammlung.museum-barberini.de/en/?a[]=morisot-berthe)."
+      ],
       "patrons": "Paul Durand-Ruel: 1872 acquired works by Morisot via Manet; c.1875 <i>Femme à sa toilette</i> was sold to Hoschedé via Durand-Ruel",
       "exhibitions": [
         "Paris Salon: <i>Souvenir des bords de l'Oise</i> and <i>Un vieux chemin à Auvers</i> (Salon 1864); <i>Vue de Paris prise des hauteurs du Trocadéro</i> (Salon 1867, Santa Barbara Museum); <i>Vue de la rivière de Pont-Aven à Rozbras</i> (Salon 1868): rejected by critics except by Zola; <i>Jeune femme à sa fenêtre (Madame Pontillon)</i> (portrait of Edma Morisot) and <i>La lecture</i> or <i>Madame Morisot et sa fille, Madame Pontillon</i> (Salon 1870); rejection of <i>Intérieur</i> (Salon 1872) (which enraged Puvis de Chavannes); <i>Le Berceau</i> (Salon 1872); <i>Blanche</i> (Blanche Pontillon) (1873)",
@@ -3748,7 +3754,10 @@
         "'J'ai vu une chose inouïe de lui, en Espagne, dans une petite église: un plafond qui représente des gens regardant en bas [Goya's frescoes in San Antonio de la Florida]. Gallimard et moi, nous étions en extase, lorsque le guide nous apprit que deux peintres de Paris, ajouta-t-il, avaient passé là récemment et qu'après avoir levé les yeux au plafond, ils étaient sortis de l'église en haussant les épaules!' (Vollard 1919, p.141)."
       ],
       "trips": "Italy (late 1881); Spain (1892)",
-      "author of": "<i>Lise (Tréhot) cousant</i> (1866, Dallas); <i>Lise à l'ombrelle</i> (1867); <i>Femme à la perruche</i> (1871, Guggenheim NY); <i>Nature morte au bouquet</i> (1871, Houston)): on the wall, it shows a print by Manet after a painting formerly attributed to Velázquez (<i>Petits Cavaliers</i>); <i>Portrait de Claude Monet</i> (1872, NGA); <i>Bal du moulin de la Galette</i> (1876); <i>Portrait de Victor Chocquet</i> (1876, Cambridge MA, Fogg Art Museum); <i>Madame Georges Charpentier et ses enfants</i> (1878, Met): Mme Charpentier also frequented Flaubert, the Goncourt and Zola; <i>La Fin du déjeuner</i> (1879, Städel); <i>Rose et bleu (Alice et Élisabeth Cahen d'Anvers)</i> (1881, Sao Paulo); <i>Jeune Fille algérienne</i> (1881, Boston); <i>Le Déjenuner des canotiers</i> (1881, Washingotn, Phillips Collection); <i>Les Grandes Baidneuses</i> (1887, Philadelphia); <i>Jeunes filles au piano</i> (1892)",
+      "author of": [
+        "<i>Lise (Tréhot) cousant</i> (1866, Dallas); <i>Lise à l'ombrelle</i> (1867); <i>Femme à la perruche</i> (1871, Guggenheim NY); <i>Nature morte au bouquet</i> (1871, Houston)): on the wall, it shows a print by Manet after a painting formerly attributed to Velázquez (<i>Petits Cavaliers</i>); <i>Portrait de Claude Monet</i> (1872, NGA); <i>Bal du moulin de la Galette</i> (1876); <i>Portrait de Victor Chocquet</i> (1876, Cambridge MA, Fogg Art Museum); <i>Madame Georges Charpentier et ses enfants</i> (1878, Met): Mme Charpentier also frequented Flaubert, the Goncourt and Zola; <i>La Fin du déjeuner</i> (1879, Städel); <i>Rose et bleu (Alice et Élisabeth Cahen d'Anvers)</i> (1881, Sao Paulo); <i>Jeune Fille algérienne</i> (1881, Boston); <i>Le Déjenuner des canotiers</i> (1881, Washingotn, Phillips Collection); <i>Les Grandes Baidneuses</i> (1887, Philadelphia); <i>Jeunes filles au piano</i> (1892)",
+        "Collections: [Barberini Museum](https://sammlung.museum-barberini.de/en/?a%5B%5D=renoir-pierre-auguste)."
+      ],
       "decorations/awards": "Chevalier de la Légion d'honneur (1901); Officier de la Légion d'honneur (1911); Commandeur de la Légion d'honneur (1919)",
       "portrayed by": "Frédéric Bazille, 1867, oil painting, Musée d'Orsay (DL 1970 3); Henri Fantin-Latour, 1870 (<i>Un atelier aux Batignolles</i>); anonymous, c.1875, photograph, Musée d'Orsay; self-portrait, 1876, Fogg Art Museum; unknown, 1900, photograph; Dornac, c.1910, photograph; Marie-Félix Hippolyte-Lucas, 1919, oil painting (location unknown)",
       "bibliography": "Fayos-Pérez 2026, 'Goya y el retrato satírico'; Pereda 2024; Anne Distel, 'Pierre-Auguste Renoir ¿un viaje a España?', en <i>Del realismo al impresionismo</i>, 2014, pp.191-214; John House, <i>Pasión por Renoir. La colección del Sterling and Francine Clark Art Institute</i>, 2010, Prado (exh. cat.); Anne Distel, <i>Renoir</i>, 2009; Tinterow 2003; García Felguera 1991; Henri Perruchot, <i>La vie de Renoir</i>, 1964; François Fosca, <i>Renoir</i>, 1923; Ambroise Vollard, <i>Pierre-Auguste Renoir (1841-1919): Sa vie et son œuvre</i>, 1919, previously published in 'Entretiens avec Renoir sur la peinture', <i>L'Art et les artistes</i>, vol. 23, 1919, pp.28-43",
@@ -6242,7 +6251,7 @@
       "from": "Francisco de Goya",
       "to": "Francisco Bayeu",
       "connection_level": "direct",
-      "relationship type": "relatives; brothers-in-law",
+      "relationship type": "colleagues; relatives: brothers-in-law",
       "strength": 1
     },
     {
@@ -7152,8 +7161,14 @@
       "from": "Mariano José Larra",
       "to": "José de Espronceda",
       "connection_level": "direct",
-      "relationship type": "acquaintances",
-      "they shared": "similar social and professional circles. They were both key figures of the Spanish Romantic movement in literature. They both attended the tertulia <i>El Parnasillo</i>",
+      "relationship type": "close friends",
+      "know each other since": "probably the 1820s",
+      "they shared": [
+        "Similar social and professional circles. They were both key figures of the Spanish Romantic movement in literature.",
+        "They both attended the tertulia <i>El Parnasillo</i>.",
+        "They both attended the Colegio de San Mateo in Madrid.",
+        "They founded the group <i>Partida del Trueno</i>, a group of young liberals who practiced nocturnal mischief."
+      ],
       "mentions": "Espronceda gave a speech at Larra's funeral in 1837, published in <i>El Español</i> (27 Feb 1837)"
     },
     {
