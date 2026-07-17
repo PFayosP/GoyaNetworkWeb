@@ -1,0 +1,12 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd \"/Users/pfayosperez/Google Drive/JOBS/POSTDOCS/PAST APPLICATIONS/BECA LEONARDO/RED GOYA/GitHub REPOSITORY/GoyaNetworkWeb\" && git pull && git status$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^cp \"/Users/pfayosperez/Documents/GoyaNetworkWeb/index\\.html\" \"/Users/pfayosperez/Google Drive/JOBS/POSTDOCS/PAST APPLICATIONS/BECA LEONARDO/RED GOYA/GitHub REPOSITORY/GoyaNetworkWeb/index\\.html\" && cd \"/Users/pfayosperez/Google Drive/JOBS/POSTDOCS/PAST APPLICATIONS/BECA LEONARDO/RED GOYA/GitHub REPOSITORY/GoyaNetworkWeb\" && git add index\\.html && git commit -m \"Fix: Add relevant-links handling to showSection function\" && git push && echo \"✓ Fixed and pushed successfully\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
