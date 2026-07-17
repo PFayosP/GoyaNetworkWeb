@@ -1269,6 +1269,7 @@ function showSection(section) {
   const bibliography = document.getElementById('bibliography'); 
   const cite = document.getElementById('cite');
   const news = document.getElementById('news');
+  const relevantLinks = document.getElementById('relevant-links');
   const contact = document.getElementById('contact');
 
   layout.classList.add('hidden');
@@ -1279,6 +1280,7 @@ function showSection(section) {
   bibliography.style.display = 'none';
   cite.style.display = 'none';
   news.style.display = 'none';
+  relevantLinks.style.display = 'none';
   contact.style.display = 'none';
 
   if (section === 'network') {
@@ -1322,6 +1324,8 @@ function showSection(section) {
     contact.style.display = 'block';
   } else if (section === 'news') {
     news.style.display = 'block';
+  } else if (section === 'relevant-links') {
+    relevantLinks.style.display = 'block';
   }
 }
 </script>
