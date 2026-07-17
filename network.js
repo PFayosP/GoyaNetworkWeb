@@ -562,6 +562,7 @@
       'ABOUT_BODY',
       'CONTRIBUTIONS_TEXT',
       'NEWS_BODY',
+      'RELEVANT_LINKS_BODY',
       'CONTACT_BODY',
       // añade aquí futuras secciones largas con HTML, ej:
       // 'ABOUT_BODY', 'PARTNERS_BODY'
