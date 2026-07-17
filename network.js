@@ -7,7 +7,7 @@
   const I18N = {
     en: {
       BTN_NETWORK:"Network", BTN_ABOUT:"About", BTN_PEOPLE:"People", BTN_PARTNERS:"Partners",
-      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWS:"News", BTN_CONTACT:"Contact",
+      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWS:"News", BTN_RELEVANT_LINKS:"Relevant links", BTN_CONTACT:"Contact",
       FUNDING_PARTNERS: "Funding Partners",
       ACADEMIC_PARTNERS: "Academic Partners",
       GERDA_HENKEL_NAME: "Gerda Henkel Foundation",
@@ -157,11 +157,11 @@
       ABOUT_TITLE: "About the Goya Network",
       ABOUT_BODY: `
 
-      <p><strong>Introduction:</strong> Throughout the 18th and 19th centuries, networks of artists, writers, collectors and intellectuals were crucial for artistic production, as well as for the dissemination and understanding of historical figures. Mapping these connections allows us to better understand the dynamics of sociability and the circulation of ideas. In recent years, projects in the Digital Humanities have demonstrated the potential of network analysis to illuminate historical artistic milieus, such as the <a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank">Thorvaldsen Letter Archive</a>, <a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank">Mapping the Republic of Letters</a> (University of Stanford), <a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank">Early Modern Letters Online (EMLO)</a> (University of Oxford), <a href="https://mappingrome.com/" target="_blank">Mapping Rome</a>, <a href="https://vangoghworldwide.org/" target="_blank">Van Gogh Worldwide</a>, and <a href="https://womensbios.lib.virginia.edu/index.html" target="_blank">Collective Biographies of Women</a> (Alison Booth, University of Virginia).</p> 
+      <p><strong>Introduction:</strong> Throughout the 18th and 19th centuries, networks of artists, writers, collectors and intellectuals were crucial for artistic production, as well as for the dissemination and understanding of historical figures. Mapping these connections allows us to better understand the dynamics of sociability and the circulation of ideas. In recent years, network analysis has become an important tool in Digital Humanities for illuminating historical artistic milieus (see the <a href="#" onclick="showSection('relevant-links'); return false;">Relevant links</a> section for examples of similar projects).</p> 
 
-      <p><em>The Goya Network</em> builds on these methods, offering an interactive database that maps the social and professional relationships surrounding the Spanish artist Francisco de Goya, focusing on his connections with artists, critics, and collectors in 19th-century Spain and France. Unlike traditional studies of his work, this project emphasizes the relational context that shaped Goya’s legacy, offering a novel tool for the study of historical artists' social networks. As a 'living' database, it facilitates cross-disciplinary collaboration and serves as both a research tool and a public resource, providing insight into the scope of Goya’s influence and the reception of his work.</p>
+      <p><em>The Goya Network</em> builds on these methods, offering an interactive database that maps the social and professional relationships surrounding the Spanish artist Francisco de Goya, focusing on his connections with artists, critics, and collectors in 19th-century Spain and France. Unlike traditional studies of his work, this project emphasizes the relational context that shaped Goya's legacy, offering a novel tool for the study of historical artists' social networks. As a 'living' database, it facilitates cross-disciplinary collaboration and serves as both a research tool and a public resource, providing insight into the scope of Goya's influence and the reception of his work.</p>
 
-      <p><strong>Origin:</strong> This is a research-based digital project developed by Paula Fayos-Pérez as part of her postdoctoral work on Goya's social and professional networks. It is a continuation of the research done during her PhD (University of Cambridge, 2018) <a href="https://www.repository.cam.ac.uk/items/8d9751ce-aca1-4d35-9436-0820ecbc98d4" target="_blank">(repository)</a>, which was later transformed into a book: <a href="https://www.ceeh.es/en/publicacion/goyas-caprichos-in-nineteenth-century-france-politics-of-the-grotesque/" target="_blank"><em>Goya’s Caprichos in Nineteenth-Century France. Politics of the Grotesque</em></a> (CEEH, 2024).</p>
+      <p><strong>Origin:</strong> This is a research-based digital project developed by Paula Fayos-Pérez as part of her postdoctoral work on Goya's social and professional networks. It is a continuation of the research done during her PhD (University of Cambridge, 2018) <a href="https://www.repository.cam.ac.uk/items/8d9751ce-aca1-4d35-9436-0820ecbc98d4" target="_blank">(repository)</a>, which was later transformed into a book: <a href="https://www.ceeh.es/en/publicacion/goyas-caprichos-in-nineteenth-century-france-politics-of-the-grotesque/" target="_blank"><em>Goya's Caprichos in Nineteenth-Century France. Politics of the Grotesque</em></a> (CEEH, 2024).</p>
 
       <p><strong>Funding:</strong> This project was initiated with the support of a 2024 Leonardo Grant (<a href="https://www.redleonardo.es/beneficiario/paula-fayos-perez/" target="_blank">Beca Leonardo</a>) for Scientific Research and Cultural Creation, funded by <a href="https://www.fbbva.es/" target="_blank">BBVA Foundation.</a> BBVA Foundation takes no responsibility for the opinions, statements and contents of this project, which are entirely the responsibility of its authors.</p>
 
@@ -204,6 +204,36 @@
       </ul>
       `,
 
+      RELEVANT_LINKS_TITLE: "Relevant links",
+      RELEVANT_LINKS_BODY: `
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Digital Humanities (DH) Projects</h3>
+      <ul style="padding-left:1.2rem; line-height:1.6;">
+        <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Mapping the correspondence and social networks of the neoclassical sculptor Bertel Thorvaldsen.</li>
+        <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (University of Stanford) – An interactive visualization of intellectual networks in early modern Europe.</li>
+        <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (University of Oxford) – A catalog and analysis of correspondence from the early modern period.</li>
+        <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualizing social, economic, and cultural networks in ancient Rome.</li>
+        <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – A collaborative platform connecting Van Gogh's works, letters, and cultural impact across institutions worldwide.</li>
+        <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, University of Virginia) – Aggregating biographical data on women across multiple disciplines and time periods.</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Academic Societies & Study Groups</h3>
+      <ul style="padding-left:1.2rem; line-height:1.6;">
+        <li><a href="https://www.delacroixsociety.org/" target="_blank"><strong>Eugène Delacroix Society</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy.</li>
+        <li><a href="https://cahiers-merimee.com/" target="_blank"><strong>Cahiers Mérimée</strong></a> – An academic journal and resource center for Prosper Mérimée scholarship.</li>
+        <li><a href="https://www.desbordes-valmore.org/" target="_blank"><strong>Marceline Desbordes-Valmore Society</strong></a> – Promoting the study of the 19th-century French poet and novelist.</li>
+        <li><a href="https://www.societe-theophile-gautier.org/" target="_blank"><strong>Théophile Gautier Society</strong></a> – An association dedicated to the life, work, and literary legacy of Théophile Gautier.</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">General Databases & Resources</h3>
+      <ul style="padding-left:1.2rem; line-height:1.6;">
+        <li><a href="https://www.realacademia.es/" target="_blank"><strong>Real Academia de la Historia (RAH)</strong></a> (Spain) – Spain's Royal Academy of History, with extensive archival resources.</li>
+        <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Includes the Getty Museum, Getty Research Institute, and extensive art historical databases.</li>
+        <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – France's National Library with digitized collections including letters, manuscripts, and prints.</li>
+        <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Spain's National Library with extensive digital resources.</li>
+        <li><a href="https://www.wikidata.org/" target="_blank"><strong>Wikidata</strong></a> – A free, collaborative database of structured data about people, places, and concepts.</li>
+      </ul>
+      `,
+
       CONTACT_TITLE: "Contact",
       CONTACT_BODY: `
       <p>For collaborations, suggestions, or contributions:</p>
@@ -221,13 +251,13 @@
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Colaboradores",
-      BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWS:"Noticias", BTN_CONTACT:"Contacto",
+      BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWS:"Noticias", BTN_RELEVANT_LINKS:"Enlaces relevantes", BTN_CONTACT:"Contacto",
       FUNDING_PARTNERS: "Entidades financiadoras",
       ACADEMIC_PARTNERS: "Colaboradores académicos",
       GERDA_HENKEL_NAME: "Fundación Gerda Henkel",
       SEARCH_PH:"Buscar…", FILTER_PROF_ALL:"Todas las profesiones", FILTER_NAT_ALL:"Todas las nacionalidades",
       NEW_NODES_TITLE: "Nuevos miembros",
-      MEMBERS_TITLE:"Todos los miembros (A–Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
+      MEMBERS_TITLE:"Todos los miembros (A-Z por apellido)", LOADING:"Cargando la red…", LAST_UPDATE:"Última actualización", HELP_TEXT_1: "Haz clic en un nodo (un individuo) o en una arista (una conexión entre dos individuos) para ver los datos que contienen.", HELP_TEXT_2: "(La red puede tardar unos segundos en mostrarse)", SITE_TITLE: "Red Goya", SITE_SUBTITLE: "Cartografiar el impacto de Goya en la Francia y la España del siglo XIX", 
       BTN_SEARCH: "Buscar",
       BTN_CLUSTER_TOGGLE_ON: "Clúster: activado",
       BTN_CLUSTER_TOGGLE_OFF: "Clúster: desactivado",
@@ -372,7 +402,7 @@
       ABOUT_TITLE: "Acerca de la Goya Network / Red Goya",
       ABOUT_BODY: `
 
-      <p><strong>Introducción:</strong> A lo largo de los siglos XVIII y XIX, las redes de artistas, escritores, coleccionistas e intelectuales fueron cruciales tanto para la producción artística como para la difusión y comprensión de figuras históricas. Cartografiar estas conexiones permite entender mejor las dinámicas de sociabilidad y la circulación de ideas. En los últimos años, diversos proyectos en Humanidades Digitales han demostrado el potencial del análisis de redes para iluminar contextos artísticos históricos, como el <a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank">Thorvaldsen Letter Archive</a>, <a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank">Mapping the Republic of Letters</a> (Universidad de Stanford), <a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank">Early Modern Letters Online (EMLO)</a> (Universidad de Oxford), <a href="https://mappingrome.com/" target="_blank">Mapping Rome</a>, <a href="https://vangoghworldwide.org/" target="_blank">Van Gogh Worldwide</a> y <a href="https://womensbios.lib.virginia.edu/index.html" target="_blank">Collective Biographies of Women</a> (Alison Booth, University of Virginia).</p> 
+      <p><strong>Introducción:</strong> A lo largo de los siglos XVIII y XIX, las redes de artistas, escritores, coleccionistas e intelectuales fueron cruciales tanto para la producción artística como para la difusión y comprensión de figuras históricas. Cartografiar estas conexiones permite entender mejor las dinámicas de sociabilidad y la circulación de ideas. En los últimos años, el análisis de redes se ha convertido en una herramienta importante en Humanidades Digitales para iluminar contextos artísticos históricos (véase la sección <a href="#" onclick="showSection('relevant-links'); return false;">Enlaces relevantes</a> para ejemplos de proyectos similares).</p> 
 
       <p><em>The Goya Network</em> se apoya en estos métodos y ofrece una base de datos interactiva que cartografía las relaciones sociales y profesionales en torno al artista español Francisco de Goya, con especial atención a sus conexiones con artistas, críticos y coleccionistas en la España y la Francia del siglo XIX. A diferencia de los estudios tradicionales centrados en su obra, este proyecto pone el énfasis en el contexto relacional que configuró el legado de Goya, y ofrece una herramienta novedosa para el estudio de las redes sociales de artistas históricos. Como base de datos «viva», facilita la colaboración interdisciplinar y funciona tanto como herramienta de investigación como recurso público, proporcionando una visión del alcance de la influencia de Goya y de la recepción de su obra.</p>
 
@@ -433,6 +463,38 @@
       </li>
     </ul>
     `,
+
+    RELEVANT_LINKS_TITLE: "Enlaces relevantes",
+    RELEVANT_LINKS_BODY: `
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Proyectos de Humanidades Digitales</h3>
+    <ul style="padding-left:1.2rem; line-height:1.6;">
+      <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Cartografía de la correspondencia y redes sociales del escultor neoclásico Bertel Thorvaldsen.</li>
+      <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (Universidad de Stanford) – Una visualización interactiva de redes intelectuales en la Europa moderna temprana.</li>
+      <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (Universidad de Oxford) – Un catálogo y análisis de la correspondencia del período moderno temprano.</li>
+      <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualización de redes sociales, económicas y culturales en la antigüedad romana.</li>
+      <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – Una plataforma colaborativa que conecta las obras de Van Gogh, sus cartas e impacto cultural en instituciones de todo el mundo.</li>
+      <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, Universidad de Virginia) – Agregación de datos biográficos sobre mujeres en múltiples disciplinas y períodos.</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Sociedades Académicas y Grupos de Estudio</h3>
+    <ul style="padding-left:1.2rem; line-height:1.6;">
+      <li><a href="https://www.delacroixsociety.org/" target="_blank"><strong>Eugène Delacroix Society</strong></a> – Dedicada al estudio y promoción de la obra y legado de Eugène Delacroix.</li>
+      <li><a href="https://cahiers-merimee.com/" target="_blank"><strong>Cahiers Mérimée</strong></a> – Una revista académica y centro de recursos para los estudios sobre Prosper Mérimée.</li>
+      <li><a href="https://www.desbordes-valmore.org/" target="_blank"><strong>Sociedad Marceline Desbordes-Valmore</strong></a> – Promueve el estudio de la poeta y novelista francesa del siglo XIX.</li>
+      <li><a href="https://www.societe-theophile-gautier.org/" target="_blank"><strong>Sociedad Théophile Gautier</strong></a> – Una asociación dedicada a la vida, obra y legado literario de Théophile Gautier.</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Bases de Datos y Recursos Generales</h3>
+    <ul style="padding-left:1.2rem; line-height:1.6;">
+      <li><a href="https://www.realacademia.es/" target="_blank"><strong>Real Academia de la Historia (RAH)</strong></a> (España) – Academia Real de Historia de España, con extensos recursos archivísticos.</li>
+      <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Incluye el Museo Getty, Getty Research Institute y extensas bases de datos de historia del arte.</li>
+      <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – Biblioteca Nacional de Francia con colecciones digitalizadas incluyendo cartas, manuscritos e impresiones.</li>
+      <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Biblioteca Nacional de España con extensos recursos digitales.</li>
+      <li><a href="https://www.wikidata.org/" target="_blank"><strong>Wikidata</strong></a> – Una base de datos libre y colaborativa de datos estructurados sobre personas, lugares y conceptos.</li>
+    </ul>
+    `,
+
+    CONTACT_TITLE: "Contacto",
     },
   };
 
@@ -448,6 +510,7 @@
       ['.menu-content button[onclick*="artworks"]','BTN_ARTWORKS'],
       ['.menu-content button[onclick*="bibliography"]','BTN_BIB'],
       ['.menu-content button[onclick*="news"]','BTN_NEWS'],
+      ['.menu-content button[onclick*="relevant-links"]','BTN_RELEVANT_LINKS'],
       ['.menu-content button[onclick*="cite"]','BTN_CITE'],
       ['.menu-content button[onclick*="contact"]','BTN_CONTACT'],
       ['#searchInput::placeholder','SEARCH_PH'],
