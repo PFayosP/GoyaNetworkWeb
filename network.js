@@ -206,7 +206,7 @@
 
       RELEVANT_LINKS_TITLE: "Relevant links",
       RELEVANT_LINKS_BODY: `
-      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Digital Humanities (DH) Projects</h3>
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Digital Humanities (DH) Projects</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
         <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Mapping the correspondence and social networks of the neoclassical sculptor Bertel Thorvaldsen.</li>
         <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (University of Stanford) – An interactive visualization of intellectual networks in early modern Europe.</li>
@@ -217,7 +217,7 @@
         <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (by Bénédicte Monicat and Morgane Haesen) – A database of female writers in the 19th century in the francophone world.</li>
       </ul>
 
-      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Academic Societies & Study Groups</h3> //SUPERCALI
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Academic Societies & Study Groups</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
         <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy.</li>
         <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – An organisation and academic journal (<i>Cahiers Mérimée</i>)dedicated to the figure of Prosper Mérimée.</li>
@@ -225,7 +225,7 @@
         <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – An association dedicated to the life, work, and literary legacy of Théophile Gautier.</li>
       </ul>
 
-      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">General Databases & Resources</h3>
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">General Databases & Resources</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
         <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> (Spain) – A digital portal created by the Spanish Royal Academy of History that uses a map to show the global history of Spain and the territories that were part of the Spanish administration..</li>
         <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Includes the Getty Museum, Getty Research Institute, and extensive art historical databases.</li>
@@ -466,7 +466,7 @@
 
     RELEVANT_LINKS_TITLE: "Enlaces relevantes",
     RELEVANT_LINKS_BODY: `
-    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Proyectos de Humanidades Digitales</h3>
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Proyectos de Humanidades Digitales</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
       <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Cartografía de la correspondencia y redes sociales del escultor neoclásico Bertel Thorvaldsen.</li>
       <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (Universidad de Stanford) – Una visualización interactiva de redes intelectuales en la Europa moderna temprana.</li>
@@ -477,7 +477,7 @@
       <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (de Bénédicte Monicat y Morgane Haesen) – Una base de datos de mujeres escritoras del siglo XIX en el mundo francófono.</li>
     </ul>
 
-    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Sociedades Académicas y Grupos de Estudio</h3> //SUPERCALI
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Sociedades Académicas y Grupos de Estudio</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
       <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicada al estudio y promoción de la obra y legado de Eugène Delacroix.</li>
       <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – Una organización y revista académica (<i>Cahiers Mérimée</i>) dedicada a los estudios sobre Prosper Mérimée.</li>
@@ -485,7 +485,7 @@
       <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – Una asociación dedicada a la vida, obra y legado literario de Théophile Gautier.</li>
     </ul>
 
-    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Bases de Datos y Recursos Generales</h3>
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Bases de Datos y Recursos Generales</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
       <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> – Un portal digital creado por la RAH que geolocaliza en un mapa interactivo la historia global de España y de los territorios que formaron parte de la administración española.</li>
       <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Incluye el Museo Getty, Getty Research Institute y extensas bases de datos de historia del arte.</li>
