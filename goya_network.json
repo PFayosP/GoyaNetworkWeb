@@ -2023,6 +2023,9 @@
         "Spain: <i>El Artista</i> (1835), <i>El Español</i> (1840), <i>La Risa</i>, <i>El Pasatiempo</i> (1845), <i>El Museo Universal</i> (1866), <i>La Ilustración Española y Americana</i> (1877-1878), <i>La Revista contemporanea</i> (1878), <i>El Imparcial</i> (1880, 1893), <i>La Illustracion Iberica</i> (1883), <i>El Ateneo</i> (1889), <i>El Liberal</i> (1889, 1892, 1893).",
         "France: <i>Revue des Deux Mondes</i>; <i>Musée des familles</i> (1843-70)."
       ],
+      "mentions": [
+        "'Clumsy, petty and wretched Spain, whose soil, carpeted with memories, is gradually sipping away from its own glories the little that remains of each illustrious feat! Traitor and shameless friend deceive you; your treasures are bought with dross, your monuments—alas!—and your histories, sold off and carried to a foreign land. Cursed be you, homeland of the brave, who, as a reward, give yourself to whoever can pay the most, so as not to lift your indolent arms! If you come, vow to God for what remains, you rapacious foreigners, who, with your insolence, have turned Spain into an auction house!' (1840)."
+      ],
       "curiosities": [
         "He produces illustrations for the journal <i>Musée des familles</i> (1843-70) pretending to be an Italian artist.",
         "He could have received the Légion d'Honneur but his personal scandals prevented it."
@@ -2031,7 +2034,8 @@
       "portrayed by": "Antonio María Esquivel, <i>Los poetas contemporáneos. Una lectura de Zorrilla en el estudio del pintor</i>, Prado, 1846; unknown artist, photograph, 1850s; Federico de Madrazo, drawing, lith. by Bachiller, 1862 (<i>Gaceta de Teatros</i>)",
       "websites": "[Cervantes Virtual](https://www.cervantesvirtual.com/portales/jose_zorrilla/biografia/); [Valladolid en su tinta](https://valladolidensutinta.es/la-azarosa-vida-de-jose-zorrilla-en-52-refrescos-iv/); [Estandarte](https://www.estandarte.com/noticias/autores/jose-zorrilla-escritor-romantico-_3933.html)",
       "authorities": {
-        "wikidata": "https://www.wikidata.org/wiki/Q331863"
+        "wikidata": "https://www.wikidata.org/wiki/Q331863",
+        "rah": "https://historia-hispanica.rah.es/biografias/45509-jose-zorrilla-y-moral"
       },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Zorrilla.jpg",
       "image source": "photograph 1850s",
