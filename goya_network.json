@@ -474,7 +474,11 @@
       "curiosities": "there is a Fondation Taylor, still running, created in 1844.",
       "correspondence": "Schopp 1993.",
       "bibliography": "Lanzarote Guiral 2016; Guinard 1967-A",
-      "websites": "[Prado's entry](https://www.museodelprado.es/aprende/enciclopedia/voz/taylor-baron-isidore-justin/69966171-fe75-4587-876a-fe102ace6034), by Hilary Macartney; [Fondation Taylor](https://www.taylor.fr/)",
+      "websites": [
+        "[Prado's entry](https://www.museodelprado.es/aprende/enciclopedia/voz/taylor-baron-isidore-justin/69966171-fe75-4587-876a-fe102ace6034), by Hilary Macartney.",
+        "[Fondation Taylor](https://www.taylor.fr/).",
+        "'La Galería española de Luis Felipe de Orleans', by Javier Blanco Planelles, [Auladade](https://www.auladade.com/wp-content/uploads/2021/06/Clase-12.-La-galeria-espanola-de-Luis-Felipe-de-Orleans.pdf)."
+      ],
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Taylor.jpg",
       "image source": "Madrazo portrait, 1833, Versailles"
     },
@@ -530,7 +534,11 @@
         "INHA: <i>Carnet de voyage en Espagne d'Adrien Dauzats: premier cahier, 1836-1837</i>, [INHA NUM MS 152 (1)](https://bibliotheque-numerique.inha.fr/collection/item/67877-carnet-de-voyage-en-espagne-d-adrien-dauzats-premier-cahier-1836-1837), <i>Deuxième cahier, 1837</i>, [INHA NUM MS 152 (2)](https://bibliotheque-numerique.inha.fr/collection/item/67886-carnet-de-voyage-en-espagne-d-adrien-dauzats-deuxieme-cahier-1837?offset=7), and <i>Troisième cahier, 1837</i>, [NUM MS 152 (3)](https://bibliotheque-numerique.inha.fr/collection/item/67885-carnet-de-voyage-en-espagne-d-adrien-dauzats-troisieme-cahier-1837?offset=1)."
       ],
       "bibliography": "Tinterow 2003; Schopp 1993; Ghislaine Plessier, <i>Adrien Dauzats ou la Tentation de l'Orient</i>, exh. cat., Bordeaux, 1990; <i>Adrien Dauzats et les Voyages pittoresques et romantiques dans l'ancienne France du baron Taylor</i>, Fondation Taylor, 1990; Guinard 1967-B; Pompey 1959; Henri Jouin 1897; Philippe Burty 1869, catalogue of the Dauzats sale",
-      "websites": "[Prado's entry](https://www.museodelprado.es/aprende/enciclopedia/voz/dauzats-adrien/1ad5a97c-e2f4-4b7b-8a70-48c438efd2d9) by Jeannine Baticle; [Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)",
+      "websites": [
+        "[Prado's entry](https://www.museodelprado.es/aprende/enciclopedia/voz/dauzats-adrien/1ad5a97c-e2f4-4b7b-8a70-48c438efd2d9) by Jeannine Baticle.",
+        "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70).",
+        "'La Galería española de Luis Felipe de Orleans', by Javier Blanco Planelles, [Auladade](https://www.auladade.com/wp-content/uploads/2021/06/Clase-12.-La-galeria-espanola-de-Luis-Felipe-de-Orleans.pdf)."
+      ],
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q970806",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500027072",
@@ -730,6 +738,7 @@
       "works as": "King of the French 1830-1848",
       "portrayed by": "Horace Vernet or Carle Vernet, oil painting, date unknown, Versailles MV 5217; Nicolas Jacques, 1827, ivory miniature, Louvre 27237; Honoré Daumier, 1831, caricature as Gargantua; Winterhalter, 1839, oil painting, Versailles; Winterhalter, 1841, oil painting, Louvre; Jean-Auguste-Dominique Ingres, c.1842, drawing for stained glass; Lerebours et Claudet, photograph, 1842; unknown, photograph, 1840s",
       "bibliography": "Fayos-Pérez 2024; Tinterow 2003; Baticle & Marinas 1981",
+      "websites": "'La Galería española de Luis Felipe de Orleans', by Javier Blanco Planelles, [Auladade](https://www.auladade.com/wp-content/uploads/2021/06/Clase-12.-La-galeria-espanola-de-Luis-Felipe-de-Orleans.pdf)."
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Louis_Philippe.jpg",
       "image source": "Winterhalter 1839",
       "added": "2025-10-04"
