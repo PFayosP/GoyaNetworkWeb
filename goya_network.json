@@ -9022,7 +9022,9 @@
       "from": "Federico de Madrazo",
       "to": "Prosper Mérimée",
       "connection_level": "direct",
-      "relationship type": "friends/acquaintances"
+      "relationship type": "friends/acquaintances",
+      "they shared": "according to González López (1981, p.32), Mérimée was an 'intimate friend of José de Madrazo' and he encouraged Federico de Madrazo to move to Paris.",
+      "bibliography": "González López 1981",
     },
     {
       "from": "Honoré de Balzac",
@@ -12098,7 +12100,7 @@
       "to": "Prosper Mérimée",
       "connection_level": "direct",
       "relationship type": "close friends",
-      "they shared": "according to González López (1981, p.32), Mérimée was an 'intimate friend of José de Madrazo' and he encouraged Federico de Madrazo to move to París.",
+      "they shared": "according to González López (1981, p.32), Mérimée was an 'intimate friend of José de Madrazo' and he encouraged Federico de Madrazo to move to Paris.",
       "bibliography": "González López 1981",
       "strength": 1
     },
