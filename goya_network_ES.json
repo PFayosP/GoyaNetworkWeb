@@ -2037,6 +2037,9 @@
         "España: El Artista (1835), El Español (1840), La Risa, El Pasatiempo (1845), El Museo Universal (1866), La Ilustración Española y Americana (1877-1878), La Revista contemporanea (1878), El Imparcial (1880, 1893), La Illustracion Iberica (1883), El Ateneo (1889), El Liberal (1889, 1892, 1893).",
         "Francia: Revue des Deux Mondes; Musée des familles (1843-70)"
       ],
+      "mentions": [
+        "'¡Torpe, mezquina y miserable España, cuyo suelo , alfombrado de memorias, se va sorbiendo de sus propias glorias lo poco que ha de cada ilustre hazaña! Traidor y amigo sin pudor te engaña, se compran tus tesoros con escorias, tus monumentos ¡ay! y tus historias, vendidos llevan a la tierra extraña. ¡Maldita seas, patria de valientes, que por premio te das a quien más pueda por no mover los brazos indolentes! ¡Si venid voto a Dios por lo que queda Extranjeros rapaces, que insolentes habéis hecho de España una almoneda!' (1840)."
+      ],
       "curiosities": [
         "Realiza ilustraciones para la revista <i>Musée des familles</i> (1843-70) haciéndose pasar por un artista italiano.",
         "Podría haber recibido la Légion d'Honneur, pero sus escándalos personales lo impidieron"
@@ -2045,7 +2048,8 @@
       "portrayed by": "Antonio María Esquivel, Los poetas contemporáneos. Una lectura de Zorrilla en el estudio del pintor, Prado, 1846; artista desconocido, fotografía, década de 1850; Federico de Madrazo, dibujo, lit. por Bachiller, 1862 (Gaceta de Teatros)",
       "websites": "[Cervantes Virtual](https://www.cervantesvirtual.com/portales/jose_zorrilla/biografia/); [Valladolid en su tinta](https://valladolidensutinta.es/la-azarosa-vida-de-jose-zorrilla-en-52-refrescos-iv/); [Estandarte](https://www.estandarte.com/noticias/autores/jose-zorrilla-escritor-romantico-_3933.html)",
       "authorities": {
-        "wikidata": "https://www.wikidata.org/wiki/Q331863"
+        "wikidata": "https://www.wikidata.org/wiki/Q331863",
+        "rah": "https://historia-hispanica.rah.es/biografias/45509-jose-zorrilla-y-moral"
       },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Zorrilla.jpg",
       "image source": "fotografía de la década de 1850",
