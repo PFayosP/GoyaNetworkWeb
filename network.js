@@ -728,6 +728,34 @@ window.search = function(nodeId) {
 };
 
 // ===============================
+// Dropdown Menu Handlers
+// ===============================
+window.toggleMenu = function(event, menuId) {
+  event.stopPropagation();
+  const menu = document.getElementById(menuId);
+  if (menu) {
+    // Close all other menus first
+    document.querySelectorAll('.menu-content.show').forEach(m => {
+      if (m.id !== menuId) m.classList.remove('show');
+    });
+    menu.classList.toggle('show');
+  }
+};
+
+window.closeAllMenus = function() {
+  document.querySelectorAll('.menu-content.show').forEach(m => {
+    m.classList.remove('show');
+  });
+};
+
+// Close menus when clicking outside
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('.menu-dropdown')) {
+    window.closeAllMenus();
+  }
+});
+
+// ===============================
 // Dropdown Menu Handler
 // ===============================
 window.toggleMenuDropdown = function() {
@@ -1950,7 +1978,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         window.toggleClusterEdgeColoring = function () {
           clusterEdgeColoringEnabled = !clusterEdgeColoringEnabled;
-          const button = document.getElementById('clusterToggleButton');
+          const button = document.getElementById('clusterToggleOption');
           if (button) {
             button.textContent = clusterEdgeColoringEnabled ? t('BTN_CLUSTER_TOGGLE_ON') : t('BTN_CLUSTER_TOGGLE_OFF');
           }

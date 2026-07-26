@@ -219,6 +219,23 @@
       background-color: #2a2a2a;
     }
 
+    .menu-content select {
+      display: block;
+      width: 100%;
+      padding: 8px 12px;
+      border: none;
+      background-color: #2a2a2a;
+      color: white;
+      font-size: 14px;
+      box-sizing: border-box;
+      max-height: 200px;
+    }
+
+    .menu-content select:focus {
+      outline: none;
+      background-color: #3a3a3a;
+    }
+
     .menu-content button:first-child {
       border-radius: 0;
     }
@@ -234,9 +251,13 @@
       
     .controls {
       display: flex;
-      justify-content: center;
-      gap: 10px;
-      align-items: center; /* Vertical center */
+      justify-content: flex-start;
+      gap: 0.7rem;
+      align-items: center;
+    }
+
+    .controls .menu-dropdown:last-child {
+      margin-left: auto;
     }
 
     .controls select,
@@ -766,92 +787,109 @@
     <div class="controls">
       <input type="text" id="searchInput" placeholder="Search..." class="search-bar">
       <button onclick="search()" class="search-button">Search</button>
-      <button id="clusterToggleButton" onclick="toggleClusterEdgeColoring()" class="search-button">Cluster edges: On</button>
-      <select id="clusterSelect" onchange="selectCluster(this.value)" class="search-bar" style="max-width:220px; margin-left:0.5rem;">
-        <option value="">Select cluster...</option>
-      </select>
-      <span id="clusterInfoBadge" style="margin-left:0.75rem; font-size:0.9rem; color:#ffffff;"></span>
-      <select id="professionFilter" onchange="filterGraph()">
-        <option value="">All professions</option>
-        <option value="Actor">Actor</option>
-        <option value="Anthropologist">Anthropologist</option>
-        <option value="Archaeologist">Archaeologist</option>
-        <option value="Architect">Architect</option>
-        <option value="Aristocrat">Aristocrat</option>
-        <option value="Art critic">Art critic</option>
-        <option value="Art dealer">Art dealer</option>
-        <option value="Art patron">Art patron</option>
-        <option value="Art historian">Art historian</option>
-        <option value="Art theorist">Art theorist</option>
-        <option value="Artist">Artist</option>
-        <option value="Banker">Banker</option>
-        <option value="Bibliographer">Bibliographer</option>
-        <option value="Bibliophile">Bibliophile</option>
-        <option value="Businessman">Businessman</option>
-        <option value="Caricaturist">Caricaturist</option>
-        <option value="Ceramist">Ceramist</option>
-        <option value="Civil servant">Civil servant</option>
-        <option value="Clergyman">Clergyman</option>
-        <option value="Collector">Collector</option>
-        <option value="Composer">Composer</option>
-        <option value="Curator">Curator</option>
-        <option value="Designer">Designer</option>
-        <option value="Diplomat">Diplomat</option>
-        <option value="Draughtsman">Draughtsman</option>
-        <option value="Economist">Economist</option>
-        <option value="Editor">Editor</option>
-        <option value="Engineer">Engineer</option>
-        <option value="Engraver">Engraver</option>
-        <option value="Essayist">Essayist</option>
-        <option value="Femme de lettres">Femme de lettres</option>
-        <option value="Hispanist">Hispanist</option>
-        <option value="Historian">Historian</option>
-        <option value="Illustrator">Illustrator</option>
-        <option value="Journalist">Journalist</option>
-        <option value="Jurist">Jurist</option>
-        <option value="Lawyer">Lawyer</option>
-        <option value="Librarian">Librarian</option>
-        <option value="Librettist">Librettist</option>
-        <option value="Lithographer">Lithographer</option>
-        <option value="Lithographic printer">Lithographic printer</option>
-        <option value="Medical doctor">Medical doctor</option>
-        <option value="Military member">Military member</option>
-        <option value="Musician">Musician</option>
-        <option value="Novelist">Novelist</option>
-        <option value="Painter">Painter</option>
-        <option value="Philanthropist">Philanthropist</option>
-        <option value="Philosopher">Philosopher</option>
-        <option value="Photographer">Photographer</option>
-        <option value="Pianist">Pianist</option>
-        <option value="Playwright">Playwright</option>
-        <option value="Poet">Poet</option>
-        <option value="Politician">Politician</option>
-        <option value="Printer">Printer</option>
-        <option value="Real estate agent">Real estate agent</option>
-        <option value="Salonnière">Salonnière</option>
-        <option value="Scholar">Scholar</option>
-        <option value="Scientist">Scientist</option>
-        <option value="Sculptor">Sculptor</option>
-        <option value="Secret agent">Secret agent</option>
-        <option value="Singer">Singer</option>
-        <option value="Socialite">Socialite</option>
-        <option value="Teacher">Teacher</option>
-        <option value="Translator">Translator</option>
-        <option value="Traveller">Traveller</option>
-        <option value="Writer">Writer</option>
-      </select>
-      <select id="nationalityFilter" onchange="filterGraph()">
-        <option value="">All nationalities</option>
-        <option value="British">British</option>
-        <option value="Cuban">Cuban</option>
-        <option value="French">French</option>
-        <option value="German">German</option>
-        <option value="Irish">Irish</option>
-        <option value="Italian">Italian</option>
-        <option value="Polish">Polish</option>
-        <option value="Spanish">Spanish</option>
-        <option value="Swiss">Swiss</option>
-      </select>
+
+      <!-- Clusters Dropdown -->
+      <div class="menu-dropdown">
+        <button class="menu-toggle" onclick="toggleMenu(event, 'clustersMenu')">Clusters ▼</button>
+        <div class="menu-content" id="clustersMenu">
+          <button onclick="toggleClusterEdgeColoring(); closeAllMenus();" id="clusterToggleOption">Cluster edges: On</button>
+          <div style="border-top: 1px solid #444; margin: 4px 0;"></div>
+          <select id="clusterSelect" onchange="selectCluster(this.value); closeAllMenus();" style="width: 100%; padding: 8px; border: none; background-color: #2a2a2a; color: white; cursor: pointer;">
+            <option value="">Select cluster...</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Search Filters Dropdown -->
+      <div class="menu-dropdown" style="margin-left: auto;">
+        <button class="menu-toggle" onclick="toggleMenu(event, 'filtersMenu')">Search Filters ▼</button>
+        <div class="menu-content" id="filtersMenu" style="min-width: 220px;">
+          <div style="padding: 8px; color: #aaa; font-size: 12px; text-transform: uppercase; border-bottom: 1px solid #444;">Profession</div>
+          <select id="professionFilter" onchange="filterGraph()" style="width: 100%; padding: 8px; border: none; background-color: #2a2a2a; color: white; cursor: pointer;">
+            <option value="">All professions</option>
+            <option value="Actor">Actor</option>
+            <option value="Anthropologist">Anthropologist</option>
+            <option value="Archaeologist">Archaeologist</option>
+            <option value="Architect">Architect</option>
+            <option value="Aristocrat">Aristocrat</option>
+            <option value="Art critic">Art critic</option>
+            <option value="Art dealer">Art dealer</option>
+            <option value="Art patron">Art patron</option>
+            <option value="Art historian">Art historian</option>
+            <option value="Art theorist">Art theorist</option>
+            <option value="Artist">Artist</option>
+            <option value="Banker">Banker</option>
+            <option value="Bibliographer">Bibliographer</option>
+            <option value="Bibliophile">Bibliophile</option>
+            <option value="Businessman">Businessman</option>
+            <option value="Caricaturist">Caricaturist</option>
+            <option value="Ceramist">Ceramist</option>
+            <option value="Civil servant">Civil servant</option>
+            <option value="Clergyman">Clergyman</option>
+            <option value="Collector">Collector</option>
+            <option value="Composer">Composer</option>
+            <option value="Curator">Curator</option>
+            <option value="Designer">Designer</option>
+            <option value="Diplomat">Diplomat</option>
+            <option value="Draughtsman">Draughtsman</option>
+            <option value="Economist">Economist</option>
+            <option value="Editor">Editor</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Engraver">Engraver</option>
+            <option value="Essayist">Essayist</option>
+            <option value="Femme de lettres">Femme de lettres</option>
+            <option value="Hispanist">Hispanist</option>
+            <option value="Historian">Historian</option>
+            <option value="Illustrator">Illustrator</option>
+            <option value="Journalist">Journalist</option>
+            <option value="Jurist">Jurist</option>
+            <option value="Lawyer">Lawyer</option>
+            <option value="Librarian">Librarian</option>
+            <option value="Librettist">Librettist</option>
+            <option value="Lithographer">Lithographer</option>
+            <option value="Lithographic printer">Lithographic printer</option>
+            <option value="Medical doctor">Medical doctor</option>
+            <option value="Military member">Military member</option>
+            <option value="Musician">Musician</option>
+            <option value="Novelist">Novelist</option>
+            <option value="Painter">Painter</option>
+            <option value="Philanthropist">Philanthropist</option>
+            <option value="Philosopher">Philosopher</option>
+            <option value="Photographer">Photographer</option>
+            <option value="Pianist">Pianist</option>
+            <option value="Playwright">Playwright</option>
+            <option value="Poet">Poet</option>
+            <option value="Politician">Politician</option>
+            <option value="Printer">Printer</option>
+            <option value="Real estate agent">Real estate agent</option>
+            <option value="Salonnière">Salonnière</option>
+            <option value="Scholar">Scholar</option>
+            <option value="Scientist">Scientist</option>
+            <option value="Sculptor">Sculptor</option>
+            <option value="Secret agent">Secret agent</option>
+            <option value="Singer">Singer</option>
+            <option value="Socialite">Socialite</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Translator">Translator</option>
+            <option value="Traveller">Traveller</option>
+            <option value="Writer">Writer</option>
+          </select>
+          <div style="border-top: 1px solid #444; margin: 8px 0;"></div>
+          <div style="padding: 8px; color: #aaa; font-size: 12px; text-transform: uppercase;">Nationality</div>
+          <select id="nationalityFilter" onchange="filterGraph()" style="width: 100%; padding: 8px; border: none; background-color: #2a2a2a; color: white; cursor: pointer;">
+            <option value="">All nationalities</option>
+            <option value="British">British</option>
+            <option value="Cuban">Cuban</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Irish">Irish</option>
+            <option value="Italian">Italian</option>
+            <option value="Polish">Polish</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Swiss">Swiss</option>
+          </select>
+        </div>
+      </div>
     </div>
   </div>
     
