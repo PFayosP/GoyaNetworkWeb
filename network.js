@@ -1811,9 +1811,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             originEs: "Un grupo heterogéneo de escritores, pintores y críticos españoles de la misma generación, unidos por una sensibilidad estética y política común, figuras clave del movimiento romántico español del siglo XIX. Integrando tanto figuras literarias como artistas visuales, se comprometieron con formas expresivas y emocionales, así como con ideales liberales. Muchos mantuvieron conexiones con los círculos románticos parisinos y contribuyeron a la modernización cultural de España a través del arte, el teatro, la literatura y la crítica social.",
             bibliography: [
               "Donald E. Schurlknight, <i>Spanish Romanticism in Context: Of Subversion, Contradiction and Politics: Espronceda, Larra, Rivas, Zorrilla</i>, 1998.",
-              "Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203.",
-              "Jeannette Albin, <em>Nationalistic Imagery in the Works of Jenaro Pérez Villaamil</em>, 2007.",
-              "Ramón de Mesonero Romanos, <em>Escenas y tipos matritenses</em>, 1862."
+              "Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203."
             ],
             websites: []
           },
@@ -1828,7 +1826,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Pierre Lacour fils",
               "Rosario Weiss Zorrilla",
               "Leocadia Zorrilla y Galarza",
-              "Jacques Galos"
+              "Cyprien Gaulon"
             ],
             radius: 160,
             padding: 110,
@@ -1840,14 +1838,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             },
             title: "Bordeaux-Paris circle",
             titleEs: "Círculo Burdeos-París",
-            origin: "A transnational network of Spanish exiles, artists, and intellectuals centered on Francisco de Goya's final years in Bordeaux (1824-1828) and their connections to Paris. United by political liberalism, artistic commitment, and shared displacement from Spain, this group encompassed writers, painters, teachers, and family members connected through kinship, intellectual affinity, and the circumstance of exile. Their relationships reflected both the cultural dynamism of émigré circles and the personal bonds forged through shared struggle and geographic displacement during a turbulent period of Spanish history.",
-            originEs: "Un entramado transnacional de exiliados españoles, artistas e intelectuales centrado en los últimos años de Francisco de Goya en Burdeos (1824-1828) y sus conexiones con París. Unidos por liberalismo político, compromiso artístico y desplazamiento compartido desde España, este grupo abarcaba escritores, pintores, maestros y miembros de la familia conectados a través del parentesco, la afinidad intelectual y la circunstancia del exilio. Sus relaciones reflejaban tanto el dinamismo cultural de los círculos de emigrados como los vínculos personales forjados a través de la lucha compartida y el desplazamiento geográfico durante un período turbulento de la historia española.",
-            bibliography: [
-              "Janis Tomlinson, <em>Goya in the Twilight of Enlightenment</em>, 1992.",
-              "Manuela B. Mena Marqués, 'Goya and his circle in Bordeaux', in <em>Goya: His Critical Heritage</em>, 2003.",
-              "Paul Guinard, <em>Dauzats et Blanchard: Peintres de l'Espagne Romantique</em>, 1967.",
-              "Enrique Lafuente Ferrari, <em>Goya: biografía</em>, 1957."
-            ],
+            origin: "A transnational network of Spanish exiles, artists, and intellectuals centered on Francisco de Goya's final years in Bordeaux (1824-1828) and their connections to Paris. United by political liberalism, artistic commitment, and shared displacement from Spain, this group encompassed writers, painters, teachers, and family members connected through kinship, intellectual affinity, and the circumstance of exile.",
+            originEs: "Un entramado transnacional de exiliados españoles, artistas e intelectuales centrado en los últimos años de Francisco de Goya en Burdeos (1824-1828) y sus conexiones con París. Unidos por liberalismo político, compromiso artístico y desplazamiento compartido desde España, este grupo abarcaba escritores, pintores, maestros y miembros de la familia conectados a través del parentesco, la afinidad intelectual y la circunstancia del exilio.",
             websites: []
           },
 
@@ -1875,12 +1867,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             origin: "A diverse group of nineteenth-century art historians, critics, writers, and collectors who played a decisive role in the critical interpretation, scholarship, and dissemination of Francisco de Goya's work. Active primarily between the 1830s and 1890s, they combined connoisseurship with historical documentation, contributing to the first systematic cataloguing and critical analyses of his oeuvre. Their writings, collections, and curatorial practices helped establish Goya as a central figure in European art history, bridging Spanish and French intellectual contexts.",
             originEs: "Un grupo diverso de historiadores del arte, críticos, escritores y coleccionistas del siglo XIX que desempeñaron un papel decisivo en la interpretación crítica, la erudición y la difusión de la obra de Francisco de Goya. Activos principalmente entre la década de 1830 y 1890, combinaron el conocimiento experto con la documentación histórica, contribuyendo a los primeros análisis sistemáticos y críticos de su obra. Sus escritos, colecciones y prácticas curatoriales ayudaron a establecer a Goya como figura central en la historia del arte europeo, vinculando contextos intelectuales españoles y franceses.",
             bibliography: [
-              "Paula Fayos Pérez, 'Valentín Carderera and the Dissemination of Goya's Graphic Work in France', <em>The Burlington Magazine</em>, vol. 162, no. 1413, 2020, pp. 1048-55.",
-              "Gregorio Cruzada Villaamil, <em>Los tapices de Goya</em>, 1870.",
-              "Charles Yriarte, <em>Goya: Sa vie, son temps, son art</em>, 1867.",
-              "Théophile Gautier, <em>Voyages en Espagne</em>, 1845.",
-              "Paul Lefort, <em>Francisco Goya</em>, 1877.",
-              "Édouard Piot, <em>Études sur l'école espagnole</em>, 1845."
+              "Nigel Glendinning, <i>Goya and his Critics</i>, 1977 (new edition, ed. Vega, 2017).",
+              "Paula Fayos Pérez, <i>Goya's Caprichos in Nineteenth-Century France. Politics of the Grotesque</i>, 2024."
             ],
             websites: []
           }
