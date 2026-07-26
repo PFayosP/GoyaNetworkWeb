@@ -4265,16 +4265,18 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
 
         const degreeCalc = connections.length;
-        html += `<p><strong>${t('Connections')}:</strong> ${degreeCalc}</p><ul>`;
+        html += `<p style="margin-top:0.5rem; margin-bottom:0.3rem;"><strong>${t('Connections')}:</strong> ${degreeCalc}</p>`;
+        html += `<p style="font-size:0.85em; color:#999; margin:0.2rem 0 0.5rem 0;">🔗 = edge  &nbsp;  👤 = node</p><ul style="margin-top:0.3rem;">`;
 
         connections
           .sort((a, b) => (a.name || '').localeCompare(b.name || ''))
           .forEach(conn => {
-            html += `<li style="margin:0.3rem 0;">
-              <a href="#" style="color:#66ccff; font-weight:bold;" onclick="selectEdgeFromNodes('${node.id}', '${conn.id}'); return false;">${conn.name}</a>
-              <span style="color:#999; margin-left:0.5rem;">[</span>
-              <a href="#" style="color:#aaa; font-size:0.85em;" onclick="focusNode('${conn.id}'); return false;">view</a>
-              <span style="color:#999;">]</span>
+            html += `<li style="margin:0.25rem 0; display:flex; align-items:center; gap:0.5rem;">
+              <span style="flex-grow:1;">
+                <a href="#" style="color:#66ccff; font-weight:bold;" onclick="selectEdgeFromNodes('${node.id}', '${conn.id}'); return false;">${conn.name}</a>
+              </span>
+              <a href="#" style="color:#66ccff; font-size:1.1em; text-decoration:none;" onclick="selectEdgeFromNodes('${node.id}', '${conn.id}'); return false;" title="View edge">🔗</a>
+              <a href="#" style="color:#999; font-size:1.1em; text-decoration:none;" onclick="focusNode('${conn.id}'); return false;" title="View node">👤</a>
             </li>`;
           });
 
