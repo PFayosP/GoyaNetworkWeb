@@ -1622,7 +1622,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Philippe Burty",
               "Paul Lefort",
               "Charles Blanc",
-              "Paul Mantz"
+              "Paul Mantz",
+              "Jules Jacquemart",
+              "Alphonse Hirsch"
             ],
             radius: 100,
             padding: 80,
@@ -1807,6 +1809,40 @@ document.addEventListener('DOMContentLoaded', async function () {
             bibliography: [
               "Donald E. Schurlknight, <i>Spanish Romanticism in Context: Of Subversion, Contradiction and Politics: Espronceda, Larra, Rivas, Zorrilla</i>, 1998.",
               "Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203."
+            ],
+            websites: []
+          },
+
+          "GOYA_HISTORIANS_CRITICS": {
+            members: [
+              "Charles Yriarte",
+              "Eugène Piot",
+              "Paul Lefort",
+              "Valentín Carderera",
+              "Théophile Gautier",
+              "Théophile Thoré",
+              "Gustave Brunet",
+              "Laurent Matheron"
+            ],
+            radius: 150,
+            padding: 100,
+            centerYOffset: -140,
+            startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Charles Yriarte": Math.PI / 2,
+              "Valentín Carderera": Math.PI / 2
+            },
+            title: "Goya historians & critics",
+            titleEs: "Historiadores y críticos de Goya",
+            origin: "A diverse group of nineteenth-century art historians, critics, writers, and collectors who played a decisive role in the critical interpretation, scholarship, and dissemination of Francisco de Goya's work. Active primarily between the 1830s and 1890s, they combined connoisseurship with historical documentation, contributing to the first systematic cataloguing and critical analyses of his oeuvre. Their writings, collections, and curatorial practices helped establish Goya as a central figure in European art history, bridging Spanish and French intellectual contexts.",
+            originEs: "Un grupo diverso de historiadores del arte, críticos, escritores y coleccionistas del siglo XIX que desempeñaron un papel decisivo en la interpretación crítica, la erudición y la difusión de la obra de Francisco de Goya. Activos principalmente entre la década de 1830 y 1890, combinaron el conocimiento experto con la documentación histórica, contribuyendo a los primeros análisis sistemáticos y críticos de su obra. Sus escritos, colecciones y prácticas curatoriales ayudaron a establecer a Goya como figura central en la historia del arte europeo, vinculando contextos intelectuales españoles y franceses.",
+            bibliography: [
+              "Paula Fayos Pérez, 'Valentín Carderera and the Dissemination of Goya's Graphic Work in France', <em>The Burlington Magazine</em>, vol. 162, no. 1413, 2020, pp. 1048-55.",
+              "Gregorio Cruzada Villaamil, <em>Los tapices de Goya</em>, 1870.",
+              "Charles Yriarte, <em>Goya: Sa vie, son temps, son art</em>, 1867.",
+              "Théophile Gautier, <em>Voyages en Espagne</em>, 1845.",
+              "Paul Lefort, <em>Francisco Goya</em>, 1877.",
+              "Édouard Piot, <em>Études sur l'école espagnole</em>, 1845."
             ],
             websites: []
           }
