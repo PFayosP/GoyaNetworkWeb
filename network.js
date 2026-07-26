@@ -1975,7 +1975,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const updateClusterInfoBadge = () => {
           const badge = document.getElementById('clusterInfoBadge');
           if (!badge) return;
-          badge.textContent = selectedClusterId ? getClusterDisplayName(selectedClusterId) : '';
+          badge.textContent = '';
         };
 
         window.clearClusterSelection = function () {
