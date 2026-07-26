@@ -1797,18 +1797,56 @@ document.addEventListener('DOMContentLoaded', async function () {
             members: [
               "José de Espronceda",
               "Mariano José Larra",
-              "José Zorrilla"
+              "José Zorrilla",
+              "Jenaro Pérez Villaamil",
+              "Ramón de Mesonero Romanos",
+              "Carlos Luis de Ribera"
             ],
-            radius: 78,
-            padding: 84,
+            radius: 100,
+            padding: 90,
             startAngle: -Math.PI / 2,
             title: "Spanish Romantics",
             titleEs: "Románticos españoles",
-            origin: "A group of young Spanish writers who shared a common aesthetic and political mindset, representing key figures in Spain's Romantic movement of the 19th century. United by their commitment to expressive, emotional literature and liberal ideals.",
-            originEs: "Un grupo de jóvenes escritores españoles que compartían una sensibilidad estética y una postura política común, figuras clave del movimiento romántico español del siglo XIX. Unidos por su compromiso con la literatura expresiva y emocional, así como con ideales liberales.",
+            origin: "A heterogeneous group of Spanish writers, painters, and critics of the same generation, united by shared aesthetic and political sensibilities representing key figures in Spain's Romantic movement of the 19th century. Encompassing both literary figures and visual artists, they were committed to expressive, emotional forms and liberal ideals. Many maintained connections to Parisian Romantic circles and contributed to Spain's cultural modernization through art, theater, literature, and social commentary.",
+            originEs: "Un grupo heterogéneo de escritores, pintores y críticos españoles de la misma generación, unidos por una sensibilidad estética y política común, figuras clave del movimiento romántico español del siglo XIX. Integrando tanto figuras literarias como artistas visuales, se comprometieron con formas expresivas y emocionales, así como con ideales liberales. Muchos mantuvieron conexiones con los círculos románticos parisinos y contribuyeron a la modernización cultural de España a través del arte, el teatro, la literatura y la crítica social.",
             bibliography: [
               "Donald E. Schurlknight, <i>Spanish Romanticism in Context: Of Subversion, Contradiction and Politics: Espronceda, Larra, Rivas, Zorrilla</i>, 1998.",
-              "Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203."
+              "Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203.",
+              "Jeannette Albin, <em>Nationalistic Imagery in the Works of Jenaro Pérez Villaamil</em>, 2007.",
+              "Ramón de Mesonero Romanos, <em>Escenas y tipos matritenses</em>, 1862."
+            ],
+            websites: []
+          },
+
+          "BORDEAUX_PARIS_CIRCLE": {
+            members: [
+              "Leandro Fernández de Moratín",
+              "Joaquín María Ferrer",
+              "Juan Antonio Melón",
+              "Antonio de Brugada",
+              "Pierre Lacour",
+              "Pierre Lacour fils",
+              "Rosario Weiss Zorrilla",
+              "Leocadia Zorrilla y Galarza",
+              "Jacques Galos"
+            ],
+            radius: 160,
+            padding: 110,
+            centerYOffset: 260,
+            startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Leandro Fernández de Moratín": Math.PI / 2,
+              "Rosario Weiss Zorrilla": Math.PI / 2
+            },
+            title: "Bordeaux-Paris circle",
+            titleEs: "Círculo Burdeos-París",
+            origin: "A transnational network of Spanish exiles, artists, and intellectuals centered on Francisco de Goya's final years in Bordeaux (1824-1828) and their connections to Paris. United by political liberalism, artistic commitment, and shared displacement from Spain, this group encompassed writers, painters, teachers, and family members connected through kinship, intellectual affinity, and the circumstance of exile. Their relationships reflected both the cultural dynamism of émigré circles and the personal bonds forged through shared struggle and geographic displacement during a turbulent period of Spanish history.",
+            originEs: "Un entramado transnacional de exiliados españoles, artistas e intelectuales centrado en los últimos años de Francisco de Goya en Burdeos (1824-1828) y sus conexiones con París. Unidos por liberalismo político, compromiso artístico y desplazamiento compartido desde España, este grupo abarcaba escritores, pintores, maestros y miembros de la familia conectados a través del parentesco, la afinidad intelectual y la circunstancia del exilio. Sus relaciones reflejaban tanto el dinamismo cultural de los círculos de emigrados como los vínculos personales forjados a través de la lucha compartida y el desplazamiento geográfico durante un período turbulento de la historia española.",
+            bibliography: [
+              "Janis Tomlinson, <em>Goya in the Twilight of Enlightenment</em>, 1992.",
+              "Manuela B. Mena Marqués, 'Goya and his circle in Bordeaux', in <em>Goya: His Critical Heritage</em>, 2003.",
+              "Paul Guinard, <em>Dauzats et Blanchard: Peintres de l'Espagne Romantique</em>, 1967.",
+              "Enrique Lafuente Ferrari, <em>Goya: biografía</em>, 1957."
             ],
             websites: []
           },
