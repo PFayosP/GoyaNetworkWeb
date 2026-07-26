@@ -4270,7 +4270,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         connections
           .sort((a, b) => (a.name || '').localeCompare(b.name || ''))
           .forEach(conn => {
-            html += `<li><a href="#" style="color:#66ccff" onclick="focusNode('${conn.id}')">${conn.name}</a></li>`;
+            html += `<li style="margin:0.3rem 0;">
+              <a href="#" style="color:#66ccff; font-weight:bold;" onclick="selectEdgeFromNodes('${node.id}', '${conn.id}'); return false;">${conn.name}</a>
+              <span style="color:#999; margin-left:0.5rem;">[</span>
+              <a href="#" style="color:#aaa; font-size:0.85em;" onclick="focusNode('${conn.id}'); return false;">view</a>
+              <span style="color:#999;">]</span>
+            </li>`;
           });
 
         html += `</ul></div>`;
@@ -4513,6 +4518,45 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
 
     });
+
+    // ===== SELECT EDGE FROM TWO NODES =====
+    window.selectEdgeFromNodes = function (fromNodeId, toNodeId) {
+      // Find the edge connecting these two nodes
+      let edgeId = null;
+      edges.get().forEach(edge => {
+        if ((edge.from === fromNodeId && edge.to === toNodeId) ||
+            (edge.from === toNodeId && edge.to === fromNodeId)) {
+          edgeId = edge.id;
+        }
+      });
+
+      if (!edgeId) return;
+
+      clearHighlights();
+
+      // Get the midpoint of the edge for centering
+      const fromPos = window.VIS_NETWORK.getPosition(fromNodeId);
+      const toPos = window.VIS_NETWORK.getPosition(toNodeId);
+      if (!fromPos || !toPos) return;
+
+      const midX = (fromPos.x + toPos.x) / 2;
+      const midY = (fromPos.y + toPos.y) / 2;
+
+      // Move to the edge and select it
+      window.VIS_NETWORK.moveTo({
+        position: { x: midX, y: midY },
+        scale: window.VIS_NETWORK.getScale() * 1.2
+      });
+
+      // Emit click event to trigger edge display logic
+      setTimeout(() => {
+        window.VIS_NETWORK.emit('click', {
+          nodes: [],
+          edges: [edgeId],
+          pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
+        });
+      }, 100);
+    };
 
     window.focusNode = function (nodeId) {
       clearHighlights();
