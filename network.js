@@ -1826,7 +1826,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Pierre Lacour fils",
               "Rosario Weiss Zorrilla",
               "Leocadia Zorrilla y Galarza",
-              "Cyprien Gaulon"
+              "Cyprien Gaulon",
+              "Jacques Galos"
             ],
             radius: 160,
             padding: 110,
@@ -1836,8 +1837,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Leandro Fernández de Moratín": Math.PI / 2,
               "Rosario Weiss Zorrilla": Math.PI / 2
             },
-            title: "Bordeaux-Paris circle",
-            titleEs: "Círculo Burdeos-París",
+            title: "Bordeaux-Paris Goya circle",
+            titleEs: "Círculo Goya Burdeos-París",
             origin: "A transnational network of Spanish exiles, artists, and intellectuals centered on Francisco de Goya's final years in Bordeaux (1824-1828) and their connections to Paris. United by political liberalism, artistic commitment, and shared displacement from Spain, this group encompassed writers, painters, teachers, and family members connected through kinship, intellectual affinity, and the circumstance of exile.",
             originEs: "Un entramado transnacional de exiliados españoles, artistas e intelectuales centrado en los últimos años de Francisco de Goya en Burdeos (1824-1828) y sus conexiones con París. Unidos por liberalismo político, compromiso artístico y desplazamiento compartido desde España, este grupo abarcaba escritores, pintores, maestros y miembros de la familia conectados a través del parentesco, la afinidad intelectual y la circunstancia del exilio.",
             websites: []
