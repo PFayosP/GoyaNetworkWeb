@@ -208,28 +208,28 @@
       MENTIONS_BODY: `
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Academic articles</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong><i>Leonardo</i> (MIT Press)</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">(see article)</a>.</li>
+        <li><strong><i>Leonardo</i> (MIT Press)</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” (in English) <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">(see article)</a>.</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferences and presentations</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(see event)</a>.</li>  
-        <li><strong>Congreso Humanidades Digitales Hispánicas 2025 (Universidad de Valencia)</strong> – 'La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' <a href="https://hdh2025.uv.es/static/files/Programa_Congreso_1_8.pdf" target="_blank">(view program)</a>.</li>
-        <li><strong>Asociación Humanidades Digitales Hispánicas (2025)</strong> – 'Un café con Paula Fayos Pérez. La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' <a href="https://humanidadesdigitaleshispanicas.es/cafe-con-paula-fayos-perez-16-de-diciembre-de-2025/" target="_blank">(see event)</a>.</li>
+        <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' (in English) <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(see event)</a>.</li>  
+        <li><strong>Congreso Humanidades Digitales Hispánicas 2025 (Universidad de Valencia)</strong> – 'La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (in Spanish) <a href="https://hdh2025.uv.es/static/files/Programa_Congreso_1_8.pdf" target="_blank">(view program)</a>.</li>
+        <li><strong>Asociación Humanidades Digitales Hispánicas (2025)</strong> – 'Un café con Paula Fayos Pérez. La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (in Spanish) <a href="https://humanidadesdigitaleshispanicas.es/cafe-con-paula-fayos-perez-16-de-diciembre-de-2025/" target="_blank">(see event)</a>.</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Online presence</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong>ARTES UK (Iberian & Latin American Visual Culture Group)</strong> – <a href="https://artes-uk.org/links-2/" target="_blank">the Goya Network included among the links</a>.</li>
-        <li><strong>XIX (Société des études romantiques & dix-neuviémistes)</strong> – <a href="https://serd.hypotheses.org/19526" target="_blank">The Goya Network (Réseau Goya)</a>.</li>
-        <li><strong>Daumier.de</strong> – <a href="https://www.daumier.de/2025/07/30/das-goya-network/" target="_blank">Das Goya Network</a>.</li>
-        <li><strong>Red Leonardo</strong> – <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/?fbclid=IwY2xjawMuhCNleHRuA2FlbQIxMQBicmlkETFmVHVybzVkRTNnNEZ3bGExAR7q3T7lseZC1CU_pp-vGJWXCjVU8C_gUFvqiVPRd7efUEbjLWnIKRb_WU9Ieg_aem_JIlJ6CO77pnEaRFtx1uKmQ" target="_blank">'Paula Fayos crea la Goya Network [...]' (in Spanish)</a>.</li>
+        <li><strong>ARTES UK (Iberian & Latin American Visual Culture Group)</strong> – <a href="https://artes-uk.org/links-2/" target="_blank">the Goya Network included among the links</a> (in English).</li>
+        <li><strong>XIX (Société des études romantiques & dix-neuviémistes)</strong> – <a href="https://serd.hypotheses.org/19526" target="_blank">The Goya Network (Réseau Goya)</a> (in French).</li>
+        <li><strong>Daumier.de</strong> – <a href="https://www.daumier.de/2025/07/30/das-goya-network/" target="_blank">Das Goya Network</a> (in German).</li>
+        <li><strong>Red Leonardo</strong> – <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/?fbclid=IwY2xjawMuhCNleHRuA2FlbQIxMQBicmlkETFmVHVybzVkRTNnNEZ3bGExAR7q3T7lseZC1CU_pp-vGJWXCjVU8C_gUFvqiVPRd7efUEbjLWnIKRb_WU9Ieg_aem_JIlJ6CO77pnEaRFtx1uKmQ" target="_blank">'Paula Fayos crea la Goya Network [...]'</a> (in Spanish).</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Interviews</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong>Mas De Arte</strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez in Especiales/Fichados (in Spanish)</a>.</li>
-        <li><strong><i>El País</i></strong> – pending publication.</li>
+        <li><strong><i>Mas De Arte</i></strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez in Especiales/Fichados</a> (in Spanish).</li>
+        <li><strong><i>El País</i></strong> – pending publication (in Spanish).</li>
       </ul>
       `,
 
@@ -508,28 +508,28 @@
 
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Artículos académicos</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong><i>Leonardo</i> (MIT Press)</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">(ver artículo: en inglés)</a>.</li>
+        <li><strong><i>Leonardo</i> (MIT Press)</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” (en inglés) <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">(ver artículo)</a>.</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferencias y presentaciones</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' (en inglés)<a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(ver evento)</a>.</li>  
-        <li><strong>Congreso Humanidades Digitales Hispánicas 2025 (Universidad de Valencia)</strong> – 'La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (en español)<a href="https://hdh2025.uv.es/static/files/Programa_Congreso_1_8.pdf" target="_blank">(ver programa)</a>.</li>
+        <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' (en inglés) <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(ver evento)</a>.</li>  
+        <li><strong>Congreso Humanidades Digitales Hispánicas 2025 (Universidad de Valencia)</strong> – 'La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (en español) <a href="https://hdh2025.uv.es/static/files/Programa_Congreso_1_8.pdf" target="_blank">(ver programa)</a>.</li>
         <li><strong>Asociación Humanidades Digitales Hispánicas (2025)</strong> – 'Un café con Paula Fayos Pérez. La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (en español) <a href="https://humanidadesdigitaleshispanicas.es/cafe-con-paula-fayos-perez-16-de-diciembre-de-2025/" target="_blank">(ver evento)</a>.</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Presencia en línea</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
         <li><strong>ARTES UK (Iberian & Latin American Visual Culture Group)</strong> – <a href="https://artes-uk.org/links-2/" target="_blank">la Red Goya incluida entre los enlaces</a> (en inglés).</li>
-        <li><strong>XIX (Société des études romantiques & dix-neuviémistes)</strong> – <a href="https://serd.hypotheses.org/19526" target="_blank">'The Goya Network (Réseau Goya)' (en francés)</a>.</li>
-        <li><strong>Daumier.de</strong> – <a href="https://www.daumier.de/2025/07/30/das-goya-network/" target="_blank">Das Goya Network (en alemán)</a>.</li>
-        <li><strong>Red Leonardo</strong> – <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/?fbclid=IwY2xjawMuhCNleHRuA2FlbQIxMQBicmlkETFmVHVybzVkRTNnNEZ3bGExAR7q3T7lseZC1CU_pp-vGJWXCjVU8C_gUFvqiVPRd7efUEbjLWnIKRb_WU9Ieg_aem_JIlJ6CO77pnEaRFtx1uKmQ" target="_blank">Paula Fayos crea la Goya Network [...] (en español)</a>.</li>
+        <li><strong>XIX (Société des études romantiques & dix-neuviémistes)</strong> – <a href="https://serd.hypotheses.org/19526" target="_blank">'The Goya Network (Réseau Goya)' </a>.</li>
+        <li><strong>Daumier.de</strong> – <a href="https://www.daumier.de/2025/07/30/das-goya-network/" target="_blank">Das Goya Network</a> (en alemán).</li>
+        <li><strong>Red Leonardo</strong> – <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/?fbclid=IwY2xjawMuhCNleHRuA2FlbQIxMQBicmlkETFmVHVybzVkRTNnNEZ3bGExAR7q3T7lseZC1CU_pp-vGJWXCjVU8C_gUFvqiVPRd7efUEbjLWnIKRb_WU9Ieg_aem_JIlJ6CO77pnEaRFtx1uKmQ" target="_blank">Paula Fayos crea la Goya Network [...]</a> (en español).</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Entrevistas</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong>Mas De Arte</strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez en Especiales/Fichados</a> (en español).</li>
-        <li><strong><i>El País</i></strong> – pendiente de publicación.</li>
+        <li><strong><i>Mas De Arte</i></strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez en Especiales/Fichados</a> (en español).</li>
+        <li><strong><i>El País</i></strong> – pendiente de publicación (en español).</li>
       </ul>
     `,
 
