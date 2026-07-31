@@ -223,12 +223,12 @@
         <li><strong>ARTES UK (Iberian & Latin American Visual Culture Group)</strong> – <a href="https://artes-uk.org/links-2/" target="_blank">the Goya Network included among the links</a>.</li>
         <li><strong>XIX (Société des études romantiques & dix-neuviémistes)</strong> – <a href="https://serd.hypotheses.org/19526" target="_blank">The Goya Network (Réseau Goya)</a>.</li>
         <li><strong>Daumier.de</strong> – <a href="https://www.daumier.de/2025/07/30/das-goya-network/" target="_blank">Das Goya Network</a>.</li>
-        <li><strong>Red Leonardo</strong> – <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/?fbclid=IwY2xjawMuhCNleHRuA2FlbQIxMQBicmlkETFmVHVybzVkRTNnNEZ3bGExAR7q3T7lseZC1CU_pp-vGJWXCjVU8C_gUFvqiVPRd7efUEbjLWnIKRb_WU9Ieg_aem_JIlJ6CO77pnEaRFtx1uKmQ" target="_blank">Paula Fayos crea la Goya Network [...]</a>.</li>
+        <li><strong>Red Leonardo</strong> – <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/?fbclid=IwY2xjawMuhCNleHRuA2FlbQIxMQBicmlkETFmVHVybzVkRTNnNEZ3bGExAR7q3T7lseZC1CU_pp-vGJWXCjVU8C_gUFvqiVPRd7efUEbjLWnIKRb_WU9Ieg_aem_JIlJ6CO77pnEaRFtx1uKmQ" target="_blank">'Paula Fayos crea la Goya Network [...]' (in Spanish)</a>.</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Interviews</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong>Mas De Arte</strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez in Especiales/Fichados</a>.</li>
+        <li><strong>Mas De Arte</strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez in Especiales/Fichados (in Spanish)</a>.</li>
       </ul>
       `,
 
@@ -237,37 +237,38 @@
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Goya</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
-        <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado (Spanish)</strong></a> – A digital resource of the artist to learn about his paintings, prints and drawings in the museum, as well as documents, print references and a digital library.</li>
-        <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> (Spanish) – The History of Goya with the Royal Academy of Fine Arts in Madrid, as well as an overview of the Goya collections, particularly his print series.</li>
+        <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado </strong></a> – A digital resource of the artist to learn about his paintings, prints and drawings in the museum, as well as documents, print references and a digital library (in Spanish).</li>
+        <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> (in Spanish) – The History of Goya with the Royal Academy of Fine Arts in Madrid, as well as an overview of the Goya collections, particularly his print series.</li>
       </ul>
 
-      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">19th-Century / France</h3>
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">19th Century / France</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
-        <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy.</li>
-        <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – An organisation and academic journal (<i>Cahiers Mérimée</i>)dedicated to the figure of Prosper Mérimée.</li>
-        <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promoting the study of the 19th-century French poet and novelist.</li>
-        <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – An association dedicated to the life, work, and literary legacy of Théophile Gautier.</li>
-        <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy.</li>
-        <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (by Bénédicte Monicat and Morgane Haesen) – A database of female writers in the 19th century in the francophone world.</li>
-        <li><a href="https://19thc-artworldwide.org/" target="_blank"><strong>Nineteenth-Century Art Worldwide</strong></a> – A journal dedicated to the study of 19th-century art and visual culture.</li>
+        <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy (in French).</li>
+        <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – An organisation and academic journal (<i>Cahiers Mérimée</i>)dedicated to the figure of Prosper Mérimée (in French).</li>
+        <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promoting the study of the 19th-century French poet and novelist (in French).</li>
+        <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – An association dedicated to the life, work, and literary legacy of Théophile Gautier (in French).</li>
+        <li><a href="https://www.daumier.de/" target="_blank"><strong>Daumier.de</strong></a> – Dedicated to the study and promotion of Honoré Daumier's work and legacy (in German).</li>
+        <li><a href="https://serd.hypotheses.org/" target="_blank"><strong>XIX Société des études romantiques & dix-neuvièmistes</strong></a> – A society dedicated to the study of Romanticism and the 19th century (in French).</li>
+        <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (by Bénédicte Monicat and Morgane Haesen) – A database of female writers in the 19th century in the francophone world (in English).</li>
+        <li><a href="https://19thc-artworldwide.org/" target="_blank"><strong>Nineteenth-Century Art Worldwide</strong></a> – A journal dedicated to the study of 19th-century art and visual culture (in English).</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">General databases</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
-        <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> (Spanish/English) – A digital portal created by the Spanish Royal Academy of History that uses a map to show the global history of Spain and the territories that were part of the Spanish administration..</li>
-        <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Includes the Getty Museum, Getty Research Institute, and extensive art historical databases.</li>
-        <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – France's National Library with digitized collections including letters, manuscripts, and prints.</li>
-        <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Spain's National Library with extensive digital resources.</li>
+        <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> – A digital portal created by the Spanish Royal Academy of History that uses a map to show the global history of Spain and the territories that were part of the Spanish administration (Spanish/English).</li>
+        <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Includes the Getty Museum, Getty Research Institute, and extensive art historical databases (in English).</li>
+        <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – France's National Library with digitized collections including letters, manuscripts, and prints (in French/English/Spanish).</li>
+        <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Spain's National Library with extensive digital resources (in Spanish).</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Other Digital Humanities (DH) Projects</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
-        <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Mapping the correspondence and social networks of the neoclassical sculptor Bertel Thorvaldsen.</li>
-        <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (University of Stanford) – An interactive visualization of intellectual networks in early modern Europe.</li>
-        <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (University of Oxford) – A catalog and analysis of correspondence from the early modern period.</li>
-        <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualizing social, economic, and cultural networks in ancient Rome.</li>
-        <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – A collaborative platform connecting Van Gogh's works, letters, and cultural impact across institutions worldwide.</li>
-        <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, University of Virginia) – Aggregating biographical data on women across multiple disciplines and time periods.</li>
+        <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Mapping the correspondence and social networks of the neoclassical sculptor Bertel Thorvaldsen (English/Dansk).</li>
+        <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (University of Stanford) – An interactive visualization of intellectual networks in early modern Europe (in English).</li>
+        <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (University of Oxford) – A catalog and analysis of correspondence from the early modern period (in English).</li>
+        <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualizing social, economic, and cultural networks in ancient Rome (in English).</li>
+        <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – A collaborative platform connecting Van Gogh's works, letters, and cultural impact across institutions worldwide (in English).</li>
+        <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, University of Virginia) – Aggregating biographical data on women across multiple disciplines and time periods (in English).</li>
       </ul>
       `,
 
@@ -506,19 +507,19 @@
 
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Artículos académicos</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong><i>Leonardo</i> (MIT Press)</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">(see article)</a>.</li>
+        <li><strong><i>Leonardo</i> (MIT Press)</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">(ver artículo: en inglés)</a>.</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferencias y presentaciones</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(see event)</a>.</li>  
-        <li><strong>Congreso Humanidades Digitales Hispánicas 2025 (Universidad de Valencia)</strong> – 'La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' <a href="https://hdh2025.uv.es/static/files/Programa_Congreso_1_8.pdf" target="_blank">(view program)</a>.</li>
+        <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(ver evento)</a>.</li>  
+        <li><strong>Congreso Humanidades Digitales Hispánicas 2025 (Universidad de Valencia)</strong> – 'La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' <a href="https://hdh2025.uv.es/static/files/Programa_Congreso_1_8.pdf" target="_blank">(ver programa)</a>.</li>
         <li><strong>Asociación Humanidades Digitales Hispánicas (2025)</strong> – 'Un café con Paula Fayos Pérez. La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' <a href="https://humanidadesdigitaleshispanicas.es/cafe-con-paula-fayos-perez-16-de-diciembre-de-2025/" target="_blank">(see event)</a>.</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Presencia en línea</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong>ARTES UK (Iberian & Latin American Visual Culture Group)</strong> – <a href="https://artes-uk.org/links-2/" target="_blank">the Goya Network included among the links</a>.</li>
+        <li><strong>ARTES UK (Iberian & Latin American Visual Culture Group)</strong> – <a href="https://artes-uk.org/links-2/" target="_blank">la Red Goya incluida entre los enlaces</a>.</li>
         <li><strong>XIX (Société des études romantiques & dix-neuviémistes)</strong> – <a href="https://serd.hypotheses.org/19526" target="_blank">The Goya Network (Réseau Goya)</a>.</li>
         <li><strong>Daumier.de</strong> – <a href="https://www.daumier.de/2025/07/30/das-goya-network/" target="_blank">Das Goya Network</a>.</li>
         <li><strong>Red Leonardo</strong> – <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/?fbclid=IwY2xjawMuhCNleHRuA2FlbQIxMQBicmlkETFmVHVybzVkRTNnNEZ3bGExAR7q3T7lseZC1CU_pp-vGJWXCjVU8C_gUFvqiVPRd7efUEbjLWnIKRb_WU9Ieg_aem_JIlJ6CO77pnEaRFtx1uKmQ" target="_blank">Paula Fayos crea la Goya Network [...]</a>.</li>
@@ -526,7 +527,7 @@
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Entrevistas</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong>Mas De Arte</strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez in Especiales/Fichados</a>.</li>
+        <li><strong>Mas De Arte</strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez en Especiales/Fichados</a>.</li>
       </ul>
     `,
 
@@ -541,30 +542,32 @@
 
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Siglo XIX / Francia</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
-      <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicada al estudio y promoción de la obra y legado de Eugène Delacroix.</li>
-      <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – Una organización y revista académica (<i>Cahiers Mérimée</i>) dedicada a la figura de Prosper Mérimée.</li>
-      <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promueve el estudio de la poeta y novelista francesa del siglo XIX.</li>
-      <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – Una asociación dedicada a la vida, obra y legado literario de Théophile Gautier.</li>
-      <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (de Bénédicte Monicat y Morgane Haesen) – Una base de datos de mujeres escritoras del siglo XIX en el mundo francófono.</li>
-      <li><a href="https://19thc-artworldwide.org/" target="_blank"><strong>Nineteenth-Century Art Worldwide</strong></a> – Una revista dedicada al estudio del arte y la cultura visual del siglo XIX.</li>
+      <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicada al estudio y promoción de la obra y legado de Eugène Delacroix (francés/inglés).</li>
+      <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – Una organización y revista académica (<i>Cahiers Mérimée</i>) dedicada a la figura de Prosper Mérimée (en francés).</li>
+      <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promueve el estudio de la poeta y novelista francesa del siglo XIX (en francés).</li>
+      <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – Una asociación dedicada a la vida, obra y legado literario de Théophile Gautier (en francés).</li>
+      <li><a href="https://www.daumier.de/" target="_blank"><strong>Daumier.de</strong></a> – Dedicado al estudio y promoción de la obra y legado de Honoré Daumier (en alemán).</li>
+      <li><a href="https://serd.hypotheses.org/" target="_blank"><strong>XIX Société des études romantiques & dix-neuvièmistes</strong></a> – Una sociedad dedicada al estudio del romanticismo y el siglo XIX (en francés).</li>
+      <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (de Bénédicte Monicat y Morgane Haesen) – Una base de datos de mujeres escritoras del siglo XIX en el mundo francófono (en inglés).</li>
+      <li><a href="https://19thc-artworldwide.org/" target="_blank"><strong>Nineteenth-Century Art Worldwide</strong></a> – Una revista dedicada al estudio del arte y la cultura visual del siglo XIX (en inglés).</li>
     </ul>
 
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Bases de Datos y Recursos Generales</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
-      <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> (español/inglés) – Un portal digital creado por la RAH que geolocaliza en un mapa interactivo la historia global de España y de los territorios que formaron parte de la administración española.</li>
+      <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> – Un portal digital creado por la RAH que geolocaliza en un mapa interactivo la historia global de España y de los territorios que formaron parte de la administración española (español/inglés).</li>
       <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Incluye el Museo Getty, Getty Research Institute y extensas bases de datos de historia del arte.</li>
-      <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – Biblioteca Nacional de Francia con colecciones digitalizadas incluyendo cartas, manuscritos e impresiones.</li>
-      <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Biblioteca Nacional de España con extensos recursos digitales.</li>
+      <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – Biblioteca Nacional de Francia con colecciones digitalizadas incluyendo cartas, manuscritos e impresiones (francés/inglés/español).</li>
+      <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Biblioteca Nacional de España con extensos recursos digitales (en español).</li>
     </ul>
 
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Otros Proyectos de Humanidades Digitales</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
-      <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Cartografía de la correspondencia y redes sociales del escultor neoclásico Bertel Thorvaldsen.</li>
-      <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (Universidad de Stanford) – Una visualización interactiva de redes intelectuales en la Europa moderna temprana.</li>
-      <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (Universidad de Oxford) – Un catálogo y análisis de la correspondencia del período moderno temprano.</li>
-      <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualización de redes sociales, económicas y culturales en la antigüedad romana.</li>
-      <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – Una plataforma colaborativa que conecta las obras de Van Gogh, sus cartas e impacto cultural en instituciones de todo el mundo.</li>
-      <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, Universidad de Virginia) – Agregación de datos biográficos sobre mujeres en múltiples disciplinas y períodos.</li>
+      <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Cartografía de la correspondencia y redes sociales del escultor neoclásico Bertel Thorvaldsen (inglés/danés).</li>
+      <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (Universidad de Stanford) – Una visualización interactiva de redes intelectuales en la Europa moderna temprana (en inglés).</li>
+      <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (Universidad de Oxford) – Un catálogo y análisis de la correspondencia del período moderno temprano (en inglés).</li>
+      <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualización de redes sociales, económicas y culturales en la antigüedad romana (en inglés).</li>
+      <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – Una plataforma colaborativa que conecta las obras de Van Gogh, sus cartas e impacto cultural en instituciones de todo el mundo (en inglés).</li>
+      <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, Universidad de Virginia) – Agregación de datos biográficos sobre mujeres en múltiples disciplinas y períodos (en inglés).</li>
     </ul>
     
     `,
