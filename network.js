@@ -214,6 +214,7 @@
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferences and presentations</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
         <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' (in English) <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(see event)</a>.</li>  
+        <li><strong>Prado Joven 2025 (Museo del Prado)</strong> – 'El impacto de Goya en el siglo XIX: de Gautier a Madrazo' (in Spanish) <a href="https://www.museodelprado.es/recurso/programa-joven-2025/570e6e48-01fc-48b4-b8f6-270e3b3141f3" target="_blank">(program)</a>. <a href="https://www.youtube.com/watch?v=jSGfYz08mP83" target="_blank">Watch video</a>.</li>
         <li><strong>Congreso Humanidades Digitales Hispánicas 2025 (Universidad de Valencia)</strong> – 'La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (in Spanish) <a href="https://hdh2025.uv.es/static/files/Programa_Congreso_1_8.pdf" target="_blank">(view program)</a>.</li>
         <li><strong>Asociación Humanidades Digitales Hispánicas (2025)</strong> – 'Un café con Paula Fayos Pérez. La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (in Spanish) <a href="https://humanidadesdigitaleshispanicas.es/cafe-con-paula-fayos-perez-16-de-diciembre-de-2025/" target="_blank">(see event)</a>.</li>
       </ul>
@@ -513,7 +514,8 @@
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferencias y presentaciones</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' (en inglés) <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(ver evento)</a>.</li>  
+        <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' (en inglés) <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(ver evento)</a>.</li>
+        <li><strong>Prado Joven 2025 (Museo del Prado)</strong> – 'El impacto de Goya en el siglo XIX: de Gautier a Madrazo' (en español) <a href="https://www.museodelprado.es/recurso/programa-joven-2025/570e6e48-01fc-48b4-b8f6-270e3b3141f3" target="_blank">(programa)</a>. <a href="https://www.youtube.com/watch?v=jSGfYz08mP83" target="_blank">Ver vídeo</a>.</li>
         <li><strong>Congreso Humanidades Digitales Hispánicas 2025 (Universidad de Valencia)</strong> – 'La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (en español) <a href="https://hdh2025.uv.es/static/files/Programa_Congreso_1_8.pdf" target="_blank">(ver programa)</a>.</li>
         <li><strong>Asociación Humanidades Digitales Hispánicas (2025)</strong> – 'Un café con Paula Fayos Pérez. La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (en español) <a href="https://humanidadesdigitaleshispanicas.es/cafe-con-paula-fayos-perez-16-de-diciembre-de-2025/" target="_blank">(ver evento)</a>.</li>
       </ul>
