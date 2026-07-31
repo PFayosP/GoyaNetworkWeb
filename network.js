@@ -536,8 +536,8 @@
 
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Goya</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
-      <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado (español)</strong></a> – Un recurso digital del artista para aprender sobre sus pinturas, estampas y dibujos en el museo, así como documentos, referencias impresas y una biblioteca digital.</li>
-      <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> (español) – La historia de Goya con la Real Academia de Bellas Artes de Madrid, así como una panorámica de las colecciones de Goya, particularmente sus series de estampas.</li>
+      <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado</strong></a> – Un recurso digital del artista para aprender sobre sus pinturas, estampas y dibujos en el museo, así como documentos, referencias impresas y una biblioteca digital (en español).</li>
+      <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> – La historia de Goya con la Real Academia de Bellas Artes de Madrid, así como una panorámica de las colecciones de Goya, particularmente sus series de estampas (en español).</li>
     </ul>
 
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Siglo XIX / Francia</h3>
@@ -555,7 +555,7 @@
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Bases de Datos y Recursos Generales</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
       <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> – Un portal digital creado por la RAH que geolocaliza en un mapa interactivo la historia global de España y de los territorios que formaron parte de la administración española (español/inglés).</li>
-      <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Incluye el Museo Getty, Getty Research Institute y extensas bases de datos de historia del arte.</li>
+      <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Incluye el Museo Getty, Getty Research Institute y extensas bases de datos de historia del arte (en inglés).</li>
       <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – Biblioteca Nacional de Francia con colecciones digitalizadas incluyendo cartas, manuscritos e impresiones (francés/inglés/español).</li>
       <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Biblioteca Nacional de España con extensos recursos digitales (en español).</li>
     </ul>
@@ -587,6 +587,7 @@
       ['.menu-content button[onclick*="partners"]','BTN_PARTNERS'],
       ['.menu-content button[onclick*="news"]','BTN_NEWS'],
       ['.menu-content button[onclick*="mentions"]','BTN_MENTIONS'],
+      ['.menu-content button[onclick*="artworks"]','BTN_ARTWORKS'],
       ['.menu-content button[onclick*="bibliography"]','BTN_BIB'],
       ['.menu-content button[onclick*="relevant-links"]','BTN_RELEVANT_LINKS'],
       ['.menu-content button[onclick*="cite"]','BTN_CITE'],
