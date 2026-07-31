@@ -204,9 +204,35 @@
       </ul>
       `,
 
-      RELEVANT_LINKS_TITLE: "Relevant links",
+      RELEVANT_LINKS_TITLE: "Relevant links & resources",
       RELEVANT_LINKS_BODY: `
-      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Digital Humanities (DH) Projects</h3>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Goya</h3>
+      <ul style="padding-left:1.2rem; line-height:1.6;">
+        <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado (Spanish)</strong></a> – A digital resource of the artist to learn about his paintings, prints and drawings in the museum, as well as documents, print references and a digital library.</li>
+        <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> (Spanish) – The History of Goya with the Royal Academy of Fine Arts in Madrid, as well as an overview of the Goya collections, particularly his print series.</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">19th-Century / France</h3>
+      <ul style="padding-left:1.2rem; line-height:1.6;">
+        <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy.</li>
+        <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – An organisation and academic journal (<i>Cahiers Mérimée</i>)dedicated to the figure of Prosper Mérimée.</li>
+        <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promoting the study of the 19th-century French poet and novelist.</li>
+        <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – An association dedicated to the life, work, and literary legacy of Théophile Gautier.</li>
+        <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy.</li>
+        <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (by Bénédicte Monicat and Morgane Haesen) – A database of female writers in the 19th century in the francophone world.</li>
+        <li><a href="https://19thc-artworldwide.org/" target="_blank"><strong>Nineteenth-Century Art Worldwide</strong></a> – A journal dedicated to the study of 19th-century art and visual culture.</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">General databases</h3>
+      <ul style="padding-left:1.2rem; line-height:1.6;">
+        <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> (Spanish/English) – A digital portal created by the Spanish Royal Academy of History that uses a map to show the global history of Spain and the territories that were part of the Spanish administration..</li>
+        <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Includes the Getty Museum, Getty Research Institute, and extensive art historical databases.</li>
+        <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – France's National Library with digitized collections including letters, manuscripts, and prints.</li>
+        <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Spain's National Library with extensive digital resources.</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Other Digital Humanities (DH) Projects</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
         <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Mapping the correspondence and social networks of the neoclassical sculptor Bertel Thorvaldsen.</li>
         <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (University of Stanford) – An interactive visualization of intellectual networks in early modern Europe.</li>
@@ -214,23 +240,6 @@
         <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualizing social, economic, and cultural networks in ancient Rome.</li>
         <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – A collaborative platform connecting Van Gogh's works, letters, and cultural impact across institutions worldwide.</li>
         <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, University of Virginia) – Aggregating biographical data on women across multiple disciplines and time periods.</li>
-        <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (by Bénédicte Monicat and Morgane Haesen) – A database of female writers in the 19th century in the francophone world.</li>
-      </ul>
-
-      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Academic Societies & Study Groups</h3>
-      <ul style="padding-left:1.2rem; line-height:1.6;">
-        <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy.</li>
-        <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – An organisation and academic journal (<i>Cahiers Mérimée</i>)dedicated to the figure of Prosper Mérimée.</li>
-        <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promoting the study of the 19th-century French poet and novelist.</li>
-        <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – An association dedicated to the life, work, and literary legacy of Théophile Gautier.</li>
-      </ul>
-
-      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">General Databases & Resources</h3>
-      <ul style="padding-left:1.2rem; line-height:1.6;">
-        <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> (Spain) – A digital portal created by the Spanish Royal Academy of History that uses a map to show the global history of Spain and the territories that were part of the Spanish administration..</li>
-        <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Includes the Getty Museum, Getty Research Institute, and extensive art historical databases.</li>
-        <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – France's National Library with digitized collections including letters, manuscripts, and prints.</li>
-        <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Spain's National Library with extensive digital resources.</li>
       </ul>
       `,
 
@@ -466,6 +475,12 @@
 
     RELEVANT_LINKS_TITLE: "Enlaces relevantes",
     RELEVANT_LINKS_BODY: `
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Goya</h3>
+    <ul style="padding-left:1.2rem; line-height:1.6;">
+      <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado (español)</strong></a> – Un recurso digital del artista para aprender sobre sus pinturas, estampas y dibujos en el museo, así como documentos, referencias impresas y una biblioteca digital.</li>
+      <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> (español) – La historia de Goya con la Real Academia de Bellas Artes de Madrid, así como una panorámica de las colecciones de Goya, particularmente sus series de estampas.</li>
+    </ul>
+
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Proyectos de Humanidades Digitales</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
       <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Cartografía de la correspondencia y redes sociales del escultor neoclásico Bertel Thorvaldsen.</li>
