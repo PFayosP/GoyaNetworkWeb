@@ -7,7 +7,7 @@
   const I18N = {
     en: {
       BTN_NETWORK:"Network", BTN_ABOUT:"About", BTN_PEOPLE:"People", BTN_PARTNERS:"Partners",
-      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWS:"News", BTN_RELEVANT_LINKS:"Relevant links", BTN_CONTACT:"Contact",
+      BTN_ARTWORKS:"Goya's work", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_MENTIONS:"Mentions", BTN_NEWS:"News", BTN_RELEVANT_LINKS:"Relevant links", BTN_CONTACT:"Contact",
       FUNDING_PARTNERS: "Funding Partners",
       ACADEMIC_PARTNERS: "Academic Partners",
       GERDA_HENKEL_NAME: "Gerda Henkel Foundation",
@@ -204,6 +204,29 @@
       </ul>
       `,
 
+      MENTIONS_TITLE: "Mentions",
+      MENTIONS_BODY: `
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Academic articles</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong></strong> – <a href="" target="_blank"></a></li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferences and presentations</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong></strong> – <a href="" target="_blank"></a></li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Online presence/mentions</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong></strong> – <a href="" target="_blank"></a></li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Interviews</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong></strong> – <a href="" target="_blank"></a></li>
+      </ul>
+      `,
+
       RELEVANT_LINKS_TITLE: "Relevant links & resources",
       RELEVANT_LINKS_BODY: `
 
@@ -260,7 +283,7 @@
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Colaboradores",
-      BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWS:"Noticias", BTN_RELEVANT_LINKS:"Enlaces relevantes", BTN_CONTACT:"Contacto",
+      BTN_ARTWORKS:"Obra de Goya", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_MENTIONS:"Menciones", BTN_NEWS:"Noticias", BTN_RELEVANT_LINKS:"Enlaces relevantes", BTN_CONTACT:"Contacto",
       FUNDING_PARTNERS: "Entidades financiadoras",
       ACADEMIC_PARTNERS: "Colaboradores académicos",
       GERDA_HENKEL_NAME: "Fundación Gerda Henkel",
@@ -473,6 +496,29 @@
     </ul>
     `,
 
+    MENTIONS_TITLE: "Menciones",
+    MENTIONS_BODY: `
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Artículos académicos</h3>
+    <ul style="padding-left:1.2rem; line-height:1.7;">
+      <li><strong></strong> – <a href="" target="_blank"></a></li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferencias y presentaciones</h3>
+    <ul style="padding-left:1.2rem; line-height:1.7;">
+      <li><strong></strong> – <a href="" target="_blank"></a></li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Presencia en línea/menciones</h3>
+    <ul style="padding-left:1.2rem; line-height:1.7;">
+      <li><strong></strong> – <a href="" target="_blank"></a></li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Entrevistas</h3>
+    <ul style="padding-left:1.2rem; line-height:1.7;">
+      <li><strong></strong> – <a href="" target="_blank"></a></li>
+    </ul>
+    `,
+
     RELEVANT_LINKS_TITLE: "Enlaces relevantes",
     RELEVANT_LINKS_BODY: `
 
@@ -525,9 +571,9 @@
       ['.menu-content button[onclick*="about"]','BTN_ABOUT'],
       ['.menu-content button[onclick*="people"]','BTN_PEOPLE'],
       ['.menu-content button[onclick*="partners"]','BTN_PARTNERS'],
-      ['.menu-content button[onclick*="artworks"]','BTN_ARTWORKS'],
-      ['.menu-content button[onclick*="bibliography"]','BTN_BIB'],
       ['.menu-content button[onclick*="news"]','BTN_NEWS'],
+      ['.menu-content button[onclick*="mentions"]','BTN_MENTIONS'],
+      ['.menu-content button[onclick*="bibliography"]','BTN_BIB'],
       ['.menu-content button[onclick*="relevant-links"]','BTN_RELEVANT_LINKS'],
       ['.menu-content button[onclick*="cite"]','BTN_CITE'],
       ['.menu-content button[onclick*="contact"]','BTN_CONTACT'],
@@ -580,6 +626,7 @@
       'ABOUT_BODY',
       'CONTRIBUTIONS_TEXT',
       'NEWS_BODY',
+      'MENTIONS_BODY',
       'RELEVANT_LINKS_BODY',
       'CONTACT_BODY',
       // añade aquí futuras secciones largas con HTML, ej:
