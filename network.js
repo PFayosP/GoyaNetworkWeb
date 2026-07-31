@@ -475,13 +475,32 @@
 
     RELEVANT_LINKS_TITLE: "Enlaces relevantes",
     RELEVANT_LINKS_BODY: `
+
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Goya</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
       <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado (español)</strong></a> – Un recurso digital del artista para aprender sobre sus pinturas, estampas y dibujos en el museo, así como documentos, referencias impresas y una biblioteca digital.</li>
       <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> (español) – La historia de Goya con la Real Academia de Bellas Artes de Madrid, así como una panorámica de las colecciones de Goya, particularmente sus series de estampas.</li>
     </ul>
 
-    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Proyectos de Humanidades Digitales</h3>
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Siglo XIX / Francia</h3>
+    <ul style="padding-left:1.2rem; line-height:1.6;">
+      <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicada al estudio y promoción de la obra y legado de Eugène Delacroix.</li>
+      <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – Una organización y revista académica (<i>Cahiers Mérimée</i>) dedicada a la figura de Prosper Mérimée.</li>
+      <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promueve el estudio de la poeta y novelista francesa del siglo XIX.</li>
+      <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – Una asociación dedicada a la vida, obra y legado literario de Théophile Gautier.</li>
+      <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (de Bénédicte Monicat y Morgane Haesen) – Una base de datos de mujeres escritoras del siglo XIX en el mundo francófono.</li>
+      <li><a href="https://19thc-artworldwide.org/" target="_blank"><strong>Nineteenth-Century Art Worldwide</strong></a> – Una revista dedicada al estudio del arte y la cultura visual del siglo XIX.</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Bases de Datos y Recursos Generales</h3>
+    <ul style="padding-left:1.2rem; line-height:1.6;">
+      <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> (español/inglés) – Un portal digital creado por la RAH que geolocaliza en un mapa interactivo la historia global de España y de los territorios que formaron parte de la administración española.</li>
+      <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Incluye el Museo Getty, Getty Research Institute y extensas bases de datos de historia del arte.</li>
+      <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – Biblioteca Nacional de Francia con colecciones digitalizadas incluyendo cartas, manuscritos e impresiones.</li>
+      <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Biblioteca Nacional de España con extensos recursos digitales.</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Otros Proyectos de Humanidades Digitales</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
       <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Cartografía de la correspondencia y redes sociales del escultor neoclásico Bertel Thorvaldsen.</li>
       <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (Universidad de Stanford) – Una visualización interactiva de redes intelectuales en la Europa moderna temprana.</li>
@@ -489,24 +508,8 @@
       <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualización de redes sociales, económicas y culturales en la antigüedad romana.</li>
       <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – Una plataforma colaborativa que conecta las obras de Van Gogh, sus cartas e impacto cultural en instituciones de todo el mundo.</li>
       <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, Universidad de Virginia) – Agregación de datos biográficos sobre mujeres en múltiples disciplinas y períodos.</li>
-      <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (de Bénédicte Monicat y Morgane Haesen) – Una base de datos de mujeres escritoras del siglo XIX en el mundo francófono.</li>
     </ul>
-
-    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Sociedades Académicas y Grupos de Estudio</h3>
-    <ul style="padding-left:1.2rem; line-height:1.6;">
-      <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicada al estudio y promoción de la obra y legado de Eugène Delacroix.</li>
-      <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – Una organización y revista académica (<i>Cahiers Mérimée</i>) dedicada a los estudios sobre Prosper Mérimée.</li>
-      <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promueve el estudio de la poeta y novelista francesa del siglo XIX.</li>
-      <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – Una asociación dedicada a la vida, obra y legado literario de Théophile Gautier.</li>
-    </ul>
-
-    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Bases de Datos y Recursos Generales</h3>
-    <ul style="padding-left:1.2rem; line-height:1.6;">
-      <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> – Un portal digital creado por la RAH que geolocaliza en un mapa interactivo la historia global de España y de los territorios que formaron parte de la administración española.</li>
-      <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Incluye el Museo Getty, Getty Research Institute y extensas bases de datos de historia del arte.</li>
-      <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – Biblioteca Nacional de Francia con colecciones digitalizadas incluyendo cartas, manuscritos e impresiones.</li>
-      <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Biblioteca Nacional de España con extensos recursos digitales.</li>
-    </ul>
+    
     `,
 
     CONTACT_TITLE: "Contacto",
