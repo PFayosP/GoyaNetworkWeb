@@ -1145,6 +1145,11 @@
   <div data-i18n="NEWS_BODY"></div>
 </div>
 
+<div id="mentions" style="display:none; padding:2rem; max-width:800px; margin:auto; line-height:1.6;">
+  <h2 data-i18n="MENTIONS_TITLE"></h2>
+  <div data-i18n="MENTIONS_BODY"></div>
+</div>
+
 <div id="relevant-links" style="display:none; padding:2rem; max-width:800px; margin:auto; line-height:1.6;">
   <h2 data-i18n="RELEVANT_LINKS_TITLE"></h2>
   <div data-i18n="RELEVANT_LINKS_BODY"></div>
@@ -1337,6 +1342,7 @@ function showSection(section) {
   const bibliography = document.getElementById('bibliography'); 
   const cite = document.getElementById('cite');
   const news = document.getElementById('news');
+  const mentions = document.getElementById('mentions');
   const relevantLinks = document.getElementById('relevant-links');
   const contact = document.getElementById('contact');
 
@@ -1348,6 +1354,7 @@ function showSection(section) {
   bibliography.style.display = 'none';
   cite.style.display = 'none';
   news.style.display = 'none';
+  mentions.style.display = 'none';
   relevantLinks.style.display = 'none';
   contact.style.display = 'none';
 
@@ -1392,6 +1399,8 @@ function showSection(section) {
     contact.style.display = 'block';
   } else if (section === 'news') {
     news.style.display = 'block';
+  } else if (section === 'mentions') {
+    mentions.style.display = 'block';
   } else if (section === 'relevant-links') {
     relevantLinks.style.display = 'block';
   }
