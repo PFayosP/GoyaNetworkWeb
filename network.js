@@ -196,9 +196,6 @@
           <strong>September 2025.</strong> A new partnership has been established with <a href="https://artes-uk.org/" target="_blank">ARTES (Iberian & Latin American Visual Culture Group) (UK)</a>.
         </li>
         <li>
-          <strong>Forthcoming.</strong> Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain”, to be published in <a href="https://leonardo.info/leonardo/" target="_blank"><em>Leonardo</em></a> (MIT Press).
-        </li>
-        <li>
           <strong>September 2024.</strong> The Goya Network obtains funding from the <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/" target="_blank">BBVA Foundation (Leonardo Grant)</a>.
       </li>
       </ul>
