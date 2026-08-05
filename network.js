@@ -184,9 +184,6 @@
       NEWS_BODY: `
       <ul style="padding-left:1.2rem; line-height:1.7;">
         <li>
-          <strong>July 2026.</strong> The journal <em>Leonardo</em> (MIT Press) has published an article on the Goya Network, authored by Paula Fayos Pérez & Anita Verő. <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">Read more</a>.
-        </li>
-        <li>
           <strong>July 2026.</strong> The Goya Network has been presented at the <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">Instituto Cervantes London</a>, in an event chaired by Manuela B. Mena Marqués.
         </li>
         <li>
@@ -208,7 +205,7 @@
       MENTIONS_BODY: `
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Academic articles</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong><i>Leonardo</i> (MIT Press)</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” (in English) <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">(see article)</a>.</li>
+        <li><strong><i>Leonardo</i> (MIT Press): forthcoming</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” (in English).</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferences and presentations</h3>
@@ -483,9 +480,7 @@
     NEWS_TITLE: "Noticias",
     NEWS_BODY: `
     <ul style="padding-left:1.2rem; line-height:1.7;">
-      <li>
-          <strong>Julio 2026.</strong> La revista <em>Leonardo</em> (MIT Press) ha publicado un artículo sobre la Goya Network, escrito por Paula Fayos Pérez & Anita Verő. <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">Leer más</a>.
-        </li>
+      
         <li>
           <strong>Julio 2026.</strong> La Goya Network ha sido presentada en el <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">Instituto Cervantes de Londres</a>, en un evento presidido por Manuela B. Mena Marqués.
         </li>
@@ -509,7 +504,7 @@
 
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Artículos académicos</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
-        <li><strong><i>Leonardo</i> (MIT Press)</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” (en inglés) <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">(ver artículo)</a>.</li>
+        <li><strong><i>Leonardo</i> (MIT Press): próximamente</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” (en inglés).</li>
       </ul>
 
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferencias y presentaciones</h3>
