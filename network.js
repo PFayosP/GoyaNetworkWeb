@@ -227,7 +227,7 @@
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Interviews</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
         <li><strong><i>Mas De Arte</i></strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez in Especiales/Fichados</a> (in Spanish).</li>
-        <li><strong><i>El País</i></strong> – pending publication (in Spanish).</li>
+        <li><strong><i>El País</i></strong> – forthcoming (in Spanish).</li>
       </ul>
       `,
 
@@ -526,7 +526,7 @@
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Entrevistas</h3>
       <ul style="padding-left:1.2rem; line-height:1.7;">
         <li><strong><i>Mas De Arte</i></strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez en Especiales/Fichados</a> (en español).</li>
-        <li><strong><i>El País</i></strong> – pendiente de publicación (en español).</li>
+        <li><strong><i>El País</i></strong> – próximamente (en español).</li>
       </ul>
     `,
 
