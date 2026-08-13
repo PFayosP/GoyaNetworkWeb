@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-06",
+  "last_update": "2026-08-13",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -594,7 +594,7 @@
       "works in": "<i>Gaceta de Madrid</i> (1835)",
       "works for": "Baudry & Rosa, Paris 1837: volumes of Spanish literature and translations; <i>Colección de los mejores autores españoles</i>; <i>Catálogo razonado de los manuscrito españoles existentes en la Biblioteca Real de París</i> (Paris, 1844)",
       "works as": "editor; librarian (bibliotecario segundo de la Biblioteca Nacional); politician (jefe político de Huesca; diputado); Administrator of the Imprenta Nacional; Director General de Instrucción Pública",
-      "bibliography": "Raquel Sánchez, 'Busto de Eugenio Ochoa por Ponciano Ponzano (Pieza del trimestre julio-septiembre 2018)', Ministerio de Cultura; García Jáñez, 'El fantasma del suicidio en el relato <i>Stephen</i> de Eugenio Ochoa y en las litografías de Federico Madrazo', in <i>Nuevos caminos del hispanismo</i>, 2010; Romero Tobar 1997; Ochoa 1861",
+      "bibliography": "Raquel Sánchez, 'Busto de Eugenio Ochoa por Ponciano Ponzano (Pieza del trimestre julio-septiembre 2018)', Ministerio de Cultura; García Jáñez, 'El fantasma del suicidio en el relato <i>Stephen</i> de Euge   nio Ochoa y en las litografías de Federico Madrazo', in <i>Nuevos caminos del hispanismo</i>, 2010; Romero Tobar 1997; Ochoa 1861",
       "member of": "Real Academia Española: honorary member, then miembro titular in 1847 (for the letter 'H')",
       "authorities": {
         "rah": "https://historia-hispanica.rah.es/biografias/32527-eugenio-de-ochoa-y-montel"
@@ -1747,7 +1747,7 @@
       "profession": "writer, essayist, novelist, playwright, poet, politician",
       "author of": [
         "Art criticism: Preface of <i>Cromwell</i> (play) (1827).",
-        "Poetry: <i>Les Orientales</i> (1829): illustrated by Louis Boulanger; <i>Les Feuilles d'automne</i> (1831); <i>Torquemada</i> (1869).",
+        "Poetry: <i>Odes et ballades</i> (1828); <i>Les Orientales</i> (1829): illustrated by Louis Boulanger; <i>Les Feuilles d'automne</i> (1831); <i>Torquemada</i> (1869).",
         "Plays: <i>Hernani</i> (1830): takes place in Spain; <i>Marion Delorme</i> (1831); <i>Le roi s'amuse</i> (1832: forbidden); <i>Ruy Blas</i> (1838).",
         "Novels: <i>Le Dernier jour d'un condamné</i> (1829); <i>Notre-Dame de Paris</i> (1831); <i>Les Misérables</i> (1862)."
       ],
@@ -5331,7 +5331,7 @@
       "in Paris": "1796-1806; 1824-1835; 1841-1867",
       "in Italy": "1806-1824 (1801 Grand prix de Rome en peinture)",
       "works as": "directeur de l'Académie de France à Rome (1835-1842)",
-      "portrayed by": "Federico de Madrazo, 1833, oil painting, [Hispanic Society A286](https://hispanicsociety.emuseum.com/objects/884/jean-auguste-dominique-ingres)",
+      "portrayed by": "Jean Alaux, 1818 (in his studio in Rome); Federico de Madrazo, 1833, oil painting, [Hispanic Society A286](https://hispanicsociety.emuseum.com/objects/884/jean-auguste-dominique-ingres)",
       "masters": "Joseph Roques, Jean Suau, Jacques-Louis David (1796)",
       "exhibitions": [
         "Recent years: 2015-16 Prado, [<i>Ingres</i>](https://www.museodelprado.es/actualidad/exposicion/ingres/00e24782-cbd7-4f3e-af2b-46aa5a34d983), curated by Vincent Pomarède and Carlos G. Navarro; 2015-16 Prado, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i>, curated by Javier Barón."
@@ -12700,10 +12700,11 @@
         "1836, 13 April, Théophile Gautier, 'Salon de 1836, <i>Ariel</i>: 'M. Delacroix comprend parfaitement la portée de son art, car c'est un poète en même temps qu'un homme d'exécution. Il ne fait retourner la peinture ni aux puérilités gothiques ni aux radoteries pseudo-grecques. Son style est moderne et répond à celui de Victor Hugo dans <i>Les Orientales</i> : c'est la même fougue et le même tempérament. -- Le <i>Sardanapale</i> ressemble singulièrement au <i>Feu du ciel</i>, le <i>Massacre de Scio</i> à la <i>Bataille de Navarin</i> ; les deux odes sont peintes comme les deux toiles'."
       ],
       "mentions": [
+        "1826 Autumn: Hugo defends Delacroix, specifically his work <i>La Grèce expirant sur les ruines de Missolonghi</i>, from the attacks of the critic L. Vitet in <i>Le Globe</i> (23 Nov), who considered the work of this artist and of Collin, Saint-Evre, West and Eugène Devéria as 'ces salmis de couleurs incohérentes' (Thompson 1970, p.43).",
         "1855 Charles Baudelaire mentions in an article in <i>Le Pays</i> on the Exposition universelle Hugo's judgement of the women depicted by Delacroix (Baudelaire-Pichois 1976, p.593). For Hugo, Delacroix 'a toutes [les qualités] moins une ; il lui manque ce qu'ont toujours cherché et trouvé les artistes suprêmes, peintres ou poètes - la beauté.' He also complains about the lack of truly beautiful women, except for the angels in <i>Christ au Jardin des Oliviers</i> and one of the women in <i>Scènes des massacres de Scio</i>. According to Hugo, Delacroix's female characters are characterised by a 'laideur exquise', such as in <i>Femmes d'Alger</i> (Escholier 1931, p.321)."
       ],
       "correspondence": "since 1828 (Burty 1880, t.I, p.130, 134)",
-      "bibliography": "Hovasse 2001; Baudelaire-Pichois 1976; Gandon 1966, p.173-75; Escholier, <i>Victor Hugo raconté par ceux qui l'ont vu</i>, 1931; Burty 1880, t.I; 'Poésies, par M. Victor Hugo', <i>Le Globe</i>, 4 Nov 1826, p.186.",
+      "bibliography": "Hovasse 2001; Baudelaire-Pichois 1976; Thompson 1970; Gandon 1966, p.173-75; Escholier, <i>Victor Hugo raconté par ceux qui l'ont vu</i>, 1931; Burty 1880, t.I; 'Poésies, par M. Victor Hugo', <i>Le Globe</i>, 4 Nov 1826, p.186.",
       "strength": 2
     },
     {
@@ -13145,7 +13146,12 @@
       "connection_level": "direct",
       "relationship type": "friends",
       "know each other since": "1824",
-      "portraits": "Devéria portrayed Hugo in 1829 (lithograph)"
+      "interactions": [
+        "They became close friends during the Salon of 1824 (Thompson 1970, p.41).",
+        "According to Thompson (1970, p.41), Charles Nodier's 'position as literary editor of the <i>Voyages pittoresques...</i> was undoubtedly crucial for these first serious personal contacts between Hugo and progressive painters since Achille Devéria, Alaux and Gué, none of whom were counted among the leading painters of the Salon, had all contributed to the two volumes of the <i>Voyages</i>, which appeared in 1825'."
+      ],
+      "portraits": "Devéria portrayed Hugo in 1829 (lithograph)",
+      "bibliography": "Thompson 1970"
     },
     {
       "from": "Achille Devéria",
@@ -13188,6 +13194,22 @@
       "to": "Eugène Delacroix",
       "connection_level": "direct",
       "relationship type": "acquaintances"
+    },
+    {
+      "from": "Achille Devéria",
+      "to": "Baron Taylor",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; colleagues",
+      "collaborations": "Devéria contributed to Taylor's and Nodier's <i>Voyages pittoresques</i> (1825) (Thompson 1970, p.41)",
+      "bibliography": "Thompson 1970"
+    },
+    {
+      "from": "Achille Devéria",
+      "to": "Charles Nodier",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; colleagues",
+      "collaborations": "Devéria contributed to Taylor's and Nodier's <i>Voyages pittoresques</i> (1825) (Thompson 1970, p.41)",
+      "bibliography": "Thompson 1970"
     },
     {
       "from": "Achille Devéria",
@@ -13250,7 +13272,7 @@
       "to": "Victor Hugo",
       "connection_level": "direct",
       "relationship type": "colleagues; friends",
-      "know each other since": "at least 1828",
+      "know each other since": "1824 (coinciding with that year's Salon)",
       "correspondence": "1835-V-11 Boulanger to Hugo (Maison Victor Hugo)",
       "collaborations": "Boulanger illustrates <i>Les orientales</i> (1829): 'Les Fantômes'",
       "mentions": "in poem no.28 from <i>Feuilles d'Automne</i> (1830) mentioning Goya (<i>Buen viage! -GOYA-</i>), Hugo wrote the dedication 'À mes amis S.-B. et L.B', which probably are Charles-Augustin Sainte-Beuve and Louis Boulanger.",
@@ -13734,10 +13756,12 @@
       "from": "Victor Hugo",
       "to": "Charles Nodier",
       "connection_level": "direct",
+      "know each other since": "at least 1825",
       "relationship type": "friends; colleagues; rivals. Hugo was influenced by Nodier.",
-      "rivalry": "Hugo was starting to replace Nodier as the head of the 'Cénacle romantique'. Nodier published a hostile article on Hugo's Le Dernier jour d'un condamné (<i>Le Journal des débats</i>, 26 Feb [1829]). He also made a 'venomous' allusion to Les Orientales, in an article on Byron (<i>La Quotidienne</i>, 1 Nov [1829]).",
-      "curiosities": "they attended together the funeral of Charles X in Reims in 1825",
-      "bibliography": "Maynial 1943, p.78",
+      "rivalry": "Hugo was starting to replace Nodier as the head of the 'Cénacle romantique'. Nodier published a hostile article on Hugo's <i>Le Dernier jour d'un condamné</i> (<i>Le Journal des débats</i>, 26 Feb [1829]). He also made a 'venomous' allusion to <i>Les Orientales</i>, in an article on Lord Byron (<i>La Quotidienne</i>, 1 Nov [1829]).",
+      "collaborations": "Hugo and Nodier took Julien-Michel Gué to the Swiss Alps as illustrator for the Album which Urbain Canel had engaged them to produce about the tour (Thompson 1970, p.41).",
+      "curiosities": "they attended together the funeral of Charles X in Reims in 1825 (alongside Jean Alaux and Alphonse de Cailleux).",
+      "bibliography": "Thompson 1970; Maynial 1943, p.78",
       "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Charles_Nodier)"
     },
     {
@@ -14378,6 +14402,14 @@
       "connection_level": "direct",
       "relationship type": "master-student",
       "strength": 2
+    },
+    {
+      "from": "Victor Hugo",
+      "to": "Madame de Staël",
+      "relationship type": "acquaintances?",
+      "connection_level": "indirect?",
+      "mentions": "in Hugo's admission speech to the Académie Française, he mentions Madame de Staël as one of the few people who didn't kneel in front of Napoleon I: 'Tout dans le continent s'inclinait devant Napoléon, tout, - excepté six poëtes, Messieurs, - permettez-moi de le dire et d'en être fier dans cette enceinte, - excepté six penseurs restés seuls debout dans l'univers agenouillé ; et ces noms glorieux, j'ai hâte de les prononcer devant vous, les voici : DUCIS, DELILLE, MADAME DE STAEL, BENJAMIN CONSTANT, CHATEAUBRIAND, LEMERCIER'.",
+      "websites": "[Hugo's admission speech to the Académie Française](https://www.academie-francaise.fr/discours-de-reception-de-victor-hugo)"
     },
     {
       "from": "Juliette Récamier",
