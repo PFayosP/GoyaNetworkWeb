@@ -60,16 +60,16 @@
     "y": 371
   },
   "Baron Taylor": {
-    "x": 290,
-    "y": -134
+    "x": 409,
+    "y": -131
   },
   "Adrien Dauzats": {
-    "x": 349,
-    "y": -36
+    "x": 338,
+    "y": -59
   },
   "Pharamond Blanchard": {
-    "x": 233,
-    "y": -36
+    "x": 311,
+    "y": -158
   },
   "Eugenio Ochoa": {
     "x": 255,
@@ -92,8 +92,8 @@
     "y": 701
   },
   "Infanta Luisa Fernanda de Borbón": {
-    "x": -749,
-    "y": 594
+    "x": -768,
+    "y": 591
   },
   "Prince Antoine, Duke of Montpensier": {
     "x": -706,
@@ -180,16 +180,16 @@
     "y": 38
   },
   "XV Countess of Chinchón": {
-    "x": -766,
-    "y": 217
+    "x": -834,
+    "y": 264
   },
   "María Teresa de Vallabriga": {
-    "x": -952,
-    "y": 513
+    "x": -904,
+    "y": 290
   },
   "Luis de Borbón": {
-    "x": -995,
-    "y": 372
+    "x": -944,
+    "y": 434
   },
   "Luis Paret": {
     "x": -460,
@@ -252,20 +252,20 @@
     "y": 311
   },
   "José de Espronceda": {
-    "x": 570,
-    "y": 318
+    "x": 614,
+    "y": 345
   },
   "Arsène Houssaye": {
     "x": -83,
     "y": -816
   },
   "Mariano José Larra": {
-    "x": 466,
-    "y": 265
+    "x": 528,
+    "y": 286
   },
   "José Zorrilla": {
-    "x": 592,
-    "y": 421
+    "x": 571,
+    "y": 436
   },
   "Stéphane Mallarmé": {
     "x": -153,
@@ -444,8 +444,8 @@
     "y": -752
   },
   "Jenaro Pérez Villaamil": {
-    "x": 501,
-    "y": 469
+    "x": 473,
+    "y": 472
   },
   "Henri Regnault": {
     "x": 881,
@@ -568,16 +568,16 @@
     "y": 373
   },
   "Carlos III": {
-    "x": -905,
-    "y": 244
+    "x": -841,
+    "y": 377
   },
   "Carlos IV": {
     "x": -627,
     "y": 390
   },
   "María Luisa de Parma": {
-    "x": -791,
-    "y": 416
+    "x": -728,
+    "y": 450
   },
   "Fernando VII": {
     "x": -637,
@@ -588,8 +588,8 @@
     "y": 280
   },
   "María Cristina de Borbón-Dos Sicilias": {
-    "x": -882,
-    "y": 561
+    "x": -887,
+    "y": 546
   },
   "Joseph Bonaparte": {
     "x": -481,
@@ -772,8 +772,8 @@
     "y": -80
   },
   "Ramón de Mesonero Romanos": {
-    "x": 387,
-    "y": 423
+    "x": 375,
+    "y": 413
   },
   "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin": {
     "x": -251,
@@ -826,5 +826,9 @@
   "Francisco Lameyer": {
     "x": 708,
     "y": 584
+  },
+  "Eugenio Lucas Velázquez": {
+    "x": 429,
+    "y": 274
   }
 }
