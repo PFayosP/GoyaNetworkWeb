@@ -1907,7 +1907,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "José Zorrilla",
               "Jenaro Pérez Villaamil",
               "Ramón de Mesonero Romanos",
-              "Carlos Luis de Ribera"
+              "Carlos Luis de Ribera",
+              "Eugenio Lucas Velázquez"
             ],
             radius: 100,
             padding: 90,
