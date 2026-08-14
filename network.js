@@ -4291,6 +4291,25 @@ document.addEventListener('DOMContentLoaded', async function () {
             }).filter(Boolean);
 
             htmlText = `<ul>${processedItems.join("")}</ul>`;
+          } else if (typeof value === "object" && value !== null && !Array.isArray(value)) {
+            // Handle plain objects (e.g., "author of" with nested categories)
+            const sections = [];
+            for (const [key, items] of Object.entries(value)) {
+              if (Array.isArray(items)) {
+                const processedItems = items.map(item => {
+                  if (typeof item === "string") {
+                    const translatedItem = translateValue(item);
+                    return `<li>${autoLinkNames(processMarkdownLinks(translatedItem), nodesMap)}</li>`;
+                  }
+                  return null;
+                }).filter(Boolean);
+                
+                if (processedItems.length > 0) {
+                  sections.push(`<div style="margin-top:0.5rem;"><strong>${key}:</strong><ul>${processedItems.join("")}</ul></div>`);
+                }
+              }
+            }
+            htmlText = sections.join("");
           } else {
             let translatedValue = value;
 
