@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-13",
+  "last_update": "2026-08-14",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -14,7 +14,32 @@
       "children": "Javier Goya (1 sobrevivió de 8)",
       "married to": "Josefa Bayeu (1773)",
       "profession": "painter, draughtsman, engraver, teacher",
-      "author of": "<i>Piedad</i> (1774), <i>Aníbal vencedor</i> (1771), cartones para tapices (1775-1792), grabados según Velázquez (1778), <i>Crucifixión</i> (1780), <i>San Bernardino de Siena</i> (1781-83), <i>La duquesa de Osuna</i> (1785), <i>Los duques de Osuna</i> (1787-88), <i>Patio de locos</i> (1794), <i>Vuelo de brujas</i> (1797-98), Álbum A (c. 1794-95), Álbum B (c. 1795-97), <i>Caprichos</i> (1799), <i>Alegoría de la Verdad, el Tiempo y la Historia</i> (1800), <i>La familia de Carlos IV</i> (1800), <i>La Maja vestida</i> (1802-05), <i>Bandido desnudando a una mujer</i> (1808-12), <i>El entierro de la sardina</i> (1808-12), <i>Retrato de Antonia de Zárate</i> (1810-11), <i>Desastres de la guerra</i> (1810-15), <i>El dos de mayo de 1808</i> (1814), <i>El 3 de mayo de 1808</i> (1814), <i>Fernando VII</i> (1814-15), Autorretrato (1815), <i>Tauromaquia</i> (1816), <i>Disparates</i> (c. 1816-19), Pinturas negras (c. 1819-23), <i>Toros de Burdeos</i> (1825), <i>Retrato de Mariano Goya</i> (1827)",
+      "author of": {
+        "PINTURA (selección)": [
+          "Obras tempranas: <i>Aníbal vencedor</i> (1771); <i>Piedad</i> (1774).",
+          "Cartones para tapices (1775-1792): 63 obras encargadas por la familia real para decorar los palacios. En 1868 Federico de Madrazo solicita que los cartones se trasladen al Museo del Prado, ya que estaban mal conservados en los sótanos del Palacio Real.", 
+          "Pintor de Cámara: <i>Crucifixión</i> (1780), <i>San Bernardino de Siena</i> (1781-83), <i>La duquesa de Osuna</i> (1785), <i>Los duques de Osuna</i> (1787-88).", 
+          "Primer Pintor de Cámara: <i>Patio de los dementes</i> (1794), <i>Vuelo de brujas</i> (1797-98), Album A (c.1794-95), Album B (c.1795-97), <i>Caprichos</i> (1799), <i>Allegoría de la Verdad, el Tiempo y la Historia</i> (1800), <i>La familia de Carlos IV</i> (1800), <i>La Maja vestida</i> (1802-05).", 
+          "Guerra de la Independencia: <i>Bandido despojando a una mujer</i> (1808-12), <i>Entierro de la sardina</i> (1808-12), <i>Retrato de Antonia de Zárate</i> (1810-11), <i>Los desastres de la guerra</i> (1810-15), <i>El dos de mayo de 1808</i> (1814), <i>El tres de mayo de 1808</i> (1814), <i>Fernando VII</i> (1814-15).", 
+          "Posguerra: <i>Autorretrato</i> (1815), <i>Disparates</i> (c.1816-19), Pinturas negras (c.1819-23).",
+          "Años en Burdeos: <i>Retrato de Mariano Goya</i> (1827)."
+        ],
+        "GRABADOS (selección)": [
+          "Grabados tempranos (selección): <i>Huida a Egipto</i> (1771-74).",
+          "1777-78 grabados después de Velázquez.",
+          "1799 <i>Los Caprichos</i> (aguafuerte y aguatinta). 2.ª edición 1847-57 (Calcografía).",
+          "c.1810-15 <i>Los desastres de la guerra</i> (aguafuerte y aguatinta). Publicado póstumamente en 1863 (Calcografía).",
+          "1816 <i>Tauromaquia</i> (aguafuerte). 2.ª edición 1855 (Calcografía).",
+          "c.1816-19 <i>Disparates</i> (aguafuerte y aguatinta). Una tirada muy pequeña de pruebas aisladas impresas en 1850 (Beruete 1918, p.105, 109). Publicado póstumamente en 1864 (Calcografía).",
+          "1825 <i>Toros de Burdeos</i> (litografía)."
+        ],
+        "DIBUJOS (selección)": [
+          "Álbumes/Cuadernos (A-G). Álbum A (c.1794-95); Álbum B (c.1795-97).",
+          "Dibujos preparatorios (para pinturas y grabados).",
+          "<i>Sueños</i> (1797): 26 dibujos.",
+          "Otros: serie del <i>Espejo mágico</i> (1797-99)."
+        ]
+      },
       "in Italy": "1769-1771",
       "in France": "1824-1828 París y Burdeos. Vive en Burdeos entre 1824 y 1828",
       "in Paris": "Verano de 1824",
@@ -2973,7 +2998,11 @@
       "life dates": "1820-1889",
       "sex": "male",
       "nationality": "Spanish",
-      "collector of Goya's works": "En 1866 vende al Prado tres obras atribuidas a Goya: <i>Autorretrato</i> 1815 (GW 1552), <i>Retrato de una mujer</i> (Leocadia Zorrilla o Bayeu) (GW 686) y <i>Exorcismo</i> (seguidor de Goya); un grupo de dibujos; planchas de cobre de <i>Disparates</i> (1854)",
+      "collector of Goya's works": [
+        "1854 adquiere 98 planchas de cobre de los <i>Desastres de la guerra</i> (80) y <i>Disparates</i> (18) de Mariano Goya para publicarlas, pero solo se imprimen algunas pruebas.",
+        "1866 vende al Prado 3 obras atribuidas a Goya: <i>Autorretrato</i> 1815 (GW 1552), <i>Retrato de una mujer</i> (Leocadia Zorrilla o Bayeu) (GW 686) y <i>Exorcismo</i> (seguidor de Goya).",
+        "Un grupo de dibujos."
+      ],
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Garreta_AI.jpg",
       "image source": "Generada por IA (DeepAI) porque no se conoce ningún retrato"
     },
@@ -11885,6 +11914,7 @@
       "relationship type": "mecenazgo; retratista-modelo",
       "know each other since": "1783",
       "portraits": "1783, Prado (P003255)",
+      "interactions": "1785 por orden de Floridablanca, Goya envía su <i>Crucifixión</i> +40 cuadros a San Francisco el Grande (sacristía). De ahí van al Museo de la Trinidad, y luego al Prado (Museo de Pinturas).",
       "strength": 3
     },
     {

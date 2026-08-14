@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-13",
+  "last_update": "2026-08-14",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -14,7 +14,32 @@
       "children": "Javier Goya (1 survived out of 8)",
       "married to": "Josefa Bayeu (1773)",
       "profession": "painter, draughtsman, engraver, teacher",
-      "author of": "<i>Piedad</i> (1774), <i>Aníbal vencedor</i> (1771), tapestry cartoons (1775-1792), prints after Velázquez (1778), <i>Crucifixion</i> (1780), <i>San Bernardino de Siena</i> (1781-83), <i>The Duchess of Osuna</i> (1785), <i>The Dukes of Osuna</i> (1787-88), <i>Yard of lunatics</i> (1794), <i>Witches Flight</i> (1797-98), Album A (c.1794-95), Album B (c.1795-97), <i>Caprichos</i> (1799), <i>Allegory of Truth, Time and History</i> (1800), <i>The Family of Charles IV</i> (1800), <i>Clothed Maja</i> (1802-05), <i>Bandit stripping a woman</i> (1808-12), <i>The Burial of the Sardine</i> (1808-12), <i>Portrait of Antonia de Zárate</i> (1810-11), <i>Disasters of War</i> (1810-15), <i>The Second of May 1808</i> (1814), <i>The Third of May 1808</i> (1814), <i>Ferdinand VII</i> (1814-15), Self-Portrait (1815), <i>Tauromaquia</i> (1816), <i>Disparates</i> (c.1816-19), Black Paintings (c.1819-23), <i>Bulls of Bordeaux</i> (1825), <i>Portrait of Mariano Goya</i> (1827)",
+      "author of": {
+        "PAINTING (selection)": [
+          "Early works: <i>Aníbal vencedor</i> (1771); <i>Piedad</i> (1774).",
+          "Tapestry cartoons (1775-1792): 63 works commissioned by the royal family to decorate the palaces. In 1868 Federico de Madrazo requests the cartoons to be moved to the Prado Museum as they were badly preserved in the basements of the Royal Palace.", 
+          "Court Painter (Pintor de Cámara): <i>Crucifixion</i> (1780), <i>San Bernardino de Siena</i> (1781-83), <i>The Duchess of Osuna</i> (1785), <i>The Dukes of Osuna</i> (1787-88).", 
+          "First Court Painter (Primer Pintor de Cámara): <i>Yard of lunatics</i> (1794), <i>Witches Flight</i> (1797-98), Album A (c.1794-95), Album B (c.1795-97), <i>Caprichos</i> (1799), <i>Allegory of Truth, Time and History</i> (1800), <i>The Family of Charles IV</i> (1800), <i>Clothed Maja</i> (1802-05).", 
+          "Peninsular War: <i>Bandit stripping a woman</i> (1808-12), <i>The Burial of the Sardine</i> (1808-12), <i>Portrait of Antonia de Zárate</i> (1810-11), <i>Disasters of War</i> (1810-15), <i>The Second of May 1808</i> (1814), <i>The Third of May 1808</i> (1814), <i>Ferdinand VII</i> (1814-15).", 
+          "Post-War: Self-Portrait (1815), <i>Disparates</i> (c.1816-19), Black Paintings (c.1819-23).",
+          "Bordeaux years: <i>Portrait of Mariano Goya</i> (1827)."
+        ],
+        "PRINTS (selection):": [
+          "Early prints (selection): <i>Huida a Egipto</i> (1771-74).",
+          "1777-78 prints after Velázquez.",
+          "1799 <i>Los Caprichos</i> (etching and aquatint). 2nd edition 1847-57 (Calcografía).",
+          "c.1810-15 <i>Disasters of War</i> (etching and aquatint). Published posthumously in 1863 (Calcografía).",
+          "1816 <i>Tauromaquia</i> (etching). 2nd edition 1855 (Calcografía).",
+          "c.1816-19 <i>Disparates</i> (etching and aquatint). A very small print run of isolated proofs printed in 1850 (Beruete 1918, p.105, 109). Published posthumously in 1864 (Calcografía).",
+          "1825 <i>Bulls of Bordeaux</i> (lithography)."
+        ],
+        "DRAWINGS (selection)": [
+          "Albums (A-G). Album A (c.1794-95); Album B (c.1795-97).",
+          "Preparatory drawings (for paintings and prints).",
+          "<i>Sueños</i> (1797): 26 drawings.",
+          "Others: series of the <i>Magic Mirror</i> (1797-99)."
+        ]
+      },
       "in Italy": "1769-1771",
       "in France": "1824-1828 Paris and Bordeaux. He lives in Bordeaux 1824-1828.",
       "in Paris": "Summer of 1824",
@@ -23,7 +48,7 @@
       "member of": "RABASF",
       "portrayed by": "Vicente López (1826, Prado); Francisco de Goya",
       "address": "C/ Desengaño, 1, Madrid (by 1784); Quinta del Sordo, Madrid (acquired in 1819)",
-      "bibliography": "Fayos-Pérez 2024; Schwander 2021; Tomlinson 2020; Mena Marqués & Manuel Matilla, 2019; Mena Marqués & Manuel Matilla, 2018; Mena Marqués 2008; Schulz 2005; Wolf 1994; Bozal 1994; Tomlinson 1992; Carreta Parrondo & Vega 1991; Águeda & Salas 1982; López Canellas 1981; Glendinning 1977; Gassier 1973; Gassier & Wilson-Bareau 1971; Harris 1964",
+      "bibliography": "Fayos-Pérez 2024; Schwander 2021; Tomlinson 2020; Mena Marqués & Manuel Matilla, 2019; Mena Marqués & Manuel Matilla 2018; Mena Marqués 2008; Schulz 2005; Wolf 1994; Bozal 1994; Tomlinson 1992; Carreta Parrondo & Vega 1991; Águeda & Salas 1982; López Canellas 1981; Glendinning 1977; Gassier 1973; Gassier & Wilson-Bareau 1971; Harris 1964",
       "websites": [
         "[Fundación Goya en Aragón](https://fundaciongoyaenaragon.es/)",
         "[Museo del Prado](https://www.museodelprado.es/coleccion/artista/goya-y-lucientes-francisco-de/39568a17-81b5-4d6f-84fa-12db60780812)",
@@ -2956,7 +2981,11 @@
       "life dates": "1820-1889",
       "sex": "male",
       "nationality": "Spanish",
-      "collector of Goya's works": "1866 sells to the Prado 3 works attributed to Goya: <i>Self-portrait</i> 1815 (GW 1552), <i>Portrait of a woman</i> (Leocadia Zorrilla or Bayeu) (GW 686) and <i>Exorcism</i> (follower of Goya); a group of drawings; copperplates from <i>Disparates</i> (1854)",
+      "collector of Goya's works": [
+        "1854 he acquires 98 copperplates of the <i>Disasters of War</i> (80) and <i>Disparates</i> (18) from Mariano Goya in order to publish them, but only a few proofs are printed.",
+        "1866 he sells to the Prado 3 works attributed to Goya: <i>Self-portrait</i> 1815 (GW 1552), <i>Portrait of a woman</i> (Leocadia Zorrilla or Bayeu) (GW 686) and <i>Exorcism</i> (follower of Goya).",
+        "A group of drawings."
+      ],
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Garreta_AI.jpg",
       "image source": "AI generated (DeepAI) because there is no known portrait"
     },
@@ -11747,6 +11776,7 @@
       "relationship type": "patronage; portraitist-sitter",
       "know each other since": "by 1783",
       "portraits": "1783, Prado (P003255)",
+      "interactions": "1785 ordered by Floridablanca, Goya sends his <i>Crucifixion</i> +40 paintings to San Francisco el Grande (sacristy). From there, they go to the Museo de la Trinidad, then to the Prado (Museum of Paintings).",
       "strength": 3
     },
     {
