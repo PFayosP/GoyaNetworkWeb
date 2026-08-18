@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-14",
+  "last_update": "2026-08-18",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -17,10 +17,10 @@
       "author of": {
         "PAINTING (selection)": [
           "Early works: <i>Aníbal vencedor</i> (1771); <i>Piedad</i> (1774).",
-          "Tapestry cartoons (1775-1792): 63 works commissioned by the royal family to decorate the palaces. In 1868 Federico de Madrazo requests the cartoons to be moved to the Prado Museum as they were badly preserved in the basements of the Royal Palace.", 
-          "Court Painter (Pintor de Cámara): <i>Crucifixion</i> (1780), <i>San Bernardino de Siena</i> (1781-83), <i>The Duchess of Osuna</i> (1785), <i>The Dukes of Osuna</i> (1787-88).", 
-          "First Court Painter (Primer Pintor de Cámara): <i>Yard of lunatics</i> (1794), <i>Witches Flight</i> (1797-98), Album A (c.1794-95), Album B (c.1795-97), <i>Caprichos</i> (1799), <i>Allegory of Truth, Time and History</i> (1800), <i>The Family of Charles IV</i> (1800), <i>Clothed Maja</i> (1802-05).", 
-          "Peninsular War: <i>Bandit stripping a woman</i> (1808-12), <i>The Burial of the Sardine</i> (1808-12), <i>Portrait of Antonia de Zárate</i> (1810-11), <i>Disasters of War</i> (1810-15), <i>The Second of May 1808</i> (1814), <i>The Third of May 1808</i> (1814), <i>Ferdinand VII</i> (1814-15).", 
+          "Tapestry cartoons (1775-1792): 63 works commissioned by the royal family to decorate the palaces. In 1868 Federico de Madrazo requests the cartoons to be moved to the Prado Museum as they were badly preserved in the basements of the Royal Palace.",
+          "Court Painter (Pintor de Cámara): <i>Crucifixion</i> (1780), <i>San Bernardino de Siena</i> (1781-83), <i>The Duchess of Osuna</i> (1785), <i>The Dukes of Osuna</i> (1787-88).",
+          "First Court Painter (Primer Pintor de Cámara): <i>Yard of lunatics</i> (1794), <i>Witches Flight</i> (1797-98), Album A (c.1794-95), Album B (c.1795-97), <i>Caprichos</i> (1799), <i>Allegory of Truth, Time and History</i> (1800), <i>The Family of Charles IV</i> (1800), <i>Clothed Maja</i> (1802-05).",
+          "Peninsular War: <i>Bandit stripping a woman</i> (1808-12), <i>The Burial of the Sardine</i> (1808-12), <i>Portrait of Antonia de Zárate</i> (1810-11), <i>Disasters of War</i> (1810-15), <i>The Second of May 1808</i> (1814), <i>The Third of May 1808</i> (1814), <i>Ferdinand VII</i> (1814-15).",
           "Post-War: Self-Portrait (1815), <i>Disparates</i> (c.1816-19), Black Paintings (c.1819-23).",
           "Bordeaux years: <i>Portrait of Mariano Goya</i> (1827)."
         ],
@@ -7248,7 +7248,7 @@
       "from": "Francisco Lameyer",
       "to": "José de Espronceda",
       "connection_level": "direct",
-      "relationship type": "conocidos",
+      "relationship type": "acquaintances",
       "they shared": "they both attended the tertulia <i>El Parnasillo</i>"
     },
     {
@@ -7267,13 +7267,6 @@
     },
     {
       "from": "Jenaro Pérez Villaamil",
-      "to": "José de Espronceda",
-      "connection_level": "direct",
-      "relationship type": "conocidos",
-      "they shared": "they both attended the tertulia <i>El Parnasillo</i>"
-    },
-    {
-      "from": "Valentín Carderera",
       "to": "José de Espronceda",
       "connection_level": "direct",
       "relationship type": "conocidos",
@@ -10730,15 +10723,7 @@
       "to": "Louis Philippe I",
       "connection_level": "seconary?",
       "relationship type": "caricaturist",
-      "portraits": "1831 Daumier's caricature of Louis-Philippe as the Rabelesian monster Gargantua sitting in a <i>chaise percée</i> while eating the civilians' contributions and defecating decorations and public jobs. In 1832 he was detained in the prison of Sainte-Pélagie (Paris) for it.",
-      "bibliography": "Fayos-Pérez 2024"
-    },
-    {
-      "from": "Honoré Daumier",
-      "to": "Louis Philippe I",
-      "connection_level": "seconary?",
-      "relationship type": "caricaturist",
-      "portraits": "in 1831 he was persecuted for his famous <i>Poires</i> lampooning Louis-Philippe. He was condemned for 'outrages à la personne du roi', having to pay 2,000 fr. and spending 6 months at the Sainte-Pélagie prison",
+      "portraits": "1831 Daumier's caricature of Louis-Philippe as the Rabelesian monster Gargantua sitting in a <i>chaise percée</i> while eating the civilians' contributions and defecating decorations and public jobs. In 1832 he was detained in the prison of Sainte-Pélagie (Paris) for it.; in 1831 he was persecuted for his famous <i>Poires</i> lampooning Louis-Philippe. He was condemned for 'outrages à la personne du roi', having to pay 2,000 fr. and spending 6 months at the Sainte-Pélagie prison",
       "bibliography": "Fayos-Pérez 2024"
     },
     {
