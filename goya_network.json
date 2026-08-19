@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-18",
+  "last_update": "2026-08-19",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -11036,11 +11036,12 @@
         "1837, 18 Oct: on 17 Oct Madrazo goes to Dauzats to the Louvre. They see paintings by Gros, Letiers, Guérin, Géricault (<i>Méduse</i>) (Díez 1994, p.34)."
       ],
       "mentions": [
-        "Entre muchos ejemplos:",
+        "Among many examples:",
+        "1833, 26 Aug, letter from José de Madrazo to Federico de Madrazo: 'Veo con placer que el Sr. Barón Taylor se muestra tan fino proporcionándote la entrada en los sitios reservados al público [...] También puedes visitar a su compañero de viaje Mr. Dauzats que es hombre de mucho mérito particularmente a la acuarela y me ha dicho Mr. Blanchard [Pharamond Blanchard] que puedes informarte del mismo para comprar los colores para la aguada y los lápices de plomo. [...] No dejes de hacer una visita de mi parte al expresado Mr. Dauzats pues me ha parecido excelente sujeto, y es muy amigo del Barón Taylor' (Díez 1998, no.7, pp.35-36).",
         "1837, 4 Nov, letter from Federico de Madrazo to José de Madrazo: 'La carta que venía dentro de la mía para Mr. Dauzats se la di ayer. Hará como cosa de 6 días hablé con Dauzats sobre el asunto de las estampas y me dijo que me acompañaría con mucho gusto uno de estos días a casa de Rittner que es bastante amigo suyo, por lo tanto creo que en mi carta siguiente podré decir a V. algo sobre el particular. No crea V. que me olvido de esto. Estoy segurísimo que Dauzats me ayudará en esto como en todas las cosas, pues además de ser sumamente formal es muy buen amigo y tanto más habiéndole yo hablado sobre este particular con bastante empeño' (Díez 1994, no.15, p.45).",
         "1837, 10 Nov, letter from Federico de Madrazo to José de Madrazo: 'Antes de ayer fuimos Dauzats y yo a casa de Rittner para hablarle sobre el negocio de las estampas [...] Nos dijo además que su compañero Mr. Goupil [Adolphe Goupil] se halla en este momento en Londres, que le espera de un día para otro y que en cuanto venga pasará con él a casa de Dauzats para ver la obra completa; prefiere ver la obra completa para formar un juicio más exacto (Dauzats dijo ayer delante de mí a Mr. Taylor que le mandara a su casa los tres tomos)' (Díez 1994, no.16, p.46)."
       ],
-      "bibliography": "Fayos-Pérez, upcoming publication; Fayos-Pérez 2024; Díez 1994; Guinard 1967-A; Guinard 1967-B.",
+      "bibliography": "Fayos-Pérez, upcoming publication; Fayos-Pérez 2024; Díez 1998; Díez 1994; Guinard 1967-A; Guinard 1967-B.",
       "strength": 1
     },
     {
@@ -11055,7 +11056,10 @@
         "1837, 13 Oct: as soon as he arrives in Paris, Madrazo goes see Santiago Masarnau, Adrien Dauzats and Baron Taylor (Díez 1994, p.32).",
         "1837, 27 Oct: Madrazo goes with Taylor to the Louvre to see how the hang the new Spanish paintings. 'El otro día, antes de ayer, estuve con Mr. Taylor a ver los cuadros españoles que ha traido. Ya están acabándose de colocar. Habrá cuatro o cinco salas grandes en el Louvre de escuela española' (Díez 1994, p.39) 'Parece que al Rey le gustan mucho los cuadros que ha traido Mr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver como se colocan' (ibid., p.40)."
       ],
-      "bibliography": "Díez 1994."
+      "mentions": [
+        "José de Madrazo expresses to Federico de Madrazo that he is pleased for the help that Baron Taylor is giving him in Paris during Federico's first stay there in 1833: 'Veo con placer que el Sr. Barón Taylor se muestra tan fino proporcionándote la entrada en los sitios reservados al público y le darás en mi nombre las gracias diciéndole al mismo tiempo que te haga el favor de enseñarte la obra que está publicando del viaje de Francia, pues parece llevar ya más de mil estampas y constará de otras tantas. También puedes visitar a su compañero de viaje Mr. Dauzats que es hombre de mucho mérito particularmente a la acuarela y me ha dicho Mr. Blanchard que puedes informarte del mismo para comprar los colores para la aguada y los lápices de plomo' (26 agosto 1833, Díez 1998, no.7, p.35)."
+      ],
+      "bibliography": "Díez 1994; Díez 1998."
     },
     {
       "_edge_id": "C. Madrazo-Fortuny Marsal",
@@ -11337,7 +11341,7 @@
       "to": "Jean-Auguste-Dominique Ingres",
       "connection_level": "direct",
       "relationship type": "acquaintances; friends; portraitist-sitter",
-      "know each other since": "at least 1833",
+      "know each other since": "1833",
       "interactions": "in Paris (1833); in Rome",
       "portraits": [
         {
@@ -11345,8 +11349,15 @@
           "caption": "Ingres by Madrazo, 1833, oil painting, [Hispanic Society A286](https://hispanicsociety.emuseum.com/objects/884/jean-auguste-dominique-ingres) (image below)"
         }
       ],
+      "mentions": [
+        "José de Madrazo constantly mentions Ingres in his letters to Federico de Madrazo while he is in Paris in 1833, encouraging his son to visit Ingres and to paint his portrait.", 
+        "José de Madrazo to Federico de Madrazo (28 July 1833): 'Estoy seguro de que los cuadros de Mr. Ingres te gustarán mucho más [que los de Antoine-Jean Gros] por la corrección y belleza de su dibujo y porque no tienen la manera de los del primero, si es que no ha abandonado las buenas máximas que tenía cuando yo le traté, pues hemos sido bastante amigos y él se acordará de ésto' (Díez 1998, no.1, p.19).",
+        "José de Madrazo to Federico de Madrazo (29 Aug 1833): 'Si antes de regresar a Madrid, que yo pienso será a mediados de octubre, te quedasen dos o tres días libres me alegraré saques al óleo el retrato del Sr. Barón Taylor [Baron Taylor], y el de mi condiscípulo Mr. Ingres (esto es solamente las cabezas para que no te venzas demasiado) pues los quisiera tener si posible fuese, el del primero por su mérito y por su gratitud y el del 2º por ser de un condiscípulo cuyo mérito he apreciado siempre' (Díez 1998, no.8, p.39).",
+        "José de Madrazo also tells Federico about sending Ingres lithographs after Velázquez and Murillo, after he expressed his admiration for them: 'Respecto a las estampas litográficas que Mr. Ingres desea tener de los cuadros de Velázquez y de Murillo puedes decirle que con mucho gusto se las mandaré en la primera ocasión que se presente del algún correo de Gabinete, porque de otro modo sería más difícil por las Aduanas, y le darás las más finas expresiones de mi parte' (5 Sept 1833, Díez 1998, no.10, p.43)."
+      ],
       "exhibitions": "2015-16 Prado, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i> (cur. Javier Barón)",
       "conferences/seminars": "Javier Barón, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i>, 2015, Prado, [YouTube](https://www.youtube.com/watch?v=JY0qD-vB3hw)",
+      "bibliography": "Díez 1998",
       "strength": 2
     },
     {
@@ -11375,7 +11386,12 @@
       "from": "Federico de Madrazo",
       "to": "Antoine-Jean Gros",
       "connection_level": "direct",
-      "relationship type": "acquaintances"
+      "relationship type": "acquaintances",
+      "mentions": [
+        "1833, 15 Aug, letter from José de Madrazo to Federico de Madrazo: 'Creo que muy bien lo que me dices del Cuadro de Mr. Gros con respecto a los trajes porque los Franceses desconocen tanto nuestros usos y costumbres que no parece sino que nos hallamos a dos mil leguas distantes de la Francia' (Díez 1998, no.4, pp.27-28).",
+        "1833, 5 Sept, letter from José de Madrazo to Federico de Madrazo: 'He leído con gusto la descripción que me haces de ese Panteón y de la Pintura de Mr. Gros que yo no tuve tiempo de ver cuando estuve en esa Capital y que por tu relación veo que es inferior, no obstante su nombradía, a otras obras que ha pintado' (Díez 1998, no.10, p.43)."
+      ],
+      "bibliography": "Díez 1998"
     },
     {
       "_edge_id": "Gros-Ochoa",
@@ -12913,9 +12929,14 @@
       "connection_level": "direct",
       "relationship type": "acquaintances; patronage",
       "know each other since": "at least 1833 (via Blanchard, in Madrid)",
-      "collaborations": "during his mission to acquire artworks for the Galerie espagnole in 1835-36, Taylor y assisted by Dauzats and Blanchard, and also by the Madrazo family and Carderera",
+      "interactions": "José de Madrazo tells Federico de Madrazo about what was probably his first interaction with Taylor: 'Días pasados estuvo en esta casa con Mr. Blanchard [Pharamond Blanchard] el Barón Taylor y en su compañía Mr. Dauzats [Adrien Dauzats] pintor y dibujante de Paises y Vistas. El barón se me manifestó muy fino y deseoso de complacerte en esta Capital para donde ha salido con Mr. Dauzats antes de ayer. Dicho Barón publica el gran Viaje de la Francia por Provincias […]' (1 Aug 1833, Díez 1998, no.2, p.23).",
+      "mentions": [
+        "1833, 12 Sept, in a letter to Federico de Madrazo, José says he will ask the queen (who must be María Cristina de Borbón-Dos Sicilias) about Baron Taylor's new work so she can receive it via subscription: 'El 20 acabo la cuarentena y podré ir a Palacio, entonces haré presente a la Reina Nª Sª el mérito de la famosa obra que está publicando el Sr. Barón Taylor porque me alegraría que S. S. M. M. se suscribiesen' (Díez 1998, no.12, p.47). He confirms the queen's subscription later that month: 'Por este correo encarga el Sr. Ministro de Estado a su Sr. Hermano la suscripción para la Reina Nª Sª. del Viaje Pintoresco [<i>Voyages pittoresques et romantiques dans l'ancienne France</i>] que publica el Sr. Barón Taylor [Baron Taylor], pues ayer mismo se lo dije al expresado Sr. Ministro de parte de S. M., y luego que yo vea éste me decidiré probablemente a suscribirme; es regular que el Rey NS. se suscriba a otro ejemplar para su biblioteca. Darás al sr. Barón muchas expresiones de mi parte igualmente a Mr. Dauzats […]' (Díez 1998, no.15, pp.53-54)."
+      ],
+      "collaborations": "during his mission to acquire artworks for the Galerie espagnole in 1835-36, Taylor was assisted by Dauzats and Blanchard, and also by the Madrazo family and Carderera",
       "correspondence": "2 Oct 1837: Carderera offers Taylor to sell 2 Morales paintings, via Madrazo (Lanzarote Guiral 2016, p.XXIII; Porée 1907, p.296)",
       "portraits": "1833 (Madrazo portrays Taylor)",
+      "bibliography": "Díez 1998",
       "strength": 2
     },
     {
@@ -12924,7 +12945,9 @@
       "to": "Adrien Dauzats",
       "connection_level": "direct",
       "relationship type": "colleagues",
-      "know each other since": "1833"
+      "know each other since": "1833",
+      "interactions": "José de Madrazo tells Federico de Madrazo about what probably was his first interaction with Baron Taylor and Dauzats: 'Días pasados estuvo en esta casa con Mr. Blanchard [Pharamond Blanchard] el Barón Taylor y en su compañía Mr. Dauzats [Adrien Dauzats] pintor y dibujante de Paises y Vistas. El barón se me manifestó muy fino y deseoso de complacerte en esta Capital para donde ha salido con Mr. Dauzats antes de ayer. Dicho Barón publica el gran Viaje de la Francia por Provincias [<i>Voyages pittoresques et romantiques dans l'ancienne France</i>, edited with Charles Nodier] […]' (1 Aug 1833, Díez 1998, no.2, p.23).",
+      "bibliography": "Díez 1998"
     },
     {
       "_edge_id": "José de Madrazo-Pedro de Madrazo",
@@ -12972,8 +12995,12 @@
       "to": "Jean-Auguste-Dominique Ingres",
       "connection_level": "direct",
       "relationship type": "colleagues; friends",
-      "correspondence": "yes. 1841, 5 March: José de Madrazo informs Ingres that, having learned from his son Federico of his admiration for the old Spanish masters, he is sending him a roll containing twelve lithographs of some of the Prado Museum's most important paintings (M. Romanticismo).",
-      "archives": "Madrid, Museo del Romanticismo, FD0027"
+      "correspondence": [
+        "1841, 5 March: José de Madrazo informs Ingres that, having learned from his son Federico of his admiration for the old Spanish masters, he is sending him a roll containing twelve lithographs of some of the Prado Museum's most important paintings (M. Romanticismo)."
+      ],
+      "mentions": "José de Madrazo constantly mentions Ingres in his letters to Federico de Madrazo while he is in Paris in 1833, encouraging his son to visit Ingres and to paint his portrait. He also talks about sending Ingres lithographs after Velázquez and Murillo, after he expressed his admiration for them: 'Respecto a las estampas litográficas que Mr. Ingres desea tener de los cuadros de Velázquez y de Murillo puedes decirle que con mucho gusto se las mandaré en la primera ocasión que se presente del algún correo de Gabinete, porque de otro modo sería más difícil por las Aduanas, y le darás las más finas expresiones de mi parte' (5 Sept 1833, Díez 1998, no.10, p.43).",
+      "archives": "Madrid, Museo del Romanticismo, FD0027",
+      "bibliography": "Díez 1998"
     },
     {
       "_edge_id": "David-José de Madrazo",
