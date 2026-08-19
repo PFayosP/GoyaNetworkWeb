@@ -348,7 +348,7 @@
         "Portrait: <i>Doña Amalia de Llano y Dotres, Condesa de Vilches</i> (1853); <i>Carolina Coronado</i> (c.1855); <i>Eduardo Rosales</i> (1867); <i>El pintor Perugino Sensi</i> (1873, Prado); <i>Portrait of Alfonso XII</i> (1874, Banco de España)."
       ],
       "editor of": "<i>El Artista</i>",
-      "portrayed by": "Leopoldo Sánchez del Bierzo, oil painting, 1857, Museo de BBAA de Asturias; M. Huerta, photograph (Prado HF0857); Raimundo de Madrazo, 1875, Museo de Bellas Artes de Bilbao; anonymous, photograph, 1890 (published), <i>La Ilustración Artística</i>; anonymous, photograph, c.1885-1894 (Prado HF0634)",
+      "portrayed by": "Leopoldo Sánchez del Bierzo, oil painting, 1857, Museo de BBAA de Asturias; self-portrait, 1858 (private collection, Madrid); M. Huerta, photograph (Prado HF0857); Raimundo de Madrazo, 1875, Museo de Bellas Artes de Bilbao; anonymous, photograph, 1890 (published), <i>La Ilustración Artística</i>; anonymous, photograph, c.1885-1894 (Prado HF0634)",
       "works as": "Director of RABASF in 1866; Pintor de Cámara of Isabel II; Director of the Prado Museum 1860-68 and 1881-1894; Senator",
       "member of": "RABASF: member at 16 years old",
       "masters": "Alberto Lista; Franz Xaver Winterhalter; Jean-Auguste-Dominique Ingres",
@@ -402,7 +402,7 @@
       "writes in": "<i>El Artista</i>, <i>Semanario Pintoresco español</i>, <i>El Museo Universal</i>, <i>La Gazette des Beaux-arts</i>",
       "studies in": "Universidad Sertoriana de Huesca; Real Academia de Bellas Artes de San Fernando (from 1816)",
       "masters": "Mariano Salvador Maella",
-      "portrayed by": "Federico de Madrazo, 1850, Museo de Huesca",
+      "portrayed by": "Federico de Madrazo, 1846 (private collection, Madrid) and 1850 (Museo de Huesca)",
       "decorations/awards": "Gran Cruz de Carlos III (1844)",
       "author of": "<i>Iconografía espan̂ola: Colección de retratos, estatuas, mausoleos y demás monumentos (...)</i>, in Spanish and French, 1855-1864",
       "mentions": "Viñaza 1887: pp.4, 5, 52, 69, 120, 128, 134, 139-142, 208, 213, 214, 239, 253, 259, 327, 400, 417, 428, 430, 432, 434, 435, 439, 447, 450, 456, 457",
@@ -491,6 +491,7 @@
       "member of": "Académie Française, Académie des beaux-arts (1847); Société des gens de lettres; Fondation Taylor",
       "portrayed by": [
         "Federico de Madrazo: 1833, oil painting, Musée National du Château de Versailles",
+        "Jules Lunteschütz, lithograph, c.1840, BnF.",
         "Nadar: 1877, photograph; 1872-75, [MoMA](https://www.moma.org/collection/works/44376) 35.1964; caricatures: (<i>Portrait charge du baron Taylor</i>), [Louvre](https://collections.louvre.fr/en/ark:/53355/cl020503287) RF 43361, Recto, and another one, charcoal heightened with gouache, 23.5 x 15 cm, [Artnet](https://www.artnet.com/artists/nadar/isidore-justin-s%C3%A9verin-baron-taylor-2vDIG4UNfoRw8E-JsSPruQ2)"
       ],
       "participates in": "l'Expédition d'Espagne (1823), also known as los Cien Mil Hijos de San Luis: campaign to restore the Bourbon dinasty in Spain",
@@ -11058,6 +11059,12 @@
       ],
       "mentions": [
         "José de Madrazo expresses to Federico de Madrazo that he is pleased for the help that Baron Taylor is giving him in Paris during Federico's first stay there in 1833: 'Veo con placer que el Sr. Barón Taylor se muestra tan fino proporcionándote la entrada en los sitios reservados al público y le darás en mi nombre las gracias diciéndole al mismo tiempo que te haga el favor de enseñarte la obra que está publicando del viaje de Francia, pues parece llevar ya más de mil estampas y constará de otras tantas. También puedes visitar a su compañero de viaje Mr. Dauzats que es hombre de mucho mérito particularmente a la acuarela y me ha dicho Mr. Blanchard que puedes informarte del mismo para comprar los colores para la aguada y los lápices de plomo' (26 agosto 1833, Díez 1998, no.7, p.35)."
+      ],
+      "portraits": [
+        {
+          "url": "https://www.goyanetwork.com/images/Madrazo_Taylor.jpg",
+          "caption": "Baron Taylor by Federico de Madrazo, 1833, oil painting, Château de Versailles (image below)"
+        }
       ],
       "bibliography": "Díez 1994; Díez 1998."
     },
