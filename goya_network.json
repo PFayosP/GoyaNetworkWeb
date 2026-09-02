@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-08-19",
+  "last_update": "2026-09-02",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -53,6 +53,7 @@
         "[Fundación Goya en Aragón](https://fundaciongoyaenaragon.es/)",
         "[Museo del Prado](https://www.museodelprado.es/coleccion/artista/goya-y-lucientes-francisco-de/39568a17-81b5-4d6f-84fa-12db60780812)",
         "[Real Academia de Historia](https://historia-hispanica.rah.es/biografias/20790-francisco-de-goya-y-lucientes)",
+        "'Solo la voluntad me sobra'. Dibujos de Goya, [<i>El País</i>](https://elpais.com/especiales/2019/cuadernos-y-dibujos-de-goya/), 2019.",
         "Goya graveur, [Histoire des arts](https://histoiredesarts.culture.gouv.fr/Toutes-les-ressources/Musees-d-Occitanie/Goya-graveur).",
         "Goya graveur, [Musées Occitanie](https://musees-occitanie.fr/articles-decouverte/goya-graveur/)."
       ],
@@ -90,7 +91,7 @@
       "married to": "Gumersinda Goicoechea (1805)",
       "profession": "'hacendado y labrador' (considered as such in a legal document from 1832)",
       "address": "C/ Desengaño, 1, Madrid (childhood); C/ Valverde, 15, Madrid (by 1828)",
-      "portrayed by": "Goya: 1805, miniature, oil on copper (Museo de Zaragoza 51358; 1805, drawing (Colección Casa Torres); 1805-06, full portrait, oil painting (private collection); 1824, drawing (private collection)",
+      "portrayed by": "Francisco de Goya: 1805, miniature, oil on copper (Museo de Zaragoza 51358; 1805, drawing (Colección Casa Torres); 1805-06, full portrait, oil painting (private collection); 1824, drawing (private collection)",
       "websites": "[Arte Procom](https://sites.google.com/site/arteprocomun/francisco-javier-goya-y-bayeu-noticias-para-su-biografia-y-de-la-quinta-del-sordo)",
       "image": "https://www.goyanetwork.com/images/Javier_Goya.jpg",
       "image source": "portrait by Goya, 1824, drawing"
@@ -1594,9 +1595,10 @@
       "sex": "male",
       "nationality": "French",
       "profession": "writer",
-      "writes about Goya": "first biography of Goya, <i>Goya</i>, 1858, París, Schulz et Thuillié. Digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)",
+      "writes about Goya": "first biography of Goya, <i>Goya</i>, 1858 (París: Schulz et Thuillié). Here he mentions 300 drawings by Goya from the collection of 'M. R. G. ***' (probably Román Garreta), as well as those from the collection of Valentín Carderera, those of 'Mme. W' (probably Leocadia Zorrilla y Galarza) 'certified' by Federico de Madrazo, and those of Juan Agustín Ceán Bermúdez in England (Matheron 1858, unpaginated; see Fayos Pérez 2024, p.68). Matheron also mentions works by Rosario Weiss Zorrilla, and the edition of the <i>Caprichos</i> directed by Agustín Esteve. Digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)",
       "image": "https://www.goyanetwork.com/images/Matheron_AI.jpg",
-      "image source": "AI generated (DeepAI) because there is no known portrait"
+      "image source": "AI generated (DeepAI) because there is no known portrait",
+      "bibliography": "Fayos Pérez 2024; Matheron 1858."
     },
     {
       "id": "Alejandro Aguado",
@@ -2983,12 +2985,15 @@
       "sex": "male",
       "nationality": "Spanish",
       "collector of Goya's works": [
-        "1854 he acquires 98 copperplates of the <i>Disasters of War</i> (80) and <i>Disparates</i> (18) from Mariano Goya in order to publish them, but only a few proofs are printed.",
-        "1866 he sells to the Prado 3 works attributed to Goya: <i>Self-portrait</i> 1815 (GW 1552), <i>Portrait of a woman</i> (Leocadia Zorrilla or Bayeu) (GW 686) and <i>Exorcism</i> (follower of Goya).",
-        "A group of drawings."
+        "1854: Román Garreta acquires 98 copperplates of the <i>Disasters of War</i> (80) and <i>Disparates</i> (18) from Mariano Goya in order to publish them, but only a few proofs are printed.",
+        "c.1855-1860: Federico de Madrazo and Román Garreta come to possess a portion of Goya's drawings, including Album/Notebook C. Around 1860, 13 of these drawings are separated from the set.",
+        "1866, 5 April (Royal Order): Román Garreta sells to the Museo de la Trinidad for 1,500 escudos a group of 186 drawings by Goya and 3 canvases attributed to the artist (<i>Self-portrait</i> 1815 [GW 1552]; <i>Portrait of a woman</i>, possibly Leocadia Zorrilla y Galarza or Josefa Bayeu [GW 686]; and <i>Exorcism</i>, follower of Goya). For the drawings, see Laurent Matheron 1858 (n.p.), Fayos Pérez 2024, pp.50, 68, 80, 88.",
+        "1872, 22 March (Royal Decree): collections of the Museo de la Trinidad, including Goya's drawings, are incorporated into the Museo del Prado after the merger. To these are added the 262 drawings of Mariano Carderera, heir of Valentín Carderera, in 1886."
       ],
       "image": "https://www.goyanetwork.com/images/Garreta_AI.jpg",
-      "image source": "AI generated (DeepAI) because there is no known portrait"
+      "image source": "AI generated (DeepAI) because there is no known portrait",
+      "bibliography": "Fayos Pérez 2024; Fauqué & Villanueva Etcheverría 1982.",
+      "websites": "[Fundación Goya en Aragón, Cuaderno C](https://fundaciongoyaenaragon.es/obra/por-no-trabajar/1561)"
     },
     {
       "id": "Luisa Garreta",
@@ -5906,8 +5911,12 @@
         "1839 reproductive print after Murillo's <i>Moisés haciendo brotar el agua de la roca</i> (gold medal at the Paris exhibition [Salon?])."
       ],
       "portrayed by": "Francisco de Goya, 1815 (Museo de Bellas Artes de Valencia); Ricardo Franch y Mira, print after Goya (Prado); Federico Navarrete y Fos, print after Goya (Prado)",
-      "bibliography": "J. Vega, <i>Museo del Prado. Catálogo de estampas</i>, 1992; Vicente Boix, <i>Memoria para escribir la biografía de Don Rafael Esteve, Primer Grabador de Cámara de S.M.</i>, 1848",
-      "websites": "[Prado](https://www.museodelprado.es/coleccion/artista/esteve-y-vilella-rafael/95a97b6f-54ea-4942-b227-7f487edf2875)",
+      "link to Goya's work": "in his biography of Goya of 1858, Laurent Matheron mentions the 2nd edition of the <i>Caprichos</i> as directed by 'Esteve': 'On connaît deux tirages des <i>Caprices</i> de Goya, qui se distinguent par la couleur de l'encre : celle de la première édition est plus rousse; la seconde édition a été faite sous la direction de M. Estève, excellent graveur, à qui l'on doit l'estampe de <i>Moïse frappant le rocher</i>, d'après Murillo' (Matheron 1858, non paginated, note 6; see Fayos Pérez 2024, p.68). This must be Rafael Esteve, author of the etching <i>Las aguas de Moisés</i>, whose plate was made between 1822 (when he moved to Seville to study the painting) and 1838 (when he went to Paris in search of a printer to make proofs of the already completed plate. It was awarded the gold medal at the Exposition des Beaux-Arts in Paris in 1839. The 2nd edition of the <i>Caprichos</i> was printed at the RABASF between 1847 and 1855, but Rafael Esteve died in 1847, so another engraver must have taken over until 1855.",
+      "bibliography": "Fayos Pérez 2024; J. Vega, Museo del Prado. Catálogo de estampas, 1992; Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2); Vicente Boix, <i>Memoria para escribir la biografía de Don Rafael Esteve, Primer Grabador de Cámara de S.M.</i>, 1848",
+      "websites": [
+        "[Prado](https://www.museodelprado.es/coleccion/artista/esteve-y-vilella-rafael/95a97b6f-54ea-4942-b227-7f487edf2875)",
+        "[Museo de BBAA de Valencia, inv.587](https://museobellasartesvalencia.gva.es/es/estampes/-/asset_publisher/KFeOnCE1wa8i/content/las-aguas-de-moises)"
+      ],
       "image": "https://www.goyanetwork.com/images/Esteve_Rafael.jpg",
       "image source": "Goya portrait 1815, Valencia",
       "added": "2025-11-04"
@@ -9373,7 +9382,9 @@
       "from": "Mariano Goya",
       "to": "Federico de Madrazo",
       "connection_level": "direct",
-      "relationship type": "acquaintances; business partners?"
+      "relationship type": "acquaintances; business partners?",
+      "link to Goya's work": "after Javier Goya's death, Mariano sells some of Goya's drawing albums, possibly with the help of the Madrazo family (<i>El País</i>, Prado anniversary profile, 2019)",
+      "websites": "'Solo la voluntad me sobra'. Dibujos de Goya, [<i>El País</i>](https://elpais.com/especiales/2019/cuadernos-y-dibujos-de-goya/), 2019."
     },
     {
       "_edge_id": "Carderera-Mariano Goya",
@@ -11716,7 +11727,65 @@
       "_edge_id": "Carderera-Matheron",
       "from": "Valentín Carderera",
       "to": "Laurent Matheron",
-      "connection_level": "direct"
+      "connection_level": "direct",
+      "know each other since": "at least 1858",
+      "mentions": "in his 1858 Goya biography, Matheron mentions Carderera's collection of Goya drawings (Matheron 1858, unpaginated; see Fayos Pérez 2024, p.68)",
+      "bibliography": "Fayos Pérez 2024; Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)"
+    },
+    {
+      "_edge_id": "F. Madrazo-Matheron",
+      "from": "Federico de Madrazo",
+      "to": "Laurent Matheron",
+      "connection_level": "secondary?",
+      "know each other since": "at least 1858",
+      "mentions": "in his 1858 Goya biography, Matheron mentions the collection of Goya drawings of 'Mme. W' (probably Leocadia Zorrilla y Galarza) 'certified' by Federico de Madrazo (Matheron 1858, unpaginated; see Fayos Pérez 2024, p.68)",
+      "bibliography": "Fayos Pérez 2024; Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)"
+    },
+    {
+      "_edge_id": "Leocadia-Matheron",
+      "from": "Leocadia Zorrilla y Galarza",
+      "to": "Laurent Matheron",
+      "connection_level": "secondary?",
+      "know each other since": "at least 1858",
+      "mentions": "in his 1858 Goya biography, Matheron mentions the collection of Goya drawings of 'Mme. W' (probably Leocadia Zorrilla y Galarza) 'certified' by Federico de Madrazo (Matheron 1858, unpaginated; see Fayos Pérez 2024, p.68)",
+      "bibliography": "Fayos Pérez 2024; Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)"
+    },
+    {
+      "_edge_id": "Matheron-Román Garreta",
+      "from": "Laurent Matheron",
+      "to": "Román Garreta",
+      "connection_level": "secondary?",
+      "know each other since": "at least 1858",
+      "mentions": "in his 1858 Goya biography, Matheron mentions the collection of 300 Goya drawings from the collection of 'M. R. G. ***' (probably Román Garreta) (Matheron 1858, unpaginated; see Fayos Pérez 2024, p.68)",
+      "bibliography": "Fayos Pérez 2024; Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)"
+    },
+    {
+      "_edge_id": "Ceán Bermúdez-Matheron",
+      "from": "Juan Agustín Ceán Bermúdez",
+      "to": "Laurent Matheron",
+      "connection_level": "secondary?",
+      "know each other since": "at least 1858",
+      "mentions": "in his 1858 Goya biography, Matheron mentions the collection of Goya drawings from the collection of Juan Agustín Ceán Bermúdez in England (Matheron 1858, unpaginated; see Fayos Pérez 2024, p.68)",
+      "bibliography": "Fayos Pérez 2024; Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)"
+    },
+    {
+      "_edge_id": "Matheron-Rosario Weiss",
+      "from": "Laurent Matheron",
+      "to": "Rosario Weiss Zorrilla",
+      "connection_level": "secondary?",
+      "know each other since": "at least 1858",
+      "mentions": "in his 1858 Goya biography, Matheron talks extensively about Rosario Weiss (unpaginated, note 9), including her connection to Goya in Bordeaux, her classes with Vernet [Carle Vernet] and with Pierre Lacour fils, who had met Leandro Fernández de Moratín at Goya's house, and who had worked in Madrid, where she was drawing teacher of Isabel II; he also mentions her works such as <i>Sylphide</i> (signed 'Rosario Weiss, 1840'), or the lithographic portrait of Goya copying the painting by Vicente López (Matheron 1858, unpaginated, note 9; see Fayos Pérez 2024, p.68)",
+      "bibliography": "Fayos Pérez 2024; Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)"
+    },
+    {
+      "_edge_id": "Matheron-R. Esteve",
+      "from": "Laurent Matheron",
+      "to": "Rafael Esteve",
+      "connection_level": "secondary?",
+      "know each other since": "at least 1858",
+      "mentions": "in his 1858 Goya biography, Matheron mentions the 2nd edition of the <i>Caprichos</i> as directed by 'Esteve': 'On connaît deux tirages des <i>Caprices</i> de Goya, qui se distinguent par la couleur de l'encre : celle de la première édition est plus rousse; la seconde édition a été faite sous la direction de M. Estève, excellent graveur, à qui l'on doit l'estampe de <i>Moïse frappant le rocher</i>, d'après Murillo' (Matheron 1858, unpaginated, note 6; see Fayos Pérez 2024, p.68). This must be Rafael Esteve, the Valencian engraver, author of the etching <i>Las aguas de Moisés</i>, whose plate was made between 1822 (when he moved to Seville to study the painting) and 1838 (when he went to Paris in search of a printer to make proofs of the already made plate. It was awarded the gold medal at the Exposition des Beaux-Arts in Paris in 1839. The 2nd edition of the <i>Caprichos</i> was printed at the RABASF between 1847 and 1855, but Rafael Esteve died in 1847, so another engraver must have taken over until 1855.",
+      "bibliography": "Fayos Pérez 2024; Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)",
+      "websites": "[Museo de BBAA de Valencia, inv.587](https://museobellasartesvalencia.gva.es/es/estampes/-/asset_publisher/KFeOnCE1wa8i/content/las-aguas-de-moises)"
     },
     {
       "_edge_id": "Carderera-Devéria",
