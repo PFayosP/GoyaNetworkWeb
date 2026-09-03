@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-02",
+  "last_update": "2026-09-03",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -1156,7 +1156,7 @@
       "in France": [
         "c.1823-1834: 11-year exile, according to his petition to Isabel II to become a Chamber Painter (Arias 1989, p.29). Studies under Théodore Gudin (in Paris? dates?)."
       ],
-      "partners/lovers": "Marguerite Fany Brosse (Bordeaux) (she was the granddaughter of Jaime Bonells, the XIII Duchess of Alba's medical doctor)",
+      "partners/lovers": "Marguerite Fany Brosse (Bordeaux) (she was the granddaughter of Jaime Bonells, María Teresa de Silva, XIII Duchess of Alba's medical doctor)",
       "exhibitions": [
         "1838 Liceo Artístico y Literario Español: <i>La marina en calma</i>.",
         "1848 annual exhibition of the RABASF: <i>La pesca milagrosa</i> and <i>La tempestad apaciguada</i>.",
@@ -5234,7 +5234,7 @@
       "founder of": "Caja de Ahorros de Burdeos (1819)",
       "works as": "Director of the Banco de Burdeos (after 1819); member of the Chamber of Commerce (1827); Parliament member (1830)",
       "political views": "liberal: elected member of Parliament with the 1830 Revolution",
-      "collector of Goya's works": "Bulls of Bordeaux",
+      "collector of Goya's works": "<i>Bulls of Bordeaux</i> (1825)",
       "portrayed by": "Goya, 1826, oil painting (Barnes Foundation)",
       "websites": "[Fundación Goya en Aragón](https://fundaciongoyaenaragon.es/obra/jacques-galos/190)",
       "image": "https://www.goyanetwork.com/images/Galos.jpg",
@@ -5901,7 +5901,7 @@
       "trips": "France; Italy",
       "in France": [
         "1817 academic trip.",
-        "1839 reproductive print after Murillo's <i>Moisés haciendo brotar el agua de la roca</i> (gold medal at the Paris exhibition [Salon?])."
+        "1838-1839 he goes to Paris in search of a printer to make proofs of the plate of Murillo's <i>Moisés haciendo brotar el agua de la roca</i> (gold medal at the Paris 1839 exhibition [Salon?])."
       ],
       "decorations/awards": "Cruz de Carlos III",
       "author of": [
@@ -6311,6 +6311,42 @@
       "image": "https://www.goyanetwork.com/images/Eugenio_Lucas.jpg",
       "image source": "self-portrait, 1860, Prado",
       "added": "2026-08-05"
+    },
+    {
+      "id": "Horace Vernet",
+      "label": "H. Vernet",
+      "full name": "Émile Jean Horace Vernet",
+      "pseudonyms": "Vernet; Émile Jean Horace",
+      "life dates": "1789-1863",
+      "sex": "male",
+      "nationality": "French",
+      "profession": "painter",
+      "born in": "Paris",
+      "dies in": "Paris",
+      "parents": "Carle Vernet",
+      "siblings": "Camille Vernet",
+      "married to": "Louise Pujol",
+      "children": "Henriette; Louise Vernet (married to Paul Delaroche)",
+      "studies in": "École des beaux-arts de Paris (until 1810);École nationale supérieure des beaux-arts",
+      "member of": "Institut de France (1826); Académie royale néerlandaise des arts et des sciences; Académie des beaux-arts; Académie du dessin de Florence",
+      "works as": "Director of the Académie de France en Roma (1829-34)",
+      "author of": "<i>L'Atelier de l'artiste</i> (c.1820); <i>La Barrière de Clichy. Défense de Paris, le 30 mars 1814</i> (1820); <i>La Chasse au canard</i> (1824, Wallace Collection); <i>Olympe Pélissier, étude pour Judith et Holopherne</i> (1830, Boston MoFA); <i>Allégorie de la Pologne vaincue ou Le Prométhée polonais</i> (c.1831, Bibliothèque polonaise de Paris); <i>Scène berbère</i> (1833, cabinet estampes Strasbourg); <i>Autorretrato</i> (1835, Ermitage); <i>Bataille d'Iéna, 14 octobre 1806</i> (1836, Versailles); <i>Marchand d'esclaves</i> (1836, Alte Nationalgalerie Berlin); <i>L'Artiste et ses compagnons voyageant dans le désert</i> (1843, Wallace); <i>Prise de la smalah d'Abd-el-Kader</i> (1844); <i>Barricade dans la rue de Soufflot, à Paris, le 25 juin 1848</i> (c.1848-49, Berlin, musée historique allemand); <i>L'Ange et la mort</i> (1851)",
+      "exhibitions": [
+        "Salon: since 1812 (with <i>La Prise d'un campement fortifié près de Glatz</i>); 1826, 1827.",
+        "Exposition Universelle 1855, Paris: occupies an entire room (like Jean-Auguste-Dominique Ingres) and receives the medal of honor."
+      ],
+      "political views": "loyal Bonapartist",
+      "decorations/awards": "Pensionnaire de la Villa Médicis (1782-1783); Ordre Pour le Mérite pour les sciences et arts; Ordre de Sainte-Anne de deuxième classe; Ordre de Saint-Vladimir de 3e classe; Officier (1825), Grand officier de la Légion d'honneur; Chevalier de l'ordre du Saint-Sépulcre; Ordre de saint Stanislas, 2e classe; Ordre de Saint-Stanislas, 1re classe",
+      "patronage": "Napoleon I; Louis Philippe I",
+      "masters": "Carle Vernet (his father, often visited by Théodore Gericault); François-André Vincent",
+      "students": "Jules Breton, Charles-Édouard Elmerich, Eugène Lami, Alfred François Mouillard, Alois Schönn, Estelle de Barescut (1814-1881), Léopold Armand Hugo (nephew of Victor Hugo)",
+      "trips": "Algeria (1833); North Africa (1833, 1837, 1839-40, 1845, 1853); Egypt (1839)",
+      "influenced by": "Carle Vernet",
+      "friends": "Théodore Gericault; Frédéric Goupil-Fesquet (photographer)",
+      "curiosities": "he took the first daguerreotype of the port of Marseille in 1839, and participated in the publication <i>Excursions daguerriennes</i> (1842)",
+      "image": "https://www.goyanetwork.com/images/Vernet_Horace.jpg",
+      "image source": "portrait by Adrien Tournachon (Nadar's brother), photograph, 1858, BnF",
+      "added": "2026-09-03"
     }
   ],
   "edges": [
@@ -6909,6 +6945,29 @@
       ],
       "bibliography": "Afinoguénova 2019, p.138; <i>Federico de Madrazo. Epistolario</i>, vol.1, 1994",
       "archives": "INHA"
+    },
+    {
+      "_edge_id": "Delaroche-H. Vernet",
+      "from": "Paul Delaroche",
+      "to": "Horace Vernet",
+      "connection_level": "direct",
+      "relationship type": "relatives: father-in-law, son-in-law; professional: colleagues"
+    },
+    {
+      "_edge_id": "H. Vernet-Louis-Philippe",
+      "from": "Horace Vernet",
+      "to": "Louis Philippe I",
+      "connection_level": "direct",
+      "relationship type": "patronage"
+    },
+    {
+      "_edge_id": "Baudelaire-H. Vernet",
+      "from": "Horace Vernet",
+      "to": "Charles Baudelaire",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; rivals",
+      "mentions": "Baudelaire harshly criticised Vernet's work in the 1845 and 1846 Salon: 'M. Horace Vernet est un militaire qui fait de la peinture. — Je hais cet art improvisé au roulement du tambour, ces toiles badigeonnées au galop, cette peinture fabriquée à coups de pistolet, comme je hais l'armée, la force armée, et tout ce qui traîne des armes bruyantes dans un lieu pacifique. Cette immense popularité, qui ne durera d'ailleurs pas plus longtemps que la guerre, et qui diminuera à mesure que les peuples se feront d'autres joies, — cette popularité, dis-je, cette vox populi, vox Dei, est pour moi une oppression' (Baudelaire 1868, p.159).",
+      "bibliography": "Baudelaire, <i>Curiosités esthétiques</i>, 'Salon de 1846', 1868"
     },
     {
       "_edge_id": "Daguerre-Delaroche",
@@ -8526,10 +8585,12 @@
       ],
       "websites": "[RABASF](https://www.academiacolecciones.com/pinturas/inventario.php?id=0885)",
       "mentions": [
+        "In his 1858 Goya biography, Laurent Matheron mentions Brugada on several occasions, as a painter of Queen Isabel II, to whom he thanks for the information about Goya offered for the biography ('Nous devons à l'exquise obligeance de M. de Brugada de précieux renseignements sur la vie de Goya. Nous lui offrons ici le témoignage de notre gratitude') (Matheron 1858, unpaginated, note 8; see Fayos Pérez 2024, p.39).",
+        "Laurent Matheron also mentions that Brugada coincided with Goya in Bordeaux along with other Spanish exiles: 'un tout jeune homme dont l'exil, les conseils du maître et une vocation évidente devaient bientôt faire un peintre. Il s'attacha srutout à ce jeune artiste, dont l'esprit vif et cultivé, l'humeur enjouée, charmaient ses heures de tristesse' [...] 'L'exil retenait encore les amis du vieux peintre à Bordeaux.-- Ce lui fut comme un ressouvenir de la patrie absente.--Il reprit ses habitudes paisibles et bourgeoises; --mais ses forces s0en allaient, ses promenades devenaient plus rares, ses pinceaux moins actifs; --son humeur s'assombrissait. Bientôt, il ne put plus sortir sans le secours de son juene compatriote, M. de Brugada. Il s'appuyait sur son bras; et, dans les lieux écartés, il s'essayait à marcher seul' (Matheron 1858, sin paginar).",
         "1828-IV-28 letter from Leocadia Zorrilla y Galarza to Leandro Fernández de Moratín: 'Molina y Brugada le vieron morir y yo estuve en el cuarto hasta dos minutos antes' (Canellas López 1981, no.181, p.512)",
         "1888 letter from Gustave Labat to the Academy of Bordeaux: 'la viuda de Brugada le ha afirmado que a Goya se le enterró envuelto en su capa --de la que se han encontrado trozos-- y con la gorra de visera de la que no ha aparecido ningún vestigio' (Canellas López 1981, no.193, p.521)."
       ],
-      "bibliography": "Junquera, 'Los Goya: de la Quinta a Burdeos y vuelta', <i>Archivo Español de Arte</i> 76 (304), 2003, pp.353-70; Arias 1989; J. Fauque y R. Villanueva Etcheverría, <i>Goya y Burdeos (1824-1828)</i>, 1982, pp.198-200; Canellas 1981; Canellas López 1981; X. de Salas, 'Sobre Antonio de Brugada y un posible retrato de Goya', <i>Goya</i>, 148-150, 1979, pp.216-220",
+      "bibliography": "Fayos Pérez 2024; Junquera, 'Los Goya: de la Quinta a Burdeos y vuelta', <i>Archivo Español de Arte</i> 76 (304), 2003, pp.353-70; Arias 1989; J. Fauque y R. Villanueva Etcheverría, <i>Goya y Burdeos (1824-1828)</i>, 1982, pp.198-200; Canellas 1981; Canellas López 1981; X. de Salas, 'Sobre Antonio de Brugada y un posible retrato de Goya', <i>Goya</i>, 148-150, 1979, pp.216-220; Matheron 1858, digitalizada en [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)",
       "strength": 1
     },
     {
@@ -11748,6 +11809,30 @@
       "connection_level": "secondary?",
       "know each other since": "at least 1858",
       "mentions": "in his 1858 Goya biography, Matheron mentions the collection of Goya drawings of 'Mme. W' (probably Leocadia Zorrilla y Galarza) 'certified' by Federico de Madrazo (Matheron 1858, unpaginated; see Fayos Pérez 2024, p.68)",
+      "bibliography": "Fayos Pérez 2024; Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)"
+    },
+    {
+      "_edge_id": "Galos-Matheron",
+      "from": "Laurent Matheron",
+      "to": "Jacques Galos",
+      "connection_level": "secondary?",
+      "know each other since": "at least 1858",
+      "mentions": [
+        "In his 1858 Goya biography, Matheron mentions the portrait of Goya by Galo as 'le plus remarquable de tous'; 'La tête est belle, largement peinte, d'une bonne expression et d'un fort joli ton. C'est d'après ce portrait qu'a été sculpté le buste placé sur le tombeau de M. J. Galos, au cimetière de Bordeaux'. He also mentions that the tombs of both men ended up next to each other: 'Ce tombeau est situé au fond et sur le bord de l'allée d'entrée de la Chartreuse de Bordeaux, en face du monument élevé à M. Jacques Galos, comme si la mort eût voulu placer auprès du peintre un des amis de ses derniers jours' (Matheron 1858, unpaginated)."
+      ],
+      "bibliography": "Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)"
+    },
+    {
+      "_edge_id": "Brugada-Matheron",
+      "from": "Laurent Matheron",
+      "to": "Antonio de Brugada",
+      "connection_level": "direct?",
+      "relationship type": "acquaintances",
+      "know each other since": "at least since 1858",
+      "mentions": [
+        "In his 1858 Goya biography, Matheron mentions Brugada on several occasions, as a painter of Queen Isabel II, to whom he thanks for the information about Goya offered for the biography ('Nous devons à l'exquise obligeance de M. de Brugada de précieux renseignements sur la vie de Goya. Nous lui offrons ici le témoignage de notre gratitude') (Matheron 1858, unpaginated, note 8; see Fayos Pérez 2024, p.39).",
+        "He also mentions that Brugada coincided with Francisco de Goya in Bordeaux together with other Spanish exiles: 'un tout jeune homme dont l'exil, les conseils du maître et une vocation évidente devaient bientôt faire un peintre. Il s'attacha srutout à ce jeune artiste, dont l'esprit vif et cultivé, l'humeur enjouée, charmaient ses heures de tristesse' [...] 'L'exil retenait encore les amis du vieux peintre à Bordeaux.-- Ce lui fut comme un ressouvenir de la patrie absente.--Il reprit ses habitudes paisibles et bourgeoises; --mais ses forces s0en allaient, ses promenades devenaient plus rares, ses pinceaux moins actifs; --son humeur s'assombrissait. Bientôt, il ne put plus sortir sans le secours de son juene compatriote, M. de Brugada. Il s'appuyait sur son bras; et, dans les lieux écartés, il s'essayait à marcher seul' (Matheron 1858, unpaginated)."
+      ],
       "bibliography": "Fayos Pérez 2024; Matheron 1858, digitised in [Prado Biblioteca](https://www.museodelprado.es/aprende/biblioteca/biblioteca-digital/fondo/goya/47f25eaf-29e1-dd74-6727-6227f053e2a2)"
     },
     {
