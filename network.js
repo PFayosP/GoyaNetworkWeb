@@ -1682,7 +1682,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             websites: []
           },
 
-          "COURT_PAINTERS": {
+          "SPANISH_COURT_PAINTERS": {
             members: [
               "Francisco de Goya",
               "Francisco Bayeu",
@@ -1698,8 +1698,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             radius: 160, // increased from 132 for wider circle
             padding: 92,
             startAngle: -Math.PI / 2,
-            title: "Court painters",
-            titleEs: "Pintores de Corte",
+            title: "Spanish court painters",
+            titleEs: "Pintores de la corte española",
             origin: "A heterogeneous group of painters who served the Spanish royal court across the late eighteenth and early nineteenth centuries. Despite differing stylistic orientations and artistic backgrounds, they were connected through their roles as court painters, resulting in professional proximity, occasional collaboration, and shifting degrees of personal and artistic affinity. Within this network, family ties and generational succession also played a role in shaping interactions, while stylistic contrasts—from late Baroque tradition to Neoclassicism and Romanticism—coexisted within the same institutional framework.",
             originEs: "Un grupo heterogéneo de pintores al servicio de la corte española a finales del siglo XVIII y comienzos del XIX. A pesar de sus diferentes estilos, orígenes y posiciones estéticas, estuvieron vinculados por su condición de pintores de cámara, lo que generó proximidad profesional, colaboración ocasional y distintos grados de afinidad personal y artística. Dentro de esta red, los lazos familiares y la sucesión generacional también influyeron en las relaciones, mientras coexistían orientaciones estilísticas contrastadas —desde la tradición tardobarroca hasta el neoclasicismo y el romanticismo— dentro del mismo marco institucional.",
             bibliography: [
@@ -1935,7 +1935,8 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Rosario Weiss Zorrilla",
               "Leocadia Zorrilla y Galarza",
               "Cyprien Gaulon",
-              "Jacques Galos"
+              "Jacques Galos",
+              "Carle Vernet"
             ],
             radius: 160,
             padding: 110,
@@ -1992,7 +1993,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
 
         clusterColorMap["GOYA_FAMILY"] = "#64b5f6";      // azul
-        clusterColorMap["COURT_PAINTERS"] = "#ffb74d";   // naranja
+        clusterColorMap["SPANISH_COURT_PAINTERS"] = "#ffb74d";   // naranja
 
         // Reverse map: nodeId -> [clusterId1, clusterId2, ...]
         const nodeClusterMap = {};
