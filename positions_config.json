@@ -208,8 +208,8 @@
     "y": 737
   },
   "Laurent Matheron": {
-    "x": 558,
-    "y": 153
+    "x": 543,
+    "y": 171
   },
   "Alejandro Aguado": {
     "x": 41,
@@ -328,8 +328,8 @@
     "y": -794
   },
   "Pierre Lacour": {
-    "x": -86,
-    "y": 47
+    "x": -107,
+    "y": 42
   },
   "George Sand": {
     "x": 161,
@@ -392,12 +392,12 @@
     "y": 574
   },
   "Leocadia Zorrilla y Galarza": {
-    "x": 16,
-    "y": 131
+    "x": -37,
+    "y": 233
   },
   "Rosario Weiss Zorrilla": {
-    "x": -59,
-    "y": 170
+    "x": -53,
+    "y": 175
   },
   "Josefa Bayeu": {
     "x": -352,
@@ -416,8 +416,8 @@
     "y": 74
   },
   "Pierre Lacour fils": {
-    "x": -20,
-    "y": 66
+    "x": -45,
+    "y": 59
   },
   "José de Salamanca y Mayol (I Marqués de Salamanca)": {
     "x": 99,
@@ -524,16 +524,16 @@
     "y": -869
   },
   "William Stirling-Maxwell": {
-    "x": 975,
-    "y": 497
+    "x": 906,
+    "y": 485
   },
   "Laureano Potenciano": {
-    "x": 836,
-    "y": 401
+    "x": -310,
+    "y": 689
   },
   "Richard Ford": {
-    "x": 1014,
-    "y": 418
+    "x": 986,
+    "y": 404
   },
   "Pascual de Gayangos y Arce": {
     "x": 716,
@@ -704,8 +704,8 @@
     "y": -123
   },
   "Jean-Auguste-Dominique Ingres": {
-    "x": 867,
-    "y": -42
+    "x": 931,
+    "y": -9
   },
   "Achille Ricourt": {
     "x": 760,
@@ -732,20 +732,20 @@
     "y": -34
   },
   "Antoine-Jean Gros": {
-    "x": 879,
-    "y": 67
+    "x": 881,
+    "y": 56
   },
   "Paul Delaroche": {
-    "x": 926,
-    "y": 6
+    "x": 860,
+    "y": -62
   },
   "Frédéric Chopin": {
     "x": 94,
     "y": -560
   },
   "Jacques-Louis David": {
-    "x": 819,
-    "y": 30
+    "x": 792,
+    "y": 41
   },
   "Alphonse Hirsch": {
     "x": 863,
@@ -830,5 +830,13 @@
   "Eugenio Lucas Velázquez": {
     "x": 429,
     "y": 274
+  },
+  "Horace Vernet": {
+    "x": 779,
+    "y": -44
+  },
+  "Carle Vernet": {
+    "x": 41,
+    "y": 67
   }
 }
