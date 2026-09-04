@@ -1136,7 +1136,23 @@
       "life dates": "1796-1842",
       "sex": "male",
       "nationality": "French",
+      "parents": "Ferdinand Guillemardet",
+      "friends": "Eugène Delacroix",
+      "siblings": "Louis Guillemardet",
       "image": "https://www.goyanetwork.com/images/Felix_Guillemardet.jpg"
+    },
+    {
+      "id": "Louis Guillemardet",
+      "label": "Louis Guillem.",
+      "life dates": "1790-1865",
+      "sex": "male",
+      "nationality": "French",
+      "parents": "Ferdinand Guillemardet",
+      "friends": "Eugène Delacroix",
+      "siblings": "Félix Guillemardet",
+      "collector of Goya's works": "Louis Guillemardet donó el retrato de su padre, Ferdinand Guillemardet, al Louvre en 1865 (junto con otras obras atribuidas a Goya)",
+      "image": "https://www.goyanetwork.com/images/Louis_Guillemardet_AI_Gemini.jpg",
+      "image source": "Generada por IA (Gemini) porque no se conoce ningún retrato"
     },
     {
       "id": "Juan Antonio Llorente",
@@ -13934,6 +13950,36 @@
       "to": "Félix Guillemardet",
       "connection_level": "direct",
       "relationship type": "familiares; padre-hijo",
+      "strength": 1
+    },
+    {
+      "_edge_id": "Guillemardet-Louis Guillem.",
+      "from": "Ferdinand Guillemardet",
+      "to": "Louis Guillemardet",
+      "connection_level": "direct",
+      "relationship type": "familiares; padre-hijo",
+      "strength": 1
+    },
+    {
+      "_edge_id": "Félix Guillem.-Louis Guillem.",
+      "from": "Félix Guillemardet",
+      "to": "Louis Guillemardet",
+      "connection_level": "direct",
+      "relationship type": "familiares; hermanos",
+      "strength": 1
+    },
+    {
+      "_edge_id": "Delacroix-Louis Guillem.",
+      "from": "Eugène Delacroix",
+      "to": "Louis Guillemardet",
+      "connection_level": "direct",
+      "relationship type": "amigos íntimos",
+      "correspondence": [
+        "1856, 24 enero, carta de Eugène Delacroix a Louis Guillemardet (sobre Laurent Matheron): 'Cher ami, une personne de ma connaissance habitant Bordeaux et très compétente en esta materia écrit une biografía de Goya et voudrait en même temps donner le catalogue de ses oeuvres. Il m'avait demandé par lettre ce que je savais à cet égard; je lui ai parlé du portrait de ton père...' (Tomlinson 2024, p.20; Lipschutz 1972).",
+        "1861, 22 mayo, carta de Eugène Delacroix a Louis Guillemardet (INHA, NUM 0550 (03))."
+      ],
+      "archives": "INHA",
+      "bibliography": "Tomlinson 2024; Lipschutz 1972",
       "strength": 1
     },
     {
