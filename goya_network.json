@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-03",
+  "last_update": "2026-09-04",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -763,7 +763,7 @@
       ],
       "address": "Palais-Royal (1830-31); Palais des Tuileries (1831-48); Claremont House (1848-50)",
       "works as": "King of the French 1830-1848",
-      "portrayed by": "Horace Vernet or Carle Vernet, oil painting, date unknown, Versailles MV 5217; Nicolas Jacques, 1827, ivory miniature, Louvre 27237; Honoré Daumier, 1831, caricature as Gargantua; Winterhalter, 1839, oil painting, Versailles; Winterhalter, 1841, oil painting, Louvre; Jean-Auguste-Dominique Ingres, c.1842, drawing for stained glass; Lerebours et Claudet, photograph, 1842; unknown, photograph, 1840s",
+      "portrayed by": "Horace Vernet, <i>Louis Philippe Ier, alors duc de Chartes, en uniforme de colonel de hussard</i> (c.1817, Versailles MV 5217); Nicolas Jacques, 1827, ivory miniature, Louvre 27237; Honoré Daumier, 1831, caricature as Gargantua; Winterhalter, 1839, oil painting, Versailles; Winterhalter, 1841, oil painting, Louvre; Jean-Auguste-Dominique Ingres, c.1842, drawing for stained glass; Lerebours et Claudet, photograph, 1842; unknown, photograph, 1840s",
       "bibliography": "Fayos-Pérez 2024; Tinterow 2003; Baticle & Marinas 1981",
       "websites": "'La Galería española de Luis Felipe de Orleans', by Javier Blanco Planelles, [Auladade](https://www.auladade.com/wp-content/uploads/2021/06/Clase-12.-La-galeria-espanola-de-Luis-Felipe-de-Orleans.pdf).",
       "image": "https://www.goyanetwork.com/images/Louis_Philippe.jpg",
@@ -1076,6 +1076,7 @@
       "nationality": "French",
       "parents": "Victoire Œben and Charles-François Delacroix",
       "profession": "painter, draughtsman, engraver",
+      "friends": "Frédéric Villot; Horace Vernet; Théophile Thoré; Honoré Daumier",
       "correspondence": "[online repository](http://www.correspondance-delacroix.fr/)",
       "author of": "<i>La Barque de Dante</i> (1822, Louvre); <i>Scenes from the Massacre at Chios</i> (1824, Louvre); <i>Nature morte aux Homards</i> (1826-27, Louvre); <i>The Death of Sardanapalus</i> (1827, Louvre); <i>Liberty guiding the People</i> (1830, Louvre); <i>Les Femmes d'Alger</i> (1834, Louvre); <i>Médée</i> (1838, Lille); <i>Hamlet et Horatio au cimetière</i> (1839); décor de la bibliothèque de l'Assemblée national (Palais Bourbon) (1838-1847); décor de la bilbiothèque du Sénat (palais Luxembourg) (1840-1846); décor de la Galerie d'Apollon (Louvre) (1850-1851); <i>Le Christ sur le lac de Génésareth</i> (1854); décor de Saint-Sulpice (1850-1861)",
       "studies in": "École nationale supérieure des beaux-arts; Lycée Louis-le-Grand; Lycée Pierre-Corneille de Rouen",
@@ -2693,7 +2694,7 @@
         "Burty VI (4-5 March 1891): Tauromaquia, Desastres, Proverbios, Agarrotado, drawing",
         "Burty VII (16-20 March 1891)"
       ],
-      "collection": "Charles Meryon, Goya, Théophile Chauvel, Michel Manzi, Félix Bracquemond, Eugène Delacroix, Decamps, Édouard Manet, Gericault, (school of) Rembrandt (drawing <i>Landscape with Two Mills</i>, Met 41.21.1), Millet, Jacquemart",
+      "collection": "Charles Meryon, Goya, Théophile Chauvel, Michel Manzi, Félix Bracquemond, Eugène Delacroix, Decamps, Édouard Manet, Théodore Géricault, (school of) Rembrandt (drawing <i>Landscape with Two Mills</i>, Met 41.21.1), Millet, Jacquemart",
       "collector of Goya's works": [
         "Burty acquired 11 sheets of drawings by Delacroix after Goya at the Delacroix sale in 1864: lot 640 'Études d'après Goya: onze feuilles de croquis' (Robaut 1885, p.476, no.1962). Those that have been located are catalogued in Fayos-Pérez 2024, Appendix III",
         "The Metropolitan Museum holds several prints by Goya that belonged to the Burty collection: from <i>Disparates</i>, 'Funereal Folly' (private printing c.1854) [31.79.2](https://www.metmuseum.org/art/collection/search/333961), 'Flying Folly' (private printing c.1854) [32.78.3](https://www.metmuseum.org/art/collection/search/333981), 'Dancing Giant' (private printing c.1854) [31.79.1](https://www.metmuseum.org/art/collection/search/397761), another 'Dancing Giant' (published 1854-63) [21.54.1](https://www.metmuseum.org/art/collection/search/333833), 'Folly of Fear' (published c.1848) [21.54.2](https://www.metmuseum.org/art/collection/search/333834); <i>A Maja standing against a dark background with figures</i>, 1859 [23.37.6](https://www.metmuseum.org/art/collection/search/333866), <i>The cloaked man</i> (1859) [23.37.5](https://www.metmuseum.org/art/collection/search/333865); <i>La Tauromaquia</i> (1816) [21.19.1-34](https://www.metmuseum.org/art/collection/search/333828); a former attribution to Goya, <i>Portrait of a Young Man</i> (c.1820) (British Museum; another impression at the Metropolitan, ex-Villot",
@@ -5418,7 +5419,7 @@
       "parents": "Jean-Baptiste Louis Daumier and Cécile-Catherine Philip",
       "married to": "Alexandrine Dassy",
       "address": "Île de Saint-Louis (1846-1863); Montmartre (from 1863)",
-      "friends": "Baudelaire, Corot, Courbet, Delacroix",
+      "friends": "Charles Baudelaire, Jean-Baptiste-Camille Corot, Gustave Courbet, Eugène Delacroix",
       "profession": "lithographer (litógrafo), printmaker, caricaturist, painter, sculptor, draughtsman",
       "exhibitions": "Paris Salon: first time in 1849 (<i>The Miller, his Son and the Ass</i>)",
       "author of": "4,000 lithographs, 1,000 woodcuts, 1,000 drawings, 500 paintings and 100 sculptures. From 1850 and then in c.1867 he portrayed the recurring theme of Don Quixote (Don Quijote).",
@@ -6325,12 +6326,13 @@
       "dies in": "Paris",
       "parents": "Carle Vernet",
       "siblings": "Camille Vernet",
-      "married to": "Louise Pujol",
+      "married to": "Louise Pujol; Amélie Fuller",
       "children": "Henriette; Louise Vernet (married to Paul Delaroche)",
       "studies in": "École des beaux-arts de Paris (until 1810);École nationale supérieure des beaux-arts",
       "member of": "Institut de France (1826); Académie royale néerlandaise des arts et des sciences; Académie des beaux-arts; Académie du dessin de Florence",
       "works as": "Director of the Académie de France en Roma (1829-34)",
-      "author of": "<i>L'Atelier de l'artiste</i> (c.1820); <i>La Barrière de Clichy. Défense de Paris, le 30 mars 1814</i> (1820); <i>La Chasse au canard</i> (1824, Wallace Collection); <i>Olympe Pélissier, étude pour Judith et Holopherne</i> (1830, Boston MoFA); <i>Allégorie de la Pologne vaincue ou Le Prométhée polonais</i> (c.1831, Bibliothèque polonaise de Paris); <i>Scène berbère</i> (1833, cabinet estampes Strasbourg); <i>Autorretrato</i> (1835, Ermitage); <i>Bataille d'Iéna, 14 octobre 1806</i> (1836, Versailles); <i>Marchand d'esclaves</i> (1836, Alte Nationalgalerie Berlin); <i>L'Artiste et ses compagnons voyageant dans le désert</i> (1843, Wallace); <i>Prise de la smalah d'Abd-el-Kader</i> (1844); <i>Barricade dans la rue de Soufflot, à Paris, le 25 juin 1848</i> (c.1848-49, Berlin, musée historique allemand); <i>L'Ange et la mort</i> (1851)",
+      "author of": "<i>The Battle of Somosierra</i> (1816, National Museum of Warsaw); <i>The Battle of Tolosa</i> (1817); <i>Louis Philippe Ier, alors duc de Chartes, en uniforme de colonel de hussard</i> (c.1817, Versailles MV 5217); <i>The Wounded Trumpeter</i> (1819, Wallace Collection); <i>Siege of Saragossa</i> (1819, Sotheby's, 7 May 2015, NY, lot 42); <i>Portrait of Pablo Morillo</i> (1820-22, Ermitage); <i>L'Atelier de l'artiste</i> (c.1820); <i>La Barrière de Clichy. Défense de Paris, le 30 mars 1814</i> (1820); <i>Laurent, marquis de Gouvion-Saint-Cyr, maréchal de France</i> (1821, Versailles); <i>Portrait of Justo Machado y Salcedo, Spanish Consul in Paris on Horseback</i> (1821, Christie's, 23 May 2024, NY, lot 48); <i>Plague in Barcelona in 1819</i> (1822, Ermitage); <i>Retrato de Ghéodore Géricault</i> (1823, Metropolitan); <i>La Chasse au canard</i> (1824, Wallace Collection); <i>Retrato de Pierre-Narcisse Guérin</i> (1829); <i>Retrato de Louise Vernet</i> (1830); <i>The Polish Prometheus</i> (1831); <i>Olympe Pélissier, étude pour Judith et Holopherne</i> (1830, Boston MoFA); <i>Judith et Holopherne</i> (1831); <i>Allégorie de la Pologne vaincue ou Le Prométhée polonais</i> (c.1831, Bibliothèque polonaise de Paris); <i>Scène berbère</i> (1833, cabinet estampes Strasbourg); <i>Autorretrato</i> (1835, Ermitage); <i>Bataille d'Iéna, 14 octobre 1806</i> (1836, Versailles); <i>The Lion Hunt</i> (1836); <i>Marchand d'esclaves</i> (1836, Alte Nationalgalerie Berlin); <i>La Ballade de Lénore</i> (1839, Nantes); <i>L'Artiste et ses compagnons voyageant dans le désert</i> (1843, Wallace); <i>Prise de la smalah d'Abd-el-Kader</i> (1844); <i>Barricade dans la rue de Soufflot, à Paris, le 25 juin 1848</i> (c.1848-49, Berlin, musée historique allemand); <i>L'Ange et la mort</i> (1851)",
+      "interest in Spanish art": "Artworks with Spain-related themes: <i>The Battle of Somosierra</i> (1816, National Museum of Warsaw); <i>The Battle of Tolosa</i> (1817); <i>Siege of Saragossa</i> (1819, Sotheby's, 7 May 2015, NY, lot 42); <i>Portrait of Pablo Morillo</i> (1820-22, Ermitage); <i>Portrait of Justo Machado y Salcedo, Spanish Consul in Paris on Horseback</i> (1821, Christie's, 23 May 2024, NY, lot 48); <i>Plague in Barcelona in 1819</i> (1822, Ermitage)",
       "exhibitions": [
         "Salon: since 1812 (with <i>La Prise d'un campement fortifié près de Glatz</i>); 1826, 1827.",
         "Exposition Universelle 1855, Paris: occupies an entire room (like Jean-Auguste-Dominique Ingres) and receives the medal of honor."
@@ -6338,14 +6340,16 @@
       "political views": "loyal Bonapartist",
       "decorations/awards": "Pensionnaire de la Villa Médicis (1782-1783); Ordre Pour le Mérite pour les sciences et arts; Ordre de Sainte-Anne de deuxième classe; Ordre de Saint-Vladimir de 3e classe; Officier (1825), Grand officier de la Légion d'honneur; Chevalier de l'ordre du Saint-Sépulcre; Ordre de saint Stanislas, 2e classe; Ordre de Saint-Stanislas, 1re classe",
       "patronage": "Napoleon I; Louis Philippe I",
-      "masters": "Carle Vernet (his father, often visited by Théodore Gericault); François-André Vincent",
+      "masters": "Carle Vernet (his father, often visited by Théodore Géricault); François-André Vincent",
       "students": "Jules Breton, Charles-Édouard Elmerich, Eugène Lami, Alfred François Mouillard, Alois Schönn, Estelle de Barescut (1814-1881), Léopold Armand Hugo (nephew of Victor Hugo)",
-      "trips": "Algeria (1833); North Africa (1833, 1837, 1839-40, 1845, 1853); Egypt (1839)",
+      "trips": "Italy; Algeria (1833); North Africa (1833, 1837, 1839-40, 1845, 1853); Russia (1836, 1842-43), Egypt (1839), Crimea (1854)",
       "influenced by": "Carle Vernet",
-      "friends": "Théodore Gericault; Frédéric Goupil-Fesquet (photographer)",
+      "friends": "Théodore Géricault; Frédéric Goupil-Fesquet (photographer; Horace Vernet's nephew), who published <i>Voyage d'Horace Vernet en Orient</i>, 2 vol., Brussels, Société Typographique Belge (1844)",
       "curiosities": "he took the first daguerreotype of the port of Marseille in 1839, and participated in the publication <i>Excursions daguerriennes</i> (1842)",
+      "portrayed by": "self-portrait in Rome (1832); self-portrait (1835, Ermitage); Adrien Tournachon (Nadar's brother), photograph (1858, BnF)",
+      "bibliography": "Michèle Hannoosh, 'Horace Vernet's Orient: photography and the Eastern Mediterranean in1839, part I: a daguerrean excursion', <i>Burlington Magazine</i>, April 2016, vol. 158, pp.264-271",
       "image": "https://www.goyanetwork.com/images/Vernet_Horace.jpg",
-      "image source": "portrait by Adrien Tournachon (Nadar's brother), photograph, 1858, BnF",
+      "image source": "portrait by Adrien Tournachon, photograph (1858, BnF)",
       "added": "2026-09-03"
     }
   ],
@@ -6946,6 +6950,49 @@
       "bibliography": "Afinoguénova 2019, p.138; <i>Federico de Madrazo. Epistolario</i>, vol.1, 1994",
       "archives": "INHA"
     },
+     {
+      "_edge_id": "H. Vernet-Taylor",
+      "from": "Baron Taylor",
+      "to": "Horace Vernet",
+      "connection_level": "direct",
+      "relationship type": "colleagues",
+      "collaborations": "1818; 1820-1878 <i>Voyages pittoresques et romantiques dans l'ancienne France</i>, work by Baron Taylor in collaboration with Charles Nodier and Alphonse de Cailleux. The illustrations were made by Adrien Dauzats, Eugène Delacroix, Géricault, Bonington, Horace Vernet, Jean-Auguste-Dominique Ingres and E. Isabey, among others."
+    },
+    {
+      "_edge_id": "Delacroix-H. Vernet",
+      "from": "Eugène Delacroix",
+      "to": "Horace Vernet",
+      "connection_level": "direct",
+      "relationship type": "friends",
+      "interactions": "Vernet, who was a close friend of Delacroix, frequented the same circles as Goya, and in Michel Florisoone's view, the two may have met in Paris during Goya's 1824 trip (Fayos Pérez 2024, pp. 38, 143; Florisoone 1964, p.25)",
+      "collaborations": "1818; 1820-1878 <i>Voyages pittoresques et romantiques dans l'ancienne France</i>, work by Baron Taylor in collaboration with Charles Nodier and Alphonse de Cailleux. The illustrations were made by Adrien Dauzats, Eugène Delacroix, Géricault, Bonington, Horace Vernet, Jean-Auguste-Dominique Ingres and E. Isabey, among others.",
+      "bibliography": "Fayos Pérez 2024; Florisoone 1964"
+    },
+    {
+      "_edge_id": "H. Vernet-Motte",
+      "from": "Charles Motte",
+      "to": "Horace Vernet",
+      "connection_level": "direct",
+      "relationship type": "colleagues",
+      "collaborations": "<i>Histoire lithographiée du Palais Royal</i> (1834), illustrated by Horace Vernet"
+    },
+    {
+      "_edge_id": "Fortuny Marsal-H. Vernet",
+      "from": "Mariano Fortuny y Marsal",
+      "to": "Horace Vernet",
+      "connection_level": "secondary?",
+      "relationship type": "Fortuny received the influence of Vernet's orientalist painting"
+    },
+    {
+      "_edge_id": "Goupil-H. Vernet",
+      "from": "Adolphe Goupil",
+      "to": "Horace Vernet",
+      "connection_level": "direct?",
+      "relationship type": "acquaintances?, business partners?",
+      "artworks bought/sold": "from 1846, Goupil is not only an editor but also buys original paintings by living artists such as Paul Delaroche, Jean-Léon Gérôme and Horace Vernet, reproducing them with prints, and then reselling the originals (Lanzarote Guiral 2016, p.LXXVI)",
+      "bibliography": "Lanzarote Guiral 2016",
+      "strength": 2
+    },
     {
       "_edge_id": "Delaroche-H. Vernet",
       "from": "Paul Delaroche",
@@ -6958,7 +7005,8 @@
       "from": "Horace Vernet",
       "to": "Louis Philippe I",
       "connection_level": "direct",
-      "relationship type": "patronage"
+      "relationship type": "patronage",
+      "portraits": "<i>Louis Philippe Ier, alors duc de Chartes, en uniforme de colonel de hussard</i> (c.1817, Versailles MV 5217); <i>Le roi Louis-Philippe entouré de ses cinq fils sortant par la grille d'honneur du château de Versailles après avoir passé une revue militaire dans les cours, 10 juin 1837</i> (1846, Versailles)"
     },
     {
       "_edge_id": "Baudelaire-H. Vernet",
@@ -6968,6 +7016,14 @@
       "relationship type": "acquaintances; rivals",
       "mentions": "Baudelaire harshly criticised Vernet's work in the 1845 and 1846 Salon: 'M. Horace Vernet est un militaire qui fait de la peinture. — Je hais cet art improvisé au roulement du tambour, ces toiles badigeonnées au galop, cette peinture fabriquée à coups de pistolet, comme je hais l'armée, la force armée, et tout ce qui traîne des armes bruyantes dans un lieu pacifique. Cette immense popularité, qui ne durera d'ailleurs pas plus longtemps que la guerre, et qui diminuera à mesure que les peuples se feront d'autres joies, — cette popularité, dis-je, cette vox populi, vox Dei, est pour moi une oppression' (Baudelaire 1868, p.159).",
       "bibliography": "Baudelaire, <i>Curiosités esthétiques</i>, 'Salon de 1846', 1868"
+    },
+    {
+      "_edge_id": "H. Vernet-Sainte-Beuve",
+      "from": "Charles-Augustin Sainte-Beuve",
+      "to": "Horace Vernet",
+      "connection_level": "direct?",
+      "mentions": "'Il était un homme d'esprit, caractère aimable, une nature droite, honnête, loyale, vive et sensée. C'est plaisir de s'approcher de lui : il inspire l'amitié en même temps qu'il justifie sa gloire' (Sainte-Beuve 1864, p.43)",
+      "bibliography": "Sainte-Beuve, <i>Nouveaux lundis</i>, Paris, Michel Lévy frères, 1864"
     },
     {
       "_edge_id": "Daguerre-Delaroche",
