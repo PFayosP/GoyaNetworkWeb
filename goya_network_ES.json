@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-04",
+  "last_update": "2026-09-07",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -1078,10 +1078,14 @@
       "nationality": "French",
       "profession": "diplomat (embajador francés 1798-1800), medical doctor, politician (representante de la Convención)",
       "in Spain": "1798-1800",
-      "portrayed by": "Goya, 1798, Louvre",
+      "portrayed by": "Francisco de Goya, 1798, óleo, Louvre [MI 697](https://collections.louvre.fr/ark:/53355/cl010059836)",
       "collector of Goya's works": "una serie de los <i>Caprichos</i>; su retrato (1798, Louvre MI697); Retrato de Mariana Waldstein, IX Marchioness of Santa Cruz (c. 1797-99, Louvre RF1976-79) [dudas sobre la autoría]",
       "commissions Goya with": "retrato, 1798, Louvre MI697 (GW.677). Esta fue la primera obra de Goya que entró en el Louvre (donada por sus herederos en 1865)",
-      "websites": "Fundación Goya en Aragón [https://fundaciongoyaenaragon.es/obra/ferdinand-guillemardet/353]",
+      "websites": [
+        "[Fundación Goya en Aragón](https://fundaciongoyaenaragon.es/obra/ferdinand-guillemardet/353)",
+        "[Retrato del Louvre](https://collections.louvre.fr/ark:/53355/cl010059836)"
+      ],
+      "bibliography": "Chastel-Rousseau, 'Peintures espagnoles, de Greco à Goya. Rénovation des salles, restauration des oeuvres', <i>Grande Galerie. Le Journal du Louvre</i>, no.73, 2025, p.81; Chastel-Rousseau, Gerard Powell & Perez, 'Goya au Louvre, la formation de la collection des peintures', <i>Technè</i>, no.53 (<i>Goya peintre</i>, 2022, pp.46-57); <i>Goya: The Portraits</i>, exh. cat., 2015, pp.108-09, 246-47, p.108, no.30; Marcel Dorigny (ed.), <i>De Goya à Delacroix, Les relations artistiques de la famille Guillemardet</i>, exh. cat., 2014, pp.74-77, no.18; <i>Goya. Order and Disorder</i>, exh. cat., 2014, pp.180, 194, 195, no.119.",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q3068498"
       },
@@ -1096,8 +1100,9 @@
       "sex": "male",
       "nationality": "French",
       "parents": "Victoire Œben y Charles-François Delacroix",
+      "siblings": "Henriette (casada con Raymond de Verninac)",
       "profession": "painter, draughtsman, engraver",
-      "friends": "Frédéric Villot; Horace Vernet; Théophile Thoré; Honoré Daumier",
+      "friends": "Frédéric Villot; Félix Guillemardet; Louis Guillemardet; Jean-Baptiste Pierret; Achille Piron; Charles Soulier; Théodore Géricault (desde 1815); Horace Vernet; Théophile Thoré; Honoré Daumier",
       "correspondence": "[repositorio en línea](http://www.correspondance-delacroix.fr/)",
       "author of": "<i>La Barque de Dante</i> (1822, Louvre); 'Escenas de la masacre de Quíos' (1824, Louvre); <i>Nature morte aux Homards</i> (1826-27, Louvre); <i>La muerte de Sardanápalo</i> (1827, Louvre); <i>La libertad guiando al pueblo</i> (1830, Louvre); <i>Las mujeres de Argel</i> (1834, Louvre); <i>Medea</i> (1838, Lille); Hamlet y Horacio en el cementerio (1839); decoración de la biblioteca de la Asamblea Nacional (Palacio Borbón) (1838-1847); decoración de la biblioteca del Senado (Palacio Luxemburgo) (1840-1846); decoración de la Galería de Apolo (Louvre) (1850-1851); <i>Le Christ sur le lac de Génésareth</i> (1854); decoración de Saint-Sulpice (1850-1861)",
       "studies in": "École nationale supérieure des beaux-arts; Lycée Louis-le-Grand; Lycée Pierre-Corneille de Rouen",
@@ -1106,22 +1111,24 @@
         "La Société Nationales de Beaux-Arts es fundada por Théophile Gautier y Louis Martinet en 1862. El comité incluye a Eugène Delacroix, Carrier-Belleuse y Puvis de Chavannes. Entre los expositores , se encontraban Léon Bonnat, Jean-Baptiste Carpeaux, Charles-François Daubigny, Gustave Doré y Édouard Manet. Tras la muerte de Delacroix, la SNBA organizó una exposición retrospectiva de su obra (1864)"
       ],
       "journal": "de 1822 a 1824, y luego de 1847 a 1863",
-      "in Spain": "en 1832: 'Tout Goya palpitait autour de moi'.",
+      "in Spain": "en 1832 (Cádiz, Sevilla): 'Tout Goya palpitait autour de moi'.",
+      "trips": "Inglaterra (1825); España, Marruecos y Argelia (1832)",
       "knows Goya's works": "hacia 1819, a través de Ferdinand Guillemardet (Lipschutz 1972, p.10)",
-      "masters": "Pierre-Narcisse Guérin",
+      "masters": "Pierre-Narcisse Guérin (desde 1815), junto a sus condiscípulos Paul Huet, Léon Cogniet, Ary y Henry Scheffer",
       "students": "Pierre Andrieu, Gustave de Lassalle-Borde, Louis de Planet, Maurice Sand. En 1841 abre un taller con alumnos para realizar diferentes encargos",
       "influenced by": "Géricault, Antoine-Jean Gros, Pierre Paul Rubens, Francisco de Goya",
-      "decorations/awards": "Comendador de la Legión de Honor (1855)",
+      "decorations/awards": "Caballero de la Légion d'honneur (1831); Comendador de la Legión de Honor (1855)",
       "portrayed by": "Eugène Delacroix/Géricault, c.1816, Rouen (pintura al óleo); Nadar, 1858 (fotografía)",
       "curiosities": "se interesó por la fotografía desde 1851 y encargó al fotógrafo Eugène Durieu una serie de fotografías de modelos desnudos (masculinos y femeninos)",
       "sales": "1864, 22-29 de febrero (L.838a)",
+      "writes in": "<i>La Revue de Paris</i> (fundada por su amigo Louis-Désiré Véron): 1829, 1830",
       "exhibitions": [
         "1930 París, Louvre: <i>Exposición Eugène Delacroix: pinturas, acuarelas, pasteles, dibujos, grabados, documentos</i>. Incluía algunos dibujos basados en los <i>Caprichos</i> de Goya (no.746-750, 786) (véase Fayos Pérez 2024, Apéndice III: D3, D5, D7-10). [Bibliotecas patrimoniales de París](https://bibliotheques-specialisees.paris.fr/ark:/73873/pf0000047979?posInSet=14&queryId=6b943859-d29e-4da6-ae1e-858ebfab4611)",
         "1963 Burdeos: <i>Delacroix: ses maîtres, ses amis, ses élèves</i> (Gilberte Martin-Méry)",
         "Últimos años: 2018 París (Louvre), Allard & Fabre"
       ],
-      "bibliography": "Fayos Pérez 2024; Sébastien Allard et al., catálogo de la exposición de 2018, Louvre; Maurice Sérullaz, 1989, <i>Delacroix</i>",
-      "websites": "[Museo Nacional Eugène Delacroix](https://www.musee-delacroix.fr/fr/)",
+      "bibliography": "Fayos Pérez 2024; Fayos Pérez 2019; Sébastien Allard et al., catálogo de la exposición de 2018, Louvre; Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf); Maurice Sérullaz, 1989, <i>Delacroix</i>; Achille Piron, <i>Eugène Delacroix raconté par lui-même</i>, 1865",
+      "websites": "[Museo Nacional Eugène Delacroix](https://www.musee-delacroix.fr/fr/); [Louvre](https://arts-graphiques.louvre.fr/detail/artistes/1/764-DELACROIX-Eugene)",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q33477",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500115509",
@@ -10491,6 +10498,26 @@
       "portraits": "Raimundo retrató a Zamacois en 1863 (pintura al óleo, Prado)"
     },
     {
+      "_edge_id": "Delacroix-Mérimée",
+      "from": "Prosper Mérimée",
+      "to": "Eugène Delacroix",
+      "connection_level": "direct",
+      "relationship type": "conocidos",
+      "know each other since": "c.1822",
+      "they shared": "Delacroix conoció a Mérimée en el salón del Baron Gérard (François Gérard), así como a Thiers y a Stendhal",
+      "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf)."
+    },
+    {
+      "_edge_id": "Delacroix-Stendhal",
+      "from": "Stendhal",
+      "to": "Eugène Delacroix",
+      "connection_level": "direct",
+      "relationship type": "conocidos",
+      "know each other since": "c.1822",
+      "they shared": "Delacroix conoció a Stendhal en el salón del Baron Gérard (François Gérard), así como a Thiers y a Mérimée",
+      "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf)."
+    },
+    {
       "_edge_id": "Delacroix-Meissonier",
       "from": "Ernest Meissonier",
       "to": "Eugène Delacroix",
@@ -13979,6 +14006,7 @@
       "to": "Louis Guillemardet",
       "connection_level": "direct",
       "relationship type": "amigos íntimos",
+      "know each other since": "c.1806",
       "correspondence": [
         "1856, 24 enero, carta de Eugène Delacroix a Louis Guillemardet (sobre Laurent Matheron): 'Cher ami, une personne de ma connaissance habitant Bordeaux et très compétente en esta materia écrit une biografía de Goya et voudrait en même temps donner le catalogue de ses oeuvres. Il m'avait demandé par lettre ce que je savais à cet égard; je lui ai parlé du portrait de ton père...' (Tomlinson 2024, p.20; Lipschutz 1972).",
         "1861, 22 mayo, carta de Eugène Delacroix a Louis Guillemardet (INHA, NUM 0550 (03))."
@@ -13993,6 +14021,15 @@
       "to": "Félix Guillemardet",
       "connection_level": "direct",
       "relationship type": "amigos íntimos",
+      "know each other since": "c.1806",
+      "they shared": "asistieron al mismo colegio, the Lycée Impérial (ahora Lycée Louis-le-Grand) en París, junto a Louis Guillemardet, Jean-Baptiste Pierret y Achille Piron.",
+      "correspondence": [
+        "1820, 30 octubre, Delacroix a Félix Guillemardet escribe una larga carta  evocando su desocupación artística y su ardiente deseo de reunirse con su círculo de amigos; [Le manuscrit français](https://www.lemanuscritfrancais.com/en/manuscript/delacroix-eugene-1798-1863-7/)."
+      ],
+      "mentions": [
+        "1856, 18 enero, Delacroix escribe en su diario que Louis Guillemardet le ha dado unas cartas antiguas que escribió a Félix Guillemardet, donde 'se nota que la mente toma año en desarrollarse': 'In the morning I had been at the house of my friend Guillemardet [Louis Guillemardet]… He gives me a packet of my letters written in the past to Felix [Félix Guillemardet], and it is easy to see how much the mind needs years to develop under true conditions. He tells me that he already sees the same man I am today…'."
+      ],
+      "websites": "[Le Manuscrit français, 18 janvier 1856](https://www.lemanuscritfrancais.com/en/manuscript/delacroix-eugene-1798-1863-7/)",
       "strength": 1
     },
     {
@@ -14037,7 +14074,7 @@
         "En 1855, Charles Baudelaire menciona en un artículo en <i>Le Pays</i> sobre la Exposición Universal el juicio de Hugo sobre las mujeres representadas por Delacroix (Baudelaire-Pichois 1976, p.593). Para Hugo, Delacroix 'a toutes [les qualités] moins une ; il lui manque ce qu'ont toujours cherché et trouvé les artistes suprêmes, peintres ou poètes - la beauté'. También se queja de la falta de mujeres verdaderamente bellas, excepto los ángeles de <i>Christ au Jardin des Oliviers</i> y una de las mujeres de <i>Scènes des massacres de Scio</i>. Según Hugo, los personajes femeninos de Delacroix se caracterizan por una 'laideur exquise', como en <i>Femmes d'Alger</i> (Escholier 1931, p.321)."
       ],
       "correspondence": "desde 1828 (Burty 1880, t.I, p.130, 134)",
-      "bibliography": "Hovasse 2001; Baudelaire-Pichois 1976; Thompson 1970; Gandon 1966, p.173-75; Escholier, <i>Victor Hugo raconté par ceux qui l'ont vu</i>, 1931; Burty 1880, t.I; 'Poésies, par M. Victor Hugo', <i>Le Globe</i>, 4 de noviembre de 1826, p.186",
+      "bibliography": "Hovasse 2001; Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf); Baudelaire-Pichois 1976; Thompson 1970; Gandon 1966, p.173-75; Escholier, <i>Victor Hugo raconté par ceux qui l'ont vu</i>, 1931; Burty 1880, t.I; 'Poésies, par M. Victor Hugo', <i>Le Globe</i>, 4 de noviembre de 1826, p.186",
       "strength": 2
     },
     {
@@ -14409,6 +14446,7 @@
       "to": "Alexandre Dumas père",
       "connection_level": "direct",
       "relationship type": "amigos; corresponsales",
+      "know each other since": "la década de 1820",
       "correspondence": "desde 1840 (Burty 1880, t.I, p.238, 240)",
       "mentions": "Para Dumas, Delacroix 'voit plutôt laid que beau, mais sa laideur est toujours poétisée par un profond sentiment' (Delacroix, Journal, 1822-1863, 1980, p.385); Dumas ve en él a 'un pintor en toda la fuerza del término [...] lleno de defectos imposibles de defender, lleno de cualidades imposibles de discutir' (...) 'Delacroix es un hecho de guerra y un caso de guerra' (...) 'Como Hugo en literatura, [él] solo debía tener fanáticos ciegos o detractores acérrimos' (ibid.)."
     },
@@ -14447,9 +14485,13 @@
       "_edge_id": "Delacroix-Gros",
       "from": "Eugène Delacroix",
       "to": "Antoine-Jean Gros",
-      "connection_level": "direct? and secondary",
-      "know each other since": "al menos desde 1824",
-      "mentions": "Gros sobre <i>La masacre de Quíos</i> (1824): 'una masacre del arte'."
+      "connection_level": "direct",
+      "know each other since": "al menos desde 1822",
+      "mentions": [
+        "Con la exposición de <i>La Barque de Dante et Virgile</i> en el Salón de 1822, Gros defendió a la Delacroix, a pesar de que la crítica fue desfavorable.",
+        "Gros sobre <i>La masacre de Quíos</i> (1824): 'una masacre del arte'."
+      ],
+      "websites": "[Louvre, perfil de Delacroix](https://arts-graphiques.louvre.fr/detail/artistes/1/764-DELACROIX-Eugene)"
     },
     {
       "_edge_id": "Ceán Bermúdez-S. Martínez",
@@ -14541,14 +14583,18 @@
         "Se hicieron buenos amigos durante el Salón de 1824 (Thompson 1970, p.41).",
         "Según Thompson (1970, p.41), la 'posición de Charles Nodier como editor literario de los <i>Voyages pittoresques...</i> fue sin duda crucial para estos primeros contactos personales serios entre Hugo y los pintores progresistas, ya que Achille Devéria, Alaux y Gué, ninguno de los cuales estaba entre los principales pintores del Salón, habían contribuido a los dos volúmenes de los <i>Voyages</i>, que aparecieron en 1825'."
       ],
-      "bibliography": "Thompson 1970"
+      "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf); Thompson 1970."
     },
     {
       "_edge_id": "Delacroix-Devéria",
       "from": "Achille Devéria",
       "to": "Eugène Delacroix",
-      "collaborations": "Devéria realizó la portada de la edición ilustrada de Fausto, de Goethe, basada en la obra de Delacroix (Motte, 1828)",
-      "connection_level": ""
+      "connection_level": "direct",
+      "relationship type": "conocidos; compañeros de trabajo",
+      "know each other since": "la década de 1820",
+      "they shared": "'Es en el entorno de Achille Devéria, yerno del impresor Charles Motte, y de Louis Boulanger, que Delacroix llevó a cabo su iniciación en las diferentes técnicas de grabado y litografía (<i>Faust en su gabinete</i>) y se acercó a los temas preferidos de los románticos: retratos, poesía y teatro, novelas históricas, el Oriente' (Arlette Sérullaz, 2007-08, dossier de exposición).",
+      "collaborations": "1828 Devéria realizó la portada del <i>Fausto</i> de Goethe ilustrada por Delacroix (editado por Charles Motte)",
+      "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf)"
     },
     {
       "_edge_id": "Devéria-Mérimée",
@@ -14651,11 +14697,13 @@
       "from": "Eugène Delacroix",
       "to": "Charles Motte",
       "connection_level": "direct",
-      "relationship type": "compañeros de trabajo",
+      "relationship type": "colegas",
+      "they shared": "'Es en el entorno de Achille Devéria, yerno del impresor Charles Motte, y de Louis Boulanger, que Delacroix llevó a cabo su iniciación en las diferentes técnicas de grabado y litografía (<i>Faust en su gabinete</i>) y se acercó a los temas preferidos de los románticos: retratos, poesía y teatro, novelas históricas, el Oriente' (Arlette Sérullaz, 2007-08, dossier de exposición).",
       "collaborations": [
         "Motte edita los grabados satíricos de Delacroix en <i>Le Miroir</i> a principios de la década de 1820: 'Le Déménagement de la Censure' (1822), 'Les écrevisses à Longchamps' (1822), etc.",
-        "Motte edita <i>Fausto</i> de Goethe (1827-28), ilustrado por Delacroix. La obra de Delacroix 'Le vol de Méphistophélès' se inspira en los <i>Caprichos</i> 66 de Goya, 'Allá va eso'."
+        "Motte edita <i>Fausto</i> de Goethe (1827-28), ilustrado por Delacroix y con un frontispicio de Achille Devéria. La obra de Delacroix 'Le vol de Méphistophélès' se inspira en los <i>Caprichos</i> 66 de Goya, 'Allá va eso'."
       ],
+      "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf).",
       "strength": 2
     },
     {
@@ -14663,7 +14711,7 @@
       "from": "Louis Boulanger",
       "to": "Antoine Fontaney",
       "connection_level": "direct",
-      "relationship type": "compañeros de trabajo"
+      "relationship type": "colegas"
     },
     {
       "_edge_id": "Boulanger-Devéria",
@@ -14671,7 +14719,20 @@
       "to": "Louis Boulanger",
       "connection_level": "direct",
       "relationship type": "conocidos; colegas",
-      "portraits": "Boulanger retrató a Devéria en 1837 (pintura al óleo, Louvre)"
+      "know each other since": "la década de 1820",
+      "they shared": "'Es en el entorno de Achille Devéria, yerno del impresor Charles Motte, y de Louis Boulanger, que Delacroix llevó a cabo su iniciación en las diferentes técnicas de grabado y litografía (<i>Faust en su gabinete</i>) y se acercó a los temas preferidos de los románticos: retratos, poesía y teatro, novelas históricas, el Oriente' (Arlette Sérullaz, 2007-08, dossier de exposición).",
+      "portraits": "Boulanger retrató a Devéria en 1837 (pintura al óleo, Louvre)",
+      "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf)."
+    },
+    {
+      "_edge_id": "Boulanger-Delacroix",
+      "from": "Louis Boulanger",
+      "to": "Eugène Delacroix",
+      "connection_level": "direct",
+      "relationship type": "conocidos; colegas",
+      "know each other since": "la década de 1820",
+      "they shared": "'Es en el entorno de Achille Devéria, yerno del impresor Charles Motte, y de Louis Boulanger, que Delacroix llevó a cabo su iniciación en las diferentes técnicas de grabado y litografía (<i>Faust en su gabinete</i>) y se acercó a los temas preferidos de los románticos: retratos, poesía y teatro, novelas históricas, el Oriente' (Arlette Sérullaz, 2007-08, dossier de exposición).",
+      "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf)."
     },
     {
       "_edge_id": "Boulanger-Hugo",
