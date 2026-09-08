@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-07",
+  "last_update": "2026-09-08",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -1085,7 +1085,7 @@
         "[Fundación Goya en Aragón](https://fundaciongoyaenaragon.es/obra/ferdinand-guillemardet/353)",
         "[Retrato del Louvre](https://collections.louvre.fr/ark:/53355/cl010059836)"
       ],
-      "bibliography": "Chastel-Rousseau, 'Peintures espagnoles, de Greco à Goya. Rénovation des salles, restauration des oeuvres', <i>Grande Galerie. Le Journal du Louvre</i>, no.73, 2025, p.81; Chastel-Rousseau, Gerard Powell & Perez, 'Goya au Louvre, la formation de la collection des peintures', <i>Technè</i>, no.53 (<i>Goya peintre</i>, 2022, pp.46-57); <i>Goya: The Portraits</i>, exh. cat., 2015, pp.108-09, 246-47, p.108, no.30; Marcel Dorigny (ed.), <i>De Goya à Delacroix, Les relations artistiques de la famille Guillemardet</i>, exh. cat., 2014, pp.74-77, no.18; <i>Goya. Order and Disorder</i>, exh. cat., 2014, pp.180, 194, 195, no.119.",
+      "bibliography": "Chastel-Rousseau, 'Peintures espagnoles, de Greco à Goya. Rénovation des salles, restauration des œuvres', <i>Grande Galerie. Le Journal du Louvre</i>, no.73, 2025, p.81; Chastel-Rousseau, Gerard Powell & Perez, 'Goya au Louvre, la formation de la collection des peintures', <i>Technè</i>, no.53 (<i>Goya peintre</i>, 2022, pp.46-57); <i>Goya: The Portraits</i>, exh. cat., 2015, pp.108-09, 246-47, p.108, no.30; Marcel Dorigny (ed.), <i>De Goya à Delacroix, Les relations artistiques de la famille Guillemardet</i>, exh. cat., 2014, pp.74-77, no.18; <i>Goya. Order and Disorder</i>, exh. cat., 2014, pp.180, 194, 195, no.119.",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q3068498"
       },
@@ -2834,7 +2834,7 @@
       "friends": "Théophile Thoré, Charles Blanc (y su hermano Louis Blanc), Philippe de Chennevières. 'Se vincula así a un grupo de hombres de letras que comparten las mismas convicciones y que desempeñarán un papel fundamental en su carrera' (INHA)",
       "writes about Goya": [
         "1851-52 'Francisco Goya', <i>Archives de l'art français</i>, I, pp.319-320",
-        "(¿fecha?) descripción del retrato de Mariano Goya, de la colección de José de Salamanca y Mayol (I Marqués de Salamanca), fue expuesto por el hijo de Goupil en la <i>Exposición de Alsacia y Lorena</i>, mencionado por Paul Mantz como 'Cette peinture, qui n'est peut être pas de premier ordre dans l'oeuvre de Goya, dit pourtant quelque chose de l'une de ses innombrables manières [...] Es un retrato que fue pintado muy rápidamente, sin la menor pretensión, y que sin embargo está fuertemente marcado por el espíritu de la época [...]. El traje es interesante [...] En el tono de la piel, en el blanco del chaleco, hay una armonía a la Greuze [...] El joven no parece absolutamente ingenioso, y su elegancia se ve atenuada por una especie de torpeza exótica que es la más divertida del mundo' (Viñaza 1887, pp.256-257)."
+        "(¿fecha?) descripción del retrato de Mariano Goya, de la colección de José de Salamanca y Mayol (I Marqués de Salamanca), fue expuesto por el hijo de Goupil en la <i>Exposición de Alsacia y Lorena</i>, mencionado por Paul Mantz como 'Cette peinture, qui n'est peut être pas de premier ordre dans l'œuvre de Goya, dit pourtant quelque chose de l'une de ses innombrables manières [...] Es un retrato que fue pintado muy rápidamente, sin la menor pretensión, y que sin embargo está fuertemente marcado por el espíritu de la época [...]. El traje es interesante [...] En el tono de la piel, en el blanco del chaleco, hay una armonía a la Greuze [...] El joven no parece absolutamente ingenioso, y su elegancia se ve atenuada por una especie de torpeza exótica que es la más divertida del mundo' (Viñaza 1887, pp.256-257)."
       ],
       "author of": "<i>Les Peintres vivants</i> (1858), con Théophile Gautier y Arsène Houssaye; 'La Galerie Pourtalès' (1865); L'Œuvre et la vie de Michel-Ange (1876), dirigido por Charles Blanc; Antoine Watteau, 1892",
       "works as": [
@@ -5115,9 +5115,13 @@
         "1843 <i>Les Musées d'Espagne, d'Angleterre et de Belgique</i>, París, Paulin: Se menciona a Goya en las pp.155-56, 167-69 y 178. 'Estos Toros fantásticos de Goya, al igual que sus otros <i>Caprichos</i>, nos recuerdan a Callot por su imaginación, a Hogarth por su humor y a Rembrandt por la fuerza de su ejecución' (pp.168-69).",
         "1860 <i>Les Musées d'Espagne</i>: 'Le Musée national n'a de lui qu'une seule peinture, une Loge au cirque des taureaux (un Palco en los toros)' (p.163). Datos básicos erróneos, como el nombre y la fecha de muerte de Goya: 'Goya, mort en 1832'; 'Antonio Goya' (p.163)."
       ],
-      "sales": "30 de abril de 1884 (incluía una 'escena de la Inquisición', no.6)",
+      "sales": [
+        "1857, 27 marzo, 'Venta de M. X***', Hôtel Drouot, París: incluye 9 pinturas españolas, entre ellas una serie de Antoliñez, una obra de Coello, un <i>San Pablo</i> de Ribera y <i>Infanta María Teresa</i> de Velázquez, valoradas en 7.000 fr. (no vendidas) (Tinterow 2003, p.387).",
+        "1884, 30 abril: incluyó una 'escena de la Inquisición', no.6."
+      ],
       "portrayed by": "Benjamin Roubaud, c.1837-39, caricatura en <i>Panthéon charivarique</i>, no.11; Léon Viardot (su hermano), octubre de 1847, dibujo, Musée de la vie romantique; Étienne Carjat, 1850, fotografía",
       "curiosities": "Era amigo íntimo del compositor Gioachino Rossini",
+      "bibliography": "Tinterow 2003",
       "websites": "[Museo del Prado (Pierre Géal)](https://www.museodelprado.es/aprende/enciclopedia/voz/viardot-louis/a587ebc8-f89a-412f-8566-1d6c3abb76d6)",
       "image": "https://www.goyanetwork.com/images/Viardot.jpg"
     },
@@ -5805,7 +5809,7 @@
       "curiosities": "se le considera el pionero del cómic europeo y el padre de las tiras cómicas",
       "influenced by": [
         "Molière, Racine, Virgilio, Tácito, Rousseau",
-        "Hogarth: carta de Töpffer a Sainte-Beuve (29 de diciembre de 1840): '[...] à la même époque, je feuilletais avec non moins d'assiduité l'oeuvre d'Hogarth. [...] C'est Hogarth qui m'a initié à me plaire dans l'observation des hommes, et aussi à me passionner plus tard pour Shakespear, pour Richardson et les grands moraliste poètes de l'Ecole anglaise' (Buyssens y Candaux, 2011, p.850)"
+        "Hogarth: carta de Töpffer a Sainte-Beuve (29 de diciembre de 1840): '[...] à la même époque, je feuilletais avec non moins d'assiduité l'œuvre d'Hogarth. [...] C'est Hogarth qui m'a initié à me plaire dans l'observation des hommes, et aussi à me passionner plus tard pour Shakespear, pour Richardson et les grands moraliste poètes de l'Ecole anglaise' (Buyssens y Candaux, 2011, p.850)"
       ],
       "mentions": "Goethe: '¡Es realmente muy divertido! ¡Rebosa brío y espíritu! Algunas de estas páginas son incomparables. Si en el futuro eligiera un tema un poco menos frívolo y fuera aún más conciso, haría cosas que superarían la imaginación' (Lacassin 1982, p.59).",
       "author of": [
@@ -10515,7 +10519,10 @@
       "relationship type": "conocidos",
       "know each other since": "c.1822",
       "they shared": "Delacroix conoció a Stendhal en el salón del Baron Gérard (François Gérard), así como a Thiers y a Mérimée",
-      "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf)."
+      "correspondence": [
+        "1824, oct (París) (Delacroix-Joubin 1935, p.152)"
+      ],
+      "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf); Delacroix-Joubin 1935."
     },
     {
       "_edge_id": "Delacroix-Meissonier",
@@ -14009,11 +14016,11 @@
       "relationship type": "amigos íntimos",
       "know each other since": "c.1806",
       "correspondence": [
-        "1856, 24 enero, carta de Eugène Delacroix a Louis Guillemardet (sobre Laurent Matheron): 'Cher ami, une personne de ma connaissance habitant Bordeaux et très compétente en esta materia écrit une biografía de Goya et voudrait en même temps donner le catalogue de ses oeuvres. Il m'avait demandé par lettre ce que je savais à cet égard; je lui ai parlé du portrait de ton père...' (Tomlinson 2024, p.20; Lipschutz 1972).",
+        "1856, 24 enero, carta de Eugène Delacroix a Louis Guillemardet (sobre Laurent Matheron): 'Cher ami, une personne de ma connaissance habitant Bordeaux et très compétente en cette matière écrit une biographie de Goya et voudrait en même temps donner le catalogue de ses œuvres. Il m'avait demandé par lettre ce que je savais à cet égard; je lui ai parlé du portrait de ton père...' (Tomlinson 2021, p.20; Lipschutz 1972).",
         "1861, 22 mayo, carta de Eugène Delacroix a Louis Guillemardet (INHA, NUM 0550 (03))."
       ],
       "archives": "INHA",
-      "bibliography": "Tomlinson 2024; Lipschutz 1972",
+      "bibliography": "Tomlinson 2021; Lipschutz 1972",
       "strength": 1
     },
     {
@@ -14025,11 +14032,14 @@
       "know each other since": "c.1806",
       "they shared": "asistieron al mismo colegio, the Lycée Impérial (ahora Lycée Louis-le-Grand) en París, junto a Louis Guillemardet, Jean-Baptiste Pierret y Achille Piron.",
       "correspondence": [
-        "1820, 30 octubre, Delacroix a Félix Guillemardet escribe una larga carta  evocando su desocupación artística y su ardiente deseo de reunirse con su círculo de amigos; [Le manuscrit français](https://www.lemanuscritfrancais.com/en/manuscript/delacroix-eugene-1798-1863-7/)."
+        "1820, 30 octubre, Delacroix a Félix Guillemardet escribe una larga carta  evocando su desocupación artística y su ardiente deseo de reunirse con su círculo de amigos; [Le manuscrit français](https://www.lemanuscritfrancais.com/en/manuscript/delacroix-eugene-1798-1863-7/).",
+        "1829, 20 octubre (Delacroix-Joubin 1935, p.242).",
+        "1830, 6 diciembre (Delacroix-Joubin 1935, p.261)."
       ],
       "mentions": [
         "1856, 18 enero, Delacroix escribe en su diario que Louis Guillemardet le ha dado unas cartas antiguas que escribió a Félix Guillemardet, donde 'se nota que la mente toma año en desarrollarse': 'In the morning I had been at the house of my friend Guillemardet [Louis Guillemardet]… He gives me a packet of my letters written in the past to Felix [Félix Guillemardet], and it is easy to see how much the mind needs years to develop under true conditions. He tells me that he already sees the same man I am today…'."
       ],
+      "bibliography": "Delacroix-Joubin 1935",
       "websites": "[Le Manuscrit français, 18 janvier 1856](https://www.lemanuscritfrancais.com/en/manuscript/delacroix-eugene-1798-1863-7/)",
       "strength": 1
     },
@@ -14038,8 +14048,12 @@
       "from": "Eugène Delacroix",
       "to": "Laurent Matheron",
       "connection_level": "direct",
-      "relationship type": "¿conocidos?, ¿amigos?",
-      "correspondence": "1857, Delacroix felicita a Matheron por la publicación de su libro sobre Goya; dos obras de Goya han entrado a formar parte de las colecciones del Louvre gracias a Matheron [INHA NUM 0554 (01)]. INHA [https://bibliotheque-numerique.inha.fr/idurl/1/6255]"
+      "relationship type": "acquaintances; correspondents",
+      "correspondence": [
+        "1857, 27 Nov, Delacroix felicita a Matheron por la publicación de su libro sobre Goya; el conservador del INHA señala que 'dos obras de Goya han ingresado en las colecciones del Louvre gracias a Matheron': 'Monsieur,  Je suis forcé depuis une quinzaine de jours de me renfermer et de m'abstenir de tout occupation, ce qui vous expliquera pourquoi j'ai tant tardé à vous remercier de l'envoi que vous avez bien voulu me faire de votre Goya. Avant de vous parler de l'interêt que j'y ai trouvé, j'ai hâte de vous remercier de tout ce que vous dites d'infiniment flatteur à mon sujet et il m'est doublement agréable que ce soit à propos d'un grand artiste dont les compositions et la verve m'ont inspiré si souvent. Je vous sais aussi un gré infini de m'apprendre comme à tout le monde tant de détails intéressants, aussi bien sur sa vie si originale que sur ses ouvrages. Je ne doute pas qu'il ne vous ait fallu de longues et patientes recherches pour vous les procurer : mois il faut vous louer surtout de la manière dont vous les avez mis en oeuvre pour augmenter l'intérêt du sujet. Laissez les Espagnols oublier les os de Goya dans la Chartreuse : ce lieu m'est cher à beaucoup de titres ;  peut-être y reposerai-je quelque jour auprès des restes qui me sont chers [son père]. La Chartreuse est le lieu de son espèce le plus majestueux et le plus digne de son objet : et quant à l'abandon de ce tombeau doublement abandonné par ses compatriotes, c'est une suite de cette nécessité qui fait disparaître après nous ceux qui ont pu quelque temps garder notre souvenir. [...]' [INHA NUM 0554 (01)] (https://bibliotheque-numerique.inha.fr/idurl/1/6255). Ver Tinterow 2003, p.387; Johnson & Hannoosh 2000, pp.84-85, no.65."
+      ],
+      "bibliography": "Tinterow 2003; Johnson & Hannoosh, <i>Delacroix. Nouvelles Lettres</i>, 2000.",
+      "archives": "INHA"
     },
     {
       "_edge_id": "Delacroix-Villot",
@@ -14047,7 +14061,15 @@
       "to": "Frédéric Villot",
       "connection_level": "direct",
       "relationship type": "amigos íntimos",
-      "correspondence": "desde 1830 (Burty 1880, t.1, pp.149, 166, 169, 178, 188, 191, 198, 202, 204, 213, 228, 234, 236, 243, 246, 292, 307, 321, 322)",
+      "know each other since": "al menos 1830",
+      "correspondence": [
+        "Desde 1830 (Burty 1880, t.1, pp.149, 166, 169, 178, 188, 191, 198, 202, 204, 213, 228, 234, 236, 243, 246, 292, 307, 321, 322).",
+        "1830, otoño y 29 diciembre (Delacroix-Joubin 1935, pp.262, 263).",
+        "1831, mayo y primavera (Delacroix-Joubin 1935, pp.276, 279).",
+        "1832, 8 dic (París), 29 feb (Tanger), 7 julio (Toulon) (Delacroix-Joubin 1935, p.302, 316, 334).",
+        "1833, 4 sept y [...] (París) (Delacroix-Joubin 1935, p.364)."
+      ],
+      "bibliography": "Delacroix-Joubin 1935; Burty 1880",
       "strength": 1
     },
     {
@@ -14074,8 +14096,11 @@
         "1826 otoño: Hugo defiende a Delacroix, en concreto su obra <i>La Grèce expirant sur les ruines de Missolonghi</i>, de los ataques del crítico L. Vitet en <i>Le Globe</i> (23 nov), quien consideraba la obra de este artista y de Collin, Saint-Evre, West y Eugène Devéria como 'ces salmis de couleurs incohérentes' (Thompson 1970, p.43).",
         "En 1855, Charles Baudelaire menciona en un artículo en <i>Le Pays</i> sobre la Exposición Universal el juicio de Hugo sobre las mujeres representadas por Delacroix (Baudelaire-Pichois 1976, p.593). Para Hugo, Delacroix 'a toutes [les qualités] moins une ; il lui manque ce qu'ont toujours cherché et trouvé les artistes suprêmes, peintres ou poètes - la beauté'. También se queja de la falta de mujeres verdaderamente bellas, excepto los ángeles de <i>Christ au Jardin des Oliviers</i> y una de las mujeres de <i>Scènes des massacres de Scio</i>. Según Hugo, los personajes femeninos de Delacroix se caracterizan por una 'laideur exquise', como en <i>Femmes d'Alger</i> (Escholier 1931, p.321)."
       ],
-      "correspondence": "desde 1828 (Burty 1880, t.I, p.130, 134)",
-      "bibliography": "Hovasse 2001; Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf); Baudelaire-Pichois 1976; Thompson 1970; Gandon 1966, p.173-75; Escholier, <i>Victor Hugo raconté par ceux qui l'ont vu</i>, 1931; Burty 1880, t.I; 'Poésies, par M. Victor Hugo', <i>Le Globe</i>, 4 de noviembre de 1826, p.186",
+      "correspondence": [
+        "Desde 1828 (Burty 1880, t.I, p.130, 134)",
+        "1827, abril (París) (Delacroix-Joubin 1935, p.191)."
+      ],
+      "bibliography": "Hovasse 2001; Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf); Baudelaire-Pichois 1976; Thompson 1970; Gandon 1966, p.173-75; Delacroix-Joubin 1935; Escholier, <i>Victor Hugo raconté par ceux qui l'ont vu</i>, 1931; Burty 1880, t.I; 'Poésies, par M. Victor Hugo', <i>Le Globe</i>, 4 de noviembre de 1826, p.186",
       "strength": 2
     },
     {
@@ -14320,7 +14345,12 @@
       "from": "Eugène Delacroix",
       "to": "Honoré de Balzac",
       "connection_level": "direct",
-      "relationship type": "compañeros de trabajo"
+      "relationship type": "colegas; corresponsales",
+      "know each other since": "al menos desde 1832",
+      "correspondence": [
+        "1832, Oct-Nov (París) (Delacroix-Joubin 1935, p.342)."
+      ],
+      "bibliography": "Delacroix-Joubin 1935"
     },
     {
       "_edge_id": "Delacroix-Manet",
@@ -14448,8 +14478,12 @@
       "connection_level": "direct",
       "relationship type": "amigos; corresponsales",
       "know each other since": "la década de 1820",
-      "correspondence": "desde 1840 (Burty 1880, t.I, p.238, 240)",
-      "mentions": "Para Dumas, Delacroix 'voit plutôt laid que beau, mais sa laideur est toujours poétisée par un profond sentiment' (Delacroix, Journal, 1822-1863, 1980, p.385); Dumas ve en él a 'un pintor en toda la fuerza del término [...] lleno de defectos imposibles de defender, lleno de cualidades imposibles de discutir' (...) 'Delacroix es un hecho de guerra y un caso de guerra' (...) 'Como Hugo en literatura, [él] solo debía tener fanáticos ciegos o detractores acérrimos' (ibid.)."
+      "correspondence": [
+        "Desde 1840 (Burty 1880, t.I, pp.238, 240).",
+        "1830, 4 abril y [...] abril (Delacroix-Joubin 1935, pp.253, 254)."
+      ],
+      "mentions": "Para Dumas, Delacroix 'voit plutôt laid que beau, mais sa laideur est toujours poétisée par un profond sentiment' (Delacroix, Journal, 1822-1863, 1980, p.385); Dumas ve en él a 'un pintor en toda la fuerza del término [...] lleno de defectos imposibles de defender, lleno de cualidades imposibles de discutir' (...) 'Delacroix es un hecho de guerra y un caso de guerra' (...) 'Como Hugo en literatura, [él] solo debía tener fanáticos ciegos o detractores acérrimos' (ibid.).",
+      "bibliography": "Delacroix-Joubin 1935; Burty 1880"
     },
     {
       "_edge_id": "Delacroix-Gautier",
@@ -14473,7 +14507,13 @@
       "from": "Eugène Delacroix",
       "to": "Achille Ricourt",
       "connection_level": "direct",
-      "relationship type": "conocidos; contacto profesional"
+      "relationship type": "conocidos; contacto profesional; corresponsales",
+      "know each other since": "al menos 1831",
+      "correspondence": [
+        "1831, 6 feb y 2 agosto (París) (Delacroix-Joubin 1935, pp.265, 290).",
+        "1833, abril x2 (Delacroix-Joubin 1935, pp.355, 356)."
+      ],
+      "bibliography": "Delacroix-Joubin 1935"
     },
     {
       "_edge_id": "Delacroix-Ingres",
@@ -15997,7 +16037,7 @@
       "to": "Rosario Weiss Zorrilla",
       "connection_level": "¿directa?",
       "relationship type": "¿conocidos?; influencia",
-      "mentions": "según la biografía de Goya de Laurent Matheron de 1858, Rosario conocía muy bien la obra de Moratín y lo había conocido con Goya: 'Chose curieuse, Rosario se passiona pour le style, le dessin, la correction, et pourtant elle était née avec le tour d'esprit, la vivacité d'impression, l'indépendance de Goya, et elle avait vu le vieux maître à l'oeuvre! Elle savait par coeur les poètes de son pays, et elle crayonnaît leurs meilleurs vers sur les marges de ses dessins : elle avait connu Moratin chez Goya' (Matheron 1858, non-paged).",
+      "mentions": "según la biografía de Goya de Laurent Matheron de 1858, Rosario conocía muy bien la obra de Moratín y lo había conocido con Goya: 'Chose curieuse, Rosario se passiona pour le style, le dessin, la correction, et pourtant elle était née avec le tour d'esprit, la vivacité d'impression, l'indépendance de Goya, et elle avait vu le vieux maître à l'œuvre! Elle savait par coeur les poètes de son pays, et elle crayonnaît leurs meilleurs vers sur les marges de ses dessins : elle avait connu Moratin chez Goya' (Matheron 1858, non-paged).",
       "bibliography": "Matheron 1858"
     },
     {
@@ -16006,7 +16046,7 @@
       "to": "Pierre Lacour fils",
       "connection_level": "direct",
       "relationship type": "maestro-alumno",
-      "mentions": "según la biografía de Goya de Laurent Matheron de 1858, Rosario pasó del taller de un miembro 'oscuro' y 'desconocido' de la familia Vernet en Burdeos [¿Carle Vernet?] al de Pierre Lacour fils, que entonces dirigía los trabajos artísticos del establecimiento Vernet: 'De cet atelier [Vernet], où elle resta deux ans, Rosario passa dans celui de M. Lacour [Pierre Lacour fils], qui dirigeait alors, je crois, les travaux artistiques de l'établiseement de M. Vernet. Les rares dispositions de la jeune artiste reçurent une habile et forte direction. Homme de goût et de science, professeur sévère et ayant autorité, M. Lacour développa chez sa jeune élève le sentiment du beau, le respect de son art. Chose curieuse, Rosario se passiona pour le style, le dessin, la correction, et pourtant elle était née avec le tour d'esprit, la vivacité d'impression, l'indépendance de Goya, et elle avait vu le vieux maître à l'oeuvre! Elle savait par coeur les poètes de son pays, et elle crayonnaît leurs meilleurs vers sur les marges de ses dessins : elle avait connu Moratin chez Goya. Rosario ne quitta l'atelier de M. Lacour que pour retourner à Madrid: elle pouvait voler de ses ailes.--Nous connaissons un grand nombre de dessins, de lithographies, et quelques portrait qu'elle a exécutés avant son départ' (Matheron 1858, non-paged).",
+      "mentions": "según la biografía de Goya de Laurent Matheron de 1858, Rosario pasó del taller de un miembro 'oscuro' y 'desconocido' de la familia Vernet en Burdeos [¿Carle Vernet?] al de Pierre Lacour fils, que entonces dirigía los trabajos artísticos del establecimiento Vernet: 'De cet atelier [Vernet], où elle resta deux ans, Rosario passa dans celui de M. Lacour [Pierre Lacour fils], qui dirigeait alors, je crois, les travaux artistiques de l'établiseement de M. Vernet. Les rares dispositions de la jeune artiste reçurent une habile et forte direction. Homme de goût et de science, professeur sévère et ayant autorité, M. Lacour développa chez sa jeune élève le sentiment du beau, le respect de son art. Chose curieuse, Rosario se passiona pour le style, le dessin, la correction, et pourtant elle était née avec le tour d'esprit, la vivacité d'impression, l'indépendance de Goya, et elle avait vu le vieux maître à l'œuvre! Elle savait par coeur les poètes de son pays, et elle crayonnaît leurs meilleurs vers sur les marges de ses dessins : elle avait connu Moratin chez Goya. Rosario ne quitta l'atelier de M. Lacour que pour retourner à Madrid: elle pouvait voler de ses ailes.--Nous connaissons un grand nombre de dessins, de lithographies, et quelques portrait qu'elle a exécutés avant son départ' (Matheron 1858, non-paged).",
       "bibliography": "Matheron 1858",
       "strength": 2
     },
@@ -17401,7 +17441,7 @@
       "discovers Goya's works": "durante su infancia, a través de Ferdinand Guillemardet (padre de sus amigos íntimos Louis y Félix), quien lleva a Francia el retrato de Goya (1798) y un ejemplar de los <i>Caprichos</i> desde España hacia 1800",
       "copies after Goya": "al menos 42 (véase Fayos Pérez 2024, Apéndice III, Catálogo de las obras de Eugène Delacroix basadas en los <i>Caprichos</i> de Goya, c.1819-1827)",
       "artworks influenced by Goya": "entre otras, la portada de Fausto (1828), basada en el Capricho 66",
-      "mentions": "en su biografía de Goya de 1858, Laurent Matheron afirma que Goya y Delacroix parecían no haberse conocido, pero que un coleccionista famoso de Burdeos, un tal 'M. de G***', supuestamente mostró a Goya algunas estampas basadas en Delacroix en Burdeos y que el español quedó asombrado por ellas: 'M. E. Delacroix avait exposé le <i>Dante et Virgile</i> au Salon de 1822, et le <i>Massacre de Scio</i> venait de paraître.--Goya avait conservé dans sa vieillesse une excessive sensibilité, et il était aussi facile à l'enthousiasme qu'à l'âge de 40 ans. Un jour, un amateur distingué de Bordeaux, M. de G***, lui montrait des gravures d'une exécution merveilleuse. Goya, ébloui, entraîné, se jette à genoux, et, contemplant l'une de ces estampes, il s'écrie : 'C'est le désespoir de la gravure!' Que dut-il faire devant les splendides chefs-d'oeuvre de M. E. Delacroix, qui allaient porter si haut l'honneur de l'École? Il est permis de croire que le vieil Aragonais dut se féliciter d'avoir vu avant de mourir ces deux magnifiques pages' [...] 'A Paris, Goya se mêla peu aux artistes. Son ancien camarade David [Jacques-Louis David] était dans l'exil, et touchait, lui aussi, au terme de sa carrière.--L'artiste ne connut pas, que je sache, l'auteur du <i>Dante</i> et du <i>Massacre</i>' (Matheron 1858, non-paged).",
+      "mentions": "en su biografía de Goya de 1858, Laurent Matheron afirma que Goya y Delacroix parecían no haberse conocido, pero que un coleccionista famoso de Burdeos, un tal 'M. de G***', supuestamente mostró a Goya algunas estampas basadas en Delacroix en Burdeos y que el español quedó asombrado por ellas: 'M. E. Delacroix avait exposé le <i>Dante et Virgile</i> au Salon de 1822, et le <i>Massacre de Scio</i> venait de paraître.--Goya avait conservé dans sa vieillesse une excessive sensibilité, et il était aussi facile à l'enthousiasme qu'à l'âge de 40 ans. Un jour, un amateur distingué de Bordeaux, M. de G***, lui montrait des gravures d'une exécution merveilleuse. Goya, ébloui, entraîné, se jette à genoux, et, contemplant l'une de ces estampes, il s'écrie : 'C'est le désespoir de la gravure!' Que dut-il faire devant les splendides chefs-d'œuvre de M. E. Delacroix, qui allaient porter si haut l'honneur de l'École? Il est permis de croire que le vieil Aragonais dut se féliciter d'avoir vu avant de mourir ces deux magnifiques pages' [...] 'A Paris, Goya se mêla peu aux artistes. Son ancien camarade David [Jacques-Louis David] était dans l'exil, et touchait, lui aussi, au terme de sa carrière.--L'artiste ne connut pas, que je sache, l'auteur du <i>Dante</i> et du <i>Massacre</i>' (Matheron 1858, non-paged).",
       "bibliography": "Fayos Pérez 2024; Fayos Pérez 2019; Matheron 1858"
     },
     {
