@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-08",
+  "last_update": "2026-09-14",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -283,22 +283,22 @@
       "life dates": "1696-1770",
       "sex": "male",
       "born in": "Venecia",
+      "dies in": "Madrid",
       "nationality": "Italian",
       "parents": "Domenico y Orsetta Tiepolo",
-      "children": "Giovanni Domenico (pintor y engraver, con quien colabora desde 1740) y Lorenzo Tiepolo (pintor y engraver; autor de Pasiega y soldados, 1773-74, y La mielera, c.1775, Galería de las Colecciones reales)",
+      "children": "Giovanni Domenico [Giandomencio Tiepolo] (pintor y grabador, con quien colabora desde 1740) y Lorenzo Tiepolo (pintor y grabador; autor de <i>Pasiega y soldados</i>, 1773-74, y <i>La mielera</i>, c.1775, Galería de las Colecciones reales)",
       "married to": "María Cecilia Guardi (1719): hermana del pintor Francesco Guardi",
-      "dies in": "Madrid",
       "profession": "painter, engraver",
       "masters": "Gregorio Lazzarini",
       "influenced by": "Tiziano, Tintoretto, Veronese; Salvator Rosa, Giovanni Benedetto Castiglione",
-      "in Madrid": "desde 1762",
+      "in Madrid": "desde 1762 (donde trabaja con sus hijos Giandomenico y Lorenzo) hasta su muerte en 1770",
       "works for": "Carlos III: frescos para el Palacio Real (techo del Salón del Trono); una serie de pinturas para los altares del Convento de San Pascual (Aranjuez)",
       "author of": [
         "Pinturas y frescos: <i>Sara y el arcángel</i>, 1726-28, Palacio Arzobispal de Udine; <i>El banquete de Cleopatra</i>, 1743-44, National Gallery de Victoria, Melbourne; Traslación de la Santa Casa de Loreto, 1743-45, Galería de la Academia de Venecia; Martirio de Santa Águeda, 1750, Gemäldegalerie Berlin; Alegoría de los planetas y continentes, 1752, Metropolitan; <i>Apolo persiguiendo a Dafne</i>, 1755-60, National Gallery of Art (Washington); frescos del Palacio Real, Madrid, 1762-66 (<i>Apoteosis de España</i>); <i>Riqueza y beneficios de la monarquía española bajo Carlos III</i>, 1762, National Gallery of Art; <i>La Inmaculada Concepción</i>, 1767-68, Prado",
         "Grabados: Capricci (c. 1740-42): serie de aguafuertes publicada por primera vez por Anton Maria Zanetti, con temas relacionados con lo extraño y lo fantástico; por ejemplo, Mujer y sátiro con niño en un paisaje, Familia de sátiros (Pan y su familia). <i>Scherzi di Fantasia</i> (c. 1743-57): misteriosas figuras orientales, escenas de nigromancia",
         "Dibujos: <i>Caricatura de un caballero bajito sosteniendo un manguito</i>, c.1770, Christie's (27 de enero de 2010, lote 118)"
       ],
-      "lives in": "Venecia (1726-50, 1753-70); Residencia de Würzburg, Baviera (1750-53); Madrid (1861-1770)",
+      "lives in": "Venecia (1726-50, 1753-70); Residencia de Würzburg, Baviera (1750-53); Madrid (1761-1770)",
       "portrayed by": "autorretrato, fresco <i>Apoteosis del príncipe-obispo</i>, Wurzburgo, 1750-53",
       "bibliography": "<i>Giambattista Tiepolo 1698-1770</i>, catálogo de la exposición, Metropolitan, 1996",
       "image": "https://www.goyanetwork.com/images/Tiepolo.jpg",
@@ -315,11 +315,12 @@
       "nationality": "Italian",
       "parents": "Giambattista Tiepolo y Maria Cecilia Guardi",
       "lives in": "Venecia; Würzburg, Baviera (1751-53); Madrid (1762-70): ayudó a su padre en la decoración del Palacio Real",
+      "in Madrid": "trabaja en Madrid con su padre Giambattista Tiepolo y su hermano Lorenzo desde 1762 hasta la muerte del padre en 1770",
       "works for": "Carlos III",
       "profession": "painter, engraver",
-      "collector of Goya's works": "en el momento de su muerte en Venecia en 1804, poseía pruebas de la mayoría de los grabados de Goya realizados antes de esa fecha, incluyendo un ejemplar de los <i>Caprichos</i> (Harris 1964, vol.I, p.7)",
-      "link to Goya's work": "Los primeros grabados de Goya, como San Francisco de Paula (c. 1776-78), estaban claramente influenciados por la serie Raccolta di Teste (c. 1757-70) de G. D. Tiepolo (McDonald, 2012, p.236).",
-      "sales": "París, 10-12 de noviembre de 1845: obras de Goya, lotes 76-81, incluyendo una primera edición de los <i>Caprichos</i>, <i>Guitarrista ciego sobre los cuernos de un toro</i> y láminas basadas en Velázquez (véase Harris 1964, vol.I, p.13; Wilson Bareau 2016, p.38, nota 22). El catálogo fue distribuido por el marchante de grabados Pierre Defer, que estaba en contacto con Valentín Carderera desde 1841, con quien 'habló de Goya' en 1855 (Lanzarote Guiral 2016, p.314)",
+      "collector of Goya's works": "en el momento de su muerte en Venecia en 1804, poseía pruebas de la mayoría de los grabados de Goya realizados antes de esa fecha, incluyendo un ejemplar de los <i>Caprichos</i> (Harris 1964, vol.I, pp.7, 13). Ver Ventas.",
+      "link to Goya's work": "los primeros grabados de Goya, como San Francisco de Paula (c. 1776-78), estaban claramente influenciados por la serie Raccolta di Teste (c. 1757-70) de G. D. Tiepolo (McDonald 2012, p.236).",
+      "sales": "1845, 10-12 nov (París): lots 76-81 eran obras de Goya, incluyendo un ejemplar de primera edición de los <i>Caprichos</i> junto con algunas impresiones sueltas de las cuales 5 eran 'avant la lettre', 6 de otros temas (Harris cat.nos.11-16), 3 retratos ecuestres (nos.5-10),  copias de Velázquez, como <i>La Meninas</i>; lote 80: 2 pruebas de 'un Infant espagnol d'après Velázquez', una antes de las letras y en aguafuerte puro, probablemente la que ahora está en la BnF (cat.no.11) y una prueba de 'le pauvre aveugle enlevé par un taureau' (<i>Guitarrista ciego sobre los cuernos de un toro</i>) (no.25) (véase Harris 1964, vol.I, p.13; Wilson Bareau 2016, p.38, nota 22). El catálogo fue distribuido por el marchante de grabados Pierre Defer, que estaba en contacto con Valentín Carderera desde 1841, con quien 'habló de Goya' en 1855 (Lanzarote Guiral 2016, p.314)",
       "author of": [
         "Pinturas: <i>El minué o escena de carnaval</i>, 1754-55, Louvre; <i>El minué</i>, 1756, MNAC; <i>La familia Tiepolo</i>, colección privada (inacabada); <i>Los santos patronos de la familia Crotta</i>, 1750, Museo Städel; <i>Cristo y la mujer adúltera</i>, 1752, LACMA; <i>El charlatán (El sacadientes)</i>, 1754-55, Louvre; <i>El triunfo de Pulcinella</i>, 1760-70, Statens Museum for Kunst (Copenhague); <i>El mundo nuevo</i>, c.1765, Prado; La Inmaculada Concepción con San Lorenzo y San Francisco de Padua, década de 1770, Estrasburgo; Pulcinella enamorado, 1793, Ca' Rezzonico; El columpio de los polichinelles, 1793, Ca' Rezzonico.",
         "Grabados: <i>Escenas pintorescas de la huida a Egipto</i>, 1750, aguafuertes"
@@ -2449,7 +2450,7 @@
       "married to": "Léontine de Saint-Simon de Courtomer",
       "display name es": "Marqués de Custine",
       "profession": "writer, socialite, poet, politician, traveller, aristocrat",
-      "partners/lovers": "Edward Saint-Barbe; Ignatius Gurowski (que se casaría con la infanta española Isabel Fernandina de Borbón). Custine fue a menudo discriminado por su homosexualidad. También resultó gravemente herido en un ataque homófobo el 28 de octubre de 1824.",
+      "partners/lovers": "Edward Saint-Barbe; Ignatius Gurowski (que se casaría con la infanta española Isabel Fernandina de Borbón, nieta de Carlos IV). Custine fue a menudo discriminado por su homosexualidad. También resultó gravemente herido en un ataque homófobo el 28 de octubre de 1824.",
       "address": "Saint-Gratien (París): Château Catinat; 6 Rue de la Rochefoucauld",
       "curiosities": [
         "El padre y el abuelo de Custine simpatizaban con la Revolución Francesa, pero ambos fueron guillotinados",
@@ -2991,7 +2992,7 @@
       "profession": "art critic, art historian, hispanist",
       "writes in": "Gazette des Beaux-arts",
       "works as": "Inspecteur des Beaux-arts (Ministère de l'Instruction publique et des Beaux-Arts): inspection des musées de Corse et d'Algérie (Dossier n°F/21/2286 dossier 35)",
-      "collector of Goya's works": "Gran colección. Posee <i>Disparates</i> 'Fiero monstruo' (no.81), no incluida en la edición de 1864, cedida a la RABASF en 1870",
+      "collector of Goya's works": "Gran colección. Posee 'Fiero monstruo'  de los <i>Disparates</i> (no.81), no incluida en la edición de 1864, y cedida a la RABASF en 1870",
       "writes about Goya": [
         "1867-68 Catálogo razonado de los grabados de Goya, Gazette des Beaux-Arts",
         "1869 Lefort menciona a Goya en la obra colectiva <i>Histoire des peintres de toutes les écoles. Tome 2. École espagnole</i>"
@@ -8019,9 +8020,18 @@
       "_edge_id": "GOYA-Tiepolo",
       "from": "Giambattista Tiepolo",
       "to": "Francisco de Goya",
-      "connection_level": "direct",
-      "relationship type": "compañeros; conocidos",
+      "connection_level": "¿secundaria?",
+      "relationship type": "Goya debió conocer al menos de forma indirecta a Tiepolo padre porque éste era un importante pintor de corte cuando Goya era un joven aspirante, pero no hay constancia de encuentros directos",
       "influencia": "Goya fue influenciado por Tiepolo"
+    },
+    {
+      "_edge_id": "G.D. Tiepolo-GOYA",
+      "from": "Giandomenico Tiepolo",
+      "to": "Francisco de Goya",
+      "connection_level": "¿secundaria?",
+      "relationship type": "Giambattista abandonó Madrid en 1770 y regresó a Italia. Goya estaba en Roma en 1771 y Giandomenico estaba de vuelta en Venecia. No hay evidencia de encuentros directos.",
+      "collector of Goya's works": "Giandomenico amasó una importante colección de grabados de Goya, de aquellos realizados después de su salida de Madrid en 1770 y antes de su muerte en 1804 en Venecia. Venta, 1845, 10-12 nov (París): lotes 76-81 eran obras de Goya, incluyendo un ejemplar de primera edición de los <i>Caprichos</i> junto con algunas impresiones sueltas de las cuales 5 eran 'avant la lettre', 6 de otros temas (Harris cat.nos.11-16), 3 retratos ecuestres (nos.5-10),  copias de Velázquez, como <i>La Meninas</i>; lote 80: 2 pruebas de 'un Infant espagnol d'après Velázquez', una antes de las letras y en aguafuerte puro, probablemente la que ahora está en la BnF (cat.no.11) y una prueba de 'le pauvre aveugle enlevé par un taureau' (<i>Guitarrista ciego sobre los cuernos de un toro</i>) (no.25) (véase Harris 1964, vol.I, p.13; Wilson Bareau 2016, p.38, nota 22). El catálogo fue distribuido por el marchante de grabados Pierre Defer, que estaba en contacto con Valentín Carderera desde 1841, con quien 'habló de Goya' en 1855 (Lanzarote Guiral 2016, p.314)",
+      "bibliography": "Lanzarote Guiral 2016; Wilson Bareau 2016; Harris 1964, vol.I"
     },
     {
       "_edge_id": "G.D. Tiepolo-Mengs",
