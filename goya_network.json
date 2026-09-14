@@ -422,7 +422,12 @@
         "1860-VIII-15 <i>Gazette des Beaux-Arts</i> 7, 'François Goya: sa vie, ses dessins et ses eaux-fortes', 215-27, translated and annotated by Philippe Burty, with a preface by Charles Blanc and a print by Bracquemond. It includes a short biography of Goya and an account of his drawings. Carderera claims ownership of 2 sheets from Album A, 112 preparatory drawings of the <i>Caprichos</i>, 50 of <i>Tauromaquia</i> and 72 of <i>Disasters of War</i> (Fayos-Pérez 2024, p.347). [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k2030710/f231.item#)",
         "1863-VII-1 <i>Gazette des Beaux-Arts</i> 15, 'François Goya', 237-49. It focuses on the advertisement of the <i>Caprichos</i> in the <i>Diario de Madrid</i> (6 Feb 1799). It includes Jacquemart's 'Spanish scene', based on Goya. Also mentions the Prado commentaries. It quotes Théophile Gautier's essay on the <i>Disasters of War</i> (<i>Voyage en Espagne</i>, 1845, p.136). He mixes up the <i>Disparates</i> with the drawing series <i>Sueños</i> ('Les proverbes ou rêves', p.244) (Fayos-Pérez 2024, p.350). [Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k2030791/f257.item#)"
       ],
-      "collector of Goya's works": "Carderera gathered a large part of Goya's prints and drawings, acquired from Javier Goya and Mariano Goya, and Juan Agustín Ceán Bermúdez. He possessed at one time some 400 of Goya's drawings, 272 of which were acquired by the Prado in 1886, as well as the engraved work. His collection also included rare working proofs from the collection of Juan Agustín Ceán Bermúdez, now at the BNE (acquired from Carderera in 1867 and from his descendants), as well as the famous proofs from the Stirling-Maxwell collection, now at the Boston Museum (Harris 1964, vol.I, p.11)",
+      "collector of Goya's works": [
+        "Carderera gathered a large part of Goya's prints and drawings, acquired from Javier Goya and Mariano Goya, and Juan Agustín Ceán Bermúdez. At one point he possessed some 400 of Goya's drawings, 272 of which were acquired by the Prado in 1886, as well as the engraved work.",
+        "His collection included the extraordinary working proofs (printed by Francisco de Goya) of the <i>Disasters of War</i> from the collection of Juan Agustín Ceán Bermúdez, now in the British Museum ([1975,1025.421.83](1975,1025.421.83)). When the RABASF acquired the plates of this series in 1862 (sold by Jaime Machén), without title, they were copied from the 'Álbum de Ceán', then in Carderera's possession (Harris I, p.141).",
+        "His collection also included the working proofs [of which series?] in the BNE (acquired from Carderera in 1867 and from his descendants).",
+        "Also the famous proofs from the William Stirling-Maxwell collection, now in the Boston Museum (Harris 1964, vol.I, p.11)."
+      ],
       "bibliography": "Fayos-Pérez 2024 and 2020; Lanzarote Guiral 2016; Harris 1964; Viñaza 1887",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q3574278",
@@ -2978,28 +2983,32 @@
       "works as": "Inspecteur des Beaux-arts (Ministère de l'Instruction publique et des Beaux-Arts): inspection des musées de Corse et d'Algérie (Dossier n°F/21/2286 dossier 35)",
       "art collection": "his large graphic arts collection included a drawing by Théodore Géricault <i>Hombre con las manos unidas</i> (1818-19), Prado [D002643](https://www.museodelprado.es/coleccion/obra-de-arte/hombre-con-las-manos-unidas/8e964c5d-938f-4985-8dee-6cea4de3971b)",
       "collector of Goya's works": [
-        "Lefort owned a large collection of prints and drawings by Goya, which he acquired in the 1860s (perhaps through Valentín Carderera).",
-        "His Goya collection enclosed impressions of the unpublished plates 81 and 82 'Fiero monstruo' from the <i>Disasters of War</i>'. These two plates were not included in the 1864 RABASF edition, and Lefort first offered them to this institution, and after being refused, they were donated to it anyways in 1870.",
-        "His Goya collection also included two artworks now at the Prado. One is the graphite drawing with the portrait of <i>Miguel de Muzquiz, Conde de Gausa</i> (1784-85), [D006427](https://www.museodelprado.es/coleccion/obra-de-arte/miguel-de-muzquiz-conde-de-gausa/cd413b22-059d-4aa3-8ea4-386744ca2ef0), in the Prado since 2006 (Sotheby's, NY, 25 Jan 2006), and whose provenance shows that it was acquired by Lefort in 1864 in Paris."
+        "Lefort owned a large collection of prints and drawings by Goya, which he acquired in the 1860s (likely through Valentín Carderera), and part which he sold in 1869 (see Sales).",
+        "'The keen interest in Goya's engravings, although restricted to a relatively small circle of connoisseurs and artists and heralded by a fairly small number of publications, is attested by the collections of men like Paul Lefort and Charles Leblanc who had acquired outstanding examples of Goya's engravings by the middle of the 19th century. [...] In addition to the large number of Goya's unpublished copperplates which came to light in Madrid about the middle of the nineteenth century, a number of plates found their way to France due partly, no doubt, to the activity of Paul Lefort who was in contact with Valentín Carderera in Madrid'(Harris, I, p.16).",
+        "1867 Lefort published for the first time Goya's prints <i>Dios de los pague a usted</i> and the <i>Little Prisoner</i> (Harris cat.nos.25-26) in his catalogue in the <i>Gazette des Beaux-arts</i>. His own impressions?",
+        "1870 Lefort acquires the copperplates of <i>Disasters of War</i> no.81 and 82 ('Fiero monstruo' and 'Esto es lo verdadero'), which were not included in the 1864 RABASF edition. His collection enclosed impressions of these plates (maybe one of them is the BnF [RESERVE BF-4 J,37](https://gallica.bnf.fr/ark:/12148/btv1b84520269)). Lefort first offered the 2 copperplates to the RABASF, and after rejected the acquisition (arguing that 'they do not offer much interest'), Lefort donated them anyways in 1870, in exchange for first-edition sets of the <i>Disasters</i> and <i>Disparates</i>, and 2 other prints not by Goya (Harris I, p.141). At this institution, the 2 copperplates were lost until 1954.  third unpublished plate is known only from a unique working proof (cat.no.203) under the title <i>Infame provecho</i> (Infamous gain) (Harris I, p.141)",
+        "His Goya collection included two artworks now at the Prado. One is the graphite drawing with the portrait of <i>Miguel de Muzquiz, Conde de Gausa</i> (1784-85), [D006427](https://www.museodelprado.es/coleccion/obra-de-arte/miguel-de-muzquiz-conde-de-gausa/cd413b22-059d-4aa3-8ea4-386744ca2ef0), in the Prado since 2006 (Sotheby's, NY, 25 Jan 2006), and whose provenance shows that it was acquired by Lefort in 1864 in Paris (maybe via Valentín Carderera?)."
       ],
       "sales": "1869, Jan 25-29: Lefort sold 25 drawings and 68 prints by Goya (see article in <i>El País</i>, 2019), as well as other works that included a drawing by Théodore Géricault (see art collection).",
       "writes about Goya": [
-        "1867-68 Catalogue raisonné of Goya's prints, <i>Gazette des Beaux-Arts</i>",
-        "1869 Lefort mentions Goya in the collective <i>Histoire des peintres de toutes les écoles. Tome 2. École espagnole</i>"
+        "1867-68 Catalogue raisonné of Goya's prints, <i>Gazette des Beaux-Arts</i>. It mentions the <i>Disasters of War</i> and the <i>Disparates</i>, as well as the so-called 'Last Caprichos', including <i>Maja on dark background</i> (1826-28). It also publishes for the first time <i>Dios de los pague a usted</i> and the <i>Little Prisoner</i> (Harris cat.nos.25-26).",
+        "1869 Lefort mentions Goya in the collective <i>Histoire des peintres de toutes les écoles. Tome 2. École espagnole</i>."
       ],
       "mentions the Prado commentaries": "in 1867",
       "author of": [
-        "<i>Histoire des peintres de toutes les écoles</i> (1861)",
-        "<i>Histoire des peintres de toutes les écoles. Tome 2. École espagnole</i> by Charles Blanc, W. Bürger (Thoré), Paul Mantz, Louis Viardot and Paul Lefort (Paris, Vve Jules Renouard), with illustrations by Bocourt. Goya is discussed on pp. 1-12 (Lefort) and 17 (Blanc)",
-        "<i>Francisco Goya. Etude biographique et critique, suivie de l'essai d'un catalogue raisonné de son œuvre gravé et lithographié</i> (1877)",
-        "<i>Velazquez</i> (1887)",
-        "<i>La peinture française actuelle</i> (1891)",
-        "<i>Murillo et ses élèves, suivi du catalogue raisonné de ses principaux ouvrages</i> (1892)",
-        "<i>La peinture espagnole</i> (1893)"
+        "<i>Histoire des peintres de toutes les écoles</i> (1861).",
+        "<i>Histoire des peintres de toutes les écoles. Tome 2. École espagnole</i> by Charles Blanc, W. Bürger (Thoré), Paul Mantz, Louis Viardot and Paul Lefort (Paris, Vve Jules Renouard), with illustrations by Bocourt. Goya is discussed on pp. 1-12 (Lefort) and 17 (Blanc).",
+        "<i>Francisco Goya. Etude biographique et critique, suivie de l'essai d'un catalogue raisonné de son œuvre gravé et lithographié</i> (1877).",
+        "<i>Velazquez</i> (1887).",
+        "<i>La peinture française actuelle</i> (1891).",
+        "<i>Murillo et ses élèves, suivi du catalogue raisonné de ses principaux ouvrages</i> (1892).",
+        "<i>La peinture espagnole</i> (1893)."
       ],
       "decorations/awards": "Encomienda de la Orden de Carlos III (1863); chevalier de la Légion d'honneur (1895)",
       "websites": [
         "[BNE](https://datos.bne.es/persona/XX1340334.html).",
+        "RABASF, [<i>Fiero monstruo</i>](https://www.academiacolecciones.com/estampas/inventario.php?id=R-3587-59)",
+        "BnF, ['Goya, <i>Les désastres de la guerre</i>'](https://gallica.bnf.fr/accueil/fr/html/goya-les-desastres-de-la-guerre), Christine Ferret, 9 Sept 2026.",
         "Article on the bicentennial exhibition of the Prado, [<i>El País</i>](https://elpais.com/especiales/2019/cuadernos-y-dibujos-de-goya/), 2019."
       ],
       "archives": "[Leonore, Archives nationales](https://www.leonore.archives-nationales.culture.gouv.fr/ui/notice/226114); [Archives nationales: missions artistiques (1840-1893)](https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/recherche/ir/rechercheGeneralisteResultat.action?formCaller=GENERALISTE&searchText=Paul%20Adolphe%20LEFORT); Work as inspector of Algerian and Corsican museums[archives nationales](https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?consIr=&frontIr=&optionFullText=&fullText=&defaultResultPerPage=&irId=FRAN_IR_027857&formCaller=GENERALISTE&gotoArchivesNums=false&auSeinIR=false&details=true&page=&udId=d_2_10_16)",
