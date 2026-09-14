@@ -7881,16 +7881,6 @@
       "strength": 3
     },
     {
-      "_edge_id": "G.D. Tiepolo-GOYA",
-      "from": "Francisco de Goya",
-      "to": "Giandomenico Tiepolo",
-      "connection_level": "direct",
-      "relationship type": "acquaintances; colleagues",
-      "exchanges": "Goya's early prints such as <i>Saint Francis of Paola</i> (c.1776-78) were clearly influenced by G.D. Tiepolo's series of <i>Raccolta di Teste</i> (c.1757-70) (McDonald, 2012, p.236).",
-      "collector of Goya's works": "Tiepolo acquired a set of the <i>Caprichos</i>, among other prints by Goya. His 1845 sale included several lots of Goya's works (see Giandomenico's node)",
-      "bibliography": "McDonald 2012; Harris 1964"
-    },
-    {
       "_edge_id": "Mengs-Tiepolo",
       "from": "Giambattista Tiepolo",
       "to": "Anton Raphael Mengs",
@@ -7919,8 +7909,9 @@
       "to": "Francisco de Goya",
       "connection_level": "secondary?",
       "relationship type": "Giambattista left Madrid in 1770 and returned to Italy. Goya was in Rome in 1771 and Giandomenico was back in Venice. There is no evidence of direct encounters.",
+      "exchanges": "Goya's early prints such as <i>Saint Francis of Paola</i> (c.1776-78) were clearly influenced by G.D. Tiepolo's series of <i>Raccolta di Teste</i> (c.1757-70) (McDonald, 2012, p.236).",
       "collector of Goya's works": "Giandomenico gathered an important collection of Goya's prints, those made after his departure from Madrid in 1770 and before his death in 1804 in Venice. Sale, 1845, 10-12 Nov (Paris): lots 76-81 were works by Goya, including a first edition copy of the <i>Caprichos</i> along with some loose impressions of which 5 were 'avant la lettre', 6 of other subjects (Harris cat.nos.11-16), 3 equestrian portraits (nos.5-10),  copies of Velázquez, such as <i>La Meninas</i>; lot 80: 2 proofs of 'un Infant espagnol d'après Velázquez', one before the letters and in pure etching, probably the one now in the BnF (cat.no.11) and a proof of 'le pauvre aveugle enlevé par un taureau' (<i>Guitarrista ciego sobre los cuernos de un toro</i>) (no.25) (see Harris 1964, vol.I, p.13; Wilson Bareau 2016, p.38, note 22). The catalog was distributed by the print dealer Pierre Defer, who was in contact with Valentín Carderera since 1841, with whom he 'talked about Goya' in 1855 (Lanzarote Guiral 2016, p.314)",
-      "bibliography": "Lanzarote Guiral 2016; Wilson Bareau 2016; Harris 1964, vol.I"
+      "bibliography": "Lanzarote Guiral 2016; Wilson Bareau 2016; McDonald 2012; Harris 1964, vol.I"
     },
     {
       "_edge_id": "G.D. Tiepolo-Mengs",

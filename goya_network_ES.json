@@ -7992,16 +7992,6 @@
       "strength": 3
     },
     {
-      "_edge_id": "G.D. Tiepolo-GOYA",
-      "from": "Francisco de Goya",
-      "to": "Giandomenico Tiepolo",
-      "connection_level": "direct",
-      "relationship type": "conocidos; colegas",
-      "exchanges": "Las primeras grabados de Goya, como <i>San Francisco de Paula</i> (c. 1776-78), estaban claramente influenciados por la serie <i>Raccolta di Teste</i> (c. 1757-70) de G. D. Tiepolo (McDonald, 2012, p.236).",
-      "collector of Goya's works": "Tiepolo adquirió una serie de <i>Caprichos</i>, entre otros grabados de Goya. Su venta de 1845 incluyó varios lotes de obras de Goya (véase el nodo de Giandomenico)",
-      "bibliography": "McDonald 2012; Harris 1964"
-    },
-    {
       "_edge_id": "Mengs-Tiepolo",
       "from": "Giambattista Tiepolo",
       "to": "Anton Raphael Mengs",
@@ -8030,8 +8020,9 @@
       "to": "Francisco de Goya",
       "connection_level": "¿secundaria?",
       "relationship type": "Giambattista abandonó Madrid en 1770 y regresó a Italia. Goya estaba en Roma en 1771 y Giandomenico estaba de vuelta en Venecia. No hay evidencia de encuentros directos.",
+      "exchanges": "los primeros grabados de Goya, como <i>San Francisco de Paula</i> (c. 1776-78), estaban claramente influenciados por la serie <i>Raccolta di Teste</i> (c. 1757-70) de G. D. Tiepolo (McDonald, 2012, p.236).",
       "collector of Goya's works": "Giandomenico amasó una importante colección de grabados de Goya, de aquellos realizados después de su salida de Madrid en 1770 y antes de su muerte en 1804 en Venecia. Venta, 1845, 10-12 nov (París): lotes 76-81 eran obras de Goya, incluyendo un ejemplar de primera edición de los <i>Caprichos</i> junto con algunas impresiones sueltas de las cuales 5 eran 'avant la lettre', 6 de otros temas (Harris cat.nos.11-16), 3 retratos ecuestres (nos.5-10),  copias de Velázquez, como <i>La Meninas</i>; lote 80: 2 pruebas de 'un Infant espagnol d'après Velázquez', una antes de las letras y en aguafuerte puro, probablemente la que ahora está en la BnF (cat.no.11) y una prueba de 'le pauvre aveugle enlevé par un taureau' (<i>Guitarrista ciego sobre los cuernos de un toro</i>) (no.25) (véase Harris 1964, vol.I, p.13; Wilson Bareau 2016, p.38, nota 22). El catálogo fue distribuido por el marchante de grabados Pierre Defer, que estaba en contacto con Valentín Carderera desde 1841, con quien 'habló de Goya' en 1855 (Lanzarote Guiral 2016, p.314)",
-      "bibliography": "Lanzarote Guiral 2016; Wilson Bareau 2016; Harris 1964, vol.I"
+      "bibliography": "Lanzarote Guiral 2016; Wilson Bareau 2016; McDonald 2012; Harris 1964, vol.I"
     },
     {
       "_edge_id": "G.D. Tiepolo-Mengs",
