@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-14",
+  "last_update": "2026-09-16",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -2866,12 +2866,30 @@
       "life dates": "1813-1882",
       "sex": "male",
       "nationality": "French",
-      "profession": "art critic, artist, historian",
-      "works as": "redactor jefe de la <i>Gazette des Beaux-arts</i>; director de Bellas Artes (1848-52, 1870-73)",
-      "writes about Goya": "Histoire des peintres de toutes les écoles. Tomo 2. École espagnole</i> de Charles Blanc, W. Bürger (Thoré), Paul Mantz, Louis Viardot y Paul Lefort (París, Vve Jules Renouard), con ilustraciones de Bocourt. Se habla de Goya en las páginas 1-12 (Lefort) y 17 (Blanc)",
+      "born in": "Castres",
+      "dies in": "París",
+      "siblings": "Louis Blanc (político socialista e historiador)",
+      "profession": "art critic, writer, engraver, historian, professor, journalist",
+      "writes in": "<i>Gazette des Beaux-arts</i>; <i>L'Avenir national</i>; <i>Le Temps</i>; <i>Le Courrier français</i>; <i>Journal de Rouen</i>; <i>L'Artiste</i>",
+      "member of": "Académie des Beaux-arts (1868); Académie française (1876-1882); <i>Académie du dessin de Florence</i>",
+      "masters": "Luigi Calamatta",
+      "founder of": "<i>Gazette des Beaux-arts</i> (1859), con Édouard Houssaye. Este diario fue adquirido en 1863 por Émile Galichon, quien también fue un gran coleccionista de obras de Goya.",
+      "works as": "redactor jefe de la <i>Gazette des Beaux-arts</i>, <i>L'Avenir national</i> y <i>Le Temps</i> (desde 1848); director del Departamento de Artes Visuales en el Ministerio del Interior (1848-52, 1870-73); Director de la Académie des Beaux-Arts (1848-52); Director de la École des Beaux-Arts; profesor de historia comparada de la arquitectura en la École spéciale d'architecture",
+      "writes about Goya": "en <i>Histoire des peintres de toutes les écoles. École espagnole</i> (1869) de Charles Blanc, W. Bürger (Théophile Thoré), Paul Mantz, Louis Viardot y Paul Lefort (París, Vve Jules Renouard), con ilustraciones de Bocourt. Se habla de Goya en las páginas 1-12 (Lefort) y 17 (Blanc).",
       "collector of Goya's works": "adquiere varias obras de Goya (probablemente grabados y/o dibujos) de Valentín Carderera (París, 1861). También toma prestado un 'pequeño retrato de/por Goya' ('retratito de Goya') de Valentín Carderera, a través de Philippe Burty",
-      "bibliography": "Fayos Pérez (de próxima publicación); Fayos Pérez 2024; Lanzarote Guiral 2016",
-      "image": "https://www.goyanetwork.com/images/Blanc.jpg"
+      "author of": "<i>L'Œuvre de Rembrandt par la photographie</i> (1853-58); <i>De Paris à Venise</i> (1857); <i>Le trésor de la curiosité</i> (1857-58); <i>L'œuvre complet de Rembrandt</i> (1859-61); <i>Histoire des peintres de toutes les écoles</i> (1861-1883) (École espagnole: 1869); <i>Grammaire des arts du dessin</i> (1867); <i>Le Cabinet de M. Thiers</i> (1871); <i>Ingres, sa vie et ses ouvrages</i> [Jean-Auguste-Dominique Ingres] (1870); <i>L'art dans la parure et dans le vêtement</i> (1875); <i>Les artistes de mon temps</i> (1876); <i>Voyage de la Haute-Égypte, observations sur les arts égyptien et arabe</i> (1876); <i>Grammaire des arts décoratifs. Décoration intérieure de la maison</i> (1881); <i>La Sculpture</i> (1888); <i>Histoire de la renaissance artistique en Italie</i> (1889).",
+      "portrayed by": "Nadar, fotografía, c.1865 (BnF, Estampes, Na 237/760); anónimo, grabado, 21 enero 1882 (<i>Le Monde illustré</i> no.1294",
+      "interest in Spanish art": "además del tomo sobre la escuela española de <i>Histoire des peintres de toutes les écoles</i> (1869), Blanc escribe artículos sobre arte español, como 'L'iconographie espagnole de M. Valentín Carderera', <i>Gazette des Beaux-Arts</i>, 1860, t.VI, pp.93-94, y 'Vélasquez à Madrid'. <i>Gazette des Beaux-Arts</i>, 1863, t.XIV, pp.65-74",
+      "curiosities": [
+        "Blanc trabajó en la teoría del color y desarrolló la 'Estrella de color' (L'Étoile des couleurs) en 1867.",
+        "Van Gogh estuvo fuertemente influenciado por su <i>Grammaire des arts du dessin</i>.",
+        "La Académie de France otorgó el Premio Charles-Blanc desde 1898 a 1994"
+      ],
+      "in Paris": "desde c.1830",
+      "websites": "[INHA](https://www.inha.fr/dictionnaire-critique-des-historiens-de-lart-actifs-en-france-de-la-revolution-a-la-premiere-guerre-mondiale/blanc-charles-inha/); [BNE](https://datos.bne.es/persona/XX1670407.html); [Académie française](https://www.academie-francaise.fr/les-immortels/charles-blanc)",
+      "bibliography": "Fayos Pérez (de próxima publicación); Fayos Pérez 2024; Lanzarote Guiral 2016; <i>Hommage à Charles Blanc</i>, Musée Goya, Castres, 1948",
+      "image": "https://www.goyanetwork.com/images/Blanc.jpg",
+      "image source": "<i>Le Monde illustré</i>, grabado anónimo, 21 enero 1882"
     },
     {
       "id": "Nicolas Philippe Guye",
@@ -2995,7 +3013,7 @@
       "sex": "male",
       "nationality": "French",
       "profession": "art critic, art historian, hispanist",
-      "writes in": "Gazette des Beaux-arts",
+      "writes in": "<i>Gazette des Beaux-arts</i>",
       "works as": "Inspecteur des Beaux-arts (Ministère de l'Instruction publique et des Beaux-Arts): inspection des musées de Corse et d'Algérie (Dossier n°F/21/2286 dossier 35)",
       "collector of Goya's works": [
         "Lefort poseyó una gran colección de grabados y dibujos de Goya, que adquirió en la década de 1860 (probablemente a través de Valentín Carderera), y parte de la cual vendió en 1869 (ver Ventas).",
@@ -3020,6 +3038,7 @@
         "<i>La pintura española</i> (1893)"
       ],
       "decorations/awards": "Encomienda de la Orden de Carlos III (1863); chevalier de la Légion d'honneur (1895)",
+      "member of": "1870, 9 mayo, Académico correspondiente de la RABASF (París)",
       "websites": [
         "[BNE](https://datos.bne.es/persona/XX1340334.html)",
         "RABASF, [<i>Fiero monstruo</i>](https://www.academiacolecciones.com/estampas/inventario.php?id=R-3587-59)",
@@ -7241,6 +7260,22 @@
       "to": "Charles Blanc",
       "connection_level": "secondary?",
       "link to Goya's work": "William Stirling-Maxwell poseía un ejemplar póstumo de pruebas de estado de <i>Los desastres de la guerra</i> de Goya, que anteriormente pertenecía a Charles Blanc, impresas por Laureano Potenciano hacia 1862 (ahora en el Museo de Bellas Artes de Boston, 1973.732.2)"
+    },
+    {
+      "_edge_id": "Blanc-Ingres",
+      "from": "Charles Blanc",
+      "to": "Jean-Auguste-Dominique Ingres",
+      "connection_level": "¿secundaria?",
+      "mentions": "Blanc escribe '<i>Louis XIV et Molière</i>, tableau inédit de M. Ingres' <i>Gazette des Beaux-Arts</i>, 1859, t.I, pp.16-18; 'Du style et de M. Ingres', <i>Gazette des Beaux-Arts</i>, 1863, t.XIV, pp.5-23; <i>Ingres, sa vie et ses ouvrages</i>, <i>Gazette des Beaux-Arts</i>, 1867-1868",
+      "websites": "[INHA](https://www.inha.fr/dictionnaire-critique-des-historiens-de-lart-actifs-en-france-de-la-revolution-a-la-premiere-guerre-mondiale/blanc-charles-inha/)"
+    },
+    {
+      "_edge_id": "Blanc-Nadar",
+      "from": "Charles Blanc",
+      "to": "Nadar",
+      "connection_level": "directa",
+      "relationship type": "conocidos; retratista-retratado",
+      "portraits": "fotografía de Charles Blanc, c.1865 (BnF, Estampes, Na 237/760)"
     },
     {
       "_edge_id": "Blanchard-Potenciano",
@@ -12679,6 +12714,14 @@
       "link to Goya's work": "Stirling adquirió un ejemplar de <i>Los desastres de la guerra</i> (Colnaghi o Christie's, abril de 1863, 20 libras) impreso hacia 1862, impreso por Laureano Potenciano (antes de su publicación: prueba de imprenta póstuma), anteriormente en la colección de Charles Blanc, ahora en el MoFA de Boston (1973.732.2)"
     },
     {
+      "_edge_id": "Blanc-Delaroche",
+      "from": "Charles Blanc",
+      "to": "Paul Delaroche",
+      "connection_level": "¿secundaria?",
+      "mentions": "Blanc escribe '<i>Le Génie captif</i>. Dessin posthume de Paul Delaroche', <i>Gazette des Beaux-Arts</i>, 1859, t.III, pp.79-83; '<i>L'Hémicycle</i> de Paul Delaroche, gravé par Henriquel Dupont', <i>Gazette des Beaux-Arts</i>, 1860, t.VIII, pp.354-361.",
+      "websites": "[INHA](https://www.inha.fr/dictionnaire-critique-des-historiens-de-lart-actifs-en-france-de-la-revolution-a-la-premiere-guerre-mondiale/blanc-charles-inha/)"
+    },
+    {
       "_edge_id": "Blanc-Carderera",
       "from": "Valentín Carderera",
       "to": "Charles Blanc",
@@ -12693,6 +12736,7 @@
         "1861, 7 de octubre: se reúnen (LG 2016, p.511)",
         "1861, 9 de octubre (París): Carderera lleva un 'paquete de Goyas para Charles Blanc' a las oficinas de la Gazette ('tomé paquete de goyas para Charles Blanc, que entregué en el bureau de la Gaceta') (LG 2016, p.513)"
       ],
+      "mentions": "'L'iconographie espagnole de M. Valentín Carderera', <i>Gazette des Beaux-Arts</i>, 1860, t.VI, pp.93-94",
       "link to Goya's work": "Carderera regala/vende grabados de Goya a Blanc (París, 1861)",
       "bibliography": "Fayos Pérez, próxima publicación; Fayos Pérez 2024; Lanzarote Guiral 2016"
     },
@@ -13304,10 +13348,11 @@
       "_edge_id": "Gautier-Yriarte",
       "from": "Théophile Gautier",
       "to": "Charles Yriarte",
-      "connection_level": "secondary",
-      "mentions": "Gautier escribe una reseña del libro de Yriarte de 1867 sobre Goya: 'Goya, par Charles Yriarte', <i>Le Monde Illustré</i>, 27 de abril de 1867, pp.261-62 (véase Fayos Pérez 2024, apéndice II)",
+      "connection_level": "directa",
+      "relationship type": "amigos; corresponsales",
+      "mentions": "Gautier escribe al menos dos reseñas del libro de Yriarte de 1867 sobre Goya: 'Goya, par Charles Yriarte', <i>Gazette nationale ou le Moniteur universel</i>, 22 April 1867, [p.1](https://gallica.bnf.fr/ark:/12148/bpt6k44404378); 'Goya, par Charles Yriarte', <i>Le Monde Illustré</i>, 27 de abril de 1867, pp.261-62 (véase Fayos Pérez 2024, apéndice II).",
       "correspondence": [
-        "1864, 15 de junio: 'Mon bon ami, La Reine vient de me nommer par décret du 13 juin <i>Commandeur avec plaque de l'ordre Royal d'Isabelle la Catholique</i>. Je ne sais vos usages. Insère-t-on cela ? Si cela se peut, faites, et merci. [...]' (Lacoste-Veysseyre 1993, t.8, p.317)",
+        "1864, 15 de junio, carta de Yriarte a Gautier: 'Mon bon ami, La Reine [Isabel II] vient de me nommer par décret du 13 juin <i>Commandeur avec plaque de l'ordre Royal d'Isabelle la Catholique</i>. Je ne sais vos usages. Insère-t-on cela ? Si cela se peut, faites, et merci. [...]' (Lacoste-Veysseyre 1993, t.8, p.317).",
         ""
       ],
       "bibliography": "Fayos Pérez 2024; Lacoste-Veysseyre, Correspondance générale, t.8, 1993"
@@ -17127,7 +17172,9 @@
       "to": "Paul Lefort",
       "connection_level": "direct",
       "relationship type": "compañeros",
-      "collaborations": "Histoire des peintres de toutes les écoles. Tomo 2. Escuela española</i> por Charles Blanc, W. Bürger (Thoré), Paul Mantz, Louis Viardot y Paul Lefort (París, Vve Jules Renouard), con ilustraciones de Bocourt. Se habla de Goya en las páginas 1-12 (Lefort) y 17 (Blanc)"
+      "collaborations": "Histoire des peintres de toutes les écoles. Tomo 2. Escuela española</i> por Charles Blanc, W. Bürger (Thoré), Paul Mantz, Louis Viardot y Paul Lefort (París, Vve Jules Renouard), con ilustraciones de Bocourt. Se habla de Goya en las páginas 1-12 (Lefort) y 17 (Blanc)",
+      "mentions": "Paul Lefort, 'Charles Blanc', <i>Gazette des Beaux-Arts</i>, feb 1882, pp.121-125",
+      "websites": "[INHA](https://www.inha.fr/dictionnaire-critique-des-historiens-de-lart-actifs-en-france-de-la-revolution-a-la-premiere-guerre-mondiale/blanc-charles-inha/)"
     },
     {
       "_edge_id": "L. Viardot-Lefort",
