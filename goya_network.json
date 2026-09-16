@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-22",
+  "last_update": "2026-07-25",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -474,7 +474,11 @@
       "curiosities": "there is a Fondation Taylor, still running, created in 1844.",
       "correspondence": "Schopp 1993.",
       "bibliography": "Lanzarote Guiral 2016; Guinard 1967-A",
-      "websites": "[Prado's entry](https://www.museodelprado.es/aprende/enciclopedia/voz/taylor-baron-isidore-justin/69966171-fe75-4587-876a-fe102ace6034), by Hilary Macartney; [Fondation Taylor](https://www.taylor.fr/)",
+      "websites": [
+        "[Prado's entry](https://www.museodelprado.es/aprende/enciclopedia/voz/taylor-baron-isidore-justin/69966171-fe75-4587-876a-fe102ace6034), by Hilary Macartney.",
+        "[Fondation Taylor](https://www.taylor.fr/).",
+        "'La Galería española de Luis Felipe de Orleans', by Javier Blanco Planelles, [Auladade](https://www.auladade.com/wp-content/uploads/2021/06/Clase-12.-La-galeria-espanola-de-Luis-Felipe-de-Orleans.pdf)."
+      ],
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Taylor.jpg",
       "image source": "Madrazo portrait, 1833, Versailles"
     },
@@ -530,7 +534,11 @@
         "INHA: <i>Carnet de voyage en Espagne d'Adrien Dauzats: premier cahier, 1836-1837</i>, [INHA NUM MS 152 (1)](https://bibliotheque-numerique.inha.fr/collection/item/67877-carnet-de-voyage-en-espagne-d-adrien-dauzats-premier-cahier-1836-1837), <i>Deuxième cahier, 1837</i>, [INHA NUM MS 152 (2)](https://bibliotheque-numerique.inha.fr/collection/item/67886-carnet-de-voyage-en-espagne-d-adrien-dauzats-deuxieme-cahier-1837?offset=7), and <i>Troisième cahier, 1837</i>, [NUM MS 152 (3)](https://bibliotheque-numerique.inha.fr/collection/item/67885-carnet-de-voyage-en-espagne-d-adrien-dauzats-troisieme-cahier-1837?offset=1)."
       ],
       "bibliography": "Tinterow 2003; Schopp 1993; Ghislaine Plessier, <i>Adrien Dauzats ou la Tentation de l'Orient</i>, exh. cat., Bordeaux, 1990; <i>Adrien Dauzats et les Voyages pittoresques et romantiques dans l'ancienne France du baron Taylor</i>, Fondation Taylor, 1990; Guinard 1967-B; Pompey 1959; Henri Jouin 1897; Philippe Burty 1869, catalogue of the Dauzats sale",
-      "websites": "[Prado's entry](https://www.museodelprado.es/aprende/enciclopedia/voz/dauzats-adrien/1ad5a97c-e2f4-4b7b-8a70-48c438efd2d9) by Jeannine Baticle; [Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70)",
+      "websites": [
+        "[Prado's entry](https://www.museodelprado.es/aprende/enciclopedia/voz/dauzats-adrien/1ad5a97c-e2f4-4b7b-8a70-48c438efd2d9) by Jeannine Baticle.",
+        "[Journaux d'Alexandre Dumas](https://alexandredumas.org/Corpus/Auteurs?ID=70).",
+        "'La Galería española de Luis Felipe de Orleans', by Javier Blanco Planelles, [Auladade](https://www.auladade.com/wp-content/uploads/2021/06/Clase-12.-La-galeria-espanola-de-Luis-Felipe-de-Orleans.pdf)."
+      ],
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q970806",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500027072",
@@ -730,6 +738,7 @@
       "works as": "King of the French 1830-1848",
       "portrayed by": "Horace Vernet or Carle Vernet, oil painting, date unknown, Versailles MV 5217; Nicolas Jacques, 1827, ivory miniature, Louvre 27237; Honoré Daumier, 1831, caricature as Gargantua; Winterhalter, 1839, oil painting, Versailles; Winterhalter, 1841, oil painting, Louvre; Jean-Auguste-Dominique Ingres, c.1842, drawing for stained glass; Lerebours et Claudet, photograph, 1842; unknown, photograph, 1840s",
       "bibliography": "Fayos-Pérez 2024; Tinterow 2003; Baticle & Marinas 1981",
+      "websites": "'La Galería española de Luis Felipe de Orleans', by Javier Blanco Planelles, [Auladade](https://www.auladade.com/wp-content/uploads/2021/06/Clase-12.-La-galeria-espanola-de-Luis-Felipe-de-Orleans.pdf).",
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Louis_Philippe.jpg",
       "image source": "Winterhalter 1839",
       "added": "2025-10-04"
@@ -1967,6 +1976,7 @@
         "1835-1836: he (allegedly) meets Victor Hugo and Alexandre Dumas père. He is in contact with the exiled Spaniards in the city, as well as with 'las notabilidades' from the Parisian literary and artistic circles (Charles Nodier, Baron Taylor, Eugène Scribe, Pharamond Blanchard, Adrien Dauzats) (Torres González 2009, p.187). Larra writes a series of letters, published in 1836 (<i>Fígaro de vuelta</i>): he mentions Francisco Martínez de la Rosa."
       ],
       "political views": "Larra was against Absolutism and Carlism, as well as being critical of social ills like ignorance, retrograde mindset, and the lack of education and culture. Progressive and <i>ilustrado</i>. He supports the liberal Mendizábal; then works at the Moderate party (Ávila 1836).",
+      "views on art and cultural heritage": "In a similar spirit than José Zorrilla (see his node), Larra warns in 1835 about the danger of loosing Spanish artworks and historical objects to foreigners, implicitly referring to the upcoming trip of Baron Taylor and Adrien Dauzats: 'Treasures of architecture, sculpture, painting and manuscripts, in medals, in archives, and riches that are all Spanish, national treasures—treasures that foreigners know how to appreciate, coming to study them, to copy them, and sometimes to steal them in order to export them to their own countries, to speculate on them to our shame, and then to recount to us, with insulting contempt, our own history and our deeds, our past exploits and our glories that have never been equalled. […] From where else can the multitude of codices and manuscripts, of rare and ancient editions, and even of deeds pertaining to our own families, which exist in the Royal Library of Paris, come from, if not from violence or underhand dealings? […] We know for certain that a literary institution in Paris is attempting, with the consent and protection of its Government, to send agents to our soil, tasked with identifying or purchasing at any cost whatever they can find in the way of paintings and manuscripts, etc., etc. Can we trust that these objects will not be sold to them? Can we assume that their owners are so lacking in foresight that they fail to see their impending doom? Should we place ourselves in the hands of their discretion? […] Let us show Europe that we know what we possess, that we know how to appreciate it: that we are carrying out our revolution with less bloodshed and greater success than our forebears; let us demonstrate to it that, as we set out on the path of liberty and equality that they have trodden, our civilisation—which from now on will probably be like theirs, barren and devoid of creativity—is at least conservative; let us prove to it, in short, that, as a truly enlightened people who appreciate the arts and human knowledge, we are worthy of the freedom that awaits us to crown our patriotic efforts' (<i>Mensajero</i>, no.156, 3 August 1835, signed as Fígaro).",
       "partners/lovers": "Dolores Armijo (1831-)",
       "mentions": [
         "González Blanco 1909: 'La opinión dispuso que la novela fuese el género favorito, mimado del público--y en especial de las damas--durante todo el siglo pasado; y así se hizo. Las <i>fábulas amatorias</i>, como se dice en el <i>Index librorum prohibitorum</i>, al condenar las de Jorge Sand [George Sand], Eugenio Sue [Eugène Sue], Dumas [Alexandre Dumas père] y Balzac [Honoré de Balzac], todos en montón (2)'. (2): '[...] nada menos que Larra, habló alguna vez de la influencia nefasta de las obras de Eugenio Sue (?), Alfredo de Vigny (!!) [Alfred de Vigny] y Balzac, sin hacer distinciones' (p.9)."
@@ -2023,6 +2033,9 @@
         "Spain: <i>El Artista</i> (1835), <i>El Español</i> (1840), <i>La Risa</i>, <i>El Pasatiempo</i> (1845), <i>El Museo Universal</i> (1866), <i>La Ilustración Española y Americana</i> (1877-1878), <i>La Revista contemporanea</i> (1878), <i>El Imparcial</i> (1880, 1893), <i>La Illustracion Iberica</i> (1883), <i>El Ateneo</i> (1889), <i>El Liberal</i> (1889, 1892, 1893).",
         "France: <i>Revue des Deux Mondes</i>; <i>Musée des familles</i> (1843-70)."
       ],
+      "views on art and cultural heritage": [
+        "'Clumsy, petty and wretched Spain, whose soil, carpeted with memories, is gradually sipping away from its own glories the little that remains of each illustrious feat! Traitor and shameless friend deceive you; your treasures are bought with dross, your monuments—alas!—and your histories, sold off and carried to a foreign land. Cursed be you, homeland of the brave, who, as a reward, give yourself to whoever can pay the most, so as not to lift your indolent arms! If you come, vow to God for what remains, you rapacious foreigners, who, with your insolence, have turned Spain into an auction house!' (1840) (translated with DeepL). See similar remarks made by Mariano José Larra (1835)."
+      ],
       "curiosities": [
         "He produces illustrations for the journal <i>Musée des familles</i> (1843-70) pretending to be an Italian artist.",
         "He could have received the Légion d'Honneur but his personal scandals prevented it."
@@ -2031,7 +2044,8 @@
       "portrayed by": "Antonio María Esquivel, <i>Los poetas contemporáneos. Una lectura de Zorrilla en el estudio del pintor</i>, Prado, 1846; unknown artist, photograph, 1850s; Federico de Madrazo, drawing, lith. by Bachiller, 1862 (<i>Gaceta de Teatros</i>)",
       "websites": "[Cervantes Virtual](https://www.cervantesvirtual.com/portales/jose_zorrilla/biografia/); [Valladolid en su tinta](https://valladolidensutinta.es/la-azarosa-vida-de-jose-zorrilla-en-52-refrescos-iv/); [Estandarte](https://www.estandarte.com/noticias/autores/jose-zorrilla-escritor-romantico-_3933.html)",
       "authorities": {
-        "wikidata": "https://www.wikidata.org/wiki/Q331863"
+        "wikidata": "https://www.wikidata.org/wiki/Q331863",
+        "rah": "https://historia-hispanica.rah.es/biografias/45509-jose-zorrilla-y-moral"
       },
       "image": "https://raw.githubusercontent.com/PFayosP/GoyaNetworkWeb/main/images/Zorrilla.jpg",
       "image source": "photograph 1850s",
@@ -2834,6 +2848,9 @@
       "websites": [
         "[INHA, by Charlotte Piot](https://www.inha.fr/dictionnaire-critique-des-historiens-de-lart-actifs-en-france-de-la-revolution-a-la-premiere-guerre-mondiale/piot-eugene-inha/)",
         "[Agorha](https://agorha.inha.fr/ark:/54721/95658a8d-b51a-477d-bbcd-2b4198278aaa)"
+      ],
+      "archives": [
+        "RABASF: correspondence about Piot becoming an <i>académico correspondiente</i> (1873) (Le-1-53-8-)."
       ],
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q19999673",
@@ -9019,7 +9036,9 @@
       "from": "Federico de Madrazo",
       "to": "Prosper Mérimée",
       "connection_level": "direct",
-      "relationship type": "friends/acquaintances"
+      "relationship type": "friends/acquaintances",
+      "they shared": "according to González López (1981, p.32), Mérimée was an 'intimate friend of José de Madrazo' and he encouraged Federico de Madrazo to move to Paris.",
+      "bibliography": "González López 1981"
     },
     {
       "from": "Honoré de Balzac",
@@ -12088,6 +12107,15 @@
       "to": "Jacques-Louis David",
       "connection_level": "direct",
       "relationship type": "master-student",
+      "strength": 1
+    },
+    {
+      "from": "José de Madrazo",
+      "to": "Prosper Mérimée",
+      "connection_level": "direct",
+      "relationship type": "close friends",
+      "they shared": "according to González López (1981, p.32), Mérimée was an 'intimate friend of José de Madrazo' and he encouraged Federico de Madrazo to move to Paris.",
+      "bibliography": "González López 1981",
       "strength": 1
     },
     {
