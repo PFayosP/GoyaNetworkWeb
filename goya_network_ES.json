@@ -716,11 +716,11 @@
         "Ficción: <i>Théâtre de Clara Gazul</i> (1825): 6 obras cortas. 2 obras más en 1830 (tras un viaje a España). Mérimée las leyó en voz alta en los <i>salones</i>",
         "Ficción: <i>Mateo Falcone</i> (1829, <i>Revue de Paris</i>); <i>La Vénus d'Ille</i> (1837)",
         "Ficción: <i>Carmen</i> (escrita en 1845; publicada en 1847 en <i>La Revue des Deux Mondes</i>)",
-        "Crítica de arte y literatura de viajes: <i>Les Grands Maîtres au Musée de Madrid</i> (1830); Lettres d'Espagne (1831-1833 en La Revue de Paris y en L'Artiste): Les Combats de taureaux, Une exécution, Les Voleurs, Les Sorcières espagnoles; Notes de voyages (1835-1840)",
-        "Historia: Don Pedro Ier, roi de Castille (1848)",
-        "Artes visuales: , <i>Homme en Grande Bottes</i>, dibujo en acuarela, Walters Art Museum 37.2790 (posiblemente de <i>Le Petit Pouchet</i> de Perrault)"
+        "Crítica de arte y literatura de viajes: <i>Les Grands Maîtres au Musée de Madrid</i> (1830); 'Lettres d'Espagne' (1831-1833 en <i>La Revue de Paris</i> y en <i>L'Artiste</i>): Les Combats de taureaux, Une exécution, Les Voleurs, Les Sorcières espagnoles; Notes de voyages (1835-1840).",
+        "Historia: <i>Don Pedro Ier, roi de Castille</i> (1848).",
+        "Artes visuales: <i>Homme en Grande Bottes</i>, dibujo en acuarela, Walters Art Museum 37.2790 (posiblemente de <i>Le Petit Pouchet</i> de Perrault)."
       ],
-      "writes in": "Revue des Deux Mondes; Revue germanique; Revue de Paris",
+      "writes in": "<i>Revue des Deux Mondes</i>; <i>Revue germanique</i>; <i>Revue de Paris</i>",
       "member of": "Académie des inscriptions et belles-lettres (1843-1870); Académie française (1844-1870), en sustitución de Charles Nodier; Société des antiquaires de la Morinie; Société de l'histoire de France; Académie du dessin de Florence",
       "decorations/awards": "Gran Oficial de la Legión de Honor; Gran Premio a las Mejores Novelas del Siglo XIX (1952)",
       "in Spain": [
@@ -1110,7 +1110,12 @@
       "profession": "painter, draughtsman, engraver",
       "friends": "Frédéric Villot; Félix Guillemardet; Louis Guillemardet; Jean-Baptiste Pierret; Achille Piron; Charles Soulier; Théodore Géricault (desde 1815); Horace Vernet; Théophile Thoré; Honoré Daumier; Adrien Dauzats",
       "correspondence": "[repositorio en línea](http://www.correspondance-delacroix.fr/)",
-      "author of": "<i>La Barque de Dante</i> (1822, Louvre); 'Escenas de la masacre de Quíos' (1824, Louvre); <i>Nature morte aux Homards</i> (1826-27, Louvre); <i>La muerte de Sardanápalo</i> (1827, Louvre); <i>La libertad guiando al pueblo</i> (1830, Louvre); <i>Las mujeres de Argel</i> (1834, Louvre); <i>Medea</i> (1838, Lille); Hamlet y Horacio en el cementerio (1839); decoración de la biblioteca de la Asamblea Nacional (Palacio Borbón) (1838-1847); decoración de la biblioteca del Senado (Palacio Luxemburgo) (1840-1846); decoración de la Galería de Apolo (Louvre) (1850-1851); <i>Le Christ sur le lac de Génésareth</i> (1854); decoración de Saint-Sulpice (1850-1861)",
+      "writes in": "<i>L'Artiste</i> (1830s)",
+      "author of": [ 
+        "Pintura: <i>La Barque de Dante</i> (1822, Louvre); <i>La masacre de Quíos</i> (1824, Louvre); <i>Nature morte aux Homards</i> (1826-27, Louvre); <i>La muerte de Sardanápalo</i> (1827, Louvre); <i>La libertad guiando al pueblo</i> (1830, Louvre); <i>Las mujeres de Argel</i> (1834, Louvre); <i>Medea</i> (1838, Lille); decoración de la biblioteca de la Asamblea Nacional (Palacio Borbón) (1838-1847); decoración de la biblioteca del Senado (Palacio Luxemburgo) (1840-1846); decoración de la Galería de Apolo (Louvre) (1850-1851); <i>Le Christ sur le lac de Génésareth</i> (1854); decoración de Saint-Sulpice (1850-1861)",
+        "Ilustración literaria: <i>Macbeth</i> (1825); <i>Fausto</i> (1828); <i>Hamlet</i> (1832-1843).",
+        "Grabado en prensa: <i>La Revue de Paris</i> (fundada por su amigo Louis-Désiré Véron): 1829, 1830."
+    ],
       "studies in": "École nationale supérieure des beaux-arts; Lycée Louis-le-Grand; Lycée Pierre-Corneille de Rouen",
       "member of": [
         "Société héliographique (desde 1851): la primera de su tipo dedicada a la fotografía",
@@ -1127,7 +1132,6 @@
       "portrayed by": "Eugène Delacroix/Géricault, c.1816, Rouen (pintura al óleo); Nadar, 1858 (fotografía)",
       "curiosities": "se interesó por la fotografía desde 1851 y encargó al fotógrafo Eugène Durieu una serie de fotografías de modelos desnudos (masculinos y femeninos)",
       "sales": "1864, 22-29 de febrero (L.838a)",
-      "writes in": "<i>La Revue de Paris</i> (fundada por su amigo Louis-Désiré Véron): 1829, 1830",
       "exhibitions": [
         "1930 París, Louvre: <i>Exposición Eugène Delacroix: pinturas, acuarelas, pasteles, dibujos, grabados, documentos</i>. Incluía algunos dibujos basados en los <i>Caprichos</i> de Goya (no.746-750, 786) (véase Fayos Pérez 2024, Apéndice III: D3, D5, D7-10). [Bibliotecas patrimoniales de París](https://bibliotheques-specialisees.paris.fr/ark:/73873/pf0000047979?posInSet=14&queryId=6b943859-d29e-4da6-ae1e-858ebfab4611)",
         "1963 Burdeos: <i>Delacroix: ses maîtres, ses amis, ses élèves</i> (Gilberte Martin-Méry)",
@@ -1668,7 +1672,7 @@
       "nationality": "Spanish",
       "profession": "banker, military member, collector, art patron",
       "art collection": "formada a partir de dos colecciones: la de Bernardo de Iriarte y la del conde de Altamira (Lanzarote Guiral 2016, p.LV). Alrededor de 360 pinturas, principalmente de artistas españoles, entre ellos Velázquez, Murillo, Ribera y Zurbarán, así como italianos como Leonardo da Vinci, Rafael, y holandeses-flamencos como Rubens y Rembrandt",
-      "patronage": "adquirió el Théâtre-Italien (o Comédie-italienne), financió las revistas Revue de Paris y Le Constitutionnel, y fue presidente del Athénée des arts",
+      "patronage": "adquirió el Théâtre-Italien (o Comédie-italienne), financió las revistas <i>Revue de Paris</i> y <i>Le Constitutionnel</i>, y fue presidente del Athénée des arts",
       "collaborates with": "los banqueros Rothschild",
       "portrayed by": "Francisco Lacoma y Fontanet, 1832 (Madrid, Museo del Romanticismo, CE0509); artista desconocido (Palacio de Versalles, MV 6727)",
       "aristocratic titles": "I marqués de las Marismas del Guadalquivir",
@@ -1710,11 +1714,12 @@
       "decorations/awards": "Caballero de la Legión de Honor (1855)",
       "address": "45 rue de Notre-Dame-des-Champs (1833) (muy cerca de Victor Hugo), donde celebraría un exitoso <i>salón</i>",
       "author of": [
-        "Retratos: Honoré de Balzac (c. 1825: atribuido), Victor Hugo, Alexandre Dumas père (1829), Prosper Mérimée, Franz Liszt (1832)",
-        "Grabados originales: portada de <i>Fausto</i> de Goethe",
-        "Ilustraciones: <i>Don Quijote</i> (1821); 10 litografías basadas en <i>Los Caprichos</i> de Goya (1825, Charles Motte); <i>Œuvres complètes</i> de La Fontaine (1826; prefacio de Balzac); <i>Œuvres complètes</i> de Rousseau (1826); <i>Fausto</i> de Goethe (edición ilustrada según Delacroix, Ch. Motte, 1828); <i>Contes</i> de Perrault (1828); <i>Robinson Crusoë</i> de Defoe (1836); <i>Photographie zoologique ou représentation des animaux rares des collections du Muséum d'Histoire Naturelle</i> (1853-55)",
-        "Grabados eróticos"
+        "Retratos: Honoré de Balzac (c. 1825: atribuido), Victor Hugo, Alexandre Dumas père (1829), Prosper Mérimée, Franz Liszt (1832).",
+        "Grabados originales: portada de <i>Fausto</i> de Goethe.",
+        "Ilustraciones: <i>Don Quijote</i> (1821); 10 litografías basadas en <i>Los Caprichos</i> de Goya (1825, Charles Motte); <i>Œuvres complètes</i> de La Fontaine (1826; prefacio de Balzac); <i>Œuvres complètes</i> de Rousseau (1826); <i>Fausto</i> de Goethe (edición ilustrada según Delacroix, Ch. Motte, 1828); <i>Contes</i> de Perrault (1828); <i>Robinson Crusoë</i> de Defoe (1836); <i>Photographie zoologique ou représentation des animaux rares des collections du Muséum d'Histoire Naturelle</i> (1853-55).",
+        "Grabados eróticos."
       ],
+      "writes in": "<i>L'Artiste</i> (1830s)",
       "copies after Goya": "10 litografías (invertidas) de los <i>Caprichos</i> (1825): <i>Carricatures espagnoles, Ni plus ni moins, par Goya</i>, editadas por Charles Motte. No están firmadas, pero la mayoría de los estudiosos coinciden en esta atribución; de los <i>Caprichos</i> 10, 14, 15, 18, 23, 32, 41, 43, 52, 55 (Fayos Pérez 2024, p.119; reproducidas en Chazal 2008, pp.302-5, núms. 224-34)",
       "portrayed by": "autorretrato, c.1835, litografía; Louis Boulanger, 1837, óleo, Louvre",
       "bibliography": "Fayos Pérez 2024; Chazal, <i>Goya graveur</i>, 2008",
@@ -1915,7 +1920,7 @@
       ],
       "studies in": "Lycée Louis-le-Grand (1820); Lycée Charlemagne, donde conoce a Gérard de Nerval (Gérard Labrunie)",
       "visits the Prado Museum": "en 1842 (menciona a Goya en su relato)",
-      "writes in": "La Chronique de Paris, La Presse (de Émile Girardin) (editor hasta 1855), L'Artiste, Le Moniteur universel (desde 1855), <i>Le cabinet de l'amateur</i>, <i>Le Figaro</i>, <i>L'Univers illustré</i>, <i>Revue nationale et étrangère</i>",
+      "writes in": "<i>La Chronique de Paris</i>, <i>La Presse</i> (de Émile Girardin) (editor hasta 1855), <i>L'Artiste</i> (con Arsène Houssaye), <i>Le Moniteur universel</i> (desde 1855), <i>Le cabinet de l'amateur</i>, <i>Le Figaro</i>, <i>L'Univers illustré</i>, <i>Revue nationale et étrangère</i>, <i>La Revue de Paris</i> (con Arsène Houssaye)",
       "decorations/awards": "Officier de La Légion d'honneur",
       "masters": "Louis-Édouard Rioult",
       "member of": "Société héliographique (1851); Jeune-France; Société nationale des beaux-arts",
@@ -2021,6 +2026,7 @@
       "life dates": "1814-1896",
       "sex": "male",
       "nationality": "French",
+      "siblings": "Édouard Houssaye",
       "children": "Edmée Houssaye; Henry Houssaye; Albert Houssaye",
       "married to": "Anne-Stéphanie Bourgeois (1842); Marie-Jeanne-Nathalie Belloc (1862)",
       "pseudonyms": "Alfred Mousse",
@@ -2028,12 +2034,33 @@
       "literary salon or tertulia": "los martes en la avenida de Friedland, a los que asistía Zola, entre otros",
       "curiosities": "abandona el hogar paterno en 1832 para llevar una 'vida bohemia' en París (con Gautier, Nerval, Jules Janin y Alphones Esquiros)",
       "writes in": "<i>L'Artiste</i> (director en 1843): con Champfleury, Baudelaire y otros; <i>La Presse</i> (director); <i>La Revue des Deux Mondes</i>; <i>La Revue de Paris</i>; <i>Revue du XIXe siècle</i> (director en 1866); <i>La Gazette de Paris</i> (1870)",
-      "founder of": "La Gazette de Paris (1870); La Revue de Paris et de Saint-Pétersbourg (1887)",
+      "founder of": "<i>La Gazette de Paris</i> (1870); <i>La Revue de Paris et de Saint-Pétersbourg</i> (1887)",
       "works as": "Administrateur général de la Comédie-Française (1849-56); inspecteur des musées de province (1857); inspecteur général des beaux-arts (1863); Président de la Société des gens de lettres (1884-85)",
       "portrayed by": "Gill, caricatura, 28 de junio de 1868; Étienne Carjat, fotografía, c.1878",
-      "image": "https://www.goyanetwork.com/images/Houssaye.jpg",
+      "image": "https://www.goyanetwork.com/images/Houssaye_Arsene.jpg",
       "image source": "Carjat, c.1878",
       "added": "23-08-2025"
+    },
+    {
+      "id": "Édouard Houssaye",
+      "label": "E. Houssaye",
+      "full name": "Édouard Aristide Housset",
+      "life dates": "1829-1905",
+      "sex": "male",
+      "nationality": "French",
+      "siblings": "Arsène Houssaye",
+      "profession": "periodista",
+      "works as": "director de la revista <i>L'Artiste</i> (hasta 1856), con su amigo Théophile Gautier como redactor jefe; director de la revista <i>Gazette des Beaux-Arts</i> (hasta 1864), con Charles Blanc como redactor jefe; director del <i>Courrier de l'Aisne</i> (Laon) desde 1865.",
+      "founder of": [
+        "<i>Gazette des Beaux-arts</i> (1859), con Charles Blanc. Este diario fue adquirido en 1863 por Émile Galichon, quien fue un gran coleccionista de obras de Goya.",
+        "<i>Chronique des arts et de la curiosité</i> (1861), con Philippe Burty. Esta revista se convertiría en un suplemento de la <i>Gazette</i> a partir de 1872."
+      ],
+      "political views": "en mayo de 1869, presentado como candidato independiente pero cercano a la oposición monárquica, se presentó a las elecciones legislativas por la circunscripción de Aisne y resultó derrotado. Posteriormente fue elegido alcalde de Bruyères-et-Montbérault.",
+      "author of": "<i>Mémoire pour six mille pétitionnaires qu'on empêche d'avoir un journal</i> (1866)",
+      "portrayed by": "Atelier Nadar, fotografía, [1900], BnF",
+      "image": "https://www.goyanetwork.com/images/Houssaye_Edouard.jpg",
+      "image source": "Atelier Nadar, fotografía, [1900]",
+      "added": "16-09-2026"
     },
     {
       "id": "Mariano José Larra",
@@ -2202,7 +2229,8 @@
       "masters": "François Guizot; Abel-François Villemain; Victor Cousin",
       "influenced by": "Walter Scott; Buffon",
       "political views": "ambiguas. Legitimista durante la Revolución de Julio (1830). Se declara liberal. Defiende a la clase obrera. Aunque expresa algunas ideas conservadoras, su obra fue admirada por Marx y Engels, y refleja algunos elementos cercanos al anarquismo. Inspirado por Saint-Simon.",
-      "writes in": "Revue des Deux Mondes, La Presse, Le Constitutionnel, Le Siècle, La Caricature",
+      "founder of": "<i>La Caricature</i>, junto a Charles Philipon, en 1830",
+      "writes in": "<i>Revue des Deux Mondes</i>, <i>La Presse</i>, <i>Le Constitutionnel</i>, <i>Le Siècle</i>, <i>La Caricature</i>",
       "studies in": "Lycée Charlemagne (1814-18); Sorbonne Université (desde 1816); Faculté de Droit (1816-19)",
       "pseudonyms": "Horace de Saint-Aubin, Lord R'Hoone, Viellerglé, Saint Aubin",
       "portrayed by": "Achille Devéria (atribuido), c.1825, dibujo a la tinta, [Maison de Balzac](https://www.parismuseescollections.paris.fr/fr/maison-de-balzac/oeuvres/portrait-de-balzac-17#infos-principales) BAL 780; Achille Devéria, c.1829, [dibujo](https://fr.wikipedia.org/wiki/Honor%C3%A9_de_Balzac#/media/Fichier:Achille_Dev%C3%A9ria_-_Portrait_de_Balzac.jpg); Louis Boulanger, 1836, óleo, [Louvre-Tours](https://commons.wikimedia.org/wiki/File:Balzac_(par_Boulanger).jpg); Louis-Auguste Bisson, 1842, daguerrotipo; Nadar, dibujo, 1850, [BnF](https://fr.wikipedia.org/wiki/Honor%C3%A9_de_Balzac#/media/Fichier:Dessin_de_Nadar_1850.jpg); Eugène Giraud, 1850, <i>Balzac en su lecho de muerte</i>, Besançon.",
@@ -2684,10 +2712,10 @@
       "married to": "Casimir Dudevant (1822-35)",
       "profession": "writer, novelist, journalist, salonnière, crítica de arte, playwright, librettist, composer, musician",
       "literary salon or tertulia": "en Nohant",
-      "works in": "Revue des Deux Mondes, La Revue indépendante, Revue de Paris, Le Figaro, La Mode, Le Temps",
+      "works in": "<i>Revue des Deux Mondes</i>, <i>La Revue indépendante</i>, <i>Revue de Paris</i>, <i>Le Figaro</i>, <i>La Mode</i>, <i>Le Temps</i>",
       "in Spain": "1808-1809 su familia vivió en España en el palacio de Manuel Godoy cuando este fue exiliado a París",
       "knows Goya's works": "en 1834",
-      "mentions of Goya": "Journal intime, 25 de noviembre de 1834 (celos por las mujeres de Goya en relación con Alfred de Musset)",
+      "mentions of Goya": "<i>Journal intime</i>, 25 de noviembre de 1834 (celos por las mujeres de Goya en relación con Alfred de Musset)",
       "author of": [
         "<i>Voyage chez Mr. Blaise</i> (1829); <i>Voyage en Auvergne</i> (1829); <i>Voyage en Espagne</i> (1829); <i>Un hiver en Majorque</i> (1841); La Petite Fadette (1849); Histoire de ma vie (1855). Álbum de dibujos. Torpe copia de La infanta Margarita de Velázquez. Colección Lovenjoul Chantily [¿ahora en el Institut de France? (Lipschutz 1972, p.117).",
         "Obras colectivas: 1842 Scènes de la vie privée et publique des animaux, de J. J. Grandville, junto con Charles Nodier y Honoré de Balzac; 1845-46 <i>Le diable à Paris: Paris et les parisiens: mœurs et coutumes, caractères et portraits des habitants de Paris</i> (ilustrado por Paul Gavarni), con textos de Honoré de Balzac, Théophile Gautier y Alfred de Musset"
@@ -3983,7 +4011,7 @@
       "writes in": "Antes de 1848: <i>le Siècle</i>, <i>l'Artiste</i>, <i>le Réformateur</i>, <i>le Journal du peuple</i>, <i>la Revue de Paris</i>, <i>le Constitutionnel</i>; <i>Gazette des Beaux-arts</i> (1866, sobre Vermeer: 'Van der Meer de Delft')",
       "writes about Goya": [
         "1835: 'Un Nain de Felipe IV, aguafuerte, por don Francisco Goya' y 'l'œuvre comique du vieux Goya' (p. 57); 'Après Mengs, l'Espagne ne cite que le vieux Goya, mort en ces dernières années, Goya homme de verve et d'imagination, plus connu par ses études des maîtres et par ses eaux fortes hardies que par sa peinture' (p.64) ('Études sur la peinture espagnole, Galerie du Maréchal Soult (II)', <i>Revue de Paris</i>, XXI-XXII, pp.44-64.",
-        "1838: '[…] composición muy fantástica, como <i>El entierro</i> de Goya, ese fogoso boceto del museo español' (p.278) (Salón de 1838. Tercer artículo, Revue de Paris, 52, 267-279).",
+        "1838: '[…] composición muy fantástica, como <i>El entierro</i> de Goya, ese fogoso boceto del museo español' (p.278) (Salón de 1838. Tercer artículo, <i>Revue de Paris</i>, 52, 267-279).",
         "1842 (con Paul Lacroix): 'Francesco Goya. Fue el Callot, el Hogarth de España, y también fue un pintor de gran distinción. […] El estudio de Rembrandt influyó sobre todo en el estilo de la segunda etapa de nuestro artista [...] Goya dejó al menos tantos dibujos como cuadros; con la misma verve, la misma originalidad. Una valiosa colección, que en el momento de su muerte recomendó a su hijo, es una serie de setenta dibujos que representan la historia de Zaragoza durante la invasión del Imperio [...] Es un Rabelais con el lápiz en la mano, pero un Rabelais español, […] su alegría a veces hace estremecer a quien lo comprende. Un dibujo de Goya dice más sobre la España de hace cuarenta años que todos los volúmenes de los historiadores y todos los relatos de los turistas [...] Los <i>Caprichos</i> son extremadamente raros en Francia; hemos tenido ante nuestros ojos el ejemplar de la Biblioteca del Rey, y recomendamos su estudio a nuestros artistas' ('Francesco Goya', <i>Bulletin de l'Alliance des Arts</i>, 6, 94-96).",
         "1846, 2-3 de junio: 'En el [Théâtre des] Variétés, M. Roqueplan, que tiene tanto ingenio, se propone también, según se dice, exhibir la serie de caricaturas de Daumier, junto a las fantasías de Hogarth y Goya' (<i>Le Constitutionnel</i>, p.1).",
         "1847, 15 de abril: 'Este perro se parece a un orgulloso mendigo español, pintado por Velázquez o por Goya' ('Feuilleton: Salon de 1847', <i>Le Constitutionnel</i>, p.1-2).",
@@ -5513,7 +5541,7 @@
       "nationality": "French",
       "profession": "actor, director de teatro, editor litográfico",
       "editor of": "<i>L'Artiste</i> (que funda en 1831)",
-      "works as": "editor litográfico de Daumier (después de 1837)",
+      "works as": "editor litográfico de Honoré Daumier (después de 1837)",
       "address": "rue de-La-Tour-d'Auvergne",
       "image": "https://www.goyanetwork.com/images/Ricourt.jpg"
     },
@@ -5621,13 +5649,13 @@
       "in Paris": "desde aprox. 1838",
       "profession": "writer, art critic, journalist, art critic, art historian, novelist",
       "works as": "Conservador de museo (Museo Nacional de Cerámica), desde 1876",
-      "works in": "L'Artiste, Revue de Paris, The Athenaeum, Réalisme",
+      "works in": "<i>L'Artiste</i>, <i>Revue de Paris</i>, <i>The Athenaeum</i>, <i>Réalisme</i>",
       "friends": "Victor Hugo; Gustave Courbet; Viollet-le-Duc; Édouard Manet",
       "member of": "Société héliographique",
       "decorations/awards": "Caballero de la Legión de Honor (1867)",
       "author of": [
-        "Les Souffrances du professeur Delteil (1853); Les Bourgeois de Molinchart (1855); Le Réalisme (1857); Les Chats (1868); <i>Vignettes romantiques: histoire de la littérature et de l'art 1825-1840</i> (1883).",
-        "Ensayos sobre la caricatura: Historia de la caricatura antigua (1865, 1867, 1879, 1880); Historia de la caricatura en la Edad Media y el Renacimiento (1872, 1876); Historia de la caricatura durante la Reforma y la Liga. De Luis XIII a Luis XVI (1880); Histoire de la caricature sous la République, l'Empire et la Restauration (1874, 1877); Histoire de la caricature moderne (1865, 1872, 1885); Le musée secret de la caricature (1888)."
+        "<i>Les Souffrances du professeur Delteil</i> (1853); <i>Les Bourgeois de Molinchart</i> (1855); <i>Le Réalisme</i> (1857); <i>Les Chats</i> (1868); <i>Vignettes romantiques: histoire de la littérature et de l'art 1825-1840</i> (1883).",
+        "<i>Ensayos sobre la caricatura: Historia de la caricatura antigua</i> (1865, 1867, 1879, 1880); <i>Historia de la caricatura en la Edad Media y el Renacimiento</i> (1872, 1876); <i>Historia de la caricatura durante la Reforma y la Liga. De Luis XIII a Luis XVI</i> (1880); <i>Histoire de la caricature sous la République, l'Empire et la Restauration</i> (1874, 1877); <i>Histoire de la caricature moderne</i> (1865, 1872, 1885); <i>Le musée secret de la caricature</i> (1888)."
       ],
       "portrayed by": "Nadar, fotografía, c.1860; Charles Gallot, fotografía; Jules Adeline, 1902, caricatura (póstuma)",
       "image": "https://www.goyanetwork.com/images/Champfleury.jpg",
@@ -9591,7 +9619,7 @@
       "bibliography": "Flaubert, <i>Correspondance</i>, t.II, Gallimard (Pléiade), 1980"
     },
     {
-      "_edge_id": "Gautier-Houssaye",
+      "_edge_id": "A. Houssaye-Gautier",
       "from": "Arsène Houssaye",
       "to": "Théophile Gautier",
       "connection_level": "direct",
@@ -9601,11 +9629,14 @@
         "Houssaye abandonó el hogar paterno en 1832 para llevar una 'vida bohemia' en París, junto a Gautier, Nerval, Jules Janin, Eugène Piot y Alphones Esquiros. También vivían cerca unos de otros en la impasse du Doyenné (actual Place du Carrousel) (<i>Donateurs du Louvre. Eugène Piot</i>, 1908, p.7).",
         "Gautier fue testigo del segundo matrimonio de Houssaye, con Marie-Jeanne-Nathalie Belloc, en 1862"
       ],
-      "collaborations": "Houssate y Gautier publican <i>Les Peintres vivants</i> (1858) con Paul Mantz",
+      "collaborations": [
+        "Arsène Houssaye y Gautier publican <i>Les Peintres vivants</i> (1858) con Paul Mantz.",
+        "También colaboraron en la <i>Revue de Paris</i>, donde Gautier fue editor en jefe de 1856 a 1859."
+      ],
       "bibliography": "Donateurs du Louvre. Eugène Piot, 1908"
     },
     {
-      "_edge_id": "Houssaye-Piot",
+      "_edge_id": "A. Houssaye-Piot",
       "from": "Arsène Houssaye",
       "to": "Eugène Piot",
       "connection_level": "direct",
@@ -9615,7 +9646,7 @@
       "bibliography": "Donateurs du Louvre. Eugène Piot, 1908"
     },
     {
-      "_edge_id": "Houssaye-Ochoa",
+      "_edge_id": "A. Houssaye-Ochoa",
       "from": "Arsène Houssaye",
       "to": "Eugenio Ochoa",
       "connection_level": "direct",
@@ -9625,7 +9656,7 @@
       "bibliography": "Romero Tobar 1997; Ochoa 1861"
     },
     {
-      "_edge_id": "Delacroix-Houssaye",
+      "_edge_id": "A. Houssaye-Delacroix",
       "from": "Arsène Houssaye",
       "to": "Eugène Delacroix",
       "connection_level": "direct",
@@ -9633,7 +9664,7 @@
       "interactions": "Delacroix fue testigo del segundo matrimonio de Houssaye, con Marie-Jeanne-Nathalie Belloc, en 1862"
     },
     {
-      "_edge_id": "Houssaye-Zola",
+      "_edge_id": "A. Houssaye-Zola",
       "from": "Arsène Houssaye",
       "to": "Émile Zola",
       "connection_level": "direct",
@@ -9644,7 +9675,7 @@
       ]
     },
     {
-      "_edge_id": "Baudelaire-Houssaye",
+      "_edge_id": "A. Houssaye-Baudelaire",
       "from": "Arsène Houssaye",
       "to": "Charles Baudelaire",
       "connection_level": "direct",
@@ -9683,7 +9714,7 @@
       "bibliography": "Donateurs du Louvre. Eugène Piot, 1908"
     },
     {
-      "_edge_id": "Houssaye-Mantz",
+      "_edge_id": "A. Houssaye-Mantz",
       "from": "Paul Mantz",
       "to": "Arsène Houssaye",
       "connection_level": "direct",
@@ -9692,7 +9723,7 @@
       "collaborations": "Mantz y Houssaye publican <i>Les Peintres vivants</i> (1858) con Théophile Gautier"
     },
     {
-      "_edge_id": "Houssaye-Musset",
+      "_edge_id": "A. Houssaye-Musset",
       "from": "Alfred de Musset",
       "to": "Arsène Houssaye",
       "connection_level": "direct",
@@ -9701,7 +9732,7 @@
       "collaborations": "como administrador general de la Comédie-Française, Houssaye presenta las obras de Musset"
     },
     {
-      "_edge_id": "Houssaye-Hugo",
+      "_edge_id": "A. Houssaye-Hugo",
       "from": "Victor Hugo",
       "to": "Arsène Houssaye",
       "connection_level": "direct",
@@ -9710,7 +9741,7 @@
       "collaborations": "como administrador general de la Comédie-Française, Houssaye presenta las obras de Hugo"
     },
     {
-      "_edge_id": "Dumas-Houssaye",
+      "_edge_id": "A. Houssaye-Dumas",
       "from": "Alexandre Dumas père",
       "to": "Arsène Houssaye",
       "connection_level": "direct",
@@ -11040,10 +11071,9 @@
       "to": "Honoré de Balzac",
       "connection_level": "direct",
       "relationship type": "amigos; colegas",
-      "know each other since": "hacia 1830",
+      "know each other since": "al menos 1830",
       "collaborations": [
-        "Balzac fue, bajo diferentes seudónimos, el principal escritor de La Caricature de Philipon en sus inicios (1830-1832)",
-        "<i>Petites misères de la vie conjugale</i>, de Balzac, se publicó parcialmente en La Caricature, de Philipon"
+        "Balzac y Philipon colaboraron para crear la revista satírica <i>La Caricature</i> en 1830, donde Balzac publicaría bajo diferentes seudónimos, incluyendo <i>Petites misères de la vie conjugale</i>."
       ],
       "correspondence": [
         "1832 sobre la censura en La Caricature (Pierrot & Yon 2006, vol.1, 32-27 no.3",
@@ -11334,7 +11364,7 @@
       "portraits": "Champfleury y Baudelaire aparecen en <i>Hommage à Delacroix</i> (1864, Orsay), de Henri Fantin-Latour, junto a Édouard Manet, Louis Edmond Duranty, Fantin-Latour, Louis Cordier, Alphonse Legros, James Whistler, Félix Bracquemond y Albert de Balleroy"
     },
     {
-      "_edge_id": "Champfleury-Houssaye",
+      "_edge_id": "A. Houssaye-Champfleury",
       "from": "Arsène Houssaye",
       "to": "Champfleury",
       "connection_level": "direct",
@@ -12845,8 +12875,25 @@
       "influencia": "En sus primeros años, Mantz se inspiró en los escritos de Gautier"
     },
     {
-      "_edge_id": "Carderera-Houssaye",
+      "_edge_id": "A. Houssaye-E. Houssaye",
       "from": "Arsène Houssaye",
+      "to": "Édouard Houssaye",
+      "connection_level": "direct",
+      "relationship type": "familiares: hermanos",
+      "collaborations": "los hermanos Houssaye trabajaron juntos en varias revistas, como <i>L'Artiste</i>"
+    },
+    {
+      "_edge_id": "Burty-E. Houssaye",
+      "from": "Philippe Burty",
+      "to": "Édouard Houssaye",
+      "connection_level": "direct",
+      "relationship type": "coleagas",
+      "know each other since": "al menos 1861",
+      "collaborations": "E. Houssaye dirige la <i>Chronique des arts et de la curiosité</i> (1861) con Philippe Burty. Este periódico se convertiría en un suplemento de la <i>Gazette des Beaux-Arts</i> a partir de 1872"
+    },
+    {
+      "_edge_id": "E. Houssaye-Carderera",
+      "from": "Édouard Houssaye",
       "to": "Valentín Carderera",
       "connection_level": "direct",
       "relationship type": "conocidos",
@@ -12855,13 +12902,26 @@
       "bibliography": "Lanzarote Guiral 2016"
     },
     {
-      "_edge_id": "Blanc-Houssaye",
-      "from": "Arsène Houssaye",
-      "to": "Charles Blanc",
+      "_edge_id": "E. Houssaye-Gautier",
+      "from": "Édouard Houssaye",
+      "to": "Théophile Gautier",
       "connection_level": "direct",
-      "relationship type": "¿compañeros de trabajo?",
-      "know each other since": "al menos desde 1861",
-      "interactions": "1861, 2 de octubre (París): Blanc y Houssaye entregaron a Valentín Carderera las entregas de la Gazette des Beaux-arts. Carderera escribe: 'Les advertí sobre el artículo de Goya entregado a Burty, etc.' (Lanzarote Guiral 2016, p.508).",
+      "relationship type": "amigos; colegas",
+      "know each other since": "al menos desde 1852",
+      "collaborations": [
+        "E. Houssaye fue director de la revista <i>L'Artiste</i> (hasta 1856) con su amigo Théophile Gautier como editor jefe.",
+        "También colaboran en la <i>Revue de Paris</i>."
+      ]
+    },
+    {
+      "_edge_id": "Blanc-E. Houssaye",
+      "from": "Édouard Houssaye",
+      "to": "Charles Blanc",
+      "connection_level": "directa",
+      "relationship type": "colegas",
+      "know each other since": "al menos desde 1859",
+      "collaborations": "E. Houssaye fue director de la <i>Gazette des Beaux-Arts</i> (hasta 1864), con Charles Blanc como editor jefe",
+      "interactions": "1861, 2 de octubre (París): Blanc y Houssaye entregaron a Valentín Carderera las entregas de la <i>Gazette des Beaux-arts</i>. Carderera escribe: 'Entré en la redacción de la <i>Gazette des Beaux-Arts</i>. Precisamente estaban Houssaye <i>et</i> Mr. Blanc [Charles Blanc]. Pedí a este el retratito de Goya. Me dieron tres entregas de la <i>Gazette</i>. Advertiles lo del artículo de Goya entregado a Burty [Philippe Burty], etc.' (Lanzarote Guiral 2016, p.508).",
       "bibliography": "Lanzarote Guiral 2016"
     },
     {
@@ -12869,7 +12929,7 @@
       "from": "Victor Hugo",
       "to": "Paul Mantz",
       "connection_level": "secondary?",
-      "relationship type": "compañeros de trabajo; conocidos",
+      "relationship type": "colegas; conocidos",
       "influencia": "En sus primeros años, Mantz se inspiró en los escritos de Hugo",
       "collaborations": "Mantz escribió en la revista de Hugo <i>L'Événement</i> a partir de 1848"
     },
