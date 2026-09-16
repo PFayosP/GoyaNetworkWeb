@@ -16,8 +16,8 @@
     "y": -336
   },
   "Martín Zapater": {
-    "x": -245,
-    "y": 137
+    "x": -306,
+    "y": 159
   },
   "Gumersinda Goicoechea": {
     "x": -487,
@@ -52,24 +52,24 @@
     "y": 330
   },
   "Valentín Carderera": {
-    "x": 342,
-    "y": 281
+    "x": 355,
+    "y": 176
   },
   "José de Madrazo": {
     "x": 10,
     "y": 371
   },
   "Baron Taylor": {
-    "x": 616,
-    "y": 70
+    "x": 409,
+    "y": -131
   },
   "Adrien Dauzats": {
-    "x": 523,
-    "y": 132
+    "x": 338,
+    "y": -59
   },
   "Pharamond Blanchard": {
-    "x": 623,
-    "y": 176
+    "x": 311,
+    "y": -158
   },
   "Eugenio Ochoa": {
     "x": 255,
@@ -84,16 +84,16 @@
     "y": 125
   },
   "Prosper Mérimée": {
-    "x": 234,
-    "y": -596
+    "x": 265,
+    "y": -264
   },
   "Louis Philippe I": {
     "x": -635,
     "y": 701
   },
   "Infanta Luisa Fernanda de Borbón": {
-    "x": -749,
-    "y": 594
+    "x": -768,
+    "y": 591
   },
   "Prince Antoine, Duke of Montpensier": {
     "x": -706,
@@ -112,48 +112,52 @@
     "y": -487
   },
   "Jean Laurent": {
-    "x": 793,
-    "y": 82
+    "x": 1039,
+    "y": -8
   },
   "Rosa Bonheur": {
-    "x": 843,
-    "y": -303
+    "x": 841,
+    "y": -363
   },
   "Marcello (Adèle d'Affry)": {
-    "x": 1098,
-    "y": 358
+    "x": 952,
+    "y": -176
   },
   "Bernardo de Iriarte": {
     "x": -294,
     "y": -165
   },
   "Ferdinand Guillemardet": {
-    "x": 70,
-    "y": -353
+    "x": 39,
+    "y": -387
   },
   "Eugène Delacroix": {
     "x": 255,
     "y": -407
   },
   "Félix Guillemardet": {
-    "x": 139,
-    "y": -377
+    "x": 107,
+    "y": -419
+  },
+  "Louis Guillemardet": {
+    "x": 105,
+    "y": -356
   },
   "Juan Antonio Llorente": {
     "x": -563,
     "y": -70
   },
   "Antonio de Brugada": {
-    "x": -119,
-    "y": 53
+    "x": -122,
+    "y": 114
   },
   "Juan Agustín Ceán Bermúdez": {
     "x": -365,
     "y": -43
   },
   "Joaquín María Ferrer": {
-    "x": -166,
-    "y": 3
+    "x": -188,
+    "y": 14
   },
   "IV Marchioness of Pontejos": {
     "x": -638,
@@ -168,8 +172,8 @@
     "y": 486
   },
   "Leandro Fernández de Moratín": {
-    "x": -273,
-    "y": 61
+    "x": -244,
+    "y": 93
   },
   "Manuel Godoy": {
     "x": -778,
@@ -180,24 +184,24 @@
     "y": 38
   },
   "XV Countess of Chinchón": {
-    "x": -766,
-    "y": 217
+    "x": -834,
+    "y": 264
   },
   "María Teresa de Vallabriga": {
-    "x": -952,
-    "y": 513
+    "x": -904,
+    "y": 290
   },
   "Luis de Borbón": {
-    "x": -995,
-    "y": 372
+    "x": -944,
+    "y": 434
   },
   "Luis Paret": {
     "x": -460,
     "y": 568
   },
   "Cyprien Gaulon": {
-    "x": 22,
-    "y": -40
+    "x": 20,
+    "y": -7
   },
   "Bartolomé Sureda": {
     "x": -183,
@@ -208,36 +212,36 @@
     "y": 737
   },
   "Laurent Matheron": {
-    "x": 1146,
-    "y": 208
+    "x": 543,
+    "y": 171
   },
   "Alejandro Aguado": {
     "x": 41,
     "y": -199
   },
   "Frédéric Villot": {
-    "x": 215,
-    "y": -299
+    "x": 193,
+    "y": -330
   },
   "Achille Devéria": {
     "x": 646,
     "y": -290
   },
   "Charles Motte": {
-    "x": 695,
-    "y": -892
+    "x": 669,
+    "y": -874
   },
   "Célestin Nanteuil": {
-    "x": 724,
-    "y": -177
+    "x": 806,
+    "y": -640
   },
   "Louis Boulanger": {
-    "x": 709,
-    "y": -384
+    "x": 705,
+    "y": -428
   },
   "Antoine Fontaney": {
-    "x": 714,
-    "y": -573
+    "x": 665,
+    "y": -577
   },
   "Victor Hugo": {
     "x": 493,
@@ -248,44 +252,48 @@
     "y": -250
   },
   "Carlos Luis de Ribera": {
-    "x": 333,
-    "y": 154
+    "x": 349,
+    "y": 311
   },
   "José de Espronceda": {
-    "x": 602,
-    "y": 271
+    "x": 614,
+    "y": 345
   },
   "Arsène Houssaye": {
-    "x": -83,
-    "y": -816
+    "x": 639,
+    "y": -132
+  },
+  "Édouard Houssaye": {
+    "x": 697,
+    "y": -85
   },
   "Mariano José Larra": {
-    "x": 530,
-    "y": 316
+    "x": 528,
+    "y": 286
   },
   "José Zorrilla": {
-    "x": 613,
-    "y": 348
+    "x": 571,
+    "y": 436
   },
   "Stéphane Mallarmé": {
-    "x": -153,
-    "y": -625
+    "x": -120,
+    "y": -615
   },
   "Honoré de Balzac": {
     "x": 406,
     "y": -712
   },
   "Gustave Doré": {
-    "x": 863,
-    "y": -623
+    "x": 931,
+    "y": -621
   },
   "Francisco Martínez de la Rosa": {
     "x": -219,
     "y": -337
   },
   "Alexandre Dumas père": {
-    "x": 350,
-    "y": -299
+    "x": 368,
+    "y": -273
   },
   "Tony Johannot": {
     "x": 718,
@@ -328,32 +336,32 @@
     "y": -794
   },
   "Pierre Lacour": {
-    "x": 74,
-    "y": 19
+    "x": -107,
+    "y": 42
   },
   "George Sand": {
     "x": 161,
     "y": -508
   },
   "Alfred de Musset": {
-    "x": 276,
-    "y": -514
+    "x": 283,
+    "y": -529
   },
   "Philippe Burty": {
-    "x": 849,
-    "y": 198
+    "x": 700,
+    "y": 248
   },
   "Félix Bracquemond": {
     "x": 1094,
     "y": -255
   },
   "Paul Mantz": {
-    "x": 769,
-    "y": 308
+    "x": 793,
+    "y": 290
   },
   "Charles Blanc": {
-    "x": 855,
-    "y": 330
+    "x": 870,
+    "y": 272
   },
   "Nicolas Philippe Guye": {
     "x": -36,
@@ -368,20 +376,20 @@
     "y": -503
   },
   "Eugène Piot": {
-    "x": 762,
-    "y": 217
+    "x": 697,
+    "y": 120
   },
   "Vicente López": {
     "x": -184,
     "y": 392
   },
   "Paul Lefort": {
-    "x": 913,
-    "y": 270
+    "x": 638,
+    "y": 169
   },
   "Gustave Brunet": {
-    "x": 1115,
-    "y": 131
+    "x": 562,
+    "y": 12
   },
   "Román Garreta": {
     "x": 34,
@@ -392,12 +400,12 @@
     "y": 574
   },
   "Leocadia Zorrilla y Galarza": {
-    "x": -12,
-    "y": 89
+    "x": -37,
+    "y": 233
   },
   "Rosario Weiss Zorrilla": {
-    "x": -37,
-    "y": 140
+    "x": -53,
+    "y": 175
   },
   "Josefa Bayeu": {
     "x": -352,
@@ -408,16 +416,16 @@
     "y": 49
   },
   "[J./L.] Carresse": {
-    "x": 726,
-    "y": -18
+    "x": 1160,
+    "y": -146
   },
   "Charles Yriarte": {
-    "x": 1053,
-    "y": 70
+    "x": 515,
+    "y": 74
   },
   "Pierre Lacour fils": {
-    "x": 132,
-    "y": -11
+    "x": -45,
+    "y": 59
   },
   "José de Salamanca y Mayol (I Marqués de Salamanca)": {
     "x": 99,
@@ -444,16 +452,16 @@
     "y": -752
   },
   "Jenaro Pérez Villaamil": {
-    "x": 534,
-    "y": 482
+    "x": 473,
+    "y": 472
   },
   "Henri Regnault": {
-    "x": 1016,
-    "y": 365
+    "x": 881,
+    "y": -146
   },
   "Marcel Briguiboul": {
-    "x": 665,
-    "y": -97
+    "x": 766,
+    "y": -288
   },
   "Édouard Manet": {
     "x": 1022,
@@ -476,28 +484,28 @@
     "y": -455
   },
   "Zacharie Astruc": {
-    "x": 911,
-    "y": -98
+    "x": 862,
+    "y": -249
   },
   "Auguste Renoir": {
     "x": 1190,
     "y": -281
   },
   "Alphonse de Lamartine": {
-    "x": -178,
-    "y": -733
+    "x": -202,
+    "y": -729
   },
   "Juliette Récamier": {
     "x": -114,
     "y": -969
   },
   "Théophile Thoré": {
-    "x": 1009,
-    "y": 161
+    "x": 632,
+    "y": 39
   },
   "Stendhal": {
-    "x": -185,
-    "y": -809
+    "x": -139,
+    "y": -818
   },
   "Charles-Augustin Sainte-Beuve": {
     "x": 330,
@@ -524,20 +532,20 @@
     "y": -869
   },
   "William Stirling-Maxwell": {
-    "x": 950,
-    "y": 522
+    "x": 906,
+    "y": 485
   },
   "Laureano Potenciano": {
-    "x": 823,
-    "y": 611
+    "x": -310,
+    "y": 689
   },
   "Richard Ford": {
-    "x": 1014,
-    "y": 488
+    "x": 986,
+    "y": 404
   },
   "Pascual de Gayangos y Arce": {
-    "x": 404,
-    "y": 466
+    "x": 716,
+    "y": 473
   },
   "1st Duke of Wellington": {
     "x": -522,
@@ -568,16 +576,16 @@
     "y": 373
   },
   "Carlos III": {
-    "x": -905,
-    "y": 244
+    "x": -841,
+    "y": 377
   },
   "Carlos IV": {
     "x": -627,
     "y": 390
   },
   "María Luisa de Parma": {
-    "x": -791,
-    "y": 416
+    "x": -728,
+    "y": 450
   },
   "Fernando VII": {
     "x": -637,
@@ -588,8 +596,8 @@
     "y": 280
   },
   "María Cristina de Borbón-Dos Sicilias": {
-    "x": -882,
-    "y": 561
+    "x": -887,
+    "y": 546
   },
   "Joseph Bonaparte": {
     "x": -481,
@@ -664,24 +672,24 @@
     "y": -902
   },
   "Auguste Dutuit": {
-    "x": 745,
-    "y": 494
+    "x": 1070,
+    "y": 148
   },
   "Ernest Meissonier": {
-    "x": 808,
-    "y": -99
+    "x": 775,
+    "y": -190
   },
   "Eduardo Zamacois": {
-    "x": 556,
-    "y": 593
+    "x": 600,
+    "y": 651
   },
   "Eugène Dutuit": {
-    "x": 731,
-    "y": 431
+    "x": 1061,
+    "y": 97
   },
   "Jacques Galos": {
-    "x": -46,
-    "y": -63
+    "x": -49,
+    "y": -45
   },
   "XI Count of Altamira": {
     "x": -373,
@@ -704,12 +712,12 @@
     "y": -123
   },
   "Jean-Auguste-Dominique Ingres": {
-    "x": 447,
-    "y": -120
+    "x": 931,
+    "y": -9
   },
   "Achille Ricourt": {
-    "x": 829,
-    "y": -203
+    "x": 760,
+    "y": -927
   },
   "Honoré Daumier": {
     "x": 772,
@@ -724,56 +732,56 @@
     "y": -749
   },
   "Champfleury": {
-    "x": 1007,
-    "y": -676
+    "x": 1053,
+    "y": -698
   },
   "Juan Antonio Melón": {
-    "x": -113,
-    "y": -49
+    "x": -123,
+    "y": -34
   },
   "Antoine-Jean Gros": {
-    "x": 454,
-    "y": 3
+    "x": 873,
+    "y": 51
   },
   "Paul Delaroche": {
-    "x": 516,
-    "y": -70
+    "x": 860,
+    "y": -62
   },
   "Frédéric Chopin": {
     "x": 94,
     "y": -560
   },
   "Jacques-Louis David": {
-    "x": 380,
-    "y": -47
+    "x": 806,
+    "y": 6
   },
   "Alphonse Hirsch": {
-    "x": 1016,
-    "y": -31
+    "x": 863,
+    "y": 185
   },
   "Jules Jacquemart": {
-    "x": 1012,
-    "y": -119
+    "x": 775,
+    "y": 144
   },
   "Edmond de Goncourt": {
-    "x": 1208,
-    "y": -71
+    "x": 1186,
+    "y": 0
   },
   "Jules de Goncourt": {
-    "x": 1202,
-    "y": 6
+    "x": 1192,
+    "y": 83
   },
   "Rodolphe Töpffer": {
     "x": 973,
     "y": -794
   },
   "Louis Daguerre": {
-    "x": 868,
-    "y": 68
+    "x": 1056,
+    "y": -80
   },
   "Ramón de Mesonero Romanos": {
-    "x": 473,
-    "y": 399
+    "x": 375,
+    "y": 413
   },
   "María de las Mercedes Santa Cruz y Montalvo, Countess of Merlin": {
     "x": -251,
@@ -792,8 +800,8 @@
     "y": -298
   },
   "Charles Davillier": {
-    "x": 1057,
-    "y": 242
+    "x": 1116,
+    "y": 234
   },
   "Antonio Remón Zarco del Valle y Huet": {
     "x": -133,
@@ -816,15 +824,27 @@
     "y": -86
   },
   "Manuel García de la Prada": {
-    "x": -236,
-    "y": -57
+    "x": -249,
+    "y": -76
   },
   "Martín Rico": {
     "x": 618,
-    "y": 561
+    "y": 560
   },
   "Francisco Lameyer": {
-    "x": 624,
-    "y": 472
+    "x": 708,
+    "y": 584
+  },
+  "Eugenio Lucas Velázquez": {
+    "x": 429,
+    "y": 274
+  },
+  "Horace Vernet": {
+    "x": 130,
+    "y": 3
+  },
+  "Carle Vernet": {
+    "x": 41,
+    "y": 67
   }
 }

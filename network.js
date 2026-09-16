@@ -7,7 +7,7 @@
   const I18N = {
     en: {
       BTN_NETWORK:"Network", BTN_ABOUT:"About", BTN_PEOPLE:"People", BTN_PARTNERS:"Partners",
-      BTN_ARTWORKS:"Artworks", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_NEWS:"News", BTN_RELEVANT_LINKS:"Relevant links", BTN_CONTACT:"Contact",
+      BTN_ARTWORKS:"Goya's work", BTN_BIB:"Bibliography", BTN_CITE:"How to cite", BTN_MENTIONS:"Mentions", BTN_NEWS:"News", BTN_RELEVANT_LINKS:"Relevant links", BTN_CONTACT:"Contact",
       FUNDING_PARTNERS: "Funding Partners",
       ACADEMIC_PARTNERS: "Academic Partners",
       GERDA_HENKEL_NAME: "Gerda Henkel Foundation",
@@ -41,7 +41,7 @@
       "Spanish":"Spanish","French":"French","British":"British","English":"English","Scottish":"Scottish","Irish":"Irish","Italian":"Italian","German":"German","Swiss":"Swiss","Belgian":"Belgian","Dutch":"Dutch","Austrian":"Austrian","Portuguese":"Portuguese","American":"American", "Cuban":"Cuban", "Polish":"Polish", "German / Czech":"German / Czech",
 
       "Life dates":"Life dates","Sex":"Sex","male":"male","female":"female","Full name":"Full name","Also known as":"Also known as","Other names":"Other names","Pseudonyms":"Pseudonyms", "Profession":"Profession","Nationality":"Nationality","Born in":"Born in","Dies in":"Dies in","Considered as":"Considered as", "Political views":"Political views","Military activity":"Military activity","Participates in":"Participates in", "Aristocratic titles":"Aristocratic titles","Ties with slavery/colonialism":"Ties with slavery/colonialism","Curiosities":"Curiosities", "Parents":"Parents","Siblings":"Siblings","Married to":"Married to","Partners/lovers":"Partners/lovers","Children":"Children", "Friends":"Friends","Rivals":"Rivals","Correspondence":"Correspondence","Meets":"Meets","Studies in":"Studies in", "Works as":"Works as","Works for":"Works for","Influenced by":"Influenced by","Follower of":"Follower of","Masters":"Masters","Students":"Students", "Member of":"Member of","Founder of":"Founder of","Editor of":"Editor of","Writes in":"Writes in","Collaborates with":"Collaborates with", "Registered in":"Registered in","Mentioned in the French press":"Mentioned in the French press","Decorations/awards":"Decorations/awards", "Tertulia":"Tertulia","Literary salon or tertulia":"Literary salon or tertulia","Author of":"Author of","Collection":"Collection", "Patronage":"Patronage","Portraits":"Portraits","Exhibitions":"Exhibitions","Bibliography":"Bibliography","Websites":"Websites", "Podcasts":"Podcasts","Newspaper archive":"Newspaper archive","Archives":"Archives","Added":"Added","Last modified":"Last modified", "Identity and Personal Data":"Identity and Personal Data", "Family and Personal Relationships":"Family and Personal Relationships", "Education, Profession and Institutions":"Education, Profession and Institutions", "Artistic/Literary Production and Collection":"Artistic/Literary Production and Collection", "Exhibitions and Public Reception":"Exhibitions and Public Reception", "Relationship with Goya":"Relationship with Goya", "Copies after Spanish artworks":"Copies after Spanish artworks", "Sources and Documentation":"Sources and Documentation", "Connections":"Connections", "Artistic Activity, Art Collecting and Patronage":"Artistic Activity, Art Collecting and Patronage", "Geographic Presence and Movement":"Geographic Presence and Movement", "Relationship to Goya and His Work":"Relationship to Goya and His Work", 
-      "Portrayed by":"Portrayed by", "Image source":"Image source", "In Spain":"In Spain", "Knows Goya's works":"Knows Goya's works", "Address":"Address", "Link to Goya's work":"Link to Goya's work", "Interest in Spanish art":"Interest in Spanish art", "Mentions of Goya":"Mentions of Goya", "Collector of Goya's works":"Collector of Goya's works", "In Paris":"In Paris", "mentions": "Mentions", "Conferences/seminars":"Conferences/seminars", "Trips":"Trips", "Lives in":"Lives in", "Patrons": "Patrons", "Collector of":"Collector of", "Copies after Goya":"Copies after Goya", "Writes about Goya":"Writes about Goya", "Mentions of Goya":"Mentions of Goya", "Connection": "Connection", "Type of connection": "Type of connection", "Type of relationship": "Type of relationship", "Know each other since": "Know each other since", "Search": "Search", "Collaborations": "Collaborations", "They met": "They met", "direct": "direct", "Artworks bought/sold": "Artworks bought/sold", "Interactions": "Interactions", "Employment/patronage": "Employment/patronage", "Between": "Between", "and": "and", "Between [X] and [Y]": "Between [X] and [Y]", "In France": "In France", "In Italy": "In Italy", "direct": "direct", "secondary": "secondary", "portraitist-sitter": "portraitist-sitter", "employer-employee": "employer-employee", "family": "family", "friends": "friends", "acquaintances": "acquaintances", "acquaintances?": "acquaintances?", "direct?": "direct?", "secondary?": "secondary?", "master-student": "master-student", "partners/lovers": "lovers", "artworks influenced by Goya": "influenced by Goya", "knows Goya's works": "knows Goya's works", "Sales": "Sales", "colleagues": "colleagues", "copies": "copies", "Nodes": "Nodes", "Connections": "Connections", "Access form": "Access form", "Unknown": "unknown", "Visits the Prado Museum": "Visits the Prado Museum",
+      "Portrayed by":"Portrayed by", "Image source":"Image source", "In Spain":"In Spain", "Knows Goya's works":"Knows Goya's works", "Address":"Address", "Link to Goya's work":"Link to Goya's work", "Interest in Spanish art":"Interest in Spanish art", "Mentions of Goya":"Mentions of Goya", "Collector of Goya's works":"Collector of Goya's works", "In Paris":"In Paris", "mentions": "Mentions", "Conferences/seminars":"Conferences/seminars", "Trips":"Trips", "Lives in":"Lives in", "Patrons": "Patrons", "Collector of":"Collector of", "Copies after Goya":"Copies after Goya", "Writes about Goya":"Writes about Goya", "Mentions of Goya":"Mentions of Goya", "Connection": "Connection", "Type of connection": "Type of connection", "Type of relationship": "Type of relationship", "Know each other since": "Know each other since", "Search": "Search", "Collaborations": "Collaborations", "They met": "They met", "direct": "direct", "Artworks bought/sold": "Artworks bought/sold", "Interactions": "Interactions", "Employment/patronage": "Employment/patronage", "Between": "Between", "and": "and", "Between [X] and [Y]": "Between [X] and [Y]", "In France": "In France", "In Italy": "In Italy", "direct": "direct", "secondary": "secondary", "portraitist-sitter": "portraitist-sitter", "employer-employee": "employer-employee", "family": "family", "friends": "friends", "acquaintances": "acquaintances", "acquaintances?": "acquaintances?", "direct?": "direct?", "secondary?": "secondary?", "master-student": "master-student", "partners/lovers": "lovers", "artworks influenced by Goya": "influenced by Goya", "knows Goya's works": "knows Goya's works", "Sales": "Sales", "colleagues": "colleagues", "copies": "copies", "Nodes": "Nodes", "Connections": "Connections", "Access form": "Access form", "Unknown": "unknown", "Visits the Prado Museum": "Visits the Prado Museum", "Views on art and cultural heritage":"Views on art and cultural heritage",
 
       ARTWORKS_TITLE: "Goya's work",
       ARTWORKS_BODY: `
@@ -184,9 +184,6 @@
       NEWS_BODY: `
       <ul style="padding-left:1.2rem; line-height:1.7;">
         <li>
-          <strong>July 2026.</strong> The journal <em>Leonardo</em> (MIT Press) has published an article on the Goya Network, authored by Paula Fayos Pérez & Anita Verő. <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">Read more</a>.
-        </li>
-        <li>
           <strong>July 2026.</strong> The Goya Network has been presented at the <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">Instituto Cervantes London</a>, in an event chaired by Manuela B. Mena Marqués.
         </li>
         <li>
@@ -199,38 +196,78 @@
           <strong>September 2025.</strong> A new partnership has been established with <a href="https://artes-uk.org/" target="_blank">ARTES (Iberian & Latin American Visual Culture Group) (UK)</a>.
         </li>
         <li>
-          <strong>Forthcoming.</strong> Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain”, to be published in <a href="https://leonardo.info/leonardo/" target="_blank"><em>Leonardo</em></a> (MIT Press).
-        </li>
+          <strong>September 2024.</strong> The Goya Network obtains funding from the <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/" target="_blank">BBVA Foundation (Leonardo Grant)</a>.
+      </li>
       </ul>
       `,
 
-      RELEVANT_LINKS_TITLE: "Relevant links",
+      MENTIONS_TITLE: "Mentions",
+      MENTIONS_BODY: `
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Academic articles</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong><i>Leonardo</i> (MIT Press): forthcoming</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” (in English).</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferences and presentations</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' (in English) <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(see event)</a>.</li>  
+        <li><strong>Prado Joven 2025 (Museo del Prado)</strong> – 'El impacto de Goya en el siglo XIX: de Gautier a Madrazo' (in Spanish) <a href="https://www.museodelprado.es/recurso/programa-joven-2025/570e6e48-01fc-48b4-b8f6-270e3b3141f3" target="_blank">(program)</a>. <a href="https://www.youtube.com/watch?v=jSGfYz08mP83" target="_blank">Watch video</a>.</li>
+        <li><strong>Congreso Humanidades Digitales Hispánicas 2025 (Universidad de Valencia)</strong> – 'La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (in Spanish) <a href="https://hdh2025.uv.es/static/files/Programa_Congreso_1_8.pdf" target="_blank">(view program)</a>.</li>
+        <li><strong>Asociación Humanidades Digitales Hispánicas (2025)</strong> – 'Un café con Paula Fayos Pérez. La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (in Spanish) <a href="https://humanidadesdigitaleshispanicas.es/cafe-con-paula-fayos-perez-16-de-diciembre-de-2025/" target="_blank">(see event)</a>.</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Online presence</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong>ARTES UK (Iberian & Latin American Visual Culture Group)</strong> – <a href="https://artes-uk.org/links-2/" target="_blank">the Goya Network included among the links</a> (in English).</li>
+        <li><strong>XIX (Société des études romantiques & dix-neuviémistes)</strong> – <a href="https://serd.hypotheses.org/19526" target="_blank">The Goya Network (Réseau Goya)</a> (in French).</li>
+        <li><strong>Daumier.de</strong> – <a href="https://www.daumier.de/2025/07/30/das-goya-network/" target="_blank">Das Goya Network</a> (in German).</li>
+        <li><strong>Red Leonardo</strong> – <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/?fbclid=IwY2xjawMuhCNleHRuA2FlbQIxMQBicmlkETFmVHVybzVkRTNnNEZ3bGExAR7q3T7lseZC1CU_pp-vGJWXCjVU8C_gUFvqiVPRd7efUEbjLWnIKRb_WU9Ieg_aem_JIlJ6CO77pnEaRFtx1uKmQ" target="_blank">'Paula Fayos crea la Goya Network [...]'</a> (in Spanish).</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Interviews</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong><i>Mas De Arte</i></strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez in Especiales/Fichados</a> (in Spanish).</li>
+        <li><strong><i>El País</i></strong> – forthcoming (in Spanish).</li>
+      </ul>
+      `,
+
+      RELEVANT_LINKS_TITLE: "Relevant links & resources",
       RELEVANT_LINKS_BODY: `
-      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Digital Humanities (DH) Projects</h3>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Goya</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
-        <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Mapping the correspondence and social networks of the neoclassical sculptor Bertel Thorvaldsen.</li>
-        <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (University of Stanford) – An interactive visualization of intellectual networks in early modern Europe.</li>
-        <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (University of Oxford) – A catalog and analysis of correspondence from the early modern period.</li>
-        <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualizing social, economic, and cultural networks in ancient Rome.</li>
-        <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – A collaborative platform connecting Van Gogh's works, letters, and cultural impact across institutions worldwide.</li>
-        <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, University of Virginia) – Aggregating biographical data on women across multiple disciplines and time periods.</li>
-        <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (by Bénédicte Monicat and Morgane Haesen) – A database of female writers in the 19th century in the francophone world.</li>
+        <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado </strong></a> – A digital resource of the artist to learn about his paintings, prints and drawings in the museum, as well as documents, print references and a digital library (in Spanish).</li>
+        <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> (in Spanish) – The History of Goya with the Royal Academy of Fine Arts in Madrid, as well as an overview of the Goya collections, particularly his print series.</li>
       </ul>
 
-      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Academic Societies & Study Groups</h3> //SUPERCALI
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">19th Century / France</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
-        <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy.</li>
-        <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – An organisation and academic journal (<i>Cahiers Mérimée</i>)dedicated to the figure of Prosper Mérimée.</li>
-        <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promoting the study of the 19th-century French poet and novelist.</li>
-        <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – An association dedicated to the life, work, and literary legacy of Théophile Gautier.</li>
+        <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicated to the study and promotion of Eugène Delacroix's work and legacy (in French).</li>
+        <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – An organisation and academic journal (<i>Cahiers Mérimée</i>)dedicated to the figure of Prosper Mérimée (in French).</li>
+        <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promoting the study of the 19th-century French poet and novelist (in French).</li>
+        <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – An association dedicated to the life, work, and literary legacy of Théophile Gautier (in French).</li>
+        <li><a href="https://www.daumier.de/" target="_blank"><strong>Daumier.de</strong></a> – Dedicated to the study and promotion of Honoré Daumier's work and legacy (in German).</li>
+        <li><a href="https://serd.hypotheses.org/" target="_blank"><strong>XIX Société des études romantiques & dix-neuvièmistes</strong></a> – A society dedicated to the study of Romanticism and the 19th century (in French).</li>
+        <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (by Bénédicte Monicat and Morgane Haesen) – A database of female writers in the 19th century in the francophone world (in English).</li>
+        <li><a href="https://19thc-artworldwide.org/" target="_blank"><strong>Nineteenth-Century Art Worldwide</strong></a> – A journal dedicated to the study of 19th-century art and visual culture (in English).</li>
       </ul>
 
-      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">General Databases & Resources</h3>
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">General databases</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
-        <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> (Spain) – A digital portal created by the Spanish Royal Academy of History that uses a map to show the global history of Spain and the territories that were part of the Spanish administration..</li>
-        <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Includes the Getty Museum, Getty Research Institute, and extensive art historical databases.</li>
-        <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – France's National Library with digitized collections including letters, manuscripts, and prints.</li>
-        <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Spain's National Library with extensive digital resources.</li>
+        <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> – A digital portal created by the Spanish Royal Academy of History that uses a map to show the global history of Spain and the territories that were part of the Spanish administration (Spanish/English).</li>
+        <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Includes the Getty Museum, Getty Research Institute, and extensive art historical databases (in English).</li>
+        <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – France's National Library with digitized collections including letters, manuscripts, and prints (in French/English/Spanish).</li>
+        <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Spain's National Library with extensive digital resources (in Spanish).</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Other Digital Humanities (DH) Projects</h3>
+      <ul style="padding-left:1.2rem; line-height:1.6;">
+        <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Mapping the correspondence and social networks of the neoclassical sculptor Bertel Thorvaldsen (English/Dansk).</li>
+        <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (University of Stanford) – An interactive visualization of intellectual networks in early modern Europe (in English).</li>
+        <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (University of Oxford) – A catalog and analysis of correspondence from the early modern period (in English).</li>
+        <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualizing social, economic, and cultural networks in ancient Rome (in English).</li>
+        <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – A collaborative platform connecting Van Gogh's works, letters, and cultural impact across institutions worldwide (in English).</li>
+        <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, University of Virginia) – Aggregating biographical data on women across multiple disciplines and time periods (in English).</li>
       </ul>
       `,
 
@@ -251,7 +288,7 @@
     },
     es: {
       BTN_NETWORK:"Red", BTN_ABOUT:"Acerca de", BTN_PEOPLE:"Equipo", BTN_PARTNERS:"Colaboradores",
-      BTN_ARTWORKS:"Obras", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_NEWS:"Noticias", BTN_RELEVANT_LINKS:"Enlaces relevantes", BTN_CONTACT:"Contacto",
+      BTN_ARTWORKS:"Obra de Goya", BTN_BIB:"Bibliografía", BTN_CITE:"Cómo citar", BTN_MENTIONS:"Menciones", BTN_NEWS:"Noticias", BTN_RELEVANT_LINKS:"Enlaces relevantes", BTN_CONTACT:"Contacto",
       FUNDING_PARTNERS: "Entidades financiadoras",
       ACADEMIC_PARTNERS: "Colaboradores académicos",
       GERDA_HENKEL_NAME: "Fundación Gerda Henkel",
@@ -286,7 +323,7 @@
 
       //Categorías en nodos y edges
       "Life dates":"Fechas de vida","Sex":"Sexo","male":"hombre","female":"mujer","Full name":"Nombre completo","Also known as":"También conocido/a como","Other names":"Otros nombres","Pseudonyms":"Seudónimos", "Profession":"Profesión","Nationality":"Nacionalidad","Born in":"Nace en","Dies in":"Fallece en","Considered as":"Considerado/a como", "Political views":"Ideas políticas","Military activity":"Actividad militar","Participates in":"Participa en", "Aristocratic titles":"Títulos nobiliarios","Ties with slavery/colonialism":"Vínculos con esclavitud/colonialismo","Curiosities":"Curiosidades", "Parents":"Padres","Siblings":"Hermanos/as","Married to":"Casado/a con","Partners/lovers":"Parejas/amantes","Children":"Hijos/as", "Friends":"Amigos/as","Rivals":"Rivales","Correspondence":"Correspondencia","Meets":"Encuentros","Studies in":"Estudia en", "Works as":"Trabaja como","Works for":"Trabaja para","Influenced by":"Influido/a por","Follower of":"Seguidor/a de","Masters":"Maestros/as","Students":"Alumnos/as", "Member of":"Miembro de","Founder of":"Fundador/a de","Editor of":"Editor/a de","Writes in":"Escribe en","Collaborates with":"Colabora con", "Registered in":"Registrado/a en","Mentioned in the French press":"Mencionado/a en la prensa francesa","Decorations/awards":"Condecoraciones/premios", "Literary salon or tertulia":"Salón literario o tertulia","Author of":"Autor/a de","Collection":"Colección", "Patronage":"Mecenazgo","Portraits":"Retratos","Exhibitions":"Exposiciones", "Bibliography":"Bibliografía","Websites":"Páginas web", "Podcasts":"Podcasts","Newspaper archive":"Hemeroteca","Archives":"Archivos","Added":"Añadido","Last modified":"Última modificación", "Identity and Personal Data":"Identidad y datos personales", "Social and Political Identity":"Identidad social y política", "Family and Personal Relationships":"Familia y relaciones personales", "Education, Profession and Institutions":"Formación, profesión e instituciones", "Artistic/Literary Production and Collection":"Producción artística/literaria y colección", "Exhibitions and Public Reception":"Exposiciones y recepción pública", "Relationship with Goya":"Relación con Goya", "Copies after Spanish artworks":"Copias de obras españolas", 
-      "Sources and Documentation":"Fuentes y documentación", "Connections":"Conexiones", "Artistic Activity, Art Collecting and Patronage":"Actividad artística, coleccionismo y mecenazgo", "Geographic Presence and Movement":"Presencia geográfica y desplazamientos", "Relationship to Goya and His Work":"Relación con Goya y su obra", "Portrayed by":"Retratado/a por", "Image source":"Origen de la imagen", "In Spain":"En España", "Knows Goya's works":"Conoce la obra de Goya", "Address":"Dirección", "Link to Goya's work":"Vínculo con la obra de Goya", "Interest in Spanish art":"Interés en el arte español", "Mentions of Goya":"Menciones de Goya", "Collector of Goya's works":"Coleccionista de la obra de Goya", "In Paris":"En París", "mentions": "Menciones", "Conferences/seminars":"Conferencias/seminarios", "Trips":"Viajes", "Lives in":"Vive en", "Patrons": "Mecenas", "Collector of":"Coleccionista de", "Copies after Goya":"Copias de Goya", "Writes about Goya":"Escribe sobre Goya", "Mentions of Goya":"Menciones de Goya", "Connection": "Conexión", "Type of connection": "Tipo de conexión", "Type of relationship": "Tipo de relación", "Know each other since": "Se conocen desde", "Search": "Buscar", "Collaborations": "Colaboraciones", "They met": "Se encontraron", "direct": "directa", "Artworks bought/sold": "Compraventa de obras", "Interactions": "Interacciones", "Employment/patronage": "Empleo/patronazgo", "Between": "Entre", "and": "y", "Between [X] and [Y]": "Entre [X] y [Y]", "In France": "En Francia", "In Italy": "En Italia", "direct": "directa", "secondary": "secundaria", "acquaintances?": "¿conocidos?", "direct?": "¿directa?", "secondary?": "¿secundaria?", "portraitist-sitter": "retratista-retratado", "employer-employee": "empleador-empleado", "family": "familia", "friends": "amigos", "acquaintances": "conocidos", "master-student": "maestro-alumno", "partners/lovers": "parejas/amantes", "artworks influenced by Goya": "influenciado por Goya", "knows Goya's works": "conoce la obra de Goya", "Sales": "Ventas", "colleagues": "colegas", "copies": "copias", "Nodes": "Nodos", "Connections": "Conexiones", "Access form": "Acceder al formulario", "Unknown": "desconocida", "Visits the Prado Museum": "Visita el Museo del Prado", "Art collection":"Colección de arte", "Artworks bought/sold/given":"Compraventa/cesión de obras", "Artworks influenced by Goya":"Obras influenciadas por Goya", "BnF":"BnF", "Commissions":"Encargos", "Commissions Goya with":"Encarga a Goya", "Common friends":"Amigos comunes", "Comparisons":"Comparaciones", "Connection Strength":"Intensidad de la conexión", "Criticism":"Crítica", "Discovers Goya's works":"Descubre la obra de Goya", "Disseminates Goya's works":"Difunde la obra de Goya", "Exchanges":"Intercambios", "Feuds":"Enemistades", "Getty ULAN":"Getty ULAN", "In Madrid":"En Madrid", "Influence":"Influencia", "Influence of Goya":"Influencia de Goya", "Introductions":"Presentaciones", "Link to Goya":"Vínculo con Goya", "Married in":"Casado/a en", "Mentions the Prado commentaries":"Menciona los comentarios del Prado", "Museum collections":"Colecciones de museos", "Quotations of Goya":"Citas de Goya", "RAH":"RAH", "Rivalry":"Rivalidad", "Shared":"Compartido", "Shows Goya":"Muestra a Goya", "They shared":"Compartieron", "Wikidata":"Wikidata",
+      "Sources and Documentation":"Fuentes y documentación", "Connections":"Conexiones", "Artistic Activity, Art Collecting and Patronage":"Actividad artística, coleccionismo y mecenazgo", "Geographic Presence and Movement":"Presencia geográfica y desplazamientos", "Relationship to Goya and His Work":"Relación con Goya y su obra", "Portrayed by":"Retratado/a por", "Views on art and cultural heritage":"Reflexiones sobre arte y patrimonio cultural", "Image source":"Origen de la imagen", "In Spain":"En España", "Knows Goya's works":"Conoce la obra de Goya", "Address":"Dirección", "Link to Goya's work":"Vínculo con la obra de Goya", "Interest in Spanish art":"Interés en el arte español", "Mentions of Goya":"Menciones de Goya", "Collector of Goya's works":"Coleccionista de la obra de Goya", "In Paris":"En París", "mentions": "Menciones", "Conferences/seminars":"Conferencias/seminarios", "Trips":"Viajes", "Lives in":"Vive en", "Patrons": "Mecenas", "Collector of":"Coleccionista de", "Copies after Goya":"Copias de Goya", "Writes about Goya":"Escribe sobre Goya", "Mentions of Goya":"Menciones de Goya", "Connection": "Conexión", "Type of connection": "Tipo de conexión", "Type of relationship": "Tipo de relación", "Know each other since": "Se conocen desde", "Search": "Buscar", "Collaborations": "Colaboraciones", "They met": "Se encontraron", "direct": "directa", "Artworks bought/sold": "Compraventa de obras", "Interactions": "Interacciones", "Employment/patronage": "Empleo/patronazgo", "Between": "Entre", "and": "y", "Between [X] and [Y]": "Entre [X] y [Y]", "In France": "En Francia", "In Italy": "En Italia", "direct": "directa", "secondary": "secundaria", "acquaintances?": "¿conocidos?", "direct?": "¿directa?", "secondary?": "¿secundaria?", "portraitist-sitter": "retratista-retratado", "employer-employee": "empleador-empleado", "family": "familia", "friends": "amigos", "acquaintances": "conocidos", "master-student": "maestro-alumno", "partners/lovers": "parejas/amantes", "artworks influenced by Goya": "influenciado por Goya", "knows Goya's works": "conoce la obra de Goya", "Sales": "Ventas", "colleagues": "colegas", "copies": "copias", "Nodes": "Nodos", "Connections": "Conexiones", "Access form": "Acceder al formulario", "Unknown": "desconocida", "Visits the Prado Museum": "Visita el Museo del Prado", "Art collection":"Colección de arte", "Artworks bought/sold/given":"Compraventa/cesión de obras", "Artworks influenced by Goya":"Obras influenciadas por Goya", "BnF":"BnF", "Commissions":"Encargos", "Commissions Goya with":"Encarga a Goya", "Common friends":"Amigos comunes", "Comparisons":"Comparaciones", "Connection Strength":"Intensidad de la conexión", "Criticism":"Crítica", "Discovers Goya's works":"Descubre la obra de Goya", "Disseminates Goya's works":"Difunde la obra de Goya", "Exchanges":"Intercambios", "Feuds":"Enemistades", "Getty ULAN":"Getty ULAN", "In Madrid":"En Madrid", "Influence":"Influencia", "Influence of Goya":"Influencia de Goya", "Introductions":"Presentaciones", "Link to Goya":"Vínculo con Goya", "Married in":"Casado/a en", "Mentions the Prado commentaries":"Menciona los comentarios del Prado", "Museum collections":"Colecciones de museos", "Quotations of Goya":"Citas de Goya", "RAH":"RAH", "Rivalry":"Rivalidad", "Shared":"Compartido", "Shows Goya":"Muestra a Goya", "They shared":"Compartieron", "Wikidata":"Wikidata",
 
       ARTWORKS_TITLE: "La obra de Goya",
       ARTWORKS_BODY: `
@@ -443,9 +480,7 @@
     NEWS_TITLE: "Noticias",
     NEWS_BODY: `
     <ul style="padding-left:1.2rem; line-height:1.7;">
-      <li>
-          <strong>Julio 2026.</strong> La revista <em>Leonardo</em> (MIT Press) ha publicado un artículo sobre la Goya Network, escrito por Paula Fayos Pérez & Anita Verő. <a href="https://direct.mit.edu/leon/article-abstract/doi/10.1162/LEON.a.2761/137543/The-Goya-Network-Mapping-Goya-s-Impact-in-19th?redirectedFrom=fulltext" target="_blank">Leer más</a>.
-        </li>
+      
         <li>
           <strong>Julio 2026.</strong> La Goya Network ha sido presentada en el <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">Instituto Cervantes de Londres</a>, en un evento presidido por Manuela B. Mena Marqués.
         </li>
@@ -459,39 +494,81 @@
         <strong>Septiembre de 2025.</strong> Se estableció una nueva colaboración con <a href="https://artes-uk.org/" target="_blank">ARTES (Iberian & Latin American Visual Culture Group, Reino Unido)</a>.
       </li>
       <li>
-        <strong>Próximamente.</strong> Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain”, se publicará en <a href="https://leonardo.info/leonardo/" target="_blank"><em>Leonardo</em></a> (MIT Press).
+        <strong>Septiembre de 2024.</strong> La Red Goya recibe financiación de la <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/" target="_blank">Fundación BBVA (Beca Leonardo)</a>.
       </li>
     </ul>
     `,
 
+    MENTIONS_TITLE: "Menciones",
+    MENTIONS_BODY: `
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Artículos académicos</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong><i>Leonardo</i> (MIT Press): próximamente</strong> – Paula Fayos Pérez & Anita Verő, “The Goya Network: Mapping Goya's Impact in 19th-Century France and Spain” (en inglés).</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Conferencias y presentaciones</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong>Instituto Cervantes London (2026)</strong> – 'Goya Network: Francisco de Goya's influence on 19th-century French art and literature' (en inglés) <a href="https://www.eventbrite.co.uk/e/goya-network-tickets-1991696763635?aff=oddtdtcreator" target="_blank">(ver evento)</a>.</li>
+        <li><strong>Prado Joven 2025 (Museo del Prado)</strong> – 'El impacto de Goya en el siglo XIX: de Gautier a Madrazo' (en español) <a href="https://www.museodelprado.es/recurso/programa-joven-2025/570e6e48-01fc-48b4-b8f6-270e3b3141f3" target="_blank">(programa)</a>. <a href="https://www.youtube.com/watch?v=jSGfYz08mP83" target="_blank">Ver vídeo</a>.</li>
+        <li><strong>Congreso Humanidades Digitales Hispánicas 2025 (Universidad de Valencia)</strong> – 'La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (en español) <a href="https://hdh2025.uv.es/static/files/Programa_Congreso_1_8.pdf" target="_blank">(ver programa)</a>.</li>
+        <li><strong>Asociación Humanidades Digitales Hispánicas (2025)</strong> – 'Un café con Paula Fayos Pérez. La Red Goya: Humanidades Digitales para mapear la recepción de Goya en el siglo XIX' (en español) <a href="https://humanidadesdigitaleshispanicas.es/cafe-con-paula-fayos-perez-16-de-diciembre-de-2025/" target="_blank">(ver evento)</a>.</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Presencia en línea</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong>ARTES UK (Iberian & Latin American Visual Culture Group)</strong> – <a href="https://artes-uk.org/links-2/" target="_blank">la Red Goya incluida entre los enlaces</a> (en inglés).</li>
+        <li><strong>XIX (Société des études romantiques & dix-neuviémistes)</strong> – <a href="https://serd.hypotheses.org/19526" target="_blank">'The Goya Network (Réseau Goya)' </a>.</li>
+        <li><strong>Daumier.de</strong> – <a href="https://www.daumier.de/2025/07/30/das-goya-network/" target="_blank">Das Goya Network</a> (en alemán).</li>
+        <li><strong>Red Leonardo</strong> – <a href="https://www.redleonardo.es/noticias/paula-fayos-crea-goya-network-beca-leonardo/?fbclid=IwY2xjawMuhCNleHRuA2FlbQIxMQBicmlkETFmVHVybzVkRTNnNEZ3bGExAR7q3T7lseZC1CU_pp-vGJWXCjVU8C_gUFvqiVPRd7efUEbjLWnIKRb_WU9Ieg_aem_JIlJ6CO77pnEaRFtx1uKmQ" target="_blank">Paula Fayos crea la Goya Network [...]</a> (en español).</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Entrevistas</h3>
+      <ul style="padding-left:1.2rem; line-height:1.7;">
+        <li><strong><i>Mas De Arte</i></strong> – <a href="https://masdearte.com/especiales/paula-fayos-perez/" target="_blank">Paula Fayos Pérez en Especiales/Fichados</a> (en español).</li>
+        <li><strong><i>El País</i></strong> – próximamente (en español).</li>
+      </ul>
+    `,
+
     RELEVANT_LINKS_TITLE: "Enlaces relevantes",
     RELEVANT_LINKS_BODY: `
-    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Proyectos de Humanidades Digitales</h3>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Goya</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
-      <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Cartografía de la correspondencia y redes sociales del escultor neoclásico Bertel Thorvaldsen.</li>
-      <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (Universidad de Stanford) – Una visualización interactiva de redes intelectuales en la Europa moderna temprana.</li>
-      <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (Universidad de Oxford) – Un catálogo y análisis de la correspondencia del período moderno temprano.</li>
-      <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualización de redes sociales, económicas y culturales en la antigüedad romana.</li>
-      <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – Una plataforma colaborativa que conecta las obras de Van Gogh, sus cartas e impacto cultural en instituciones de todo el mundo.</li>
-      <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, Universidad de Virginia) – Agregación de datos biográficos sobre mujeres en múltiples disciplinas y períodos.</li>
-      <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (de Bénédicte Monicat y Morgane Haesen) – Una base de datos de mujeres escritoras del siglo XIX en el mundo francófono.</li>
+      <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado</strong></a> – Un recurso digital del artista para aprender sobre sus pinturas, estampas y dibujos en el museo, así como documentos, referencias impresas y una biblioteca digital (en español).</li>
+      <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> – La historia de Goya con la Real Academia de Bellas Artes de Madrid, así como una panorámica de las colecciones de Goya, particularmente sus series de estampas (en español).</li>
     </ul>
 
-    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Sociedades Académicas y Grupos de Estudio</h3> //SUPERCALI
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Siglo XIX / Francia</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
-      <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicada al estudio y promoción de la obra y legado de Eugène Delacroix.</li>
-      <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – Una organización y revista académica (<i>Cahiers Mérimée</i>) dedicada a los estudios sobre Prosper Mérimée.</li>
-      <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promueve el estudio de la poeta y novelista francesa del siglo XIX.</li>
-      <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – Una asociación dedicada a la vida, obra y legado literario de Théophile Gautier.</li>
+      <li><a href="https://www.musee-delacroix.fr/fr/informations-complementaires/liens/societe-des-amis-du-musee" target="_blank"><strong>Société des Amis du musée Delacroix</strong></a> – Dedicada al estudio y promoción de la obra y legado de Eugène Delacroix (francés/inglés).</li>
+      <li><a href="https://prosper-merimee.com/" target="_blank"><strong>Société Mérimée</strong></a> – Una organización y revista académica (<i>Cahiers Mérimée</i>) dedicada a la figura de Prosper Mérimée (en francés).</li>
+      <li><a href="https://www.societedesetudesmarcelinedesbordesvalmore.fr/" target="_blank"><strong>Société des études Marceline Desbordes-Valmore</strong></a> – Promueve el estudio de la poeta y novelista francesa del siglo XIX (en francés).</li>
+      <li><a href="https://www.theophilegautier.fr/" target="_blank"><strong>Société Théophile Gautier</strong></a> – Una asociación dedicada a la vida, obra y legado literario de Théophile Gautier (en francés).</li>
+      <li><a href="https://www.daumier.de/" target="_blank"><strong>Daumier.de</strong></a> – Dedicado al estudio y promoción de la obra y legado de Honoré Daumier (en alemán).</li>
+      <li><a href="https://serd.hypotheses.org/" target="_blank"><strong>XIX Société des études romantiques & dix-neuvièmistes</strong></a> – Una sociedad dedicada al estudio del romanticismo y el siglo XIX (en francés).</li>
+      <li><a href="https://19cwwfw.org/" target="_blank"><strong>Nineteenth-Century Women Writers in the Francophone World</strong></a> (de Bénédicte Monicat y Morgane Haesen) – Una base de datos de mujeres escritoras del siglo XIX en el mundo francófono (en inglés).</li>
+      <li><a href="https://19thc-artworldwide.org/" target="_blank"><strong>Nineteenth-Century Art Worldwide</strong></a> – Una revista dedicada al estudio del arte y la cultura visual del siglo XIX (en inglés).</li>
     </ul>
 
-    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem; color:#66ccff;">Bases de Datos y Recursos Generales</h3>
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Bases de Datos y Recursos Generales</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
-      <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> – Un portal digital creado por la RAH que geolocaliza en un mapa interactivo la historia global de España y de los territorios que formaron parte de la administración española.</li>
-      <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Incluye el Museo Getty, Getty Research Institute y extensas bases de datos de historia del arte.</li>
-      <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – Biblioteca Nacional de Francia con colecciones digitalizadas incluyendo cartas, manuscritos e impresiones.</li>
-      <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Biblioteca Nacional de España con extensos recursos digitales.</li>
+      <li><a href="https://historia-hispanica.rah.es/" target="_blank"><strong>Real Academia de la Historia (RAH): Historia Hispánica</strong></a> – Un portal digital creado por la RAH que geolocaliza en un mapa interactivo la historia global de España y de los territorios que formaron parte de la administración española (español/inglés).</li>
+      <li><a href="https://www.getty.edu/" target="_blank"><strong>J. Paul Getty Trust</strong></a> – Incluye el Museo Getty, Getty Research Institute y extensas bases de datos de historia del arte (en inglés).</li>
+      <li><a href="https://www.bnf.fr/" target="_blank"><strong>Bibliothèque nationale de France (BnF)</strong></a> – Biblioteca Nacional de Francia con colecciones digitalizadas incluyendo cartas, manuscritos e impresiones (francés/inglés/español).</li>
+      <li><a href="https://www.bne.es/" target="_blank"><strong>Biblioteca Nacional de España (BNE)</strong></a> – Biblioteca Nacional de España con extensos recursos digitales (en español).</li>
     </ul>
+
+    <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Otros Proyectos de Humanidades Digitales</h3>
+    <ul style="padding-left:1.2rem; line-height:1.6;">
+      <li><a href="https://arkivet.thorvaldsensmuseum.dk/en" target="_blank"><strong>Thorvaldsen Letter Archive</strong></a> – Cartografía de la correspondencia y redes sociales del escultor neoclásico Bertel Thorvaldsen (inglés/danés).</li>
+      <li><a href="http://republicofletters.stanford.edu/casestudies/index.html" target="_blank"><strong>Mapping the Republic of Letters</strong></a> (Universidad de Stanford) – Una visualización interactiva de redes intelectuales en la Europa moderna temprana (en inglés).</li>
+      <li><a href="http://emlo.bodleian.ox.ac.uk/home" target="_blank"><strong>Early Modern Letters Online (EMLO)</strong></a> (Universidad de Oxford) – Un catálogo y análisis de la correspondencia del período moderno temprano (en inglés).</li>
+      <li><a href="https://mappingrome.com/" target="_blank"><strong>Mapping Rome</strong></a> – Visualización de redes sociales, económicas y culturales en la antigüedad romana (en inglés).</li>
+      <li><a href="https://vangoghworldwide.org/" target="_blank"><strong>Van Gogh Worldwide</strong></a> – Una plataforma colaborativa que conecta las obras de Van Gogh, sus cartas e impacto cultural en instituciones de todo el mundo (en inglés).</li>
+      <li><a href="https://womensbios.lib.virginia.edu/index.html" target="_blank"><strong>Collective Biographies of Women</strong></a> (Alison Booth, Universidad de Virginia) – Agregación de datos biográficos sobre mujeres en múltiples disciplinas y períodos (en inglés).</li>
+    </ul>
+    
     `,
 
     CONTACT_TITLE: "Contacto",
@@ -507,9 +584,10 @@
       ['.menu-content button[onclick*="about"]','BTN_ABOUT'],
       ['.menu-content button[onclick*="people"]','BTN_PEOPLE'],
       ['.menu-content button[onclick*="partners"]','BTN_PARTNERS'],
+      ['.menu-content button[onclick*="news"]','BTN_NEWS'],
+      ['.menu-content button[onclick*="mentions"]','BTN_MENTIONS'],
       ['.menu-content button[onclick*="artworks"]','BTN_ARTWORKS'],
       ['.menu-content button[onclick*="bibliography"]','BTN_BIB'],
-      ['.menu-content button[onclick*="news"]','BTN_NEWS'],
       ['.menu-content button[onclick*="relevant-links"]','BTN_RELEVANT_LINKS'],
       ['.menu-content button[onclick*="cite"]','BTN_CITE'],
       ['.menu-content button[onclick*="contact"]','BTN_CONTACT'],
@@ -562,6 +640,7 @@
       'ABOUT_BODY',
       'CONTRIBUTIONS_TEXT',
       'NEWS_BODY',
+      'MENTIONS_BODY',
       'RELEVANT_LINKS_BODY',
       'CONTACT_BODY',
       // añade aquí futuras secciones largas con HTML, ej:
@@ -726,6 +805,34 @@ window.search = function(nodeId) {
     });
   }, 650);
 };
+
+// ===============================
+// Dropdown Menu Handlers
+// ===============================
+window.toggleMenu = function(event, menuId) {
+  event.stopPropagation();
+  const menu = document.getElementById(menuId);
+  if (menu) {
+    // Close all other menus first
+    document.querySelectorAll('.menu-content.show').forEach(m => {
+      if (m.id !== menuId) m.classList.remove('show');
+    });
+    menu.classList.toggle('show');
+  }
+};
+
+window.closeAllMenus = function() {
+  document.querySelectorAll('.menu-content.show').forEach(m => {
+    m.classList.remove('show');
+  });
+};
+
+// Close menus when clicking outside
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('.menu-dropdown')) {
+    window.closeAllMenus();
+  }
+});
 
 // ===============================
 // Dropdown Menu Handler
@@ -1575,7 +1682,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             websites: []
           },
 
-          "COURT_PAINTERS": {
+          "SPANISH_COURT_PAINTERS": {
             members: [
               "Francisco de Goya",
               "Francisco Bayeu",
@@ -1591,8 +1698,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             radius: 160, // increased from 132 for wider circle
             padding: 92,
             startAngle: -Math.PI / 2,
-            title: "Court painters",
-            titleEs: "Pintores de Corte",
+            title: "Spanish court painters",
+            titleEs: "Pintores de la corte española",
             origin: "A heterogeneous group of painters who served the Spanish royal court across the late eighteenth and early nineteenth centuries. Despite differing stylistic orientations and artistic backgrounds, they were connected through their roles as court painters, resulting in professional proximity, occasional collaboration, and shifting degrees of personal and artistic affinity. Within this network, family ties and generational succession also played a role in shaping interactions, while stylistic contrasts—from late Baroque tradition to Neoclassicism and Romanticism—coexisted within the same institutional framework.",
             originEs: "Un grupo heterogéneo de pintores al servicio de la corte española a finales del siglo XVIII y comienzos del XIX. A pesar de sus diferentes estilos, orígenes y posiciones estéticas, estuvieron vinculados por su condición de pintores de cámara, lo que generó proximidad profesional, colaboración ocasional y distintos grados de afinidad personal y artística. Dentro de esta red, los lazos familiares y la sucesión generacional también influyeron en las relaciones, mientras coexistían orientaciones estilísticas contrastadas —desde la tradición tardobarroca hasta el neoclasicismo y el romanticismo— dentro del mismo marco institucional.",
             bibliography: [
@@ -1622,7 +1729,9 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Philippe Burty",
               "Paul Lefort",
               "Charles Blanc",
-              "Paul Mantz"
+              "Paul Mantz",
+              "Jules Jacquemart",
+              "Alphonse Hirsch"
             ],
             radius: 100,
             padding: 80,
@@ -1795,18 +1904,81 @@ document.addEventListener('DOMContentLoaded', async function () {
             members: [
               "José de Espronceda",
               "Mariano José Larra",
-              "José Zorrilla"
+              "José Zorrilla",
+              "Jenaro Pérez Villaamil",
+              "Ramón de Mesonero Romanos",
+              "Carlos Luis de Ribera",
+              "Eugenio Lucas Velázquez"
             ],
-            radius: 78,
-            padding: 84,
+            radius: 100,
+            padding: 90,
             startAngle: -Math.PI / 2,
             title: "Spanish Romantics",
             titleEs: "Románticos españoles",
-            origin: "A group of young Spanish writers who shared a common aesthetic and political mindset, representing key figures in Spain's Romantic movement of the 19th century. United by their commitment to expressive, emotional literature and liberal ideals.",
-            originEs: "Un grupo de jóvenes escritores españoles que compartían una sensibilidad estética y una postura política común, figuras clave del movimiento romántico español del siglo XIX. Unidos por su compromiso con la literatura expresiva y emocional, así como con ideales liberales.",
+            origin: "A heterogeneous group of Spanish writers, painters, and critics of the same generation, united by shared aesthetic and political sensibilities representing key figures in Spain's Romantic movement of the 19th century. Encompassing both literary figures and visual artists, they were committed to expressive, emotional forms and liberal ideals. Many maintained connections to Parisian Romantic circles and contributed to Spain's cultural modernization through art, theater, literature, and social commentary.",
+            originEs: "Un grupo heterogéneo de escritores, pintores y críticos españoles de la misma generación, unidos por una sensibilidad estética y política común, figuras clave del movimiento romántico español del siglo XIX. Integrando tanto figuras literarias como artistas visuales, se comprometieron con formas expresivas y emocionales, así como con ideales liberales. Muchos mantuvieron conexiones con los círculos románticos parisinos y contribuyeron a la modernización cultural de España a través del arte, el teatro, la literatura y la crítica social.",
             bibliography: [
               "Donald E. Schurlknight, <i>Spanish Romanticism in Context: Of Subversion, Contradiction and Politics: Espronceda, Larra, Rivas, Zorrilla</i>, 1998.",
               "Begoña Torres González, 'La Hermandad Romántica: Larra y las artes plásticas', in <i>Larra: Fígaro de vuelta, 1809-2009</i>, 2009, pp.183-203."
+            ],
+            websites: []
+          },
+
+          "BORDEAUX_PARIS_CIRCLE": {
+            members: [
+              "Leandro Fernández de Moratín",
+              "Joaquín María Ferrer",
+              "Juan Antonio Melón",
+              "Antonio de Brugada",
+              "Pierre Lacour",
+              "Pierre Lacour fils",
+              "Rosario Weiss Zorrilla",
+              "Leocadia Zorrilla y Galarza",
+              "Cyprien Gaulon",
+              "Jacques Galos",
+              "Carle Vernet"
+            ],
+            radius: 160,
+            padding: 110,
+            centerYOffset: 260,
+            startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Leandro Fernández de Moratín": Math.PI / 2,
+              "Rosario Weiss Zorrilla": Math.PI / 2
+            },
+            title: "Bordeaux-Paris Goya circle",
+            titleEs: "Círculo Goya Burdeos-París",
+            origin: "A transnational network of Spanish exiles, artists, and intellectuals centered on Francisco de Goya's final years in Bordeaux (1824-1828) and their connections to Paris. United by political liberalism, artistic commitment, and shared displacement from Spain, this group encompassed writers, painters, teachers, and family members connected through kinship, intellectual affinity, and the circumstance of exile.",
+            originEs: "Un entramado transnacional de exiliados españoles, artistas e intelectuales centrado en los últimos años de Francisco de Goya en Burdeos (1824-1828) y sus conexiones con París. Unidos por liberalismo político, compromiso artístico y desplazamiento compartido desde España, este grupo abarcaba escritores, pintores, maestros y miembros de la familia conectados a través del parentesco, la afinidad intelectual y la circunstancia del exilio.",
+            websites: []
+          },
+
+          "GOYA_HISTORIANS_CRITICS": {
+            members: [
+              "Charles Yriarte",
+              "Eugène Piot",
+              "Paul Lefort",
+              "Valentín Carderera",
+              "Théophile Gautier",
+              "Théophile Thoré",
+              "Gustave Brunet",
+              "Laurent Matheron"
+            ],
+            radius: 150,
+            padding: 100,
+            centerYOffset: -140,
+            startAngle: -Math.PI / 2,
+            sharedBoundaryNodes: {
+              "Charles Yriarte": Math.PI / 2,
+              "Valentín Carderera": Math.PI / 2
+            },
+            title: "Goya historians & critics",
+            titleEs: "Historiadores y críticos de Goya",
+            origin: "A diverse group of nineteenth-century art historians, critics, writers, and collectors who played a decisive role in the critical interpretation, scholarship, and dissemination of Francisco de Goya's work. Active primarily between the 1830s and 1890s, they combined connoisseurship with historical documentation, contributing to the first systematic cataloguing and critical analyses of his oeuvre. Their writings, collections, and curatorial practices helped establish Goya as a central figure in European art history, bridging Spanish and French intellectual contexts.",
+            originEs: "Un grupo diverso de historiadores del arte, críticos, escritores y coleccionistas del siglo XIX que desempeñaron un papel decisivo en la interpretación crítica, la erudición y la difusión de la obra de Francisco de Goya. Activos principalmente entre la década de 1830 y 1890, combinaron el conocimiento experto con la documentación histórica, contribuyendo a los primeros análisis sistemáticos y críticos de su obra. Sus escritos, colecciones y prácticas curatoriales ayudaron a establecer a Goya como figura central en la historia del arte europeo, vinculando contextos intelectuales españoles y franceses.",
+            bibliography: [
+              "Nigel Glendinning, <i>Goya and his Critics</i>, 1977 (new edition, ed. Vega, 2017).",
+              "Paula Fayos Pérez, <i>Goya's Caprichos in Nineteenth-Century France. Politics of the Grotesque</i>, 2024."
             ],
             websites: []
           }
@@ -1821,7 +1993,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
 
         clusterColorMap["GOYA_FAMILY"] = "#64b5f6";      // azul
-        clusterColorMap["COURT_PAINTERS"] = "#ffb74d";   // naranja
+        clusterColorMap["SPANISH_COURT_PAINTERS"] = "#ffb74d";   // naranja
 
         // Reverse map: nodeId -> [clusterId1, clusterId2, ...]
         const nodeClusterMap = {};
@@ -1887,7 +2059,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         window.toggleClusterEdgeColoring = function () {
           clusterEdgeColoringEnabled = !clusterEdgeColoringEnabled;
-          const button = document.getElementById('clusterToggleButton');
+          const button = document.getElementById('clusterToggleOption');
           if (button) {
             button.textContent = clusterEdgeColoringEnabled ? t('BTN_CLUSTER_TOGGLE_ON') : t('BTN_CLUSTER_TOGGLE_OFF');
           }
@@ -1912,7 +2084,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const updateClusterInfoBadge = () => {
           const badge = document.getElementById('clusterInfoBadge');
           if (!badge) return;
-          badge.textContent = selectedClusterId ? getClusterDisplayName(selectedClusterId) : '';
+          badge.textContent = '';
         };
 
         window.clearClusterSelection = function () {
@@ -3965,6 +4137,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           { type: "field", key: "patronage", label: "Patronage" },
           { type: "field", key: "patrons", label: "Patrons" },
           { type: "field", key: "portrayed by", label: "Portrayed by" },
+          { type: "field", key: "views on art and cultural heritage", label: "Views on art and cultural heritage" },
 
           { type: "section", label: "Geographic Presence and Movement" },
           { type: "field", key: "lives in", label: "Lives in" },
@@ -4119,6 +4292,25 @@ document.addEventListener('DOMContentLoaded', async function () {
             }).filter(Boolean);
 
             htmlText = `<ul>${processedItems.join("")}</ul>`;
+          } else if (typeof value === "object" && value !== null && !Array.isArray(value)) {
+            // Handle plain objects (e.g., "author of" with nested categories)
+            const sections = [];
+            for (const [key, items] of Object.entries(value)) {
+              if (Array.isArray(items)) {
+                const processedItems = items.map(item => {
+                  if (typeof item === "string") {
+                    const translatedItem = translateValue(item);
+                    return `<li>${autoLinkNames(processMarkdownLinks(translatedItem), nodesMap)}</li>`;
+                  }
+                  return null;
+                }).filter(Boolean);
+                
+                if (processedItems.length > 0) {
+                  sections.push(`<div style="margin-top:0.5rem;"><strong>${key}:</strong><ul>${processedItems.join("")}</ul></div>`);
+                }
+              }
+            }
+            htmlText = sections.join("");
           } else {
             let translatedValue = value;
 
@@ -4173,12 +4365,19 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
 
         const degreeCalc = connections.length;
-        html += `<p><strong>${t('Connections')}:</strong> ${degreeCalc}</p><ul>`;
+        html += `<p style="margin-top:0.5rem; margin-bottom:0.3rem;"><strong>${t('Connections')}:</strong> ${degreeCalc}</p>`;
+        html += `<p style="font-size:0.85em; color:#999; margin:0.2rem 0 0.5rem 0;">🔗 = edge  &nbsp;  👤 = node</p><ul style="margin-top:0.3rem;">`;
 
         connections
           .sort((a, b) => (a.name || '').localeCompare(b.name || ''))
           .forEach(conn => {
-            html += `<li><a href="#" style="color:#66ccff" onclick="focusNode('${conn.id}')">${conn.name}</a></li>`;
+            html += `<li style="margin:0.25rem 0; display:flex; align-items:center; gap:0.5rem;">
+              <span style="flex-grow:1;">
+                <a href="#" style="color:#66ccff; font-weight:bold;" onclick="selectEdgeFromNodes('${node.id}', '${conn.id}'); return false;">${conn.name}</a>
+              </span>
+              <a href="#" style="color:#66ccff; font-size:1.1em; text-decoration:none;" onclick="selectEdgeFromNodes('${node.id}', '${conn.id}'); return false;" title="View edge">🔗</a>
+              <a href="#" style="color:#999; font-size:1.1em; text-decoration:none;" onclick="focusNode('${conn.id}'); return false;" title="View node">👤</a>
+            </li>`;
           });
 
         html += `</ul></div>`;
@@ -4421,6 +4620,45 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
 
     });
+
+    // ===== SELECT EDGE FROM TWO NODES =====
+    window.selectEdgeFromNodes = function (fromNodeId, toNodeId) {
+      // Find the edge connecting these two nodes
+      let edgeId = null;
+      edges.get().forEach(edge => {
+        if ((edge.from === fromNodeId && edge.to === toNodeId) ||
+            (edge.from === toNodeId && edge.to === fromNodeId)) {
+          edgeId = edge.id;
+        }
+      });
+
+      if (!edgeId) return;
+
+      clearHighlights();
+
+      // Get the midpoint of the edge for centering
+      const fromPos = window.VIS_NETWORK.getPosition(fromNodeId);
+      const toPos = window.VIS_NETWORK.getPosition(toNodeId);
+      if (!fromPos || !toPos) return;
+
+      const midX = (fromPos.x + toPos.x) / 2;
+      const midY = (fromPos.y + toPos.y) / 2;
+
+      // Move to the edge and select it
+      window.VIS_NETWORK.moveTo({
+        position: { x: midX, y: midY },
+        scale: window.VIS_NETWORK.getScale() * 1.2
+      });
+
+      // Emit click event to trigger edge display logic
+      setTimeout(() => {
+        window.VIS_NETWORK.emit('click', {
+          nodes: [],
+          edges: [edgeId],
+          pointer: { DOM: { x: 0, y: 0 }, canvas: { x: 0, y: 0 } }
+        });
+      }, 100);
+    };
 
     window.focusNode = function (nodeId) {
       clearHighlights();
