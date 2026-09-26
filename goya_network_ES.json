@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-16",
+  "last_update": "2026-09-26",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -9622,6 +9622,16 @@
       "know each other since": "1841",
       "they met": "se conocieron en París el 25 de mayo de 1841, 22 de noviembre de 1841 y 3 de junio de 1842 (Lanzarote Guiral 2016, pp.LXXVIII, 15, 75, 88, 131)",
       "bibliography": "Lanzarote Guiral 2016"
+    },
+    {
+      "_edge_id": "Duchesne-Vivant Denon",
+      "from": "Duchesne Aîné",
+      "to": "Dominique Vivant Denon",
+      "connection_level": "¿directa?",
+      "relationship type": "¿conocidos?",
+      "collaborations": "Duchesne Aîné editó el catálogo de la venta Vivant Denon (1826)",
+      "link to Goya's work": "el catálogo de la venta Vivant Denon editado por Duchesne Aîné en 1826 incluye un ejemplar de la primera edición de los <i>Caprichos</i>, en Francia desde 1809 (ver Fayos Pérez 2024, pp.32-33). Es catalogado en la escuela italiana como 'Goya (François), né à Lucques vers 1740' (nacido en Luca): no.214 'Caricatures gravées à l'eau-forte et au lavis; petit in-folio, basane, 80 planches' (p.56). Este ejemplar entraría en el Cabinet des Estampes de la Biblioteca Real (BnF Reserve BF-4 [J,4-25]), donde trabajaba Duchesne Aîné, en 1827, donde los artistas y escritores podían estudiarlo.",
+      "bibliography": "Fayos Pérez 2024; Tinterow 2003, p.155, nota 46; <i>Description des objets d'arts qui composent le cabinet de feu M. le baron V. Denon. Estampes et ouvrages à figures</i>, par Duchesne Aîné, Paris, Imprimerie d'Hippolyte Tilliard, 1826"
     },
     {
       "_edge_id": "Mallarmé-Zola",
