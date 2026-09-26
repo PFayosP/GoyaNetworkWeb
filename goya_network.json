@@ -6494,6 +6494,30 @@
       "image": "https://www.goyanetwork.com/images/Vernet_Carle.jpg",
       "image source": "portrait by Robert Lefèvre, 1804, Louvre",
       "added": "2026-09-04"
+    },
+    {
+      "id": "Duchesne Aîné",
+      "label": "Duchesne",
+      "full name": "Jean Duchesne",
+      "life dates": "1779-1855",
+      "sex": "male",
+      "nationality": "French",
+      "profession": "curator",
+      "born in": "Versailles",
+      "dies in": "Paris",
+      "parents": "Antoine-Nicolas Duchesne",
+      "siblings": "Duchesne-Tauzin",
+      "masters": "Jacques-Adrien Joly",
+      "works in": "Cabinet des Estampes, Bibliothèque royale (BnF), from 1795, at the age of 15, as junior assistant. Assistant Curator in 1832. Curator in Chief in 1839. Director of the Cabinet des Estampes (1838-1855). He catalogued the royal collections in Versailles.",
+      "curiosities": "Freemason from the Order of the Temple with the rank of Grand Preceptor of North America [Biblissima](https://portail.biblissima.fr/ark:/43093/pdataed2954dfed940f117bdc7ad9c1d8f4041eb2d21c)",
+      "decorations/awards": "chevalier de la Légion d'honneur (1833)",
+      "author of": "<i>Musée Français: Recueil des plus beaux tableaux, statues, et bas-reliefs qui existaient au Louvre avant 1815</i>, c.1815; <i>De la gravure sur métal et sur bois et de ses divers procédés</i>, Paris (no date); <i>Essai sur les nielles, gravures des orfèvres florentins du XVe siècle</i>, Paris, 1826; <i>Musée de peinture et de sculpture</i>, 1828-1833; <i>Voyages d`un iconophile</i>, 1834; <i>Jeux de cartes tarots et de cartes numérales du XIVe au XVIIIe siècles</i>, Paris, 1844; <i>Recherches sur une ancienne galerie du Palais Mazarin où se trouve maintenant le département des Estampes de la Bibliothèque impériale</i>, Paris, 1854; <i>Description des estampes exposées dans la galerie de la Bibliothèque impériale, formant un aperçu historique des productions de l'art et de la gravure</i>, Paris, 1855.",
+      "portrayed by": "anonymous drawing, Musée Carnavalet D.15526 (Album Destailleur no.153); Félix Bracquemond, c.1866, etching, British Museum [1923,0714.133](https://www.britishmuseum.org/collection/object/P_1923-0714-133)",
+      "bibliography": "PARIS (Paulin), <i>Notice historique sur la vie et les œuvres de M. J. Duchesne Aîné</i>, Paris, 1855; <i>Dictionnaire de biographie française</i>, t. 11, 1237-1238",
+      "websites": "[BnF](https://comitehistoire.bnf.fr/gardes-directeurs-d%C3%A9partement-estampes-1720-2007); [British Museum](https://www.britishmuseum.org/collection/term/BIOG142187); [NGA](https://www.nga.gov/artists/47239-jean-duchesne-aine)",
+      "image": "https://www.goyanetwork.com/images/Duchesne.jpg",
+      "image source": "anonymous portrait, Musée Carnavalet",
+      "added": "2026-09-26"
     }
   ],
   "edges": [
@@ -9478,6 +9502,34 @@
       "know each other since": "1856",
       "they shared": "interest in Japanese art",
       "portraits": "Bracquemond, <i>Portrait d'Edmond de Goncourt</i>, 1880 (presented at the Impressionist exhibition); another portrait in 1881, etching and drypoint, Met [22.63.39](https://www.metmuseum.org/art/collection/search/333841)."
+    },
+    {
+      "_edge_id": "Bracquemond-Duchesne",
+      "from": "Duchesne Aîné",
+      "to": "Félix Bracquemond",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; portraitist-sitter",
+      "know each other since": "at least 1866",
+      "portraits": "Bracquemond, <i>Portrait de Duchesne Aîné</i>, c.1866, etching and drypoint, British Museum [1923,0714.133](https://www.britishmuseum.org/collection/object/P_1923-0714-133)."
+    },
+    {
+      "_edge_id": "Devéria-Duchesne",
+      "from": "Duchesne Aîné",
+      "to": "Achille Devéria",
+      "connection_level": "direct?",
+      "relationship type": "acquaintances?",
+      "they shared": "Devéria was Duchesne's successor as Director of the Cabinet des Estampes in 1855",
+      "websites": "[BnF](https://comitehistoire.bnf.fr/gardes-directeurs-d%C3%A9partement-estampes-1720-2007)"
+    },
+    {
+      "_edge_id": "Carderera-Duchesne",
+      "from": "Duchesne Aîné",
+      "to": "Valentín Carderera",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "1841",
+      "they met": "they met in Paris on 25 May 1841, 22 Nov 1841 and 3 June 1842 (Lanzarote Guiral 2016, pp.LXXVIII, 15, 75, 88, 131)",
+      "bibliography": "Lanzarote Guiral 2016"
     },
     {
       "_edge_id": "E. Goncourt-Hirsch",
