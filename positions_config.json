@@ -120,8 +120,8 @@
     "y": -363
   },
   "Marcello (Adèle d'Affry)": {
-    "x": 952,
-    "y": -176
+    "x": 977,
+    "y": -173
   },
   "Bernardo de Iriarte": {
     "x": -294,
@@ -456,12 +456,12 @@
     "y": 472
   },
   "Henri Regnault": {
-    "x": 881,
-    "y": -146
+    "x": 913,
+    "y": -140
   },
   "Marcel Briguiboul": {
     "x": 766,
-    "y": -288
+    "y": -322
   },
   "Édouard Manet": {
     "x": 1022,
@@ -484,8 +484,8 @@
     "y": -455
   },
   "Zacharie Astruc": {
-    "x": 862,
-    "y": -249
+    "x": 879,
+    "y": -250
   },
   "Auguste Renoir": {
     "x": 1190,
@@ -676,8 +676,8 @@
     "y": 148
   },
   "Ernest Meissonier": {
-    "x": 775,
-    "y": -190
+    "x": 810,
+    "y": -165
   },
   "Eduardo Zamacois": {
     "x": 600,
@@ -846,5 +846,9 @@
   "Carle Vernet": {
     "x": 41,
     "y": 67
+  },
+  "Duchesne Aîné": {
+    "x": 725,
+    "y": -203
   }
 }
