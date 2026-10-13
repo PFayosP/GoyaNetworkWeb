@@ -1058,6 +1058,9 @@
       "portrayed by": "Francisco de Goya, 1797, Strasbourg Museum of Fine Arts",
       "art collection": "started by his uncle Juan de Iriarte (LG 2016, p.98). It included works attributed to Velázquez, Murillo, Titian, Van Dyck and Anton Raphael Mengs.",
       "sales": "London (date?). Paris, 15 and 17 Feb 1841, and 21 Jan 1842. Attended by Valentín Carderera, who saw a portrait attributed to Velázquez being sold for 100 fr., and a Murillo for 55 fr. (LG 2016, p.98).",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/23834-bernardo-de-iriarte-y-de-las-nieves-rabelo"
+      },
       "bibliography": "Lanzarote Guiral 2016",
       "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Bernardo_de_Iriarte)",
       "image": "https://www.goyanetwork.com/images/Iriarte.jpg",
@@ -13062,9 +13065,10 @@
       "connection_level": "direct",
       "relationship type": "colleagues",
       "know each other since": "at least 1794",
-      "correspondence": "1794-I-4 Goya to Iriarte: the famous letter where Goya announces his small cabinet paintings out of commission, on topics drawn from the 'capricho e invención' (Canellas p.314, no.188; also no.189, 1794-I-7)",
+      "correspondence": "1794-I-4 Goya to Iriarte: the famous letter where Goya announces his small cabinet paintings out of commission, on topics drawn from the 'capricho e invención' (Canellas López 1981, p.314, no.188; also no.189, 1794-I-7)",
       "portraits": "Goya portrays Iriarte in 1797 (Strasbourg Museum). Copy at the Metropolitan Museum (50.145.19)",
-      "they met": "in Paris, Valentín Carderera visits Aguado's art gallery on 17 May 1841 (Lanzarote Guiral 2016, p.LV)"
+      "they met": "in Paris, Valentín Carderera visits Aguado's art gallery on 17 May 1841 (Lanzarote Guiral 2016, p.LV)",
+      "bibliography": "Lanzarote Guiral 2016; Canellas López 1981"
     },
     {
       "_edge_id": "G. Sand-Nadar",
