@@ -1073,6 +1073,9 @@
       "sales": "Londres (¿fecha?). París, 15 y 17 de febrero de 1841, y 21 de enero de 1842. Asistió Valentín Carderera, que vio cómo se vendía un retrato atribuido a Velázquez por 100 francos y un Murillo por 55 francos (LG 2016, p.98)",
       "bibliography": "Lanzarote Guiral 2016",
       "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Bernardo_de_Iriarte)",
+      "authorities": {
+        "rah": "https://historia-hispanica.rah.es/biografias/23834-bernardo-de-iriarte-y-de-las-nieves-rabelo"
+      },
       "image": "https://www.goyanetwork.com/images/Iriarte.jpg",
       "image source": "Retrato de Goya, 1797, Estrasburgo"
     },
@@ -13198,9 +13201,10 @@
       "connection_level": "direct",
       "relationship type": "compañeros",
       "know each other since": "al menos desde 1794",
-      "correspondence": "1794-I-4 Goya a Iriarte: la famosa carta en la que Goya anuncia que deja de pintar sus pequeños cuadros de gabinete, sobre temas extraídos del 'capricho e invención' (Canellas p.314, no.188; también no.189, 1794-I-7)",
-      "portraits": "Goya retrata a Iriarte en 1797 (Museo de Estrasburgo). Copia en el Museo Metropolitano (50.145.19)",
-      "they met": "en París, Valentín Carderera visita la galería de arte de Aguado el 17 de mayo de 1841 (Lanzarote Guiral 2016, p.LV)"
+      "correspondence": "1794-I-4 Goya a Iriarte: la famosa carta en la que Goya anuncia que deja de pintar sus pequeños cuadros de gabinete, sobre temas extraídos del 'capricho e invención' (Canellas López 1981, p.314, no.188; también no.189, 1794-I-7)",
+      "portraits": "Goya retrata a Iriarte en 1797 (Museo de Estrasburgo). Copia en el Metropolitan Museum (50.145.19)",
+      "they met": "en París, Valentín Carderera visita la galería de arte de Aguado el 17 de mayo de 1841 (Lanzarote Guiral 2016, p.LV)",
+      "bibliography": "Lanzarote Guiral 2016; Canellas López 1981"
     },
     {
       "_edge_id": "G. Sand-Nadar",
