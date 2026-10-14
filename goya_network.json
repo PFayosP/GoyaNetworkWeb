@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-26",
+  "last_update": "2026-10-14",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -1577,10 +1577,10 @@
       "life dates": "1777-1858",
       "sex": "male",
       "nationality": "French",
-      "in Bordeaux": "active 1815-1858. He coincides with Goya",
+      "in Bordeaux": "active 1815-1858. He coincides with Francisco de Goya",
       "studies in": "École royale de Sorèze",
       "military activity": "enlists in the army of the French Republic in 1791",
-      "works as": "editor and lithographer for Gustave de Galard, Eugène Devéria, Pierre Lacour, Francisco de Goya (Bulls of Bordeaux, 1825)",
+      "works as": "editor and lithographer for Gustave de Galard, Eugène Devéria, Pierre Lacour, Francisco de Goya (<i>Bulls of Bordeaux</i>, 1825)",
       "profession": "lithographic printer; writer; calligrapher (<i>maître-écrivain</i>)",
       "portrayed by": "Goya, 1824-25, lithography (Harris 1964, no.282)",
       "bibliography": "Harris 1964",
@@ -1687,7 +1687,7 @@
     },
     {
       "id": "Achille Devéria",
-      "label": "Devéria",
+      "label": "A. Devéria",
       "full name": "Achille Jacques Jean Marie Devéria",
       "life dates": "1800-1857",
       "sex": "male",
@@ -1702,7 +1702,7 @@
       "works as": "director of the Département des Estampes at the BnF in 1849; curator of the Department of Egyptian art at the Louvre",
       "trips": "to Egypt, after being appointed curator of Egyptian art at the Louvre",
       "decorations/awards": "Chevalier de la Légion d'honneur (1855)",
-      "address": "45 rue de Notre-Dame-des-Champs (1833) (very close to Victor Hugo), where he would hold a successful <i>salon</i>",
+      "address": "45 rue de Notre-Dame-des-Champs (1833) (very close to Victor Hugo and his brother Eugène Devéria), where he would hold a successful <i>salon</i>",
       "author of": [
         "Portraits: Honoré de Balzac (c.1825: attributed), Victor Hugo, Alexandre Dumas père (1829), Prosper Mérimée, Franz Liszt (1832)",
         "Original prints: cover of Goethe's <i>Faust</i>",
@@ -1823,6 +1823,7 @@
       "sex": "male",
       "nationality": "French",
       "parents": "Joseph Léopold Hugo and Sophie Trébuchet",
+      "siblings": "Abel Hugo; Eugène Hugo",
       "children": "Léopold Hugo, Léopoldine Hugo, Charles Hugo, François-Victor Hugo, Adèle Hugo",
       "married to": "Adèle Foucher (1822)",
       "profession": "writer, essayist, novelist, playwright, poet, politician",
@@ -6171,7 +6172,7 @@
         "getty ulan": "http://vocab.getty.edu/page/ulan/500318670"
       },
       "image": "https://www.goyanetwork.com/images/Goupil.jpg",
-      "image source": "Devéria lithograph, c.1831",
+      "image source": "A. Devéria lithograph, c.1831",
       "added": "2025-10-16"
     },
     {
@@ -6521,6 +6522,46 @@
       "image": "https://www.goyanetwork.com/images/Duchesne.jpg",
       "image source": "anonymous portrait, Musée Carnavalet",
       "added": "2026-09-26"
+    },
+    {
+      "id": "Eugène Devéria",
+      "label": "E. Devéria",
+      "life dates": "1805-1865",
+      "sex": "male",
+      "nationality": "French",
+      "profession": "painter, lithographer, draughtsman",
+      "born in": "Paris",
+      "dies in": "Pau",
+      "lives in": "Paris (until 1838); Avignon; Béarn; Pau (from 1841); Basque country, Spain (1849); England and Scotland (1849-1853); Avignon (1856, 1857)",
+      "parents": "François-Marie Devéria and Désirée François-Chaumont",
+      "siblings": "Achille Devéria, Désirée, Octavie, Laure",
+      "married to": "Caroline-Aglaé Lavie du Rauzel (or Durauzel)",
+      "partners/lovers": "Caroline-Aglaé Lavie du Rauzel (or Durauzel)",
+      "children": "Marie Devéria (1831-1856)",
+      "studies in": "École nationale supérieure des beaux-arts",
+      "masters": "Achille Devéria; Anne-Louis Girodet; Guillaume Guillon Lethière",
+      "students": "Auguste-Barthélemy Glaize; Charles Antoine Marie Année; Auguste-Barthélemy Glaize; his daughter Marie Devéria",
+      "patrons": "Louis Philippe I",
+      "author of": [
+        "Paintings: <i>La Naissance d'Henri IV</i> (1827); <i>Bataille de La Marsaille, 4 octobre 1693</i>, 1837, Versailles; <i>Saint Sébastien détaché par des saintes femmes</i>, 1837, Gaillac, Église Saint-Michel; [Une martyre](https://www.artnet.com/artists/eug%C3%A8ne-dev%C3%A9ria/une-martyre-VXRHqveBEMKSXjuI-gSZuA2), oil on panel, unkown date (influenced by Eugène Delacroix?)",
+        "Prints: Frontispice pour l'édition du <i>Faust</i> de Goethe illustré par Eugène Delacroix, 1828, Musée Delacroix [MD 2010-4](https://collections.louvre.fr/en/ark:/53355/cl010456120)"
+      ],
+      "exhibitions": [
+        "Paris Salon: since 1824. 1827: <i>La Naissance d'Henri IV</i> (very successful). The last time he sent a painting to the Salon was in 1861 with <i>La Réception de Christophe Colomb par Ferdinand et Isabelle</i>.",
+        "Recent years: Pau, <i>Eugène Devéria (Paris 1805-Pau 1865)</i>"
+      ],
+      "interest in Spanish art": "in 1861 he makes the painting <i>La Réception de Christophe Colomb par Ferdinand et Isabelle</i>",
+      "address": "Paris: rue de l'Est no.7 (boulevard Saint-Michel no.115) by 1827; Notre-dame des Champs no.27, from 1833",
+      "authorities": {
+        "bnf": "https://data.bnf.fr/ark:/12148/cb14093154h"
+      },
+      "curiosities": "he converts to Protestantism in 1843 and becomes so fervent he exasperates his family, including Achille Devéria",
+      "portrayed by": "school of Eugène Devéria, <i>Portrait de l'artiste et de son frère Achille</i>, 1836, painting, [Louvre RF 2593](https://collections.louvre.fr/en/ark:/53355/cl0102593); self-portrait, painting, 1838, Pau Museum; Paul Lafond after Eugène's self-portrait, etching, Aug 1869, <i>L'Artiste</i>",
+      "bibliography": "Vincent David, <i>Eugène Devéria : La peinture et l'histoire et Eugène Devéria : Variations sur les genres artistiques</i>, RMN, 2005; Henri-François Buffet, <i>En relisant leurs lettres - souvenirs d'enfance (1909-1919)</i>, 1964; René Ancely, <i>La Vie pyrénéenne d'Eugène Devéria</i>, Pau, 1940; Maximilien Gauthier, <i>La Vie et l'Art romantiques. Achille et Eugène Devéria</i>, 1925; André Beaunier, <i>Les Souvenirs d'un peintre</i>, 1906. pp.19-23; Sophie Peyre Alone, <i>Eugène Devéria d'après des documents originaux 1805-1865</i>, 1887; M. Guyot de Fère, <i>Annuaire des artistes Français</i>, 1832, p.67.",
+      "websites": "[ArtNet](https://www.artnet.com/artists/eug%C3%A8ne-dev%C3%A9ria/); [Louvre](https://collections.louvre.fr/en/recherche?q=Eug%C3%A8ne%20Dev%C3%A9ria&author%5B0%5D=687)",
+      "image": "https://www.goyanetwork.com/images/Deveria_Eugene.jpg",
+      "image source": "Paul Lafond portrait",
+      "added": "2026-10-14"
     }
   ],
   "edges": [
@@ -9516,7 +9557,80 @@
       "portraits": "Bracquemond, <i>Portrait de Duchesne Aîné</i>, c.1866, etching and drypoint, British Museum [1923,0714.133](https://www.britishmuseum.org/collection/object/P_1923-0714-133)."
     },
     {
-      "_edge_id": "Devéria-Duchesne",
+      "_edge_id": "A. Devéria-E. Devéria",
+      "from": "Eugène Devéria",
+      "to": "Achille Devéria",
+      "connection_level": "direct",
+      "relationship type": "relatives: brothers",
+      "they shared": "Achille was Eugène's master. They also frequented Victor Hugo since 1824.",
+      "portraits": "school of Eugène Devéria, <i>Portrait de l'artiste et de son frère Achille</i>, 1836, painting, [Louvre RF 2593](https://collections.louvre.fr/en/ark:/53355/cl0102593)"
+    },
+    {
+      "_edge_id": "E. Devéria-Hugo",
+      "from": "Eugène Devéria",
+      "to": "Victor Hugo",
+      "connection_level": "direct",
+      "relationship type": "acquaintances",
+      "know each other since": "1824",
+      "they shared": "Eugène, who frequented Victor Hugo assiduously since 1824 with his brother Achille, was inspired, for the subject of his painting, by a short story by Abel Hugo, Victor's brother, published in <i>Le Conservateur littéraire</i> in 1820"
+    },
+    {
+      "_edge_id": "E. Devéria-Gautier",
+      "from": "Eugène Devéria",
+      "to": "Théophile Gautier",
+      "connection_level": "direct",
+      "relationship type": "acquaintances?",
+      "know each other since": "at least 1827",
+      "mentions": "Gautier wrote about E. Devéria, on <i>La naissance d'Henri IV</i> (1827), 'L'artiste qui commençait par ce coup de maître avait vingt-deux ans à peine…' (<i>Histoire du romantisme</i>, 1874).",
+      "bibliography": "<i>Histoire du romantisme</i>, 1874"
+    },
+    {
+      "_edge_id": "Boulanger-E. Devéria",
+      "from": "Eugène Devéria",
+      "to": "Louis Boulanger",
+      "connection_level": "direct",
+      "relationship type": "acquaintances; flatmates",
+      "know each other since": "at least 1827",
+      "they shared": "a flat in 1827 at rue de l'Est no.7 (boulevard Saint-Michel no.115), at the 4th floor"
+    },
+    {
+      "_edge_id": "E. Devéria-Louis-Philippe I",
+      "from": "Eugène Devéria",
+      "to": "Louis-Philippe I",
+      "connection_level": "direct",
+      "relationship type": "patronage"
+    },
+    {
+      "_edge_id": "Dumas-E. Devéria",
+      "from": "Eugène Devéria",
+      "to": "Alexandre Dumas père",
+      "connection_level": "direct?",
+      "relationship type": "portraitist-sitter",
+      "portraits": "E. Devéria made a pencil drawing of Alexandre Dumas fils, c.1850",
+      "websites": "[ArtNet](https://www.artnet.com/artists/eug%C3%A8ne-dev%C3%A9ria/portrait-of-a-man-alexandre-dumas-fils-study-of-aa-3efZxh5AFDVZH-Kq76T_bg2)"
+    },
+    {
+      "_edge_id": "E. Devéria-Gaulon",
+      "from": "Eugène Devéria",
+      "to": "Cyprien Gaulon",
+      "connection_level": "direct",
+      "relationship type": "colleagues",
+      "they shared": "Gaulon worked as lithographer for E. Devéria"
+    },
+    {
+      "_edge_id": "Delacroix-E. Devéria",
+      "from": "Eugène Devéria",
+      "to": "Eugène Delacroix",
+      "connection_level": "direct",
+      "relationship type": "colleagues",
+      "know each other since": "at least 1828",
+      "they shared": [
+      "E. Devéria illustrated the Frontispice pour l'édition du <i>Faust</i> de Goethe illustré par Eugène Delacroix, 1828, Musée Delacroix [MD 2010-4](https://collections.louvre.fr/en/ark:/53355/cl010456120)",
+      "Delacroix might have influenced E. Devéria, in works such as [Une martyre](https://www.artnet.com/artists/eug%C3%A8ne-dev%C3%A9ria/une-martyre-VXRHqveBEMKSXjuI-gSZuA2), oil on panel, unkown date."
+      ]
+    },
+    {
+      "_edge_id": "A. Devéria-Duchesne",
       "from": "Duchesne Aîné",
       "to": "Achille Devéria",
       "connection_level": "direct?",
@@ -11809,7 +11923,7 @@
       "strength": 2
     },
     {
-      "_edge_id": "Devéria-F. Madrazo",
+      "_edge_id": "A. Devéria-F. Madrazo",
       "from": "Federico de Madrazo",
       "to": "Achille Devéria",
       "connection_level": "direct",
@@ -11978,7 +12092,7 @@
       "strength": 2
     },
     {
-      "_edge_id": "Devéria-Goupil",
+      "_edge_id": "A. Devéria-Goupil",
       "from": "Achille Devéria",
       "to": "Adolphe Goupil",
       "connection_level": "direct",
@@ -12242,7 +12356,7 @@
       "websites": "[Museo de BBAA de Valencia, inv.587](https://museobellasartesvalencia.gva.es/es/estampes/-/asset_publisher/KFeOnCE1wa8i/content/las-aguas-de-moises)"
     },
     {
-      "_edge_id": "Carderera-Devéria",
+      "_edge_id": "A. Devéria-Carderera",
       "from": "Valentín Carderera",
       "to": "Achille Devéria",
       "connection_level": "direct"
@@ -13160,7 +13274,7 @@
       "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Honor%C3%A9_Daumier)"
     },
     {
-      "_edge_id": "Daumier-Devéria",
+      "_edge_id": "Daumier-A. Devéria",
       "from": "Honoré Daumier",
       "to": "Achille Devéria",
       "connection_level": "direct",
@@ -14451,7 +14565,7 @@
       "bibliography": "Chagniot 2016; Monneret 1987; Tabarant 1947"
     },
     {
-      "_edge_id": "Devéria-Manet",
+      "_edge_id": "A. Devéria-Manet",
       "from": "Achille Devéria",
       "to": "Édouard Manet",
       "connection_level": "direct",
@@ -14663,14 +14777,14 @@
       "collaborations": "Authors of Catalogue raisonné of Goya's prints, <i>Cabinet de l'amateur</i>, 1842"
     },
     {
-      "_edge_id": "Devéria-Fontaney",
+      "_edge_id": "A. Devéria-Fontaney",
       "from": "Achille Devéria",
       "to": "Antoine Fontaney",
       "connection_level": "direct",
       "relationship type": "colleagues"
     },
     {
-      "_edge_id": "Devéria-Hugo",
+      "_edge_id": "A. Devéria-Hugo",
       "from": "Achille Devéria",
       "to": "Victor Hugo",
       "connection_level": "direct",
@@ -14684,7 +14798,7 @@
       "bibliography": "Arlette Sérullaz (curator), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [exhibition dossier](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf); Thompson 1970"
     },
     {
-      "_edge_id": "Delacroix-Devéria",
+      "_edge_id": "Delacroix-A. Devéria",
       "from": "Achille Devéria",
       "to": "Eugène Delacroix",
       "connection_level": "direct",
@@ -14695,7 +14809,7 @@
       "bibliography": "Arlette Sérullaz (curator), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [exhibition dossier](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf)"
     },
     {
-      "_edge_id": "Devéria-Mérimée",
+      "_edge_id": "A. Devéria-Mérimée",
       "from": "Achille Devéria",
       "to": "Prosper Mérimée",
       "connection_level": "direct",
@@ -14703,7 +14817,7 @@
       "portraits": "Devéria portrayed Mérimée in 1829 (lithograph)"
     },
     {
-      "_edge_id": "Baudelaire-Devéria",
+      "_edge_id": "A. Devéria-Baudelaire",
       "from": "Achille Devéria",
       "to": "Charles Baudelaire",
       "connection_level": "secondary?",
@@ -14711,7 +14825,7 @@
       "bibliography": "<i>Œuvres complètes de Charles Baudelaire</i>, 1868, Lévy frères"
     },
     {
-      "_edge_id": "Balzac-Devéria",
+      "_edge_id": "A. Devéria-Balzac",
       "from": "Achille Devéria",
       "to": "Honoré de Balzac",
       "connection_level": "direct",
@@ -14737,7 +14851,7 @@
       "relationship type": "acquaintances"
     },
     {
-      "_edge_id": "Devéria-Taylor",
+      "_edge_id": "A. Devéria-Taylor",
       "from": "Achille Devéria",
       "to": "Baron Taylor",
       "connection_level": "direct",
@@ -14746,7 +14860,7 @@
       "bibliography": "Thompson 1970"
     },
     {
-      "_edge_id": "Devéria-Nodier",
+      "_edge_id": "A. Devéria-Nodier",
       "from": "Achille Devéria",
       "to": "Charles Nodier",
       "connection_level": "direct",
@@ -14755,7 +14869,7 @@
       "bibliography": "Thompson 1970"
     },
     {
-      "_edge_id": "Devéria-Musset",
+      "_edge_id": "A. Devéria-Musset",
       "from": "Achille Devéria",
       "to": "Alfred de Musset",
       "connection_level": "direct",
@@ -14764,7 +14878,7 @@
       "websites": "[Wikipedia](https://fr.wikipedia.org/wiki/Achille_Dev%C3%A9ria)"
     },
     {
-      "_edge_id": "Devéria-Dumas",
+      "_edge_id": "A. Devéria-Dumas",
       "from": "Achille Devéria",
       "to": "Alexandre Dumas père",
       "connection_level": "direct",
@@ -14772,14 +14886,14 @@
       "portraits": "Devéria portrayed Dumas in c.1829 and c.1832 (lithography published by Charles Motte)"
     },
     {
-      "_edge_id": "Devéria-Ricourt",
+      "_edge_id": "A. Devéria-Ricourt",
       "from": "Achille Devéria",
       "to": "Achille Ricourt",
       "connection_level": "direct",
       "relationship type": "acquaintances; professional contact"
     },
     {
-      "_edge_id": "Devéria-Motte",
+      "_edge_id": "A. Devéria-Motte",
       "from": "Achille Devéria",
       "to": "Charles Motte",
       "connection_level": "direct",
@@ -14812,7 +14926,7 @@
       "relationship type": "colleagues"
     },
     {
-      "_edge_id": "Boulanger-Devéria",
+      "_edge_id": "A. Devéria-Boulanger",
       "from": "Achille Devéria",
       "to": "Louis Boulanger",
       "connection_level": "direct",
