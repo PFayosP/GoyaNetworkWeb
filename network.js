@@ -1529,6 +1529,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               "Louis Boulanger",
               "Eugène Delacroix",
               "Achille Devéria",
+              "Eugène Devéria",
               "Alexandre Dumas père",
               "Antoine Fontaney",
               "Théophile Gautier",
