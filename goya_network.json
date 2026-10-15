@@ -1786,7 +1786,9 @@
       "nationality": "French",
       "born in": "Vercelli, Italy",
       "dies in": "Dijon",
-      "profession": "painter, lithographer (litógrafo), illustrator",
+      "profession": "painter, lithographer, illustrator",
+      "siblings": "Annette",
+      "married to": "Adélaïde Lemonier-Delafosse (portrayed by Boulanger in 1858, Louvre)",
       "author of": [
         "Lithography: illustrations for Victor Hugo's <i>Odes et ballades</i> (1828) and <i>Les Orientales</i>, 1829 (partly inspired by Francisco de Goya's <i>Caprichos</i>); <i>Mort du cheval de Mazeppa</i>, 1839.",
         "Painting: <i>Le Supplice de Mazeppa</i>, inspired by Lord Byron (Salon 1827, Rouen); <i>La Mort de Bailly</i>, <i>La Chasse infernale</i>, <i>La folie du Roi Lear</i> ou encore <i>La Mort de Messaline</i>; <i>Festin à la mode vénitienne</i>, Décoration de la salle à manger de l'hôtel Mahler (Faubourg Saint-Honoré), 1846-1851; <i>La Ronde du Sabbat</i>, 1861."
@@ -1796,10 +1798,14 @@
         "Recent years: Paris 2023, Maison Victor Hugo, <i>Louis Boulanger. Paintre rêveur</i>."
       ],
       "knows Goya's works": "knows the <i>Caprichos</i> since at least 1828-29",
-      "interest in Spanish art": "Boulanger was fascinated by Baron Taylor's writings on Spain after his 1823 trip, as well as by Victor Hugo's <i>Hernani</i> (1830) (see Paris Musées).",
+      "interest in Spanish art": [
+        "Boulanger was fascinated by Baron Taylor's writings on Spain after his 1823 trip, as well as by Victor Hugo's <i>Hernani</i> (1830) (see Paris Musées).", 
+        "Trip to Spain? 'His paintings of Algeria and Cadix bring a nice light in the exhibition which is a little dark and austere as far as portraits go' (Paris Diary by Laure)."
+      ],
+      "trips": "Algeria and Spain?",
       "portrayed by": "self-portrait, [lithography?], 1842; Nadar and Atelier, photographs, 1851, 1854, 1890, 1900, [BnF](https://gallica.bnf.fr/ark:/12148/btv1b53100782b)",
       "bibliography": "Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23; Marie, Aristide, 'Le Peintre poète Louis Boulanger', en Floury, H., coll. <i>La Vie et l'art romantiques</i>, París, 1925; Théophile Gautier, <i>Histoire du romantisme</i>, París, 1874.",
-      "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musées.",
+      "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musées; [Maison de Victor Hugo celebrates the writer's friendship with Louis Boulanger](https://parisdiarybylaure.com/maison-de-victor-hugo-celebrates-the-writers-friendship-with-louis-boulanger/), Paris Diary by Laure, 2022.",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q524582",
         "bnf": "https://data.bnf.fr/en/ark:/12148/cb14040635v"
@@ -2384,8 +2390,8 @@
         "1849-V-3 'On dirait une de ces gravures de Goya, où, dans la demi-teinte, des arracheurs de dents font la chasse aux pendus' ('Feuilleton: Les mille et un fantomes', <i>Le Constitutionnel</i>, p.1) [digitised in Gallica] (see Fayos-Pérez 2024).",
         "1851 Nov, letter from Dumas to Dauzats: 'Mon cher Dauzats. Prêtez donc pour un jour ou deux votre costume de la femme espagnole à l'Ambigu--Je voudrais le faire faire au théâtre. Vous savez c'est la grand-mère de d'Ossun d'après Goya'. Schopp identifies this work as María Josefa de la Soledad, Countess of Benavente, Duchess of Osuna, c. 1785, Palma de Mallorca, Fundación Bartolomé March. The author also considers that Dumas is referring to the play <i>Le Vampire</i> (1851) at the Ambigu-Comique theatre (Fayos-Pérez 2024, Appendix II; Schopp 1993, p.169)."
       ],
-      "in Spain": "October 1846 to January 1847, accompanied by his son Alexandre and his collaborator Auguste Maquet. He writes <i>Impressions de voyage : de Paris à Cádiz</i> (1846), illustrated by Nanteuil. In the same trip he goes to Algeria",
-      "portrayed by": "Joseph Guichard, 1828 (Louvre); Achille Devéria, c.1829; Achille Devéria, c.1832 (lithography published by Charles Motte); Josef Danhauser, <i>Liszt am Klavier</i>, 1840, oil painting, group portrait with George Sand, Hugo, Marie d'Agoult, Liszt, Paganini and Rossini (with Beethoven's bust and Byron's portrait), Alte Nationalgalerie, F.V.42; Cham, 1846 (caricature); Gouin, 1852 (photograph); Nadar, 1855 (photograph); William Henry Powell, 1855 (oil); Gustave Le Gray, c.1859 (photograph); Cham, 1860 (caricature); André Gill, 2 Dec 1866 (caricature); Alphonse Liébert, 1867 (photograph).",
+      "in Spain": "October 1846 to January 1847, accompanied by his son Alexandre and his collaborator Auguste Maquet. He writes <i>Impressions de voyage : de Paris à Cádiz</i> (1846), illustrated by Célestin Nanteuil. In the same trip he goes to Algeria. This trip is portrayed by Eugène Giraud c.1855, <i>Souvenir du voyage de Paris à Cadix fait, en 1846, par Alexandre Dumas et ses amis</i> (Musée Carnavalet P1434).",
+      "portrayed by": "Joseph Guichard, 1828 (Louvre); Achille Devéria, c.1829; Achille Devéria, c.1832 (lithography published by Charles Motte); Josef Danhauser, <i>Liszt am Klavier</i>, 1840, oil painting, group portrait with George Sand, Hugo, Marie d'Agoult, Liszt, Paganini and Rossini (with Beethoven's bust and Byron's portrait), Alte Nationalgalerie, F.V.42; Cham, 1846 (caricature); Gouin, 1852 (photograph); Nadar, 1855 (photograph); William Henry Powell, 1855 (oil); Eugène Giraud, <i>Souvenir du voyage de Paris à Cadix fait, en 1846, par Alexandre Dumas et ses amis</i>, c.1855, Musée Carnavalet P1434; Gustave Le Gray, c.1859 (photograph); Cham, 1860 (caricature); André Gill, 2 Dec 1866 (caricature); Alphonse Liébert, 1867 (photograph).",
       "curiosities": "despite having all the merits for it, Dumas père was never accepted as a member of the Académie française, most likely due to racism. Only his son Alexandre Dumas (fils) was accepted in 1874",
       "correspondence": [
         "<i>Correspondance générale</i>, t.I (2014), t.II (2016), t.III (2019), t.IV (2021), t.V (2021), t.VI (Jan 1850-Nov 1853) (2023), t.VII (2023), t.VIII (2024), t.IX (April 1857-Dec 1859) (2025), t.X (Jan 1860-Dec 1863) (2025), ed. Claude Schopp, Classiques Garnier, Le XIXe siècle no.25.",
@@ -9618,13 +9624,14 @@
       "from": "Eugène Devéria",
       "to": "Louis Boulanger",
       "connection_level": "direct",
-      "relationship type": "friends; flatmates",
-      "know each other since": "at least 1827",
+      "relationship type": "friends; flatmates; schoolmates",
+      "know each other since": "1816",
       "they shared": [
-        "A flat in 1827 at rue de l'Est no.7 (boulevard Saint-Michel no.115), at the 4th floor",
+        "Boulanger met the Devéria brothers in school when he was 10 years old (Paris Diary by Laure).",
+        "They shared a flat in 1827 at rue de l'Est no.7 (boulevard Saint-Michel no.115), at the 4th floor",
         "'Le peintre Eugène Devéria a presque le même âge que Louis Boulanger : il est le neveu de son professeur de latin. Amis d'enfance, ils se retrouvent aux Beaux-Arts et ne se quittent plus, partageant un atelier rue de l'Est. Les Devéria sont très importants dans l'histoire du Romantisme puisque c'est chez eux, dans leur grande maison familiale de la rue Notre-Dame-des-Champs, que se retrouvent au début du XIXe siècle toutes les jeunes âmes désireuses de renouveler les arts' (Paris Musées)."
       ],
-      "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musées."
+      "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musées; [Maison de Victor Hugo celebrates the writer's friendship with Louis Boulanger](https://parisdiarybylaure.com/maison-de-victor-hugo-celebrates-the-writers-friendship-with-louis-boulanger/), Paris Diary by Laure, 2022."
     },
     {
       "_edge_id": "E. Devéria-Louis-Philippe I",
@@ -12391,7 +12398,22 @@
       "_edge_id": "A. Devéria-Carderera",
       "from": "Valentín Carderera",
       "to": "Achille Devéria",
-      "connection_level": "direct"
+      "connection_level": "direct",
+      "relationship type": "acquaintances; business partners",
+      "know each other since": "1856",
+      "they met": [
+        "1856, Aug 27 (Paris): 'Vino Mr. Denis a las siete y fuimos a la Biblioteca Imperial. Me presentó a Mr. Devéria, vi el nuevo orden de colocar las estampas en volúmenes' (Lanzarote Guiral 2016, p.344).", 
+        "1856, Sept 27: 'Hablé con Devéria' (LG 2016, p.351).",
+        "1856, Oct 2: 'Luego a la Biblioteca Imperial, vi a Devéria. Dejé las estampas de Goya [Francisco de Goya]' (LG 2016, p.353).",
+        "1856, Oct 12: 'Volví a casa a escribir y a las cuatro salí a casa de Devéria, que le vi trabajar y vi muchas cosas y sus libros y especie de <i>Encilopedia</i>, etc. Regalome un libro' (LG 2016, p.356).",
+        "1856, Oct 17: 'Llegó Devéria. Me regaló su libro de Esopo y me apretó sobre el cambio. Vio mis dibujos' (LG 2016, p.357).",
+        "1856, Oct 28: 'Vino Devéria, se llevó las estampas que le di y quedó en entregar a Aznárez 500 francos después de mes y medio. A la una estaba Lemercier, hablamos' (LG 2016, p.360).",
+        "1856, Oct 31: 'Vino Aznárez, luego Ochoa [Eugenio Ochoa]. Aznárez mucho rato, hablé de mi asunto a Devéria y de la cajeta, etc. Salí a las cuatro. Compré estampas y me fui hasta el Boulevard' (LG 2016, p.361).",
+        "1856, Nov 22: 'Estuve <i>chez</i> Devéria, le llevé el regalo de las estampas' (LG 2016, p.367)."
+      ],
+      "link to Goya's work": "2 October 1856 Carderera wrote in his diary: 'Luego a la Biblioteca Imperial, vi a Devéria. Dejé las estampas de Goya [Francisco de Goya]' (LG 2016, p.353). We know that on 20 Nov the Cabinet des Estampes of the Library, then directed by Devéria, recorded the acquisition of 89 prints by Goya: 39 proofs of the <i>Desastres de la guerra</i> ('Scènes d'invasion'), 33 impressions of the <i>Tauromaquia</i> ('Courses de taureaux'), 13 copying Velázquez and 4 loose prints, as well as 26 prints from the Spanish school. The total was acquired for 500 francs (Fayos Pérez 2024, pp.66-67; Sueur-Hermel 2008, pp.145, 149 note 19). This amount coincides with what Carderera mentions in his diary on 28 October 1856: 'Vino Devéria, se llevó las estampas que le di y quedó en entregar a Aznárez 500 francos después de mes y medio' (LG 2016, p.360), so it can be assumed that Goya's prints entered the BnF through the mediation of Carderera and Aznárez. Then on 26 November, Devéria made a second smaller purchase that included the <i>Disparates</i>, for 10 fr. each, from a collector named Pécheux (FP 2024, p.67; SH 2008, pp.145, 149 note 20; Fayos Pérez 2020, p.1051 note 26).",
+      "mentions": "1842, Feb 9, visiting the Pourtalès collection: 'De los modernos tiene la <i>Santa Cecilia</i> de Paul Delaroche, otros varios de Devéria, Scheffer [Ary Scheffer], etc., de todos hay grabados. El último cuadro de David, <i>Thamar engaña a Juda</i> de Vernet, bellísimo, etc. Después volví a casa. No vino Dauzats [Adrien Dauzats]' (LG 2016, p.104).",
+      "bibliography": "Fayos Pérez 2024; Fayos Pérez 2020; Lanzarote Guiral 2016; Sueur-Hermel 2008"
     },
     {
       "_edge_id": "Carderera-Gautier",
@@ -14932,10 +14954,12 @@
       "from": "Achille Devéria",
       "to": "Charles Motte",
       "connection_level": "direct",
-      "relationship type": "relatives: father-in-law, son-in-law; professional: colleagues",
+      "relationship type": "relatives: father-in-law, son-in-law; colleagues",
+      "know each other since": "at least from 1825",
+      "they shared": "A. Devéria married Motte's daughter, Céleste Motte, in 1829",
       "collaborations": [
-        "Devéria makes 10 lithographic copies after Goya's <i>Caprichos</i> in Charles Motte's <i>Carricatures espagnoles, Ni plus ni moins, par Goya</i> (1825)",
-        "Devéria makes the cover for Motte's <i>Faust</i> by Goethe, illustrated by Delacroix (1827-28)"
+        "Devéria makes 10 lithographic copies after Goya's <i>Caprichos</i> in Charles Motte's <i>Carricatures espagnoles, Ni plus ni moins, par Goya</i> (1825).",
+        "Devéria makes the cover for Motte's <i>Faust</i> by Goethe, illustrated by Delacroix (1827-28)."
       ],
       "strength": 1
     },
@@ -14965,11 +14989,15 @@
       "from": "Achille Devéria",
       "to": "Louis Boulanger",
       "connection_level": "direct",
-      "relationship type": "acquaintances; colleagues",
-      "know each other since": "the 1820s",
-      "they shared": "'It is in the entourage of Achille Devéria, son-in-law of the printer Charles Motte, and of Louis Boulanger, that Delacroix pursued his initiation into the different printing techniques and lithography (<i>Faust in his cabinet</i>) and approached the preferred themes of the romantics: portraits, poetry and theater, historical novels, the Orient' (Arlette Sérullaz, 2007-08, exhibition dossier).",
+      "relationship type": "friends; colleagues; schoolmates",
+      "know each other since": "1816",
+      "they shared": [
+        "Boulanger met the Devéria brothers in school when he was 10 years old (Paris Diary by Laure).",
+        "'It is in the entourage of Achille Devéria, son-in-law of the printer Charles Motte, and of Louis Boulanger, that Delacroix pursued his initiation into the different printing techniques and lithography (<i>Faust in his cabinet</i>) and approached the preferred themes of the romantics: portraits, poetry and theater, historical novels, the Orient' (Arlette Sérullaz, 2007-08, exhibition dossier)."
+      ],
       "portraits": "Boulanger portrayed Devéria in 1837 (oil painting, Louvre)",
-      "bibliography": "Arlette Sérullaz (curator), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [exhibition dossier](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf)."
+      "bibliography": "Arlette Sérullaz (curator), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [exhibition dossier](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf).",
+      "websites": "[Maison de Victor Hugo celebrates the writer's friendship with Louis Boulanger](https://parisdiarybylaure.com/maison-de-victor-hugo-celebrates-the-writers-friendship-with-louis-boulanger/), Paris Diary by Laure, 2022"
     },
     {
       "_edge_id": "Boulanger-Delacroix",
@@ -14989,7 +15017,7 @@
       "relationship type": "colleagues; friends",
       "know each other since": "1824 (coinciding with that year's Salon)",
       "correspondence": "1835-V-11 Boulanger to Hugo (Maison Victor Hugo)",
-      "collaborations": "Boulanger illustrates <i>Les orientales</i> (1829): 'Les Fantômes'",
+      "collaborations": "Boulanger illustrates <i>Les orientales</i> (1829): 'Les Fantômes', as well as <i>Notre Dame de Paris</i>, c.1831 (<i>Claude Frollo y Esmeralda</i>, <i>Esmeralda y Madame de Gondelaurier</i>)",
       "mentions": "in poem no.28 from <i>Feuilles d'Automne</i> (1830) mentioning Goya (<i>Buen viage! -GOYA-</i>), Hugo wrote the dedication 'À mes amis S.-B. et L.B', which probably are Charles-Augustin Sainte-Beuve and Louis Boulanger.",
       "link to Goya's work": "Hugo might have discovered the <i>Caprichos</i> via Boulanger c.1828-1829 (Fayos-Pérez 2024, p.126).",
       "they shared": "Boulanger was part of Hugo's <i>Cénacle</i>",
