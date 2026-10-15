@@ -224,32 +224,32 @@
     "y": -330
   },
   "Achille Devéria": {
-    "x": 646,
-    "y": -290
+    "x": 719,
+    "y": -409
   },
   "Charles Motte": {
-    "x": 669,
-    "y": -874
+    "x": 745,
+    "y": -528
   },
   "Célestin Nanteuil": {
     "x": 806,
     "y": -640
   },
   "Louis Boulanger": {
-    "x": 705,
-    "y": -428
+    "x": 639,
+    "y": -515
   },
   "Antoine Fontaney": {
-    "x": 665,
-    "y": -577
+    "x": 661,
+    "y": -628
   },
   "Victor Hugo": {
-    "x": 493,
-    "y": -473
+    "x": 523,
+    "y": -433
   },
   "Théophile Gautier": {
-    "x": 511,
-    "y": -250
+    "x": 534,
+    "y": -257
   },
   "Carlos Luis de Ribera": {
     "x": 349,
@@ -460,8 +460,8 @@
     "y": -140
   },
   "Marcel Briguiboul": {
-    "x": 766,
-    "y": -322
+    "x": 843,
+    "y": -508
   },
   "Édouard Manet": {
     "x": 1022,
@@ -850,5 +850,13 @@
   "Duchesne Aîné": {
     "x": 725,
     "y": -203
+  },
+  "Eugène Devéria": {
+    "x": 676,
+    "y": -323
+  },
+  "Louis-Philippe I": {
+    "x": 31,
+    "y": -40
   }
 }
