@@ -1719,7 +1719,8 @@
       "author of": [
         "Retratos: Honoré de Balzac (c. 1825: atribuido), Victor Hugo, Alexandre Dumas père (1829), Prosper Mérimée, Franz Liszt (1832).",
         "Grabados originales: portada de <i>Fausto</i> de Goethe.",
-        "Ilustraciones: <i>Don Quijote</i> (1821); 10 litografías basadas en <i>Los Caprichos</i> de Goya (1825, Charles Motte); <i>Œuvres complètes</i> de La Fontaine (1826; prefacio de Balzac); <i>Œuvres complètes</i> de Rousseau (1826); <i>Fausto</i> de Goethe (edición ilustrada según Delacroix, Ch. Motte, 1828); <i>Contes</i> de Perrault (1828); <i>Robinson Crusoë</i> de Defoe (1836); <i>Photographie zoologique ou représentation des animaux rares des collections du Muséum d'Histoire Naturelle</i> (1853-55).",
+        "Pintura: <i>Modelo posando</i> (c.1838), [Getty](https://www.gettyimages.es/detail/fotograf%C3%ADa-de-noticias/model-posing-circa-1838-artist-achille-deveria-fotograf%C3%ADa-de-noticias/1426071487?adppopup=true).",
+        "Ilustraciones: <i>Don Quijote</i> (1821); 10 litografías basadas en <i>Los Caprichos</i> de Goya (1825, Charles Motte); <i>Œuvres complètes</i> de La Fontaine (1826; prefacio de Balzac); <i>Œuvres complètes</i> de Rousseau (1826); frontispicio para <i>Fausto</i> de Goethe (edición ilustrada por Eugène Delacroix, editada por Charles Motte, 1828); <i>Contes</i> de Perrault (1828); <i>Robinson Crusoë</i> de Defoe (1836); <i>Photographie zoologique ou représentation des animaux rares des collections du Muséum d'Histoire Naturelle</i> (1853-55).",
         "Grabados eróticos."
       ],
       "writes in": "<i>L'Artiste</i> (1830s)",
@@ -1796,11 +1797,28 @@
       "life dates": "1806-1867",
       "sex": "male",
       "nationality": "French",
+      "born in": "Vercelli, Italia",
+      "dies in": "Dijon",
       "profession": "painter, lithographer, illustrator",
-      "author of": "ilustró las obras de Víctor Hugo <i>Odes et ballades</i> (1828) y <i>Les Orientales</i> (1829), inspiradas en parte en los <i>Caprichos</i> de Goya",
+      "author of": [
+        "Litografía: ilustraciones para <i>Odes et ballades</i> (1828) y <i>Les Orientales</i>, 1829 (inspiradas en parte en los <i>Caprichos</i> de Francisco de Goya); <i>Mort du cheval de Mazeppa</i>, 1839.",
+        "Pintura: <i>Le Supplice de Mazeppa</i>, inspirado por Lord Byron (Salon 1827, Rouen); <i>La Mort de Bailly</i>, <i>La Chasse infernale</i>, <i>La folie du Roi Lear</i> ou encore <i>La Mort de Messaline</i>; <i>Festin à la mode vénitienne</i>, Décoration de la salle à manger de l'hôtel Mahler (Faubourg Saint-Honoré), 1846-1851; <i>La Ronde du Sabbat</i>, 1861."
+      ],
+      "exhibitions": [
+        "Salon de París: <i>Le Supplice de Mazeppa</i> (1827).",
+        "Recientes: París 2023, Maison Victor Hugo, <i>Louis Boulanger. Paintre rêveur</i>."
+      ],
       "knows Goya's works": "conoce los <i>Caprichos</i> desde al menos 1828-29",
-      "bibliography": "Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23",
-      "image": "https://www.goyanetwork.com/images/Boulanger.jpg"
+      "interest in Spanish art": "Boulanger estaba fascinado por los escritos de Baron Taylor sobre España después de su viaje de 1823, así como por <i>Hernani</i> (1830) de Victor Hugo (ver Paris Musées).",
+      "portrayed by": "autorretrato, [¿litografía?], 1842; Nadar y Atelier, fotografías, 1851, 1854, 1890, 1900, [BnF](https://gallica.bnf.fr/ark:/12148/btv1b53100782b)",
+      "bibliography": "Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23; Marie, Aristide, 'Le Peintre poète Louis Boulanger', en Floury, H., coll. <i>La Vie et l'art romantiques</i>, París, 1925; Théophile Gautier, <i>Histoire du romantisme</i>, París, 1874.",
+      "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musées",
+      "authorities": {
+        "wikidata": "https://www.wikidata.org/wiki/Q524582",
+        "bnf": "https://data.bnf.fr/en/ark:/12148/cb14040635v"
+      },
+      "image": "https://www.goyanetwork.com/images/Boulanger.jpg",
+      "image source": "fotografía de Nadar, 1854-60, BnF FOL-EO-15 (5)"
     },
     {
       "id": "Antoine Fontaney",
@@ -6555,10 +6573,11 @@
     {
       "id": "Eugène Devéria",
       "label": "E. Devéria",
+      "full name": "Eugène Francois Marie Joseph Devéria",
       "life dates": "1805-1865",
       "sex": "masculino",
       "nationality": "francés",
-      "profession": "pintor, litógrafo, dibujante",
+      "profession": "pintor, dibujante",
       "born in": "París",
       "dies in": "Pau",
       "lives in": "París (hasta 1838); Aviñón; Béarn; Pau (desde 1841); País Vasco, España (1849); Inglaterra y Escocia (1849-1853); Aviñón (1856, 1857)",
@@ -6572,8 +6591,8 @@
       "students": "Auguste-Barthélemy Glaize; Charles Antoine Marie Année; Auguste-Barthélemy Glaize; su hija Marie Devéria",
       "patrons": "Louis Philippe I",
       "author of": [
-        "Pintura: <i>La Naissance d'Henri IV</i> (1827); <i>Bataille de La Marsaille, 4 octobre 1693</i>, 1837, Versalles; <i>Saint Sébastien détaché par des saintes femmes</i>, 1837, Gaillac, Église Saint-Michel; [Une martyre](https://www.artnet.com/artists/eug%C3%A8ne-dev%C3%A9ria/une-martyre-VXRHqveBEMKSXjuI-gSZuA2), óleo sobre tabla, fecha desconocida (¿influenciado por Eugène Delacroix?)",
-        "Grabado: Frontispice pour l'édition du <i>Faust</i> de Goethe illustré par Eugène Delacroix, 1828, Musée Delacroix [MD 2010-4](https://collections.louvre.fr/en/ark:/53355/cl010456120)"
+        "Pintura: <i>La Naissance d'Henri IV</i> (1827); <i>Bataille de La Marsaille, 4 octobre 1693</i>, 1837, Versalles; <i>Saint Sébastien détaché par des saintes femmes</i>, 1837, Gaillac, Église Saint-Michel; [Une martyre](https://www.artnet.com/artists/eug%C3%A8ne-dev%C3%A9ria/une-martyre-VXRHqveBEMKSXjuI-gSZuA2), óleo sobre tabla, fecha desconocida (¿influenciado por Eugène Delacroix?).",
+        "Dibujo: <i>Un concierto: Laura Devéria cantando</i> (con Achille Devéria y Eugène Devéria), 1831, acuarela con pastel, [Getty](https://www.gettyimages.es/detail/fotograf%C3%ADa-de-noticias/laura-deveria-singing-1831-eugene-francois-fotograf%C3%ADa-de-noticias/1177072722); <i>El concierto</i>, 1832, Musée de la Vie romantique, [Getty](https://www.gettyimages.es/detail/fotograf%C3%ADa-de-noticias/the-concert-eugene-deveria-draughtsman-august-fotograf%C3%ADa-de-noticias/2276880990?adppopup=true)"
       ],
       "exhibitions": [
         "Paris Salon: desde 1824. 1827: <i>La Naissance d'Henri IV</i> (muy exitoso). La última vez que envió una pintura al Salon fue en 1861 con <i>La Réception de Christophe Colomb par Ferdinand et Isabelle</i>.",
@@ -9655,7 +9674,7 @@
       "connection_level": "directa",
       "relationship type": "parientes; hermanos",
       "they shared": "Achille era el maestro de Eugène. También frecuentaban a Victor Hugo desde 1824.",
-      "portraits": "escuela de Eugène Devéria, <i>Portrait de l'artiste et de son frère Achille</i>, 1836, óleo, [Louvre RF 2593](https://collections.louvre.fr/en/ark:/53355/cl0102593)"
+      "portraits": "escuela de Eugène Devéria, <i>Portrait de l'artiste et de son frère Achille</i>, 1836, óleo, [Louvre RF 2593](https://collections.louvre.fr/en/ark:/53355/cl0102593); <i>Un concierto: Laura Devéria cantando</i> (con Achille Devéria y Eugène Devéria), 1831, acuarela con pastel, [Getty](https://www.gettyimages.es/detail/fotograf%C3%ADa-de-noticias/laura-deveria-singing-1831-eugene-francois-fotograf%C3%ADa-de-noticias/1177072722)"
     },
     {
       "_edge_id": "E. Devéria-Hugo",
@@ -9664,7 +9683,9 @@
       "connection_level": "directa",
       "relationship type": "conocidos",
       "know each other since": "1824",
-      "they shared": "Eugène, que frecuentaba a Victor Hugo asiduamente desde 1824 con su hermano Achille, se inspiró, para el tema de su pintura, en un cuento corto de Abel Hugo, hermano de Victor, publicado en <i>Le Conservateur littéraire</i> en 1820"
+      "they shared": "Eugène, que frecuentaba a Victor Hugo asiduamente desde 1824 con su hermano Achille, se inspiró, para el tema de su pintura, en un cuento corto de Abel Hugo, hermano de Victor, publicado en <i>Le Conservateur littéraire</i> en 1820",
+      "collaborations": "ilustraciones para <i>Notre Dame de Paris</i> de Hugo, [1832?], [Getty](https://www.gettyimages.es/detail/fotograf%C3%ADa-de-noticias/esmeralda-and-quasimodo-illustration-by-eugene-fotograf%C3%ADa-de-noticias/159828029)",
+      "portraits": "<i>Victor Hugo</i>, grabado por Charles Motte según dibujo de Eugène Devéria, 1829, [Getty](https://www.gettyimages.es/detail/fotograf%C3%ADa-de-noticias/victor-hugo-etching-by-charles-etienne-pierre-fotograf%C3%ADa-de-noticias/1487112307)"
     },
     {
       "_edge_id": "E. Devéria-Gautier",
@@ -9677,13 +9698,25 @@
       "bibliography": "<i>Histoire du romantisme</i>, 1874"
     },
     {
+      "_edge_id": "Boulanger-Nadar",
+      "from": "Nadar",
+      "to": "Louis Boulanger",
+      "connection_level": "directa",
+      "relationship type": "retratista-modelo",
+      "portraits": "Nadar y Atelier, fotografías, 1851, 1854, 1890, 1900, [BnF](https://gallica.bnf.fr/ark:/12148/btv1b53100782b)"
+    },
+    {
       "_edge_id": "Boulanger-E. Devéria",
       "from": "Eugène Devéria",
       "to": "Louis Boulanger",
       "connection_level": "directa",
-      "relationship type": "conocidos; compañeros de piso",
+      "relationship type": "amigos; compañeros de piso",
       "know each other since": "al menos 1827",
-      "they shared": "un piso en 1827 en la rue de l'Est no.7 (boulevard Saint-Michel no.115), en el 4º piso"
+      "they shared": [
+        "Un piso en 1827 en la rue de l'Est no.7 (boulevard Saint-Michel no.115), en el 4º piso",
+        "'Le peintre Eugène Devéria a presque le même âge que Louis Boulanger : il est le neveu de son professeur de latin. Amis d'enfance, ils se retrouvent aux Beaux-Arts et ne se quittent plus, partageant un atelier rue de l'Est. Les Devéria sont très importants dans l'histoire du Romantisme puisque c'est chez eux, dans leur grande maison familiale de la rue Notre-Dame-des-Champs, que se retrouvent au début du XIXe siècle toutes les jeunes âmes désireuses de renouveler les arts' (Paris Musées)."
+      ],
+      "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musées."
     },
     {
       "_edge_id": "E. Devéria-Louis-Philippe I",
@@ -9713,16 +9746,14 @@
       "_edge_id": "Delacroix-E. Devéria",
       "from": "Eugène Devéria",
       "to": "Eugène Delacroix",
-      "connection_level": "directa",
-      "relationship type": "colegas",
-      "know each other since": "al menos 1828",
+      "connection_level": "¿directa?",
+      "relationship type": "¿conocidos?",
       "they shared": [
-      "E. Devéria ilustró el Frontispice pour l'édition du <i>Faust</i> de Goethe illustré par Eugène Delacroix, 1828, Musée Delacroix [MD 2010-4](https://collections.louvre.fr/en/ark:/53355/cl010456120)",
       "Delacroix podría haber influido en E. Devéria, en obras como [Une martyre](https://www.artnet.com/artists/eug%C3%A8ne-dev%C3%A9ria/une-martyre-VXRHqveBEMKSXjuI-gSZuA2), óleo sobre panel, fecha desconocida."
       ]
     },
     {
-      "_edge_id": "Devéria-Duchesne",
+      "_edge_id": "A. Devéria-Duchesne",
       "from": "Duchesne Aîné",
       "to": "Achille Devéria",
       "connection_level": "directa?",
@@ -12052,7 +12083,7 @@
       "strength": 2
     },
     {
-      "_edge_id": "Devéria-F. Madrazo",
+      "_edge_id": "A. Devéria-F. Madrazo",
       "from": "Federico de Madrazo",
       "to": "Achille Devéria",
       "connection_level": "direct",
@@ -12228,7 +12259,7 @@
       "strength": 2
     },
     {
-      "_edge_id": "Devéria-Goupil",
+      "_edge_id": "A. Devéria-Goupil",
       "from": "Achille Devéria",
       "to": "Adolphe Goupil",
       "connection_level": "direct",
@@ -14704,7 +14735,7 @@
       "bibliography": "Chagniot 2016; Monneret 1987; Tabarant 1947"
     },
     {
-      "_edge_id": "Devéria-Manet",
+      "_edge_id": "A. Devéria-Manet",
       "from": "Achille Devéria",
       "to": "Édouard Manet",
       "connection_level": "direct",
@@ -14916,14 +14947,14 @@
       "collaborations": "Autores del Catálogo razonado de los grabados de Goya, <i>Cabinet de l'amateur</i>, 1842"
     },
     {
-      "_edge_id": "Devéria-Fontaney",
+      "_edge_id": "A. Devéria-Fontaney",
       "from": "Achille Devéria",
       "to": "Antoine Fontaney",
       "connection_level": "direct",
       "relationship type": "compañeros de trabajo"
     },
     {
-      "_edge_id": "Devéria-Hugo",
+      "_edge_id": "A. Devéria-Hugo",
       "from": "Achille Devéria",
       "to": "Victor Hugo",
       "connection_level": "direct",
@@ -14937,18 +14968,21 @@
       "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf); Thompson 1970."
     },
     {
-      "_edge_id": "Delacroix-Devéria",
+      "_edge_id": "A. Devéria-Delacroix",
       "from": "Achille Devéria",
       "to": "Eugène Delacroix",
       "connection_level": "direct",
       "relationship type": "conocidos; compañeros de trabajo",
       "know each other since": "la década de 1820",
       "they shared": "'Es en el entorno de Achille Devéria, yerno del impresor Charles Motte, y de Louis Boulanger, que Delacroix llevó a cabo su iniciación en las diferentes técnicas de grabado y litografía (<i>Faust en su gabinete</i>) y se acercó a los temas preferidos de los románticos: retratos, poesía y teatro, novelas históricas, el Oriente' (Arlette Sérullaz, 2007-08, dossier de exposición).",
-      "collaborations": "1828 Devéria realizó la portada del <i>Fausto</i> de Goethe ilustrada por Delacroix (editado por Charles Motte)",
+      "collaborations": [
+        "1828 Devéria realizó la portada del <i>Fausto</i> de Goethe ilustrada por Delacroix (editado por Charles Motte)",
+        "Retrato de Théodore Géricault, litografía de Achille Devéria según dibujo de Eugène Delacroix, 1824, [Getty](https://www.gettyimages.es/detail/fotograf%C3%ADa-de-noticias/achille-deveria-french-18001857-after-eugene-fotograf%C3%ADa-de-noticias/1277657521)."
+      ],
       "bibliography": "Arlette Sérullaz (comisaria), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [dossier de exposición](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf)"
     },
     {
-      "_edge_id": "Devéria-Mérimée",
+      "_edge_id": "A. Devéria-Mérimée",
       "from": "Achille Devéria",
       "to": "Prosper Mérimée",
       "connection_level": "direct",
@@ -14956,7 +14990,7 @@
       "portraits": "Devéria retrató a Mérimée en 1829 (litografía)"
     },
     {
-      "_edge_id": "Baudelaire-Devéria",
+      "_edge_id": "A. Devéria-Baudelaire",
       "from": "Achille Devéria",
       "to": "Charles Baudelaire",
       "connection_level": "secondary?",
@@ -14964,7 +14998,7 @@
       "bibliography": "Œuvres complètes de Charles Baudelaire, 1868, Lévy frères"
     },
     {
-      "_edge_id": "Balzac-Devéria",
+      "_edge_id": "A. Devéria-Balzac",
       "from": "Achille Devéria",
       "to": "Honoré de Balzac",
       "connection_level": "direct",
@@ -15098,7 +15132,8 @@
       "link to Goya's work": "Hugo pudo haber descubierto los <i>Caprichos</i> a través de Boulanger hacia 1828-1829 (Fayos Pérez 2024, p.126)",
       "compartían": "Boulanger formaba parte del <i>Cénacle</i> de Hugo",
       "portraits": "Boulanger realizó al menos dos retratos de Hugo: uno en 1837, un dibujo (París, Bibliothèque polonaise), y otro en 1839, una pintura al óleo (París, Maison Victor Hugo). Boulanger también retrató a Léopoldine Hugo à l'âge de 4 ans (1827, Saint-Pierre-Port, Hauteville House), Madame Hugo (1837, Maison Victor Hugo) y Léopoldine Hugo à 13 ans (1837, Villequier, Musée Victor Hugo).",
-      "bibliography": "Fayos Pérez 2024; Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23"
+      "bibliography": "Fayos Pérez 2024; Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23; Léon Séché, 'Victor Hugo et Louis Boulanger<', <i>Paris: La revue</i>, 1912",
+      "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musée; [Maison de Victor Hugo celebrates the writer's friendship with Louis Boulanger](https://parisdiarybylaure.com/maison-de-victor-hugo-celebrates-the-writers-friendship-with-louis-boulanger/), Paris Diary by Laure, 2022."
     },
     {
       "_edge_id": "Hugo-Sainte-Beuve",
