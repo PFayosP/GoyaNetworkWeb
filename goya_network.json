@@ -597,6 +597,8 @@
       "nationality": "French",
       "profession": "painter, illustrator, draughtsman",
       "studies in": "École des Beaux-Arts",
+      "masters": "Antoine-Jean Gros; Charles-Abraham Chasselat",
+      "works for": "José de Madrazo (Real Establecimiento Litográfico, 1825)",
       "trips": "Spain, Mexico (1838), Russia, North Africa; Cairo, Beirut and Athens (1852)",
       "in Spain": [
         "1824-1837 working as a painter and engraver; hired by José de Madrazo to make lithographic reproductions at the Real Museo in Madrid",
@@ -607,7 +609,8 @@
       "authorities": {
         "bnf": "https://data.bnf.fr/fr/ark:/12148/cb12459576z",
         "wikidata": "https://www.wikidata.org/wiki/Q3378107",
-        "bne": "https://datos.bne.es/persona/XX831303.html"
+        "bne": "https://datos.bne.es/persona/XX831303.html",
+        "rah": "https://historia-hispanica.rah.es/biografias/6977-pedro-enrique-leon-pharamond-blanchard"
       },
       "awards/decorations": "3rd class medal at the Salon of 1836",
       "author of": [
