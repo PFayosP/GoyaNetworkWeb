@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-15",
+  "last_update": "2026-10-16",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -590,17 +590,32 @@
     },
     {
       "id": "Pharamond Blanchard",
+      "full name": "Henri Pierre Léon Pharamond Blanchard",
       "label": "Blanchard",
       "life dates": "1805-1873",
       "sex": "male",
       "nationality": "French",
-      "profession": "painter, draughtsman",
+      "profession": "painter, illustrator, draughtsman",
+      "studies in": "École des Beaux-Arts",
+      "trips": "Spain, Mexico (1838), Russia, North Africa; Cairo, Beirut and Athens (1852)",
       "in Spain": [
         "1824-1837 working as a painter and engraver; hired by José de Madrazo to make lithographic reproductions at the Real Museo in Madrid",
-        "1835-37 he assists Baron Taylor and Dauzats in acquiring paintings for Louis Philippe's Galerie espagnole (1838-48)"
+        "1835-37 he assists Baron Taylor and Dauzats in acquiring paintings for Louis Philippe's Galerie espagnole (1838-48)",
+        "1846 double royal wedding in Madrid of Prince Antoine, Duke of Montpensier and Infanta Luisa Fernanda de Borbón, alongside her sister Isabel II (also attended by Théophile Gautier, Alexandre Dumas père and Louis Boulanger). He depicted the event in several works that would later decorate the Palace of San Telmo in Seville (García Rodríguez 2015, p.69); <i>Célébration du mariage du Duc de Montpensier sur la Plaza Mayor de Madrid</i>, 1846, Palacio de Orléans, Villamanrique de la Condesa."
       ],
       "in Paris": "after 1837 (quoted by Valentín Carderera's diary) (Lanzarote Guiral 2016, p.537)",
-      "author of": "<i>Course de taureaux dans un bourg d'Espagne</i> (Salon 1834)",
+      "authorities": {
+        "bnf": "https://data.bnf.fr/fr/ark:/12148/cb12459576z",
+        "wikidata": "https://www.wikidata.org/wiki/Q3378107",
+        "bne": "https://datos.bne.es/persona/XX831303.html"
+      },
+      "awards/decorations": "3rd class medal at the Salon of 1836",
+      "author of": [
+        "Painting: <i>Los contrabandistas</i>, 1829, Museo del Romanticismo, Madrid; <i>Course de taureaux dans un bourg d'Espagne</i> (Salon de 1834); <i>Célébration du mariage du Duc de Montpensier sur la Plaza Mayor de Madrid</i>, 1846, Palacio de Orléans, Villamanrique de la Condesa.",
+        "Drawing: <i>Salve Regina des prisonniers, dans une prison de Madrid</i>, 1834, watercolour, Museo de Nantes.",
+        "Illustration: in journals such as <i>L'Illustration</i> and <i>Le Magasin pittoresque</i>."
+      ],
+      "bibliography": "Lanzarote Guiral 2016; José Carlos García Rodríguez, <i>Montpensier. Biografía de una obsesión</i>, 2015; <i>Les Peintres français en Espagne de Manet à Delacroix</i>, exh.cat., Castres, Musée Goya, 1997, pp.63-65; Paul Guinard, <i>Dauzats et Blanchard, peintres de l'Espagne romantique</i>, 1967; Paul Guinard, 'Romantiques français en Espagne', <i>Art de France</i> II, 1962.",
       "image": "https://www.goyanetwork.com/images/Blanchard_AI.jpg",
       "image source": "AI generated (DeepAI) because there is no known portrait"
     },
@@ -794,11 +809,12 @@
       "dies in": "Seville",
       "nationality": "Spanish",
       "parents": "Fernando VII and María Cristina de Borbón-Dos Sicilias",
+      "siblings": "Isabel II",
       "children": "10, including María Isabel, María Amelia, María Cristina, Mercedes (married to first cousin Alfonso XII), and Antonio (Duke of Galliera; married to first cousin Infanta Eulalia of Spain)",
       "married to": "Prince Antoine, Duke of Montpensier (1846)",
       "lives in": "Madrid, Paris, Seville",
-      "decorations/awards": "Infanta de España; Duchess of Montpensier",
-      "address": "Palacio Real de Madrid; Orléans-Borbón Palace (Sanlúcar de Barrameda); San Telmo Palace (Seville)",
+      "aristocratic titles": "Infanta de España; Duchess of Montpensier",
+      "address": "Palacio Real de Madrid; Vincennes Castle; Orléans-Borbón Palace (Sanlúcar de Barrameda); San Telmo Palace (Seville)",
       "collector of Goya's works": [
         "The original <i>Majas at the balcony</i>: sold by Javier Goya for 400 reales, catalogues as X24 in the 1812 inventory (Wilson-Bareau 1996); after passing through the Galerie, Louis Philippe I claimed it as part of his private collection and sold it for £70 at Christie's London in 1853 (lot 352) to Colnaghi; then acquired by Prince Antoine, Duke of Montpensier (Seville, San Telmo Palace); subsequently by Durand Ruel in 1911; now in a private collection in Switzerland (Fayos-Pérez 2024, pp.49, 73).",
         "<i>Portrait of Asensio Julià</i> (c.1798): Galerie espagnole (1838-48); then belonged to his sister-in-law Isabel II (Tinterow 2003, p.408); Montpensier owned it by 1858. Hung at the Palace of Vista Alegre in Madrid, then Palace of San Telmo (Seville), alongside the <i>Majas</i> (mentioned by Charles Yriarte in 1869, 16 Oct; Fayos-Pérez 2024, Appendix II)."
@@ -1789,6 +1805,9 @@
       "profession": "painter, lithographer, illustrator",
       "siblings": "Annette",
       "married to": "Adélaïde Lemonier-Delafosse (portrayed by Boulanger in 1858, Louvre)",
+      "studies in": "Académie des Beaux-Arts, Paris (at 15 years old)",
+      "masters": "Guillaume Guillon-Lethière (al igual que Eugène Devéria)",
+      "awards/decorations": "he participates once at the Prix de Rome in 1824",
       "author of": [
         "Lithography: illustrations for Victor Hugo's <i>Odes et ballades</i> (1828) and <i>Les Orientales</i>, 1829 (partly inspired by Francisco de Goya's <i>Caprichos</i>); <i>Mort du cheval de Mazeppa</i>, 1839.",
         "Painting: <i>Le Supplice de Mazeppa</i>, inspired by Lord Byron (Salon 1827, Rouen); <i>La Mort de Bailly</i>, <i>La Chasse infernale</i>, <i>La folie du Roi Lear</i> ou encore <i>La Mort de Messaline</i>; <i>Festin à la mode vénitienne</i>, Décoration de la salle à manger de l'hôtel Mahler (Faubourg Saint-Honoré), 1846-1851; <i>La Ronde du Sabbat</i>, 1861."
@@ -1798,14 +1817,16 @@
         "Recent years: Paris 2023, Maison Victor Hugo, <i>Louis Boulanger. Paintre rêveur</i>."
       ],
       "knows Goya's works": "knows the <i>Caprichos</i> since at least 1828-29",
+      "trips": "Algeria; Spain",
+      "in Spain": "1846 Boulanger is invited by Alexandre Dumas père to accompany him to attend the double royal wedding of Isabel II and Infanta Luisa Fernanda de Borbón (with Prince Antoine, Duke of Montpensier).",
       "interest in Spanish art": [
-        "Boulanger was fascinated by Baron Taylor's writings on Spain after his 1823 trip, as well as by Victor Hugo's <i>Hernani</i> (1830) (see Paris Musées).", 
-        "Trip to Spain? 'His paintings of Algeria and Cadix bring a nice light in the exhibition which is a little dark and austere as far as portraits go' (Paris Diary by Laure)."
+        "Boulanger was fascinated by Baron Taylor's writings on Spain after his 1823 trip, as well as by Victor Hugo's <i>Hernani</i> (1830) (see Paris Musées).",
+        "In the 1827 Salon, alongside <i>Le Supplice de Mazeppa</i>, Boulanger exhibited <i>Une famille espagnole</i>, and in the 1833 Salon, <i>Muletiers espagnols</i> (see La Nouvelle Athènes).",
+        "1846 trip to Spain. Boulanger produces paintings such as <i>Deux jeunes bergers</i> (c.1846), creates a series of watercolors of Spanish dancers, and will present at the 1850 Salon the work <i>Un coin de rue à Séville</i> (see La Nouvelle Athènes). 'His paintings of Algeria and Cadix bring a nice light in the exhibition which is a little dark and austere as far as portraits go' (Paris Diary by Laure)."
       ],
-      "trips": "Algeria and Spain?",
       "portrayed by": "self-portrait, [lithography?], 1842; Nadar and Atelier, photographs, 1851, 1854, 1890, 1900, [BnF](https://gallica.bnf.fr/ark:/12148/btv1b53100782b)",
       "bibliography": "Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23; Marie, Aristide, 'Le Peintre poète Louis Boulanger', en Floury, H., coll. <i>La Vie et l'art romantiques</i>, París, 1925; Théophile Gautier, <i>Histoire du romantisme</i>, París, 1874.",
-      "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musées; [Maison de Victor Hugo celebrates the writer's friendship with Louis Boulanger](https://parisdiarybylaure.com/maison-de-victor-hugo-celebrates-the-writers-friendship-with-louis-boulanger/), Paris Diary by Laure, 2022.",
+      "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musées; [Maison de Victor Hugo celebrates the writer's friendship with Louis Boulanger](https://parisdiarybylaure.com/maison-de-victor-hugo-celebrates-the-writers-friendship-with-louis-boulanger/), Paris Diary by Laure, 2022; [Louis Boulanger, <i>Deux jeunes bergers</i>](https://lanouvelleathenes.fr/2021/09/04/louis-boulanger-1806-1867-9/), La Nouvelle Athènes, 2021.",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q524582",
         "bnf": "https://data.bnf.fr/en/ark:/12148/cb14040635v"
@@ -2390,14 +2411,14 @@
         "1849-V-3 'On dirait une de ces gravures de Goya, où, dans la demi-teinte, des arracheurs de dents font la chasse aux pendus' ('Feuilleton: Les mille et un fantomes', <i>Le Constitutionnel</i>, p.1) [digitised in Gallica] (see Fayos-Pérez 2024).",
         "1851 Nov, letter from Dumas to Dauzats: 'Mon cher Dauzats. Prêtez donc pour un jour ou deux votre costume de la femme espagnole à l'Ambigu--Je voudrais le faire faire au théâtre. Vous savez c'est la grand-mère de d'Ossun d'après Goya'. Schopp identifies this work as María Josefa de la Soledad, Countess of Benavente, Duchess of Osuna, c. 1785, Palma de Mallorca, Fundación Bartolomé March. The author also considers that Dumas is referring to the play <i>Le Vampire</i> (1851) at the Ambigu-Comique theatre (Fayos-Pérez 2024, Appendix II; Schopp 1993, p.169)."
       ],
-      "in Spain": "October 1846 to January 1847, accompanied by his son Alexandre and his collaborator Auguste Maquet. He writes <i>Impressions de voyage : de Paris à Cádiz</i> (1846), illustrated by Célestin Nanteuil. In the same trip he goes to Algeria. This trip is portrayed by Eugène Giraud c.1855, <i>Souvenir du voyage de Paris à Cadix fait, en 1846, par Alexandre Dumas et ses amis</i> (Musée Carnavalet P1434).",
+      "in Spain": "October 1846 to January 1847, for the double royal wedding of Prince Antoine, Duke of Montpensier with Infanta Luisa Fernanda of Spain, alongside her sister Isabel II. Dumas is accompanied by his son Alexandre and his collaborator Auguste Maquet, and he invites Louis Boulanger as well. He writes <i>Impressions de voyage : de Paris à Cádiz</i> (1846), illustrated by Célestin Nanteuil. In the same trip he goes to Algeria. This trip is portrayed by Eugène Giraud c.1855, <i>Souvenir du voyage de Paris à Cadix fait, en 1846, par Alexandre Dumas et ses amis</i> (Musée Carnavalet P1434).",
       "portrayed by": "Joseph Guichard, 1828 (Louvre); Achille Devéria, c.1829; Achille Devéria, c.1832 (lithography published by Charles Motte); Josef Danhauser, <i>Liszt am Klavier</i>, 1840, oil painting, group portrait with George Sand, Hugo, Marie d'Agoult, Liszt, Paganini and Rossini (with Beethoven's bust and Byron's portrait), Alte Nationalgalerie, F.V.42; Cham, 1846 (caricature); Gouin, 1852 (photograph); Nadar, 1855 (photograph); William Henry Powell, 1855 (oil); Eugène Giraud, <i>Souvenir du voyage de Paris à Cadix fait, en 1846, par Alexandre Dumas et ses amis</i>, c.1855, Musée Carnavalet P1434; Gustave Le Gray, c.1859 (photograph); Cham, 1860 (caricature); André Gill, 2 Dec 1866 (caricature); Alphonse Liébert, 1867 (photograph).",
       "curiosities": "despite having all the merits for it, Dumas père was never accepted as a member of the Académie française, most likely due to racism. Only his son Alexandre Dumas (fils) was accepted in 1874",
       "correspondence": [
         "<i>Correspondance générale</i>, t.I (2014), t.II (2016), t.III (2019), t.IV (2021), t.V (2021), t.VI (Jan 1850-Nov 1853) (2023), t.VII (2023), t.VIII (2024), t.IX (April 1857-Dec 1859) (2025), t.X (Jan 1860-Dec 1863) (2025), ed. Claude Schopp, Classiques Garnier, Le XIXe siècle no.25.",
         "Schopp 1993."
       ],
-      "bibliography": "Fayos-Pérez 2024; Dumas-Schopp 2014; Schopp 1993",
+      "bibliography": "Fayos-Pérez 2024; Pedro Damián Cano Borrego, 'De París a Cádiz, el viaje por España de Alejandro Dumas', Museo del Turismo, abril 2022; Meritxell-Anfitrite Álvarez Mongay, 'Alexandre Dumas. Pasión por España”, <i>Viajar</i>, no.475, 2018, pp.64-67 ;Dumas-Schopp 2014; Nicolás Ortega Cantero, 'Las andanzas de Dumas por España', <i>Revista de Libros</i>, 1 nov 2003; Schopp 1993",
       "authorities": {
         "wikidata": "https://www.wikidata.org/wiki/Q60780776",
         "getty ulan": "http://vocab.getty.edu/page/ulan/500335873",
@@ -4638,7 +4659,8 @@
       "sex": "female",
       "born in": "Madrid, Royal Palace",
       "nationality": "Spanish",
-      "parents": "Fernando VII and Queen María Cristina",
+      "parents": "Fernando VII and María Cristina de Borbón-Dos Sicilias",
+      "siblings": "Infanta Luisa Fernanda de Borbón",
       "children": "out of 12 pregnancies, 5 children survived: Infanta María Isabel, Alfonso XII, Infanta María del Pilar, Infanta María de la Paz, Infanta María Eulalia. Some of the children were allegedly born from extramarital relationships",
       "married to": "Francisco de Asís, Duke of Cádiz (1846)",
       "profession": "socialite, aristocrat, art patron",
@@ -4663,7 +4685,7 @@
       "nationality": "Spanish",
       "parents": "Francisco I de las Dos Sicilias and María Isabel de Borbón",
       "children": [
-        "With Fernando II (2): Isabel II and Infanta María Luisa.",
+        "With Fernando VII (2): Isabel II and Infanta María Luisa.",
         "With Fernando Muñoz (8): María Amparo, condesa de Vista Alegre; Milagros, marquesa de Castillejo; Agustín, duque de Tarancón; Fernando, duque de Riansares; María Cristina, marquesa de la Isabela; Juan, conde del Recuerdo; Antonio Muñoz; José, conde de Gracia."
       ],
       "married to": "Fernando VII (1829-1833); Fernando Muñoz, I Duke of Riánsares (1833-1873)",
@@ -9410,7 +9432,7 @@
       "to": "Théophile Gautier",
       "connection_level": "direct",
       "relationship type": "acquaintances",
-      "interactions": "in 1846, Gautier is invited by Louis-Philippe to the wedding of his son the Duke of Montpensier with the Infanta Luisa Fernand in Madrid"
+      "interactions": "in 1846, Gautier is invited by Louis Philippe to the wedding of his son Prince Antoine, Duke of Montpensier with Infanta Luisa Fernanda de Borbón, who got married in a double wedding alongside Isabel II. This event was also attended by Pharamond Blanchard, Alexandre Dumas père and Louis Boulanger." 
     },
     {
       "_edge_id": "Gautier-Mallarmé",
@@ -9629,6 +9651,7 @@
       "they shared": [
         "Boulanger met the Devéria brothers in school when he was 10 years old (Paris Diary by Laure).",
         "They shared a flat in 1827 at rue de l'Est no.7 (boulevard Saint-Michel no.115), at the 4th floor",
+        "In 1827 they both exhibited at the Salon de París: Boulanger with his <i>Supplice de Mazeppa</i> and Devéria presented <i>La Naissance d'Henri IV</i>. Also Delacroix with his <i>Mort de Sardanapale</i>.",
         "'Le peintre Eugène Devéria a presque le même âge que Louis Boulanger : il est le neveu de son professeur de latin. Amis d'enfance, ils se retrouvent aux Beaux-Arts et ne se quittent plus, partageant un atelier rue de l'Est. Les Devéria sont très importants dans l'histoire du Romantisme puisque c'est chez eux, dans leur grande maison familiale de la rue Notre-Dame-des-Champs, que se retrouvent au début du XIXe siècle toutes les jeunes âmes désireuses de renouveler les arts' (Paris Musées)."
       ],
       "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musées; [Maison de Victor Hugo celebrates the writer's friendship with Louis Boulanger](https://parisdiarybylaure.com/maison-de-victor-hugo-celebrates-the-writers-friendship-with-louis-boulanger/), Paris Diary by Laure, 2022."
@@ -13908,12 +13931,16 @@
       "to": "Pharamond Blanchard",
       "connection_level": "direct",
       "relationship type": "colleagues; friends",
-      "know each other since": "the early 1820s, working at the Théâtre des Italiens (according to Philippe Burty)",
+      "know each other since": "1823",
       "collaborations": [
-        "1835 trip to Spain (for Baron Taylor and Louis Philippe I).",
-        "1840 publication of <i>Relation de l'Expédition française au Mexique</i>."
+        "Early 1820s: they worked at the Théâtre des Italiens (according to Philippe Burty).",
+        "c.1826-1832 colaboración en <i>Voyage pittoresque en Espagne</i> de Baron Taylor.",
+        "1835-1837: trip to Spain for the acquisition of artworks for Baron Taylor and Louis Philippe I (Galerie espagnole).",
+        "1839: publication of <i>San Juan de Ulúa, ou Relation de l'expédition française au Mexique</i>; 1840 <i>Relation de l'Expédition française au Mexique</i>.",
+        "1846: 'Chemin de fer de Paris à Bordeaux' en <i>L'Illustration</i> (28 marzo, pp.51-62).",
+        "1859: <i>Journal de San Juan, voyage de Uluà ; Relation de l'expédition française au Mexique</i>."
       ],
-      "bibliography": "Philippe Burty, <i>Catalogue des Tableaux</i> (Vente Dauzats), 1-4 Feb 1869, Paris, Drouot"
+      "bibliography": "Arturo Aguilar Ochoa, 'Asaltos al trópico: Petros Pharamond Blanchard, un pintor romántico francés en el México de 1838', <i>Anales del Instituto de Investigaciones Estéticas</i>, vol.XL, no.112, 2018; Alisa Luxenberg, <i>Secrets and Glory. Baron Taylor and his Voyage Pittoresque en Espagne</i>, CEEH, 2013; Ester Alba Pagán, 'La galerie espagnole de Louis-Philippe y las obras artísticas valencianas: el papel del baron Taylor, Adrien Dauzats y Pharamond Blanchard', in <i>El arte y el viaje</i>, 2011, pp.611-627; Paul Guinard, <i>Dauzats et Blanchard. Peintres de l'Espagne romantique</i>, 1967; Philippe Burty, <i>Catalogue des Tableaux</i> (Vente Dauzats), 1-4 Feb 1869, Paris, Drouot"
     },
     {
       "_edge_id": "Dauzats-Delacroix",
@@ -15005,8 +15032,11 @@
       "to": "Eugène Delacroix",
       "connection_level": "direct",
       "relationship type": "acquaintances; colleagues",
-      "know each other since": "the 1820s",
-      "they shared": "'It is in the entourage of Achille Devéria, son-in-law of the printer Charles Motte, and of Louis Boulanger, that Delacroix pursued his initiation into the different printing techniques and lithography (<i>Faust in his cabinet</i>) and approached the preferred themes of the romantics: portraits, poetry and theater, historical novels, the Orient' (Arlette Sérullaz, 2007-08, exhibition dossier).",
+      "know each other since": "at least 1827",
+      "they shared": [
+        "'It is in the entourage of Achille Devéria, son-in-law of the printer Charles Motte, and of Louis Boulanger, that Delacroix pursued his initiation into the different printing techniques and lithography (<i>Faust in his cabinet</i>) and approached the preferred themes of the romantics: portraits, poetry and theater, historical novels, the Orient' (Arlette Sérullaz, 2007-08, exhibition dossier).",
+        "In 1827 they both exhibited at the Salon de París: Boulanger with his <i>Supplice de Mazeppa</i>, and Delacroix with his <i>Mort de Sardanapale</i>. Also Eugène Devéria presented <i>La Naissance d'Henri IV</i>."
+      ],
       "bibliography": "Arlette Sérullaz (curator), <i>Delacroix et les compagnons de sa jeunesse</i>, 2007-2008, [exhibition dossier](https://www.musee-delacroix.fr/IMG/pdf/dp_compagnonsDelacroix.pdf)."
     },
     {
@@ -15022,6 +15052,7 @@
       "link to Goya's work": "Hugo might have discovered the <i>Caprichos</i> via Boulanger c.1828-1829 (Fayos-Pérez 2024, p.126).",
       "they shared": "Boulanger was part of Hugo's <i>Cénacle</i>",
       "portraits": "Boulanger made at least 2 portraits of Hugo: 1837, drawing (Paris, Bibliothèque polonaise), and 1839, oil painting (Paris, Maison Victor Hugo). Boulanger also portrayed <i>Léopoldine Hugo à l'âge de 4 ans</i> (1827, Saint-Pierre-Port, Hauteville House), <i>Madame Hugo</i> (1837, Maison Victor Hugo), <i>Léopoldine Hugo à 13 ans</i> (1837, Villequier, Musée Victor Hugo).",
+      "curiosities": "Hugo used to affectionately call Boulanger 'mon peintre' (my painter)",
       "bibliography": "Fayos-Pérez 2024; Ilse Hempel Lipschutz, 'Victor Hugo, Louis Boulanger, Francisco de Goya: Amitiés, Affinités, Influences', <i>Nineteenth-Century French Studies</i>, vol.4, no.1/2, 1975, pp.8-23; Léon Séché, 'Victor Hugo et Louis Boulanger<', <i>Paris: La revue</i>, 1912",
       "websites": "[10 choses à savoir sur Louis Boulanger, actuellement exposé à la Maison de Victor Hugo](https://www.parismusees.paris.fr/fr/actualite/10-choses-a-savoir-sur-louis-boulanger-actuellement-expose-a-la-maison-de-victor-hugo), 2022, Paris Musées; [Maison de Victor Hugo celebrates the writer's friendship with Louis Boulanger](https://parisdiarybylaure.com/maison-de-victor-hugo-celebrates-the-writers-friendship-with-louis-boulanger/), Paris Diary by Laure, 2022."
     },
@@ -15677,7 +15708,7 @@
       "relationship type": "friends",
       "know each other since": "at least 1837",
       "correspondence": "1837, Feb (after 13), letter from Dumas to Gautier: 'Je vous adresse Bard un bon ami à moi que j'ai manqué de faire fusiller en 1830 et à qui je dois un dédommagement en 1837 : veuillez le lui donner en mon nom en vous occupant de son tableau refusé' (Lacoste-Veysseyre 1985, p.85).",
-      "they met": "1846 in Madrid: royal wedding (also Pharamond Blanchard)",
+      "interactions": "1846 in Madrid: double royal wedding of Prince Antoine, Duke of Montpensier and Infanta Luisa Fernanda de Borbón, alongside her sister Isabel II (also attended by Pharamond Blanchard and Louis Boulanger).",
       "collaborations": "they both collaborated in <i>Les Français peints par eux-mêmes</i> (1840)",
       "bibliography": "Lacoste-Veysseyre 1985"
     },
