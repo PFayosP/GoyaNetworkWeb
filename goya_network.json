@@ -368,7 +368,7 @@
         "Recent years: 2015-16 Prado, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i> (cur. Javier Barón); 2004-05 Prado, <i>El retrato español. Del Greco a Picasso</i>."
       ],
       "collector of Goya's works": "Madrazo acquired a substantial group of Goya's prints and drawings, probably through Valentín Carderera. This includes [156 drawings](https://www.museodelprado.es/coleccion/obras-de-arte?searchObras=goya%20madrazo&cidoc:p14_carried_out_by@@@pm:author@@@ecidoc:p131_E82_p102_has_title=Goya%20y%20Lucientes,%20Francisco%20de@es&cidoc:p2_has_type@@@pm:objectTypeNode=http://museodelprado.es/items/objecttype_6) now at the Prado from the collection of 'Federico de Madrazo y/o Román Garreta, Madrid, c.1855-1860', such as <i>Buena muger, parece</i> (C.9) (1814-1823, [Prado D003913](https://www.museodelprado.es/coleccion/obra-de-arte/buena-muger-parece/4635b978-3c08-4895-9e0d-32c909f5aeb9))",
-      "bibliography": "Gilarranz Ibáñez 2020; Martínez Plaza 2017; García Jáñez 2010; G. Navarro 2007 (in <i>El siglo XIX en el Prado</i>); Martí 2007; Torres González, 'La larga sombra de los Madrazo', in López & Martí (eds.), <i>El mundo de los Madrazo</i>, 2007; Javier Barón, <i>El legado Ramón de Errazu: Fortuny, Madrazo y Rico</i>, Prado, 2005; Romero Tobar 1997; González López 1994; Díez 1994; Harris 1964",
+      "bibliography": "Pedro J. Martínez Plaza (ed.), <i>Diarios de Federico de Madrazo en el Museo del Prado 1834-1894. Tomo 1, 2 y 3</i>, Prado, 2026; Gilarranz Ibáñez 2020; Martínez Plaza 2017; García Jáñez 2010; G. Navarro 2007 (in <i>El siglo XIX en el Prado</i>); Martí 2007; Torres González, 'La larga sombra de los Madrazo', in López & Martí (eds.), <i>El mundo de los Madrazo</i>, 2007; Javier Barón, <i>El legado Ramón de Errazu: Fortuny, Madrazo y Rico</i>, Prado, 2005; Romero Tobar 1997; González López 1994; Díez 1994; Harris 1964",
       "websites": "[Prado website](https://www.museodelprado.es/coleccion/artista/madrazo-y-kuntz-federico-de/9bdb1678-fdd4-47bb-92e3-6833fadc8a50), Carlos G. Navarro; [Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7)",
       "conferences/seminars": "Javier Barón, <i>Effigies Amicorum. Retratos de artistas por Federico de Madrazo (1815-1894)</i>, 2015, Prado, [YouTube](https://www.youtube.com/watch?v=JY0qD-vB3hw)",
       "authorities": {
@@ -450,10 +450,14 @@
       "children": "Federico de Madrazo, Pedro de Madrazo, Luis de Madrazo, Juan de Madrazo, Carlota Madrazo",
       "married to": "Isabel Kuntz y Valentini (1809)",
       "profession": "painter, engraver, draughtsman, collector, teacher, curator",
-      "in Italy": "1803-(1815), Academia de San Lucas",
-      "in Madrid": "1818",
-      "in Paris": "in 1829 (1st trip): sees Eugène Delacroix's work",
-      "works as": "Pintor de Cámara of Carlos IV; Director of the Prado Museum (1838): reorganises and catalogues the collections; 1823 teacher of painting at the RABASF and Deputy Director",
+      "in Italy": "1803-1818, Academia de San Lucas",
+      "in Madrid": "from 1818",
+      "in Paris": [
+        "1801-1803: studies as pensioner of the king, at the workshop of Jacques-Louis David. He paints <i>Jesús en casa de Anás</i> (1803, Prado). Possibly becomes interested in the new lithography process at the workshop of Peter Friedrich André, which would influence his later role in the founding of the Real Establecimiento litográfico (see the blog La litografía en España).",
+        "1829: sees Eugène Delacroix's work."
+      ],
+      "works as": "Pintor de Cámara of Carlos IV; Director of the Prado Museum (1838-1857): reorganises and catalogues the collections; 1823 teacher of painting at the RABASF and Deputy Director",
+      "influenced by": "Jacques-Louis David",
       "editor of": "a catalogue of the Prado collection with lithographic illustrations of the paintings (made by Pharamond Blanchard)",
       "founder of": "Real Establecimiento litográfico (1825-1837)",
       "collector of": "a valuable painting collection, partly acquired by José de Salamanca y Mayol (I Marqués de Salamanca). See [<i>Colección y biblioteca Madrazo</i>](https://www.museodelprado.es/aprende/enciclopedia/voz/coleccion-y-biblioteca-madrazo/7aad2cf0-13c2-404c-ba9f-ba045450200a) at the Prado (profile by Javier Barón, Javier Docampo and José Manuel Matilla.",
@@ -461,15 +465,20 @@
       "masters": "Jacques-Louis David (1801-1803); Gregorio Ferro Requeijo",
       "students": "Léon Bonnat; José María Avrial y Flores; Pedro Kuntz y Valentini",
       "rivals": "Vicente López",
-      "author of": "<i>La muerte de Viriato</i> (1807, Prado)",
+      "author of": "<i>Jesús en casa de Anás</i>, 1803, Prado (influenced by Jacques-Louis David); <i>La muerte de Viriato</i>, c.1808, Prado",
+      "portrayed by": "self-portrait, c.1840, Prado",
       "mentioned in the French press": "in 1826, 9 Nov (<i>Le Moniteur universel</i>)",
       "podcasts": "<i>Arte compacto</i> 27 April 2025, ['José de Madrazo'](https://creators.spotify.com/pod/profile/arte-compacto/episodes/85--Jos-de-Madrazo--apoltico-y-padrazo--con-Carlos-G--Navarro-e3227l8), ft. Carlos G. Navarro",
       "bibliography": "Sánchez 2024; González Navarro 2023; Guinard 1967-A, p.85",
-      "websites": "[Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); [<i>Colección y biblioteca Madrazo</i>](https://www.museodelprado.es/aprende/enciclopedia/voz/coleccion-y-biblioteca-madrazo/7aad2cf0-13c2-404c-ba9f-ba045450200a) at the Prado",
+      "websites": [
+        "Official websites: [Prado, Familia Madrazo-Fortuny](https://www.museodelprado.es/actualidad/multimedia/familia-madrazo-fortuny/dfadf9f4-8bfe-43a5-8a2d-3a2947faffe7); [<i>Colección y biblioteca Madrazo</i>](https://www.museodelprado.es/aprende/enciclopedia/voz/coleccion-y-biblioteca-madrazo/7aad2cf0-13c2-404c-ba9f-ba045450200a) at the Prado.",
+        "Blogs: [La litografía en España](https://www.jaberni-coleccionismo-vitolas.com/1A.4.7-Desarrollo%20de%20la%20Litografia%20en%20Espana.htm); [Historia de la litografía](https://sobrelitografia.blogspot.com/p/historia-de-la-litografia.html)"
+      ],
       "authorities": {
         "rah": "https://historia-hispanica.rah.es/biografias/27492-jose-de-madrazo-y-agudo"
       },
-      "image": "https://www.goyanetwork.com/images/Jose_Madrazo.jpg"
+      "image": "https://www.goyanetwork.com/images/Jose_Madrazo.jpg",
+      "image source": "self-portrait, c.1840, Prado"
     },
     {
       "id": "Baron Taylor",
@@ -9676,12 +9685,14 @@
       "websites": "[ArtNet](https://www.artnet.com/artists/eug%C3%A8ne-dev%C3%A9ria/portrait-of-a-man-alexandre-dumas-fils-study-of-aa-3efZxh5AFDVZH-Kq76T_bg2)"
     },
     {
-      "_edge_id": "E. Devéria-Gaulon",
-      "from": "Eugène Devéria",
+      "_edge_id": "A. Devéria-Gaulon",
+      "from": "Achille Devéria",
       "to": "Cyprien Gaulon",
       "connection_level": "direct",
       "relationship type": "colleagues",
-      "they shared": "Gaulon worked as lithographer for E. Devéria"
+      "know each other since": "al menos 1842",
+      "collaborations": "Gaulon worked as a lithographer for Achille Devéria: <i>Irma, Théâtre de Variétés, Bordeaux</i>, impr. Gaulon à Bordeaux, 1842 (Adhémar 1953, p.532); <i>Deux acteurs du Grand théâtre de Bordeaux</i>, impr. Gaulon à Bordeaux, vers 1848: Bresil (Adhémar 1953, p.534). Adhémar (p.545) also mentions a <i>Valgalier</i>, impr. Gaulon, à Bordeaux, vers 1840, by a 'Deveria (Aug.)' (Auguste Devéria).",
+      "bibliography": "Jean Adhémar, <i>Inventaire du fonds français après 1800. Tome sixième, Daumont-Dorange</i>, BnF, 1953"
     },
     {
       "_edge_id": "Delacroix-E. Devéria",
