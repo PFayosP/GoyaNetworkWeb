@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-16",
+  "last_update": "2026-10-18",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -1615,13 +1615,18 @@
       "life dates": "1777-1858",
       "sex": "male",
       "nationality": "French",
+      "born in": "Fort-Dauphin, Haiti",
+      "dies in": "Bordeaux",
+      "profession": "lithographic printer; writer; calligrapher (<i>maître-écrivain</i>)",
       "in Bordeaux": "active 1815-1858. He coincides with Francisco de Goya",
       "studies in": "École royale de Sorèze",
       "military activity": "enlists in the army of the French Republic in 1791",
-      "works as": "editor and lithographer for Gustave de Galard, Eugène Devéria, Pierre Lacour, Francisco de Goya (<i>Bulls of Bordeaux</i>, 1825)",
-      "profession": "lithographic printer; writer; calligrapher (<i>maître-écrivain</i>)",
-      "portrayed by": "Goya, 1824-25, lithography (Harris 1964, no.282)",
-      "bibliography": "Harris 1964",
+      "works as": "editor and lithographer for Gustave de Galard, Eugène Devéria, Pierre Lacour, Francisco de Goya",
+      "link to Goya's work": "Gaulon edits Goya's series of 4 lithographs <i>Bulls of Bordeaux</i> in 1825",
+      "portrayed by": "Francisco de Goya, 1824-25, lithography (Harris 1964, no.282)",
+      "bibliography": "Harris 1964; Eugène Bouvy, <i>L'imprimeur Gaulon et les débuts de la lithographie à Bordeaux</i>, 1918.",
+      "archives": "Archives Nationales F18 1930",
+      "websites": "<i>Dictionnaire des imprimeurs-lithographes du XIXe siècle</i>, [École de Chartes](http://elec.enc.sorbonne.fr/imprimeurs/node/25526)",
       "image": "https://www.goyanetwork.com/images/Gaulon.jpg",
       "image source": "Goya portrait, lithograph, 1824-25"
     },
@@ -14391,6 +14396,7 @@
       "relationship type": "acquaintances; correspondents",
       "know each other since": "at least 1856",
       "correspondence": [
+        "1855, 10 Dec, Delacroix to Matheron: 'J'ai eu l'occasion de trouver à Bordeaux même et chez un lithographe [Cyprien Gaulon] qui demeurait près du Grand Théâtre quelques planches lithographiées représentant des combats de taureaux et un portrait lithographié de sa [Francisco de Goya] main, tous ouvrages assez faibles et qui doivent être de sa vieillesse' (<i>Dictionnaire des imprimeurs-lithographes du XIXe siècle</i>).",
         "1857, 27 Nov, Delacroix congratulates Matheron for the publication of his book on Goya; the INHA curator notes that 'two artworks by Goya have entered the Louvre collections thanks to Matheron': 'Monsieur,  Je suis forcé depuis une quinzaine de jours de me renfermer et de m'abstenir de tout occupation, ce qui vous expliquera pourquoi j'ai tant tardé à vous remercier de l'envoi que vous avez bien voulu me faire de votre Goya. Avant de vous parler de l'interêt que j'y ai trouvé, j'ai hâte de vous remercier de tout ce que vous dites d'infiniment flatteur à mon sujet et il m'est doublement agréable que ce soit à propos d'un grand artiste dont les compositions et la verve m'ont inspiré si souvent. Je vous sais aussi un gré infini de m'apprendre comme à tout le monde tant de détails intéressants, aussi bien sur sa vie si originale que sur ses ouvrages. Je ne doute pas qu'il ne vous ait fallu de longues et patientes recherches pour vous les procurer : mois il faut vous louer surtout de la manière dont vous les avez mis en oeuvre pour augmenter l'intérêt du sujet. Laissez les Espagnols oublier les os de Goya dans la Chartreuse : ce lieu m'est cher à beaucoup de titres ;  peut-être y reposerai-je quelque jour auprès des restes qui me sont chers [son père]. La Chartreuse est le lieu de son espèce le plus majestueux et le plus digne de son objet : et quant à l'abandon de ce tombeau doublement abandonné par ses compatriotes, c'est une suite de cette nécessité qui fait disparaître après nous ceux qui ont pu quelque temps garder notre souvenir. [...]' [INHA NUM 0554 (01)] (https://bibliotheque-numerique.inha.fr/idurl/1/6255). See Tinterow 2003, p.387; Johnson & Hannoosh 2000, pp.84-85, no.65."
       ],
       "mentions": [
