@@ -3184,6 +3184,7 @@
       "life dates": "c.1813-1854",
       "sex": "female",
       "nationality": "Spanish",
+      "siblings": "Rosa Garreta",
       "children": "Luisa de Madrazo, Raimundo de Madrazo, Cecilia de Madrazo, Ricardo de Madrazo",
       "married to": "Federico de Madrazo",
       "portrayed by": "Federico de Madrazo, 1837 (private collection)",
@@ -8953,7 +8954,9 @@
       "to": "Alejandro Sureda",
       "connection_level": "direct",
       "relationship type": "friends",
-      "know each other since": "at least from 1860",
+      "know each other since": "at least from 1834",
+      "mentions": "1834, 13 March, Federico's diary: 'Por la noche en casa. Vinieron Pacca, la Manuela Rico, Sureda' (Martínez Plaza 2026, p.17).",
+      "bibliography": "Pedro J. Martínez Plaza (ed.), <i>Diarios de Federico de Madrazo en el Museo del Prado 1834-1894. Tomo 1</i>, Prado, 2026",
       "websites": "[RAH](https://historia-hispanica.rah.es/biografias/43327-alejandro-sureda-chappron)"
     },
     {
@@ -12052,7 +12055,10 @@
       "relationship type": "acquaintances, friends, colleagues",
       "know each other since": "1833: after Blanchard introduced José de Madrazo to Baron Taylor and Adrien Dauzats in Madrid, he meets Federico on his way to Paris in Bordeaux, where Blanchard gives him and Vicente Masarnau a tour of the museum (González López 1994, p.212)",
       "collaborations": "in the journal <i>El Artista</i>, founded by Federico de Madrazo, Pedro de Madrazo and Eugenio Ochoa in 1835, Blanchard publishes the lithographs <i>Señora con trage andaluz</i> (fig. LXXXVI), <i>El pescador</i> (fig. CCXXV) illustrating a poem by Eugenio Ochoa, <i>El castillo del espectro</i> (fig. CCXXVI) illustrating a story by Eugenio Ochoa, <i>Un trovador</i> (fig. CCXXVII) illustrating an article by Eugenio Ochoa, and <i>Antaño</i> (fig. CCXXVIII) (Vicente Galán 2000, pp.107, 112, 157, 165, 171, 180)",
-      "bibliography": "Fayos Pérez 2024; Gilarranz 2020; Vicente Galán 2000; González López 1994; Guinard 1967-A"
+      "interactions": [
+        "According to his diary, Federico meets with Blanchard very often in Madrid in 1834 (no record between 1835 and 1853): May 6, 12, 24, 29, June 8, 13, July 16, 29, Aug 29, Oct 25, Nov 3 ('con Ph. Blanchard a la Cárcel de Corte [Palacio de Santa Cruz] a ver un cuadrito que está pintando': <i>Puente colgando sobre el Tajo en Aranjuez</i>), Nov 29 (mentioned next to Mariano José Larra and Jenaro Pérez Villaamil), Dec 3, 14 (Martínez Plaza 2026, pp.24, 25, 26, 27, 28, 29, 33, 34, 38, 47, 48, 52, 53, 55). Often coinciding with people like Valentín Carderera, Eugenio Ochoa, Vicente González Arnao, Vicente Masarnau."
+      ],
+      "bibliography": "Pedro J. Martínez Plaza (ed.), <i>Diarios de Federico de Madrazo en el Museo del Prado 1834-1894. Tomo 1</i>, Prado, 2026; Fayos Pérez 2024; Gilarranz 2020; Vicente Galán 2000; González López 1994; Guinard 1967-A"
     },
     {
       "_edge_id": "Blanchard-P. Madrazo",
