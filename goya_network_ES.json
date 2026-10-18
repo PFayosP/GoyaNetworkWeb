@@ -1638,11 +1638,11 @@
       "studies in": "École royale de Sorèze",
       "military activity": "se alista en el ejército de la República Francesa en 1791",
       "works as": "editor y litógrafo para Gustave de Galard, Eugène Devéria, Pierre Lacour, Francisco de Goya",
-      "link to Goya's work": "Gaulon edits Goya's series of 4 lithographs <i>Bulls of Bordeaux</i> in 1825",
+      "link to Goya's work": "Gaulon edits Goya's series of 4 lithographs <i>Bulls of Bordeaux</i> in 1825: Dibersión de España, El famoso americano Mariano Ceballos, bravo toro, Plaza partida (tirada de 100).",
       "portrayed by": "Francisco de Goya, 1824-25, litografía (Harris 1964, no.282)",
       "bibliography": "Harris 1964; Eugène Bouvy, <i>L'imprimeur Gaulon et les débuts de la lithographie à Bordeaux</i>, 1918.",
       "archives": "Archives Nationales F18 1930",
-      "websites": "<i>Dictionnaire des imprimeurs-lithographes du XIXe siècle</i>, [École de Chartes](http://elec.enc.sorbonne.fr/imprimeurs/node/25526)",
+      "websites": "Corinne Bouquin et Elisabeth Parinet, <i>Dictionnaire des imprimeurs-lithographes du XIXe siècle</i>, École de Chartes [online](http://elec.enc.sorbonne.fr/imprimeurs/node/25526)",
       "image": "https://www.goyanetwork.com/images/Gaulon.jpg",
       "image source": "Retrato de Goya, litografía, 1824-25"
     },
@@ -1659,17 +1659,18 @@
       "profession": "ceramist, porcelain maker, engineer, painter",
       "in France": "1800-1803 (para estudiar); en 1812, durante la Guerra de la Independencia Española (tras la destrucción de la Real Fábrica de Porcelana del Buen Retiro por el 1st Duke of Wellington)",
       "in Paris": [
-        "1811 Sureda realiza 4 pequeñas litografías a pluma en París en la prensa de Dominique Vivant Denon, siendo uno de los primeros artistas en utilizar esta técnica (Piquer Garzón 2019, p.38; Vega 2013, p.367; Jurado 2001, p.108; Boix 1925, pp.281-82). Lasteyrie y Engelmann no abrieron sus talleres de impresión litográfica hasta 1816 (Gassier & Wilson Bareau 1971, p.308).",
-        "1841-1842, donde conoce a Valentín Carderera; trabaja con Viollet-le-Duc en la restauración de la Sainte Chapelle."
+        "1811 Sureda realiza 4 pequeñas litografías a pluma en París en la prensa de Dominique Vivant Denon, siendo uno de los primeros artistas en utilizar esta técnica (Piquer Garzón 2019, p.38; Vega 2013, p.367; Jurado 2001, p.108; Boix 1925, pp.281-82). Lasteyrie y Engelmann no abrieron sus talleres de impresión litográfica hasta 1816 (Gassier & Wilson Bareau 1971, p.308)",
+        "1841-1842, donde conoc; Engelmann fundaría un taller en Barcelona en 1820 (Piquer Garzón 2019, p.39).e a Valentín Carderera; trabaja con Viollet-le-Duc en la restauración de la Sainte Chapelle."
       ],
       "in Madrid": "desde octubre de 1803. Goya le retrata",
       "studies in": "Palma, Escuela de Dibujo (desde 1785); Francia (desde 1800)",
       "works as": "Director de la Real Fábrica de Porcelana del Buen Retiro (hasta su destrucción en 1812 hasta 1820) y de la Real Fábrica de La Moncloa (desde 1817); también director de la Real Fábrica de Paños de Guadalajara y de la Real Fábrica de Cristales de La Granja (desde 1822)",
       "portrayed by": "Goya, c.1803-04, Washington, National Gallery of Art. Según Sazatornil y Jiméno, Goya realizó este retrato para agradecer a Sureda su ayuda con la técnica de impresión de los <i>Caprichos</i> (2014, pp.108-112)",
-      "bibliography": "Piquer Garzón 2019; Sazatornil y Jiméno 2014; J. Vega, 'Del espectáculo de la ciencia a la práctica artística cortesana: apuntes sobre la fortuna de la fotografía en España1', <i>Revista de Dialectología y Tradiciones Populares</i>, vol.68, no.2, pp.359-83, 2013; Augusto Jurado, <i>La imprenta y el libro en España</i>, 2001; Gassier y Wilson Bareau 1971; Boix 1925",
       "authorities": {
         "rah": "https://historia-hispanica.rah.es/biografias/48883-bartolome-sureda-y-miserol"
       },
+      "curiosities": "Sureda pudo, al final de su vida, experimentar con la  fotografía (Vega 2013, p.367)",
+      "bibliography": "Piquer Garzón 2019; Sazatornil y Jiméno 2014; J. Vega, 'Del espectáculo de la ciencia a la práctica artística cortesana: apuntes sobre la fortuna de la fotografía en España1', <i>Revista de Dialectología y Tradiciones Populares</i>, vol.68, no.2, pp.359-83, 2013; Augusto Jurado, <i>La imprenta y el libro en España</i>, 2001; Gassier y Wilson Bareau 1971; Boix 1925",
       "image": "https://www.goyanetwork.com/images/Sureda_Bartolome.jpg",
       "image source": "Retrato de Goya, c.1803-04, Washington"
     },
@@ -6667,6 +6668,45 @@
       "image": "https://www.goyanetwork.com/images/Deveria_Eugene.jpg",
       "image source": "autorretrato, óleo, 1838, Pau Museum",
       "added": "2026-10-14"
+    },
+    {
+      "id": "José María Cardano",
+      "full name": "José María Cardano y Bauzá",
+      "label": "Cardano",
+      "life dates": "1781-c.1835",
+      "sex": "male",
+      "nationality": "Spanish",
+      "profession": "grabador; litógrafo; pedagogo; oficial de Marina (Teniente de Fragata)",
+      "born in": "Murcia, Spain",
+      "dies in": "¿Londres?",
+      "parents": "Antonio Cardano (músico de la Marina) and Antonia Bauzá",
+      "siblings": "Felipe Cardano y Bauzá (1778-1824): grabador y académico de la RABASF",
+      "lives in": "Madrid (por 1817; desde finales de 1818); Múnich (c.1817-1818); París (c.1818). De 1823-1825: Londres y París. Obtiene permiso para ir al extranjero también en 1822 (Boix 1925, p.284).",
+      "in Paris": "c.1818 para estudiar litografía; desde 1825",
+      "works in": "Dirección de Hidrografía (con su tío, el oficial de Marina y geógrafo Felipe Bauzá) (por 1817)",
+      "students": "Cardano enseñaría litografía a artistas como José de Madrazo, Carlos Luis de Ribera, Vicente López y Francisco de Goya",
+      "studies in": [
+        "Escuela de Pilotos de Cartagena.",
+        "París: aprende el dibujo y el grabado de mapas geográficos.",
+        "Múnich (con Aloys Senefelder) y París: es enviado por la Dirección de Hidrografía a estudiar la técnica litográfica allí para introducirla en España (Boix 1925, pp.282-84)."
+      ],
+      "friends": "Isidoro Máiquez (depicted by José Ribelles in some lithographs in his roles in <i>Othello</i> and <i>Oscar</i>).",
+      "founder of": [
+        "El primer taller litográfico (Establecimiento Litográfico) en España en 1819 (Real Orden de 16 marzo 1819), vinculado al Depósito Hidrográfico de Madrid (Dirección de Hidrografía). Se hace referencia a él en las estampas como <i>Litografía de Madrid</i> o <i>Establecimiento Litográfico de Madrid</i>.",
+        "Otro taller litográfico en Londres."
+      ],
+      "political views": "probablemente liberal: se exilia a Londres con el fin del Trienio Liberal en 1823. Tras la muerte de Fernando VII, Cardano publica una serie de retratos litográficos de héroes y protagonistas de la causa liberal, como José María Torrijos. En 1825 su nombre es eliminado de las listas de la Real Armada y se exilia de forma permanente en París y Londres.",
+      "link to Goya's work": "Goya comenzó a experimentar con la litografía en 1819 en el taller litográfico de Cardano en Madrid, produciendo una serie de planchas sueltas entre 1819 y 1822: <i>La hilandera</i>, <i>Duelo a la antigua usanza</i>, <i>Escena infernal</i>, <i>Monje</i>, <i>Expresivo doble fuerza</i>, <i>La violación</i>, <i>La lectura</i>, <i>Toro acosado por perros</i>, <i>Suerte de vara en el campo</i> y <i>El sueño</i>.",
+      "curiosities": "Probablemente la primera litografía impresa en España fue <i>Hilanderas</i> de Goya (febrero de 1819)",
+      "authorities": {
+        "bne": "https://datos.bne.es/persona/XX935977.html"
+      },
+      "author of": "<i>Los Ingleses atacan a Buenos-Ayres y son rechazados 1807</i>, aquatint, date unknown, BNE INVENT/43596; <i>Prisión del Rey en Varennes</i>, etching and aquating, date unknown, RABASF AC-02788; attributed to Cardano, <i>José María Torrijos</i>, lithograph, after 1831, Prado [G001384](https://www.museodelprado.es/coleccion/obra-de-arte/jose-maria-torrijos/06add286-494c-48dd-bef9-4c3b5a57dc3f)",
+      "bibliography": "Piquer Garzón 2019; Esther Alcaraz Belzunces, 'José María Cardano, marino cartagenero introductor de la litografía en España', <i>Cartagena histórica</i>, no.29, 2009, pp.50-64; Jesús A. Martínez, <i>Historia de la edición en España, 1836-1936</i>, 2001; Miguel Gutiérrez Fernández, <i>La litografía en España</i>, 1993-94, Universidad de Sevilla; Juan Carrete Parrondo, <i>Los grabadores Felipe y José María Cardano, iniciadores del arte litográfico</i>, 1980; Boix 1925, pp.282-89.",
+      "websites": "[Prado](https://www.museodelprado.es/coleccion/artista/jose-maria-cardano/72922cf6-bcfd-47d7-8806-493ff76c3eaa); [Biblioteca Virtual del Patrimonio Bibliográfico](https://bvpb.mcu.es/gl/consulta_aut/registro.do?control=BVPB20100001653); [BNE](https://guias.bne.es/elie_grabados/grabadores)",
+      "image": "https://www.goyanetwork.com/images/Cardano_AI.jpg",
+      "image source": "Generada por IA (Gemini) porque no se conoce ningún retrato",
+      "added": "2026-10-18"
     }
   ],
   "edges": [
@@ -9165,6 +9205,72 @@
       "bibliography": "Harris 1964"
     },
     {
+      "_edge_id": "Cardano-V. López",
+      "from": "José María Cardano",
+      "to": "Vicente López",
+      "connection_level": "directa",
+      "relationship type": "conocidos; maestro-alumno",
+      "know each other since": "c.1819",
+      "collaborations": "López comenzó a trabajar en litografía en el taller de Cardano, abierto en 1819",
+      "bibliography": "Piquer Garzón 2019; Canellas López 1981"
+    },
+    {
+      "_edge_id": "Cardano-J. Madrazo",
+      "from": "José María Cardano",
+      "to": "José de Madrazo",
+      "connection_level": "directa",
+      "relationship type": "conocidos; maestro-alumno",
+      "know each other since": "c.1819",
+      "collaborations": "Madrazo comenzó a trabajar en litografía en el taller de Cardano, abierto en 1819",
+      "bibliography": "Piquer Garzón 2019; Canellas López 1981"
+    },
+    {
+      "_edge_id": "Cardano-Ribera",
+      "from": "José María Cardano",
+      "to": "Carlos Luis de Ribera",
+      "connection_level": "direct",
+      "relationship type": "conocidos; maestro-alumno",
+      "know each other since": "c.1819",
+      "collaborations": "Ribera comenzó a trabajar en litografía en el taller de Cardano, abierto en 1819",
+      "bibliography": "Piquer Garzón 2019; Canellas López 1981"
+    },
+    {
+      "_edge_id": "Cardano-Ferrer",
+      "from": "José María Cardano",
+      "to": "Joaquín María Ferrer",
+      "connection_level": "directa",
+      "relationship type": "conocidos; corresponsales",
+      "know each other since": "c.1825",
+      "link to Goya's work": [
+        "1825, 6 Dec, letter from Francisco de Goya to Joaquín María Ferrer: 'Con motivo de ir a París el Señor de Baranda, le enviaba a Usted un ensayo litográfico que representa una corrida de novillos a fin de que la viese Usted y el amigo Cardano [José María Cardano] y si la encontraban digna de despachar algunos enviaré los que Usted quisiere; este escrito lo metí en la estampa y no teniendo noticia, vuelvo a suplicarle a Usted me avise por que tengo echos tres más del mismo tamaño y asuntos de toros. Por el amigo Cardano supe con el mayor placer de la salud de Usted y mi Señora Doña Manuela y la ermosa hija que el cielo le a dado a Usted' (Canellas López 1981, no.272, p.389)."
+      ],
+      "bibliography": "Piquer Garzón 2019; Canellas López 1981"
+    },
+    {
+      "_edge_id": "Cardano-GOYA",
+      "from": "José María Cardano",
+      "to": "Francisco de Goya",
+      "connection_level": "directa",
+      "relationship type": "conocidos; maestro-alumno",
+      "know each other since": "c.1819",
+      "collaborations": "Goya comenzó a experimentar con la litografía en 1819 en el taller litográfico de Cardano en Madrid, produciendo una serie de planchas sueltas entre 1819 y 1822: <i>La hilandera</i>, <i>Duelo a la antigua usanza</i>, <i>Escena infernal</i>, <i>Monje</i>, <i>Expresivo doble fuerza</i>, <i>La violación</i>, <i>La lectura</i>, <i>Toro acosado por perros</i>, <i>Suerte de vara en el campo</i> y <i>El sueño</i>.",
+      "mentions": [
+        "1825, 6 Dec, carta de Francisco de Goya a Joaquín María Ferrer: 'Con motivo de ir a París el Señor de Baranda, le enviaba a Usted un ensayo litográfico que representa una corrida de novillos a fin de que la viese Usted y el amigo Cardano [José María Cardano] y si la encontraban digna de despachar algunos enviaré los que Usted quisiere; este escrito lo metí en la estampa y no teniendo noticia, vuelvo a suplicarle a Usted me avise por que tengo echos tres más del mismo tamaño y asuntos de toros. Por el amigo Cardano supe con el mayor placer de la salud de Usted y mi Señora Doña Manuela y la ermosa hija que el cielo le a dado a Usted' (Canellas López 1981, no.272, p.389)."
+      ],
+      "bibliography": "Piquer Garzón 2019; Canellas López 1981; Boix 1925"
+    },
+    {
+      "_edge_id": "Cardano-Máiquez",
+      "from": "José María Cardano",
+      "to": "Isidoro Máiquez",
+      "connection_level": "direct",
+      "relationship type": "amigos",
+      "know each other since": "at least 1819",
+      "portraits": "en su taller litográfico en Madrid, fundado en 1819, Cardano editó algunas estampas de José Ribelles que representan a Isidoro Máiquez en sus papeles en <i>Othello</i> y <i>Oscar</i> (c.1820) (Boix 1925, p.287).",
+      "they shared": "tanto Máiquez como Cardano estuvieron en contacto con Goya: Máiquez fue retratado por el pintor y Cardano fue el primer contacto de Goya con la litografía",
+      "bibliography": "Boix 1925"
+    },
+    {
       "_edge_id": "Ferrer-GOYA",
       "from": "Francisco de Goya",
       "to": "Joaquín María Ferrer",
@@ -9190,6 +9296,14 @@
       "know each other since": "1775",
       "collaborations": "Esteve realizó varias copias a partir de los retratos de Goya, como Carlos IV en uniforme de coronel de la Guardia de Corps, 1799-1800, [Prado P000727](https://www.museodelprado.es/coleccion/obra-de-arte/carlos-iv-en-uniforme-de-coronel-de-la-guardia-de/9a5baf9f-0dba-4ebf-a62c-9b116befea5d), y <i>La reina María Luisa con mantilla</i>, 1799-1800, [Prado P000728](https://www.museodelprado.es/coleccion/obra-de-arte/la-reina-maria-luisa-con-mantilla/1149fdbc-6ee9-4298-8de9-1ad9467dee98) (véase Albarrán 2018 y próxima publicación)",
       "bibliography": "Albarrán 2018; Albarrán (próximamente)"
+    },
+    {
+      "_edge_id": "GOYA-Motte",
+      "from": "Francisco de Goya",
+      "to": "Charles Motte",
+      "connection_level": "¿secundaria?",
+      "link to Goya": "Motte editó en 1825 una edición litográfica de 10 <i>Caprichos</i>, titulada <i>Carricatures espagnoles, Ni plus ni moins, par Goya</i>. Nos podríamos preguntar si Goya, que visitó París en 1824 y vivió en Burdeos hasta 1828, conocía esta edición. Miguel Gutiérrez Fernández escribe: 'Después de ver en curso la edición litográfica de las «Caricaturas espagnoles par Gaya», que la Casa Motte seleccionara al azar, en número de diez, de la serie de ochenta aguafuertes de los <i>Caprichos</i> traducidos con menguada destreza, volvió a Burdeos, donde se sintió feliz entre los antiguos amigos y familiares, paseando del brazo del pintor Brugada [Antonio de Brugada] y llevando de la mano a la pequeña Rosarito Weis [Rosario Weiss Zorrilla], inseparable compañera del maestro y futura pintora y litógrafa de singular mérito' (p.25).",
+      "bibliography": "Miguel Gutiérrez Fernández, <i>La litografía en España</i>, 1993-94, Universidad de Sevilla"
     },
     {
       "_edge_id": "GOYA-Moratín",
@@ -9228,8 +9342,9 @@
       "to": "Cyprien Gaulon",
       "connection_level": "direct",
       "relationship type": "mecenazgo; colegas",
-      "collaborations": "Gaulon edita la serie litográfica de Goya <i>Los toros de Burdeos</i> (1825)",
+      "collaborations": "Gaulon edita la serie litográfica de Goya <i>Los toros de Burdeos</i> (1825): Dibersión de España, El famoso americano Mariano Ceballos, bravo toro, Plaza partida (tirada de 100).",
       "portraits": "1824-25, [litografía](https://artsandculture.google.com/asset/the-printer-gaulon-goya-y-lucientes-francisco-de/EAGPfbiHV7U66Q?hl=es)",
+      "bibliography": "Piquer GArzón 2019",
       "strength": 2
     },
     {
@@ -14526,6 +14641,15 @@
       "strength": 1
     },
     {
+      "_edge_id": "Delacroix-Gaulon",
+      "from": "Eugène Delacroix",
+      "to": "Cyprien Gaulon",
+      "connection_level": "¿secundaria?",
+      "relationship type": "¿conocidos? Custine admiraba mucho a Lamartine",
+      "mentions": "1855, 10 dic, carta de Delacroix a Matheron: 'J'ai eu l'occasion de trouver à Bordeaux même et chez un lithographe [Cyprien Gaulon] qui demeurait près du Grand Théâtre quelques planches lithographiées représentant des combats de taureaux et un portrait lithographié de sa [Francisco de Goya] main, tous ouvrages assez faibles et qui doivent être de sa vieillesse' (<i>Dictionnaire des imprimeurs-lithographes du XIXe siècle</i>).",
+      "websites": "Corinne Bouquin et Elisabeth Parinet, <i>Dictionnaire des imprimeurs-lithographes du XIXe siècle</i>, École de Chartes [online](http://elec.enc.sorbonne.fr/imprimeurs/node/25526)"
+    },
+    {
       "_edge_id": "Delacroix-Matheron",
       "from": "Eugène Delacroix",
       "to": "Laurent Matheron",
@@ -14534,13 +14658,13 @@
       "know each other since": "al menos 1855",
       "correspondence": [
         "1855, 10 dic, Delacroix a Matheron: 'J'ai eu l'occasion de trouver à Bordeaux même et chez un lithographe [Cyprien Gaulon] qui demeurait près du Grand Théâtre quelques planches lithographiées représentant des combats de taureaux et un portrait lithographié de sa [Francisco de Goya] main, tous ouvrages assez faibles et qui doivent être de sa vieillesse' (<i>Dictionnaire des imprimeurs-lithographes du XIXe siècle</i>).",
-        "1857, 27 nov, Delacroix felicita a Matheron por la publicación de su libro sobre Goya; el conservador del INHA señala que 'dos obras de Goya han ingresado en las colecciones del Louvre gracias a Matheron': 'Monsieur,  Je suis forcé depuis une quinzaine de jours de me renfermer et de m'abstenir de tout occupation, ce qui vous expliquera pourquoi j'ai tant tardé à vous remercier de l'envoi que vous avez bien voulu me faire de votre Goya. Avant de vous parler de l'interêt que j'y ai trouvé, j'ai hâte de vous remercier de tout ce que vous dites d'infiniment flatteur à mon sujet et il m'est doublement agréable que ce soit à propos d'un grand artiste dont les compositions et la verve m'ont inspiré si souvent. Je vous sais aussi un gré infini de m'apprendre comme à tout le monde tant de détails intéressants, aussi bien sur sa vie si originale que sur ses ouvrages. Je ne doute pas qu'il ne vous ait fallu de longues et patientes recherches pour vous les procurer : mois il faut vous louer surtout de la manière dont vous les avez mis en oeuvre pour augmenter l'intérêt du sujet. Laissez les Espagnols oublier les os de Goya dans la Chartreuse : ce lieu m'est cher à beaucoup de titres ;  peut-être y reposerai-je quelque jour auprès des restes qui me sont chers [son père]. La Chartreuse est le lieu de son espèce le plus majestueux et le plus digne de son objet : et quant à l'abandon de ce tombeau doublement abandonné par ses compatriotes, c'est une suite de cette nécessité qui fait disparaître après nous ceux qui ont pu quelque temps garder notre souvenir. [...]' [INHA NUM 0554 (01)] (https://bibliotheque-numerique.inha.fr/idurl/1/6255). Ver Tinterow 2003, p.387; Johnson & Hannoosh 2000, pp.84-85, no.65."
+        "1857, 27 nov, Delacroix felicita a Matheron por la publicación de su libro sobre Goya; el conservador del INHA señala que 'dos obras de Goya han ingresado en las colecciones del Louvre gracias a Matheron': 'Monsieur,  Je suis forcé depuis une quinzaine de jours de me renfermer et de m'abstenir de tout occupation, ce qui vous expliquera pourquoi j'ai tant tardé à vous remercier de l'envoi que vous avez bien voulu me faire de votre Goya. Avant de vous parler de l'interêt que j'y ai trouvé, j'ai hâte de vous remercier de tout ce que vous dites d'infiniment flatteur à mon sujet et il m'est doublement agréable que ce soit à propos d'un grand artiste dont les compositions et la verve m'ont inspiré si souvent. Je vous sais aussi un gré infini de m'apprendre comme à tout le monde tant de détails intéressants, aussi bien sur sa vie si originale que sur ses ouvrages. Je ne doute pas qu'il ne vous ait fallu de longues et patientes recherches pour vous les procurer : mois il faut vous louer surtout de la manière dont vous les avez mis en oeuvre pour augmenter l'intérêt du sujet. Laissez les Espagnols oublier les os de Goya dans la Chartreuse : ce lieu m'est cher à beaucoup de titres ;  peut-être y reposerai-je quelque jour auprès des restes qui me sont chers [son père]. La Chartreuse est le lieu de son espèce le plus majestueux et le plus digne de son objet : et quant à l'abandon de ce tombeau doublement abandonné par ses compatriotes, c'est une suite de cette nécessité qui fait disparaître après nous ceux qui ont pu quelque temps garder notre souvenir. [...]' [INHA](https://bibliotheque-numerique.inha.fr/idurl/1/6255) NUM 0554 (01). Ver Tinterow 2003, p.387; Johnson & Hannoosh 2000, pp.84-85, no.65."
       ],
       "mentions": [
         "1856, 24 enero, carta de Eugène Delacroix a Louis Guillemardet (sobre Laurent Matheron): 'Cher ami, une personne de ma connaissance habitant Bordeaux et très compétente en cette matière écrit une biographie de Goya et voudrait en même temps donner le catalogue de ses œuvres. Il m'avait demandé par lettre ce que je savais à cet égard; je lui ai parlé du portrait de ton père...' (Tomlinson 2021, p.20; Lipschutz 1972)."
       ],
       "bibliography": "Tomlinson 2021; Tinterow 2003; Johnson & Hannoosh, <i>Delacroix. Nouvelles Lettres</i>, 2000; Lipschutz 1972.",
-      "websites": "<i>Dictionnaire des imprimeurs-lithographes du XIXe siècle</i>, [École de Chartes](http://elec.enc.sorbonne.fr/imprimeurs/node/25526)",
+      "websites": "Corinne Bouquin et Elisabeth Parinet, <i>Dictionnaire des imprimeurs-lithographes du XIXe siècle</i>, École de Chartes [online](http://elec.enc.sorbonne.fr/imprimeurs/node/25526)",
       "archives": "INHA"
     },
     {
