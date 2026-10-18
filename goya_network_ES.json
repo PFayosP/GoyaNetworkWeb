@@ -636,12 +636,15 @@
       ],
       "participates in": [
         "1820-24 <i>Voyages pittoresques et romantiques dans l'ancienne France</i> de Baron Taylor (con la participación de Charles Nodier y Alphonse de Cailleux): 'Le Camp du Drap d'Or', Picardie, volume III, p.203 y 'Histoire de Villers-Cotterets', Picardie, vol. II, p.134.",
+        "1832 <i>Voyage pittoresque en Espagne, en Portugal et sur Cote d'Afrique, de Tanger a Tétouan</i> de Baron Taylor: estampas como 'Smuggler, seaman and woman in Cadiz / Contrebandier, matelot et femme de peuple à Cadiz'.",
         "c.1822-26 vista de Jerusalén para el Diorama de Louis Daguerre ('polyorama panoptique').",
-        "1835 se une a la revista <i>El Artista</i>, fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa en 1835, donde publica las litografías <i>Señora con trage andaluz</i> (fig. LXXXVI), <i>El pescador</i> (fig. CCXXV) ilustrando un poema de Eugenio Ochoa, <i>El castillo del espectro</i> (fig. CCXXVI) ilustrando un cuento de Eugenio Ochoa, <i>Un trovador</i> (fig. CCXXVII) ilustrando un artículo de Eugenio Ochoa, y <i>Antaño</i> (fig. CCXXVIII) (Vicente Galán 2000, pp.107, 112, 157, 165, 171, 180)"
+        "1835 se une a la revista <i>El Artista</i>, fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa en 1835, donde publica las litografías <i>Señora con trage andaluz</i> (fig. LXXXVI), <i>El pescador</i> (fig. CCXXV) ilustrando un poema de Eugenio Ochoa, <i>El castillo del espectro</i> (fig. CCXXVI) ilustrando un cuento de Eugenio Ochoa, <i>Un trovador</i> (fig. CCXXVII) ilustrando un artículo de Eugenio Ochoa, y <i>Antaño</i> (fig. CCXXVIII) (Vicente Galán 2000, pp.107, 112, 157, 165, 171, 180)."
       ],
       "exhibitions": "Paris Salon: <i>Course de taureaux dans un bourg d'Espagne</i> (1834)",
       "interest in Spanish art": "fue autor de obras como <i>Course de taureaux dans un bourg d'Espagne</i> (Salon de 1834) o <i>San Isidro Labrador patrón de Madrid</i> (1852).",
+      "link to Goya's work": "El no.7 de su serie litográfica <i>Courses de taureaux</i>, titulado ['Los perros'](https://ceres.mcu.es/pages/ResultSearch?Museo=MNR&txtSimpleSearch=Los%20Perros&simpleSearch=0&hipertextSearch=1&search=simple&MuseumsSearch=MNR%7C&MuseumsRolSearch=17&), recuerda mucho a la litografía de Goya [<i>Toro acosado por perros</i>](https://fundaciongoyaenaragon.es/obra/toro-acosado-por-perros/968), realizada en Burdeos c.1824-25.",
       "bibliography": "Lanzarote Guiral 2016; José Carlos García Rodríguez, <i>Montpensier. Biografía de una obsesión</i>, 2015; Mª Luisa Vicente Galán, <i>Las ilustraciones románticas literarias de las revistas y novelas publicadas en Madrid (1830-1850)</i>, PhD diss., UCM, 2000; <i>Les Peintres français en Espagne de Manet à Delacroix</i>, exh.cat., Castres, Musée Goya, 1997, pp.63-65; J. Vega, <i>El origen de la litografía en España</i>, 1990, pp.249-50; Ossorio y Bernard, <i>Galería Biográfica de Artistas Españoles del siglo XIX</i>, Catálogo de la Calcografía Nacional (p.85); E. Páez Ríos,<i>Repertorio de grabadores españoles en la Biblioteca Nacional</i>, vol. I, 1981, pp.143-44; Paul Guinard, <i>Dauzats et Blanchard, peintres de l'Espagne romantique</i>, 1967; Paul Guinard, 'Romantiques français en Espagne', <i>Art de France</i> II, 1962; Guinard, 'Pharamond Blanchard cronista de la Villa y Corte', <i>Goya</i>, 46 (1962), pp.280-288.",
+      "websites": "[Litografías taurinas de Blanchard](https://www.rmcr.org/2022/05/31/biblioteca-rmr-no-104-la-serie-de-litografias-taurinas-de-pharamond-blanchard-para-el-voyage-pittoresque-del-baron-taylor-mayo-2022/), Real Maestranza de la Caballería de Ronda",
       "image": "https://www.goyanetwork.com/images/Blanchard_AI.jpg",
       "image source": "Generada por IA (DeepAI) porque no se conoce ningún retrato"
     },
@@ -12674,7 +12677,9 @@
       "from": "Valentín Carderera",
       "to": "Pharamond Blanchard",
       "connection_level": "direct",
-      "relationship type": "conocidos"
+      "relationship type": "conocidos",
+      "know each other since": "al menos desde 1834",
+      "collaborations": "Carderera diseñó un catafalco para conmemorar la muerte de Fernando VII en la iglesia de San Jerónimo el Real de Madrid, y Blanchard realizó una litografía del mismo en 1834 (Museo del Romanticismo CE0781)."
     },
     {
       "_edge_id": "Carderera-Matheron",
