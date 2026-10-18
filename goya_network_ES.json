@@ -608,14 +608,16 @@
       "nationality": "French",
       "born in": "Lyon",
       "dies in": "París",
-      "profession": "painter, illustrator, draughtsman",
-      "studies in": "École des Beaux-Arts",
+      "profession": "painter, illustrator, draughtsman, lithographer",
+      "studies in": "École des Beaux-Arts (desde 1819)",
       "masters": "Antoine-Jean Gros; Charles-Abraham Chasselat",
-      "works for": "José de Madrazo (Real Establecimiento Litográfico, 1825)",
+      "patrons": "Infante Francisco de Paula; duques de Montpensier (¿cuáles?)",
+      "works for": "José de Madrazo en el Real Establecimiento Litográfico, (1825)",
+      "works as": "acuarelista y retratista en Madrid, probablemente debido a la protección del Infante Francisco de Paula",
       "trips": "España, Mexico (1838), Rusia, norte de África; Cairo, Beirut y Atenas (1852)",
       "in Spain": [
-        "1824-1837 trabaja como pintor y engraver; contratado por José de Madrazo para realizar reproducciones litográficas en el Real Museo de Madrid",
-        "1835-37 ayuda al Baron Taylor y a Dauzats a adquirir pinturas para la Galerie espagnole de Louis Philippe I (1838-48)",
+        "1825 contratado por José de Madrazo para realizar reproducciones litográficas en el Real Establecimiento Litográfico del Real Museo de Madrid (Prado) (<i>Colección litográfica de cuadros del Rey</i>).",
+        "1835-37 ayuda al Baron Taylor y a Dauzats a adquirir pinturas para la Galerie espagnole de Louis Philippe I (1838-48).",
         "1846 doble boda real en Madrid del Prince Antoine, Duke of Montpensier y la Infanta Luisa Fernanda de Borbón, junto a su hermana Isabel II (también asistieron Théophile Gautier, Alexandre Dumas père y Louis Boulanger). Representó el evento en varias obras que más tarde decorarían el Palacio de San Telmo en Sevilla (García Rodríguez 2015, p.69); <i>Célébration du mariage du Duc de Montpensier sur la Plaza Mayor de Madrid</i>, 1846, Palacio de Orléans, Villamanrique de la Condesa."
       ],
       "in Paris": "después de 1837 (citado por el diario de Valentín Carderera) (Lanzarote Guiral 2016, p.537)",
@@ -627,11 +629,19 @@
       },
       "awards/decorations": "medalla de 3ª clase en el Salón de 1836",
       "author of": [
-        "Pintura: <i>Los contrabandistas</i>, 1829, Museo del Romanticismo, Madrid; <i>Course de taureaux dans un bourg d'Espagne</i> (Salon de 1834); <i>Célébration du mariage du Duc de Montpensier sur la Plaza Mayor de Madrid</i>, 1846, Palacio de Orléans, Villamanrique de la Condesa.",
+        "Pintura: <i>Los contrabandistas</i>, 1829, Museo del Romanticismo, Madrid; <i>Course de taureaux dans un bourg d'Espagne</i> (Salon de 1834); <i>Célébration du mariage du Duc de Montpensier sur la Plaza Mayor de Madrid</i>, 1846, Palacio de Orléans, Villamanrique de la Condesa; <i>San Isidro Labrador patrón de Madrid</i> (1852).",
         "Dibujo: <i>Salve Regina des prisonniers, dans une prison de Madrid</i>, 1834, acuarela, Museo de Nantes.",
-        "Ilustración: en revistas como <i>L'Illustration</i> y <i>Le Magasin pittoresque</i>."
+        "Litografías: desde 1824.",
+        "Ilustración: Baron Taylor's <i>Voyages pittoresques et romantiques dans l'ancienne France</i> (1820-24); A.-G. Ballin's <i>Quatre Vues des environs de Voreppe…</i> (1824); <i>Itinéraire historique et descriptif de Paris à Constantinople</i> (1855). Obras en revistas como <i>L'Illustration</i> (1846, 1852, 1862, 1865, 1871) y <i>Le Magasin pittoresque</i> (1862, 1783)."
       ],
-      "bibliography": "Lanzarote Guiral 2016; José Carlos García Rodríguez, <i>Montpensier. Biografía de una obsesión</i>, 2015; <i>Les Peintres français en Espagne de Manet à Delacroix</i>, exh.cat., Castres, Musée Goya, 1997, pp.63-65; Paul Guinard, <i>Dauzats et Blanchard, peintres de l'Espagne romantique</i>, 1967; Paul Guinard, 'Romantiques français en Espagne', <i>Art de France</i> II, 1962.",
+      "participates in": [
+        "1820-24 <i>Voyages pittoresques et romantiques dans l'ancienne France</i> de Baron Taylor (con la participación de Charles Nodier y Alphonse de Cailleux): 'Le Camp du Drap d'Or', Picardie, volume III, p.203 y 'Histoire de Villers-Cotterets', Picardie, vol. II, p.134.",
+        "c.1822-26 vista de Jerusalén para el Diorama de Louis Daguerre ('polyorama panoptique').",
+        "1835 se une a la revista <i>El Artista</i>, fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa en 1835, donde publica las litografías <i>Señora con trage andaluz</i> (fig. LXXXVI), <i>El pescador</i> (fig. CCXXV) ilustrando un poema de Eugenio Ochoa, <i>El castillo del espectro</i> (fig. CCXXVI) ilustrando un cuento de Eugenio Ochoa, <i>Un trovador</i> (fig. CCXXVII) ilustrando un artículo de Eugenio Ochoa, y <i>Antaño</i> (fig. CCXXVIII) (Vicente Galán 2000, pp.107, 112, 157, 165, 171, 180)"
+      ],
+      "exhibitions": "Paris Salon: <i>Course de taureaux dans un bourg d'Espagne</i> (1834)",
+      "interest in Spanish art": "fue autor de obras como <i>Course de taureaux dans un bourg d'Espagne</i> (Salon de 1834) o <i>San Isidro Labrador patrón de Madrid</i> (1852).",
+      "bibliography": "Lanzarote Guiral 2016; José Carlos García Rodríguez, <i>Montpensier. Biografía de una obsesión</i>, 2015; Mª Luisa Vicente Galán, <i>Las ilustraciones románticas literarias de las revistas y novelas publicadas en Madrid (1830-1850)</i>, PhD diss., UCM, 2000; <i>Les Peintres français en Espagne de Manet à Delacroix</i>, exh.cat., Castres, Musée Goya, 1997, pp.63-65; J. Vega, <i>El origen de la litografía en España</i>, 1990, pp.249-50; Ossorio y Bernard, <i>Galería Biográfica de Artistas Españoles del siglo XIX</i>, Catálogo de la Calcografía Nacional (p.85); E. Páez Ríos,<i>Repertorio de grabadores españoles en la Biblioteca Nacional</i>, vol. I, 1981, pp.143-44; Paul Guinard, <i>Dauzats et Blanchard, peintres de l'Espagne romantique</i>, 1967; Paul Guinard, 'Romantiques français en Espagne', <i>Art de France</i> II, 1962; Guinard, 'Pharamond Blanchard cronista de la Villa y Corte', <i>Goya</i>, 46 (1962), pp.280-288.",
       "image": "https://www.goyanetwork.com/images/Blanchard_AI.jpg",
       "image source": "Generada por IA (DeepAI) porque no se conoce ningún retrato"
     },
@@ -872,7 +882,7 @@
         "<i>Retrato de Asensio Julià</i> (c. 1798): Galerie espagnole (1838-48); posteriormente perteneció a su cuñada Isabel II (Tinterow 2003, p.408); Montpensier lo poseía en 1858. Colgado en el Palacio de Vista Alegre en Madrid, luego en el Palacio de San Telmo (Sevilla), junto a las <i>Majas</i> (mencionado por Charles Yriarte en 1869, 16 de octubre; Fayos Pérez 2024, Apéndice II)."
       ],
       "address": "Château de Neuilly (Neuilly-sur-Seine); Palacio de Orleans-Borbón (Sanlúcar de Barrameda); Palacio de San Telmo (Sevilla)",
-      "portrayed by": "Federico de Madrazo, 1851, óleo; desconocido, fotografía, c.1860",
+      "portrayed by": "Federico de Madrazo, 1851, óleo; desconocido, fotografía, c.1860; Nadar, 1875-1880, [BnF](https://commons.wikimedia.org/wiki/File:Montpensier_et_de_Galliera,_Antoine_d%27Orl%C3%A9ans,_duc_de,_Gallica,_Nadar.jpg)",
       "bibliography": "Fayos Pérez 2024; Tinterow 2003; Wilson-Bareau 1996",
       "image": "https://www.goyanetwork.com/images/Montpensier.jpg",
       "image source": "Retrato de Madrazo, 1851",
@@ -1642,16 +1652,16 @@
       "children": "Alejandro Sureda (arquitecto)",
       "married to": "Thérèse Louise Sureda (también retratada por Goya) [Washington National Gallery of Art 1942.3.1](https://www.nga.gov/artworks/991-therese-louise-de-sureda)",
       "profession": "ceramist, porcelain maker, engineer, painter",
-      "in France": "1800-1803 (para estudiar); en 1812, durante la Guerra de la Independencia Española (tras la destrucción de la Real Fábrica de Porcelana del Buen Retiro por el duque de Wellington)",
+      "in France": "1800-1803 (para estudiar); en 1812, durante la Guerra de la Independencia Española (tras la destrucción de la Real Fábrica de Porcelana del Buen Retiro por el 1st Duke of Wellington)",
       "in Paris": [
-        "1811 Sureda realiza cuatro pequeñas litografías a pluma en París, siendo uno de los primeros artistas en utilizar esta técnica. Lasteyrie y Engelmann no abrieron sus talleres de impresión litográfica hasta 1816 (Gassier & Wilson Bareau 1971, p.308)",
-        "1841-1842, donde conoce a Valentín Carderera; trabaja con Viollet-le-Duc en la restauración de la Sainte Chapelle"
+        "1811 Sureda realiza 4 pequeñas litografías a pluma en París en la prensa de Dominique Vivant Denon, siendo uno de los primeros artistas en utilizar esta técnica (Piquer Garzón 2019, p.38; Vega 2013, p.367; Jurado 2001, p.108; Boix 1925, pp.281-82). Lasteyrie y Engelmann no abrieron sus talleres de impresión litográfica hasta 1816 (Gassier & Wilson Bareau 1971, p.308).",
+        "1841-1842, donde conoce a Valentín Carderera; trabaja con Viollet-le-Duc en la restauración de la Sainte Chapelle."
       ],
       "in Madrid": "desde octubre de 1803. Goya le retrata",
       "studies in": "Palma, Escuela de Dibujo (desde 1785); Francia (desde 1800)",
       "works as": "Director de la Real Fábrica de Porcelana del Buen Retiro (hasta su destrucción en 1812 hasta 1820) y de la Real Fábrica de La Moncloa (desde 1817); también director de la Real Fábrica de Paños de Guadalajara y de la Real Fábrica de Cristales de La Granja (desde 1822)",
       "portrayed by": "Goya, c.1803-04, Washington, National Gallery of Art. Según Sazatornil y Jiméno, Goya realizó este retrato para agradecer a Sureda su ayuda con la técnica de impresión de los <i>Caprichos</i> (2014, pp.108-112)",
-      "bibliography": "Sazatornil y Jiméno 2014; Gassier y Wilson Bareau 1971",
+      "bibliography": "Piquer Garzón 2019; Sazatornil y Jiméno 2014; J. Vega, 'Del espectáculo de la ciencia a la práctica artística cortesana: apuntes sobre la fortuna de la fotografía en España1', <i>Revista de Dialectología y Tradiciones Populares</i>, vol.68, no.2, pp.359-83, 2013; Augusto Jurado, <i>La imprenta y el libro en España</i>, 2001; Gassier y Wilson Bareau 1971; Boix 1925",
       "authorities": {
         "rah": "https://historia-hispanica.rah.es/biografias/48883-bartolome-sureda-y-miserol"
       },
@@ -3084,7 +3094,7 @@
       "life dates": "1772-1850",
       "sex": "male",
       "nationality": "Spanish",
-      "children": "Bernardo López Piquer; Luis López Piquer",
+      "children": "Bernardo López Piquer (pintor); Luis López Piquer (pintor)",
       "works for": "Carlos IV; Fernando VII; María Cristina de Borbón Dos-Sicilias; Isabel II",
       "works as": "Pintor de Cámara de Isabel II. Aporta al Museo del Prado sus conocimientos sobre las ideas de la Ilustración y los textos de Ceán Bermúdez; ordena cronológicamente las colecciones del museo, estableciendo la 'escuela española', comenzando por Juan de Juanes (Carlos G. Navarro en <i>Arte compacto</i>, episodio sobre José de Madrazo, 27 de abril de 2025)",
       "rivals": "José de Madrazo",
@@ -8945,6 +8955,17 @@
       "strength": 3
     },
     {
+      "_edge_id": "B. Sureda-Vivant Denon",
+      "from": "Bartolomé Sureda",
+      "to": "Dominique Vivant Denon",
+      "connection_level": "directa",
+      "relationship type": "colegas",
+      "know each other since": "1811",
+      "collaborations": "1811 Sureda realiza 4 pequeñas litografías a pluma en París en la prensa de Dominique Vivant Denon, siendo uno de los primeros artistas en utilizar esta técnica (Piquer Garzón 2019, p.38; Vega 2013, p.367; Jurado 2001, p.108; Boix 1925, pp.281-82).",
+      "bibliography": "Piquer Garzón 2019; Jesusa Vega 2013; Juan Jurado, <i>La imprenta y el libro en España</i>, 2001; Boix 1925",
+      "websites": "[Sobre Litografía](https://sobrelitografia.blogspot.com/p/historia-de-la-litografia.html)"
+    },
+    {
       "_edge_id": "B. Sureda-GOYA",
       "from": "Bartolomé Sureda",
       "to": "Francisco de Goya",
@@ -10458,6 +10479,15 @@
       "strength": 1
     },
     {
+      "_edge_id": "Montpensier-Nadar",
+      "from": "Nadar",
+      "to": "Prince Antoine, Duke of Montpensier",
+      "connection_level": "direct",
+      "relationship type": "retratista-modelo",
+      "know each other since": "al menos 1875-80",
+      "portraits": "Nadar, 1875-1880, <i>Duc de Montpensier</i>, [BnF](https://commons.wikimedia.org/wiki/File:Montpensier_et_de_Galliera,_Antoine_d%27Orl%C3%A9ans,_duc_de,_Gallica,_Nadar.jpg)"
+    },
+    {
       "_edge_id": "Montpensier-Mª Cristina",
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "Prince Antoine, Duke of Montpensier",
@@ -11794,6 +11824,7 @@
         "1839-VI-25, Madrazo a Dauzats (INHA): mención de una visita al Louvre"
       ],
       "interactions": [
+        "'Los Madrazo se convirtieron en el enlace para que [Baron Taylor] y [Adrien Dauzats] se adentrasen en los círculos artísticos más selectos de la sociedad española' (Gilarranz 2020, p.284)",
         "1837, 13 de octubre: nada más llegar a París, Madrazo va a ver a Santiago Masarnau, Adrien Dauzats y al Baron Taylor (Díez 1994, p.32)",
         "1837, 18 de octubre: el 17 de octubre, Madrazo acude a Dauzats al Louvre. Ven pinturas de Gros, Letiers, Guérin, Géricault (<i>Méduse</i>) (Díez 1994, p.34)"
       ],
@@ -11803,7 +11834,7 @@
         "1837, 4 nov, carta de Federico de Madrazo a José de Madrazo: 'La carta que venía dentro de la mía para Mr. Dauzats se la di ayer. Hará como cosa de 6 días hablé con Dauzats sobre el asunto de las estampas y me dijo que me acompañaría con mucho gusto uno de estos días a casa de Rittner que es bastante amigo suyo, por lo tanto creo que en mi carta siguiente podré decir a V. algo sobre el particular. No crea V. que me olvido de esto. Estoy segurísimo que Dauzats me ayudará en esto como en todas las cosas, pues además de ser sumamente formal es muy buen amigo y tanto más habiéndole yo hablado sobre este particular con bastante empeño' (Díez 1994, no.15, p.45).",
         "1837, 10 nov, carta de Federico de Madrazo a José de Madrazo: 'Antes de ayer fuimos Dauzats y yo a casa de Rittner para hablarle sobre el negocio de las estampas [...] Nos dijo además que su compañero Mr. Goupil [Adolphe Goupil] se halla en este momento en Londres, que le espera de un día para otro y que en cuanto venga pasará con él a casa de Dauzats para ver la obra completa; prefiere ver la obra completa para formar un juicio más exacto (Dauzats dijo ayer delante de mí a Mr. Taylor que le mandara a su casa los tres tomos)' (Díez 1994, no.16, p.46)."
       ],
-      "bibliography": "Fayos Pérez, próxima publicación; Fayos Pérez 2024; Díez 1998; Díez 1994; Guinard 1967-A; Guinard 1967-B",
+      "bibliography": "Fayos Pérez, próxima publicación; Fayos Pérez 2024; Gilarranz 2020; Díez 1998; Díez 1994; Guinard 1967-A; Guinard 1967-B",
       "strength": 1
     },
     {
@@ -11815,7 +11846,8 @@
       "know each other since": "1833, durante el primer viaje de Federico a París (con Vicente Masarnau). Federico también conoce a Adrien Dauzats",
       "collaborations": "hacia 1835-1837, la familia Madrazo participa en la adquisición por parte de Taylor de pinturas españolas para la Galerie espagnole (1838-48)",
       "interactions": [
-        "1837, 13 de octubre: nada más llegar a París, Madrazo va a ver a Santiago Masarnau, Adrien Dauzats y el Baron Taylor (Díez 1994, p.32)",
+        "'Los Madrazo se convirtieron en el enlace para que [Baron Taylor] y [Adrien Dauzats] se adentrasen en los círculos artísticos más selectos de la sociedad española' (Gilarranz 2020, p.284).",
+        "1837, 13 de octubre: nada más llegar a París, Madrazo va a ver a Santiago Masarnau, Adrien Dauzats y el Baron Taylor (Díez 1994, p.32).",
         "1837, 27 de octubre: Madrazo acompaña a Taylor al Louvre para ver cómo cuelgan los nuevos cuadros españoles. 'El otro día, anteayer, estuve con el Sr. Taylor a ver los cuadros españoles que ha traído. Ya están acabándose de colocar. Habrá cuatro o cinco salas grandes en el Louvre de escuela española' (Díez 1994, p.39). 'Parece que al Rey le gustan mucho los cuadros que ha traído el Sr. Taylor, excepto los de Goya. Todas las semanas va al Louvre a ver cómo se colocan' (ibid., p.40)."
       ],
       "mentions": [
@@ -11827,7 +11859,7 @@
           "caption": "Baron Taylor by Federico de Madrazo, 1833, oil painting, Château de Versailles (imagen abajo)"
         }
       ],
-      "bibliography": "Díez 1994; Díez 1998."
+      "bibliography": "Gilarranz 2020; Díez 1994; Díez 1998."
     },
     {
       "_edge_id": "C. Madrazo-Fortuny Marsal",
@@ -12012,11 +12044,43 @@
       "bibliography": "García Jáñez 2010; Lafuente Ferrari 1987; González López 1981; Frank Trapp, <i>The Attainment of Delacroix</i>, 1970; Michel Florisoone, 'Moratin, inspireur de Géricault et Delacroix', <i>Burlington Magazine</i> 99, Sept 1957, pp.303-11."
     },
     {
+      "_edge_id": "Blanchard-V. Masarnau",
+      "from": "Vicente Masarnau",
+      "to": "Pharamond Blanchard",
+      "connection_level": "direct",
+      "relationship type": "conocidos, ¿amigos?",
+      "know each other since": "1833: después de que Blanchard presentara a José de Madrazo a Baron Taylor y Adrien Dauzats en Madrid, conoce a Federico en su camino a París en Burdeos, donde Blanchard le da a él y a Vicente Masarnau un recorrido por el museo (González López 1994, p.212)",
+      "bibliography": "González López 1994"
+    },
+    {
       "_edge_id": "Blanchard-F. Madrazo",
       "from": "Federico de Madrazo",
       "to": "Pharamond Blanchard",
       "connection_level": "direct",
-      "relationship type": "conocidos; amigos"
+      "relationship type": "conocidos, ¿amigos?, colegas",
+      "know each other since": "1833: después de que Blanchard presentara a José de Madrazo a Baron Taylor y Adrien Dauzats en Madrid, conoce a Federico en su camino a París en Burdeos, donde Blanchard le da (y a Vicente Masarnau) un recorrido por el museo (González López 1994, p.212)",
+      "collaborations": "en la revista <i>El Artista</i>, fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa en 1835, Blanchard publica las litografías <i>Señora con trage andaluz</i> (fig. LXXXVI), <i>El pescador</i> (fig. CCXXV) ilustrando un poema de Eugenio Ochoa, <i>El castillo del espectro</i> (fig. CCXXVI) ilustrando una historia de Eugenio Ochoa, <i>Un trovador</i> (fig. CCXXVII) ilustrando un artículo de Eugenio Ochoa, y <i>Antaño</i> (fig. CCXXVIII) (Vicente Galán 2000, pp.107, 112, 157, 165, 171, 180)",
+      "bibliography": "Fayos Pérez 2024; Gilarranz 2020; Vicente Galán 2000; González López 1994; Guinard 1967-A"
+    },
+    {
+      "_edge_id": "Blanchard-P. Madrazo",
+      "from": "Pedro de Madrazo",
+      "to": "Pharamond Blanchard",
+      "connection_level": "direct",
+      "relationship type": "conocidos, ¿amigos?, colegas",
+      "know each other since": "al menos 1835",
+      "collaborations": "en la revista <i>El Artista</i>, fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa en 1835, Blanchard publica las litografías <i>Señora con trage andaluz</i> (fig. LXXXVI), <i>El pescador</i> (fig. CCXXV) ilustrando un poema de Eugenio Ochoa, <i>El castillo del espectro</i> (fig. CCXXVI) ilustrando una historia de Eugenio Ochoa, <i>Un trovador</i> (fig. CCXXVII) ilustrando un artículo de Eugenio Ochoa, y <i>Antaño</i> (fig. CCXXVIII) (Vicente Galán 2000, pp.107, 112, 157, 165, 171, 180)",
+      "bibliography": "Vicente Galán 2000"
+    },
+    {
+      "_edge_id": "Blanchard-Ochoa",
+      "from": "Eugenio Ochoa",
+      "to": "Pharamond Blanchard",
+      "connection_level": "direct",
+      "relationship type": "conocidos, ¿amigos?, colegas",
+      "know each other since": "al menos 1835",
+      "collaborations": "en la revista <i>El Artista</i>, fundada por Federico de Madrazo, Pedro de Madrazo y Eugenio Ochoa en 1835, Blanchard publica las litografías <i>Señora con trage andaluz</i> (fig. LXXXVI), <i>El pescador</i> (fig. CCXXV) ilustrando un poema de Eugenio Ochoa, <i>El castillo del espectro</i> (fig. CCXXVI) ilustrando una historia de Eugenio Ochoa, <i>Un trovador</i> (fig. CCXXVII) ilustrando un artículo de Eugenio Ochoa, y <i>Antaño</i> (fig. CCXXVIII) (Vicente Galán 2000, pp.107, 112, 157, 165, 171, 180)",
+      "bibliography": "Vicente Galán 2000"
     },
     {
       "_edge_id": "Ingres-Louis Philippe I",
@@ -13964,8 +14028,11 @@
       "_edge_id": "Blanchard-Taylor",
       "from": "Baron Taylor",
       "to": "Pharamond Blanchard",
-      "connection_level": "direct",
-      "relationship type": "compañeros de trabajo"
+      "connection_level": "directa",
+      "relationship type": "conocidos, colegas, ¿amigos?",
+      "know each other since": "c.1820",
+      "collaborations": "1820-24 <i>Voyages pittoresques et romantiques dans l'ancienne France</i> de Baron Taylor (con la participación de Charles Nodier y Alphonse de Cailleux): 'Le Camp du Drap d'Or', Picardie, volume III, p.203 y 'Histoire de Villers-Cotterets', Picardie, vol. II, p.134.",
+      "interactions": "en 1833 Blanchard presenta Baron Taylor y Adrien Dauzats a José de Madrazo en Madrid"
     },
     {
       "_edge_id": "Gautier-Taylor",
@@ -14078,6 +14145,13 @@
       "they met": "en 1833, durante una visita al departamento de escultura del Louvre con Federico de Madrazo"
     },
     {
+      "_edge_id": "Blanchard-Daguerre",
+      "from": "Pharamond Blanchard",
+      "to": "Louis Daguerre",
+      "know each other since": "c.1822",
+      "collaborations": "c.1822-26 Blanchard hace una vista de Jerusalén para el Diorama de Louis Daguerre ('polyorama panoptique')"
+    },
+    {
       "_edge_id": "Blanchard-Dauzats",
       "from": "Adrien Dauzats",
       "to": "Pharamond Blanchard",
@@ -14092,6 +14166,7 @@
         "1846: 'Chemin de fer de Paris à Bordeaux' en <i>L'Illustration</i> (28 marzo, pp.51-62).",
         "1859: <i>Journal de San Juan, voyage de Uluà ; Relation de l'expédition française au Mexique</i>."
       ],
+      "interactions": "en 1833 Blanchard presenta Baron Taylor y Adrien Dauzats a José de Madrazo en Madrid",
       "bibliography": "Arturo Aguilar Ochoa, 'Asaltos al trópico: Petros Pharamond Blanchard, un pintor romántico francés en el México de 1838', <i>Anales del Instituto de Investigaciones Estéticas</i>, vol.XL, no.112, 2018; Alisa Luxenberg, <i>Secrets and Glory. Baron Taylor and his Voyage Pittoresque en Espagne</i>, CEEH, 2013; Ester Alba Pagán, 'La galerie espagnole de Louis-Philippe y las obras artísticas valencianas: el papel del baron Taylor, Adrien Dauzats y Pharamond Blanchard', in <i>El arte y el viaje</i>, 2011, pp.611-627; Paul Guinard, <i>Dauzats et Blanchard. Peintres de l'Espagne romantique</i>, 1967; Philippe Burty, <i>Catalogue des Tableaux</i> (Vente Dauzats), 1-4 Feb 1869, Paris, Drouot"
     },
     {
