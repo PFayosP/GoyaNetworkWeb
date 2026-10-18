@@ -9340,13 +9340,16 @@
       "strength": 3
     },
     {
-      "_edge_id": "GOYA-Gaulon",
+      "_edge_id": "Gaulon-GOYA",
       "from": "Francisco de Goya",
       "to": "Cyprien Gaulon",
       "connection_level": "direct",
       "relationship type": "mecenazgo; colegas",
       "collaborations": "Gaulon edita la serie litográfica de Goya <i>Los toros de Burdeos</i> (1825): Dibersión de España, El famoso americano Mariano Ceballos, bravo toro, Plaza partida (tirada de 100).",
-      "portraits": "1824-25, [litografía](https://artsandculture.google.com/asset/the-printer-gaulon-goya-y-lucientes-francisco-de/EAGPfbiHV7U66Q?hl=es)",
+      "portraits": [
+        "Francisco de Goya, <i>Retrato de Cyprien Gaulon</i>, [litografía](https://artsandculture.google.com/asset/the-printer-gaulon-goya-y-lucientes-francisco-de/EAGPfbiHV7U66Q?hl=es), 1824.",
+        "Francisco de la Torre (dibujante), Cyprien Gaulon (litógrafo), <i>Retrato de Goya en su lecho de muerte</i>, 1828, [BNE IH/4045/2 BIS](https://bnedigital.bne.es/bd/es/card?id=11d71e5b-065f-4fa9-a561-0c3c2560e2bc)."
+      ],
       "bibliography": "Piquer GArzón 2019",
       "strength": 2
     },

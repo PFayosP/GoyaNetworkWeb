@@ -9221,13 +9221,16 @@
       "strength": 2
     },
     {
-      "_edge_id": "GOYA-Gaulon",
+      "_edge_id": "Gaulon-GOYA",
       "from": "Francisco de Goya",
       "to": "Cyprien Gaulon",
       "connection_level": "direct",
       "relationship type": "patronage; colleagues",
       "collaborations": "Gaulon edits Goya's lithographic series <i>The Bulls of Bordeaux</i> (1825): Dibersión de España, El famoso americano Mariano Ceballos, bravo toro, Plaza partida (print run of 100).",
-      "portraits": "1824-25, [lithography](https://artsandculture.google.com/asset/the-printer-gaulon-goya-y-lucientes-francisco-de/EAGPfbiHV7U66Q?hl=es)",
+      "portraits": [
+        "Francisco de Goya, <i>Portrait of Cyprien Gaulon</i>, [litografía](https://artsandculture.google.com/asset/the-printer-gaulon-goya-y-lucientes-francisco-de/EAGPfbiHV7U66Q?hl=es), 1824.",
+        "Francisco de la Torre (draughtsman), Cyprien Gaulon (lithographer), <i>Portrait of Goya on his Deathbed</i>, 1828, [BNE IH/4045/2 BIS](https://bnedigital.bne.es/bd/es/card?id=11d71e5b-065f-4fa9-a561-0c3c2560e2bc)."
+      ],
       "bibliography": "Piquer Garzón 2019",
       "strength": 2
     },
