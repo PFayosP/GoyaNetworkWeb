@@ -3464,6 +3464,7 @@
       "siblings": "Antoinette Asselineau (retratista)",
       "profession": "lithographer, draughtsman, painter",
       "masters": "Adolphe Roehn",
+      "participates in": "la revista <i>El Artista</i>, fundada por Federico de Madrazo y Eugenio Ochoa en 1835, con litografías como 'Puerta del Sol en Toledo' (vol.1, tras p.64) y 'Insula Barataria' (vol.1, tras p.90).",
       "works for": "José de Madrazo (1829-1836)",
       "works in": "Real Establecimiento Litográfico, creado por José de Madrazo, produciendo paisajes y 'vistas'. Trabajó traduciendo a la piedra litográfica la mayor parte de los grabados de la Colección de vistas de sitios reales y los cuadros de la Colección litográfica de los cuadros del rey de España (BMP 18.148-18.450) (Vega 1992, pp.11-12)",
       "lives in": "Madrid (1829-1836); París (desde 1836)",
@@ -13126,6 +13127,24 @@
       "collaborations": "1829-1836 Asselineau fue contratado por José de Madrazo en el Real Establecimiento Litográfico de Madrid para producir paisajes y 'vistas'. Asselineau trabajó traduciendo a la piedra litográfica la mayoría de los grabados de la <i>Colección de vistas de sitios reales</i> y las pinturas de la <i>Colección litográfica de los cuadros del rey de España</i> (BMP 18.148-18.450) (Vega 1992, pp.11-12).",
       "bibliography": "Jesusa Vega, Museo del Prado, Catálogo de Estampas, 1992; Journal de Rouen, 27 de marzo de 1889, p.2.",
       "websites": "[Perfil del Prado](https://www.museodelprado.es/coleccion/artista/asselineau-leon-auguste/f0b2a4b8-99f1-4edd-9467-77fe6f7abf83)"
+    },
+    {
+      "_edge_id": "F. Madrazo-L.A. Asselineau",
+      "from": "Léon Auguste Asselineau",
+      "to": "Federico de Madrazo",
+      "connection_level": "directa",
+      "relationship type": "empleador-empleado; colegas",
+      "know each other since": "al menos 1835",
+      "collaborations": "Asselineau hace varias litografías para la revista <i>El Artista</i>, fundada por Federico de Madrazo y Eugenio Ochoa en 1835, con litografías como 'Puerta del Sol en Toledo' (vol.1, tras p.64) y 'Insula Barataria' (vol.1, tras p.90)"
+    },
+    {
+      "_edge_id": "L.A. Asselineau-Ochoa",
+      "from": "Léon Auguste Asselineau",
+      "to": "Eugenio Ochoa",
+      "connection_level": "directa",
+      "relationship type": "empleador-empleado; colegas",
+      "know each other since": "al menos 1835",
+      "collaborations": "Asselineau hace varias litografías para la revista <i>El Artista</i>, fundada por Federico de Madrazo y Eugenio Ochoa en 1835, con litografías como 'Puerta del Sol en Toledo' (vol.1, tras p.64) y 'Insula Barataria' (vol.1, tras p.90)"
     },
     {
       "_edge_id": "Burty-Ch. Asselineau",

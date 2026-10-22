@@ -3449,6 +3449,7 @@
       "siblings": "Antoinette Asselineau (portrat painter)",
       "profession": "lithographer (litógrafo), draughtsman, painter",
       "masters": "Adolphe Roehn",
+      "participates in": "the journal <i>El Artista</i>, founded by Federico de Madrazo and Eugenio Ochoa en 1835, with lithographs such as 'Puerta del Sol en Toledo' (vol.1, after p.64) and 'Insula Barataria' (vol.1, after p.90).",
       "works for": "José de Madrazo (1829-1836)",
       "works in": "Real Establecimiento Litográfico, created by José de Madrazo, producing landscapes and 'views'. He worked translating into the lithographic stone most of the prints in <i>Colección de vistas de sitios reales</i> and the paintings in <i>Colección litográfica de los cuadros del rey de España</i> (BMP 18.148-18.450) (Vega 1992, pp.11-12).",
       "lives in": "Madrid (1829-1836); Paris (from 1836)",
@@ -12992,6 +12993,24 @@
       "collaborations": "1829-1836 Asselineau was hired by José de Madrazo at the Real Establecimiento Litográfico in Madrid to produce landscapes and 'views'. Asselineau worked translating into the lithographic stone most of the prints in <i>Colección de vistas de sitios reales</i> and the paintings in <i>Colección litográfica de los cuadros del rey de España</i> (BMP 18.148-18.450) (Vega 1992, pp.11-12).",
       "bibliography": "Jesusa Vega, Museo del Prado, Catálogo de Estampas, 1992; <i>Journal de Rouen</i>, 27 March 1889, p.2.",
       "websites": "[Prado profile](https://www.museodelprado.es/coleccion/artista/asselineau-leon-auguste/f0b2a4b8-99f1-4edd-9467-77fe6f7abf83)"
+    },
+    {
+      "_edge_id": "F. Madrazo-L.A. Asselineau",
+      "from": "Léon Auguste Asselineau",
+      "to": "Federico de Madrazo",
+      "connection_level": "direct",
+      "relationship type": "employer-employee; colleagues",
+      "know each other since": "at least 1835",
+      "collaborations": "Asselineau makes several lithographs for the journal <i>El Artista</i>, founded by Federico de Madrazo and Eugenio Ochoa in 1835, with lithographs such as 'Puerta del Sol en Toledo' (vol.1, after p.64) and 'Insula Barataria' (vol.1, after p.90)"
+    },
+    {
+      "_edge_id": "L.A. Asselineau-Ochoa",
+      "from": "Léon Auguste Asselineau",
+      "to": "Eugenio Ochoa",
+      "connection_level": "direct",
+      "relationship type": "employer-employee; colleagues",
+      "know each other since": "at least 1835",
+      "collaborations": "Asselineau makes several lithographs for the journal <i>El Artista</i>, founded by Federico de Madrazo and Eugenio Ochoa in 1835, with lithographs such as 'Puerta del Sol en Toledo' (vol.1, after p.64) and 'Insula Barataria' (vol.1, after p.90)"
     },
     {
       "_edge_id": "Burty-Ch. Asselineau",
