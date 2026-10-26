@@ -5814,9 +5814,10 @@
       "participates in": "Convención Nacional",
       "works for": "Napoleón I",
       "masters": "Joseph-Marie Vien",
-      "students": "Jean-Germain Drouais, Antoine-Jean Gros, Jean-Auguste-Dominique , Girodet, François Gérard, Marie-Guillemine Benoist, Jacques-Louis-Michel Grandin, José de Madrazo",
+      "students": "Jean-Germain Drouais, Antoine-Jean Gros, Jean-Auguste-Dominique , Anne-Louis Girodet, François Gérard, Marie-Guillemine Benoist, Jacques-Louis-Michel Grandin, José de Madrazo, Angélique Mongez (primera mujer en presentar una gran composición histórica en el Salon)",
       "curiosities": "<i>Bonaparte franchissant le Grand-Saint-Bernard</i> (1800) fue un encargo del rey español Carlos IV (a través del embajador francés Charles-Jean-Marie Alquier)",
       "archives": "Archivos Nacionales (MC/ET/CVIII/854)",
+      "websites": "[Museo Zumalakarregi](https://www.zumalakarregimuseoa.eus/es/actividades/investigacion-y-documentacion/las-hermanas-feillet)",
       "image": "https://www.goyanetwork.com/images/David.jpg"
     },
     {
@@ -6719,6 +6720,46 @@
       "image": "https://www.goyanetwork.com/images/Cardano_AI.jpg",
       "image source": "Generada por IA (Gemini) porque no se conoce ningún retrato",
       "added": "2026-10-18"
+    },
+    {
+      "id": "Hélène Feillet",
+      "full name": "Joséphine Jeanne Hélène Feillet",
+      "also known as": "Helena Feillet",
+      "label": "Feillet",
+      "life dates": "1812-1889",
+      "sex": "female",
+      "nationality": "French",
+      "profession": "litógrafa, pintora, dibujante",
+      "born in": "Paris",
+      "dies in": "Biarritz",
+      "lives in": "París; Madrid (1829-1834); Bayona (desde 1834)",
+      "in Madrid": "1829-1834 su padre Pierre Jacques Feillet es contratado por José de Madrazo para trabajar en el Real Establecimiento Litográfico",
+      "trips": "España (varias veces); Inglaterra",
+      "address": "París (2 rue d'Enfer); Bayona (rue de la Galuperie)",
+      "parents": "Hélène Pernotin y Pierre Jacques Feillet (pintor: trabaja para José de Madrazo)",
+      "siblings": "Blanche Hennebutte-Feillet: pintora y litógrafa; casada con Charles Hennebutte; reemplaza a su padre como Director de la Escuela de Dibujo de Bayona desde 1855.",
+      "participates in": "la revsita <i>El Artista</i>, fundada por Federico de Madrazo y Eugenio Ochoa en 1835, con cinco litografías: 'El Pirata' (vol.1, tras p.42) para ilustrar <i>La canción del Pirata</i> de José de Espronceda; 'Una madre' (vol.1, tras p.102) para ilustrar <i>A un niño</i> de Eugenio de Ochoa; 'Un griego' (vol.1, tras p.124) para ilustrar <i>A Grecia</i> de Eugenio de Ochoa; 'Interior de harem' (vol.1, tras p.182) para ilustrar <i>El Pelayo</i> de José de Espronceda; y 'El monasterio' (vol.2, tras p.20) para ilustrar <i>El monasterio</i> de Eugenio de Ochoa.",
+      "author of": [
+        "1835 cinco litografías para <i>El Artista</i>: 'El Pirata' (vol.1, tras p.42) para ilustrar <i>La canción del Pirata</i> de José de Espronceda; 'Una madre' (vol.1, tras p.102) para ilustrar <i>A un niño</i> de Eugenio de Ochoa; 'Un griego' (vol.1, tras p.124) para ilustrar <i>A Grecia</i> de Eugenio de Ochoa; 'Interior de harem' (vol.1, tras p.182) para ilustrar <i>El Pelayo</i> de José de Espronceda; y 'El monasterio' (vol.2, tras p.20) para ilustrar <i>El monasterio</i> de Eugenio de Ochoa.",
+        "1835 'El amante', litografía basada en el dibujo de Jenaro Pérez Villaamil, en <i>Panorama Matritense</i> (1835-1838) de Ramón de Mesonero Romanos .",
+        "1836 litografías para <i>Bayonne, vues historiques et descriptives</i> de Félix Morel ('Vue de la cathédrale de Bayonne').",
+        "Acuarelas: <i>Vieux Biarritz</i>; <i>Vue du vieux Passages</i>; <i>Casa torre Laustania de Izpura</i>; <i>Passages</i>.",
+        "Retratos: <i>Blanche Feillet</i> (dibujo a lápiz, 1840); <i>Etienne Pellot, le renard de la mer</i> (acuarela).",
+        "Pintura: <i>Arrivée à Bayonne du duc et de la duchesse d'Orléans en 1839</i> (1842: encargo del Ministerio del Interior)."
+      ],
+      "exhibitions": [
+        "Salón de París: desde 1836.",
+        "Londres en 1855."
+      ],
+      "authorities": {
+        "bnf": "https://data.bnf.fr/ark:/12148/cb14973734p",
+        "bne": "https://datos.bne.es/persona/XX1260417.html"
+      },
+      "bibliography": "María Luisa Vicente Galán 2000, PhD; Henri Jeanpierre, 'Un peintre romantique bayonnais, Hélène Feillet', <i>Bulletin de la Société des Sciences, Lettres et Arts de Bayonne</i>, no.105, 1964, pp.187-216; Ossorio y Bernard, <i>Galería biográfica de Artistas españoles del siglo XIX</i>, 1868.",
+      "websites": "[Museo Zumalakarregi](https://www.zumalakarregimuseoa.eus/es/actividades/investigacion-y-documentacion/las-hermanas-feillet)",
+      "image": "https://www.goyanetwork.com/images/Feillet.jpg",
+      "image source": "retrato de su hermana Blanche Feillet",
+      "added": "2026-10-26"
     }
   ],
   "edges": [
@@ -7113,6 +7154,61 @@
       "to": "Ramón de Mesonero Romanos",
       "connection_level": "¿secundaria?",
       "relationship type": "Mesonero admiraba la obra de Moratín"
+    },
+    {
+      "_edge_id": "Feillet-Mesonero R.",
+      "from": "Hélène Feillet",
+      "to": "Ramón de Mesonero Romanos",
+      "connection_level": "¿secundaria?",
+      "relationship type": "¿conocidos?; colegas; empleador-empleado",
+      "collaborations": "en 1835 Feillet hace la litografía 'El amante' basada en un dibujo de Jenaro Pérez Villaamil, en <i>Panorama Matritense</i> (1835-1838) de Ramón de Mesonero Romanos"
+    },
+    {
+      "_edge_id": "Feillet-Mesonero R.",
+      "from": "Hélène Feillet",
+      "to": "Pérez Villaamil",
+      "connection_level": "¿secundaria?",
+      "relationship type": "¿conocidos?",
+      "collaborations": "en 1835 Feillet hace la litografía 'El amante' basada en un dibujo de Jenaro Pérez Villaamil, en <i>Panorama Matritense</i> (1835-1838) de Ramón de Mesonero Romanos"
+    },
+    {
+      "_edge_id": "Feillet-J. Madrazo",
+      "from": "Hélène Feillet",
+      "to": "José de Madrazo",
+      "connection_level": "directa",
+      "relationship type": "¿conocidos?",
+      "collaborations": "1829-1834 el padre de Hélène, Pierre Jacques Feillet, es contratado por José de Madrazo para trabajar en el Real Establecimiento Litográfico",
+      "bibliography": "Vicente Galán 2000, PhD"
+    },
+    {
+      "_edge_id": "F. Madrazo-Feillet",
+      "from": "Hélène Feillet",
+      "to": "Federico de Madrazo",
+      "connection_level": "directa",
+      "relationship type": "conocidos; colegas; empleador-empleado",
+      "collaborations": "en 1835 Hélène Feillet hace cinco litografías para <i>El Artista</i>, fundada por Federico de Madrazo y Eugenio de Ochoa: 'El Pirata' (vol.1, tras p.42) para ilustrar <i>La canción del Pirata</i> de José de Espronceda; 'Una madre' (vol.1, tras p.102) para ilustrar <i>A un niño</i> de Eugenio de Ochoa; 'Un griego' (vol.1, tras p.124) para ilustrar <i>A Grecia</i> de Eugenio de Ochoa; 'Interior de harem' (vol.1, tras p.182) para ilustrar <i>El Pelayo</i> de José de Espronceda; y 'El monasterio' (vol.2, tras p.20) para ilustrar <i>El monasterio</i> de Eugenio de Ochoa.",
+      "bibliography": "Vicente Galán 2000, PhD"
+    },
+    {
+      "_edge_id": "Feillet-Ochoa",
+      "from": "Hélène Feillet",
+      "to": "Eugenio de Ochoa",
+      "connection_level": "directa",
+      "relationship type": "conocidos; colegas; empleador-empleado",
+      "collaborations": [
+        "En 1835 Hélène Feillet colabora con <i>El Artista</i>, fundada por Federico de Madrazo y Eugenio de Ochoa, para la que hace cinco litografías.",
+        "Como parte de su colaboración con <i>El Arista</i>, Hélène Feillet hace tres litografías ilustrando poemas de Ochoa: 'Una madre' (vol.1, tras p.102) para ilustrar <i>A un niño</i>, 'Un griego' (vol.1, tras p.124) para ilustrar <i>A Grecia</i>, y 'El monasterio' (vol.2, tras p.20) para ilustrar <i>El monasterio</i>."
+      ],
+      "bibliography": "Vicente Galán 2000, PhD"
+    },
+    {
+      "_edge_id": "Espronceda-Feillet",
+      "from": "Hélène Feillet",
+      "to": "José de Espronceda",
+      "connection_level": "directa",
+      "relationship type": "¿conocidos?; colegas",
+      "collaborations": "como parte de su colaboración en <i>El Artista</i> in 1835, Hélène Feillet hace dos litografías para ilustrar poemas de Espronceda: 'El Pirata' (vol.1, tras p.42) para ilustrar <i>La canción del Pirata</i>, y 'Interior de harem' (vol.1, tras p.182) para ilustrar  <i>El Pelayo</i>.",
+      "bibliography": "Vicente Galán 2000, PhD"
     },
     {
       "_edge_id": "García de la Prada-Moratín",
@@ -9564,7 +9660,8 @@
       "connection_level": "direct",
       "relationship type": "conocidos; retratista-modelo",
       "know each other since": "al menos desde 1835",
-      "portraits": "1835, litografía en <i>El Artista</i>"
+      "portraits": "1835, litografía en <i>El Artista</i> (vol.1, tras p.156)",
+      "bibliography": "Vicente Galán 2000, PhD"
     },
     {
       "_edge_id": "Fernando VII-Martínez Rosa",
