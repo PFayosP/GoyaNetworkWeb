@@ -7164,9 +7164,9 @@
       "collaborations": "en 1835 Feillet hace la litografía 'El amante' basada en un dibujo de Jenaro Pérez Villaamil, en <i>Panorama Matritense</i> (1835-1838) de Ramón de Mesonero Romanos"
     },
     {
-      "_edge_id": "Feillet-Mesonero R.",
+      "_edge_id": "Feillet-Pérez Villaamil",
       "from": "Hélène Feillet",
-      "to": "Pérez Villaamil",
+      "to": "Jenaro Pérez Villaamil",
       "connection_level": "¿secundaria?",
       "relationship type": "¿conocidos?",
       "collaborations": "en 1835 Feillet hace la litografía 'El amante' basada en un dibujo de Jenaro Pérez Villaamil, en <i>Panorama Matritense</i> (1835-1838) de Ramón de Mesonero Romanos"
@@ -7192,7 +7192,7 @@
     {
       "_edge_id": "Feillet-Ochoa",
       "from": "Hélène Feillet",
-      "to": "Eugenio de Ochoa",
+      "to": "Eugenio Ochoa",
       "connection_level": "directa",
       "relationship type": "conocidos; colegas; empleador-empleado",
       "collaborations": [
