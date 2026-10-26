@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-10-22",
+  "last_update": "2026-10-26",
   "nodes": [
     {
       "id": "Francisco de Goya",
@@ -3460,6 +3460,7 @@
       "life dates": "1808-1889",
       "sex": "male",
       "born in": "Hamburgo",
+      "dies in": "Rouen",
       "nationality": "French",
       "siblings": "Antoinette Asselineau (retratista)",
       "profession": "lithographer, draughtsman, painter",
@@ -3468,18 +3469,24 @@
       "works for": "José de Madrazo (1829-1836)",
       "works in": "Real Establecimiento Litográfico, creado por José de Madrazo, produciendo paisajes y 'vistas'. Trabajó traduciendo a la piedra litográfica la mayor parte de los grabados de la Colección de vistas de sitios reales y los cuadros de la Colección litográfica de los cuadros del rey de España (BMP 18.148-18.450) (Vega 1992, pp.11-12)",
       "lives in": "Madrid (1829-1836); París (desde 1836)",
+      "in Madrid": "1829-1836 Real Establacimiento Litográfico (trabajando para José de Madrazo)",
       "exhibitions": "Salón 1836, 1838, 1840, 1846, 1847 (paisajes)",
       "author of": [
         "1828-31 ilustraciones para <i>Vues pittoresques des châteaux de France</i>: 'Château de Chantilly', 'Château de Morfontaine', 'Grand Trianon Versailles', 'Château de la Bourgonière' (Charles Motte según Asselineau).",
-        "c. 1833 <i>Vista del Real Museo de Pintura de Madrid</i>, litografía: draughtsman Fernando Brambila, litógrafo Léon-Auguste Asselineau, director José de Madrazo y Agudo. [Prado](https://www.museodelprado.es/coleccion/obra-de-arte/vista-del-real-museo-de-pintura-de-madrid/fb8c3cef-c9ab-4524-ac9b-475b69972b3d).",
+        "1829-1836 en Madrid: participa en <i>Colección de vistas de sitios reales</i> y <i>Colección litográfica de los cuadros del rey de España</i> (BMP 18.148-18.450). Ver <i>Vista del Real Museo de Pintura de Madrid</i>, litografía, basado en un dibujo de Fernando Brambila, dirigido por José de Madrazo y Agudo, c.1833, [Prado](https://www.museodelprado.es/coleccion/obra-de-arte/vista-del-real-museo-de-pintura-de-madrid/fb8c3cef-c9ab-4524-ac9b-475b69972b3d).",
         "1838 <i>Le Moyen Âge pittoresque</i>.",
         "1838-39 litografías en <i>Le vieux Paris. Reproduction des monumens qui n'existent plus dans la capitale</i> (Gihaut)",
         "1840 <i>Meubles et armes du Moyen-Âge</i> (Jules Gagniet).",
         "1842-44 litografías para <i>España artística y monumental</i> de Jenaro Pérez Villaamil.",
         "c. 1864-66 La France de nos jours (álbum litográfico dirigido por F. Sinnett)"
       ],
-      "bibliography": "Jesusa Vega, Museo del Prado, Catálogo de Estampas, 1992; <i>Journal de Rouen</i>, 27 de marzo de 1889, p.2.",
-      "websites": "[Perfil del Prado](https://www.museodelprado.es/coleccion/artista/asselineau-leon-auguste/f0b2a4b8-99f1-4edd-9467-77fe6f7abf83)",
+      "authorities": {
+        "bne": "https://datos.bne.es/persona/XX874062.html",
+        "bnf": "https://data.bnf.fr/ark:/12148/cb14959370g",
+        "wikidata": "https://www.wikidata.org/wiki/Q13365391"
+      },
+      "bibliography": "Jesusa Vega, Museo del Prado, Catálogo de Estampas, 1992, pp.11-12; <i>Journal de Rouen</i>, 27 de marzo de 1889, p.2.",
+      "websites": "[Perfil del Prado](https://www.museodelprado.es/coleccion/artista/asselineau-leon-auguste/f0b2a4b8-99f1-4edd-9467-77fe6f7abf83); [Library of Congress](https://id.loc.gov/authorities/names/no89006256.html)",
       "image": "https://www.goyanetwork.com/images/Asselineau_LeonAuguste.jpg",
       "image source": "Generada por IA (DeepAI) porque no se conoce ningún retrato",
       "added": "2025-08-06"
@@ -13082,7 +13089,7 @@
       "to": "Léon Auguste Asselineau",
       "connection_level": "direct",
       "relationship type": "colegas",
-      "collaborations": "Asselineau produjo litografías para España artística y monumental (1842-44) de Jenaro Pérez Villaamil."
+      "collaborations": "Asselineau produjo litografías para <i>España artística y monumental</i> (1842-44) de Jenaro Pérez Villaamil."
     },
     {
       "_edge_id": "Pérez Villaamil-Santa Cruz X",
@@ -13125,7 +13132,7 @@
       "relationship type": "empleador-empleado",
       "know each other since": "al menos desde 1829",
       "collaborations": "1829-1836 Asselineau fue contratado por José de Madrazo en el Real Establecimiento Litográfico de Madrid para producir paisajes y 'vistas'. Asselineau trabajó traduciendo a la piedra litográfica la mayoría de los grabados de la <i>Colección de vistas de sitios reales</i> y las pinturas de la <i>Colección litográfica de los cuadros del rey de España</i> (BMP 18.148-18.450) (Vega 1992, pp.11-12).",
-      "bibliography": "Jesusa Vega, Museo del Prado, Catálogo de Estampas, 1992; Journal de Rouen, 27 de marzo de 1889, p.2.",
+      "bibliography": "Jesusa Vega, Museo del Prado, Catálogo de Estampas, 1992, pp.11-12; Journal de Rouen, 27 de marzo de 1889, p.2.",
       "websites": "[Perfil del Prado](https://www.museodelprado.es/coleccion/artista/asselineau-leon-auguste/f0b2a4b8-99f1-4edd-9467-77fe6f7abf83)"
     },
     {
@@ -13819,9 +13826,16 @@
       "from": "Nadar",
       "to": "Charles Asselineau",
       "connection_level": "direct",
-      "relationship type": "amigos",
-      "they shared": "ambos estudian en el Collège Bourbon (actual Lycée Condorcet)",
-      "portraits": "Fotografía de Asselineau realizada por Nadar, c.1856, [Orsay](https://www.musee-orsay.fr/es/obras/portrait-de-charles-asselineau-29335) PHO 1985 224; hacia 1860 [Wikipedia](https://es.wikipedia.org/wiki/Archivo:Charles_Asselineau_Nadar_vers_1860.jpg)"
+      "relationship type": "amigos íntimos",
+      "know each other since": "c.1832",
+      "they shared": [
+        "Ambos estudian en el Collège Bourbon (actual Lycée Condorcet).",
+        "Asselineau fue el padrino de la boda de Nadar (aunque se enteró después de que la boda tuviera lugar) (ArtBlart).",
+        "Ambos pertenecían al círculo de Charles Baudelaire.",
+        "Asselineau tuvo un rol principal en la creación del Panthéon Nadar."
+      ],
+      "portraits": "Fotografías de Asselineau realizada por Nadar: 1854-1870, BnF, Department of Prints and Photography, EO-15 (1)-PET FOL; c.1856, [Orsay](https://www.musee-orsay.fr/es/obras/portrait-de-charles-asselineau-29335) PHO 1985 224; hacia 1860 [Wikipedia](https://es.wikipedia.org/wiki/Archivo:Charles_Asselineau_Nadar_vers_1860.jpg)",
+      "websites": "BnF, [Chronologie Nadar](https://expositions.bnf.fr/les-nadar/chronologie/index.php); [ArtBlart](https://artblart.com/tag/french-photographers/)"
     },
     {
       "_edge_id": "Aguado-Balzac",
@@ -13871,7 +13885,9 @@
         "1866, 23 de agosto (Madrid): Madrazo escribió en su diario que almorzó con Yriarte y luego visitó la RABASF y la casa de Valentín Carderera (AMNP Agenda-diario de Federico de Madrazo 1866, sig. AP:17, no.exp. 10).",
         "1866, 13 de septiembre (Madrid): Madrazo señala que [Yriarte] había pasado por su casa para despedirse antes de regresar a París (AMNP Agenda-diario de Federico de Madrazo 1866, sig. AP:17, no.exp. 10)"
       ],
-      "archives": "AMNP"
+      "mentions": "en su catálogo de Goya, Yriarte menciona a Madrazo como intermediario, ya que le mostró las obras de Goya en el 'Museo Real' (Prado), las de la RABASF y las de su colección particular: 'Don Federico de Madrazo nous a facilité la reproduction des toiles du Musée royal, celles de l'Académie de San-Fernando, et a mis à notre disposition les beaux Goya qu'il possède' (1867, p.11).",
+      "archives": "AMNP",
+      "bibliography": "Yriarte 1867"
     },
     {
       "_edge_id": "Piot-Yriarte",
