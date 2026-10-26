@@ -4028,7 +4028,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             'wikidata':     'images/Wikidata_logo.svg',
             'getty ulan':   'images/Getty_logo.jpg',
             'bnf':          'images/BnF_logo.jpg',
-            'rah':          'images/RAH_logo.jpg'
+            'rah':          'images/RAH_logo.jpg',
+            'bne':          'images/BNE_logo.jpg'
           };
 
           // Merge: objeto authorities + posibles campos sueltos
