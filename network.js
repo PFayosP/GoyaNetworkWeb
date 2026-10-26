@@ -4029,7 +4029,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             'getty ulan':   'images/Getty_logo.jpg',
             'bnf':          'images/BnF_logo.jpg',
             'rah':          'images/RAH_logo.jpg',
-            'bne':          'images/BNE_logo.jpg'
+            'bne':          'images/BNE_logo.svg'
           };
 
           // Merge: objeto authorities + posibles campos sueltos
@@ -4049,7 +4049,8 @@ document.addEventListener('DOMContentLoaded', async function () {
                 (k === 'getty ulan' || k === 'ulan' || k === 'getty') ? 'Getty (ULAN)' :
                 (k === 'bnf' ? 'BnF' :
                 (k === 'wikidata' ? 'Wikidata' :
-                (k === 'rah' ? 'RAH' : key)));
+                (k === 'rah' ? 'RAH' :
+                (k === 'bne' ? 'BNE' : key))));
               // 👇 Importante: SIN height inline (que pisaba el CSS)
               return `
                 <a href="${url}" target="_blank" rel="noopener noreferrer" title="${title}" style="display:block;">
