@@ -4038,6 +4038,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           if (node['getty ulan'])   authorities['getty ulan'] = node['getty ulan'];
           if (node['bnf'])          authorities['bnf']        = node['bnf'];
           if (node['rah'])          authorities['rah']        = node['rah'];
+          if (node['bne'])          authorities['bne']        = node['bne'];
 
           const badges = Object.entries(authorities)
             .filter(([_, url]) => url)
