@@ -7517,7 +7517,7 @@
       "relationship type": "parientes: suegro-yerno; profesionales: colegas"
     },
     {
-      "_edge_id": "H. Vernet-Louis-Philippe",
+      "_edge_id": "H. Vernet-Louis Philippe I",
       "from": "Horace Vernet",
       "to": "Louis Philippe I",
       "connection_level": "directa",
@@ -9785,7 +9785,7 @@
       "relationship type": "Gautier escribe extensamente sobre Goya (véase el nodo de Gautier). También colecciona algunas obras"
     },
     {
-      "_edge_id": "Gautier-Louis-Philippe",
+      "_edge_id": "Gautier-Louis Philippe I",
       "from": "Louis Philippe I",
       "to": "Théophile Gautier",
       "connection_level": "direct",
@@ -10024,7 +10024,7 @@
     {
       "_edge_id": "E. Devéria-Louis Philippe I",
       "from": "Eugène Devéria",
-      "to": "Louis-Philippe I",
+      "to": "Louis Philippe I",
       "connection_level": "directa",
       "relationship type": "patronazgo"
     },

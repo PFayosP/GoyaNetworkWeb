@@ -9932,7 +9932,7 @@
     {
       "_edge_id": "E. Devéria-Louis Philippe I",
       "from": "Eugène Devéria",
-      "to": "Louis-Philippe I",
+      "to": "Louis Philippe I",
       "connection_level": "direct",
       "relationship type": "patronage"
     },
@@ -10668,7 +10668,7 @@
       "strength": 1
     },
     {
-      "_edge_id": "Louis-Philippe-Luisa Fernanda",
+      "_edge_id": "Louis Philippe I-Luisa Fernanda",
       "from": "Louis Philippe I",
       "to": "Infanta Luisa Fernanda de Borbón",
       "connection_level": "direct",
@@ -10713,7 +10713,7 @@
       "strength": 2
     },
     {
-      "_edge_id": "Louis-Philippe-Mª Cristina",
+      "_edge_id": "Louis Philippe I-Mª Cristina",
       "from": "María Cristina de Borbón-Dos Sicilias",
       "to": "Louis Philippe I",
       "connection_level": "direct",
@@ -10721,7 +10721,7 @@
       "strength": 2
     },
     {
-      "_edge_id": "Fernando VII-Louis-Philippe",
+      "_edge_id": "Fernando VII-Louis Philippe I",
       "from": "Fernando VII",
       "to": "Louis Philippe I",
       "connection_level": "direct",
@@ -10738,7 +10738,7 @@
       "strength": 3
     },
     {
-      "_edge_id": "Louis-Philippe-Montpensier",
+      "_edge_id": "Louis Philippe I-Montpensier",
       "from": "Prince Antoine, Duke of Montpensier",
       "to": "Louis Philippe I",
       "connection_level": "direct",
@@ -12196,7 +12196,7 @@
       "bibliography": "Vicente Galán 2000"
     },
     {
-      "_edge_id": "Ingres-Louis-Philippe",
+      "_edge_id": "Ingres-Louis Philippe I",
       "from": "Jean-Auguste-Dominique Ingres",
       "to": "Louis Philippe I",
       "connection_level": "direct",
@@ -12204,7 +12204,7 @@
       "portraits": "c.1842, drawing for stained glass"
     },
     {
-      "_edge_id": "Daumier-Louis-Philippe",
+      "_edge_id": "Daumier-Louis Philippe I",
       "from": "Honoré Daumier",
       "to": "Louis Philippe I",
       "connection_level": "secondary?",
