@@ -672,6 +672,129 @@
     transform: scale(0.95);
   }
 
+  /* ===== Timeline slider (dentro de #network, arriba al centro) ===== */
+  .timeline-bar {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: min(640px, calc(100% - 24px));
+    display: flex;
+    justify-content: center;
+    font-family: "EB Garamond", serif;
+    color: #fff;
+  }
+
+  .tl-toggle {
+    background-color: #2B7CE9;
+    border: 2px solid #1a4d99;
+    border-radius: 20px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 4px 14px;
+    cursor: pointer;
+  }
+
+  .tl-toggle:hover { background-color: #3d8de9; }
+
+  .tl-controls {
+    width: 100%;
+    background: rgba(20, 20, 20, 0.88);
+    border: 1px solid #1a4d99;
+    border-radius: 10px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+  }
+
+  .tl-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tl-options {
+    flex-wrap: wrap;
+    margin-top: 6px;
+    font-size: 0.95rem;
+  }
+
+  .tl-options select {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 2px 6px;
+    font-family: inherit;
+  }
+
+  .tl-btn {
+    flex: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #1a4d99;
+    background-color: #2B7CE9;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.85rem;
+    line-height: 1;
+  }
+
+  .tl-year {
+    flex: none;
+    min-width: 3.2em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .tl-year.tl-in-goya-life { color: #FF6B35; }
+
+  .tl-track {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    padding-bottom: 14px;
+  }
+
+  .tl-track input[type="range"] {
+    width: 100%;
+    margin: 0;
+    accent-color: #FF6B35;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Franja que marca la vida de Goya bajo el slider */
+  .tl-goya-band {
+    position: absolute;
+    top: 50%;
+    height: 4px;
+    margin-top: 4px;
+    background: #FF6B35;
+    opacity: 0.55;
+    border-radius: 2px;
+  }
+
+  .tl-scale {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #aaa;
+  }
+
+  .timeline-bar [hidden] { display: none !important; }
+
+  .tl-count {
+    margin-left: auto;
+    color: #bbb;
+  }
+
   /* ===== Vis.js Navigation Buttons Styling ===== */
   /* Enhanced visibility with blue color and higher contrast */
   .vis-navigation {

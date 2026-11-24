@@ -17,6 +17,10 @@
       BTN_SEARCH: "Search",
       BTN_CLUSTER_TOGGLE_ON: "Cluster edges: On",
       BTN_CLUSTER_TOGGLE_OFF: "Cluster edges: Off",
+      TL_BUTTON: "Timeline", TL_CLOSE: "Show all years", TL_PLAY: "Play", TL_PAUSE: "Pause",
+      TL_MODE_ALIVE: "Alive in this year", TL_MODE_CUMULATIVE: "Up to this year",
+      TL_UNDATED: "Undated connections", TL_PEOPLE: "people", TL_CONNECTIONS: "connections",
+      TL_GOYA_LIFE: "Goya's lifetime",
       SELECT_CLUSTER_OPTION: "Select cluster...",
       
       CONTRIBUTIONS_TITLE: "Contributions", 
@@ -298,6 +302,10 @@
       BTN_SEARCH: "Buscar",
       BTN_CLUSTER_TOGGLE_ON: "Clúster: activado",
       BTN_CLUSTER_TOGGLE_OFF: "Clúster: desactivado",
+      TL_BUTTON: "Línea del tiempo", TL_CLOSE: "Mostrar todos los años", TL_PLAY: "Reproducir", TL_PAUSE: "Pausa",
+      TL_MODE_ALIVE: "Vivos en este año", TL_MODE_CUMULATIVE: "Hasta este año",
+      TL_UNDATED: "Conexiones sin fecha", TL_PEOPLE: "personas", TL_CONNECTIONS: "conexiones",
+      TL_GOYA_LIFE: "Vida de Goya",
       SELECT_CLUSTER_OPTION: "Selecciona clúster...",
       
       CONTRIBUTIONS_TITLE: "Contribuciones", 
@@ -2935,6 +2943,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       container.appendChild(zoomButtons);
     }
 
+    initTimelineSlider(container);
+
     // ===== ADMIN MODE =====
     const urlParams = new URLSearchParams(window.location.search);
     const isAdminMode = urlParams.get('admin') === 'true';
@@ -4936,3 +4946,174 @@ document.addEventListener('DOMContentLoaded', async function () {
     console.error("Error cargando o renderizando la red:", err);
   }
 });
+
+// ===================== TIMELINE SLIDER =====================
+// Filtra la red por año: muestra solo las personas vivas en ese año (o nacidas hasta ese año)
+// y las conexiones cuya fecha "know each other since" (o "they met") no es posterior.
+// Usa `hidden` de vis.js, que no interfiere con los resaltados (color/opacity) ni con la física.
+function initTimelineSlider(container) {
+  const PINNED_NODE_ID = 'Francisco de Goya'; // siempre visible: es el centro de la red
+  const GOYA_BIRTH = 1746, GOYA_DEATH = 1828;
+  const PLAY_INTERVAL_MS = 120;
+
+  // "1746-1828", "c.1813-1854", "1781-c.1835", "1753/1760-1832", "active 1830s-1860s"
+  function parseLifeDates(raw) {
+    const s = String(raw || '').split('[')[0];
+    const years = [...s.matchAll(/(1[5-9]\d\d)(s?)/g)];
+    if (!years.length) return null;
+    const first = years[0], last = years[years.length - 1];
+    const birth = parseInt(first[1], 10);
+    let death = parseInt(last[1], 10) + (last[2] ? 9 : 0);
+    if (years.length === 1) death = first[2] ? birth + 9 : birth; // solo un año conocido
+    return { birth, death };
+  }
+
+  // Primer año que aparece: "c.1799", "at least 1807", "the 1820s" → 1820
+  function parseFirstYear(raw) {
+    const m = String(raw || '').match(/\b(1[5-9]\d\d)/);
+    return m ? parseInt(m[1], 10) : null;
+  }
+
+  const lifeById = {};
+  let minYear = Infinity, maxYear = -Infinity;
+  nodes.get().forEach(n => {
+    const life = parseLifeDates(n['life dates']);
+    if (!life) return;
+    lifeById[n.id] = life;
+    minYear = Math.min(minYear, life.birth);
+    maxYear = Math.max(maxYear, life.death);
+  });
+  if (!isFinite(minYear)) return;
+  minYear = Math.floor(minYear / 10) * 10;
+  maxYear = Math.ceil(maxYear / 10) * 10;
+
+  const edgeYearById = {};
+  edges.get().forEach(e => {
+    edgeYearById[e.id] = parseFirstYear(e['know each other since']) ?? parseFirstYear(e['they met']);
+  });
+
+  // No tocar lo que ya estuviera oculto por otros motivos
+  const originallyHiddenNodes = new Set(nodes.get({ filter: n => n.hidden }).map(n => n.id));
+  const originallyHiddenEdges = new Set(edges.get({ filter: e => e.hidden || e._isClusterEdge }).map(e => e.id));
+
+  // ——— UI ———
+  const bar = document.createElement('div');
+  bar.id = 'timelineBar';
+  bar.className = 'timeline-bar';
+  const goyaLeft = ((GOYA_BIRTH - minYear) / (maxYear - minYear)) * 100;
+  const goyaWidth = ((GOYA_DEATH - GOYA_BIRTH) / (maxYear - minYear)) * 100;
+  bar.innerHTML = `
+    <button type="button" id="tlToggle" class="tl-toggle">⏳ ${t('TL_BUTTON')}</button>
+    <div id="tlControls" class="tl-controls" hidden>
+      <div class="tl-row">
+        <button type="button" id="tlPlay" class="tl-btn" title="${t('TL_PLAY')}">▶</button>
+        <span id="tlYearLabel" class="tl-year"></span>
+        <div class="tl-track">
+          <input type="range" id="tlYear" min="${minYear}" max="${maxYear}" step="1" value="${GOYA_BIRTH + 62}">
+          <div class="tl-goya-band" style="left:${goyaLeft}%;width:${goyaWidth}%" title="${t('TL_GOYA_LIFE')} (${GOYA_BIRTH}–${GOYA_DEATH})"></div>
+          <div class="tl-scale"><span>${minYear}</span><span>${maxYear}</span></div>
+        </div>
+        <button type="button" id="tlClose" class="tl-btn" title="${t('TL_CLOSE')}">✕</button>
+      </div>
+      <div class="tl-row tl-options">
+        <select id="tlMode">
+          <option value="alive">${t('TL_MODE_ALIVE')}</option>
+          <option value="cumulative">${t('TL_MODE_CUMULATIVE')}</option>
+        </select>
+        <label><input type="checkbox" id="tlUndated" checked> ${t('TL_UNDATED')}</label>
+        <span id="tlCount" class="tl-count"></span>
+      </div>
+    </div>`;
+  container.appendChild(bar);
+
+  const $ = id => bar.querySelector('#' + id);
+  const toggleBtn = $('tlToggle'), controls = $('tlControls'), slider = $('tlYear');
+  const yearLabel = $('tlYearLabel'), modeSel = $('tlMode'), undatedChk = $('tlUndated');
+  const countEl = $('tlCount'), playBtn = $('tlPlay'), closeBtn = $('tlClose');
+
+  // Evita que los clics en la barra lleguen al canvas de vis.js
+  ['mousedown', 'pointerdown', 'touchstart', 'wheel'].forEach(ev =>
+    bar.addEventListener(ev, e => e.stopPropagation(), { passive: true }));
+
+  function nodeVisibleAt(id, year, mode) {
+    if (id === PINNED_NODE_ID) return true;
+    const life = lifeById[id];
+    if (!life) return true; // sin fechas: no se puede situar, se deja visible
+    return mode === 'alive'
+      ? life.birth <= year && year <= life.death
+      : life.birth <= year;
+  }
+
+  function apply(year) {
+    const mode = modeSel.value;
+    const showUndated = undatedChk.checked;
+    const visibleNodes = new Set();
+    const nodeUpdates = [];
+
+    nodes.get({ fields: ['id', 'hidden'] }).forEach(n => {
+      if (originallyHiddenNodes.has(n.id)) return;
+      const visible = year == null || nodeVisibleAt(n.id, year, mode);
+      if (visible) visibleNodes.add(n.id);
+      if (!!n.hidden === visible) nodeUpdates.push({ id: n.id, hidden: !visible });
+    });
+
+    let edgeCountVisible = 0;
+    const edgeUpdates = [];
+    edges.get({ fields: ['id', 'from', 'to', 'hidden'] }).forEach(e => {
+      if (originallyHiddenEdges.has(e.id)) return;
+      let visible = true;
+      if (year != null) {
+        const since = edgeYearById[e.id];
+        visible = visibleNodes.has(e.from) && visibleNodes.has(e.to) &&
+          (since == null ? showUndated : since <= year);
+      }
+      if (visible) edgeCountVisible++;
+      if (!!e.hidden === visible) edgeUpdates.push({ id: e.id, hidden: !visible });
+    });
+
+    if (nodeUpdates.length) nodes.update(nodeUpdates);
+    if (edgeUpdates.length) edges.update(edgeUpdates);
+
+    yearLabel.textContent = year == null ? '' : year;
+    yearLabel.classList.toggle('tl-in-goya-life', year != null && year >= GOYA_BIRTH && year <= GOYA_DEATH);
+    countEl.textContent = year == null ? '' :
+      `${visibleNodes.size} ${t('TL_PEOPLE')} · ${edgeCountVisible} ${t('TL_CONNECTIONS')}`;
+  }
+
+  let playTimer = null;
+  function stop() {
+    clearInterval(playTimer);
+    playTimer = null;
+    playBtn.textContent = '▶';
+    playBtn.title = t('TL_PLAY');
+  }
+  function play() {
+    if (+slider.value >= maxYear) slider.value = minYear;
+    playBtn.textContent = '❚❚';
+    playBtn.title = t('TL_PAUSE');
+    playTimer = setInterval(() => {
+      const next = +slider.value + 1;
+      if (next > maxYear) return stop();
+      slider.value = next;
+      apply(next);
+    }, PLAY_INTERVAL_MS);
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    toggleBtn.hidden = true;
+    controls.hidden = false;
+    apply(+slider.value);
+  });
+  closeBtn.addEventListener('click', () => {
+    stop();
+    controls.hidden = true;
+    toggleBtn.hidden = false;
+    apply(null); // vuelve a mostrar todo
+  });
+  playBtn.addEventListener('click', () => (playTimer ? stop() : play()));
+  slider.addEventListener('input', () => { stop(); apply(+slider.value); });
+  modeSel.addEventListener('change', () => apply(+slider.value));
+  undatedChk.addEventListener('change', () => apply(+slider.value));
+
+  window.__GN_timeline = { apply, parseLifeDates, parseFirstYear };
+}
