@@ -243,7 +243,7 @@
       <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Goya</h3>
       <ul style="padding-left:1.2rem; line-height:1.6;">
         <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado </strong></a> – A digital resource of the artist to learn about his paintings, prints and drawings in the museum, as well as documents, print references and a digital library (in Spanish).</li>
-        <li><a href="https://www.museodelprado.es/museo/publicacion/goya-censo-de-ejemplares-de-la-primera-edicion-de/9b939dad-5d06-f77f-160f-1b620e900762" target="_blank"><strong>Goya. Censo de ejemplares de la primera edición de los <i>Caprichos</i>, 1799</strong></a> – Museo del Prado publication recording the known copies of the first edition of Goya's <i>Caprichos</i> (in Spanish).</li>
+        <li><a href="https://www.museodelprado.es/museo/publicacion/goya-censo-de-ejemplares-de-la-primera-edicion-de/9b939dad-5d06-f77f-160f-1b620e900762" target="_blank"><strong>Goya. Censo de ejemplares de la primera edición de los <i>Caprichos</i>, 1799</strong></a> – Museo del Prado census of all known copies of the first edition of Goya's <i>Caprichos</i> (1799), the only edition published in the artist's lifetime, with a map locating the copies (in Spanish).</li>
         <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> (in Spanish) – The History of Goya with the Royal Academy of Fine Arts in Madrid, as well as an overview of the Goya collections, particularly his print series.</li>
       </ul>
 
@@ -549,7 +549,7 @@
     <h3 style="margin-top:1.5rem; margin-bottom:0.8rem;">Goya</h3>
     <ul style="padding-left:1.2rem; line-height:1.6;">
       <li><a href="https://www.museodelprado.es/coleccion/artista/francisco-de-goya-y-lucientes/39568a17-81b5-4d6f-84fa-12db60780812" target="_blank"><strong>Goya en el Prado</strong></a> – Un recurso digital del artista para aprender sobre sus pinturas, estampas y dibujos en el museo, así como documentos, referencias impresas y una biblioteca digital (en español).</li>
-      <li><a href="https://www.museodelprado.es/museo/publicacion/goya-censo-de-ejemplares-de-la-primera-edicion-de/9b939dad-5d06-f77f-160f-1b620e900762" target="_blank"><strong>Goya. Censo de ejemplares de la primera edición de los <i>Caprichos</i>, 1799</strong></a> – Publicación del Museo del Prado que recoge los ejemplares conocidos de la primera edición de los <i>Caprichos</i> de Goya (en español).</li>
+      <li><a href="https://www.museodelprado.es/museo/publicacion/goya-censo-de-ejemplares-de-la-primera-edicion-de/9b939dad-5d06-f77f-160f-1b620e900762" target="_blank"><strong>Goya. Censo de ejemplares de la primera edición de los <i>Caprichos</i>, 1799</strong></a> – Censo del Museo del Prado con todos los ejemplares conocidos de la primera edición de los <i>Caprichos</i> de Goya (1799), la única contemporánea al artista, con un mapa que localiza los ejemplares (en español).</li>
       <li><a href="https://www.realacademiabellasartessanfernando.com/goya/la-academia-y-goya/" target="_blank"><strong>Real Academia de Bellas Artes de San Fernando: La Academia y Goya</strong></a> – La historia de Goya con la Real Academia de Bellas Artes de Madrid, así como una panorámica de las colecciones de Goya, particularmente sus series de estampas (en español).</li>
     </ul>
 
