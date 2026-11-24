@@ -21,6 +21,7 @@
       TL_MODE_ALIVE: "Alive in this year", TL_MODE_CUMULATIVE: "Up to this year",
       TL_UNDATED: "Undated connections", TL_PEOPLE: "people", TL_CONNECTIONS: "connections",
       TL_GOYA_LIFE: "Goya's lifetime",
+      TL_PEAK: "Peak", TL_LEGEND_ACTIVE: "Connections each year", TL_LEGEND_NEW: "New dated connections",
       SELECT_CLUSTER_OPTION: "Select cluster...",
       
       CONTRIBUTIONS_TITLE: "Contributions", 
@@ -309,6 +310,7 @@
       TL_MODE_ALIVE: "Vivos en este año", TL_MODE_CUMULATIVE: "Hasta este año",
       TL_UNDATED: "Conexiones sin fecha", TL_PEOPLE: "personas", TL_CONNECTIONS: "conexiones",
       TL_GOYA_LIFE: "Vida de Goya",
+      TL_PEAK: "Máximo", TL_LEGEND_ACTIVE: "Conexiones por año", TL_LEGEND_NEW: "Nuevas conexiones con fecha",
       SELECT_CLUSTER_OPTION: "Selecciona clúster...",
       
       CONTRIBUTIONS_TITLE: "Contribuciones", 
@@ -5014,8 +5016,8 @@ function initTimelineSlider(container) {
         <button type="button" id="tlPlay" class="tl-btn" title="${t('TL_PLAY')}">▶</button>
         <span id="tlYearLabel" class="tl-year"></span>
         <div class="tl-track">
+          <div id="tlChart" class="tl-chart"></div>
           <input type="range" id="tlYear" min="${minYear}" max="${maxYear}" step="1" value="${GOYA_BIRTH + 62}">
-          <div class="tl-goya-band" style="left:${goyaLeft}%;width:${goyaWidth}%" title="${t('TL_GOYA_LIFE')} (${GOYA_BIRTH}–${GOYA_DEATH})"></div>
           <div class="tl-goya-label" style="left:${goyaLeft + goyaWidth / 2}%">${t('TL_GOYA_LIFE')} (${GOYA_BIRTH}–${GOYA_DEATH})</div>
           <div class="tl-scale"><span>${minYear}</span><span>${maxYear}</span></div>
         </div>
@@ -5029,6 +5031,11 @@ function initTimelineSlider(container) {
         <label><input type="checkbox" id="tlUndated" checked> ${t('TL_UNDATED')}</label>
         <span id="tlCount" class="tl-count"></span>
       </div>
+      <div class="tl-legend">
+        <span><i class="tl-sw tl-sw-area"></i>${t('TL_LEGEND_ACTIVE')}</span>
+        <span><i class="tl-sw tl-sw-new"></i>${t('TL_LEGEND_NEW')}</span>
+        <span><i class="tl-sw tl-sw-goya"></i>${t('TL_GOYA_LIFE')}</span>
+      </div>
     </div>`;
   container.appendChild(bar);
 
@@ -5036,6 +5043,7 @@ function initTimelineSlider(container) {
   const toggleBtn = $('tlToggle'), controls = $('tlControls'), slider = $('tlYear');
   const yearLabel = $('tlYearLabel'), modeSel = $('tlMode'), undatedChk = $('tlUndated');
   const countEl = $('tlCount'), playBtn = $('tlPlay'), closeBtn = $('tlClose');
+  const chartEl = $('tlChart');
 
   // Evita que los clics en la barra lleguen al canvas de vis.js
   ['mousedown', 'pointerdown', 'touchstart', 'wheel'].forEach(ev =>
@@ -5048,6 +5056,92 @@ function initTimelineSlider(container) {
       ? life.birth <= year && year <= life.death
       : life.birth <= year;
   }
+
+  // ——— Gráfico sobre el slider: conexiones por año + nuevas conexiones con fecha ———
+  const CHART_H = 40;
+  const span = maxYear - minYear;
+  const chartEdges = edges.get().filter(e => !originallyHiddenEdges.has(e.id))
+    .map(e => ({ from: e.from, to: e.to, since: edgeYearById[e.id] }));
+
+  // Nuevas conexiones por año (solo las fechadas; no depende del modo)
+  const newPerYear = new Array(span + 1).fill(0);
+  chartEdges.forEach(e => {
+    if (e.since != null && e.since >= minYear && e.since <= maxYear) newPerYear[e.since - minYear]++;
+  });
+  const maxNew = Math.max(1, ...newPerYear);
+
+  // Mismo criterio que apply(): ambas personas visibles y fecha no posterior
+  function connectionsPerYear(mode, showUndated) {
+    const series = [];
+    for (let y = minYear; y <= maxYear; y++) {
+      let c = 0;
+      chartEdges.forEach(e => {
+        if (!nodeVisibleAt(e.from, y, mode) || !nodeVisibleAt(e.to, y, mode)) return;
+        if (e.since == null ? showUndated : e.since <= y) c++;
+      });
+      series.push(c);
+    }
+    return series;
+  }
+
+  function renderChart() {
+    const mode = modeSel.value;
+    const series = connectionsPerYear(mode, undatedChk.checked);
+    const maxC = Math.max(1, ...series);
+    const yOf = v => (CHART_H - (v / maxC) * CHART_H * 0.92).toFixed(2);
+
+    const area = 'M0,' + CHART_H + ' ' +
+      series.map((v, i) => `L${i},${yOf(v)}`).join(' ') + ` L${span},${CHART_H} Z`;
+    const bars = newPerYear.map((n, i) => {
+      if (!n) return '';
+      const h = (n / maxNew) * CHART_H * 0.5;
+      return `<rect x="${i - 0.4}" y="${(CHART_H - h).toFixed(2)}" width="0.8" height="${h.toFixed(2)}" class="tl-bar"><title>${minYear + i}: ${n}</title></rect>`;
+    }).join('');
+
+    // El máximo solo tiene sentido en el modo "vivos en este año" (el acumulado siempre crece)
+    let peakHtml = '';
+    if (mode === 'alive') {
+      const peakIdx = series.indexOf(maxC);
+      const peakYear = minYear + peakIdx;
+      peakHtml = `
+        <button type="button" class="tl-peak" data-year="${peakYear}"
+          style="left:${(peakIdx / span) * 100}%;top:${yOf(maxC)}px"
+          title="${peakYear}: ${maxC} ${t('TL_CONNECTIONS')}">
+          <span class="tl-peak-dot"></span><span class="tl-peak-label">${t('TL_PEAK')}: ${peakYear}</span>
+        </button>`;
+    }
+
+    chartEl.innerHTML = `
+      <svg viewBox="0 0 ${span} ${CHART_H}" preserveAspectRatio="none" aria-hidden="true">
+        <rect x="${GOYA_BIRTH - minYear}" y="0" width="${GOYA_DEATH - GOYA_BIRTH}" height="${CHART_H}" class="tl-goya-zone"><title>${t('TL_GOYA_LIFE')} (${GOYA_BIRTH}–${GOYA_DEATH})</title></rect>
+        <path d="${area}" class="tl-area"/>
+        ${bars}
+        <line id="tlCursor" x1="0" x2="0" y1="0" y2="${CHART_H}" class="tl-cursor"/>
+      </svg>${peakHtml}`;
+    updateCursor(+slider.value);
+  }
+
+  function updateCursor(year) {
+    const line = chartEl.querySelector('#tlCursor');
+    if (!line) return;
+    line.setAttribute('x1', year - minYear);
+    line.setAttribute('x2', year - minYear);
+  }
+
+  // Clic en el gráfico (o en "Máximo") → saltar a ese año
+  chartEl.addEventListener('click', e => {
+    stop();
+    const peak = e.target.closest('.tl-peak');
+    let year;
+    if (peak) {
+      year = +peak.dataset.year;
+    } else {
+      const r = chartEl.getBoundingClientRect();
+      year = Math.round(minYear + ((e.clientX - r.left) / r.width) * span);
+    }
+    slider.value = Math.max(minYear, Math.min(maxYear, year));
+    apply(+slider.value);
+  });
 
   function apply(year) {
     const mode = modeSel.value;
@@ -5079,6 +5173,7 @@ function initTimelineSlider(container) {
     if (nodeUpdates.length) nodes.update(nodeUpdates);
     if (edgeUpdates.length) edges.update(edgeUpdates);
 
+    if (year != null) updateCursor(year);
     yearLabel.textContent = year == null ? '' : year;
     yearLabel.classList.toggle('tl-in-goya-life', year != null && year >= GOYA_BIRTH && year <= GOYA_DEATH);
     countEl.textContent = year == null ? '' :
@@ -5107,6 +5202,7 @@ function initTimelineSlider(container) {
   toggleBtn.addEventListener('click', () => {
     toggleBtn.hidden = true;
     controls.hidden = false;
+    renderChart();
     apply(+slider.value);
   });
   closeBtn.addEventListener('click', () => {
@@ -5117,8 +5213,8 @@ function initTimelineSlider(container) {
   });
   playBtn.addEventListener('click', () => (playTimer ? stop() : play()));
   slider.addEventListener('input', () => { stop(); apply(+slider.value); });
-  modeSel.addEventListener('change', () => apply(+slider.value));
-  undatedChk.addEventListener('change', () => apply(+slider.value));
+  modeSel.addEventListener('change', () => { renderChart(); apply(+slider.value); });
+  undatedChk.addEventListener('change', () => { renderChart(); apply(+slider.value); });
 
   window.__GN_timeline = { apply, parseLifeDates, parseFirstYear };
 }

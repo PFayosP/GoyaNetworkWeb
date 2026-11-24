@@ -766,16 +766,80 @@
     z-index: 1;
   }
 
-  /* Franja que marca la vida de Goya bajo el slider */
-  .tl-goya-band {
-    position: absolute;
-    top: 50%;
-    height: 4px;
-    margin-top: 4px;
-    background: #E53935;
-    opacity: 0.85;
-    border-radius: 2px;
+  /* Gráfico sobre el slider (márgenes = medio pulgar del slider, para alinear los años) */
+  .tl-chart {
+    position: relative;
+    height: 40px;
+    margin: 12px 8px 2px;
+    cursor: pointer;
   }
+
+  .tl-chart svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .tl-area { fill: rgba(255, 107, 53, 0.35); stroke: #FF6B35; stroke-width: 1; vector-effect: non-scaling-stroke; }
+  .tl-bar { fill: #66ccff; }
+  .tl-goya-zone { fill: rgba(229, 57, 53, 0.22); }
+  .tl-cursor { stroke: #fff; stroke-width: 1; vector-effect: non-scaling-stroke; opacity: 0.8; }
+
+  .tl-peak {
+    position: absolute;
+    transform: translate(-5px, -5px);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    padding: 0;
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .tl-peak-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #FF6B35;
+    box-sizing: border-box;
+  }
+
+  .tl-peak-label {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 0 4px;
+    border-radius: 3px;
+    transform: translateY(-8px);
+  }
+
+  .tl-peak:hover .tl-peak-label { text-decoration: underline; }
+
+  .tl-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: #bbb;
+  }
+
+  .tl-sw {
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .tl-sw-area { background: rgba(255, 107, 53, 0.6); border-top: 1px solid #FF6B35; }
+  .tl-sw-new { background: #66ccff; width: 3px; height: 10px; }
+  .tl-sw-goya { background: rgba(229, 57, 53, 0.5); }
 
   .tl-goya-label {
     position: absolute;
