@@ -4952,7 +4952,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 // y las conexiones cuya fecha "know each other since" (o "they met") no es posterior.
 // Usa `hidden` de vis.js, que no interfiere con los resaltados (color/opacity) ni con la física.
 function initTimelineSlider(container) {
-  const PINNED_NODE_ID = 'Francisco de Goya'; // siempre visible: es el centro de la red
   const GOYA_BIRTH = 1746, GOYA_DEATH = 1828;
   const PLAY_INTERVAL_MS = 120;
 
@@ -5011,6 +5010,7 @@ function initTimelineSlider(container) {
         <div class="tl-track">
           <input type="range" id="tlYear" min="${minYear}" max="${maxYear}" step="1" value="${GOYA_BIRTH + 62}">
           <div class="tl-goya-band" style="left:${goyaLeft}%;width:${goyaWidth}%" title="${t('TL_GOYA_LIFE')} (${GOYA_BIRTH}–${GOYA_DEATH})"></div>
+          <div class="tl-goya-label" style="left:${goyaLeft + goyaWidth / 2}%">${t('TL_GOYA_LIFE')} (${GOYA_BIRTH}–${GOYA_DEATH})</div>
           <div class="tl-scale"><span>${minYear}</span><span>${maxYear}</span></div>
         </div>
         <button type="button" id="tlClose" class="tl-btn" title="${t('TL_CLOSE')}">✕</button>
@@ -5036,7 +5036,6 @@ function initTimelineSlider(container) {
     bar.addEventListener(ev, e => e.stopPropagation(), { passive: true }));
 
   function nodeVisibleAt(id, year, mode) {
-    if (id === PINNED_NODE_ID) return true;
     const life = lifeById[id];
     if (!life) return true; // sin fechas: no se puede situar, se deja visible
     return mode === 'alive'
